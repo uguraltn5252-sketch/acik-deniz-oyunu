@@ -24,64 +24,65 @@
 ## T-20260818-003 — Harita boyuna göre 2/3 Gövde duyarlılığı
 
 - **Motor:** Library'deki korunmuş `tam_sistem_sim.py` + `prototype_balance_sim.py`.
-- **Önemli sınır:** Test henüz yeni dinamik alt-kenar başlangıç kuralını içermez. Bu nedenle nihai değil, Gövde baskısının yönünü ölçen duyarlılık testidir.
+- **Önemli sınır:** Test yeni dinamik alt-kenar başlangıç kuralını içermez; Gövde baskısının yönünü ölçen eski duyarlılık testidir.
+- **Sonuç:** 3 Gövde birçok hücrede Tayfayı aşırı güçlendirdi.
+- **Son karar:** Kullanıcı daha sonra bütün Haritalarda **2 Gövde**yi kesinleştirdi. Bu nedenle T-003'teki `5×7 = 3 Gövde` önerisi **geçersiz/superseded** kabul edilir; yeni sürüme taşınmayacaktır.
 
-### A. Uzun Harita, mevcut uzun-harita hasar kotası
+## T-20260818-004 — 1/2 Geçilmez Kayalık + yalnız Kayalık çıkmazında acil geri dönüş
 
-Her hücre 3.000 oyun:
+- **Motor:** `experiments/gecilmez_kayalik_v22_sim.py`; temel davranışsal motor `tam_sistem_sim.py`.
+- **Kesin kurallar:** 2 Gövde; dinamik alt-kenar başlangıcı; Kaptan ilk rotayı tek başına seçer; 30 kareye kadar 1, 35+ karede 2 Geçilmez Kayalık; son Harita satırında Kayalık yok; yalnız Kayalık kaynaklı tam ileri çıkmazda bir önceki kareye tek adım geri; geri hareket günü tüketir; açık kart olayı tekrarlanmaz.
 
-| Oyuncu | Harita | Hasar kotası | 2 Gövde Tayfa | 3 Gövde Tayfa |
-|---:|---|---:|---:|---:|
-| 6 | 5×7 | 9 | %53,5 | %77,0 |
-| 8 | 5×7 | 8 | %55,9 | %78,1 |
-| 10 | 5×7 | 9 | %59,5 | %85,5 |
-| 12 | 6×7 | 11 | %61,3 | %85,6 |
-| 15 | 6×7 | 13 | %58,3 | %81,7 |
+### A. Kesin geometri
 
-**Hüküm:** Haritayı yalnız uzatıp Gövdeyi 3 yapmak Hainin batırma yolunu fazla zayıflatıyor.
+Altı Harita boyunda toplam **51.204** teorik başlangıç/Liman/Kayalık yerleşimi tarandı.
 
-### B. 3 Gövde + fiziksel havuzdaki maksimum 14 hasar kartı
+- İleri yol bırakan: **51.102 (%99,80)**
+- Baştan çözümsüz: **102**
+- İlk hareketi tamamen kapatan: **36**
 
-Aday havuz maksimumu: `9 Açık Deniz + 5 Kayalık = 14` doğrudan hasar kartı.
+Bu 102 kurulum oyun kurulurken reddedilmelidir. Geri dönüş kuralı, baştan çözümsüz Haritayı meşrulaştırmaz.
 
-5×7 sonuçları:
+### B. Temsilî 1.000 + 1.000 karşılaştırmaları
 
-| Oyuncu | Tayfa zaferi |
-|---:|---:|
-| 6 | %59,4 |
-| 7 | %53,3 |
-| 8 | %52,9 |
-| 9 | %59,4 |
-| 10 | %62,8 |
+Her Harita boyunda orta oyuncu sayısı için 1.000 kontrol ve 1.000 yeni-kural oyunu:
 
-6×7 sonuçları:
+| Harita | Oyuncu | Kontrol Tayfa | Yeni Tayfa | Fark | Geri dönüş oyunu |
+|---|---:|---:|---:|---:|---:|
+| 5×5 | 8 | %59,3 | %56,6 | -2,7 puan | %2,8 |
+| 5×6 | 8 | %57,2 | %54,3 | -2,9 | %3,7 |
+| 5×7 | 8 | %57,0 | %52,0 | -5,0 | %4,2 |
+| 6×5 | 13 | %60,8 | %56,6 | -4,2 | %3,2 |
+| 6×6 | 13 | %58,7 | %52,9 | -5,8 | %6,0 |
+| 6×7 | 13 | %55,3 | %56,3 | +1,0 | %5,3 |
 
-| Oyuncu | Tayfa zaferi |
-|---:|---:|
-| 11 | %74,8 |
-| 12 | %76,2 |
-| 13 | %80,3 |
-| 14 | %78,6 |
-| 15 | %81,0 |
+Ortalama yeni-kural Tayfa zaferi **%54,8**; kontrole göre değişim **-3,3 yüzde puanı**. Ortalama yolculuk **+0,12 gün**, gece **+0,09**, tahmini masa süresi yaklaşık **+0,70 dakika**. Geri dönüş yaklaşık **%4,2** oyunda görüldü.
 
-**Hüküm:** 3 Gövde mevcut kart havuzuyla yalnız 5×7 için gerçekçi adaydır. 6×7 çok güvenli kalır.
+### C. 6–15 oyuncu tam duyarlılık taraması
 
-### C. 6×7 + 3 Gövde için gereken ek baskı
+30 oyuncu/süre hücresinde `300` oyun = **9.000 yeni-kural oyunu** çalıştırıldı. Harita boyu ortalamaları:
 
-Mevcut maksimum 14 hasarın üstüne sentetik olarak hasara çevrilen kartlar test edildi. Temsilî sonuçlar:
+- 5×5: Tayfa %54,1; geri dönüş %4,1
+- 6×5: Tayfa %54,3; geri dönüş %3,5
+- 5×6: Tayfa %53,0; geri dönüş %1,7
+- 6×6: Tayfa %54,9; geri dönüş %4,9
+- 5×7: Tayfa %55,7; geri dönüş %3,8
+- 6×7: Tayfa %58,1; geri dönüş %4,6
 
-- 12 oyuncu: +4 hasar ≈ %59,0 Tayfa; +5 ≈ %56,1.
-- 15 oyuncu: +5 hasar ≈ %60,8 Tayfa.
+### D. Kilit/hata kontrolü
 
-**Hüküm:** 6×7'de 3 Gövde için toplam yaklaşık 18–19 doğrudan hasar olayı gerekir. Mevcut 52 kartlık fiziksel havuzda yalnız 14 hasar kartı bulunduğu için bu, 4–5+ kartın yeniden tasarlanmasını gerektirir.
+Toplam yeni-kural davranışsal oyun: **15.000**. Kontrol oyunları: **6.000**.
 
-### Öneri
+- Kalıcı `route_lock`: **0**
+- Kurulum hatası: **0**
+- Başlangıç kilidi: **0**
 
-- 5×5 = 2 Gövde
-- 5×6 = 2 Gövde
-- 5×7 = 3 Gövde **yalnız 14 hasar kartıyla**
-- 6×5 = 2 Gövde
-- 6×6 = 2 Gövde
-- 6×7 = 2 Gövde
+Zorunlu ek hareket (ör. Girdap) tam Kayalık çıkmazına çarparsa ek hareket boşa düşürülür; oyun kilitlenmez. Bu kenar hükmü yeni kural metninde açık yazılmalıdır.
 
-Bu öneri kullanıcı onayına kadar test statüsündedir.
+### Hüküm
+
+**PASS / teknik kabul.** Geçilmez Kayalık + acil geri dönüş sistemi çekirdek kurala taşınabilir. İnsan masa testi hâlâ gereklidir; sayısal test eğlenceyi kanıtlamaz.
+
+- Ayrıntılı rapor: `docs/GECILMEZ_KAYALIK_V22_RAPOR.md`
+- Deney kodu: `experiments/gecilmez_kayalik_v22_sim.py`
+- Sonuç özeti: `experiments/GECILMEZ_KAYALIK_V22_SONUCLARI.csv`

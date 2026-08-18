@@ -66,5 +66,17 @@ Tasarım kararlarının gerekçesi burada tutulur. Sohbet içinde alınmış bir
 - **Kurulum güvenliği:** İlk rota tamamen kapatılamaz; başlangıçtan itibaren matematiksel olarak çözümsüz Harita kurulamaz. Acil geri hareket oyuncuların/rota etkilerinin oluşturduğu gerçek bir çıkmazdan çıkmak içindir.
 - **Gerekçe:** Geçilmez Kayalık somut rota hafızası ve yol uzaması üretirken, oyunun temel 'ileri git' kuralını yalnız çok dar ve kontrol edilebilir bir durumda esnetir.
 - **Etkilenen dosyalar:** Harita kurulum tablosu, hareket kuralı, Ufuk yasallığı, JSON/spec, simülasyon ve regresyon testleri.
-- **Test:** Yeni regresyon hedefleri PR #2 karşılaştırma belgesinde tanımlandı.
+- **Test:** T-20260818-004.
 - **İlgili issue/PR:** #1 / PR #2
+
+### D-20260818-006 — Geçilmez Kayalık + geri dönüş teknik olarak kabul edildi
+
+- **Durum:** Kabul
+- **Sorun:** 1/2 Geçilmez Kayalık ve yalnız Kayalık çıkmazında geri dönüşün oyunu kilitleyip kilitlemediği ve dengeyi aşırı bozup bozmadığı bilinmiyordu.
+- **Karar:** D-20260818-005'teki sistem teknik olarak korunur; çekirdek kurala taşınabilir.
+- **Gerekçe:** 15.000 yeni-kural davranışsal oyunda kalıcı rota kilidi 0; 51.204 kesin geometri kombinasyonunda çözümsüz kurulumlar açıkça tanımlanıp kurulum filtresiyle elenebiliyor. Temsilî hücrelerde Tayfa ortalaması %54,8 ve geri dönüş yalnız yaklaşık %4,2 oyunda görülüyor.
+- **Ek kenar hükmü:** Girdap gibi zorunlu ek hareket Geçilmez Kayalık nedeniyle yapılamıyorsa zorunlu ek hareket boşa düşer; bu durum acil geri hareketi aynı gün tetiklemez. Sonraki normal rota gününde gerçekten hiç ileri rota yoksa geri dönüş kuralı uygulanır.
+- **Etkilenen dosyalar:** İnsan kuralları, JSON/spec, doğrulayıcı, simülasyon ve masa testi formu.
+- **Test:** T-20260818-004 — PASS.
+- **Sonuç:** Sayısal/yapısal kabul; eğlence ve algılanan adalet kör insan masa testinde doğrulanmalı.
+- **İlgili issue/PR:** #1 / PR #2 ve Geçilmez Kayalık test branch'i.
