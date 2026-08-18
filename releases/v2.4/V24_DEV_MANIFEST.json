@@ -1,0 +1,53 @@
+{
+  "version": "2.4",
+  "date": "2026-08-18",
+  "status": "development-test-passed-not-locked",
+  "baseline": "v2.3 STABLE / LOCKED",
+  "stable": false,
+  "locked": false,
+  "full_source_package": {
+    "library_path": "/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.4-dev.zip",
+    "sha256": "b6a9262bf7212b77a3ca9fc6a718048de53d2bcb9060fdfc1bfe4518641f32f2",
+    "size_bytes": 54521
+  },
+  "unchanged_card_contract": {
+    "starting_hull": 2,
+    "characters": 20,
+    "powers": 30,
+    "loyalties": 15,
+    "maps": 52,
+    "rock_cards": 12,
+    "main_card_identities": 118,
+    "impassable_ids": ["HAR-KY-01", "HAR-KY-03"]
+  },
+  "tests": {
+    "regression": "8/8 PASS",
+    "geometry": {"total": 51204, "legal": 51102, "rejected": 102, "permanent_first_branch_locks": 0},
+    "relocation": {"attempts": 1667231, "unsafe_rolled_back": 20, "accepted_permanent_locks": 0},
+    "route_social_proxy": {
+      "scope": "self-contained route/social proxy; NOT a full Crew/Traitor balance model",
+      "games": 9000,
+      "setup_errors": 0,
+      "port_reached_rate": 1.0,
+      "hard_lock_rate": 0.0,
+      "mean_days": 6.2107777777777775,
+      "reef_hits_per_game": 0.09077777777777778,
+      "first_route_reef_hits_per_game": 0.012777777777777779,
+      "backtracks_per_game": 0.06,
+      "backtrack_to_start_port_per_game": 0.0036666666666666666,
+      "captain_opening_peeks_per_game": 1.0
+    }
+  },
+  "release_gates": {
+    "human_rules": true,
+    "machine_spec": true,
+    "validator": true,
+    "regressions": true,
+    "exhaustive_route_audit": true,
+    "route_social_proxy": true,
+    "rulebook_pdf": false,
+    "cards_pdf": false,
+    "pdf_visual_preflight": false,
+    "stable_lock": false
+  }
+}

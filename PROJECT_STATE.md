@@ -1,41 +1,46 @@
 # Project State
 
 **Son güncelleme:** 2026-08-18  
-**Son stabil prototip:** **v2.3**  
-**Kanonik kaynak:** `releases/v2.3/`  
-**Önceki stabil geri dönüş:** `releases/v2.2/`  
-**Durum:** **v2.3 STABLE / LOCKED.** Sonraki tasarım değişiklikleri v2.4+ olarak açılmalıdır.
+**Son stabil prototip:** **v2.4 STABLE / LOCKED**  
+**Kanonik kaynak:** `releases/v2.4/`  
+**Önceki stabil geri dönüş:** `releases/v2.3/`  
+**Durum:** **v2.4 STABLE / LOCKED.** Sonraki tasarım değişiklikleri v2.5+ olarak açılmalıdır.
 
-## v2.3 kesin omurga
+## v2.4 kesin omurga
 
-- Kaptan rolü kalıcıdır ve kaldırılmaz.
-- İlk rotayı Kaptan tek başına, olay bilgisi olmadan seçer.
-- Başarılı İsyan, Kaptanın ölümü, Kamara, mahsur kalma veya Kayıkçı seferinde yeni Kaptan seçilir.
-- Kaptan gece ayrıca uyanmaz; makamı otomatik Yakın/Uzak Ufuk bilgisi vermez.
-- Gemi bütün Haritalarda **2 Gövde** ile başlar.
-- Gemi alt kenarın dışında herhangi bir sütun hizasında başlayabilir; ilk Ufuk ve ilk Sis yasağı dinamiktir.
-- Harita havuzu **52**, Kayalık kategorisi **12**, toplam kart kimliği **118** olarak kalır.
-- `HAR-KY-01` = **Duvar Gibi Kayalık / Geçilmez Kayalık**.
-- `HAR-KY-03` = **Yolun Bittiği Yer / Geçilmez Kayalık**.
-- Bu iki kart kapalıyken diğer Kayalıklardan hiçbir biçimde ayırt edilemez; normal Harita/Ufuk/gizli bilgi kurallarına tabidir.
-- `5×5`, `5×6`, `6×5` kurulumlarında Kayalık kotasının içinde **1**; `5×7`, `6×6`, `6×7` kurulumlarında **2** Geçilmez bulunur.
-- Geçilmez Kayalık son Liman/Ufuk hattına kurulamaz; Moderatör başlangıçtan erişilebilir Ada üzerinden Limana en az bir gerçek ileri yol kaldığını gizlice doğrular.
-- Kapalı Geçilmez normal rota/Ufuk hedefidir. Seçilip açılırsa Gemi kareye girmez, mevcut konumda kalır; normal rota gününde hareket harcanır ve kart açık kamusal engel olur.
-- Acil geri dönüş yalnız açılmış/bilinen Geçilmez Kayalıklar bütün ileri rotaları kapatırsa çalışır; Gemi bir önceki ziyaret edilmiş kareye bir tam hareket/gün harcayarak döner ve çözülmüş olay tekrar çalışmaz.
+- Gemi, Moderatörün alt kenarda seçtiği sütun hizasındaki fiziksel **Kalkış Limanı** (`SET-KL-01`) kurulum kartında başlar.
+- Kalkış Limanı 52 Harita ve 118 ana kart kimliği dışındaki tek kurulum bileşenidir; üst sıradaki varış noktası Hedef Limandır.
+- İlk gün yalnız Kaptan seçilir; rota, Suçlama ve İsyan yoktur.
+- İlk tarafsız gecede Kaptan Sadakatini bilmeden yalnız bir kez uyanır ve tam **1 yasal Yakın Ufuk** kartına gizlice bakar; kart kapalı kalır.
+- Sadakatler ertesi sabah dağıtılır.
+- İlk gerçek rota normal eşzamanlı rota oylamasıdır; Kaptanın rota oyu 2 sayar.
+- Kaptan makamı daha sonraki gecelerde otomatik Ufuk bilgisi vermez.
+- Kamusal açılan/gösterilen Harita kartı tekrar kapanmaz. Açık ama ziyaret edilmemiş kartın olayı ilk gerçek girişe kadar çözülmez.
+- Kamusal açılan Geçilmez anında bilinen engel olur ve rota/Ufuk hedefi değildir; gizli bakışlar kamusal durumu değiştirmez.
+- Acil geri dönüş ziyaret yolunu Kalkış Limanına kadar izleyebilir; her geri adım normal gün/hareket tüketir, çözülmüş olay yeniden çalışmaz.
+- Başka yasal seçenek varken bilinen çıkmaz kola yeniden girilemez.
+- Harita yer değiştirmesi bütün gerçek Kalkış Limanı→Hedef Liman yollarını yok edecekse işlem iptal edilir/geri alınır; neden açıklanmaz.
+- Kaptan seçiminde ilk beraberlikte bir yeniden oy; ikinci beraberlikte eşit adaylar Kader Zarıyla çözülür.
+- Kaptan rolü kalıcıdır. Başlangıç Gövdesi **2**.
+- 20 Karakter / 30 Güç / 15 Sadakat / 52 Harita / 12 Kayalık / 118 ana kart kimliği korunur.
+- `HAR-KY-01` ve `HAR-KY-03` gizli Geçilmez Kayalık olarak kalır; küçük Haritalarda 1, büyük Haritalarda 2 Geçilmez kullanılır.
 
-## v2.3 doğrulama özeti
+## v2.4 doğrulama ve fiziksel release
 
-- Kart çifti karşılaştırması: **7.200 oyun**.
-- Seçilen çift temsilî doğrulama: **6.000 oyun**; Tayfa %55,47; gizli Geçilmeze çarpma %31,63; ilk rota çarpması %5,17; acil geri dönüş %3,43; kalıcı kilit 0.
-- 6–15 oyuncu × 3 süre tam duyarlılık: **9.000 oyun**; Tayfa %55,51; gizli Geçilmeze çarpma %32,21; acil geri dönüş %3,50; kalıcı kilit 0; kurulum hatası 0.
-- Geometri: **51.204 teorik / 51.102 yasal / 102 kurulumda reddedilecek**.
-- `python releases/v2.3/validate_release_v2_3.py`: **PASS**.
-- Kural kitabı PDF: **32 sayfa**; kart PDF: **32 sayfa**; preflight/görsel tarama: **PASS**.
+- Regresyon: **8/8 PASS**.
+- Geometri: **51.204 / 51.102 legal / 102 rejected**; kalıcı ilk-dal kilidi **0**.
+- Exhaustive relocation: **1.667.231** transition; **20** unsafe rollback; guard sonrası kalıcı kilit **0**.
+- Self-contained rota/sosyal-proxy: **9.000 oyun**, setup error **0**, hard-lock **0**, Hedef Limana ulaşma **%100**.
+- Kural PDF: **27 sayfa A4**, preflight + render taraması PASS.
+- Kart PDF: **32 sayfa A4**, 63,5×88,9 mm uzun-kenar duplex, preflight + render taraması PASS.
+- 118 ana kart kimliği kart PDF'sinde eksiksiz; `SET-KL-01` ayrıca fiziksel kurulum kartıdır.
+- 12 Kayalık arka yüzü piksel düzeyinde özdeştir; gizli Geçilmez bilgi sızıntısı yoktur.
 
-## Binary artefaktlar
+## Kilitli paket
 
-- PDF'ler kalıcı Library'de `/Oyun-GitHub/v2.3/` altında tutulur.
-- Tam v2.3 ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.3.zip`.
-- Hash ve yollar: `releases/v2.3/BINARY_ARTIFACTS.md` ve `V23_RELEASE_MANIFEST.json`.
+- Library: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.4.zip`
+- SHA-256: `9edbef118561632c9c37a3c854d6c67f55c30ca99771d87e64d77b6c38454561`
+- Kural PDF SHA-256: `beae69144b6af5e7ed7a16d6c5f30c262f63af9b92826abc78c61c0493011216`
+- Kart PDF SHA-256: `5fb4a0c42bb9eaedfb7434ae9eb3a540eade6f5f9df7c34a6720f376cd32e9d1`
 
-"Stabil" ifadesi bu prototip sürümünün dondurulduğu anlamına gelir; ticari/final baskı olduğu anlamına gelmez. İnsan masa testi sonraki v2.4+ iyileştirmeleri için önerilir.
+`releases/v2.4/` bundan sonra yerinde düzenlenmez. Otomatik “en yeni kilitli sürüm” seçimi **v2.4** olmalıdır.
