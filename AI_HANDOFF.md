@@ -46,8 +46,8 @@ Bu dosya farklı ChatGPT oturumları/model sürümleri arasında oyunun kanonik 
 ## Tam v2.4 kaynak paketi
 
 Library: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.4-dev.zip`  
-SHA-256: `f5417e8627328cd1a5181436e9d3f8196365056207651d9ded8c17c42cef0662`  
-Boyut: `54207` byte.
+SHA-256: `b6a9262bf7212b77a3ca9fc6a718048de53d2bcb9060fdfc1bfe4518641f32f2`  
+Boyut: `54521` byte.
 
 ## Stabil kilit için kalan kapılar
 
