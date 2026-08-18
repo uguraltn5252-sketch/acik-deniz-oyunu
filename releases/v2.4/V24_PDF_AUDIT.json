@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checks": {
+    "stable_locked_in_rule_pdf": true,
+    "captain_one_private_peek": true,
+    "public_reveal_stays_open": true,
+    "start_port_physical_component": true,
+    "all_118_ids_in_card_pdf": true,
+    "no_stale_reclose_in_card_pdf": true,
+    "expected_changed_pages_only": true,
+    "12_rock_backs_pixel_identical": true,
+    "pusula_updated": true,
+    "karakol_updated": true,
+    "fener_updated": true
+  },
+  "rulebook_pages": 27,
+  "cards_pages": 32,
+  "card_pdf_changed_pages_vs_v2_3": [
+    1,
+    9,
+    29,
+    31,
+    32
+  ],
+  "canonical_card_ids": 118,
+  "missing_card_ids": [],
+  "setup_component_id": "SET-KL-01",
+  "rock_back_crops_compared": 12,
+  "rock_back_max_nonzero_pixels": 0,
+  "changed_card_region_text": {
+    "GUC-03": "ETKİ Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz.",
+    "HAR-AA-02": "OLAY Tayfa 1 Güç kazanır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+    "HAR-FN-01": "OLAY Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz."
+  }
+}
