@@ -6,15 +6,15 @@ Bu dosya, farklı ChatGPT oturumları veya model sürümleri arasında oyunun ba
 
 1. Bu dosyayı oku.
 2. `PROJECT_STATE.md` dosyasını oku.
-3. `releases/v2.1/README_SIMULASYON_v2.1.md` ve `releases/v2.1/00_BUNU_OKU_VE_BEKLE_v2.1.md` dosyalarını oku.
-4. `python releases/v2.1/oyun_simulasyon_v2_1.py --validate-only` çalıştır.
-5. Son commit/PR/issue durumunu incele.
+3. Son commit/PR/issue durumunu incele.
+4. `releases/v2.1/` klasörü tam paket hâlinde mevcutsa `README_SIMULASYON_v2.1.md` ve `00_BUNU_OKU_VE_BEKLE_v2.1.md` dosyalarını oku ve `python releases/v2.1/oyun_simulasyon_v2_1.py --validate-only` çalıştır.
+5. v2.1 paket dosyaları repo içinde henüz yoksa ChatGPT Library'de `OYUN_SIMULASYON_PAKETI_v2.1.zip` dosyasını bul; bu paket stabil geri dönüş kaynağıdır. Paketi doğrula, fakat otomatik denge simülasyonu başlatma.
 6. Kullanıcının yeni isteğini mevcut durumla karşılaştır.
 
 ## Yasaklar
 
-- `releases/v2.1/` içeriğini yerinde düzenleme.
-- Sohbet hafızasını repository'den üstün kaynak kabul etme.
+- Stabil v2.1 içeriğini yerinde düzenleme.
+- Sohbet hafızasını repository/kanıtlanmış paket kaynaklarından üstün kabul etme.
 - Eski v1.0/v2.0 denge sonuçlarını v2.1 sonucu gibi kullanma.
 - Bir kuralı yalnız PDF'de, yalnız JSON'da veya yalnız kodda değiştirip diğerlerini bırakma.
 - Test geçmeden değişikliği tamamlandı diye işaretleme.
