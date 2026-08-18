@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "rulebook_pages": 24,
+  "cards_pages": 32,
+  "rulebook_a4_all_pages": true,
+  "cards_a4_all_pages": true,
+  "rulebook_preflight": "PASS",
+  "cards_preflight": "PASS",
+  "rulebook_replacement_chars": 0,
+  "cards_replacement_chars": 0,
+  "main_card_ids_expected": 118,
+  "main_card_ids_found": 118,
+  "missing_card_ids": [],
+  "start_port_setup_component_found": true,
+  "scurvy_draw_power_text_found": true,
+  "fate_impassable_text_found": true,
+  "fate_island_scurvy_text_found": true,
+  "changed_card_pdf_pages_vs_v2_4": [1, 15],
+  "unchanged_card_pages_count": 30,
+  "rock_back_crops": 12,
+  "rock_back_max_pixel_diff": 0,
+  "rock_back_nonzero_channels": 0,
+  "rulebook_traitor_table_exact_sequence": true,
+  "rulebook_key_contracts": {
+    "v2.5": true,
+    "ration_power_draw": true,
+    "public_reveal": true,
+    "scurvy_relocation": true,
+    "fate_impassable": true,
+    "start_port": true
+  }
+}
