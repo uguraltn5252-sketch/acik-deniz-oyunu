@@ -67,7 +67,7 @@ v2.3 yerinde değiştirilmez. v2.4, kapsamlı v2.3 kırma testinde bulunan sorun
 - v2.4 route/social-proxy simülatörü proje-içi başka Python modülüne bağımlı değildir; yalnız Python standart kütüphanesi ve v2.4 full JSON spec gerekir.
 - Repo-side `releases/v2.4/validate_release_v2_4.py` geometri ve relocation auditini **yeniden hesaplar**; kayıtlı PASS sayısını tek başına kanıt saymaz.
 - Tam kaynak paketi Library'de `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.4-dev.zip` yolundadır.
-- ZIP SHA-256: `f5417e8627328cd1a5181436e9d3f8196365056207651d9ded8c17c42cef0662`; boyut `54207` byte.
+- ZIP SHA-256: `b6a9262bf7212b77a3ca9fc6a718048de53d2bcb9060fdfc1bfe4518641f32f2`; boyut `54521` byte.
 
 ## v2.4'ü STABLE / LOCKED yapmadan önce kalanlar
 
