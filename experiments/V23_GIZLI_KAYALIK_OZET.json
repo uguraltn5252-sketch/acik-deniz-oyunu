@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-18",
+  "status": "PASS",
+  "selected_cards": ["HAR-KY-01", "HAR-KY-03"],
+  "candidate_pair_comparison": {
+    "games": 7200,
+    "selected_pair_crew_win": 0.5472222222,
+    "selected_pair_games_with_reef_hit": 0.3033333333,
+    "selected_pair_first_route_hit": 0.055,
+    "selected_pair_games_with_backtrack": 0.0294444444,
+    "hard_locks": 0,
+    "setup_errors": 0
+  },
+  "preferred_pair_validation": {
+    "games": 6000,
+    "crew_win": 0.5546666667,
+    "avg_days": 5.5778333333,
+    "avg_nights": 5.1548333333,
+    "games_with_reef_hit": 0.3163333333,
+    "first_route_hit": 0.0516666667,
+    "games_with_backtrack": 0.0343333333,
+    "hard_locks": 0,
+    "setup_errors": 0
+  },
+  "full_sensitivity": {
+    "games": 9000,
+    "players": "6-15",
+    "crew_win": 0.5551111111,
+    "avg_days": 5.5695555556,
+    "avg_nights": 5.1412222222,
+    "games_with_reef_hit": 0.3221111111,
+    "first_route_hit": 0.0525555556,
+    "games_with_backtrack": 0.035,
+    "hard_locks": 0,
+    "setup_errors": 0,
+    "crew_win_by_duration": {
+      "Hizli": 0.5723333333,
+      "Standart": 0.552,
+      "Uzun": 0.541
+    }
+  },
+  "geometry": {
+    "total": 51204,
+    "legal": 51102,
+    "invalid": 102,
+    "invalid_by_shape": {
+      "5x5": 0,
+      "5x6": 0,
+      "5x7": 20,
+      "6x5": 8,
+      "6x6": 50,
+      "6x7": 24
+    }
+  },
+  "human_playtest": "pending"
+}
