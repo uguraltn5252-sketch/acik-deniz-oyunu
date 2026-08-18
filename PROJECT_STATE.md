@@ -2,32 +2,37 @@
 
 **Son güncelleme:** 2026-08-18  
 **Stabil temel:** v2.1  
-**Durum:** GitHub geçişi tamamlanıyor.
+**Aktif geliştirme:** v2.1 sonrası kararların `develop` hattına taşınması.
 
-## Kesin olarak korunmuş durum
+## Stabil temel
 
-`releases/v2.1/` içindeki paket mevcut stabil referanstır. Paket kendi doğrulayıcısı ile temiz geçmektedir.
+`releases/v2.1/` mevcut stabil geri dönüş referansıdır ve yerinde değiştirilmez.
 
-- Oyuncu aralığı: 6–15
-- 118 kart kimliği doğrulanır.
-- Harita başlangıç geometrisi ve Ufuk yasallığı doğrulanır.
-- Manifest SHA-256 kontrolleri doğrulanır.
-- Kural PDF'si ve kart PDF'si bütünlük kontrollerinden geçer.
+## v2.1 sonrası kesinleşmiş yeni omurga kararları
 
-## Önemli uyarı
+- Gemi Haritanın alt kenarının dışında herhangi bir hizada başlayabilir; ilk Ufuk ve ilk Sis yasağı seçilen başlangıca göre dinamikleşir.
+- Kaptan rolü kalıcıdır ve **asla kaldırılmaz**.
+- Geminin ilk rotasını Kaptan tek başına ve olay bilgisi olmadan seçer.
+- Kaptan gece ayrıca uyanmaz; makamı otomatik Ufuk bilgisi vermez.
+- Gemi bütün Harita boylarında **2 Gövdeyle** başlar.
+- Geçilmez Kayalık her oyunda bulunur.
+- Geçilmez Kayalık adedi: `5×5`, `5×6`, `6×5` = 1; `5×7`, `6×6`, `6×7` = 2.
+- Geçilmez Kayalık Limanın hemen kıçındaki son Harita/Ufuk hattına konulamaz.
+- Normalde geri hareket yasaktır. Yalnız Geçilmez Kayalık bütün yasal ileri rotaları kapatmışsa Gemi bir önceki bulunduğu kareye bir adım geri dönebilir.
+- Bu acil geri dönüş bir tam hareket/gün tüketir; çözülmüş kartın olayı tekrar çalışmaz.
+- İlk rota tamamen kapatılamaz ve başlangıçtan itibaren matematiksel olarak çözümsüz Harita kurulamaz.
 
-v2.1 üretildikten sonra sohbetlerde yeni tasarım kararları konuşulmuş olabilir. Bunlar henüz bu repository'ye resmî olarak taşınmış sayılmaz.
+Ayrıntılı gerekçeler: `docs/DECISION_LOG.md` ve `docs/V2_1_SONRASI_KARSILASTIRMA.md`.
 
-Bu nedenle gelecekteki bir ChatGPT/model sürümü:
+## Henüz uygulanması gereken teknik işler
 
-1. v2.1'i **stabil geri dönüş noktası** olarak kabul etmeli,
-2. sohbetten veya kullanıcıdan gelen daha yeni kararları doğrudan v2.1'in üstüne yazmamalı,
-3. önce yeni bir değişiklik kaydı/branch oluşturmalı,
-4. çelişki varsa kullanıcı kararını kaynak kabul etmelidir.
-
-## Sıradaki geliştirme hedefi
-
-`develop` çalışma hattını kurmak ve v2.1 sonrası konuşulmuş kararları tek tek karşılaştırarak resmî geliştirme durumuna geçirmek.
+1. İnsan kural metnini yeni başlangıç + Geçilmez Kayalık + acil geri dönüş hükümleriyle güncelle.
+2. JSON/spec'te sabit başlangıç sütununu kaldır; dinamik başlangıç ve 1/2 Geçilmez Kayalık sayısını ekle.
+3. Ufuk yasallığında Geçilmez Kayalığı erişilemez hedef yap.
+4. Geri dönüş tetikleyicisini yalnız `sıfır ileri rota + Geçilmez Kayalık nedenselliği` durumunda aç.
+5. Daha önce çözülmüş karta geri dönüldüğünde olay tekrarını engelle.
+6. Regresyon testlerini bütün 6 Harita boyunda çalıştır.
+7. v2.1'in stabil doğrulamasını değişmeden koru.
 
 ## Değişiklik tamamlanmış sayılma ölçütü
 
@@ -37,6 +42,7 @@ Bir değişiklik ancak aşağıdakilerin hepsi tamamlandığında resmîdir:
 - Makine JSON kaynağı güncel.
 - İlgili kod/test güncel.
 - Statik doğrulama geçiyor.
+- Denge/rota davranışını etkiliyorsa ilgili simülasyon veya grafik test geçiyor.
 - Baskı dosyası etkileniyorsa yeniden üretilmiş ve görsel kontrolden geçmiş.
 - `docs/DECISION_LOG.md` güncel.
 - `docs/TEST_LOG.md` güncel.
