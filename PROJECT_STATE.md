@@ -1,41 +1,81 @@
 # Project State
 
 **Son güncelleme:** 2026-08-18  
-**Son stabil prototip:** **v2.3**  
-**Kanonik kaynak:** `releases/v2.3/`  
-**Önceki stabil geri dönüş:** `releases/v2.2/`  
-**Durum:** **v2.3 STABLE / LOCKED.** Sonraki tasarım değişiklikleri v2.4+ olarak açılmalıdır.
+**Son stabil prototip:** **v2.3 STABLE / LOCKED**  
+**Aktif geliştirme adayı:** **v2.4 TEST-PASSED / NOT LOCKED**  
+**Stabil kanonik kaynak:** `releases/v2.3/`  
+**Aktif geliştirme kaynağı:** `releases/v2.4/`  
+**Geliştirme branch'i:** `agent/v2.4-acilis-ve-kilit-duzeltmeleri`
 
-## v2.3 kesin omurga
+v2.3 yerinde değiştirilmez. v2.4, kapsamlı v2.3 kırma testinde bulunan sorunları ve son tasarım kararlarını uygular; PDF/kart/preflight kapıları tamamlanmadan yeni stabil sürüm değildir.
 
-- Kaptan rolü kalıcıdır ve kaldırılmaz.
-- İlk rotayı Kaptan tek başına, olay bilgisi olmadan seçer.
-- Başarılı İsyan, Kaptanın ölümü, Kamara, mahsur kalma veya Kayıkçı seferinde yeni Kaptan seçilir.
-- Kaptan gece ayrıca uyanmaz; makamı otomatik Yakın/Uzak Ufuk bilgisi vermez.
-- Gemi bütün Haritalarda **2 Gövde** ile başlar.
-- Gemi alt kenarın dışında herhangi bir sütun hizasında başlayabilir; ilk Ufuk ve ilk Sis yasağı dinamiktir.
-- Harita havuzu **52**, Kayalık kategorisi **12**, toplam kart kimliği **118** olarak kalır.
-- `HAR-KY-01` = **Duvar Gibi Kayalık / Geçilmez Kayalık**.
-- `HAR-KY-03` = **Yolun Bittiği Yer / Geçilmez Kayalık**.
-- Bu iki kart kapalıyken diğer Kayalıklardan hiçbir biçimde ayırt edilemez; normal Harita/Ufuk/gizli bilgi kurallarına tabidir.
-- `5×5`, `5×6`, `6×5` kurulumlarında Kayalık kotasının içinde **1**; `5×7`, `6×6`, `6×7` kurulumlarında **2** Geçilmez bulunur.
-- Geçilmez Kayalık son Liman/Ufuk hattına kurulamaz; Moderatör başlangıçtan erişilebilir Ada üzerinden Limana en az bir gerçek ileri yol kaldığını gizlice doğrular.
-- Kapalı Geçilmez normal rota/Ufuk hedefidir. Seçilip açılırsa Gemi kareye girmez, mevcut konumda kalır; normal rota gününde hareket harcanır ve kart açık kamusal engel olur.
-- Acil geri dönüş yalnız açılmış/bilinen Geçilmez Kayalıklar bütün ileri rotaları kapatırsa çalışır; Gemi bir önceki ziyaret edilmiş kareye bir tam hareket/gün harcayarak döner ve çözülmüş olay tekrar çalışmaz.
+## v2.4 kesin geliştirme sözleşmesi
 
-## v2.3 doğrulama özeti
+### Açılış
 
-- Kart çifti karşılaştırması: **7.200 oyun**.
-- Seçilen çift temsilî doğrulama: **6.000 oyun**; Tayfa %55,47; gizli Geçilmeze çarpma %31,63; ilk rota çarpması %5,17; acil geri dönüş %3,43; kalıcı kilit 0.
-- 6–15 oyuncu × 3 süre tam duyarlılık: **9.000 oyun**; Tayfa %55,51; gizli Geçilmeze çarpma %32,21; acil geri dönüş %3,50; kalıcı kilit 0; kurulum hatası 0.
-- Geometri: **51.204 teorik / 51.102 yasal / 102 kurulumda reddedilecek**.
-- `python releases/v2.3/validate_release_v2_3.py`: **PASS**.
-- Kural kitabı PDF: **32 sayfa**; kart PDF: **32 sayfa**; preflight/görsel tarama: **PASS**.
+- Gemi soyut Harita-dışı noktada değil, Moderatörün alt kenarda seçtiği sütun hizasındaki **Kalkış Limanı** kurulum kartı/alanında başlar.
+- Kalkış Limanı 52 Harita kartı ve 118 ana kart kimliği dışında bir kurulum bileşenidir.
+- Üst sıradaki seçilmiş varış Limanı **Hedef Liman** olarak kalır.
+- İlk gün yalnız Kaptan seçimi yapılır; rota, Suçlama ve İsyan yoktur.
+- İlk tarafsız gecede Kaptan yalnız bir kez uyanır ve Sadakatini bilmeden **tam 1 yasal Yakın Ufuk** kartına gizlice bakar. Kart kapalı kalır.
+- Sadakatler ertesi sabah dağıtılır.
+- İlk gerçek rota normal eşzamanlı rota oylamasıdır; Kaptanın rota oyu 2 sayar.
+- Kaptan makamı sonraki gecelerde otomatik uyanış veya Ufuk bilgisi vermez.
 
-## Binary artefaktlar
+### Harita bilgi durumu
 
-- PDF'ler kalıcı Library'de `/Oyun-GitHub/v2.3/` altında tutulur.
-- Tam v2.3 ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.3.zip`.
-- Hash ve yollar: `releases/v2.3/BINARY_ARTIFACTS.md` ve `V23_RELEASE_MANIFEST.json`.
+- Kamusal olarak açılan/gösterilen Harita kartı tekrar kapanmaz.
+- Kamusal açık ama ziyaret edilmemiş kartın olayı henüz çözülmüş değildir; ilk gerçek girişte çözülür.
+- Kamusal açılan Geçilmez Kayalık anında bilinen engel olur ve rota/Ufuk hedefi değildir.
+- Gizli bakışlar kartın kamusal durumunu değiştirmez; kart kapalı kalır.
 
-"Stabil" ifadesi bu prototip sürümünün dondurulduğu anlamına gelir; ticari/final baskı olduğu anlamına gelmez. İnsan masa testi sonraki v2.4+ iyileştirmeleri için önerilir.
+### Rota güvenliği
+
+- Başlangıç Yakın Ufku toplam kilit olamaz; Kalkış Limanından en az bir gerçek ilk rota ve en az bir erişilebilir Ada üzerinden Hedef Limana gerçek yol bulunmalıdır.
+- Geçilmez nedeniyle seçilmiş kol çıkmaza dönüşürse acil geri dönüş ziyaret yolunu geriye doğru **Kalkış Limanına kadar** izleyebilir. Her geri adım normal hareket/gün tüketir; çözülmüş olay tekrar çalışmaz.
+- Başka yasal seçenek varken bilinen çıkmaz kola yeniden girilmez.
+- `Islak Deniz Haritası`, `Hayalet Işıkları` veya başka bir Harita yer değiştirme bütün gerçek Kalkış Limanı→Hedef Liman yollarını yok edecekse işlem uygulanmaz veya anında geri alınır. Moderatör bunun nedenini açıklamaz.
+
+### Kaptan beraberliği
+
+- İlk seçim beraberliğinde yalnız eşit adaylar arasında bir kez yeniden oylanır.
+- İkinci kez beraberlikte yalnız eşit adaylar Kader Zarı atar; en yüksek sonuç kazanır, en yüksek eşitse yalnız eşitler yeniden atar.
+
+### Değişmeyen omurga
+
+- Kaptan rolü kalıcıdır.
+- Başlangıç Gövdesi **2**.
+- 20 Karakter / 30 Güç / 15 Sadakat / 52 Harita / 12 Kayalık / 118 ana kart kimliği korunur.
+- `HAR-KY-01` ve `HAR-KY-03` gizli Geçilmez Kayalık olarak kalır ve kapalıyken normal Kayalıktan ayırt edilemez.
+- Küçük Haritalarda 1, büyük Haritalarda 2 Geçilmez kotası korunur.
+
+## v2.4 test sonucu
+
+- Regresyon testleri: **8/8 PASS**.
+- Geometri: **51.204 teorik / 51.102 legal / 102 rejected**.
+- Görünür ilk rota dalları: **135.430**.
+- Sonradan çıkmaz olabilen fakat Kalkış Limanıyla geri kazanılabilen ilk dallar: **8.791**.
+- Kalıcı ilk-dal kilidi: **0**.
+- Exhaustive Near-Horizon relocation: **1.667.231** transition.
+- Global yolu yok edeceği için rollback edilen relocation: **20**.
+- Guard sonrası kabul edilen kalıcı relocation kilidi: **0**.
+- Self-contained rota/sosyal-proxy: **9.000 oyun**, setup error **0**, hard route lock **0**, Hedef Limana ulaşma **%100**, ortalama yolculuk **6,21 gün**.
+- Bu 9.000 oyun tam Tayfa/Hain denge ölçümü değildir.
+
+## Release engineering
+
+- v2.4 route/social-proxy simülatörü proje-içi başka Python modülüne bağımlı değildir; yalnız Python standart kütüphanesi ve v2.4 full JSON spec gerekir.
+- Repo-side `releases/v2.4/validate_release_v2_4.py` geometri ve relocation auditini **yeniden hesaplar**; kayıtlı PASS sayısını tek başına kanıt saymaz.
+- Tam kaynak paketi Library'de `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.4-dev.zip` yolundadır.
+- ZIP SHA-256: `f5417e8627328cd1a5181436e9d3f8196365056207651d9ded8c17c42cef0662`; boyut `54207` byte.
+
+## v2.4'ü STABLE / LOCKED yapmadan önce kalanlar
+
+1. v2.4 kural kitabı PDF'sini üretmek.
+2. Etkilenen kart metinleriyle v2.4 kart PDF'sini üretmek.
+3. Kural/spec/kart/PDF çapraz doğrulaması yapmak.
+4. İki PDF'nin görsel ve baskı preflight'ını yapmak.
+5. Nihai binary hashleri ve release manifestini üretmek.
+6. Bu kapılar PASS olduktan sonra v2.4'ü ayrı bir stabil commit/release olarak kilitlemek.
+
+O zamana kadar otomatik "en yeni kilitli sürüm" seçimi **v2.3** üzerinde kalmalıdır.
