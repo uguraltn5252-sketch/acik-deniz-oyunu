@@ -20,19 +20,36 @@
 - Geçilmez Kayalık Limanın hemen kıçındaki son Harita/Ufuk hattına konulamaz.
 - Normalde geri hareket yasaktır. Yalnız Geçilmez Kayalık bütün yasal ileri rotaları kapatmışsa Gemi bir önceki bulunduğu kareye bir adım geri dönebilir.
 - Bu acil geri dönüş bir tam hareket/gün tüketir; çözülmüş kartın olayı tekrar çalışmaz.
+- Kayalık nedeniyle çıkmaz olduğu öğrenilmiş kola başka yasal seçenek varken hemen yeniden girilmez.
 - İlk rota tamamen kapatılamaz ve başlangıçtan itibaren matematiksel olarak çözümsüz Harita kurulamaz.
+- Girdap gibi zorunlu ek hareket Geçilmez Kayalık yüzünden yapılamıyorsa zorunlu ek hareket boşa düşer; aynı gün geri dönüş tetiklenmez. Sonraki normal rota gününde hâlâ hiçbir ileri rota yoksa acil geri dönüş uygulanır.
 
 Ayrıntılı gerekçeler: `docs/DECISION_LOG.md` ve `docs/V2_1_SONRASI_KARSILASTIRMA.md`.
+
+## Geçilmez Kayalık teknik test durumu
+
+**PASS.** `T-20260818-004` tamamlandı.
+
+- 51.204 teorik geometri yerleşimi kesin tarandı.
+- 15.000 yeni-kural davranışsal oyunu çalıştırıldı.
+- 6.000 kontrol oyunu çalıştırıldı.
+- Kalıcı rota kilidi: 0.
+- Kurulum hatası: 0.
+- Temsilî yeni-kural Tayfa ortalaması: %54,8.
+- Geri dönüş yaklaşık %4,2 oyunda görüldü.
+- Ortalama etki: +0,12 gün / +0,09 gece / yaklaşık +0,70 dakika.
+
+Ayrıntılı rapor: `docs/GECILMEZ_KAYALIK_V22_RAPOR.md`.
 
 ## Henüz uygulanması gereken teknik işler
 
 1. İnsan kural metnini yeni başlangıç + Geçilmez Kayalık + acil geri dönüş hükümleriyle güncelle.
 2. JSON/spec'te sabit başlangıç sütununu kaldır; dinamik başlangıç ve 1/2 Geçilmez Kayalık sayısını ekle.
 3. Ufuk yasallığında Geçilmez Kayalığı erişilemez hedef yap.
-4. Geri dönüş tetikleyicisini yalnız `sıfır ileri rota + Geçilmez Kayalık nedenselliği` durumunda aç.
-5. Daha önce çözülmüş karta geri dönüldüğünde olay tekrarını engelle.
-6. Regresyon testlerini bütün 6 Harita boyunda çalıştır.
-7. v2.1'in stabil doğrulamasını değişmeden koru.
+4. Asıl doğrulayıcıya kurulum erişilebilirliği, Kayalık adedi ve geri dönüş kenar hükümlerini ekle.
+5. v2.1'in stabil doğrulamasını değişmeden koru.
+6. Yeni kaynak seti üretildiğinde regresyonu tekrar çalıştır.
+7. Baskı PDF'leri yeni sürümde yeniden üretilecekse görsel kontrol yap.
 
 ## Değişiklik tamamlanmış sayılma ölçütü
 
