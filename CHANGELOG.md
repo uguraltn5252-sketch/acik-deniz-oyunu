@@ -1,25 +1,28 @@
 # Changelog
 
-## v2.2 - Stabil prototip
+## v2.3 - Stabil prototip
 
 **Tarih:** 18 Ağustos 2026  
-**Durum:** Kilitli release - `releases/v2.2/`
+**Durum:** **Kilitli release - `releases/v2.3/`**
 
-v2.1'e göre başlıca değişiklikler:
+v2.2'ye göre başlıca değişiklikler:
 
-- Gemi başlangıcı sabit merkezden çıkarıldı; alt kenarın dışında herhangi bir sütun hizası kullanılabilir.
-- İlk Yakın Ufuk ve ilk Sis yasağı başlangıç/Liman geometrisine göre dinamikleşti.
-- Kaptanın kalıcı çekirdek rol olduğu kilitlendi; ilk rotayı tek başına kör seçer.
-- Başarılı İsyan, Kaptanın ölümü, Kamara, mahsur kalma ve Kayıkçı seferinde yeni Kaptan seçimi korunur.
-- Kaptan gece ayrıca uyanmaz ve makamı otomatik Ufuk bilgisi vermez.
-- Gemi bütün haritalarda 2 Gövdeyle başlar; 3 Gövde adayı reddedildi.
-- Harita büyüklüğüne göre 1 veya 2 ayrı Geçilmez Kayalık işareti çekirdek mekaniğe eklendi.
-- Geçilmez Kayalık son Liman yaklaşım hattına konulamaz ve baştan çözümsüz kurulum yasaktır.
-- Yalnız Geçilmez Kayalık kaynaklı tam ileri çıkmazda bir önceki kareye bir tam gün harcayarak acil geri dönüş açılır; çözülmüş olay tekrar çalışmaz.
-- Kural kitabı PDF, kart PDF ve Geçilmez Kayalık işaret sayfası üretildi; görsel ve kaynak/PDF doğrulaması PASS.
+- Ayrı görünür Geçilmez Kayalık işaret/token sistemi kaldırıldı.
+- Geçilmez Kayalıklar 52 Harita kartının içindeki 12 Kayalık kartına entegre edildi; toplam kart kimliği 118 kaldı.
+- `HAR-KY-01` ve `HAR-KY-03` Geçilmez Kayalık oldu; kapalı kategori yüzleri normal Kayalıktan ayırt edilemez.
+- Küçük Haritalarda 1, büyük Haritalarda 2 Geçilmez normal Kayalık kotasının içinde zorunludur.
+- Kapalı Geçilmez normal Harita/Ufuk hedefidir ve bütün gizli bilgi/bakma/blöf kurallarına tabidir.
+- Seçilip açıldığında Gemi kareye girmez; mevcut konumda kalır. Normal rota gününde hareket harcanır ve kart açık kalıcı engele dönüşür.
+- Acil geri dönüş yalnız açılmış/bilinen Geçilmezlerin oluşturduğu tam ileri çıkmazda uygulanır.
+- Kaptan kalıcı rol, ilk rota, Kaptan yenileme kuralları ve bütün Haritalarda 2 Gövde korunur.
+- 7.200 kart çifti testi + 6.000 temsilî + 9.000 tam duyarlılık testinde kalıcı rota kilidi 0.
+- 51.204 geometri taraması ve v2.3 stabil doğrulayıcı PASS.
+- 32 sayfalık kural kitabı ve 32 sayfalık kart PDF'i preflight/görsel kontrolden geçti.
 
-Teknik kanıt: 51.204 geometri yerleşimi, 15.000 yeni-kural davranışsal oyun + 6.000 kontrol; kalıcı rota kilidi 0.
+## v2.2 - Önceki stabil prototip
 
-## v2.1 - Önceki stabil temel
+`releases/v2.2/` değiştirilemez geri dönüş referansıdır. Ayrı görünür Geçilmez Kayalık işareti sistemi yalnız bu tarihsel sürümde kalır.
 
-`releases/v2.1/` değiştirilemez geri dönüş referansı olarak korunur.
+## v2.1 - Tarihsel stabil temel
+
+`releases/v2.1/` değiştirilemez tarihsel geri dönüş referansıdır.
