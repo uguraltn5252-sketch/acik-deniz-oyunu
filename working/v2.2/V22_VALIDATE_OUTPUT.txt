@@ -1,0 +1,6 @@
+SONUC: PASS
+- v2.2 geliştirme sürümü / v2.1 baseline sözleşmesi doğru.
+- 118 kart kimliği ve v2.1 kanonik kart karması miras yoluyla kilitli.
+- Gövde 2; dinamik başlangıç; 1/2 Geçilmez Kayalık; Kaptan omurgası doğru.
+- Acil geri dönüş yalnız Kayalık kaynaklı tam çıkmaz koşuluna bağlı.
+GEOMETRY_AUDIT: {"invalid": 102, "invalid_by_shape": {"5x5": 0, "5x6": 0, "5x7": 20, "6x5": 8, "6x6": 50, "6x7": 24}, "legal": 51102, "total": 51204}
