@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "version": "2.3",
+    "date": "2026-08-18",
+    "baseline": "v2.2",
+    "status": "stable-locked",
+    "stable": true,
+    "reason": "Geçilmez Kayalıklar 52 Harita kartının içindeki normal Kayalık kartlarıdır ve kapalıyken ayırt edilemez."
+  },
+  "map_pool": {
+    "total_map_cards": 52,
+    "rock_cards_total": 12,
+    "impassable_rock_cards_total": 2,
+    "impassable_are_inside_rock_quota": true,
+    "overlay_markers": false,
+    "closed_category_face_distinguishable_from_other_rocks": false,
+    "replacements": [
+      {"card_id": "HAR-KY-01", "from": "Ufak Kayalık", "to": "Duvar Gibi Kayalık / Geçilmez Kayalık"},
+      {"card_id": "HAR-KY-03", "from": "Batık Kalyon copy", "to": "Yolun Bittiği Yer / Geçilmez Kayalık"}
+    ],
+    "preserve_direct_rock_damage_count": 5
+  },
+  "setup": {
+    "impassable_rocks_by_map": {
+      "5x5": 1,
+      "5x6": 1,
+      "6x5": 1,
+      "5x7": 2,
+      "6x6": 2,
+      "6x7": 2
+    },
+    "counts_inside_existing_rock_quota": true,
+    "moderator_knows_event_faces": true,
+    "players_do_not_know_impassable_identity_at_setup": true,
+    "forbidden": [
+      "top/final map row immediately aft of Port",
+      "setup with no legal first route",
+      "setup with no required Island-to-Port path"
+    ]
+  },
+  "movement": {
+    "unknown_rock_can_be_route_target": true,
+    "unknown_rock_can_be_horizon_target": true,
+    "on_route_selection_reveal_event_normally": true,
+    "on_reveal_impassable": {
+      "ship_enters_card": false,
+      "ship_stays_on_previous_square": true,
+      "normal_move_day_spent": true,
+      "night_follows_normally": true,
+      "hull_damage": 0,
+      "becomes_public_blocked_square": true
+    },
+    "known_impassable_is_legal_route_or_horizon": false,
+    "emergency_reverse": {
+      "enabled": true,
+      "only_if_all_forward_routes_blocked_by_known_impassable_rocks": true,
+      "destination": "previous visited square",
+      "cost": "one normal movement/day",
+      "retrigger_resolved_event": false
+    }
+  },
+  "information": {
+    "impassable_identity_obeys_normal_map_information_rules": true,
+    "private_peek_may_learn_identity": true,
+    "player_may_truthfully_report_lie_or_withhold_under_existing_rules": true,
+    "moderator_private_setup_knowledge_does_not_make_target_illegal_for_players": true
+  },
+  "unchanged": {
+    "starting_hull": 2,
+    "captain_permanent": true,
+    "captain_first_route": true,
+    "captain_replacement_rules": true
+  },
+  "validation": {
+    "technical_pass": true,
+    "geometry_total": 51204,
+    "geometry_legal": 51102,
+    "geometry_rejected": 102,
+    "permanent_route_locks": 0,
+    "stable_release_locked": true
+  }
+}
