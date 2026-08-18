@@ -1,0 +1,13 @@
+{
+  "scope": "self-contained route/social proxy; NOT a full Crew/Traitor balance model",
+  "games": 9000,
+  "setup_errors": 0,
+  "port_reached_rate": 1.0,
+  "hard_lock_rate": 0.0,
+  "mean_days": 6.2107777777777775,
+  "reef_hits_per_game": 0.09077777777777778,
+  "first_route_reef_hits_per_game": 0.012777777777777779,
+  "backtracks_per_game": 0.06,
+  "backtrack_to_start_port_per_game": 0.0036666666666666666,
+  "captain_opening_peeks_per_game": 1.0
+}
