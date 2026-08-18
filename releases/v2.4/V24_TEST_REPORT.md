@@ -1,6 +1,6 @@
 # OYUN v2.4 — Teknik Test Raporu
 
-**Durum:** PASS — geliştirme adayı; binary/PDF release gate tamamlanmadı.
+**Durum:** **PASS — STABLE / LOCKED release gate tamamlandı.**
 
 ## Hedeflenen regresyonlar
 
@@ -47,12 +47,20 @@ Unsafe örnekler bu exhaustive modelde 6×6 segmentinde 20 kez oluştu; guard ta
 - Kalkış Limanına kadar geri dönüş/oyun: **0.0037**
 - Kaptan ilk-gece bakışı: **1.0/oyun**
 
-Bu motor **tam Tayfa/Hain kazanma dengesi değildir**. Yalnız yeni rota güvenliği, bilgi görünürlüğü ve basit oyun davranışı için regresyon proxy'sidir.
+Bu motor **tam Tayfa/Hain kazanma dengesi değildir**. Yalnız yeni rota güvenliği, bilgi görünürlüğü ve basit oy davranışı için regresyon proxy'sidir.
 
 ## Release engineering
 
 `gizli_gecilmez_kayalik_v24_sim.py` proje içi hiçbir Python modülünü import etmez. Python standart kütüphanesi + `OYUN_SIMULASYON_SPEC_v2.4.json` ile tek başına çalışır. v2.3'teki eksik `tam_sistem_sim.py` sınıfı bu nedenle v2.4 canonical route testinde yoktur.
 
+## PDF ve fiziksel prototip kapısı
+
+- Kural PDF: 27 sayfa A4; açılabilir/searchable; preflight PASS; 27 sayfa render taraması PASS.
+- Kart PDF: 32 sayfa A4; 63,5 × 88,9 mm; uzun kenardan çift taraflı; 32 sayfa render taraması PASS.
+- Kart PDF v2.3'e göre yalnız beklenen sayfalarda değişir: kapak, Pusula, Terk Edilmiş Karakol, Çalışan Fener ve Kalkış Limanı kurulum kartının bulunduğu ön/arka yapraklar.
+- 118 ana kart kimliği eksiksiz; `SET-KL-01` ayrıca 118 dışı kurulum bileşenidir.
+- 12 Kayalık arka yüzünün normalize iç kırpımları birebir aynıdır; piksel farkı 0.
+
 ## Sonuç
 
-**Kural/state-machine/rota güvenliği düzeltmeleri PASS.** v2.4 `TEST-PASSED` geliştirme adayıdır. PDF/kart binary'leri güncellenmeden ve preflight edilmeden `STABLE / LOCKED` yapılmamalıdır.
+**Kural/state-machine/rota güvenliği ve PDF/baskı release kapıları PASS. v2.4 STABLE / LOCKED.** Sonraki tasarım değişiklikleri v2.5+ hattında yapılmalıdır.
