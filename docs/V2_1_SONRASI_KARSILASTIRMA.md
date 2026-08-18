@@ -8,7 +8,7 @@ Amaç: Kilitli/stabil v2.1 kaynaklarını, v2.1 sonrasında alınan yeni kararla
 
 - **TAŞINACAK**: açık kullanıcı kararı var; yeni geliştirme hattına uygulanacak.
 - **KORU / OMURGA**: kaldırılmayacak veya değiştirilmeyecek çekirdek kural.
-- **TESTTE**: yön belli, sayısal eşik henüz kilitlenmedi.
+- **TEST GEREKİYOR**: karar yönü belli; uygulama ayrıntısı regresyon testine bağlanmalı.
 
 ---
 
@@ -46,98 +46,74 @@ Bu maddeler yeni sürümlerde "Kaptanı kaldır" şeklinde yorumlanamaz.
 
 ---
 
-## 3. Geçilmez Kayalık — TAŞINACAK, güvenlik kontrolü zorunlu
+## 3. Geçilmez Kayalık — TAŞINACAK
 
-Geçilmez Kayalık fiziksel olarak girilemeyen bir Harita karesidir; gemi bu kareyi rota olarak seçemez ve yanından dolaşmak zorundadır.
+Geçilmez Kayalık fiziksel olarak girilemeyen özel Harita engelidir. Her oyunda bulunur; sayısı Harita büyüklüğüne göre 1 veya 2 olur.
 
-### Yeni yerleşim kuralı
+### Adet kuralı
 
-**Geçilmez Kayalık, Limanın hemen kıçındaki son Harita/Ufuk hattına konulamaz.** Başka deyişle Limana son yaklaşımı oluşturan en üst Harita satırı Geçilmez Kayalık içeremez.
+Mevcut Harita boyları için temiz eşik:
 
-### Ek zorunlu güvenlik kontrolü
+| Harita | Geçilmez Kayalık |
+|---|---:|
+| 5×5 | 1 |
+| 5×6 | 1 |
+| 6×5 | 1 |
+| 5×7 | 2 |
+| 6×6 | 2 |
+| 6×7 | 2 |
 
-Dinamik alt-kenar başlangıcı nedeniyle yalnız "son satıra koyma" yasağı her Harita biçiminde tek başına yeterli değildir. Özellikle `6×5` Haritada gemi bir uç sütundan başlayıp Liman karşı uç sütundaysa tek bir zorunlu çapraz koridor oluşabilir. Bu koridordaki bir Geçilmez Kayalık Limanı tamamen kilitleyebilir.
+Genel ifade: **30 veya daha az Harita karesi = 1; 35 veya daha fazla Harita karesi = 2.**
 
-Bu nedenle Moderatör, Geçilmez Kayalığı yerleştirdikten sonra:
+### Yerleşim kuralı
 
-> **Seçilen başlangıç karesinden seçilen Limana en az bir normal ileri yasal yol kaldığını doğrulamak zorundadır.**
+**Geçilmez Kayalık, Limanın hemen kıçındaki son Harita/Ufuk hattına konulamaz.** Limana son yaklaşımı oluşturan hat Geçilmez Kayalık içermez.
 
-Bu doğrulama geçmiyorsa Geçilmez Kayalık başka kareye taşınır.
+Ayrıca kurulum sonunda:
 
-Tek Geçilmez Kayalık için yapılan kesin grafik kontrolünde `5×5`, `5×6`, `5×7`, `6×6` ve `6×7` biçimlerinde son satır dışındaki tek engel bütün başlangıç/Liman çiftlerinde yolu korudu. `6×5` biçiminde ise iki karşı-uç başlangıç/Liman durumunda zorunlu çapraz koridor üzerindeki dört konum kilit üretebildi. Bu nedenle erişilebilirlik kontrolü kural metninde kalıcı olmalıdır.
+- ilk rotada en az bir yasal ileri seçenek bulunmalıdır;
+- Geçilmez Kayalıklar Haritayı başlangıçtan itibaren matematiksel olarak tamamen çözümsüz hâle getirmemelidir.
+
+Bu iki kontrol, acil geri hareket kuralının "imkânsız kurulumu tamir eden" bir araç değil, oyunda oluşan gerçek bir çıkmazdan geri dönme mekanizması olarak kalmasını sağlar.
+
+### Acil geri hareket — tek istisna
+
+Normal kural değişmez: **Gemi geri gidemez ve bekleyemez.**
+
+Tek istisna:
+
+> Rota seçimi anında hiçbir yasal ileri rota kalmamışsa ve bu çıkmazın nedeni Geçilmez Kayalık ise Gemi geri hareket edebilir.
+
+Uygulama tanımı:
+
+1. Önce normal ileri rota yasallığı hesaplanır.
+2. En az bir yasal ileri rota varsa geri hareket **yasaktır**.
+3. Hiç ileri rota yoksa, Geçilmez Kayalık(lar) yok sayıldığında ileri rota yeniden doğuyorsa çıkmazın nedeni Geçilmez Kayalık sayılır.
+4. Yalnız bu durumda Gemi **bir önceki bulunduğu kareye bir adım geri döner**.
+5. Geri dönülen kart daha önce çözülmüşse olayı yeniden çalışmaz.
+6. Bu geri hareket o günün normal hareketini tüketir; bedelsiz bir "undo" değildir.
+7. Sonraki turda normal ileri rota seçimi yeniden yapılır.
+8. Gerekirse, aynı şartlar tekrar oluşursa daha eski bir kareye bir sonraki turda bir kez daha geri dönülebilir.
+
+Bu istisna başka rota kısıtları, oyuncu kararı, Güç kartı veya geçici etkiler yüzünden oluşan çıkmazlara otomatik olarak uygulanmaz. Tetik için Geçilmez Kayalığın nedensel olması gerekir.
+
+### Neden bu biçim?
+
+Geçilmez Kayalık artık yalnız kurulum süsü değil, gerçek bir rota baskısıdır. Oyuncular yanlış koridora girerse sefer bir veya daha fazla gün uzayabilir; fakat oyun sırf engel yüzünden sonsuza kadar kilitlenmez. Geri dönüşün bir tam hareket tüketmesi, engelin bedelini korur.
 
 ---
 
-## 4. Başlangıç Gövdesi — TESTTE
+## 4. Başlangıç Gövdesi — KORU / OMURGA
 
-### Mevcut v2.1
+**Gemi bütün Harita boylarında 2 Gövdeyle başlar.**
 
-Bütün Haritalarda 2 Gövde.
+- 2 = sağlam
+- 1 = su alıyor
+- 0 = battı
 
-### Yeni tasarım talebi
+Harita boyuna göre 3 Gövdeye çıkma fikri reddedildi. Önceki denemelerde 3 Gövde Hainin gemiyi batırma yolunu gereğinden fazla zayıflatıyordu. Kullanıcı kararıyla Gövde tekrar kesin biçimde **2** olarak kilitlendi.
 
-Gövde değeri Harita boyuna göre 3 olabilsin.
-
-### Eski yüksek örneklem sonucu
-
-Mevcut normal kurulumlarda 3 Gövde Tayfa zaferini ortalama yaklaşık `%82,3` seviyesine çıkarmıştı; dolayısıyla **yalnız Gövdeyi 3 yapmak dengeli değil**.
-
-### 2026-08-18 yeniden hesaplama
-
-Korunmuş `tam_sistem_sim.py` motoruyla uzun Haritalarda 2 ve 3 Gövde yeniden sınandı. Mevcut uzun-harita hasar kotalarıyla 3 Gövde hâlâ fazla güvenli çıktı:
-
-| Oyuncu | Harita | 2 Gövde Tayfa | 3 Gövde Tayfa |
-|---:|---|---:|---:|
-| 6 | 5×7 | %53,5 | %77,0 |
-| 8 | 5×7 | %55,9 | %78,1 |
-| 10 | 5×7 | %59,5 | %85,5 |
-| 12 | 6×7 | %61,3 | %85,6 |
-| 15 | 6×7 | %58,3 | %81,7 |
-
-Her hücre 3.000 yapay oyunla ölçüldü. Bu test dinamik başlangıç değişikliği uygulanmadan önceki kanonik motor üzerindedir; nihai denge testi değildir ama yön çok nettir.
-
-### Mevcut 14 doğrudan-hasar kartının tamamı kullanılırsa
-
-Aday 52 kartlık havuzda en fazla `9 Açık Deniz + 5 Kayalık = 14` doğrudan Gövde-hasarı kartı vardır.
-
-`5×7` Haritada 3 Gövde + 14 hasar kartı kabul edilebilir banda yaklaşır:
-
-| Oyuncu | Tayfa zaferi |
-|---:|---:|
-| 6 | %59,4 |
-| 7 | %53,3 |
-| 8 | %52,9 |
-| 9 | %59,4 |
-| 10 | %62,8 |
-
-Buna karşılık `6×7` Haritada aynı 3 Gövde + mevcut maksimum 14 hasar kartı hâlâ fazla güvenlidir:
-
-| Oyuncu | Tayfa zaferi |
-|---:|---:|
-| 11 | %74,8 |
-| 12 | %76,2 |
-| 13 | %80,3 |
-| 14 | %78,6 |
-| 15 | %81,0 |
-
-Ek sentetik hasar denemelerinde `6×7 + 3 Gövde`yi yaklaşık `%55–61` banda çekmek için mevcut 14 hasar kartına ek yaklaşık **4–6 hasar olayı** gerekti. Bu, mevcut fiziksel havuzla doğrudan mümkün değildir; 4–6 kartın hasara çevrilmesi veya yeni çoklu-hasar mekanikleri gerekir.
-
-### Şimdilik önerilen Gövde kuralı
-
-**En temiz aday:**
-
-- `5×5`: 2 Gövde
-- `5×6`: 2 Gövde
-- `5×7`: **3 Gövde yalnız 14 doğrudan-hasar kartı (9 Deniz + 5 Kayalık) kullanılıyorsa**
-- `6×5`: 2 Gövde
-- `6×6`: 2 Gövde
-- `6×7`: 2 Gövde
-
-Böylece 3 Gövde gerçekten Harita boyuna bağlı özel bir "uzun sefer" kuralı olur fakat Hainin gemiyi batırma yolu ortadan kalkmaz.
-
-`6×7` için 3 Gövde istenirse önce Harita havuzunun hasar yapısı ayrıca yeniden tasarlanmalıdır.
-
-**Durum: TESTTE.** Kullanıcı onayından sonra bu tablo çekirdek kurala dönüştürülecek.
+Tersane Koyu gibi başlangıç Gövdesine kadar onarım yapan etkilerin tavanı da 2 olarak kalır.
 
 ---
 
@@ -168,6 +144,8 @@ Böylece 3 Gövde gerçekten Harita boyuna bağlı özel bir "uzun sefer" kural�
 
 Genel Yakın/Uzak Ufuk tanımı korunur. Yalnız ilk Ufuk artık sabit sütunlara bağlı değildir; geminin seçilen alt-kenar başlangıcına göre dinamik türetilir.
 
+Geçilmez Kayalık bir Ufuk karesindeyse o kare yasal rota/Ufuk hedefi değildir. Acil geri hareket yalnız ileri yasal rota sayısı sıfıra düştüğünde ayrıca değerlendirilir.
+
 ---
 
 # Son durum
@@ -177,11 +155,18 @@ Doğrudan yeni sürüme taşınacak kararlar:
 1. Gemi alt kenarın dışında herhangi bir hizada başlayabilir.
 2. İlk rotayı Kaptan tek başına seçer.
 3. Kaptan rolü kalıcı omurgadır ve asla kaldırılmaz.
-4. Geçilmez Kayalık Limanın hemen kıçındaki son Ufuk/Harita hattına konulamaz.
-5. Geçilmez Kayalık yerleştirildikten sonra başlangıç→Liman erişimi mutlaka yeniden doğrulanır.
+4. Gemi bütün Haritalarda 2 Gövdeyle başlar.
+5. Her oyunda Harita büyüklüğüne göre 1 veya 2 Geçilmez Kayalık bulunur.
+6. Geçilmez Kayalık Limanın hemen kıçındaki son Ufuk/Harita hattına konulamaz.
+7. Normalde geri hareket kesin yasaktır; yalnız Geçilmez Kayalık bütün ileri rotaları kapattığında Gemi önceki karesine bir adım geri dönebilir.
+8. Geri hareket bir tam hareket/gün maliyetidir ve çözülmüş olayı tekrar tetiklemez.
 
-Gövde ölçeklemesi için öneri:
+## Regresyon/test hedefleri
 
-> `5×7` uzun Harita = 3 Gövde + 14 hasar kartı; diğer mevcut Harita boyları = 2 Gövde.
-
-Bu madde kullanıcı onayına kadar **TESTTE** kalır.
+- Her Harita boyunda doğru 1/2 Geçilmez Kayalık adedi.
+- Son Liman yaklaşım hattında Geçilmez Kayalık üretilememesi.
+- İlk rota kilidinin kurulumda engellenmesi.
+- En az bir ileri rota varken geri hareketin kesinlikle yasak olması.
+- Sıfır ileri rota + Geçilmez Kayalık nedenselliğinde geri hareketin açılması.
+- Geri dönülen açık kart olayının ikinci kez çözülmemesi.
+- İki Geçilmez Kayalık bulunan büyük Haritalarda tekrar geri dönüşün sonlu ve izlenebilir kalması.
