@@ -2,12 +2,12 @@
   "metadata": {
     "version": "2.4",
     "baseline": "v2.3",
-    "status": "development-test-passed-not-locked",
-    "stable": false,
-    "locked": false
+    "status": "stable-locked",
+    "stable": true,
+    "locked": true
   },
   "opening": {
-    "start_position": "Kalkış Limanı setup card/area aligned to any bottom-edge column",
+    "start_position": "physical Kalkış Limanı setup card SET-KL-01 aligned to any bottom-edge column; outside 52 maps / 118 main card identities",
     "opening_day": "captain_election_only",
     "opening_neutral_night": {
       "captain_wakes_once": true,
@@ -47,6 +47,15 @@
     "maps": 52,
     "rock_cards": 12,
     "main_card_identities": 118,
-    "impassable_ids": ["HAR-KY-01", "HAR-KY-03"]
+    "impassable_ids": [
+      "HAR-KY-01",
+      "HAR-KY-03"
+    ]
+  },
+  "setup_component": {
+    "id": "SET-KL-01",
+    "count": 1,
+    "outside_main_card_identities": true,
+    "physical_in_card_pdf": true
   }
 }
