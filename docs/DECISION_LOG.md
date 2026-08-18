@@ -39,20 +39,32 @@ Tasarım kararlarının gerekçesi burada tutulur. Sohbet içinde alınmış bir
 ### D-20260818-003 — Geçilmez Kayalık Liman yaklaşım hattına konulamaz
 
 - **Durum:** Kabul
-- **Sorun:** Geçilmez Kayalık son yaklaşımda veya zorunlu koridorda Limanı geometrik olarak kilitleyebilir.
-- **Karar:** Geçilmez Kayalık Limanın hemen kıçındaki son Harita/Ufuk hattına konulamaz. Ayrıca yerleştirmeden sonra seçilen gemi başlangıcından seçilen Limana en az bir normal ileri yasal yol kaldığı doğrulanır; kalmıyorsa Kayalık başka kareye taşınır.
-- **Gerekçe:** Son satır yasağı final kilidini engeller; dinamik başlangıç nedeniyle özellikle `6×5` karşı-uç başlangıç/Liman durumunda ek erişilebilirlik testi de gereklidir.
+- **Sorun:** Geçilmez Kayalık son yaklaşımda Limanı geometrik olarak kilitleyebilir.
+- **Karar:** Geçilmez Kayalık Limanın hemen kıçındaki son Harita/Ufuk hattına konulamaz.
+- **Gerekçe:** Final yaklaşımının doğrudan fiziksel engelle kapanmasını önlemek.
 - **Etkilenen dosyalar:** Harita kurulum kuralı, JSON/spec, harita doğrulayıcı, simülasyon.
-- **Test:** Tek engelli kesin grafik testi; `6×5` biçiminde karşı-uç rotalarda son satır dışındaki kritik çapraz karelerin de kilit üretebildiği görüldü.
 - **İlgili issue/PR:** #1 / PR #2
 
-### D-20260818-004 — Gövdeyi Harita boyuna göre ölçekleme
+### D-20260818-004 — Gövde bütün Haritalarda 2 olarak kalır
 
-- **Durum:** Testte
-- **Sorun:** Uzun seferin 3 Gövdeyi hak edip etmediği ve bunun Hainin batırma yolunu aşırı zayıflatıp zayıflatmadığı.
-- **Karar adayı:** `5×7` Harita 3 Gövde kullanabilir ancak doğrudan hasar kotası mevcut fiziksel maksimum olan `9 Deniz + 5 Kayalık = 14` olmalıdır. Diğer mevcut Harita boylarında 2 Gövde korunur.
-- **Gerekçe:** Mevcut hasar kotalarıyla 3 Gövde uzun Haritalarda Tayfa zaferini yaklaşık `%77–86` bandına taşıyor. `5×7` üzerinde 14 hasar kartıyla oran yaklaşık `%53–63` banda dönüyor. `6×7` üzerinde ise aynı maksimum havuzla `%75–81` seviyesinde kalıyor.
+- **Durum:** Kabul; önceki 3 Gövde adayı reddedildi
+- **Sorun:** Uzun Haritalarda 3 Gövde kullanılması değerlendirilmişti.
+- **Karar:** Gemi bütün Harita boylarında **2 Gövdeyle** başlar. Harita boyuna göre 3 Gövdeye çıkılmaz.
+- **Gerekçe:** Önceki simülasyonlarda 3 Gövde Hainin batırma yolunu belirgin biçimde zayıflattı; kullanıcı 2 Gövdeyi kesinleştirdi.
 - **Etkilenen dosyalar:** Kurulum tablosu, Gövde göstergesi, Tersane Koyu onarım tavanı, JSON/spec, simülasyon.
-- **Test:** T-20260818-003.
-- **Sonuç:** Kullanıcı onayı bekleniyor; henüz çekirdek kurala kilitlenmedi.
+- **Test:** Eski 2/3 Gövde duyarlılık testleri referans; yeni regresyonda yalnız 2 Gövde kanonik olacak.
+- **Sonuç:** 2 Gövde kilitli kural.
+- **İlgili issue/PR:** #1 / PR #2
+
+### D-20260818-005 — Geçilmez Kayalık her oyunda bulunur; çıkmazda geri dönüş açar
+
+- **Durum:** Kabul
+- **Sorun:** Geçilmez Kayalığın yalnız deneysel bir modül olması istenmiyor; her oyunda rota baskısı yaratması, fakat oyunu kalıcı kilitlememesi gerekiyor.
+- **Karar:** Harita büyüklüğüne göre her oyunda 1 veya 2 Geçilmez Kayalık bulunur. Mevcut boylarda `5×5`, `5×6`, `6×5` için 1; `5×7`, `6×6`, `6×7` için 2 kullanılır. Normalde Gemi geri gidemez. Ancak rota seçimi anında hiçbir yasal ileri rota kalmamışsa ve bunun nedeni Geçilmez Kayalık ise Gemi bir önceki bulunduğu kareye bir adım geri dönebilir.
+- **Nedensellik testi:** Geçilmez Kayalıklar yok sayıldığında en az bir ileri rota doğuyorsa geri dönüş istisnası açılır. En az bir ileri rota zaten varsa geri dönüş yasaktır.
+- **Maliyet:** Geri dönüş o günün normal hareketini tüketir; ücretsiz geri alma değildir. Daha önce çözülmüş karta dönülürse olay yeniden çalışmaz. Aynı şart sonraki turda sürüyorsa yeniden bir adım geri dönülebilir.
+- **Kurulum güvenliği:** İlk rota tamamen kapatılamaz; başlangıçtan itibaren matematiksel olarak çözümsüz Harita kurulamaz. Acil geri hareket oyuncuların/rota etkilerinin oluşturduğu gerçek bir çıkmazdan çıkmak içindir.
+- **Gerekçe:** Geçilmez Kayalık somut rota hafızası ve yol uzaması üretirken, oyunun temel 'ileri git' kuralını yalnız çok dar ve kontrol edilebilir bir durumda esnetir.
+- **Etkilenen dosyalar:** Harita kurulum tablosu, hareket kuralı, Ufuk yasallığı, JSON/spec, simülasyon ve regresyon testleri.
+- **Test:** Yeni regresyon hedefleri PR #2 karşılaştırma belgesinde tanımlandı.
 - **İlgili issue/PR:** #1 / PR #2
