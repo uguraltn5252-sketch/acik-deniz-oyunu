@@ -86,3 +86,14 @@ Zorunlu ek hareket (ör. Girdap) tam Kayalık çıkmazına çarparsa ek hareket 
 - Ayrıntılı rapor: `docs/GECILMEZ_KAYALIK_V22_RAPOR.md`
 - Deney kodu: `experiments/gecilmez_kayalik_v22_sim.py`
 - Sonuç özeti: `experiments/GECILMEZ_KAYALIK_V22_SONUCLARI.csv`
+
+## T-20260818-005 — v2.2 çekirdek kaynak sözleşmesi + kesin geometri regresyonu
+
+- **Kaynaklar:** `working/v2.2/OYUN_TAM_KURALLAR_v2.2.md`, `working/v2.2/OYUN_SIMULASYON_SPEC_v2.2.json`, `working/v2.2/oyun_simulasyon_v2_2.py`.
+- **Komut:** `python oyun_simulasyon_v2_2.py --validate-only --geometry-audit`
+- **Sonuç:** **PASS**.
+- **Doğrulanan çekirdek:** v2.2 geliştirme sürümü / v2.1 baseline; 118 kart kimliği ve kanonik kart karması mirası; bütün Haritalarda 2 Gövde; dinamik alt-kenar başlangıcı; 1/2 Geçilmez Kayalık tablosu; son hat yasağı; Kaptanın kalıcı rolü, kör ilk rota ve İsyan/ölüm/Kamara/mahsur/Kayıkçı yenilemesi; yalnız Kayalık kaynaklı tam çıkmazda acil geri dönüş.
+- **Kesin geometri sonucu:** toplam `51.204`, yasal `51.102`, kurulumda reddedilecek `102`.
+- **Geçersiz dağılım:** `5×5=0`, `5×6=0`, `5×7=20`, `6×5=8`, `6×6=50`, `6×7=24`.
+- **Sürüm hükmü:** çekirdek metin + makine sözleşmesi + doğrulayıcı birbiriyle uyumludur. v2.2 henüz stabil değildir; kural kitabı/PDF ve görsel son kontrol release gate'te açık kalır.
+- **Ham çıktı:** `working/v2.2/V22_VALIDATE_OUTPUT.txt`.
