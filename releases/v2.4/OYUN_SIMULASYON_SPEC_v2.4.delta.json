@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "version": "2.4",
+    "baseline": "v2.3",
+    "status": "development-test-passed-not-locked",
+    "stable": false,
+    "locked": false
+  },
+  "opening": {
+    "start_position": "Kalkış Limanı setup card/area aligned to any bottom-edge column",
+    "opening_day": "captain_election_only",
+    "opening_neutral_night": {
+      "captain_wakes_once": true,
+      "private_near_horizon_peek_count": 1,
+      "loyalty_known": false,
+      "peeked_card_stays_face_down": true
+    },
+    "loyalties": "dealt_next_morning",
+    "first_real_route": "normal_simultaneous_route_vote",
+    "captain_route_vote_weight": 2,
+    "captain_office_wakes_later_nights": false
+  },
+  "map_visibility": {
+    "public_reveal_stays_face_up": true,
+    "public_unvisited_event_resolved": false,
+    "event_resolves_on_first_entry": true,
+    "public_impassable_blocks_immediately": true,
+    "private_peek_changes_public_state": false
+  },
+  "route_safety": {
+    "start_port_returnable_by_emergency_reverse": true,
+    "initial_near_horizon_total_lock_forbidden": true,
+    "setup_requires_real_start_to_island_to_target_port_path": true,
+    "relocation_guard": "cancel_or_rollback_if_all_true_Kalkış_Limanı_to_Hedef_Liman_paths_would_be_destroyed",
+    "unsafe_relocation_reason_public": false
+  },
+  "captain_election_tie": {
+    "first_tie": "one_revote_among_tied",
+    "second_tie": "fate_die_highest_wins_among_tied",
+    "repeat_only_highest_ties": true
+  },
+  "unchanged": {
+    "starting_hull": 2,
+    "characters": 20,
+    "powers": 30,
+    "loyalties": 15,
+    "maps": 52,
+    "rock_cards": 12,
+    "main_card_identities": 118,
+    "impassable_ids": ["HAR-KY-01", "HAR-KY-03"]
+  }
+}
