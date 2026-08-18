@@ -1,0 +1,7 @@
+SONUC: PASS
+- v2.3 / v2.2 baseline sözleşmesi doğru.
+- 52 Harita / 12 Kayalık / 2 gizli Geçilmez / 118 toplam kimlik doğru.
+- HAR-KY-01 ve HAR-KY-03 Geçilmez; kategori yüzünde ayırt edilemez.
+- Kapalı Geçilmez normal Ufuk/rota hedefidir; açılınca Gemi giremez ve kart kamusal engel olur.
+- Kaptan omurgası ve 2 Gövde korunur.
+GEOMETRY_AUDIT: {"invalid": 102, "invalid_by_shape": {"5x5": 0, "5x6": 0, "5x7": 20, "6x5": 8, "6x6": 50, "6x7": 24}, "legal": 51102, "total": 51204}

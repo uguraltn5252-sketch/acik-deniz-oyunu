@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "game": "OYUN",
+    "version": "2.3",
+    "status": "development-tested",
+    "baseline_release": "v2.2",
+    "stable": false,
+    "date": "2026-08-18"
+  },
+  "inheritance": {
+    "base_rules": "working/v2.2/OYUN_TAM_KURALLAR_v2.2.md",
+    "stable_release": "releases/v2.2/",
+    "rule": "Bu dosyada değiştirilmeyen bütün hükümler v2.2'den miras alınır."
+  },
+  "cards": {
+    "total_card_identities": 118,
+    "map_cards": 52,
+    "map_categories": {
+      "Acik Deniz": 30,
+      "Kayalik": 12,
+      "Ada": 6,
+      "Deniz Feneri": 4
+    },
+    "canonical_cards_sha256": "3f8c5a0f311d569f12730e032d66a189f5e14e562483a0a89853458f8a2160ab",
+    "impassable_rock_cards": [
+      {
+        "id": "HAR-KY-01",
+        "name": "Duvar Gibi Kayalık",
+        "family": "Geçilmez Kayalık",
+        "category_face": "KAYALIK",
+        "indistinguishable_from_other_rocks": true,
+        "damage": false,
+        "impassable": true,
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır."
+      },
+      {
+        "id": "HAR-KY-03",
+        "name": "Yolun Bittiği Yer",
+        "family": "Geçilmez Kayalık",
+        "category_face": "KAYALIK",
+        "indistinguishable_from_other_rocks": true,
+        "damage": false,
+        "impassable": true,
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır."
+      }
+    ],
+    "retained_duplicate": {
+      "id": "HAR-KY-02",
+      "family": "Batık Kalyon"
+    },
+    "rock_direct_damage_count": 5
+  },
+  "setup": {
+    "starting_hull": 2,
+    "start_column": "any bottom-edge column",
+    "impassable_is_overlay_marker": false,
+    "impassable_is_map_card": true,
+    "counts_inside_rock_quota": true,
+    "impassable_count_by_shape": {
+      "5x5": 1,
+      "5x6": 1,
+      "6x5": 1,
+      "5x7": 2,
+      "6x6": 2,
+      "6x7": 2
+    },
+    "forbidden_final_port_horizon_row": true,
+    "moderator_must_preserve_start_island_port_path": true,
+    "moderator_does_not_reveal_impassable_positions": true
+  },
+  "hidden_map_semantics": {
+    "closed_impassable_is_normal_rock_category_card": true,
+    "closed_impassable_is_route_candidate": true,
+    "closed_impassable_is_horizon_candidate": true,
+    "normal_private_peek_rules_apply": true,
+    "normal_map_swap_rules_apply": true,
+    "player_may_truth_lie_or_stay_silent_about_private_info": true,
+    "special_visible_symbol_or_marker": false
+  },
+  "reveal_semantics": {
+    "ship_enters_square": false,
+    "ship_stays_at_previous_position": true,
+    "normal_route_day_consumes_movement": true,
+    "card_stays_face_up": true,
+    "revealed_card_becomes_public_blocker": true,
+    "revealed_card_is_route_or_horizon_candidate": false,
+    "event_internal_extra_move_hit": "reveal; ship stays; extra movement ends; no same-event emergency reverse"
+  },
+  "emergency_backtrack": {
+    "normal_backward_movement_forbidden": true,
+    "only_revealed_known_impassables_count_as_blockers": true,
+    "trigger": "zero legal forward routes and ignoring revealed impassables restores at least one route",
+    "distance_per_day": 1,
+    "consumes_normal_movement_day": true,
+    "resolved_event_repeats": false
+  },
+  "captain": {
+    "permanent_role": true,
+    "first_route_selected_by_captain_alone_blind": true,
+    "route_vote_weight": 2,
+    "tie_breaker": true,
+    "night_wakeup": false,
+    "automatic_horizon_information": false,
+    "replacement_rules_inherited_from_v2_2": true
+  },
+  "technical_evidence": {
+    "candidate_pair_comparison_games": 7200,
+    "preferred_pair_games": 6000,
+    "preferred_pair_crew_win": 0.5546666667,
+    "preferred_pair_games_with_impassable_hit": 0.3163333333,
+    "preferred_pair_first_route_hit": 0.0516666667,
+    "preferred_pair_games_with_backtrack": 0.0343333333,
+    "full_sensitivity_games": 9000,
+    "full_sensitivity_crew_win": 0.5551111111,
+    "full_sensitivity_games_with_impassable_hit": 0.3221111111,
+    "full_sensitivity_first_route_hit": 0.0525555556,
+    "full_sensitivity_games_with_backtrack": 0.035,
+    "hard_route_locks": 0,
+    "setup_errors": 0,
+    "geometry": {
+      "total": 51204,
+      "legal": 51102,
+      "invalid": 102,
+      "invalid_by_shape": {
+        "5x5": 0,
+        "5x6": 0,
+        "5x7": 20,
+        "6x5": 8,
+        "6x6": 50,
+        "6x7": 24
+      }
+    }
+  },
+  "release_gate": {
+    "human_rules": true,
+    "machine_spec": true,
+    "validator": true,
+    "core_validation_pass": true,
+    "rulebook_pdf": true,
+    "cards_pdf": true,
+    "visual_pdf_review": true,
+    "source_pdf_crosscheck": true,
+    "human_playtest": false,
+    "final_release_lock": false
+  }
+}
