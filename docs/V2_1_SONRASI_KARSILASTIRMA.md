@@ -2,14 +2,13 @@
 
 Tarih: 2026-08-18
 
-Amaç: Kilitli/stabil v2.1 kaynaklarını, v2.1 paketinden sonra kullanıcı tarafından konuşulan veya kararlaştırılan değişikliklerle karşılaştırmak. Bu belge **oyun kuralını değiştirmez**; yalnız hangi maddelerin `develop` hattına taşınmaya hazır olduğunu ayırır.
+Amaç: Kilitli/stabil v2.1 kaynaklarını, v2.1 sonrasında alınan yeni kararlarla karşılaştırmak. Bu belge `develop` için geçiş planıdır; `releases/v2.1/` yerinde değiştirilmez.
 
 ## Durum etiketleri
 
-- **TAŞINACAK**: v2.1 sonrasında açık kullanıcı kararı bulundu; develop sürümüne uygulanmalı.
-- **KORU**: v2.1 hükmünü değiştiren doğrulanmış daha yeni karar bulunmadı.
-- **DENEYSEL**: fikir/test adayı; çekirdek kurala alınmamalı.
-- **DOĞRULAMA GEREKİYOR**: konuşmalarda anılmış olabilir fakat güvenilir son karar zinciri bulunmadan uygulanmamalı.
+- **TAŞINACAK**: açık kullanıcı kararı var; yeni geliştirme hattına uygulanacak.
+- **KORU / OMURGA**: kaldırılmayacak veya değiştirilmeyecek çekirdek kural.
+- **TESTTE**: yön belli, sayısal eşik henüz kilitlenmedi.
 
 ---
 
@@ -17,124 +16,132 @@ Amaç: Kilitli/stabil v2.1 kaynaklarını, v2.1 paketinden sonra kullanıcı tar
 
 ### v2.1
 
-Gemi Haritanın en alt satırının hemen dışında başlar ancak sütunu sabittir:
+Gemi Haritanın alt kenarının dışında ancak sabit merkez/sağ-orta sütunda başlar.
 
-- 5 sütunlu Harita: 3. sütunun altında.
-- 6 sütunlu Harita: sağ orta olan 4. sütunun altında.
-- 6 sütunlu Haritada Moderatör bu konumu değiştiremez.
-- İlk Yakın Ufuklar buna göre sabit 2-3-4 veya 3-4-5 sütunlarıdır.
+### Yeni karar
 
-### v2.1 sonrası kullanıcı kararı
+Gemi Haritanın alt kenarının dışındaki **herhangi bir hizada** başlayabilir. Sabit merkez başlangıcı kaldırılır.
 
-2026-08-15 tarihli sonraki çalışma kararında gemi yine Haritanın dışından, alt kenardan başlar fakat **alt taraftaki herhangi bir hizada başlayabilir**. Başlangıç yerinin Moderatör veya zarla belirlenmesi seçenek olarak bırakılmıştır; kesin olan kısım sabit merkez başlangıcının kaldırılmasıdır.
-
-### Sonuç
-
-**TAŞINACAK.** Bu, doğrulanmış v2.1 sonrası değişikliktir.
-
-Etkilenecek alanlar:
-
-- İnsan kuralı: kesin başlangıç geometrisi bölümü.
-- JSON/spec: başlangıç sütunu ve ilk Ufuk türetimi.
-- Python doğrulayıcı: sabit sütun kontrolleri kaldırılmalı; seçilen başlangıç sütununa göre dinamik ilk Yakın Ufuk kontrolü eklenmeli.
-- Limana erişilebilirlik doğrulaması: her izin verilen başlangıç konumunda veya seçilen başlangıç konumu için yeniden hesaplanmalı.
-- İlk üç Yakın Ufukta Sis yasağı: başlangıç konumuna göre dinamik uygulanmalı.
-- Moderatör kurulum metni.
-
-Açık tasarım noktası: Moderatör seçimi mi, zar mı, yoksa iki yöntemden biri mi resmi yöntem olacak? Bu ayrıntı kesinleşmeden de "herhangi bir alt hizadan başlayabilir" çekirdek hükmü uygulanabilir.
+Başlangıç sütunu seçildikten sonra ilk Yakın Ufuk, ilk Sis yasağı ve Limana erişilebilirlik o başlangıca göre dinamik hesaplanır.
 
 ---
 
-## 2. Kaptan sistemi — KORU / DOĞRULAMA GEREKİYOR
+## 2. Kaptan — KORU / OMURGA
 
-### v2.1
+Kaptan rolü **asla kaldırılmayacak**.
 
-Kaptan tamamen oyundadır. v2.1'de:
+Kesin hükümler:
 
-- Kör/açık Kaptan seçimi yapılır.
-- Kaptanın rota oyu 2'dir.
-- Rota beraberliğini Kaptan bozar.
-- İlk rotayı Kaptan tek başına ve kör seçer.
-- İsyan yalnız Kaptana karşı yapılır.
-- Kaptan değişimini tetikleyen ölüm/Kamara/mahsur/Kayıkçı durumları vardır.
-- Çürümüş Erzak/İskorbüt açılışında Kaptan özel durumdur.
-- Bazı Güç ve Harita etkileri doğrudan Kaptanı referans alır.
-
-v2.1'de kaldırılmış olanlar yalnız şunlardır:
-
+- Kaptan oyunun kalıcı çekirdek rolüdür.
+- Oyun başında Kaptan açık oylamayla seçilir.
+- **Geminin ilk rotasını Kaptan tek başına seçer.** İlk rota olay bilgisi olmadan kör seçimdir.
+- Sonraki rota oylamalarında Kaptanın rota oyu 2'dir.
+- Rota beraberliğini Kaptan yalnız berabere seçenekler arasından bozar.
+- İsyan sistemi Kaptana bağlı kalır.
+- Kaptan ölür/Kamaraya girer/mahsur kalır/Kayıkçı seferine giderse yeni Kaptan seçilir.
 - Kaptan gece ayrıca uyanmaz.
 - Kaptan makamı otomatik Yakın/Uzak Ufuk bilgisi vermez.
 
-### v2.1 sonrası durum
-
-Elde edilen güvenilir kaynaklarda Kaptanın **tamamen kaldırıldığı** açık ve tarihlenebilir bir v2.1 sonrası karar doğrulanamadı. Bu nedenle "Kaptanı kaldır" şeklinde bir değişiklik doğrudan uygulanırsa çok sayıda bağlı kuralı yanlışlıkla bozma riski vardır.
-
-### Sonuç
-
-Şimdilik **KORU**: v2.1 Kaptan sistemi devam eder; gece uyanışı ve otomatik Ufuk bilgisi yoktur.
-
-"Kaptanı tamamen çıkar" kararı yeniden açıkça teyit edilirse bu tek satırlık değişiklik değildir; aşağıdakiler birlikte yeniden tasarlanmalıdır:
-
-- Kurulum sırası.
-- İlk rota seçimi.
-- Rota oyu ağırlığı ve beraberlik.
-- İsyan sistemi.
-- İskorbüt açılışı.
-- Kaptan hedefleyen Harita/Güç kartları.
-- Kaptan işareti bileşeni.
-- Kaptan değişimi hükümleri.
-- JSON/spec ve doğrulayıcı.
+Bu maddeler yeni sürümlerde "Kaptanı kaldır" şeklinde yorumlanamaz.
 
 ---
 
-## 3. Geçilmez Kayalık / Geçilmez Sığlık — DENEYSEL
+## 3. Geçilmez Kayalık — TAŞINACAK, güvenlik kontrolü zorunlu
 
-### v2.1
+Geçilmez Kayalık fiziksel olarak girilemeyen bir Harita karesidir; gemi bu kareyi rota olarak seçemez ve yanından dolaşmak zorundadır.
 
-Kayalık kartları olay üretir; çekirdek harita geometrisinde "bu kareye asla girilemez" türünde sabit engel yoktur. Rota yasallığı Harita sınırı, Limana erişim ve geçici/yazılı rota kısıtlarıyla çözülür.
+### Yeni yerleşim kuralı
 
-### Test/fikir geçmişi
+**Geçilmez Kayalık, Limanın hemen kıçındaki son Harita/Ufuk hattına konulamaz.** Başka deyişle Limana son yaklaşımı oluşturan en üst Harita satırı Geçilmez Kayalık içeremez.
 
-"Asla geçilemez" bir Kayalık/Sığlık ekleyip oyuncuların yanından dolaşması ve seferin uzaması fikri test edilmiştir. Mevcut denetim sonucunda:
+### Ek zorunlu güvenlik kontrolü
 
-- İlk iki satırda ve en fazla 1 adet kullanıldığında test edilen kurulumlarda Limanı kapatmamıştır.
-- Ortalama süreyi/gece sayısını az miktarda artırmıştır.
-- Son satırda bazı Limanları kesin kapatabildiği görülmüştür.
-- Son hüküm: **çekirdek kural değil, güvenli deney modülü**.
+Dinamik alt-kenar başlangıcı nedeniyle yalnız "son satıra koyma" yasağı her Harita biçiminde tek başına yeterli değildir. Özellikle `6×5` Haritada gemi bir uç sütundan başlayıp Liman karşı uç sütundaysa tek bir zorunlu çapraz koridor oluşabilir. Bu koridordaki bir Geçilmez Kayalık Limanı tamamen kilitleyebilir.
 
-### Sonuç
+Bu nedenle Moderatör, Geçilmez Kayalığı yerleştirdikten sonra:
 
-**DENEYSEL.** v2.1 sonrası çekirdek `develop` kuralına otomatik eklenmeyecek.
+> **Seçilen başlangıç karesinden seçilen Limana en az bir normal ileri yasal yol kaldığını doğrulamak zorundadır.**
 
-İnsan masa testinde rota baskısı yetersiz bulunursa ayrı modül/branch olarak yeniden test edilebilir. Kullanılırsa yalnız ilk iki satır + en fazla 1 adet kısıtı korunmalıdır.
+Bu doğrulama geçmiyorsa Geçilmez Kayalık başka kareye taşınır.
+
+Tek Geçilmez Kayalık için yapılan kesin grafik kontrolünde `5×5`, `5×6`, `5×7`, `6×6` ve `6×7` biçimlerinde son satır dışındaki tek engel bütün başlangıç/Liman çiftlerinde yolu korudu. `6×5` biçiminde ise iki karşı-uç başlangıç/Liman durumunda zorunlu çapraz koridor üzerindeki dört konum kilit üretebildi. Bu nedenle erişilebilirlik kontrolü kural metninde kalıcı olmalıdır.
 
 ---
 
-## 4. Başlangıç Gövdesi — KORU
+## 4. Başlangıç Gövdesi — TESTTE
 
-### v2.1
+### Mevcut v2.1
 
-Gemi **2 Gövdeyle** başlar:
+Bütün Haritalarda 2 Gövde.
 
-- 2 = sağlam
-- 1 = su alıyor
-- 0 = battı
+### Yeni tasarım talebi
 
-Tersane Koyu da en fazla başlangıç değeri olan 2 Gövdeye kadar onarır.
+Gövde değeri Harita boyuna göre 3 olabilsin.
 
-### v2.1 sonrası durum
+### Eski yüksek örneklem sonucu
 
-v2.1 sonrası 2'den 3'e çıkarıldığına dair doğrulanmış son kullanıcı kararı bulunmadı. Aksine v2.1 güncellemesinde başlangıç Gövdesinin değiştirilmemesi özellikle korunmuştu.
+Mevcut normal kurulumlarda 3 Gövde Tayfa zaferini ortalama yaklaşık `%82,3` seviyesine çıkarmıştı; dolayısıyla **yalnız Gövdeyi 3 yapmak dengeli değil**.
 
-### Sonuç
+### 2026-08-18 yeniden hesaplama
 
-**KORU: 2 Gövde.**
+Korunmuş `tam_sistem_sim.py` motoruyla uzun Haritalarda 2 ve 3 Gövde yeniden sınandı. Mevcut uzun-harita hasar kotalarıyla 3 Gövde hâlâ fazla güvenli çıktı:
+
+| Oyuncu | Harita | 2 Gövde Tayfa | 3 Gövde Tayfa |
+|---:|---|---:|---:|
+| 6 | 5×7 | %53,5 | %77,0 |
+| 8 | 5×7 | %55,9 | %78,1 |
+| 10 | 5×7 | %59,5 | %85,5 |
+| 12 | 6×7 | %61,3 | %85,6 |
+| 15 | 6×7 | %58,3 | %81,7 |
+
+Her hücre 3.000 yapay oyunla ölçüldü. Bu test dinamik başlangıç değişikliği uygulanmadan önceki kanonik motor üzerindedir; nihai denge testi değildir ama yön çok nettir.
+
+### Mevcut 14 doğrudan-hasar kartının tamamı kullanılırsa
+
+Aday 52 kartlık havuzda en fazla `9 Açık Deniz + 5 Kayalık = 14` doğrudan Gövde-hasarı kartı vardır.
+
+`5×7` Haritada 3 Gövde + 14 hasar kartı kabul edilebilir banda yaklaşır:
+
+| Oyuncu | Tayfa zaferi |
+|---:|---:|
+| 6 | %59,4 |
+| 7 | %53,3 |
+| 8 | %52,9 |
+| 9 | %59,4 |
+| 10 | %62,8 |
+
+Buna karşılık `6×7` Haritada aynı 3 Gövde + mevcut maksimum 14 hasar kartı hâlâ fazla güvenlidir:
+
+| Oyuncu | Tayfa zaferi |
+|---:|---:|
+| 11 | %74,8 |
+| 12 | %76,2 |
+| 13 | %80,3 |
+| 14 | %78,6 |
+| 15 | %81,0 |
+
+Ek sentetik hasar denemelerinde `6×7 + 3 Gövde`yi yaklaşık `%55–61` banda çekmek için mevcut 14 hasar kartına ek yaklaşık **4–6 hasar olayı** gerekti. Bu, mevcut fiziksel havuzla doğrudan mümkün değildir; 4–6 kartın hasara çevrilmesi veya yeni çoklu-hasar mekanikleri gerekir.
+
+### Şimdilik önerilen Gövde kuralı
+
+**En temiz aday:**
+
+- `5×5`: 2 Gövde
+- `5×6`: 2 Gövde
+- `5×7`: **3 Gövde yalnız 14 doğrudan-hasar kartı (9 Deniz + 5 Kayalık) kullanılıyorsa**
+- `6×5`: 2 Gövde
+- `6×6`: 2 Gövde
+- `6×7`: 2 Gövde
+
+Böylece 3 Gövde gerçekten Harita boyuna bağlı özel bir "uzun sefer" kuralı olur fakat Hainin gemiyi batırma yolu ortadan kalkmaz.
+
+`6×7` için 3 Gövde istenirse önce Harita havuzunun hasar yapısı ayrıca yeniden tasarlanmalıdır.
+
+**Durum: TESTTE.** Kullanıcı onayından sonra bu tablo çekirdek kurala dönüştürülecek.
 
 ---
 
 ## 5. Hain sayısı — KORU
-
-### v2.1 kesin tablo
 
 | Oyuncu | Hain | Tayfa |
 |---:|---:|---:|
@@ -149,73 +156,32 @@ v2.1 sonrası 2'den 3'e çıkarıldığına dair doğrulanmış son kullanıcı 
 | 14 | 5 | 9 |
 | 15 | 5 | 10 |
 
-### v2.1 sonrası durum
-
-Bu tabloyu değiştiren doğrulanmış daha yeni bir kullanıcı kararı bulunmadı. Daha eski deneysel Hain dağılımları v2.1'in yerine geçirilemez.
-
-### Sonuç
-
-**KORU.**
-
-Özet grup gösterimi:
-
-- 6: 1 Hain
-- 7: 2 Hain
-- 8-10: 3 Hain
-- 11-13: 4 Hain
-- 14-15: 5 Hain
-
 ---
 
 ## 6. İlk Hain uyanışı ve Sis — KORU
 
-v2.1'de ilk Hain uyanışında Hainler birbirini tanır ve takım olarak bir Yakın Ufka bakar; **saldırı yapamazlar**. Sis olsa bile ilk uyanış saldırı yasağını kaldırmaz.
-
-Bunu değiştiren doğrulanmış daha yeni karar bulunmadı.
-
-**KORU.**
+İlk Hain uyanışında Hainler birbirini tanır ve takım olarak bir Yakın Ufka bakar; saldırı yapamazlar. Sis ilk uyanıştaki saldırı yasağını kaldırmaz.
 
 ---
 
 ## 7. Ufuk geometrisi — KISMEN DEĞİŞECEK
 
-Yakın/Uzak Ufkun tanımı değişmiyor:
-
-- Yakın Ufuk: bir normal hareket ilerideki yasal İskele/Pruva/Sancak karşılıkları.
-- Uzak Ufuk: bunların hemen arkasındaki iki sıra ilerideki karşılıklar ve yasal iki-hamle yolu şartı.
-
-Ancak gemi başlangıcı artık sabit sütunda olmayacağı için **ilk Ufuk koordinatları sabit değer olarak tutulamaz**.
-
-Sonuç:
-
-- Genel Ufuk tanımı: **KORU**.
-- Başlangıçtaki sabit 2-3-4 / 3-4-5 sütun hükmü: **KALDIR / DİNAMİKLEŞTİR**.
+Genel Yakın/Uzak Ufuk tanımı korunur. Yalnız ilk Ufuk artık sabit sütunlara bağlı değildir; geminin seçilen alt-kenar başlangıcına göre dinamik türetilir.
 
 ---
 
-# İlk geçiş sonucu
+# Son durum
 
-Şu anda doğrudan develop sürümüne uygulanmaya hazır tek kesin v2.1 sonrası mekanik değişiklik:
+Doğrudan yeni sürüme taşınacak kararlar:
 
-> **Gemi Haritanın alt kenarının dışındaki herhangi bir hizada başlayabilir; sabit merkez/sağ-orta başlangıç kaldırılır.**
+1. Gemi alt kenarın dışında herhangi bir hizada başlayabilir.
+2. İlk rotayı Kaptan tek başına seçer.
+3. Kaptan rolü kalıcı omurgadır ve asla kaldırılmaz.
+4. Geçilmez Kayalık Limanın hemen kıçındaki son Ufuk/Harita hattına konulamaz.
+5. Geçilmez Kayalık yerleştirildikten sonra başlangıç→Liman erişimi mutlaka yeniden doğrulanır.
 
-Buna bağlı olarak ilk Ufuk, Sis yasağı ve başlangıç erişilebilirlik doğrulaması dinamikleşmelidir.
+Gövde ölçeklemesi için öneri:
 
-Şu aşamada çekirdek kural olarak değiştirilmemesi gerekenler:
+> `5×7` uzun Harita = 3 Gövde + 14 hasar kartı; diğer mevcut Harita boyları = 2 Gövde.
 
-- Başlangıç Gövdesi: 2.
-- Hain tablosu: v2.1 tablosu.
-- Kaptan: v2.1'deki biçimiyle mevcut; yalnız gece uyanışı ve otomatik Ufuk bilgisi yok.
-- Geçilmez Kayalık/Sığlık: deneysel modül, çekirdek değil.
-- İlk Hain uyanışındaki saldırı yasağı.
-
-## Sonraki teknik iş
-
-Ayrı bir değişiklik branch'inde yalnız **dinamik alt-kenar başlangıcı** uygulanmalı ve şu testler yazılmalı:
-
-1. Her Harita genişliğinde tüm izin verilen alt başlangıç sütunları için en az bir yasal ilk rota bulunması.
-2. Seçilen Limana erişim geometrisinin korunması.
-3. İlk Yakın Ufukta Sis yasağının seçilen başlangıca göre doğru üç/iki hedefe uygulanması.
-4. Kenar başlangıçlarında Yakın Ufkun 2 hedefe düşebilmesinin kurallarla uyumu.
-5. Harita kurulum üreticisinin hiçbir başlangıçta zorunlu kilit üretmemesi.
-6. Girdap/Ters Akıntı ve diğer rota kısıtlarının yeni başlangıçla sıfır yasal rota oluşturmaması.
+Bu madde kullanıcı onayına kadar **TESTTE** kalır.
