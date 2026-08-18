@@ -1,0 +1,52 @@
+{
+  "version": "2.3",
+  "date": "2026-08-18",
+  "status": "stable-locked",
+  "previous_stable": "v2.2",
+  "canonical_source": "releases/v2.3/",
+  "binary_artifacts": {
+    "OYUN_Kartlar_A4_Prototip_v2.3.pdf": {
+      "bytes": 398964,
+      "sha256": "91d34850bc8b0bc895d36d0090fbd682c723484ed615ffc6e383bcc186511d63",
+      "library": "/Oyun-GitHub/v2.3/OYUN_Kartlar_A4_Prototip_v2.3.pdf"
+    },
+    "OYUN_Kural_Kitabi_v2.3.pdf": {
+      "bytes": 127609,
+      "sha256": "aec5acc83ced2931401c066d9cd570e844952573940f97e9d9603531d501ff87",
+      "library": "/Oyun-GitHub/v2.3/OYUN_Kural_Kitabi_v2.3.pdf"
+    },
+    "OYUN_SIMULASYON_PAKETI_v2.3.zip": {
+      "bytes": 487777,
+      "sha256": "d0c5562cfbb81c752b01f549026e11b281ea54f57b0d3545c7d4e25fdcdd331b",
+      "library": "/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.3.zip"
+    }
+  },
+  "source_hashes": {
+    "OYUN_TAM_KURALLAR_v2.3.md": "02868321b847d65cbc5755c126fa2d548f3bc644eb8c553c094d528cd821881d",
+    "OYUN_SIMULASYON_SPEC_v2.3.json": "15a0ade41d82da8f19c0fbaa3a432af06cb7b5fd818c4377ddce32a0293cb8a6",
+    "oyun_simulasyon_v2_3.py": "3266fe8443a312e4121cfd4c0e23e6541d16156e9f895b83f6ee3e766d166288",
+    "GIZLI_GECILMEZ_KAYALIK_V23_RAPOR.md": "30900ecb6af735fc01f913d9d59d0c8961f0a2d0a3e326191ee5d3cb2d34c95b"
+  },
+  "cards_contract": {
+    "map_cards": 52,
+    "rock_cards": 12,
+    "impassable_rock_cards": 2,
+    "total_card_identities": 118,
+    "impassable_card_ids": ["HAR-KY-01", "HAR-KY-03"],
+    "closed_face_distinguishable": false
+  },
+  "validation": {
+    "validator": "PASS",
+    "geometry_total": 51204,
+    "geometry_legal": 51102,
+    "geometry_rejected": 102,
+    "candidate_pair_games": 7200,
+    "representative_games": 6000,
+    "full_sensitivity_games": 9000,
+    "permanent_route_locks": 0,
+    "setup_errors": 0,
+    "rulebook_pages": 32,
+    "cards_pdf_pages": 32,
+    "pdf_preflight": "PASS"
+  }
+}
