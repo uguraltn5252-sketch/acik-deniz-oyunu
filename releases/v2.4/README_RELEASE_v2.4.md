@@ -1,43 +1,37 @@
-# OYUN v2.4 — Test-Passed Geliştirme Adayı
+# OYUN v2.4 — STABLE / LOCKED
 
 **Taban:** v2.3 STABLE / LOCKED  
-**Durum:** TEST-PASSED / NOT LOCKED  
+**Durum:** **STABLE / LOCKED**  
 **Tarih:** 18 Ağustos 2026
 
-Bu klasör, v2.3 kapsamlı kırma testinde bulunan rota kilitleri, kamusal Harita görünürlüğü belirsizliği, Kaptan açılış akışı, seçim beraberliği ve eksik simülasyon bağımlılığı sorunlarını düzeltmek için oluşturulan v2.4 geliştirme hattıdır. v2.3 yerinde değiştirilmez.
+v2.4, v2.3 kapsamlı kırma testinde bulunan rota kilitleri, kamusal Harita görünürlüğü belirsizliği, Kaptan açılış akışı, seçim beraberliği ve eksik simülasyon bağımlılığı sorunlarını düzeltir. v2.3 yerinde değiştirilmemiştir ve önceki geri dönüş sürümü olarak korunur. Sonraki tasarım değişiklikleri v2.5+ olarak açılmalıdır.
 
 ## v2.4 ana değişiklikleri
 
-- Gemi artık soyut Harita-dışı başlangıçta değil, seçilen sütun hizasındaki **Kalkış Limanı** kurulum kartı/alanında başlar.
-- Acil geri dönüş ilk Harita satırından **Kalkış Limanına** dönebilir.
+- Gemi, Haritanın alt kenarında seçilen sütun hizasındaki fiziksel **Kalkış Limanı** kurulum kartında başlar. Bu kart 52 Harita ve 118 ana kart kimliğinin dışındadır.
+- Acil geri dönüş ilk Harita satırından Kalkış Limanına kadar uzanabilir.
 - İlk gün yalnız Kaptan seçilir.
 - İlk tarafsız gecede Kaptan Sadakatini bilmeden yalnız **1 yasal Yakın Ufuk** kartına gizlice bakar; kart kapalı kalır.
 - Sadakatler ertesi sabah dağıtılır.
-- İlk gerçek rota artık Kaptanın tek başına kör seçimi değil, normal eşzamanlı rota oylamasıdır; Kaptanın rota oyu 2 sayar.
-- Kamusal olarak açılan Harita kartı tekrar kapanmaz. Açık ama ziyaret edilmemiş kartın olayı ilk gerçek girişe kadar çözülmez.
-- Kamusal açılan Geçilmez Kayalık anında bilinen fiziksel engel olur.
-- Harita kartı yer değiştirme etkileri Kalkış Limanı→Hedef Liman bütün gerçek yollarını yok ederse değişiklik iptal edilir/geri alınır.
-- Kaptan seçimi iki kez berabere kalırsa Kader Zarı fallback'i seçimi sonlandırır.
-- Rota/sosyal-proxy simülatörü proje-içi bağımlılık kullanmayacak şekilde self-contained yeniden yazıldı; yalnız Python standart kütüphanesi ve v2.4 JSON spec gerekir.
+- İlk gerçek rota normal eşzamanlı rota oylamasıdır; Kaptanın rota oyu 2 sayar.
+- Kamusal açılan Harita kartı tekrar kapanmaz; açık ama ziyaret edilmemiş kartın olayı ilk gerçek girişe kadar çözülmez.
+- Kamusal açılan Geçilmez anında bilinen fiziksel engel olur.
+- Harita yer değiştirmesi bütün gerçek Kalkış Limanı→Hedef Liman yollarını yok edecekse işlem iptal edilir/geri alınır.
+- Kaptan seçimi ikinci beraberlikte Kader Zarıyla kesin sonuca gider.
+- Rota/sosyal-proxy motoru self-contained'dir; proje-içi Python bağımlılığı yoktur.
 
 ## Doğrulama
 
-- Regresyon testleri: **8/8 PASS**.
+- Regresyon: **8/8 PASS**.
 - Geometri: **51.204 teorik / 51.102 legal / 102 rejected**.
-- Kalkış Limanı sonrası kalıcı ilk-kol kilidi: **0**.
-- Exhaustive Near-Horizon relocation denemesi: **1.667.231**.
-- Solvability guard tarafından geri alınan unsafe relocation: **20**.
-- Guard sonrası kabul edilen kalıcı relocation kilidi: **0**.
-- Self-contained rota/sosyal-proxy matrisi: **9.000 oyun**, **0 setup error**, **0 hard route lock**, **%100 Hedef Limana ulaşma**.
-- Bu matris tam Tayfa/Hain kazanma dengesi değildir; yeni rota ve bilgi akışının güvenlik regresyonudur.
+- Kalıcı ilk-kol kilidi: **0**.
+- Exhaustive Near-Horizon relocation: **1.667.231** transition; unsafe **20** işlem rollback; guard sonrası kalıcı kilit **0**.
+- Self-contained rota/sosyal-proxy: **9.000 oyun / 0 setup error / 0 hard-lock / %100 Hedef Limana ulaşma**.
+- Kural PDF: **27 sayfa A4**, preflight/görsel tarama PASS.
+- Kart PDF: **32 sayfa A4**, 63,5×88,9 mm, uzun kenardan çift taraflı; preflight/görsel tarama PASS.
+- 118 ana kart kimliği kart PDF'sinde eksiksiz; ayrıca `SET-KL-01` Kalkış Limanı kurulum kartı eklenmiştir.
+- 12 Kayalık arka yüzü piksel düzeyinde özdeştir; gizli Geçilmez kimliği arka yüzden sızmaz.
 
-Ayrıntılar `V24_TEST_REPORT.md`, `V24_EXHAUSTIVE_AUDIT.json` ve `V24_ROUTE_MATRIX_SUMMARY.json` içindedir. Tam ham matris ve tam kaynak paket `SOURCE_PACKAGE.md` içindeki Library ZIP'inde tutulur.
+## Kilit kuralı
 
-## Stabil release için eksikler
-
-- v2.4 kural PDF'si yeniden üretilmeli.
-- Etkilenen kart metinleriyle v2.4 kart PDF'si yeniden üretilmeli.
-- PDF kaynak-kural çapraz kontrolü ve görsel preflight yapılmalı.
-- Son manifest/hashler binary artefaktlardan sonra yeniden üretilmeli.
-
-Bu eksikler tamamlanmadan v2.4 `STABLE / LOCKED` olarak işaretlenmemelidir.
+`releases/v2.4/` bundan sonra yerinde değiştirilmez. Yeni tasarım değişiklikleri **v2.5+** hattında yapılır.
