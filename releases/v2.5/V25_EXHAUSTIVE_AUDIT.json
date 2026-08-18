@@ -1,0 +1,30 @@
+{
+  "version": "2.5",
+  "geometry": {
+    "total": 51204,
+    "legal": 51102,
+    "invalid": 102,
+    "invalid_by_shape": {"5x5": 0, "5x6": 0, "6x5": 8, "5x7": 20, "6x6": 50, "6x7": 24},
+    "visible_first_branches": 135430,
+    "recoverable_deadend_first_branches": 8791,
+    "permanent_first_branch_locks_with_returnable_start_port": 0
+  },
+  "baseline_relocation": {
+    "attempts": 1667231,
+    "unsafe_rolled_back": 20,
+    "accepted_permanent_locks": 0,
+    "by_shape": {
+      "5x5": {"attempts": 8301, "unsafe_rolled_back": 0, "accepted_locks": 0},
+      "5x6": {"attempts": 16415, "unsafe_rolled_back": 0, "accepted_locks": 0},
+      "6x5": {"attempts": 13806, "unsafe_rolled_back": 0, "accepted_locks": 0},
+      "5x7": {"attempts": 382795, "unsafe_rolled_back": 0, "accepted_locks": 0},
+      "6x6": {"attempts": 397806, "unsafe_rolled_back": 20, "accepted_locks": 0},
+      "6x7": {"attempts": 848108, "unsafe_rolled_back": 0, "accepted_locks": 0}
+    }
+  },
+  "scurvy_5x5_exact": {"transitions": 1836984, "winnability_breaks": 5288, "guard_rejected": 5288, "accepted_violations": 0},
+  "scurvy_6m_sample": {"transitions": 6000000, "accepted_violations": 0, "source": "V25_SCURVY_RELOCATION_6M.csv in full package"},
+  "island_adjacency_50k": {"trials": 50000, "initial_bad": 0, "swap_unavailable": 242, "proposed_dynamic_adjacency_violations": 2461, "guard_rejected_adjacency": 2461, "accepted_adjacency_violations": 0, "proposed_violation_rate": 0.04922},
+  "stateful_fuzz_448k": {"games": 72000, "metrics": {"actions": 448812, "move": 436952, "public_reveal": 35844, "swap": 37968, "swap_accept": 36195, "reef_hit": 6958, "backtrack": 4902}, "failures": []},
+  "status": "PASS"
+}

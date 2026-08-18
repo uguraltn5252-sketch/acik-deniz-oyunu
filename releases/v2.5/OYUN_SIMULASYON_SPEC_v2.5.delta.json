@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "version": "2.5",
+    "baseline": "v2.4 STABLE / LOCKED",
+    "status": "STABLE / LOCKED",
+    "stable": true,
+    "locked": true,
+    "date": "2026-08-19",
+    "next_design_line": "v2.6+"
+  },
+  "relocation_guard": {
+    "preserve_recoverable_port_path_when_scurvy_cleared": true,
+    "preserve_recoverable_island_then_port_path_when_scurvy_active": true,
+    "preserve_island_adjacency_gamewide": true,
+    "failure": "cancel_or_immediately_rollback_without_reason"
+  },
+  "island_adjacency": {
+    "scope": "game_wide_invariant",
+    "forbidden": ["Girdap", "Ters Akıntı"],
+    "neighborhood": "8-neighbor"
+  },
+  "fate_rewrite_impassable": {
+    "allowed": true,
+    "impassable_stays_face_up_blocker": true,
+    "impassable_counts_visited": false,
+    "redirect_same_movement_window": true
+  },
+  "release_integrity": {
+    "human_traitor_table_present": true,
+    "machine_damage_quota_present": true,
+    "regression_output_nonempty_required": true,
+    "stale_dev_manifest_forbidden_in_stable_package": true,
+    "all_runtime_dependencies_packaged_and_hashed": true
+  },
+  "unchanged": {
+    "starting_hull": 2,
+    "characters": 20,
+    "powers": 30,
+    "loyalties": 15,
+    "maps": 52,
+    "rock_cards": 12,
+    "main_card_identities": 118,
+    "start_port_component": "SET-KL-01",
+    "impassable_ids": ["HAR-KY-01", "HAR-KY-03"]
+  },
+  "opening_power_contract": {
+    "initial_packet": "N-1 real powers + 1 Spoiled Ration",
+    "ration_owner_draws_real_power_after_scurvy_resolution": true,
+    "real_power_per_player_before_first_route": 1
+  }
+}

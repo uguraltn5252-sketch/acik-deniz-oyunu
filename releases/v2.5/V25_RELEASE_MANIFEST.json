@@ -1,0 +1,46 @@
+{
+  "version": "2.5",
+  "date": "2026-08-19",
+  "status": "STABLE / LOCKED",
+  "stable": true,
+  "locked": true,
+  "baseline": {"version": "2.4", "commit": "a90e666e69e09c62bce93f62e0e913770b0d9740"},
+  "canonical_source": "releases/v2.5/",
+  "next_design_line": "v2.6+",
+  "full_source_package": {
+    "library_path": "/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.5.zip",
+    "sha256": "975dd77d435a835fcf3faa864c5624b0542fadb419fa7d34217ed32fe87aa046",
+    "size_bytes": 2082476,
+    "inner_hash_entries": 46,
+    "inner_hash_mismatches": 0
+  },
+  "card_contract": {
+    "characters": 20, "powers": 30, "scurvy_setup_card": 1, "loyalties": 15,
+    "maps": 52, "rock_cards": 12, "main_game_card_identities": 118,
+    "start_port_setup_component": "SET-KL-01", "impassable_ids": ["HAR-KY-01", "HAR-KY-03"],
+    "starting_hull": 2
+  },
+  "tests": {
+    "core_regression": "13/13 PASS",
+    "full_engine_regression": "8/8 PASS",
+    "geometry": {"total": 51204, "legal": 51102, "rejected": 102, "permanent_first_branch_locks": 0},
+    "baseline_relocation": {"attempts": 1667231, "unsafe_rolled_back": 20, "accepted_permanent_locks": 0},
+    "scurvy_relocation_5x5_exact": {"transitions": 1836984, "winnability_breaks": 5288, "guard_rejected": 5288, "accepted_violations": 0},
+    "scurvy_relocation_critical_sample": {"transitions": 6000000, "accepted_violations": 0},
+    "island_adjacency_50k": {"proposed_violations": 2461, "guard_rejected": 2461, "accepted_violations": 0},
+    "stateful_fuzz": {"actions": 448812, "failures": 0},
+    "full_balance": {"games": 100200, "crew_win": 0.5028443113772455, "crew_win_95ci": [0.4997484237549147, 0.5059401989995763], "engine_errors": 0},
+    "pdf_audit": "PASS",
+    "rock_back_pixel_leak": 0
+  },
+  "binary_artifacts": {
+    "rulebook_pdf": {"library_path": "/Oyun-GitHub/v2.5/OYUN_Kural_Kitabi_v2.5.pdf", "sha256": "0e2f2c4ab3e908116f53776b7c46ebfb5cc9c0cb10050c012940eac85e9834e4", "size_bytes": 116211, "pages": 24},
+    "cards_pdf": {"library_path": "/Oyun-GitHub/v2.5/OYUN_Kartlar_A4_Prototip_v2.5.pdf", "sha256": "e158b33b77d2fff962420170d87aea407c87c97c9d611e19a6b72e7827aba4cc", "size_bytes": 1930308, "pages": 32, "card_size_mm": "63.5 x 88.9", "duplex": "long-edge"}
+  },
+  "release_gates": {
+    "human_rules": true, "machine_spec": true, "validator": true, "core_validation_pass": true,
+    "rulebook_pdf": true, "cards_pdf": true, "visual_pdf_review": true, "source_pdf_crosscheck": true,
+    "binary_hash_integrity": true, "human_playtest": false, "human_playtest_required_for_stable_lock": false,
+    "human_playtest_recommended": true, "final_release_lock": true
+  }
+}
