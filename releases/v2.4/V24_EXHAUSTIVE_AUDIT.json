@@ -1,0 +1,32 @@
+{
+  "contract_errors": [],
+  "geometry": {
+    "total": 51204,
+    "legal": 51102,
+    "invalid": 102,
+    "invalid_by_shape": {
+      "5x5": 0,
+      "5x6": 0,
+      "6x5": 8,
+      "5x7": 20,
+      "6x6": 50,
+      "6x7": 24
+    },
+    "visible_first_branches": 135430,
+    "recoverable_deadend_first_branches": 8791,
+    "permanent_first_branch_locks_with_returnable_start_port": 0
+  },
+  "relocation": {
+    "attempts": 1667231,
+    "unsafe_rolled_back": 20,
+    "accepted_permanent_locks": 0,
+    "by_shape": {
+      "5x5": {"attempts": 8301, "unsafe_rolled_back": 0, "accepted_locks": 0},
+      "5x6": {"attempts": 16415, "unsafe_rolled_back": 0, "accepted_locks": 0},
+      "6x5": {"attempts": 13806, "unsafe_rolled_back": 0, "accepted_locks": 0},
+      "5x7": {"attempts": 382795, "unsafe_rolled_back": 0, "accepted_locks": 0},
+      "6x6": {"attempts": 397806, "unsafe_rolled_back": 20, "accepted_locks": 0},
+      "6x7": {"attempts": 848108, "unsafe_rolled_back": 0, "accepted_locks": 0}
+    }
+  }
+}
