@@ -1,42 +1,29 @@
 # Açık Deniz Sosyal Çıkarım Oyunu
 
-Bu repository oyunun kalıcı kaynak kaydıdır. Amaç, ChatGPT oturumlarına veya model sürümlerine bağımlı olmadan kuralları, makine verisini, testleri ve sürüm geçmişini tek yerde tutmaktır.
+Bu repository oyunun kalıcı ve denetlenebilir kaynak kaydıdır. Amaç, ChatGPT oturumları veya model sürümleri değişse bile kuralları, testleri ve sürüm geçmişini kaybetmemektir.
 
 ## Kanonik durum
 
-- Son kilitli/stabil paket: **v2.1**
-- Stabil kaynak: `releases/v2.1/`
-- v2.1 klasörü **değiştirilemez arşiv** kabul edilir.
-- Yeni tasarım değişiklikleri önce ayrı bir branch/PR üzerinde yapılır.
-- v2.1'den sonra yalnız sohbet içinde konuşulmuş fakat dosyalara işlenmemiş kararlar olabilir; bu nedenle yeni çalışmaya başlamadan önce `PROJECT_STATE.md` okunmalıdır.
+- Son kilitli/stabil prototip: **v2.2**
+- Kanonik release kaydı: `releases/v2.2/`
+- Önceki stabil geri dönüş: `releases/v2.1/`
+- `releases/v2.1/` ve `releases/v2.2/` yerinde değiştirilmez.
+- Yeni tasarım değişiklikleri v2.3+ çalışma hattında ayrı branch/PR ile yapılır.
 
 ## Her yeni ChatGPT oturumunda
 
 1. `AI_HANDOFF.md` okunur.
 2. `PROJECT_STATE.md` okunur.
-3. Son commit, PR ve issue durumu kontrol edilir.
-4. Stabil v2.1 geri dönüş noktası olarak korunur.
-5. Yeni değişiklikler doğrudan v2.1'in üstüne yazılmaz.
+3. `releases/v2.2/README_RELEASE_v2.2.md`, `V22_RELEASE_VALIDATION.md` ve `BINARY_ARTIFACTS.md` okunur.
+4. `python releases/v2.2/oyun_simulasyon_v2_2.py --validate-only --geometry-audit` çalıştırılır.
+5. Son commit/PR/issue durumu kontrol edilir.
+6. Yeni değişiklikler doğrudan `releases/v2.2/` üzerine yazılmaz.
 
-## Çalışma düzeni
+## v2.2 kaynak hiyerarşisi
 
-1. Sorun veya tasarım amacı tanımlanır.
-2. Ayrı branch/PR açılır.
-3. İnsan kuralı, makine JSON'u, kod ve ilgili testler birlikte güncellenir.
-4. Kararın gerekçesi `docs/DECISION_LOG.md` dosyasına işlenir.
-5. Test sonucu `docs/TEST_LOG.md` dosyasına işlenir.
-6. Onaylanan değişiklik ana hatta alınır.
+1. İnsan kuralı: `releases/v2.2/OYUN_TAM_KURALLAR_v2.2.md` release pointer'ı + tam byte-for-byte kopya `BINARY_ARTIFACTS.md` içinde belirtilen stabil ZIP'te.
+2. Masa kural kitabı: `OYUN_Kural_Kitabi_v2.2.pdf`; kalıcı Library konumu `releases/v2.2/BINARY_ARTIFACTS.md` içinde kayıtlıdır.
+3. Makine kuralı: `releases/v2.2/OYUN_SIMULASYON_SPEC_v2.2.json`.
+4. Doğrulayıcı: `releases/v2.2/oyun_simulasyon_v2_2.py`.
 
-## Kaynak hiyerarşisi
-
-v2.1 paketinin kendi tanımına göre:
-
-1. Ayrıntılı insan kuralları: `OYUN_TAM_KURALLAR_v2.1.md`
-2. Masa kural kitabı: `OYUN_Kural_Kitabi_v2.1.pdf`
-3. Makine kaynağı: `OYUN_SIMULASYON_SPEC_v2.1.json`
-
-Uyuşmazlık bulunursa sessizce varsayım yapılmaz; issue açılır ve kullanıcı kararı beklenir.
-
-## Not: baskı çıktıları
-
-PDF baskı çıktılarının doğrulanmış v2.1 kopyaları ayrıca kalıcı proje yedeğinde tutulur. Repository içindeki kaynak dosyaları oyunun sürekliliği için birincil çalışma malzemesidir; baskı artefaktlarının SHA-256 kayıtları `releases/v2.1/ARTIFACTS.md` içinde tutulur.
+`V22_RELEASE_MANIFEST.json` tam stabil paketin SHA-256 doğrulama değerlerini taşır. Uyuşmazlık bulunursa sessiz varsayım yapılmaz; karar kaydı açılır ve kullanıcı kararı kaynak kabul edilir.

@@ -6,38 +6,40 @@ Bu dosya, farklı ChatGPT oturumları veya model sürümleri arasında oyunun ba
 
 1. Bu dosyayı oku.
 2. `PROJECT_STATE.md` dosyasını oku.
-3. Son commit/PR/issue durumunu incele.
-4. `releases/v2.1/` klasörü tam paket hâlinde mevcutsa `README_SIMULASYON_v2.1.md` ve `00_BUNU_OKU_VE_BEKLE_v2.1.md` dosyalarını oku ve `python releases/v2.1/oyun_simulasyon_v2_1.py --validate-only` çalıştır.
-5. v2.1 paket dosyaları repo içinde henüz yoksa ChatGPT Library'de `OYUN_SIMULASYON_PAKETI_v2.1.zip` dosyasını bul; bu paket stabil geri dönüş kaynağıdır. Paketi doğrula, fakat otomatik denge simülasyonu başlatma.
-6. Kullanıcının yeni isteğini mevcut durumla karşılaştır.
+3. En yeni kilitli release olan `releases/v2.2/README_RELEASE_v2.2.md` dosyasını oku.
+4. `releases/v2.2/V22_RELEASE_VALIDATION.md` ve `V22_RELEASE_MANIFEST.json` dosyalarını kontrol et.
+5. `python releases/v2.2/oyun_simulasyon_v2_2.py --validate-only --geometry-audit` çalıştır.
+6. Son commit/PR/issue durumunu incele.
+7. Kullanıcının yeni isteğini v2.2 ile karşılaştır; yeni değişikliği v2.3+ çalışma hattında aç.
 
-## Yasaklar
+## Değiştirilemez release kuralı
 
-- Stabil v2.1 içeriğini yerinde düzenleme.
-- Sohbet hafızasını repository/kanıtlanmış paket kaynaklarından üstün kabul etme.
-- Eski v1.0/v2.0 denge sonuçlarını v2.1 sonucu gibi kullanma.
-- Bir kuralı yalnız PDF'de, yalnız JSON'da veya yalnız kodda değiştirip diğerlerini bırakma.
-- Test geçmeden değişikliği tamamlandı diye işaretleme.
+- `releases/v2.2/` güncel kanonik stabil prototiptir ve yerinde düzenlenmez.
+- `releases/v2.1/` önceki stabil geri dönüş sürümüdür ve yerinde düzenlenmez.
+- Sohbet hafızası repository'den üstün kaynak değildir.
+- Eski v1.0/v2.0/v2.1 denge sonuçları v2.2 sonucu gibi sunulmaz.
+- Bir kural yalnız PDF'de, yalnız JSON'da veya yalnız kodda değiştirilmez; ilgili kaynaklar birlikte güncellenir.
+- Test geçmeden değişiklik tamamlandı sayılmaz.
 
-## Değişiklik akışı
+## v2.2 omurgası
 
-Önerilen branch adı: `change/<kisa-konu>`
+- Kaptan rolü kalıcıdır ve asla kaldırılmaz.
+- İlk rotayı Kaptan tek başına ve olay bilgisi olmadan seçer.
+- Başarılı İsyan, Kaptanın ölümü, Kamara, mahsur kalma veya Kayıkçı seferi durumunda yeni Kaptan seçilir.
+- Kaptan gece ayrıca uyanmaz; makamı otomatik Ufuk bilgisi vermez.
+- Gemi bütün Haritalarda 2 Gövdeyle başlar.
+- Gemi alt kenarın dışında herhangi bir sütun hizasında başlayabilir.
+- `5×5`, `5×6`, `6×5` haritalarda 1; `5×7`, `6×6`, `6×7` haritalarda 2 Geçilmez Kayalık bulunur.
+- Geçilmez Kayalık son Liman yaklaşım hattına konulamaz ve kurulum baştan çözümsüz olamaz.
+- Normal geri hareket yasaktır; yalnız Geçilmez Kayalık kaynaklı tam ileri çıkmazda bir önceki kareye bir tam hareket/gün harcayarak geri dönülebilir.
+- Geri dönülen çözülmüş olay tekrar çalışmaz.
 
-Her değişiklikte:
+## Binary baskı artefaktları
 
-1. Sorunu/amacı tanımla.
-2. Etkilenen kuralları ve kartları belirle.
-3. Mümkünse önce test beklentisini yaz.
-4. Değişikliği uygula.
-5. Statik testleri çalıştır.
-6. Denge etkisi varsa ayrı simülasyon/human-playtest planı oluştur.
-7. Karar ve sonucu loglara yaz.
-8. PR üzerinden ana hatta al.
+Baskı PDF'leri ve tam v2.2 ZIP paketi kalıcı ChatGPT Library'de saklanır. Tam yollar ve SHA-256 değerleri `releases/v2.2/BINARY_ARTIFACTS.md` dosyasındadır.
 
 ## Kullanıcının kısa komutu
 
-Kullanıcı ileride yalnızca şunu söyleyebilir:
-
 > GitHub'daki Açık Deniz oyun reposunu aç, `AI_HANDOFF.md` ve `PROJECT_STATE.md` dosyalarını okuyup kaldığımız yerden devam et.
 
-Bu komut, önceki ChatGPT sürümünün iç hafızasına ihtiyaç duymadan projeyi yeniden kurmak için yeterli olmalıdır.
+Bu komut yeni bir modelin v2.2 release'inden bağlamı yeniden kurması için yeterli olmalıdır.
