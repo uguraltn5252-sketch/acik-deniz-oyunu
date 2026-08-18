@@ -5,10 +5,11 @@
 
 ## Kanonik kaynak sırası
 
-1. `OYUN_TAM_KURALLAR_v2.3.md`
-2. `OYUN_Kural_Kitabi_v2.3.pdf` (Library binary; SHA-256 BINARY_ARTIFACTS.md içinde)
-3. `OYUN_SIMULASYON_SPEC_v2.3.json`
-4. `oyun_simulasyon_v2_3.py` ve test kanıtları
+1. `SOURCE_PACKAGE.md` — tam v2.3 kaynak paketinin Library konumu ve SHA-256 değeri.
+2. Paket içindeki `OYUN_TAM_KURALLAR_v2.3.md` — kanonik insan kuralı.
+3. Paket içindeki `OYUN_Kural_Kitabi_v2.3.pdf` — masa/baskı kural kitabı.
+4. Paket içindeki `OYUN_SIMULASYON_SPEC_v2.3.json` ve `oyun_simulasyon_v2_3.py` — tam makine sözleşmesi ve doğrulayıcı.
+5. GitHub'daki `OYUN_SIMULASYON_SPEC_v2.3.delta.json`, karar/değişiklik kaydı, teknik rapor ve manifest — hızlı sürüm özeti ve doğrulama kanıtı.
 
 ## v2.3 omurgası
 
@@ -28,7 +29,7 @@
 - 9.000 tam 6–15 oyuncu/süre duyarlılığı
 - 51.204 geometri taraması / 51.102 yasal / 102 kurulum reddi
 - kabul edilen kurulumlarda kalıcı rota kilidi: 0
-- validator: PASS
+- stabil metadata ile validator: PASS
 - kural PDF: 32 sayfa / kart PDF: 32 sayfa / preflight ve görsel tarama: PASS
 
 İnsan masa testi oyunun sosyal deneyimini iyileştirmek için hâlâ önerilir; ancak bu release kilidinin ön koşulu değildir. Sonraki tasarım değişiklikleri **v2.4+** olarak açılmalıdır.
