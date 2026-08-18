@@ -65,6 +65,7 @@ def geometry_audit():
                     for step in visible:
                         if step in b or not path_from(w,h,step[0],step[1],port,b):
                             dead+=1
+                            # With v2.4 the route can unwind to the real Start Port; the legal setup must still recover.
                             if not path_exists(w,h,start,port,b): locks+=1
         by[shape]=bad
     return {'total':total,'legal':legal_n,'invalid':invalid,'invalid_by_shape':by,'visible_first_branches':branches,'recoverable_deadend_first_branches':dead,'permanent_first_branch_locks':locks}
@@ -88,8 +89,8 @@ def relocation_audit():
     return {'attempts':attempts,'unsafe_rolled_back':unsafe,'accepted_permanent_locks':accepted,'by_shape':dict(by)}
 
 def validate_contract(s):
-    e=[]; m=s.get('metadata',{}); o=s.get('opening',{}); v=s.get('map_visibility',{}); r=s.get('route_safety',{}); t=s.get('captain_election_tie',{}); u=s.get('unchanged',{})
-    if (m.get('version'),m.get('baseline'),m.get('stable'),m.get('locked')) != ('2.4','v2.3',False,False):e.append('metadata')
+    e=[]; m=s.get('metadata',{}); o=s.get('opening',{}); v=s.get('map_visibility',{}); r=s.get('route_safety',{}); t=s.get('captain_election_tie',{}); u=s.get('unchanged',{}); sc=s.get('setup_component',{})
+    if (m.get('version'),m.get('baseline'),m.get('stable'),m.get('locked')) != ('2.4','v2.3',True,True):e.append('metadata')
     n=o.get('opening_neutral_night',{})
     if o.get('opening_day')!='captain_election_only' or n.get('captain_wakes_once') is not True or n.get('private_near_horizon_peek_count')!=1 or n.get('loyalty_known') is not False or n.get('peeked_card_stays_face_down') is not True:e.append('opening Captain contract')
     if o.get('first_real_route')!='normal_simultaneous_route_vote' or o.get('captain_route_vote_weight')!=2 or o.get('captain_office_wakes_later_nights') is not False:e.append('first route/Captain vote')
@@ -98,6 +99,7 @@ def validate_contract(s):
     if t.get('first_tie')!='one_revote_among_tied' or t.get('second_tie')!='fate_die_highest_wins_among_tied':e.append('Captain tie termination')
     expected={'starting_hull':2,'characters':20,'powers':30,'loyalties':15,'maps':52,'rock_cards':12,'main_card_identities':118,'impassable_ids':['HAR-KY-01','HAR-KY-03']}
     if u!=expected:e.append('unchanged card/hull contract')
+    if sc!={'id':'SET-KL-01','count':1,'outside_main_card_identities':True,'physical_in_card_pdf':True}:e.append('Start Port setup component')
     return e
 
 def main():
