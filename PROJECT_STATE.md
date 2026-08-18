@@ -1,51 +1,41 @@
 # Project State
 
 **Son güncelleme:** 2026-08-18  
-**Son stabil prototip:** **v2.2**  
-**Kanonik kaynak:** `releases/v2.2/`  
-**Durum:** v2.2 release kilidi tamamlandı; yeni değişiklikler v2.3+ olarak başlamalıdır.
+**Son stabil prototip:** **v2.3**  
+**Kanonik kaynak:** `releases/v2.3/`  
+**Önceki stabil geri dönüş:** `releases/v2.2/`  
+**Durum:** **v2.3 STABLE / LOCKED.** Sonraki tasarım değişiklikleri v2.4+ olarak açılmalıdır.
 
-## v2.2 release gate
+## v2.3 kesin omurga
 
-- [x] İnsan kural metni
-- [x] Makine JSON/spec
-- [x] v2.2 doğrulayıcı
-- [x] Çekirdek statik/geometri regresyonu
-- [x] Geçilmez Kayalık davranışsal teknik testi
-- [x] v2.2 masa kural kitabı PDF - 32 sayfa
-- [x] v2.2 kart PDF - 32 sayfa
-- [x] Geçilmez Kayalık fiziksel işaret sayfası - 1 sayfa / 12 işaret
-- [x] PDF görsel taşma/glif/baskı kontrolü
-- [x] Kaynak ↔ PDF çapraz doğrulaması
-- [x] `releases/v2.2/` stabil prototip kilidi
-
-## v2.2 kesin omurga
-
-- Kaptan rolü kalıcıdır ve asla kaldırılmaz.
+- Kaptan rolü kalıcıdır ve kaldırılmaz.
 - İlk rotayı Kaptan tek başına, olay bilgisi olmadan seçer.
-- Kaptanın rota oyu 2; diğer resmî oyları 1'dir; rota beraberliğini berabere yasal rotalar arasında Kaptan çözer.
-- Başarılı İsyan, Kaptanın ölümü, Kamara, mahsur kalma veya Kayıkçı seferi durumunda yeni Kaptan seçilir.
+- Başarılı İsyan, Kaptanın ölümü, Kamara, mahsur kalma veya Kayıkçı seferinde yeni Kaptan seçilir.
 - Kaptan gece ayrıca uyanmaz; makamı otomatik Yakın/Uzak Ufuk bilgisi vermez.
-- Gemi bütün Haritalarda 2 Gövdeyle başlar.
-- Gemi alt kenarın dışında herhangi bir sütun hizasında başlayabilir; ilk Ufuk ve ilk Sis yasağı dinamikleşir.
-- `5×5`, `5×6`, `6×5` = 1 Geçilmez Kayalık; `5×7`, `6×6`, `6×7` = 2 Geçilmez Kayalık.
-- Geçilmez Kayalık 52 Harita kartından ayrı, görünür işarettir; 118 kart kimliği değişmez.
-- Son Liman/Ufuk hattına Geçilmez Kayalık konulamaz; ilk rota kapatılamaz; başlangıçtan erişilebilir Ada üzerinden Limana en az bir ileri yol kalmalıdır.
-- Normal geri hareket yasaktır; yalnız Kayalık kaynaklı tam ileri çıkmazda Gemi bir önceki kareye bir tam hareket/gün harcayarak geri çekilebilir.
-- Geri dönülen çözülmüş olay yeniden çalışmaz; bilinen çıkmaz kola başka yasal rota varken tekrar girilemez.
-- Girdap/olay içi ek hareket Kayalık yüzünden hedef bulamazsa ek hareket boşa düşer; aynı gün acil geri dönüş başlamaz.
+- Gemi bütün Haritalarda **2 Gövde** ile başlar.
+- Gemi alt kenarın dışında herhangi bir sütun hizasında başlayabilir; ilk Ufuk ve ilk Sis yasağı dinamiktir.
+- Harita havuzu **52**, Kayalık kategorisi **12**, toplam kart kimliği **118** olarak kalır.
+- `HAR-KY-01` = **Duvar Gibi Kayalık / Geçilmez Kayalık**.
+- `HAR-KY-03` = **Yolun Bittiği Yer / Geçilmez Kayalık**.
+- Bu iki kart kapalıyken diğer Kayalıklardan hiçbir biçimde ayırt edilemez; normal Harita/Ufuk/gizli bilgi kurallarına tabidir.
+- `5×5`, `5×6`, `6×5` kurulumlarında Kayalık kotasının içinde **1**; `5×7`, `6×6`, `6×7` kurulumlarında **2** Geçilmez bulunur.
+- Geçilmez Kayalık son Liman/Ufuk hattına kurulamaz; Moderatör başlangıçtan erişilebilir Ada üzerinden Limana en az bir gerçek ileri yol kaldığını gizlice doğrular.
+- Kapalı Geçilmez normal rota/Ufuk hedefidir. Seçilip açılırsa Gemi kareye girmez, mevcut konumda kalır; normal rota gününde hareket harcanır ve kart açık kamusal engel olur.
+- Acil geri dönüş yalnız açılmış/bilinen Geçilmez Kayalıklar bütün ileri rotaları kapatırsa çalışır; Gemi bir önceki ziyaret edilmiş kareye bir tam hareket/gün harcayarak döner ve çözülmüş olay tekrar çalışmaz.
 
-## Doğrulama özeti
+## v2.3 doğrulama özeti
 
-- Kesin geometri: 51.204 toplam / 51.102 yasal / 102 kurulumda reddedilecek.
-- Davranışsal teknik test: 15.000 yeni-kural + 6.000 kontrol; kalıcı rota kilidi 0.
-- Temsilî Tayfa ortalaması: %54,8.
-- Acil geri dönüş: yaklaşık %4,2 oyun.
-- Kart PDF sayfa 2-32 baseline ile eşleşiyor; yalnız v2.2 kapak yenilendi.
-- Release çapraz doğrulaması: PASS.
+- Kart çifti karşılaştırması: **7.200 oyun**.
+- Seçilen çift temsilî doğrulama: **6.000 oyun**; Tayfa %55,47; gizli Geçilmeze çarpma %31,63; ilk rota çarpması %5,17; acil geri dönüş %3,43; kalıcı kilit 0.
+- 6–15 oyuncu × 3 süre tam duyarlılık: **9.000 oyun**; Tayfa %55,51; gizli Geçilmeze çarpma %32,21; acil geri dönüş %3,50; kalıcı kilit 0; kurulum hatası 0.
+- Geometri: **51.204 teorik / 51.102 yasal / 102 kurulumda reddedilecek**.
+- `python releases/v2.3/validate_release_v2_3.py`: **PASS**.
+- Kural kitabı PDF: **32 sayfa**; kart PDF: **32 sayfa**; preflight/görsel tarama: **PASS**.
 
-## Binary artefakt konumu
+## Binary artefaktlar
 
-Tam v2.2 ZIP paketi ve üç baskı PDF'si kalıcı Library altında `/Oyun-GitHub/` içinde tutulur. Tam yollar ve SHA-256 değerleri `releases/v2.2/BINARY_ARTIFACTS.md` dosyasındadır.
+- PDF'ler kalıcı Library'de `/Oyun-GitHub/v2.3/` altında tutulur.
+- Tam v2.3 ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.3.zip`.
+- Hash ve yollar: `releases/v2.3/BINARY_ARTIFACTS.md` ve `V23_RELEASE_MANIFEST.json`.
 
-Bu sürüm hâlâ kör masa testi prototipidir. "Stabil" ifadesi sürümün dondurulduğunu belirtir, oyunun ticari/final baskı olduğu anlamına gelmez.
+"Stabil" ifadesi bu prototip sürümünün dondurulduğu anlamına gelir; ticari/final baskı olduğu anlamına gelmez. İnsan masa testi sonraki v2.4+ iyileştirmeleri için önerilir.

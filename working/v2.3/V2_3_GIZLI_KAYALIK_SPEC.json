@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "version": "2.3-dev",
+    "base": "v2.2",
+    "date": "2026-08-18",
+    "status": "development_requires_resimulation"
+  },
+  "map_pool": {
+    "total": 52,
+    "categories": {
+      "sea": 30,
+      "rock": 12,
+      "island": 6,
+      "lighthouse": 4
+    },
+    "impassable_rock": {
+      "physical_cards_in_rock_pool": 2,
+      "adds_cards_to_pool": false,
+      "overlay_marker": false,
+      "category_when_hidden": "rock",
+      "distinguishable_from_other_rocks_when_hidden": false,
+      "visible_special_symbol_when_hidden": false,
+      "obeys_all_normal_map_card_information_rules": true,
+      "selected_count_by_shape": {
+        "5x5": 1,
+        "5x6": 1,
+        "6x5": 1,
+        "5x7": 2,
+        "6x6": 2,
+        "6x7": 2
+      },
+      "forbidden_placement": "final map/horizon row immediately aft of Port",
+      "setup_must_not_be_mathematically_unsolvable": true,
+      "replacement_card_ids": "TBD_AFTER_CATALOG_AND_BALANCE_TEST"
+    }
+  },
+  "information": {
+    "hidden_impassable_rock_is_normal_rock_information_target": true,
+    "may_be_secretly_inspected_by_effects_that_inspect_map_or_horizon": true,
+    "player_may_tell_truth_or_lie_about_seen_event": true,
+    "becomes_public_when_resolved_by_route": true
+  },
+  "movement": {
+    "hidden_impassable_rock_is_legal_route_target_until_revealed": true,
+    "on_route_resolution": {
+      "reveal_card": true,
+      "ship_enters_target_square": false,
+      "ship_remains_on_current_square": true,
+      "normal_movement_day_consumed": true,
+      "hull_damage": 0,
+      "target_becomes_public_permanent_block": true
+    },
+    "revealed_impassable_rock_is_legal_route_or_horizon_target": false,
+    "normal_reverse_allowed": false,
+    "emergency_reverse": {
+      "enabled": true,
+      "trigger": "zero legal forward routes caused by revealed/known impassable rocks",
+      "destination": "immediately previous visited square",
+      "cost": "entire normal movement/day",
+      "retrigger_resolved_event": false,
+      "may_repeat_on_later_normal_days_if_still_blocked": true,
+      "known_dead_end_reentry_forbidden_if_alternative_exists": true
+    }
+  },
+  "unchanged_core": {
+    "starting_hull": 2,
+    "captain_permanent": true,
+    "captain_first_route": true,
+    "captain_replaced_after_successful_mutiny_or_death_or_existing_incapacity_triggers": true,
+    "captain_extra_night_wake": false,
+    "captain_automatic_horizon_info": false
+  },
+  "validation": {
+    "v2_2_visible_reef_results_reusable_as_v2_3_balance_evidence": false,
+    "required": [
+      "catalog replacement selection",
+      "hidden reef route-resolution tests",
+      "all map shapes with required reef count",
+      "added day/night pressure",
+      "revealed reef emergency reverse",
+      "permanent route-lock audit",
+      "social-information/traitor sensitivity",
+      "52-map-card integrity"
+    ]
+  }
+}
