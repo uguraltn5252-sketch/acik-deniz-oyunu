@@ -1,0 +1,102 @@
+{
+  "version": "2.4",
+  "date": "2026-08-18",
+  "status": "STABLE / LOCKED",
+  "stable": true,
+  "locked": true,
+  "baseline": "v2.3 STABLE / LOCKED",
+  "canonical_source": "releases/v2.4/",
+  "full_source_package": {
+    "library_path": "/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.4.zip",
+    "sha256": "9edbef118561632c9c37a3c854d6c67f55c30ca99771d87e64d77b6c38454561",
+    "size_bytes": 1651757
+  },
+  "binary_artifacts": {
+    "rulebook_pdf": {
+      "library_path": "/Oyun-GitHub/v2.4/OYUN_Kural_Kitabi_v2.4.pdf",
+      "sha256": "beae69144b6af5e7ed7a16d6c5f30c262f63af9b92826abc78c61c0493011216",
+      "size_bytes": 122564,
+      "pages": 27
+    },
+    "cards_pdf": {
+      "library_path": "/Oyun-GitHub/v2.4/OYUN_Kartlar_A4_Prototip_v2.4.pdf",
+      "sha256": "5fb4a0c42bb9eaedfb7434ae9eb3a540eade6f5f9df7c34a6720f376cd32e9d1",
+      "size_bytes": 1187034,
+      "pages": 32,
+      "card_size_mm": "63.5 x 88.9",
+      "duplex": "long-edge"
+    }
+  },
+  "source_hashes": {
+    "README_RELEASE_v2.4.md": "270889d7c9c1192860207f0d78510a3845da60ee344e37b6da34e9d3619cbfc9",
+    "OYUN_TAM_KURALLAR_v2.4.md": "ae4b57380765682bec42231f5593bc0e9ff04178643bb02c211a022134f16d80",
+    "OYUN_SIMULASYON_SPEC_v2.4.json": "e95a316533e75309e454d778d6563c6fb0c334d92e27e56a5557f36399e9c7f2",
+    "OYUN_SIMULASYON_SPEC_v2.4.delta.json": "2cb55670db3e5890142b90984742c675e6920376a4e1b8055a22a24957f9bbfe",
+    "OYUN_DEGISIKLIK_KAYDI_v2.4.md": "9139617d24c7dba410a87535bf19e41a56756effe53f47f10db2ddddf1140286",
+    "oyun_simulasyon_v2_4.py": "5d4baffd34b1ff2a708e2675c015e19033cc223735cf0d5f0f3ed9382a177d67",
+    "gizli_gecilmez_kayalik_v24_sim.py": "3d761fc029550e9fba0a4cd8bb2710cf338d4870b8e9acf359838842ac5d05bd",
+    "test_v24_regressions.py": "d366cb065c4f4630260a9489bc6b279bdd6e0b2b7f53c20f0b76a0f6f00ca889",
+    "run_v24_matrix.py": "c20c9e21005421c922684784de54b952e4fa14c842a9dfddc1e483f5a26c1a98",
+    "validate_release_v2_4.py": "86e75b6ef75e1a70653b223ac1fb9b7efdc835ff53c197d7d3cbfa857ea649ea",
+    "V24_EXHAUSTIVE_AUDIT.json": "3ee4bc6513a929cc99135c85262c219ab523058eaa555c802f7b0c4c6c17dc19",
+    "V24_ROUTE_MATRIX_9000.json": "25d75fda0f93303ac4ee69ee326563b066efb8dae2c7767ea3ecc06752a00a84",
+    "V24_TEST_REPORT.md": "ac203bbe56889b53719d748cf5a5aff6ca74921ee9d752e64f09f1b04c0222de",
+    "V24_PDF_AUDIT.json": "e05472cc7ddf7d5a397f118af8e5766daec4aa7ebd90ede0525f8caa271eb9ad",
+    "V24_VALIDATE_OUTPUT.txt": "44103e290f90713e3311e6a938e6479a801254fc52538bea624df6ed7c2ae2ae",
+    "V24_REGRESSION_OUTPUT.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "V24_RELEASE_VALIDATE_OUTPUT.txt": "b823f2b62c6d1a5e8f7dba71fe4cd8f81742ff969dba6e8279b80e09703ab338"
+  },
+  "card_contract": {
+    "characters": 20,
+    "powers": 30,
+    "scurvy_setup_card": 1,
+    "loyalties": 15,
+    "maps": 52,
+    "rock_cards": 12,
+    "main_game_card_identities": 118,
+    "impassable_ids": [
+      "HAR-KY-01",
+      "HAR-KY-03"
+    ],
+    "start_port_setup_component": {
+      "id": "SET-KL-01",
+      "count": 1,
+      "outside_118": true
+    }
+  },
+  "tests": {
+    "regression": "8/8 PASS",
+    "geometry": {
+      "total": 51204,
+      "legal": 51102,
+      "rejected": 102,
+      "permanent_first_branch_locks": 0
+    },
+    "relocation": {
+      "attempts": 1667231,
+      "unsafe_rolled_back": 20,
+      "accepted_permanent_locks": 0
+    },
+    "route_social_proxy": {
+      "games": 9000,
+      "setup_errors": 0,
+      "hard_lock_rate": 0.0,
+      "port_reached_rate": 1.0
+    },
+    "pdf_audit": "PASS",
+    "rock_back_pixel_leak": 0
+  },
+  "release_gates": {
+    "human_rules": true,
+    "machine_spec": true,
+    "validator": true,
+    "regressions": true,
+    "exhaustive_route_audit": true,
+    "route_social_proxy": true,
+    "rulebook_pdf": true,
+    "cards_pdf": true,
+    "pdf_visual_preflight": true,
+    "stable_lock": true
+  },
+  "next_design_line": "v2.5+"
+}
