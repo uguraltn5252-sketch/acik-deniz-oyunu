@@ -1,0 +1,22 @@
+{
+  "game": "OYUN",
+  "version": "2.2",
+  "status": "stable-prototype",
+  "date": "2026-08-18",
+  "validation": "PASS",
+  "files": [
+    {"name":"GECILMEZ_KAYALIK_V22_RAPOR.md","bytes":6231,"sha256":"2cae157b8fe08640227eabe606790365394fce78727869de4b4597af2b294ee0"},
+    {"name":"GECILMEZ_KAYALIK_V22_SONUCLARI.csv","bytes":4272,"sha256":"7580e04f9281c8f3e54afb52d625a848a044649a7be51b24dbe03eabad5f113e"},
+    {"name":"OYUN_DEGISIKLIK_KAYDI_v2.2.md","bytes":2512,"sha256":"8e09c18255b6d9e7662ada07141b5270daa1da46f6044e94baa54588a89ca4b7"},
+    {"name":"OYUN_Gecilmez_Kayalik_Isaretleri_v2.2.pdf","bytes":46785,"sha256":"380d04348cb710f4e50edc4af00a24159a007dd3b5e279a39bdd2a1c07ba8310","pages":1},
+    {"name":"OYUN_Kartlar_A4_Prototip_v2.2.pdf","bytes":310157,"sha256":"f349c19d3a6a6210f24ef3d2773e042a3e835b83a4da893c613efcc3793899a4","pages":32},
+    {"name":"OYUN_Kural_Kitabi_v2.2.pdf","bytes":123048,"sha256":"46043f67a394307d52991c151bb1ffc5924469b57908f9a0ca60ea3d908a466a","pages":32},
+    {"name":"OYUN_SIMULASYON_SPEC_v2.2.json","bytes":6500,"sha256":"9698f08cd7c3a6be05f7f1642571f8a11f391f5c6c24ec5f8f5049b770efc79f"},
+    {"name":"OYUN_TAM_KURALLAR_v2.2.md","bytes":57565,"sha256":"2cb8bec576d5b8c51aa667afce1ea97b9cf7fb4f0883a78612b4acc7c953a660"},
+    {"name":"README_RELEASE_v2.2.md","bytes":604,"sha256":"0bfb401bf59be2ebfdf6b536fbe0dc1c3800b487533aa16b709ce7912ecf3f1b"},
+    {"name":"README_SIMULASYON_v2.2.md","bytes":1074,"sha256":"2a2c44bb80e0fbd17360aa30cbc028bd402302b60d14621cb009ef7c0e69b96d"},
+    {"name":"V22_RELEASE_VALIDATION.md","bytes":2490,"sha256":"3b31715ea24145d3e04eaed627e3ddc63ea8392d7424c6c0841850ef033a26fb"},
+    {"name":"V22_VALIDATE_OUTPUT.txt","bytes":458,"sha256":"f457893b7eb1398cc45f9b4cf0dd1b72064144e14767c7b7216b1de1c0636952"},
+    {"name":"oyun_simulasyon_v2_2.py","bytes":7207,"sha256":"13f20caf2b010ead296b183a4ae998d6303b85552e319f322548b3d824491fd5"}
+  ]
+}

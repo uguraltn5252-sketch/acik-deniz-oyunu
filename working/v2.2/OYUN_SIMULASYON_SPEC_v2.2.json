@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "game": "OYUN",
+    "subtitle": "Yelkenli Sosyal Çıkarım Oyunu",
+    "version": "2.2",
+    "status": "development",
+    "date": "2026-08-18",
+    "baseline_release": "v2.1",
+    "schema": "v2.2-delta-over-v2.1",
+    "technical_test": "PASS",
+    "stable": false
+  },
+  "source_hierarchy": [
+    "OYUN_TAM_KURALLAR_v2.2.md",
+    "OYUN_SIMULASYON_SPEC_v2.2.json",
+    "oyun_simulasyon_v2_2.py",
+    "OYUN_DEGISIKLIK_KAYDI_v2.2.md"
+  ],
+  "inheritance": {
+    "from": "v2.1",
+    "unchanged_card_catalog": true,
+    "card_catalog_in_human_rules": true,
+    "card_counts": {
+      "characters": 20,
+      "powers": 30,
+      "scurvy": 1,
+      "loyalties": 15,
+      "maps": 52,
+      "total_identities": 118
+    },
+    "canonical_cards_sha256": "bdfaff343cdff14af5ad2d93125bb82860fdc2d3c5746b3ede900d821612bd65",
+    "starting_hull": 2
+  },
+  "setup": {
+    "players_min": 6,
+    "players_max": 15,
+    "moderators": 1,
+    "traitors": {
+      "6": 1,
+      "7": 2,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 5,
+      "15": 5
+    },
+    "map_shapes": {
+      "Hızlı": {
+        "6-10": {"width": 5, "height": 5},
+        "11-15": {"width": 6, "height": 5}
+      },
+      "Standart": {
+        "6-10": {"width": 5, "height": 6},
+        "11-15": {"width": 6, "height": 6}
+      },
+      "Uzun": {
+        "6-10": {"width": 5, "height": 7},
+        "11-15": {"width": 6, "height": 7}
+      }
+    },
+    "category_quotas": {
+      "5x5": {"sea": 15, "rock": 6, "island": 2, "lighthouse": 2},
+      "6x5": {"sea": 18, "rock": 7, "island": 3, "lighthouse": 2},
+      "5x6": {"sea": 18, "rock": 7, "island": 3, "lighthouse": 2},
+      "6x6": {"sea": 21, "rock": 8, "island": 4, "lighthouse": 3},
+      "5x7": {"sea": 21, "rock": 8, "island": 4, "lighthouse": 2},
+      "6x7": {"sea": 25, "rock": 10, "island": 4, "lighthouse": 3}
+    },
+    "impassable_rocks_by_map": {
+      "5x5": 1,
+      "5x6": 1,
+      "6x5": 1,
+      "5x7": 2,
+      "6x6": 2,
+      "6x7": 2
+    },
+    "impassable_rocks_are_overlay_markers": true,
+    "max_impassable_markers_needed": 2,
+    "port": "one visible cell chosen by moderator on top row",
+    "start": {
+      "row": -1,
+      "allowed_columns": "every column of selected map",
+      "fixed_center": false
+    },
+    "first_route_fog_free": true,
+    "initial_setup_must_have_path_via_island_to_port": true,
+    "impassable_rock_forbidden_rows": ["top/final map row immediately aft of Port"]
+  },
+  "captain": {
+    "permanent_core_role": true,
+    "can_be_removed_from_game": false,
+    "elected_before_powers_and_loyalties": true,
+    "first_route": "Captain alone chooses among legal first Near Horizons, blind to event faces",
+    "route_vote_weight": 2,
+    "other_vote_weight": 1,
+    "breaks_route_ties": true,
+    "wakes_separately_at_night": false,
+    "office_grants_horizon_info": false,
+    "replacement_triggers": [
+      "successful_mutiny",
+      "death",
+      "chamber",
+      "stranded",
+      "boatman_rescue_trip"
+    ],
+    "successful_mutiny": "old Captain spends one night in Chamber without Once Convicted; new Captain elected immediately"
+  },
+  "movement": {
+    "normal": "one row forward; column delta -1/0/+1; must preserve Port reachability",
+    "wait_allowed": false,
+    "normal_reverse_allowed": false,
+    "near_horizon": "legal forward targets one row ahead at col-1/col/col+1",
+    "far_horizon": "corresponding legal targets two rows ahead reachable through at least one legal Near Horizon",
+    "impassable_rock_is_never_route_or_horizon_target": true,
+    "emergency_reverse": {
+      "enabled": true,
+      "trigger": "after normal nonabsolute restriction fallback: zero legal forward routes AND at least one forward route exists if only impassable rocks are ignored",
+      "destination": "immediately previous visited map square",
+      "cost": "entire normal movement/day",
+      "vote": false,
+      "retrigger_event_on_return": false,
+      "may_repeat_next_normal_day_if_still_blocked": true,
+      "cannot_reverse_to_outside_start": true,
+      "known_dead_end_reentry_forbidden_if_alternative_exists": true,
+      "event_internal_extra_move_blocked_by_rocks": "extra move fizzles; no same-day emergency reverse"
+    }
+  },
+  "night": {
+    "first_traitor_wake": "traitors meet and inspect one Near Horizon; no attack even in Fog",
+    "later_normal": "team chooses inspect one Near Horizon OR attack one eligible Crew",
+    "fog": "inspect one Near Horizon and may also attack",
+    "captain_extra_wake": false
+  },
+  "scurvy": {
+    "starting_card": "Çürümüş Erzak — İskorbüt Tehlikesi",
+    "if_holder_is_initial_captain": "scurvy does not activate",
+    "otherwise": "must enter an Island before Port Night",
+    "later_captain_change_does_not_change_initial_result": true
+  },
+  "edge_contracts": {
+    "girdap_blocked_only_by_impassable_rock": "forced extra movement fizzles; emergency reverse waits for next normal route day",
+    "resolved_card_reentry": "event does not resolve again",
+    "setup_cannot_start_unsolvable": true
+  },
+  "validation_evidence": {
+    "geometry_total": 51204,
+    "geometry_legal": 51102,
+    "geometry_invalid": 102,
+    "invalid_by_shape": {
+      "5x5": 0,
+      "5x6": 0,
+      "5x7": 20,
+      "6x5": 8,
+      "6x6": 50,
+      "6x7": 24
+    },
+    "behavioral_new_rule_games": 15000,
+    "control_games": 6000,
+    "permanent_route_locks": 0,
+    "setup_errors": 0,
+    "representative_crew_win_rate": 0.548,
+    "emergency_reverse_game_rate": 0.042,
+    "mean_added_days": 0.12,
+    "mean_added_nights": 0.09,
+    "mean_added_minutes": 0.7,
+    "scope_note": "Technical/geometry evidence; not a complete social-balance simulation."
+  },
+  "release_gate": {
+    "human_rules": true,
+    "machine_spec": true,
+    "validator": true,
+    "core_validation_pass": true,
+    "rulebook_pdf": false,
+    "visual_pdf_review": false,
+    "final_release_lock": false
+  }
+}
