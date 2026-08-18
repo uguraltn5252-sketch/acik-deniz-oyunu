@@ -1,7 +1,7 @@
 # OYUN v2.4 — Kural Düzeltme Sözleşmesi
 
 **Taban:** v2.3 STABLE / LOCKED  
-**Durum:** TEST-PASSED DEVELOPMENT CANDIDATE / NOT LOCKED
+**Durum:** **STABLE / LOCKED**
 
 Bu dosya yalnız v2.3 üzerine gelen v2.4 değişikliklerini tanımlar. Değişmeyen bütün kurallar v2.3'ten devralınır.
 
@@ -55,4 +55,4 @@ Bu dosya yalnız v2.3 üzerine gelen v2.4 değişikliklerini tanımlar. Değişm
 
 ## 7. Release durumu
 
-v2.4 bu sözleşmeyle test-passed geliştirme adayıdır. Kural PDF'si, kart PDF'si ve görsel preflight tamamlanmadan **STABLE / LOCKED** yapılamaz.
+Kural, spec, regresyon, exhaustive rota/relocation, self-contained simülasyon, kural PDF, kart PDF ve görsel/preflight kapıları PASS edilmiştir. **v2.4 STABLE / LOCKED** olarak dondurulmuştur. `releases/v2.4/` yerinde değiştirilmez; sonraki tasarım değişiklikleri **v2.5+** hattında yapılır.
