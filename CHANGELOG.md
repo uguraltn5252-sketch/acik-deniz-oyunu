@@ -1,29 +1,32 @@
 # Changelog
 
-## v2.6 - Güncel taslak kural/anlatı ve fiziksel bileşen revizyonu
+## v2.6 - Entegre kural/anlatı ve fiziksel bileşen sürümü
 
 **Tarih:** 19 Ağustos 2026  
-**Durum:** **DRAFT / NOT LOCKED**  
+**Durum:** **STABLE / LOCKED - `releases/v2.6/`**  
 **Mekanik baseline:** **v2.5 STABLE / LOCKED**
 
-Not: v2.6 kullanıcı açık onayı olmadan daha önce STABLE/LOCKED olarak işaretlenmişti. Bu statü geri alınmıştır. v2.6 kanonik release değildir ve kullanıcı açıkça kilitlemeden release sayılamaz.
+Kullanıcı v2.6'yı açıkça kilitlemiştir.
 
-Güncel taslak değişiklikler:
+Kilitlenen değişiklikler:
 
 - Kural kitabı oyuncu öğretimi, Moderatör/storyteller akışı, referans ve arka plan hikâyesini tek belgede birleştirir.
-- Ayrı Moderatör masa kartı güncel taslaktan çıkarılmıştır; Moderatör oyunu kural kitabının tek akış bölümünden yönetir.
+- Ayrı Moderatör masa kartı kaldırılmıştır; Moderatör oyunu kural kitabının tek akış bölümünden yönetir.
 - Moderatör hafif storyteller rolündedir; atmosferi kurar fakat gizli bilgi/şüphe yönlendirmez.
 - Kaptan Gusto'nun kayboluşu, Siyah Mühür ve Saint Verena anlatısı entegre edilmiştir.
-- Kural kitabı 29 sayfa A4'e güncellenmiştir.
-- Kart PDF 34 sayfa A4'e güncellenmiştir.
-- 118 ana oyun kartı kimliği korunur: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita.
-- Ana kimliğin dışında yardımcı fiziksel kartlar: mevcut Kalkış Limanı, yeni Varış/Hedef Limanı ve yeni Kaptan makam kartı.
+- Final kural kitabı 29 sayfa A4'tür.
+- Final kart PDF 34 sayfa A4'tür.
+- 118 ana oyun kartı korunur: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita.
+- Ana setin dışında üç yardımcı fiziksel kart kilitlenmiştir: Kalkış Limanı (`SET-KL-01`), Varış/Hedef Limanı (`SET-VL-01`) ve Kaptan makamı (`SET-KP-01`).
+- Toplam basılabilir fiziksel kart sayısı 121'dir.
 - Mahkûm için ayrı kart/token kaldırılmıştır; Moderatör not alır.
-- `ERZ-01` Çürümüş Erzak / İskorbüt kartı değiştirilmemiştir.
-- `GUC-22` Bayat Peksimet değiştirilmemiştir.
-- Güncel paket: `/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip`.
+- `ERZ-01` Çürümüş Erzak ve `GUC-22` Bayat Peksimet değiştirilmemiştir.
+- Kart PDF'deki eski görünmeyen Kayalık metin kalıntıları temizlenmiştir.
+- **Kayalık arka yüzlerini Açık Deniz ile aynı yapma deneyi v2.6'ya alınmamıştır; Kayalık kategori arka yüzleri korunmuştur.**
+- v2.6 final validator PASS; kör Moderatör yürüyüşü 28/28 PASS; PDF preflight PASS.
+- Kilitli paket: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip`.
 
-## v2.5 - Son kullanıcı-onaylı stabil sürüm
+## v2.5 - Önceki stabil mekanik baseline
 
 **Tarih:** 19 Ağustos 2026  
 **Durum:** **STABLE / LOCKED - `releases/v2.5/`**
