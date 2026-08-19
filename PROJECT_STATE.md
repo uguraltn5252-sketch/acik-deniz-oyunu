@@ -2,59 +2,74 @@
 
 **Son güncelleme:** 19 Ağustos 2026  
 **Son kullanıcı-onaylı stabil prototip:** **v2.6 STABLE / LOCKED**  
-**Kanonik release kaydı:** `releases/v2.6/`  
-**Önceki mekanik baseline:** **v2.5 STABLE / LOCKED**
+**Kanonik locked release:** `releases/v2.6/`  
+**ACTIVE_DRAFT:** **v2.7 DRAFT / NOT LOCKED**  
+**ACTIVE_BRANCH:** `v2.7-design`  
+**ACTIVE_WORKSPACE:** `working/v2.7/`
 
-v2.6 kullanıcı tarafından açıkça kilitlenmiştir. Bundan sonra v2.6 artefaktları yerinde değiştirilmez; her yeni değişiklik v2.7+ DRAFT hattında yapılır.
+## Locked baseline
 
-## v2.6 kilitli durum
+v2.6 kullanıcı tarafından açıkça kilitlenmiştir ve yerinde değiştirilmez.
 
-### Kural kitabı
-
-- `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf`
-- 29 sayfa A4.
-- Oyuncu kuralları, Moderatörün açılış/sefer akışı, hafif storyteller rolü, referanslar ve Siyah Mühür hikâyesi aynı kitapta.
-- Ayrı Moderatör kartı veya ayrı hikâye dosyası yoktur.
-
-### Fiziksel kart seti
-
-- `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf`
-- 34 sayfa A4.
 - 118 ana kart: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita.
-- 3 yardımcı kart: `SET-KL-01` Kalkış Limanı, `SET-VL-01` Varış/Hedef Limanı, `SET-KP-01` Kaptan makamı.
+- 3 açık yardımcı kart: Kalkış Limanı / Varış-Hedef Limanı / Kaptan Makamı.
 - Toplam 121 basılabilir fiziksel kart.
-- Mahkûm için ayrı kart/token yok; Moderatör not alır.
-- `ERZ-01` Çürümüş Erzak ve `GUC-22` Bayat Peksimet değiştirilmemiştir.
-- Kayalık kartlarının mevcut **KAYALIK kategori arka yüzleri** korunur; Açık Deniz ile aynı arka yüz yapma deneyi v2.6'ya uygulanmamıştır.
+- Kural kitabı: 29 sayfa A4.
+- Mekanik motor: doğrulanmış v2.5 baseline.
 
-### Kilitli paket
+## Active v2.7 visual draft
 
-`/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip`  
-SHA-256: `ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534`
+v2.7, v2.6 mekaniklerini sessizce değiştirmeyen görsel üretim hattıdır.
 
-## Mekanik omurga
+Reference mode: `STYLE_ONLY`.
 
-v2.6 mekanik motor olarak v2.5 baseline'ı korur:
+Kullanıcı 19 Ağustos 2026 tarihinde representative visual gate'i **açıkça onayladı**. Bu onay tam deste ve rulebook görsel üretimine geçişi yetkilendirdi; **release lock değildir**.
 
-- Kaptan kalıcı rol; ilk gün yalnız seçim.
-- İlk tarafsız gecede Sadakat bilinmeden tam 1 Yakın Ufka gizli bakış.
-- Sadakat ertesi sabah; ilk gerçek rota normal eşzamanlı oylama, Kaptan rota oyu 2.
-- İlk Hain gecesi Hainler tanışır, 1 Yakın Ufka bakar, saldırı yapamaz.
-- N-1 gerçek Güç + Çürümüş Erzak başlangıç paketi; ilk yolculuk gününe herkes 1 gerçek Güçle başlar.
-- Kamusal Harita açması kalıcıdır; ziyaret edilmedikçe olay çözülmez; açık Geçilmez engeldir.
-- İskorbüt etkinse Ada ziyareti zorunludur; Ada girişinde olaydan önce temizlenir.
-- Relocation guard ve Ada çevresi Girdap/Ters Akıntı invariantı korunur.
-- Gövde 2; Hain tablosu 6:1, 7:2, 8–10:3, 11–13:4, 14–15:5.
+Onay kaydı: `working/v2.7/USER_REVIEW_APPROVAL_2026-08-19.md`.
 
-## Test durumu
+### Tamamlanan v2.7 görsel aşamalar
 
-- v2.5 mekanik baseline validator / geometri / relocation / 100.200 oyun denge / PDF audit: PASS.
-- v2.6 final validator: PASS.
-- Kör Moderatör yürüyüşü: 28/28 PASS.
-- Kural ve kart PDF preflight: PASS.
-- Kart PDF sayfa 2–34 görsel invariance: PASS.
-- Kayalık arka yüz politikası: PASS — KAYALIK, Açık Deniz'den ayrı.
+- Design System / Reference Use Policy: PASS.
+- Representative five-card gate: PASS / USER APPROVED.
+- Card-back secrecy: PASS.
+- Line-only / 2–3 second / digital real-size tests: PASS.
+- 5x5 / 5x6 / 6x6 map table tests: PASS.
+- Full 121-card inventory resolution: PASS.
+- Full 121-card digital propagation: PASS DIGITAL / MINOR ISSUE.
+- 121 front binary uniqueness: 121/121 unique SHA-256.
+- Canonical text-fit validation: PASS.
+- Full-deck visual review: 15 pages / PASS DIGITAL.
+- Full-deck A4 print candidate: 46 pages / PASS DIGITAL.
+- Full 29-page rulebook visual draft: PASS DIGITAL / MINOR ISSUE.
+- Rulebook render QA: PASS.
+- Final digital preflight: MINOR ISSUE / COMPLETE.
 
-## Kilit politikası
+### Açık kalan gerçek gate'ler
 
-**v2.6 STABLE / LOCKED yerinde değiştirilmez.** Yeni kart, kural, hikâye, fiziksel bileşen veya mekanik değişikliği v2.7+ DRAFT olarak açılır.
+- Physical card print / cut / duplex / real-light proof: **PENDING**.
+- Physical rulebook proof: **PENDING**.
+- Final production-level 1721 clothing/object/material-culture audit: **MINOR OPEN ISSUE**.
+
+## Artifact routing
+
+Binary review/production outputs are archived under:
+
+`/Oyun-GitHub/v2.7/exports/`
+
+Exact hashes and paths are recorded in:
+
+`working/v2.7/EXPORT_MANIFEST.json`
+
+Current GitHub connector does not expose binary PDF upload; no GitHub binary upload is falsely claimed.
+
+## Current result
+
+**v2.7 = DRAFT / NOT LOCKED**
+
+Digital workflow is complete through full deck + rulebook visual draft + digital preflight. No unresolved digital MAJOR ISSUE remains.
+
+## Next gate
+
+**Physical production proof + final production-level historical/period-detail audit.**
+
+Only an explicit later user instruction such as `kilitle`, `stable yap` or `release et` may convert v2.7 to STABLE / LOCKED.
