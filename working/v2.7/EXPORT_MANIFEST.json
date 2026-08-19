@@ -6,37 +6,16 @@
   "branch": "v2.7-design",
   "date": "2026-08-19",
   "reference_use_mode": "STYLE_ONLY",
-  "review_gate": "USER REVIEW REQUIRED",
-  "overall_result": "MINOR ISSUE",
-  "source_policies": [
-    "working/v2.7/DESIGN_SYSTEM_MASTER.md",
-    "working/v2.7/REFERENCE_USE_POLICY.md",
-    "working/v2.7/REPRESENTATIVE_VISUAL_BRIEFS.md",
-    "working/v2.7/WORLD_BIBLE_SESSION_2026-08-19.md"
-  ],
-  "canva_attempts": [
-    {
-      "design_id": "DAHSvmAWxYk",
-      "status": "EXPERIMENTAL / CONTENT QA FAIL / NOT CANONICAL",
-      "qa": "Earlier generated candidate did not match required FOULWAKE content structure."
-    },
-    {
-      "design_id": "DAHSv3GnJGo",
-      "title": "FOULWAKE v2.7 - Revised Visual Review Gate",
-      "status": "EXPERIMENTAL IMPORT / EDITABLE-STRUCTURE QA FAIL / NOT CANONICAL",
-      "observed_page_count": 1,
-      "observed_richtext": "EMPTY",
-      "qa": "Import succeeded technically, but validation did not preserve the intended multi-page editable review structure. PDF artifacts remain the controlled review source."
-    }
-  ],
-  "binary_artifacts": [
+  "user_visual_gate": "APPROVED",
+  "overall_result": "MINOR ISSUE / DIGITAL WORKFLOW COMPLETE THROUGH FULL DECK + RULEBOOK DRAFT + DIGITAL PREFLIGHT",
+  "library_export_root": "/Oyun-GitHub/v2.7/exports/",
+  "legacy_review_artifacts": [
     {
       "name": "FOULWAKE_v2.7_USER_REVIEW_GATE_REVISED.pdf",
       "sha256": "fabd6c846dba497eacf82060be666d8051c73ab7616260d8793296698684e481",
       "bytes": 20384251,
       "pages": 16,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_USER_REVIEW_GATE_REVISED.pdf",
-      "status": "PRIMARY COMBINED USER-REVIEW PDF"
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_USER_REVIEW_GATE_REVISED.pdf"
     },
     {
       "name": "FOULWAKE_v2.7_DESIGN_SYSTEM_BOARD_REVISED.pdf",
@@ -55,56 +34,116 @@
       "sha256": "426d83fe206dd7acec2cdbe3d2f6b13db6d5b817730bcb48c8881c076f130c8b",
       "bytes": 2182619,
       "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_CARD_BACK_TEST_REVISED.pdf"
+    }
+  ],
+  "full_deck_artifacts": [
+    {
+      "name": "FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf",
+      "sha256": "c643acf4ec8137fe392000d250bb703454412a69c3bbe68ebdec419b2d2b55a2",
+      "bytes": 55395080,
+      "pages": 46,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf"
     },
     {
-      "name": "FOULWAKE_v2.7_LINE_ONLY_TEST_REVISED.pdf",
-      "sha256": "2331c53b6e86e08f19f14ef2964d2dd5b7dd86b4834be2a5bd8d3c8a2a3cbb2e",
-      "bytes": 573053,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_LINE_ONLY_TEST_REVISED.pdf"
+      "name": "FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf",
+      "sha256": "4a909942c91862f7bc899df027e453aa16a5640b22bd32660c5b10f6e46595a6",
+      "bytes": 3920471,
+      "pages": 15,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf"
     },
     {
-      "name": "FOULWAKE_v2.7_PRINT_TEST_REVISED.pdf",
-      "sha256": "35e1695a6eefa8c0d6cefa535fb484e0626520e8eb54536c40fb39227599ccdf",
-      "bytes": 4067026,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_PRINT_TEST_REVISED.pdf"
+      "name": "FOULWAKE_v2.7_FULL_DECK_LINE_ONLY_SAMPLE.pdf",
+      "sha256": "549a1921b78894c8dcf496d0d63914d08a019929cb0796fcef5ad6a7163b2007",
+      "bytes": 431785,
+      "pages": 1,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_LINE_ONLY_SAMPLE.pdf"
     },
     {
-      "name": "FOULWAKE_v2.7_TABLE_TEST_REVISED.pdf",
-      "sha256": "255fd650fa290c76aec774bd71b4901c5ccb5f67ea69d3654be8dc2fa9221783",
-      "bytes": 610042,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_TABLE_TEST_REVISED.pdf"
+      "name": "FOULWAKE_v2.7_FULL_DECK_QA.pdf",
+      "sha256": "fc59f590b2fd4efe8f5380c5172bf01487e29eae55f9d42afc957d403ec9e4f6",
+      "bytes": 45210,
+      "pages": 1,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_QA.pdf"
     },
     {
-      "name": "FOULWAKE_v2.7_VISUAL_QA_REVISED.pdf",
-      "sha256": "00b3ad6eb8c1e3bc891974ff274d3e8c3ae0e9c1e865505460b930667699e696",
-      "bytes": 86942,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_VISUAL_QA_REVISED.pdf"
+      "name": "FULL_DECK_CARD_INVENTORY.json",
+      "sha256": "5f5317bee4dd54ab59065f3527e536c881eae861b67d0a0ba3c88ec120d8bc4a",
+      "bytes": 45044,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FULL_DECK_CARD_INVENTORY.json"
     },
     {
-      "name": "FOULWAKE_v2.7_CANVA_EDITABLE_REVIEW.zip",
-      "sha256": "83eb7efc1c2ffa2afcbc134fa35a460b86a5fea2b4c0270def6b0f884d47900b",
-      "bytes": 6922287,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_CANVA_EDITABLE_REVIEW.zip",
-      "status": "IMPORT PACKAGE / CANVA STRUCTURE QA FAILED"
+      "name": "FULL_DECK_VISUAL_BRIEFS.json",
+      "sha256": "0091539a6ec77324ecfef14ea9f9d9177f143f5835cc4ffb50a452c8c1943a61",
+      "bytes": 68585,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FULL_DECK_VISUAL_BRIEFS.json"
     },
     {
-      "name": "artifact_hashes_REVISED.json",
-      "library_path": "/Oyun-GitHub/v2.7/exports/artifact_hashes_REVISED.json"
+      "name": "FULL_DECK_VISUAL_BRIEFS.md",
+      "sha256": "cbde3897bd0e9d474d215506d84ae2ea63194126ddb926d7e65a966d21db2633",
+      "bytes": 45534,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FULL_DECK_VISUAL_BRIEFS.md"
+    },
+    {
+      "name": "FULL_DECK_PRODUCTION_MANIFEST.json",
+      "sha256": "6a09f9bc22982166df64c225e837f9f4119a0cc3ec79a8d7689ccd87ade6b650",
+      "bytes": 2354,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FULL_DECK_PRODUCTION_MANIFEST.json"
+    },
+    {
+      "name": "FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip",
+      "sha256": "c0a9fc6c0cad28afaa75bfdc697fdccd6ea8444bbbebc7c17cb802400c5ad85f",
+      "bytes": 55358908,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip",
+      "contents": "121 front PNGs + shared back PNGs + inventory + build scripts"
+    }
+  ],
+  "rulebook_and_preflight_artifacts": [
+    {
+      "name": "FOULWAKE_v2.7_RULEBOOK_VISUAL_DRAFT.pdf",
+      "sha256": "49456820b14a68e7dbfb622746a86779a8764563cc604a88b2e10a00beda1dd3",
+      "bytes": 1230520,
+      "pages": 29,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_RULEBOOK_VISUAL_DRAFT.pdf"
+    },
+    {
+      "name": "RULEBOOK_DRAFT_MANIFEST.json",
+      "sha256": "caac0a4961d43e9eac7f4dd45b5fd4444efa5c1626cd7b57f5e091b4875fd699",
+      "bytes": 460,
+      "library_path": "/Oyun-GitHub/v2.7/exports/RULEBOOK_DRAFT_MANIFEST.json"
+    },
+    {
+      "name": "FOULWAKE_v2.7_RULEBOOK_QA.pdf",
+      "sha256": "c9660e29869fa148d612b38249eddb0935f57fbcd019390021cca30e332d5a8e",
+      "bytes": 44639,
+      "pages": 1,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_RULEBOOK_QA.pdf"
+    },
+    {
+      "name": "FOULWAKE_v2.7_FINAL_DIGITAL_PREFLIGHT.pdf",
+      "sha256": "e3c4ae0ab0cd024bfbca9795d6c9dc5fe1aa4c6adeeb8522752c74ad79ece6b9",
+      "bytes": 44780,
+      "pages": 1,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FINAL_DIGITAL_PREFLIGHT.pdf"
     }
   ],
   "qa": {
-    "combined_user_review_pdf": "PASS / 16 PAGES / OPEN / NO PREFLIGHT WARNINGS",
-    "pdf_open_render_preflight": "PASS",
-    "reference_similarity": "PASS",
-    "mechanic_visual_consistency": "PASS",
-    "line_only": "PASS",
-    "digital_real_size": "PASS",
-    "map_table": "PASS AFTER SELF-CORRECTION",
-    "physical_print": "PENDING",
-    "historical_period_object_audit": "MINOR / FINAL PRODUCTION PASS STILL REQUIRED"
+    "user_review_gate": "PASS / APPROVED",
+    "locked_baseline_integrity": "PASS",
+    "full_121_card_inventory": "PASS",
+    "front_uniqueness": "PASS / 121 UNIQUE SHA-256 BINARIES",
+    "canonical_text_fit": "PASS",
+    "card_dimensions_and_bleed": "PASS",
+    "reference_similarity": "PASS BY CONSTRUCTION",
+    "back_secrecy": "PASS",
+    "full_deck_render_review": "PASS DIGITAL",
+    "rulebook_render_review": "PASS DIGITAL",
+    "digital_preflight": "MINOR ISSUE / COMPLETE",
+    "historical_period_object_audit": "MINOR / FINAL PRODUCTION PASS REQUIRED BEFORE LOCK",
+    "physical_print_cut_light_proof": "PENDING",
+    "release_lock": "NOT APPLIED"
   },
   "github_binary_upload": {
     "status": "NOT AVAILABLE IN CURRENT CONNECTOR",
-    "note": "No binary PDF upload was claimed. Revised review PDFs and hash record were archived in the user file library; GitHub stores their exact hashes and library paths."
+    "note": "No binary upload to GitHub is claimed. Binary outputs are archived in the user file library and this manifest records exact hashes/paths."
   }
 }
