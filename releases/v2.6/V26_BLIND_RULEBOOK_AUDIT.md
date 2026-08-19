@@ -1,16 +1,18 @@
-# v2.6 Güncel Kör Masa / Moderatör Denetimi
+# v2.6 Kör Masa / Moderatör Denetimi
 
-**Durum:** DRAFT / NOT LOCKED  
+**Durum:** **STABLE / LOCKED**  
 **Taban:** v2.5 STABLE / LOCKED mekanikleri  
-**Güncel belgeler:** 29 sayfa kural kitabı + 34 sayfa tam kart PDF
+**Final belgeler:** 29 sayfa kural kitabı + 34 sayfa tam kart PDF
 
 ## Sonuç
 
-- Güncel v2.6 validator: **PASS**
+- v2.6 final validator: **PASS**
 - Kör Moderatör yürüyüşü: **28/28 PASS**
 - v2.5 baseline validator: **PASS**
+- Kural PDF preflight: **PASS**
 - Kart PDF preflight: **PASS**
 - Eski gizli Kayalık metin kalıntıları: **TEMİZLENDİ**
+- Kayalık arka yüzleri Açık Deniz ile birleştirilmedi: **PASS**
 
 ## Kör Moderatör yürüyüşü
 
@@ -21,7 +23,6 @@ Kontrol edilen 28 başlık arasında storyteller sınırı, Kaptan oylaması, Ç
 
 ## Kart seti
 
-Tam kart PDF'de doğrulanan benzersiz fiziksel kimlikler:
 - 20 Karakter
 - 30 Güç (`GUC-01A/B` ve `GUC-02A/B` dahil)
 - 1 Çürümüş Erzak
@@ -31,10 +32,12 @@ Tam kart PDF'de doğrulanan benzersiz fiziksel kimlikler:
 
 Ana set 118, yardımcılarla toplam basılabilir kart 121'dir.
 
-## PDF temizliği
+## Kayalık ve PDF temizliği
 
-Önceki kart PDF'sinde görünmeyen metin katmanında kalan eski `Kaptanın Abarttığı Kayalık` ve `Kaptan-ı Deryanın Eski Faturası` metinleri vardı. Yalnız ilgili baskı sayfası görünümü değiştirilmeden temizlendi. Görsel kartlar `Duvar Gibi Kayalık` ve `Yolun Bittiği Yer` olarak korunur. Diğer kart sayfalarına mekanik müdahale yapılmadı.
+Önceki kart PDF'sinde görünmeyen metin katmanında kalan eski `Kaptanın Abarttığı Kayalık` ve `Kaptan-ı Deryanın Eski Faturası` metinleri temizlenmiştir. Görsel kartlar `Duvar Gibi Kayalık` ve `Yolun Bittiği Yer` olarak korunur.
+
+Kayalık arka yüzlerini Açık Deniz ile aynı yapma A/B deneyi release'e alınmamıştır. Final v2.6'da **AÇIK DENİZ** ve **KAYALIK** kategori arka yüzleri ayrı kalır. Kart PDF'nin 2–34. sayfaları kilit öncesi onaylı v2.6 kart taslağıyla görsel olarak birebir aynıdır; finalleştirme yalnız kapak sürüm statüsünü değiştirmiştir.
 
 ## Kilit kararı
 
-Bu denetim taslağın teknik olarak temiz olduğunu gösterir; **kilit kararı değildir**. Kullanıcı açıkça “kilitle” demeden v2.6 STABLE / LOCKED yapılmaz.
+Teknik kapılar PASS olduktan sonra kullanıcı 19 Ağustos 2026 tarihinde v2.6'yı açıkça kilitlemiştir. v2.6 bundan sonra yerinde değiştirilmez; yeni çalışma v2.7+ DRAFT hattında açılır.
