@@ -1,15 +1,15 @@
 {
   "version": "v2.6",
   "status": "STABLE / LOCKED",
+  "locked_at": "2026-08-19T14:11:00+03:00",
+  "user_approved_lock": true,
   "mechanical_baseline": "v2.5 STABLE / LOCKED",
   "release_lock": true,
-  "locked_at": "2026-08-19T14:08:00+03:00",
-  "locked_by_user_explicit_approval": true,
-  "content_changed_during_lock": false,
   "artifacts": {
-    "rulebook": {"path": "/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6_DRAFT.pdf", "pages": 29, "size_bytes": 577403, "sha256": "f369d6947dc22afde0af4bdeb72e00fa48ca26f072c49f025b97b8d071e0347d"},
-    "cards": {"path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf", "pages": 34, "size_bytes": 1779634, "sha256": "73b88869609076aec8690ecc7812f00ba26a6226a7af94b3db7725af30874382"},
-    "zip": {"path": "/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip", "size_bytes": 1752338, "sha256": "cfb1fe5071270900610669ae6863f8fb96e6d7bba311276c2569b767336f7e8c"}
+    "rulebook": {"path": "/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf", "pages": 29, "size_bytes": 1104041, "sha256": "192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a"},
+    "cards": {"path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf", "pages": 34, "size_bytes": 1768745, "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"},
+    "zip": {"path": "/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip", "size_bytes": 4360296, "sha256": "ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534"},
+    "mechanical_baseline_zip_sha256": "975dd77d435a835fcf3faa864c5624b0542fadb419fa7d34217ed32fe87aa046"
   },
   "card_state": {
     "main_cards": 118,
@@ -25,20 +25,22 @@
     "convict_tracking": "Moderator note",
     "rotten_supplies_changed": false,
     "bayat_peksimet_changed": false,
-    "rock_backs_changed_to_open_sea": false,
+    "rock_back_policy": "Kayalık category back remains distinct from Açık Deniz; same-back experiment excluded",
     "stale_hidden_rock_text_removed": true
   },
   "rulebook_state": {
     "single_integrated_rulebook": true,
-    "separate_moderator_card_current": false,
+    "separate_moderator_card": false,
     "story_inside_rulebook": true,
     "moderator_storyteller_role": "light / non-directive"
   },
   "validation": {
     "v25_baseline_revalidation": "PASS",
-    "v26_current_validator": "PASS",
+    "v26_final_validator": "PASS",
     "blind_moderator_walkthrough": "28/28 PASS",
-    "card_pdf_preflight": "PASS"
+    "rulebook_preflight": "PASS",
+    "card_pdf_preflight": "PASS",
+    "card_pages_2_34_visual_invariance": "PASS"
   },
-  "immutability": "Locked v2.6 game artifacts must not be modified in place. Any subsequent change starts at v2.7+ DRAFT."
+  "immutability": "v2.6 is locked. Any subsequent change starts at v2.7+ DRAFT."
 }
