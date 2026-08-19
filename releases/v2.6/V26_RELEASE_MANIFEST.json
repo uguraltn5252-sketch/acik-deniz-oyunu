@@ -1,0 +1,27 @@
+{
+  "version": "v2.6",
+  "status": "STABLE / LOCKED",
+  "mechanical_baseline": "v2.5 STABLE / LOCKED",
+  "mechanics_changed": false,
+  "artifacts": [
+    {"name":"CARD_BASELINE.md","size_bytes":728,"sha256":"a63f3d46bf5f692db40b66d82336805f18b4994be55b4a0c8f707c65438de0f0"},
+    {"name":"MEKANIK_BASELINE_OYUN_SIMULASYON_PAKETI_v2.5.zip","size_bytes":2082476,"sha256":"975dd77d435a835fcf3faa864c5624b0542fadb419fa7d34217ed32fe87aa046"},
+    {"name":"OYUN_Karakter_Kartlari_v2.5_UNCHANGED.pdf","size_bytes":1301209,"sha256":"0fa5367ca31074f392b064060ca46b2fccc6b122dca70f7cea6baf0ad6fc96d8"},
+    {"name":"OYUN_Kartlar_A4_Prototip_v2.5_UNCHANGED.pdf","size_bytes":1930308,"sha256":"e158b33b77d2fff962420170d87aea407c87c97c9d611e19a6b72e7827aba4cc"},
+    {"name":"OYUN_Kural_Kitabi_v2.6.docx","size_bytes":71295,"sha256":"02a76aa2ca417362d4b5d9f6d719aa472c385c4d66b49df7324f2701d2954300"},
+    {"name":"OYUN_Kural_Kitabi_v2.6.pdf","size_bytes":552376,"sha256":"dc3811e1387398904f9473d03f83b4ee703dc48908500695ff2adf0982947c77"},
+    {"name":"OYUN_Moderator_Masa_Karti_v2.6.pdf","size_bytes":57237,"sha256":"ec523938f9940ba260e6eaf938971cb738967b47e73208d4d1c4c928308943ec"},
+    {"name":"README_RELEASE_v2.6.md","size_bytes":2653,"sha256":"bf9088f54849d642eca121ad3516bedfc1bddb2588e8bb59247ff344c56d0811"},
+    {"name":"V25_BASELINE_REVALIDATION.txt","size_bytes":949,"sha256":"437529653b29c433aac18221b5cea6b305a0d67e0206b9db4bf1e9141636eba7"},
+    {"name":"V26_BLIND_RULEBOOK_AUDIT.md","size_bytes":4196,"sha256":"c0826fc78d9dc4574d19955dbf96e25dd579d78dd5ccf2d2ee80b8cfb4fb9dd2"},
+    {"name":"V26_RELEASE_VALIDATE_OUTPUT.txt","size_bytes":210,"sha256":"f31d0e1e19e2f9c93369a12b23bd6dd356ea367acedaa922a4641985bda2da14"},
+    {"name":"validate_release_v2_6.py","size_bytes":2990,"sha256":"da6ad4ce499bd41edb593c7e1c96539c0dd1592934f492803cc6cb6053d5beae"}
+  ],
+  "validation": {
+    "v25_baseline_revalidation": "PASS",
+    "blind_rulebook_audit": "PASS",
+    "v26_release_validator": "PASS",
+    "card_baseline_hash_preserved": true,
+    "character_cards_changed": false
+  }
+}
