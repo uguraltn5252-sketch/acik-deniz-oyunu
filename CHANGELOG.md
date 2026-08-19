@@ -1,22 +1,27 @@
 # Changelog
 
-## v2.6 - Taslak kural/anlatı revizyonu
+## v2.6 - Güncel taslak kural/anlatı ve fiziksel bileşen revizyonu
 
 **Tarih:** 19 Ağustos 2026  
 **Durum:** **DRAFT / NOT LOCKED**  
 **Mekanik baseline:** **v2.5 STABLE / LOCKED**
 
-Not: v2.6 kullanıcı açık onayı olmadan STABLE/LOCKED olarak işaretlenmişti. Bu statü geri alınmıştır. v2.6 kanonik release değildir.
+Not: v2.6 kullanıcı açık onayı olmadan daha önce STABLE/LOCKED olarak işaretlenmişti. Bu statü geri alınmıştır. v2.6 kanonik release değildir ve kullanıcı açıkça kilitlemeden release sayılamaz.
 
-Taslak değişiklikler:
+Güncel taslak değişiklikler:
 
-- Kural kitabı ilk kez oynayan masa için öğretme + referans yapısına dönüştürüldü.
-- Kaptan Gusto'nun kayboluşu ve Siyah Mühür anlatısı işlendi.
-- Zorunlu masa anlatıları kısa `OKU` kutularına ayrıldı; ayrıntılı arka plan ayrı eke taşındı.
-- Kör kural kitabı denetiminde karakter kurulum yoğunluğu, erken terim yükü, başlangıç Güç hazırlığı, Kaptan masumiyet algısı ve Kaptan değişim görünürlüğü sorunları tespit edilip taslak metinde düzeltildi.
-- Moderatör için masa kartı hazırlandı.
-- **Kart mekaniklerine dokunulmadı.** v2.5 tam kart PDF'si byte-for-byte korunur ve Karakter + Güç + Çürümüş Erzak + Sadakat + Harita kartlarının tamamını içerir.
-- Ayrı Karakter PDF'si yalnız yardımcı baskı çıktısıdır; tam oyun kart seti değildir.
+- Kural kitabı oyuncu öğretimi, Moderatör/storyteller akışı, referans ve arka plan hikâyesini tek belgede birleştirir.
+- Ayrı Moderatör masa kartı güncel taslaktan çıkarılmıştır; Moderatör oyunu kural kitabının tek akış bölümünden yönetir.
+- Moderatör hafif storyteller rolündedir; atmosferi kurar fakat gizli bilgi/şüphe yönlendirmez.
+- Kaptan Gusto'nun kayboluşu, Siyah Mühür ve Saint Verena anlatısı entegre edilmiştir.
+- Kural kitabı 29 sayfa A4'e güncellenmiştir.
+- Kart PDF 34 sayfa A4'e güncellenmiştir.
+- 118 ana oyun kartı kimliği korunur: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita.
+- Ana kimliğin dışında yardımcı fiziksel kartlar: mevcut Kalkış Limanı, yeni Varış/Hedef Limanı ve yeni Kaptan makam kartı.
+- Mahkûm için ayrı kart/token kaldırılmıştır; Moderatör not alır.
+- `ERZ-01` Çürümüş Erzak / İskorbüt kartı değiştirilmemiştir.
+- `GUC-22` Bayat Peksimet değiştirilmemiştir.
+- Güncel paket: `/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip`.
 
 ## v2.5 - Son kullanıcı-onaylı stabil sürüm
 
