@@ -1,0 +1,30 @@
+{
+  "project": "FOULWAKE",
+  "version": "v2.7",
+  "status": "DRAFT / NOT LOCKED",
+  "source_release": "v2.6 STABLE / LOCKED",
+  "mechanics_policy": "No v2.6 mechanical change unless explicitly approved in v2.7 draft",
+  "git_branch": "v2.7-design",
+  "figma": {
+    "file_name": "FOULWAKE v2.7 DESIGN SYSTEM",
+    "file_key": "LOJtIBKKfN2KVGx8wD6rU9",
+    "url": "https://www.figma.com/design/LOJtIBKKfN2KVGx8wD6rU9",
+    "role": "visual_source_of_truth"
+  },
+  "github_role": "game_content_and_release_source_of_truth",
+  "card_formats_mm": {
+    "map": [70, 70],
+    "character": [70, 120],
+    "poker": [63.5, 88.9]
+  },
+  "bleed_mm": 3,
+  "safe_area_mm": "4-5",
+  "locked_rules": {
+    "no_foulwake_name_on_cards": true,
+    "no_text_on_card_backs": true,
+    "sea_and_rock_share_back_in_v2_7_visual_draft": true,
+    "island_back_identical_within_group": true,
+    "lighthouse_back_identical_within_group": true,
+    "rotten_provisions_indistinguishable_from_power_back": true
+  }
+}
