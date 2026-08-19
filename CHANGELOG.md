@@ -1,25 +1,24 @@
 # Changelog
 
-## v2.6 - Stabil / kilitli kural ve anlatı revizyonu
+## v2.6 - Taslak kural/anlatı revizyonu
 
 **Tarih:** 19 Ağustos 2026  
-**Durum:** **STABLE / LOCKED - `releases/v2.6/`**  
+**Durum:** **DRAFT / NOT LOCKED**  
 **Mekanik baseline:** **v2.5 STABLE / LOCKED**
 
-v2.6 yeni mekanik içermez. Başlıca değişiklikler:
+Not: v2.6 kullanıcı açık onayı olmadan STABLE/LOCKED olarak işaretlenmişti. Bu statü geri alınmıştır. v2.6 kanonik release değildir.
+
+Taslak değişiklikler:
 
 - Kural kitabı ilk kez oynayan masa için öğretme + referans yapısına dönüştürüldü.
-- Kaptan Gusto'nun kalkıştan hemen önce kayboluşu Kaptan oylamasının kanonik anlatısal gerekçesi oldu.
-- Siyah Mühür, Arden Krallığı, San Cordelio, Saint Verena ve veba ekonomisi ana hikâye katmanı olarak kural kitabına işlendi; Gusto'nun gerçek akıbeti çözümsüz bırakıldı.
-- Zorunlu masa anlatıları kısa `OKU` kutularına ayrıldı; ayrıntılı arka plan `Siyah Mühür Dosyası` ekine taşındı.
-- Kör kural kitabı denetiminde karakter kurulum yoğunluğu, erken terim yükü, başlangıç Güç hazırlığı, Kaptan masumiyet algısı ve Kaptan değişim görünürlüğü sorunları düzeltildi.
-- Moderatör için 2 sayfalık masa kartı oluşturuldu.
-- 20 Karakter kartına ve diğer kart mekaniklerine dokunulmadı; v2.5 tam kart PDF'si byte-for-byte korundu.
-- Ayrı Karakter baskı PDF'si, kilitli v2.5 kart PDF'sinin yalnız baskı talimatı + Karakter yapraklarından üretildi.
-- v2.5 tam release validatorı yeniden çalıştırıldı ve PASS; v2.6 kör denetim ve release validatorı PASS.
-- Bundan sonraki tasarım/mekanik değişiklikleri v2.7+ hattında yapılır.
+- Kaptan Gusto'nun kayboluşu ve Siyah Mühür anlatısı işlendi.
+- Zorunlu masa anlatıları kısa `OKU` kutularına ayrıldı; ayrıntılı arka plan ayrı eke taşındı.
+- Kör kural kitabı denetiminde karakter kurulum yoğunluğu, erken terim yükü, başlangıç Güç hazırlığı, Kaptan masumiyet algısı ve Kaptan değişim görünürlüğü sorunları tespit edilip taslak metinde düzeltildi.
+- Moderatör için masa kartı hazırlandı.
+- **Kart mekaniklerine dokunulmadı.** v2.5 tam kart PDF'si byte-for-byte korunur ve Karakter + Güç + Çürümüş Erzak + Sadakat + Harita kartlarının tamamını içerir.
+- Ayrı Karakter PDF'si yalnız yardımcı baskı çıktısıdır; tam oyun kart seti değildir.
 
-## v2.5 - Stabil mekanik baseline
+## v2.5 - Son kullanıcı-onaylı stabil sürüm
 
 **Tarih:** 19 Ağustos 2026  
 **Durum:** **STABLE / LOCKED - `releases/v2.5/`**
@@ -30,7 +29,6 @@ v2.6 yeni mekanik içermez. Başlıca değişiklikler:
 - Çürümüş Erzak sahibinin İskorbüt sonucu sonrası gerçek Güç çekimi ve ilk yolculuk gününde herkesin 1 Güçle başlaması sabitlendi.
 - Gövde 2 ve 118 ana kimlik korundu.
 - Tam-sistem 100.200 oyun: Tayfa yaklaşık %50,28; motor hatası 0.
-- v2.6'nın mekanik geri dönüş/baseline sürümüdür.
 
 ## v2.4 - Önceki mekanik stabil
 
@@ -54,7 +52,7 @@ v2.6 yeni mekanik içermez. Başlıca değişiklikler:
 
 ## v2.2 - Önceki stabil prototip
 
-`releases/v2.2/` değiştirilemez geri dönüş referansıdır. Ayrı görünür Geçilmez Kayalık işareti sistemi yalnız bu tarihsel sürümde kalır.
+`releases/v2.2/` değiştirilemez geri dönüş referansıdır.
 
 ## v2.1 - Tarihsel stabil temel
 
