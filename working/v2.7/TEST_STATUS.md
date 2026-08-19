@@ -1,65 +1,72 @@
 # FOULWAKE v2.7 — VISUAL TEST STATUS
 
-Status: DRAFT / NOT LOCKED
-Date: 2026-08-19
-Branch: `v2.7-design`
-Canonical baseline: `v2.6 STABLE / LOCKED`
+Status: **DRAFT / NOT LOCKED**  
+Date: 2026-08-19  
+Branch: `v2.7-design`  
+Canonical baseline: `v2.6 STABLE / LOCKED`  
 Reference mode: `STYLE_ONLY`
 
 ## Gate Summary
 
 | Gate | Result | Notes |
 |---|---|---|
-| GitHub state resolution | PASS | Existing `working/v2.7` and `v2.7-design` reused; no new draft was created. |
-| Locked baseline protection | PASS | `v2.6 STABLE / LOCKED` was read only; no locked artifact was changed. |
-| Story / World audit | PASS | 1721, Arden, San Cordelio, Saint Verena, Veyr, Siyah Mühür and Gusto ambiguity checked against the current v2.7 World Bible. |
-| Reference-use policy | PASS | `REFERENCE_USE_POLICY.md` added. Default is STYLE_ONLY; crop/paste, tracing, pixel reuse and reference-character transfer are forbidden. |
-| Representative visual briefs | PASS | All five representative cards received mechanic-first briefs in `REPRESENTATIVE_VISUAL_BRIEFS.md`. |
-| Image-generation attempt | FAIL / REJECTED | The image-generation attempt produced an unrelated project dashboard with incorrect content, so it was rejected and not used as card art. |
-| Adobe Express art attempt | FAIL / UNAVAILABLE | Direct standalone illustration generation was not available for this gate. No false success was recorded. |
-| Canva revised import | FAIL AS EDITABLE SOURCE | Canva design `DAHSv3GnJGo` imported, but validation returned one page and empty rich-text content; it is experimental only and not the source of truth. |
-| PDF-first fallback | PASS | Controlled local production generated the revised review set and archived it to `/Oyun-GitHub/v2.7/exports/`. |
-| Representative five-card visual gate | MINOR ISSUE / USER REVIEW | Exact mechanics used; all five illustrations are newly constructed without reference pixels/crops. Art remains representative/prototype-level rather than final production illustration. |
-| Reference Similarity QA | PASS | No crop/paste, tracing, pixel-level reuse, reference face transfer or reference-scene repackaging detected. |
-| Line-only test | PASS | Main subject/action and card hierarchy remain readable after color removal. |
-| 2–3 second hierarchy test | PASS | Title and primary mechanic zones are consistent and quickly locatable. |
-| Power / Rotten Provisions back secrecy | PASS | Exact same binary back asset is reused. |
-| Sea / Rock back secrecy | PASS | Exact same binary back asset is reused in the v2.7 visual draft. |
-| Back text / FOULWAKE leakage | PASS | Back assets contain no text and no FOULWAKE mark. |
-| 5x5 map table test | PASS AFTER SELF-CORRECTION | Initial framed back read too strongly as a card grid; it was rejected, replaced by a full-bleed continuous-sea back, then retested. |
-| 5x6 map table test | PASS AFTER SELF-CORRECTION | Full-bleed identical Sea/Rock back reads as one unexplored sea field. |
-| 6x6 map table test | PASS AFTER SELF-CORRECTION | Full-bleed identical Sea/Rock back reads as one unexplored sea field. |
-| Digital real-size print test | PASS | 100% PDF uses real card geometry with 3 mm bleed and trim guides; the first overlapping sheet was rejected and rebuilt as two clean A4 pages. |
-| Physical print | PENDING | No real printer, paper, cut tolerance or real-light test was available. Do not call this a physical-print PASS. |
-| Historical / story QA | MINOR ISSUE | No lore ambiguity is resolved, but final production illustration should still receive a dedicated period-object and clothing audit before lock. |
-| PDF open/render/preflight | PASS | Seven revised PDFs open and render. Visual clipping/overlap defects discovered during review were corrected and PDFs rerendered. |
-| Full 121-card propagation | BLOCKED | Must remain blocked until explicit user acceptance of the visual gate. |
-| Rulebook visual redesign | BLOCKED | Deferred until card visual gate approval. |
+| GitHub state resolution | PASS | Existing `working/v2.7` and `v2.7-design` reused; no new draft created. |
+| Locked baseline protection | PASS | v2.6 stayed read-only. |
+| Story / World audit | PASS | 1721 / Arden / San Cordelio / Saint Verena / Veyr / Siyah Mühür / Gusto ambiguity retained. |
+| Reference-use policy | PASS | No crop/paste, tracing, pixel reuse, face transfer or direct reference-scene reuse. |
+| Representative five-card gate | **PASS / USER APPROVED** | User explicitly approved the revised visual direction on 2026-08-19. Approval record: `USER_REVIEW_APPROVAL_2026-08-19.md`. |
+| Card back secrecy | PASS | Power=Rotten exact shared asset; Sea=Rock exact shared asset; all Loyalty backs shared. |
+| Line-only representative gate | PASS | Approved direction survived monochrome reduction. |
+| Digital real-size representative test | PASS | Correct physical geometries and 3 mm bleed. |
+| Map table 5x5 / 5x6 / 6x6 | PASS | Full-bleed Sea/Rock treatment reads as one unexplored sea field. |
+| Full physical-card inventory resolution | PASS | 121 cards resolved from locked sources: 20 Character / 30 Power / 1 Rotten / 15 Loyalty / 52 Map / 3 Support. |
+| Full 121-card propagation | **PASS DIGITAL / MINOR ISSUE** | 121 full-deck front candidates generated; every front has a unique SHA-256 binary. |
+| Full-deck canonical text-fit validation | PASS | No effect/flavor block requires truncation at configured minimum type sizes. |
+| Full-deck dimensions | PASS | Character 70x120; Map 70x70; Poker/support 63.5x88.9; 3 mm bleed; 300 dpi assets. |
+| Full-deck Reference Similarity QA | PASS BY CONSTRUCTION | Production engine imports no reference pixels; all scenes are mechanic/role/family driven. |
+| Full-deck visual review | PASS DIGITAL | 15-page contact review rendered and visually inspected. |
+| Full-deck print candidate | PASS DIGITAL | 46 A4 pages, paired front/back by family; all pages rendered and visually inspected. |
+| Full-deck line-only stratified sample | PASS | 15 cards across all families. |
+| Rulebook visual draft | **PASS DIGITAL / MINOR ISSUE** | Full 29-page v2.7 derivative generated from v2.6 locked mechanics; all pages rendered and visually inspected. |
+| Rulebook source integrity | PASS | Body mechanics/rules were not rewritten; v2.6 source PDF remains untouched. |
+| Final digital preflight | **MINOR ISSUE** | Digital workflow complete through full deck + rulebook draft; no unresolved digital MAJOR ISSUE. |
+| Historical / period-object production audit | MINOR ISSUE | Final high-fidelity production pass still needs dedicated clothing/object period-detail review before lock. |
+| Physical card print / cut / real-light proof | PENDING | No physical printer/paper/cut/light test was available. Do not call this PASS. |
+| Physical rulebook proof | PENDING | No real booklet proof performed. |
+| Release lock | NOT APPLIED | User approved visual gate only; v2.7 remains DRAFT. |
 
-## Representative Five-Card Set
+## Current full-deck artifacts
 
-1. `KAR-01 Uzakgören`
-2. `GUC-01A Can Simidi`
-3. `ERZ-01 Çürümüş Erzak`
-4. `HAR-AD-30 Bir Bulutun Kişisel Meselesi`
-5. `SET-KP-01 Kaptan Makamı`
+- `FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf` — 46 A4 pages.
+- `FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf` — 15 pages.
+- `FOULWAKE_v2.7_FULL_DECK_LINE_ONLY_SAMPLE.pdf` — 1 page.
+- `FOULWAKE_v2.7_FULL_DECK_QA.pdf`.
+- `FULL_DECK_CARD_INVENTORY.json`.
+- `FULL_DECK_VISUAL_BRIEFS.json` / `.md`.
+- `FULL_DECK_PRODUCTION_MANIFEST.json`.
+- `FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip` — production PNG assets + build sources.
 
-## Self-Corrections Performed Without User Interruption
+## Current rulebook / preflight artifacts
 
-1. Rejected the unrelated image-generation output instead of propagating it.
-2. Rejected Adobe Express as a direct illustration route when the requested operation was unavailable.
-3. Rejected Canva as canonical when editable/content validation failed.
-4. Replaced the first Sea/Rock framed back after the table test showed an obvious card-grid effect.
-5. Split the first real-size print sheet after card overlap was found during visual PDF inspection.
-6. Rebuilt Design System Board and Visual QA pages after text clipping/overlap was detected during render review.
-7. Reworked `Kaptan Makamı` so the visual reads as an empty transferable office rather than a permanent Captain character.
+- `FOULWAKE_v2.7_RULEBOOK_VISUAL_DRAFT.pdf` — 29 pages.
+- `RULEBOOK_DRAFT_MANIFEST.json`.
+- `FOULWAKE_v2.7_RULEBOOK_QA.pdf`.
+- `FOULWAKE_v2.7_FINAL_DIGITAL_PREFLIGHT.pdf`.
 
-## Current Production-Art Limitation
+All binary artifacts above are archived under `/Oyun-GitHub/v2.7/exports/`. GitHub stores hashes/status because the current connector does not expose binary PDF upload.
 
-The revised representative illustrations are original and mechanic-specific, but they are still controlled prototype artwork rather than final hand-illustrated production masters. They are sufficient for the current visual-language/layout gate. They must be upgraded before final full-deck preflight if the user approves the direction.
+## Self-corrections retained from representative phase
+
+1. Bad image-generation output was rejected instead of propagated.
+2. Unsupported Adobe route was recorded as unavailable rather than claimed as success.
+3. Canva candidates that failed content/editable-structure QA were not made canonical.
+4. Sea/Rock framed back was replaced after table-grid leakage.
+5. Overlapping real-size sheet was rebuilt.
+6. PDF clipping/glyph issues found during render QA were corrected.
+7. `Kaptan Makamı` was kept as a transferable public office, not a permanent Character identity.
 
 ## Overall Result
 
-**MINOR ISSUE — USER REVIEW GATE**
+**MINOR ISSUE — DIGITAL WORKFLOW COMPLETE THROUGH FULL DECK + RULEBOOK DRAFT + DIGITAL PREFLIGHT**
 
-No unresolved digital MAJOR ISSUE remains in the revised review set. Full-deck propagation stays blocked until the user explicitly approves the visual direction.
+No unresolved digital MAJOR ISSUE remains. The explicit remaining gates before any release lock are physical production proof and final production-level historical/period-detail audit. v2.7 is **not locked**.
