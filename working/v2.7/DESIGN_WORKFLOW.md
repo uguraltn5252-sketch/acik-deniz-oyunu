@@ -47,7 +47,17 @@ Forbidden by default: crop/paste, tracing, pixel-level reuse, cut-out character/
 14. 46-page A4 print candidate render — PASS DIGITAL.
 15. Full 29-page rulebook visual derivative — **COMPLETE / PASS DIGITAL / MINOR ISSUE**.
 16. Rulebook 29-page render QA — PASS.
-17. Final digital preflight — **MINOR ISSUE / COMPLETE**.
+17. Historical / period-object audit — **PASS DIGITAL AFTER SELF-CORRECTION**.
+18. Final digital preflight — **PASS DIGITAL / PHYSICAL GATE PENDING**.
+
+## Historical self-corrections
+
+The production audit caught and corrected two period-readability risks before the workflow was declared digitally complete:
+
+- `GUC-01A/B Can Simidi`: modern manufactured ring-buoy cue removed; replaced with a rope loop and small wooden float/cask visual.
+- `KAR-06 Dipgören`: helmet-like diver cue removed; replaced with a weighted recovery line / breath-hold-diver visual cue.
+
+No known unresolved anachronism remains in the current schematic card candidate.
 
 ## Current production artifacts
 
@@ -59,6 +69,7 @@ Key outputs:
 - `FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf`
 - `FOULWAKE_v2.7_FULL_DECK_LINE_ONLY_SAMPLE.pdf`
 - `FOULWAKE_v2.7_FULL_DECK_QA.pdf`
+- `FOULWAKE_v2.7_HISTORICAL_PERIOD_AUDIT.pdf`
 - `FULL_DECK_CARD_INVENTORY.json`
 - `FULL_DECK_VISUAL_BRIEFS.json` / `.md`
 - `FULL_DECK_PRODUCTION_MANIFEST.json`
@@ -67,22 +78,16 @@ Key outputs:
 - `FOULWAKE_v2.7_RULEBOOK_QA.pdf`
 - `FOULWAKE_v2.7_FINAL_DIGITAL_PREFLIGHT.pdf`
 
-## Remaining gates before any lock
+## Remaining real gate before any lock
 
-### 1. Physical card proof — PENDING
+### Physical production proof — PENDING
 
-A real 100% print, cut-tolerance, duplex-alignment, hand-readability and real-light check has not been performed in this environment.
+A real 100% card print, duplex alignment, cut-tolerance, hand-readability and real-light check has not been performed in this environment. A physical rulebook proof has also not been performed.
 
-### 2. Physical rulebook proof — PENDING
-
-No real booklet proof has been performed.
-
-### 3. Final production-level historical / period-detail audit — MINOR OPEN ISSUE
-
-The digital candidates avoid obvious modern objects and preserve the 1721 world, but a dedicated final clothing/object/material-culture pass remains required before a lock candidate.
+The rulebook interior still carries a **non-blocking MINOR visual-refinement issue** because much of its typography/flow is inherited from the locked source. This is not a mechanics or digital-render failure.
 
 ## Lock rule
 
-Do not convert v2.7 to STABLE / LOCKED unless the user explicitly instructs it with language such as `kilitle`, `stable yap` or `release et` after the remaining gates are addressed.
+Do not convert v2.7 to STABLE / LOCKED unless the user explicitly instructs it with language such as `kilitle`, `stable yap` or `release et` after physical production proof is addressed.
 
-Current next gate: **physical production proof + final period-detail audit**.
+Current next gate: **physical card/rulebook production proof**.
