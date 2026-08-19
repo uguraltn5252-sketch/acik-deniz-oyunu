@@ -1,41 +1,47 @@
-# OYUN v2.6 — STABLE / LOCKED
+# OYUN v2.6 — DRAFT / NOT LOCKED
 
 **Taban mekanik:** v2.5 STABLE / LOCKED  
-**Durum:** STABLE / LOCKED  
+**Durum:** DRAFT / NOT LOCKED  
 **Tarih:** 19 Ağustos 2026  
-**Sürüm tipi:** Kural kitabı / öğretme akışı / anlatı / Moderatör kullanılabilirliği revizyonu. **Yeni mekanik yoktur.**
+**Sürüm tipi:** Kural kitabı / öğretme akışı / anlatı / Moderatör kullanılabilirliği taslağı. **Yeni mekanik yoktur.**
 
-v2.6, v2.5'in kilitli oyun motoruna dokunmadan kural kitabını ilk kez oynayan masa için yeniden düzenler ve Siyah Mühür ana hikâyesini kanonik anlatı katmanı olarak ekler.
+> DÜZELTME: v2.6 daha önce kullanıcı açık onayı olmadan STABLE / LOCKED olarak işaretlenmiştir. Bu statü geri alınmıştır. Son kullanıcı-onaylı kilitli sürüm v2.5'tir.
 
-## v2.6'da değişenler
+v2.6, v2.5'in kilitli oyun motoruna dokunmadan kural kitabını ilk kez oynayan masa için yeniden düzenleyen bir **taslak çalışmadır**. Kullanıcı onayı olmadan kanonik release veya kilitli sürüm sayılamaz.
 
-- Kural kitabı 26 sayfalık öğretme + referans yapısına dönüştürüldü.
-- Zorunlu hikâye okuması kısa tutuldu; ayrıntılı evren metni `Siyah Mühür Dosyası` ekine taşındı.
-- Gusto'nun kayboluşu Kaptan oylamasının anlatısal gerekçesi olarak kilitlendi; akıbeti bilinçli olarak çözümsüz bırakıldı.
-- İlk tarafsız gece / Gusto'nun seyir defteri / Sadakat öncesi Siyah Mühür metinleri doğru zamanlama kutularına yerleştirildi.
-- Kör kural kitabı denetiminde bulunan karakter kurulum yoğunluğu, erken terim yükü, başlangıç Güç hazırlığı, Kaptan masumiyet algısı ve Kaptan değişim görünürlüğü sorunları düzeltildi.
-- Karakter kartları ve tüm fiziksel kart mekanikleri **değişmedi**.
-- v2.5 kart PDF'si byte-for-byte korunur; SHA-256 aynı kalır.
+## Taslakta değişenler
 
-## Mekanik omurga değişmedi
+- Kural kitabı öğretme + referans yapısına dönüştürüldü.
+- Siyah Mühür / Gusto anlatısı işlendi.
+- İlk tarafsız gece, seyir defteri ve Sadakat öncesi anlatı kutuları eklendi.
+- Kör kural kitabı denetiminde bulunan okunabilirlik sorunları taslakta düzeltildi.
+- Moderatör masa kartı hazırlandı.
 
-- Gövde 2.
-- İlk gün yalnız Kaptan seçimi; Kaptan Sadakatleri bilmeden ilk tarafsız gecede tam 1 yasal Yakın Ufka bakar.
-- Sadakat ertesi sabah; ilk gerçek rota normal eşzamanlı oylama ve Kaptan rota oyu 2.
-- Hainler ilk yolculuk gecesinde tanışır, 1 Yakın Ufka bakar ve saldırı yapamaz.
-- Çürümüş Erzak / İskorbüt / Ada zorunluluğu v2.5 ile aynıdır.
-- Geçilmez, relocation guard, Ada çevresi invariantı, Kaderi×Geçilmez, Suçlama/İsyan/Kamara, Pusula/Kayıkçı ve Liman Gecesi hükümleri v2.5 ile aynıdır.
-- 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita / 12 Kayalık / 118 ana kimlik aynıdır.
+## Kart seti hakkında kritik açıklama
 
-## Doğrulama
+**Hiçbir kart mekanik olarak çıkarılmadı veya değiştirilmedi.**
 
-- v2.5 tam release validatorı yeniden çalıştırıldı: **PASS**.
-- Geometry / relocation / final full balance / PDF audit / package hashes: **PASS**.
-- v2.6 kör kural kitabı denetimi: **PASS**.
-- v2.6 release validator: **PASS**.
-- 20/20 Karakter adı kural kitabında mevcut; karakter kurulum yoğunluğu ilk kurulum akışına taşındı.
-- v2.5 tam Kart PDF hash'i korunur: `e158b33b77d2fff962420170d87aea407c87c97c9d611e19a6b72e7827aba4cc`.
+Taslak pakette iki farklı PDF bulunur:
+
+1. `OYUN_Kartlar_A4_Prototip_v2.5_UNCHANGED.pdf` — **TAM KART SETİDİR.** Karakter + Güç + Çürümüş Erzak + Sadakat + Harita kartlarının tamamını içerir ve v2.5 kart PDF'siyle byte-for-byte aynıdır.
+2. `OYUN_Karakter_Kartlari_v2.5_UNCHANGED.pdf` — yalnız yardımcı/ayrı Karakter baskı çıktısıdır. Oyunun tam kart seti değildir.
+
+Tam set sayıları v2.5 ile aynıdır:
+- 20 Karakter
+- 30 Güç
+- 1 Çürümüş Erzak
+- 15 Sadakat
+- 52 Harita
+- 12 Kayalık (Harita havuzunun içinde)
+- 118 ana kimlik
+- ayrıca `SET-KL-01` Kalkış Limanı
+
+Tam kart PDF SHA-256: `e158b33b77d2fff962420170d87aea407c87c97c9d611e19a6b72e7827aba4cc`
+
+## Mekanik omurga
+
+v2.6 taslağı mekanik hüküm kaynağı değildir; herhangi bir çelişkide v2.5 STABLE / LOCKED kaynakları geçerlidir.
 
 ## Sürüm politikası
 
-`v2.6` bu belge/anlatı düzeniyle kilitlenmiştir. v2.5 mekanik geri dönüş tabanıdır. Bundan sonraki mekanik veya tasarım değişiklikleri **v2.7+** hattında yapılmalıdır.
+v2.6 yalnız taslaktır. Kullanıcı açıkça "kilitle", "stabil sürüm yap" veya eşdeğer bir onay vermeden bu ya da sonraki hiçbir taslak STABLE / LOCKED ilan edilmez.
