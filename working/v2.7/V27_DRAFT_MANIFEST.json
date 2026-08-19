@@ -5,13 +5,31 @@
   "source_release": "v2.6 STABLE / LOCKED",
   "mechanics_policy": "No v2.6 mechanical change unless explicitly approved in v2.7 draft",
   "git_branch": "v2.7-design",
+  "workspace": "working/v2.7",
+  "reference_use_mode": "STYLE_ONLY",
   "github_role": "game_content_design_standard_and_release_source_of_truth",
+  "design_authority": [
+    "working/v2.7/DESIGN_SYSTEM_MASTER.md",
+    "working/v2.7/REFERENCE_USE_POLICY.md"
+  ],
   "design_tools": {
-    "primary": "Canva",
-    "secondary": "Adobe Express",
-    "policy": "Tool choice may change; DESIGN_SYSTEM_MASTER.md remains the application-independent visual authority.",
-    "current_canva_design_id": "DAHSvmAWxYk",
-    "current_canva_design_status": "EXPERIMENTAL / CONTENT QA FAIL / NOT CANONICAL"
+    "primary": "Canva when it preserves editable structure and passes QA",
+    "secondary": "Adobe Express when the requested operation is supported",
+    "fallback": "Controlled local layout + PDF review artifacts",
+    "policy": "Tool completion is not workflow completion; any bad or unsupported tool result is rejected before propagation.",
+    "canva_attempts": [
+      {
+        "design_id": "DAHSvmAWxYk",
+        "status": "EXPERIMENTAL / CONTENT QA FAIL / NOT CANONICAL"
+      },
+      {
+        "design_id": "DAHSv3GnJGo",
+        "status": "EXPERIMENTAL IMPORT / EDITABLE-STRUCTURE QA FAIL / NOT CANONICAL",
+        "observed_page_count": 1,
+        "observed_richtext": "EMPTY"
+      }
+    ],
+    "adobe_express_status": "Direct standalone illustration generation unavailable for this gate; fallback used"
   },
   "game_data_source": {
     "mechanical_package": "releases/v2.6/OYUN_SIMULASYON_PAKETI_v2.6.zip",
@@ -33,30 +51,41 @@
     "no_foulwake_name_on_cards": true,
     "no_text_on_card_backs": true,
     "sea_and_rock_share_back_in_v2_7_visual_draft": true,
+    "sea_rock_back_table_treatment": "full bleed continuous sea field",
     "island_back_identical_within_group": true,
     "lighthouse_back_identical_within_group": true,
     "rotten_provisions_indistinguishable_from_power_back": true,
+    "reference_crop_paste": false,
+    "reference_tracing": false,
+    "reference_pixel_level_reuse": false,
+    "new_card_requires_new_illustration": true,
     "line_color_texture_ratio": "70/20/10",
     "front_illustration_info_decoration_ratio": "65/25/10"
   },
   "design_progress": {
-    "application_independent_master_spec": "READY / DESIGN_SYSTEM_MASTER.md",
+    "application_independent_master_spec": "READY / DESIGN_SYSTEM_MASTER.md + REFERENCE_USE_POLICY.md",
     "representative_card_content": "READY",
+    "representative_visual_briefs": "READY / REPRESENTATIVE_VISUAL_BRIEFS.md",
     "temporary_world_bible": "READY / WORLD_BIBLE_SESSION_2026-08-19.md",
-    "canva_master_templates": "EXPERIMENTAL CANDIDATE GENERATED; CONTENT QA FAIL; NOT APPROVED",
-    "adobe_express_art_tests": "NOT REQUIRED FOR CURRENT GATE",
-    "representative_five_card_gate": "MINOR ISSUE / USER REVIEW REQUIRED",
+    "canva_master_templates": "NO CANONICAL EDITABLE SOURCE YET; TWO ATTEMPTS FAILED QA",
+    "representative_five_card_gate": "MINOR ISSUE / USER REVIEW REQUIRED / ORIGINAL ART / REFERENCE SIMILARITY PASS",
     "card_back_gate": "PASS DIGITAL",
     "line_only_gate": "PASS DIGITAL",
-    "print_and_table_tests": "DIGITAL PASS WITH PHYSICAL PRINT PENDING",
-    "full_121_card_propagation": "BLOCKED UNTIL USER REVIEW",
+    "digital_real_size_print_gate": "PASS",
+    "physical_print_gate": "PENDING",
+    "map_table_gate": "PASS AFTER SEA-ROCK BACK SELF-CORRECTION",
+    "pdf_review_preflight": "PASS",
+    "full_121_card_propagation": "BLOCKED UNTIL EXPLICIT USER REVIEW APPROVAL",
     "full_rulebook_layout": "BLOCKED UNTIL CARD VISUAL GATE APPROVAL",
-    "final_export_and_preflight": "PENDING"
+    "final_full_deck_preflight": "PENDING"
   },
   "review_artifacts": {
     "manifest": "working/v2.7/EXPORT_MANIFEST.json",
     "test_status": "working/v2.7/TEST_STATUS.md",
+    "reference_policy": "working/v2.7/REFERENCE_USE_POLICY.md",
+    "visual_briefs": "working/v2.7/REPRESENTATIVE_VISUAL_BRIEFS.md",
     "library_export_root": "/Oyun-GitHub/v2.7/exports/",
-    "github_binary_pdf_upload": "UNAVAILABLE IN CURRENT CONNECTOR; hashes and library paths recorded in EXPORT_MANIFEST.json"
-  }
+    "github_binary_pdf_upload": "UNAVAILABLE IN CURRENT CONNECTOR; exact hashes and library paths recorded in EXPORT_MANIFEST.json"
+  },
+  "next_gate": "USER REVIEW OF REVISED REPRESENTATIVE VISUAL DIRECTION"
 }
