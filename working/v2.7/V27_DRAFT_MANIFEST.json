@@ -84,8 +84,12 @@
     "full_deck_print_candidate": "PASS DIGITAL / 46 A4 PAGES",
     "full_rulebook_layout": "FULL VISUAL DRAFT GENERATED / PASS DIGITAL / MINOR ISSUE / 29 PAGES",
     "rulebook_source_integrity": "PASS / NO BODY MECHANICS REWRITTEN",
-    "final_digital_preflight": "MINOR ISSUE / COMPLETE",
-    "historical_period_detail_audit": "MINOR / REQUIRED BEFORE LOCK",
+    "historical_period_detail_audit": "PASS DIGITAL AFTER SELF-CORRECTION",
+    "historical_self_corrections": [
+      "GUC-01A/B Can Simidi: modern manufactured ring-buoy cue removed; rope loop + small wooden float/cask used",
+      "KAR-06 Dipgören: helmet-like diver cue removed; weighted recovery line / breath-hold-diver cue used"
+    ],
+    "final_digital_preflight": "PASS DIGITAL / PHYSICAL GATE PENDING",
     "physical_production_proof": "PENDING",
     "release_lock": "NOT APPLIED"
   },
@@ -97,7 +101,8 @@
     "library_export_root": "/Oyun-GitHub/v2.7/exports/",
     "full_deck_inventory": "/Oyun-GitHub/v2.7/exports/FULL_DECK_CARD_INVENTORY.json",
     "full_deck_source_bundle": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip",
+    "historical_audit": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_HISTORICAL_PERIOD_AUDIT.pdf",
     "github_binary_pdf_upload": "UNAVAILABLE IN CURRENT CONNECTOR; exact hashes and library paths are recorded in EXPORT_MANIFEST.json"
   },
-  "next_gate": "PHYSICAL PRODUCTION PROOF + FINAL PRODUCTION-LEVEL HISTORICAL/PERIOD-DETAIL AUDIT BEFORE ANY LOCK REQUEST"
+  "next_gate": "PHYSICAL CARD/RULEBOOK PRODUCTION PROOF BEFORE ANY LOCK REQUEST"
 }
