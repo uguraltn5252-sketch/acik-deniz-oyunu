@@ -2,45 +2,27 @@
   "version": "v2.6",
   "status": "DRAFT / NOT LOCKED",
   "mechanical_baseline": "v2.5 STABLE / LOCKED",
-  "mechanics_changed": false,
-  "current_artifacts": [
-    {
-      "name": "OYUN_Kural_Kitabi_v2.6_DRAFT.pdf",
-      "library_path": "/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6_DRAFT.pdf",
-      "size_bytes": 577403,
-      "pages": 29,
-      "sha256": "f369d6947dc22afde0af4bdeb72e00fa48ca26f072c49f025b97b8d071e0347d"
-    },
-    {
-      "name": "OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf",
-      "library_path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf",
-      "size_bytes": 1268234,
-      "pages": 34,
-      "sha256": "0ea5cddc1f86579442ea5faa541799cbb4b5dbe2921a8f91352d3a0a5f69698c"
-    },
-    {
-      "name": "OYUN_v2.6_DRAFT_GUNCEL.zip",
-      "library_path": "/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip",
-      "size_bytes": 1387799,
-      "sha256": "ba39598ba0d5be7f592a5ab52fec65230e46d61b8885545321ea8734c024d483"
-    }
-  ],
+  "release_lock": false,
+  "artifacts": {
+    "rulebook": {"path": "/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6_DRAFT.pdf", "pages": 29, "size_bytes": 577403, "sha256": "f369d6947dc22afde0af4bdeb72e00fa48ca26f072c49f025b97b8d071e0347d"},
+    "cards": {"path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf", "pages": 34, "size_bytes": 1779634, "sha256": "73b88869609076aec8690ecc7812f00ba26a6226a7af94b3db7725af30874382"},
+    "zip": {"path": "/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip", "size_bytes": 1752338, "sha256": "cfb1fe5071270900610669ae6863f8fb96e6d7bba311276c2569b767336f7e8c"}
+  },
   "card_state": {
-    "main_identity_count": 118,
+    "main_cards": 118,
     "characters": 20,
     "powers": 30,
     "rotten_supplies": 1,
     "loyalties": 15,
     "map_cards": 52,
-    "helper_cards_outside_main_count": [
-      "SET-KL-01 Kalkış Limanı",
-      "Varış / Hedef Limanı",
-      "Kaptan makamı"
-    ],
+    "helper_cards": ["SET-KL-01", "SET-VL-01", "SET-KP-01"],
+    "helper_count": 3,
+    "printable_physical_total": 121,
     "convict_card_or_token": false,
     "convict_tracking": "Moderator note",
     "rotten_supplies_changed": false,
-    "bayat_peksimet_changed": false
+    "bayat_peksimet_changed": false,
+    "stale_hidden_rock_text_removed": true
   },
   "rulebook_state": {
     "single_integrated_rulebook": true,
@@ -49,10 +31,10 @@
     "moderator_storyteller_role": "light / non-directive"
   },
   "validation": {
-    "v25_mechanical_baseline": "PASS",
-    "latest_rulebook_blind_moderator_flow": "PASS",
-    "latest_rulebook_contradiction_check": "PASS",
-    "release_lock": false
+    "v25_baseline_revalidation": "PASS",
+    "v26_current_validator": "PASS",
+    "blind_moderator_walkthrough": "28/28 PASS",
+    "card_pdf_preflight": "PASS"
   },
   "lock_policy": "User must explicitly approve locking; otherwise v2.6 remains DRAFT / NOT LOCKED."
 }
