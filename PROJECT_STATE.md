@@ -1,63 +1,59 @@
 # Project State
 
 **Son güncelleme:** 19 Ağustos 2026  
-**Son kullanıcı-onaylı stabil prototip:** **v2.5 STABLE / LOCKED**  
-**Kanonik mekanik kaynak:** `releases/v2.5/`  
-**Güncel tasarım hattı:** **v2.6 DRAFT / NOT LOCKED**
+**Son kullanıcı-onaylı stabil prototip:** **v2.6 STABLE / LOCKED**  
+**Kanonik release kaydı:** `releases/v2.6/`  
+**Önceki mekanik baseline:** **v2.5 STABLE / LOCKED**
 
-v2.5 oyunun son kilitli mekanik baseline'ıdır. v2.6; kural kitabı, Moderatör/storyteller deneyimi, Siyah Mühür/Gusto anlatısı ve fiziksel yardımcı kart standardı üzerinde güncel taslaktır. Kullanıcı açıkça kilitlemeden release sayılmaz.
+v2.6 kullanıcı tarafından mevcut haliyle ve içerik değiştirilmeden kilitlenmiştir. Bundan sonra v2.6 artefaktları yerinde değiştirilmez; her yeni değişiklik v2.7+ DRAFT hattında yapılır.
 
-## v2.5 kilitli kararları
-
-- Kaptan kalıcı rol; ilk gün yalnız seçim.
-- İlk tarafsız gecede Sadakat bilinmeden tam 1 Yakın Ufka gizli bakış; sonraki gecelerde makam otomatik bilgi vermez.
-- Sadakat ertesi sabah; ilk gerçek rota normal eşzamanlı oylama, Kaptan rota oyu 2.
-- İlk Hain gecesi: Hainler tanışır, 1 Yakın Ufka bakar, saldırı yapamaz.
-- N-1 gerçek Güç + Çürümüş Erzak başlangıç paketi; ilk yolculuk gününe herkes 1 gerçek Güçle başlar.
-- Kalkış Limanı `SET-KL-01` ana 118 kimliğin dışındaki fiziksel kurulum bileşenidir.
-- Kamusal Harita açması kalıcıdır; ziyaret edilmedikçe olay çözülmez; açık Geçilmez engeldir.
-- İskorbüt etkinse Ada ziyareti zorunludur; Ada girişinde olaydan önce temizlenir.
-- Relocation guard ve Ada çevresi Girdap/Ters Akıntı invariantı korunur.
-- Gövde 2; Hain tablosu 6:1, 7:2, 8–10:3, 11–13:4, 14–15:5.
-- Ana kart seti: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita / 118 ana kimlik.
-
-## Güncel v2.6 taslağı
+## v2.6 kilitli durum
 
 ### Kural kitabı
 
 - `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6_DRAFT.pdf`
 - 29 sayfa A4.
 - Tüm oyuncu kuralları, Moderatörün ilk oyun/sefer akışı, hafif storyteller rolü ve arka plan hikâyesi aynı kitapta.
-- Ayrı Moderatör kartı güncel taslağın parçası değildir.
-- Moderatör açılış sırası tek bölümde tutulur; ilk Hain gecesinden sonra normal sefer bölümünde kalır.
-- Siyah Mühür hikâyesi kitabın sonunda tek parça anlatıdır.
+- Ayrı Moderatör kartı yoktur.
+- Dosya adı ve belge içindeki `DRAFT` ibaresi içerik değişmeden kilitleme talebi nedeniyle aynen bırakılmıştır.
 
-### Fiziksel kart taslağı
+### Fiziksel kart seti
 
 - `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf`
 - 34 sayfa A4.
-- 118 ana kart kimliği korunur.
-- Ana sayının dışında üç açık yardımcı kart: Kalkış Limanı + Varış/Hedef Limanı + Kaptan makamı.
+- 118 ana kart: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita.
+- 3 yardımcı kart: `SET-KL-01` Kalkış Limanı, `SET-VL-01` Varış/Hedef Limanı, `SET-KP-01` Kaptan makamı.
+- Toplam 121 basılabilir fiziksel kart.
 - Mahkûm için ayrı kart/token yok; Moderatör not alır.
-- Çürümüş Erzak / İskorbüt kartı değiştirilmez.
-- Bayat Peksimet (`GUC-22`) değiştirilmez.
+- `ERZ-01` Çürümüş Erzak ve `GUC-22` Bayat Peksimet değiştirilmemiştir.
+- Kayalık kartlarının mevcut kategori arka yüzleri korunur; Açık Deniz arka yüzü varyantı kilitli sürüme uygulanmamıştır.
 
-### Güncel taslak paket
+### Kilitli paket
 
 `/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip`  
-SHA-256: `ba39598ba0d5be7f592a5ab52fec65230e46d61b8885545321ea8734c024d483`
+SHA-256: `cfb1fe5071270900610669ae6863f8fb96e6d7bba311276c2569b767336f7e8c`
+
+## Mekanik omurga
+
+v2.6 mekanik olarak v2.5 kilitli baseline'ı korur:
+
+- Kaptan kalıcı rol; ilk gün yalnız seçim.
+- İlk tarafsız gecede Sadakat bilinmeden tam 1 Yakın Ufka gizli bakış.
+- Sadakat ertesi sabah; ilk gerçek rota normal eşzamanlı oylama, Kaptan rota oyu 2.
+- İlk Hain gecesi: Hainler tanışır, 1 Yakın Ufka bakar, saldırı yapamaz.
+- N-1 gerçek Güç + Çürümüş Erzak başlangıç paketi; ilk yolculuk gününe herkes 1 gerçek Güçle başlar.
+- Kamusal Harita açması kalıcıdır; ziyaret edilmedikçe olay çözülmez; açık Geçilmez engeldir.
+- İskorbüt etkinse Ada ziyareti zorunludur; Ada girişinde olaydan önce temizlenir.
+- Relocation guard ve Ada çevresi Girdap/Ters Akıntı invariantı korunur.
+- Gövde 2; Hain tablosu 6:1, 7:2, 8–10:3, 11–13:4, 14–15:5.
 
 ## Test durumu
 
 - v2.5 mekanik validator / geometri / relocation / denge / PDF audit baseline: PASS.
-- Güncel v2.6 kural kitabında kör Moderatör akışı ve çelişki kontrolü: PASS olarak çalışıldı; bu bir release kilidi değildir.
-- Fiziksel yardımcı kart ekleri ana 118 kartın mekanik metnini değiştirmez.
+- v2.6 güncel kart/kural validator: PASS.
+- Kör Moderatör yürüyüşü: 28/28 PASS.
+- Kart PDF preflight: PASS.
 
 ## Kilit politikası
 
-Kullanıcı açıkça “kilitle”, “stabil yap” veya eşdeğer bir onay vermeden v2.6 veya sonraki hiçbir taslak STABLE / LOCKED ilan edilmez.
-
-## Kanonik kilitli artefakt
-
-Library ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.5.zip`  
-SHA-256: `975dd77d435a835fcf3faa864c5624b0542fadb419fa7d34217ed32fe87aa046`
+**v2.6 STABLE / LOCKED yerinde değiştirilmez.** Yeni kart, kural, hikâye, fiziksel bileşen veya mekanik değişiklik v2.7+ DRAFT olarak açılır.
