@@ -1,10 +1,36 @@
-# v2.6 Binary Artifacts
+# v2.6 Current Draft Artifacts
 
-- Full ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip` — SHA-256 `9878c00e1f72f587e75f84b480bb2ff33fd815cf95e45fdaee019beb2fe465a4` — 5459530 byte.
-- Kural PDF: `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf` — SHA-256 `dc3811e1387398904f9473d03f83b4ee703dc48908500695ff2adf0982947c77` — 552376 byte — 26 sayfa A4.
-- Düzenlenebilir kural: `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.docx` — SHA-256 `02a76aa2ca417362d4b5d9f6d719aa472c385c4d66b49df7324f2701d2954300` — 71295 byte.
-- Moderatör masa kartı: `/Oyun-GitHub/v2.6/OYUN_Moderator_Masa_Karti_v2.6.pdf` — SHA-256 `ec523938f9940ba260e6eaf938971cb738967b47e73208d4d1c4c928308943ec` — 57237 byte — 2 sayfa A4.
-- Tam kart seti, mekanik olarak değişmeden: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.5_UNCHANGED.pdf` — SHA-256 `e158b33b77d2fff962420170d87aea407c87c97c9d611e19a6b72e7827aba4cc` — 1930308 byte — 32 sayfa A4.
-- Ayrı Karakter baskı PDF'si: `/Oyun-GitHub/v2.6/OYUN_Karakter_Kartlari_v2.5_UNCHANGED.pdf` — SHA-256 `0fa5367ca31074f392b064060ca46b2fccc6b122dca70f7cea6baf0ad6fc96d8` — 1301209 byte — 8 sayfa A4.
+**Durum:** DRAFT / NOT LOCKED  
+**Mekanik baseline:** v2.5 STABLE / LOCKED
 
-Karakter kartlarının yüzleri ve mekanik metinleri değiştirilmemiştir. Ayrı Karakter PDF'si kilitli v2.5 kart PDF'sindeki baskı talimatı ve Karakter yapraklarının seçilmiş kopyasıdır. Tam kart PDF hash'inin v2.5 ile aynı kalması release kapısıdır.
+Güncel v2.6 taslağının kullanıcıya sunulan tek ana belgeleri aşağıdadır:
+
+- Kural PDF: `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6_DRAFT.pdf`  
+  SHA-256: `f369d6947dc22afde0af4bdeb72e00fa48ca26f072c49f025b97b8d071e0347d`  
+  Boyut: `577403` byte  
+  Sayfa: `29` A4
+
+- Tam Kart PDF: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf`  
+  SHA-256: `0ea5cddc1f86579442ea5faa541799cbb4b5dbe2921a8f91352d3a0a5f69698c`  
+  Boyut: `1268234` byte  
+  Sayfa: `34` A4
+
+- Güncel DRAFT ZIP: `/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip`  
+  SHA-256: `ba39598ba0d5be7f592a5ab52fec65230e46d61b8885545321ea8734c024d483`  
+  Boyut: `1387799` byte
+
+## Kart PDF kapsamı
+
+Ana set korunur: 20 Karakter + 30 Güç + 1 Çürümüş Erzak + 15 Sadakat + 52 Harita = 118 ana kimlik.
+
+Ayrıca ana kimlik sayısının dışında açık yardımcı fiziksel kartlar bulunur:
+
+- mevcut `SET-KL-01` Kalkış Limanı,
+- yeni Varış / Hedef Limanı kartı,
+- yeni Kaptan makam kartı.
+
+Mahkûm için ayrı kart/token güncel taslakta kullanılmaz; Moderatör not alır. Çürümüş Erzak ve Bayat Peksimet kartları değiştirilmemiştir.
+
+## Eski v2.6 dosyaları
+
+Önceki 26 sayfalık kural PDF, ayrı Moderatör masa kartı, ayrı Karakter baskı PDF'si ve `v2.5_UNCHANGED` adlı kart PDF'si **güncel v2.6 taslağının artefakt listesi değildir**. Git geçmişinde/Library'de bulunmaları güncel kullanım anlamına gelmez.
