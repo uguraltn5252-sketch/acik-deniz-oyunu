@@ -14,7 +14,7 @@ Reference mode: `STYLE_ONLY`
 | Locked baseline protection | PASS | v2.6 stayed read-only. |
 | Story / World audit | PASS | 1721 / Arden / San Cordelio / Saint Verena / Veyr / Siyah Mühür / Gusto ambiguity retained. |
 | Reference-use policy | PASS | No crop/paste, tracing, pixel reuse, face transfer or direct reference-scene reuse. |
-| Representative five-card gate | **PASS / USER APPROVED** | User explicitly approved the revised visual direction on 2026-08-19. Approval record: `USER_REVIEW_APPROVAL_2026-08-19.md`. |
+| Representative five-card gate | **PASS / USER APPROVED** | User explicitly approved the revised visual direction on 2026-08-19. |
 | Card back secrecy | PASS | Power=Rotten exact shared asset; Sea=Rock exact shared asset; all Loyalty backs shared. |
 | Line-only representative gate | PASS | Approved direction survived monochrome reduction. |
 | Digital real-size representative test | PASS | Correct physical geometries and 3 mm bleed. |
@@ -27,10 +27,10 @@ Reference mode: `STYLE_ONLY`
 | Full-deck visual review | PASS DIGITAL | 15-page contact review rendered and visually inspected. |
 | Full-deck print candidate | PASS DIGITAL | 46 A4 pages, paired front/back by family; all pages rendered and visually inspected. |
 | Full-deck line-only stratified sample | PASS | 15 cards across all families. |
+| Historical / period-object audit | **PASS DIGITAL AFTER SELF-CORRECTION** | Two detected risks were corrected: modern manufactured life-ring cue on both `GUC-01A/B Can Simidi` -> rope loop + small wooden float/cask; helmet-like diving cue on `KAR-06 Dipgören` -> weighted recovery line / breath-hold-diver cue. No known unresolved anachronism remains in the schematic candidate. |
 | Rulebook visual draft | **PASS DIGITAL / MINOR ISSUE** | Full 29-page v2.7 derivative generated from v2.6 locked mechanics; all pages rendered and visually inspected. |
 | Rulebook source integrity | PASS | Body mechanics/rules were not rewritten; v2.6 source PDF remains untouched. |
-| Final digital preflight | **MINOR ISSUE** | Digital workflow complete through full deck + rulebook draft; no unresolved digital MAJOR ISSUE. |
-| Historical / period-object production audit | MINOR ISSUE | Final high-fidelity production pass still needs dedicated clothing/object period-detail review before lock. |
+| Final digital preflight | **PASS DIGITAL / PHYSICAL GATE PENDING** | Full deck + rulebook draft + historical audit completed; no unresolved digital MAJOR ISSUE. |
 | Physical card print / cut / real-light proof | PENDING | No physical printer/paper/cut/light test was available. Do not call this PASS. |
 | Physical rulebook proof | PENDING | No real booklet proof performed. |
 | Release lock | NOT APPLIED | User approved visual gate only; v2.7 remains DRAFT. |
@@ -41,6 +41,7 @@ Reference mode: `STYLE_ONLY`
 - `FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf` — 15 pages.
 - `FOULWAKE_v2.7_FULL_DECK_LINE_ONLY_SAMPLE.pdf` — 1 page.
 - `FOULWAKE_v2.7_FULL_DECK_QA.pdf`.
+- `FOULWAKE_v2.7_HISTORICAL_PERIOD_AUDIT.pdf`.
 - `FULL_DECK_CARD_INVENTORY.json`.
 - `FULL_DECK_VISUAL_BRIEFS.json` / `.md`.
 - `FULL_DECK_PRODUCTION_MANIFEST.json`.
@@ -55,7 +56,7 @@ Reference mode: `STYLE_ONLY`
 
 All binary artifacts above are archived under `/Oyun-GitHub/v2.7/exports/`. GitHub stores hashes/status because the current connector does not expose binary PDF upload.
 
-## Self-corrections retained from representative phase
+## Self-Corrections Performed
 
 1. Bad image-generation output was rejected instead of propagated.
 2. Unsupported Adobe route was recorded as unavailable rather than claimed as success.
@@ -64,9 +65,12 @@ All binary artifacts above are archived under `/Oyun-GitHub/v2.7/exports/`. GitH
 5. Overlapping real-size sheet was rebuilt.
 6. PDF clipping/glyph issues found during render QA were corrected.
 7. `Kaptan Makamı` was kept as a transferable public office, not a permanent Character identity.
+8. Historical audit caught and replaced the modern ring-buoy visual language on both Can Simidi copies.
+9. Historical audit caught and replaced the helmet-like diver cue on Dipgören.
+10. A final-preflight report label collision was caught during render review and corrected.
 
 ## Overall Result
 
-**MINOR ISSUE — DIGITAL WORKFLOW COMPLETE THROUGH FULL DECK + RULEBOOK DRAFT + DIGITAL PREFLIGHT**
+**PASS DIGITAL / PHYSICAL PRODUCTION GATE PENDING — v2.7 REMAINS DRAFT / NOT LOCKED**
 
-No unresolved digital MAJOR ISSUE remains. The explicit remaining gates before any release lock are physical production proof and final production-level historical/period-detail audit. v2.7 is **not locked**.
+No unresolved digital MAJOR ISSUE remains. The remaining real gate is physical production proof. The rulebook interior still has a non-blocking visual-refinement MINOR issue because it inherits much of the locked source typography, but mechanics and rendering are sound.
