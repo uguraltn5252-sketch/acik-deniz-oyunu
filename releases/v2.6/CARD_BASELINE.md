@@ -1,9 +1,5 @@
-# v2.6 Kart Baseline — DRAFT
+# v2.6 Kart Baseline — STABLE / LOCKED
 
-**Durum:** DRAFT / NOT LOCKED  
-**Mekanik baseline:** v2.5 STABLE / LOCKED
-
-Ana oyun kartlarının mekanik metinleri korunur:
 - 20 Karakter
 - 30 Güç
 - 1 Çürümüş Erzak — İskorbüt Tehlikesi
@@ -11,21 +7,18 @@ Ana oyun kartlarının mekanik metinleri korunur:
 - 52 Harita
 - 118 ana fiziksel kart kimliği
 
-Ana 118 kartın dışında üç açık yardımcı kart vardır ve üçü de güncel PDF'nin baskı yapraklarında fiziksel olarak bulunur:
+Ana set dışı yardımcı kartlar:
 1. `SET-KL-01` Kalkış Limanı
 2. `SET-VL-01` Varış / Hedef Limanı
 3. `SET-KP-01` Kaptan makamı
 
-Toplam basılabilir fiziksel kart sayısı **121**'dir. Yardımcı kartlar Sadakat/Güç/Karakter/Harita destelerine girmez.
+Toplam basılabilir fiziksel kart: **121**.
 
-Mahkûm için ayrı kart/token kullanılmaz; ilk başarılı Suçlama durumu Moderatör tarafından not edilir.
+Mahkûm kartı/tokenı yoktur; Moderatör notuyla takip edilir.
 
-Değişmeyen özel kartlar:
-- `ERZ-01` Çürümüş Erzak — İskorbüt Tehlikesi
-- `GUC-22` Bayat Peksimet
+`ERZ-01` Çürümüş Erzak ve `GUC-22` Bayat Peksimet değiştirilmemiştir.
 
-Güncel kart PDF: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf`  
-SHA-256: `73b88869609076aec8690ecc7812f00ba26a6226a7af94b3db7725af30874382`  
-34 sayfa A4.
+**Kayalık arka yüz kararı:** 12 Kayalık kartı Kayalık kategori arka yüzünü korur. Açık Deniz ile aynı arka yüz yapılmaz. `HAR-KY-01` ve `HAR-KY-03` Geçilmezdir; kapalıyken diğer Kayalıklardan ayırt edilemez.
 
-PDF metin katmanı denetiminde eski Geçilmez öncesi metin kalıntıları temizlenmiştir; güncel `HAR-KY-01 Duvar Gibi Kayalık` ve `HAR-KY-03 Yolun Bittiği Yer` korunur.
+Final kart PDF: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf`  
+SHA-256: `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298`
