@@ -1,17 +1,25 @@
 # FOULWAKE v2.7 — DESIGN WORKFLOW
 
-Status: DRAFT / NOT LOCKED
-Canonical baseline: `v2.6 STABLE / LOCKED`
+Status: **DRAFT / NOT LOCKED**  
+Canonical baseline: `v2.6 STABLE / LOCKED`  
 Reference mode: `STYLE_ONLY`
 
 ## Source-of-truth model
 
-1. **GitHub ACTIVE_DRAFT** holds mechanics references, card IDs/text, story/world constraints, the visual standard, test status and artifact hashes.
-2. `DESIGN_SYSTEM_MASTER.md` + `REFERENCE_USE_POLICY.md` are the application-independent visual authority.
-3. **Canva** is the preferred editable production workspace only when the imported/generated structure actually passes content/editability QA.
-4. **Adobe Express** is secondary and used only when the required operation is supported.
-5. If Canva/Adobe cannot produce a controlled result, the workflow falls back to local production plus review/test PDFs instead of stopping.
-6. No design app may silently change canonical mechanics or wording.
+1. **GitHub ACTIVE_DRAFT** holds mechanics references, card IDs/text, story/world constraints, visual standards, test status and artifact hashes.
+2. `DESIGN_SYSTEM_MASTER.md` + `REFERENCE_USE_POLICY.md` remain the application-independent visual authority.
+3. Canva is preferred only when editable structure passes content/editability QA.
+4. Adobe Express is secondary and used only when the requested operation is supported.
+5. Otherwise the workflow uses controlled local production + PDF review artifacts and records the limitation honestly.
+6. No design tool may silently alter canonical mechanics or wording.
+
+## User Review Gate
+
+**APPROVED — 2026-08-19.**
+
+Record: `USER_REVIEW_APPROVAL_2026-08-19.md`.
+
+This approval authorized full-deck propagation and rulebook visual work. It did **not** authorize a release lock. v2.7 remains DRAFT / NOT LOCKED.
 
 ## Reference-use rule
 
@@ -19,74 +27,62 @@ Reference mode: `STYLE_ONLY`
 
 Allowed: line character, color balance, texture strength, adult-caricature level, humor level, visual hierarchy and atmosphere.
 
-Forbidden by default: crop/paste, tracing, pixel-level reuse, cut-out character/object/background reuse, same-face transfer, direct reference-card artwork reuse, and unnecessary copying of the same pose/composition.
+Forbidden by default: crop/paste, tracing, pixel-level reuse, cut-out character/object/background reuse, same-face transfer, direct reference-card artwork reuse and unnecessary copying of pose/composition.
 
-Every representative/final illustration must pass `REFERENCE_USE_POLICY.md` before scale.
+## Completed production sequence
 
-## Change routing
+1. Resolve v2.6 locked baseline and existing v2.7 draft — PASS.
+2. Story / World audit — PASS.
+3. Design System + Reference Use Policy — PASS.
+4. Representative card audit and five visual briefs — PASS.
+5. Five original representative candidates — PASS / MINOR ISSUE.
+6. Reference Similarity + Mechanic-Visual QA — PASS.
+7. Card-back secrecy system — PASS.
+8. Line-only / 2–3 second / real-size / table tests — PASS after self-corrections.
+9. User Review Gate — **APPROVED**.
+10. Full 121-card inventory resolved from locked sources — PASS.
+11. Full 121-card digital propagation — **COMPLETE / PASS DIGITAL / MINOR ISSUE**.
+12. Full-deck text-fit, dimensions, uniqueness and secrecy checks — PASS.
+13. 15-page full-deck visual review render — PASS.
+14. 46-page A4 print candidate render — PASS DIGITAL.
+15. Full 29-page rulebook visual derivative — **COMPLETE / PASS DIGITAL / MINOR ISSUE**.
+16. Rulebook 29-page render QA — PASS.
+17. Final digital preflight — **MINOR ISSUE / COMPLETE**.
 
-### Mechanical/content change
-`GitHub -> validation -> design sync -> export -> GitHub status/manifest`
+## Current production artifacts
 
-### Pure visual change
-`Visual production -> compare against design system + reference policy -> QA -> user review -> export/status`
+Binary outputs are archived under `/Oyun-GitHub/v2.7/exports/`; exact hashes are in `EXPORT_MANIFEST.json`.
 
-## Self-correction rule
+Key outputs:
 
-A tool finishing is not a workflow gate.
+- `FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf`
+- `FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf`
+- `FOULWAKE_v2.7_FULL_DECK_LINE_ONLY_SAMPLE.pdf`
+- `FOULWAKE_v2.7_FULL_DECK_QA.pdf`
+- `FULL_DECK_CARD_INVENTORY.json`
+- `FULL_DECK_VISUAL_BRIEFS.json` / `.md`
+- `FULL_DECK_PRODUCTION_MANIFEST.json`
+- `FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip`
+- `FOULWAKE_v2.7_RULEBOOK_VISUAL_DRAFT.pdf`
+- `FOULWAKE_v2.7_RULEBOOK_QA.pdf`
+- `FOULWAKE_v2.7_FINAL_DIGITAL_PREFLIGHT.pdf`
 
-If a candidate is wrong, unsupported, clipped, grid-leaking, mechanically misleading or reference-reusing, classify it as FAIL, fix it without asking the user when safe, rerender/retest, and only then continue.
+## Remaining gates before any lock
 
-## Current production order
+### 1. Physical card proof — PENDING
 
-1. Resolve locked baseline and active draft.
-2. Audit story/world constraints.
-3. Resolve Design System + Reference Use Policy.
-4. Audit exact representative-card mechanics.
-5. Produce five mechanic-first visual briefs.
-6. Produce five new original representative illustrations.
-7. Run Reference Similarity QA.
-8. Run Mechanic-Visual Consistency QA.
-9. Test title/banner hierarchy.
-10. Produce/test card-back families.
-11. Run Power/Rotten and Sea/Rock secrecy tests.
-12. Run line-only test.
-13. Run 2–3 second hierarchy test.
-14. Run digital real-size print test.
-15. Run 5x5 / 5x6 / 6x6 table tests.
-16. Render all review PDFs and correct clipping/overflow/layout defects.
-17. Attempt Canva editable review source; reject it if structure/content QA fails.
-18. Reach User Review Gate only at PASS or MINOR ISSUE.
-19. Propagate to all 121 physical cards only after explicit user approval.
-20. Apply the approved visual universe to the rulebook.
-21. Run final production-art, physical-print and full-deck preflight before any lock request.
+A real 100% print, cut-tolerance, duplex-alignment, hand-readability and real-light check has not been performed in this environment.
 
-## Representative five-card gate
+### 2. Physical rulebook proof — PENDING
 
-- `KAR-01 Uzakgören`
-- `GUC-01A Can Simidi`
-- `ERZ-01 Çürümüş Erzak`
-- `HAR-AD-30 Bir Bulutun Kişisel Meselesi`
-- `SET-KP-01 Kaptan Makamı`
+No real booklet proof has been performed.
 
-Current revised result: **MINOR ISSUE / USER REVIEW REQUIRED**.
+### 3. Final production-level historical / period-detail audit — MINOR OPEN ISSUE
 
-All five current representative illustrations are newly constructed for this gate and contain no reference crops or pixels. They remain representative/prototype production art; final illustration masters require an additional period-detail/art-fidelity pass before final lock.
+The digital candidates avoid obvious modern objects and preserve the 1721 world, but a dedicated final clothing/object/material-culture pass remains required before a lock candidate.
 
-## Current known tool status
+## Lock rule
 
-- Earlier Canva generated candidate `DAHSvmAWxYk`: content QA FAIL; not canonical.
-- Revised Canva import `DAHSv3GnJGo`: technical import succeeded, but page-count/rich-text validation failed intended editable structure; not canonical.
-- Adobe Express direct standalone art generation: unavailable for this gate.
-- PDF-first controlled review workflow: PASS.
+Do not convert v2.7 to STABLE / LOCKED unless the user explicitly instructs it with language such as `kilitle`, `stable yap` or `release et` after the remaining gates are addressed.
 
-## Required review questions at User Review Gate
-
-- Does the new visual direction feel like FOULWAKE rather than a generic pirate game?
-- Is the hand-ink/limited-color language close enough to the target to justify a production-art refinement pass?
-- Is the title banner controlled rather than oversized?
-- Are mechanics readable at real size?
-- Does humor remain inside the world instead of replacing tension?
-- Are card backs mechanically safe?
-- Does the facedown map read as one sea field at table distance?
-- Is `Kaptan Makamı` clearly an office/role rather than a permanent Character identity?
+Current next gate: **physical production proof + final period-detail audit**.
