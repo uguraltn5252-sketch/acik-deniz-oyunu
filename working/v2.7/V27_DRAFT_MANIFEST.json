@@ -7,16 +7,22 @@
   "git_branch": "v2.7-design",
   "workspace": "working/v2.7",
   "reference_use_mode": "STYLE_ONLY",
+  "user_visual_gate": {
+    "status": "APPROVED",
+    "date": "2026-08-19",
+    "record": "working/v2.7/USER_REVIEW_APPROVAL_2026-08-19.md",
+    "release_lock_authorized": false
+  },
   "github_role": "game_content_design_standard_and_release_source_of_truth",
   "design_authority": [
     "working/v2.7/DESIGN_SYSTEM_MASTER.md",
     "working/v2.7/REFERENCE_USE_POLICY.md"
   ],
   "design_tools": {
-    "primary": "Canva when it preserves editable structure and passes QA",
+    "primary": "Canva when editable structure passes QA",
     "secondary": "Adobe Express when the requested operation is supported",
-    "fallback": "Controlled local layout + PDF review artifacts",
-    "policy": "Tool completion is not workflow completion; any bad or unsupported tool result is rejected before propagation.",
+    "fallback": "Controlled local production + PDF review artifacts",
+    "canonical_editable_canva_source": null,
     "canva_attempts": [
       {
         "design_id": "DAHSvmAWxYk",
@@ -28,14 +34,14 @@
         "observed_page_count": 1,
         "observed_richtext": "EMPTY"
       }
-    ],
-    "adobe_express_status": "Direct standalone illustration generation unavailable for this gate; fallback used"
+    ]
   },
   "game_data_source": {
     "mechanical_package": "releases/v2.6/OYUN_SIMULASYON_PAKETI_v2.6.zip",
     "nested_baseline": "MEKANIK_BASELINE_OYUN_SIMULASYON_PAKETI_v2.5.zip",
     "canonical_card_source_inside_baseline": "OYUN_SIMULASYON_SPEC_v2.5.json",
     "support_card_source": "OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+    "rulebook_source": "OYUN_Kural_Kitabi_v2.6.pdf",
     "main_cards": 118,
     "support_cards": 3,
     "physical_cards_total": 121
@@ -63,29 +69,35 @@
     "front_illustration_info_decoration_ratio": "65/25/10"
   },
   "design_progress": {
-    "application_independent_master_spec": "READY / DESIGN_SYSTEM_MASTER.md + REFERENCE_USE_POLICY.md",
-    "representative_card_content": "READY",
-    "representative_visual_briefs": "READY / REPRESENTATIVE_VISUAL_BRIEFS.md",
-    "temporary_world_bible": "READY / WORLD_BIBLE_SESSION_2026-08-19.md",
-    "canva_master_templates": "NO CANONICAL EDITABLE SOURCE YET; TWO ATTEMPTS FAILED QA",
-    "representative_five_card_gate": "MINOR ISSUE / USER REVIEW REQUIRED / ORIGINAL ART / REFERENCE SIMILARITY PASS",
+    "application_independent_master_spec": "READY",
+    "temporary_world_bible": "READY",
+    "representative_five_card_gate": "PASS / USER APPROVED",
     "card_back_gate": "PASS DIGITAL",
     "line_only_gate": "PASS DIGITAL",
     "digital_real_size_print_gate": "PASS",
     "physical_print_gate": "PENDING",
-    "map_table_gate": "PASS AFTER SEA-ROCK BACK SELF-CORRECTION",
-    "pdf_review_preflight": "PASS",
-    "full_121_card_propagation": "BLOCKED UNTIL EXPLICIT USER REVIEW APPROVAL",
-    "full_rulebook_layout": "BLOCKED UNTIL CARD VISUAL GATE APPROVAL",
-    "final_full_deck_preflight": "PENDING"
+    "map_table_gate": "PASS",
+    "full_121_card_propagation": "GENERATED / PASS DIGITAL / MINOR ISSUE",
+    "full_121_front_uniqueness": "121/121 UNIQUE SHA-256 BINARIES",
+    "full_deck_text_fit": "PASS",
+    "full_deck_review_render": "PASS / 15 PAGES",
+    "full_deck_print_candidate": "PASS DIGITAL / 46 A4 PAGES",
+    "full_rulebook_layout": "FULL VISUAL DRAFT GENERATED / PASS DIGITAL / MINOR ISSUE / 29 PAGES",
+    "rulebook_source_integrity": "PASS / NO BODY MECHANICS REWRITTEN",
+    "final_digital_preflight": "MINOR ISSUE / COMPLETE",
+    "historical_period_detail_audit": "MINOR / REQUIRED BEFORE LOCK",
+    "physical_production_proof": "PENDING",
+    "release_lock": "NOT APPLIED"
   },
   "review_artifacts": {
     "manifest": "working/v2.7/EXPORT_MANIFEST.json",
     "test_status": "working/v2.7/TEST_STATUS.md",
+    "approval_record": "working/v2.7/USER_REVIEW_APPROVAL_2026-08-19.md",
     "reference_policy": "working/v2.7/REFERENCE_USE_POLICY.md",
-    "visual_briefs": "working/v2.7/REPRESENTATIVE_VISUAL_BRIEFS.md",
     "library_export_root": "/Oyun-GitHub/v2.7/exports/",
-    "github_binary_pdf_upload": "UNAVAILABLE IN CURRENT CONNECTOR; exact hashes and library paths recorded in EXPORT_MANIFEST.json"
+    "full_deck_inventory": "/Oyun-GitHub/v2.7/exports/FULL_DECK_CARD_INVENTORY.json",
+    "full_deck_source_bundle": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip",
+    "github_binary_pdf_upload": "UNAVAILABLE IN CURRENT CONNECTOR; exact hashes and library paths are recorded in EXPORT_MANIFEST.json"
   },
-  "next_gate": "USER REVIEW OF REVISED REPRESENTATIVE VISUAL DIRECTION"
+  "next_gate": "PHYSICAL PRODUCTION PROOF + FINAL PRODUCTION-LEVEL HISTORICAL/PERIOD-DETAIL AUDIT BEFORE ANY LOCK REQUEST"
 }
