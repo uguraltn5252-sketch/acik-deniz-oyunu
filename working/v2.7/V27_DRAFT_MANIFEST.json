@@ -9,9 +9,23 @@
     "file_name": "FOULWAKE v2.7 DESIGN SYSTEM",
     "file_key": "LOJtIBKKfN2KVGx8wD6rU9",
     "url": "https://www.figma.com/design/LOJtIBKKfN2KVGx8wD6rU9",
-    "role": "visual_source_of_truth"
+    "role": "visual_source_of_truth",
+    "pages": [
+      "00 — DESIGN SYSTEM",
+      "01 — CARDS",
+      "02 — RULEBOOK / TESTS"
+    ]
   },
   "github_role": "game_content_and_release_source_of_truth",
+  "game_data_source": {
+    "mechanical_package": "releases/v2.6/OYUN_SIMULASYON_PAKETI_v2.6.zip",
+    "nested_baseline": "MEKANIK_BASELINE_OYUN_SIMULASYON_PAKETI_v2.5.zip",
+    "canonical_card_source_inside_baseline": "OYUN_SIMULASYON_SPEC_v2.5.json",
+    "support_card_source": "OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+    "main_cards": 118,
+    "support_cards": 3,
+    "physical_cards_total": 121
+  },
   "card_formats_mm": {
     "map": [70, 70],
     "character": [70, 120],
@@ -26,5 +40,22 @@
     "island_back_identical_within_group": true,
     "lighthouse_back_identical_within_group": true,
     "rotten_provisions_indistinguishable_from_power_back": true
+  },
+  "figma_progress": {
+    "design_rules_dashboard": "DONE",
+    "color_type_tokens": "DONE",
+    "core_size_components": "DONE",
+    "character_fronts_20": "DONE — layout draft; bespoke illustrations pending",
+    "power_fronts_30_plus_rotten_provisions": "DONE — layout draft; bespoke illustrations pending",
+    "loyalty_fronts_15": "DONE",
+    "map_fronts_52": "DONE — layout draft; bespoke illustrations pending",
+    "support_cards_3": "DONE",
+    "backs": "DONE — SeaRock, Island, Lighthouse, Power, Character, Loyalty",
+    "print_test": "DONE — first real-size sheet",
+    "table_test": "DONE — 5x5 and 6x6 closed-map visual tests",
+    "rulebook_visual_draft": "DONE — cover + 4 sample A4 pages",
+    "bespoke_art_pass": "PENDING",
+    "full_rulebook_layout": "PENDING",
+    "final_export_and_preflight": "PENDING"
   }
 }
