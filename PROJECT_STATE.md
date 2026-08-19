@@ -42,13 +42,20 @@ Onay kaydı: `working/v2.7/USER_REVIEW_APPROVAL_2026-08-19.md`.
 - Full-deck A4 print candidate: 46 pages / PASS DIGITAL.
 - Full 29-page rulebook visual draft: PASS DIGITAL / MINOR ISSUE.
 - Rulebook render QA: PASS.
-- Final digital preflight: MINOR ISSUE / COMPLETE.
+- Historical / period-object audit: **PASS DIGITAL AFTER SELF-CORRECTION**.
+- Final digital preflight: **PASS DIGITAL / PHYSICAL GATE PENDING**.
 
-### Açık kalan gerçek gate'ler
+Historical audit sırasında iki dönem riski otomatik düzeltildi:
+
+- `GUC-01A/B Can Simidi`: modern üretilmiş halka-can-simidi çağrışımı kaldırıldı; ip halkası + küçük ahşap yüzdürücü/fıçı yaklaşımı kullanıldı.
+- `KAR-06 Dipgören`: modern dalgıç başlığı çağrışımı kaldırıldı; ağırlıklı kurtarma hattı / nefes tutarak dalış yaklaşımı kullanıldı.
+
+### Açık kalan gerçek gate
 
 - Physical card print / cut / duplex / real-light proof: **PENDING**.
 - Physical rulebook proof: **PENDING**.
-- Final production-level 1721 clothing/object/material-culture audit: **MINOR OPEN ISSUE**.
+
+Rulebook iç tipografisinin locked kaynaktan büyük ölçüde miras kalması non-blocking bir MINOR görsel iyileştirme alanıdır; mekanik veya render hatası değildir.
 
 ## Artifact routing
 
@@ -66,10 +73,10 @@ Current GitHub connector does not expose binary PDF upload; no GitHub binary upl
 
 **v2.7 = DRAFT / NOT LOCKED**
 
-Digital workflow is complete through full deck + rulebook visual draft + digital preflight. No unresolved digital MAJOR ISSUE remains.
+Dijital workflow tam deste + rulebook görsel taslağı + dönem denetimi + dijital preflight aşamasına kadar tamamlandı. Bilinen çözülmemiş dijital MAJOR ISSUE yoktur.
 
 ## Next gate
 
-**Physical production proof + final production-level historical/period-detail audit.**
+**Physical card/rulebook production proof.**
 
 Only an explicit later user instruction such as `kilitle`, `stable yap` or `release et` may convert v2.7 to STABLE / LOCKED.
