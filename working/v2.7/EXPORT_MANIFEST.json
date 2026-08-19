@@ -31,6 +31,14 @@
   ],
   "binary_artifacts": [
     {
+      "name": "FOULWAKE_v2.7_USER_REVIEW_GATE_REVISED.pdf",
+      "sha256": "fabd6c846dba497eacf82060be666d8051c73ab7616260d8793296698684e481",
+      "bytes": 20384251,
+      "pages": 16,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_USER_REVIEW_GATE_REVISED.pdf",
+      "status": "PRIMARY COMBINED USER-REVIEW PDF"
+    },
+    {
       "name": "FOULWAKE_v2.7_DESIGN_SYSTEM_BOARD_REVISED.pdf",
       "sha256": "88ac72a5c0d5b8ba02cbacc81717f4b8ff36db35f5e42728a8650f6e7dba50c7",
       "bytes": 7504310,
@@ -85,6 +93,7 @@
     }
   ],
   "qa": {
+    "combined_user_review_pdf": "PASS / 16 PAGES / OPEN / NO PREFLIGHT WARNINGS",
     "pdf_open_render_preflight": "PASS",
     "reference_similarity": "PASS",
     "mechanic_visual_consistency": "PASS",
