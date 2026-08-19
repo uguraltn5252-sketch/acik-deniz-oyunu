@@ -5,18 +5,12 @@
   "source_release": "v2.6 STABLE / LOCKED",
   "mechanics_policy": "No v2.6 mechanical change unless explicitly approved in v2.7 draft",
   "git_branch": "v2.7-design",
-  "figma": {
-    "file_name": "FOULWAKE v2.7 DESIGN SYSTEM",
-    "file_key": "LOJtIBKKfN2KVGx8wD6rU9",
-    "url": "https://www.figma.com/design/LOJtIBKKfN2KVGx8wD6rU9",
-    "role": "visual_source_of_truth",
-    "pages": [
-      "00 — DESIGN SYSTEM",
-      "01 — CARDS",
-      "02 — RULEBOOK / TESTS"
-    ]
+  "github_role": "game_content_design_standard_and_release_source_of_truth",
+  "design_tools": {
+    "primary": "Canva",
+    "secondary": "Adobe Express",
+    "policy": "Tool choice may change; DESIGN_SYSTEM_MASTER.md remains the application-independent visual authority."
   },
-  "github_role": "game_content_and_release_source_of_truth",
   "game_data_source": {
     "mechanical_package": "releases/v2.6/OYUN_SIMULASYON_PAKETI_v2.6.zip",
     "nested_baseline": "MEKANIK_BASELINE_OYUN_SIMULASYON_PAKETI_v2.5.zip",
@@ -33,29 +27,25 @@
   },
   "bleed_mm": 3,
   "safe_area_mm": "4-5",
-  "locked_rules": {
+  "visual_rules": {
     "no_foulwake_name_on_cards": true,
     "no_text_on_card_backs": true,
     "sea_and_rock_share_back_in_v2_7_visual_draft": true,
     "island_back_identical_within_group": true,
     "lighthouse_back_identical_within_group": true,
-    "rotten_provisions_indistinguishable_from_power_back": true
+    "rotten_provisions_indistinguishable_from_power_back": true,
+    "line_color_texture_ratio": "70/20/10",
+    "front_illustration_info_decoration_ratio": "65/25/10"
   },
-  "figma_progress": {
-    "design_rules_dashboard": "DONE",
-    "color_type_tokens": "DONE",
-    "core_size_components": "DONE",
-    "character_fronts_20": "DONE — layout draft; bespoke illustrations pending",
-    "power_fronts_30_plus_rotten_provisions": "DONE — layout draft; bespoke illustrations pending",
-    "loyalty_fronts_15": "DONE",
-    "map_fronts_52": "DONE — layout draft; bespoke illustrations pending",
-    "support_cards_3": "DONE",
-    "backs": "DONE — SeaRock, Island, Lighthouse, Power, Character, Loyalty",
-    "print_test": "DONE — first real-size sheet",
-    "table_test": "DONE — 5x5 and 6x6 closed-map visual tests",
-    "rulebook_visual_draft": "DONE — cover + 4 sample A4 pages",
-    "bespoke_art_pass": "PENDING",
+  "design_progress": {
+    "application_independent_master_spec": "MIGRATED TO DESIGN_SYSTEM_MASTER.md",
+    "representative_card_content": "READY",
+    "canva_master_templates": "PENDING",
+    "adobe_express_art_tests": "PENDING",
+    "representative_five_card_gate": "PENDING",
+    "full_121_card_propagation": "PENDING",
     "full_rulebook_layout": "PENDING",
+    "print_and_table_tests": "PENDING",
     "final_export_and_preflight": "PENDING"
   }
 }
