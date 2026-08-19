@@ -1,7 +1,7 @@
 # FOULWAKE v2.7 — Representative Card Content
 
 Status: DRAFT / NOT LOCKED
-Purpose: exact GitHub-side content source for the first Figma visual review set. Visual choices belong to Figma; mechanics/text below come from the locked v2.6 mechanical baseline.
+Purpose: exact GitHub-side content source for the first visual review set. Visual choices are implemented in Canva and/or Adobe Express; mechanics/text below come from the locked v2.6 mechanical baseline.
 
 ## KAR-01 — Uzakgören
 
@@ -11,7 +11,7 @@ Purpose: exact GitHub-side content source for the first Figma visual review set.
 - Use mode: Gizli
 - Effect: `Tanışma gecesi hariç her gece bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.`
 - Flavor: `Tehlikeyi uzaktan görür. İnsanları hâlâ yakından çözemedi.`
-- Figma format: 70x120 mm trim; 3 mm bleed.
+- Format: 70x120 mm trim; 3 mm bleed.
 - Visual test goal: Character hierarchy, portrait presence, title flama, quiet background humor, rules/flavor separation.
 
 ## GUC-01A — Can Simidi
@@ -23,7 +23,7 @@ Purpose: exact GitHub-side content source for the first Figma visual review set.
 - Effect: `Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.`
 - Flavor: `Denizde kahramanlık çoğu zaman yuvarlak gelir.`
 - Returns to Power deck: Yes
-- Figma format: 63.5x88.9 mm trim; 3 mm bleed.
+- Format: 63.5x88.9 mm trim; 3 mm bleed.
 - Visual test goal: Poker-card readability, intervention/action feel, restrained visual joke.
 
 ## ERZ-01 — Çürümüş Erzak
@@ -32,7 +32,7 @@ Purpose: exact GitHub-side content source for the first Figma visual review set.
 - Timing: Başlangıçta zorunlu aç
 - Effect: `Kaptandaysan İskorbüt etkinleşmez. Kaptan değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonra gerçek bir Güç çek.`
 - Flavor: `Peksimet hâlâ yenebilir. Onu söyleyen kişi yenmedi.`
-- Figma format: 63.5x88.9 mm trim; 3 mm bleed.
+- Format: 63.5x88.9 mm trim; 3 mm bleed.
 - Physical secrecy requirement: same stock, thickness, surface, corner radius, cut tolerance and BACK as Power cards. Must not be identifiable before reveal.
 - Visual test goal: front may feel suspicious/rotten, but back must remain exactly Power back.
 
@@ -45,14 +45,14 @@ Purpose: exact GitHub-side content source for the first Figma visual review set.
 - Flavor: `Özellikle bu gemiyi takip ediyor.`
 - Score: -2
 - Direct hull damage: Yes
-- Figma format: 70x70 mm trim; 3 mm bleed.
+- Format: 70x70 mm trim; 3 mm bleed.
 - Back requirement: exactly the shared Sea + Rock back; no compass/object/identifier.
 - Visual test goal: 70x70 event readability, danger + dry humor, strong line art even without color.
 
 ## SET-KP-01 — Kaptan Makamı
 
 - Type: Support / public office marker
-- Figma format: 63.5x88.9 mm trim; 3 mm bleed.
+- Format: 63.5x88.9 mm trim; 3 mm bleed.
 - Canonical role note: Kaptanlık açık bir makamdır; Sadakati kanıtlamaz. İlk Kaptan, Gusto'nun kaybolmasının ardından açık oylamayla seçilir. Kaptan değişebilir; makam oyundan kalkmaz.
 - Visual test goal: carry the Captain visual identity and the preferred flama/banner treatment without turning Captain into a permanent Character identity.
 
