@@ -1,27 +1,14 @@
 # Project State
 
 **Son güncelleme:** 19 Ağustos 2026  
-**Son stabil prototip:** **v2.6 STABLE / LOCKED**  
-**Kilitli mekanik baseline / rollback:** **v2.5 STABLE / LOCKED**  
-**Kanonik release kaydı:** `releases/v2.6/`  
-**Mekanik doğrulama kaynağı:** `releases/v2.5/`  
-**Sonraki tasarım hattı:** **v2.7+**
+**Son kullanıcı-onaylı stabil prototip:** **v2.5 STABLE / LOCKED**  
+**Kanonik kaynak:** `releases/v2.5/`  
+**v2.6 durumu:** **DRAFT / NOT LOCKED**  
+**Not:** v2.6 kullanıcı onayı olmadan kilitlendiği için release statüsü geri alınmıştır.
 
-v2.6 yeni mekanik eklemez. v2.5'in kilitli oyun motorunu koruyarak kural kitabını ilk kez oynayan masa için yeniden düzenler, Moderatör kullanımını sadeleştirir ve Siyah Mühür/Gusto anlatısını kanonik hikâye katmanı olarak kilitler.
+v2.5 oyunun son onaylı mekanik ve fiziksel kart baseline'ıdır. v2.6 yalnızca kural kitabı okunabilirliği, Moderatör akışı ve Siyah Mühür/Gusto anlatısı üzerine taslak çalışmadır.
 
-## v2.6 kilitli kararları
-
-- v2.5 mekaniklerinin tamamı aynen korunur; denge motoru v2.5'tir.
-- Kural kitabı öğretme + referans mimarisine geçirilmiştir.
-- İlk oyun için ağır istisnalar referansa taşınmış, kritik kurulum ve zamanlama bilgileri öne alınmıştır.
-- Karakter kurulum yoğunluğu ilk kurulum bölümünde görünürdür; 6–7 kişide Uzakgören ve Kıyıçizen birlikte seçilmez.
-- Kaptan Gusto kalkıştan hemen önce kaybolur; ikinci kaptan olmadığı için tayfa kendi Kaptanını seçer.
-- Gusto'nun akıbeti çözümsüzdür; Siyah Mühür bağlantısı şüphe olarak kalır.
-- İlk tarafsız gece bilgisi Gusto'nun seyir defteriyle anlatısallaştırılır; Sadakatler ertesi sabah dağıtılır ve Kaptan da Hain olabilir.
-- Ayrıntılı arka plan hikâyesi `Siyah Mühür Dosyası` ekindedir; zorunlu masa okumaları kısa tutulur.
-- Kart mekanikleri ve Karakter kartlarının yüzleri değiştirilmemiştir. Tam kart PDF'si v2.5 ile byte-for-byte aynıdır.
-
-## v2.5 mekanik omurga — v2.6'da geçerli
+## v2.5 kilitli kararları
 
 - Kaptan kalıcı rol; ilk gün yalnız seçim. İlk tarafsız gecede Sadakat bilinmeden tam 1 Yakın Ufka gizli bakış; sonraki gecelerde makam otomatik bilgi vermez.
 - Sadakat ertesi sabah; ilk gerçek rota normal eşzamanlı oylama, Kaptan oyu 2.
@@ -32,25 +19,22 @@ v2.6 yeni mekanik eklemez. v2.5'in kilitli oyun motorunu koruyarak kural kitabı
 - Girdap/Ters Akıntı Ada 8-komşuluk yasağı oyun-boyu invarianttır ve relocation bunu bozamaz.
 - Kaderi Geçilmezde kullanılabilir; Geçilmez ziyaret sayılmaz ve açık engel kalır. Ada girişi İskorbütü olaydan önce temizler.
 - Gövde 2; Hain tablosu 6:1, 7:2, 8–10:3, 11–13:4, 14–15:5.
-- 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita / 12 Kayalık / 118 ana kimlik.
+- **Tam kart seti:** 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita / 12 Kayalık / 118 ana kimlik.
 
-## Doğrulama kapıları
+## v2.6 taslak durumu
 
-- v2.5 tam release validatorı v2.6 hazırlanırken yeniden çalıştırıldı: **PASS**.
-- Geometri / relocation / final full balance / PDF audit / package hashes: **PASS**.
-- v2.6 kör kural kitabı denetimi: **PASS**.
-- v2.6 release validator: **PASS**.
-- 20/20 Karakter adı ve 15 kritik mekanik işaret kural kitabında doğrulandı.
-- Tam kart PDF hash'i korunur: `e158b33b77d2fff962420170d87aea407c87c97c9d611e19a6b72e7827aba4cc`.
+- Kural kitabı öğretme + referans mimarisi taslağıdır.
+- Gusto/Siyah Mühür anlatısı taslak kanon önerisidir; kullanıcı onayı olmadan release kanonu sayılmaz.
+- v2.6 paketindeki `OYUN_Kartlar_A4_Prototip_v2.5_UNCHANGED.pdf` tam kart setidir ve v2.5 tam kart PDF'siyle byte-for-byte aynıdır.
+- Ayrı `OYUN_Karakter_Kartlari_v2.5_UNCHANGED.pdf` yalnız yardımcı baskı çıktısıdır; tam set değildir.
+- Kullanıcı açıkça onaylamadan v2.6 veya sonraki hiçbir taslak STABLE/LOCKED ilan edilmez.
 
-## Kalan insan-only sorular
+## Test kapıları
 
-Eğlence, masa gerilimi, mizah, bekleme hissi, gerçek güven/şüphe, konuşma eşitsizliği ve özellikle 7 kişilik Uzun oyunun hissi gerçek kör insan playtestiyle ölçülmeye devam etmelidir. v2.6 kör denetimi kural kitabının izlenebilirliğini sınar; gerçek oyuncu davranışını kanıtlamaz.
+- v2.5: çekirdek regresyon PASS; tam motor PASS; geometri/relocation/İskorbüt/PDF audit PASS.
+- v2.6 kör kural kitabı denetimi yalnız taslak kullanılabilirlik kontrolüdür; release onayı değildir.
 
-## Artefaktlar
+## Kanonik artefakt
 
-Library ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip`  
-SHA-256: `9878c00e1f72f587e75f84b480bb2ff33fd815cf95e45fdaee019beb2fe465a4`
-
-Kural PDF: `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf`  
-Ayrı Karakter baskı PDF: `/Oyun-GitHub/v2.6/OYUN_Karakter_Kartlari_v2.5_UNCHANGED.pdf`
+Library ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.5.zip`  
+SHA-256: `975dd77d435a835fcf3faa864c5624b0542fadb419fa7d34217ed32fe87aa046`
