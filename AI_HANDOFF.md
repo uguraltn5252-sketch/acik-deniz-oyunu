@@ -7,14 +7,14 @@ Bu dosya farklı ChatGPT oturumları/model sürümleri arasında oyunun kanonik 
 - **Son kullanıcı onaylı kilitli stabil sürüm:** `v2.6 STABLE / LOCKED` — `releases/v2.6/`.
 - `v2.5` önceki kilitli mekanik baseline ve tarihsel geri dönüş referansıdır.
 - Otomatik "en yeni LOCKED/STABLE" çalışma protokolü **v2.6'yı** seçmelidir.
-- v2.6 artefaktları yerinde değiştirilmez; yeni çalışma `v2.7+ DRAFT` olarak açılır.
+- v2.6 yerinde değiştirilmez; yeni çalışma `v2.7+ DRAFT` olarak açılır.
 
 ## Her yeni çalışma oturumunda
 
 1. `AI_HANDOFF.md` ve `PROJECT_STATE.md` dosyalarını oku.
-2. Son kilitli release için `releases/v2.6/README_RELEASE_v2.6.md`, `V26_RELEASE_MANIFEST.json`, `BINARY_ARTIFACTS.md`, `CARD_BASELINE.md`, `V26_RELEASE_VALIDATE_OUTPUT.txt` ve `V26_BLIND_RULEBOOK_AUDIT.md` dosyalarını kontrol et.
-3. v2.6 oyun artefaktlarının hashlerini manifestteki değerlerle doğrula.
-4. Mekanik tarihsel baseline gerektiğinde `releases/v2.5/` kayıtlarını kontrol et.
+2. `releases/v2.6/README_RELEASE_v2.6.md`, `V26_RELEASE_MANIFEST.json`, `BINARY_ARTIFACTS.md`, `CARD_BASELINE.md`, `V26_RELEASE_VALIDATE_OUTPUT.txt` ve `V26_BLIND_RULEBOOK_AUDIT.md` dosyalarını kontrol et.
+3. v2.6 artefaktlarının hashlerini manifestteki değerlerle doğrula.
+4. Mekanik motor ayrıntısı gerektiğinde `releases/v2.5/` baseline kayıtlarını kullan.
 5. v2.6 üzerinde yerinde değişiklik yapma. Her yeni fikir, kart, kural, hikâye veya fiziksel bileşen değişikliği v2.7+ DRAFT hattında tutulur.
 
 ## v2.6 kilitli omurga
@@ -35,18 +35,16 @@ Bu dosya farklı ChatGPT oturumları/model sürümleri arasında oyunun kanonik 
 - Ana kart seti: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita = 118 ana kart.
 - Yardımcı kartlar: Kalkış Limanı + Varış Limanı + Kaptan = 3 kart; toplam 121 basılabilir fiziksel kart.
 - Mahkûm için ayrı kart/token yok; Moderatör not alır.
-- Kayalık kartlarının mevcut kategori arka yüzleri korunur; Açık Deniz arka yüzü varyantı v2.6'ya uygulanmamıştır.
+- **Kayalık arka yüzleri KAYALIK kategorisi olarak kalır. Açık Deniz ile aynı arka yüz yapma deneyi v2.6'ya alınmamıştır.**
 
 ## Kilitli artefaktlar
 
-- Kural PDF: `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6_DRAFT.pdf`
-  - SHA-256: `f369d6947dc22afde0af4bdeb72e00fa48ca26f072c49f025b97b8d071e0347d`
-- Kart PDF: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf`
-  - SHA-256: `73b88869609076aec8690ecc7812f00ba26a6226a7af94b3db7725af30874382`
-- Full ZIP: `/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip`
-  - SHA-256: `cfb1fe5071270900610669ae6863f8fb96e6d7bba311276c2569b767336f7e8c`
-
-Dosya adlarında ve PDF kapaklarında geçen `DRAFT` ibaresi kullanıcı talebi gereği **içeriğe dokunulmadan kilitlenmiştir**; kanonik statü GitHub release kayıtlarında `STABLE / LOCKED` olarak belirlenir.
+- Kural PDF: `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf`
+  - SHA-256: `192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a`
+- Kart PDF: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf`
+  - SHA-256: `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298`
+- Full ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip`
+  - SHA-256: `ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534`
 
 ## Kısa devam komutu
 
