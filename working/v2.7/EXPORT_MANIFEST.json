@@ -5,59 +5,97 @@
   "source_release": "v2.6 STABLE / LOCKED",
   "branch": "v2.7-design",
   "date": "2026-08-19",
+  "reference_use_mode": "STYLE_ONLY",
   "review_gate": "USER REVIEW REQUIRED",
   "overall_result": "MINOR ISSUE",
-  "canva": {
-    "design_id": "DAHSvmAWxYk",
-    "status": "EXPERIMENTAL / NOT APPROVED",
-    "qa": "Generated candidate failed content-structure QA and was not promoted to canonical source. DESIGN_SYSTEM_MASTER.md remains authority."
-  },
-  "binary_artifacts": [
+  "source_policies": [
+    "working/v2.7/DESIGN_SYSTEM_MASTER.md",
+    "working/v2.7/REFERENCE_USE_POLICY.md",
+    "working/v2.7/REPRESENTATIVE_VISUAL_BRIEFS.md",
+    "working/v2.7/WORLD_BIBLE_SESSION_2026-08-19.md"
+  ],
+  "canva_attempts": [
     {
-      "name": "FOULWAKE_v2.7_DESIGN_SYSTEM_BOARD.pdf",
-      "sha256": "09a0d280637adc40377a65c8a3e3494dbe4ec8f036536feba5b6c04ed00ffe96",
-      "bytes": 4926645,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_DESIGN_SYSTEM_BOARD.pdf"
+      "design_id": "DAHSvmAWxYk",
+      "status": "EXPERIMENTAL / CONTENT QA FAIL / NOT CANONICAL",
+      "qa": "Earlier generated candidate did not match required FOULWAKE content structure."
     },
     {
-      "name": "FOULWAKE_v2.7_REPRESENTATIVE_CARD_TEST.pdf",
-      "sha256": "0f366ffb6690fd21dabac4755a6853de9199f4719a228f242c25190c752be817",
-      "bytes": 4556166,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_REPRESENTATIVE_CARD_TEST.pdf"
-    },
-    {
-      "name": "FOULWAKE_v2.7_CARD_BACK_TEST.pdf",
-      "sha256": "59e2e960b093c792acb746e666b6c6c8b7fdf90e7371e2ce7ddfb85fe2eb352a",
-      "bytes": 12948523,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_CARD_BACK_TEST.pdf"
-    },
-    {
-      "name": "FOULWAKE_v2.7_PRINT_TEST.pdf",
-      "sha256": "983ce9f5e6ca94a7a4a27a7baca4bc88ceb7292cc5e7321186010358213f4b86",
-      "bytes": 4935157,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_PRINT_TEST.pdf"
-    },
-    {
-      "name": "FOULWAKE_v2.7_TABLE_TEST.pdf",
-      "sha256": "0dab68fa9981bdb0c671f46f5518626c4954faa0ab3092bd7f98b6a7152c066c",
-      "bytes": 6080459,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_TABLE_TEST.pdf"
-    },
-    {
-      "name": "FOULWAKE_v2.7_LINE_ONLY_TEST.pdf",
-      "sha256": "407e13e664f8076a31cdcda0793b082b2dcf28524b7513ae5189be8caa04c37b",
-      "bytes": 200125,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_LINE_ONLY_TEST.pdf"
-    },
-    {
-      "name": "FOULWAKE_v2.7_VISUAL_QA.pdf",
-      "sha256": "b24ac00608da30749f7f8957e6d99006ed855fdae26e248d73eee826925db9a7",
-      "bytes": 45915,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_VISUAL_QA.pdf"
+      "design_id": "DAHSv3GnJGo",
+      "title": "FOULWAKE v2.7 - Revised Visual Review Gate",
+      "status": "EXPERIMENTAL IMPORT / EDITABLE-STRUCTURE QA FAIL / NOT CANONICAL",
+      "observed_page_count": 1,
+      "observed_richtext": "EMPTY",
+      "qa": "Import succeeded technically, but validation did not preserve the intended multi-page editable review structure. PDF artifacts remain the controlled review source."
     }
   ],
+  "binary_artifacts": [
+    {
+      "name": "FOULWAKE_v2.7_DESIGN_SYSTEM_BOARD_REVISED.pdf",
+      "sha256": "88ac72a5c0d5b8ba02cbacc81717f4b8ff36db35f5e42728a8650f6e7dba50c7",
+      "bytes": 7504310,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_DESIGN_SYSTEM_BOARD_REVISED.pdf"
+    },
+    {
+      "name": "FOULWAKE_v2.7_REPRESENTATIVE_CARD_TEST_REVISED.pdf",
+      "sha256": "3aaf06349109444dd2acfaa207b10c8d9c751799acdf2a524d52c488018c23a3",
+      "bytes": 5365918,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_REPRESENTATIVE_CARD_TEST_REVISED.pdf"
+    },
+    {
+      "name": "FOULWAKE_v2.7_CARD_BACK_TEST_REVISED.pdf",
+      "sha256": "426d83fe206dd7acec2cdbe3d2f6b13db6d5b817730bcb48c8881c076f130c8b",
+      "bytes": 2182619,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_CARD_BACK_TEST_REVISED.pdf"
+    },
+    {
+      "name": "FOULWAKE_v2.7_LINE_ONLY_TEST_REVISED.pdf",
+      "sha256": "2331c53b6e86e08f19f14ef2964d2dd5b7dd86b4834be2a5bd8d3c8a2a3cbb2e",
+      "bytes": 573053,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_LINE_ONLY_TEST_REVISED.pdf"
+    },
+    {
+      "name": "FOULWAKE_v2.7_PRINT_TEST_REVISED.pdf",
+      "sha256": "35e1695a6eefa8c0d6cefa535fb484e0626520e8eb54536c40fb39227599ccdf",
+      "bytes": 4067026,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_PRINT_TEST_REVISED.pdf"
+    },
+    {
+      "name": "FOULWAKE_v2.7_TABLE_TEST_REVISED.pdf",
+      "sha256": "255fd650fa290c76aec774bd71b4901c5ccb5f67ea69d3654be8dc2fa9221783",
+      "bytes": 610042,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_TABLE_TEST_REVISED.pdf"
+    },
+    {
+      "name": "FOULWAKE_v2.7_VISUAL_QA_REVISED.pdf",
+      "sha256": "00b3ad6eb8c1e3bc891974ff274d3e8c3ae0e9c1e865505460b930667699e696",
+      "bytes": 86942,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_VISUAL_QA_REVISED.pdf"
+    },
+    {
+      "name": "FOULWAKE_v2.7_CANVA_EDITABLE_REVIEW.zip",
+      "sha256": "83eb7efc1c2ffa2afcbc134fa35a460b86a5fea2b4c0270def6b0f884d47900b",
+      "bytes": 6922287,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_CANVA_EDITABLE_REVIEW.zip",
+      "status": "IMPORT PACKAGE / CANVA STRUCTURE QA FAILED"
+    },
+    {
+      "name": "artifact_hashes_REVISED.json",
+      "library_path": "/Oyun-GitHub/v2.7/exports/artifact_hashes_REVISED.json"
+    }
+  ],
+  "qa": {
+    "pdf_open_render_preflight": "PASS",
+    "reference_similarity": "PASS",
+    "mechanic_visual_consistency": "PASS",
+    "line_only": "PASS",
+    "digital_real_size": "PASS",
+    "map_table": "PASS AFTER SELF-CORRECTION",
+    "physical_print": "PENDING",
+    "historical_period_object_audit": "MINOR / FINAL PRODUCTION PASS STILL REQUIRED"
+  },
   "github_binary_upload": {
     "status": "NOT AVAILABLE IN CURRENT CONNECTOR",
-    "note": "Current GitHub connector exposes UTF-8 text create/update but no binary PDF upload action. Binary review PDFs are archived in the user file library path above; this GitHub manifest records exact hashes and locations without pretending a GitHub binary commit occurred."
+    "note": "No binary PDF upload was claimed. Revised review PDFs and hash record were archived in the user file library; GitHub stores their exact hashes and library paths."
   }
 }
