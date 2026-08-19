@@ -7,7 +7,7 @@
   "date": "2026-08-19",
   "reference_use_mode": "STYLE_ONLY",
   "user_visual_gate": "APPROVED",
-  "overall_result": "MINOR ISSUE / DIGITAL WORKFLOW COMPLETE THROUGH FULL DECK + RULEBOOK DRAFT + DIGITAL PREFLIGHT",
+  "overall_result": "PASS DIGITAL / PHYSICAL PRODUCTION GATE PENDING",
   "library_export_root": "/Oyun-GitHub/v2.7/exports/",
   "legacy_review_artifacts": [
     {
@@ -16,54 +16,43 @@
       "bytes": 20384251,
       "pages": 16,
       "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_USER_REVIEW_GATE_REVISED.pdf"
-    },
-    {
-      "name": "FOULWAKE_v2.7_DESIGN_SYSTEM_BOARD_REVISED.pdf",
-      "sha256": "88ac72a5c0d5b8ba02cbacc81717f4b8ff36db35f5e42728a8650f6e7dba50c7",
-      "bytes": 7504310,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_DESIGN_SYSTEM_BOARD_REVISED.pdf"
-    },
-    {
-      "name": "FOULWAKE_v2.7_REPRESENTATIVE_CARD_TEST_REVISED.pdf",
-      "sha256": "3aaf06349109444dd2acfaa207b10c8d9c751799acdf2a524d52c488018c23a3",
-      "bytes": 5365918,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_REPRESENTATIVE_CARD_TEST_REVISED.pdf"
-    },
-    {
-      "name": "FOULWAKE_v2.7_CARD_BACK_TEST_REVISED.pdf",
-      "sha256": "426d83fe206dd7acec2cdbe3d2f6b13db6d5b817730bcb48c8881c076f130c8b",
-      "bytes": 2182619,
-      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_CARD_BACK_TEST_REVISED.pdf"
     }
   ],
   "full_deck_artifacts": [
     {
       "name": "FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf",
-      "sha256": "c643acf4ec8137fe392000d250bb703454412a69c3bbe68ebdec419b2d2b55a2",
-      "bytes": 55395080,
+      "sha256": "3a5a5f028395c31078cf4273b14f2cef75a61e89a6f8d42cbcc0a448604f8041",
+      "bytes": 56645378,
       "pages": 46,
       "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf"
     },
     {
       "name": "FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf",
-      "sha256": "4a909942c91862f7bc899df027e453aa16a5640b22bd32660c5b10f6e46595a6",
-      "bytes": 3920471,
+      "sha256": "5fc77968c78bde707546deba53ed1ec65860b4d2caf21351617265158563f90d",
+      "bytes": 3919946,
       "pages": 15,
       "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf"
     },
     {
       "name": "FOULWAKE_v2.7_FULL_DECK_LINE_ONLY_SAMPLE.pdf",
-      "sha256": "549a1921b78894c8dcf496d0d63914d08a019929cb0796fcef5ad6a7163b2007",
+      "sha256": "4a5040e5f8d9c58a48226e0c3e1273140170fb6f3b489d24f251662af17d877a",
       "bytes": 431785,
       "pages": 1,
       "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_LINE_ONLY_SAMPLE.pdf"
     },
     {
       "name": "FOULWAKE_v2.7_FULL_DECK_QA.pdf",
-      "sha256": "fc59f590b2fd4efe8f5380c5172bf01487e29eae55f9d42afc957d403ec9e4f6",
-      "bytes": 45210,
+      "sha256": "2976d11958ddd1883227e08933902360b97202ff3992e1983ef5257e29952599",
+      "bytes": 45238,
       "pages": 1,
       "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_QA.pdf"
+    },
+    {
+      "name": "FOULWAKE_v2.7_HISTORICAL_PERIOD_AUDIT.pdf",
+      "sha256": "466a648af7a4f962e004c35bb3b8ab5fec2d99c36af71432af0a27922c4bac5c",
+      "bytes": 45146,
+      "pages": 1,
+      "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_HISTORICAL_PERIOD_AUDIT.pdf"
     },
     {
       "name": "FULL_DECK_CARD_INVENTORY.json",
@@ -85,16 +74,16 @@
     },
     {
       "name": "FULL_DECK_PRODUCTION_MANIFEST.json",
-      "sha256": "6a09f9bc22982166df64c225e837f9f4119a0cc3ec79a8d7689ccd87ade6b650",
-      "bytes": 2354,
+      "sha256": "b3f4b44264e9c60b36bc1fd6e6a9a7cc9c11ebf9a9164e0c0945614f9c2c3ae3",
+      "bytes": 2377,
       "library_path": "/Oyun-GitHub/v2.7/exports/FULL_DECK_PRODUCTION_MANIFEST.json"
     },
     {
       "name": "FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip",
-      "sha256": "c0a9fc6c0cad28afaa75bfdc697fdccd6ea8444bbbebc7c17cb802400c5ad85f",
-      "bytes": 55358908,
+      "sha256": "d0f00435033916fbcd89a5ff74a5ed48023abe652b84f2cd8ce934dddea82fd0",
+      "bytes": 55395790,
       "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip",
-      "contents": "121 front PNGs + shared back PNGs + inventory + build scripts"
+      "contents": "121 front PNGs + shared backs + inventory + build/audit scripts"
     }
   ],
   "rulebook_and_preflight_artifacts": [
@@ -113,15 +102,15 @@
     },
     {
       "name": "FOULWAKE_v2.7_RULEBOOK_QA.pdf",
-      "sha256": "c9660e29869fa148d612b38249eddb0935f57fbcd019390021cca30e332d5a8e",
+      "sha256": "e4c91f7584a9146ae718496ef56db94b3767f9fd7c8d9a06af4b503b16cb0274",
       "bytes": 44639,
       "pages": 1,
       "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_RULEBOOK_QA.pdf"
     },
     {
       "name": "FOULWAKE_v2.7_FINAL_DIGITAL_PREFLIGHT.pdf",
-      "sha256": "e3c4ae0ab0cd024bfbca9795d6c9dc5fe1aa4c6adeeb8522752c74ad79ece6b9",
-      "bytes": 44780,
+      "sha256": "61a0ab1be74fbaa606702cd4e3db8b222ac48a9efab08bb7718db89f29914111",
+      "bytes": 44785,
       "pages": 1,
       "library_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FINAL_DIGITAL_PREFLIGHT.pdf"
     }
@@ -135,15 +124,19 @@
     "card_dimensions_and_bleed": "PASS",
     "reference_similarity": "PASS BY CONSTRUCTION",
     "back_secrecy": "PASS",
+    "historical_period_audit": "PASS DIGITAL AFTER SELF-CORRECTION",
+    "historical_self_corrections": [
+      "GUC-01A/B Can Simidi: manufactured ring-buoy visual removed; rope loop + wooden float/cask used",
+      "KAR-06 Dipgören: helmet-like diver cue removed; weighted recovery line / breath-hold-diver cue used"
+    ],
     "full_deck_render_review": "PASS DIGITAL",
     "rulebook_render_review": "PASS DIGITAL",
-    "digital_preflight": "MINOR ISSUE / COMPLETE",
-    "historical_period_object_audit": "MINOR / FINAL PRODUCTION PASS REQUIRED BEFORE LOCK",
+    "digital_preflight": "PASS DIGITAL / PHYSICAL GATE PENDING",
     "physical_print_cut_light_proof": "PENDING",
     "release_lock": "NOT APPLIED"
   },
   "github_binary_upload": {
     "status": "NOT AVAILABLE IN CURRENT CONNECTOR",
-    "note": "No binary upload to GitHub is claimed. Binary outputs are archived in the user file library and this manifest records exact hashes/paths."
+    "note": "No binary GitHub upload is claimed. Binary outputs are archived in the user file library and this manifest records exact hashes/paths."
   }
 }
