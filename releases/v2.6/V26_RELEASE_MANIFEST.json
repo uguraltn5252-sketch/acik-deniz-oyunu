@@ -1,8 +1,11 @@
 {
   "version": "v2.6",
-  "status": "DRAFT / NOT LOCKED",
+  "status": "STABLE / LOCKED",
   "mechanical_baseline": "v2.5 STABLE / LOCKED",
-  "release_lock": false,
+  "release_lock": true,
+  "locked_at": "2026-08-19T14:08:00+03:00",
+  "locked_by_user_explicit_approval": true,
+  "content_changed_during_lock": false,
   "artifacts": {
     "rulebook": {"path": "/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6_DRAFT.pdf", "pages": 29, "size_bytes": 577403, "sha256": "f369d6947dc22afde0af4bdeb72e00fa48ca26f072c49f025b97b8d071e0347d"},
     "cards": {"path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf", "pages": 34, "size_bytes": 1779634, "sha256": "73b88869609076aec8690ecc7812f00ba26a6226a7af94b3db7725af30874382"},
@@ -22,6 +25,7 @@
     "convict_tracking": "Moderator note",
     "rotten_supplies_changed": false,
     "bayat_peksimet_changed": false,
+    "rock_backs_changed_to_open_sea": false,
     "stale_hidden_rock_text_removed": true
   },
   "rulebook_state": {
@@ -36,5 +40,5 @@
     "blind_moderator_walkthrough": "28/28 PASS",
     "card_pdf_preflight": "PASS"
   },
-  "lock_policy": "User must explicitly approve locking; otherwise v2.6 remains DRAFT / NOT LOCKED."
+  "immutability": "Locked v2.6 game artifacts must not be modified in place. Any subsequent change starts at v2.7+ DRAFT."
 }
