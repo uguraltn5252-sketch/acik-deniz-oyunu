@@ -3,45 +3,54 @@
 **Taban mekanik:** v2.5 STABLE / LOCKED  
 **Durum:** DRAFT / NOT LOCKED  
 **Tarih:** 19 Ağustos 2026  
-**Sürüm tipi:** Kural kitabı / öğretme akışı / anlatı / Moderatör kullanılabilirliği taslağı. **Yeni mekanik yoktur.**
+**Sürüm tipi:** Entegre kural kitabı + Moderatör/storyteller akışı + anlatı + fiziksel yardımcı kart standardı taslağı.
 
-> DÜZELTME: v2.6 daha önce kullanıcı açık onayı olmadan STABLE / LOCKED olarak işaretlenmiştir. Bu statü geri alınmıştır. Son kullanıcı-onaylı kilitli sürüm v2.5'tir.
+> Son kullanıcı-onaylı kilitli sürüm hâlâ **v2.5 STABLE / LOCKED**'tur. v2.6 kullanıcı açıkça “kilitle” demeden STABLE / LOCKED sayılamaz.
 
-v2.6, v2.5'in kilitli oyun motoruna dokunmadan kural kitabını ilk kez oynayan masa için yeniden düzenleyen bir **taslak çalışmadır**. Kullanıcı onayı olmadan kanonik release veya kilitli sürüm sayılamaz.
+## Güncel v2.6 taslağı
 
-## Taslakta değişenler
+v2.6'nın güncel taslağında bütün oyuncu kuralları, Moderatörün ilk oyun/sefer akışı, hafif storyteller yönergeleri ve Siyah Mühür arka plan hikâyesi **tek kural kitabında** toplanır. Ayrı Moderatör kartı veya ayrı hikâye dosyası güncel taslağın parçası değildir.
 
-- Kural kitabı öğretme + referans yapısına dönüştürüldü.
-- Siyah Mühür / Gusto anlatısı işlendi.
-- İlk tarafsız gece, seyir defteri ve Sadakat öncesi anlatı kutuları eklendi.
-- Kör kural kitabı denetiminde bulunan okunabilirlik sorunları taslakta düzeltildi.
-- Moderatör masa kartı hazırlandı.
+- Kural kitabı: 29 sayfa A4.
+- Moderatör açılış akışı tek çizgide: Dünya ve Görev → Karakterler → Gusto → Kaptan seçimi → başlangıç Gücü/Çürümüş Erzak → ilk tarafsız gece → Sadakat → ilk rota → ilk Hain gecesi.
+- Normal sefer için gündüz/gece/siyaset/kriz akışı aynı kural kitabında tek Moderatör bölümünde tutulur.
+- Moderatör hafif storyteller'dır; atmosfer kurar fakat gizli bilgi, şüphe veya oyuncu kararlarını yönlendirmez.
+- Siyah Mühür/Gusto hikâyesi kitabın sonunda tek parça okunabilir arka plan anlatısı olarak bulunur.
 
-## Kart seti hakkında kritik açıklama
+## Kart seti
 
-**Hiçbir kart mekanik olarak çıkarılmadı veya değiştirilmedi.**
+Ana oyun kartlarının mekanik metinleri korunur:
 
-Taslak pakette iki farklı PDF bulunur:
-
-1. `OYUN_Kartlar_A4_Prototip_v2.5_UNCHANGED.pdf` — **TAM KART SETİDİR.** Karakter + Güç + Çürümüş Erzak + Sadakat + Harita kartlarının tamamını içerir ve v2.5 kart PDF'siyle byte-for-byte aynıdır.
-2. `OYUN_Karakter_Kartlari_v2.5_UNCHANGED.pdf` — yalnız yardımcı/ayrı Karakter baskı çıktısıdır. Oyunun tam kart seti değildir.
-
-Tam set sayıları v2.5 ile aynıdır:
 - 20 Karakter
 - 30 Güç
-- 1 Çürümüş Erzak
+- 1 Çürümüş Erzak — İskorbüt Tehlikesi
 - 15 Sadakat
 - 52 Harita
-- 12 Kayalık (Harita havuzunun içinde)
+- 12 Kayalık, Harita havuzu içinde
 - 118 ana kimlik
-- ayrıca `SET-KL-01` Kalkış Limanı
 
-Tam kart PDF SHA-256: `e158b33b77d2fff962420170d87aea407c87c97c9d611e19a6b72e7827aba4cc`
+Fiziksel yardımcı kart standardı taslakta şöyledir:
 
-## Mekanik omurga
+- 1 Kalkış Limanı kartı — mevcut `SET-KL-01`, korunur.
+- 1 Varış / Hedef Limanı kartı — yeni açık yardımcı kart.
+- 1 Kaptan makam kartı — yeni açık yardımcı kart; Kaptan değişince yeni Kaptana geçer.
+- Bu üç yardımcı kart 118 ana kimliğe dâhil değildir.
+- Mahkûm için ayrı kart/token kullanılmaz; Moderatör ilk başarılı Suçlamayı not eder.
+- **Çürümüş Erzak kartı değiştirilmemiştir.**
+- **Bayat Peksimet (`GUC-22`) değiştirilmemiştir.**
 
-v2.6 taslağı mekanik hüküm kaynağı değildir; herhangi bir çelişkide v2.5 STABLE / LOCKED kaynakları geçerlidir.
+## Güncel taslak artefaktları
 
-## Sürüm politikası
+- `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6_DRAFT.pdf`
+- `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf`
+- `/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip`
 
-v2.6 yalnız taslaktır. Kullanıcı açıkça "kilitle", "stabil sürüm yap" veya eşdeğer bir onay vermeden bu ya da sonraki hiçbir taslak STABLE / LOCKED ilan edilmez.
+Hash ve boyutlar `BINARY_ARTIFACTS.md` ile `V26_RELEASE_MANIFEST.json` içinde kayıtlıdır.
+
+## Mekanik kaynak hiyerarşisi
+
+v2.6 henüz kilitli mekanik kaynak değildir. Bir çelişkide v2.5 STABLE / LOCKED mekanik hükümleri geçerlidir; v2.6'daki fiziksel yardımcı kart kararları ve kural kitabı/anlatı düzeni taslak kabul edilir.
+
+## Kilit politikası
+
+Kullanıcı açıkça “kilitle”, “stabil sürüm yap” veya eşdeğer bir onay vermeden v2.6 ya da sonraki hiçbir taslak STABLE / LOCKED ilan edilmez.
