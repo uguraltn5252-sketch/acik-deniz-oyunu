@@ -4,18 +4,15 @@
 **Son kilitli mekanik baseline:** v2.5 STABLE / LOCKED
 
 - Library: `/Oyun-GitHub/OYUN_v2.6_DRAFT_GUNCEL.zip`
-- SHA-256: `ba39598ba0d5be7f592a5ab52fec65230e46d61b8885545321ea8734c024d483`
-- Boyut: `1387799` byte
+- SHA-256: `cfb1fe5071270900610669ae6863f8fb96e6d7bba311276c2569b767336f7e8c`
+- Boyut: `1752338` byte
 
-Paket yalnız güncel kullanıcı-facing taslak belgelerini taşır:
-
+Paket yalnız güncel kullanıcı belgelerini taşır:
 1. `OYUN_Kural_Kitabi_v2.6_DRAFT.pdf`
 2. `OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf`
 3. `README_DRAFT.txt`
 4. `SHA256SUMS.txt`
 
-Kural kitabı; oyuncu kuralları, Moderatör/storyteller akışı ve Siyah Mühür arka plan hikâyesini tek belgede içerir. Ayrı Moderatör kartı veya ayrı hikâye dosyası güncel taslak paketinin parçası değildir.
-
-Kart PDF; 118 ana oyun kimliğini korur ve bunların dışında Kalkış Limanı, Varış/Hedef Limanı ve Kaptan makamı yardımcı fiziksel kartlarını içerir. Mahkûm için ayrı kart/token kullanılmaz; Moderatör takip eder. Çürümüş Erzak ve Bayat Peksimet değiştirilmemiştir.
+Ayrı Moderatör kartı veya ayrı hikâye belgesi yoktur. Kart PDF'sinde 118 ana oyun kartı + 3 yardımcı kart = 121 basılabilir fiziksel kart bulunur. Mahkûm durumu Moderatör notuyla takip edilir.
 
 Bu paket release değildir; kullanıcı açıkça onay vermeden STABLE / LOCKED ilan edilemez.
