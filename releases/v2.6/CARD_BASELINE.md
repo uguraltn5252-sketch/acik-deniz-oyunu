@@ -3,41 +3,29 @@
 **Durum:** DRAFT / NOT LOCKED  
 **Mekanik baseline:** v2.5 STABLE / LOCKED
 
-v2.6 güncel taslağında Karakter, Güç, Sadakat, Çürümüş Erzak ve Harita kartlarının temel mekanik metinleri v2.5 baseline'dan korunur.
-
-## Ana kart seti
-
+Ana oyun kartlarının mekanik metinleri korunur:
 - 20 Karakter
 - 30 Güç
 - 1 Çürümüş Erzak — İskorbüt Tehlikesi
 - 15 Sadakat
 - 52 Harita
-- 12 Kayalık, Harita havuzunun içinde
-- 118 ana kimlik
+- 118 ana fiziksel kart kimliği
 
-## Yardımcı fiziksel kartlar
+Ana 118 kartın dışında üç açık yardımcı kart vardır ve üçü de güncel PDF'nin baskı yapraklarında fiziksel olarak bulunur:
+1. `SET-KL-01` Kalkış Limanı
+2. `SET-VL-01` Varış / Hedef Limanı
+3. `SET-KP-01` Kaptan makamı
 
-Ana 118 kimliğin dışında:
+Toplam basılabilir fiziksel kart sayısı **121**'dir. Yardımcı kartlar Sadakat/Güç/Karakter/Harita destelerine girmez.
 
-1. `SET-KL-01` Kalkış Limanı — mevcut kart, korunur.
-2. Varış / Hedef Limanı — yeni açık yardımcı kart.
-3. Kaptan makamı — yeni açık yardımcı kart; makam değiştiğinde yeni Kaptana geçer.
+Mahkûm için ayrı kart/token kullanılmaz; ilk başarılı Suçlama durumu Moderatör tarafından not edilir.
 
-Bu yardımcı kartlar Sadakat/Güç/Karakter/Harita destelerine girmez.
+Değişmeyen özel kartlar:
+- `ERZ-01` Çürümüş Erzak — İskorbüt Tehlikesi
+- `GUC-22` Bayat Peksimet
 
-## Mahkûm takibi
-
-Güncel taslakta ayrı `Bir Kez Mahkûm` kartı veya tokenı kullanılmaz. İlk başarılı Suçlama durumu Moderatör tarafından not edilir. Bu karar oyuncu kartlarına yeni etki eklemez.
-
-## Değişmeyen özel kartlar
-
-- `ERZ-01` Çürümüş Erzak — İskorbüt Tehlikesi: **değişmedi**.
-- `GUC-22` Bayat Peksimet: **değişmedi**.
-
-## Güncel kart PDF
-
-`/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf`  
-SHA-256: `0ea5cddc1f86579442ea5faa541799cbb4b5dbe2921a8f91352d3a0a5f69698c`  
+Güncel kart PDF: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6_DRAFT.pdf`  
+SHA-256: `73b88869609076aec8690ecc7812f00ba26a6226a7af94b3db7725af30874382`  
 34 sayfa A4.
 
-Bu belge yalnız taslak fiziksel standardı kaydeder; kullanıcı açıkça kilitlemeden release kararı değildir.
+PDF metin katmanı denetiminde eski Geçilmez öncesi metin kalıntıları temizlenmiştir; güncel `HAR-KY-01 Duvar Gibi Kayalık` ve `HAR-KY-03 Yolun Bittiği Yer` korunur.
