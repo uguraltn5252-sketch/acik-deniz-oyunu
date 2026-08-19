@@ -9,7 +9,9 @@
   "design_tools": {
     "primary": "Canva",
     "secondary": "Adobe Express",
-    "policy": "Tool choice may change; DESIGN_SYSTEM_MASTER.md remains the application-independent visual authority."
+    "policy": "Tool choice may change; DESIGN_SYSTEM_MASTER.md remains the application-independent visual authority.",
+    "current_canva_design_id": "DAHSvmAWxYk",
+    "current_canva_design_status": "EXPERIMENTAL / CONTENT QA FAIL / NOT CANONICAL"
   },
   "game_data_source": {
     "mechanical_package": "releases/v2.6/OYUN_SIMULASYON_PAKETI_v2.6.zip",
@@ -38,14 +40,23 @@
     "front_illustration_info_decoration_ratio": "65/25/10"
   },
   "design_progress": {
-    "application_independent_master_spec": "MIGRATED TO DESIGN_SYSTEM_MASTER.md",
+    "application_independent_master_spec": "READY / DESIGN_SYSTEM_MASTER.md",
     "representative_card_content": "READY",
-    "canva_master_templates": "PENDING",
-    "adobe_express_art_tests": "PENDING",
-    "representative_five_card_gate": "PENDING",
-    "full_121_card_propagation": "PENDING",
-    "full_rulebook_layout": "PENDING",
-    "print_and_table_tests": "PENDING",
+    "temporary_world_bible": "READY / WORLD_BIBLE_SESSION_2026-08-19.md",
+    "canva_master_templates": "EXPERIMENTAL CANDIDATE GENERATED; CONTENT QA FAIL; NOT APPROVED",
+    "adobe_express_art_tests": "NOT REQUIRED FOR CURRENT GATE",
+    "representative_five_card_gate": "MINOR ISSUE / USER REVIEW REQUIRED",
+    "card_back_gate": "PASS DIGITAL",
+    "line_only_gate": "PASS DIGITAL",
+    "print_and_table_tests": "DIGITAL PASS WITH PHYSICAL PRINT PENDING",
+    "full_121_card_propagation": "BLOCKED UNTIL USER REVIEW",
+    "full_rulebook_layout": "BLOCKED UNTIL CARD VISUAL GATE APPROVAL",
     "final_export_and_preflight": "PENDING"
+  },
+  "review_artifacts": {
+    "manifest": "working/v2.7/EXPORT_MANIFEST.json",
+    "test_status": "working/v2.7/TEST_STATUS.md",
+    "library_export_root": "/Oyun-GitHub/v2.7/exports/",
+    "github_binary_pdf_upload": "UNAVAILABLE IN CURRENT CONNECTOR; hashes and library paths recorded in EXPORT_MANIFEST.json"
   }
 }
