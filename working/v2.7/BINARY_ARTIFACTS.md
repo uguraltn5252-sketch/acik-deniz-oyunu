@@ -1,10 +1,23 @@
 # v2.7 Draft Binary Artifacts
 
 **Durum:** **DRAFT / NOT LOCKED**  
-**Metin ve mekanik kaynağı:** v2.6 STABLE / LOCKED  
+**Mekanik baseline:** v2.6 STABLE / LOCKED  
+**v2.7 görünen metin kaynakları:** `FOULWAKE_CARD_TEXTS_v2.7.json` ve `FOULWAKE_RULEBOOK_STORY_v2.7.md`  
 **Görsel yön onayı:** 20 Ağustos 2026
 
 GitHub deposunda büyük binary dosyaların kendileri yerine kanonik yol, boyut ve SHA-256 kayıtları tutulur.
+
+## Candidate sınırı
+
+Bu dosyadaki mevcut kayıtlar sanat yönü örneklerini ve 29 sayfalık görsel rulebook
+taslağını tanımlar; güncel dal için tam 121 kartlık release candidate manifesti
+değildir. Temiz v2.7 sıfırlamasından önceki 121/121 üretim ve final preflight
+kayıtları tarihsel kanıttır; güncel source commit, renderlar ve manifestlerle
+yeniden bağlanmadan `ART-001` veya `SRC-001` engelini kapatmaz.
+
+Candidate tesliminde kart/rulebook source → render → PDF izlenebilirliği,
+121/121 front/back eşlemesi, SHA-256 manifestleri ve fiziksel prova kayıtları bu
+dosyaya exact commit kimliğiyle eklenir.
 
 ## v2.7 görsel taslak çıktıları
 
