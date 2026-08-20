@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "version": "v2.7",
+  "status": "DRAFT_NOT_LOCKED",
+  "candidate_commit": null,
+  "conflict_action": "STOP_AND_HANDOFF_TO_CHIEF_EDITOR",
+  "sources": [
+    {
+      "priority": 1,
+      "scope": "mechanics_and_unchanged_content",
+      "paths": [
+        "AI_HANDOFF.md",
+        "releases/v2.6/"
+      ],
+      "protects": [
+        "card ids and counts",
+        "effects and timing",
+        "start pools and deck behavior",
+        "rule flow",
+        "all unchanged card families"
+      ]
+    },
+    {
+      "priority": 2,
+      "scope": "v2.7_character_and_power_visible_copy",
+      "paths": [
+        "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json"
+      ]
+    },
+    {
+      "priority": 3,
+      "scope": "v2.7_rulebook_story_overlay_only",
+      "paths": [
+        "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md"
+      ],
+      "allowed_sections": [
+        "3.1",
+        "3.3 narrative note",
+        "3.4 narrative note",
+        "3.6",
+        "17"
+      ]
+    },
+    {
+      "priority": 4,
+      "scope": "tone_and_lore_constraints",
+      "paths": [
+        "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
+      ],
+      "note": "DRAFT labels do not create release canon."
+    },
+    {
+      "priority": 5,
+      "scope": "art_layout_typography_and_print_presentation",
+      "paths": [
+        "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
+      ]
+    }
+  ],
+  "non_source_evidence": [
+    {
+      "path": "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
+      "reason": "Recorded validation result; not production copy and not a binding release PASS until reproduced."
+    }
+  ]
+}

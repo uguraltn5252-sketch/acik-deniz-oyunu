@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-20T14:15:00+03:00",
+  "updated_at": "2026-08-20T13:33:43+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -15,7 +15,7 @@
     "status": "DRAFT_NOT_LOCKED",
     "branch": "v2.7-design",
     "workspace": "working/v2.7",
-    "last_content_audit_head": "1a5b23051a3a625d6de9b98c2503a0181956af3c",
+    "last_content_audit_head": "af064df83ac4132c7d8d75aec67a3f1b51150fdb",
     "baseline": "v2.6"
   },
   "release_readiness": {
@@ -23,7 +23,7 @@
     "lock_allowed": false,
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
-    "basis": "2026-08-20 cross-workstream Story, Visual and Simulation QA review"
+    "basis": "2026-08-20 coordinated Story, Visual and Simulation blocker-resolution round"
   },
   "roles": {
     "chief_editor": {
@@ -94,58 +94,66 @@
     "new_candidate_invalidates_prior_attestation": true
   },
   "cross_workstream_handoff": {
-    "source_commit": "1a5b23051a3a625d6de9b98c2503a0181956af3c",
-    "story_to_visual": "DELIVERED",
-    "story_to_simulation": "DELIVERED",
-    "visual_to_simulation": "DELIVERED",
+    "source_commit": "af064df83ac4132c7d8d75aec67a3f1b51150fdb",
+    "story_to_visual": "ACKNOWLEDGED",
+    "story_to_simulation": "ACKNOWLEDGED",
+    "visual_to_simulation": "ACKNOWLEDGED",
+    "simulation_to_story": "ACKNOWLEDGED",
+    "simulation_to_visual": "ACKNOWLEDGED",
     "simulation_to_chief_editor": "DELIVERED",
-    "chief_editor_disposition": "RECORDED_AS_RELEASE_BLOCKER"
+    "chief_editor_disposition": "INTEGRATED",
+    "final_directives": "ACKNOWLEDGED"
   },
   "open_blockers": [
     {
       "id": "MEC-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "v2.7 ortak Deniz+Kayalik arka yuzu, v2.6 ayri Kayalik arka yuzu ve gizli bilgi mimarisiyle cakisiyor",
-      "owner": "project_owner_and_chief_editor",
+      "summary": "Sea=Rock ortak arka yuzu v2.7 DRAFT icin onayli karardir; v2.6 ayri arka yuz baseline'ina gore bilgi-mimarisi degisikligi tam yeniden test bekliyor",
+      "owner": "simulation_test",
+      "decision_status": "APPROVED_FOR_V2.7_DRAFT",
+      "decision_ref": "governance/DECISION_REGISTER.md#dec-20260820-01",
       "requires": [
-        "explicit project-owner mechanic decision",
-        "source alignment",
-        "full simulation and human information-leak retest"
+        "source and rulebook information contract alignment",
+        "paired A/B mechanics and strategy tests",
+        "blind human and physical information-leak tests"
       ]
     },
     {
       "id": "SRC-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Gorsel sistem v2.6 metnini kaynak gosterirken aktif v2.7 kart ve rulebook metinleri bulunuyor; PDF provenance kanitlanamiyor",
+      "summary": "Kaynak hiyerarsisi dokumante edildi; guncel candidate icin source-to-render-to-PDF provenance ve normalize metin diff'i eksik",
       "owner": "visual_design",
+      "progress": "DOCUMENTATION_ALIGNED",
       "requires": [
-        "single declared source hierarchy",
-        "source-to-render-to-PDF cross-match"
+        "exact source commit and blob hashes",
+        "card and rulebook source-to-render-to-PDF cross-match",
+        "zero unauthorized copy changes"
       ]
     },
     {
       "id": "ART-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Tam 121 kartlik aday ve GitHub'dan dogrulanabilir gorsel artefakt seti yok",
+      "summary": "Guncel branch'e bagli tam 121 kartlik candidate ve dogrulanabilir artefakt manifestleri yok; reset-oncesi preflight tarihsel kanittir",
       "owner": "visual_design",
       "requires": [
-        "complete candidate deck",
-        "repository-visible manifest and hashes",
-        "print and duplex proof"
+        "complete 121/121 candidate deck",
+        "front-back and PDF manifests with hashes",
+        "print-cut-duplex-real-light proof"
       ]
     },
     {
       "id": "QA-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "v2.7 narrative PASS yeniden uretilemiyor ve exact candidate'a bagli tam sim QA attestation yok",
+      "summary": "Narrative PASS kaydi reproduction-pending; surumlu baseline, script, ham cikti ve exact-candidate attestation eksik",
       "owner": "simulation_test",
+      "plan": "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
       "requires": [
-        "versioned validator and baseline",
-        "raw outputs and hashes",
+        "versioned validator and fixed baseline",
+        "commands, raw outputs and hashes",
         "SIM_QA_ATTESTATION bound to the candidate commit"
       ]
     },
@@ -153,10 +161,12 @@
       "id": "QA-002",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Yeni duzenle fiziksel prova ve kor insan sosyal deneyim testi yok",
+      "summary": "Yeni duzen icin fiziksel proof, kor arka-yuz siniflandirma ve kor insan sosyal deneyim testi yok",
       "owner": "simulation_test",
+      "plan": "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
       "requires": [
         "physical print-cut-duplex-real-light proof",
+        "blind Sea-Rock leak classification",
         "blind human playtest evidence"
       ]
     },
@@ -171,15 +181,21 @@
         "release PR",
         "required governance check before merge"
       ]
-    },
+    }
+  ],
+  "decision_register": "governance/DECISION_REGISTER.md",
+  "assignment_register": "governance/WORKSTREAM_ASSIGNMENTS.md",
+  "qa_resolution_plan": "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
+  "resolved_blockers": [
     {
       "id": "CAN-001",
-      "status": "OPEN",
+      "status": "RESOLVED",
       "severity": "BLOCKER",
-      "summary": "DRAFT Story Framework icindeki CAN-08 ve CAN-09 kullanici kilidi olmadan KANON etiketli",
-      "owner": "story_editor_and_chief_editor",
-      "requires": [
-        "reclassify as draft constraint or obtain explicit project-owner canon decision"
+      "resolution": "CAN-08 and CAN-09 reclassified from KANON to v2.7 DRAFT TASLAK protection principles",
+      "evidence": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "protected_files_unchanged": [
+        "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+        "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json"
       ]
     }
   ]

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "version": "v2.7",
+  "status": "DRAFT_NOT_LOCKED",
+  "baseline_release": "v2.6",
+  "governance_integration_parent": "af064df83ac4132c7d8d75aec67a3f1b51150fdb",
+  "decisions": [
+    {
+      "id": "DEC-20260820-01",
+      "subject": "map_card_back_information_model",
+      "value": "SEA_ROCK_SHARED_BACK",
+      "approved_for": "v2.7_DRAFT",
+      "approved_by": "project_owner",
+      "approved_on": "2026-08-20",
+      "changes_information_model_from_baseline": true,
+      "mutates_locked_v2_6": false,
+      "visual_rule": "The same textless, rotation-safe binary back is reused for all Sea and Rock cards.",
+      "release_gate": "FULL_SIMULATION_AND_BLIND_PHYSICAL_LEAK_TEST",
+      "release_status": "BLOCKER_UNTIL_RETEST"
+    }
+  ]
+}

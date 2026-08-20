@@ -9,9 +9,11 @@ Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
 1. `AI_HANDOFF.md`
 2. `PROJECT_STATE.md`
 3. `governance/EDITORIAL_CHARTER.md`
-4. `governance/ACTIVE_WORKSTREAMS.json`
-5. `governance/WORKSTREAM_PROTOCOL.md`
-6. `governance/COORDINATION_LOG.md` içindeki en son kayıt
+4. `governance/DECISION_REGISTER.md`
+5. `governance/ACTIVE_WORKSTREAMS.json`
+6. `governance/WORKSTREAM_ASSIGNMENTS.md`
+7. `governance/WORKSTREAM_PROTOCOL.md`
+8. `governance/COORDINATION_LOG.md` içindeki en son kayıt
 
 - Kanonik durum, kaynak önceliği, release entegrasyonu ve kilitleme yalnız Baş Editör tarafından yürütülür.
 - Proje sahibinin açık `kilitle`, `stable yap` veya `release et` talimatı kilit sürecinin zorunlu tetikleyicisidir; tek başına yeterli değildir.
@@ -19,6 +21,20 @@ Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
 - Açık `FAIL`, `BLOCKER` veya tam candidate commite bağlı olmayan test sonucu varken sürüm kilitlenmez.
 - Hikâye, Görsel Tasarım ve Simülasyon Testi başka hattın alanını sessizce değiştirmez; zorunlu handoff biçimini kullanır.
 - GitHub'a yazılmış olmak bir çıktıyı kendiliğinden kanon, STABLE veya LOCKED yapmaz.
+
+## Aktif v2.7 kararları
+
+- **Sea=Rock:** Açık Deniz ve Kayalık v2.7 DRAFT içinde aynı metinsiz binary
+  arka yüzü kullanır. Bu, proje sahibinin bağlayıcı taslak kararıdır; yeniden
+  sorulmaz veya Görsel Tasarım tarafından ayrı Kayalık arka yüzüne çevrilmez.
+- Bu karar v2.6'nın ayrı Kayalık arka yüzünü geriye dönük değiştirmez ve bilgi
+  mimarisi farkı nedeniyle exact candidate üzerinde tam Simülasyon ile kör
+  fiziksel sızıntı testi geçmeden release olamaz.
+- v2.7 Karakter/Güç görünen metni `FOULWAKE_CARD_TEXTS_v2.7.json`; tanımlı
+  rulebook anlatı blokları `FOULWAKE_RULEBOOK_STORY_v2.7.md`; ton/lore çiti
+  `FOULWAKE_STORY_FRAMEWORK.md` kaynağından alınır.
+- Reset öncesi 121/121 üretim tarihsel kanıttır; güncel branch ve exact
+  candidate ile bağlanmadan v2.7 release kanıtı değildir.
 
 ## Sürüm durumu
 
@@ -34,6 +50,9 @@ Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
 3. v2.6 artefaktlarının hashlerini manifestteki değerlerle doğrula.
 4. Mekanik motor ayrıntısı gerektiğinde `releases/v2.5/` baseline kayıtlarını kullan.
 5. v2.6 üzerinde yerinde değişiklik yapma. Her yeni fikir, kart, kural, hikâye veya fiziksel bileşen değişikliği v2.7+ DRAFT hattında tutulur.
+6. v2.7 işi için `working/v2.7/SOURCE_HIERARCHY_v2.7.json`,
+   `V27_MECHANIC_DECISIONS.json` ve
+   `working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md` dosyalarını kontrol et.
 
 ## v2.6 kilitli omurga
 
@@ -66,4 +85,4 @@ Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
 
 ## Kısa devam komutu
 
-> GitHub'daki Açık Deniz reposunu aç. `AI_HANDOFF.md`, `PROJECT_STATE.md` ve `governance/EDITORIAL_CHARTER.md` dosyalarını oku. Son kullanıcı-onaylı kilitli sürüm olarak v2.6 STABLE / LOCKED'u kullan. `governance/ACTIVE_WORKSTREAMS.json` içindeki açık engelleri kontrol et. v2.6'yı yerinde değiştirme; yeni çalışma gerekiyorsa v2.7+ DRAFT aç.
+> GitHub'daki Açık Deniz reposunu aç. `AI_HANDOFF.md`, `PROJECT_STATE.md`, `governance/EDITORIAL_CHARTER.md` ve `governance/DECISION_REGISTER.md` dosyalarını oku. Son kullanıcı-onaylı kilitli sürüm olarak v2.6 STABLE / LOCKED'u kullan. `governance/ACTIVE_WORKSTREAMS.json` içindeki açık engelleri ve görev sahiplerini kontrol et. v2.6'yı yerinde değiştirme; yeni çalışma gerekiyorsa v2.7+ DRAFT aç.

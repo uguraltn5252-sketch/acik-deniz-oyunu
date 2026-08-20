@@ -61,3 +61,40 @@ Görsel bulguları Simülasyon hattına; Simülasyon hükmü Baş Editöre ileti
 - `releases/v2.6/` değiştirilmedi.
 - Proje sahibinin açık `kilitle/stable/release` talimatı gelse bile açık BLOCKER'lar kapanmadan kilit uygulanmayacak.
 - Yeni bir candidate commit, önceki bütün v2.7 PASS/attestation sonuçlarını geçersiz kılar.
+
+## 20 Ağustos 2026 — Sorumlu hatlara çözüm dağıtımı
+
+Proje sahibi açık engellerin sorumlularına iletilmesini ve hatların uyumlu
+çalışmasını istedi. Hikâye, Görsel Tasarım ve Simülasyon Testi hatları
+`af064df83ac4132c7d8d75aec67a3f1b51150fdb` üzerinde read-only çalıştı,
+önerilerini birbirlerine iletti ve Baş Editöre tek handoff verdi.
+
+### Baş Editörün kaynak ve karar dispozisyonu
+
+- Önceki kullanıcı kararı doğrulandı: v2.7 DRAFT için Açık Deniz ve Kayalık aynı
+  binary arka yüzü kullanır. Bu konu yeniden karar beklemez.
+- Ortak arka yüz v2.6'nın ayrı Kayalık arka yüz modelinden bilinçli bir
+  bilgi-mimarisi değişikliğidir; `MEC-001` tam Simülasyon ve kör fiziksel sızıntı
+  testi bitene kadar açık kalır.
+- `CAN-08/09`, release kanonu değil v2.7 DRAFT koruma ilkesidir; `TASLAK`
+  sınıfına alınır.
+- Görsel üretimin metin sırası: v2.6 değişmeyen mekanik baseline → v2.7 Card
+  Texts → tanımlı v2.7 Rulebook Story blokları → Story Framework ton/lore çiti →
+  Visual System yerleşim/sanat standardı.
+- `FOULWAKE_NARRATIVE_VALIDATION_v2.7.md` üretim metni veya bağlayıcı release
+  PASS'i değildir; yeniden üretilebilir kanıt bekler.
+- Reset öncesi 121/121 üretim ve final preflight tarihsel kanıttır; güncel branch
+  ve exact candidate'a yeniden bağlanmadan `ART-001`i kapatmaz.
+
+### Kabul edilen görevler
+
+| Hat | Kabul edilen teslim | Durum |
+|---|---|---|
+| Hikâye | CAN-08/09 `KANON → TASLAK`; kesin metin alanları ve korunan mekanik alanlar | Dokümantasyon düzeltmesi kabul edildi |
+| Görsel | Kaynak hiyerarşisi; Sea=Rock draft/retest çiti; 121 manifest ve provenance şartı | Spec düzeltmesi kabul edildi; üretim bekliyor |
+| Simülasyon | Paired A/B, mekanik/fuzz, strateji, sosyal, kör insan ve fiziksel sızıntı planı | QA planı kabul edildi; candidate bekliyor |
+| Baş Editör | Karar kaydı, görev haritası, source state ve tek GitHub entegrasyonu | Uygulandı |
+
+Hatların ayrı commit/push oluşturması yasaklandı; bütün kapsam değişiklikleri Baş
+Editör tarafından tek entegrasyonda birleştirildi. Güncel hüküm BLOCKER olarak
+kalır; bu koordinasyon bir release veya kilit değildir.

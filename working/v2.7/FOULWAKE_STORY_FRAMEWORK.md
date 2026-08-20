@@ -36,11 +36,11 @@ Her kayıt şu etiketlerden yalnız birini taşır:
 
 `TASLAK`, `AÇIK SORU` veya `DEĞİŞİKLİK ADAYI` etiketi hiçbir zaman kendiliğinden `KANON` olmaz. “Beğendim”, “devam et” veya bir sonraki konuya geçmek kilitleme ya da kanonlaştırma sayılmaz.
 
-## 3. Korunan kanon çiti
+## 3. Korunan kanon ve v2.7 DRAFT koruma ilkeleri
 
-Bu bölüm, mevcut kaynaklar denetlenerek doldurulur. Şimdilik doğrulanmış çalışma sınırları:
+Bu bölüm iki ayrı statüyü birlikte izler. `CAN-01`–`CAN-07`, kilitli kaynaklardan devralınan kanon sınırlarıdır. `CAN-08` ve `CAN-09`, yalnız v2.7 DRAFT çalışmasında özgünlük ve dönem dili tutarlılığını koruyan editoryal kısıtlardır; proje sahibinin açık kararı olmadan `KANON` sayılmaz.
 
-| Kimlik | Durum | Korunan gerçek |
+| Kimlik | Durum | Korunan ilke / sınır |
 |---|---|---|
 | `CAN-01` | KANON | Dünya ve dil 1721 dönemine bağlıdır; modern teknoloji ve modern nesne dili kullanılmaz. |
 | `CAN-02` | KANON | Arden, San Cordelio, Saint Verena ve Veyr mevcut dünyanın özel adlarıdır; keyfî biçimde değiştirilmez. |
@@ -49,10 +49,10 @@ Bu bölüm, mevcut kaynaklar denetlenerek doldurulur. Şimdilik doğrulanmış �
 | `CAN-05` | KANON | Ton yaratıcı, kara mizahlı ve şüphecidir; mizah tehlikeyi iptal etmez. |
 | `CAN-06` | KANON | Metin “yapay zekâ yazmış” gibi pürüzsüz, genel ve açıklayıcı olmamalıdır; insan ayrıntısı, niyet ve kusur taşır. |
 | `CAN-07` | KANON | Hikâye kontrol edildiğinde sıfırdan yeniden yazılmaz; önce mevcut dosyalar okunur, sonra yalnız gerekli küçük değişiklik önerilir. |
-| `CAN-08` | KANON | Tarihsel araştırma yalnız maddi ve kurumsal zemin sağlar; ülkeler, kişiler, kurumlar ve olay örgüsü FOULWAKE'a özgü kalır. |
-| `CAN-09` | KANON | Mizah modern benzetmelerden değil; sefer divanı, sağlık kâğıdı, mühür, borç defteri, vardiya ve güverte davranışlarından doğar. |
+| `CAN-08` | TASLAK | **v2.7 DRAFT koruma ilkesi:** Tarihsel araştırma yalnız maddi ve kurumsal zemin sağlar; ülkeler, kişiler, kurumlar ve olay örgüsü FOULWAKE'a özgü kalır. |
+| `CAN-09` | TASLAK | **v2.7 DRAFT koruma ilkesi:** Mizah modern benzetmelerden değil; sefer divanı, sağlık kâğıdı, mühür, borç defteri, vardiya ve güverte davranışlarından doğar. |
 
-Yeni bir bilgi bu çitle çelişirse otomatik uyarlama yapılmaz; çelişki kullanıcıya gösterilir.
+Yeni bir bilgi `KANON` satırlarıyla çelişirse otomatik uyarlama yapılmaz; çelişki kullanıcıya gösterilir. `TASLAK` satırlar çalışma kısıtıdır, kanon iddiası değildir ve Baş Editör kararı olmadan kilitli kaynağa aktarılmaz.
 
 ## 4. Hikâye omurgası
 
@@ -187,6 +187,7 @@ Bir değişiklik kabul edilirse yalnız hedef parça ve zorunlu doğrudan bağla
 | `CHG-20260820-01` | 20 Ağustos 2026 | Şablon altyapısı | TASLAK | Modüler düzen kuruldu; mevcut hikâye yeniden yazılmadı. |
 | `CHG-20260820-02` | 20 Ağustos 2026 | Kural kitabı anlatı blokları | TASLAK | 3.1, 3.3, 3.4 anlatı notu, 3.6 ve Bölüm 17 güncellendi; mekanik akış korunmuştur. |
 | `CHG-20260820-03` | 20 Ağustos 2026 | Karakter ve Güç kartı metinleri | TASLAK | 20 Karakter ve 30 Güç kimliği/etkisi korunarak yalnız seçili ad ve flavor alanları güncellendi. |
+| `CHG-20260820-04` | 20 Ağustos 2026 | CAN-08 / CAN-09 sınıflandırması | TASLAK | Maddeler v2.7 DRAFT koruma ilkesi olarak yeniden sınıflandırıldı; kanon iddiası kaldırıldı. |
 
 ## 13. Aktif v2.7 anlatı kaynakları
 

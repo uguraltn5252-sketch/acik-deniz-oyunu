@@ -10,7 +10,7 @@
 ## Baş editörlük ve release hazırlığı
 
 Baş editörlük yönetişimi `governance/` altında yürürlüktedir. Hikâye, Görsel
-Tasarım ve Simülasyon Testi hatları `1a5b23051a3a625d6de9b98c2503a0181956af3c`
+Tasarım ve Simülasyon Testi hatları `af064df83ac4132c7d8d75aec67a3f1b51150fdb`
 commitini çapraz denetlemiştir.
 
 **Güncel release hükmü:** **BLOCKER — v2.7 kilitlenemez.**
@@ -18,13 +18,19 @@ commitini çapraz denetlemiştir.
 Açık engellerin bağlayıcı listesi `governance/ACTIVE_WORKSTREAMS.json`, ayrıntılı
 dispozisyonu `governance/COORDINATION_LOG.md` içindedir. Özet:
 
-- `MEC-001`: Ortak Deniz + Kayalık arka yüzü v2.6 gizli bilgi mimarisiyle çakışıyor.
-- `SRC-001`: v2.7 metin kaynağı ile görsel/PDF üretim kaynağı izlenemiyor.
+- `MEC-001`: Sea=Rock v2.7 DRAFT kararı kaydedildi; v2.6'dan bilgi-mimarisi farkı için tam yeniden test bekliyor.
+- `SRC-001`: Kaynak sırası düzeltildi; güncel source → render → PDF kanıtı hâlâ eksik.
 - `ART-001`: Tam 121 kartlık doğrulanabilir candidate yok.
 - `QA-001`: v2.7 PASS yeniden üretilemiyor; exact commite bağlı tam QA attestation yok.
 - `QA-002`: Fiziksel prova ve kör insan sosyal deneyim testi yok.
 - `GOV-001`: `main` ile aktif dal çelişkili ve ayrışmış; release PR/status kapısı yok.
-- `CAN-001`: DRAFT Story Framework içindeki yeni kanon etiketleri açık kullanıcı kararı taşımıyor.
+
+`CAN-001` çözüldü: `CAN-08/09` yalnız v2.7 DRAFT koruma ilkesi olarak
+`TASLAK` sınıfına alındı; release kanonu iddiası kaldırıldı.
+
+Bağlayıcı kullanıcı kararları `governance/DECISION_REGISTER.md`, sorumlu ve
+teslimler `governance/WORKSTREAM_ASSIGNMENTS.md`, test eşikleri ise
+`working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md` içindedir.
 
 GitHub'a yazılan bir dosya kendiliğinden kanon veya release olmaz. Kilit için
 proje sahibinin açık talimatı, kapanmış engeller, exact candidate commite bağlı
@@ -69,12 +75,23 @@ Temiz v2.6 kopyasına v2.7 anlatı ve görsel çalışma kaynakları eklenmişti
 - `working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md`
 - `working/v2.7/FOULWAKE_VISUAL_SYSTEM.md`
 - `working/v2.7/BINARY_ARTIFACTS.md`
+- `working/v2.7/V27_MECHANIC_DECISIONS.json`
+- `working/v2.7/SOURCE_HIERARCHY_v2.7.json`
+- `working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md`
 
 Kural kitabının mevcut akışı korunarak yalnız 3.1, 3.3, 3.4 anlatı notu, 3.6 ve Bölüm 17 için v2.7 hikâye metni hazırlanmıştır. 20 Karakter ve 30 Güç kartının tam metin kaynağı v2.7'ye alınmış; yalnız seçili görünen ad ve flavor alanları güncellenmiştir.
 
 Mevcut anlatı doğrulama kaydı kart sayıları, kimlikler, etkiler, zamanlamalar, başlangıç havuzu ve desteye dönüş alanlarını baseline ile aynı bildirir. Ancak kullanılan karşılaştırma scripti ve sabit baseline JSON'u GitHub'da bulunmadığından bu PASS yeniden üretilebilir veya release için bağlayıcı sayılmaz. Harita, Sadakat, Çürümüş Erzak ve yardımcı kartların değiştirilmediği beyan edilmiştir.
 
+Görsel metin kaynağı netleştirilmiştir: değişmeyen mekanikler ve diğer kart
+aileleri v2.6 baseline'ından; Karakter/Güç görünen metni v2.7 kart JSON'undan;
+tanımlı anlatı blokları v2.7 rulebook story dosyasından alınır.
+
 20 Ağustos 2026 tarihinde kullanıcı v2.7 kart ve kural kitabı için özgün görsel yönü onaylamıştır. Bu onay kilit değildir.
+
+Aynı tarihte Açık Deniz ve Kayalık için ortak arka yüz v2.7 DRAFT kararı olarak
+kaydedilmiştir. Bu karar v2.6'yı değiştirmez ve tam yeniden test olmadan release
+edilemez.
 
 Üretim örnekleri:
 
@@ -87,7 +104,9 @@ Mevcut anlatı doğrulama kaydı kart sayıları, kimlikler, etkiler, zamanlamal
 
 Mizah tek bir fare maskotuna bağlanmaz. Fare, martı, beceriksiz veya hırsız tayfa, sessiz bakış ve nesne kaynaklı kuru mizah kart ailesi boyunca dönüşümlü kullanılır. Her illüstrasyonda en fazla bir ikincil görsel şaka bulunur.
 
-Tam 121 kartlık görsel uygulama henüz tamamlanmamıştır. Aile aile üretim ve fiziksel baskı provası beklemektedir.
+Güncel branch'e bağlı tam 121 kartlık görsel candidate henüz tamamlanmamıştır.
+Temiz reset öncesi tam deste/preflight yalnız tarihsel kanıttır. Aile aile üretim,
+manifest, exact source eşlemesi ve fiziksel baskı provası beklemektedir.
 
 Kilitli v2.6 hikâyesi, mekanikleri ve binary artefaktları değiştirilmemiştir. v2.7 hikâye ve görsel çalışmaları kanonlaştırılmamış ve kilitlenmemiştir.
 

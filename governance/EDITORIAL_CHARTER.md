@@ -47,7 +47,7 @@ Diğer çalışma hatları bu alanlarda değişiklik ihtiyacı görürse dosyay�
 
 1. Proje sahibinin en son açık kararı.
 2. Değişmeyen mekanikler için son STABLE / LOCKED release.
-3. Baş Editör tarafından kayda alınmış aktif DRAFT kararları.
+3. Baş Editör tarafından `governance/DECISION_REGISTER.md` içinde kayda alınmış aktif DRAFT kararları.
 4. İlgili çalışma hattının onaylı kaynak dosyaları.
 5. Taslak üretimler ve sohbet özetleri.
 6. Eski, kaynağı belirsiz veya GitHub’a aktarılmamış notlar.

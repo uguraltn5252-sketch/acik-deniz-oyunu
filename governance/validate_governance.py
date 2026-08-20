@@ -29,8 +29,17 @@ required_paths = [
     "governance/RELEASE_GATE.md",
     "governance/ACTIVE_WORKSTREAMS.json",
     "governance/COORDINATION_LOG.md",
+    "governance/DECISION_REGISTER.md",
+    "governance/WORKSTREAM_ASSIGNMENTS.md",
     "governance/LOCK_AUTHORIZATION_SCHEMA.json",
     "governance/SIM_QA_ATTESTATION_SCHEMA.json",
+    "working/v2.7/V27_MECHANIC_DECISIONS.json",
+    "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+    "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+    "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
+    "working/v2.7/BINARY_ARTIFACTS.md",
+    "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
 ]
 
 for required_path in required_paths:
@@ -49,6 +58,7 @@ if state_path.exists():
         policy = state.get("lock_policy", {})
         readiness = state.get("release_readiness", {})
         blockers = state.get("open_blockers", [])
+        resolved = state.get("resolved_blockers", [])
 
         if locked.get("version") != "v2.6":
             ERRORS.append("locked release must remain v2.6")
@@ -73,6 +83,13 @@ if state_path.exists():
             ERRORS.append("open blocker ids must be unique")
         if readiness.get("verdict") == "BLOCKER" and not blocker_ids:
             ERRORS.append("BLOCKER readiness must name at least one open blocker")
+        if "CAN-001" in blocker_ids:
+            ERRORS.append("CAN-001 must not remain open after Story reclassification")
+        if "CAN-001" not in {item.get("id") for item in resolved}:
+            ERRORS.append("CAN-001 resolution must be recorded")
+        mechanic = next((item for item in blockers if item.get("id") == "MEC-001"), {})
+        if mechanic.get("decision_status") != "APPROVED_FOR_V2.7_DRAFT":
+            ERRORS.append("MEC-001 must preserve the approved Sea=Rock v2.7 draft decision")
 
 project_state = ROOT / "PROJECT_STATE.md"
 if project_state.exists():
@@ -80,6 +97,80 @@ if project_state.exists():
     for marker in ("v2.6 STABLE / LOCKED", "v2.7 DRAFT / NOT LOCKED"):
         if marker not in text:
             ERRORS.append(f"PROJECT_STATE.md is missing marker: {marker}")
+
+decision_register = ROOT / "governance/DECISION_REGISTER.md"
+if decision_register.exists():
+    text = decision_register.read_text(encoding="utf-8")
+    for marker in ("DEC-20260820-01", "Açık Deniz ve Kayalık", "APPROVED FOR v2.7 DRAFT"):
+        if marker not in text:
+            ERRORS.append(f"decision register is missing marker: {marker}")
+
+story_framework = ROOT / "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
+if story_framework.exists():
+    text = story_framework.read_text(encoding="utf-8")
+    for identity in ("CAN-08", "CAN-09"):
+        if not re.search(rf"\| `{identity}` \| TASLAK \|", text):
+            ERRORS.append(f"{identity} must be classified as TASLAK")
+        if re.search(rf"\| `{identity}` \| KANON \|", text):
+            ERRORS.append(f"{identity} must not remain KANON")
+
+visual_system = ROOT / "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
+if visual_system.exists():
+    text = visual_system.read_text(encoding="utf-8")
+    for marker in (
+        "FOULWAKE_CARD_TEXTS_v2.7.json",
+        "FOULWAKE_RULEBOOK_STORY_v2.7.md",
+        "Bağlayıcı v2.7 DRAFT kararı",
+        "tam Simülasyon yeniden testi",
+    ):
+        if marker not in text:
+            ERRORS.append(f"visual source contract is missing marker: {marker}")
+
+narrative_validation = ROOT / "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md"
+if narrative_validation.exists():
+    text = narrative_validation.read_text(encoding="utf-8")
+    if "REPRODUCTION PENDING" not in text or "QA-001 OPEN" not in text:
+        ERRORS.append("narrative validation must remain reproduction-pending evidence")
+
+mechanic_decisions = ROOT / "working/v2.7/V27_MECHANIC_DECISIONS.json"
+if mechanic_decisions.exists():
+    try:
+        mechanic_state = json.loads(mechanic_decisions.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        ERRORS.append(f"V27_MECHANIC_DECISIONS.json is invalid: {exc}")
+    else:
+        decisions = {item.get("id"): item for item in mechanic_state.get("decisions", [])}
+        sea_rock = decisions.get("DEC-20260820-01", {})
+        if sea_rock.get("value") != "SEA_ROCK_SHARED_BACK":
+            ERRORS.append("v2.7 mechanic decisions must preserve the shared Sea-Rock back")
+        if sea_rock.get("release_status") != "BLOCKER_UNTIL_RETEST":
+            ERRORS.append("shared Sea-Rock back must remain blocked until full retest")
+
+source_hierarchy = ROOT / "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+if source_hierarchy.exists():
+    try:
+        source_state = json.loads(source_hierarchy.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        ERRORS.append(f"SOURCE_HIERARCHY_v2.7.json is invalid: {exc}")
+    else:
+        priorities = [item.get("priority") for item in source_state.get("sources", [])]
+        if priorities != [1, 2, 3, 4, 5]:
+            ERRORS.append("v2.7 source hierarchy priorities must remain 1 through 5")
+        if source_state.get("conflict_action") != "STOP_AND_HANDOFF_TO_CHIEF_EDITOR":
+            ERRORS.append("source conflicts must stop and hand off to chief editor")
+
+binary_artifacts = ROOT / "working/v2.7/BINARY_ARTIFACTS.md"
+if binary_artifacts.exists():
+    text = binary_artifacts.read_text(encoding="utf-8")
+    if "tarihsel kanıttır" not in text or "tam 121 kartlık release candidate" not in text:
+        ERRORS.append("binary artifact register must distinguish historical proof from current candidate")
+
+qa_plan = ROOT / "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md"
+if qa_plan.exists():
+    text = qa_plan.read_text(encoding="utf-8")
+    for marker in ("450.000", "1.000.000", "800 kör sınıflandırma", "candidate_commit=C"):
+        if marker not in text:
+            ERRORS.append(f"QA resolution plan is missing marker: {marker}")
 
 future_release = ROOT / "releases/v2.7"
 authorization = ROOT / "governance/LOCK_AUTHORIZATION_v2.7.json"

@@ -1,8 +1,17 @@
 # FOULWAKE v2.7 - Anlatı / Mekanik Sınır Doğrulaması
 
-**Durum:** PASS - DRAFT / NOT LOCKED  
+**Durum:** RECORDED PASS / REPRODUCTION PENDING — DRAFT / NOT LOCKED  
 **Tarih:** 20 Ağustos 2026  
-**Kaynak:** v2.6 STABLE / LOCKED ve doğrulanmış v2.5 mekanik kart JSON'u
+**Kaynak:** v2.6 STABLE / LOCKED ve doğrulanmış v2.5 mekanik kart JSON'u  
+**Release kapısı:** `QA-001 OPEN`
+
+## Kanıt sınırı
+
+Bu dosya önceki karşılaştırmanın kayda alınmış sonucudur. Karşılaştırmayı çalıştıran
+script, sabit baseline JSON'u, komut ve ham çıktı hashleri güncel GitHub ağacında
+bulunmadığı için sonuç bağımsız olarak yeniden üretilemez. Bu kayıt üretim metni
+değildir ve exact candidate'a bağlı Simülasyon attestation'ı oluşmadan bağlayıcı
+release `PASS` sayılmaz.
 
 ## Kapsam
 
@@ -11,7 +20,7 @@
 - Karakter ve Güç kartlarında yalnız görünen ad/flavor alanları güncellendi.
 - Harita, Sadakat, Çürümüş Erzak ve yardımcı kartlar değiştirilmedi.
 
-## Otomatik kart karşılaştırması
+## Kayda alınmış kart karşılaştırması
 
 | Denetim | Sonuç |
 |---|---|
@@ -49,4 +58,7 @@ Güç kartı flavor alanı:
 Kaptan, rota oylaması, Sadakat, Hain tanışması, Ufuk bilgisi, İskorbüt, kurtarma, Gövde hasarı, Güç destesi ve Liman Gecesi mekanikleri değişmemiştir. `Mantar Can Halkası` yalnız görünen ad güncellemesidir; `GUC-01A/B` etkisi ve iki kartlık adedi aynıdır.
 
 v2.6 `releases/v2.6/` ağacı yerinde değiştirilmemiştir. Bu çalışma yalnız `working/v2.7/` altında tutulur ve kullanıcı açıkça kilitlemeden STABLE / LOCKED olamaz.
+
+`QA-001` ancak sürümlü karşılaştırma scripti, sabit baseline, çalıştırma komutu,
+ham çıktı ve SHA-256 kayıtları exact candidate'a bağlandığında kapanır.
 

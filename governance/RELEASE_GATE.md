@@ -56,6 +56,11 @@
 
 ## Kilitleme sırası
 
+v2.7 için ölçülebilir kabul eşikleri
+`working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md` içindedir. Bir çalışma
+hattı bu eşikleri test başladıktan sonra sonucu geçirecek biçimde gevşetemez;
+değişiklik Baş Editör kaydı ve yeniden test gerektirir.
+
 1. Çalışma hatları handofflarını tamamlar.
 2. Baş Editör kapsam ve kanon denetimi yapar.
 3. Simülasyon Testi bağımsız tam sistem raporunu üretir.
