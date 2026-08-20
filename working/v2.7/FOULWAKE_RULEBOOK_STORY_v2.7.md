@@ -65,9 +65,9 @@ Kural metnindeki "Ada girişinde İskorbüt temizlenir" ifadesi, herkesin bir an
 
 ### OKU
 
-San Cordelio'daki son gece yalnız Kaptan uyanık değildi. Limanın başka yerlerinde birinin borç senedi ateşe tutuldu. Birinin önüne altın bırakıldı. Birine ailesinin adresi, kapıdaki çatlağa kadar doğru tarif edildi. Bir başkasına Veyr'in terkibinin ilaç değil zehir olduğu söylendi. Sonuncusuna hiçbir sebep verilmedi; yalnız siyah balmumuyla kapanmış boş bir kâğıt uzatıldı.
+San Cordelio'daki son gece yalnız Kaptan uyanık değildi. Limanın bir yerinde bir borç senedi ateşe tutuldu. Başka bir kapının önüne altın bırakıldı. Birine ailesinin adresi, kapıdaki çatlağa kadar doğru tarif edildi. Bir başkasına Veyr'in terkibinin ilaç değil zehir olduğu söylendi. Kime uzatıldığı bilinmeyen, siyah balmumuyla kapanmış boş bir kâğıt da sabaha kadar ortadan kayboldu.
 
-Bu ellerin aynı kişiye ait olup olmadığını bilmiyorsunuz. Kimin para aldığını, kimin korktuğunu, kimin gerçekten doğru şeyi yaptığına inandığını da bilmiyorsunuz. Şafakta herkes aynı güvertede. Artık aynı limana gitmek istemek, aynı amaç için çalışmak anlamına gelmiyor. Sadakatinize bakın. Kartınızı kimseye göstermeyin.
+Bu tekliflerin aynı elden çıkıp çıkmadığını bilmiyorsunuz. Kimin para aldığını, kimin korktuğunu, kimin gerçekten doğru şeyi yaptığına inandığını da bilmiyorsunuz. Şafakta herkes aynı güvertede. Artık aynı limana gitmek istemek, aynı amaç için çalışmak anlamına gelmiyor. Sadakatinize bakın. Kartınızı kimseye göstermeyin.
 
 ### MEVCUT İŞLEM KORUNUR
 
