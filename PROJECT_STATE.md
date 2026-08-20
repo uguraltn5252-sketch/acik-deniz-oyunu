@@ -36,9 +36,15 @@ Kilitli binary kaynaklar taşınmamış, yeniden yazılmamış veya silinmemişt
 
 ## Current result
 
-**v2.7 = CLEAN BASELINE CLONE / DRAFT / NOT LOCKED**
+**v2.7 = ACTIVE STORY DRAFT / NOT LOCKED**
 
-Yeni v2.7 henüz yeni bir hikâye, mekanik, görsel tasarım veya test kararı içermez. Bundan sonraki değişiklikler yalnızca aktif DRAFT içinde, ilgili çalışma hattının yetki sınırlarına göre yapılmalıdır.
+Temiz v2.6 kopyasına ilk çalışma altyapısı eklenmiştir:
+
+- `working/v2.7/FOULWAKE_STORY_FRAMEWORK.md`
+
+Bu dosya mevcut hikâyeyi yeniden yazmaz. Kanon, karakter, mekân, gizem, olay, sahne ve mekanik–hikâye bağlarını kimliklerle ayırarak küçük değişikliklerin yalnız hedef parçaya uygulanmasını sağlar.
+
+Kilitli v2.6 hikâyesi değiştirilmemiştir. Hikâyenin tamamı henüz şablona aktarılmamış ve yeni bir hikâye kararı kanonlaştırılmamıştır.
 
 ## Lock rule
 
