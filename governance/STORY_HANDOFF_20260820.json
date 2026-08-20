@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_STORY_WORKSTREAM_HANDOFF",
+  "status": "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT",
+  "recorded_at": "2026-08-20T15:56:10+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "chief_editor_integration_parent": "bc148e33343b4066259a996a9c299aab17fd8e3d",
+  "story_delivery": {
+    "workstream": "Hikâye",
+    "visible_chat": "Foulwake Hikâye Editör",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "source_branch": "work/v2.7-story",
+    "source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+    "scope": "Bağımsız hikâye/lore revalidasyonu, 3.6 anlatısının değişken Hain sayısına uyarlanması ve Görsel Tasarıma metin teslimi",
+    "changed_files": [
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+    ],
+    "protected_fields_confirmed": [
+      "card counts",
+      "card ids",
+      "effects",
+      "timing",
+      "group",
+      "start pools",
+      "deck behavior",
+      "rule flow",
+      "visual production",
+      "QA",
+      "governance",
+      "releases",
+      "v2.6"
+    ],
+    "tests_run": [
+      "required source audit",
+      "20 character / 30 power / 50 unique id check",
+      "lore and canon fence check",
+      "rulebook section whitelist check",
+      "commit scope check",
+      "protected blob check"
+    ],
+    "result": "STORY WORKSTREAM PASS — READY FOR VISUAL HANDOFF; NOT A RELEASE PASS",
+    "open_risks": [
+      "QA-001 remains open",
+      "other release blockers remain open",
+      "mechanical equivalence and exact-candidate attestation belong to Simülasyon Testi"
+    ],
+    "next_recipients": [
+      "FOULWAKE görsel tasarım",
+      "Baş Editör for later integration"
+    ],
+    "lock_requested": false,
+    "temporary_subagent_used": false
+  },
+  "chief_editor_audit": {
+    "merge_base": "bc148e33343b4066259a996a9c299aab17fd8e3d",
+    "branch_ahead_by": 1,
+    "branch_behind_by": 0,
+    "commit_scope_matches_handoff": true,
+    "changed_file_count": 3,
+    "protected_paths_changed": [],
+    "source_blobs": {
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "962222d83d669763c4ac8e2765f024b9fade180c",
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md": "9c27b177fb86be584a4817f38470dc425ac9c0de",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa"
+    },
+    "card_source_counts": {
+      "characters": 20,
+      "powers": 30,
+      "unique_ids": 50,
+      "duplicate_ids": 0
+    },
+    "story_correction_disposition": "ACCEPTED",
+    "content_integrated_to_v2_7_design": false,
+    "visual_branch": {
+      "name": "work/v2.7-visual",
+      "created": true,
+      "start_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "head_at_recording": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "visible_chat_delivery": "PENDING"
+    },
+    "reported_ci_status_count": 0,
+    "disposition": "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT",
+    "release_pass": false,
+    "lock_allowed": false
+  }
+}

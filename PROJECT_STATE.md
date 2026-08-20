@@ -15,8 +15,11 @@ gerçekte Baş Editör sohbetindeki geçici alt ajanlarla yapılmıştır. Bu ç
 uzman sohbet teslimi sayılmaz. Kullanıcının oluşturduğu üç görünür sohbet,
 `52f6c3b3c196a5af9c48d4694cd3091eb3da8129` kaynak commiti için 3/3
 `VISIBLE_CHAT_ACK: YES` iletişim cevabı vermiştir. Bu cevaplar
-`COMMUNICATION_TEST_ONLY` kapsamındadır; bağımsız uzman yeniden doğrulaması ve
-branch-bound gerçek teslimler `COM-001` altında beklenmektedir.
+`COMMUNICATION_TEST_ONLY` kapsamındadır. Daha sonra `Foulwake Hikâye Editör`,
+`work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` üzerinde bağımsız
+revalidasyon ve branch-bound gerçek teslim üretmiştir. Baş Editör teslimi
+Görsel Tasarım girdisi olarak kabul etmiştir; Görsel ve Simülasyon gerçek
+teslimleri `COM-001` altında beklenmektedir.
 
 **Güncel release hükmü:** **BLOCKER — v2.7 kilitlenemez.**
 
@@ -30,13 +33,13 @@ dispozisyonu `governance/COORDINATION_LOG.md` içindedir. Özet:
 - `QA-002`: Fiziksel prova ve kör insan sosyal deneyim testi yok.
 - `GOV-001`: `main` ile aktif dal çelişkili ve ayrışmış; release PR/status kapısı yok.
 - `COM-001`: Önceki geçici alt ajan incelemeleri görünür uzman sohbet teslimi
-  gibi kaydedilmişti. 3/3 iletişim ACK tamamlandı; bağımsız uzman
-  revalidasyonları, çalışma dalları ve gerçek branch-bound teslimler henüz yok.
+  gibi kaydedilmişti. 3/3 iletişim ACK ile resmî Hikâye revalidasyonu ve
+  branch-bound teslim tamamlandı; Görsel ve Simülasyon teslimleri bekleniyor.
 
 `CAN-001` çözüldü: `CAN-08/09` yalnız v2.7 DRAFT koruma ilkesi olarak
-`TASLAK` sınıfına alındı; release kanonu iddiası kaldırıldı. İçerik düzeltmesi
-yerindedir ancak görünür Hikâye Editörü yeniden doğrulaması `COM-001` kapsamında
-beklemektedir.
+`TASLAK` sınıfına alındı; release kanonu iddiası kaldırıldı. Görünür Hikâye
+Editörü bu sınıflandırmayı ve 3.6 anlatı düzeltmesini resmî tesliminde
+doğrulamıştır.
 
 Bağlayıcı kullanıcı kararları `governance/DECISION_REGISTER.md`, sorumlu ve
 teslimler `governance/WORKSTREAM_ASSIGNMENTS.md`, test eşikleri ise
@@ -54,7 +57,8 @@ izinli istisna dahi uzman sohbet onayı sayılmaz.
 Üç görünür sohbetin iletişim ACK kanıtı
 `governance/VISIBLE_CHAT_ACKS_20260820.json` içindedir. Bu kayıt yalnız doğru
 sohbet kimliğini ve yetki sınırlarının okunduğunu kanıtlar; uzman işi veya PASS
-kanıtı değildir.
+kanıtı değildir. Resmî Hikâye teslimi ve Baş Editör dispozisyonu ayrı olarak
+`governance/STORY_HANDOFF_20260820.json` içinde kayıtlıdır.
 
 ## Locked baseline
 
@@ -86,6 +90,11 @@ Kilitli binary kaynaklar taşınmamış, yeniden yazılmamış veya silinmemişt
 ## Current result
 
 **v2.7 = ACTIVE STORY + VISUAL DRAFT / NOT LOCKED**
+
+Resmî Hikâye kaynağı `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
+olarak Görsel Tasarım girdisi için kabul edilmiştir. `work/v2.7-visual` aynı
+committen oluşturulmuş ve görünür Görsel Tasarım teslimi beklenmektedir. Hikâye
+commitindeki içerik henüz `v2.7-design`a entegre edilmemiştir.
 
 Temiz v2.6 kopyasına v2.7 anlatı ve görsel çalışma kaynakları eklenmiştir:
 

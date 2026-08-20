@@ -29,6 +29,7 @@ required_paths = [
     "governance/RELEASE_GATE.md",
     "governance/ACTIVE_WORKSTREAMS.json",
     "governance/VISIBLE_CHAT_ACKS_20260820.json",
+    "governance/STORY_HANDOFF_20260820.json",
     "governance/COORDINATION_LOG.md",
     "governance/DECISION_REGISTER.md",
     "governance/WORKSTREAM_ASSIGNMENTS.md",
@@ -60,6 +61,7 @@ if state_path.exists():
         readiness = state.get("release_readiness", {})
         communication = state.get("communication_policy", {})
         acknowledgements = state.get("visible_chat_acknowledgements", {})
+        deliveries = state.get("specialist_deliveries", {})
         handoff = state.get("cross_workstream_handoff", {})
         blockers = state.get("open_blockers", [])
         resolved = state.get("resolved_blockers", [])
@@ -120,6 +122,11 @@ if state_path.exists():
             ERRORS.append("CAN-001 must not remain open after Story reclassification")
         if "CAN-001" not in {item.get("id") for item in resolved}:
             ERRORS.append("CAN-001 resolution must be recorded")
+        can_resolution = next((item for item in resolved if item.get("id") == "CAN-001"), {})
+        if can_resolution.get("official_story_revalidation") != "ACCEPTED":
+            ERRORS.append("CAN-001 must record accepted official Story revalidation")
+        if can_resolution.get("official_story_revalidation_evidence") != "governance/STORY_HANDOFF_20260820.json":
+            ERRORS.append("CAN-001 Story revalidation evidence path is incorrect")
         mechanic = next((item for item in blockers if item.get("id") == "MEC-001"), {})
         if mechanic.get("decision_status") != "APPROVED_FOR_V2.7_DRAFT":
             ERRORS.append("MEC-001 must preserve the approved Sea=Rock v2.7 draft decision")
@@ -127,19 +134,35 @@ if state_path.exists():
         communication_progress = communication_blocker.get("progress", {})
         if communication_progress.get("visible_chat_acknowledgements") != "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY":
             ERRORS.append("COM-001 must record the completed 3/3 communication ACK subgate")
-        if communication_progress.get("independent_specialist_revalidation") != "PENDING":
-            ERRORS.append("COM-001 must keep specialist revalidation pending")
-        if communication_progress.get("work_branches_created") is not False:
-            ERRORS.append("COM-001 must not claim specialist work branches exist")
-        if communication_progress.get("branch_bound_specialist_deliveries") != "PENDING":
-            ERRORS.append("COM-001 must keep branch-bound specialist delivery pending")
-        for field in (
-            "story_to_visual",
-            "story_to_simulation",
-            "visual_to_simulation",
-        ):
-            if handoff.get(field) != "PENDING_SPECIALIST_DELIVERY":
-                ERRORS.append(f"{field} must remain PENDING_SPECIALIST_DELIVERY")
+        expected_revalidation = {
+            "story": "ACCEPTED",
+            "visual": "PENDING",
+            "simulation": "PENDING",
+        }
+        if communication_progress.get("independent_specialist_revalidation") != expected_revalidation:
+            ERRORS.append("COM-001 must record accepted Story and pending Visual/Simulation revalidation")
+        expected_branches = {
+            "story": True,
+            "visual": True,
+            "simulation": False,
+            "completed": 2,
+            "required": 3,
+        }
+        if communication_progress.get("work_branches_created") != expected_branches:
+            ERRORS.append("COM-001 must record exactly two of three specialist branches created")
+        expected_deliveries = {
+            "story": "ACCEPTED",
+            "visual": "PENDING",
+            "simulation": "PENDING",
+        }
+        if communication_progress.get("branch_bound_specialist_deliveries") != expected_deliveries:
+            ERRORS.append("COM-001 must record accepted Story and pending Visual/Simulation deliveries")
+        if handoff.get("story_to_visual") != "ACCEPTED_READY_FOR_VISUAL_INPUT":
+            ERRORS.append("story_to_visual must record the accepted Story handoff")
+        if handoff.get("story_to_simulation") != "RECORDED_FOR_LATER_EXACT_CANDIDATE_QA":
+            ERRORS.append("story_to_simulation must defer testing to exact-candidate QA")
+        if handoff.get("visual_to_simulation") != "PENDING_SPECIALIST_DELIVERY":
+            ERRORS.append("visual_to_simulation must await the Visual delivery")
         for field in ("simulation_to_story", "simulation_to_visual"):
             if handoff.get(field) != "PENDING_QA_FINDINGS":
                 ERRORS.append(f"{field} must remain PENDING_QA_FINDINGS")
@@ -147,12 +170,39 @@ if state_path.exists():
             ERRORS.append("simulation_to_chief_editor must await specialist delivery")
         if handoff.get("communication_acknowledgement") != "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY":
             ERRORS.append("cross-workstream state must record the 3/3 communication ACK")
-        if handoff.get("final_directives") != "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY":
-            ERRORS.append("final directives must remain acknowledged for communication only")
-        if handoff.get("chief_editor_disposition") != "COMMUNICATION_ACKS_ACCEPTED_SPECIALIST_DELIVERIES_PENDING":
-            ERRORS.append("chief-editor handoff disposition is inconsistent with ACK-only status")
+        if handoff.get("final_directives") != "STORY_ACCEPTED_FOR_VISUAL_INPUT_V2_7_REMAINS_BLOCKED":
+            ERRORS.append("final directives must accept Story while keeping v2.7 blocked")
+        if handoff.get("chief_editor_disposition") != "STORY_ACCEPTED_VISUAL_AND_SIMULATION_DELIVERIES_PENDING":
+            ERRORS.append("chief-editor handoff disposition must keep Visual and Simulation pending")
         if handoff.get("source_commit") != acknowledgements.get("source_commit"):
             ERRORS.append("ACK and handoff source commits must match")
+        if handoff.get("story_evidence_path") != "governance/STORY_HANDOFF_20260820.json":
+            ERRORS.append("cross-workstream state must point to the Story handoff evidence")
+        if handoff.get("story_source_commit") != "e04eef7f1fef6ea407feaaf26558551297c44b37":
+            ERRORS.append("cross-workstream state has the wrong Story source commit")
+        story_delivery = deliveries.get("story", {})
+        if story_delivery.get("status") != "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT":
+            ERRORS.append("Story specialist delivery must be accepted for Visual input")
+        if story_delivery.get("evidence_path") != "governance/STORY_HANDOFF_20260820.json":
+            ERRORS.append("Story specialist delivery evidence path is incorrect")
+        if story_delivery.get("source_branch") != "work/v2.7-story":
+            ERRORS.append("Story specialist delivery branch is incorrect")
+        if story_delivery.get("source_commit") != "e04eef7f1fef6ea407feaaf26558551297c44b37":
+            ERRORS.append("Story specialist delivery commit is incorrect")
+        if story_delivery.get("integrated_to_v2_7_design") is not False:
+            ERRORS.append("Story content must not be claimed integrated before chief-editor integration")
+        visual_delivery = deliveries.get("visual", {})
+        if visual_delivery.get("status") != "AUTHORIZED_BRANCH_CREATED_PENDING_VISIBLE_CHAT_DELIVERY":
+            ERRORS.append("Visual delivery must remain pending after authorized branch creation")
+        if visual_delivery.get("branch_created") is not True:
+            ERRORS.append("Visual branch creation must be recorded")
+        if visual_delivery.get("start_commit") != "e04eef7f1fef6ea407feaaf26558551297c44b37":
+            ERRORS.append("Visual branch must start from the accepted Story commit")
+        simulation_delivery = deliveries.get("simulation", {})
+        if simulation_delivery.get("status") != "PENDING_SPECIALIST_DELIVERY":
+            ERRORS.append("Simulation specialist delivery must remain pending")
+        if simulation_delivery.get("branch_created") is not False:
+            ERRORS.append("Simulation branch must not be claimed before authorized work")
         for role_name, chat_name, branch_name in (
             ("story_editor", "Foulwake Hikâye Editör", "work/v2.7-story"),
             ("visual_design", "FOULWAKE görsel tasarım", "work/v2.7-visual"),
@@ -217,6 +267,67 @@ if ack_path.exists():
             if record.get("lock_requested") is not False:
                 ERRORS.append(f"{chat_name} communication test must not request a lock")
 
+story_handoff_path = ROOT / "governance/STORY_HANDOFF_20260820.json"
+if story_handoff_path.exists():
+    try:
+        story_handoff = json.loads(story_handoff_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        ERRORS.append(f"STORY_HANDOFF_20260820.json is invalid: {exc}")
+    else:
+        if story_handoff.get("record_type") != "VISIBLE_CHAT_STORY_WORKSTREAM_HANDOFF":
+            ERRORS.append("Story handoff evidence has the wrong record type")
+        if story_handoff.get("status") != "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT":
+            ERRORS.append("Story handoff evidence has the wrong accepted status")
+        if story_handoff.get("chief_editor_integration_parent") != "bc148e33343b4066259a996a9c299aab17fd8e3d":
+            ERRORS.append("Story handoff evidence has the wrong integration parent")
+        delivery = story_handoff.get("story_delivery", {})
+        if delivery.get("workstream") != "Hikâye":
+            ERRORS.append("Story handoff workstream name is incorrect")
+        if delivery.get("visible_chat") != "Foulwake Hikâye Editör":
+            ERRORS.append("Story handoff visible chat is incorrect")
+        if delivery.get("visible_chat_ack") is not True:
+            ERRORS.append("Story handoff requires visible-chat ACK")
+        if delivery.get("evidence_type") != "VISIBLE_CHAT_WORKSTREAM":
+            ERRORS.append("Story handoff evidence type is incorrect")
+        if delivery.get("source_branch") != "work/v2.7-story":
+            ERRORS.append("Story handoff source branch is incorrect")
+        if delivery.get("source_commit") != "e04eef7f1fef6ea407feaaf26558551297c44b37":
+            ERRORS.append("Story handoff source commit is incorrect")
+        expected_story_files = [
+            "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+            "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+            "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+        ]
+        if delivery.get("changed_files") != expected_story_files:
+            ERRORS.append("Story handoff changed-file scope is incorrect")
+        if delivery.get("lock_requested") is not False:
+            ERRORS.append("Story handoff must not request a lock")
+        if delivery.get("temporary_subagent_used") is not False:
+            ERRORS.append("Story handoff must not use a temporary subagent")
+        audit = story_handoff.get("chief_editor_audit", {})
+        if audit.get("merge_base") != "bc148e33343b4066259a996a9c299aab17fd8e3d":
+            ERRORS.append("Story audit merge base is incorrect")
+        if audit.get("branch_ahead_by") != 1 or audit.get("branch_behind_by") != 0:
+            ERRORS.append("Story audit branch relationship is incorrect")
+        if audit.get("protected_paths_changed") != []:
+            ERRORS.append("Story audit must record zero protected-path changes")
+        expected_blobs = {
+            "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "962222d83d669763c4ac8e2765f024b9fade180c",
+            "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+            "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+            "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md": "9c27b177fb86be584a4817f38470dc425ac9c0de",
+            "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa",
+        }
+        if audit.get("source_blobs") != expected_blobs:
+            ERRORS.append("Story audit source blob record is incorrect")
+        expected_counts = {"characters": 20, "powers": 30, "unique_ids": 50, "duplicate_ids": 0}
+        if audit.get("card_source_counts") != expected_counts:
+            ERRORS.append("Story audit card counts are incorrect")
+        if audit.get("content_integrated_to_v2_7_design") is not False:
+            ERRORS.append("Story evidence must not claim content integration")
+        if audit.get("release_pass") is not False or audit.get("lock_allowed") is not False:
+            ERRORS.append("Story acceptance must not grant release or lock authority")
+
 project_state = ROOT / "PROJECT_STATE.md"
 if project_state.exists():
     text = project_state.read_text(encoding="utf-8")
@@ -227,6 +338,13 @@ if project_state.exists():
         ERRORS.append("PROJECT_STATE.md must disclose pending visible-chat revalidation")
     if "3/3" not in text or "COMMUNICATION_TEST_ONLY" not in text:
         ERRORS.append("PROJECT_STATE.md must record the communication-only 3/3 ACK")
+    for marker in (
+        "STORY_HANDOFF_20260820.json",
+        "e04eef7f1fef6ea407feaaf26558551297c44b37",
+        "Görsel ve Simülasyon teslimleri bekleniyor",
+    ):
+        if marker not in text:
+            ERRORS.append(f"PROJECT_STATE.md is missing Story delivery marker: {marker}")
 
 decision_register = ROOT / "governance/DECISION_REGISTER.md"
 if decision_register.exists():
@@ -263,12 +381,25 @@ if coordination_log.exists():
         ERRORS.append("coordination log must supersede the incorrect workstream attribution")
     if "3/3 GÖRÜNÜR SOHBET ACK / İLETİŞİM TESTİ" not in text or "COM-001" not in text:
         ERRORS.append("coordination log must record the 3/3 communication ACK and open COM-001")
+    for marker in (
+        "HİKÂYE WORKSTREAM PASS KABULÜ / GÖRSEL BAŞLANGIÇ",
+        "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT",
+        "STORY_HANDOFF_20260820.json",
+    ):
+        if marker not in text:
+            ERRORS.append(f"coordination log is missing Story acceptance marker: {marker}")
 
 assignments = ROOT / "governance/WORKSTREAM_ASSIGNMENTS.md"
 if assignments.exists():
     text = assignments.read_text(encoding="utf-8")
-    if text.count("ACKNOWLEDGED_COMMUNICATION_TEST_ONLY") < 3:
-        ERRORS.append("workstream assignments must record all three communication-only ACKs")
+    for marker in (
+        "ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT",
+        "AUTHORIZED_BRANCH_CREATED / PENDING_VISIBLE_CHAT_DELIVERY",
+        "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_REAL_DELIVERY",
+        "STORY_HANDOFF_20260820.json",
+    ):
+        if marker not in text:
+            ERRORS.append(f"workstream assignments is missing delivery marker: {marker}")
 
 ai_handoff = ROOT / "AI_HANDOFF.md"
 if ai_handoff.exists():
@@ -276,6 +407,13 @@ if ai_handoff.exists():
     for marker in ("VISIBLE_CHAT_ACKS_20260820.json", "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY", "3/3"):
         if marker not in text:
             ERRORS.append(f"AI_HANDOFF.md is missing ACK marker: {marker}")
+    for marker in (
+        "STORY_HANDOFF_20260820.json",
+        "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT",
+        "e04eef7f1fef6ea407feaaf26558551297c44b37",
+    ):
+        if marker not in text:
+            ERRORS.append(f"AI_HANDOFF.md is missing Story delivery marker: {marker}")
 
 story_framework = ROOT / "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
 if story_framework.exists():

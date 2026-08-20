@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-20T14:57:19+03:00",
+  "updated_at": "2026-08-20T15:56:10+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -23,7 +23,7 @@
     "lock_allowed": false,
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
-    "basis": "2026-08-20 chief-editor repository audit; 3/3 communication ACK complete; specialist revalidation and branch-bound delivery pending"
+    "basis": "2026-08-20 chief-editor audit; 3/3 communication ACK complete; Story workstream accepted for Visual input; Visual and Simulation deliveries pending"
   },
   "roles": {
     "chief_editor": {
@@ -120,18 +120,44 @@
     "specialist_revalidation_completed": false,
     "work_branches_created": false
   },
+  "specialist_deliveries": {
+    "story": {
+      "status": "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT",
+      "evidence_path": "governance/STORY_HANDOFF_20260820.json",
+      "official_chat": "Foulwake Hikâye Editör",
+      "source_branch": "work/v2.7-story",
+      "source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "integrated_to_v2_7_design": false,
+      "next_recipient": "FOULWAKE görsel tasarım"
+    },
+    "visual": {
+      "status": "AUTHORIZED_BRANCH_CREATED_PENDING_VISIBLE_CHAT_DELIVERY",
+      "official_chat": "FOULWAKE görsel tasarım",
+      "work_branch": "work/v2.7-visual",
+      "branch_created": true,
+      "start_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37"
+    },
+    "simulation": {
+      "status": "PENDING_SPECIALIST_DELIVERY",
+      "official_chat": "Simülasyon Testi",
+      "work_branch": "work/v2.7-simulation",
+      "branch_created": false
+    }
+  },
   "cross_workstream_handoff": {
     "source_commit": "52f6c3b3c196a5af9c48d4694cd3091eb3da8129",
     "evidence_classification": "PREVIOUS_TEMPORARY_SUBAGENT_AUDIT_RECLASSIFIED_AS_NON_OFFICIAL",
     "communication_acknowledgement": "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY",
-    "story_to_visual": "PENDING_SPECIALIST_DELIVERY",
-    "story_to_simulation": "PENDING_SPECIALIST_DELIVERY",
+    "story_evidence_path": "governance/STORY_HANDOFF_20260820.json",
+    "story_source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+    "story_to_visual": "ACCEPTED_READY_FOR_VISUAL_INPUT",
+    "story_to_simulation": "RECORDED_FOR_LATER_EXACT_CANDIDATE_QA",
     "visual_to_simulation": "PENDING_SPECIALIST_DELIVERY",
     "simulation_to_story": "PENDING_QA_FINDINGS",
     "simulation_to_visual": "PENDING_QA_FINDINGS",
     "simulation_to_chief_editor": "PENDING_SPECIALIST_DELIVERY",
-    "chief_editor_disposition": "COMMUNICATION_ACKS_ACCEPTED_SPECIALIST_DELIVERIES_PENDING",
-    "final_directives": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY"
+    "chief_editor_disposition": "STORY_ACCEPTED_VISUAL_AND_SIMULATION_DELIVERIES_PENDING",
+    "final_directives": "STORY_ACCEPTED_FOR_VISUAL_INPUT_V2_7_REMAINS_BLOCKED"
   },
   "open_blockers": [
     {
@@ -215,22 +241,39 @@
       "id": "COM-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Onceki gecici alt-ajan incelemeleri gorunur uzman teslimi gibi kaydedilmisti; 3/3 iletisim ACK tamamlandi ancak bagimsiz uzman revalidasyonu ve branch-bound gercek teslimler henuz yok",
+      "summary": "Onceki gecici alt-ajan incelemeleri gorunur uzman teslimi gibi kaydedilmisti; 3/3 iletisim ACK ve Story revalidasyonu tamamlandi, Visual ile Simulation branch-bound teslimleri bekleniyor",
       "owner": "chief_editor",
       "progress": {
         "visible_chat_acknowledgements": "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY",
-        "independent_specialist_revalidation": "PENDING",
-        "work_branches_created": false,
-        "branch_bound_specialist_deliveries": "PENDING"
+        "independent_specialist_revalidation": {
+          "story": "ACCEPTED",
+          "visual": "PENDING",
+          "simulation": "PENDING"
+        },
+        "work_branches_created": {
+          "story": true,
+          "visual": true,
+          "simulation": false,
+          "completed": 2,
+          "required": 3
+        },
+        "branch_bound_specialist_deliveries": {
+          "story": "ACCEPTED",
+          "visual": "PENDING",
+          "simulation": "PENDING"
+        }
       },
       "completed": [
         "named visible-chat communication acknowledgement for all three workstreams",
-        "chief-editor scope review of the three communication-test replies"
+        "chief-editor scope review of the three communication-test replies",
+        "independent Story revalidation in Foulwake Hikâye Editör",
+        "branch-bound Story handoff accepted at e04eef7f1fef6ea407feaaf26558551297c44b37",
+        "work/v2.7-story and work/v2.7-visual branches created"
       ],
       "requires": [
-        "independent revalidation in each specialist chat",
-        "creation of each assigned specialist work branch at first authorized work",
-        "branch-bound specialist handoffs using the required template"
+        "independent Visual and Simulation specialist delivery",
+        "creation of work/v2.7-simulation at first authorized Simulation work",
+        "branch-bound Visual and Simulation handoffs using the required template"
       ]
     }
   ],
@@ -243,7 +286,9 @@
       "status": "RESOLVED",
       "severity": "BLOCKER",
       "resolution": "CAN-08 and CAN-09 reclassified from KANON to v2.7 DRAFT TASLAK protection principles",
-      "official_story_revalidation_pending_under": "COM-001",
+      "official_story_revalidation": "ACCEPTED",
+      "official_story_revalidation_evidence": "governance/STORY_HANDOFF_20260820.json",
+      "official_story_source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
       "evidence": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
       "protected_files_unchanged": [
         "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",

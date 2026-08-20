@@ -1,5 +1,40 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 20 Ağustos 2026 — HİKÂYE WORKSTREAM PASS KABULÜ / GÖRSEL BAŞLANGIÇ
+
+**Görünür sohbet:** `Foulwake Hikâye Editör`  
+**Hikâye kaynağı:** `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`  
+**Entegrasyon tabanı:** `v2.7-design@bc148e33343b4066259a996a9c299aab17fd8e3d`  
+**Kanıt:** `governance/STORY_HANDOFF_20260820.json`
+
+Proje sahibi, görünür Hikâye Editörü sohbetinin zorunlu handoffunu Baş Editöre
+iletti. Handoff `VISIBLE_CHAT_ACK: YES`, `EVIDENCE_TYPE:
+VISIBLE_CHAT_WORKSTREAM`, exact çalışma dalı/commiti ve `LOCK_REQUESTED: NO`
+alanlarını içerir.
+
+Baş Editör GitHub üzerinde bağımsız olarak şunları doğruladı:
+
+- Hikâye dalı entegrasyon tabanından bir commit ileride ve geride değildir.
+- Commit yalnız iki mevcut Hikâye kaynağını ve yeni revalidasyon kaydını değiştirir.
+- `governance/**`, `releases/**`, görsel, QA ve kilit alanları değişmemiştir.
+- Kaydedilen Story Framework, Rulebook Story, Card Texts ve Narrative
+  Validation blobları gerçek branch bloblarıyla eşleşir.
+- Card Texts kaynağında 20 Karakter, 30 Güç ve 50 benzersiz kimlik vardır.
+- 3.6 anlatısındaki sabit grup ima eden “sonuncusuna” sayımı mekanik akışa
+  dokunmadan kaldırılmıştır.
+
+**Baş Editör dispozisyonu:**
+`ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT`.
+
+Bu kabul resmî Hikâye revalidasyonunu ve branch-bound Hikâye teslimini
+tamamlar. Release PASS'i, mekanik eşdeğerlik, Simülasyon attestation'ı,
+`v2.7-design` içerik entegrasyonu veya kilit değildir. `COM-001`, Görsel ve
+Simülasyon gerçek teslimleri tamamlanana kadar açık kalır.
+
+`work/v2.7-visual`, kabul edilen Hikâye commiti üzerinde oluşturulmuştur.
+Görsel Tasarımın görünür sohbet teslimi henüz beklenmektedir;
+`work/v2.7-simulation` henüz oluşturulmamıştır.
+
 ## 20 Ağustos 2026 — 3/3 GÖRÜNÜR SOHBET ACK / İLETİŞİM TESTİ
 
 **Kaynak:** `v2.7-design@52f6c3b3c196a5af9c48d4694cd3091eb3da8129`

@@ -2,22 +2,31 @@
 
 **Durum:** ACTIVE / RELEASE BLOCKED
 
-**Kaynak commit:** `52f6c3b3c196a5af9c48d4694cd3091eb3da8129`
+**Yönetişim tabanı:** `v2.7-design@bc148e33343b4066259a996a9c299aab17fd8e3d`
+
+**Kabul edilen Hikâye kaynağı:** `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
 
 **Baseline:** v2.6 STABLE / LOCKED
 
 Önceki çapraz denetim geçici alt ajanlarla yapılmıştır ve resmî uzman teslimi
-değildir. Üç görünür sohbet 3/3 iletişim ACK vermiştir; bu cevaplar yalnız
-`COMMUNICATION_TEST_ONLY` kapsamındadır. Aşağıdaki görevlerin bağımsız uzman
-revalidasyonu ve branch-bound gerçek teslimleri henüz başlamamıştır.
+değildir. Üç görünür sohbetin 3/3 iletişim ACK kaydı yalnız
+`COMMUNICATION_TEST_ONLY` kapsamındadır. Bunun ardından `Foulwake Hikâye
+Editör` görünür sohbeti bağımsız revalidasyonunu kendi dalında teslim etmiş;
+Baş Editör exact commit ve kapsamı doğrulayarak Görsel Tasarım girdisi olarak
+kabul etmiştir. Görsel ve Simülasyon gerçek teslimleri henüz beklenmektedir.
 
 ## Görünür sohbet ve dal haritası
 
 | Hat | Resmî görünür sohbet | Çalışma dalı | Güncel kabul |
 |---|---|---|---|
-| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` |
-| Görsel | `FOULWAKE görsel tasarım` | `work/v2.7-visual` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` |
-| Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` |
+| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` |
+| Görsel | `FOULWAKE görsel tasarım` | `work/v2.7-visual` | `AUTHORIZED_BRANCH_CREATED / PENDING_VISIBLE_CHAT_DELIVERY` |
+| Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_REAL_DELIVERY` |
+
+Hikâye tesliminin bağlayıcı kaydı
+`governance/STORY_HANDOFF_20260820.json` içindedir. Bu kabul release PASS'i,
+mekanik eşdeğerlik veya kilit değildir; Hikâye değişiklikleri henüz
+`v2.7-design`a entegre edilmemiş, exact çalışma commitinde tutulmuştur.
 
 ## Sorumluluk haritası
 
@@ -55,6 +64,8 @@ Geçici alt ajan raporu, GitHub iş emri veya başka bir sohbetin özeti bu tesl
 yerine geçmez ve uzman hat adına `ACKNOWLEDGED`, `DELIVERED` veya `PASS`
 durumu oluşturmaz.
 
-`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY`, uzman teslimi değildir. Üç çalışma dalı
-henüz oluşturulmamıştır ve ilk yetkili gerçek teslimden önce iş tamamlanmış
-sayılamaz.
+`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY`, uzman teslimi değildir.
+`work/v2.7-story` ve `work/v2.7-visual` oluşturulmuştur;
+`work/v2.7-simulation` ilk yetkili Simülasyon çalışmasında oluşturulacaktır.
+`COM-001`, Görsel ve Simülasyon branch-bound gerçek teslimleri tamamlanana kadar
+açık kalır.

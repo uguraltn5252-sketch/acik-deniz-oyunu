@@ -50,10 +50,24 @@ tasarım` ve `Simülasyon Testi`, kaynak
 
 Bu 3/3 ACK; uzman yeniden doğrulaması, çalışma dalı oluşturulması, dosya
 değişikliği, commit, test, PASS, blocker kapanışı veya release teslimi değildir.
-Üç uzman dalı ilk yetkili gerçek teslim sırasında oluşturulacaktır. Bağlayıcı
-kanıt `governance/VISIBLE_CHAT_ACKS_20260820.json` içindedir ve `COM-001`
-gerçek uzman revalidasyonları ile branch-bound teslimler tamamlanana kadar açık
-kalır.
+İletişim testinin bağlayıcı kanıtı
+`governance/VISIBLE_CHAT_ACKS_20260820.json` içindedir; bu tarihsel kayıt daha
+sonraki uzman teslimlerinin yerine geçmez.
+
+### Güncel uzman teslim durumu
+
+`Foulwake Hikâye Editör`, `work/v2.7-story` dalında bağımsız revalidasyonunu
+`e04eef7f1fef6ea407feaaf26558551297c44b37` commitinde teslim etmiştir. Baş
+Editör commit kapsamını, korunan alanları, 20 Karakter / 30 Güç / 50 benzersiz
+kimliği ve kaynak bloblarını doğrulamış; sonucu
+`ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT` olarak kabul etmiştir. Tam
+handoff kanıtı `governance/STORY_HANDOFF_20260820.json` içindedir.
+
+`work/v2.7-visual`, kabul edilen Hikâye commitinden oluşturulmuştur ve Görsel
+Tasarımın gerçek teslimi beklenmektedir. `work/v2.7-simulation` henüz
+oluşturulmamıştır. Hikâye kabulü release PASS'i değildir; Story değişiklikleri
+henüz `v2.7-design`a entegre edilmemiştir. `COM-001`, Görsel ve Simülasyon
+branch-bound teslimleri tamamlanana kadar açık kalır.
 
 ## Aktif v2.7 kararları
 
