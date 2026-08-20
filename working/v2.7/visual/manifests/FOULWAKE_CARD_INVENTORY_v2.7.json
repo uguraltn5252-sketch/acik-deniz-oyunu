@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "FOULWAKE",
   "version": "v2.7",
-  "status": "DRAFT_NOT_LOCKED_INVENTORY_ONLY",
+  "status": "FULL_VISUAL_DIGITAL_CANDIDATE / PHYSICAL_TESTS_PENDING / NOT_LOCKED",
   "workstream": "visual_design",
   "visible_chat": "FOULWAKE görsel tasarım",
   "source_branch": "work/v2.7-visual",
@@ -64,7 +64,7 @@
     "status": "RESOLVED_BY_CHIEF_EDITOR_REWORK_ORDER",
     "locked_v2_6_documents_modified": false
   },
-  "candidate_status": "NOT_A_FULL_121_CARD_CANDIDATE",
+  "candidate_status": "FULL_PRODUCTION_DIGITAL_CANDIDATE / PHYSICAL_TESTS PENDING / NOT LOCKED",
   "cards": [
     {
       "id": "KAR-01",
@@ -93,8 +93,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "REPRESENTATIVE_RENDER_PRESENT",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-02",
@@ -123,8 +123,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-03",
@@ -153,8 +153,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-04",
@@ -183,8 +183,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-05",
@@ -213,8 +213,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-06",
@@ -243,8 +243,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-07",
@@ -273,8 +273,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-08",
@@ -303,8 +303,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-09",
@@ -333,8 +333,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-10",
@@ -363,8 +363,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-11",
@@ -393,8 +393,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-12",
@@ -423,8 +423,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-13",
@@ -453,8 +453,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-14",
@@ -483,8 +483,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-15",
@@ -513,8 +513,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-16",
@@ -543,8 +543,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-17",
@@ -573,8 +573,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-18",
@@ -603,8 +603,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-19",
@@ -633,8 +633,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "KAR-20",
@@ -663,8 +663,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_CHARACTER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-01A",
@@ -693,8 +693,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-01B",
@@ -723,8 +723,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-02A",
@@ -753,8 +753,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-02B",
@@ -783,8 +783,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-03",
@@ -813,8 +813,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-04",
@@ -843,8 +843,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-05",
@@ -873,8 +873,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-06",
@@ -903,8 +903,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-07",
@@ -933,8 +933,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-08",
@@ -963,8 +963,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-09",
@@ -993,8 +993,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-10",
@@ -1023,8 +1023,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-11",
@@ -1053,8 +1053,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-12",
@@ -1083,8 +1083,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-13",
@@ -1113,8 +1113,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-14",
@@ -1143,8 +1143,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-15",
@@ -1173,8 +1173,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-16",
@@ -1203,8 +1203,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-17",
@@ -1233,8 +1233,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-18",
@@ -1263,8 +1263,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-19",
@@ -1293,8 +1293,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-20",
@@ -1323,8 +1323,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-21",
@@ -1353,8 +1353,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-22",
@@ -1383,8 +1383,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT",
       "editorial_disposition": {
         "status": "RESOLVED_BY_CHIEF_EDITOR_REWORK_ORDER",
         "mapping": {
@@ -1421,8 +1421,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT",
       "editorial_disposition": {
         "status": "RESOLVED_BY_CHIEF_EDITOR_REWORK_ORDER",
         "mapping": {
@@ -1459,8 +1459,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "REPRESENTATIVE_RENDER_PRESENT",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-25",
@@ -1489,8 +1489,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-26",
@@ -1519,8 +1519,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-27",
@@ -1549,8 +1549,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "GUC-28",
@@ -1579,8 +1579,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "ERZ-01",
@@ -1609,8 +1609,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_POWER",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-01",
@@ -1639,8 +1639,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-02",
@@ -1669,8 +1669,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-03",
@@ -1699,8 +1699,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-04",
@@ -1729,8 +1729,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-05",
@@ -1759,8 +1759,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-06",
@@ -1789,8 +1789,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-07",
@@ -1819,8 +1819,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-08",
@@ -1849,8 +1849,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-09",
@@ -1879,8 +1879,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-T-10",
@@ -1909,8 +1909,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-H-01",
@@ -1939,8 +1939,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-H-02",
@@ -1969,8 +1969,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-H-03",
@@ -1999,8 +1999,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-H-04",
@@ -2029,8 +2029,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SAD-H-05",
@@ -2059,8 +2059,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LOYALTY",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-01",
@@ -2089,8 +2089,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-02",
@@ -2119,8 +2119,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-03",
@@ -2149,8 +2149,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-04",
@@ -2179,8 +2179,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-05",
@@ -2209,8 +2209,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-06",
@@ -2239,8 +2239,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-07",
@@ -2269,8 +2269,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-08",
@@ -2299,8 +2299,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-09",
@@ -2329,8 +2329,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "REPRESENTATIVE_RENDER_PRESENT",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-10",
@@ -2359,8 +2359,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-11",
@@ -2389,8 +2389,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-12",
@@ -2419,8 +2419,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-13",
@@ -2449,8 +2449,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-14",
@@ -2479,8 +2479,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-15",
@@ -2509,8 +2509,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-16",
@@ -2539,8 +2539,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-17",
@@ -2569,8 +2569,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-18",
@@ -2599,8 +2599,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-19",
@@ -2629,8 +2629,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-20",
@@ -2659,8 +2659,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-21",
@@ -2689,8 +2689,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-22",
@@ -2719,8 +2719,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-23",
@@ -2749,8 +2749,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-24",
@@ -2779,8 +2779,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-25",
@@ -2809,8 +2809,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-26",
@@ -2839,8 +2839,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-27",
@@ -2869,8 +2869,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-28",
@@ -2899,8 +2899,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-29",
@@ -2929,8 +2929,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AD-30",
@@ -2959,8 +2959,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-01",
@@ -2989,8 +2989,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-02",
@@ -3019,8 +3019,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-03",
@@ -3049,8 +3049,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-04",
@@ -3079,8 +3079,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-05",
@@ -3109,8 +3109,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-06",
@@ -3139,8 +3139,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-07",
@@ -3169,8 +3169,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-08",
@@ -3199,8 +3199,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-09",
@@ -3229,8 +3229,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-10",
@@ -3259,8 +3259,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-11",
@@ -3289,8 +3289,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-KY-12",
@@ -3319,8 +3319,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SEA_ROCK",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AA-01",
@@ -3349,8 +3349,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_ISLAND",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AA-02",
@@ -3379,8 +3379,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_ISLAND",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AA-03",
@@ -3409,8 +3409,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_ISLAND",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AA-04",
@@ -3439,8 +3439,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_ISLAND",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AA-05",
@@ -3469,8 +3469,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_ISLAND",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-AA-06",
@@ -3499,8 +3499,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_ISLAND",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-FN-01",
@@ -3529,8 +3529,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LIGHTHOUSE",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-FN-02",
@@ -3559,8 +3559,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LIGHTHOUSE",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-FN-03",
@@ -3589,8 +3589,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LIGHTHOUSE",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "HAR-FN-04",
@@ -3619,8 +3619,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_LIGHTHOUSE",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SET-KL-01",
@@ -3649,8 +3649,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SUPPORT",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SET-VL-01",
@@ -3679,8 +3679,8 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SUPPORT",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     },
     {
       "id": "SET-KP-01",
@@ -3709,8 +3709,10 @@
       ],
       "dpi": 300,
       "back_asset_id": "BACK_SUPPORT",
-      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+      "front_status": "FULL_PRODUCTION_RENDER_PRESENT",
+      "back_status": "FULL_PRODUCTION_BACK_PRESENT"
     }
-  ]
+  ],
+  "full_production_base_commit": "031c2a4d87ce7fc80d3c443723630e80f2388a70",
+  "full_production_delivery_commit": "PENDING_FULL_PRODUCTION_COMMIT"
 }

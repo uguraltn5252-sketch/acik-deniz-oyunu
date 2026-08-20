@@ -1,100 +1,109 @@
-# FOULWAKE v2.7 - Görsel Tasarım İlk Aşama Kanıt Onarımı
+# FOULWAKE v2.7 — Tam Görsel Üretim Denetimi
 
-**Durum:** VISUAL WORKSTREAM DELIVERED / DRAFT / NOT LOCKED  
+**Durum:** FULL VISUAL DIGITAL CANDIDATE / PHYSICAL TESTS PENDING / NOT LOCKED  
 **Görünür sohbet:** `FOULWAKE görsel tasarım`  
 **Çalışma dalı:** `work/v2.7-visual`  
-**Giriş commit:** `e04eef7f1fef6ea407feaaf26558551297c44b37`  
-**Rework taban commit:** `66e54d08d21370c00476769094db62d4e428cde6`  
-**Görsel teslim commit:** `d3028779f371337a5abffa691067de8fc42bdec1`  
+**Tam üretim taban commit:** `031c2a4d87ce7fc80d3c443723630e80f2388a70`  
+**Tam üretim teslim commit:** `PENDING_FULL_PRODUCTION_COMMIT`  
 **Baseline:** `v2.6 STABLE / LOCKED`
 
 ## Sonuç
 
-Reddedilen ilk aşama handoff'unun kanıt zinciri onarıldı. Bu teslim tam deste
-veya release candidate değildir. Temsilî dosyalar kanonik
-`/Oyun-GitHub/v2.7/exports/` konumuna kaydedildi, yeniden indirildi ve aşağıdaki
-hash/byte kayıtları yalnız bu geri indirilen baytlardan hesaplandı.
+Baş Editörün kabul ettiği ilk aşama kanıt onarımının ardından tam dijital görsel
+aday üretildi. 121 kartın ön yüzü ve yedi arka yüz varlığı 300 dpi üretildi;
+121 kartın tamamı ön/arka PDF sayfa ve duplex slotlarına bağlandı. Açık Deniz ve
+Kayalık ailelerindeki 42 kart tek, metinsiz `BACK_SEA_ROCK` binary varlığını
+kullanıyor. Güncel v2.7 anlatısına bağlı 29 A4 sayfalık kural kitabı adayı da
+aynı kanonik ihracat konumunda saklandı.
 
-- 121/121 benzersiz kimlik kilitli v2.6 kart PDF'siyle eşleşti.
-- Aile sayıları: 20 Karakter, 30 Güç, 1 Çürümüş Erzak, 15 Sadakat, 52 Harita ve
-  3 yardımcı kart.
-- Açık Deniz + Kayalık toplam 42 kart, tek `BACK_SEA_ROCK` varlık kimliğine
-  bağlandı. PDF içindeki dört temsilî kopya aynı image XObject'i kullanıyor.
-- `KAR-01`, `GUC-24` ve `HAR-AD-09` gerçek ölçülü temsilî renderları 300 dpi.
-- `GUC-24` üzerindeki eski flavor metni exact v2.7 kart kaynağına düzeltildi.
-- Baş Editör kararı uygulandı: `GUC-22 = Kaptanın Çatlak Kupası`,
-  `GUC-23 = Bayat Peksimet`. Kilitli v2.6 belgeleri değiştirilmedi.
-- Baskı setinin üzerinde `KAR-01`/`GUC-24` v2.7 visible-copy kaynağı ile
-  `HAR-AD-09` kilitli v2.6 visible-copy kaynağı ayrı ve exact gösterildi.
-- Kart kimlikleri baskı güvenli alanına taşındı ve temsilî overflow/glif kontrolü
-  geçti.
-- Kural kitabı için `3.3`, `3.4` ve `3.6` bloklarını exact
-  `f1e0eb75434540a85e8b21484acd99ca0abc66cf` blobundan kullanan 2 sayfalık A4 prova üretildi ve kanonik
-  konumda gerçekten saklandı.
+Bu teslim dijital adaydır; fiziksel baskı/kesim/duplex/ışık ve kör yön-sızıntı
+testleri yapılmadığı için release veya Simülasyon Testi handoff'u değildir.
 
-## Kaynak doğrulaması
+## Bağlayıcı kaynak doğrulaması
 
-| Kaynak | Beklenen blob | Sonuç |
+| Kaynak | Beklenen kimlik | Sonuç |
 |---|---|---|
-| Story Framework | `962222d83d669763c4ac8e2765f024b9fade180c` | PASS |
-| Rulebook Story | `f1e0eb75434540a85e8b21484acd99ca0abc66cf` | PASS |
 | Card Texts | `38a03b71cd3232fd844db8d80d8e53662510b6a3` | PASS |
-| v2.6 kart PDF | `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298` | PASS |
+| Rulebook Story | `f1e0eb75434540a85e8b21484acd99ca0abc66cf` | PASS |
+| Kilitli v2.6 kart PDF | `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298` | PASS |
 
-## Temsilî artefakt zinciri
+`GUC-22 = Kaptanın Çatlak Kupası` ve `GUC-23 = Bayat Peksimet` eşlemesi
+korundu. `GUC-24` flavor metni exact v2.7 kaynağındaki “Güverte kâtibi bunu
+yanlış elde duran doğru eşya diye kaydetti.” cümlesidir.
 
-| Kaynak | Render | PDF eşlemesi | Hüküm |
-|---|---|---|---|
-| Card Texts `KAR-01` | `KAR-01_Uzakgoren_front.png` | kart baskı seti s.1 | PASS |
-| Card Texts `GUC-24` | `GUC-24_Islak_Corap_front.png` | kart baskı seti s.1 | PASS - stale flavor düzeltildi |
-| v2.6 baseline `HAR-AD-09` | `HAR-AD-09_Deryanin_Gobek_Deligi_front.png` | kart baskı seti s.1 | PASS |
-| DEC-20260820-01 | `BACK_SEA_ROCK.png` | kart baskı seti s.2, 4 aynı XObject | PASS - binary eşleme |
-| Rulebook Story `3.3/3.4/3.6` | A4 temsilî sayfalar | rulebook proof s.1-2 | PASS |
+## Tam deste üretim özeti
 
-Ayrıntılı SHA-256 ve sayfa eşlemeleri
-`visual/manifests/FOULWAKE_SOURCE_RENDER_PDF_PROVENANCE_v2.7.json` içindedir.
+- Ön yüz: 121/121, benzersiz kart kimliği: 121/121, benzersiz render SHA-256:
+  121/121.
+- Aileler: 20 Karakter, 30 Güç, 1 Çürümüş Erzak, 15 Sadakat, 52 Harita ve 3
+  yardımcı kart.
+- Arka yüz: 7 binary varlık; eşleme toplamı 121/121.
+- `BACK_SEA_ROCK`: 30 Açık Deniz + 12 Kayalık = 42 kart.
+- Diğer altı arka yüz binarysi exact 180° simetrik üretildi.
+- Tam baskı PDF'si: 48 A4 sayfa; her ön sayfanın hemen ardından uzun-kenar
+  yatay aynalanmış duplex arka sayfası.
+- Görsel inceleme PDF'si: 16 yatay A4 sayfa; 121 ön yüz.
+- Kaynak paketi: 139 arşiv girdisi; 121 ön, 7 arka ve 6 özgün aile
+  illüstrasyon plakası dâhil.
 
-## Baş Editör dispozisyonu
+Kart başına exact visible-copy snapshotı, render SHA-256 değeri, ölçü/DPI,
+arka yüz kimliği ve baskı sayfa/slot eşlemesi
+`visual/manifests/FOULWAKE_v2.7_121_SOURCE_RENDER_PDF_MAP.json` dosyasındadır.
 
-Bu rework için bağlayıcı eşleme `GUC-22 = Kaptanın Çatlak Kupası` ve
-`GUC-23 = Bayat Peksimet` olarak uygulandı. `releases/v2.6/**` içindeki tarihsel
-belge satırı değiştirilmedi. Uyuşmazlık artık görsel üretim açısından açık risk
-değildir.
+## Kural kitabı
 
-## Eski 29 sayfalık görsel taslak
+Tam kural kitabı 29 A4 sayfadır. Güncel anlatı kaynaklı sayfalar 1, 3, 6, 7,
+27, 28 ve 29; bağlayıcı `Mantar Can Halkası` terim bindirmeleri 16 ve 23.
+Kalan mekanik sayfalar kilitli v2.6 baseline'dan görsel sistem içine alınmıştır;
+mekanik veya lore hükmü üretilmemiştir.
 
-Mevcut `FOULWAKE_v2.7_RULEBOOK_VISUAL_DRAFT.pdf`, v2.6 iç sayfalarını yeniden
-stilleyen tarihsel taslaktır; güncel v2.7 anlatı bloklarının yerleşimini
-kanıtlamaz. Dosya silinmedi veya değiştirilmedi ancak güncel source -> render ->
-PDF kanıtı olarak kullanılmayacaktır.
+## Kanonik save → materialize kanıtı
 
-## Çalıştırılan kontroller
+| Kanonik dosya | Library sürümü | Geri indirilen byte | Geri indirilen SHA-256 |
+|---|---:|---:|---|
+| `FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf` | 2 | 152036797 | `09d3bb00b198426f749698744bfda8c5d11ccaca5a29f71072f3e47162c6afa4` |
+| `FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf` | 2 | 189584635 | `a0b788b0e16c969b326869a5e21ee87e9772b1682735084e0ee475a2d3fe0ebb` |
+| `FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip` | 3 | 163319630 | `4d9f902fb73497ba48a43c0085a09d65b08aaf6b9defe69b8471fef10fe21ac8` |
+| `FOULWAKE_v2.7_RULEBOOK_PRINT_CANDIDATE.pdf` | 0 | 37533254 | `00344a95563558f04c02465bf164538652c3bbab616a40e8083bf2c1862ad1fb` |
 
-- Rework başlangıcında branch/head compare:
-  `work/v2.7-visual == 66e54d08d21370c00476769094db62d4e428cde6`.
-- Üç bağlayıcı hikâye blobu exact SHA karşılaştırması.
-- v2.6 kart PDF SHA-256 doğrulaması ve regex ID çıkarımı.
-- Envanter/PDF ID seti: 121/121, tekrar 0, eksik 0, fazla 0.
-- Aile ve arka yüz eşleme sayımları.
-- PNG piksel/DPI ve kaynak illüstrasyon çözünürlüğü kontrolü.
-- PDF sayfa/ölçü (`pdfinfo`), efektif görsel DPI ve XObject tekrarı
-  (`pdfimages -list`), font/glif ve render kontrolü.
-- 180 dpi yeniden render ile görsel taşma, kesim ve hiyerarşi denetimi.
-- `GUC-24` ve `HAR-AD-09` OCR spot kontrolü.
-- Kanonik konuma save/replace ve ardından altı dosyanın yeniden materialize
-  edilmesi.
-- Geri indirilen kanonik baytların yerel authored baytlarla `cmp`, SHA-256 ve
-  byte boyutu karşılaştırması: 6/6 PASS.
+Değerler yalnız `/Oyun-GitHub/v2.7/exports/` kanonik konumundan geri
+materialize edilen baytlardan hesaplandı. Bu dört dosya authored adaylarla
+`cmp` üzerinden 4/4 byte-bayt eşleşti.
+
+## Dijital preflight
+
+- Başlangıç dal/head eşitliği:
+  `work/v2.7-visual == 031c2a4d87ce7fc80d3c443723630e80f2388a70`.
+- 121/121 kimlik, front render, source snapshot ve PDF page/slot eşlemesi.
+- 300 dpi ve aileye göre exact piksel/taşmalı çalışma ölçüsü doğrulaması.
+- Metin taşması ve kesim güvenli alanı kontrolü.
+- Türkçe gliflerin kullanılan font cmap'lerinde bulunması.
+- Temsilî OCR: 16/16 metin bloğu, 14/16 exact kimlik; İngilizce OCR kaynak
+  otoritesi olmadığı için `PASS_WITH_SOFT_WARNING`.
+- 7 arka yüz, 121 eşleme ve 42 kartlık `BACK_SEA_ROCK` ortak binary kontrolü.
+- PDF sayfa/ölçü/XObject kontrolleri: kart baskı 48 A4, inceleme 16 yatay A4,
+  rulebook 29 A4.
+- Duplex dijital eşleme: 121/121; ön sayfa + 1 arka sayfa ve yatay ayna slotu.
+- Kural kitabında dış font bağımlılığı yok; sayfalar 300 dpi raster XObject.
+- Kanonik save, geri materialize, SHA-256/byte yeniden hesaplama ve local byte
+  karşılaştırması: 4/4 PASS.
+- Geri indirilen kaynak paketi içindeki Card Texts ve Rulebook Story dosyalarının
+  Git blob kimliği doğrulaması: 2/2 exact PASS.
+
+Dijital hüküm: `PASS_WITH_OCR_SOFT_WARNING`; dijital hard failure: `0`.
 
 ## Açık riskler
 
-- Tam 121 kartın güncel sanat diliyle renderı ve tam kart PDF'si henüz yok.
-- Tam 29 sayfalık v2.7 rulebook entegrasyonu henüz yok.
-- Ortak arka yüzün kör kart-yönü / Deniz-Kayalık sızıntı testi yapılmadı.
-- Fiziksel baskı, kesim, duplex sapması, opaklık ve gerçek ışık testi yapılmadı.
+- Fiziksel baskı, kesim, duplex sapması ve opaklık/ışık testi:
+  `PENDING_NOT_RUN`.
+- Fiziksel kör yön-sızıntı testi: `PENDING_NOT_RUN`.
+- OCR örnekleminde iki kimlik İngilizce model tarafından exact okunmadı;
+  görsel kimlikler kontrol edildi, exact kaynak snapshotı/manifesti belirleyici
+  kalır.
 
-Tam 121 kart/29 sayfa üretimine ve Simülasyon Testi handoff'una bu kanıt onarımı
-Baş Editör tarafından kabul edilmeden geçilmeyecektir.
+## Yetki alanı doğrulaması
 
-Bu açık riskler nedeniyle `SRC-001` yalnız temsilî zincirde ilerlemiştir;
-`ART-001`, `MEC-001` ve `QA-002` kapanmış sayılmaz.
+Yalnız görsel çalışma alanındaki bu rapor, binary kayıtları ve görsel manifestler
+değiştirildi. `releases/**`, `governance/**`, `PROJECT_STATE.md`,
+`AI_HANDOFF.md`, `main`, v2.6 ve kilit alanlarına dokunulmadı. Geçici ajan
+oluşturulmadı. Baş Editör kabulünden önce Simülasyon Testine geçilmez.

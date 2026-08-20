@@ -1,94 +1,100 @@
 # v2.7 Draft Binary Artifacts
 
-**Durum:** **DRAFT / NOT LOCKED**  
+**Durum:** **FULL VISUAL DIGITAL CANDIDATE / DRAFT / NOT LOCKED**  
 **Mekanik baseline:** v2.6 STABLE / LOCKED  
-**v2.7 görünen metin kaynakları:** `FOULWAKE_CARD_TEXTS_v2.7.json` ve `FOULWAKE_RULEBOOK_STORY_v2.7.md`  
-**Görsel yön onayı:** 20 Ağustos 2026
+**Çalışma dalı:** `work/v2.7-visual`  
+**Tam üretim taban commit:** `031c2a4d87ce7fc80d3c443723630e80f2388a70`  
+**Tam üretim teslim commit:** `PENDING_FULL_PRODUCTION_COMMIT`
 
-GitHub deposunda büyük binary dosyaların kendileri yerine kanonik yol, boyut ve SHA-256 kayıtları tutulur.
+GitHub deposunda büyük binary dosyaların kendileri yerine kanonik yol, Library
+kimliği, sürüm, byte boyutu ve SHA-256 kayıtları tutulur. Aşağıdaki dört güncel
+kayıt yalnız dosyalar kanonik `/Oyun-GitHub/v2.7/exports/` konumuna
+kaydedildikten sonra geri indirilen baytlardan hesaplanmıştır. Geri indirilen
+dosyalar yerel authored adaylarla 4/4 byte-bayt eşleşmiştir.
 
-Bu bölümdeki güncel temsilî çıktı hash ve byte değerleri, dosyalar kanonik
-`/Oyun-GitHub/v2.7/exports/` konumuna kaydedildikten sonra geri indirilen
-baytlardan hesaplanmıştır. Yerel authored dosya ile geri indirilen dosya 6/6
-bayt-bayt eşleşmiştir.
+## Tam görsel üretim adayı
 
-## Candidate sınırı
+- Tam deste baskı adayı: `/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf`  
+  Library file: `libfile_9a53fef0e28c8191b62eb09c56cb8c1f`, version `2`  
+  File id: `file_00000000d7a081fdbfb19ac1f4daa3e6`  
+  SHA-256: `09d3bb00b198426f749698744bfda8c5d11ccaca5a29f71072f3e47162c6afa4`  
+  Boyut: `152036797` byte  
+  Sayfa: `48` A4; 24 ön/arka duplex yaprağı; 121 kart.
 
-Bu dosyadaki mevcut kayıtlar sanat yönü örneklerini ve 29 sayfalık görsel rulebook
-taslağını tanımlar; güncel dal için tam 121 kartlık release candidate manifesti
-değildir. Temiz v2.7 sıfırlamasından önceki 121/121 üretim ve final preflight
-kayıtları tarihsel kanıttır; güncel source commit, renderlar ve manifestlerle
-yeniden bağlanmadan `ART-001` veya `SRC-001` engelini kapatmaz.
+- Tam deste görsel inceleme adayı: `/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf`  
+  Library file: `libfile_805a250bf34481919db90a099011b450`, version `2`  
+  File id: `file_00000000b9bc81fda46bd93a94d69869`  
+  SHA-256: `a0b788b0e16c969b326869a5e21ee87e9772b1682735084e0ee475a2d3fe0ebb`  
+  Boyut: `189584635` byte  
+  Sayfa: `16` yatay A4; 121 ön yüzün görsel taraması.
 
-Candidate tesliminde kart/rulebook source → render → PDF izlenebilirliği,
-121/121 front/back eşlemesi, SHA-256 manifestleri ve fiziksel prova kayıtları bu
-dosyaya exact commit kimliğiyle eklenir.
+- Tam deste kaynak paketi: `/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip`  
+  Library file: `libfile_e453647b8ba88191922a7512dd2c1640`, version `3`  
+  File id: `file_00000000d92c81fbb1bef534fdd2762e`  
+  SHA-256: `4d9f902fb73497ba48a43c0085a09d65b08aaf6b9defe69b8471fef10fe21ac8`  
+  Boyut: `163319630` byte  
+  İçerik: 121 ön yüz, 7 arka yüz, 6 özgün aile illüstrasyon plakası,
+  kaynak/üretim dosyaları ve manifestler; toplam `139` arşiv girdisi. Paket
+  içindeki Card Texts ve Rulebook Story baytları bağlayıcı Git bloblarıyla exact
+  eşleşir.
 
-## v2.7 görsel taslak çıktıları
+- Güncel v2.7 kural kitabı baskı adayı: `/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_RULEBOOK_PRINT_CANDIDATE.pdf`  
+  Library file: `libfile_e75c184fe0588191b9cb6ae37c8ed2d7`, version `0`  
+  File id: `file_0000000004208230bc59a423b9c6d678`  
+  SHA-256: `00344a95563558f04c02465bf164538652c3bbab616a40e8083bf2c1862ad1fb`  
+  Boyut: `37533254` byte  
+  Sayfa: `29` A4; v2.7 anlatı kaynağı
+  `f1e0eb75434540a85e8b21484acd99ca0abc66cf` ile bağlı.
 
-- Tarihsel kural kitabı görsel taslağı: `/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_RULEBOOK_VISUAL_DRAFT.pdf`  
-  SHA-256: `cc3b36fb317c6469a34e51ec9c4baa49f2d420e2cbffec400e9ff629f93f5690`  
-  Boyut: `34244928` byte  
-  Sayfa: `29` A4  
-  Kanıt durumu: `NOT_CURRENT_V2_7_STORY_INTEGRATION_EVIDENCE`; v2.6 iç sayfalarını yeniden stilleyen bu dosya güncel v2.7 anlatı yerleşiminin source -> render -> PDF kanıtı değildir.
+## İzlenebilirlik kayıtları
 
-- Kural kitabı temsilî doğrulama provası: `/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_RULEBOOK_REPRESENTATIVE_PROOF.pdf`  
-  SHA-256: `3100f58971c992be60473213795cc99e9a71320002d35f74803a182b8fdc5c02`  
-  Boyut: `2408667` byte  
-  Sayfa: `2` A4  
-  Kaynak: `FOULWAKE_RULEBOOK_STORY_v2.7.md` blob `f1e0eb75434540a85e8b21484acd99ca0abc66cf`; bölümler `3.3`, `3.4`, `3.6`
+- `working/v2.7/visual/manifests/FOULWAKE_CARD_INVENTORY_v2.7.json`:
+  121 kartın kimlik, kaynak, ölçü ve arka yüz envanteri.
+- `working/v2.7/visual/manifests/FOULWAKE_v2.7_121_SOURCE_RENDER_PDF_MAP.json`:
+  121/121 source → render SHA-256 → PDF ön/arka sayfa/slot zinciri.
+- `working/v2.7/visual/manifests/FOULWAKE_v2.7_FULL_PRODUCTION_PROVENANCE.json`:
+  kanonik Library kimlikleri, geri indirilmiş byte/hash değerleri ve commit
+  ayrımı.
+- `working/v2.7/visual/manifests/FOULWAKE_v2.7_FULL_PRODUCTION_PREFLIGHT.json`:
+  dijital preflight sonuçları ve açık fiziksel riskler.
 
-- Onaylı sanat yönü baskı seti: `/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_APPROVED_ART_DIRECTION_PRINT_SET.pdf`  
-  SHA-256: `b8096f29255a7a04b4691aa0a902c3b64ea0c6f5c25f6b284ef7d58b9efa0399`  
-  Boyut: `7749970` byte  
-  Sayfa: `2` A4  
-  Baskı üstü kaynak açıklaması: `KAR-01` ve `GUC-24` visible-copy için Card Texts blob `38a03b71cd3232fd844db8d80d8e53662510b6a3`; `HAR-AD-09` için kilitli v2.6 kart PDF SHA-256 `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298`.
+## Bağlayıcı kaynaklar ve korunan hükümler
 
-- KAR-01 Uzakgören kart yüzü: `/Oyun-GitHub/v2.7/exports/KAR-01_Uzakgoren_front.png`  
-  SHA-256: `2798de04b8d7660ac98a842944c9b8b67acd377505de16ca9f7e7cbe40b3a14b`  
-  Boyut: `1642513` byte  
-  Piksel: `898 × 1488`, 300 dpi, taşmalı çalışma ölçüsü `76 × 126 mm`
+- Card Texts blob: `38a03b71cd3232fd844db8d80d8e53662510b6a3`
+- Rulebook Story blob: `f1e0eb75434540a85e8b21484acd99ca0abc66cf`
+- Kilitli v2.6 kart PDF SHA-256:
+  `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298`
+- `GUC-22 = Kaptanın Çatlak Kupası`; `GUC-23 = Bayat Peksimet`.
+- `GUC-24` flavor exact kaynağa bağlıdır: “Güverte kâtibi bunu yanlış elde
+  duran doğru eşya diye kaydetti.”
+- Açık Deniz ve Kayalık toplam 42 kart, aynı metinsiz binary
+  `BACK_SEA_ROCK` varlığına eşlenmiştir.
 
-- GUC-24 Islak Çorap kart yüzü: `/Oyun-GitHub/v2.7/exports/GUC-24_Islak_Corap_front.png`  
-  SHA-256: `308771d8aeb5e8b3bf452db036f3983e0e6990f6c441e52bf61733945fb421df`  
-  Boyut: `1019620` byte  
-  Piksel: `821 × 1121`, 300 dpi, taşmalı çalışma ölçüsü `69,5 × 94,9 mm`  
-  Metin kaynağı: Card Texts blob `38a03b71cd3232fd844db8d80d8e53662510b6a3`; eski flavor metni exact kaynağa düzeltilmiştir.
+Metin, mekanik, zamanlama, kart kimliği/adedi, deste davranışı ve lore hükmü
+üretilmemiş veya değiştirilmemiştir. Kilitli v2.6 dosyaları ve
+`releases/**`, `governance/**`, `PROJECT_STATE.md`, `AI_HANDOFF.md`, `main`
+alanları değiştirilmemiştir.
 
-- HAR-AD-09 Deryanın Göbek Deliği kart yüzü: `/Oyun-GitHub/v2.7/exports/HAR-AD-09_Deryanin_Gobek_Deligi_front.png`  
-  SHA-256: `cf3b0d7847ee115eb353c73b575a62524d2dce9c629a4745290fce675af8420c`  
-  Boyut: `1030232` byte  
-  Piksel: `898 × 898`, 300 dpi, taşmalı çalışma ölçüsü `76 × 76 mm`
+## Dijital sonuç ve açık fiziksel riskler
 
-- Deniz + Kayalık ortak arka yüz: `/Oyun-GitHub/v2.7/exports/BACK_SEA_ROCK.png`  
-  SHA-256: `c3cf3399c294874bb12194f9bdf369a00110b7c78d2a234590c16be864e74c45`  
-  Boyut: `2035243` byte  
-  Piksel: `898 × 898`, 300 dpi, taşmalı çalışma ölçüsü `76 × 76 mm`
+Dijital preflight sonucu `PASS_WITH_OCR_SOFT_WARNING`dır. 121/121 kart, 7 arka
+yüz, 48 sayfalık duplex PDF ve 29 sayfalık kural kitabı yapısal olarak geçti.
+Temsilî OCR örnekleminde 16/16 metin bloğu okundu, 14/16 kimlik exact okundu;
+İngilizce OCR exact-copy otoritesi değildir, bağlayıcı kaynak snapshotları
+belirleyicidir.
 
-Bu dosyalar sanat yönü ve baskı hiyerarşisi için temsilî v2.7 taslaklarıdır; tam 121 kartlık görsel üretimin tamamlandığı veya v2.7'nin kilitlendiği anlamına gelmez.
-
-## İlk aşama izlenebilirlik kayıtları
-
-- `working/v2.7/visual/manifests/FOULWAKE_CARD_INVENTORY_v2.7.json`: 121 kartın kimlik, kaynak, ölçü ve arka yüz eşleme envanteri.
-- `working/v2.7/visual/manifests/FOULWAKE_SOURCE_RENDER_PDF_PROVENANCE_v2.7.json`: kaynak blobu -> render SHA-256 -> PDF sayfası zinciri.
-- `working/v2.7/visual/FOULWAKE_VISUAL_REVALIDATION_v2.7.md`: temsilî okunabilirlik, tutarlılık ve risk raporu.
-
-Tam 121 kartlık candidate, tam 29 sayfalık v2.7 kural kitabı entegrasyonu, fiziksel baskı/kesim/duplex/ışık testi ve kör dönüş-yön sızıntı testi henüz tamamlanmamıştır.
+Fiziksel baskı, kesim, duplex sapması, opaklık/ışık ve kör yön-sızıntı testleri
+çalıştırılmadı; `PENDING_NOT_RUN` açık riski olarak kalır. Bu aday kilitli
+release değildir ve Baş Editör kabulünden önce Simülasyon Testine devredilmez.
 
 ## Kilitli v2.6 kaynakları
 
 - Kural PDF: `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf`  
   SHA-256: `192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a`  
-  Boyut: `1104041` byte  
-  Sayfa: `29` A4
+  Boyut: `1104041` byte; `29` A4 sayfa.
 
 - Tam Kart PDF: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf`  
   SHA-256: `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298`  
-  Boyut: `1768745` byte  
-  Sayfa: `34` A4
-
-- Full ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip`  
-  SHA-256: `ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534`  
-  Boyut: `4360296` byte
+  Boyut: `1768745` byte; `34` A4 sayfa.
 
 Kilitli `releases/v2.6/` ağacı ve v2.6 binary kaynakları değiştirilmemiştir.

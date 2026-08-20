@@ -1,0 +1,5613 @@
+{
+  "schema_version": "2.1",
+  "project": "FOULWAKE",
+  "version": "v2.7",
+  "status": "FULL_VISUAL_DIGITAL_CANDIDATE / PHYSICAL_TESTS_PENDING / NOT_LOCKED",
+  "source_branch": "work/v2.7-visual",
+  "entry_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+  "full_production_base_commit": "031c2a4d87ce7fc80d3c443723630e80f2388a70",
+  "full_production_delivery_commit": "PENDING_FULL_PRODUCTION_COMMIT",
+  "binding_sources": {
+    "card_text_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+    "rulebook_story_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+    "locked_v2_6_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+  },
+  "counts": {
+    "Character": 20,
+    "Power": 30,
+    "Rotten Provisions": 1,
+    "Loyalty": 15,
+    "Map": 52,
+    "Support": 3
+  },
+  "front_count": 121,
+  "back_asset_count": 7,
+  "back_assets": [
+    {
+      "back_asset_id": "BACK_CHARACTER",
+      "file": "BACK_CHARACTER.png",
+      "sha256": "528a39dc5e01e066bdb1480870f5037028979d82b29b593066e3d52fdc4a9dd9",
+      "bytes": 1423334,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "mapped_card_count": 20,
+      "textless": true,
+      "exact_180_degree_symmetry": true
+    },
+    {
+      "back_asset_id": "BACK_POWER",
+      "file": "BACK_POWER.png",
+      "sha256": "46681ab2b878c3d99f86fd703d09e4ea12caaca4cf90e5f10ecdfb7049296f50",
+      "bytes": 961629,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "mapped_card_count": 31,
+      "textless": true,
+      "exact_180_degree_symmetry": true
+    },
+    {
+      "back_asset_id": "BACK_LOYALTY",
+      "file": "BACK_LOYALTY.png",
+      "sha256": "cd3208cf4c3b10d4b372b651cef052428e05ab448910282b015c22c7b24b1338",
+      "bytes": 918956,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "mapped_card_count": 15,
+      "textless": true,
+      "exact_180_degree_symmetry": true
+    },
+    {
+      "back_asset_id": "BACK_SEA_ROCK",
+      "file": "BACK_SEA_ROCK.png",
+      "sha256": "c3cf3399c294874bb12194f9bdf369a00110b7c78d2a234590c16be864e74c45",
+      "bytes": 2035243,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "mapped_card_count": 42,
+      "textless": true,
+      "exact_180_degree_symmetry": null
+    },
+    {
+      "back_asset_id": "BACK_ISLAND",
+      "file": "BACK_ISLAND.png",
+      "sha256": "ddca60ffce82772296d16bcae0fd58e87bf74b3e6d250c9ca4eb7ae1754116ba",
+      "bytes": 710890,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "mapped_card_count": 6,
+      "textless": true,
+      "exact_180_degree_symmetry": true
+    },
+    {
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "file": "BACK_LIGHTHOUSE.png",
+      "sha256": "8b1025114c73ffd033914c7a876617410cc19701118e7e1217e6a8078a3c7b84",
+      "bytes": 717583,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "mapped_card_count": 4,
+      "textless": true,
+      "exact_180_degree_symmetry": true
+    },
+    {
+      "back_asset_id": "BACK_SUPPORT",
+      "file": "BACK_SUPPORT.png",
+      "sha256": "d0aefbb4df1b7b47d8d8d9aa3d9bc940c3c383b3f04a5128e86692fa3e810792",
+      "bytes": 928022,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "mapped_card_count": 3,
+      "textless": true,
+      "exact_180_degree_symmetry": true
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "KAR-01",
+      "name": "Uzakgören",
+      "source_selector": "KAR-01",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Uzakgören",
+        "role": "Gözcü",
+        "effect": "Tanışma gecesi hariç her gece bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
+        "flavor": "Tehlikeyi uzaktan görür. İnsanları hâlâ yakından çözemedi."
+      },
+      "illustration_source": "KAR-01_Uzakgoren_front.png",
+      "illustration_source_sha256": "2798de04b8d7660ac98a842944c9b8b67acd377505de16ca9f7e7cbe40b3a14b",
+      "render_file": "KAR-01_front.png",
+      "render_sha256": "2c8009a8dee4e3abce760ba29181aa58bf5134bb957a313df4f1a0af4b93e407",
+      "bytes": 1638753,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "font_px": "accepted",
+        "lines": "accepted",
+        "overflow": false,
+        "art_source": "accepted_representative"
+      }
+    },
+    {
+      "card_id": "KAR-02",
+      "name": "Kıyıçizen",
+      "source_selector": "KAR-02",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kıyıçizen",
+        "role": "Haritacı",
+        "effect": "Tanışma gecesi hariç, Sis olmayan her gece bir Uzak Ufuk kartının olay yüzüne gizlice bakar.",
+        "flavor": "Haritada her şey yerli yerinde. Deniz hariç."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-02_front.png",
+      "render_sha256": "0e4b3a3a242b4cac7a0b2f3791849e82bbac43ff7e17237e411250e181734f88",
+      "bytes": 1546353,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-03",
+      "name": "Dümenkurdu",
+      "source_selector": "KAR-03",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Dümenkurdu",
+        "role": "Serdümen",
+        "effect": "Tek kullanım. Bir Harita olayının zorunlu hareket veya rota kilidi etkisini iptal eder.",
+        "flavor": "Dümen onun elindeyken gemi yolu şaşırmaz. Mürettebat şaşırabilir."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-03_front.png",
+      "render_sha256": "d44358d5220c94a21a9f1305997108e2ad4c4887eba56e1c15147ab12c0abda2",
+      "bytes": 1554717,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 2,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-04",
+      "name": "Canhalatı",
+      "source_selector": "KAR-04",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Canhalatı",
+        "role": "Palamarcı",
+        "effect": "Tek kullanım. Harita veya Hain saldırısıyla denize düşeni hemen kurtarır. Oylamayla atılana işlemez.",
+        "flavor": "İnsanlara değil, düğümlere güvenir."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-04_front.png",
+      "render_sha256": "642b29495639c69af4e9794579f22fc4ea4e6e1659532dc56b4fd1f4887982bb",
+      "bytes": 1573741,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-05",
+      "name": "Tahtakakan",
+      "source_selector": "KAR-05",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Tahtakakan",
+        "role": "Kalafatçı",
+        "effect": "Tek kullanım. Geminin almak üzere olduğu 1 Gövde hasarını engeller. Kraken'e de işler.",
+        "flavor": "Gemide bir yer gıcırdadığında elinde çekiçle belirir."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-05_front.png",
+      "render_sha256": "7a41dc0de1c19575a8604a1875bba3daee60068df7d9568422a0c49188e516c2",
+      "bytes": 1563817,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-06",
+      "name": "Dipgören",
+      "source_selector": "KAR-06",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Dipgören",
+        "role": "Dalgıç",
+        "effect": "Batık Kalyon bulunduğunda bir kez fazladan 1 Güç kartı kazandırır.",
+        "flavor": "Denizin dibinden her seferinde bir şey getiriyor."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-06_front.png",
+      "render_sha256": "9c1121c7e4bc70264cc822bd109e7cc955a6bbe44de1da8aaf35529416fc462c",
+      "bytes": 1570835,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-07",
+      "name": "Rüzgârkoklayan",
+      "source_selector": "KAR-07",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Rüzgârkoklayan",
+        "role": "Yelkenci",
+        "effect": "Bir kez Durgun Deniz veya rüzgâr kaynaklı rota kısıtını gizlice kaldırır.",
+        "flavor": "Rüzgâr çıkmadan kokusunu aldığını söylüyor."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-07_front.png",
+      "render_sha256": "a506c47339ca30f1886d1548ab2abca347b08a23803406d1c3dd916e006c9bff",
+      "bytes": 1579375,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-08",
+      "name": "Kırık Kürek",
+      "source_selector": "KAR-08",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kırık Kürek",
+        "role": "Kayıkçı",
+        "effect": "Tek kullanım. Pusula sunulunca kabul ederse bir mahsuru kurtarmak için bir tam vardiyalık sefere çıkar. Reddederse Pusula atılır; sefer başlamaz ve yetenek harcanmaz.",
+        "flavor": "Bir zamanlar iki küreği vardı."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-08_front.png",
+      "render_sha256": "70a3f388f3ea143f539cc581b8169dd82cb0ca5658b83117f6a9b31378e4e124",
+      "bytes": 1574207,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 4,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-09",
+      "name": "Üç Anahtar",
+      "source_selector": "KAR-09",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Üç Anahtar",
+        "role": "Levazımcı",
+        "effect": "Tek kullanım. Güç kazanılırken bir fazla karta bakılır; sonra biri kapalı atılır. Kazanç sayısı artmaz.",
+        "flavor": "Üç anahtarı var. İkisinin neyi açtığını bilmiyor."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-09_front.png",
+      "render_sha256": "1bb42471dfc305d271dc1fe154c953ad5a025a9c610e00b57f4a16edf35d51b8",
+      "bytes": 1550990,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 3,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-10",
+      "name": "Güvertebaşı",
+      "source_selector": "KAR-10",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Güvertebaşı",
+        "role": "Lostromo",
+        "effect": "Tek kullanım. Harita Güç kaybettirecekken seçilen bir oyuncunun bir kartlık kaybını engeller.",
+        "flavor": "Herkesin ne yapması gerektiğini bilir. Özellikle başkalarının."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-10_front.png",
+      "render_sha256": "0f85d0f63ed29965772c81aafb3682d81952d8e03dd8b06f3c10286544239b7d",
+      "bytes": 1577691,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-11",
+      "name": "İskele Sıçanı",
+      "source_selector": "KAR-11",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "İskele Sıçanı",
+        "role": "-",
+        "effect": "Ada veya Fener Güç kazandırırken bir kartın alıcısını, karta bakılmadan belirler.",
+        "flavor": "Karaya herkesten önce çıkar. Nasıl indiği sorulmaz."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-11_front.png",
+      "render_sha256": "1203785e90e43dc00e996618dbfad339cba9dd6b65c6dd7085418f59b7ac121e",
+      "bytes": 1559183,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-12",
+      "name": "Karga Yuvası",
+      "source_selector": "KAR-12",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Karga Yuvası",
+        "role": "-",
+        "effect": "Tek kullanım. Rota öncesi bir Yakın Ufku işaretler. O rota oy alırsa toplamına +1 eklenir.",
+        "flavor": "Yukarıdan bakınca herkes küçük görünür. Şüpheler değil."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-12_front.png",
+      "render_sha256": "830cb448eff77777d3d60cd71e179270cf99defb6ed7d9df5e7e1e73356d7dc2",
+      "bytes": 1532921,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-13",
+      "name": "Kazanbaşı",
+      "source_selector": "KAR-13",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kazanbaşı",
+        "role": "Aşçı",
+        "effect": "Özel mekanik gücü yoktur.",
+        "flavor": "Bugünün çorbasında ne var? Dünün çorbası."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-13_front.png",
+      "render_sha256": "c24e7cd7a03daf0f742ed6f9a8efc212c4506289d1cfa2dac1a02ee5f5ab3f0b",
+      "bytes": 1555440,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-14",
+      "name": "Fare Nazırı",
+      "source_selector": "KAR-14",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Fare Nazırı",
+        "role": "-",
+        "effect": "Özel mekanik gücü yoktur.",
+        "flavor": "Resmî sayımda on dört fare var. On beşincinin çizme giydiğini söylüyor."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-14_front.png",
+      "render_sha256": "c946e1bf4d15c1e53eee15d8ed686a8d06749560e4a347610ccb900aee966fbe",
+      "bytes": 1558463,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 2,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-15",
+      "name": "Papağan Mütercimi",
+      "source_selector": "KAR-15",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Papağan Mütercimi",
+        "role": "-",
+        "effect": "Özel mekanik gücü yoktur.",
+        "flavor": "Papağanın her cümlesini aynı çeviriyor: Ona güvenme."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-15_front.png",
+      "render_sha256": "b58c8e15d3396891fc3001e2fca1f1518ad91ea4d181764c70d51601f8ac9922",
+      "bytes": 1529356,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-16",
+      "name": "Fıçı Bekçisi",
+      "source_selector": "KAR-16",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Fıçı Bekçisi",
+        "role": "-",
+        "effect": "Özel mekanik gücü yoktur.",
+        "flavor": "Fıçıların hepsini tanıyor. Tayfanın yarısının adını bilmiyor."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-16_front.png",
+      "render_sha256": "45627d9ff2be4655fa17dcdc0f7618c1654538e73200af64c41aef835675fd69",
+      "bytes": 1565815,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-17",
+      "name": "Kafiye Belası",
+      "source_selector": "KAR-17",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kafiye Belası",
+        "role": "Gemi Şairi",
+        "effect": "Özel mekanik gücü yoktur.",
+        "flavor": "Tayfa onu susturmak için bir keresinde fırtınaya girmeyi kabul etti."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-17_front.png",
+      "render_sha256": "1fd47934f6f6881552c06726415355566001db2a0b225bf0c4ac5cbe45fa18ec",
+      "bytes": 1540282,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 2,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-18",
+      "name": "Karayı Özleyen",
+      "source_selector": "KAR-18",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Karayı Özleyen",
+        "role": "Acemi Gemici",
+        "effect": "Özel mekanik gücü yoktur.",
+        "flavor": "Dört saattir denizde. Üç saattir dönüş yolunu soruyor."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-18_front.png",
+      "render_sha256": "38f2a023b2217d122fabb963e4a30bf2e1bf3d0a36f90995c2bfac4d94c228db",
+      "bytes": 1564026,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-19",
+      "name": "Yastıkçı",
+      "source_selector": "KAR-19",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Yastıkçı",
+        "role": "Kamarot",
+        "effect": "Özel mekanik gücü yoktur.",
+        "flavor": "Herkesin kamarasına giriyor. Mesleği gereği olduğunu söylüyor."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-19_front.png",
+      "render_sha256": "e3b750641699d5a656298b5531014a97694d74e364d68d57593041c1c2624aa4",
+      "bytes": 1545827,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 2,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "KAR-20",
+      "name": "Tahtaya Vuran",
+      "source_selector": "KAR-20",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Tahtaya Vuran",
+        "role": "Hurafeci",
+        "effect": "Özel mekanik gücü yoktur.",
+        "flavor": "Her kötü alamette tahtaya vuruyor. Tahtakakan bundan hiç hoşlanmıyor."
+      },
+      "illustration_source": "CHARACTER_PLATE.png",
+      "illustration_source_sha256": "c3014c59f42bca078beb2394da2c050b4a862229680b66a0f51d2b2f988cba5e",
+      "render_file": "KAR-20_front.png",
+      "render_sha256": "9d214190acf8ed2b7845606105ed50a4266bed9aafeb46ac8a03a1c67435d2e3",
+      "bytes": 1561672,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "text_fit": {
+        "effect": {
+          "font_px": 31,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 27,
+          "lines": 2,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-01A",
+      "name": "Mantar Can Halkası",
+      "source_selector": "GUC-01A",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Mantar Can Halkası",
+        "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+        "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-01A_front.png",
+      "render_sha256": "5ba183ae7b6caa4c379967c8ffb3727e1d6d926a1b814c0a2b4ec28f0c639a1e",
+      "bytes": 1007060,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-01B",
+      "name": "Mantar Can Halkası",
+      "source_selector": "GUC-01B",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Mantar Can Halkası",
+        "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+        "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-01B_front.png",
+      "render_sha256": "eb62da2f8d262c864d2b6a50d1a027f70bb8d844a49d69ce61e4d1259d68d829",
+      "bytes": 1007466,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-02A",
+      "name": "Kancalı Halat",
+      "source_selector": "GUC-02A",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kancalı Halat",
+        "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+        "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-02A_front.png",
+      "render_sha256": "9de8fd984428d6352c843b33748b1267bcab313314a8b8d372ea3f11d9d0de5e",
+      "bytes": 1016217,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-02B",
+      "name": "Kancalı Halat",
+      "source_selector": "GUC-02B",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kancalı Halat",
+        "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+        "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-02B_front.png",
+      "render_sha256": "1ab5f3bf6232c533ff6c14688f83d36717d7e762385f946cb757890f496e8165",
+      "bytes": 1015835,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-03",
+      "name": "Pusula",
+      "source_selector": "GUC-03",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Pusula",
+        "effect": "Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz.",
+        "flavor": "Kuzeyi gösteriyor. Kaptan yine de başka yönü tarif ediyor."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-03_front.png",
+      "render_sha256": "635148e48b9eb16f66e70bbea8f3508392423325d9b21e74c8ed6f3fd7a60954",
+      "bytes": 1047824,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 5,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-04",
+      "name": "Güverte Araması",
+      "source_selector": "GUC-04",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Güverte Araması",
+        "effect": "En az iki Gücü olan bir gemi oyuncusu seç. Hedef seçtiği bir Gücü kapalı atar.",
+        "flavor": "Kayıp eşya bulundu. Sahibinin kim olduğu hâlâ şüpheli."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-04_front.png",
+      "render_sha256": "7f99b12e1c7c5e7c68fb66824c91bcbde7c0bf10c68b4cdfc7dcd84a730c18c6",
+      "bytes": 1038859,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-05",
+      "name": "Yama Tahtası",
+      "source_selector": "GUC-05",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Yama Tahtası",
+        "effect": "Kraken dışındaki 1 Gövde hasarını engelle.",
+        "flavor": "Gemi marangozluğu, deliği görmezden gelmeyi bırakınca başlar."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-05_front.png",
+      "render_sha256": "cc0998ede681abb4a859856a2af739f56ae6c6d8cf2e567129529dae3185de83",
+      "bytes": 1014624,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-06",
+      "name": "Zıpkın Sandığı",
+      "source_selector": "GUC-06",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Zıpkın Sandığı",
+        "effect": "Kraken'in vereceği 1 Gövde hasarını engelle.",
+        "flavor": "Sandığın üstünde büyük balık yazıyor. Yazı aceleyle yazılmış."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-06_front.png",
+      "render_sha256": "c50ed3c0a63754d467e431b11b1844b92b227facebd2b18d7cd9583f16d4aabb",
+      "bytes": 1016446,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-07",
+      "name": "Geçici Yeke",
+      "source_selector": "GUC-07",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Geçici Yeke",
+        "effect": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku aç.",
+        "flavor": "Geçici çözümler denizde bazen karaya kadar sürer."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-07_front.png",
+      "render_sha256": "5435a5326ca4afb0ba68cd88441c49eb375e2c0a872430cf5798eaf8b31691ec",
+      "bytes": 1020929,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-08",
+      "name": "Kerteriz Pergeli",
+      "source_selector": "GUC-08",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kerteriz Pergeli",
+        "effect": "Girdabın varışını veya Ters Akıntının kapatacağı yasal yönü rastgelelik yerine sen seç.",
+        "flavor": "Kuzeyi göstermiyor; ama çok kararlı görünüyor."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-08_front.png",
+      "render_sha256": "4b3e6c2ddab3718e2197778ada64a0092bda4013c882ac177c3278217bff1ee1",
+      "bytes": 1024739,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-09",
+      "name": "Kurşun Ağırlık",
+      "source_selector": "GUC-09",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kurşun Ağırlık",
+        "effect": "Girdabın zorunlu ek hareketini tamamen iptal et.",
+        "flavor": "Bazı sorunlar ancak dibe çekilince çözülür."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-09_front.png",
+      "render_sha256": "8df1913ab8a02e2c312f855d2c9d4252adc5f22fff866c0ecf7615aaf0b2901b",
+      "bytes": 1013315,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-10",
+      "name": "Yedek Yelken",
+      "source_selector": "GUC-10",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Yedek Yelken",
+        "effect": "Durgun Deniz veya rüzgâr kaynaklı rota kısıtını kaldır.",
+        "flavor": "Birincisi niçin yedek değildi, konuşmayalım."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-10_front.png",
+      "render_sha256": "9c1bf2e11a7df8508c23e0c4e560f709adbf0985cb4607fcd6f9606b71a5aa30",
+      "bytes": 1015786,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-11",
+      "name": "Islak Deniz Haritası",
+      "source_selector": "GUC-11",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Islak Deniz Haritası",
+        "effect": "İki Yakın Ufuk kartının yerini olay yüzlerine bakmadan değiştir.",
+        "flavor": "Mürekkep aktı; yollar daha yaratıcı oldu."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-11_front.png",
+      "render_sha256": "e8b87cafb31546f95a2cfa7ad5e76af40ac2c610dc739bcc0c39256d43352ddb",
+      "bytes": 1027297,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-12",
+      "name": "Kırık Dürbün",
+      "source_selector": "GUC-12",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kırık Dürbün",
+        "effect": "Bir Yakın Ufuk kartının olay yüzüne gizlice bak.",
+        "flavor": "Sağ taraf geleceği, sol taraf pişmanlığı gösteriyor."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-12_front.png",
+      "render_sha256": "41cd84a7c6295d3163980b6e99cbcfb2256b9e219dfabb3169fab60066d5bc72",
+      "bytes": 1012256,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-13",
+      "name": "Eski Seyir Defteri",
+      "source_selector": "GUC-13",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Eski Seyir Defteri",
+        "effect": "Bir Uzak Ufuk seç. Moderatör yalnız Gövde hasarı verebilir veya vermez der.",
+        "flavor": "Kaptanlar ölür; kötü el yazıları kalır."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-13_front.png",
+      "render_sha256": "6db6437a026be2e2344fca1c113cd5b5f2d8343252060e38de150abd01224d80",
+      "bytes": 1026109,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-14",
+      "name": "Anahtar Deliği",
+      "source_selector": "GUC-14",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Anahtar Deliği",
+        "effect": "Bir Yakın Ufuk olayına gizlice bak. Kamara Güç yasağının tek yazılı istisnasıdır.",
+        "flavor": "Kamaranın en küçük penceresi, en büyük dedikodusu."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-14_front.png",
+      "render_sha256": "398f87a0fb1783c23d64cd41320971adbc1387f863e946f9bd6120fe33532084",
+      "bytes": 1036105,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-15",
+      "name": "Kaptanın Eski Şapkası",
+      "source_selector": "GUC-15",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kaptanın Eski Şapkası",
+        "effect": "Bu rota oylamasında kendi oyuna +1 ekle.",
+        "flavor": "Şapka yetki vermez. Yine de herkes önce şapkaya bakar."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-15_front.png",
+      "render_sha256": "894b193aa0d1e9166074b8f1de5e469c8dbce5472dd8a070c325d1fa87b4f692",
+      "bytes": 1021740,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-16",
+      "name": "İsyan Bildirisi",
+      "source_selector": "GUC-16",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "İsyan Bildirisi",
+        "effect": "Bu İsyan oylamasında kendi oyun 2 sayılsın.",
+        "flavor": "Altında imza yok; herkesin fikri var."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-16_front.png",
+      "render_sha256": "df34dcdf87f6f6360f502ffb29e631439f6c3fcc61603059ae3630248dbbc5d4",
+      "bytes": 1022367,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-17",
+      "name": "Papağanın İfadesi",
+      "source_selector": "GUC-17",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Papağanın İfadesi",
+        "effect": "Hedef rota tavsiyesini açık söyler. Başka rotaya oy verirse oyu 0 sayılır.",
+        "flavor": "Tanık konuştu. Güvenilirliği tartışmalı."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-17_front.png",
+      "render_sha256": "809f795ed20614b5b20a9edf24150bb2a25afab7f76ea14bc6dc2d91b3ea9487",
+      "bytes": 998877,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-18",
+      "name": "Mühürlü Emir",
+      "source_selector": "GUC-18",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Mühürlü Emir",
+        "effect": "Kaptan çözmeden önce berabere rotalardan kazananı seç.",
+        "flavor": "Mühür sağlam; mantık biraz su almış."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-18_front.png",
+      "render_sha256": "810d9a788b745dd4e8738dd5fe82c778a090c051196fbde80e00066a6cd6b2f1",
+      "bytes": 1022273,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-19",
+      "name": "Kaçak Rom",
+      "source_selector": "GUC-19",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kaçak Rom",
+        "effect": "Bir oyuncu seç. Hedef diğer oyları gördükten sonra en son ve açık oy verir.",
+        "flavor": "Gerçeği söyletmez. Sırayı belli eder."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-19_front.png",
+      "render_sha256": "b1b807c3c60ded1181ff61b39ed7909356847ca92e2921c01e4d29c7411a48c7",
+      "bytes": 1021866,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-20",
+      "name": "Bir Daha Say",
+      "source_selector": "GUC-20",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Bir Daha Say",
+        "effect": "Tam 1 oy farkıyla biten herhangi bir resmî oylamayı bir kez yeniden yaptır. İkinci sonuç kesindir; sonra bu kartı at.",
+        "flavor": "Sefer divanında karar kesindir. Sayım bazen o kadar kesin değildir."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-20_front.png",
+      "render_sha256": "63fd69d03bfa59975dbf49f6dfd8dc642f9f86e4c323687dbd77f9736a0f6f0f",
+      "bytes": 1041638,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 3,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-21",
+      "name": "Uğurlu Altın",
+      "source_selector": "GUC-21",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Uğurlu Altın",
+        "effect": "Tamamlanmış rastgele hedef seçimini bir kez yeniden yaptır. İkinci sonuç kesindir.",
+        "flavor": "Yazı tura değil; yazgı tura."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-21_front.png",
+      "render_sha256": "5ee633d28755a884aaca694ea0f0116dd065270e57752d7557fcb03ad64f56fa",
+      "bytes": 1023891,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-22",
+      "name": "Kaptanın Çatlak Kupası",
+      "source_selector": "GUC-22",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kaptanın Çatlak Kupası",
+        "effect": "Kaptanın bu rota oylamasındaki 2 oyunu 1'e indir.",
+        "flavor": "Kupadaki çatlak, otoritedekinden küçüktü."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-22_front.png",
+      "render_sha256": "85e64ff81a91ff70b6980e4648bc14fb73efb6a44e75b223d830a1239946b443",
+      "bytes": 1004344,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-23",
+      "name": "Bayat Peksimet",
+      "source_selector": "GUC-23",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Bayat Peksimet",
+        "effect": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz.",
+        "flavor": "Konuşmayı kesmez. Çiğnemeyi uzatır."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-23_front.png",
+      "render_sha256": "e2a8af12b65fb04e76f13fd9a1b9114360453b54045dcf84271378901c5ca730",
+      "bytes": 1015181,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-24",
+      "name": "Islak Çorap",
+      "source_selector": "GUC-24",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Islak Çorap",
+        "effect": "Kazanç açıklanmadan yeni Gücü sen al, Islak Çorabı asıl alıcıya ver. İkiniz de sonra iki Güç sınırını uygularsınız. Çorap bir Güç sayılır.",
+        "flavor": "Güverte kâtibi bunu yanlış elde duran doğru eşya diye kaydetti."
+      },
+      "illustration_source": "GUC-24_Islak_Corap_front.png",
+      "illustration_source_sha256": "308771d8aeb5e8b3bf452db036f3983e0e6990f6c441e52bf61733945fb421df",
+      "render_file": "GUC-24_front.png",
+      "render_sha256": "52eb07d5e1c91756583e54ff81adf704acf09b929787064e7e21ccd2992062c6",
+      "bytes": 1017004,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "font_px": "accepted",
+        "lines": "accepted",
+        "overflow": false,
+        "art_source": "accepted_representative"
+      }
+    },
+    {
+      "card_id": "GUC-25",
+      "name": "Şüpheli Martı",
+      "source_selector": "GUC-25",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Şüpheli Martı",
+        "effect": "Bir oyuncının önüne koy. Sonraki rastgele Harita hedefinin ilk hedefi o olur; sonra at.",
+        "flavor": "Martı, onu daha önce görmüş gibi bağırıyor."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-25_front.png",
+      "render_sha256": "6b8093dd3967d263d0a5dd6fa5870fdc9bf5b32627e9db76506fd9aa12f53f57",
+      "bytes": 1001573,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-26",
+      "name": "Fırtına Feneri",
+      "source_selector": "GUC-26",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Fırtına Feneri",
+        "effect": "Bu gece Sis saldırısını kapat. Hainlerin bir Yakın Ufuk bilgi eylemi kalır.",
+        "flavor": "Işık bazen yolu değil, niyeti bozar."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-26_front.png",
+      "render_sha256": "37e093fccc4ea40089bec6c93ee4f2ab0f42f51c1d93152148e7afd2d5bb50d8",
+      "bytes": 1007354,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-27",
+      "name": "Kaderi Yeniden Yaz",
+      "source_selector": "GUC-27",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Kaderi Yeniden Yaz",
+        "effect": "Etki uygulanmadan önce önceki yere dön ve başka yasal Yakın Ufka git. İlk karta gerçekten girildiyse kart açık ve ziyaret edilmiş kalır; olayı yeniden çalışmaz. İlk kart Geçilmez Kayalıksa Gemi o kareye hiç girmiş/ziyaret etmiş sayılmaz; Geçilmez açık engel kalır ve başka yasal Yakın Ufka yönlenilebilir. Ada girişi İskorbütü kalıcı temizler. Kullanıldıktan sonra oyun dışına çıkar.",
+        "flavor": "Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-27_front.png",
+      "render_sha256": "fe621b215d3b7473a38a576f094d1aa61a6e60f2f44a9814c641448038105114",
+      "bytes": 1066956,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 26,
+          "lines": 7,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "GUC-28",
+      "name": "Seyir Zabtı",
+      "source_selector": "GUC-28",
+      "visible_copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "visible_copy": {
+        "name": "Seyir Zabtı",
+        "effect": "Gövde, oyuncu, Güç veya rota bakımından zarar doğuran rotaya oy veren birini bir gece Kamaraya gönder; Mahkûm sayılmaz. Kullanıldıktan sonra oyun dışına çıkar; Güç destesine yeniden karıştırılmaz.",
+        "flavor": "Rota yanlışsa kâğıt her zaman doğrudur."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "GUC-28_front.png",
+      "render_sha256": "c1c37e839eaa4102393d10baf41c163d68808ec00fe334f637c30dadb3b81e1b",
+      "bytes": 1050290,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 5,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "ERZ-01",
+      "name": "Çürümüş Erzak",
+      "source_selector": "ERZ-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Çürümüş Erzak",
+        "effect": "Kaptandaysan İskorbüt etkinleşmez. Kaptan değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonra gerçek bir Güç çek.",
+        "flavor": "Peksimet hâlâ yenebilir. Onu söyleyen kişi yenmedi."
+      },
+      "illustration_source": "POWER_PLATE.png",
+      "illustration_source_sha256": "a5be49af5f2ec9179ddd109d6dfdf9b65bcf67c901cea5a3e8d6026caed4fc06",
+      "render_file": "ERZ-01_front.png",
+      "render_sha256": "2b6e8e8d4fe7eb61fcd441046b956226ff1cc4e7a9ad7b9f300e3c7b4972f0a2",
+      "bytes": 1028828,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 3,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-01",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-01_front.png",
+      "render_sha256": "fd1b25ec39dd60b4c4235437a6c1ea66578873ef3c39a4b0181063083fd24fff",
+      "bytes": 990473,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-02",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-02",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-02_front.png",
+      "render_sha256": "2336319ba2a0ac75e8ea93a6e25524e8ddcfbceb78087b2c1a653ef6b39d1c7e",
+      "bytes": 990582,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-03",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-03",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-03_front.png",
+      "render_sha256": "77f938196442df412e5e9fa3726231bca676110570aeacbcd48060c87050305f",
+      "bytes": 990783,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-04",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-04",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-04_front.png",
+      "render_sha256": "08e41ab20fbf3d36297fd453671fc87bf14a54dbf1d843e5c1d902e7c7148592",
+      "bytes": 990052,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-05",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-05",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-05_front.png",
+      "render_sha256": "fd93e8763573b73fc590bc0b782185a866ce3ce0bdc02f2fe6ca86213e2c3c1c",
+      "bytes": 991032,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-06",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-06",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-06_front.png",
+      "render_sha256": "0338fe0ba3e3e95a8e34831fad57c2e87032533ab44225f843976b126eb0b5f0",
+      "bytes": 990518,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-07",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-07",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-07_front.png",
+      "render_sha256": "10e5a1069d9c653c0e204bcf7d517d72e7bf1c6a8d64e0e16f64e13d0cea01f9",
+      "bytes": 990553,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-08",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-08",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-08_front.png",
+      "render_sha256": "b7d93b199715b0a64e3faf65568a280452bafe0d47d5245bc274050d00a9e26c",
+      "bytes": 990292,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-09",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-09",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-09_front.png",
+      "render_sha256": "a60ce6de2a8752e8e08409591284c77d7854507255f45294f659c92de0badcff",
+      "bytes": 990142,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-T-10",
+      "name": "Tayfa",
+      "source_selector": "SAD-T-10",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tayfa",
+        "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-T-10_front.png",
+      "render_sha256": "474ba450c7f5ff41dbc4a0c71e69fd7cc2892e049b511ca8178be3ebaf943825",
+      "bytes": 989867,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-H-01",
+      "name": "Hain",
+      "source_selector": "SAD-H-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Hain",
+        "urge": "Bir doğru bilgiyle güven kazan."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-H-01_front.png",
+      "render_sha256": "843cc9b01c36c0a25301e00ccac623fc9185ecc97c35b1d589aaade9e359694e",
+      "bytes": 938102,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-H-02",
+      "name": "Hain",
+      "source_selector": "SAD-H-02",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Hain",
+        "urge": "Bir gün Hain arkadaşına karşı oy ver."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-H-02_front.png",
+      "render_sha256": "5bf1fbc04093bddc9ef91899cf5a170f7effaf4eb763ea846a6a41e195ccac6e",
+      "bytes": 939843,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-H-03",
+      "name": "Hain",
+      "source_selector": "SAD-H-03",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Hain",
+        "urge": "Bir masumu gereğinden fazla savun."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-H-03_front.png",
+      "render_sha256": "f304c12aec4f427eb06be35bff4dc136f356765f40182e87ef6e81befacfb708",
+      "bytes": 937902,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-H-04",
+      "name": "Hain",
+      "source_selector": "SAD-H-04",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Hain",
+        "urge": "Tehlikeli rotayı yalnız denizcilik jargonuyla anlat."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-H-04_front.png",
+      "render_sha256": "d3620396d4227a802f945889f10edf43b68c0292762f8eef37bd88537c2967f0",
+      "bytes": 939898,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SAD-H-05",
+      "name": "Hain",
+      "source_selector": "SAD-H-05",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Hain",
+        "urge": "Limanı herkesten çok görmek istediğini söyle."
+      },
+      "illustration_source": "LOYALTY_PLATE.png",
+      "illustration_source_sha256": "dcea1541606269d222c2cdb255e74038cee4f7935351383f308793e39cedf5e2",
+      "render_file": "SAD-H-05_front.png",
+      "render_sha256": "5e56100bd6636d0f06143937223e6299de9035e686f137c7650146e3dafaaac4",
+      "bytes": 939852,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-01",
+      "name": "Çarşaf Gibi Deniz",
+      "source_selector": "HAR-AD-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Çarşaf Gibi Deniz",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Deniz sakin. Masa değil."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-01_front.png",
+      "render_sha256": "2805ac1331b2f52a381677053f0ef8d6423c49e3423f1d0cf68447fc119c535d",
+      "bytes": 916933,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-02",
+      "name": "Pruvada Çay Molası",
+      "source_selector": "HAR-AD-02",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Pruvada Çay Molası",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Çay soğuyana kadar herkes masumdur."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-02_front.png",
+      "render_sha256": "2a91de60f21d3b861d8fb7c2d8dbbd3b2996aa6ab6fe79bbc1ba52ad33c94769",
+      "bytes": 918015,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-03",
+      "name": "Martılar Bile Üşeniyor",
+      "source_selector": "HAR-AD-03",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Martılar Bile Üşeniyor",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Biri bağırmadıkça deniz bugün çalışmıyor."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-03_front.png",
+      "render_sha256": "a7ddb96ddb2fb05fa413398f56e243844bf89751aee5127f23f4665bd92278c5",
+      "bytes": 919883,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-04",
+      "name": "Puslu Vardiya",
+      "source_selector": "HAR-AD-04",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Puslu Vardiya",
+        "effect": "Bu gece Sis kuralı uygulanır.",
+        "flavor": "Görüş düştü; kanaatler yükseldi."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-04_front.png",
+      "render_sha256": "6dbd92a860961f1650db63e653b506cc74f68d040b8dcbb79d56335f86de481e",
+      "bytes": 936410,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-05",
+      "name": "Burnunun Ucu Cumhuriyeti",
+      "source_selector": "HAR-AD-05",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Burnunun Ucu Cumhuriyeti",
+        "effect": "Bu gece Sis kuralı uygulanır.",
+        "flavor": "Sınırları üç karış, nüfusu gereğinden fazla."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-05_front.png",
+      "render_sha256": "b7c1fe2284d00e255f4d4b6c2b0409d7bbbb4d06c527013c614772022e79c20c",
+      "bytes": 938757,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-06",
+      "name": "Beyaz Gece",
+      "source_selector": "HAR-AD-06",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Beyaz Gece",
+        "effect": "Bu gece Sis kuralı uygulanır.",
+        "flavor": "Karanlık değildi. Daha kötüydü: belirsizdi."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-06_front.png",
+      "render_sha256": "5cfd67e3118140f1bf5b94e1ffa179b1a0cba2810da899f01373a7fba186f6e1",
+      "bytes": 937441,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-07",
+      "name": "Sis Var, Fikir Çok",
+      "source_selector": "HAR-AD-07",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Sis Var, Fikir Çok",
+        "effect": "Bu gece Sis kuralı uygulanır.",
+        "flavor": "Kimse bir şey görmedi; herkes çok emin."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-07_front.png",
+      "render_sha256": "8e265075315a1cf6723c723d38f69a1f34bc98e88f72e4d18944784ed0aa1cff",
+      "bytes": 938340,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-08",
+      "name": "İsimsiz Bir Düdük",
+      "source_selector": "HAR-AD-08",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "İsimsiz Bir Düdük",
+        "effect": "Bu gece Sis kuralı uygulanır.",
+        "flavor": "Ses sancaktan geldi. Yahut herkes öyle dedi."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-08_front.png",
+      "render_sha256": "50231bf341b4018836f4b44ecb0955009ade8bc8743aa4ddd54505a032b560e9",
+      "bytes": 939496,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-09",
+      "name": "Deryanın Göbek Deliği",
+      "source_selector": "HAR-AD-09",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Deryanın Göbek Deliği",
+        "effect": "Gemi hemen rastgele bir yasal Yakın Ufka zorunlu ek hareket yapar. Yeni olay da çözülür.",
+        "flavor": "Deniz de bazen kendi etrafında konuşur."
+      },
+      "illustration_source": "HAR-AD-09_Deryanin_Gobek_Deligi_front.png",
+      "illustration_source_sha256": "cf3b0d7847ee115eb353c73b575a62524d2dce9c629a4745290fce675af8420c",
+      "render_file": "HAR-AD-09_front.png",
+      "render_sha256": "54a17c61ae571724a9583a5cccf1882bb911bb23efa10634f23f0d41911cdecb",
+      "bytes": 1027226,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "font_px": "accepted",
+        "lines": "accepted",
+        "overflow": false,
+        "art_source": "accepted_representative"
+      }
+    },
+    {
+      "card_id": "HAR-AD-10",
+      "name": "Tersine Dönen Dünya",
+      "source_selector": "HAR-AD-10",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Tersine Dönen Dünya",
+        "effect": "Gemi hemen rastgele bir yasal Yakın Ufka zorunlu ek hareket yapar. Yeni olay da çözülür.",
+        "flavor": "Pusula sustu. Mide konuştu."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-10_front.png",
+      "render_sha256": "bdde109aa3033151e54ec4c892878b7fee201366cb5b121cc9821bcf0aba5bcb",
+      "bytes": 1034960,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-11",
+      "name": "Karadeniz Usulü Karşılama",
+      "source_selector": "HAR-AD-11",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Karadeniz Usulü Karşılama",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Hoş geldiniz kısmı kısa sürdü."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-11_front.png",
+      "render_sha256": "86d076690b7affd5e781f24949070b363ed1bc27baf29e98959059b2eac0e015",
+      "bytes": 984430,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-12",
+      "name": "Direkleri Saydıran Gece",
+      "source_selector": "HAR-AD-12",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Direkleri Saydıran Gece",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Sabah hepsi yerindeydi. Sayı eksikti."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-12_front.png",
+      "render_sha256": "b80563d90d8018eae82e727e9ea201aa3952c57d1547a5e1d5f751fa69d1e09e",
+      "bytes": 982895,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-13",
+      "name": "Kolları Fazla Bir Mesele",
+      "source_selector": "HAR-AD-13",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Kolları Fazla Bir Mesele",
+        "effect": "Gemi 1 Gövde kaybeder. Yama işlemez; Zıpkın veya Tahtakakan işleyebilir.",
+        "flavor": "Tokalaşmaya çalışmadığı kesindi."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-13_front.png",
+      "render_sha256": "53e1facb6d5e480b6f5aa1f3df04e1cbecd59fa75cc47ef0d95bbf4fb560d008",
+      "bytes": 1000880,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-14",
+      "name": "Bir Kişilik Eksildik",
+      "source_selector": "HAR-AD-14",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Bir Kişilik Eksildik",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
+        "flavor": "Yoklama denizde icat edilmiş olmalı."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-14_front.png",
+      "render_sha256": "22b5265e91c81e7ccb216bf7dfe3f5cfdf1ed7859cde6606069ee3f456f3e7c4",
+      "bytes": 1030706,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-15",
+      "name": "Güverte Islak, Bahane Kuru",
+      "source_selector": "HAR-AD-15",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Güverte Islak, Bahane Kuru",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
+        "flavor": "Kimsenin ittiği yoktu. Herkesin eli doluydu."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-15_front.png",
+      "render_sha256": "e28e81399a787e76ad019ec383bd3ab40d81adfb9770f8b83053c1c633baac3b",
+      "bytes": 1035641,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-16",
+      "name": "Rüzgârın İstifa Dilekçesi",
+      "source_selector": "HAR-AD-16",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Rüzgârın İstifa Dilekçesi",
+        "effect": "Bir sonraki rota seçiminde yalnız Pruva önü kullanılabilir. Yasal değilse etki boşa düşer.",
+        "flavor": "Gerekçe: sürekli aksi yönde beklenti."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-16_front.png",
+      "render_sha256": "4265fd646e33df8f2b30e6994a2f46dc3a57e2d9c35e5ecb6bbe9f8cb2d5398e",
+      "bytes": 934391,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-17",
+      "name": "Lodos Arkadan Esiyor",
+      "source_selector": "HAR-AD-17",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Lodos Arkadan Esiyor",
+        "effect": "Gemi isterse bir ek normal hareket yapar. Yeni olay da çözülür.",
+        "flavor": "İlk kez herkes aynı yönde konuştu."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-17_front.png",
+      "render_sha256": "7570be40391455cb6c60a0aeb79110c829f94fb69dfc2bb6e3951e792d83545e",
+      "bytes": 979294,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-18",
+      "name": "Denizin Kargo Şubesi",
+      "source_selector": "HAR-AD-18",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Denizin Kargo Şubesi",
+        "effect": "Tayfa 1 Güç kartı kazanır.",
+        "flavor": "Gönderen belli değil. Teslim alan çok."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-18_front.png",
+      "render_sha256": "7494bdce401e5299f445f0fe920081d939cfb4f67b72ce66f4979a1ca451546d",
+      "bytes": 1021260,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-19",
+      "name": "Sahibi Bulunamayan Sandık",
+      "source_selector": "HAR-AD-19",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Sahibi Bulunamayan Sandık",
+        "effect": "Tayfa 1 Güç kartı kazanır.",
+        "flavor": "Sahibi çıkmadı; akrabası on iki kişi çıktı."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-19_front.png",
+      "render_sha256": "3f486728697a3679265290f5d9afdb7bb751f249882372716eaeb8f880d36d33",
+      "bytes": 1019114,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-20",
+      "name": "Vergisiz Fener Alayı",
+      "source_selector": "HAR-AD-20",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Vergisiz Fener Alayı",
+        "effect": "İki dış Yakın Ufuk kartının yeri olay yüzlerine bakılmadan değiştirilir.",
+        "flavor": "Işıklar yol göstermedi; yolu yerinden oynattı."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-20_front.png",
+      "render_sha256": "654829e5375b016d73674b64da199fdb022853ba603e135c792031e04d9b35b2",
+      "bytes": 954893,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-21",
+      "name": "Denizin Geri Vitesi",
+      "source_selector": "HAR-AD-21",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Denizin Geri Vitesi",
+        "effect": "Bir sonraki rotada yasal yönlerden biri Kader Zarıyla kapanır. Bütün yolları kapatamaz.",
+        "flavor": "Gemi geri gitmedi. Deniz öne geçti."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-21_front.png",
+      "render_sha256": "c7ea0375a327adccac3639ec6b992dea83be08f00df141b6e72ba858eeaaff98",
+      "bytes": 1031119,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-22",
+      "name": "Peksimeti Islatan Sağanak",
+      "source_selector": "HAR-AD-22",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Peksimeti Islatan Sağanak",
+        "effect": "Gücü olanlar arasından zarla seçilen bir kişi rastgele 1 Güç kaybeder.",
+        "flavor": "Yağmur dindi. Çorabın fikri değişmedi."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-22_front.png",
+      "render_sha256": "c389652336ec32f4e247c109607ec3530f3f07a734cd7db92735a59bcabff1e2",
+      "bytes": 977952,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-23",
+      "name": "Uçan Balık Yağmuru",
+      "source_selector": "HAR-AD-23",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Uçan Balık Yağmuru",
+        "effect": "Mekanik etki yoktur.",
+        "flavor": "Balıklar uçtu. Kimse rota önerisini geri almadı."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-23_front.png",
+      "render_sha256": "e5388ac4f49ceda618a0fa992acfd43e260a8c965946610144e60dcd4a40211b",
+      "bytes": 989217,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-24",
+      "name": "Güverteyi Yalayan Dalga",
+      "source_selector": "HAR-AD-24",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Güverteyi Yalayan Dalga",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
+        "flavor": "Dalga geldi. Deniz suçunu kabul etmedi."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-24_front.png",
+      "render_sha256": "b23d224155c2bc89ea33c3201a978e48d3b4d09311dce50a34a97915b9caa9d5",
+      "bytes": 1022933,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-25",
+      "name": "Direk Çatlatan Bora",
+      "source_selector": "HAR-AD-25",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Direk Çatlatan Bora",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Direk çatlamadı. İki ayrı direk olmaya karar verdi."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-25_front.png",
+      "render_sha256": "3e0fdc9992e38c259a1f63d131478bf4cea5ae2e68624c5893a7cb4fcb919a03",
+      "bytes": 983792,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-26",
+      "name": "Mizanayı Döven Dalga",
+      "source_selector": "HAR-AD-26",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Mizanayı Döven Dalga",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Dalga üç kere vurdu. Dördüncüsünde özür dilemedi."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-26_front.png",
+      "render_sha256": "bbd23bcc1eee7ee5c06513512deb2b2dbb5ee89a84c6bcef5127dfd49c5b4a5c",
+      "bytes": 985836,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-27",
+      "name": "Karayel Tokadı",
+      "source_selector": "HAR-AD-27",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Karayel Tokadı",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Rüzgârın eli ağırmış."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-27_front.png",
+      "render_sha256": "f97f1d489b5b6ad5c86f9199d75d07ffea2249aa337ed41e04bf3d12345a993e",
+      "bytes": 979786,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-28",
+      "name": "Kırkikindi Açıkta Yakaladı",
+      "source_selector": "HAR-AD-28",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Kırkikindi Açıkta Yakaladı",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "İkindi geçti. Kırkı kalmış olabilir."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-28_front.png",
+      "render_sha256": "4a962f937760f71ac5a0186ecc1ae80963d49d026b8b048a72c6d8d8bd5d0e7b",
+      "bytes": 983711,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-29",
+      "name": "Alabora Olmadık Sayılır",
+      "source_selector": "HAR-AD-29",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Alabora Olmadık Sayılır",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Sayılmaz diyen Kaptandı."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-29_front.png",
+      "render_sha256": "370a76ed0c2d867000f26920a1acd135a0139f8e3a086f2e16cf8a8c7db69105",
+      "bytes": 982776,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AD-30",
+      "name": "Bir Bulutun Kişisel Meselesi",
+      "source_selector": "HAR-AD-30",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Bir Bulutun Kişisel Meselesi",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Özellikle bu gemiyi takip ediyor."
+      },
+      "illustration_source": "OPEN_SEA_PLATE.png",
+      "illustration_source_sha256": "abbfd6d0b2930fe3e73040a177e2fca2f3ce114e67addac6980c75e6704df4b3",
+      "render_file": "HAR-AD-30_front.png",
+      "render_sha256": "19730fe829547ac6fdc1e7b374689840bf1ac29eb864be397fb4c4e5848143ad",
+      "bytes": 984281,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-01",
+      "name": "Duvar Gibi Kayalık",
+      "source_selector": "HAR-KY-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Duvar Gibi Kayalık",
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır.",
+        "flavor": "Haritada çizgi değildi. Duvarmış."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-01_front.png",
+      "render_sha256": "356a0b9684848f2f487358f88dfe2b9eba6026332db8b58a7d1b10eef85b319d",
+      "bytes": 957062,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 3,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-02",
+      "name": "Dibi Görünen Servet",
+      "source_selector": "HAR-KY-02",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Dibi Görünen Servet",
+        "effect": "Tayfa 1 Güç kazanır. Dipgören kullanılırsa 1 ek Güç kazanır.",
+        "flavor": "Batık gemi susuyordu; eşyaları konuşkandı."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-02_front.png",
+      "render_sha256": "ab37736d65a938fb32aadb119ee56b9cb4afcf6f985e2b220f2dd674dcf38777",
+      "bytes": 975954,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-03",
+      "name": "Yolun Bittiği Yer",
+      "source_selector": "HAR-KY-03",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Yolun Bittiği Yer",
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır.",
+        "flavor": "Kestirme diye bakıldı. Dönüş yolu diye hatırlandı."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-03_front.png",
+      "render_sha256": "a8583ce13449c3feee6acdc4a3d4be65334517890b148b00820c77deccc4a7f5",
+      "bytes": 957689,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 3,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-04",
+      "name": "Pruva Törpüsü",
+      "source_selector": "HAR-KY-04",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Pruva Törpüsü",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gemiyi inceltti, masrafı kalınlaştırdı."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-04_front.png",
+      "render_sha256": "538c1689301b05e4e38fda7c80983966bebed8c2f8cac8016de624d7ce372435",
+      "bytes": 936910,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-05",
+      "name": "Taşın Şakası Olmaz",
+      "source_selector": "HAR-KY-05",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Taşın Şakası Olmaz",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gülmeyen yalnızca Kalafatçı değildi."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-05_front.png",
+      "render_sha256": "9eda206778b7c53830354e14a9a700d30062ceec2dd303d58507c80dae4a4321",
+      "bytes": 938487,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-06",
+      "name": "İğne Deliğinden Sefer",
+      "source_selector": "HAR-KY-06",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "İğne Deliğinden Sefer",
+        "effect": "Gemi 1 Gövde kaybeder; sonra isterse bir ek normal hareket yapar.",
+        "flavor": "Kestirme kısa sürdü. Tamiri sürmedi."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-06_front.png",
+      "render_sha256": "f984c60dfcae1afb4a64c5fcdf2560c994355338f2818828655fc6df75f45c3d",
+      "bytes": 951427,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-07",
+      "name": "Kestirme Diye Girilen Yer",
+      "source_selector": "HAR-KY-07",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Kestirme Diye Girilen Yer",
+        "effect": "Gemi isterse bir ek normal hareket yapar.",
+        "flavor": "Haritada yoktu; tartışmada hep varmış gibi anlatıldı."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-07_front.png",
+      "render_sha256": "883981fef3f87b2a9b2f42093bafea64d252542fa63d1410aed72c0157dd8bbb",
+      "bytes": 962069,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-08",
+      "name": "Kaçakçının Unuttuğu Oyuk",
+      "source_selector": "HAR-KY-08",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Kaçakçının Unuttuğu Oyuk",
+        "effect": "Tayfa 1 Güç kazanır.",
+        "flavor": "Kaçakçı gitmiş. Vergi hâlâ gelmemiş."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-08_front.png",
+      "render_sha256": "27550df67091819dcb5e0b7022afc4a815c04c52f0f61e30936768dcf7729724",
+      "bytes": 965829,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-09",
+      "name": "Kırılan Sandıklar",
+      "source_selector": "HAR-KY-09",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Kırılan Sandıklar",
+        "effect": "Gücü olanlar arasından zarla seçilen bir kişi rastgele 1 Güç kaybeder.",
+        "flavor": "Kırılan sandıktı. Suçlanan yine Kaptan oldu."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-09_front.png",
+      "render_sha256": "cafa303e5cb438533cc20d2fe4d719d8ebb678353ae91a2fc2b47f213afdb78b",
+      "bytes": 976747,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-10",
+      "name": "İki Taraftan Sıyırdık",
+      "source_selector": "HAR-KY-10",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "İki Taraftan Sıyırdık",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
+        "flavor": "Tek taraftan sıyırmak yeterince heyecanlı değilmiş."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-10_front.png",
+      "render_sha256": "46927049e9fddb002b4de67c50620ac46a5e50a175dddac19ff02122369adf23",
+      "bytes": 954338,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-11",
+      "name": "Suyun Altındaki Diş",
+      "source_selector": "HAR-KY-11",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Suyun Altındaki Diş",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Denizin ağzı yok diyen Haritacı sustu."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-11_front.png",
+      "render_sha256": "60680109d376930c8f1544cbf40ca192547cb3c9d685c2f4b8761c0a4dfdd226",
+      "bytes": 937563,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-KY-12",
+      "name": "Haritada İnce Çizgi",
+      "source_selector": "HAR-KY-12",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Haritada İnce Çizgi",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Çizgi yakından bakınca epey kalınmış."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-KY-12_front.png",
+      "render_sha256": "96c8998bdfd7bcc0a6e86ab08ea7f58dc5b9ad8565a61b6ef2ddfb92abfa0aac",
+      "bytes": 939056,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AA-01",
+      "name": "Kumanya Cumhuriyeti",
+      "source_selector": "HAR-AA-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Kumanya Cumhuriyeti",
+        "effect": "Tayfa 2 Güç kazanır. İki farklı oyuncuya verilir.",
+        "flavor": "Yönetim biçimi konserve, resmî dili peksimet."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-AA-01_front.png",
+      "render_sha256": "cb1a731095b6e60e85306f6735c0782d014acb553ee8099b19ec5548575e27e8",
+      "bytes": 962761,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AA-02",
+      "name": "Terk Edilmiş Sahil Karakolu",
+      "source_selector": "HAR-AA-02",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Terk Edilmiş Sahil Karakolu",
+        "effect": "Tayfa 1 Güç kazanır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+        "flavor": "Nöbetçi gitmiş; dedikodu defteri kalmış."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-AA-02_front.png",
+      "render_sha256": "64ddbe29cde5a04dbe9b64b4995678d9775d0450f85566088d22b96418f49ee1",
+      "bytes": 973700,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 3,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AA-03",
+      "name": "Misafirperverlik Biraz Fazla",
+      "source_selector": "HAR-AA-03",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Misafirperverlik Biraz Fazla",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu zorunlu olarak adada bırakılır.",
+        "flavor": "Gitmenize çok üzüldüler. Bu yüzden bırakmadılar."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-AA-03_front.png",
+      "render_sha256": "a062fb7d51590bb878325be6731be167382843992a2f59f9ab6a4f08f410d0f9",
+      "bytes": 963011,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AA-04",
+      "name": "Bir Ustanın Son Tezgâhı",
+      "source_selector": "HAR-AA-04",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Bir Ustanın Son Tezgâhı",
+        "effect": "Gemi en fazla 2 Gövdeye kadar 1 Gövde onarır.",
+        "flavor": "Usta ücret istemedi. Sorulmasını da beklemedi."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-AA-04_front.png",
+      "render_sha256": "a057e7b1baf07e9e23c9ac450c218b6a11c43ec405c7479b99da5de726efa91d",
+      "bytes": 960533,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AA-05",
+      "name": "Korsanların Mola Yeri",
+      "source_selector": "HAR-AA-05",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Korsanların Mola Yeri",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi bütün Güçlerini kaybeder.",
+        "flavor": "Mola verdiler. Sizin eşyalara."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-AA-05_front.png",
+      "render_sha256": "ed6a04cad5d51f7c4b7d983df634b34f3b871a9c9d7139552b1a0f5b260b2891",
+      "bytes": 964962,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-AA-06",
+      "name": "Gümrükçünün Tek Yaşadığı Ada",
+      "source_selector": "HAR-AA-06",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Gümrükçünün Tek Yaşadığı Ada",
+        "effect": "Gemideki herkes en fazla bir Güç tutar; fazlasını kapalı atar.",
+        "flavor": "Gümrükçü tek kişiydi. Yetkisi kalabalıktı."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-AA-06_front.png",
+      "render_sha256": "6314f99fa9c9e770c9008be37427590e1971f4d47e6457c4bfa38a6188ed69e4",
+      "bytes": 959115,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-FN-01",
+      "name": "Vardiya Defterli Fener",
+      "source_selector": "HAR-FN-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Vardiya Defterli Fener",
+        "effect": "Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+        "flavor": "Işık yol gösterdi; defter kimin baktığını yazdı."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-FN-01_front.png",
+      "render_sha256": "eb3339eb42ff54de71b2827b47e42a83af69b0e18252a999ec71fd9e10aaf675",
+      "bytes": 981898,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 3,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-FN-02",
+      "name": "Bekçisi Gitmiş, Işığı Kalmış",
+      "source_selector": "HAR-FN-02",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Bekçisi Gitmiş, Işığı Kalmış",
+        "effect": "Tayfa 1 Güç kazanır.",
+        "flavor": "Bekçi not bırakmış: Dönmeyeceğim. Anahtar paspasın altında."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-FN-02_front.png",
+      "render_sha256": "d18eabb3ac55102e612e3905cac8b92d4536c1521cd01335234dff962bdb153e",
+      "bytes": 966167,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-FN-03",
+      "name": "Fenercinin Zulası",
+      "source_selector": "HAR-FN-03",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Fenercinin Zulası",
+        "effect": "Tayfa 2 Güç kazanır.",
+        "flavor": "Fenerci yolu değil, sandığı aydınlatmış."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-FN-03_front.png",
+      "render_sha256": "83df7c92efeeb9666c18ee7210787e484604578298ab1fa6bb789919c89b5b00",
+      "bytes": 954377,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "HAR-FN-04",
+      "name": "Geceleri Parlayan Yalan",
+      "source_selector": "HAR-FN-04",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Geceleri Parlayan Yalan",
+        "effect": "Bir sonraki rota mümkünse komşu başka bir yasal Yakın Ufka rastgele sapar.",
+        "flavor": "Işık doğruydu. Yer yanlış."
+      },
+      "illustration_source": "COAST_PLATE.png",
+      "illustration_source_sha256": "de7faf20ab4cd6b2ca5e38bbb5ff042f421b7f8b959cc818e291788a33d40e60",
+      "render_file": "HAR-FN-04_front.png",
+      "render_sha256": "b33a332c68324eeb74cad55b453e07afe21c34f7c5e09e4dca5f948e55c6978f",
+      "bytes": 969918,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "text_fit": {
+        "effect": {
+          "font_px": 29,
+          "lines": 2,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 23,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SET-KL-01",
+      "name": "Kalkış Limanı",
+      "source_selector": "SET-KL-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Kalkış Limanı",
+        "location": "San Cordelio"
+      },
+      "illustration_source": "SUPPORT_PLATE.png",
+      "illustration_source_sha256": "d7acdcb0ea8f056e8e44cb83e374d17dbb371e45d4dfb01b9e10aae5d595db63",
+      "render_file": "SET-KL-01_front.png",
+      "render_sha256": "a8cfd0ccfa892518945a154ca15b146c8be14f23019f3dc8e5ae391c4514f4c6",
+      "bytes": 958090,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SUPPORT",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SET-VL-01",
+      "name": "Varış / Hedef Limanı",
+      "source_selector": "SET-VL-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Varış / Hedef Limanı",
+        "location": "Saint Verena"
+      },
+      "illustration_source": "SUPPORT_PLATE.png",
+      "illustration_source_sha256": "d7acdcb0ea8f056e8e44cb83e374d17dbb371e45d4dfb01b9e10aae5d595db63",
+      "render_file": "SET-VL-01_front.png",
+      "render_sha256": "4e6aaf2a4095d04175ccf73915132b02d8ba5e1736f27a174796ef7e994923b9",
+      "bytes": 942451,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SUPPORT",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 1,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": null,
+          "lines": 0,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    },
+    {
+      "card_id": "SET-KP-01",
+      "name": "Kaptan Makamı",
+      "source_selector": "SET-KP-01",
+      "visible_copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "visible_copy": {
+        "name": "Kaptan Makamı",
+        "effect": "Kaptanlık açık bir makamdır; Sadakati kanıtlamaz. Kaptan değişebilir; makam oyundan kalkmaz.",
+        "flavor": "Makam kalır. Şüphe de."
+      },
+      "illustration_source": "SUPPORT_PLATE.png",
+      "illustration_source_sha256": "d7acdcb0ea8f056e8e44cb83e374d17dbb371e45d4dfb01b9e10aae5d595db63",
+      "render_file": "SET-KP-01_front.png",
+      "render_sha256": "9ae8ca101fe2c2ebb3bdbe00f284a5a2abf903f56b30a4809c83104f533f22de",
+      "bytes": 971142,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SUPPORT",
+      "text_fit": {
+        "effect": {
+          "font_px": 30,
+          "lines": 3,
+          "overflow": false
+        },
+        "flavor": {
+          "font_px": 24,
+          "lines": 1,
+          "overflow": false
+        },
+        "overflow": false,
+        "art_source": "generated_family_engraving_plate_plus_card_specific_semantic_contour"
+      }
+    }
+  ],
+  "pdf_page_map": [
+    {
+      "card_id": "KAR-01",
+      "front_pdf_page": 1,
+      "front_slot": 1,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 2,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-02",
+      "front_pdf_page": 1,
+      "front_slot": 2,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 2,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-03",
+      "front_pdf_page": 1,
+      "front_slot": 3,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 2,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-04",
+      "front_pdf_page": 1,
+      "front_slot": 4,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 2,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-05",
+      "front_pdf_page": 3,
+      "front_slot": 1,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 4,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-06",
+      "front_pdf_page": 3,
+      "front_slot": 2,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 4,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-07",
+      "front_pdf_page": 3,
+      "front_slot": 3,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 4,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-08",
+      "front_pdf_page": 3,
+      "front_slot": 4,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 4,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-09",
+      "front_pdf_page": 5,
+      "front_slot": 1,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 6,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-10",
+      "front_pdf_page": 5,
+      "front_slot": 2,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 6,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-11",
+      "front_pdf_page": 5,
+      "front_slot": 3,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 6,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-12",
+      "front_pdf_page": 5,
+      "front_slot": 4,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 6,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-13",
+      "front_pdf_page": 7,
+      "front_slot": 1,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 8,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-14",
+      "front_pdf_page": 7,
+      "front_slot": 2,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 8,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-15",
+      "front_pdf_page": 7,
+      "front_slot": 3,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 8,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-16",
+      "front_pdf_page": 7,
+      "front_slot": 4,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 8,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-17",
+      "front_pdf_page": 9,
+      "front_slot": 1,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 10,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-18",
+      "front_pdf_page": 9,
+      "front_slot": 2,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 10,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-19",
+      "front_pdf_page": 9,
+      "front_slot": 3,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 10,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "KAR-20",
+      "front_pdf_page": 9,
+      "front_slot": 4,
+      "back_asset_id": "BACK_CHARACTER",
+      "back_pdf_page": 10,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-01A",
+      "front_pdf_page": 11,
+      "front_slot": 1,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 12,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-01B",
+      "front_pdf_page": 11,
+      "front_slot": 2,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 12,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-02A",
+      "front_pdf_page": 11,
+      "front_slot": 3,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 12,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-02B",
+      "front_pdf_page": 11,
+      "front_slot": 4,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 12,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-03",
+      "front_pdf_page": 11,
+      "front_slot": 5,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 12,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-04",
+      "front_pdf_page": 11,
+      "front_slot": 6,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 12,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-05",
+      "front_pdf_page": 13,
+      "front_slot": 1,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 14,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-06",
+      "front_pdf_page": 13,
+      "front_slot": 2,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 14,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-07",
+      "front_pdf_page": 13,
+      "front_slot": 3,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 14,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-08",
+      "front_pdf_page": 13,
+      "front_slot": 4,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 14,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-09",
+      "front_pdf_page": 13,
+      "front_slot": 5,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 14,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-10",
+      "front_pdf_page": 13,
+      "front_slot": 6,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 14,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-11",
+      "front_pdf_page": 15,
+      "front_slot": 1,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 16,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-12",
+      "front_pdf_page": 15,
+      "front_slot": 2,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 16,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-13",
+      "front_pdf_page": 15,
+      "front_slot": 3,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 16,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-14",
+      "front_pdf_page": 15,
+      "front_slot": 4,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 16,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-15",
+      "front_pdf_page": 15,
+      "front_slot": 5,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 16,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-16",
+      "front_pdf_page": 15,
+      "front_slot": 6,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 16,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-17",
+      "front_pdf_page": 17,
+      "front_slot": 1,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 18,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-18",
+      "front_pdf_page": 17,
+      "front_slot": 2,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 18,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-19",
+      "front_pdf_page": 17,
+      "front_slot": 3,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 18,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-20",
+      "front_pdf_page": 17,
+      "front_slot": 4,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 18,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-21",
+      "front_pdf_page": 17,
+      "front_slot": 5,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 18,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-22",
+      "front_pdf_page": 17,
+      "front_slot": 6,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 18,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-23",
+      "front_pdf_page": 19,
+      "front_slot": 1,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 20,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-24",
+      "front_pdf_page": 19,
+      "front_slot": 2,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 20,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-25",
+      "front_pdf_page": 19,
+      "front_slot": 3,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 20,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-26",
+      "front_pdf_page": 19,
+      "front_slot": 4,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 20,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-27",
+      "front_pdf_page": 19,
+      "front_slot": 5,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 20,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "GUC-28",
+      "front_pdf_page": 19,
+      "front_slot": 6,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 20,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "ERZ-01",
+      "front_pdf_page": 21,
+      "front_slot": 1,
+      "back_asset_id": "BACK_POWER",
+      "back_pdf_page": 22,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-01",
+      "front_pdf_page": 23,
+      "front_slot": 1,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 24,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-02",
+      "front_pdf_page": 23,
+      "front_slot": 2,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 24,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-03",
+      "front_pdf_page": 23,
+      "front_slot": 3,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 24,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-04",
+      "front_pdf_page": 23,
+      "front_slot": 4,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 24,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-05",
+      "front_pdf_page": 23,
+      "front_slot": 5,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 24,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-06",
+      "front_pdf_page": 23,
+      "front_slot": 6,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 24,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-07",
+      "front_pdf_page": 25,
+      "front_slot": 1,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 26,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-08",
+      "front_pdf_page": 25,
+      "front_slot": 2,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 26,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-09",
+      "front_pdf_page": 25,
+      "front_slot": 3,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 26,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-10",
+      "front_pdf_page": 25,
+      "front_slot": 4,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 26,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-11",
+      "front_pdf_page": 25,
+      "front_slot": 5,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 26,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-12",
+      "front_pdf_page": 25,
+      "front_slot": 6,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 26,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-13",
+      "front_pdf_page": 27,
+      "front_slot": 1,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 28,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-14",
+      "front_pdf_page": 27,
+      "front_slot": 2,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 28,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-15",
+      "front_pdf_page": 27,
+      "front_slot": 3,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 28,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-16",
+      "front_pdf_page": 27,
+      "front_slot": 4,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 28,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-17",
+      "front_pdf_page": 27,
+      "front_slot": 5,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 28,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-18",
+      "front_pdf_page": 27,
+      "front_slot": 6,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 28,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-19",
+      "front_pdf_page": 29,
+      "front_slot": 1,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 30,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-20",
+      "front_pdf_page": 29,
+      "front_slot": 2,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 30,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-21",
+      "front_pdf_page": 29,
+      "front_slot": 3,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 30,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-22",
+      "front_pdf_page": 29,
+      "front_slot": 4,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 30,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-23",
+      "front_pdf_page": 29,
+      "front_slot": 5,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 30,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-24",
+      "front_pdf_page": 29,
+      "front_slot": 6,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 30,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-25",
+      "front_pdf_page": 31,
+      "front_slot": 1,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 32,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-26",
+      "front_pdf_page": 31,
+      "front_slot": 2,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 32,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-27",
+      "front_pdf_page": 31,
+      "front_slot": 3,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 32,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-28",
+      "front_pdf_page": 31,
+      "front_slot": 4,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 32,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-29",
+      "front_pdf_page": 31,
+      "front_slot": 5,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 32,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AD-30",
+      "front_pdf_page": 31,
+      "front_slot": 6,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 32,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-01",
+      "front_pdf_page": 33,
+      "front_slot": 1,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 34,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-02",
+      "front_pdf_page": 33,
+      "front_slot": 2,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 34,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-03",
+      "front_pdf_page": 33,
+      "front_slot": 3,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 34,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-04",
+      "front_pdf_page": 33,
+      "front_slot": 4,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 34,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-05",
+      "front_pdf_page": 33,
+      "front_slot": 5,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 34,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-06",
+      "front_pdf_page": 33,
+      "front_slot": 6,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 34,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-07",
+      "front_pdf_page": 35,
+      "front_slot": 1,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 36,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-08",
+      "front_pdf_page": 35,
+      "front_slot": 2,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 36,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-09",
+      "front_pdf_page": 35,
+      "front_slot": 3,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 36,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-10",
+      "front_pdf_page": 35,
+      "front_slot": 4,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 36,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-11",
+      "front_pdf_page": 35,
+      "front_slot": 5,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 36,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-KY-12",
+      "front_pdf_page": 35,
+      "front_slot": 6,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "back_pdf_page": 36,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AA-01",
+      "front_pdf_page": 37,
+      "front_slot": 1,
+      "back_asset_id": "BACK_ISLAND",
+      "back_pdf_page": 38,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AA-02",
+      "front_pdf_page": 37,
+      "front_slot": 2,
+      "back_asset_id": "BACK_ISLAND",
+      "back_pdf_page": 38,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AA-03",
+      "front_pdf_page": 37,
+      "front_slot": 3,
+      "back_asset_id": "BACK_ISLAND",
+      "back_pdf_page": 38,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AA-04",
+      "front_pdf_page": 37,
+      "front_slot": 4,
+      "back_asset_id": "BACK_ISLAND",
+      "back_pdf_page": 38,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AA-05",
+      "front_pdf_page": 37,
+      "front_slot": 5,
+      "back_asset_id": "BACK_ISLAND",
+      "back_pdf_page": 38,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-AA-06",
+      "front_pdf_page": 37,
+      "front_slot": 6,
+      "back_asset_id": "BACK_ISLAND",
+      "back_pdf_page": 38,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-FN-01",
+      "front_pdf_page": 39,
+      "front_slot": 1,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "back_pdf_page": 40,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-FN-02",
+      "front_pdf_page": 39,
+      "front_slot": 2,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "back_pdf_page": 40,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-FN-03",
+      "front_pdf_page": 39,
+      "front_slot": 3,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "back_pdf_page": 40,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "HAR-FN-04",
+      "front_pdf_page": 39,
+      "front_slot": 4,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "back_pdf_page": 40,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-01",
+      "front_pdf_page": 41,
+      "front_slot": 1,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 42,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-02",
+      "front_pdf_page": 41,
+      "front_slot": 2,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 42,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-03",
+      "front_pdf_page": 41,
+      "front_slot": 3,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 42,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-04",
+      "front_pdf_page": 41,
+      "front_slot": 4,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 42,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-05",
+      "front_pdf_page": 41,
+      "front_slot": 5,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 42,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-06",
+      "front_pdf_page": 41,
+      "front_slot": 6,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 42,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-07",
+      "front_pdf_page": 43,
+      "front_slot": 1,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 44,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-08",
+      "front_pdf_page": 43,
+      "front_slot": 2,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 44,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-09",
+      "front_pdf_page": 43,
+      "front_slot": 3,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 44,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-T-10",
+      "front_pdf_page": 43,
+      "front_slot": 4,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 44,
+      "back_slot_mirrored": 3,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-H-01",
+      "front_pdf_page": 43,
+      "front_slot": 5,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 44,
+      "back_slot_mirrored": 6,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-H-02",
+      "front_pdf_page": 43,
+      "front_slot": 6,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 44,
+      "back_slot_mirrored": 5,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-H-03",
+      "front_pdf_page": 45,
+      "front_slot": 1,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 46,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-H-04",
+      "front_pdf_page": 45,
+      "front_slot": 2,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 46,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SAD-H-05",
+      "front_pdf_page": 45,
+      "front_slot": 3,
+      "back_asset_id": "BACK_LOYALTY",
+      "back_pdf_page": 46,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SET-KL-01",
+      "front_pdf_page": 47,
+      "front_slot": 1,
+      "back_asset_id": "BACK_SUPPORT",
+      "back_pdf_page": 48,
+      "back_slot_mirrored": 2,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SET-VL-01",
+      "front_pdf_page": 47,
+      "front_slot": 2,
+      "back_asset_id": "BACK_SUPPORT",
+      "back_pdf_page": 48,
+      "back_slot_mirrored": 1,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    },
+    {
+      "card_id": "SET-KP-01",
+      "front_pdf_page": 47,
+      "front_slot": 3,
+      "back_asset_id": "BACK_SUPPORT",
+      "back_pdf_page": 48,
+      "back_slot_mirrored": 4,
+      "duplex_mode": "long_edge_horizontal_mirror"
+    }
+  ],
+  "rulebook": {
+    "pages": 29,
+    "replaced_story_pages": [
+      1,
+      3,
+      6,
+      7,
+      27,
+      28,
+      29
+    ],
+    "binding_term_overlay_pages": [
+      16,
+      23
+    ],
+    "source_story_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf"
+  },
+  "canonical_artifacts": {
+    "hash_source": "POST_SAVE_MATERIALIZED_BYTES_ONLY",
+    "print_candidate": {
+      "file_name": "FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf",
+      "library_file_id": "libfile_9a53fef0e28c8191b62eb09c56cb8c1f",
+      "file_id": "file_00000000d7a081fdbfb19ac1f4daa3e6",
+      "stored_version": 2,
+      "size_bytes": 152036797,
+      "sha256": "09d3bb00b198426f749698744bfda8c5d11ccaca5a29f71072f3e47162c6afa4",
+      "pages": 48
+    },
+    "visual_review": {
+      "file_name": "FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf",
+      "library_file_id": "libfile_805a250bf34481919db90a099011b450",
+      "file_id": "file_00000000b9bc81fda46bd93a94d69869",
+      "stored_version": 2,
+      "size_bytes": 189584635,
+      "sha256": "a0b788b0e16c969b326869a5e21ee87e9772b1682735084e0ee475a2d3fe0ebb",
+      "pages": 16
+    },
+    "source_bundle": {
+      "file_name": "FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip",
+      "library_file_id": "libfile_e453647b8ba88191922a7512dd2c1640",
+      "file_id": "file_00000000d92c81fbb1bef534fdd2762e",
+      "stored_version": 3,
+      "size_bytes": 163319630,
+      "sha256": "4d9f902fb73497ba48a43c0085a09d65b08aaf6b9defe69b8471fef10fe21ac8",
+      "zip_entries": 139,
+      "embedded_binding_git_blobs": [
+        "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "f1e0eb75434540a85e8b21484acd99ca0abc66cf"
+      ]
+    },
+    "rulebook_candidate": {
+      "file_name": "FOULWAKE_v2.7_RULEBOOK_PRINT_CANDIDATE.pdf",
+      "library_file_id": "libfile_e75c184fe0588191b9cb6ae37c8ed2d7",
+      "file_id": "file_0000000004208230bc59a423b9c6d678",
+      "stored_version": 0,
+      "size_bytes": 37533254,
+      "sha256": "00344a95563558f04c02465bf164538652c3bbab616a40e8083bf2c1862ad1fb",
+      "pages": 29
+    }
+  }
+}

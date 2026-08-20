@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "project": "FOULWAKE",
+  "version": "v2.7",
+  "status": "DRAFT / NOT LOCKED",
+  "source_branch": "work/v2.7-visual",
+  "full_production_base_commit": "031c2a4d87ce7fc80d3c443723630e80f2388a70",
+  "full_production_delivery_commit": "PENDING_FULL_PRODUCTION_COMMIT",
+  "tests": {
+    "binding_source_guard": {
+      "result": "PASS",
+      "card_text_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "rulebook_story_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+      "locked_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+    },
+    "identity_and_count": {
+      "result": "PASS",
+      "fronts": 121,
+      "unique_ids": 121,
+      "family_counts": {
+        "Character": 20,
+        "Power": 30,
+        "Rotten Provisions": 1,
+        "Loyalty": 15,
+        "Map": 52,
+        "Support": 3
+      }
+    },
+    "required_power_dispositions": {
+      "result": "PASS"
+    },
+    "front_dimensions_300dpi": {
+      "result": "PASS",
+      "dimension_failures": [],
+      "dpi_failures": []
+    },
+    "unique_front_binaries": {
+      "result": "PASS",
+      "unique_sha256": 121
+    },
+    "text_overflow_and_safe_area": {
+      "result": "PASS",
+      "template_safe_area": "all visible text remains inside trim-safe coordinates; crop marks remain outside trim"
+    },
+    "glyph_coverage": {
+      "result": "PASS",
+      "fonts": {
+        "P052-Roman.otf": {
+          "missing_codepoints": [],
+          "pass": true
+        },
+        "P052-Bold.otf": {
+          "missing_codepoints": [],
+          "pass": true
+        },
+        "P052-Italic.otf": {
+          "missing_codepoints": [],
+          "pass": true
+        },
+        "NimbusSans-Bold.otf": {
+          "missing_codepoints": [],
+          "pass": true
+        },
+        "DejaVuSans-Bold.ttf": {
+          "missing_codepoints": [],
+          "pass": true
+        }
+      }
+    },
+    "ocr_representative_sample": {
+      "result": "PASS_WITH_SOFT_WARNING",
+      "sample_count": 16,
+      "nonempty_text_blocks": 16,
+      "exact_id_reads": 14,
+      "note": "English OCR is not the exact-copy authority; binding JSON/PDF and manifest snapshots are authoritative."
+    },
+    "backs_and_mapping": {
+      "result": "PASS",
+      "back_assets": 7,
+      "mapped_cards": 121,
+      "sea_rock_cards": 42,
+      "back_counts": {
+        "BACK_CHARACTER": 20,
+        "BACK_POWER": 31,
+        "BACK_LOYALTY": 15,
+        "BACK_SEA_ROCK": 42,
+        "BACK_ISLAND": 6,
+        "BACK_LIGHTHOUSE": 4,
+        "BACK_SUPPORT": 3
+      },
+      "non_sea_rock_exact_180_symmetry": true
+    },
+    "print_pdf": {
+      "result": "PASS",
+      "pages": 48,
+      "a4_size_failures": [],
+      "xobject_failures": [],
+      "xobjects_per_page": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        1,
+        1,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        4,
+        4,
+        6,
+        6,
+        6,
+        6,
+        3,
+        3,
+        3,
+        3
+      ],
+      "font_table_has_embedded_dejavu": false
+    },
+    "rulebook_pdf": {
+      "result": "PASS",
+      "pages": 29,
+      "xobjects_per_page": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "font_dependency": "rasterized 300 dpi pages; no external font dependency",
+      "pdffonts_output_lines": 3
+    },
+    "duplex_page_mapping": {
+      "result": "PASS",
+      "mapped_cards": 121,
+      "mode": "long-edge horizontal mirror"
+    },
+    "physical_print_cut_duplex_light": {
+      "result": "PENDING_NOT_RUN"
+    },
+    "physical_blind_orientation_leak": {
+      "result": "PENDING_NOT_RUN"
+    }
+  },
+  "digital_result": "PASS_WITH_OCR_SOFT_WARNING",
+  "digital_failures": [],
+  "open_risks": [
+    "Fiziksel baskı/kesim/duplex/ışık testi yapılmadı.",
+    "Fiziksel kör yön-sızıntı testi yapılmadı.",
+    "OCR örnekleminde İngilizce model nedeniyle exact-ID okuması yumuşak uyarıdır; exact kaynak manifesti belirleyicidir."
+  ],
+  "canonical_storage": {
+    "root": "/Oyun-GitHub/v2.7/exports/",
+    "verification": "POST_SAVE_MATERIALIZATION_AND_LOCAL_BYTE_COMPARISON",
+    "result": "PASS_4_OF_4",
+    "artifacts": [
+      {
+        "file_name": "FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf",
+        "stored_version": 2,
+        "size_bytes": 152036797,
+        "sha256": "09d3bb00b198426f749698744bfda8c5d11ccaca5a29f71072f3e47162c6afa4"
+      },
+      {
+        "file_name": "FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf",
+        "stored_version": 2,
+        "size_bytes": 189584635,
+        "sha256": "a0b788b0e16c969b326869a5e21ee87e9772b1682735084e0ee475a2d3fe0ebb"
+      },
+      {
+        "file_name": "FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip",
+        "stored_version": 3,
+        "size_bytes": 163319630,
+        "sha256": "4d9f902fb73497ba48a43c0085a09d65b08aaf6b9defe69b8471fef10fe21ac8",
+        "embedded_binding_git_blobs_exact": true
+      },
+      {
+        "file_name": "FOULWAKE_v2.7_RULEBOOK_PRINT_CANDIDATE.pdf",
+        "stored_version": 0,
+        "size_bytes": 37533254,
+        "sha256": "00344a95563558f04c02465bf164538652c3bbab616a40e8083bf2c1862ad1fb"
+      }
+    ]
+  }
+}

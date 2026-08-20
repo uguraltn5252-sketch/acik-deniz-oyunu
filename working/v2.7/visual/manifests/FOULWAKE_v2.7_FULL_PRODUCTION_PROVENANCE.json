@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "project": "FOULWAKE",
+  "version": "v2.7",
+  "status": "FULL_VISUAL_DIGITAL_CANDIDATE / PHYSICAL_TESTS_PENDING / NOT_LOCKED",
+  "source_branch": "work/v2.7-visual",
+  "commit_context": {
+    "accepted_first_stage_head": "031c2a4d87ce7fc80d3c443723630e80f2388a70",
+    "accepted_first_stage_visual_delivery": "d3028779f371337a5abffa691067de8fc42bdec1",
+    "full_production_base_commit": "031c2a4d87ce7fc80d3c443723630e80f2388a70",
+    "full_production_delivery_commit": "PENDING_FULL_PRODUCTION_COMMIT"
+  },
+  "binding_sources": {
+    "card_texts_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+    "rulebook_story_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+    "locked_v2_6_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+  },
+  "editorial_dispositions": {
+    "GUC-22": "Kaptanın Çatlak Kupası",
+    "GUC-23": "Bayat Peksimet",
+    "GUC-24_exact_flavor": "Güverte kâtibi bunu yanlış elde duran doğru eşya diye kaydetti.",
+    "locked_v2_6_modified": false
+  },
+  "card_chain": {
+    "source_to_render_map": "working/v2.7/visual/manifests/FOULWAKE_v2.7_121_SOURCE_RENDER_PDF_MAP.json",
+    "front_count": 121,
+    "unique_card_ids": 121,
+    "unique_front_sha256": 121,
+    "pdf_page_slot_mappings": 121,
+    "back_asset_count": 7,
+    "duplex_mappings": 121,
+    "sea_rock_shared_back": {
+      "asset_id": "BACK_SEA_ROCK",
+      "textless": true,
+      "mapped_cards": 42
+    }
+  },
+  "canonical_storage": {
+    "root": "/Oyun-GitHub/v2.7/exports/",
+    "hash_source": "POST_SAVE_MATERIALIZED_BYTES_ONLY",
+    "comparison_method": "SHA256_SIZE_AND_BYTE_FOR_BYTE_CMP",
+    "result": "PASS_4_OF_4",
+    "artifacts": [
+      {
+        "file_name": "FOULWAKE_v2.7_FULL_DECK_PRINT_CANDIDATE.pdf",
+        "library_file_id": "libfile_9a53fef0e28c8191b62eb09c56cb8c1f",
+        "file_id": "file_00000000d7a081fdbfb19ac1f4daa3e6",
+        "stored_version": 2,
+        "size_bytes": 152036797,
+        "sha256": "09d3bb00b198426f749698744bfda8c5d11ccaca5a29f71072f3e47162c6afa4",
+        "pages": 48,
+        "page_size": "A4",
+        "matches_local_authored_bytes": true
+      },
+      {
+        "file_name": "FOULWAKE_v2.7_FULL_DECK_VISUAL_REVIEW.pdf",
+        "library_file_id": "libfile_805a250bf34481919db90a099011b450",
+        "file_id": "file_00000000b9bc81fda46bd93a94d69869",
+        "stored_version": 2,
+        "size_bytes": 189584635,
+        "sha256": "a0b788b0e16c969b326869a5e21ee87e9772b1682735084e0ee475a2d3fe0ebb",
+        "pages": 16,
+        "page_size": "A4 landscape",
+        "matches_local_authored_bytes": true
+      },
+      {
+        "file_name": "FOULWAKE_v2.7_FULL_DECK_SOURCE_BUNDLE.zip",
+        "library_file_id": "libfile_e453647b8ba88191922a7512dd2c1640",
+        "file_id": "file_00000000d92c81fbb1bef534fdd2762e",
+        "stored_version": 3,
+        "size_bytes": 163319630,
+        "sha256": "4d9f902fb73497ba48a43c0085a09d65b08aaf6b9defe69b8471fef10fe21ac8",
+        "zip_entries": 139,
+        "embedded_card_texts_git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "embedded_rulebook_story_git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+        "matches_local_authored_bytes": true
+      },
+      {
+        "file_name": "FOULWAKE_v2.7_RULEBOOK_PRINT_CANDIDATE.pdf",
+        "library_file_id": "libfile_e75c184fe0588191b9cb6ae37c8ed2d7",
+        "file_id": "file_0000000004208230bc59a423b9c6d678",
+        "stored_version": 0,
+        "size_bytes": 37533254,
+        "sha256": "00344a95563558f04c02465bf164538652c3bbab616a40e8083bf2c1862ad1fb",
+        "pages": 29,
+        "page_size": "A4",
+        "matches_local_authored_bytes": true
+      }
+    ]
+  },
+  "digital_preflight": {
+    "manifest": "working/v2.7/visual/manifests/FOULWAKE_v2.7_FULL_PRODUCTION_PREFLIGHT.json",
+    "result": "PASS_WITH_OCR_SOFT_WARNING",
+    "hard_failures": 0,
+    "ocr_sample": {
+      "cards": 16,
+      "nonempty_text_blocks": 16,
+      "exact_id_reads": 14,
+      "authority": "BINDING_SOURCE_SNAPSHOTS_NOT_ENGLISH_OCR"
+    }
+  },
+  "physical_tests": {
+    "print_cut_duplex_light": "PENDING_NOT_RUN",
+    "blind_orientation_leak": "PENDING_NOT_RUN"
+  },
+  "protected_fields_confirmed": {
+    "releases": "UNCHANGED",
+    "governance": "UNCHANGED",
+    "PROJECT_STATE.md": "UNCHANGED",
+    "AI_HANDOFF.md": "UNCHANGED",
+    "main": "UNCHANGED",
+    "v2.6": "UNCHANGED",
+    "locked_areas": "UNCHANGED"
+  }
+}
