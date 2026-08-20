@@ -8,7 +8,7 @@
     "accepted_first_stage_head": "031c2a4d87ce7fc80d3c443723630e80f2388a70",
     "accepted_first_stage_visual_delivery": "d3028779f371337a5abffa691067de8fc42bdec1",
     "full_production_base_commit": "031c2a4d87ce7fc80d3c443723630e80f2388a70",
-    "full_production_delivery_commit": "PENDING_FULL_PRODUCTION_COMMIT"
+    "full_production_delivery_commit": "494b8440bba722a9053f72b2fdeffc4286a61e17"
   },
   "binding_sources": {
     "card_texts_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",

@@ -5,7 +5,7 @@
   "status": "DRAFT / NOT LOCKED",
   "source_branch": "work/v2.7-visual",
   "full_production_base_commit": "031c2a4d87ce7fc80d3c443723630e80f2388a70",
-  "full_production_delivery_commit": "PENDING_FULL_PRODUCTION_COMMIT",
+  "full_production_delivery_commit": "494b8440bba722a9053f72b2fdeffc4286a61e17",
   "tests": {
     "binding_source_guard": {
       "result": "PASS",

@@ -4,7 +4,7 @@
 **Mekanik baseline:** v2.6 STABLE / LOCKED  
 **Çalışma dalı:** `work/v2.7-visual`  
 **Tam üretim taban commit:** `031c2a4d87ce7fc80d3c443723630e80f2388a70`  
-**Tam üretim teslim commit:** `PENDING_FULL_PRODUCTION_COMMIT`
+**Tam üretim teslim commit:** `494b8440bba722a9053f72b2fdeffc4286a61e17`
 
 GitHub deposunda büyük binary dosyaların kendileri yerine kanonik yol, Library
 kimliği, sürüm, byte boyutu ve SHA-256 kayıtları tutulur. Aşağıdaki dört güncel
