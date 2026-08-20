@@ -28,6 +28,7 @@ required_paths = [
     "governance/WORKSTREAM_PROTOCOL.md",
     "governance/RELEASE_GATE.md",
     "governance/ACTIVE_WORKSTREAMS.json",
+    "governance/VISIBLE_CHAT_ACKS_20260820.json",
     "governance/COORDINATION_LOG.md",
     "governance/DECISION_REGISTER.md",
     "governance/WORKSTREAM_ASSIGNMENTS.md",
@@ -58,6 +59,7 @@ if state_path.exists():
         policy = state.get("lock_policy", {})
         readiness = state.get("release_readiness", {})
         communication = state.get("communication_policy", {})
+        acknowledgements = state.get("visible_chat_acknowledgements", {})
         handoff = state.get("cross_workstream_handoff", {})
         blockers = state.get("open_blockers", [])
         resolved = state.get("resolved_blockers", [])
@@ -88,6 +90,23 @@ if state_path.exists():
             ERRORS.append("temporary-subagent exceptions require prior project-owner approval")
         if communication.get("temporary_subagent_output_counts_as_official_specialist_delivery") is not False:
             ERRORS.append("temporary-subagent output must not count as specialist delivery")
+        if acknowledgements.get("evidence_path") != "governance/VISIBLE_CHAT_ACKS_20260820.json":
+            ERRORS.append("visible-chat acknowledgement evidence path is incorrect")
+        if acknowledgements.get("scope") != "COMMUNICATION_TEST_ONLY":
+            ERRORS.append("visible-chat acknowledgements must remain communication-test only")
+        if acknowledgements.get("required") != 3 or acknowledgements.get("acknowledged") != 3:
+            ERRORS.append("all three named visible chats must have communication ACK")
+        if acknowledgements.get("all_named_chats_acknowledged") is not True:
+            ERRORS.append("3/3 named visible-chat acknowledgement must be recorded")
+        if acknowledgements.get("chief_editor_disposition") != "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY":
+            ERRORS.append("chief-editor ACK disposition must remain communication-only")
+        for field in (
+            "specialist_delivery_completed",
+            "specialist_revalidation_completed",
+            "work_branches_created",
+        ):
+            if acknowledgements.get(field) is not False:
+                ERRORS.append(f"{field} must remain false after an ACK-only test")
         if readiness.get("verdict") == "BLOCKER" and readiness.get("lock_allowed") is not False:
             ERRORS.append("BLOCKER readiness must prohibit locking")
         blocker_ids = [item.get("id") for item in blockers if item.get("status") == "OPEN"]
@@ -104,18 +123,36 @@ if state_path.exists():
         mechanic = next((item for item in blockers if item.get("id") == "MEC-001"), {})
         if mechanic.get("decision_status") != "APPROVED_FOR_V2.7_DRAFT":
             ERRORS.append("MEC-001 must preserve the approved Sea=Rock v2.7 draft decision")
+        communication_blocker = next((item for item in blockers if item.get("id") == "COM-001"), {})
+        communication_progress = communication_blocker.get("progress", {})
+        if communication_progress.get("visible_chat_acknowledgements") != "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY":
+            ERRORS.append("COM-001 must record the completed 3/3 communication ACK subgate")
+        if communication_progress.get("independent_specialist_revalidation") != "PENDING":
+            ERRORS.append("COM-001 must keep specialist revalidation pending")
+        if communication_progress.get("work_branches_created") is not False:
+            ERRORS.append("COM-001 must not claim specialist work branches exist")
+        if communication_progress.get("branch_bound_specialist_deliveries") != "PENDING":
+            ERRORS.append("COM-001 must keep branch-bound specialist delivery pending")
         for field in (
             "story_to_visual",
             "story_to_simulation",
             "visual_to_simulation",
-            "simulation_to_story",
-            "simulation_to_visual",
-            "final_directives",
         ):
-            if handoff.get(field) != "PENDING_VISIBLE_CHAT_ACK":
-                ERRORS.append(f"{field} must remain PENDING_VISIBLE_CHAT_ACK")
-        if handoff.get("simulation_to_chief_editor") != "PENDING_VISIBLE_CHAT_DELIVERY":
-            ERRORS.append("simulation_to_chief_editor must await visible-chat delivery")
+            if handoff.get(field) != "PENDING_SPECIALIST_DELIVERY":
+                ERRORS.append(f"{field} must remain PENDING_SPECIALIST_DELIVERY")
+        for field in ("simulation_to_story", "simulation_to_visual"):
+            if handoff.get(field) != "PENDING_QA_FINDINGS":
+                ERRORS.append(f"{field} must remain PENDING_QA_FINDINGS")
+        if handoff.get("simulation_to_chief_editor") != "PENDING_SPECIALIST_DELIVERY":
+            ERRORS.append("simulation_to_chief_editor must await specialist delivery")
+        if handoff.get("communication_acknowledgement") != "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY":
+            ERRORS.append("cross-workstream state must record the 3/3 communication ACK")
+        if handoff.get("final_directives") != "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY":
+            ERRORS.append("final directives must remain acknowledged for communication only")
+        if handoff.get("chief_editor_disposition") != "COMMUNICATION_ACKS_ACCEPTED_SPECIALIST_DELIVERIES_PENDING":
+            ERRORS.append("chief-editor handoff disposition is inconsistent with ACK-only status")
+        if handoff.get("source_commit") != acknowledgements.get("source_commit"):
+            ERRORS.append("ACK and handoff source commits must match")
         for role_name, chat_name, branch_name in (
             ("story_editor", "Foulwake Hikâye Editör", "work/v2.7-story"),
             ("visual_design", "FOULWAKE görsel tasarım", "work/v2.7-visual"),
@@ -127,6 +164,59 @@ if state_path.exists():
             if role.get("work_branch") != branch_name:
                 ERRORS.append(f"{role_name} work branch is incorrect")
 
+ack_path = ROOT / "governance/VISIBLE_CHAT_ACKS_20260820.json"
+if ack_path.exists():
+    try:
+        ack_state = json.loads(ack_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        ERRORS.append(f"VISIBLE_CHAT_ACKS_20260820.json is invalid: {exc}")
+    else:
+        if ack_state.get("record_type") != "VISIBLE_CHAT_COMMUNICATION_TEST":
+            ERRORS.append("visible-chat ACK evidence has the wrong record type")
+        if ack_state.get("status") != "ACCEPTED_3_OF_3_COMMUNICATION_ONLY":
+            ERRORS.append("visible-chat ACK evidence must record 3/3 communication-only acceptance")
+        if ack_state.get("chief_editor_disposition") != "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY":
+            ERRORS.append("visible-chat evidence has the wrong chief-editor disposition")
+        if not re.fullmatch(r"[0-9a-f]{40}", str(ack_state.get("source_commit", ""))):
+            ERRORS.append("visible-chat evidence requires an exact source commit")
+        for field in (
+            "specialist_delivery_completed",
+            "specialist_revalidation_completed",
+            "work_branches_created",
+            "temporary_subagents_used",
+        ):
+            if ack_state.get(field) is not False:
+                ERRORS.append(f"visible-chat evidence field {field} must remain false")
+        expected_records = {
+            "Foulwake Hikâye Editör": "work/v2.7-story",
+            "FOULWAKE görsel tasarım": "work/v2.7-visual",
+            "Simülasyon Testi": "work/v2.7-simulation",
+        }
+        records = ack_state.get("records", [])
+        if len(records) != 3:
+            ERRORS.append("visible-chat evidence must contain exactly three records")
+        records_by_chat = {item.get("visible_chat"): item for item in records}
+        if set(records_by_chat) != set(expected_records):
+            ERRORS.append("visible-chat evidence must contain the three named official chats")
+        for chat_name, branch_name in expected_records.items():
+            record = records_by_chat.get(chat_name, {})
+            if record.get("visible_chat_ack") is not True:
+                ERRORS.append(f"{chat_name} communication ACK is missing")
+            if record.get("evidence_type") != "VISIBLE_CHAT_WORKSTREAM":
+                ERRORS.append(f"{chat_name} evidence type is incorrect")
+            if record.get("assigned_work_branch") != branch_name:
+                ERRORS.append(f"{chat_name} assigned work branch is incorrect")
+            if record.get("scope") != "COMMUNICATION_TEST_ONLY":
+                ERRORS.append(f"{chat_name} ACK must remain communication-test only")
+            if record.get("changed_files") != []:
+                ERRORS.append(f"{chat_name} communication test must not change files")
+            if not record.get("protected_fields_confirmed"):
+                ERRORS.append(f"{chat_name} must confirm protected fields")
+            if record.get("temporary_subagent_used") is not False:
+                ERRORS.append(f"{chat_name} communication test must not use a temporary subagent")
+            if record.get("lock_requested") is not False:
+                ERRORS.append(f"{chat_name} communication test must not request a lock")
+
 project_state = ROOT / "PROJECT_STATE.md"
 if project_state.exists():
     text = project_state.read_text(encoding="utf-8")
@@ -135,6 +225,8 @@ if project_state.exists():
             ERRORS.append(f"PROJECT_STATE.md is missing marker: {marker}")
     if "COM-001" not in text or "geçici alt ajan" not in text:
         ERRORS.append("PROJECT_STATE.md must disclose pending visible-chat revalidation")
+    if "3/3" not in text or "COMMUNICATION_TEST_ONLY" not in text:
+        ERRORS.append("PROJECT_STATE.md must record the communication-only 3/3 ACK")
 
 decision_register = ROOT / "governance/DECISION_REGISTER.md"
 if decision_register.exists():
@@ -169,8 +261,21 @@ if coordination_log.exists():
     text = coordination_log.read_text(encoding="utf-8")
     if "KAYIT DÜZELTMESİ / ÖNCEKİ ATIFLARI GEÇERSİZ KILAR" not in text:
         ERRORS.append("coordination log must supersede the incorrect workstream attribution")
-    if "PENDING_VISIBLE_CHAT_ACK" not in text or "COM-001" not in text:
-        ERRORS.append("coordination log must record pending visible-chat acknowledgement")
+    if "3/3 GÖRÜNÜR SOHBET ACK / İLETİŞİM TESTİ" not in text or "COM-001" not in text:
+        ERRORS.append("coordination log must record the 3/3 communication ACK and open COM-001")
+
+assignments = ROOT / "governance/WORKSTREAM_ASSIGNMENTS.md"
+if assignments.exists():
+    text = assignments.read_text(encoding="utf-8")
+    if text.count("ACKNOWLEDGED_COMMUNICATION_TEST_ONLY") < 3:
+        ERRORS.append("workstream assignments must record all three communication-only ACKs")
+
+ai_handoff = ROOT / "AI_HANDOFF.md"
+if ai_handoff.exists():
+    text = ai_handoff.read_text(encoding="utf-8")
+    for marker in ("VISIBLE_CHAT_ACKS_20260820.json", "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY", "3/3"):
+        if marker not in text:
+            ERRORS.append(f"AI_HANDOFF.md is missing ACK marker: {marker}")
 
 story_framework = ROOT / "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
 if story_framework.exists():

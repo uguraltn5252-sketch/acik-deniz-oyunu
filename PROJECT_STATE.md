@@ -12,9 +12,11 @@
 Baş editörlük yönetişimi `governance/` altında yürürlüktedir. Önceki kayıtta
 Hikâye, Görsel Tasarım ve Simülasyon Testi hatlarına mal edilen çapraz denetim
 gerçekte Baş Editör sohbetindeki geçici alt ajanlarla yapılmıştır. Bu çıktı
-uzman sohbet teslimi sayılmaz. Kullanıcının oluşturduğu üç görünür sohbetin
-bağımsız yeniden doğrulaması ve branch-bound handoffları `COM-001` altında
-beklenmektedir.
+uzman sohbet teslimi sayılmaz. Kullanıcının oluşturduğu üç görünür sohbet,
+`52f6c3b3c196a5af9c48d4694cd3091eb3da8129` kaynak commiti için 3/3
+`VISIBLE_CHAT_ACK: YES` iletişim cevabı vermiştir. Bu cevaplar
+`COMMUNICATION_TEST_ONLY` kapsamındadır; bağımsız uzman yeniden doğrulaması ve
+branch-bound gerçek teslimler `COM-001` altında beklenmektedir.
 
 **Güncel release hükmü:** **BLOCKER — v2.7 kilitlenemez.**
 
@@ -28,7 +30,8 @@ dispozisyonu `governance/COORDINATION_LOG.md` içindedir. Özet:
 - `QA-002`: Fiziksel prova ve kör insan sosyal deneyim testi yok.
 - `GOV-001`: `main` ile aktif dal çelişkili ve ayrışmış; release PR/status kapısı yok.
 - `COM-001`: Önceki geçici alt ajan incelemeleri görünür uzman sohbet teslimi
-  gibi kaydedilmişti; üç görünür sohbetten doğrulama ve handoff henüz yok.
+  gibi kaydedilmişti. 3/3 iletişim ACK tamamlandı; bağımsız uzman
+  revalidasyonları, çalışma dalları ve gerçek branch-bound teslimler henüz yok.
 
 `CAN-001` çözüldü: `CAN-08/09` yalnız v2.7 DRAFT koruma ilkesi olarak
 `TASLAK` sınıfına alındı; release kanonu iddiası kaldırıldı. İçerik düzeltmesi
@@ -47,6 +50,11 @@ Resmî uzman çalışması yalnız `Foulwake Hikâye Editör`, `FOULWAKE görsel
 tasarım` veya `Simülasyon Testi` görünür sohbetinde yapılıp zorunlu handoffla
 kaydedildiğinde o hatta mal edilir. Geçici alt ajan kullanımı yasaktır; önceden
 izinli istisna dahi uzman sohbet onayı sayılmaz.
+
+Üç görünür sohbetin iletişim ACK kanıtı
+`governance/VISIBLE_CHAT_ACKS_20260820.json` içindedir. Bu kayıt yalnız doğru
+sohbet kimliğini ve yetki sınırlarının okunduğunu kanıtlar; uzman işi veya PASS
+kanıtı değildir.
 
 ## Locked baseline
 

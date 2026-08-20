@@ -2,21 +2,22 @@
 
 **Durum:** ACTIVE / RELEASE BLOCKED
 
-**Kaynak commit:** `9758b848f0395525b395e3f2ccf9e9f7408fed99`
+**Kaynak commit:** `52f6c3b3c196a5af9c48d4694cd3091eb3da8129`
 
 **Baseline:** v2.6 STABLE / LOCKED
 
 Önceki çapraz denetim geçici alt ajanlarla yapılmıştır ve resmî uzman teslimi
-değildir. Aşağıdaki görevler ilgili görünür sohbet kendi geçmişinde okuyup
-zorunlu handoffu verene kadar `PENDING_VISIBLE_CHAT_ACK` durumundadır.
+değildir. Üç görünür sohbet 3/3 iletişim ACK vermiştir; bu cevaplar yalnız
+`COMMUNICATION_TEST_ONLY` kapsamındadır. Aşağıdaki görevlerin bağımsız uzman
+revalidasyonu ve branch-bound gerçek teslimleri henüz başlamamıştır.
 
 ## Görünür sohbet ve dal haritası
 
 | Hat | Resmî görünür sohbet | Çalışma dalı | Güncel kabul |
 |---|---|---|---|
-| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | `PENDING_VISIBLE_CHAT_ACK` |
-| Görsel | `FOULWAKE görsel tasarım` | `work/v2.7-visual` | `PENDING_VISIBLE_CHAT_ACK` |
-| Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | `PENDING_VISIBLE_CHAT_ACK` |
+| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` |
+| Görsel | `FOULWAKE görsel tasarım` | `work/v2.7-visual` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` |
+| Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` |
 
 ## Sorumluluk haritası
 
@@ -29,7 +30,7 @@ zorunlu handoffu verene kadar `PENDING_VISIBLE_CHAT_ACK` durumundadır.
 | `QA-001` | Simülasyon Testi | Hikâye | Yeniden üretilebilir narrative/mechanics karşılaştırması | Sürümlü baseline, script, komut, ham çıktı ve hashler |
 | `QA-002` | Simülasyon Testi | Görsel | Fiziksel ve kör insan test paketi | Print/cut/duplex/ışık, arka yüz sızıntısı ve kör masa testi kayıtları |
 | `GOV-001` | Baş Editör | Bütün hatlar | Dal uzlaştırması, release PR ve zorunlu check | Tutarlı state, intentional merge planı ve korunan release akışı |
-| `COM-001` | Baş Editör | Bütün görünür uzman sohbetleri | Yanlış atıfların kaldırılması ve görünür sohbet handoffları | Üç görünür sohbetten branch-bound `VISIBLE_CHAT_ACK: YES` teslimi |
+| `COM-001` | Baş Editör | Bütün görünür uzman sohbetleri | Yanlış atıfların kaldırılması; 3/3 iletişim ACK tamamlandı | Her uzman sohbetinde bağımsız revalidasyon, oluşturulmuş çalışma dalı ve branch-bound gerçek teslim |
 
 ## Bağlayıcı teslim sırası
 
@@ -53,3 +54,7 @@ Her teslim `WORKSTREAM_PROTOCOL.md` içindeki zorunlu handoff biçimiyle Baş Ed
 Geçici alt ajan raporu, GitHub iş emri veya başka bir sohbetin özeti bu teslimin
 yerine geçmez ve uzman hat adına `ACKNOWLEDGED`, `DELIVERED` veya `PASS`
 durumu oluşturmaz.
+
+`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY`, uzman teslimi değildir. Üç çalışma dalı
+henüz oluşturulmamıştır ve ilk yetkili gerçek teslimden önce iş tamamlanmış
+sayılamaz.

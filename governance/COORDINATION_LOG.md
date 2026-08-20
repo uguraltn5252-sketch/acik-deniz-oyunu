@@ -1,5 +1,31 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 20 Ağustos 2026 — 3/3 GÖRÜNÜR SOHBET ACK / İLETİŞİM TESTİ
+
+**Kaynak:** `v2.7-design@52f6c3b3c196a5af9c48d4694cd3091eb3da8129`
+
+Proje sahibi salt-okunur iletişim testini üç resmî görünür sohbete ayrı ayrı
+iletti. Her sohbet kendi görünür geçmişinde zorunlu handoff alanlarıyla cevap
+verdi; Baş Editör yanıtları kapsam ve yetki sınırı açısından denetledi.
+
+| Hat | Görünür sohbet | Atanmış çalışma dalı | Baş Editör dispozisyonu |
+|---|---|---|---|
+| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` |
+| Görsel | `FOULWAKE görsel tasarım` | `work/v2.7-visual` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` |
+| Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` |
+
+Üç yanıtta da `VISIBLE_CHAT_ACK: YES`, doğru kaynak commit, `CHANGED_FILES:
+NONE` ve `LOCK_REQUESTED: NO` vardır. Geçici ajan veya test ajanı
+oluşturulmamış; dosya, commit/push, PR/issue, üretim, simülasyon ya da release
+işlemi yapılmamıştır. Uzman dalları henüz oluşturulmamıştır.
+
+**Sınır:** Bu 3/3 sonuç yalnız iletişim ve yetki alanı ACK'sidir. Hikâye
+revalidasyonu, görsel candidate, Simülasyon testi, uzmanlar arası teslim, PASS,
+blocker kapanışı veya release kanıtı değildir. `COM-001`in iletişim ACK alt
+adımı tamamlandı; bağımsız uzman revalidasyonları ve branch-bound gerçek
+teslimler tamamlanana kadar blocker açık kalır. Tam kayıt
+`governance/VISIBLE_CHAT_ACKS_20260820.json` içindedir.
+
 ## 20 Ağustos 2026 — KAYIT DÜZELTMESİ / ÖNCEKİ ATIFLARI GEÇERSİZ KILAR
 
 **Düzeltme kaynağı:** Proje sahibinin görünür sohbet zorunluluğu ve geçici alt

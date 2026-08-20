@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-20T14:12:00+03:00",
+  "updated_at": "2026-08-20T14:57:19+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -23,7 +23,7 @@
     "lock_allowed": false,
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
-    "basis": "2026-08-20 chief-editor repository audit; named visible-chat revalidation and acknowledgement pending"
+    "basis": "2026-08-20 chief-editor repository audit; 3/3 communication ACK complete; specialist revalidation and branch-bound delivery pending"
   },
   "roles": {
     "chief_editor": {
@@ -108,17 +108,30 @@
     "specialist_branches_merge_target": "v2.7-design",
     "canonical_and_release_integration_role": "chief_editor"
   },
+  "visible_chat_acknowledgements": {
+    "evidence_path": "governance/VISIBLE_CHAT_ACKS_20260820.json",
+    "source_commit": "52f6c3b3c196a5af9c48d4694cd3091eb3da8129",
+    "scope": "COMMUNICATION_TEST_ONLY",
+    "required": 3,
+    "acknowledged": 3,
+    "all_named_chats_acknowledged": true,
+    "chief_editor_disposition": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY",
+    "specialist_delivery_completed": false,
+    "specialist_revalidation_completed": false,
+    "work_branches_created": false
+  },
   "cross_workstream_handoff": {
-    "source_commit": "9758b848f0395525b395e3f2ccf9e9f7408fed99",
+    "source_commit": "52f6c3b3c196a5af9c48d4694cd3091eb3da8129",
     "evidence_classification": "PREVIOUS_TEMPORARY_SUBAGENT_AUDIT_RECLASSIFIED_AS_NON_OFFICIAL",
-    "story_to_visual": "PENDING_VISIBLE_CHAT_ACK",
-    "story_to_simulation": "PENDING_VISIBLE_CHAT_ACK",
-    "visual_to_simulation": "PENDING_VISIBLE_CHAT_ACK",
-    "simulation_to_story": "PENDING_VISIBLE_CHAT_ACK",
-    "simulation_to_visual": "PENDING_VISIBLE_CHAT_ACK",
-    "simulation_to_chief_editor": "PENDING_VISIBLE_CHAT_DELIVERY",
-    "chief_editor_disposition": "PROVISIONAL_FINDINGS_RECORDED_NOT_SPECIALIST_APPROVAL",
-    "final_directives": "PENDING_VISIBLE_CHAT_ACK"
+    "communication_acknowledgement": "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY",
+    "story_to_visual": "PENDING_SPECIALIST_DELIVERY",
+    "story_to_simulation": "PENDING_SPECIALIST_DELIVERY",
+    "visual_to_simulation": "PENDING_SPECIALIST_DELIVERY",
+    "simulation_to_story": "PENDING_QA_FINDINGS",
+    "simulation_to_visual": "PENDING_QA_FINDINGS",
+    "simulation_to_chief_editor": "PENDING_SPECIALIST_DELIVERY",
+    "chief_editor_disposition": "COMMUNICATION_ACKS_ACCEPTED_SPECIALIST_DELIVERIES_PENDING",
+    "final_directives": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY"
   },
   "open_blockers": [
     {
@@ -202,13 +215,22 @@
       "id": "COM-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Onceki gecici alt-ajan incelemeleri gorunur Hikaye, Gorsel ve Simulasyon sohbetlerinin resmi teslimi gibi kaydedilmisti; resmi sohbet teyitleri ve gorunur handofflar henuz yok",
+      "summary": "Onceki gecici alt-ajan incelemeleri gorunur uzman teslimi gibi kaydedilmisti; 3/3 iletisim ACK tamamlandi ancak bagimsiz uzman revalidasyonu ve branch-bound gercek teslimler henuz yok",
       "owner": "chief_editor",
+      "progress": {
+        "visible_chat_acknowledgements": "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY",
+        "independent_specialist_revalidation": "PENDING",
+        "work_branches_created": false,
+        "branch_bound_specialist_deliveries": "PENDING"
+      },
+      "completed": [
+        "named visible-chat communication acknowledgement for all three workstreams",
+        "chief-editor scope review of the three communication-test replies"
+      ],
       "requires": [
-        "named visible-chat acknowledgement for each workstream",
         "independent revalidation in each specialist chat",
-        "branch-bound handoffs using the required template",
-        "chief-editor review without temporary-subagent attribution"
+        "creation of each assigned specialist work branch at first authorized work",
+        "branch-bound specialist handoffs using the required template"
       ]
     }
   ],

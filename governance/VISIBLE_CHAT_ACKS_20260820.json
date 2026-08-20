@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_COMMUNICATION_TEST",
+  "recorded_at": "2026-08-20T14:57:19+03:00",
+  "source_branch": "v2.7-design",
+  "source_commit": "52f6c3b3c196a5af9c48d4694cd3091eb3da8129",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "status": "ACCEPTED_3_OF_3_COMMUNICATION_ONLY",
+  "chief_editor_disposition": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY",
+  "specialist_delivery_completed": false,
+  "specialist_revalidation_completed": false,
+  "work_branches_created": false,
+  "temporary_subagents_used": false,
+  "records": [
+    {
+      "workstream": "Hikaye",
+      "visible_chat": "Foulwake Hikâye Editör",
+      "visible_chat_ack": true,
+      "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+      "assigned_work_branch": "work/v2.7-story",
+      "scope": "COMMUNICATION_TEST_ONLY",
+      "changed_files": [],
+      "protected_fields_confirmed": [
+        "card ids and counts",
+        "mechanical effects",
+        "timing",
+        "deck behavior",
+        "rule flow",
+        "visual production",
+        "QA",
+        "governance",
+        "releases"
+      ],
+      "tests_run": "GOVERNANCE_FILES_READ_ONLY",
+      "result": "ACKNOWLEDGED",
+      "open_risks": "NONE_FOR_COMMUNICATION_TEST",
+      "next_recipient": "Bas Editor",
+      "temporary_subagent_used": false,
+      "lock_requested": false
+    },
+    {
+      "workstream": "Gorsel Tasarim",
+      "visible_chat": "FOULWAKE görsel tasarım",
+      "visible_chat_ack": true,
+      "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+      "assigned_work_branch": "work/v2.7-visual",
+      "scope": "COMMUNICATION_TEST_ONLY",
+      "changed_files": [],
+      "protected_fields_confirmed": [
+        "approved copy",
+        "mechanics",
+        "card ids and counts",
+        "effects",
+        "timing",
+        "deck behavior",
+        "rule flow",
+        "lore",
+        "governance",
+        "releases",
+        "main",
+        "lock"
+      ],
+      "tests_run": "GOVERNANCE_FILES_READ_ONLY",
+      "result": "ACKNOWLEDGED",
+      "open_risks": "RELEASE_BLOCKERS_NOT_EVALUATED_IN_COMMUNICATION_TEST",
+      "next_recipient": "Bas Editor",
+      "temporary_subagent_used": false,
+      "lock_requested": false
+    },
+    {
+      "workstream": "Simulasyon Testi",
+      "visible_chat": "Simülasyon Testi",
+      "visible_chat_ack": true,
+      "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+      "assigned_work_branch": "work/v2.7-simulation",
+      "scope": "COMMUNICATION_TEST_ONLY",
+      "changed_files": [],
+      "protected_fields_confirmed": [
+        "game content",
+        "mechanics",
+        "story",
+        "visual production",
+        "governance",
+        "releases",
+        "main",
+        "lock"
+      ],
+      "tests_run": "NOT_RUN_COMMUNICATION_TEST_ONLY",
+      "result": "ACKNOWLEDGED",
+      "open_risks": "NONE_FOR_COMMUNICATION_TEST",
+      "next_recipient": "Bas Editor",
+      "temporary_subagent_used": false,
+      "lock_requested": false
+    }
+  ],
+  "limitations": [
+    "No specialist work was performed.",
+    "No work branch was created.",
+    "No file, commit, push, pull request or issue was produced by a specialist chat.",
+    "No simulation, QA verdict, PASS, blocker closure, release or lock was produced.",
+    "COM-001 remains open pending independent specialist revalidation and branch-bound delivery."
+  ]
+}

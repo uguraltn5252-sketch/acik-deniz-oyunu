@@ -39,6 +39,22 @@ Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
   `work/v2.7-simulation`; entegrasyon hedefi `v2.7-design`dır. Kanonik durum,
   `main`, release ve kilit yalnız Baş Editör kapsamındadır.
 
+### Güncel görünür sohbet ACK durumu
+
+20 Ağustos 2026 tarihinde proje sahibi üç resmî görünür sohbete ayrı ayrı
+salt-okunur iletişim testi iletti. `Foulwake Hikâye Editör`, `FOULWAKE görsel
+tasarım` ve `Simülasyon Testi`, kaynak
+`v2.7-design@52f6c3b3c196a5af9c48d4694cd3091eb3da8129` için
+`VISIBLE_CHAT_ACK: YES` verdi. Baş Editör bu üç cevabı yalnız
+`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` olarak kabul etti.
+
+Bu 3/3 ACK; uzman yeniden doğrulaması, çalışma dalı oluşturulması, dosya
+değişikliği, commit, test, PASS, blocker kapanışı veya release teslimi değildir.
+Üç uzman dalı ilk yetkili gerçek teslim sırasında oluşturulacaktır. Bağlayıcı
+kanıt `governance/VISIBLE_CHAT_ACKS_20260820.json` içindedir ve `COM-001`
+gerçek uzman revalidasyonları ile branch-bound teslimler tamamlanana kadar açık
+kalır.
+
 ## Aktif v2.7 kararları
 
 - **Sea=Rock:** Açık Deniz ve Kayalık v2.7 DRAFT içinde aynı metinsiz binary
