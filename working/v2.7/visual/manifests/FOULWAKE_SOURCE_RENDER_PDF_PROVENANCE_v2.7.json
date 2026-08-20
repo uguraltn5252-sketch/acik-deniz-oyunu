@@ -4,7 +4,11 @@
   "version": "v2.7",
   "status": "REPRESENTATIVE_PROVENANCE_NOT_FULL_CANDIDATE",
   "source_branch": "work/v2.7-visual",
-  "source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+  "git_context": {
+    "entry_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+    "rework_base_commit": "66e54d08d21370c00476769094db62d4e428cde6",
+    "visual_delivery_commit": "PENDING_CANONICAL_REWORK_COMMIT"
+  },
   "sources": {
     "story_framework": {
       "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
@@ -45,9 +49,58 @@
       "size_bytes": 3124225
     }
   },
+  "canonical_storage_verification": {
+    "root": "/Oyun-GitHub/v2.7/exports/",
+    "method": "POST_SAVE_MATERIALIZATION_AND_LOCAL_BYTE_COMPARISON",
+    "verified_files": {
+      "kar01": {
+        "path": "/Oyun-GitHub/v2.7/exports/KAR-01_Uzakgoren_front.png",
+        "stored_version": 1,
+        "sha256": "2798de04b8d7660ac98a842944c9b8b67acd377505de16ca9f7e7cbe40b3a14b",
+        "size_bytes": 1642513,
+        "matches_local_authored_bytes": true
+      },
+      "guc24": {
+        "path": "/Oyun-GitHub/v2.7/exports/GUC-24_Islak_Corap_front.png",
+        "stored_version": 1,
+        "sha256": "308771d8aeb5e8b3bf452db036f3983e0e6990f6c441e52bf61733945fb421df",
+        "size_bytes": 1019620,
+        "matches_local_authored_bytes": true
+      },
+      "harad09": {
+        "path": "/Oyun-GitHub/v2.7/exports/HAR-AD-09_Deryanin_Gobek_Deligi_front.png",
+        "stored_version": 1,
+        "sha256": "cf3b0d7847ee115eb353c73b575a62524d2dce9c629a4745290fce675af8420c",
+        "size_bytes": 1030232,
+        "matches_local_authored_bytes": true
+      },
+      "back": {
+        "path": "/Oyun-GitHub/v2.7/exports/BACK_SEA_ROCK.png",
+        "stored_version": 0,
+        "sha256": "c3cf3399c294874bb12194f9bdf369a00110b7c78d2a234590c16be864e74c45",
+        "size_bytes": 2035243,
+        "matches_local_authored_bytes": true
+      },
+      "print_pdf": {
+        "path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_APPROVED_ART_DIRECTION_PRINT_SET.pdf",
+        "stored_version": 1,
+        "sha256": "b8096f29255a7a04b4691aa0a902c3b64ea0c6f5c25f6b284ef7d58b9efa0399",
+        "size_bytes": 7749970,
+        "matches_local_authored_bytes": true
+      },
+      "rule_proof": {
+        "path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_RULEBOOK_REPRESENTATIVE_PROOF.pdf",
+        "stored_version": 0,
+        "sha256": "3100f58971c992be60473213795cc99e9a71320002d35f74803a182b8fdc5c02",
+        "size_bytes": 2408667,
+        "matches_local_authored_bytes": true
+      }
+    }
+  },
   "renders": {
     "KAR-01": {
       "file": "KAR-01_Uzakgoren_front.png",
+      "canonical_path": "/Oyun-GitHub/v2.7/exports/KAR-01_Uzakgoren_front.png",
       "sha256": "2798de04b8d7660ac98a842944c9b8b67acd377505de16ca9f7e7cbe40b3a14b",
       "size_bytes": 1642513,
       "pixels": [
@@ -56,10 +109,12 @@
       ],
       "dpi": 300,
       "copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
-      "pdf_page": 1
+      "pdf_page": 1,
+      "hash_source": "POST_SAVE_MATERIALIZED_BYTES"
     },
     "GUC-24": {
       "file": "GUC-24_Islak_Corap_front.png",
+      "canonical_path": "/Oyun-GitHub/v2.7/exports/GUC-24_Islak_Corap_front.png",
       "sha256": "308771d8aeb5e8b3bf452db036f3983e0e6990f6c441e52bf61733945fb421df",
       "size_bytes": 1019620,
       "pixels": [
@@ -69,10 +124,13 @@
       "dpi": 300,
       "copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
       "pdf_page": 1,
-      "stale_flavor_corrected": true
+      "exact_flavor": "Güverte kâtibi bunu yanlış elde duran doğru eşya diye kaydetti.",
+      "stale_flavor_corrected": true,
+      "hash_source": "POST_SAVE_MATERIALIZED_BYTES"
     },
     "HAR-AD-09": {
       "file": "HAR-AD-09_Deryanin_Gobek_Deligi_front.png",
+      "canonical_path": "/Oyun-GitHub/v2.7/exports/HAR-AD-09_Deryanin_Gobek_Deligi_front.png",
       "sha256": "cf3b0d7847ee115eb353c73b575a62524d2dce9c629a4745290fce675af8420c",
       "size_bytes": 1030232,
       "pixels": [
@@ -81,10 +139,12 @@
       ],
       "dpi": 300,
       "copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
-      "pdf_page": 1
+      "pdf_page": 1,
+      "hash_source": "POST_SAVE_MATERIALIZED_BYTES"
     },
     "BACK_SEA_ROCK": {
       "file": "BACK_SEA_ROCK.png",
+      "canonical_path": "/Oyun-GitHub/v2.7/exports/BACK_SEA_ROCK.png",
       "sha256": "c3cf3399c294874bb12194f9bdf369a00110b7c78d2a234590c16be864e74c45",
       "size_bytes": 2035243,
       "pixels": [
@@ -94,22 +154,27 @@
       "dpi": 300,
       "pdf_page": 2,
       "pdf_reuse_count": 4,
-      "same_pdf_xobject": true
+      "same_pdf_xobject": true,
+      "hash_source": "POST_SAVE_MATERIALIZED_BYTES"
     }
   },
   "pdfs": {
     "representative_card_print_set": {
       "file": "FOULWAKE_v2.7_APPROVED_ART_DIRECTION_PRINT_SET.pdf",
-      "sha256": "271dca14330e95d76501232d4a14bab9e692aed01cb4dd9a43a267d625d8dba6",
-      "size_bytes": 7749855,
+      "canonical_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_APPROVED_ART_DIRECTION_PRINT_SET.pdf",
+      "sha256": "b8096f29255a7a04b4691aa0a902c3b64ea0c6f5c25f6b284ef7d58b9efa0399",
+      "size_bytes": 7749970,
       "pages": 2,
       "page_size": "A4",
+      "visible_copy_sources_printed": true,
+      "hash_source": "POST_SAVE_MATERIALIZED_BYTES",
       "status": "CURRENT_REPRESENTATIVE_PROOF"
     },
     "representative_rulebook_proof": {
       "file": "FOULWAKE_v2.7_RULEBOOK_REPRESENTATIVE_PROOF.pdf",
-      "sha256": "ec3946ca413b862721320e35c2c1561c6f1d068b43132a56322173e49c026bf7",
-      "size_bytes": 2409487,
+      "canonical_path": "/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_RULEBOOK_REPRESENTATIVE_PROOF.pdf",
+      "sha256": "3100f58971c992be60473213795cc99e9a71320002d35f74803a182b8fdc5c02",
+      "size_bytes": 2408667,
       "pages": 2,
       "page_size": "A4",
       "source_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
@@ -122,6 +187,7 @@
           "3.6"
         ]
       },
+      "hash_source": "POST_SAVE_MATERIALIZED_BYTES",
       "status": "CURRENT_REPRESENTATIVE_PROOF"
     },
     "existing_29_page_rulebook_visual_draft": {
@@ -138,14 +204,24 @@
     "family_counts": "PASS",
     "back_mapping_sea_rock": "PASS_42_TO_ONE_ASSET_ID",
     "representative_text_source_binding": "PASS",
+    "GUC_22_23_editorial_disposition": "PASS_GUC_22_CRACKED_CUP_GUC_23_STALE_BISCUIT",
+    "GUC_24_exact_flavor": "PASS",
+    "print_set_visible_copy_source_labels": "PASS",
+    "canonical_paths_present": "PASS_6_OF_6",
+    "post_save_materialization": "PASS_6_OF_6",
+    "canonical_hash_and_byte_recalculation": "PASS_6_OF_6",
+    "canonical_to_local_byte_match": "PASS_6_OF_6",
     "representative_overflow": "PASS",
     "representative_missing_glyph": "PASS_VISUAL_AND_OCR_SPOT_CHECK",
     "representative_effective_resolution": "PASS_300_DPI",
     "physical_print_cut_duplex_light": "NOT_RUN",
     "blind_rotation_and_sea_rock_leak": "NOT_RUN"
   },
-  "open_source_conflicts": [
-    "GUC-22/GUC-23 naming line in releases/v2.6/CARD_BASELINE.md requires Chief Editor disposition"
-  ],
+  "editorial_dispositions": {
+    "GUC-22": "Kaptanın Çatlak Kupası",
+    "GUC-23": "Bayat Peksimet",
+    "locked_v2_6_documents_modified": false
+  },
+  "open_source_conflicts": [],
   "candidate_status": "NOT_A_FULL_121_CARD_OR_29_PAGE_RULEBOOK_CANDIDATE"
 }

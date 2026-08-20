@@ -7,6 +7,7 @@
   "visible_chat": "FOULWAKE görsel tasarım",
   "source_branch": "work/v2.7-visual",
   "inventory_base_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+  "rework_base_commit": "66e54d08d21370c00476769094db62d4e428cde6",
   "baseline_release": "v2.6 STABLE / LOCKED",
   "source_blobs": {
     "story_framework": "962222d83d669763c4ac8e2765f024b9fade180c",
@@ -56,6 +57,12 @@
     "BACK_SEA_ROCK": "same textless binary asset for all Open Sea and Rock cards",
     "rotation_safe_release_evidence": "PENDING_BLIND_PHYSICAL_TEST",
     "locked_v2_6_mutated": false
+  },
+  "editorial_dispositions": {
+    "GUC-22": "Kaptanın Çatlak Kupası",
+    "GUC-23": "Bayat Peksimet",
+    "status": "RESOLVED_BY_CHIEF_EDITOR_REWORK_ORDER",
+    "locked_v2_6_documents_modified": false
   },
   "candidate_status": "NOT_A_FULL_121_CARD_CANDIDATE",
   "cards": [
@@ -1378,9 +1385,13 @@
       "back_asset_id": "BACK_POWER",
       "front_status": "NOT_RENDERED_CURRENT_BRANCH",
       "back_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "source_conflict": {
-        "status": "CHIEF_EDITOR_DISPOSITION_REQUIRED_BEFORE_FULL_PRODUCTION",
-        "detail": "releases/v2.6/CARD_BASELINE.md names Bayat Peksimet as GUC-22; locked card PDF and v2.7 card source use GUC-22 Kaptanın Çatlak Kupası and GUC-23 Bayat Peksimet."
+      "editorial_disposition": {
+        "status": "RESOLVED_BY_CHIEF_EDITOR_REWORK_ORDER",
+        "mapping": {
+          "GUC-22": "Kaptanın Çatlak Kupası",
+          "GUC-23": "Bayat Peksimet"
+        },
+        "locked_v2_6_documents_modified": false
       }
     },
     {
@@ -1412,9 +1423,13 @@
       "back_asset_id": "BACK_POWER",
       "front_status": "NOT_RENDERED_CURRENT_BRANCH",
       "back_status": "NOT_RENDERED_CURRENT_BRANCH",
-      "source_conflict": {
-        "status": "CHIEF_EDITOR_DISPOSITION_REQUIRED_BEFORE_FULL_PRODUCTION",
-        "detail": "releases/v2.6/CARD_BASELINE.md names Bayat Peksimet as GUC-22; locked card PDF and v2.7 card source use GUC-22 Kaptanın Çatlak Kupası and GUC-23 Bayat Peksimet."
+      "editorial_disposition": {
+        "status": "RESOLVED_BY_CHIEF_EDITOR_REWORK_ORDER",
+        "mapping": {
+          "GUC-22": "Kaptanın Çatlak Kupası",
+          "GUC-23": "Bayat Peksimet"
+        },
+        "locked_v2_6_documents_modified": false
       }
     },
     {

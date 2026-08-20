@@ -7,6 +7,11 @@
 
 GitHub deposunda büyük binary dosyaların kendileri yerine kanonik yol, boyut ve SHA-256 kayıtları tutulur.
 
+Bu bölümdeki güncel temsilî çıktı hash ve byte değerleri, dosyalar kanonik
+`/Oyun-GitHub/v2.7/exports/` konumuna kaydedildikten sonra geri indirilen
+baytlardan hesaplanmıştır. Yerel authored dosya ile geri indirilen dosya 6/6
+bayt-bayt eşleşmiştir.
+
 ## Candidate sınırı
 
 Bu dosyadaki mevcut kayıtlar sanat yönü örneklerini ve 29 sayfalık görsel rulebook
@@ -28,15 +33,16 @@ dosyaya exact commit kimliğiyle eklenir.
   Kanıt durumu: `NOT_CURRENT_V2_7_STORY_INTEGRATION_EVIDENCE`; v2.6 iç sayfalarını yeniden stilleyen bu dosya güncel v2.7 anlatı yerleşiminin source -> render -> PDF kanıtı değildir.
 
 - Kural kitabı temsilî doğrulama provası: `/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_RULEBOOK_REPRESENTATIVE_PROOF.pdf`  
-  SHA-256: `ec3946ca413b862721320e35c2c1561c6f1d068b43132a56322173e49c026bf7`  
-  Boyut: `2409487` byte  
+  SHA-256: `3100f58971c992be60473213795cc99e9a71320002d35f74803a182b8fdc5c02`  
+  Boyut: `2408667` byte  
   Sayfa: `2` A4  
   Kaynak: `FOULWAKE_RULEBOOK_STORY_v2.7.md` blob `f1e0eb75434540a85e8b21484acd99ca0abc66cf`; bölümler `3.3`, `3.4`, `3.6`
 
 - Onaylı sanat yönü baskı seti: `/Oyun-GitHub/v2.7/exports/FOULWAKE_v2.7_APPROVED_ART_DIRECTION_PRINT_SET.pdf`  
-  SHA-256: `271dca14330e95d76501232d4a14bab9e692aed01cb4dd9a43a267d625d8dba6`  
-  Boyut: `7749855` byte  
-  Sayfa: `2` A4
+  SHA-256: `b8096f29255a7a04b4691aa0a902c3b64ea0c6f5c25f6b284ef7d58b9efa0399`  
+  Boyut: `7749970` byte  
+  Sayfa: `2` A4  
+  Baskı üstü kaynak açıklaması: `KAR-01` ve `GUC-24` visible-copy için Card Texts blob `38a03b71cd3232fd844db8d80d8e53662510b6a3`; `HAR-AD-09` için kilitli v2.6 kart PDF SHA-256 `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298`.
 
 - KAR-01 Uzakgören kart yüzü: `/Oyun-GitHub/v2.7/exports/KAR-01_Uzakgoren_front.png`  
   SHA-256: `2798de04b8d7660ac98a842944c9b8b67acd377505de16ca9f7e7cbe40b3a14b`  

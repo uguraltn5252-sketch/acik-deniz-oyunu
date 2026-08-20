@@ -1,17 +1,19 @@
-# FOULWAKE v2.7 - Görsel Tasarım İlk Aşama Yeniden Doğrulaması
+# FOULWAKE v2.7 - Görsel Tasarım İlk Aşama Kanıt Onarımı
 
 **Durum:** VISUAL WORKSTREAM DELIVERED / DRAFT / NOT LOCKED  
 **Görünür sohbet:** `FOULWAKE görsel tasarım`  
 **Çalışma dalı:** `work/v2.7-visual`  
-**Başlangıç commit:** `e04eef7f1fef6ea407feaaf26558551297c44b37`  
+**Giriş commit:** `e04eef7f1fef6ea407feaaf26558551297c44b37`  
+**Rework taban commit:** `66e54d08d21370c00476769094db62d4e428cde6`  
+**Görsel teslim commit:** `PENDING_CANONICAL_REWORK_COMMIT`  
 **Baseline:** `v2.6 STABLE / LOCKED`
 
 ## Sonuç
 
-İlk görsel çalışma aşaması tamamlandı. Bu teslim tam deste veya release
-candidate değildir. 121 fiziksel kartın kimlik, kaynak, ölçü ve arka yüz eşleme
-envanteri çıkarıldı; üç kart ailesi ile kural kitabının temsilî sayfaları exact
-kaynaklara bağlanarak yeniden doğrulandı.
+Reddedilen ilk aşama handoff'unun kanıt zinciri onarıldı. Bu teslim tam deste
+veya release candidate değildir. Temsilî dosyalar kanonik
+`/Oyun-GitHub/v2.7/exports/` konumuna kaydedildi, yeniden indirildi ve aşağıdaki
+hash/byte kayıtları yalnız bu geri indirilen baytlardan hesaplandı.
 
 - 121/121 benzersiz kimlik kilitli v2.6 kart PDF'siyle eşleşti.
 - Aile sayıları: 20 Karakter, 30 Güç, 1 Çürümüş Erzak, 15 Sadakat, 52 Harita ve
@@ -20,10 +22,15 @@ kaynaklara bağlanarak yeniden doğrulandı.
   bağlandı. PDF içindeki dört temsilî kopya aynı image XObject'i kullanıyor.
 - `KAR-01`, `GUC-24` ve `HAR-AD-09` gerçek ölçülü temsilî renderları 300 dpi.
 - `GUC-24` üzerindeki eski flavor metni exact v2.7 kart kaynağına düzeltildi.
+- Baş Editör kararı uygulandı: `GUC-22 = Kaptanın Çatlak Kupası`,
+  `GUC-23 = Bayat Peksimet`. Kilitli v2.6 belgeleri değiştirilmedi.
+- Baskı setinin üzerinde `KAR-01`/`GUC-24` v2.7 visible-copy kaynağı ile
+  `HAR-AD-09` kilitli v2.6 visible-copy kaynağı ayrı ve exact gösterildi.
 - Kart kimlikleri baskı güvenli alanına taşındı ve temsilî overflow/glif kontrolü
   geçti.
 - Kural kitabı için `3.3`, `3.4` ve `3.6` bloklarını exact
-  `f1e0eb75434540a85e8b21484acd99ca0abc66cf` blobundan kullanan 2 sayfalık A4 prova üretildi.
+  `f1e0eb75434540a85e8b21484acd99ca0abc66cf` blobundan kullanan 2 sayfalık A4 prova üretildi ve kanonik
+  konumda gerçekten saklandı.
 
 ## Kaynak doğrulaması
 
@@ -47,13 +54,12 @@ kaynaklara bağlanarak yeniden doğrulandı.
 Ayrıntılı SHA-256 ve sayfa eşlemeleri
 `visual/manifests/FOULWAKE_SOURCE_RENDER_PDF_PROVENANCE_v2.7.json` içindedir.
 
-## Tespit edilen uyuşmazlık
+## Baş Editör dispozisyonu
 
-`releases/v2.6/CARD_BASELINE.md`, Bayat Peksimet'i `GUC-22` olarak anıyor.
-Kilitli kart PDF'si ve kabul edilmiş v2.7 kart kaynağı ise
-`GUC-22 = Kaptanın Çatlak Kupası`, `GUC-23 = Bayat Peksimet` gösteriyor.
-Korunan dosya değiştirilmedi; tam üretimde bu iki kimlik için otomatik seçim
-yapılmayacak ve Baş Editör dispozisyonu beklenecek.
+Bu rework için bağlayıcı eşleme `GUC-22 = Kaptanın Çatlak Kupası` ve
+`GUC-23 = Bayat Peksimet` olarak uygulandı. `releases/v2.6/**` içindeki tarihsel
+belge satırı değiştirilmedi. Uyuşmazlık artık görsel üretim açısından açık risk
+değildir.
 
 ## Eski 29 sayfalık görsel taslak
 
@@ -64,7 +70,8 @@ PDF kanıtı olarak kullanılmayacaktır.
 
 ## Çalıştırılan kontroller
 
-- Branch/head compare: `work/v2.7-visual == e04eef7f1fef6ea407feaaf26558551297c44b37`.
+- Rework başlangıcında branch/head compare:
+  `work/v2.7-visual == 66e54d08d21370c00476769094db62d4e428cde6`.
 - Üç bağlayıcı hikâye blobu exact SHA karşılaştırması.
 - v2.6 kart PDF SHA-256 doğrulaması ve regex ID çıkarımı.
 - Envanter/PDF ID seti: 121/121, tekrar 0, eksik 0, fazla 0.
@@ -74,6 +81,10 @@ PDF kanıtı olarak kullanılmayacaktır.
   (`pdfimages -list`), font/glif ve render kontrolü.
 - 180 dpi yeniden render ile görsel taşma, kesim ve hiyerarşi denetimi.
 - `GUC-24` ve `HAR-AD-09` OCR spot kontrolü.
+- Kanonik konuma save/replace ve ardından altı dosyanın yeniden materialize
+  edilmesi.
+- Geri indirilen kanonik baytların yerel authored baytlarla `cmp`, SHA-256 ve
+  byte boyutu karşılaştırması: 6/6 PASS.
 
 ## Açık riskler
 
@@ -81,7 +92,9 @@ PDF kanıtı olarak kullanılmayacaktır.
 - Tam 29 sayfalık v2.7 rulebook entegrasyonu henüz yok.
 - Ortak arka yüzün kör kart-yönü / Deniz-Kayalık sızıntı testi yapılmadı.
 - Fiziksel baskı, kesim, duplex sapması, opaklık ve gerçek ışık testi yapılmadı.
-- `GUC-22/GUC-23` baseline belge uyuşmazlığı Baş Editör dispozisyonu bekliyor.
+
+Tam 121 kart/29 sayfa üretimine ve Simülasyon Testi handoff'una bu kanıt onarımı
+Baş Editör tarafından kabul edilmeden geçilmeyecektir.
 
 Bu açık riskler nedeniyle `SRC-001` yalnız temsilî zincirde ilerlemiştir;
 `ART-001`, `MEC-001` ve `QA-002` kapanmış sayılmaz.
