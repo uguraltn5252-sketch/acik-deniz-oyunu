@@ -49,6 +49,8 @@ Bu bölüm, mevcut kaynaklar denetlenerek doldurulur. Şimdilik doğrulanmış �
 | `CAN-05` | KANON | Ton yaratıcı, kara mizahlı ve şüphecidir; mizah tehlikeyi iptal etmez. |
 | `CAN-06` | KANON | Metin “yapay zekâ yazmış” gibi pürüzsüz, genel ve açıklayıcı olmamalıdır; insan ayrıntısı, niyet ve kusur taşır. |
 | `CAN-07` | KANON | Hikâye kontrol edildiğinde sıfırdan yeniden yazılmaz; önce mevcut dosyalar okunur, sonra yalnız gerekli küçük değişiklik önerilir. |
+| `CAN-08` | KANON | Tarihsel araştırma yalnız maddi ve kurumsal zemin sağlar; ülkeler, kişiler, kurumlar ve olay örgüsü FOULWAKE'a özgü kalır. |
+| `CAN-09` | KANON | Mizah modern benzetmelerden değil; sefer divanı, sağlık kâğıdı, mühür, borç defteri, vardiya ve güverte davranışlarından doğar. |
 
 Yeni bir bilgi bu çitle çelişirse otomatik uyarlama yapılmaz; çelişki kullanıcıya gösterilir.
 
@@ -141,12 +143,12 @@ Sahne, yalnız lore anlatmak için kurulmaz. En az bir karar, risk veya oyuncula
 
 | Kimlik | Mekanik | Dünyadaki anlamı | Oyuncuya hissettirmesi gereken | Açıklama sınırı |
 |---|---|---|---|---|
-| `BRG-01` | Kaptan seçimi ve yetkisi | `[Doldurulacak]` | Güvenin geçici oluşu | Kural metnini diyalog içinde tekrar etme |
-| `BRG-02` | Gizli Sadakat | `[Doldurulacak]` | Yakının bile bütünüyle bilinememesi | Haini erken kesinleştirme |
-| `BRG-03` | Ufuk / gizli Harita bilgisi | `[Doldurulacak]` | Bilginin güç ve yük olması | Haritayı doğaüstü kehanete dönüştürme |
-| `BRG-04` | Rota oylaması | `[Doldurulacak]` | Ortak kararın ortak suç üretmesi | Oyuncu seçimini geçersizleştirme |
-| `BRG-05` | İskorbüt ve erzak baskısı | `[Doldurulacak]` | Bedenin siyaseti bozması | Acıyı yalnız şakaya çevirme |
-| `BRG-06` | İsyan / makam değişimi | `[Doldurulacak]` | Düzen ile meşruiyet arasındaki çatlak | Sonucu hikâyeyle geri alma |
+| `BRG-01` | Kaptan seçimi ve yetkisi | Gusto vekil bırakmadan kaybolduğu için Arden'in mühürlü sefer kefaleti geçici Kaptanın sefer heyetince seçilmesini emreder. | Güvenin geçici oluşu | Kural metnini diyalog içinde tekrar etme |
+| `BRG-02` | Gizli Sadakat | Borç, tehdit, altın veya terkibin zehir olduğuna dair inanç farklı insanları aynı sonuca iter; ortak işaret tek bir merkezi kanıtlamaz. | Yakının bile bütünüyle bilinememesi | Haini erken kesinleştirme |
+| `BRG-03` | Ufuk / gizli Harita bilgisi | Gusto'nun eksik seyir defteri ve uzmanların gözlemi güvenilir ama eksik bilgi üretir. | Bilginin güç ve yük olması | Haritayı doğaüstü kehanete dönüştürme |
+| `BRG-04` | Rota oylaması | Sefer kefaletinde oylanan rota kayda geçer; kayıp yükün borcu karara katılanlara bölünür. | Ortak kararın ortak suç üretmesi | Oyuncu seçimini geçersizleştirme |
+| `BRG-05` | İskorbüt ve erzak baskısı | Çürük erzak, Arden-San Cordelio yolunda birikmiş taze gıda eksikliğini görünür kılar; Ada mucize değil erzak tazelemesidir. | Bedenin siyaseti bozması | Acıyı yalnız şakaya çevirme |
+| `BRG-06` | İsyan / makam değişimi | Kaptanlık kalıcı asalet değil, sefer sürdüğü müddetçe taşınan ve her krizde yeniden sorgulanan bir makamdır. | Düzen ile meşruiyet arasındaki çatlak | Sonucu hikâyeyle geri alma |
 
 ## 10. Ses ve insan eli denetimi
 
@@ -183,8 +185,20 @@ Bir değişiklik kabul edilirse yalnız hedef parça ve zorunlu doğrudan bağla
 | Değişiklik | Tarih | Hedef | Sonuç | Not |
 |---|---|---|---|---|
 | `CHG-20260820-01` | 20 Ağustos 2026 | Şablon altyapısı | TASLAK | Modüler düzen kuruldu; mevcut hikâye yeniden yazılmadı. |
+| `CHG-20260820-02` | 20 Ağustos 2026 | Kural kitabı anlatı blokları | TASLAK | 3.1, 3.3, 3.4 anlatı notu, 3.6 ve Bölüm 17 güncellendi; mekanik akış korunmuştur. |
+| `CHG-20260820-03` | 20 Ağustos 2026 | Karakter ve Güç kartı metinleri | TASLAK | 20 Karakter ve 30 Güç kimliği/etkisi korunarak yalnız seçili ad ve flavor alanları güncellendi. |
 
-## 13. Bu dosyayla çalışma komutu
+## 13. Aktif v2.7 anlatı kaynakları
+
+| Dosya | İşlev | Durum |
+|---|---|---|
+| `FOULWAKE_RULEBOOK_STORY_v2.7.md` | Kural kitabına aynı akışta yerleşecek hikâye blokları | DRAFT |
+| `FOULWAKE_CARD_TEXTS_v2.7.json` | 20 Karakter ve 30 Güç kartının tam metin kaynağı | DRAFT |
+| `FOULWAKE_NARRATIVE_VALIDATION_v2.7.md` | Kart kimliği, sayısı ve mekanik alan karşılaştırması | PASS / DRAFT |
+
+Bu kaynaklar PDF üretimi değildir. Görsel yerleşime aktarılana ve kullanıcı açıkça kilitleyene kadar v2.7 taslağı olarak kalır.
+
+## 14. Bu dosyayla çalışma komutu
 
 Kullanıcı “hikâyeyi kontrol et” dediğinde:
 

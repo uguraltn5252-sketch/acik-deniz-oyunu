@@ -38,13 +38,18 @@ Kilitli binary kaynaklar taşınmamış, yeniden yazılmamış veya silinmemişt
 
 **v2.7 = ACTIVE STORY DRAFT / NOT LOCKED**
 
-Temiz v2.6 kopyasına ilk çalışma altyapısı eklenmiştir:
+Temiz v2.6 kopyasına v2.7 anlatı çalışma kaynakları eklenmiştir:
 
 - `working/v2.7/FOULWAKE_STORY_FRAMEWORK.md`
+- `working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md`
+- `working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json`
+- `working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md`
 
-Bu dosya mevcut hikâyeyi yeniden yazmaz. Kanon, karakter, mekân, gizem, olay, sahne ve mekanik–hikâye bağlarını kimliklerle ayırarak küçük değişikliklerin yalnız hedef parçaya uygulanmasını sağlar.
+Kural kitabının mevcut akışı korunarak yalnız 3.1, 3.3, 3.4 anlatı notu, 3.6 ve Bölüm 17 için v2.7 hikâye metni hazırlanmıştır. 20 Karakter ve 30 Güç kartının tam metin kaynağı v2.7'ye alınmış; yalnız seçili görünen ad ve flavor alanları güncellenmiştir.
 
-Kilitli v2.6 hikâyesi değiştirilmemiştir. Hikâyenin tamamı henüz şablona aktarılmamış ve yeni bir hikâye kararı kanonlaştırılmamıştır.
+Otomatik karşılaştırmada kart sayıları, kimlikler, etkiler, zamanlamalar, başlangıç havuzu ve desteye dönüş alanları baseline ile aynı bulunmuştur. Harita, Sadakat, Çürümüş Erzak ve yardımcı kartlar değiştirilmemiştir.
+
+Kilitli v2.6 hikâyesi ve binary artefaktları değiştirilmemiştir. v2.7 PDF'leri henüz üretilmemiş, sürüm kanonlaştırılmamış ve kilitlenmemiştir.
 
 ## Lock rule
 

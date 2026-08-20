@@ -1,0 +1,594 @@
+{
+  "version": "v2.7",
+  "status": "DRAFT / NOT LOCKED",
+  "branch": "v2.7-design",
+  "source_baseline": "v2.6 STABLE / LOCKED",
+  "scope": "Karakter ve Güç kartlarında yalnız görünen ad/dönem dili/flavor güncellemesi",
+  "invariants": {
+    "character_count": 20,
+    "power_count": 30,
+    "card_ids_unchanged": true,
+    "card_effects_unchanged": true,
+    "card_timing_unchanged": true,
+    "card_counts_unchanged": true,
+    "no_card_added_or_removed": true
+  },
+  "characters": [
+    {
+      "id": "KAR-01",
+      "name": "Uzakgören",
+      "role": "Gözcü",
+      "impact": 2,
+      "icon": "eye",
+      "effect": "Tanışma gecesi hariç her gece bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
+      "flavor": "Tehlikeyi uzaktan görür. İnsanları hâlâ yakından çözemedi.",
+      "use_mode": "gizli"
+    },
+    {
+      "id": "KAR-02",
+      "name": "Kıyıçizen",
+      "role": "Haritacı",
+      "impact": 2,
+      "icon": "map",
+      "effect": "Tanışma gecesi hariç, Sis olmayan her gece bir Uzak Ufuk kartının olay yüzüne gizlice bakar.",
+      "flavor": "Haritada her şey yerli yerinde. Deniz hariç.",
+      "use_mode": "gizli"
+    },
+    {
+      "id": "KAR-03",
+      "name": "Dümenkurdu",
+      "role": "Serdümen",
+      "impact": 2,
+      "icon": "wheel",
+      "effect": "Tek kullanım. Bir Harita olayının zorunlu hareket veya rota kilidi etkisini iptal eder.",
+      "flavor": "Dümen onun elindeyken gemi yolu şaşırmaz. Mürettebat şaşırabilir.",
+      "use_mode": "açık"
+    },
+    {
+      "id": "KAR-04",
+      "name": "Canhalatı",
+      "role": "Palamarcı",
+      "impact": 2,
+      "icon": "rope",
+      "effect": "Tek kullanım. Harita veya Hain saldırısıyla denize düşeni hemen kurtarır. Oylamayla atılana işlemez.",
+      "flavor": "İnsanlara değil, düğümlere güvenir.",
+      "use_mode": "açık"
+    },
+    {
+      "id": "KAR-05",
+      "name": "Tahtakakan",
+      "role": "Kalafatçı",
+      "impact": 2,
+      "icon": "hammer",
+      "effect": "Tek kullanım. Geminin almak üzere olduğu 1 Gövde hasarını engeller. Kraken'e de işler.",
+      "flavor": "Gemide bir yer gıcırdadığında elinde çekiçle belirir.",
+      "use_mode": "açık"
+    },
+    {
+      "id": "KAR-06",
+      "name": "Dipgören",
+      "role": "Dalgıç",
+      "impact": 1,
+      "icon": "diver",
+      "effect": "Batık Kalyon bulunduğunda bir kez fazladan 1 Güç kartı kazandırır.",
+      "flavor": "Denizin dibinden her seferinde bir şey getiriyor.",
+      "use_mode": "açık"
+    },
+    {
+      "id": "KAR-07",
+      "name": "Rüzgârkoklayan",
+      "role": "Yelkenci",
+      "impact": 1,
+      "icon": "wind",
+      "effect": "Bir kez Durgun Deniz veya rüzgâr kaynaklı rota kısıtını gizlice kaldırır.",
+      "flavor": "Rüzgâr çıkmadan kokusunu aldığını söylüyor.",
+      "use_mode": "gizli"
+    },
+    {
+      "id": "KAR-08",
+      "name": "Kırık Kürek",
+      "role": "Kayıkçı",
+      "impact": 1,
+      "icon": "boat",
+      "effect": "Tek kullanım. Pusula sunulunca kabul ederse bir mahsuru kurtarmak için bir tam vardiyalık sefere çıkar. Reddederse Pusula atılır; sefer başlamaz ve yetenek harcanmaz.",
+      "flavor": "Bir zamanlar iki küreği vardı.",
+      "use_mode": "açık"
+    },
+    {
+      "id": "KAR-09",
+      "name": "Üç Anahtar",
+      "role": "Levazımcı",
+      "impact": 1,
+      "icon": "keys",
+      "effect": "Tek kullanım. Güç kazanılırken bir fazla karta bakılır; sonra biri kapalı atılır. Kazanç sayısı artmaz.",
+      "flavor": "Üç anahtarı var. İkisinin neyi açtığını bilmiyor.",
+      "use_mode": "açık"
+    },
+    {
+      "id": "KAR-10",
+      "name": "Güvertebaşı",
+      "role": "Lostromo",
+      "impact": 1,
+      "icon": "deck",
+      "effect": "Tek kullanım. Harita Güç kaybettirecekken seçilen bir oyuncunun bir kartlık kaybını engeller.",
+      "flavor": "Herkesin ne yapması gerektiğini bilir. Özellikle başkalarının.",
+      "use_mode": "açık"
+    },
+    {
+      "id": "KAR-11",
+      "name": "İskele Sıçanı",
+      "role": "-",
+      "impact": 1,
+      "icon": "rat",
+      "effect": "Ada veya Fener Güç kazandırırken bir kartın alıcısını, karta bakılmadan belirler.",
+      "flavor": "Karaya herkesten önce çıkar. Nasıl indiği sorulmaz.",
+      "use_mode": "açık"
+    },
+    {
+      "id": "KAR-12",
+      "name": "Karga Yuvası",
+      "role": "-",
+      "impact": 1,
+      "icon": "crow",
+      "effect": "Tek kullanım. Rota öncesi bir Yakın Ufku işaretler. O rota oy alırsa toplamına +1 eklenir.",
+      "flavor": "Yukarıdan bakınca herkes küçük görünür. Şüpheler değil.",
+      "use_mode": "açık"
+    },
+    {
+      "id": "KAR-13",
+      "name": "Kazanbaşı",
+      "role": "Aşçı",
+      "impact": 0,
+      "icon": "pot",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Bugünün çorbasında ne var? Dünün çorbası.",
+      "use_mode": "yeteneksiz"
+    },
+    {
+      "id": "KAR-14",
+      "name": "Fare Nazırı",
+      "role": "-",
+      "impact": 0,
+      "icon": "rat",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Resmî sayımda on dört fare var. On beşincinin çizme giydiğini söylüyor.",
+      "use_mode": "yeteneksiz"
+    },
+    {
+      "id": "KAR-15",
+      "name": "Papağan Mütercimi",
+      "role": "-",
+      "impact": 0,
+      "icon": "parrot",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Papağanın her cümlesini aynı çeviriyor: Ona güvenme.",
+      "use_mode": "yeteneksiz"
+    },
+    {
+      "id": "KAR-16",
+      "name": "Fıçı Bekçisi",
+      "role": "-",
+      "impact": 0,
+      "icon": "barrel",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Fıçıların hepsini tanıyor. Tayfanın yarısının adını bilmiyor.",
+      "use_mode": "yeteneksiz"
+    },
+    {
+      "id": "KAR-17",
+      "name": "Kafiye Belası",
+      "role": "Gemi Şairi",
+      "impact": 0,
+      "icon": "quill",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Tayfa onu susturmak için bir keresinde fırtınaya girmeyi kabul etti.",
+      "use_mode": "yeteneksiz"
+    },
+    {
+      "id": "KAR-18",
+      "name": "Karayı Özleyen",
+      "role": "Acemi Gemici",
+      "impact": 0,
+      "icon": "shore",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Dört saattir denizde. Üç saattir dönüş yolunu soruyor.",
+      "use_mode": "yeteneksiz"
+    },
+    {
+      "id": "KAR-19",
+      "name": "Yastıkçı",
+      "role": "Kamarot",
+      "impact": 0,
+      "icon": "pillow",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Herkesin kamarasına giriyor. Mesleği gereği olduğunu söylüyor.",
+      "use_mode": "yeteneksiz"
+    },
+    {
+      "id": "KAR-20",
+      "name": "Tahtaya Vuran",
+      "role": "Hurafeci",
+      "impact": 0,
+      "icon": "wood",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Her kötü alamette tahtaya vuruyor. Tahtakakan bundan hiç hoşlanmıyor.",
+      "use_mode": "yeteneksiz"
+    }
+  ],
+  "powers": [
+    {
+      "id": "GUC-01A",
+      "name": "Mantar Can Halkası",
+      "group": "Kurtarma",
+      "time": "Hemen",
+      "icon": "lifebuoy",
+      "start": true,
+      "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+      "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-01B",
+      "name": "Mantar Can Halkası",
+      "group": "Kurtarma",
+      "time": "Hemen",
+      "icon": "lifebuoy",
+      "start": true,
+      "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+      "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-02A",
+      "name": "Kancalı Halat",
+      "group": "Kurtarma",
+      "time": "Hemen",
+      "icon": "hook",
+      "start": true,
+      "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+      "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-02B",
+      "name": "Kancalı Halat",
+      "group": "Kurtarma",
+      "time": "Hemen",
+      "icon": "hook",
+      "start": true,
+      "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+      "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-03",
+      "name": "Pusula",
+      "group": "Seyir / Kurtarma",
+      "time": "Gündüz",
+      "icon": "compass",
+      "start": true,
+      "effect": "Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz.",
+      "flavor": "Kuzeyi gösteriyor. Kaptan yine de başka yönü tarif ediyor.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-04",
+      "name": "Güverte Araması",
+      "group": "Etkileşim",
+      "time": "Gündüz - rota öncesi",
+      "icon": "search",
+      "start": true,
+      "effect": "En az iki Gücü olan bir gemi oyuncusu seç. Hedef seçtiği bir Gücü kapalı atar.",
+      "flavor": "Kayıp eşya bulundu. Sahibinin kim olduğu hâlâ şüpheli.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-05",
+      "name": "Yama Tahtası",
+      "group": "Gövde",
+      "time": "Hasardan önce",
+      "icon": "plank",
+      "start": true,
+      "effect": "Kraken dışındaki 1 Gövde hasarını engelle.",
+      "flavor": "Gemi marangozluğu, deliği görmezden gelmeyi bırakınca başlar.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-06",
+      "name": "Zıpkın Sandığı",
+      "group": "Gövde",
+      "time": "Hasardan önce",
+      "icon": "harpoon",
+      "start": true,
+      "effect": "Kraken'in vereceği 1 Gövde hasarını engelle.",
+      "flavor": "Sandığın üstünde büyük balık yazıyor. Yazı aceleyle yazılmış.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-07",
+      "name": "Geçici Yeke",
+      "group": "Seyir",
+      "time": "Rota öncesi",
+      "icon": "rudder",
+      "start": true,
+      "effect": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku aç.",
+      "flavor": "Geçici çözümler denizde bazen karaya kadar sürer.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-08",
+      "name": "Kerteriz Pergeli",
+      "group": "Seyir",
+      "time": "Girdap / Akıntı",
+      "icon": "divider",
+      "start": true,
+      "effect": "Girdabın varışını veya Ters Akıntının kapatacağı yasal yönü rastgelelik yerine sen seç.",
+      "flavor": "Kuzeyi göstermiyor; ama çok kararlı görünüyor.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-09",
+      "name": "Kurşun Ağırlık",
+      "group": "Seyir",
+      "time": "Girdap sırasında",
+      "icon": "weight",
+      "start": true,
+      "effect": "Girdabın zorunlu ek hareketini tamamen iptal et.",
+      "flavor": "Bazı sorunlar ancak dibe çekilince çözülür.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-10",
+      "name": "Yedek Yelken",
+      "group": "Seyir",
+      "time": "Rota öncesi",
+      "icon": "sail",
+      "start": true,
+      "effect": "Durgun Deniz veya rüzgâr kaynaklı rota kısıtını kaldır.",
+      "flavor": "Birincisi niçin yedek değildi, konuşmayalım.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-11",
+      "name": "Islak Deniz Haritası",
+      "group": "Seyir",
+      "time": "Gündüz - rota öncesi",
+      "icon": "map",
+      "start": true,
+      "effect": "İki Yakın Ufuk kartının yerini olay yüzlerine bakmadan değiştir.",
+      "flavor": "Mürekkep aktı; yollar daha yaratıcı oldu.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-12",
+      "name": "Kırık Dürbün",
+      "group": "Bilgi",
+      "time": "Gündüz - rota öncesi",
+      "icon": "spyglass",
+      "start": true,
+      "effect": "Bir Yakın Ufuk kartının olay yüzüne gizlice bak.",
+      "flavor": "Sağ taraf geleceği, sol taraf pişmanlığı gösteriyor.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-13",
+      "name": "Eski Seyir Defteri",
+      "group": "Bilgi",
+      "time": "Sis olmayan gündüz",
+      "icon": "book",
+      "start": true,
+      "effect": "Bir Uzak Ufuk seç. Moderatör yalnız Gövde hasarı verebilir veya vermez der.",
+      "flavor": "Kaptanlar ölür; kötü el yazıları kalır.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-14",
+      "name": "Anahtar Deliği",
+      "group": "Bilgi",
+      "time": "Gündüz - yalnız Kamarada",
+      "icon": "keyhole",
+      "start": true,
+      "effect": "Bir Yakın Ufuk olayına gizlice bak. Kamara Güç yasağının tek yazılı istisnasıdır.",
+      "flavor": "Kamaranın en küçük penceresi, en büyük dedikodusu.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-15",
+      "name": "Kaptanın Eski Şapkası",
+      "group": "Oylama",
+      "time": "Rota oylaması",
+      "icon": "hat",
+      "start": true,
+      "effect": "Bu rota oylamasında kendi oyuna +1 ekle.",
+      "flavor": "Şapka yetki vermez. Yine de herkes önce şapkaya bakar.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-16",
+      "name": "İsyan Bildirisi",
+      "group": "Oylama",
+      "time": "İsyan",
+      "icon": "scroll",
+      "start": true,
+      "effect": "Bu İsyan oylamasında kendi oyun 2 sayılsın.",
+      "flavor": "Altında imza yok; herkesin fikri var.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-17",
+      "name": "Papağanın İfadesi",
+      "group": "Etkileşim",
+      "time": "Rota öncesi",
+      "icon": "parrot",
+      "start": true,
+      "effect": "Hedef rota tavsiyesini açık söyler. Başka rotaya oy verirse oyu 0 sayılır.",
+      "flavor": "Tanık konuştu. Güvenilirliği tartışmalı.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-18",
+      "name": "Mühürlü Emir",
+      "group": "Oylama",
+      "time": "Rota beraberliği",
+      "icon": "seal",
+      "start": true,
+      "effect": "Kaptan çözmeden önce berabere rotalardan kazananı seç.",
+      "flavor": "Mühür sağlam; mantık biraz su almış.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-19",
+      "name": "Kaçak Rom",
+      "group": "Etkileşim",
+      "time": "Rota öncesi",
+      "icon": "bottle",
+      "start": true,
+      "effect": "Bir oyuncu seç. Hedef diğer oyları gördükten sonra en son ve açık oy verir.",
+      "flavor": "Gerçeği söyletmez. Sırayı belli eder.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-20",
+      "name": "Bir Daha Say",
+      "group": "Oylama",
+      "time": "Oylar açılınca",
+      "icon": "count",
+      "start": true,
+      "effect": "Tam 1 oy farkıyla biten herhangi bir resmî oylamayı bir kez yeniden yaptır. İkinci sonuç kesindir; sonra bu kartı at.",
+      "flavor": "Sefer divanında karar kesindir. Sayım bazen o kadar kesin değildir.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-21",
+      "name": "Uğurlu Altın",
+      "group": "Talih",
+      "time": "Kader Zarı sonucu",
+      "icon": "coin",
+      "start": true,
+      "effect": "Tamamlanmış rastgele hedef seçimini bir kez yeniden yaptır. İkinci sonuç kesindir.",
+      "flavor": "Yazı tura değil; yazgı tura.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-22",
+      "name": "Kaptanın Çatlak Kupası",
+      "group": "Oylama",
+      "time": "Rota oylaması",
+      "icon": "cup",
+      "start": true,
+      "effect": "Kaptanın bu rota oylamasındaki 2 oyunu 1'e indir.",
+      "flavor": "Kupadaki çatlak, otoritedekinden küçüktü.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-23",
+      "name": "Bayat Peksimet",
+      "group": "Etkileşim",
+      "time": "Gündüz - rota öncesi",
+      "icon": "biscuit",
+      "start": true,
+      "effect": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz.",
+      "flavor": "Konuşmayı kesmez. Çiğnemeyi uzatır.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-24",
+      "name": "Islak Çorap",
+      "group": "Tuhaf",
+      "time": "Başkası Güç kazanırken",
+      "icon": "sock",
+      "start": true,
+      "effect": "Kazanç açıklanmadan yeni Gücü sen al, Islak Çorabı asıl alıcıya ver. İkiniz de sonra iki Güç sınırını uygularsınız. Çorap bir Güç sayılır.",
+      "flavor": "Güverte kâtibi bunu yanlış elde duran doğru eşya diye kaydetti.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-25",
+      "name": "Şüpheli Martı",
+      "group": "Talih",
+      "time": "Gündüz",
+      "icon": "gull",
+      "start": true,
+      "effect": "Bir oyuncının önüne koy. Sonraki rastgele Harita hedefinin ilk hedefi o olur; sonra at.",
+      "flavor": "Martı, onu daha önce görmüş gibi bağırıyor.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-26",
+      "name": "Fırtına Feneri",
+      "group": "Sis",
+      "time": "Sis açıldığında",
+      "icon": "lantern",
+      "start": true,
+      "effect": "Bu gece Sis saldırısını kapat. Hainlerin bir Yakın Ufuk bilgi eylemi kalır.",
+      "flavor": "Işık bazen yolu değil, niyeti bozar.",
+      "returns_to_power_deck": true
+    },
+    {
+      "id": "GUC-27",
+      "name": "Kaderi Yeniden Yaz",
+      "group": "Olağanüstü",
+      "time": "Olay açılınca",
+      "icon": "quill",
+      "start": false,
+      "effect": "Etki uygulanmadan önce önceki yere dön ve başka yasal Yakın Ufka git. İlk karta gerçekten girildiyse kart açık ve ziyaret edilmiş kalır; olayı yeniden çalışmaz. İlk kart Geçilmez Kayalıksa Gemi o kareye hiç girmiş/ziyaret etmiş sayılmaz; Geçilmez açık engel kalır ve başka yasal Yakın Ufka yönlenilebilir. Ada girişi İskorbütü kalıcı temizler. Kullanıldıktan sonra oyun dışına çıkar.",
+      "flavor": "Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir.",
+      "returns_to_power_deck": false
+    },
+    {
+      "id": "GUC-28",
+      "name": "Seyir Zabtı",
+      "group": "Olağanüstü",
+      "time": "Zararlı rota sonrası",
+      "icon": "scroll",
+      "start": false,
+      "effect": "Gövde, oyuncu, Güç veya rota bakımından zarar doğuran rotaya oy veren birini bir gece Kamaraya gönder; Mahkûm sayılmaz. Kullanıldıktan sonra oyun dışına çıkar; Güç destesine yeniden karıştırılmaz.",
+      "flavor": "Rota yanlışsa kâğıt her zaman doğrudur.",
+      "returns_to_power_deck": false
+    }
+  ],
+  "change_log": [
+    {
+      "ids": [
+        "KAR-14"
+      ],
+      "field": "flavor",
+      "reason": "Gusto gizemini çözmeden gemide yankılamak"
+    },
+    {
+      "ids": [
+        "KAR-18"
+      ],
+      "field": "flavor",
+      "reason": "Kuru mizahı daha doğal bir konuşma ritmine çekmek"
+    },
+    {
+      "ids": [
+        "GUC-01A",
+        "GUC-01B"
+      ],
+      "fields": [
+        "name",
+        "flavor"
+      ],
+      "reason": "Modern güvenlik simidi çağrışımını kaba mantar ve halat ekipmanına çevirmek"
+    },
+    {
+      "ids": [
+        "GUC-06"
+      ],
+      "field": "flavor",
+      "reason": "Krakenin varlığını kesinleştirmeden aynı mekanik hedefi korumak"
+    },
+    {
+      "ids": [
+        "GUC-15",
+        "GUC-20",
+        "GUC-24",
+        "GUC-25"
+      ],
+      "field": "flavor",
+      "reason": "Modern soyutlama ve kurum dilini 1721 FOULWAKE dünyasının sefer, kâtip ve güverte diline çevirmek"
+    }
+  ]
+}
