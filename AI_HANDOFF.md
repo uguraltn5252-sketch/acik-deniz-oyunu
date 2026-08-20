@@ -2,6 +2,24 @@
 
 Bu dosya farklı ChatGPT oturumları/model sürümleri arasında oyunun kanonik durumunu yeniden kurmak için zorunlu protokoldür.
 
+## Baş editörlük yönetişimi
+
+Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
+
+1. `AI_HANDOFF.md`
+2. `PROJECT_STATE.md`
+3. `governance/EDITORIAL_CHARTER.md`
+4. `governance/ACTIVE_WORKSTREAMS.json`
+5. `governance/WORKSTREAM_PROTOCOL.md`
+6. `governance/COORDINATION_LOG.md` içindeki en son kayıt
+
+- Kanonik durum, kaynak önceliği, release entegrasyonu ve kilitleme yalnız Baş Editör tarafından yürütülür.
+- Proje sahibinin açık `kilitle`, `stable yap` veya `release et` talimatı kilit sürecinin zorunlu tetikleyicisidir; tek başına yeterli değildir.
+- Simülasyon Testi bağımsız ve zorunlu release kapısıdır. Mekanik, matematik, strateji, sosyal deneyim, görsel kullanılabilirlik, PDF, baskı, manifest ve dosya bütünlüğünü kapsar.
+- Açık `FAIL`, `BLOCKER` veya tam candidate commite bağlı olmayan test sonucu varken sürüm kilitlenmez.
+- Hikâye, Görsel Tasarım ve Simülasyon Testi başka hattın alanını sessizce değiştirmez; zorunlu handoff biçimini kullanır.
+- GitHub'a yazılmış olmak bir çıktıyı kendiliğinden kanon, STABLE veya LOCKED yapmaz.
+
 ## Sürüm durumu
 
 - **Son kullanıcı onaylı kilitli stabil sürüm:** `v2.6 STABLE / LOCKED` — `releases/v2.6/`.
@@ -48,4 +66,4 @@ Bu dosya farklı ChatGPT oturumları/model sürümleri arasında oyunun kanonik 
 
 ## Kısa devam komutu
 
-> GitHub'daki Açık Deniz reposunu aç. `AI_HANDOFF.md`, `PROJECT_STATE.md` ve `releases/v2.6/README_RELEASE_v2.6.md` dosyalarını oku. Son kullanıcı-onaylı kilitli sürüm olarak v2.6 STABLE / LOCKED'u kullan. v2.6'yı yerinde değiştirme; yeni çalışma gerekiyorsa v2.7+ DRAFT aç.
+> GitHub'daki Açık Deniz reposunu aç. `AI_HANDOFF.md`, `PROJECT_STATE.md` ve `governance/EDITORIAL_CHARTER.md` dosyalarını oku. Son kullanıcı-onaylı kilitli sürüm olarak v2.6 STABLE / LOCKED'u kullan. `governance/ACTIVE_WORKSTREAMS.json` içindeki açık engelleri kontrol et. v2.6'yı yerinde değiştirme; yeni çalışma gerekiyorsa v2.7+ DRAFT aç.

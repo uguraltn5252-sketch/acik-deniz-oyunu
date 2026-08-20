@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foulwake.local/governance/LOCK_AUTHORIZATION_SCHEMA.json",
+  "title": "FOULWAKE Lock Authorization",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "authorized_by_project_owner",
+    "owner_instruction_reference",
+    "executed_by_role",
+    "candidate_commit",
+    "simulation_attestation_path",
+    "simulation_verdict",
+    "open_blockers"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^v[0-9]+\\.[0-9]+$"
+    },
+    "authorized_by_project_owner": {
+      "const": true
+    },
+    "owner_instruction_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "executed_by_role": {
+      "const": "chief_editor"
+    },
+    "candidate_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "simulation_attestation_path": {
+      "type": "string",
+      "pattern": "^working/v[0-9]+\\.[0-9]+/qa/SIM_QA_ATTESTATION_v[0-9]+\\.[0-9]+\\.json$"
+    },
+    "simulation_verdict": {
+      "enum": [
+        "PASS",
+        "PASS_WITH_MINOR_ISSUES"
+      ]
+    },
+    "open_blockers": {
+      "type": "array",
+      "maxItems": 0
+    }
+  }
+}

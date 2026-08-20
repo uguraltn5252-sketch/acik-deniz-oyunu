@@ -7,6 +7,29 @@
 **ACTIVE_BRANCH:** `v2.7-design`  
 **ACTIVE_WORKSPACE:** `working/v2.7/`
 
+## Baş editörlük ve release hazırlığı
+
+Baş editörlük yönetişimi `governance/` altında yürürlüktedir. Hikâye, Görsel
+Tasarım ve Simülasyon Testi hatları `1a5b23051a3a625d6de9b98c2503a0181956af3c`
+commitini çapraz denetlemiştir.
+
+**Güncel release hükmü:** **BLOCKER — v2.7 kilitlenemez.**
+
+Açık engellerin bağlayıcı listesi `governance/ACTIVE_WORKSTREAMS.json`, ayrıntılı
+dispozisyonu `governance/COORDINATION_LOG.md` içindedir. Özet:
+
+- `MEC-001`: Ortak Deniz + Kayalık arka yüzü v2.6 gizli bilgi mimarisiyle çakışıyor.
+- `SRC-001`: v2.7 metin kaynağı ile görsel/PDF üretim kaynağı izlenemiyor.
+- `ART-001`: Tam 121 kartlık doğrulanabilir candidate yok.
+- `QA-001`: v2.7 PASS yeniden üretilemiyor; exact commite bağlı tam QA attestation yok.
+- `QA-002`: Fiziksel prova ve kör insan sosyal deneyim testi yok.
+- `GOV-001`: `main` ile aktif dal çelişkili ve ayrışmış; release PR/status kapısı yok.
+- `CAN-001`: DRAFT Story Framework içindeki yeni kanon etiketleri açık kullanıcı kararı taşımıyor.
+
+GitHub'a yazılan bir dosya kendiliğinden kanon veya release olmaz. Kilit için
+proje sahibinin açık talimatı, kapanmış engeller, exact candidate commite bağlı
+Simülasyon QA attestation'ı ve Baş Editör kilit tutanağı birlikte zorunludur.
+
 ## Locked baseline
 
 v2.6 kullanıcı tarafından açıkça kilitlenmiştir, yalnızca okunur ve yerinde değiştirilmez.
@@ -49,7 +72,7 @@ Temiz v2.6 kopyasına v2.7 anlatı ve görsel çalışma kaynakları eklenmişti
 
 Kural kitabının mevcut akışı korunarak yalnız 3.1, 3.3, 3.4 anlatı notu, 3.6 ve Bölüm 17 için v2.7 hikâye metni hazırlanmıştır. 20 Karakter ve 30 Güç kartının tam metin kaynağı v2.7'ye alınmış; yalnız seçili görünen ad ve flavor alanları güncellenmiştir.
 
-Otomatik karşılaştırmada kart sayıları, kimlikler, etkiler, zamanlamalar, başlangıç havuzu ve desteye dönüş alanları baseline ile aynı bulunmuştur. Harita, Sadakat, Çürümüş Erzak ve yardımcı kartlar değiştirilmemiştir.
+Mevcut anlatı doğrulama kaydı kart sayıları, kimlikler, etkiler, zamanlamalar, başlangıç havuzu ve desteye dönüş alanlarını baseline ile aynı bildirir. Ancak kullanılan karşılaştırma scripti ve sabit baseline JSON'u GitHub'da bulunmadığından bu PASS yeniden üretilebilir veya release için bağlayıcı sayılmaz. Harita, Sadakat, Çürümüş Erzak ve yardımcı kartların değiştirilmediği beyan edilmiştir.
 
 20 Ağustos 2026 tarihinde kullanıcı v2.7 kart ve kural kitabı için özgün görsel yönü onaylamıştır. Bu onay kilit değildir.
 
@@ -70,6 +93,6 @@ Kilitli v2.6 hikâyesi, mekanikleri ve binary artefaktları değiştirilmemişti
 
 ## Lock rule
 
-Yalnız kullanıcının açıkça `kilitle`, `stable yap` veya `release et` demesi v2.7'yi STABLE / LOCKED durumuna dönüştürebilir.
+Yalnız kullanıcının açıkça `kilitle`, `stable yap` veya `release et` demesi v2.7 kilit sürecini başlatabilir.
 
-Onay, beğeni veya `devam et` ifadesi kilitleme yetkisi değildir.
+Onay, beğeni veya `devam et` ifadesi kilitleme yetkisi değildir. Açık BLOCKER/FAIL, eksik candidate kanıtı veya geçersiz Simülasyon QA attestation'ı varken Baş Editör kilidi uygulamaz.

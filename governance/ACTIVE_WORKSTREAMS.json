@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-20T14:15:00+03:00",
+  "project": "FOULWAKE",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "project_owner": "Ugur Altun",
+  "locked_release": {
+    "version": "v2.6",
+    "status": "STABLE_LOCKED",
+    "path": "releases/v2.6",
+    "mutable": false
+  },
+  "active_draft": {
+    "version": "v2.7",
+    "status": "DRAFT_NOT_LOCKED",
+    "branch": "v2.7-design",
+    "workspace": "working/v2.7",
+    "last_content_audit_head": "1a5b23051a3a625d6de9b98c2503a0181956af3c",
+    "baseline": "v2.6"
+  },
+  "release_readiness": {
+    "verdict": "BLOCKER",
+    "lock_allowed": false,
+    "candidate_commit_bound": false,
+    "simulation_attestation_present": false,
+    "basis": "2026-08-20 cross-workstream Story, Visual and Simulation QA review"
+  },
+  "roles": {
+    "chief_editor": {
+      "exclusive_lock_authority": true,
+      "owns": [
+        "PROJECT_STATE.md",
+        "AI_HANDOFF.md",
+        "CHANGELOG.md",
+        "README.md canonical state",
+        "governance/**",
+        "releases/**",
+        "release manifests and checksums"
+      ]
+    },
+    "story_editor": {
+      "may_change": [
+        "narrative",
+        "visible names",
+        "flavor text",
+        "rulebook story layer"
+      ],
+      "must_preserve": [
+        "card count",
+        "card ids",
+        "effects",
+        "timing",
+        "deck behavior",
+        "rule flow"
+      ]
+    },
+    "visual_design": {
+      "may_change": [
+        "illustration",
+        "layout",
+        "typography",
+        "icons",
+        "print presentation"
+      ],
+      "must_preserve": [
+        "mechanics",
+        "approved copy",
+        "lore canon",
+        "card identity",
+        "secrecy model"
+      ]
+    },
+    "simulation_test": {
+      "independent_qa": true,
+      "mandatory_release_gate": true,
+      "write_scope": "working/v2.7/qa/**",
+      "verdicts": [
+        "PASS",
+        "PASS_WITH_MINOR_ISSUES",
+        "FAIL",
+        "BLOCKER"
+      ],
+      "may_change_mechanics": false,
+      "may_lock_release": false
+    }
+  },
+  "lock_policy": {
+    "trigger": "explicit project-owner instruction",
+    "executor": "chief_editor",
+    "simulation_gate_required": true,
+    "blocker_veto": true,
+    "in_place_locked_release_edits": false,
+    "required_attestation": "SIM_QA_ATTESTATION_vX.Y.json",
+    "new_candidate_invalidates_prior_attestation": true
+  },
+  "cross_workstream_handoff": {
+    "source_commit": "1a5b23051a3a625d6de9b98c2503a0181956af3c",
+    "story_to_visual": "DELIVERED",
+    "story_to_simulation": "DELIVERED",
+    "visual_to_simulation": "DELIVERED",
+    "simulation_to_chief_editor": "DELIVERED",
+    "chief_editor_disposition": "RECORDED_AS_RELEASE_BLOCKER"
+  },
+  "open_blockers": [
+    {
+      "id": "MEC-001",
+      "status": "OPEN",
+      "severity": "BLOCKER",
+      "summary": "v2.7 ortak Deniz+Kayalik arka yuzu, v2.6 ayri Kayalik arka yuzu ve gizli bilgi mimarisiyle cakisiyor",
+      "owner": "project_owner_and_chief_editor",
+      "requires": [
+        "explicit project-owner mechanic decision",
+        "source alignment",
+        "full simulation and human information-leak retest"
+      ]
+    },
+    {
+      "id": "SRC-001",
+      "status": "OPEN",
+      "severity": "BLOCKER",
+      "summary": "Gorsel sistem v2.6 metnini kaynak gosterirken aktif v2.7 kart ve rulebook metinleri bulunuyor; PDF provenance kanitlanamiyor",
+      "owner": "visual_design",
+      "requires": [
+        "single declared source hierarchy",
+        "source-to-render-to-PDF cross-match"
+      ]
+    },
+    {
+      "id": "ART-001",
+      "status": "OPEN",
+      "severity": "BLOCKER",
+      "summary": "Tam 121 kartlik aday ve GitHub'dan dogrulanabilir gorsel artefakt seti yok",
+      "owner": "visual_design",
+      "requires": [
+        "complete candidate deck",
+        "repository-visible manifest and hashes",
+        "print and duplex proof"
+      ]
+    },
+    {
+      "id": "QA-001",
+      "status": "OPEN",
+      "severity": "BLOCKER",
+      "summary": "v2.7 narrative PASS yeniden uretilemiyor ve exact candidate'a bagli tam sim QA attestation yok",
+      "owner": "simulation_test",
+      "requires": [
+        "versioned validator and baseline",
+        "raw outputs and hashes",
+        "SIM_QA_ATTESTATION bound to the candidate commit"
+      ]
+    },
+    {
+      "id": "QA-002",
+      "status": "OPEN",
+      "severity": "BLOCKER",
+      "summary": "Yeni duzenle fiziksel prova ve kor insan sosyal deneyim testi yok",
+      "owner": "simulation_test",
+      "requires": [
+        "physical print-cut-duplex-real-light proof",
+        "blind human playtest evidence"
+      ]
+    },
+    {
+      "id": "GOV-001",
+      "status": "OPEN",
+      "severity": "BLOCKER",
+      "summary": "main ve v2.7-design durum kayitlari cakisiyor; dal ayrismis, v2.7 PR ve zorunlu status check yok",
+      "owner": "chief_editor",
+      "requires": [
+        "intentional branch reconciliation",
+        "release PR",
+        "required governance check before merge"
+      ]
+    },
+    {
+      "id": "CAN-001",
+      "status": "OPEN",
+      "severity": "BLOCKER",
+      "summary": "DRAFT Story Framework icindeki CAN-08 ve CAN-09 kullanici kilidi olmadan KANON etiketli",
+      "owner": "story_editor_and_chief_editor",
+      "requires": [
+        "reclassify as draft constraint or obtain explicit project-owner canon decision"
+      ]
+    }
+  ]
+}

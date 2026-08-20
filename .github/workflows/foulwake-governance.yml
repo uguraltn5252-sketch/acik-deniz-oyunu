@@ -1,0 +1,30 @@
+name: FOULWAKE Governance
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - v2.7-design
+
+jobs:
+  governance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate editorial governance
+        run: python governance/validate_governance.py
+
+      - name: Protect locked v2.6 in pull requests
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if git diff --name-only "$BASE_SHA"...HEAD | grep -q '^releases/v2\.6/'; then
+            echo 'BLOCKER: locked releases/v2.6 content was modified.'
+            exit 1
+          fi
