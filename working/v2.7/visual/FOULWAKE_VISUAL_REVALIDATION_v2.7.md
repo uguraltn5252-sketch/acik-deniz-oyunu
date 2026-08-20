@@ -5,7 +5,7 @@
 **Çalışma dalı:** `work/v2.7-visual`  
 **Giriş commit:** `e04eef7f1fef6ea407feaaf26558551297c44b37`  
 **Rework taban commit:** `66e54d08d21370c00476769094db62d4e428cde6`  
-**Görsel teslim commit:** `PENDING_CANONICAL_REWORK_COMMIT`  
+**Görsel teslim commit:** `d3028779f371337a5abffa691067de8fc42bdec1`  
 **Baseline:** `v2.6 STABLE / LOCKED`
 
 ## Sonuç

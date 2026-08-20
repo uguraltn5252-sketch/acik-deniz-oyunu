@@ -7,7 +7,7 @@
   "git_context": {
     "entry_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
     "rework_base_commit": "66e54d08d21370c00476769094db62d4e428cde6",
-    "visual_delivery_commit": "PENDING_CANONICAL_REWORK_COMMIT"
+    "visual_delivery_commit": "d3028779f371337a5abffa691067de8fc42bdec1"
   },
   "sources": {
     "story_framework": {
