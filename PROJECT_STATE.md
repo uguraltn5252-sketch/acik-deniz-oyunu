@@ -30,26 +30,43 @@ Yeni `working/v2.7/`, `releases/v2.6/` Git ağacının eksiksiz ve birebir kopya
 
 ## Binary artefaktlar
 
-GitHub deposunda v2.6 binary dosyalarının kendileri yerine kanonik yol ve SHA-256 kayıtları tutulmaktadır. Yeni v2.7, `BINARY_ARTIFACTS.md` ve ilgili manifest/checksum kayıtlarını v2.6'dan eksiksiz devralır.
+GitHub deposunda büyük binary dosyaların kendileri yerine kanonik yol, boyut ve SHA-256 kayıtları tutulur.
 
-Kilitli binary kaynaklar taşınmamış, yeniden yazılmamış veya silinmemiştir.
+Kilitli binary kaynaklar taşınmamış, yeniden yazılmamış veya silinmemiştir. Güncel v2.7 görsel taslak kayıtları `working/v2.7/BINARY_ARTIFACTS.md` içindedir.
 
 ## Current result
 
-**v2.7 = ACTIVE STORY DRAFT / NOT LOCKED**
+**v2.7 = ACTIVE STORY + VISUAL DRAFT / NOT LOCKED**
 
-Temiz v2.6 kopyasına v2.7 anlatı çalışma kaynakları eklenmiştir:
+Temiz v2.6 kopyasına v2.7 anlatı ve görsel çalışma kaynakları eklenmiştir:
 
 - `working/v2.7/FOULWAKE_STORY_FRAMEWORK.md`
 - `working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md`
 - `working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json`
 - `working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md`
+- `working/v2.7/FOULWAKE_VISUAL_SYSTEM.md`
+- `working/v2.7/BINARY_ARTIFACTS.md`
 
 Kural kitabının mevcut akışı korunarak yalnız 3.1, 3.3, 3.4 anlatı notu, 3.6 ve Bölüm 17 için v2.7 hikâye metni hazırlanmıştır. 20 Karakter ve 30 Güç kartının tam metin kaynağı v2.7'ye alınmış; yalnız seçili görünen ad ve flavor alanları güncellenmiştir.
 
 Otomatik karşılaştırmada kart sayıları, kimlikler, etkiler, zamanlamalar, başlangıç havuzu ve desteye dönüş alanları baseline ile aynı bulunmuştur. Harita, Sadakat, Çürümüş Erzak ve yardımcı kartlar değiştirilmemiştir.
 
-Kilitli v2.6 hikâyesi ve binary artefaktları değiştirilmemiştir. v2.7 PDF'leri henüz üretilmemiş, sürüm kanonlaştırılmamış ve kilitlenmemiştir.
+20 Ağustos 2026 tarihinde kullanıcı v2.7 kart ve kural kitabı için özgün görsel yönü onaylamıştır. Bu onay kilit değildir.
+
+Üretim örnekleri:
+
+- KAR-01 Uzakgören karakter kartı yüzü
+- GUC-24 Islak Çorap güç kartı yüzü
+- HAR-AD-09 Deryanın Göbek Deliği harita kartı yüzü
+- Deniz + Kayalık ortak arka yüzü
+- 2 sayfalık gerçek ölçülü A4 baskı seti
+- 29 sayfalık A4 kural kitabı görsel taslağı
+
+Mizah tek bir fare maskotuna bağlanmaz. Fare, martı, beceriksiz veya hırsız tayfa, sessiz bakış ve nesne kaynaklı kuru mizah kart ailesi boyunca dönüşümlü kullanılır. Her illüstrasyonda en fazla bir ikincil görsel şaka bulunur.
+
+Tam 121 kartlık görsel uygulama henüz tamamlanmamıştır. Aile aile üretim ve fiziksel baskı provası beklemektedir.
+
+Kilitli v2.6 hikâyesi, mekanikleri ve binary artefaktları değiştirilmemiştir. v2.7 hikâye ve görsel çalışmaları kanonlaştırılmamış ve kilitlenmemiştir.
 
 ## Lock rule
 
