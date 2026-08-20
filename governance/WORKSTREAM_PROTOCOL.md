@@ -12,6 +12,30 @@
 
 Çalışma başlamadan önce aktif branch, son commit ve son STABLE / LOCKED baseline doğrulanır.
 
+## Resmî görünür sohbet ve ajan kuralı
+
+- Resmî uzman alanları `Foulwake Hikâye Editör`, `FOULWAKE görsel tasarım` ve
+  `Simülasyon Testi` adlı görünür sohbetlerdir.
+- Geçici alt ajan oluşturulmaz. Çok zorunlu istisna proje sahibinden önceden
+  açık izin ister; böyle bir çıktı `TEMPORARY_SUBAGENT` olarak kalır ve görünür
+  uzman teslimi yerine geçmez.
+- Baş Editör bu sohbetten diğer görünür sohbetlerin geçmişine mesaj ekleyemez.
+  GitHub'a görev yazılması yalnız bir iş emridir; ilgili sohbet kendi geçmişinde
+  okuyup handoff vermeden `ACKNOWLEDGED` veya `DELIVERED` kaydedilemez.
+
+## Çalışma dalları
+
+| Görünür sohbet | Çalışma dalı | Yazma kapsamı | Entegrasyon hedefi |
+|---|---|---|---|
+| `Foulwake Hikâye Editör` | `work/v2.7-story` | Onaylı hikâye ve görünen metin kaynakları | `v2.7-design` |
+| `FOULWAKE görsel tasarım` | `work/v2.7-visual` | Görsel, yerleşim, baskı ve artefakt kayıtları | `v2.7-design` |
+| `Simülasyon Testi` | `work/v2.7-simulation` | `working/v2.7/qa/**` test ve kanıtları | `v2.7-design` |
+
+Uzman çalışma dalı ilk yetkili teslim sırasında oluşturulur. Uzman sohbetler
+`governance/**`, `releases/**`, `PROJECT_STATE.md`, `AI_HANDOFF.md`, `main` veya
+kilit etiketlerine yazamaz. Baş Editör yalnız doğrulanmış handoffları
+`v2.7-design`a entegre eder.
+
 ## Çalışma hattı sınırları
 
 ### Hikâye Editörü
@@ -87,6 +111,9 @@ Her çalışma hattı tesliminde aşağıdaki alanlar bulunur:
 
 ```text
 WORKSTREAM:
+VISIBLE_CHAT:
+VISIBLE_CHAT_ACK: YES
+EVIDENCE_TYPE: VISIBLE_CHAT_WORKSTREAM
 SOURCE_BRANCH:
 SOURCE_COMMIT:
 BASELINE_RELEASE:
@@ -99,6 +126,11 @@ OPEN_RISKS:
 NEXT_RECIPIENT:
 LOCK_REQUESTED: NO
 ```
+
+`VISIBLE_CHAT_ACK: YES` ve `EVIDENCE_TYPE: VISIBLE_CHAT_WORKSTREAM` bulunmayan
+bir kayıt resmî uzman teslimi değildir. İzinli geçici alt ajan kaydı varsa
+`EVIDENCE_TYPE: TEMPORARY_SUBAGENT` kullanılır; bu kayıt blocker kapatamaz,
+release PASS'i üretemez ve uzman sohbet adına onay veremez.
 
 ## Çakışma kuralı
 
@@ -115,5 +147,7 @@ Proje sahibinin açık ve tekrar sorulmaması gereken kararları
 `governance/DECISION_REGISTER.md`; aktif görev sahipleri ve teslimleri
 `governance/WORKSTREAM_ASSIGNMENTS.md` içinde tutulur.
 
-Sohbet içindeki onay veya özet tek başına kanonik kayıt değildir. Handoff ve
-Baş Editör dispozisyonu GitHub'a yazılmadan çalışma tamamlanmış sayılmaz.
+Sohbet içindeki onay veya özet tek başına kanonik kayıt değildir. Aynı şekilde
+GitHub iş emri de görünür sohbet kabulü değildir. Resmî çalışma; görünür sohbet
+geçmişi, zorunlu handoff, uzman dalındaki exact commit ve Baş Editör
+dispozisyonu birlikte bulunmadan tamamlanmış sayılmaz.

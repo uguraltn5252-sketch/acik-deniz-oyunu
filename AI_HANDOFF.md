@@ -22,6 +22,23 @@ Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
 - Hikâye, Görsel Tasarım ve Simülasyon Testi başka hattın alanını sessizce değiştirmez; zorunlu handoff biçimini kullanır.
 - GitHub'a yazılmış olmak bir çıktıyı kendiliğinden kanon, STABLE veya LOCKED yapmaz.
 
+## Resmî çalışma alanı ve geçici ajan yasağı
+
+- Resmî uzman alanları kullanıcının oluşturduğu `Foulwake Hikâye Editör`,
+  `FOULWAKE görsel tasarım` ve `Simülasyon Testi` görünür sohbetleridir.
+- Bir iş yalnız ilgili görünür sohbet içinde yapılıp
+  `VISIBLE_CHAT_ACK: YES` handoffuyla exact commite bağlandığında o uzman hatta
+  mal edilir.
+- Geçici alt ajan oluşturmak yasaktır. Çok zorunlu istisna yalnız proje
+  sahibinin önceden açık izniyle mümkündür; sonuç `TEMPORARY_SUBAGENT` olarak
+  etiketlenir ve uzman sohbet teslimi, onayı veya PASS'i sayılmaz.
+- Baş Editör başka görünür sohbetin geçmişine doğrudan mesaj ekleyemez. GitHub
+  görev kaydı `PENDING_VISIBLE_CHAT_ACK` iş emridir; kendi başına iletişim veya
+  kabul kanıtı değildir.
+- Uzman dalları `work/v2.7-story`, `work/v2.7-visual` ve
+  `work/v2.7-simulation`; entegrasyon hedefi `v2.7-design`dır. Kanonik durum,
+  `main`, release ve kilit yalnız Baş Editör kapsamındadır.
+
 ## Aktif v2.7 kararları
 
 - **Sea=Rock:** Açık Deniz ve Kayalık v2.7 DRAFT içinde aynı metinsiz binary
@@ -85,4 +102,4 @@ Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
 
 ## Kısa devam komutu
 
-> GitHub'daki Açık Deniz reposunu aç. `AI_HANDOFF.md`, `PROJECT_STATE.md`, `governance/EDITORIAL_CHARTER.md` ve `governance/DECISION_REGISTER.md` dosyalarını oku. Son kullanıcı-onaylı kilitli sürüm olarak v2.6 STABLE / LOCKED'u kullan. `governance/ACTIVE_WORKSTREAMS.json` içindeki açık engelleri ve görev sahiplerini kontrol et. v2.6'yı yerinde değiştirme; yeni çalışma gerekiyorsa v2.7+ DRAFT aç.
+> GitHub'daki Açık Deniz reposunda `v2.7-design` dalını aç. `AI_HANDOFF.md`, `PROJECT_STATE.md`, `governance/EDITORIAL_CHARTER.md` ve `governance/DECISION_REGISTER.md` dosyalarını oku. Son kullanıcı-onaylı kilitli sürüm olarak v2.6 STABLE / LOCKED'u kullan. `governance/ACTIVE_WORKSTREAMS.json` içindeki açık engelleri, görünür sohbet kabul durumunu ve görev sahiplerini kontrol et. Yalnız kendi uzman dalında çalış; v2.6'yı yerinde değiştirme ve görünür sohbet handoffu olmadan işi teslim edilmiş sayma.

@@ -1,8 +1,16 @@
 # FOULWAKE v2.7 Release Blocker Çözüm Planı
 
-**Durum:** ACTIVE QA PLAN / CURRENT VERDICT BLOCKER  
-**Kaynak:** `v2.7-design@af064df83ac4132c7d8d75aec67a3f1b51150fdb`  
+**Durum:** CHIEF EDITOR PROVISIONAL QA PLAN / CURRENT VERDICT BLOCKER
+
+**Kaynak:** `v2.7-design@9758b848f0395525b395e3f2ccf9e9f7408fed99`
+
 **Baseline:** v2.6 STABLE / LOCKED; mekanik motor v2.5
+
+**Kanıt sınıfı:** Bu plan önceki geçici alt ajan incelemesinden yararlanan Baş
+Editör çalışma taslağıdır. **RESMÎ SİMÜLASYON TESLİMİ DEĞİLDİR.** Kullanıcının
+oluşturduğu görünür `Simülasyon Testi` sohbeti planı kendi geçmişinde okuyup
+`VISIBLE_CHAT_ACK: YES` handoffuyla kabul etmeden ve exact candidate üzerinde
+uygulamadan Simülasyon PASS'i, attestation veya blocker kapanışı üretemez.
 
 Sea=Rock ortak arka yüz kararı v2.7 DRAFT için bağlayıcıdır ve yeniden açılmaz.
 Bu karar v2.6'nın ayrı arka yüz modelinden bilinçli bir bilgi-mimarisi farkıdır;

@@ -26,6 +26,22 @@ Bu tüzük, FOULWAKE projesindeki Hikâye, Görsel Tasarım, Simülasyon Testi v
 | Simülasyon Testi | Mekanik, matematik, strateji, sosyal deneyim, görsel okunabilirlik, PDF/dosya/manifest denetimi | Bulguyu doğrudan yeni kurala dönüştürme veya sürüm kilitleme |
 | Üretim/PDF | Onaylı kaynaklardan baskı ve export üretimi | Taşmayı çözmek için metin, kart veya mekanik budama |
 
+## 2.1 Resmî sohbet ve çalışma dalı kimliği
+
+- Hikâye, Görsel Tasarım ve Simülasyon işi yalnız kullanıcının oluşturduğu aynı
+  adlı görünür sohbet içinde yapıldığında ilgili uzman hattına mal edilir.
+- Geçici alt ajan oluşturmak yasaktır. Çok zorunlu bir istisna yalnız proje
+  sahibinin önceden açık izniyle kullanılabilir; sonucu yine uzman sohbet onayı
+  sayılmaz ve `TEMPORARY_SUBAGENT` olarak etiketlenir.
+- Uzmanların çalışma dalları sırasıyla `work/v2.7-story`,
+  `work/v2.7-visual` ve `work/v2.7-simulation`dır. Bu dallar ilk yetkili teslim
+  sırasında oluşturulur; entegrasyon hedefi `v2.7-design`dır.
+- Uzman sohbetler kendi dal ve sahip oldukları dosyalarda commit/push yapabilir.
+  `governance/**`, `releases/**`, kanonik durum, entegrasyon, `main` geçişi ve
+  kilit işlemleri yalnız Baş Editör kapsamındadır.
+- GitHub görev kaydı veya başka bir sohbette yazılan özet, görünür uzman
+  sohbetinden `VISIBLE_CHAT_ACK: YES` handoffu gelmeden kabul edilmiş sayılmaz.
+
 ## 3. Korunan alanlar
 
 Aşağıdaki alanların kanonik durumu yalnız Baş Editör tarafından güncellenir:
@@ -73,3 +89,7 @@ Simülasyon Testi, Baş Editörün yerine geçmez; Baş Editörün kilit kararı
 ## 7. İletişim ve handoff
 
 Çalışma hatları birbirinin dosyasını sessizce değiştirmez. Her teslim; kaynak commit, kapsam, değişen dosyalar, korunmuş alanlar, testler, açık riskler ve sonraki alıcı bilgisiyle kaydedilir. Ayrıntılı yöntem `governance/WORKSTREAM_PROTOCOL.md` içindedir.
+
+Önceki geçici alt ajan incelemeleri yalnız Baş Editör için ön bulgudur. Görünür
+uzman sohbet tarafından bağımsız biçimde yeniden doğrulanmadan resmî Hikâye,
+Görsel veya Simülasyon teslimi, PASS'i ya da onayı olarak kullanılamaz.

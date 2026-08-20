@@ -57,6 +57,8 @@ if state_path.exists():
         roles = state.get("roles", {})
         policy = state.get("lock_policy", {})
         readiness = state.get("release_readiness", {})
+        communication = state.get("communication_policy", {})
+        handoff = state.get("cross_workstream_handoff", {})
         blockers = state.get("open_blockers", [])
         resolved = state.get("resolved_blockers", [])
 
@@ -76,6 +78,16 @@ if state_path.exists():
             ERRORS.append("simulation test must remain a mandatory release gate")
         if policy.get("blocker_veto") is not True:
             ERRORS.append("BLOCKER veto must remain enabled")
+        if communication.get("official_workstream_credit_requires_named_visible_chat") is not True:
+            ERRORS.append("official workstream credit must require the named visible chat")
+        if communication.get("github_work_order_is_not_acknowledgement") is not True:
+            ERRORS.append("GitHub work orders must not count as visible-chat acknowledgement")
+        if communication.get("temporary_subagents_allowed") is not False:
+            ERRORS.append("temporary subagents must remain disabled")
+        if communication.get("temporary_subagent_exception_requires_prior_project_owner_approval") is not True:
+            ERRORS.append("temporary-subagent exceptions require prior project-owner approval")
+        if communication.get("temporary_subagent_output_counts_as_official_specialist_delivery") is not False:
+            ERRORS.append("temporary-subagent output must not count as specialist delivery")
         if readiness.get("verdict") == "BLOCKER" and readiness.get("lock_allowed") is not False:
             ERRORS.append("BLOCKER readiness must prohibit locking")
         blocker_ids = [item.get("id") for item in blockers if item.get("status") == "OPEN"]
@@ -83,6 +95,8 @@ if state_path.exists():
             ERRORS.append("open blocker ids must be unique")
         if readiness.get("verdict") == "BLOCKER" and not blocker_ids:
             ERRORS.append("BLOCKER readiness must name at least one open blocker")
+        if "COM-001" not in blocker_ids:
+            ERRORS.append("COM-001 must remain open until all named visible chats revalidate")
         if "CAN-001" in blocker_ids:
             ERRORS.append("CAN-001 must not remain open after Story reclassification")
         if "CAN-001" not in {item.get("id") for item in resolved}:
@@ -90,6 +104,28 @@ if state_path.exists():
         mechanic = next((item for item in blockers if item.get("id") == "MEC-001"), {})
         if mechanic.get("decision_status") != "APPROVED_FOR_V2.7_DRAFT":
             ERRORS.append("MEC-001 must preserve the approved Sea=Rock v2.7 draft decision")
+        for field in (
+            "story_to_visual",
+            "story_to_simulation",
+            "visual_to_simulation",
+            "simulation_to_story",
+            "simulation_to_visual",
+            "final_directives",
+        ):
+            if handoff.get(field) != "PENDING_VISIBLE_CHAT_ACK":
+                ERRORS.append(f"{field} must remain PENDING_VISIBLE_CHAT_ACK")
+        if handoff.get("simulation_to_chief_editor") != "PENDING_VISIBLE_CHAT_DELIVERY":
+            ERRORS.append("simulation_to_chief_editor must await visible-chat delivery")
+        for role_name, chat_name, branch_name in (
+            ("story_editor", "Foulwake Hikâye Editör", "work/v2.7-story"),
+            ("visual_design", "FOULWAKE görsel tasarım", "work/v2.7-visual"),
+            ("simulation_test", "Simülasyon Testi", "work/v2.7-simulation"),
+        ):
+            role = roles.get(role_name, {})
+            if role.get("official_chat") != chat_name:
+                ERRORS.append(f"{role_name} official visible chat is incorrect")
+            if role.get("work_branch") != branch_name:
+                ERRORS.append(f"{role_name} work branch is incorrect")
 
 project_state = ROOT / "PROJECT_STATE.md"
 if project_state.exists():
@@ -97,13 +133,44 @@ if project_state.exists():
     for marker in ("v2.6 STABLE / LOCKED", "v2.7 DRAFT / NOT LOCKED"):
         if marker not in text:
             ERRORS.append(f"PROJECT_STATE.md is missing marker: {marker}")
+    if "COM-001" not in text or "geçici alt ajan" not in text:
+        ERRORS.append("PROJECT_STATE.md must disclose pending visible-chat revalidation")
 
 decision_register = ROOT / "governance/DECISION_REGISTER.md"
 if decision_register.exists():
     text = decision_register.read_text(encoding="utf-8")
-    for marker in ("DEC-20260820-01", "Açık Deniz ve Kayalık", "APPROVED FOR v2.7 DRAFT"):
+    for marker in (
+        "DEC-20260820-01",
+        "DEC-20260820-06",
+        "DEC-20260820-07",
+        "DEC-20260820-08",
+        "Açık Deniz ve Kayalık",
+        "APPROVED FOR v2.7 DRAFT",
+    ):
         if marker not in text:
             ERRORS.append(f"decision register is missing marker: {marker}")
+
+workstream_protocol = ROOT / "governance/WORKSTREAM_PROTOCOL.md"
+if workstream_protocol.exists():
+    text = workstream_protocol.read_text(encoding="utf-8")
+    for marker in (
+        "VISIBLE_CHAT_ACK: YES",
+        "EVIDENCE_TYPE: VISIBLE_CHAT_WORKSTREAM",
+        "work/v2.7-story",
+        "work/v2.7-visual",
+        "work/v2.7-simulation",
+        "TEMPORARY_SUBAGENT",
+    ):
+        if marker not in text:
+            ERRORS.append(f"workstream protocol is missing marker: {marker}")
+
+coordination_log = ROOT / "governance/COORDINATION_LOG.md"
+if coordination_log.exists():
+    text = coordination_log.read_text(encoding="utf-8")
+    if "KAYIT DÜZELTMESİ / ÖNCEKİ ATIFLARI GEÇERSİZ KILAR" not in text:
+        ERRORS.append("coordination log must supersede the incorrect workstream attribution")
+    if "PENDING_VISIBLE_CHAT_ACK" not in text or "COM-001" not in text:
+        ERRORS.append("coordination log must record pending visible-chat acknowledgement")
 
 story_framework = ROOT / "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
 if story_framework.exists():
@@ -168,7 +235,14 @@ if binary_artifacts.exists():
 qa_plan = ROOT / "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md"
 if qa_plan.exists():
     text = qa_plan.read_text(encoding="utf-8")
-    for marker in ("450.000", "1.000.000", "800 kör sınıflandırma", "candidate_commit=C"):
+    for marker in (
+        "RESMÎ SİMÜLASYON TESLİMİ DEĞİLDİR",
+        "VISIBLE_CHAT_ACK: YES",
+        "450.000",
+        "1.000.000",
+        "800 kör sınıflandırma",
+        "candidate_commit=C",
+    ):
         if marker not in text:
             ERRORS.append(f"QA resolution plan is missing marker: {marker}")
 

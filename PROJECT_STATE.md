@@ -9,9 +9,12 @@
 
 ## Baş editörlük ve release hazırlığı
 
-Baş editörlük yönetişimi `governance/` altında yürürlüktedir. Hikâye, Görsel
-Tasarım ve Simülasyon Testi hatları `af064df83ac4132c7d8d75aec67a3f1b51150fdb`
-commitini çapraz denetlemiştir.
+Baş editörlük yönetişimi `governance/` altında yürürlüktedir. Önceki kayıtta
+Hikâye, Görsel Tasarım ve Simülasyon Testi hatlarına mal edilen çapraz denetim
+gerçekte Baş Editör sohbetindeki geçici alt ajanlarla yapılmıştır. Bu çıktı
+uzman sohbet teslimi sayılmaz. Kullanıcının oluşturduğu üç görünür sohbetin
+bağımsız yeniden doğrulaması ve branch-bound handoffları `COM-001` altında
+beklenmektedir.
 
 **Güncel release hükmü:** **BLOCKER — v2.7 kilitlenemez.**
 
@@ -24,9 +27,13 @@ dispozisyonu `governance/COORDINATION_LOG.md` içindedir. Özet:
 - `QA-001`: v2.7 PASS yeniden üretilemiyor; exact commite bağlı tam QA attestation yok.
 - `QA-002`: Fiziksel prova ve kör insan sosyal deneyim testi yok.
 - `GOV-001`: `main` ile aktif dal çelişkili ve ayrışmış; release PR/status kapısı yok.
+- `COM-001`: Önceki geçici alt ajan incelemeleri görünür uzman sohbet teslimi
+  gibi kaydedilmişti; üç görünür sohbetten doğrulama ve handoff henüz yok.
 
 `CAN-001` çözüldü: `CAN-08/09` yalnız v2.7 DRAFT koruma ilkesi olarak
-`TASLAK` sınıfına alındı; release kanonu iddiası kaldırıldı.
+`TASLAK` sınıfına alındı; release kanonu iddiası kaldırıldı. İçerik düzeltmesi
+yerindedir ancak görünür Hikâye Editörü yeniden doğrulaması `COM-001` kapsamında
+beklemektedir.
 
 Bağlayıcı kullanıcı kararları `governance/DECISION_REGISTER.md`, sorumlu ve
 teslimler `governance/WORKSTREAM_ASSIGNMENTS.md`, test eşikleri ise
@@ -35,6 +42,11 @@ teslimler `governance/WORKSTREAM_ASSIGNMENTS.md`, test eşikleri ise
 GitHub'a yazılan bir dosya kendiliğinden kanon veya release olmaz. Kilit için
 proje sahibinin açık talimatı, kapanmış engeller, exact candidate commite bağlı
 Simülasyon QA attestation'ı ve Baş Editör kilit tutanağı birlikte zorunludur.
+
+Resmî uzman çalışması yalnız `Foulwake Hikâye Editör`, `FOULWAKE görsel
+tasarım` veya `Simülasyon Testi` görünür sohbetinde yapılıp zorunlu handoffla
+kaydedildiğinde o hatta mal edilir. Geçici alt ajan kullanımı yasaktır; önceden
+izinli istisna dahi uzman sohbet onayı sayılmaz.
 
 ## Locked baseline
 
@@ -78,6 +90,10 @@ Temiz v2.6 kopyasına v2.7 anlatı ve görsel çalışma kaynakları eklenmişti
 - `working/v2.7/V27_MECHANIC_DECISIONS.json`
 - `working/v2.7/SOURCE_HIERARCHY_v2.7.json`
 - `working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md`
+
+QA çözüm planı Baş Editörün geçici çalışma taslağıdır; görünür `Simülasyon
+Testi` sohbeti tarafından kabul edilip exact candidate üzerinde uygulanana
+kadar resmî Simülasyon teslimi veya PASS değildir.
 
 Kural kitabının mevcut akışı korunarak yalnız 3.1, 3.3, 3.4 anlatı notu, 3.6 ve Bölüm 17 için v2.7 hikâye metni hazırlanmıştır. 20 Karakter ve 30 Güç kartının tam metin kaynağı v2.7'ye alınmış; yalnız seçili görünen ad ve flavor alanları güncellenmiştir.
 

@@ -1,19 +1,55 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 20 Ağustos 2026 — KAYIT DÜZELTMESİ / ÖNCEKİ ATIFLARI GEÇERSİZ KILAR
+
+**Düzeltme kaynağı:** Proje sahibinin görünür sohbet zorunluluğu ve geçici alt
+ajan yasağı
+
+**Denetlenen head:** `v2.7-design@9758b848f0395525b395e3f2ccf9e9f7408fed99`
+
+Bu dosyanın aşağıdaki eski bölümlerinde kullanılan “Hikâye, Görsel Tasarım ve
+Simülasyon hatları denetledi”, “iletilen”, `ACKNOWLEDGED`, `DELIVERED` ve
+“önerilerini birbirlerine iletti” ifadeleri kullanıcı tarafından oluşturulan
+görünür sohbetler açısından doğru değildir. İncelemeler Baş Editör sohbetinde
+çalıştırılmış geçici alt ajanlardan gelmiştir. Teknik bulgular ön bulgu olarak
+kalabilir; uzman sohbet teslimi, bağımsız onay veya release kanıtı sayılamaz.
+
+Bu nedenle önceki çapraz handoff durumları geri alınmış ve
+`PENDING_VISIBLE_CHAT_ACK` olarak yeniden sınıflandırılmıştır. Geçici alt ajan
+oluşturmak bundan sonra yasaktır; çok zorunlu istisna proje sahibinin önceden
+açık iznini gerektirir ve yine uzman sohbet adına çalışmış sayılmaz.
+
+| Hat | Önceki yanlış kayıt | Geçerli durum |
+|---|---|---|
+| Hikâye | Teslim/çapraz onay verilmiş gibi gösterildi | `PENDING_VISIBLE_CHAT_ACK` |
+| Görsel | Teslim/çapraz onay verilmiş gibi gösterildi | `PENDING_VISIBLE_CHAT_ACK` |
+| Simülasyon | QA planı ve hüküm resmî teslim gibi gösterildi | `PENDING_VISIBLE_CHAT_DELIVERY` |
+
+Baş Editör bu sohbetten diğer görünür sohbetlerin geçmişine mesaj ekleyemez.
+GitHub kaydı yalnız iş emridir; ilgili sohbet kendi geçmişinde okuyup
+`VISIBLE_CHAT_ACK: YES` handoffu vermeden kabul edilmiş sayılmaz. Uzman
+çalışmaları `work/v2.7-story`, `work/v2.7-visual` ve
+`work/v2.7-simulation` dallarında üretilecek; yalnız Baş Editör doğrulanmış
+teslimleri `v2.7-design`a entegre edecek ve release/kilit alanını yönetecektir.
+
+Bu düzeltme `COM-001` blockerını açar. Aşağıdaki tarihsel bulgular, görünür
+uzman sohbetlerce yeniden doğrulanana kadar **Baş Editörün geçici ön
+bulguları**dır.
+
 ## 20 Ağustos 2026 — Baş editörlük düzeninin yürürlüğe alınması
 
 **Kanonik baseline:** v2.6 STABLE / LOCKED  
 **Aktif çalışma:** v2.7 STORY + VISUAL DRAFT / NOT LOCKED  
 **Aktif branch:** `v2.7-design`
 
-### Hikâye Editörüne iletilen yönlendirme
+### Hikâye Editörü için GitHub iş emri — görünür sohbet kabulü bekliyor
 
 - Mevcut v2.7 hikâye ve kart dili dosyaları Görsel Tasarımın metin kaynağıdır.
 - Kural kitabı akışı, kart sayıları, kimlikler, etkiler, zamanlamalar, başlangıç havuzu ve deste davranışları korunacaktır.
 - Görsel dosyalarda doğrudan değişiklik yapılmayacak; görsel ihtiyaçlar handoff ile iletilecektir.
 - Mekanik risk olarak görülen konular kural değişikliğine çevrilmeden Simülasyon Testine aktarılacaktır.
 
-### Görsel Tasarıma iletilen yönlendirme
+### Görsel Tasarım için GitHub iş emri — görünür sohbet kabulü bekliyor
 
 - `FOULWAKE_STORY_FRAMEWORK.md`, `FOULWAKE_RULEBOOK_STORY_v2.7.md`, `FOULWAKE_CARD_TEXTS_v2.7.json` ve anlatı doğrulama raporu metin/lore kaynağıdır.
 - `FOULWAKE_VISUAL_SYSTEM.md` onaylı sanat yönüdür; release kilidi değildir.
@@ -21,7 +57,7 @@
 - Tam 121 kartlık yayılım aile bazında okunabilirlik ve tutarlılık kontrolüyle ilerleyecektir.
 - Mekanik veya kanonik metin değiştirilmeden taşma/okunabilirlik sorunu Baş Editöre bildirilecektir.
 
-### Simülasyon Testine iletilen yönlendirme
+### Simülasyon Testi için GitHub iş emri — görünür sohbet teslimi bekliyor
 
 - Denetim yalnız kazanma oranı veya eski statik validator ile sınırlı değildir.
 - Mekanik, matematik, mantık, strateji, sosyal deneyim, sıkılma, adalet, moderatör yükü, görsel okunabilirlik, PDF ve manifest bütünlüğü ayrı katmanlarda test edilecektir.
@@ -37,10 +73,11 @@
 
 ## 20 Ağustos 2026 — Çapraz çalışma hattı denetimi
 
-Hikâye, Görsel Tasarım ve Simülasyon Testi hatları `v2.7-design` dalındaki
-`1a5b23051a3a625d6de9b98c2503a0181956af3c` commitini birbirinden bağımsız,
-salt okunur biçimde denetledi. Hikâye bulguları Görsel ve Simülasyon hatlarına;
-Görsel bulguları Simülasyon hattına; Simülasyon hükmü Baş Editöre iletildi.
+Baş Editör sohbetindeki üç geçici alt ajan `v2.7-design` dalındaki
+`1a5b23051a3a625d6de9b98c2503a0181956af3c` commitini salt okunur biçimde
+inceledi. Bu, görünür Hikâye, Görsel Tasarım ve Simülasyon Testi sohbetlerinin
+bağımsız denetimi veya aralarındaki iletişim değildir. Aşağıdaki ortak hüküm
+Baş Editörün geçici blocker değerlendirmesi olarak korunur.
 
 **Ortak hüküm:** `v2.7 = BLOCKER / RELEASE VE KİLİT İÇİN UYGUN DEĞİL`.
 
@@ -65,9 +102,10 @@ Görsel bulguları Simülasyon hattına; Simülasyon hükmü Baş Editöre ileti
 ## 20 Ağustos 2026 — Sorumlu hatlara çözüm dağıtımı
 
 Proje sahibi açık engellerin sorumlularına iletilmesini ve hatların uyumlu
-çalışmasını istedi. Hikâye, Görsel Tasarım ve Simülasyon Testi hatları
-`af064df83ac4132c7d8d75aec67a3f1b51150fdb` üzerinde read-only çalıştı,
-önerilerini birbirlerine iletti ve Baş Editöre tek handoff verdi.
+çalışmasını istedi. Önceki uygulamada görünür uzman sohbetlerine mesaj
+gönderilmedi; `af064df83ac4132c7d8d75aec67a3f1b51150fdb` üzerindeki öneriler geçici
+alt ajanlardan alındı ve Baş Editör tarafından birleştirildi. Bu kayıt şimdi
+resmî teslim değil, yeniden doğrulanacak ön çalışma olarak sınıflandırılmıştır.
 
 ### Baş Editörün kaynak ve karar dispozisyonu
 
@@ -86,15 +124,17 @@ Proje sahibi açık engellerin sorumlularına iletilmesini ve hatların uyumlu
 - Reset öncesi 121/121 üretim ve final preflight tarihsel kanıttır; güncel branch
   ve exact candidate'a yeniden bağlanmadan `ART-001`i kapatmaz.
 
-### Kabul edilen görevler
+### Geçici öneriler ve görünür sohbet doğrulama durumu
 
-| Hat | Kabul edilen teslim | Durum |
+| Hat | Ön çalışma | Geçerli durum |
 |---|---|---|
-| Hikâye | CAN-08/09 `KANON → TASLAK`; kesin metin alanları ve korunan mekanik alanlar | Dokümantasyon düzeltmesi kabul edildi |
-| Görsel | Kaynak hiyerarşisi; Sea=Rock draft/retest çiti; 121 manifest ve provenance şartı | Spec düzeltmesi kabul edildi; üretim bekliyor |
-| Simülasyon | Paired A/B, mekanik/fuzz, strateji, sosyal, kör insan ve fiziksel sızıntı planı | QA planı kabul edildi; candidate bekliyor |
-| Baş Editör | Karar kaydı, görev haritası, source state ve tek GitHub entegrasyonu | Uygulandı |
+| Hikâye | CAN-08/09 `KANON → TASLAK`; kesin metin alanları ve korunan mekanik alanlar | İçerik düzeltildi; görünür Hikâye sohbeti yeniden doğrulaması bekliyor |
+| Görsel | Kaynak hiyerarşisi; Sea=Rock draft/retest çiti; 121 manifest ve provenance şartı | Spec ön çalışması var; görünür Görsel sohbeti teslimi bekliyor |
+| Simülasyon | Paired A/B, mekanik/fuzz, strateji, sosyal, kör insan ve fiziksel sızıntı planı | Baş Editör taslak planı; görünür Simülasyon sohbeti kabulü/uygulaması bekliyor |
+| Baş Editör | Karar kaydı, görev haritası ve yanlış atıf düzeltmesi | Yönetişim düzeltmesi uygulandı; entegrasyon ve release hâlâ BLOCKER |
 
-Hatların ayrı commit/push oluşturması yasaklandı; bütün kapsam değişiklikleri Baş
-Editör tarafından tek entegrasyonda birleştirildi. Güncel hüküm BLOCKER olarak
-kalır; bu koordinasyon bir release veya kilit değildir.
+Uzman sohbetlerin ayrı commit/push oluşturmasının yasaklandığı önceki hüküm
+geçersizdir. Uzmanlar yalnız kendi çalışma dalları ve yetki alanlarında teslim
+üretebilir; Baş Editör entegrasyon, kanonik durum, release ve kilit yetkisini
+korur. Güncel hüküm BLOCKER olarak kalır; bu koordinasyon bir release veya kilit
+değildir.
