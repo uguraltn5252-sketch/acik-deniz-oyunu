@@ -1,0 +1,3701 @@
+{
+  "schema_version": 1,
+  "project": "FOULWAKE",
+  "version": "v2.7",
+  "status": "DRAFT_NOT_LOCKED_INVENTORY_ONLY",
+  "workstream": "visual_design",
+  "visible_chat": "FOULWAKE görsel tasarım",
+  "source_branch": "work/v2.7-visual",
+  "inventory_base_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "source_blobs": {
+    "story_framework": "962222d83d669763c4ac8e2765f024b9fade180c",
+    "rulebook_story": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+    "card_texts": "38a03b71cd3232fd844db8d80d8e53662510b6a3"
+  },
+  "identity_verification": {
+    "locked_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+    "pdf_unique_ids": 121,
+    "inventory_unique_ids": 121,
+    "id_set_match": true,
+    "names_found_verbatim_or_normalized_in_pdf": 119,
+    "names_not_found_as_same_phrase_in_pdf": [
+      "SET-VL-01",
+      "SET-KP-01"
+    ],
+    "support_label_note": "SET-VL-01 and SET-KP-01 use longer canonical inventory descriptors; the locked PDF visibly labels them VARIŞ LİMANI and KAPTAN MAKAM KARTI while preserving the same IDs.",
+    "support_names_source": "releases/v2.6/CARD_BASELINE.md",
+    "historical_full_deck_inventory_used_as_index_only": true,
+    "historical_visuals_used_as_candidate": false
+  },
+  "counts": {
+    "physical_cards": 121,
+    "unique_ids": 121,
+    "families": {
+      "character": 20,
+      "loyalty": 15,
+      "map_island": 6,
+      "map_lighthouse": 4,
+      "map_open_sea": 30,
+      "map_rock": 12,
+      "power": 30,
+      "rotten_provisions": 1,
+      "support": 3
+    },
+    "back_mappings": {
+      "BACK_CHARACTER": 20,
+      "BACK_ISLAND": 6,
+      "BACK_LIGHTHOUSE": 4,
+      "BACK_LOYALTY": 15,
+      "BACK_POWER": 31,
+      "BACK_SEA_ROCK": 42,
+      "BACK_SUPPORT": 3
+    }
+  },
+  "back_policy": {
+    "BACK_SEA_ROCK": "same textless binary asset for all Open Sea and Rock cards",
+    "rotation_safe_release_evidence": "PENDING_BLIND_PHYSICAL_TEST",
+    "locked_v2_6_mutated": false
+  },
+  "candidate_status": "NOT_A_FULL_121_CARD_CANDIDATE",
+  "cards": [
+    {
+      "id": "KAR-01",
+      "family": "character",
+      "name": "Uzakgören",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-01"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "REPRESENTATIVE_RENDER_PRESENT",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-02",
+      "family": "character",
+      "name": "Kıyıçizen",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-02"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-03",
+      "family": "character",
+      "name": "Dümenkurdu",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-03"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-04",
+      "family": "character",
+      "name": "Canhalatı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-04"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-05",
+      "family": "character",
+      "name": "Tahtakakan",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-05"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-06",
+      "family": "character",
+      "name": "Dipgören",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-06"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-07",
+      "family": "character",
+      "name": "Rüzgârkoklayan",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-07"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-08",
+      "family": "character",
+      "name": "Kırık Kürek",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-08"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-09",
+      "family": "character",
+      "name": "Üç Anahtar",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-09"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-10",
+      "family": "character",
+      "name": "Güvertebaşı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-10"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-11",
+      "family": "character",
+      "name": "İskele Sıçanı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-11"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-12",
+      "family": "character",
+      "name": "Karga Yuvası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-12"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-13",
+      "family": "character",
+      "name": "Kazanbaşı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-13"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-14",
+      "family": "character",
+      "name": "Fare Nazırı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-14"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-15",
+      "family": "character",
+      "name": "Papağan Mütercimi",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-15"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-16",
+      "family": "character",
+      "name": "Fıçı Bekçisi",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-16"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-17",
+      "family": "character",
+      "name": "Kafiye Belası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-17"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-18",
+      "family": "character",
+      "name": "Karayı Özleyen",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-18"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-19",
+      "family": "character",
+      "name": "Yastıkçı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-19"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "KAR-20",
+      "family": "character",
+      "name": "Tahtaya Vuran",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-20"
+      },
+      "trim_mm": [
+        70,
+        120
+      ],
+      "bleed_mm": [
+        76,
+        126
+      ],
+      "target_pixels_300dpi": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_CHARACTER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-01A",
+      "family": "power",
+      "name": "Mantar Can Halkası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-01A"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-01B",
+      "family": "power",
+      "name": "Mantar Can Halkası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-01B"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-02A",
+      "family": "power",
+      "name": "Kancalı Halat",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-02A"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-02B",
+      "family": "power",
+      "name": "Kancalı Halat",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-02B"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-03",
+      "family": "power",
+      "name": "Pusula",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-03"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-04",
+      "family": "power",
+      "name": "Güverte Araması",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-04"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-05",
+      "family": "power",
+      "name": "Yama Tahtası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-05"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-06",
+      "family": "power",
+      "name": "Zıpkın Sandığı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-06"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-07",
+      "family": "power",
+      "name": "Geçici Yeke",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-07"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-08",
+      "family": "power",
+      "name": "Kerteriz Pergeli",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-08"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-09",
+      "family": "power",
+      "name": "Kurşun Ağırlık",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-09"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-10",
+      "family": "power",
+      "name": "Yedek Yelken",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-10"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-11",
+      "family": "power",
+      "name": "Islak Deniz Haritası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-11"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-12",
+      "family": "power",
+      "name": "Kırık Dürbün",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-12"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-13",
+      "family": "power",
+      "name": "Eski Seyir Defteri",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-13"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-14",
+      "family": "power",
+      "name": "Anahtar Deliği",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-14"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-15",
+      "family": "power",
+      "name": "Kaptanın Eski Şapkası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-15"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-16",
+      "family": "power",
+      "name": "İsyan Bildirisi",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-16"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-17",
+      "family": "power",
+      "name": "Papağanın İfadesi",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-17"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-18",
+      "family": "power",
+      "name": "Mühürlü Emir",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-18"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-19",
+      "family": "power",
+      "name": "Kaçak Rom",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-19"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-20",
+      "family": "power",
+      "name": "Bir Daha Say",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-20"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-21",
+      "family": "power",
+      "name": "Uğurlu Altın",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-21"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-22",
+      "family": "power",
+      "name": "Kaptanın Çatlak Kupası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-22"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "source_conflict": {
+        "status": "CHIEF_EDITOR_DISPOSITION_REQUIRED_BEFORE_FULL_PRODUCTION",
+        "detail": "releases/v2.6/CARD_BASELINE.md names Bayat Peksimet as GUC-22; locked card PDF and v2.7 card source use GUC-22 Kaptanın Çatlak Kupası and GUC-23 Bayat Peksimet."
+      }
+    },
+    {
+      "id": "GUC-23",
+      "family": "power",
+      "name": "Bayat Peksimet",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-23"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "source_conflict": {
+        "status": "CHIEF_EDITOR_DISPOSITION_REQUIRED_BEFORE_FULL_PRODUCTION",
+        "detail": "releases/v2.6/CARD_BASELINE.md names Bayat Peksimet as GUC-22; locked card PDF and v2.7 card source use GUC-22 Kaptanın Çatlak Kupası and GUC-23 Bayat Peksimet."
+      }
+    },
+    {
+      "id": "GUC-24",
+      "family": "power",
+      "name": "Islak Çorap",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-24"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "REPRESENTATIVE_RENDER_PRESENT",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-25",
+      "family": "power",
+      "name": "Şüpheli Martı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-25"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-26",
+      "family": "power",
+      "name": "Fırtına Feneri",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-26"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-27",
+      "family": "power",
+      "name": "Kaderi Yeniden Yaz",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-27"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "GUC-28",
+      "family": "power",
+      "name": "Seyir Zabtı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-28"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "ERZ-01",
+      "family": "rotten_provisions",
+      "name": "Çürümüş Erzak",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "ERZ-01"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_POWER",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-01",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-01"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-02",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-02"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-03",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-03"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-04",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-04"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-05",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-05"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-06",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-06"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-07",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-07"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-08",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-08"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-09",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-09"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-T-10",
+      "family": "loyalty",
+      "name": "Tayfa",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-T-10"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-H-01",
+      "family": "loyalty",
+      "name": "Hain",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-H-01"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-H-02",
+      "family": "loyalty",
+      "name": "Hain",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-H-02"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-H-03",
+      "family": "loyalty",
+      "name": "Hain",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-H-03"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-H-04",
+      "family": "loyalty",
+      "name": "Hain",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-H-04"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SAD-H-05",
+      "family": "loyalty",
+      "name": "Hain",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-H-05"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LOYALTY",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-AD-01",
+      "family": "map_open_sea",
+      "name": "Çarşaf Gibi Deniz",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-01"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-02",
+      "family": "map_open_sea",
+      "name": "Pruvada Çay Molası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-02"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-03",
+      "family": "map_open_sea",
+      "name": "Martılar Bile Üşeniyor",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-03"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-04",
+      "family": "map_open_sea",
+      "name": "Puslu Vardiya",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-04"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-05",
+      "family": "map_open_sea",
+      "name": "Burnunun Ucu Cumhuriyeti",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-05"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-06",
+      "family": "map_open_sea",
+      "name": "Beyaz Gece",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-06"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-07",
+      "family": "map_open_sea",
+      "name": "Sis Var, Fikir Çok",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-07"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-08",
+      "family": "map_open_sea",
+      "name": "İsimsiz Bir Düdük",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-08"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-09",
+      "family": "map_open_sea",
+      "name": "Deryanın Göbek Deliği",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-09"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "REPRESENTATIVE_RENDER_PRESENT",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-10",
+      "family": "map_open_sea",
+      "name": "Tersine Dönen Dünya",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-10"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-11",
+      "family": "map_open_sea",
+      "name": "Karadeniz Usulü Karşılama",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-11"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-12",
+      "family": "map_open_sea",
+      "name": "Direkleri Saydıran Gece",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-12"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-13",
+      "family": "map_open_sea",
+      "name": "Kolları Fazla Bir Mesele",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-13"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-14",
+      "family": "map_open_sea",
+      "name": "Bir Kişilik Eksildik",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-14"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-15",
+      "family": "map_open_sea",
+      "name": "Güverte Islak, Bahane Kuru",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-15"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-16",
+      "family": "map_open_sea",
+      "name": "Rüzgârın İstifa Dilekçesi",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-16"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-17",
+      "family": "map_open_sea",
+      "name": "Lodos Arkadan Esiyor",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-17"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-18",
+      "family": "map_open_sea",
+      "name": "Denizin Kargo Şubesi",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-18"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-19",
+      "family": "map_open_sea",
+      "name": "Sahibi Bulunamayan Sandık",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-19"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-20",
+      "family": "map_open_sea",
+      "name": "Vergisiz Fener Alayı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-20"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-21",
+      "family": "map_open_sea",
+      "name": "Denizin Geri Vitesi",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-21"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-22",
+      "family": "map_open_sea",
+      "name": "Peksimeti Islatan Sağanak",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-22"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-23",
+      "family": "map_open_sea",
+      "name": "Uçan Balık Yağmuru",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-23"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-24",
+      "family": "map_open_sea",
+      "name": "Güverteyi Yalayan Dalga",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-24"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-25",
+      "family": "map_open_sea",
+      "name": "Direk Çatlatan Bora",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-25"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-26",
+      "family": "map_open_sea",
+      "name": "Mizanayı Döven Dalga",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-26"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-27",
+      "family": "map_open_sea",
+      "name": "Karayel Tokadı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-27"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-28",
+      "family": "map_open_sea",
+      "name": "Kırkikindi Açıkta Yakaladı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-28"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-29",
+      "family": "map_open_sea",
+      "name": "Alabora Olmadık Sayılır",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-29"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AD-30",
+      "family": "map_open_sea",
+      "name": "Bir Bulutun Kişisel Meselesi",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-30"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-01",
+      "family": "map_rock",
+      "name": "Duvar Gibi Kayalık",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-01"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-02",
+      "family": "map_rock",
+      "name": "Dibi Görünen Servet",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-02"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-03",
+      "family": "map_rock",
+      "name": "Yolun Bittiği Yer",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-03"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-04",
+      "family": "map_rock",
+      "name": "Pruva Törpüsü",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-04"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-05",
+      "family": "map_rock",
+      "name": "Taşın Şakası Olmaz",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-05"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-06",
+      "family": "map_rock",
+      "name": "İğne Deliğinden Sefer",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-06"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-07",
+      "family": "map_rock",
+      "name": "Kestirme Diye Girilen Yer",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-07"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-08",
+      "family": "map_rock",
+      "name": "Kaçakçının Unuttuğu Oyuk",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-08"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-09",
+      "family": "map_rock",
+      "name": "Kırılan Sandıklar",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-09"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-10",
+      "family": "map_rock",
+      "name": "İki Taraftan Sıyırdık",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-10"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-11",
+      "family": "map_rock",
+      "name": "Suyun Altındaki Diş",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-11"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-KY-12",
+      "family": "map_rock",
+      "name": "Haritada İnce Çizgi",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-12"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SEA_ROCK",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "REPRESENTATIVE_BINARY_PRESENT"
+    },
+    {
+      "id": "HAR-AA-01",
+      "family": "map_island",
+      "name": "Kumanya Cumhuriyeti",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AA-01"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-AA-02",
+      "family": "map_island",
+      "name": "Terk Edilmiş Sahil Karakolu",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AA-02"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-AA-03",
+      "family": "map_island",
+      "name": "Misafirperverlik Biraz Fazla",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AA-03"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-AA-04",
+      "family": "map_island",
+      "name": "Bir Ustanın Son Tezgâhı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AA-04"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-AA-05",
+      "family": "map_island",
+      "name": "Korsanların Mola Yeri",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AA-05"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-AA-06",
+      "family": "map_island",
+      "name": "Gümrükçünün Tek Yaşadığı Ada",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AA-06"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_ISLAND",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-FN-01",
+      "family": "map_lighthouse",
+      "name": "Vardiya Defterli Fener",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-FN-01"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-FN-02",
+      "family": "map_lighthouse",
+      "name": "Bekçisi Gitmiş, Işığı Kalmış",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-FN-02"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-FN-03",
+      "family": "map_lighthouse",
+      "name": "Fenercinin Zulası",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-FN-03"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "HAR-FN-04",
+      "family": "map_lighthouse",
+      "name": "Geceleri Parlayan Yalan",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-FN-04"
+      },
+      "trim_mm": [
+        70,
+        70
+      ],
+      "bleed_mm": [
+        76,
+        76
+      ],
+      "target_pixels_300dpi": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SET-KL-01",
+      "family": "support",
+      "name": "Kalkış Limanı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SET-KL-01"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SUPPORT",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SET-VL-01",
+      "family": "support",
+      "name": "Varış / Hedef Limanı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SET-VL-01"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SUPPORT",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    },
+    {
+      "id": "SET-KP-01",
+      "family": "support",
+      "name": "Kaptan Makamı",
+      "identity_and_mechanics_source": {
+        "path": "releases/v2.6/",
+        "card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+      },
+      "visible_copy_source": {
+        "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+        "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SET-KP-01"
+      },
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": [
+        69.5,
+        94.9
+      ],
+      "target_pixels_300dpi": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "back_asset_id": "BACK_SUPPORT",
+      "front_status": "NOT_RENDERED_CURRENT_BRANCH",
+      "back_status": "NOT_RENDERED_CURRENT_BRANCH"
+    }
+  ]
+}

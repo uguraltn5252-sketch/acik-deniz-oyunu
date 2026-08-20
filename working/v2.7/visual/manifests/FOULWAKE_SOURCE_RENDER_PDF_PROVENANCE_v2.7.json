@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "project": "FOULWAKE",
+  "version": "v2.7",
+  "status": "REPRESENTATIVE_PROVENANCE_NOT_FULL_CANDIDATE",
+  "source_branch": "work/v2.7-visual",
+  "source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+  "sources": {
+    "story_framework": {
+      "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "git_blob": "962222d83d669763c4ac8e2765f024b9fade180c"
+    },
+    "rulebook_story": {
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf"
+    },
+    "card_texts": {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3"
+    },
+    "v2_6_cards": {
+      "path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
+      "sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298"
+    }
+  },
+  "source_illustrations": {
+    "BACK_SEA_ROCK_art.png": {
+      "sha256": "4ebcc27f7516e374fabc620d254e75aca936068bc52962a965fe775f5ff3ee20",
+      "size_bytes": 3980644
+    },
+    "GUC-24_Islak_Corap_art.png": {
+      "sha256": "3aa6aca8f98b4419d614410f4a8f5d8f5332243c064e81a2c0c21b24522c19a5",
+      "size_bytes": 4113220
+    },
+    "HAR-AD-09_Deryanin_Gobek_Deligi_art.png": {
+      "sha256": "e5faf05fe301ce238ca0dc9af4eb91521d4bf66a5b62ee30fef6bf3e01ec7967",
+      "size_bytes": 3643300
+    },
+    "KAR-01_Uzakgoren_art.png": {
+      "sha256": "114d2fa86d61139bf1d04a4c1d5cadd905ea72a6bcd72f8726a79b4791283848",
+      "size_bytes": 3909801
+    },
+    "RULEBOOK_COVER_art.png": {
+      "sha256": "af8a3acdc346606231b7c1f48dab8c06e7943e1a7e7d2a97af12b9ca18ec3b7d",
+      "size_bytes": 3124225
+    }
+  },
+  "renders": {
+    "KAR-01": {
+      "file": "KAR-01_Uzakgoren_front.png",
+      "sha256": "2798de04b8d7660ac98a842944c9b8b67acd377505de16ca9f7e7cbe40b3a14b",
+      "size_bytes": 1642513,
+      "pixels": [
+        898,
+        1488
+      ],
+      "dpi": 300,
+      "copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "pdf_page": 1
+    },
+    "GUC-24": {
+      "file": "GUC-24_Islak_Corap_front.png",
+      "sha256": "308771d8aeb5e8b3bf452db036f3983e0e6990f6c441e52bf61733945fb421df",
+      "size_bytes": 1019620,
+      "pixels": [
+        821,
+        1121
+      ],
+      "dpi": 300,
+      "copy_source": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "pdf_page": 1,
+      "stale_flavor_corrected": true
+    },
+    "HAR-AD-09": {
+      "file": "HAR-AD-09_Deryanin_Gobek_Deligi_front.png",
+      "sha256": "cf3b0d7847ee115eb353c73b575a62524d2dce9c629a4745290fce675af8420c",
+      "size_bytes": 1030232,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "copy_source": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+      "pdf_page": 1
+    },
+    "BACK_SEA_ROCK": {
+      "file": "BACK_SEA_ROCK.png",
+      "sha256": "c3cf3399c294874bb12194f9bdf369a00110b7c78d2a234590c16be864e74c45",
+      "size_bytes": 2035243,
+      "pixels": [
+        898,
+        898
+      ],
+      "dpi": 300,
+      "pdf_page": 2,
+      "pdf_reuse_count": 4,
+      "same_pdf_xobject": true
+    }
+  },
+  "pdfs": {
+    "representative_card_print_set": {
+      "file": "FOULWAKE_v2.7_APPROVED_ART_DIRECTION_PRINT_SET.pdf",
+      "sha256": "271dca14330e95d76501232d4a14bab9e692aed01cb4dd9a43a267d625d8dba6",
+      "size_bytes": 7749855,
+      "pages": 2,
+      "page_size": "A4",
+      "status": "CURRENT_REPRESENTATIVE_PROOF"
+    },
+    "representative_rulebook_proof": {
+      "file": "FOULWAKE_v2.7_RULEBOOK_REPRESENTATIVE_PROOF.pdf",
+      "sha256": "ec3946ca413b862721320e35c2c1561c6f1d068b43132a56322173e49c026bf7",
+      "size_bytes": 2409487,
+      "pages": 2,
+      "page_size": "A4",
+      "source_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+      "sections": {
+        "1": [
+          "3.3"
+        ],
+        "2": [
+          "3.4",
+          "3.6"
+        ]
+      },
+      "status": "CURRENT_REPRESENTATIVE_PROOF"
+    },
+    "existing_29_page_rulebook_visual_draft": {
+      "file": "FOULWAKE_v2.7_RULEBOOK_VISUAL_DRAFT.pdf",
+      "sha256": "cc3b36fb317c6469a34e51ec9c4baa49f2d420e2cbffec400e9ff629f93f5690",
+      "size_bytes": 34244928,
+      "pages": 29,
+      "status": "NOT_CURRENT_V2_7_STORY_INTEGRATION_EVIDENCE"
+    }
+  },
+  "tests": {
+    "story_blob_match": "PASS_3_OF_3",
+    "card_id_set": "PASS_121_OF_121",
+    "family_counts": "PASS",
+    "back_mapping_sea_rock": "PASS_42_TO_ONE_ASSET_ID",
+    "representative_text_source_binding": "PASS",
+    "representative_overflow": "PASS",
+    "representative_missing_glyph": "PASS_VISUAL_AND_OCR_SPOT_CHECK",
+    "representative_effective_resolution": "PASS_300_DPI",
+    "physical_print_cut_duplex_light": "NOT_RUN",
+    "blind_rotation_and_sea_rock_leak": "NOT_RUN"
+  },
+  "open_source_conflicts": [
+    "GUC-22/GUC-23 naming line in releases/v2.6/CARD_BASELINE.md requires Chief Editor disposition"
+  ],
+  "candidate_status": "NOT_A_FULL_121_CARD_OR_29_PAGE_RULEBOOK_CANDIDATE"
+}
