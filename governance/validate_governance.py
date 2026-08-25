@@ -449,7 +449,7 @@ require_markers("AI_HANDOFF.md", [
 require_markers("PROJECT_STATE.md", [
     "Aktif görsel candidate",
     "SRC-002",
-    "bütün ön/arka yüz sanatı reddedildi",
+    "TECHNICAL_PIPELINE_REFERENCE_ONLY",
     "branch protection/ruleset",
     "Sanat Yönetimi",
     "PILOT REVIEW REQUIRED",
