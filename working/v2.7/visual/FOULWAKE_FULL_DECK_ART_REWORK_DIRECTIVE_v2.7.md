@@ -3,6 +3,7 @@
 **Durum:** BAĞLAYICI v2.7 DRAFT İŞ EMRİ / NOT LOCKED  
 **Karar tarihi:** 25 Ağustos 2026  
 **Yetkili karar:** Proje sahibi; Baş Editör kaydı  
+**Yaratıcı inceleme:** `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction`  
 **Uygulayan görünür sohbet:** `FOULWAKE görsel tasarım`  
 **Çalışma dalı:** `work/v2.7-visual`  
 **Reddedilen teknik referans:** `work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891`
@@ -121,25 +122,35 @@ Zorunlu arka yüz koşulları:
 
 Tam 121 üretime doğrudan geçilmez.
 
-1. **Brief kapısı:** 121 satırlık art-brief envanteri ve 7 arka yüz briefi
-   hazırlanır; tekrar eden özne/sahne/şaka işaretlenir.
-2. **Pilot kapısı:** 3 Karakter, 2 Güç ve Çürümüş Erzak, Sadakat, Açık Deniz,
+1. **Sanat yönü kapısı:** Sanat Yönetmeni FOULWAKE dünyası, çizgi/tarama/
+   malzeme, palet, görsel dramaturji, kompozisyon çeşitliliği ve deste ritmi
+   omurgasını kurar.
+2. **Brief kapısı:** 121 satırlık art-brief envanteri ve 7 arka yüz briefi
+   hazırlanır. Sanat Yönetmeni bunları inceler, yeniden yazar veya somut rework
+   briefi verir; tekrar eden özne/sahne/şaka ve jenerik fikirler işaretlenir.
+3. **Pilot kapısı:** 3 Karakter, 2 Güç ve Çürümüş Erzak, Sadakat, Açık Deniz,
    Kayalık, Ada, Deniz Feneri ve yardımcı aileden birer örnek olmak üzere 12 ön
    yüz; ayrıca 7 arka yüz taslağı üretilir.
-3. **Görsel onay:** Pilot contact sheet kullanıcı ve Baş Editör tarafından
-   kabul edilmeden kalan 109 ön yüze ve baskı PDF'sine geçilmez.
-4. **Tam yayılım:** 121/121 özgün ön yüz, 7 arka yüz ve aile contact sheetleri
-   üretilir.
-5. **Teknik preflight:** Exact metin, ölçü, DPI, taşma, glif, PDF, duplex,
+4. **Bağımsız yaratıcı inceleme:** Pilot contact sheet Sanat Yönetmeni tarafından
+   ruh, doku, anlatı, insan/sahne ayrışması, kompozisyon ve deste ritmi açısından
+   değerlendirilir; `PASS_RECOMMENDATION` veya `REWORK_REQUIRED` verilir.
+5. **Görsel onay:** Sanat Yönetmeni tavsiyesi sonrasında kullanıcı ve Baş Editör
+   açık kabul vermeden kalan 109 ön yüze ve baskı PDF'sine geçilmez.
+6. **Tam yayılım:** 121/121 özgün ön yüz, 7 arka yüz ve aile contact sheetleri
+   üretilir; Sanat Yönetmeni tam deste yaratıcı incelemesini tekrarlar.
+7. **Teknik preflight:** Exact metin, ölçü, DPI, taşma, glif, PDF, duplex,
    source→render→PDF ve hash zinciri doğrulanır.
-6. **Fiziksel/Simülasyon kapısı:** Baskı, kesim, gerçek ışık, kör arka-yüz
+8. **Fiziksel/Simülasyon kapısı:** Baskı, kesim, gerçek ışık, kör arka-yüz
    sızıntısı ve bağımsız Simülasyon Testi yapılır.
+
+Daha önceki Baş Editör emriyle başlamış bir pilot geçersiz sayılmaz; exact
+Görsel commit ve contact sheet Sanat Yönetmeninin ilk inceleme girdisi olur.
 
 ## 8. Görsel QA kabul ölçütleri
 
 - `unique render SHA = unique artwork` varsayımı yasaktır.
 - Ön yüzler aile ve tam deste contact sheetlerinde, başlık/metin kapalı biçimde
-  insan gözüyle incelenir.
+  Sanat Yönetmeni ve daha sonraki bağımsız QA tarafından insan gözüyle incelenir.
 - Aynı yüz, saç/sakal kalıbı, beden, poz, kadraj, sahne, siluet, arka-plan,
   hayvan veya şaka tekrarları bulgu olarak işaretlenir.
 - Her kart manifestinde `art_brief_id`, `original_artwork_id`,
@@ -153,6 +164,8 @@ Tam 121 üretime doğrudan geçilmez.
 ## 9. Teslim hükmü
 
 Yeni Görsel handoffu pilot onayı ve tam yayılımı ayrı commitlerle belirtir.
+Sanat Yönetmeni değerlendirmesi kendi dalında exact Görsel girdi commitine
+bağlanır; final kullanıcı onayı veya release PASS'i olarak sunulamaz.
 `work/v2.7-visual@e91581...` veya onun binary/PDF çıktıları yeni aday olarak
 sunulamaz. Görsel Tasarım release, PASS, STABLE veya LOCKED ilan edemez;
 `LOCK_REQUESTED: NO` kalır.

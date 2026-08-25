@@ -61,6 +61,9 @@ jobs:
             work/v2.7-story)
               allowed='^working/v2\.7/(FOULWAKE_STORY_FRAMEWORK\.md|FOULWAKE_RULEBOOK_STORY_v2\.7\.md|FOULWAKE_CARD_TEXTS_v2\.7\.json|FOULWAKE_NARRATIVE_VALIDATION_v2\.7\.md|FOULWAKE_STORY_REVALIDATION_v2\.7\.md)$'
               ;;
+            work/v2.7-art-direction)
+              allowed='^working/v2\.7/visual/art_direction/'
+              ;;
             work/v2.7-visual)
               allowed='^working/v2\.7/(BINARY_ARTIFACTS\.md|FOULWAKE_VISUAL_SYSTEM\.md|visual/)'
               ;;

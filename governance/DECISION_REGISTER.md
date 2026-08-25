@@ -24,6 +24,8 @@ geçersiz kılar.
 | `DEC-20260825-03` | BINDING STYLE/TEXT RULE | Kullanıcının KAPTAN görseli STYLE_ONLY referanstır. İllüstrasyon alanına tabela, slogan, konuşma balonu, açıklama veya saçma/anlamsız okunabilir yazı eklenmez. | Okunabilir metin yalnız exact başlık/effect/flavor/kimlik alanlarında olabilir. |
 | `DEC-20260825-04` | BINDING BACK TOPOLOGY | 7 arka yüz: Karakter 20; Güç+Çürümüş 31; Sadakat 15; Deniz+Kayalık 42; Ada 6; Deniz Feneri 4; yardımcı 3. | Metinsiz, aile içinde exact aynı, 180° güvenli, kesim/parlaklık sızıntısız ve önlerle aynı sanat dilinde olmalıdır. |
 | `DEC-20260825-05` | BINDING PRODUCTION GATE | 12 ön-yüz pilotu ve 7 arka-yüz taslağı kullanıcı ile Baş Editörce kabul edilmeden tam 121 üretim/PDF başlamaz. | Pilot ret edilirse brief/sanat düzeltilir; teknik hash başarısı bu kapıyı atlayamaz. |
+| `DEC-20260825-06` | BINDING ART DIRECTION ROLE | Kalıcı görünür `FOULWAKE Sanat Yönetmeni` hattı `work/v2.7-art-direction` dalında sanat yönü, görsel dramaturji, 121+7 brief incelemesi ve somut yaratıcı rework tavsiyesi üretir. | Final sanat üretmez; metin/mekanik/lore/governance/release/kilit değiştirmez; geçici ajan kullanmaz. |
+| `DEC-20260825-07` | BINDING CREATIVE GATE | Görsel Tasarımın kendi teknik/estetik kontrolü tek başına sanat kabulü değildir; pilot ve tam deste Sanat Yönetmeninin bağımsız ruh, doku, kompozisyon, ayrışma ve deste ritmi incelemesinden geçer. | Sanat Yönetmeni tavsiyesi release PASS'i değildir; nihai estetik karar proje sahibinin, kayıt/entegrasyon Baş Editöründür. |
 
 ## Açık kaynak dispozisyonu
 

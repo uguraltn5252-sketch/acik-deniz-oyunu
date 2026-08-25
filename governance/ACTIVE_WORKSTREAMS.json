@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-25T00:00:00+03:00",
+  "updated_at": "2026-08-25T13:27:03.541+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -24,7 +24,7 @@
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
     "active_visual_candidate": null,
-    "basis": "Story accepted; visible Visual delivery recorded but all front/back art rejected; source ambiguity, new art, physical proof and Simulation delivery pending"
+    "basis": "Story accepted; visible Visual delivery recorded but all front/back art rejected; Art Direction visible-chat ACK/review, source ambiguity, new art, physical proof and Simulation delivery pending"
   },
   "roles": {
     "chief_editor": {
@@ -42,14 +42,65 @@
     "story_editor": {
       "official_chat": "Foulwake Hikâye Editör",
       "work_branch": "work/v2.7-story",
-      "may_change": ["narrative", "visible names", "flavor text", "rulebook story layer"],
-      "must_preserve": ["card count", "card ids", "effects", "timing", "deck behavior", "rule flow"]
+      "may_change": [
+        "narrative",
+        "visible names",
+        "flavor text",
+        "rulebook story layer"
+      ],
+      "must_preserve": [
+        "card count",
+        "card ids",
+        "effects",
+        "timing",
+        "deck behavior",
+        "rule flow"
+      ]
+    },
+    "art_direction": {
+      "official_chat": "FOULWAKE Sanat Yönetmeni",
+      "work_branch": "work/v2.7-art-direction",
+      "creative_direction_authority": true,
+      "write_scope": "working/v2.7/visual/art_direction/**",
+      "may_change": [
+        "art direction",
+        "visual narrative briefs",
+        "composition guidance",
+        "material and palette direction",
+        "art critique and rework briefs"
+      ],
+      "must_preserve": [
+        "mechanics",
+        "exact approved copy",
+        "lore canon",
+        "card identity",
+        "card count",
+        "secrecy model",
+        "final production ownership"
+      ],
+      "may_produce_final_art": false,
+      "may_issue_release_pass": false,
+      "final_aesthetic_authority": "project_owner",
+      "binding_work_order": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md"
     },
     "visual_design": {
       "official_chat": "FOULWAKE görsel tasarım",
       "work_branch": "work/v2.7-visual",
-      "may_change": ["original illustration", "layout", "typography", "icons", "print presentation"],
-      "must_preserve": ["mechanics", "exact approved copy", "lore canon", "card identity", "secrecy model"],
+      "may_change": [
+        "original illustration",
+        "layout",
+        "typography",
+        "icons",
+        "print presentation"
+      ],
+      "must_preserve": [
+        "mechanics",
+        "exact approved copy",
+        "lore canon",
+        "card identity",
+        "secrecy model",
+        "accepted art-direction briefs and recorded rework decisions"
+      ],
       "binding_rework_directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
     },
     "simulation_test": {
@@ -98,6 +149,16 @@
       "source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
       "integrated_to_v2_7_design": true
     },
+    "art_direction": {
+      "status": "PENDING_VISIBLE_CHAT_ACK_AND_FIRST_REVIEW",
+      "official_chat": "FOULWAKE Sanat Yönetmeni",
+      "work_branch": "work/v2.7-art-direction",
+      "branch_created": true,
+      "work_order": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
+      "may_start_creative_work": false,
+      "first_gate": "COMMUNICATION_TEST_ONLY",
+      "delivery_recorded": false
+    },
     "visual": {
       "status": "DELIVERED_REJECTED_ART_REWORK_REQUIRED",
       "evidence_path": "governance/VISUAL_HANDOFF_20260825.json",
@@ -136,7 +197,16 @@
       "BACK_SUPPORT": 3
     },
     "back_total": 121,
-    "back_requirements": ["textless", "same binary within family", "exact 180-degree safe", "no cut or brightness leak", "same art language as fronts"]
+    "back_requirements": [
+      "textless",
+      "same binary within family",
+      "exact 180-degree safe",
+      "no cut or brightness leak",
+      "same art language as fronts"
+    ],
+    "art_direction_review_required": true,
+    "art_direction_work_order": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
+    "art_direction_recommendation_is_release_pass": false
   },
   "open_blockers": [
     {
@@ -165,8 +235,8 @@
       "id": "ART-001",
       "status": "OPEN_REWORK_REQUIRED",
       "severity": "BLOCKER",
-      "owner": "visual_design",
-      "summary": "Proje sahibi mevcut 121 ön yüz ile bütün arka yüz sanatını reddetti; tam özgün rework ve semantik görsel QA gerekir",
+      "owner": "art_direction_and_visual_design",
+      "summary": "Proje sahibi mevcut 121 ön yüz ile bütün arka yüz sanatını reddetti; Sanat Yönetmeni yaratıcı brief/inceleme kapısı ile Görsel Tasarımın tam özgün reworkü ve semantik görsel QA gerekir",
       "directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
     },
     {
@@ -197,7 +267,7 @@
       "status": "OPEN",
       "severity": "BLOCKER",
       "owner": "chief_editor",
-      "summary": "Story teslimi kabul edildi; Visual teslimi gerçek fakat reddedildi; yeni Visual teslimi ve bağımsız Simulation teslimi bekleniyor"
+      "summary": "Story teslimi kabul edildi; Visual teslimi gerçek fakat reddedildi; Sanat Yönetmeni görünür sohbet ACK/incelemesi, yeni Visual teslimi ve bağımsız Simulation teslimi bekleniyor"
     }
   ],
   "resolved_blockers": [
@@ -211,5 +281,16 @@
   "decision_register": "governance/DECISION_REGISTER.md",
   "assignment_register": "governance/WORKSTREAM_ASSIGNMENTS.md",
   "qa_resolution_plan": "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
-  "latest_audit": "governance/CHIEF_EDITOR_AUDIT_20260825.md"
+  "latest_audit": "governance/CHIEF_EDITOR_AUDIT_20260825.md",
+  "art_direction_activation": {
+    "status": "PENDING_VISIBLE_CHAT_ACK",
+    "official_chat": "FOULWAKE Sanat Yönetmeni",
+    "work_branch": "work/v2.7-art-direction",
+    "branch_creation_authorized": true,
+    "branch_created": true,
+    "work_order": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
+    "actual_kaptan_reference_in_github": false,
+    "reference_attachment_required_in_visible_chat": true,
+    "temporary_subagents_used": false
+  }
 }

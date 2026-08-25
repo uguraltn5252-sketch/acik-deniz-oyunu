@@ -6,6 +6,7 @@
 **Entegrasyon dalı:** `v2.7-design`  
 **Aktif workspace:** `working/v2.7/`  
 **Aktif görsel candidate:** YOK  
+**Sanat Yönetimi:** `WORK ORDER READY / VISIBLE CHAT ACK PENDING`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
 
 ## Çalışma hattı durumu
@@ -13,6 +14,7 @@
 | Hat | Exact kaynak | Baş Editör hükmü | Sonraki adım |
 |---|---|---|---|
 | Hikâye | `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` | Kabul edildi ve exact üç Hikâye blobu entegre edildi; release PASS değil | Görsel için exact metin girdisi |
+| Sanat Yönetimi | `work/v2.7-art-direction` | İş emri ve dal hazır; görünür sohbet ACK'i/teslim yok | İletişim testi, sonra brief/pilot yaratıcı incelemesi |
 | Görsel | `work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891` | Teslim gerçek; bütün ön/arka yüz sanatı reddedildi | Tam deste rework pilotu |
 | Simülasyon | dal yok | Başlamadı | Yeni görsel aday kabulünden sonra |
 
@@ -21,6 +23,12 @@ olması sanat kabulü değildir. Kaynak pakette yalnız altı aile illüstrasyon
 plakası bulunması, tekrarlı/türev sanatın 121 farklı render hashine dönüşmesine
 izin vermiştir. Eski teslim artık `TECHNICAL_PIPELINE_REFERENCE_ONLY`dır;
 aktif release candidate yoktur.
+
+Sanat Yönetimi yeni ve bağımsız bir yaratıcı hattır: checklist QA değil,
+FOULWAKE dünyasını, çizgi/malzeme dilini, görsel dramaturjiyi, kartlar arası
+ayrışmayı ve deste ritmini kurar. Görsel Tasarım final üretimi yapar; Sanat
+Yönetmeni brief/eleştiri ve rework tavsiyesi verir. Nihai estetik karar proje
+sahibinindir. Görünür sohbet ACK'i gelmeden bu role teslim mal edilemez.
 
 ## Bağlayıcı yeni görsel yön
 
@@ -37,8 +45,8 @@ aktif release candidate yoktur.
 - Deniz+Kayalık 42 aynı binary; Deniz Feneri 4 aynı; Ada 6 aynı. Tam topoloji:
   Karakter 20, Güç+Çürümüş 31, Sadakat 15, Deniz+Kayalık 42, Ada 6, Deniz
   Feneri 4, yardımcı 3.
-- 12 ön-yüz pilotu ve 7 arka-yüz taslağı kullanıcı/Baş Editör onayı almadan
-  tam üretim yok.
+- 12 ön-yüz pilotu ve 7 arka-yüz taslağı Sanat Yönetmeni incelemesi ile
+  kullanıcı/Baş Editör onayı almadan tam üretim yok.
 
 ## Açık blockerlar
 
@@ -47,11 +55,11 @@ aktif release candidate yoktur.
 | `MEC-001` | Simülasyon | OPEN | Sea=Rock için exact adayda tam ve kör fiziksel test |
 | `SRC-001` | Görsel | OPEN | Yeni adayda tutarlı source→render→PDF ve iç/dış provenance |
 | `SRC-002` | Baş Editör + Simülasyon | OPEN | GUC-22/GUC-23 için kilitli v2.6 exact kaynak karşılaştırması veya açık kullanıcı kararı |
-| `ART-001` | Görsel | REWORK REQUIRED | 121 özgün ön yüz, 7 kabul edilmiş arka yüz, kör contact-sheet QA |
+| `ART-001` | Sanat Yönetimi + Görsel | REWORK REQUIRED | Yaratıcı brief/inceleme, 121 özgün ön yüz, 7 kabul edilmiş arka yüz, kör contact-sheet QA |
 | `QA-001` | Simülasyon | OPEN | Exact candidate'a bağlı yeniden üretilebilir tam attestation |
 | `QA-002` | Simülasyon | OPEN | Fiziksel proof, kör sızıntı ve kör insan masa testi |
 | `GOV-001` | Baş Editör | OPEN | main uzlaştırması, branch protection/ruleset, required status check |
-| `COM-001` | Baş Editör | OPEN | Yeni Görsel ve bağımsız Simülasyon branch-bound teslimleri |
+| `COM-001` | Baş Editör | OPEN | Sanat Yönetimi ACK/teslimi, yeni Görsel ve bağımsız Simülasyon branch-bound teslimleri |
 
 `CAN-001` çözülmüştür: CAN-08/09 v2.7 DRAFT `TASLAK` koruma ilkeleridir.
 
@@ -85,6 +93,7 @@ ayrıdır.
 - `governance/CHIEF_EDITOR_AUDIT_20260825.md`
 - `governance/STORY_HANDOFF_20260820.json`
 - `governance/VISUAL_HANDOFF_20260825.json`
+- `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
 - `working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md`
 
 ## Kilit hükmü

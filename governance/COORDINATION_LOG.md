@@ -1,5 +1,35 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 25 Ağustos 2026 — SANAT YÖNETİMİ HATTININ ETKİNLEŞTİRİLMESİ
+
+**Başlangıç kaynağı:** `v2.7-design@59affee8cf36e2c5fd4738fc7c7797c3fc9daeb4`  
+**Resmî görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  
+**Çalışma dalı:** `work/v2.7-art-direction`  
+**İş emri:** `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
+
+Proje sahibi, Görsel Tasarımın yanında gerçek yaratıcı yargı ve sanat sezgisi
+taşıyan kalıcı bir Sanat Yönetmeni hattı kurulmasını istedi. Rol checklist QA
+değildir: FOULWAKE dünyasının ruhunu, mürekkep/tarama/malzeme dilini, görsel
+dramaturjiyi, karakter ve sahne ayrışmasını, kompozisyonu ve deste ritmini
+kurar; Görsel Tasarıma uygulanabilir brief ve rework eleştirisi verir.
+
+**Sınır ve kapılar:**
+
+- Final illüstrasyon/render/PDF/baskı üretimi Görsel Tasarımdadır.
+- Nihai estetik karar proje sahibinin; kaynak/entegrasyon/dispozisyon Baş
+  Editöründür.
+- Sanat Yönetmeni metin, mekanik, lore, governance, release veya kilit
+  değiştiremez; geçici ajan kullanamaz.
+- KAPTAN görseli GitHub'da binary olarak yoktur; kullanıcı aynı STYLE_ONLY
+  referansı yeni görünür sohbete ayrıca ekleyecektir.
+- Daha önce başlamış Görsel pilot çöpe atılmaz; exact commit/contact sheet yeni
+  hattın ilk review girdisi olur.
+- Görünür sohbetten iletişim ACK'i gelmeden yaratıcı teslim yapılmış veya
+  kabul edilmiş sayılmaz.
+
+Bu aktivasyon release PASS'i değildir; `ART-001`, `COM-001` ve diğer
+blockerlar açıktır.
+
 ## 25 Ağustos 2026 — GITHUB DENETİMİ / GÖRSEL TESLİM RET VE TAM REWORK
 
 **Denetim parent'ı:** `v2.7-design@fb73852d76c45977a0ed3bcf0af8cae68f813fb0`  

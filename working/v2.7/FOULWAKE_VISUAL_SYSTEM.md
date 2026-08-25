@@ -2,6 +2,7 @@
 
 **Durum:** v2.7 DRAFT / NOT LOCKED / ART REWORK REQUIRED  
 **Mekanik baseline:** v2.6 STABLE / LOCKED  
+**Sanat Yönetimi:** `visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`  
 **Bağlayıcı rework:** `visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`  
 **Kapsam:** 121 kartın bütün ön/arka yüzleri ve 29 sayfalık kural kitabı
 
@@ -19,9 +20,11 @@ reddedilmiştir; yalnız teknik üretim hattı tarihidir.
 3. Tanımlı rulebook anlatı blokları:
    `FOULWAKE_RULEBOOK_STORY_v2.7.md`.
 4. Ton/lore çiti: `FOULWAKE_STORY_FRAMEWORK.md`.
-5. En yeni sanat kararı:
+5. Sanat Yönetmeni yaratıcı rolü ve inceleme yöntemi:
+   `visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`.
+6. En yeni sanat kararı:
    `visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`.
-6. Ortak yerleşim/baskı standardı: bu dosya.
+7. Ortak yerleşim/baskı standardı: bu dosya.
 
 Çelişki otomatik seçilmez; üretim durur ve exact alanla Baş Editöre handoff
 edilir. Özellikle `SRC-002` GUC-22/GUC-23 çelişkisi Görsel hattı tarafından
@@ -117,19 +120,22 @@ değiştirmez ve tam Simülasyon + kör fiziksel test geçmeden release olamaz.
 
 ## 9. Üretim kapısı
 
-1. 121 art brief + 7 arka-yüz briefi.
-2. 12 ön-yüz pilotu + 7 arka-yüz taslağı.
-3. Kullanıcı ve Baş Editör açık kabulü.
-4. 121/121 tam yayılım ve kör contact sheet QA.
-5. Exact source→render→PDF, metin, ölçü, DPI, glif, taşma ve duplex preflight.
-6. Fiziksel baskı/kesim/ışık ve kör sızıntı testi.
-7. Bağımsız Simülasyon Testi exact candidate attestation.
+1. Sanat Yönetmeni dünya/doku/kompozisyon/deste ritmi omurgası.
+2. 121 art brief + 7 arka-yüz briefi ve bağımsız yaratıcı brief incelemesi.
+3. 12 ön-yüz pilotu + 7 arka-yüz taslağı.
+4. Sanat Yönetmeni pilot tavsiyesi; ardından kullanıcı ve Baş Editör açık kabulü.
+5. 121/121 tam yayılım ve Sanat Yönetmeni + kör contact sheet QA.
+6. Exact source→render→PDF, metin, ölçü, DPI, glif, taşma ve duplex preflight.
+7. Fiziksel baskı/kesim/ışık ve kör sızıntı testi.
+8. Bağımsız Simülasyon Testi exact candidate attestation.
 
-Pilot kabulü olmadan tam üretim veya PDF yapılmaz. Eski e91581 render/PDF/hash
+Sanat Yönetmeni incelemesi ile kullanıcı/Baş Editör pilot kabulü olmadan tam
+üretim veya PDF yapılmaz. Eski e91581 render/PDF/hash
 zinciri yeni adayda kullanılamaz.
 
 ## 10. Candidate hükmü
 
 Güncel aktif v2.7 görsel candidate **yoktur**. Yeni candidate ancak rework
 direktifindeki sanat, metin, arka-yüz, provenance, teknik ve fiziksel kanıtların
-tamamı exact commite bağlandıktan ve Baş Editörce kabul edildikten sonra vardır.
+tamamı exact commite bağlandıktan, Sanat Yönetmeni yaratıcı incelemesinden
+geçtikten ve proje sahibi ile Baş Editörce kabul edildikten sonra vardır.

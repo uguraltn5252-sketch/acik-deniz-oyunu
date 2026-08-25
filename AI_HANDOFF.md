@@ -11,6 +11,7 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
 - **Simülasyon attestation:** **YOK**
+- **Sanat Yönetimi:** `PENDING_VISIBLE_CHAT_ACK / WORK_ORDER_READY`
 - **Kilit izni:** **YOK**
 
 Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
@@ -22,8 +23,11 @@ sanatını reddetmiştir. Baş Editör dispozisyonu
 `DELIVERED_REJECTED_ART_REWORK_REQUIRED`dır. Eski PDF/render/hash kayıtları
 yalnız teknik üretim hattı referansıdır, release candidate değildir.
 
-`work/v2.7-simulation` henüz yoktur. Yeni görsel pilot ve tam aday Baş Editörce
-kabul edilmeden Simülasyon başlamaz.
+`work/v2.7-art-direction` kalıcı Sanat Yönetimi hattı olarak etkinleştirilmiştir;
+ancak `FOULWAKE Sanat Yönetmeni` görünür sohbetinden henüz iletişim ACK'i veya
+teslim yoktur. Bu nedenle ona çalışma yapılmış gibi mal edilemez. İlk kapı yalnız
+iletişim testidir. `work/v2.7-simulation` henüz yoktur. Yeni görsel pilot ve tam
+aday Baş Editörce kabul edilmeden Simülasyon başlamaz.
 
 ## Her oturumda zorunlu okuma sırası
 
@@ -36,6 +40,8 @@ kabul edilmeden Simülasyon başlamaz.
 7. `governance/WORKSTREAM_PROTOCOL.md`
 8. `governance/CHIEF_EDITOR_AUDIT_20260825.md`
 9. `governance/COORDINATION_LOG.md` içindeki en yeni kayıt
+10. Sanat/Görsel çalışma için
+    `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
 
 Görsel çalışma ayrıca
 `working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`
@@ -46,6 +52,7 @@ dosyasını okumadan üretime başlayamaz.
 | Hat | Görünür sohbet | Dal | Yetki |
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | Lore, anlatı ve mekanik olmayan görünen metin |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` | `work/v2.7-art-direction` | Sanat yönü, görsel dramaturji, brief ve bağımsız yaratıcı eleştiri |
 | Görsel | `FOULWAKE görsel tasarım` | `work/v2.7-visual` | Özgün illüstrasyon, yerleşim, tipografi, baskı |
 | Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | Bağımsız QA ve kanıt; mekanik değişiklik yok |
 | Baş Editör | Bu çalışma | `v2.7-design` | Kanon, çakışma, entegrasyon, release ve kilit |
@@ -58,8 +65,10 @@ teslimi sayılmaz.
 
 ## Güncel kanıt kayıtları
 
-- İletişim testi: `governance/VISIBLE_CHAT_ACKS_20260820.json` — yalnız 3/3
-  `COMMUNICATION_TEST_ONLY` ACK.
+- İlk üç hat iletişim testi: `governance/VISIBLE_CHAT_ACKS_20260820.json` —
+  yalnız 3/3 `COMMUNICATION_TEST_ONLY` ACK.
+- Sanat Yönetimi aktivasyonu: iş emri ve dal hazır; görünür sohbet ACK'i ve
+  yaratıcı teslim henüz yoktur.
 - Hikâye teslimi: `governance/STORY_HANDOFF_20260820.json` —
   `ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT`.
 - Görsel teslim ve ret: `governance/VISUAL_HANDOFF_20260825.json` —
@@ -101,8 +110,11 @@ değiştirilemez; Simülasyon/baş editör exact karşılaştırması beklenir.
   Deniz+Kayalık 42; Ada 6; Deniz Feneri 4; yardımcı 3.
 - Arka yüzler ön yüzlerle aynı sanat dilindedir fakat ön yüzün kopyası değildir;
   metinsiz, aile içinde exact aynı ve 180° yön güvenlidir.
-- 12 ön-yüz pilotu ve 7 arka-yüz taslağı kullanıcı + Baş Editör onayı almadan
-  tam 121 üretime geçilmez.
+- Sanat Yönetmeni salt kontrol listesi değil; dünya, doku, kompozisyon, karakter
+  ayrışması ve deste ritmi için yaratıcı brief/eleştiri üretir. Final görseli
+  Görsel Tasarım üretir; nihai estetik karar proje sahibinindir.
+- 12 ön-yüz pilotu ve 7 arka-yüz taslağı Sanat Yönetmeni incelemesi ile kullanıcı
+  + Baş Editör onayı almadan tam 121 üretime geçilmez.
 
 ## v2.6 kilitli omurga
 
@@ -125,8 +137,9 @@ Simülasyon attestation varken sürüm kilitlenmez.
 
 ## Güncel devam komutu
 
-> `v2.7-design` dalında zorunlu yönetişim dosyalarını ve
-> `FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md` dosyasını oku. v2.6'yı
+> `v2.7-design` dalında zorunlu yönetişim dosyalarını,
+> `FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md` ve
+> `FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md` dosyalarını oku. v2.6'yı
 > değiştirme. Eski e91581 görsel teslimini yalnız reddedilmiş teknik referans
 > say. Kendi görünür sohbet ve dal/yetki alanında çalış; exact handoff olmadan
 > teslim veya PASS ilan etme.

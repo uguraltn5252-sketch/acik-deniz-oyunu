@@ -91,6 +91,7 @@ REQUIRED_PATHS = [
     "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
     "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
     "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md",
+    "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
     "working/v2.7/BINARY_ARTIFACTS.md",
     "working/v2.7/V27_MECHANIC_DECISIONS.json",
     "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
@@ -152,8 +153,37 @@ if readiness.get("verdict") != "BLOCKER" or readiness.get("lock_allowed") is not
 if readiness.get("active_visual_candidate") is not None:
     error("no active visual candidate may be claimed during art rework")
 
+roles = state.get("roles", {})
+art_direction_role = roles.get("art_direction", {})
+if art_direction_role.get("official_chat") != "FOULWAKE Sanat Yönetmeni":
+    error("Art Direction official visible chat is wrong")
+if art_direction_role.get("work_branch") != "work/v2.7-art-direction":
+    error("Art Direction work branch is wrong")
+if art_direction_role.get("write_scope") != "working/v2.7/visual/art_direction/**":
+    error("Art Direction write scope is wrong")
+if art_direction_role.get("may_produce_final_art") is not False:
+    error("Art Direction cannot own final art production")
+if art_direction_role.get("final_aesthetic_authority") != "project_owner":
+    error("final aesthetic authority must remain with project owner")
+activation = state.get("art_direction_activation", {})
+if activation.get("status") != "PENDING_VISIBLE_CHAT_ACK":
+    error("Art Direction must remain pending visible-chat ACK until evidence arrives")
+if activation.get("branch_created") is not True:
+    error("Art Direction branch activation must be recorded")
+if activation.get("temporary_subagents_used") is not False:
+    error("Art Direction activation cannot use temporary subagents")
+
 deliveries = state.get("specialist_deliveries", {})
 story = deliveries.get("story", {})
+art_direction = deliveries.get("art_direction", {})
+if art_direction.get("status") != "PENDING_VISIBLE_CHAT_ACK_AND_FIRST_REVIEW":
+    error("Art Direction delivery status must remain pending visible-chat ACK")
+if art_direction.get("work_branch") != "work/v2.7-art-direction":
+    error("Art Direction delivery branch is wrong")
+if art_direction.get("may_start_creative_work") is not False:
+    error("Art Direction creative work cannot start before visible-chat ACK")
+if art_direction.get("delivery_recorded") is not False:
+    error("Art Direction delivery cannot be fabricated before visible-chat ACK")
 if story.get("status") != "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT":
     error("Story delivery acceptance is missing")
 if story.get("source_commit") != "e04eef7f1fef6ea407feaaf26558551297c44b37":
@@ -204,6 +234,12 @@ if contract.get("unique_hash_counts_as_unique_art") is not False:
     error("unique hash must not count as unique artwork")
 if contract.get("text_in_illustration") != "FORBIDDEN":
     error("text in illustration must be forbidden")
+if contract.get("art_direction_review_required") is not True:
+    error("visual rework must require independent Art Direction review")
+if contract.get("art_direction_work_order") != "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md":
+    error("visual rework Art Direction work order path is wrong")
+if contract.get("art_direction_recommendation_is_release_pass") is not False:
+    error("Art Direction recommendation cannot count as release PASS")
 
 
 visual_evidence = read_json("governance/VISUAL_HANDOFF_20260825.json")
@@ -263,6 +299,9 @@ art_source = hierarchy.get("sources", [{}] * 5)[4] if len(hierarchy.get("sources
 directive_path = "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
 if directive_path not in art_source.get("paths", []):
     error("source hierarchy does not include binding visual rework directive")
+art_direction_path = "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md"
+if art_direction_path not in art_source.get("paths", []):
+    error("source hierarchy does not include binding Art Direction work order")
 if hierarchy.get("candidate_commit") is not None:
     error("source hierarchy cannot claim a candidate during rework")
 
@@ -291,16 +330,22 @@ require_markers("AI_HANDOFF.md", [
     "e91581bb336dfcbab5da1d48a256577f9251f891",
     "SRC-002",
     "Geçici alt ajan oluşturmak yasaktır",
+    "FOULWAKE Sanat Yönetmeni",
+    "PENDING_VISIBLE_CHAT_ACK",
 ])
 require_markers("PROJECT_STATE.md", [
     "Aktif görsel candidate",
     "SRC-002",
     "bütün ön/arka yüz sanatı reddedildi",
     "branch protection/ruleset",
+    "Sanat Yönetimi",
+    "Yaratıcı brief/inceleme",
 ])
 require_markers("governance/DECISION_REGISTER.md", [
     "DEC-20260825-01",
     "DEC-20260825-05",
+    "DEC-20260825-06",
+    "BINDING CREATIVE GATE",
     "SUPERSEDED 2026-08-25",
     "saçma/anlamsız okunabilir yazı",
 ])
@@ -308,6 +353,9 @@ require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
     "DELIVERED / REJECTED_ART_REWORK_REQUIRED",
     "PENDING_NEW_ART_CANDIDATE",
     "SRC-002",
+    "FOULWAKE Sanat Yönetmeni",
+    "PENDING_VISIBLE_CHAT_ACK",
+    "REDRAW_BRIEF",
 ])
 require_markers("governance/WORKSTREAM_PROTOCOL.md", [
     "VISIBLE_CHAT_ACK: YES",
@@ -315,6 +363,16 @@ require_markers("governance/WORKSTREAM_PROTOCOL.md", [
     "unique render SHA",
     "BACK_SEA_ROCK=42",
     "saçma/anlamsız okunabilir yazı",
+    "work/v2.7-art-direction",
+    "Sanat Yönetmeni ile Görsel Tasarım birbirinin yerine PASS veremez",
+])
+require_markers("working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md", [
+    "teknik bir “görsel QA” masası değildir",
+    "FOULWAKE’a mı ait",
+    "Brief, yalnız nesne listesi veya üretim promptu değildir",
+    "Nihai estetik karar proje sahibinindir",
+    "VISIBLE_CHAT_ACK: YES",
+    "Geçici alt ajan oluşturulamaz",
 ])
 require_markers("governance/RELEASE_GATE.md", [
     "semantik özgünlük",
@@ -368,12 +426,15 @@ require_markers(".github/PULL_REQUEST_TEMPLATE.md", [
     "LOCK_REQUESTED",
     "ART_BRIEF_MANIFEST",
     "BACK_MAPPING_CHECK",
+    "ART_DIRECTION_STAGE",
+    "REDRAW_BRIEF",
 ])
 require_markers(".github/workflows/foulwake-governance.yml", [
     "Validate editorial governance",
     "Protect locked v2.6",
     "Validate specialist branch scope",
     "work/v2.7-story",
+    "work/v2.7-art-direction",
     "work/v2.7-visual",
     "work/v2.7-simulation",
 ])

@@ -5,7 +5,7 @@
 **Proje sahibi:** Uğur Altun  
 **Kilitli baseline:** v2.6 STABLE / LOCKED
 
-Bu tüzük, FOULWAKE projesindeki Hikâye, Görsel Tasarım, Simülasyon Testi ve üretim çalışmalarının aynı kanonik kaynakla ilerlemesini sağlar. Kilitli sürümler yerinde değiştirilmez; her değişiklik yeni bir DRAFT sürümünde yapılır.
+Bu tüzük, FOULWAKE projesindeki Hikâye, Sanat Yönetimi, Görsel Tasarım, Simülasyon Testi ve üretim çalışmalarının aynı kanonik kaynakla ilerlemesini sağlar. Kilitli sürümler yerinde değiştirilmez; her değişiklik yeni bir DRAFT sürümünde yapılır.
 
 ## 1. Nihai karar ve kilit yetkisi
 
@@ -22,25 +22,40 @@ Bu tüzük, FOULWAKE projesindeki Hikâye, Görsel Tasarım, Simülasyon Testi v
 | Proje sahibi | Nihai mekanik ve yaratıcı karar; kilit sürecini başlatma | Kilitli sürümü geriye dönük değiştirmiş sayma |
 | Baş Editör | Kanon, kaynak önceliği, entegrasyon, çakışma çözümü, release gate, kilitleme | Kendiliğinden yeni mekanik veya yaratıcı kanon üretme |
 | Hikâye Editörü | Lore, anlatı, görünen ad, flavor ve dil akışı | Kart kimliği/adedi, etki, zamanlama, deste davranışı ve kural akışı |
+| Sanat Yönetmeni | Dünya hissi, sanat dili, görsel dramaturji, 121+7 brief, kompozisyon/doku/deste ritmi eleştirisi ve somut rework tavsiyesi | Final görsel/PDF üretimi; metin, mekanik, lore, governance, release veya kilit değişikliği; kendi tavsiyesini nihai onay sayma |
 | Görsel Tasarım | İllüstrasyon, düzen, tipografi, ikon, baskı ve görsel kullanılabilirlik | Mekanik, kanonik metin veya lore hükmünü tek taraflı değiştirme |
 | Simülasyon Testi | Mekanik, matematik, strateji, sosyal deneyim, görsel okunabilirlik, PDF/dosya/manifest denetimi | Bulguyu doğrudan yeni kurala dönüştürme veya sürüm kilitleme |
 | Üretim/PDF | Onaylı kaynaklardan baskı ve export üretimi | Taşmayı çözmek için metin, kart veya mekanik budama |
 
 ## 2.1 Resmî sohbet ve çalışma dalı kimliği
 
-- Hikâye, Görsel Tasarım ve Simülasyon işi yalnız kullanıcının oluşturduğu aynı
-  adlı görünür sohbet içinde yapıldığında ilgili uzman hattına mal edilir.
+- Hikâye, Sanat Yönetimi, Görsel Tasarım ve Simülasyon işi yalnız kullanıcının
+  oluşturduğu aynı adlı görünür sohbet içinde yapıldığında ilgili uzman hattına
+  mal edilir.
 - Geçici alt ajan oluşturmak yasaktır. Çok zorunlu bir istisna yalnız proje
   sahibinin önceden açık izniyle kullanılabilir; sonucu yine uzman sohbet onayı
   sayılmaz ve `TEMPORARY_SUBAGENT` olarak etiketlenir.
 - Uzmanların çalışma dalları sırasıyla `work/v2.7-story`,
-  `work/v2.7-visual` ve `work/v2.7-simulation`dır. Bu dallar ilk yetkili teslim
+  `work/v2.7-art-direction`, `work/v2.7-visual` ve
+  `work/v2.7-simulation`dır. Bu dallar ilk yetkili teslim
   sırasında oluşturulur; entegrasyon hedefi `v2.7-design`dır.
 - Uzman sohbetler kendi dal ve sahip oldukları dosyalarda commit/push yapabilir.
   `governance/**`, `releases/**`, kanonik durum, entegrasyon, `main` geçişi ve
   kilit işlemleri yalnız Baş Editör kapsamındadır.
 - GitHub görev kaydı veya başka bir sohbette yazılan özet, görünür uzman
   sohbetinden `VISIBLE_CHAT_ACK: YES` handoffu gelmeden kabul edilmiş sayılmaz.
+
+## 2.2 Sanat Yönetimi ile Görsel Tasarım ayrımı
+
+- Sanat Yönetmeni sanatın ruhunu, niyetini, görsel hikâyesini, malzeme dilini,
+  kompozisyonunu ve kartlar arası ritmini kurar; uygulanabilir brief/eleştiri
+  üretir.
+- Görsel Tasarım özgün illüstrasyonu, kart şablonunu, renderı, PDF'yi ve baskı
+  paketini üretir.
+- Görsel Tasarım kendi işini tek başına sanatsal olarak kabul edemez; Sanat
+  Yönetmeni de final üretimi veya nihai kullanıcı onayını üstlenemez.
+- Nihai estetik karar proje sahibinindir; Baş Editör exact kaynak, sınır,
+  entegrasyon ve kabul/ret kaydını yönetir.
 
 ## 3. Korunan alanlar
 
