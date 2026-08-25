@@ -1,0 +1,1507 @@
+{
+  "schema_version": "2.7-accepted-pilot-provenance-1.0",
+  "project": "FOULWAKE",
+  "status": "PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+  "source_branch": "work/v2.7-visual",
+  "input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+  "chief_editor_source_commit": "1560b6eb1cc75b282c598cc4697921b9f472ce84",
+  "accepted_art_direction_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+  "visual_delivery_commit": "PENDING_EXACT_DELIVERY_COMMIT",
+  "policy": {
+    "exact_keep_ids": [
+      "HAR-KY-06",
+      "SAD-H-03"
+    ],
+    "new_original_art_ids": [
+      "KAR-01",
+      "KAR-06",
+      "KAR-19",
+      "GUC-06",
+      "GUC-27",
+      "ERZ-01",
+      "HAR-AD-08",
+      "HAR-AA-06",
+      "HAR-FN-04",
+      "SET-KP-01"
+    ],
+    "deferred_redraw_ids_not_produced": [
+      "GUC-03",
+      "HAR-AA-04",
+      "KAR-02",
+      "KAR-05",
+      "KAR-18",
+      "SET-KL-01"
+    ],
+    "guc_24_included": false,
+    "text_in_illustration": false,
+    "rejected_asset_reused": false,
+    "full_121_fronts_created": false,
+    "full_pdf_created": false,
+    "simulation_handoff_started": false
+  },
+  "fronts": [
+    {
+      "card_id": "KAR-01",
+      "family": "character",
+      "back_asset_id": "BACK_CHARACTER",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-01"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Uzakgören",
+        "role": "Gözcü",
+        "effect": "Tanışma gecesi hariç her gece bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
+        "flavor": "Tehlikeyi uzaktan görür. İnsanları hâlâ yakından çözemedi."
+      },
+      "exact_visible_copy_payload_sha256": "bcca95c8ae32cce1d9713def007c385dc480548c86f64852696fb019b43c1d77",
+      "accepted_brief_action": "Çıplak gözle ufuk çizgisindeki tek belirsiz kırılmayı seçer.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/KAR-01_illustration.jpg",
+        "sha256": "f549c4300719009930e4fcd2cfac913f7c9056b9f9612ffdd6fa3c3ddfa8367c",
+        "bytes": 1057372,
+        "pixels": [
+          1024,
+          1536
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/KAR-01_three_thumbnail_gate.jpg",
+        "sha256": "37a37adb2c5c239e64dbb05486890ad5c04e2e172b6bd5baf916be6604271c7c",
+        "bytes": 1048533,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/KAR-01_front.png",
+        "sha256": "e7755bf0e487e6886d253075820bf61456f692e7f4419996eaa9c0c85b1f871d",
+        "bytes": 2010041,
+        "pixels": [
+          898,
+          1488
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          60,
+          175,
+          838,
+          930
+        ],
+        "overflow": false,
+        "text_layout": {
+          "title_px": 50,
+          "effect_px": 31,
+          "effect_lines": 3,
+          "flavor_px": 27,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "KAR-06",
+      "family": "character",
+      "back_asset_id": "BACK_CHARACTER",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-06"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Dipgören",
+        "role": "Dalgıç",
+        "effect": "Batık Kalyon bulunduğunda bir kez fazladan 1 Güç kartı kazandırır.",
+        "flavor": "Denizin dibinden her seferinde bir şey getiriyor."
+      },
+      "exact_visible_copy_payload_sha256": "af2058c23715efbed1e68520749297a924ea926288a43d98684643badad1e7e2",
+      "accepted_brief_action": "Yosunlu küçük bronz donanımı ip merdivenden bordaya uzatır.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/KAR-06_illustration.jpg",
+        "sha256": "86fe45187edb2d1eeb8b5b1d3ed684177f8daa33f81020a2ff288ee86ab72a82",
+        "bytes": 940670,
+        "pixels": [
+          1024,
+          1536
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/KAR-06_three_thumbnail_gate.jpg",
+        "sha256": "b1cd8c1862243486cbaf3fa26f719ae5cba54b7f7335e2bef6ac44862f6cbc9c",
+        "bytes": 1067436,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/KAR-06_front.png",
+        "sha256": "ae89dca800ed2c85f1f660b96c238ef4b41ed898f4c8a2d1a3f9711ba82ff0fd",
+        "bytes": 1999268,
+        "pixels": [
+          898,
+          1488
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          60,
+          175,
+          838,
+          930
+        ],
+        "overflow": false,
+        "text_layout": {
+          "title_px": 50,
+          "effect_px": 31,
+          "effect_lines": 2,
+          "flavor_px": 27,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "KAR-19",
+      "family": "character",
+      "back_asset_id": "BACK_CHARACTER",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "KAR-19"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Yastıkçı",
+        "role": "Kamarot",
+        "effect": "Özel mekanik gücü yoktur.",
+        "flavor": "Herkesin kamarasına giriyor. Mesleği gereği olduğunu söylüyor."
+      },
+      "exact_visible_copy_payload_sha256": "1db4122698508be94b599c3a37dfa6f4f4edf749949ac42833aa3c9716b58cfd",
+      "accepted_brief_action": "Yastık demetini ıslak çizme izine basmadan koridor boyunca taşır.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/KAR-19_illustration.jpg",
+        "sha256": "6db12e5c3cd6eab6f71f97de62cd29950c8eccf5d316b206ae8c83ea7f0d566e",
+        "bytes": 1031827,
+        "pixels": [
+          1054,
+          1492
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/KAR-19_three_thumbnail_gate.jpg",
+        "sha256": "7fa855852a5332dc8508fef61a9a72db1b94f41ee19676d69d513e1e0eac36f3",
+        "bytes": 1040348,
+        "pixels": [
+          1692,
+          930
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/KAR-19_front.png",
+        "sha256": "1eab6f73a9f5de9a69bf70538ddab029b9e077ffbcad921c1db5d2b0b2d90843",
+        "bytes": 1983477,
+        "pixels": [
+          898,
+          1488
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          60,
+          175,
+          838,
+          930
+        ],
+        "overflow": false,
+        "text_layout": {
+          "title_px": 50,
+          "effect_px": 31,
+          "effect_lines": 1,
+          "flavor_px": 27,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "GUC-06",
+      "family": "power",
+      "back_asset_id": "BACK_POWER",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-06"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Zıpkın Sandığı",
+        "effect": "Kraken'in vereceği 1 Gövde hasarını engelle.",
+        "flavor": "Sandığın üstünde büyük balık yazıyor. Yazı aceleyle yazılmış."
+      },
+      "exact_visible_copy_payload_sha256": "54b96fc394b39d2fa3aca0dfbc9c3e0bd03d3ed2a429424274003511121add87",
+      "accepted_brief_action": "Kapak açılırken bir zıpkın ucu ilk kez ışık alır.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/GUC-06_illustration.jpg",
+        "sha256": "09291395ba65b1278170aed65ee635140f419bec88135574a013176b41130696",
+        "bytes": 918322,
+        "pixels": [
+          1023,
+          1537
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/GUC-06_three_thumbnail_gate.jpg",
+        "sha256": "801095f8fb7a7cc16f396e56d1a4aec5650fe527bd6e2199b9a26e227af77e8a",
+        "bytes": 1018858,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/GUC-06_front.png",
+        "sha256": "1b3041730270a4e10268cac3007d7ace66aa18a9b444427bb22c5638d0f3ac35",
+        "bytes": 1314139,
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          55,
+          132,
+          766,
+          650
+        ],
+        "overflow": false,
+        "text_layout": {
+          "effect_px": 29,
+          "effect_lines": 1,
+          "flavor_px": 23,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "GUC-27",
+      "family": "power",
+      "back_asset_id": "BACK_POWER",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "selector": "GUC-27"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Kaderi Yeniden Yaz",
+        "effect": "Etki uygulanmadan önce önceki yere dön ve başka yasal Yakın Ufka git. İlk karta gerçekten girildiyse kart açık ve ziyaret edilmiş kalır; olayı yeniden çalışmaz. İlk kart Geçilmez Kayalıksa Gemi o kareye hiç girmiş/ziyaret etmiş sayılmaz; Geçilmez açık engel kalır ve başka yasal Yakın Ufka yönlenilebilir. Ada girişi İskorbütü kalıcı temizler. Kullanıldıktan sonra oyun dışına çıkar.",
+        "flavor": "Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir."
+      },
+      "exact_visible_copy_payload_sha256": "5bfc2709583ee135f6eb7ee12d08711f0e7704e2cb8dad4e18a0af27b2dd7671",
+      "accepted_brief_action": "Gemi kendi yaş kıç izini çaprazlayarak başka açıklığa döner.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/GUC-27_illustration.jpg",
+        "sha256": "8d2a099df36583017fa293585ad6d57a82c10a0512648bb8c737a8a4edf6803a",
+        "bytes": 989251,
+        "pixels": [
+          1024,
+          1536
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/GUC-27_three_thumbnail_gate.jpg",
+        "sha256": "7610d99e4b757fa73f7ee291cd20924ac25b0a334c9a9ba68165082a1ce0d461",
+        "bytes": 1000958,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/GUC-27_front.png",
+        "sha256": "4d91e75fa2a3784f422c1cf0d90e26d1ee8f9da96987a107473c747ec63f001a",
+        "bytes": 1398622,
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          55,
+          132,
+          766,
+          650
+        ],
+        "overflow": false,
+        "text_layout": {
+          "effect_px": 24,
+          "effect_lines": 7,
+          "flavor_px": 23,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "ERZ-01",
+      "family": "rotten_provisions",
+      "back_asset_id": "BACK_POWER",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "releases/v2.6/",
+        "locked_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "ERZ-01",
+        "lookup_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+        "lookup_limit": "IDENTITY / EXACT COPY / PAGE INDEX ONLY"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Çürümüş Erzak",
+        "effect": "Kaptandaysan İskorbüt etkinleşmez. Kaptan değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonra gerçek bir Güç çek.",
+        "flavor": "Peksimet hâlâ yenebilir. Onu söyleyen kişi yenmedi."
+      },
+      "exact_visible_copy_payload_sha256": "d8a4184047f320faccc0a640335ff6bed9aaf1943a982afaedebabb58bb3add0",
+      "accepted_brief_action": "Fıçı tıpasından düşen damla, peksimet kümesine ilk kez ulaşır.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/ERZ-01_illustration.jpg",
+        "sha256": "c616207c892aec3e3289493b54a70d151cbb14ab46b642104dcf5d44381c4b21",
+        "bytes": 1268442,
+        "pixels": [
+          1024,
+          1536
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/ERZ-01_three_thumbnail_gate.jpg",
+        "sha256": "559a05dd9c1cda5ad7ffd54cf8c4ceecea2d7afbf051d11cd30f846d37a8411c",
+        "bytes": 1105064,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/ERZ-01_front.png",
+        "sha256": "56fc542dca2744c4b368ad8b6cb32f9578aa4041eff913dc4ad5c48d70998ac2",
+        "bytes": 1424149,
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          55,
+          132,
+          766,
+          650
+        ],
+        "overflow": false,
+        "text_layout": {
+          "effect_px": 29,
+          "effect_lines": 3,
+          "flavor_px": 23,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "SAD-H-03",
+      "family": "loyalty",
+      "back_asset_id": "BACK_LOYALTY",
+      "production_mode": "EXACT_KEEP_FROM_REVIEWED_VISUAL_SOURCE",
+      "accepted_keep_from_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+      "exact_visible_copy_source": {
+        "path": "releases/v2.6/",
+        "locked_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SAD-H-03",
+        "lookup_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+        "lookup_limit": "IDENTITY / EXACT COPY / PAGE INDEX ONLY"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Hain",
+        "urge": "Bir masumu gereğinden fazla savun."
+      },
+      "exact_visible_copy_payload_sha256": "108599725f391d925318ee34bfb1504c3dea6a2e40c2599ce0d1a7855ce98bc0",
+      "accepted_brief_action": "Kabul edilmiş KEEP ön yüz; exact bayt korunur.",
+      "source_art": {
+        "path": "working/v2.7/visual/rework_pilot/source_art/SAD-H-03_illustration.jpg",
+        "sha256": "f2aab13322963f4c849cd96e87ee7e4242dfaa1c7984b65bf853266578f3f694",
+        "bytes": 1375622,
+        "pixels": [
+          1122,
+          1402
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": null,
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/SAD-H-03_front.png",
+        "sha256": "563a9302de4892f3b904bdfc93d4ad3245535fd722ecbfea21fa6785706f0868",
+        "bytes": 1444424,
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          55,
+          132,
+          766,
+          650
+        ],
+        "overflow": false,
+        "text_layout": {
+          "urge_px": 34,
+          "urge_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "HAR-AD-08",
+      "family": "map_open_sea",
+      "back_asset_id": "BACK_SEA_ROCK",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "releases/v2.6/",
+        "locked_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AD-08",
+        "lookup_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+        "lookup_limit": "IDENTITY / EXACT COPY / PAGE INDEX ONLY"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "İsimsiz Bir Düdük",
+        "effect": "Bu gece Sis kuralı uygulanır.",
+        "flavor": "Ses sancaktan geldi. Yahut herkes öyle dedi."
+      },
+      "exact_visible_copy_payload_sha256": "1a113d8d147782cff7ec6395e1bc31c5cb5ac8288dd35820ef0c5e0556cfea8e",
+      "accepted_brief_action": "En yakın nöbetçi başını sancaktan iskeleye çevirirken diğer ikisi zıt yönlere donar.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/HAR-AD-08_illustration.jpg",
+        "sha256": "bdb0d1305678b4e0305a97dc236121de1901c7965c397ec9b2cf76e2d5771a58",
+        "bytes": 972050,
+        "pixels": [
+          1254,
+          1254
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/HAR-AD-08_three_thumbnail_gate.jpg",
+        "sha256": "6af50e28322835ae0bae6af35a44fde59701c8da31d33ec46dc9d6f5d6df093d",
+        "bytes": 818519,
+        "pixels": [
+          1626,
+          967
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/HAR-AD-08_front.png",
+        "sha256": "929b45a0350360fdf3501f4399f62da16c57aa54c2a3e7710d0ac474f5da5dc0",
+        "bytes": 1214124,
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          58,
+          127,
+          840,
+          585
+        ],
+        "overflow": false,
+        "text_layout": {
+          "effect_px": 27,
+          "effect_lines": 1,
+          "flavor_px": 22,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "HAR-KY-06",
+      "family": "map_rock",
+      "back_asset_id": "BACK_SEA_ROCK",
+      "production_mode": "EXACT_KEEP_FROM_REVIEWED_VISUAL_SOURCE",
+      "accepted_keep_from_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+      "exact_visible_copy_source": {
+        "path": "releases/v2.6/",
+        "locked_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-KY-06",
+        "lookup_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+        "lookup_limit": "IDENTITY / EXACT COPY / PAGE INDEX ONLY"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "İğne Deliğinden Sefer",
+        "effect": "Gemi 1 Gövde kaybeder; sonra isterse bir ek normal hareket yapar.",
+        "flavor": "Kestirme kısa sürdü. Tamiri sürmedi."
+      },
+      "exact_visible_copy_payload_sha256": "7134314a30f740a17bb2723aceab6607833073e53124f642f3ddef307bceef0f",
+      "accepted_brief_action": "Kabul edilmiş KEEP ön yüz; exact bayt korunur.",
+      "source_art": {
+        "path": "working/v2.7/visual/rework_pilot/source_art/HAR-KY-06_illustration.jpg",
+        "sha256": "425c3a35d3f3f9c94dbdf6379c3a8a3ed01dfcad449d6bbceb4f54ff28982bdc",
+        "bytes": 1435377,
+        "pixels": [
+          1254,
+          1254
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": null,
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/HAR-KY-06_front.png",
+        "sha256": "f809cc7f3ce3ab025e19f9824a7a7efd462e76044f33a10022b956f22b4a1480",
+        "bytes": 1391567,
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          58,
+          127,
+          840,
+          585
+        ],
+        "overflow": false,
+        "text_layout": {
+          "effect_px": 27,
+          "effect_lines": 2,
+          "flavor_px": 22,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "HAR-AA-06",
+      "family": "map_island",
+      "back_asset_id": "BACK_ISLAND",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "releases/v2.6/",
+        "locked_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-AA-06",
+        "lookup_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+        "lookup_limit": "IDENTITY / EXACT COPY / PAGE INDEX ONLY"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Gümrükçünün Tek Yaşadığı Ada",
+        "effect": "Gemideki herkes en fazla bir Güç tutar; fazlasını kapalı atar.",
+        "flavor": "Gümrükçü tek kişiydi. Yetkisi kalabalıktı."
+      },
+      "exact_visible_copy_payload_sha256": "4a6b1ef07faffffb39403237677073e5996c475292ce49625b8eddb7af41557d",
+      "accepted_brief_action": "Gümrükçü fazla nesneyi kapalı ıskarta sepetine indirir.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/HAR-AA-06_illustration.jpg",
+        "sha256": "c41da8154d6bcf0537853106f19d83a1c0cd83094db5dece8f8bc8a7068cf6a0",
+        "bytes": 1037670,
+        "pixels": [
+          1254,
+          1254
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/HAR-AA-06_three_thumbnail_gate.jpg",
+        "sha256": "60c0f18b7d848350363fe7fe25c29af527e3f9697292453aa873ae0d8daa6fa6",
+        "bytes": 1070317,
+        "pixels": [
+          2172,
+          724
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/HAR-AA-06_front.png",
+        "sha256": "e2d5df890d8b07bbd7ab09bfdebd96bda6608ed062a113e853bafcda13817ba2",
+        "bytes": 1229740,
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          58,
+          127,
+          840,
+          585
+        ],
+        "overflow": false,
+        "text_layout": {
+          "effect_px": 27,
+          "effect_lines": 2,
+          "flavor_px": 22,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "HAR-FN-04",
+      "family": "map_lighthouse",
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "releases/v2.6/",
+        "locked_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "HAR-FN-04",
+        "lookup_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+        "lookup_limit": "IDENTITY / EXACT COPY / PAGE INDEX ONLY"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Geceleri Parlayan Yalan",
+        "effect": "Bir sonraki rota mümkünse komşu başka bir yasal Yakın Ufka rastgele sapar.",
+        "flavor": "Işık doğruydu. Yer yanlış."
+      },
+      "exact_visible_copy_payload_sha256": "fac87a254a533386e63853a3b8be391701aed22992ce301ea5e6b7ff92187421",
+      "accepted_brief_action": "Gemi pruvası yanlış burundaki basit işaret ateşine döner.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/HAR-FN-04_illustration.jpg",
+        "sha256": "d18e802388eeaf94531eab2dac6825d9c591cdc3f395bf94da8e1c30e8b2298b",
+        "bytes": 927753,
+        "pixels": [
+          1254,
+          1254
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/HAR-FN-04_three_thumbnail_gate.jpg",
+        "sha256": "c16e1da3271986e5b71ade58b01a7d6b7cb90d45f834339ba7c012bcdf40aa92",
+        "bytes": 947899,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/HAR-FN-04_front.png",
+        "sha256": "d3ce1722545dd6ac6eeef9833ee7e0a164e0ab03aef018f514d048b0c7201bb0",
+        "bytes": 1184275,
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          58,
+          127,
+          840,
+          585
+        ],
+        "overflow": false,
+        "text_layout": {
+          "effect_px": 27,
+          "effect_lines": 2,
+          "flavor_px": 22,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    },
+    {
+      "card_id": "SET-KP-01",
+      "family": "support",
+      "back_asset_id": "BACK_SUPPORT",
+      "production_mode": "NEW_ORIGINAL_ART_FROM_ACCEPTED_BRIEF",
+      "accepted_keep_from_commit": null,
+      "exact_visible_copy_source": {
+        "path": "releases/v2.6/",
+        "locked_card_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "selector": "SET-KP-01",
+        "lookup_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+        "lookup_limit": "IDENTITY / EXACT COPY / PAGE INDEX ONLY"
+      },
+      "exact_visible_copy_snapshot": {
+        "name": "Kaptan Makamı",
+        "effect": "Kaptanlık açık bir makamdır; Sadakati kanıtlamaz. Kaptan değişebilir; makam oyundan kalkmaz.",
+        "flavor": "Makam kalır. Şüphe de."
+      },
+      "exact_visible_copy_payload_sha256": "e1512a26814ad81d150481c757013f24ef93b945dcd8fe35949a8baea2a7b4c0",
+      "accepted_brief_action": "Bir el makam anahtarını boş sandalyenin önündeki masaya bırakır.",
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/SET-KP-01_illustration.jpg",
+        "sha256": "b6e1e3d37a5a4a8bb10a46af3b58ce8e014379c8071cfd52c60565af050cc998",
+        "bytes": 1066107,
+        "pixels": [
+          1024,
+          1536
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "sketch_gate": {
+        "path": "working/v2.7/visual/pilot_rework/sketch_gates/SET-KP-01_three_thumbnail_gate.jpg",
+        "sha256": "c2e750d26d91760372d349abc895d2ade39774b8ab4c6d26e5a299270d236c2a",
+        "bytes": 1051680,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_fronts/SET-KP-01_front.png",
+        "sha256": "59b2e50903dab375b5c4057a0bb35facd3e2e42968ee0ee057cac2732ecd4b0a",
+        "bytes": 1343908,
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "render_layout": {
+        "illustration_rect": [
+          55,
+          132,
+          766,
+          650
+        ],
+        "overflow": false,
+        "text_layout": {
+          "title_px": 43,
+          "effect_px": 29,
+          "effect_lines": 3,
+          "flavor_px": 23,
+          "flavor_lines": 1
+        }
+      },
+      "text_in_illustration": false,
+      "rejected_asset_reused": false,
+      "overflow": false
+    }
+  ],
+  "backs": [
+    {
+      "back_asset_id": "BACK_CHARACTER",
+      "mapped_count": 20,
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/BACK_CHARACTER_source.jpg",
+        "sha256": "81a53c22bb4af9019440b0e80104704a52c428ed1a536a38bc7cf1c0bf3d51b2",
+        "bytes": 1201839,
+        "pixels": [
+          1050,
+          1498
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "imagegen_workspace_output_sha256": "7224ecb495800247afda1dbd4d60066f917cdd5d6ee5111f50aaee8a098a7892",
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_CHARACTER.png",
+        "sha256": "6082ad21ac8652c062ff244716c39c20ee189c130b7c666dab3f301b7e4577a9",
+        "bytes": 3099915,
+        "pixels": [
+          898,
+          1488
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "exact_180_degree_pixel_safe": true,
+      "same_binary_within_family": true,
+      "derived_from_prior_back": false,
+      "text_in_illustration": false,
+      "forbidden_motif_check": {
+        "medallion": false,
+        "crest": false,
+        "badge": false,
+        "icon": false,
+        "kaleidoscopic_digital_symmetry": false
+      },
+      "rejected_asset_reused": false
+    },
+    {
+      "back_asset_id": "BACK_POWER",
+      "mapped_count": 31,
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/BACK_POWER_source.jpg",
+        "sha256": "d5a41f648b30c35d244334a58f52159020467a036db7428a34008fe443973235",
+        "bytes": 1024069,
+        "pixels": [
+          1054,
+          1492
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "imagegen_workspace_output_sha256": "d72d732453d14454adfe163f99f8eeae0d3c3b83b8f6c099e93e17af1758693e",
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_POWER.png",
+        "sha256": "8add0007343f81c89a99868050118485faf68cd47934eedd6c4a627d7be66208",
+        "bytes": 2109820,
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "exact_180_degree_pixel_safe": true,
+      "same_binary_within_family": true,
+      "derived_from_prior_back": false,
+      "text_in_illustration": false,
+      "forbidden_motif_check": {
+        "medallion": false,
+        "crest": false,
+        "badge": false,
+        "icon": false,
+        "kaleidoscopic_digital_symmetry": false
+      },
+      "rejected_asset_reused": false
+    },
+    {
+      "back_asset_id": "BACK_LOYALTY",
+      "mapped_count": 15,
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/BACK_LOYALTY_source.jpg",
+        "sha256": "c370a5a6dfbd0ff2749c4179af40cf2a6dfdd18b8f5dc4e416a208a4b777d6f4",
+        "bytes": 1107584,
+        "pixels": [
+          1054,
+          1492
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "imagegen_workspace_output_sha256": "4e60aa24c683619b389bbfe71d3c189ac97f5b45747328942d2fc2a143776afe",
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_LOYALTY.png",
+        "sha256": "92f66794d5e98f698db8c0b9dd83a3520e9427e5ecf55867779ba102ab143ae4",
+        "bytes": 2115599,
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "exact_180_degree_pixel_safe": true,
+      "same_binary_within_family": true,
+      "derived_from_prior_back": false,
+      "text_in_illustration": false,
+      "forbidden_motif_check": {
+        "medallion": false,
+        "crest": false,
+        "badge": false,
+        "icon": false,
+        "kaleidoscopic_digital_symmetry": false
+      },
+      "rejected_asset_reused": false
+    },
+    {
+      "back_asset_id": "BACK_SEA_ROCK",
+      "mapped_count": 42,
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/BACK_SEA_ROCK_source.jpg",
+        "sha256": "c43497c1d2310f60309fb82c96500b77ed560e524f5498b4a61ea0fb0084f128",
+        "bytes": 1089601,
+        "pixels": [
+          1254,
+          1254
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "imagegen_workspace_output_sha256": "24b999e1fdac244784139e01921b1389dd081f057b32c5ba20876e403d3f4c24",
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_SEA_ROCK.png",
+        "sha256": "3e2e28873cde75d4e775c886f4e398c389f65f7d88bef44413e80c2f005ee56e",
+        "bytes": 1796966,
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "exact_180_degree_pixel_safe": true,
+      "same_binary_within_family": true,
+      "derived_from_prior_back": false,
+      "text_in_illustration": false,
+      "forbidden_motif_check": {
+        "medallion": false,
+        "crest": false,
+        "badge": false,
+        "icon": false,
+        "kaleidoscopic_digital_symmetry": false
+      },
+      "rejected_asset_reused": false
+    },
+    {
+      "back_asset_id": "BACK_ISLAND",
+      "mapped_count": 6,
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/BACK_ISLAND_source.jpg",
+        "sha256": "508516554a157e075f883d82583ec2825dd91e3040e5bcdebab0156c1cd59614",
+        "bytes": 1061627,
+        "pixels": [
+          1254,
+          1254
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "imagegen_workspace_output_sha256": "886f8f7c8000ead53aff2320d6701db3dd4b346cda344e29618ac9720bec2f92",
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_ISLAND.png",
+        "sha256": "4344f2b403c6de6858b3a36a46a272222be14dfdb0248373ef9efcc8113f9094",
+        "bytes": 1757843,
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "exact_180_degree_pixel_safe": true,
+      "same_binary_within_family": true,
+      "derived_from_prior_back": false,
+      "text_in_illustration": false,
+      "forbidden_motif_check": {
+        "medallion": false,
+        "crest": false,
+        "badge": false,
+        "icon": false,
+        "kaleidoscopic_digital_symmetry": false
+      },
+      "rejected_asset_reused": false
+    },
+    {
+      "back_asset_id": "BACK_LIGHTHOUSE",
+      "mapped_count": 4,
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/BACK_LIGHTHOUSE_source.jpg",
+        "sha256": "41063af52270e19ed0d81f62509dbd03a4b676a8fecedff360ffb877d168227d",
+        "bytes": 1152771,
+        "pixels": [
+          1254,
+          1254
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "imagegen_workspace_output_sha256": "7c47f9002a7d8452279cd1efecb528bfb75cc0890fe9b16bc0cb8941712a6a56",
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_LIGHTHOUSE.png",
+        "sha256": "6e0700215e57e7a2f1ed187b551ac1610b5345be554b95349165ae886d71437e",
+        "bytes": 2011836,
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "exact_180_degree_pixel_safe": true,
+      "same_binary_within_family": true,
+      "derived_from_prior_back": false,
+      "text_in_illustration": false,
+      "forbidden_motif_check": {
+        "medallion": false,
+        "crest": false,
+        "badge": false,
+        "icon": false,
+        "kaleidoscopic_digital_symmetry": false
+      },
+      "rejected_asset_reused": false
+    },
+    {
+      "back_asset_id": "BACK_SUPPORT",
+      "mapped_count": 3,
+      "source_art": {
+        "path": "working/v2.7/visual/pilot_rework/source_art/BACK_SUPPORT_source.jpg",
+        "sha256": "5a079fba754ea748ee2b76ea92b9f203c5053a77bde0ce3c0fbd99f6465541e5",
+        "bytes": 1279050,
+        "pixels": [
+          1024,
+          1536
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "imagegen_workspace_output_sha256": "d3546001c1bfb60d6cb3dbf477191471e84bf20329e8349edb6c68ffefa11429",
+      "render": {
+        "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_SUPPORT.png",
+        "sha256": "ad40c459b58443c669c76f8db16bea98be3614bd111583bb85b6111ef3bee78e",
+        "bytes": 2195748,
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi": [
+          300,
+          300
+        ],
+        "mode": "RGB"
+      },
+      "exact_180_degree_pixel_safe": true,
+      "same_binary_within_family": true,
+      "derived_from_prior_back": false,
+      "text_in_illustration": false,
+      "forbidden_motif_check": {
+        "medallion": false,
+        "crest": false,
+        "badge": false,
+        "icon": false,
+        "kaleidoscopic_digital_symmetry": false
+      },
+      "rejected_asset_reused": false
+    }
+  ],
+  "contact_sheets": [
+    {
+      "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_12_PILOT_FRONTS_CONTACT_SHEET_v2.7.png",
+      "sha256": "065355f06e47d8fef6961f104a9575ce8838eb2c6db6b816c92205efe8dc2ba0",
+      "bytes": 4113407,
+      "pixels": [
+        1740,
+        1790
+      ],
+      "dpi": [
+        180,
+        180
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_12_PILOT_SEMANTIC_BLIND_CONTACT_SHEET_v2.7.png",
+      "sha256": "70d70eb22314643d67407c3a158f0fc6608df3df1605efee95deef8238d85fb9",
+      "bytes": 3301451,
+      "pixels": [
+        1610,
+        1220
+      ],
+      "dpi": [
+        180,
+        180
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_7_BACKS_CONTACT_SHEET_v2.7.png",
+      "sha256": "221ec5abbd0445c263957f1a752ddd7539b6d248ed7e54d30419bf99e89f0d35",
+      "bytes": 3374690,
+      "pixels": [
+        1780,
+        1190
+      ],
+      "dpi": [
+        180,
+        180
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_10_REDRAW_THUMBNAIL_GATES_v2.7.png",
+      "sha256": "cdd6e751e850126de8db650d675263ad38bd406a0cc672e3e4a3e0c234535220",
+      "bytes": 3278386,
+      "pixels": [
+        1000,
+        2020
+      ],
+      "dpi": [
+        180,
+        180
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_3_VARIABLE_MAP_LAYOUTS_CONTACT_SHEET_v2.7.png",
+      "sha256": "7dbe6984647df950e124e924545c13716677e7c495536a7bf77424878d71eeaa",
+      "bytes": 2111008,
+      "pixels": [
+        1350,
+        1580
+      ],
+      "dpi": [
+        180,
+        180
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "variable_map_layouts": [
+    {
+      "layout_id": "COMPACT_CLUSTER",
+      "orthogonally_connected": true,
+      "card_count": 12,
+      "fixed_5x5": false,
+      "closed": {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_CLOSED_v2.7.png",
+        "sha256": "d101a8fca36765e51db0d653b75d0963485ff592d935d0af6827757e0e5a4143",
+        "bytes": 1151876,
+        "pixels": [
+          1110,
+          920
+        ],
+        "dpi": [
+          180,
+          180
+        ],
+        "mode": "RGB"
+      },
+      "partially_open": {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_PARTIALLY_OPEN_v2.7.png",
+        "sha256": "393918a7777f7c19bd7a930d82a9537c4eaaf0962f7f5d2a6d4f4d06af058caf",
+        "bytes": 1185219,
+        "pixels": [
+          1110,
+          920
+        ],
+        "dpi": [
+          180,
+          180
+        ],
+        "mode": "RGB"
+      },
+      "open_card_ids": [
+        "HAR-AD-08",
+        "HAR-AA-06"
+      ]
+    },
+    {
+      "layout_id": "ELONGATED_ROUTE",
+      "orthogonally_connected": true,
+      "card_count": 11,
+      "fixed_5x5": false,
+      "closed": {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_CLOSED_v2.7.png",
+        "sha256": "be51ed31da8a7484189297d5a15ed212d950b6aebf49affd5028c77a8678548e",
+        "bytes": 1240505,
+        "pixels": [
+          1680,
+          730
+        ],
+        "dpi": [
+          180,
+          180
+        ],
+        "mode": "RGB"
+      },
+      "partially_open": {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_PARTIALLY_OPEN_v2.7.png",
+        "sha256": "acbf02dde2aa8e4dc0f050632869df5c4f1ac7f777b882c857e03a7c38adf1f2",
+        "bytes": 1347167,
+        "pixels": [
+          1680,
+          730
+        ],
+        "dpi": [
+          180,
+          180
+        ],
+        "mode": "RGB"
+      },
+      "open_card_ids": [
+        "HAR-KY-06",
+        "HAR-FN-04"
+      ]
+    },
+    {
+      "layout_id": "IRREGULAR_BRANCH",
+      "orthogonally_connected": true,
+      "card_count": 13,
+      "fixed_5x5": false,
+      "closed": {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_CLOSED_v2.7.png",
+        "sha256": "55a3540a738477017386ed35d4a434b5001d7742e81efc79151e8618c0000bdc",
+        "bytes": 1481501,
+        "pixels": [
+          1300,
+          1110
+        ],
+        "dpi": [
+          180,
+          180
+        ],
+        "mode": "RGB"
+      },
+      "partially_open": {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_PARTIALLY_OPEN_v2.7.png",
+        "sha256": "c9737c7bdf5914b2e9003778cdd38983f965083a8c114355b76b1b8d29abdeb6",
+        "bytes": 1639342,
+        "pixels": [
+          1300,
+          1110
+        ],
+        "dpi": [
+          180,
+          180
+        ],
+        "mode": "RGB"
+      },
+      "open_card_ids": [
+        "HAR-AD-08",
+        "HAR-AA-06",
+        "HAR-KY-06"
+      ]
+    }
+  ],
+  "counts": {
+    "official_fronts": 12,
+    "new_original_fronts": 10,
+    "exact_keep_fronts": 2,
+    "back_binaries": 7,
+    "back_mapping_total": 121,
+    "variable_layouts": 3,
+    "layout_states": 6,
+    "contact_sheets": 5
+  },
+  "physical_tests": {
+    "print": "NOT_RUN",
+    "cut": "NOT_RUN",
+    "duplex": "NOT_RUN",
+    "light_leak": "NOT_RUN",
+    "blind_orientation_leak": "NOT_RUN"
+  }
+}

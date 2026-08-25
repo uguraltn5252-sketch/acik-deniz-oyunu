@@ -1,0 +1,959 @@
+{
+  "schema_version": "2.7-accepted-pilot-control-1.0",
+  "project": "FOULWAKE",
+  "source_branch": "work/v2.7-visual",
+  "source_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+  "chief_editor_source_commit": "1560b6eb1cc75b282c598cc4697921b9f472ce84",
+  "accepted_art_direction_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+  "result": "PASS",
+  "failures": [],
+  "checks": {
+    "official_front_identity": {
+      "expected": [
+        "KAR-01",
+        "KAR-06",
+        "KAR-19",
+        "GUC-06",
+        "GUC-27",
+        "ERZ-01",
+        "SAD-H-03",
+        "HAR-AD-08",
+        "HAR-KY-06",
+        "HAR-AA-06",
+        "HAR-FN-04",
+        "SET-KP-01"
+      ],
+      "actual": [
+        "KAR-01",
+        "KAR-06",
+        "KAR-19",
+        "GUC-06",
+        "GUC-27",
+        "ERZ-01",
+        "SAD-H-03",
+        "HAR-AD-08",
+        "HAR-KY-06",
+        "HAR-AA-06",
+        "HAR-FN-04",
+        "SET-KP-01"
+      ],
+      "pass": true
+    },
+    "scope_exclusions": {
+      "deferred_ids_present": [],
+      "guc_24_present": false,
+      "pass": true
+    },
+    "exact_visible_copy": {
+      "cards": [
+        {
+          "card_id": "KAR-01",
+          "exact": true
+        },
+        {
+          "card_id": "KAR-06",
+          "exact": true
+        },
+        {
+          "card_id": "KAR-19",
+          "exact": true
+        },
+        {
+          "card_id": "GUC-06",
+          "exact": true
+        },
+        {
+          "card_id": "GUC-27",
+          "exact": true
+        },
+        {
+          "card_id": "ERZ-01",
+          "exact": true
+        },
+        {
+          "card_id": "SAD-H-03",
+          "exact": true
+        },
+        {
+          "card_id": "HAR-AD-08",
+          "exact": true
+        },
+        {
+          "card_id": "HAR-KY-06",
+          "exact": true
+        },
+        {
+          "card_id": "HAR-AA-06",
+          "exact": true
+        },
+        {
+          "card_id": "HAR-FN-04",
+          "exact": true
+        },
+        {
+          "card_id": "SET-KP-01",
+          "exact": true
+        }
+      ],
+      "pass": true
+    },
+    "font_glyph_coverage": {
+      "fonts": {
+        "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf": [],
+        "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf": [],
+        "/usr/share/fonts/opentype/urw-base35/NimbusRoman-Italic.otf": []
+      },
+      "pass": true
+    },
+    "accepted_exact_keep": {
+      "records": [
+        {
+          "card_id": "SAD-H-03",
+          "sha256": "563a9302de4892f3b904bdfc93d4ad3245535fd722ecbfea21fa6785706f0868",
+          "bytes": 1444424,
+          "pass": true
+        },
+        {
+          "card_id": "HAR-KY-06",
+          "sha256": "f809cc7f3ce3ab025e19f9824a7a7efd462e76044f33a10022b956f22b4a1480",
+          "bytes": 1391567,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "front_300dpi_size_safe_area_overflow": {
+      "records": [
+        {
+          "card_id": "KAR-01",
+          "pixels": [
+            898,
+            1488
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "KAR-06",
+          "pixels": [
+            898,
+            1488
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "KAR-19",
+          "pixels": [
+            898,
+            1488
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "GUC-06",
+          "pixels": [
+            821,
+            1121
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "GUC-27",
+          "pixels": [
+            821,
+            1121
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "ERZ-01",
+          "pixels": [
+            821,
+            1121
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "SAD-H-03",
+          "pixels": [
+            821,
+            1121
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "HAR-AD-08",
+          "pixels": [
+            898,
+            898
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "HAR-KY-06",
+          "pixels": [
+            898,
+            898
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "HAR-AA-06",
+          "pixels": [
+            898,
+            898
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "HAR-FN-04",
+          "pixels": [
+            898,
+            898
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        },
+        {
+          "card_id": "SET-KP-01",
+          "pixels": [
+            821,
+            1121
+          ],
+          "dpi": [
+            300,
+            300
+          ],
+          "size_pass": true,
+          "safe_area_and_overflow_pass": true
+        }
+      ],
+      "pass": true
+    },
+    "back_300dpi_exact_180_and_mapping": {
+      "records": [
+        {
+          "back_asset_id": "BACK_CHARACTER",
+          "mapped_count": 20,
+          "exact_180": true,
+          "dpi": [
+            300,
+            300
+          ],
+          "pass": true
+        },
+        {
+          "back_asset_id": "BACK_POWER",
+          "mapped_count": 31,
+          "exact_180": true,
+          "dpi": [
+            300,
+            300
+          ],
+          "pass": true
+        },
+        {
+          "back_asset_id": "BACK_LOYALTY",
+          "mapped_count": 15,
+          "exact_180": true,
+          "dpi": [
+            300,
+            300
+          ],
+          "pass": true
+        },
+        {
+          "back_asset_id": "BACK_SEA_ROCK",
+          "mapped_count": 42,
+          "exact_180": true,
+          "dpi": [
+            300,
+            300
+          ],
+          "pass": true
+        },
+        {
+          "back_asset_id": "BACK_ISLAND",
+          "mapped_count": 6,
+          "exact_180": true,
+          "dpi": [
+            300,
+            300
+          ],
+          "pass": true
+        },
+        {
+          "back_asset_id": "BACK_LIGHTHOUSE",
+          "mapped_count": 4,
+          "exact_180": true,
+          "dpi": [
+            300,
+            300
+          ],
+          "pass": true
+        },
+        {
+          "back_asset_id": "BACK_SUPPORT",
+          "mapped_count": 3,
+          "exact_180": true,
+          "dpi": [
+            300,
+            300
+          ],
+          "pass": true
+        }
+      ],
+      "mapping_total": 121,
+      "pass": true
+    },
+    "stored_byte_provenance": {
+      "record_count": 59,
+      "records": [
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/KAR-01_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/KAR-01_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/KAR-01_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/KAR-06_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/KAR-06_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/KAR-06_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/KAR-19_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/KAR-19_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/KAR-19_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/GUC-06_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/GUC-06_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/GUC-06_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/GUC-27_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/GUC-27_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/GUC-27_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/ERZ-01_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/ERZ-01_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/ERZ-01_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/rework_pilot/source_art/SAD-H-03_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/SAD-H-03_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/HAR-AD-08_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/HAR-AD-08_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/HAR-AD-08_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/rework_pilot/source_art/HAR-KY-06_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/HAR-KY-06_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/HAR-AA-06_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/HAR-AA-06_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/HAR-AA-06_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/HAR-FN-04_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/HAR-FN-04_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/HAR-FN-04_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/SET-KP-01_illustration.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/sketch_gates/SET-KP-01_three_thumbnail_gate.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_fronts/SET-KP-01_front.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_CHARACTER_source.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_CHARACTER.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_POWER_source.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_POWER.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_LOYALTY_source.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_LOYALTY.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_SEA_ROCK_source.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_SEA_ROCK.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_ISLAND_source.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_ISLAND.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_LIGHTHOUSE_source.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_LIGHTHOUSE.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_SUPPORT_source.jpg",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_SUPPORT.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_12_PILOT_FRONTS_CONTACT_SHEET_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_12_PILOT_SEMANTIC_BLIND_CONTACT_SHEET_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_7_BACKS_CONTACT_SHEET_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_10_REDRAW_THUMBNAIL_GATES_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_3_VARIABLE_MAP_LAYOUTS_CONTACT_SHEET_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_CLOSED_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_PARTIALLY_OPEN_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_CLOSED_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_PARTIALLY_OPEN_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_CLOSED_v2.7.png",
+          "pass": true
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_PARTIALLY_OPEN_v2.7.png",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "illustration_ocr_and_manual_review": {
+      "input_count": 17,
+      "records": [
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_CHARACTER_source.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "ile",
+            "iss",
+            "eat",
+            "RSS",
+            "Pays",
+            "4456",
+            "SSE",
+            "SSS",
+            "SSN",
+            "fox",
+            "ogy",
+            "ASS",
+            "Yow",
+            "SENG",
+            "Mee",
+            "ANG",
+            "fos",
+            "ate",
+            "ihe",
+            "rar"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_ISLAND_source.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "eee",
+            "Zante",
+            "igh",
+            "ears",
+            "TON",
+            "CAS",
+            "Pee",
+            "Sag",
+            "bee",
+            "pSts",
+            "fig",
+            "ore",
+            "Sis",
+            "Sac",
+            "GEG",
+            "ast",
+            "Raps",
+            "S65"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_LIGHTHOUSE_source.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Cis",
+            "S53",
+            "rss",
+            "SSA",
+            "SAS",
+            "Duraes",
+            "Se4",
+            "Few",
+            "aCe",
+            "tae",
+            "Bes",
+            "Pane",
+            "tees",
+            "Zag"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_LOYALTY_source.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Soni",
+            "rhe",
+            "Ete",
+            "SES"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_POWER_source.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Yue",
+            "ANY",
+            "het",
+            "Regs",
+            "Moh",
+            "Pal",
+            "ite",
+            "Ege",
+            "VAS",
+            "veh",
+            "Rea",
+            "SOS",
+            "Soe",
+            "Aas"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_SEA_ROCK_source.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "tid",
+            "LAA",
+            "LFA",
+            "Zoi",
+            "LLzA",
+            "ced",
+            "SAA",
+            "soe",
+            "Page",
+            "PEP",
+            "Sie",
+            "est",
+            "LSS",
+            "LEE",
+            "WYP",
+            "Zig",
+            "Zig",
+            "ZLA",
+            "SSQs",
+            "LEE"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/BACK_SUPPORT_source.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Sip",
+            "cnt",
+            "tod",
+            "Lia",
+            "Pye",
+            "Lerten",
+            "Lvs",
+            "ile",
+            "Vik",
+            "Lage",
+            "Viki",
+            "Mie",
+            "424",
+            "Lig",
+            "LIF"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/ERZ-01_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "ioe",
+            "sales",
+            "Eis",
+            "ail",
+            "Loo",
+            "WONG"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/GUC-06_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Pag",
+            "Nad",
+            "bat",
+            "ASQ",
+            "LOC",
+            "HYPE",
+            "iss",
+            "Hck",
+            "Yip",
+            "SSS",
+            "BENAT",
+            "ASN",
+            "Css",
+            "see",
+            "EWS",
+            "SSSS",
+            "see",
+            "fiom",
+            "ASS"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/GUC-27_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Ite",
+            "ths",
+            "ome",
+            "Zot",
+            "Seas",
+            "eee",
+            "aot",
+            "oar"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/HAR-AA-06_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "SSS",
+            "iis",
+            "cof",
+            "S43",
+            "peel",
+            "SEZ",
+            "ish"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/HAR-AD-08_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Wee",
+            "ast",
+            "hed",
+            "the",
+            "Vij",
+            "Vif",
+            "eff",
+            "Lye",
+            "Lite"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/HAR-FN-04_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Zar",
+            "lig",
+            "Sep",
+            "Bess",
+            "res",
+            "WES",
+            "ifs",
+            "jes",
+            "Eee",
+            "Sea",
+            "Pry",
+            "SES",
+            "aes",
+            "Vise",
+            "EEE"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/KAR-01_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Sie",
+            "pee",
+            "Tae",
+            "aes"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/KAR-06_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Hid",
+            "wll",
+            "Ney",
+            "Nea"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/KAR-19_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "Vas",
+            "ISS",
+            "Hil",
+            "Nyc",
+            "Lia"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        },
+        {
+          "path": "working/v2.7/visual/pilot_rework/source_art/SET-KP-01_illustration.jpg",
+          "ocr_nonempty": true,
+          "candidate_tokens_sample": [
+            "walt"
+          ],
+          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "manual_visual_review_coherent_readable_text_detected": false
+        }
+      ],
+      "pass": true,
+      "note": "OCR pseudo-tokens from engraved strokes were manually checked; no coherent readable writing is present."
+    },
+    "variable_map_layouts": {
+      "layout_count": 3,
+      "state_count": 6,
+      "ids": [
+        "COMPACT_CLUSTER",
+        "ELONGATED_ROUTE",
+        "IRREGULAR_BRANCH"
+      ],
+      "all_orthogonally_connected": true,
+      "all_not_fixed_5x5": true,
+      "pass": true
+    },
+    "policy_flags": {
+      "front_text_in_illustration_false": true,
+      "front_rejected_asset_reused_false": true,
+      "back_text_in_illustration_false": true,
+      "back_derived_from_prior_false": true,
+      "full_pdf_created_false": true,
+      "full_121_created_false": true,
+      "pass": true
+    }
+  },
+  "physical_tests": {
+    "print": "NOT_RUN",
+    "cut": "NOT_RUN",
+    "duplex": "NOT_RUN",
+    "light": "NOT_RUN",
+    "blind_orientation_leak": "NOT_RUN"
+  }
+}
