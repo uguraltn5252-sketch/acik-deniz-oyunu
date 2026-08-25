@@ -1,11 +1,13 @@
 # FOULWAKE ART DIRECTION BIBLE v2.7
 
-Status: REWORKED BRIEF — PROJECT OWNER AND CHIEF EDITOR REVIEW REQUIRED  
+Status: OWNER-DIRECTED ARTISTIC DEPTH REWORK — PROJECT OWNER AND CHIEF EDITOR REVIEW REQUIRED  
 Workstream: Sanat Yönetimi  
 Source branch: work/v2.7-art-direction  
 Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
 Baseline: v2.6 STABLE / LOCKED  
-Review input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
+Chief Editor disposition input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
+Prior corrected brief head: work/v2.7-art-direction@968873d28f96d48ea64e7a04d5c82a808a4bc612  
+Project Owner direction: rules-literate, name-resilient, artistically authored pass; no visual production.  
 Visual production authorized: NO  
 Scope: Görsel üretim öncesi bağlayıcı sanat yönü; illüstrasyon, kart renderı, PDF, contact sheet veya baskı paketi değildir.
 
@@ -29,9 +31,123 @@ Ekli KAPTAN kartı STYLE_ONLY referanstır. Ondan yalnız şu soyut gözlemler a
 
 ## 2. Tek cümlelik sanat tezi
 
-FOULWAKE, 1721’de denizin kahraman korsanları değil; tuz, borç, çürüme, görev ve kuşku arasında bir gemiyi çalışır halde tutmaya uğraşan insanların, aşınmış maddelerle yazılmış deniz gravürüdür.
+FOULWAKE, kahraman korsanların değil; birbirinin tanıklığına muhtaç ama ondan emin olamayan insanların, ıslak bir gemiyi seçimlerle ayakta tuttuğu ve tuzun her karara fiziksel bir bedel eklediği aşınmış deniz anlatısıdır.
 
-## 3. v2.7 anlatısal görsel omurga
+### 2.1 Sanat Yönetmeninin bakışı
+
+Sanat Yönetmeni bu projede 121 resmi uzaktan tarif eden bir “prompt yazarı” değildir. Görevi, her görsel için dört şeyi korumaktır:
+
+1. **Duygusal hakikat:** oyuncunun kartı ilk gördüğünde ne hissetmesi gerektiği.
+2. **Oyun hakikati:** resmin, mekaniği açıklamadan oyundaki karar baskısını nasıl taşıdığı.
+3. **Dünya hakikati:** insan, gemi, deniz ve nesnenin aynı 1721 maddi dünyasına ait olması.
+4. **Deste hakikati:** tek resim güzel olsa bile 121 kart içinde tekrar, gürültü veya yanlış vurgu üretmemesi.
+
+Brief, “şurada şu açıyla tam olarak bunu çiz” diye kapalı bir çekim listesi kurmamalıdır. Önce **neyin doğru kalacağını**, sonra **neyin kesinlikle söylenmeyeceğini** tarif eder; çözümün önemli bir bölümünü sanatçıya bırakır. Sanatçı bu sınırlar içinde yalnız uygulayıcı değil, görsel yazar ve gözlemcidir. Sanat Yönetmeni sanatçının daha iyi çözümünü tanıyabilmeli, briefteki ilk nesne veya kadraj fikrini sırf kendisi yazdı diye savunmamalıdır.
+
+Bu nedenle 121 manifestteki kadraj, nesne ve beden çözümleri üç farklı statüde okunur:
+
+- **BINDING:** exact kimlik/mekanik, ilk duygu, tek ana fiil, spoiler ve dönem sınırı.
+- **COLLISION_GUARD:** başka kartla karışmayı önleyen yaş, siluet, iş izi ve ritim koordinatları.
+- **STARTING_VECTOR:** kamera, mikro-jest, hava, ikincil nesne ve çizgi yoğunluğunun ilk savunulabilir yönü; sanatçı daha iyi bir çözüm getirirse değişebilir.
+
+### 2.2 Tat çekirdeği: “Islak Tanıklık”
+
+“Islak Tanıklık” yalnız ekip içi bir eleştiri terimidir; oyun içi isim, slogan, logo, kart yazısı veya pazarlama ifadesi değildir.
+
+Her ön yüz, olaydan sonra kuru bir odada uydurulmuş korsan resmi gibi değil, olayın ağırlığına yakın durmuş bir gözün eksik tanıklığı gibi hissettirmelidir. Göz **neyin olduğunu** seçer; fakat çoğu zaman **neden olduğunu**, kimin haklı olduğunu veya bir sonraki sonucun ne olacağını bilemez.
+
+Bu tat şu karşılıklardan doğar:
+
+- Ufuk ve gemi kütlesi gözleme dayanır; dekoratif eğrilik veya rastgele “eski zaman” bozulması kullanılmaz.
+- Su, duman, bez ve insan bedeni aynı rüzgârı taşır; atmosfer sonradan yapıştırılmış filtre değildir.
+- Çizgi kusursuz dijital kabuk değil, karar alan bir elin izi gibi canlıdır; ancak küçük ölçekte çamura dönüşmez.
+- Kâğıt, kurum, yağlı parmak, su yolu ve ip sürtünmesi insan kullanımını hissettirir; rastgele grunge değildir.
+- Olay görünür, hüküm eksik kalır. Bir el yararlı olabilir; niyeti okunmaz. Bir liman yakın olabilir; zafer değildir. Bir mühür gerçek olabilir; faili kanıtlamaz.
+- En güzel ayrıntı çoğu zaman “büyük lore ipucu” değil; yük altında açılan el, ıslak bezin omzu çekişi, bordada birikmiş tuz veya yanlış anda boş kalan bir sandalyedir.
+
+Bu yaklaşım, eski deniz çizimlerinin yerinde gözlem ve tanıklık niteliğinden beslenir; belirli bir sanatçının stilini kopyalamaz. Hedef “gravür efekti” değil, gözlemin çizgiye dönüşmesidir.
+
+### 2.3 Oyunun masa deneyiminden türeyen görsel ilkeler
+
+Kural kitabı görsel dünyanın dekorunu değil, bakışını belirler. FOULWAKE’ta oyuncu sürekli eksik bilgiyle, başkalarının anlatısıyla ve geri alınamayan ortak kararla yaşar.
+
+| Masadaki gerçek | Görsel sonuç |
+|---|---|
+| Yakın Ufuk hakkında bilgi özel olabilir; anlatan kişi yalan söyleyebilir | Resim olayı okunur kılar, nedeni ve ahlaki hükmü açık bırakır |
+| Rota açık tartışma ve eşzamanlı oyla seçilir | Eller, bakış eksenleri, boşluklar ve nesne yönleri sosyal basıncı taşır; yüzler “iyi/kötü” diye kodlanmaz |
+| Kaptan iki oy taşır ama Sadakati kanıtlanmaz; makam değişebilir | Güç karizmatik portreden değil, mekânsal ağırlık, erişim ve devredilen nesneden doğar |
+| Gemi yalnız iki Gövde dayanımına sahiptir | Ağır hasar slapstick değildir; küçük çatlak bile yapısal sonuç ve sessizlik taşır |
+| Çürümüş Erzak adayı zorunlu kılabilir | Ada yalnız ödül/cennet değildir; rahatlama, gecikme ve kuşku aynı sahnede bulunabilir |
+| Limana varmak yetmez; Liman Gecesi sağ çıkılmalıdır | Varış kartları final güneşi veya zafer resmi değil, eşik ve bekleyiştir |
+| Sadakat ölümde dahi açılmaz | Yüz, ten, giysi, ışık, hayvan veya ortak amblem hiçbir insanı peşinen ele vermez |
+| Moderatör atmosfer kurar ama şüphe üretmez | Hava ve malzeme gerilim yaratır; gizli ipucu, spot kanıt veya “kötü gölge” yaratmaz |
+| Harita yolu değil, masadaki tartışmayı değiştirir | Coğrafya yalnız manzara değildir; bedensel karar, erişim ve risk geometrisidir |
+
+### 2.4 Bağlayıcı niyet / sanatçı yorum alanı
+
+Her brief aşağıdaki sözleşmeyle okunur:
+
+| Sanat Yönetiminin koruduğu | Sanatçının yorumlayabildiği |
+|---|---|
+| Exact kart kimliği, kaynak metni ve mekanik gerçek | Exact metni resme yazmadan, aynı gerçeği taşıyan mikro-hikâye |
+| İlk iki saniye duygusu ve tek ana hareket | Jestin anatomisi, hareketin anı, yüzün mikro-ifadesi |
+| Karakter matrisi ve diğer kartlardan ayrışma | Matrise zarar vermeyen yüz ayrıntıları, saçın doğal düzensizliği, giysinin kişisel kullanımı |
+| Dönem, malzeme, teknoloji ve gerçek mekân | Döneme uygun eşdeğer nesne, hava durumu ve yerel aşınma |
+| Deste ritmindeki ölçek/değer görevi | Aynı ritim görevini koruyan kamera yüksekliği ve kırpma |
+| Yazısızlık, spoiler vermeme, mizah sınırı | Ana olaya rakip olmayan tekil insan gözlemi veya sessiz ayrıntı |
+| Arka yüzde aile aynılığı ve bilgi güvenliği | Güvenlik testlerini geçen çizgi karakteri ve maddi yüzey çözümü |
+
+Manifestteki bütün ayrıntılar eşit derecede “kilitli çekim” değildir. Bir sanatçı nesne listesini eksiksiz uygulayıp duyguyu kaçırırsa brief başarısızdır; bazı nesneleri daha iyi bir görsel cümleyle değiştirip duygu, mekanik, dönem ve ayrışmayı korursa çözüm değerlendirmeye değerdir.
+
+### 2.5 İsimden bağımsız görsel omurga
+
+Arden, San Cordelio, Saint Verena, Veyr, Gusto ve Siyah Mühür mevcut metindeki çalışma adlarıdır ve bu sürümde exact kaynak olarak korunur. Fakat FOULWAKE’ın görsel kimliği bu sözcüklerin yazılışına, baş harfine, armasına, renk koduna veya tekil mimari logosuna bağlanmaz.
+
+Görsel çözüm şu işlevlere dayanır:
+
+- **salgın baskısı altındaki kalkış bölgesi;**
+- **karantina eşiğindeki hedef liman;**
+- **yarar mı zarar mı vereceği kanıtlanmamış hassas yük;**
+- **akıbeti çözülmemiş kayıp komuta figürü;**
+- **varlığı ihtimal olan fakat kesin görsel markası olmayan düşmanca ağ;**
+- **oyuncuların verdiği, geri alınamayan rota kararı.**
+
+Bir özel isim yarın değiştiğinde resim anlamsızlaşıyorsa çözüm fazla literal kurulmuştur. Liman adı okunmaz; arma üretilmez; “Siyah” sözcüğü siyah paleti mecbur etmez; geçici lore adı bütün desteye motif olarak yayılmaz. Exact isimler dosyada kaynak izlenebilirliği için kalır, estetik kilit olmaz.
+
+### 2.6 FOULWAKE’ın lezzeti
+
+FOULWAKE’ın tadı **“dünya ciddi; insanlar her zaman kusursuz değil”** gerilimindedir.
+
+- Deniz kötü değildir; kayıtsızdır. İnsanların verdiği kararları büyütür ama ahlaki hüküm vermez.
+- İnsanlar “korsan tipi” değil, işi bedene yazılmış bireylerdir. Omuz, parmak, işitme, uyku, yaş, alışkanlık ve yanlış ölçülmüş özgüven karakter yaratır.
+- Kurumlar kuru değildir; ıslanır, kabarır, gecikir, yine de işlemeye devam eder. Kuru mizah buradan çıkabilir.
+- Güzellik gösterişli kahramanlıktan değil, malzeme doğruluğu ile insan kırılganlığının aynı karede bulunmasından doğar.
+- Deste sürekli bağırmaz. Bazı kartlar neredeyse yalnız su, gök ve tek bir gerilim çizgisidir; bazıları sıkışık beden ve eşya örgüsüdür. Sessizlik de sanat kararıdır.
+- “Karanlık” olmak, her şeyi siyaha boyamak değildir. Açık gök altında verilen kötü karar, zifiri ambar kadar huzursuz olabilir.
+- Mizah punchline değildir; dünya ciddiyetini korurken insan davranışının bıraktığı küçük tortudur.
+
+### 2.7 Araştırma ve görsel soy — kopya değil yöntem
+
+Bu yön aşağıdaki kaynaklardan **stil kopyalamak için değil**, çalışma yöntemini sınamak için yararlanır:
+
+- Magpie Games’in sanat yönetimi süreci: sanat notunu üretim spesifikasyonuna dönüştürme, eskiz/final onayı ve sanatçı koordinasyonu.  
+  https://magpiegames.com/blogs/news/art-director-process-outline
+- Matt Paquette’in masaüstü oyunlarında sanatçıyla çalışma yaklaşımı: zorunlu çekirdeği netleştirirken sanatçının daha iyi çözüme gitmesine izin verme.  
+  https://www.mattpaquette.com/design-blog/2018/7/15/art-direction-for-tabletop-games-working-with-artists
+- Daniel Solis’in masaüstü oyunlarında sanatın öğretim/oyun kolaylığı işlevi ve sanat yönetmeni–sanatçı ilişkisini editör–yazar ilişkisine benzeten uygulama notları.  
+  https://www.reddit.com/r/tabletopgamedesign/comments/25dpdv/im_a_graphic_designer_and_art_director_for/
+- Uygulayıcı forum tartışmaları: yapısal geri bildirimi renderdan önce verme, kartı gerçek ölçekte değerlendirme ve ayrıntılı brief ile yaratıcı özgürlük arasındaki denge.  
+  https://www.reddit.com/r/tabletopgamedesign/comments/1e8jg14/i_dont_like_the_result_of_my_artist_how_do_i_tell/
+- Royal Museums Greenwich’in Van de Velde deniz çizimleri: yerinde gözlem, ufuk disiplini, hızlı tanıklık çizgisi ve sonradan ayrıntılı mürekkep çalışmasına dönüşen süreç.  
+  https://www.rmg.co.uk/stories/art-culture/sea-drawings-art-van-de-veldes/war-artist
+- Royal Museums Greenwich’in karantina ve gemide sağlık arşivleri: karantinanın tek bir “veba ikonu” değil, bekleme suyu, yük usulü ve idari altyapı olarak görünmesi.  
+  https://www.rmg.co.uk/stories/maritime-history/library-archive/quarantine-never-ending-story
+
+Bu kaynaklar FOULWAKE’a dışarıdan tema eklemez. Exact oyun, hikâye ve governance kaynakları bağlayıcı kalır.
+
+## 3. v2.7 anlatısal görsel omurga — işlev esaslı, isimden bağımsız
+
+Aşağıdaki özel isimler mevcut exact kaynakla konuşmak ve kartları izlemek için korunur; tekrar eden logo, renk kodu, mimari marka veya görsel evrenin taşıyıcı motifi değildir. İsim değişse de salgın baskısı, karantina eşiği, belirsiz yük, kayıp komuta ve çözülmemiş düşmanca irade işlevleri ayakta kalmalıdır.
 
 Bu omurga 121 kartın tamamına serpiştirilecek bir lore deseni değildir. Yalnız kimliği ve mekânı doğal olarak taşıyan kartlarda görünür; diğer kartlara siyah balmumu, sandık, hasta bedeni veya Gusto izi eklenmez. Amaç gizemi çözmek değil, seferin neden ağır olduğunu maddi ve kurumsal zeminde hissettirmektir.
 
@@ -307,6 +423,18 @@ Aynı aile içinde art arda:
 
 kullanılmaz. Manifestteki similarity_risk ve do_not_repeat alanları üretim takibinin aktif kontrol listesidir.
 
+### 10.1 Kadraj önerisi kilitli çekim değildir
+
+Manifestteki framing_viewpoint_focus_negative_space alanı, destenin çarpışmasını önleyen ilk kompozisyon vektörüdür. Sanatçı aynı ilk duygu, ana hareket, negatif alan görevi ve ritim farkını daha güçlü bir kamerayla kurabiliyorsa üç küçük eskizden birinde bunu önermelidir. Değişiklik “daha havalı” olduğu için değil, kartın dramatik sorusunu daha yalın kıldığı için savunulur.
+
+Görsel üretim yetkisi verildiğinde her pilot için üç siyah-beyaz küçük eskiz istenir:
+
+1. briefteki başlangıç vektörünü en yalın biçimde sınayan çözüm;
+2. aynı niyeti insan yerine malzeme/boşluk ağırlığıyla sınayan çözüm;
+3. en bariz çözümü bilinçli olarak reddeden, fakat exact mekanik ve dönem sınırını koruyan sanatçı önerisi.
+
+İlk değerlendirme çizgi güzelliğine değil; “ilk iki saniyede hangi duygu var, tek fiil okunuyor mu, resim gereksiz bir hüküm veriyor mu?” sorularına yapılır. Bu aşamada render ve yüzey cilası geri bildirimi verilmez.
+
 ## 11. Ciddi deniz atmosferi ve kuru mizah dengesi
 
 Ana olay daima gerçektir. Görsel şaka varsayılan değil, gerekçelendirilmesi gereken istisnadır. Flavor metni zaten mizahı taşıyorsa illüstrasyonun ikinci kez şaka yapması gerekmez.
@@ -386,7 +514,7 @@ Exact flavor sahne-içi yazıdan söz ediyorsa fikir yazısız eşdeğere çevri
 
 ## 14. Bütün destenin görsel ritmi
 
-121 kart tek tek güçlü olmalı, fakat deste topluca nefes almalıdır. Ritim beş eksende planlanır:
+121 kart tek tek güçlü olmalı, fakat deste topluca nefes almalıdır. Her kartın eşit derecede dolu, eşit derecede taranmış ve eşit derecede ‘gösterişli’ olması bütünlüğü değil monotonluğu üretir. Ritim beş eksende planlanır:
 
 ### 14.1 Ölçek
 
@@ -447,6 +575,17 @@ Sanat nihai baskı dosyası değildir, fakat brief ölçek gerçeğini gözetir:
 
 ## 17. Üretim kapıları
 
+Görsel üretim henüz yetkili değildir. Yetki verilirse yönlendirme dört sırada yapılır; geç aşamanın ayrıntısı erken aşamayı boğmaz:
+
+| Aşama | Sanat Yönetmeninin ilk sorusu | Bu aşamada geri bırakılan şey |
+|---|---|---|
+| 0 — küçük eskiz | Duygu, tek fiil ve ahlaki belirsizlik okunuyor mu? | Doku, ince tarama, renk cilası |
+| 1 — yapı | Siluet, bakış yüksekliği, negatif alan ve kart ölçeği çalışıyor mu? | Mikro yüz, baskı eskisi |
+| 2 — dünya | Mekân, malzeme, teknoloji ve meslek izi döneme/desteye ait mi? | Son renk ayarı |
+| 3 — çizgi/renk | Çizgi hacmi kuruyor, mat palet odağı taşıyor, aile ritmi korunuyor mu? | Yeni kompozisyon icadı |
+
+Geri bildirim “beğenmedim” diye verilmez. Önce gözlenen sorun, sonra kartın hangi protected intent’ini zayıflattığı, ardından çözüm alanı söylenir. Sanatçının gerekçeli karşı önerisi değerlendirilir; briefteki starting vector nihai estetik karardan üstün değildir.
+
 Bir illüstrasyon brief kabulüne aday olmadan önce şu soruların hepsine evet denmelidir:
 
 1. Exact kart kimliği ve mekanik değiştirilmeden mi anlatılıyor?
@@ -461,6 +600,9 @@ Bir illüstrasyon brief kabulüne aday olmadan önce şu soruların hepsine evet
 10. Dönem dışı alet, lens, kilit, giysi, ambalaj veya liman altyapısı var mı?
 11. Aile kimliği anlaşılırken arka yüz bilgi sızdırıyor mu?
 12. Küçük baskıda ana kütle ve hareket okunuyor mu?
+13. Çözüm, briefin nesne listesini değil korunmuş niyeti mi taşıyor?
+14. Sanatçının yorumu FOULWAKE’a özgü bir gözlem katıyor mu; yoksa yalnız uyumlu fakat jenerik mi?
+15. Özel ad veya geçici lore motifi değişirse görsel hâlâ çalışıyor mu?
 
 Herhangi bir “hayır” taslağı üretimden sanat yönü düzeltmesine döndürür. Nihai kabul değildir; proje sahibi ve Baş Editör dispozisyonu gerekir.
 
@@ -479,4 +621,4 @@ Herhangi bir “hayır” taslağı üretimden sanat yönü düzeltmesine dönd�
 
 ## 19. Dispozisyon
 
-Bu reworked Bible ve ona bağlı 121 manifest, 12 pilot production briefi ve 7 arka yüz briefi BRIEF aşamasındadır. Önceki 3cbfc215 teslimine ART_DIRECTION_BRIEF_PASS verilmemiştir; bu sürüm yeni Baş Editör/proje sahibi değerlendirmesine sunulur. Görsel Tasarım üretime yalnız proje sahibi ve Baş Editör değerlendirmesinden sonra geçmelidir. Sanat Yönetimi tavsiye ve yaratıcı kontrol verir; kilit talep etmez.
+Bu owner-directed artistic depth rework Bible ve ona bağlı 121 manifest, 12 pilot production briefi ve 7 arka yüz briefi BRIEF aşamasındadır. Önceki 3cbfc215 teslimine ART_DIRECTION_BRIEF_PASS verilmemiştir; bu sürüm yeni Baş Editör/proje sahibi değerlendirmesine sunulur. Görsel Tasarım üretime yalnız proje sahibi ve Baş Editör değerlendirmesinden sonra geçmelidir. Sanat Yönetimi tavsiye ve yaratıcı kontrol verir; kilit talep etmez.

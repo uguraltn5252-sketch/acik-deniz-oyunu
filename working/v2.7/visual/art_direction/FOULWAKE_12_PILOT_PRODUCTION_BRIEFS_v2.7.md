@@ -1,7 +1,9 @@
 # FOULWAKE 12 PILOT PRODUCTION BRIEFS v2.7
 
-Status: REWORKED BRIEF — final illüstrasyon/render/PDF değildir.  
-Review input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
+Status: OWNER-DIRECTED ARTISTIC DEPTH REWORK — final illüstrasyon/render/PDF değildir.  
+Chief Editor disposition input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
+Prior corrected brief head: work/v2.7-art-direction@968873d28f96d48ea64e7a04d5c82a808a4bc612  
+Project Owner direction: rules-literate, name-resilient, artistically authored pass; no visual production.  
 Visual production authorized: NO  
 Source branch: work/v2.7-art-direction  
 Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
@@ -11,7 +13,7 @@ Production owner after approval: Görsel Tasarım
 
 ## 1. Pilot seçimi ve rework sonucu
 
-On iki pilot seçimi korunmuştur. Rework, seçimleri kolaylaştırmaz; her birindeki belirsiz seçenekleri kapatır, tek ana hareketi kesinleştirir, karakter çarpışmalarını ayırır, şakayı varsayılan olmaktan çıkarır ve fener teknolojisini 1721 sınırına çeker.
+On iki pilot seçimi korunmuştur. Rework, seçimleri kolaylaştırmaz; her birindeki belirsiz seçenekleri kapatır, tek ana hareketi kesinleştirir, karakter çarpışmalarını ayırır, şakayı varsayılan olmaktan çıkarır ve fener teknolojisini 1721 sınırına çeker. Bu owner-directed geçiş ayrıca pilotları kapalı çekim tarifleri olmaktan çıkarır: her kartta protected intent bağlayıcıdır, mevcut kadraj/nesne çözümü starting vector’dür ve sanatçıdan FOULWAKE’a özgü gözlem beklenir.
 
 | Slot | Kart | Rework sonrası zorunlu sınav |
 |---|---|---|
@@ -45,6 +47,19 @@ Bu belge üretim izni vermez. İzin verilirse Görsel Tasarım şu kanıt zincir
 
 Catoptric metal reflektör, optik ayna, Argand, Fresnel, elektrik, modern beacon, glow, sahne-içi okunabilir yazı, logo, konuşma balonu, nota ve anlamsız script yasaktır.
 
+## 3. Pilotlerde sanatçı yorum sözleşmesi
+
+Production-ready, “sanatçının karar vereceği hiçbir şey kalmadı” demek değildir. Bu belge her pilot için duyguyu, oyun gerçeğini, dönem sınırını, çarpışma riskini ve tek ana fiili üretime hazır hale getirir; yüzün son mikro-ifadesini, rüzgârın kesin anını, eşdeğer dönem nesnesini ve en iyi kamerayı peşinen kapatmaz.
+
+Görsel üretim yetkisi verilirse her pilot üç küçük siyah-beyaz eskizle açılır:
+
+- **Doğrudan vektör:** aşağıdaki kadraj/nesne fikrini en yalın biçimde sınar.
+- **Maddi karşı öneri:** aynı protected intent’i insan yerine malzeme, boşluk veya gemi davranışıyla ağırlıklandırır.
+- **Bariz çözümü reddeden öneri:** kartı tanınmaz yapmadan ilk akla gelen korsan/genre cevabından uzaklaşır.
+
+Sanat Yönetimi ilk turda “briefteki her nesne var mı?” diye bakmaz. Şu sırayı izler: duygu → tek fiil → ahlaki belirsizlik → siluet/mekân → dönem → çizgi/renk. Sanatçının starting vector’den ayrılan önerisi daha güçlü ise, gerekçesi manifestteki director_question’a cevap vererek değerlendirilir.
+
+Özel adlar yalnız mevcut kaynak koordinatıdır. Hiçbir pilot liman tabelasına, baş harfe, arma sistemine, sabit siyah simgeye veya tekil bir lore rengine bağımlı kurulamaz.
 
 ## KAR-01 — Uzakgören (Karakter 1/3)
 
@@ -98,6 +113,26 @@ NONE
 - Benzerlik riski: KAR-12 ile yüksek direk, GUC-12 ile gözetleme teması benzerleşebilir.
 - Tekrarlanmayacaklar: Dürbün, parmakla gösteren poz, martı ve kahramanca ufka bakış KAR-01’de kullanılmaz; yüksek açı KAR-12’ye bırakılır.
 - Dönem kontrolü: 1721 arma/donanım: katranlı halat, ahşap çarmıh ve yün başlık; modern güvenlik kemeri yok.
+
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Sessiz uyanıklık ve hafif huzursuzluk. Uzakgören, bir “iyi/kötü kişi” portresi değil; özel bilgisinin veya eyleminin bedensel işini taşır. Yetenek okunur, Sadakat okunmaz.
+
+**Tek fiil:** Çıplak gözle ufuk çizgisindeki tek belirsiz kırılmayı seçer.
+
+**Açık tutulacak kararlar:**
+
+- Karakter matrisi ayrımını koruyan yüz mikro-geometrisi, saç düzensizliği ve giysi kullanım izi
+- Tek ana fiili koruyan el/jest anı ve bakış yönü
+- Deste ritim görevini bozmayan kırpma, hava ve arka plan insan yoğunluğu
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** Uzakgören kartı yeteneği “özel kahraman pozu”na çevirmeden, bu işi beden ve dikkat üzerinden hissettiriyor mu?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** Uzakgören için sanatçı katkısı, briefteki nesneleri saymak değil; “Sessiz uyanıklık ve hafif huzursuzluk.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
 
 ### Küçük baskı kabul kanıtı
 
@@ -156,6 +191,26 @@ NONE
 - Tekrarlanmayacaklar: Dalış başlığı, hava tüpü, hazine sandığı, inci, boğulan kişi ve halat atma kompozisyonu yok.
 - Dönem kontrolü: Nefes tutma/halatlı salvage pratiği; modern skafandr veya Viktorya dönemi ağır dalış miğferi yok.
 
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Derinlik, soğuk ve ganimetten önce nefes. Dipgören, bir “iyi/kötü kişi” portresi değil; özel bilgisinin veya eyleminin bedensel işini taşır. Yetenek okunur, Sadakat okunmaz.
+
+**Tek fiil:** Yosunlu küçük bronz donanımı ip merdivenden bordaya uzatır.
+
+**Açık tutulacak kararlar:**
+
+- Karakter matrisi ayrımını koruyan yüz mikro-geometrisi, saç düzensizliği ve giysi kullanım izi
+- Tek ana fiili koruyan el/jest anı ve bakış yönü
+- Deste ritim görevini bozmayan kırpma, hava ve arka plan insan yoğunluğu
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** Dipgören kartı yeteneği “özel kahraman pozu”na çevirmeden, bu işi beden ve dikkat üzerinden hissettiriyor mu?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** Dipgören için sanatçı katkısı, briefteki nesneleri saymak değil; “Derinlik, soğuk ve ganimetten önce nefes.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
+
 ### Küçük baskı kabul kanıtı
 
 Renk kapatıldığında su çizgisi, dar yüz, V gövde ve uzatılan donanım ayrılmalı. Siluet KAR-04’ün alçak dairesinden ve KY-02’deki adsız dalgıçtan açıkça farklı olmalı.
@@ -213,6 +268,26 @@ NONE
 - Tekrarlanmayacaklar: Anahtar deliğinden bakma, kulak dayama, açık sandık, yatakta insan, romantik yatak odası ve KAR-09 raf kompozisyonu yok.
 - Dönem kontrolü: Keten dolgu, ahşap kamara kapısı, kurşunlu lomboz; modern yastık fermuarı/kilit yok.
 
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Sessiz mahremiyet ve kimin neyi sakladığına dair merak. Yastıkçı, bir “iyi/kötü kişi” portresi değil; özel bilgisinin veya eyleminin bedensel işini taşır. Yetenek okunur, Sadakat okunmaz.
+
+**Tek fiil:** Yastık demetini ıslak çizme izine basmadan koridor boyunca taşır.
+
+**Açık tutulacak kararlar:**
+
+- Karakter matrisi ayrımını koruyan yüz mikro-geometrisi, saç düzensizliği ve giysi kullanım izi
+- Tek ana fiili koruyan el/jest anı ve bakış yönü
+- Deste ritim görevini bozmayan kırpma, hava ve arka plan insan yoğunluğu
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** Yastıkçı kartı yeteneği “özel kahraman pozu”na çevirmeden, bu işi beden ve dikkat üzerinden hissettiriyor mu?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** Yastıkçı için sanatçı katkısı, briefteki nesneleri saymak değil; “Sessiz mahremiyet ve kimin neyi sakladığına dair merak.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
+
 ### Küçük baskı kabul kanıtı
 
 Meslek demetten, dikkat ıslak izin çevresinden geçişten okunmalı. Koridor GUC-28’in sürgülü ceza mekânı gibi görünmemeli; KAR-09 ve KAR-05’in küçük/yaşlı siluetlerini kopyalamamalı.
@@ -268,6 +343,26 @@ NONE
 - Benzerlik riski: Kraken'i göstermek, GUC-05 ile aynı yama anı veya sandığı hazine sandığına çevirmek.
 - Tekrarlanmayacaklar: Dokunaç, kafatası, altın, parlayan silah, yazı, aynı eller/kapak açısı başka kartta yok.
 - Dönem kontrolü: Dövme zıpkın uçları, kenevir bağ, basit sürgü; patlayıcı zıpkın ve modern mandal yok.
+
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Hazır bekleyen şiddet; kapalı sandık bile tehdit. Zıpkın Sandığı, sonucu garanti eden sihirli nesne değil; oyuncunun ortak rota ve güven düzenine yaptığı sınırlı müdahalenin ağırlığıdır.
+
+**Tek fiil:** Kapak açılırken bir zıpkın ucu ilk kez ışık alır.
+
+**Açık tutulacak kararlar:**
+
+- Etkinin tek fiilini taşıyan el/beden veya insansız maddi taşıyıcı
+- Döneme uygun eşdeğer nesne; mevcut nesne önerisi daha iyi bir metaforla değişebilir
+- Negatif alan ve ritim görevini koruyan kamera yüksekliği, kırpma ve hava
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** Zıpkın Sandığı müdahalesi tek fiilde hissediliyor mu, yoksa resim bir nesne ve kural kataloğuna mı dönüşüyor?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** Zıpkın Sandığı için sanatçı katkısı, briefteki nesneleri saymak değil; “Hazır bekleyen şiddet; kapalı sandık bile tehdit.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
 
 ### Küçük baskı kabul kanıtı
 
@@ -325,6 +420,26 @@ NONE
 - Tekrarlanmayacaklar: Parlayan zaman girdabı, yazılı harita, aynı gemi profili HAR kartlarında, hayvan, yüz, mucize yok.
 - Dönem kontrolü: 1721 yelken manevrası ve arma davranışı gerçekçi; dümen su izi fiziksel, doğaüstü değil.
 
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Geri dönmenin ağırlığı; zafer değil bedelli rota düzeltmesi. Kaderi Yeniden Yaz, sonucu garanti eden sihirli nesne değil; oyuncunun ortak rota ve güven düzenine yaptığı sınırlı müdahalenin ağırlığıdır.
+
+**Tek fiil:** Gemi kendi yaş kıç izini çaprazlayarak başka açıklığa döner.
+
+**Açık tutulacak kararlar:**
+
+- Etkinin tek fiilini taşıyan el/beden veya insansız maddi taşıyıcı
+- Döneme uygun eşdeğer nesne; mevcut nesne önerisi daha iyi bir metaforla değişebilir
+- Negatif alan ve ritim görevini koruyan kamera yüksekliği, kırpma ve hava
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** Kaderi Yeniden Yaz müdahalesi tek fiilde hissediliyor mu, yoksa resim bir nesne ve kural kataloğuna mı dönüşüyor?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** Kaderi Yeniden Yaz için sanatçı katkısı, briefteki nesneleri saymak değil; “Geri dönmenin ağırlığı; zafer değil bedelli rota düzeltmesi.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
+
 ### Küçük baskı kabul kanıtı
 
 Siyah-beyaz üç saniye testinde ‘geldiği izi bırakıp başka açıklığa döndü’ okunmalı. Boş fıçı, hayvan, zaman portalı, ok veya kart karesi eklenmemeli.
@@ -380,6 +495,26 @@ NONE
 - Benzerlik riski: GUC-23 peksimet, ada ikmal kartları ve komik yemek sahneleriyle karışma.
 - Tekrarlanmayacaklar: Aynı peksimet yakın planı, yüz, kusma, fare, böcek sürüsü, etiket/yazı, şirin çürüme yok.
 - Dönem kontrolü: 1721 tuz et, peksimet, soğan, ahşap fıçı ve havalandırmasız ambar; modern konserve/ambalaj yok.
+
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Bedensel tedirginlik; yiyecek hâlâ ‘resmî olarak’ yenebilir. Çürüme yalnız iğrenç bir natürmort değil; Ada zorunluluğu ve ortak zaman baskısı yaratan fiziksel tehdittir.
+
+**Tek fiil:** Fıçı tıpasından düşen damla, peksimet kümesine ilk kez ulaşır.
+
+**Açık tutulacak kararlar:**
+
+- İşlevi koruyan dönemsel mimari/ekipman ayrıntısı
+- Kamusal sistem niteliğini koruyan kamera ve insan yoğunluğu
+- İsim, arma veya yazıya ihtiyaç duymayan maddi metafor
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** İlk bakışta yalnız bozulmuş yiyecek değil, bütün geminin zamanını ve rotasını değiştiren ortak baskı hissediliyor mu?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** Çürümüş Erzak için sanatçı katkısı, briefteki nesneleri saymak değil; “Bedensel tedirginlik; yiyecek hâlâ ‘resmî olarak’ yenebilir.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
 
 ### Küçük baskı kabul kanıtı
 
@@ -440,6 +575,26 @@ The over-defended innocent stands near the sealed cargo-hatch area, but neither 
 - Tekrarlanmayacaklar: Kılıç, yumruk kavgası, kötü sırıtış, aynı iri beden, hayvan, konuşma balonu yok.
 - Dönem kontrolü: Döneme uygun güverte divanı ve iş giysileri; teatral mahkeme kürsüsü yok.
 
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Koruma boğucu; masumiyet görünmez oluyor. Kart özel bir dürtüyü davranışa çevirir; davranış okunabilir, fakat kişinin ahlaki hükmü veya diğer Sadakatlerin kimliği görselden çıkarılamaz.
+
+**Tek fiil:** Savunucu kolunu masumun önünde gereğinden geniş açar.
+
+**Açık tutulacak kararlar:**
+
+- Dürtüyü yüz ifadesi yerine taşıyan beden/el koreografisinin kesin anı
+- Kişileri ahlaken kodlamayan yaş, ten, giysi ve iş izi seçimi
+- Tek fiil ve ritim görevini koruyan kamera/boşluk çözümü
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** Hain dürtüsünün davranışı okunuyor ama Sadakat ve ahlaki hüküm görselden hâlâ çıkarılamıyor mu? Mevcut özel adlar ve lore işaretleri silinse bile aynı dramatik işlev ayakta kalıyor mu?
+
+**İsim dayanımı:** Sadakat ailesi mevcut düşman adını, rengi veya örgüt varsayımını ortak kostüm, mühür, bileklik ya da ışık koduna dönüştürmez.
+
+**Sanatçı katkısı hedefi:** Hain için sanatçı katkısı, briefteki nesneleri saymak değil; “Koruma boğucu; masumiyet görünmez oluyor.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
+
 ### Küçük baskı kabul kanıtı
 
 İzleyici ‘fazla savunuyor’ demeli, ‘bu kesin Hain ve o kesin masum’ dememeli. BACK_LOYALTY veya ortak siyah işaret üzerinden hiçbir bilgi sızmamalı.
@@ -495,6 +650,26 @@ NONE
 - Benzerlik riski: Diğer sis kartları ve görünmeyen tehdit klişesi; pilotta aşırı açıklama riski.
 - Tekrarlanmayacaklar: Hayalet, müzik notası, konuşma balonu, görünür düdük, aynı kişiler, fener/hayvan yok.
 - Dönem kontrolü: 1721 gemi düdüğü olası basit kemik/metal araçtır fakat kadrajda görünmez; modern siren yok.
+
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Kaynağı olmayan ses; herkes aynı anda dinliyor. İsimsiz Bir Düdük, manzara koleksiyonu değil; yüzü açıldığında rota tartışmasını ve geri alınamayan hareketi değiştiren coğrafi/olaysal baskıdır.
+
+**Tek fiil:** En yakın nöbetçi başını sancaktan iskeleye çevirirken diğer ikisi zıt yönlere donar.
+
+**Açık tutulacak kararlar:**
+
+- Olay geometrisini koruyan gerçek kıyı/deniz ayrıntıları ve hava
+- Benzer kartlardan ayrışmayı koruyan gemi yönü, ufuk yüksekliği ve ölçek
+- Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** İsimsiz Bir Düdük yalnız güzel/tehlikeli bir manzara mı, yoksa oyuncuların rota tartışmasını değiştirecek bir karar alanı mı?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** İsimsiz Bir Düdük için sanatçı katkısı, briefteki nesneleri saymak değil; “Kaynağı olmayan ses; herkes aynı anda dinliyor.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
 
 ### Küçük baskı kabul kanıtı
 
@@ -552,6 +727,26 @@ NONE
 - Tekrarlanmayacaklar: Aynı V kanal, iki taraftan aynı anda sürtünme, zaman izi, yüz/hayvan, zafer ışığı yok.
 - Dönem kontrolü: Kaya aralığı, akıntı ve yelkenlerin küçültülmesi gerçekçi; gemi fiziksel olarak açıklığa sığar.
 
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Nefes tutuluyor; geçiş bir çizik pahasına. İğne Deliğinden Sefer, manzara koleksiyonu değil; yüzü açıldığında rota tartışmasını ve geri alınamayan hareketi değiştiren coğrafi/olaysal baskıdır.
+
+**Tek fiil:** Gemi dar kaya aralığından açık suya sıyrılır.
+
+**Açık tutulacak kararlar:**
+
+- Olay geometrisini koruyan gerçek kıyı/deniz ayrıntıları ve hava
+- Benzer kartlardan ayrışmayı koruyan gemi yönü, ufuk yüksekliği ve ölçek
+- Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** İğne Deliğinden Sefer yalnız güzel/tehlikeli bir manzara mı, yoksa oyuncuların rota tartışmasını değiştirecek bir karar alanı mı?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** İğne Deliğinden Sefer için sanatçı katkısı, briefteki nesneleri saymak değil; “Nefes tutuluyor; geçiş bir çizik pahasına.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
+
 ### Küçük baskı kabul kanıtı
 
 Thumbnail’de ‘hasar alarak çıktı’ okunmalı; KY-10’un iki taraflı simetrik kaybına veya GUC-27’nin kesişen zaman izine benzememeli.
@@ -608,6 +803,26 @@ KEEP — Gümrükçünün kendi masasındaki fazla kişisel nesne çoktan aynı 
 - Tekrarlanmayacaklar: Okunabilir form/etiket, üniforma logosu, kalabalık aynı yüz, bıyıklı memur klişesi, tabela, hayvan yok.
 - Dönem kontrolü: 1721 kıyı gümrüğü masa, balmumu/mühür araçları ve sepetlerle; modern pasaport bankosu/damga yazısı yok.
 
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Küçük makamın büyük baskısı; sıra daralıyor. Gümrükçünün Tek Yaşadığı Ada, manzara koleksiyonu değil; yüzü açıldığında rota tartışmasını ve geri alınamayan hareketi değiştiren coğrafi/olaysal baskıdır.
+
+**Tek fiil:** Gümrükçü fazla nesneyi kapalı ıskarta sepetine indirir.
+
+**Açık tutulacak kararlar:**
+
+- Olay geometrisini koruyan gerçek kıyı/deniz ayrıntıları ve hava
+- Benzer kartlardan ayrışmayı koruyan gemi yönü, ufuk yüksekliği ve ölçek
+- Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** Gümrükçünün Tek Yaşadığı Ada yalnız güzel/tehlikeli bir manzara mı, yoksa oyuncuların rota tartışmasını değiştirecek bir karar alanı mı?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** Gümrükçünün Tek Yaşadığı Ada için sanatçı katkısı, briefteki nesneleri saymak değil; “Küçük makamın büyük baskısı; sıra daralıyor.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
+
 ### Küçük baskı kabul kanıtı
 
 Siyah siluet testinde altı beden ayrılmalı. Kapalı sepetin içi görünmemeli. Korunan şaka yalnız gümrükçünün kendi fazla nesnesinin önceden aynı sepete konmuş olmasıdır; başka komik memur jesti yok.
@@ -663,6 +878,26 @@ NONE
 - Benzerlik riski: AD-20’nin hareketli fenerli tekneleri ve FN-01’in gerçek vardiya feneri. Fark: tek alçak kıyı ateşi yanlış burunda sabit durur.
 - Tekrarlanmayacaklar: Hayalet kule, ayna, mika, metal optik, ikinci parlak kule, modern beacon rengi, Fresnel, Argand, elektrik, Siyah Mühür işareti, hayvan ve ikincil şaka yok.
 - Dönem kontrolü: 1721’e uygun açık kömür işaret ateşi; catoptric reflektör, Argand, Fresnel, elektrik ve modern beacon yok.
+
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Doğru ışık, yanlış kıyı; güven sarsılıyor. Geceleri Parlayan Yalan, manzara koleksiyonu değil; yüzü açıldığında rota tartışmasını ve geri alınamayan hareketi değiştiren coğrafi/olaysal baskıdır.
+
+**Tek fiil:** Gemi pruvası yanlış burundaki basit işaret ateşine döner.
+
+**Açık tutulacak kararlar:**
+
+- Olay geometrisini koruyan gerçek kıyı/deniz ayrıntıları ve hava
+- Benzer kartlardan ayrışmayı koruyan gemi yönü, ufuk yüksekliği ve ölçek
+- Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** Geceleri Parlayan Yalan yalnız güzel/tehlikeli bir manzara mı, yoksa oyuncuların rota tartışmasını değiştirecek bir karar alanı mı?
+
+**İsim dayanımı:** Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.
+
+**Sanatçı katkısı hedefi:** Geceleri Parlayan Yalan için sanatçı katkısı, briefteki nesneleri saymak değil; “Doğru ışık, yanlış kıyı; güven sarsılıyor.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
 
 ### Küçük baskı kabul kanıtı
 
@@ -723,6 +958,26 @@ The empty, transferable command seat exists because Gusto is absent. No personal
 - Benzerlik riski: GUC-15 şapka, GUC-22 kupa, KAPTAN STYLE_ONLY kartı ve nihai lider portresiyle kopya riski.
 - Tekrarlanmayacaklar: STYLE_ONLY KAPTAN yüzü/pozu/şapkası/kuşu/gemisi; GUC-15 şapkası; GUC-22 kupası; Gusto bedeni veya kaçış izi; Siyah Mühür/balmumu; arma/logo; Sadakat kodu ve hayvan yok.
 - Dönem kontrolü: 1721 kıç kamara sandalyesi, warded makam anahtarı ve sabitleme düzeni; taht/modern ofis koltuğu/üniforma rozeti yok.
+
+### Bağlayıcı niyet ve sanatçı payı
+
+**Korunacak okuma:** Boş sandalye bile herkesi hizalıyor; sadakat görünmüyor. Kaptan Makamı, bir kahramanın mülkü değil; masadaki kurulumun ve kamusal/aktarılabilir kurumun maddi eşiğidir.
+
+**Tek fiil:** Bir el makam anahtarını boş sandalyenin önündeki masaya bırakır.
+
+**Açık tutulacak kararlar:**
+
+- İşlevi koruyan dönemsel mimari/ekipman ayrıntısı
+- Kamusal sistem niteliğini koruyan kamera ve insan yoğunluğu
+- İsim, arma veya yazıya ihtiyaç duymayan maddi metafor
+
+Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
+
+**İlk eleştiri sorusu:** Kaptan Makamı, bir kişinin portresi veya lore amblemi olmadan kamusal ve devredilebilir oyun işlevini taşıyor mu? Mevcut özel adlar ve lore işaretleri silinse bile aynı dramatik işlev ayakta kalıyor mu?
+
+**İsim dayanımı:** Kayıp komuta figürü adlandırılmaz veya kişisel relikle markalanmaz; yalnız devredilebilir boş makam görünür.
+
+**Sanatçı katkısı hedefi:** Kaptan Makamı için sanatçı katkısı, briefteki nesneleri saymak değil; “Boş sandalye bile herkesi hizalıyor; sadakat görünmüyor.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
 
 ### Küçük baskı kabul kanıtı
 

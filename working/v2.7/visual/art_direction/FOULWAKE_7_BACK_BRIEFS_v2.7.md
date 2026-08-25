@@ -1,7 +1,9 @@
 # FOULWAKE 7 BACK BRIEFS v2.7
 
-Status: REWORKED BRIEF — arka yüz sanat fikri ve risk analizi; final görsel/render/PDF değildir.  
-Review input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
+Status: OWNER-DIRECTED ARTISTIC DEPTH REWORK — arka yüz sanat fikri ve risk analizi; final görsel/render/PDF değildir.  
+Chief Editor disposition input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
+Prior corrected brief head: work/v2.7-art-direction@968873d28f96d48ea64e7a04d5c82a808a4bc612  
+Project Owner direction: rules-literate, name-resilient, artistically authored pass; no visual production.  
 Visual production authorized: NO  
 Source branch: work/v2.7-art-direction  
 Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
@@ -26,7 +28,18 @@ Topoloji notu: v2.6 STABLE / LOCKED, Kayalık arkasını Açık Denizden ayrı t
 
 ## 2. Bütün arka yüzler için ortak kurallar
 
-### 2.1 İçerik
+### 2.1 Kapalı kartların sanatsal görevi
+
+Arka yüzler yedi ayrı logo değildir. Masada yüzü kapalı duran kart, FOULWAKE’ın temel hâlini taşır: **bilgi vardır, fakat henüz kimse ona sahip değildir.** Bu nedenle arka yüzün güzelliği “gizemli simge”den değil, tutulmuş ve kullanılmış bir nesnenin sessiz ağırlığından doğar.
+
+- Aile farkı ikonla değil, maddi hâlle kurulur: emek izi, kapalı kaynak, kapalı niyet, okunmamış coğrafya, kara eşiği, insan yapımı ışık bakımı, kamusal düzen.
+- Motifler antik mühür, tarikat logosu, oyun amblemi veya koleksiyon serisi rozeti gibi davranmaz.
+- Eski baskı dili rastgele kir değil; aynı masterda, aynı 180 derece düzen içinde tasarlanmış kullanım hafızasıdır.
+- Kapalı deniz alanı “tehlike” diye bağırmaz; oyuncuyu seçim öncesi sessizliğe sokar.
+- Ön yüzlerin özel adları, çalışma lore’u ve siyah balmumu ihtimali arka yüzlere taşınmaz. Adlar değişse bile aile işlevi ve masa güvenliği aynen kalır.
+- Arka yüz sanatçısı güvenlik yüzünden yalnız teknisyen değildir. Çizgi ritmi, yüzeyin nefesi ve maddi ağırlık onun yorumudur; ancak bu yorum exact master, 180 derece ve bilgi sızıntısı sınırlarını aşamaz.
+
+### 2.2 İçerik
 
 - Okunabilir yazı, logo, oyun adı, kart tür etiketi, sayı, harf, yön oku, pusula harfi, arma ve slogan yok.
 - Ön yüzün kart adı, karakteri, nesnesi, olayı, ahlak durumu veya mekaniği arka yüzde görünmez.
@@ -37,7 +50,7 @@ Topoloji notu: v2.6 STABLE / LOCKED, Kayalık arkasını Açık Denizden ayrı t
 - Ekli KAPTAN STYLE_ONLY referansından yüz, şapka, kuş, gemi, çerçeve, kompozisyon, nesne veya çizgi alınmaz.
 - Reddedilmiş e91581 arka yüzleri sanat girdisi değildir; yalnız teknik tarih olarak dışlanır.
 
-### 2.2 Exact 180 derece güvenliği
+### 2.3 Exact 180 derece güvenliği
 
 Arka yüz “yaklaşık simetrik” olmayacaktır. Görsel Tasarım master üretiminde:
 
@@ -49,7 +62,7 @@ Arka yüz “yaklaşık simetrik” olmayacaktır. Görsel Tasarım master üret
 6. Üst/altı ele veren tekil lamba, damla, gölge, ufuk, ip ucu, insan başı veya açık sayfa yoktur.
 7. Motif 90 derece simetrik olmak zorunda değildir; 180 derece exact güvenlik zorunludur.
 
-### 2.3 Kesim, kenar ve parlaklık
+### 2.4 Kesim, kenar ve parlaklık
 
 - Ana motif trim kenarından en az 3 mm, küçük/ayırt edici detay en az 4 mm içeride tutulur; gerçek baskı şablonunun bleed/safe değerleri daha büyükse şablon kazanır.
 - Dört köşenin ve karşılıklı kenarların ortalama açık/koyu değeri dengelenir. Bir kenardaki tek koyu leke kart yönünü veya belirli kopyayı ele veremez.
@@ -58,7 +71,7 @@ Arka yüz “yaklaşık simetrik” olmayacaktır. Görsel Tasarım master üret
 - Lif veya tarama baskı yönü üst/alt ayrımı üretmemeli. Vernik/laminasyon makine yönü test kartlarında karıştırılarak kör kontrol edilir.
 - Bir kartın arkasındaki üretim kiri, çizik veya ton farkı tanınabilir hale gelirse deste reddedilir; “eski baskı” tasarlanmış master dokusudur, kontrolsüz kusur değildir.
 
-### 2.4 Bilgi sızıntısı testleri
+### 2.5 Bilgi sızıntısı testleri
 
 Her binary için Görsel Tasarım daha sonra şu kanıtları üretmelidir; bu belge kanıt dosyalarını üretmez:
 
@@ -78,6 +91,16 @@ Her binary için Görsel Tasarım daha sonra şu kanıtları üretmelidir; bu be
 Merkezde insan yüzü veya portresi yoktur. İki karşıt yönden gelen, birbirinin 180 derece eşi olan iki geniş kenevir halat kıvrımı; aralarında dört farklı meslek malzemesinin yalnız dokusal izini taşıyan kapalı bir bez oval oluşturur: kurum, tuz, balmumu ve ahşap sürtünmesi. Nesnelerin kendisi resmedilmez; izler karakterlerin kişiden önce iş tarafından biçimlendiğini söyler.
 
 Motif uzaktan merkezi koyu bir oval ve iki açık halat S’i olarak okunur. Yakından bezde farklı el basıncı/aşınma izleri vardır; gerçek el silueti veya parmak izi yoktur. Böylece belirli yaş, cinsiyet, ten, rol ya da karakter kimliği sızmaz.
+
+### Korunacak duygu ve sanatçı payı
+
+**Korunacak duygu:** İnsan görünmeden emek; yüz kapalıyken bile bir hayatın malzemeyle sürtünmüş olması.
+
+**Açık karar alanı:** Halat/bez önerisi starting vector’dür. Yüz, el, rol nesnesi veya tanınır meslek ikonu üretmeden aynı emek izini daha canlı taşıyan 180-güvenli dönem malzemesi önerilebilir.
+
+**İlk eleştiri sorusu:** Bu arka yüz belirli bir kişiyi ele vermeden ‘bedeni iş biçimlendirdi’ duygusu taşıyor mu, yoksa yalnız dekoratif tekstil mi?
+
+Özel isim, baş harf, logo, arma ve çalışma lore’u bu çözümü taşıyamaz. Sanatçı önerisi önce siyah-beyaz küçük eskizde, sonra 180 derece rotate/difference ve kör masa testinde değerlendirilir; yüzey cilası bu iki kapıdan sonra gelir.
 
 ### Çizgi ve palet
 
@@ -110,6 +133,16 @@ Merkezde iki uçtan karşılıklı sarılmış, exact 180 güvenli yağlı bez d
 
 ERZ-01 bu arka yüzü paylaşır. Bu nedenle yiyecek, fıçı, küf, peksimet, koku çizgisi, böcek veya yeşil leke kesinlikle yoktur. Rulo “her türlü taşınabilir gemi kaynağı” olarak nötr kalır.
 
+### Korunacak duygu ve sanatçı payı
+
+**Korunacak duygu:** Kapalı potansiyel ve taşınan ağırlık; içerik bilinmez, müdahale ihtimali hissedilir.
+
+**Açık karar alanı:** Yağlı rulo starting vector’dür. Güç/ERZ kimliği sızdırmayan, kapalı kaynak hissini koruyan 180-güvenli başka bir donanım hâli önerilebilir.
+
+**İlk eleştiri sorusu:** Kart bir büyü destesi veya ganimet sandığına dönmeden ‘elde tutulan fakat henüz açılmamış imkân’ hissi veriyor mu?
+
+Özel isim, baş harf, logo, arma ve çalışma lore’u bu çözümü taşıyamaz. Sanatçı önerisi önce siyah-beyaz küçük eskizde, sonra 180 derece rotate/difference ve kör masa testinde değerlendirilir; yüzey cilası bu iki kapıdan sonra gelir.
+
 ### Çizgi ve palet
 
 - Yağlı bezde geniş açık alan + kat yerlerinde kısa çapraz.
@@ -140,6 +173,16 @@ Arka yüz “kapalı, taşınabilir kaynak” hissi vermeli; 31 kart arasında E
 Merkezde iki karşıt yönden katlanmış tek koyu keten parça ve onu eşit baskıyla tutan çift düğüm vardır. Düğümün ortası açık değil, mat ve nötrdür; iyi/kötü, aydınlık/karanlık, kırmızı/siyah gibi ikili ahlak kodu kurulmaz. Kumaşın altında insan, silah, mektup veya simge görünmez.
 
 Görselin ana duygusu kapalı niyet ve taşınan yük olmalıdır. Tayfa ile Hain aynı exact masterı kullanır; kart başına eskitme/ton değişimi yoktur.
+
+### Korunacak duygu ve sanatçı payı
+
+**Korunacak duygu:** Kapalı niyet; aydınlık/karanlık, temiz/kirli veya iyi/kötü ikiliğine düşmeyen insan belirsizliği.
+
+**Açık karar alanı:** Katlı keten ve düğüm starting vector’dür. Tayfa/Hain ayrımı üretecek renk, simge veya aşınma olmadan kapalı niyeti taşıyan başka bir 180-güvenli kumaş/bağ çözümü önerilebilir.
+
+**İlk eleştiri sorusu:** Görsel gizemi ahlaki bir renge çevirmeden kapalı niyetin ağırlığını taşıyor mu?
+
+Özel isim, baş harf, logo, arma ve çalışma lore’u bu çözümü taşıyamaz. Sanatçı önerisi önce siyah-beyaz küçük eskizde, sonra 180 derece rotate/difference ve kör masa testinde değerlendirilir; yüzey cilası bu iki kapıdan sonra gelir.
 
 ### Çizgi ve palet
 
@@ -172,6 +215,16 @@ Ne belirgin dalga ne belirgin kaya: merkezde dört yönden birbirine giren düş
 
 Su çizgileri tek yönde akan rota gibi değil, iki 180 derece eşli karşı akış halinde kurulur. Ortadaki koyu leke kaya silueti veya ada konturu gibi okunmayacak düzensiz fakat dönüş güvenli bir dörtlü formdur.
 
+### Korunacak duygu ve sanatçı payı
+
+**Korunacak duygu:** Henüz okunmamış coğrafya; su ile taş ihtimalini aynı sessiz yüzeyde tutan karar öncesi boşluk.
+
+**Açık karar alanı:** Karşı akış ve tuz lekesi starting vector’dür. Ufuk, kıyı, kaya veya rota oku sızdırmadan belirsiz coğrafyayı daha iyi kuran 180-güvenli su/iz çözümü önerilebilir.
+
+**İlk eleştiri sorusu:** Kart ‘dalga deseni’ olmakla yetiniyor mu, yoksa yüz açılmadan önceki rota tereddüdünü hissettiriyor mu?
+
+Özel isim, baş harf, logo, arma ve çalışma lore’u bu çözümü taşıyamaz. Sanatçı önerisi önce siyah-beyaz küçük eskizde, sonra 180 derece rotate/difference ve kör masa testinde değerlendirilir; yüzey cilası bu iki kapıdan sonra gelir.
+
 ### Çizgi ve palet
 
 - İnce fakat baskıda kapanmayacak yatay/kavisli akıntı çizgileri.
@@ -200,6 +253,16 @@ Akıntı çizgilerinin her grubu dönüş eşine sahiptir; tek “yukarı akış
 ### Sanat fikri: “Dört kollu gelgit halkası”
 
 Üstten görülen belirli bir ada silueti yerine, merkezde düz ve adsız küçük bir kara lekesini dört yönden eşit aşındıran gelgit halkaları. Kara lekesi tam bir harita şekli değildir; kıyı yaşamı, bina, palmiye, liman veya ürün göstermez. Çevrede iki karşıt kenevir bağ izi, kartın masa üzerindeki fiziksel obje hissini ön yüz dünyasına bağlar.
+
+### Korunacak duygu ve sanatçı payı
+
+**Korunacak duygu:** Rahatlama vaadi ile gecikme/kuşku arasındaki kara eşiği; egzotik ödül değil, rotayı kesen fiziksel ihtimal.
+
+**Açık karar alanı:** Gelgit halkası starting vector’dür. Belirli ada türü, ürün, palmiye veya güvenlik kodu sızdırmadan kara ihtimalini taşıyan 180-güvenli çözüm önerilebilir.
+
+**İlk eleştiri sorusu:** Ada arkasında ‘tatil/ganimet’ değil, rotaya eklenen kara ve zaman baskısı hissediliyor mu?
+
+Özel isim, baş harf, logo, arma ve çalışma lore’u bu çözümü taşıyamaz. Sanatçı önerisi önce siyah-beyaz küçük eskizde, sonra 180 derece rotate/difference ve kör masa testinde değerlendirilir; yüzey cilası bu iki kapıdan sonra gelir.
 
 ### Çizgi ve palet
 
@@ -232,6 +295,16 @@ Dikey kule veya tek yönlü ışın arka yüzde yön sızdırır. Bunun yerine e
 
 Merkez ateş tek bir “alev yönü” taşımaz. Köz ve küçük alev rezervleri karşılıklı eşlenir; ışık huzmesi çizilmez. Hacim, merkez çevresindeki kurum taramasının kontrollü azalmasıyla kurulur.
 
+### Korunacak duygu ve sanatçı payı
+
+**Korunacak duygu:** Uzak bir parıltı değil, insan eliyle sürdürülen ağır ışık görevi; ateş, taş, cam ve hava akışının disiplini.
+
+**Açık karar alanı:** Merkezi ateş ızgarası/taşıyıcı mimarisi starting vector’dür. Modern optik veya yön sızıntısı olmadan aynı bakım ve dönem duygusunu taşıyan 180-güvenli mimari kesit önerilebilir.
+
+**İlk eleştiri sorusu:** Arka yüz modern bir beacon ikonuna kaçmadan, ışığın 1721’de emek ve yakıtla ayakta tutulduğunu hissettiriyor mu?
+
+Özel isim, baş harf, logo, arma ve çalışma lore’u bu çözümü taşıyamaz. Sanatçı önerisi önce siyah-beyaz küçük eskizde, sonra 180 derece rotate/difference ve kör masa testinde değerlendirilir; yüzey cilası bu iki kapıdan sonra gelir.
+
 ### Çizgi ve palet
 
 - Demir ateş ızgarasında kısa sert paralel; taş halkada düzensiz kırık; kalın camda yalnız birkaç düz kenar; havalandırmada mat kurum.
@@ -263,6 +336,16 @@ Dört kart fener ailesi olarak okunur; fakat belirli kule, yön, açık/kapalı 
 İki karşıt yönde exact eşli taş rıhtım babası ve aralarında merkezi boş bırakan tek kenevir palamar halkası. Merkezde kişi, sandalye, liman adı, anahtar veya mühür yoktur. Bu boşluk Kalkış, Varış ve Kaptan Makamı için ortak olan “işlevin insan/yer değişse de kalması” fikrini taşır.
 
 Rıhtım babaları belirli bir limanı anlatmaz; taş/ahşap karışımı nötr gemi altyapısıdır. Palamar iki yönü bağlar ama ok veya rota değildir.
+
+### Korunacak duygu ve sanatçı payı
+
+**Korunacak duygu:** Kişilerden uzun yaşayan kamusal düzen; iki liman ve devredilebilir makamın ortak eşiği.
+
+**Açık karar alanı:** İki rıhtım ve boş merkez starting vector’dür. Liman adı/arması, Kaptan simgesi veya tekil mimari marka olmadan aynı kamusal düzeni taşıyan 180-güvenli çözüm önerilebilir.
+
+**İlk eleştiri sorusu:** Görsel bir FOULWAKE logosuna dönüşmeden ‘kurulum ve makam insanlardan önce/sonra da kalır’ duygusunu taşıyor mu?
+
+Özel isim, baş harf, logo, arma ve çalışma lore’u bu çözümü taşıyamaz. Sanatçı önerisi önce siyah-beyaz küçük eskizde, sonra 180 derece rotate/difference ve kör masa testinde değerlendirilir; yüzey cilası bu iki kapıdan sonra gelir.
 
 ### Çizgi ve palet
 
