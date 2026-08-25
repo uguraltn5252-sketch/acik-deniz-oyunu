@@ -1,15 +1,15 @@
 # FOULWAKE ART DIRECTION BIBLE v2.7
 
-Status: OWNER-DIRECTED ARTISTIC DEPTH REWORK — PROJECT OWNER AND CHIEF EDITOR REVIEW REQUIRED  
+Status: TARGETED MAP-BACK TABLE-COHERENCE REWORK — PROJECT OWNER AND CHIEF EDITOR REVIEW REQUIRED  
 Workstream: Sanat Yönetimi  
 Source branch: work/v2.7-art-direction  
 Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
 Baseline: v2.6 STABLE / LOCKED  
-Chief Editor disposition input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
-Prior corrected brief head: work/v2.7-art-direction@968873d28f96d48ea64e7a04d5c82a808a4bc612  
-Project Owner direction: rules-literate, name-resilient, artistically authored pass; no visual production.  
+Accepted package baseline: work/v2.7-art-direction@f0389711ebefaad7170cbee7f1a0ab09cf128b15 — NON-MAP-BACK CONTENT PROTECTED  
+Chief Editor targeted disposition: TARGETED_REWORK_REQUIRED — MAP_BACK_TABLE_COHERENCE  
+Project Owner direction: closed map cards must read first as one undiscovered FOULWAKE sea; no visual production.  
 Visual production authorized: NO  
-Scope: Görsel üretim öncesi bağlayıcı sanat yönü; illüstrasyon, kart renderı, PDF, contact sheet veya baskı paketi değildir.
+Scope: Görsel üretim öncesi bağlayıcı sanat yönü; bu revizyon yalnız BACK_SEA_ROCK, BACK_ISLAND ve BACK_LIGHTHOUSE ortak masa sistemidir. İllüstrasyon, kart renderı, PDF, contact sheet veya baskı paketi değildir.
 
 ## 1. Yetki, kaynak ve sınır
 
@@ -544,21 +544,74 @@ Merak → maddi güven → kuşku → hasar → kuru rahatlama → yeniden kuşk
 
 ## 15. Arka yüz ilkeleri
 
-Yedi arka yüz ön yüzlerle aynı sanat dünyasına aittir; ayrı bir logo sistemi veya soyut dijital desen değildir.
+Yedi arka yüz ön yüzlerle aynı sanat dünyasına aittir; ayrı bir logo sistemi veya soyut dijital desen değildir. f0389711… içindeki BACK_CHARACTER, BACK_POWER, BACK_LOYALTY ve BACK_SUPPORT yönleri korunur. Bu targeted rework yalnız BACK_SEA_ROCK, BACK_ISLAND ve BACK_LIGHTHOUSE’ın ortak masa görünümünü değiştirir.
 
-Bağlayıcı kurallar:
+### 15.1 Korunan topoloji ve güvenlik
 
-- Okunabilir yazı, logo, kart tür etiketi, sayı ve yön işareti yok.
-- Aynı aile içindeki bütün fiziksel kopyalar exact aynı dosyayı kullanır.
-- 180 derece dönüşte bilgi sızıntısı olmamalı; kütle, ışık, leke ve aşınma tam dönüş güvenliğiyle tasarlanır.
-- Sea/Rock ortak arkasında deniz ya da kaya ihtimali sızmaz; ortak “keşfedilmemiş su yüzeyi” dili iki türü eşit taşır.
-- Sadakat arkasında Tayfa/Hain ayrımı, daha koyu leke veya asimetrik hasarla dahi sızamaz.
-- Bıçak/kesim toleransında kritik detay yok; dış çerçeve boyunca değer dengesi korunur.
-- Parlaklık farkı, vernik yönü, koyu köşe ve tekil baskı kiri bir kartı tanınır yapmamalı.
-- Rastgele eskitme aile içinde kart başına değişmez; aynı dosyanın kontrollü baskı sonucu olmalıdır.
-- Ön yüz malzeme diliyle akraba olur, fakat ön yüzdeki karakter/nesne/olayı minyatür ikon gibi tekrar etmez.
+- BACK_SEA_ROCK = 42; 30 Açık Deniz ile 12 Kayalık exact aynı arka yüzü kullanır.
+- BACK_ISLAND = 6; altı Ada exact aynı aile masterını kullanır.
+- BACK_LIGHTHOUSE = 4; dört Deniz Feneri exact aynı aile masterını kullanır.
+- Üç binary ayrı kalır, fakat aynı COMMON_MAP_BACK_VISUAL_SYSTEM içinden çıkar.
+- Aynı aile içindeki bütün fiziksel kopyalar bit-bit exact aynı dosyayı kullanır.
+- 180 derece dönüşte bilgi sızıntısı olmaz; çizgi, değer, leke, kâğıt lifi ve aşınma exact dönüş güvenli masterın parçasıdır.
+- BACK_SEA_ROCK arkasından Açık Deniz/Kayalık ayrımı hiçbir yolla okunamaz.
+- Okunabilir yazı, logo, tür etiketi, sayı, yön işareti, koordinat, rota çizgisi, pusula gülü ve geçici lore motifi yoktur.
+- Parlaklık, vernik, kesim, koyu köşe veya tekil baskı kiri kartı, aile içi kopyayı ya da yönü tanıtamaz.
 
-Ayrı yedi brief FOULWAKE_7_BACK_BRIEFS_v2.7.md içindedir.
+### 15.2 Referans sınırı
+
+Ekli 5×5 masa görseli MAP_TABLE_REFERENCE: TABLE_READ_ONLY / COMPOSITION_PRINCIPLE_ONLY olarak sınıflandırılır. Yalnız kapalı kartların tek bir geniş keşfedilmemiş deniz alanı gibi okunması ilkesi alınır. Referanstaki dalga çizgileri, renk, çerçeve, kart yüzleri, dizilim ve yüzey düzeni kopyalanmaz. KAPTAN görseli ayrı olarak yalnız STYLE_ONLY kalır; iki referans birbirinin yetkisini genişletmez.
+
+### 15.3 COMMON_MAP_BACK_VISUAL_SYSTEM
+
+Harita arka yüzlerinin birincil kompozisyon birimi tek kart değil, masadaki kapalı harita alanıdır. Tasarım iki mesafede aynı anda çalışır:
+
+- **Normal masa mesafesinde:** göz önce 5×5 veya benzer alanı tek, kesintisiz ve henüz açılmamış FOULWAKE denizi olarak algılar. Tekil kart merkezleri, rozetler ve aile madalyonları öne çıkmaz.
+- **Yakın kart mesafesinde:** üç binary yalnız su davranışındaki ölçülü farkla ayırt edilir; hiçbiri belirli ön kart kimliğini, yönü veya Açık Deniz/Kayalık alt türünü sızdırmaz.
+
+Ortak sistemin bağlayıcı yüzey dilinde:
+
+1. Deniz çizgisi kart yüzeyine eşit dağılır; merkez, köşe veya eksen ayrıcalıklı bölge değildir.
+2. Tekrar eden yatay dalga sıraları yerine gözlenmiş su hareketini çağrıştıran kısa, kırık ve farklı uzunluklu çizgi kümeleri kullanılır. Kümeler üç küçük ölçekte dolaşır; hiçbir tekil “imza dalga”, büyük leke veya tanınabilir glyph oluşmaz.
+3. Hacim boya gradyanıyla değil, çizgi aralığı, kesilen kâğıt rezervi ve düşük kontrastlı tarama yoğunluğuyla kurulur.
+4. Ortak palet kurum indigosu, tuz mavi-grisi, tar grisi ve kemik kâğıt rezervidir. Üç ailenin ortalama değer alanı aynı deniz zemininde kalır; aile farkı doygun renk kodu değildir.
+5. Yüzey trim ve bleed’e kadar sürer. Dekoratif çerçeve yoktur. Üretim için keyline zorunluysa üç ailede exact aynı, ince ve dalga çizgisinden daha düşük kontrastlı teknik yapı kullanılır.
+6. Kenara yakın çizgiler kısa, düşük kontrastlı ve ortak ölçektedir; tek uzun koyu çizgi trimde kesilip komşu karta “devam etmesi gereken” sahte bir yol bırakmaz. Rastgele komşulukta literal çizgi eşleşmesi değil, istatistiksel ölçek/değer devamlılığı aranır.
+7. Exact master tekrarının duvar kâğıdı gibi görünmemesi için büyük odak, tekil leke, merkezde kontrast yığılması ve kolay ezberlenen çizgi takımyıldızı yasaktır. Çok sayıda küçük 180-eşli mikro-küme kullanılır; tekrar yakın incelemede mevcuttur, normal masa mesafesinde ritme dönüşür.
+8. 180 derece güvenliği radyal amblemle değil, yüzey boyunca dağılmış çizgi mikro-kümelerinin uzak yarım-dönüş eşleriyle kurulur. Dönüş merkezi sıradan su alanıdır; yıldız, halka, kesişim veya koyu çekirdek taşımaz.
+
+### 15.4 Sembolsüz aile ayrımı
+
+| Binary | Ortak denizdeki rol | İzin verilen mikro-fark | Yasak |
+|---|---|---|---|
+| BACK_SEA_ROCK | Nötr ana deniz zemini | Orta aralıklı kırık su çizgisi; palet ve değer için baseline | Merkezî koyu leke, dört yönlü akıntı, kaya/köpük/sığlık işareti |
+| BACK_ISLAND | Aynı denizin bir mikro-adım daha yavaş ve tortulu hâli | Yüzeye eşit dağılmış biraz geniş çizgi aralığı ve çok hafif daha sıcak tuz-grisi alt ton | Kara lekesi, ada silueti, gelgit halkası, kıyı, palmiye, bina |
+| BACK_LIGHTHOUSE | Aynı denizin bir mikro-adım daha ince rüzgârla taranmış hâli | Yüzeye eşit dağılmış ince çapraz-rüzgâr çizgisi ve çok hafif daha soğuk/açık hava değeri | Ateş ızgarası, fener odası halkası, kule, alev, ışın, beacon, radyal düzen |
+
+Mikro-farklar yakın mesafede aileyi seçtirebilir; 5×5 masa mesafesinde kartları üç ayrı renk veya desen adasına bölmemelidir. Ortak çizgi ölçeği, kenar ritmi, kâğıt ve mat baskı hissi aile farkından daha baskındır.
+
+### 15.5 Keşif sonrası masa ilişkisi
+
+Kapalı harita alanı, açılan ön yüzleri çevreleyen sessiz ana denizdir. Birkaç kart açıldığında ön yüzler bu alanın üzerine yapıştırılmış posterler gibi değil, ortak denizde keşfedilmiş olay/coğrafya parçaları gibi okunmalıdır. Bu hüküm kabul edilmiş ön-yüz brieflerini değiştirmez; arka yüzün değer, çizgi ve çerçeve davranışını sınırlar. Kapalı zemin ön yüzlerin ana figür ve olay kontrastıyla yarışmaz.
+
+### 15.6 Zorunlu Görsel Tasarım masa QA’sı
+
+Görsel üretim yetkisi verilirse Görsel Tasarım şu kanıtları üretmeden harita arka yüzleri kabul adayı olamaz:
+
+1. Üç binaryyi birlikte kullanan kapalı 5×5 masa mockup’ı.
+2. Aynı kartların rastgele 180 derece çevrildiği ikinci 5×5 mockup.
+3. Belgelenmiş normal masa bakış mesafesinden bütünlük incelemesi.
+4. Kart birleşimlerinde kenar, dalga ölçeği, çizgi yoğunluğu ve değer kopması incelemesi.
+5. Merkezî şekil, amblem, madalyon ve her kartta tekrarlanan göz alıcı leke kontrolü.
+6. BACK_SEA_ROCK için Açık Deniz/Kayalık kör sınıflandırma testi.
+7. Ada ve Fener binarylerinin yalnız amaçlanan aile bilgisini taşıdığı, belirli ön kimliği sızdırmadığı kontrol.
+8. Okunabilir yazı, sayı, yön, koordinat, rota, pusula ve anlamsız script kontrolü.
+9. Mat baskıda koyu kare, parlaklık farkı ve kart-başına tanınabilir leke kontrolü.
+10. Birkaç ön yüz açılarak hazırlanan keşif-sonrası masa mockup’ı.
+
+Kabul cümlesi: **Kart adları ve tekil sınırlar uzaktan seçilmeden önce masa, üzerinde bazı kartlar duran bir alan değil; parça parça keşfedilen tek bir FOULWAKE denizi gibi görünmelidir.**
+
+Ayrı yedi brief ve ayrıntılı risk/QA sözleşmesi FOULWAKE_7_BACK_BRIEFS_v2.7.md içindedir.
 
 ## 16. Baskı ve küçük boy okunurluğu
 
