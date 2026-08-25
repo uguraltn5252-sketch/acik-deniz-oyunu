@@ -1,47 +1,49 @@
 # FOULWAKE 12 PILOT PRODUCTION BRIEFS v2.7
 
-Status: BRIEF — bağlayıcı pilot sanat yönü; final illüstrasyon/render/PDF değildir.  
+Status: REWORKED BRIEF — final illüstrasyon/render/PDF değildir.  
+Review input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
+Visual production authorized: NO  
 Source branch: work/v2.7-art-direction  
 Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
 Baseline: v2.6 STABLE / LOCKED  
 Decision gate: PROJECT OWNER + CHIEF EDITOR  
 Production owner after approval: Görsel Tasarım
 
-## 1. Pilot seçimi ve test matrisi
+## 1. Pilot seçimi ve rework sonucu
 
-Bu on iki pilot “en kolay kartlar” değildir. Birlikte insan çeşitliliği, nesne dramaturjisi, çürüme, etik belirsizlik, görünmeyen ses, farklı deniz/jeoloji ölçekleri, kalabalık, dönemsel ışık ve kurumsal ikonografi gibi sistemin en yüksek riskli uçlarını sınar.
+On iki pilot seçimi korunmuştur. Rework, seçimleri kolaylaştırmaz; her birindeki belirsiz seçenekleri kapatır, tek ana hareketi kesinleştirir, karakter çarpışmalarını ayırır, şakayı varsayılan olmaktan çıkarır ve fener teknolojisini 1721 sınırına çeker.
 
-| Slot | Kart | Zorunlu sistem sınavı |
+| Slot | Kart | Rework sonrası zorunlu sınav |
 |---|---|---|
-| Karakter 1 | KAR-01 Uzakgören | Yüz/beden/meslek, açık gök, korsan klişesinden kopuş |
-| Karakter 2 | KAR-06 Dipgören | Su çizgisi, ıslak anatomi, dönemsel dalış |
-| Karakter 3 | KAR-19 Yastıkçı | Kahraman olmayan iş, dar iç mekân, kuru mizah |
-| Güç 1 | GUC-06 Zıpkın Sandığı | Flavor’daki “yazı”yı harfsiz çözmek, kapalı tehdit |
-| Güç 2 | GUC-27 Kaderi Yeniden Yaz | Uzun mekanik, tek manevra, sihirsiz zaman izi |
-| Çürümüş Erzak | ERZ-01 | Materyal çürümesi, insansız anlatı, rota baskısı |
-| Sadakat | SAD-H-03 Hain | Spoiler vermeyen etik aşırılık ve çoklu beden dili |
-| Açık Deniz | HAR-AD-08 İsimsiz Bir Düdük | Görünmeyen ses, sis, negatif alan |
-| Kayalık | HAR-KY-06 İğne Deliğinden Sefer | Hasar + devam seçeneği, dar kare kompozisyon |
-| Ada | HAR-AA-06 Gümrükçünün Tek Yaşadığı Ada | Kalabalık yüz/beden çeşitliliği, yazısız bürokrasi |
-| Deniz Feneri | HAR-FN-04 Geceleri Parlayan Yalan | Fiziksel ışık/yansıma, glow ve anakronizm yasağı |
-| Yardımcı | SET-KP-01 Kaptan Makamı | Portresiz yetki, açık makam, STYLE_ONLY ayrımı |
+| Karakter 1 | KAR-01 Uzakgören | KAR-05’ten ayrılan genç/uzun/geniş üst gövde ve açık gök |
+| Karakter 2 | KAR-06 Dipgören | KAR-04’ten ayrılan kısa/sinirli V gövde ve dönemsel dalış |
+| Karakter 3 | KAR-19 Yastıkçı | Kahraman olmayan iş, dar iç mekân, şakasız şüphe |
+| Güç 1 | GUC-06 Zıpkın Sandığı | Yazı flavor’ını harfsiz çözme; şakasız kapalı tehdit |
+| Güç 2 | GUC-27 Kaderi Yeniden Yaz | Tek manevra; sihir ve ikincil şaka yok |
+| Çürümüş Erzak | ERZ-01 | Ciddi sağlık/malzeme baskısı; ikincil şaka yok |
+| Sadakat | SAD-H-03 Hain | Tek kol fiili; ortak örgüt kanıtı ve şaka yok |
+| Açık Deniz | HAR-AD-08 İsimsiz Bir Düdük | Görünmeyen ses; cep şakası yok |
+| Kayalık | HAR-KY-06 İğne Deliğinden Sefer | Tek sıyrılma fiili; hasar statik iz |
+| Ada | HAR-AA-06 Gümrükçünün Tek Yaşadığı Ada | Kapalı ıskarta seçildi; tek gerekçeli şaka |
+| Deniz Feneri | HAR-FN-04 Geceleri Parlayan Yalan | Yanlış burunda basit ateş; gelişmiş optik yok |
+| Yardımcı | SET-KP-01 Kaptan Makamı | Gusto belirsizliği, tek anahtar fiili, şaka yok |
 
-Pilotlar arasında aynı yüz, el anatomisi, beden oranı, gemi açısı, hayvan, ikincil şaka veya ana nesne tekrarlanmayacaktır. Her pilot için ilk eskiz teslimi Görsel Tasarımın alanıdır; bu belge üretim kararlarını tanımlar.
+Pilotların 1’i gerekçeli ikincil yazısız şaka içerir; 11’i NONE’dır. Hiçbir şaka ölüm, ağır hasar, Sadakat, Çürümüş Erzak, tehdit, fener yanıltması veya makam sahnesine eklenmez.
 
-## 2. Ortak production-ready kapılar
+## 2. Ortak üretim kapıları
 
-Her pilot, nihai renkten önce şu sırayla doğrulanmalıdır:
+Bu belge üretim izni vermez. İzin verilirse Görsel Tasarım şu kanıt zincirini uygular:
 
-1. 3 küçük siyah-beyaz kompozisyon thumbnail’i; üçü aynı fikrin kamera varyasyonu olamaz.
-2. Seçilen thumbnail için siluet/değer haritası; ana hareket iki saniyede okunmalı.
-3. İnsan varsa yüz geometrisi + beden oranı + el/meslek izi notu; başka pilotla yan yana tekrar kontrolü.
-4. Dönem/malzeme kontrolü; 1721 dışı ekipman işlenmeden çıkarılmalı.
-5. Çizgi örneği; hacim gradient kapatıldığında ayakta kalmalı.
-6. Mat palet örneği; hardal/kırmızı vurgu alanı toplam yüzde 8’i geçmemeli.
-7. Gerçek kart boyu prova; mikro tarama kapanması, odak ve negatif alan kontrolü.
-8. Sanat Yönetimi tavsiyesi, sonra proje sahibi estetik kararı ve Baş Editör dispozisyonu.
+1. Üç farklı siyah-beyaz thumbnail; kamera varyasyonu değil, gerçek kompozisyon alternatifi.
+2. Seçilen thumbnail için tek-fiil ve değer haritası.
+3. İnsan varsa Bible’daki 20-karakter matrisine karşı yüz, beden, saç, el ve siluet kontrolü.
+4. Dönem/malzeme kontrolü; fenerlerde yalnız kömür/odun ateşi, camla çevrili basit ateş, mum veya basit yağ ışığı.
+5. Çizgi örneği; gradient kapatıldığında hacim ayakta kalır.
+6. Mat palet; vurgu alanı yüzde 8’i geçmez.
+7. Gerçek kart boyu prova; mikro tarama, ana odak ve negatif alan.
+8. Sanat Yönetimi tavsiyesi, proje sahibi estetik kararı, Baş Editör dispozisyonu.
 
-Sahne-içi okunabilir yazı, logo, tabela, slogan, konuşma balonu, nota, yön harfi ve anlamsız script hiçbir pilotta kabul edilmez. Final görsel/PDF bu workstreamde üretilmez.
+Catoptric metal reflektör, optik ayna, Argand, Fresnel, elektrik, modern beacon, glow, sahne-içi okunabilir yazı, logo, konuşma balonu, nota ve anlamsız script yasaktır.
 
 
 ## KAR-01 — Uzakgören (Karakter 1/3)
@@ -55,49 +57,51 @@ Exact copy — değiştirilmez:
 - Etki: Tanışma gecesi hariç her gece bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.
 - Flavor: Tehlikeyi uzaktan görür. İnsanları hâlâ yakından çözemedi.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-İlk karakter pilotu, FOULWAKE insan dilinin kahraman korsan portresi olmadan ayakta durup durmadığını ölçer. Uzakgören’in işi okunmalı; fakat dürbün, kuş ve teatral ufuk bakışı gibi kolay korsan ikonlarına yaslanmamalıdır.
+İlk Karakter pilotu, FOULWAKE insan dilinin kahraman korsan portresi olmadan çalışmasını ve KAR-05 ile ortak yaşlı-uzun-kemikli kadın temelinin gerçekten kaldırıldığını ölçer.
 
-### Sistem sınavı
+Yüz/beden/meslek ayrımı, geniş negatif alan, çıplak gözle gözcülük ve STYLE_ONLY KAPTAN kartından tam kopuş.
 
-Karakter yüz/beden çeşitliliği, meslek okunurluğu, geniş negatif alan ve STYLE_ONLY KAPTAN kartından kopuş.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Sessiz uyanıklık ve hafif huzursuzluk.
 - Amaç: Bilginin ayrıcalık değil, soğukta taşınan bedensel bir yük olduğunu göstermek.
-- Destedeki ritim görevi: Karakter ailesinde havadar, sessiz ve yukarı açılan ilk nefes.
+- Ritim görevi: Karakter ailesinde havadar, sessiz ve yukarı açılan ilk nefes.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-Uzun ve hafif öne eğilmiş, 58–66 yaşlarında bir kadın gözcü. Dar omuz, güçlü önkol, güneşten kısılmış iki farklı göz kapağı; yüz kılı yok. Burnu uzun değil, geniş ve kısa köklü; çene ince. Bir kulağı rüzgâra dönük, öteki eli ıslak ana ıstralyayı yoklar. Meslek izi: tuzla sertleşmiş saç, sol kaş üzerinde eski ip yanığı, açık avuçta ince nasır. Kostüm yağlı yün ceket, keten baş bağı, yamasız fakat solmuş gömlek; rütbe süsü yok.
+40–47 yaş; oval ve dolgun düzlemli yüz, geniş düz burun, kısa dalgalı koyu saç. Çok uzun ama kemikli değil: geniş üst gövde, ince bel, uzun dik boyun ve halat yükünden hafif düşük sağ omuz. Parmak nasırı gözcülük/arma işinden gelir. Yağlı yün ceket ve sade baş bağı; rütbe, şapka, kuş ve dürbün yok. KAR-05’in kısa, yaşlı, dar omuzlu, sivri çeneli L temeliyle hiçbir anatomi paylaşmaz.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: Kırklarının başında, çok uzun, oval ve dolgun düzlemli yüzlü kadın gözcü; geniş düz burun, kısa dalgalı koyu saç, yüz kılı yok.
 
-Ana direk çarmıhında, sabah öncesi. Tek hareket: gövdesini değil yalnız başını ve kulağını rüzgâra çevirirken uzaktaki düşük kıyı çizgisini seçer. Kamera biraz alttan ama kahramanlaştırmadan; yüz sol üçte, sağ iki üçte açık gök/ufuk. Direk ve halat çerçeve değil gerçek iş mekânı olmalı.
+Ana biçim: Çok uzun boy ve ince bel, fakat geniş üst gövde; uzun boyun dik, sağ omuz halat yükünden biraz düşük; açık çatal siluet. Kemikli/yaşlı Tahtakakan temeli kullanılmaz.
 
-Manifest taşıyıcı metaforu: Göz ile ufuktaki ince ışık yarığı arasında gerilmiş görünmez bir kerteriz; dürbün kullanmadan görme yeteneğini beden üzerinden anlat.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Çıplak gözle ufuk çizgisindeki tek belirsiz kırılmayı seçer.
+- Mekân: Ana direğin üst çarmıhı; aşağıda yalnız dalga ve küçük güverte parçası görünür.
+- Karta özgü metafor: Göz ile ufuktaki ince ışık yarığı arasında gerilmiş görünmez bir kerteriz; dürbün kullanmadan görme yeteneğini beden üzerinden anlat.
 
-Yüz hacmi kısa yön taramasıyla; saç kütlesi tek siyah blok değil tuzla ayrışmış çizgilerle. Gök neredeyse çizgisiz. Ceket indigo-kurum; ciltte soluk kemik/pas; vurgu yalnız baş bağındaki donuk hardal dikişte ve yüzde yüzde 5’in altında.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Alçak güverteden yukarı bakan dikey kadraj; yüz üst üçte birde, göğün geniş boşluğu şüpheyi büyütür; odak göz ve halatı kavrayan elde.
 
-Yok. Kartın kuru flavor’ı oyuncunun okumasında kalır; görselde şaka eklemek meslek ciddiyetini zayıflatır.
+Yüz ve elde ince kontur; giyside rüzgâr yönünde uzun tarama; gök seyrek çizgili kirli mavi-gri, halatta pas kahvesi, ufukta çok küçük hardal ışık.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-Spyglass, martı, KAPTAN kartının iri burun/çapraz kol/şapka/kuş/gemi düzeni, aynı üç çeyrek yüz, rüzgârda uçan kahraman palto, okunabilir yön işareti yok.
+NONE
 
-Manifest çapraz riski: KAR-12 ile yüksek direk, GUC-12 ile gözetleme teması benzerleşebilir.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: KAR-12 ile yüksek direk, GUC-12 ile gözetleme teması benzerleşebilir.
+- Tekrarlanmayacaklar: Dürbün, parmakla gösteren poz, martı ve kahramanca ufka bakış KAR-01’de kullanılmaz; yüksek açı KAR-12’ye bırakılır.
+- Dönem kontrolü: 1721 arma/donanım: katranlı halat, ahşap çarmıh ve yün başlık; modern güvenlik kemeri yok.
 
 ### Küçük baskı kabul kanıtı
 
-64 mm ölçeğe indirildiğinde yüz geometrisi, kulak-rüzgâr hareketi ve kıyı yönü üç ayrı değer kütlesi olarak okunmalı. Siluet, KAR-12 karga yuvası genci ve bütün diğer karakterlerden baş-boyun oranıyla ayrılmalı.
-
-Dönem ve dünya kontrolü: 1721 arma/donanım: katranlı halat, ahşap çarmıh ve yün başlık; modern güvenlik kemeri yok.
+Siyah siluette açık çatal form görülmeli; yüz/giysi kapatıldığında KAR-05 ve KAR-12’den boyun-omuz oranıyla ayrılmalı. Ufuk kırılması gerçek kart boyunda tek küçük ama seçilebilir değer değişimi olmalı.
 
 ## KAR-06 — Dipgören (Karakter 2/3)
 
@@ -110,49 +114,51 @@ Exact copy — değiştirilmez:
 - Etki: Batık Kalyon bulunduğunda bir kez fazladan 1 Güç kartı kazandırır.
 - Flavor: Denizin dibinden her seferinde bir şey getiriyor.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Dipgören, insan ile deniz yüzeyini aynı kartta birleştirir. Modern dalış ekipmanı, komik sualtı yüzü veya hazine avcısı klişesi olmadan meslek gücünü göstermesi sistemin zor sınavıdır.
+Dipgören su çizgisi, dönemsel dalış ve insan anatomisini aynı kartta sınar; rework ayrıca KAR-04 ile kısa-iri-kel erkek temelini ayırmalıdır.
 
-### Sistem sınavı
+Islak anatomi, sinew V gövde, dönemsel dalış, modern ekipmansız meslek okunurluğu ve Canhalatı çarpışmasının kapanması.
 
-Su çizgisi, ıslak anatomi, işçi bedeni, dönemsel dalış ve yüz tekrarından kaçınma.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Derinlik, soğuk ve ganimetten önce nefes.
 - Amaç: Dipgören’i fantastik dalgıç değil, bedenini denize borç veren bir kurtarma/salvage emekçisi olarak kurmak.
-- Destedeki ritim görevi: Karakter ailesinde ilk su hizası ve ağır alt yarı; dikey ritmi kırar.
+- Ritim görevi: Karakter ailesinde ilk su hizası ve ağır alt yarı; dikey ritmi kırar.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-32–40 yaşlarında, kısa boylu, yoğun kaslı ama vücut geliştirici olmayan bir erkek dalgıç; başı tıraşlı, temiz yüzlü, geniş alın ve küçük çene. Göğüs/omuz güneşten değil soğuk sudan gerilmiş; eller büyük, ayak bilekleri kalın. Meslek izi: burun köprüsünde eski kırık, sağ omuzda halat sürtünmesi, tırnaklarda batık pası. Üzerinde keten içlik, bele bağlı ağırlık değil basit taş/halat düzeni; modern maske, palet, tüp veya kask yok.
+27–34 yaş; uzun dar yüz, düz yanak, tıraşlı baş, temiz yüz, geniş eller ve kaş üstü eski kesik. Kısa fakat fıçı göğüslü değil; sinirli kaslı V üst gövde, dar kalça, görünür uzun boyun, tek omuzda ağırlık ipi çukuru. KAR-04 saçlı, dikdörtgen yüzlü, orta boy, ağır armut gövdeli ve çok kısa boyunludur. Basit keten içlik ve halat düzeni; maske, palet, tüp, kask veya dalış çanı yok.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: Yirmilerinin sonunda, kısa boylu, sinirli kaslı, tıraşlı başlı ve sakalsız erkek dalgıç; uzun dar yüz, düz yanak, geniş eller, tek kaş üzerinde eski kesik.
 
-Sakin görünmeyen sığ batık alanında yarı sualtı kesit. Tek hareket: dalgıç su yüzüne çıkarken sağlam bir blok-makara takımını tek eliyle borda altına uzatır. Yüz su çizgisinin hemen altında; gemiden uzanan el yalnız yardımcı ölçek. Kamera su çizgisinde; üstte koyu borda, altta soluk bulanık su. Kıyı değil gerçek gövde/deniz bağı görülür.
+Ana biçim: Kısa fakat fıçı göğüslü olmayan kompakt V gövde; dar kalça, görünür uzun boyun ve bir omuzda ağırlık ipi çukuru; açılı siluet. Canhalatı’nın ağır armut gövdesi ve saçlı dikdörtgen yüzüyle ortak temel yok.
 
-Manifest taşıyıcı metaforu: Sudan çıkan nesne değil, nesneden süzülen siyah su çizgisi ‘dibin payını’ taşır.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Yosunlu küçük bronz donanımı ip merdivenden bordaya uzatır.
+- Mekân: Gemi bordası ile deniz yüzeyi arası; su altı görünmez, yalnız siyah derinlik ve köpük.
+- Karta özgü metafor: Sudan çıkan nesne değil, nesneden süzülen siyah su çizgisi ‘dibin payını’ taşır.
 
-Sualtı hacmi mavi gradient değil dalga kırıklı çizgilerin seyrelmesiyle; ıslak ciltte az keskin kâğıt rezervi. Palet indigo, kurşun/tuz grisi, pas, cilt kemik-kahve. Metal oksiti yerel; kabarcık dizisi dekor olarak kullanılmaz.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Su hizasında düşük bakış; yüz yarı üstte, el ve bronz parça aydınlık odak; alt yarıda geniş koyu su negatif alan.
 
-Yok. Yüzeyi geçen tek tahta kaşık gibi bir gag, insanı küçük düşürmeden çok uzakta kalabilir; pilot eskizinde odağı bozarsa çıkarılır.
+Islak tende kısa yoğun tarama, suda yatay kırık çizgiler; kirli mavi-siyah, bronzda küçük hardal, yosunda donuk yeşilimsi gri.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-KAR-06 yüzü KY-02’deki adsız dalgıca kopyalanmayacak. Viktorya dalış miğferi, modern scuba, altın sandığı, balık sürüsü, abartılı nefes kabarcığı, aynı kurtarma eli GUC kartlarında yok.
+NONE
 
-Manifest çapraz riski: HAR-KY-02 Batık Kalyon ve kurtarma kartlarıyla su/borda benzerliği.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: HAR-KY-02 Batık Kalyon ve kurtarma kartlarıyla su/borda benzerliği.
+- Tekrarlanmayacaklar: Dalış başlığı, hava tüpü, hazine sandığı, inci, boğulan kişi ve halat atma kompozisyonu yok.
+- Dönem kontrolü: Nefes tutma/halatlı salvage pratiği; modern skafandr veya Viktorya dönemi ağır dalış miğferi yok.
 
 ### Küçük baskı kabul kanıtı
 
-Siyah-beyaz thumbnail’de su çizgisi, beden kütlesi ve kaldırılan nesne tek bakışta ayrılmalı. Anatomik ıslaklık çizgiyle çalışmalı; dijital parlama kapatıldığında hacim çökmemeli.
-
-Dönem ve dünya kontrolü: Nefes tutma/halatlı salvage pratiği; modern skafandr veya Viktorya dönemi ağır dalış miğferi yok.
+Renk kapatıldığında su çizgisi, dar yüz, V gövde ve uzatılan donanım ayrılmalı. Siluet KAR-04’ün alçak dairesinden ve KY-02’deki adsız dalgıçtan açıkça farklı olmalı.
 
 ## KAR-19 — Yastıkçı (Karakter 3/3)
 
@@ -165,49 +171,51 @@ Exact copy — değiştirilmez:
 - Etki: Özel mekanik gücü yoktur.
 - Flavor: Herkesin kamarasına giriyor. Mesleği gereği olduğunu söylüyor.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Yastıkçı, sanat sisteminin yalnız fırtına ve silahlarla çalışmadığını kanıtlar. Güçsüz görünen bakım emeğini, şüphe temasını ve dar kamara perspektifini tek harekette taşır.
+Yastıkçı sistemin yalnız fırtına, silah ve kahramanlıkla çalışmadığını; bakım emeği ile şüpheyi dar bir mekânda taşıyabildiğini ölçer.
 
-### Sistem sınavı
+Kahraman olmayan meslek, kısa sağlam kadın silueti, koridor perspektifi ve şaka eklemeden küçük davranış gerilimi.
 
-Kahraman olmayan meslek, dar iç mekân, yaşlı kadın silueti, kuru mizah ve düşük aksiyonlu karakter okunurluğu.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Sessiz mahremiyet ve kimin neyi sakladığına dair merak.
 - Amaç: Kamarotu hizmetçi klişesi yerine geminin özel alanlarına erişimi olan dikkatli bir göz olarak göstermek.
-- Destedeki ritim görevi: Karakter destesinin en sessiz koridor/perspektif kartı; pilot için iç mekân ve kadın yaş çeşitliliği sınavı.
+- Ritim görevi: Karakter destesinin en sessiz koridor/perspektif kartı; pilot için iç mekân ve kadın yaş çeşitliliği sınavı.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-55–64 yaşlarında, kısa, kemikli ama sağlam bir kadın kamarot. Yuvarlak değil kare baş, düşük alın, geniş elmacık, küçük yukarı dönük burun; saç enseye sıkıca bağlı, yüz kılı yok. Bir omuz yıllarca yük taşımaktan daha aşağıda. Elleri ince ama eklemleri belirgin; parmaklarda sabun/kül kuruluğu. Koyu yün etek/pantolon katmanı, kısa çalışma ceketi, keten önlük; sevimli hizmetçi veya asalet kodu yok.
+58–65 yaş; kare çene, geniş yanak, enseye kısa gümüş saç, yüz kılı yok. Kısa sağlam dikdörtgen gövde, kısa dik boyun, yük taşıyan omuz biraz düşük. Sabun/kül kuruluğu olan ince eklemli eller. Yastık/keten demeti açık büyük kütle; çizme izi ana anlatı kanıtıdır, ikincil şaka değildir.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: Altmışlarında, küçük yapılı, dik sırtlı, kare çeneli kadın kamarot; gümüş saç ensede kısa, yüzünde derin gülme çizgileri ama nötr ifade.
 
-Kıç kamara koridorunda tek hareket: iki koluyla sıkıştırdığı temiz olmayan keten/yastık demetini taşırken yerdeki tek ıslak çizme izini fark edip gözünü aşağı kaydırır; bedeni durmaz. Kamera koridorun biraz altından, kaçış noktası uzakta. Demet açık büyük kütle, figür koyu, çizme izi küçük odak; kapılar üzerinde hiçbir yazı/numara yok.
+Ana biçim: Küçük ve sağlam gövde; kollarında büyük keten/yastık yığını yüzün yarısını keser; dikdörtgen siluet.
 
-Manifest taşıyıcı metaforu: Bembeyaz sayılmayan keten yığını görünür hizmeti, kapı eşiğindeki iz görünmez bilgiyi karşılar.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Yastık demetini ıslak çizme izine basmadan koridor boyunca taşır.
+- Mekân: Kıç altındaki kamara koridoru; üç kapı, eğik tavan, küçük lomboz.
+- Karta özgü metafor: Bembeyaz sayılmayan keten yığını görünür hizmeti, kapı eşiğindeki iz görünmez bilgiyi karşılar.
 
-Keten demette geniş kâğıt rezervi ve dikiş çizgisi; koridorda uzun meşe perspektif taraması; yüz ve eller kısa malzeme çizgisi. Palet kemik, meşe, indigo; ıslak izde yalnız koyu tuz mavisi.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Koridorun tek kaçışlı perspektifi; karakter alt sağda, kapı aralığı üst solda odak; lomboz çevresi negatif alan.
 
-Yerdeki iz, herkesin kamarasına girmesi flavor’ına tek yazısız yanıt. İz bir şakacı kovalamaca başlatmaz; başka ayak izi yok.
+Ketende seyrek kıvrım çizgisi; koridorda yoğun ahşap tarama; kâğıt-bej/lacivert/ıslak kahve, yastık dikişinde küçük kırmızı ip.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-Komik hizmetçi yüzü, yastığa sarılma, aynı yaşlı kadın Uzakgören/usta/gümrükçü yüzü, fare/martı, kapı tabelası, GUC-28 kamara sürgüsü perspektifi kopyası yok.
+NONE
 
-Manifest çapraz riski: GUC-14 Anahtar Deliği ve iç mekân gözetleme benzerliği.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: GUC-14 Anahtar Deliği ve iç mekân gözetleme benzerliği.
+- Tekrarlanmayacaklar: Anahtar deliğinden bakma, kulak dayama, açık sandık, yatakta insan, romantik yatak odası ve KAR-09 raf kompozisyonu yok.
+- Dönem kontrolü: Keten dolgu, ahşap kamara kapısı, kurşunlu lomboz; modern yastık fermuarı/kilit yok.
 
 ### Küçük baskı kabul kanıtı
 
-Küçük baskıda meslek demetten, şüphe göz-iz ilişkisinden okunmalı. Demet figürü yutmamalı; figür KAR-09’un küçük yaşlı erkek siluetinden baş/kalça/omuz oranıyla ayrılmalı.
-
-Dönem ve dünya kontrolü: Keten dolgu, ahşap kamara kapısı, kurşunlu lomboz; modern yastık fermuarı/kilit yok.
+Meslek demetten, dikkat ıslak izin çevresinden geçişten okunmalı. Koridor GUC-28’in sürgülü ceza mekânı gibi görünmemeli; KAR-09 ve KAR-05’in küçük/yaşlı siluetlerini kopyalamamalı.
 
 ## GUC-06 — Zıpkın Sandığı (Güç 1/2)
 
@@ -219,49 +227,51 @@ Exact copy — değiştirilmez:
 - Etki: Kraken'in vereceği 1 Gövde hasarını engelle.
 - Flavor: Sandığın üstünde büyük balık yazıyor. Yazı aceleyle yazılmış.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Bu pilot yazısız anlatım disiplininin gerçek stres testidir. Kolay çözüm sandığa sahte harf yazmak veya Kraken dokunaçları eklemektir; ikisi de yasaktır.
+Flavor’da ‘yazı’ geçtiği halde sahne-içi okunabilir yazı üretmeme kuralının stres testidir; Kraken’i göstermeden hazırlık tehdidi kurulmalıdır.
 
-### Sistem sınavı
+Harfsiz piktogram, kapalı sandık, metal/ahşap çizgisi ve ciddi tehditte ikincil şaka kullanmama.
 
-Flavor’da yazı geçtiği halde sahne-içi okunabilir yazı üretmeme, kapalı tehdit, metal/ahşap materyali ve Kraken’i göstermeden mekanik bağ.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Hazır bekleyen şiddet; kapalı sandık bile tehdit.
 - Amaç: Kraken'e karşı tek hasarı engelleyen aracın korkuyu yenmediğini, yalnız hazırlığı somutlaştırdığını göstermek.
-- Destedeki ritim görevi: Pilot olarak kapalı kütleden keskin uçlara geçen tehdit ritmini ve yazısız metin çevirisini sınar.
+- Ritim görevi: Pilot olarak kapalı kütleden keskin uçlara geçen tehdit ritmini ve yazısız metin çevirisini sınar.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-İnsan kimliği ikincil: iki farklı iş elinden yalnız parmak/önkol görünür. Sandık uzun ve alçak, tuzla kabarmış meşe; basit demir sürgü, içte ayrı yataklara bağlanmış dövme zıpkın uçları. Kapak üzerindeki işaret harf değil, acele fırçalanmış iri balık silueti/piktogramıdır; hiçbir alfabe çağrıştırmaz.
+Uzun alçak tuz-kabarmış meşe sandık, basit demir sürgü ve ayrı yataklara bağlanmış dövme zıpkın uçları. Kapak üzerindeki işaret yalnız kaba, harf çağrıştırmayan balık siluetidir; kuyruğu bilerek ters çevrilmez ve komik yüz verilmez. İnsan kimliği yalnız iki farklı iş elinden anlaşılır.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: İki farklı el sandığın sürgüsünü açar; yaratık görünmez, insan yüzü yok.
 
-Baş kasara altındaki silah/av gereci dolabında. Tek hareket: sürgü açılıp kapak bir el aralığı yükselirken ilk zıpkın ucu ışık rezervine girer. Kamera diz hizasında üç çeyrek; sandık koyu yatay kütle, uçlar yukarı keskin ritim. Sağ üst karanlık negatif alan exact kart metnine sakin yer bırakır.
+Ana biçim: Uzun dar zıpkın uçları sandığın içinden bir diş sırası gibi yükselir.
 
-Manifest taşıyıcı metaforu: Sandık üzerindeki acele fırçalanmış, harf içermeyen iri balık silueti; exact flavor'ın yazı fikrini yazısız çeviri.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Kapak açılırken bir zıpkın ucu ilk kez ışık alır.
+- Mekân: Baş kasaranın altında silah/av gereci dolabı; sallanan gemi.
+- Karta özgü metafor: Sandık üzerindeki acele fırçalanmış, harf içermeyen iri balık silueti; exact flavor'ın yazı fikrini yazısız çeviri.
 
-Meşede derin lif ve kapak aşınması; demirde sert kısa paralel; iç karanlık iki kat çapraz. Palet tar, ıslak meşe, pas; balık işareti donuk kemik/pas karışımı, sinyal rengi değildir. Parlak çelik veya glow yok.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Diz hizasında üç çeyrek yakın plan; odak sürgü ve ilk uç; sağ üstte kapalı karanlık negatif alanı.
 
-Balık piktogramının boya akıntısıyla kuyruğunun ters yöne bakması tek küçük şaka. Harf veya okunabilir kelimeye dönüşmeyecek.
+Demirde sert paralel, sandıkta yara çizgileri, karanlıkta sık çapraz; kurum siyahı, meşe, tek pas kırmızısı.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-HAR-AD-13 dokunaçları, hazine sandığı, kafatası, altın, canavar yüzü, modern patlayıcı zıpkın, KAPTAN kartının gemi/kuş dünyası yok. GUC-05 ile aynı el/diz/yama yakın planı kurulmaz.
+NONE
 
-Manifest çapraz riski: Kraken'i göstermek, GUC-05 ile aynı yama anı veya sandığı hazine sandığına çevirmek.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: Kraken'i göstermek, GUC-05 ile aynı yama anı veya sandığı hazine sandığına çevirmek.
+- Tekrarlanmayacaklar: Dokunaç, kafatası, altın, parlayan silah, yazı, aynı eller/kapak açısı başka kartta yok.
+- Dönem kontrolü: Dövme zıpkın uçları, kenevir bağ, basit sürgü; patlayıcı zıpkın ve modern mandal yok.
 
 ### Küçük baskı kabul kanıtı
 
-Thumbnail’de sandık, sürgü hareketi ve zıpkın dizisi üç aşamada okunmalı. Balık işareti yazı gibi algılanırsa sadeleştirilmeli. Siyah-beyaz baskıda uçlar iç karanlıktan ayrılmalı.
-
-Dönem ve dünya kontrolü: Dövme zıpkın uçları, kenevir bağ, basit sürgü; patlayıcı zıpkın ve modern mandal yok.
+Thumbnail’de sandık, açılan sürgü/kapak ve zıpkın uçları okunmalı. Balık izi harf veya logo gibi algılanırsa yeniden sadeleştirilmeli; içeride Kraken/dokunaç bulunmamalı.
 
 ## GUC-27 — Kaderi Yeniden Yaz (Güç 2/2)
 
@@ -273,53 +283,55 @@ Exact copy — değiştirilmez:
 - Etki: Etki uygulanmadan önce önceki yere dön ve başka yasal Yakın Ufka git. İlk karta gerçekten girildiyse kart açık ve ziyaret edilmiş kalır; olayı yeniden çalışmaz. İlk kart Geçilmez Kayalıksa Gemi o kareye hiç girmiş/ziyaret etmiş sayılmaz; Geçilmez açık engel kalır ve başka yasal Yakın Ufka yönlenilebilir. Ada girişi İskorbütü kalıcı temizler. Kullanıldıktan sonra oyun dışına çıkar.
 - Flavor: Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Destenin en karmaşık Güç metni; geri dönüş, başka yasal Yakın Ufuk, ziyaret izinin kalması, Geçilmez istisnası ve Ada etkisinin kalıcılığı gibi çok katmanları var. Brief bunların hepsini literal ikonlarla doldurmak yerine tek manevra ve kalan iz üzerinden özetlemelidir.
+Destenin en uzun ve istisnalı Güç metnini öğretici ikon, zaman büyüsü veya iki gemi kopyası olmadan tek manevra ve kalan iz üzerinden özetler.
 
-### Sistem sınavı
+Tek görsel fiil, eski kıç izinin kalması, başka yasal açıklığa dönüş ve mekanik karmaşıklığın illüstrasyonu infografiğe çevirmemesi.
 
-Uzun ve istisnalı mekaniği tek yazısız sahnede; zaman büyüsü, harita yazısı veya öğretici ikon olmadan anlatmak.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Geri dönmenin ağırlığı; zafer değil bedelli rota düzeltmesi.
 - Amaç: Uzun exact mekaniği, zaman yolculuğu yapmadan; girilmiş rotanın ıslak izi kalırken geminin başka yasal Yakın Ufka dönmesini tek fiziksel seyir manevrasıyla anlatmak.
-- Destedeki ritim görevi: Pilot olarak karmaşık mekanik, iki zaman izi, kaya/ada istisnası ve okunurluk sınavı; destenin en geniş manevra kompozisyonu.
+- Ritim görevi: Pilot olarak karmaşık mekanik, iki zaman izi, kaya/ada istisnası ve okunurluk sınavı; destenin en geniş manevra kompozisyonu.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-Ana özne gemi manevrası; insan yüzleri yok. Üç ayrı görev eli küçük ve farklı: dümen komutu, iskota boşaltma, ufuk işareti. Bir yanda geçilmez kaya kütlesi, öte yanda gerçek açık su/ada silueti ihtimali; seçilen hedef açıkça ‘yasal’ bir su koridorudur. İlk rota üzerinde yaş kıç izi kalır.
+Ana özne gemi manevrasıdır. Bir yanda fiziksel geçilmez kaya, öte yanda yasal açık su; gemi yalnız bir kez görünür. Eski ve yeni kıç izi farklı tarama yoğunluğuyla kesişir. Üç görev eli küçük ölçek olabilir fakat ayrı bağımsız hareket yapmaz; komut bezleri veya yazılı harita yok.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: Kaptan değil, farklı iki vardiyadan üç el: dümen komutu, iskota ve seyir işareti; yüz yok.
 
-Tek hareket: ön yelken boşaltılır ve gemi kendi önceki kıç izini çaprazlayarak başka açıklığa döner. Kamera kıçtan yüksek, kuşbakışı değil; kesişen iki su izi ana X fakat mekanik ikon gibi kusursuz değildir. İlk gidilen bölge fiziksel olarak arkada görünür kalır; gemi zaman içinde iki kez çizilmez.
+Ana biçim: Geminin kıç izi bir engel önünde kıvrılıp geri kesilir; iki ayrı ufuk açıklığı dengeli biçim.
 
-Manifest taşıyıcı metaforu: Eski kıç izinin silinmemesi, ziyaret edilmiş kartın açık kalmasının yazısız metaforu.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Gemi kendi yaş kıç izini çaprazlayarak başka açıklığa döner.
+- Mekân: Açık denizde gerçek tramola alanı; bir yanda geçilmez kaya, öte yanda yasal açıklık.
+- Karta özgü metafor: Eski kıç izinin silinmemesi, ziyaret edilmiş kartın açık kalmasının yazısız metaforu.
 
-Suyun eski/yeni izi iki ayrı tarama yönü ve yoğunluğuyla; gemi yoğun koyu gravür. Kaya sert, açık koridor seyrek. Palet indigo, tuz grisi, tar; tek pas kırmızısı komut bezinin küçük düğümünde. Sihirli ışık/renk yok.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Kıçtan yüksek ama kuşbakışı olmayan bakış; odak kesişen iki iz; üstte iki ufuk arasında boş gök negatif alanı.
 
-Eski izde kalan boş bir fıçı geminin manevrasını takip etmez; küçük ve tek. Hareketi açıklamıyorsa çıkarılır.
+Suda iki yönlü uzun tarama, gemide koyu gravür; indigo, tuz grisi, pas kırmızısı yalnız komut bezi düğümünde.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-Zaman portalı, parlayan ok, okunabilir harita, iki gemi kopyası, kart kareleri, kum saati, yıldız, hayvan, HAR-KY-06 ile aynı dar geçit, HAR-AD-09 spiral girdap yok.
+NONE
 
-Manifest çapraz riski: Harita rota kartlarına benzemek, büyülü ‘kader’ efekti veya anlaşılmaz çok olay yüklemek.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: Harita rota kartlarına benzemek, büyülü ‘kader’ efekti veya anlaşılmaz çok olay yüklemek.
+- Tekrarlanmayacaklar: Parlayan zaman girdabı, yazılı harita, aynı gemi profili HAR kartlarında, hayvan, yüz, mucize yok.
+- Dönem kontrolü: 1721 yelken manevrası ve arma davranışı gerçekçi; dümen su izi fiziksel, doğaüstü değil.
 
 ### Küçük baskı kabul kanıtı
 
-Üç saniyelik siyah-beyaz testte ‘geldiği izi bırakıp başka yöne dönüyor’ cümlesi söylenebilmeli. Bunun ötesindeki istisnaları kart exact metni taşır; illüstrasyon öğretici diyagrama dönüşmemeli.
-
-Dönem ve dünya kontrolü: 1721 yelken manevrası ve arma davranışı gerçekçi; dümen su izi fiziksel, doğaüstü değil.
+Siyah-beyaz üç saniye testinde ‘geldiği izi bırakıp başka açıklığa döndü’ okunmalı. Boş fıçı, hayvan, zaman portalı, ok veya kart karesi eklenmemeli.
 
 ## ERZ-01 — Çürümüş Erzak (Çürümüş Erzak 1/1)
 
-Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); identity lookup only via e91581 technical map, rejected art excluded
+Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); rejected visual art excluded
 
 Exact copy — değiştirilmez:
 
@@ -327,106 +339,114 @@ Exact copy — değiştirilmez:
 - Etki: Kaptandaysan İskorbüt etkinleşmez. Kaptan değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonra gerçek bir Güç çek.
 - Flavor: Peksimet hâlâ yenebilir. Onu söyleyen kişi yenmedi.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Bu tekil kart Güç arkasını paylaşır fakat ön yüzde destenin yabancı ağır duraklarından biridir. Çürümeyi komik fare/böcek sahnesi veya modern bozuk gıda görüntüsü olmadan kurmak zorundadır.
+Güç arkasını paylaşan bu tekil ön yüz, insansız materyal dramaturjisi ve ciddi sağlık baskısını sınar.
 
-### Sistem sınavı
+Kontrollü tiksinti, farklı gıda/ahşap dokuları, Ada ihtiyacını ikonlaştırmadan sezdirme ve ikincil şakanın tamamen kaldırılması.
 
-İnsansız materyal dramaturjisi, kontrollü tiksinti, koku olmadan bedensel risk ve Ada zorunluluğunu ikon kullanmadan sezdirme.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Bedensel tedirginlik; yiyecek hâlâ ‘resmî olarak’ yenebilir.
 - Amaç: İskorbüt zorunluluğunu komedi propuna çevirmeden, denizde çürümenin seyir kararını değiştirecek kadar sistemik olduğunu anlatmak.
-- Destedeki ritim görevi: Pilot olarak materyal dokusu, kokusuz tiksinti, mekanik rota zorunluluğu ve insansız anlatı sınavı; güç arka ailesinde yabancı ağır durak.
+- Ritim görevi: Pilot olarak materyal dokusu, kokusuz tiksinti, mekanik rota zorunluluğu ve insansız anlatı sınavı; güç arka ailesinde yabancı ağır durak.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-İnsan yok. Tuz eti lif lif ama kanlı değil; peksimet çökmüş ve küf halkaları yerel; soğan filizlenmiş; fıçı tıpasından sızıntı; raf altındaki hava payı dar. Tek kurumuş limon kabuğu, eksik tazeliği ve Ada ikmal ihtiyacını doğrudan ikonlaştırmadan taşır.
+İnsan, fare, böcek veya komik yüz yok. Tuz eti, çökmüş peksimet, filizlenmiş soğan, sızan fıçı ve kurumuş tek limon kabuğu ayrı malzeme çizgileriyle. Yarım diş izi kaldırılır. Çürüme yeni hastalık değil, uzun seferde büyüyen eksikliktir.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: İnsan figürü yok; farklı bozulma evresindeki gerçek gemi erzakları özne.
 
-Su hattına yakın karanlık erzak ambarı. Tek hareket: fıçı tıpasından düşen ağır damla ilk kez peksimet kümesine ulaşır. Kamera raf hizasında çok alçak; çürüme kütlesi alt/orta, üst solda karanlık raf negatif alanı. Perspektif gerçek ambar derinliğini göstermeli, natürmort masası gibi olmamalı.
+Ana biçim: Çökmüş peksimet, lekeli tuz et, filizlenmiş soğan ve sızan fıçı tek alçak çürüme kütlesi.
 
-Manifest taşıyıcı metaforu: Taze sayılabilecek tek limon kabuğunun kurumuş kıvrımı, Ada zorunluluğunun eksikliği metaforu.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Fıçı tıpasından düşen damla, peksimet kümesine ilk kez ulaşır.
+- Mekân: Su hattına yakın karanlık erzak ambarı; havalandırması yetersiz, gerçek raf ve sintine payı.
+- Karta özgü metafor: Taze sayılabilecek tek limon kabuğunun kurumuş kıvrımı, Ada zorunluluğunun eksikliği metaforu.
 
-Her malzeme ayrı: küf düzensiz halka/nokta, tuz eti lif, ahşap damar, bez gevşek tarama. Tar, küf zeytini, pas, kirli kemik; parlak yeşil veya fotoğrafik mantar yok. Islaklık koyu değer + az kâğıt rezervi.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Raf hizasında çok alçak yakın plan; odak damlanın temas noktası; üst solda karanlık raf boşluğu metin alanı.
 
-Bir peksimette yarım diş izi; onu yenebilir bulan kişinin devam etmediğini ima eder. Fare, böcek, kusma veya komik yüz yok.
+Küfte yoğun nokta değil malzemeye özgü: küfte düzensiz halka, ette lif, tahtada damar; tar, küf zeytini, pas, kirli kemik.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-GUC-23’ün tek peksimet yakın planı, GUC-22 kaynak çatışması, modern konserve/ambalaj, etiket, iğrençlik pornosu, maskot hayvan yok.
+NONE
 
-Manifest çapraz riski: GUC-23 peksimet, ada ikmal kartları ve komik yemek sahneleriyle karışma.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: GUC-23 peksimet, ada ikmal kartları ve komik yemek sahneleriyle karışma.
+- Tekrarlanmayacaklar: Aynı peksimet yakın planı, yüz, kusma, fare, böcek sürüsü, etiket/yazı, şirin çürüme yok.
+- Dönem kontrolü: 1721 tuz et, peksimet, soğan, ahşap fıçı ve havalandırmasız ambar; modern konserve/ambalaj yok.
 
 ### Küçük baskı kabul kanıtı
 
-Küçük baskıda önce ‘bozuk erzak’, sonra ‘su onu daha da bozuyor’, en son kurumuş kabuk okunmalı. Yeşil renk kapatıldığında da çürüme çizgi/material farkıyla anlaşılmalı.
-
-Dönem ve dünya kontrolü: 1721 tuz et, peksimet, soğan, ahşap fıçı ve havalandırmasız ambar; modern konserve/ambalaj yok.
+Yeşil renk kapatıldığında da çürüme lif, küf halkası, nem ve form çökmesiyle anlaşılmalı. GUC-23’ün peksimet şakasına veya modern bozuk gıda ambalajına benzememeli.
 
 ## SAD-H-03 — Hain (Sadakat 1/1)
 
-Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); identity lookup only via e91581 technical map, rejected art excluded
+Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); rejected visual art excluded
 
 Exact copy — değiştirilmez:
 
 - Ad: Hain
 - Dürtü: Bir masumu gereğinden fazla savun.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Sadakat ailesinin en zor sorusu, Hain’i görünür kılarken kartı karikatür kötü adama çevirmemektir. ‘Masumu gereğinden fazla savun’ hem iyi niyet gibi okunmalı hem de bedensel aşırılıkla huzursuz etmelidir.
+Hain dürtüsünü şeytan kodu, ortak örgüt işareti veya arka yüz sızıntısı olmadan yalnız bedensel aşırılıkla anlatır.
 
-### Sistem sınavı
+Tek kol hareketi, etik belirsizlik, yüz/beden çeşitliliği, CAN-03 ve CAN-04 çözmeme kapısı ve sıfır görsel şaka.
 
-Hain dürtüsünü şeytan kodu veya arka yüz sızıntısı olmadan yalnız beden diliyle; çok figürlü ama yüz tekrar etmeyen etik sahne.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Koruma boğucu; masumiyet görünmez oluyor.
 - Amaç: Bir masumu gereğinden fazla savunma dürtüsünü, fiziksel olarak önüne yayılan kol ve kapanan görüş alanıyla anlatmak.
-- Destedeki ritim görevi: Pilot olarak beden diliyle etik aşırılık, yüz çeşitliliği ve spoiler vermeden Hain dürtüsü sınanır.
+- Ritim görevi: Pilot olarak beden diliyle etik aşırılık, yüz çeşitliliği ve spoiler vermeden Hain dürtüsü sınanır.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-Savunucu 42–50 yaşında iri ama şişman karikatür olmayan, temiz tıraşlı erkek; geniş köprü burun, dar göz, güçlü önkol. Masum 60–70 yaşında ince, düz omuzlu kadın; küçük çene, yüksek alın. Çevrede yalnız üç farklı işaret eden el; hiçbir el/yüz diğer pilotlardan kopyalanmaz.
+Savunucu iri fakat kahraman olmayan, temiz yüzlü orta yaşlı erkek; masum ince yaşlı kadın. Tek fiil, savunucunun kolunu masumun önünde gereğinden geniş açmasıdır. Çevredeki eller durum olarak kalır, itme eylemi yok. Yakındaki kapalı yük ambarı tiryak görevinin stakes’ini taşır; siyah balmumu, örgüt amblemi, cure/poison rengi veya moral gölge yok.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: İri gövdeli, temiz tıraşlı orta yaşlı savunucu; arkasında ince yaşlı masum kadın; çevrede yalnız işaret eden eller.
 
-Gündüz ana güvertede sefer divanı. Tek hareket: savunucu bir suçlayıcı eli nazik ama gereğinden sert biçimde geri iterken diğer kolunu masumun önüne genişçe açar. Kamera masumun göz hizasına yakın; kol yatay perde, masumun tek gözü odağa yakın, yelken üstte negatif alan.
+Ana biçim: Savunucunun geniş kolu masumu örten yatay bir perde; masumun yüzü kısmen görünür ve huzursuz.
 
-Manifest taşıyıcı metaforu: Aşırı geniş kol gölgesi, yardımın şüphe üretmesi metaforu.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Savunucu kolunu masumun önünde gereğinden geniş açar.
+- Mekân: Ana güverte gündüz sefer divanı; direk dibi.
+- Karta özgü metafor: Aşırı geniş kol gölgesi, yardımın şüphe üretmesi metaforu.
 
-Savunucuda daha yoğun tarama, masum yüzde seyrek açık değer; ahlak rengi kodlanmaz. Indigo/kemik, yalnız küçük pas kırmızısı fular düğümü. Koyu gölgeyi ‘kötülük’ halesi gibi yüzün yarısına yapıştırma yok.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Masumun göz hizasından hafif geniş açı; odak savunucu kolunun sınırı ve kadının tek gözü; üstte yelken negatif alanı.
 
-Masum kadın savunucunun kolunu aşağı indirmeye çalışır; tek ve sessiz terslik. Şaşkın kalabalık yüzü veya komik tokat yok.
+Kolda yoğun çapraz, masum yüzde seyrek; indigo, kemik, pas kırmızısı küçük fular düğümünde.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-Kılıç/yumruk, sinsi sırıtış, siyah pelerin, Hain simgesi, aynı iri beden KAR-03/16, GUC-17 parmak üçgeni, konuşma balonu, hayvan yok. BACK_LOYALTY’de hiçbir Tayfa/Hain ayrımı olmayacak.
+NONE
 
-Manifest çapraz riski: Kahraman koruma pozu, GUC-17 işaret eden eller ve karakter yüzlerinin tekrarı.
+### v2.7 anlatısal omurga uygulaması
+
+The over-defended innocent stands near the sealed cargo-hatch area, but neither figure receives a black-wax mark, cure/poison color or moral shadow. The act remains ambiguous.
+
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: Kahraman koruma pozu, GUC-17 işaret eden eller ve karakter yüzlerinin tekrarı.
+- Tekrarlanmayacaklar: Kılıç, yumruk kavgası, kötü sırıtış, aynı iri beden, hayvan, konuşma balonu yok.
+- Dönem kontrolü: Döneme uygun güverte divanı ve iş giysileri; teatral mahkeme kürsüsü yok.
 
 ### Küçük baskı kabul kanıtı
 
-Kart adını görmeden izleyici ‘bu kişi birini fazla koruyor’ demeli, ‘bu kesin kötü adam’ dememeli. Masumun iradesi ve rahatsızlığı tek göz/el ilişkisiyle okunmalı.
-
-Dönem ve dünya kontrolü: Döneme uygun güverte divanı ve iş giysileri; teatral mahkeme kürsüsü yok.
+İzleyici ‘fazla savunuyor’ demeli, ‘bu kesin Hain ve o kesin masum’ dememeli. BACK_LOYALTY veya ortak siyah işaret üzerinden hiçbir bilgi sızmamalı.
 
 ## HAR-AD-08 — İsimsiz Bir Düdük (Açık Deniz 1/1)
 
-Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); identity lookup only via e91581 technical map, rejected art excluded
+Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); rejected visual art excluded
 
 Exact copy — değiştirilmez:
 
@@ -434,53 +454,55 @@ Exact copy — değiştirilmez:
 - Etki: Bu gece Sis kuralı uygulanır.
 - Flavor: Ses sancaktan geldi. Yahut herkes öyle dedi.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-İsimsiz Düdük illüstratörü kolayca hayalet, nota, görünür düdük veya konuşma balonuna iter. Pilot, FOULWAKE’ın açıklamadan gerilim kurabilmesini ölçer.
+Görünmeyen sesi hayalet, nota, görünür düdük veya konuşma balonu olmadan kurabilmek FOULWAKE’ın açıklamadan gerilim üretme sınavıdır.
 
-### Sistem sınavı
+Sis negatif alanı, üç farklı baş yönü, baskıda çalışan ince halat titreşimi ve tehdit kartında şaka yokluğu.
 
-Görünmeyen ses, sis, üç farklı baş yönü, yazı/ses efekti olmadan belirsizlik ve kare kartta negatif alan.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Kaynağı olmayan ses; herkes aynı anda dinliyor.
 - Amaç: Sis içindeki düdüğü bir hayalet olayı değil, yön tayin edilemeyen gerçek sesin gemide yarattığı asimetri olarak anlatmak.
-- Destedeki ritim görevi: Pilot olarak görünmeyen ses, üç bakış yönü ve metinsiz yön belirsizliğini sınar; sis dizisinin dramatik zirvesi.
+- Ritim görevi: Pilot olarak görünmeyen ses, üç bakış yönü ve metinsiz yön belirsizliğini sınar; sis dizisinin dramatik zirvesi.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-Üç nöbetçi yalnız koyu siluet ve omuz oranlarıyla ayrılır: eğik omuzlu yaşlı kadın, kısa boyunlu genç erkek, uzun ince androjeni yetişkin. Yüz ayrıntısı minimum; hiçbiri başka pilot karakter modeli değildir. Düdüğün sahibi görünmez, düdük nesnesi gösterilmez.
+Üç nöbetçi ayrı omuz/boyun siluetiyle; görünür düdük sahibi yok. En yakın nöbetçi yalnız başını sancaktan iskeleye çevirir; diğer ikisi poz/state olarak zıt yöne dönüktür. Cep kontrolü gibi ikincil şaka kaldırılır.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: Üç farklı siluetli nöbetçi, biri eğik omuzlu yaşlı kadın; yüzler görünmez, düdük sahibi görünmez.
 
-Yoğun sisli gece kıçüstü. Tek hareket: en yakın nöbetçi başını sancaktan iskeleye çevirirken diğer iki nöbetçi zıt yönlerde donar. Germe halatındaki çok küçük çift kontur titreşimi sesin tek fiziksel kanıtıdır. Kamera omuz hizasında geniş; boş sis merkez, figürler kenarlarda.
+Ana biçim: Üç baş farklı yöne dönmüş; gevşek halatlarda ses dalgası yerine tek titreşim çizgisi.
 
-Manifest taşıyıcı metaforu: Titreşen ince germe halatı, görünmeyen sesin tek fiziksel izi; yazı/nota yok.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: En yakın nöbetçi başını sancaktan iskeleye çevirirken diğer ikisi zıt yönlere donar.
+- Mekân: Yoğun sisli gece, kıçüstü nöbet noktası.
+- Karta özgü metafor: Titreşen ince germe halatı, görünmeyen sesin tek fiziksel izi; yazı/nota yok.
 
-Sis kâğıt rezervi; siluetler indigo/kurum ama iç ayrımları birkaç yön çizgisiyle. Halat ince, baskıda kaybolmayacak kadar kalın. Küçük pas tokası tek sıcak vurgu. Gradient blur, halo veya ses dalgası ikonu yok.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+İnsan omuzları hizasında geniş yatay; odak titreşen halat; merkezde boş sis negatif alanı.
 
-En yakın nöbetçinin eli kendi boş cebine gider; düdüğün onda olup olmadığını kontrol eder. Yüz komedisi yok; hareket ana dinleme jestine rakip olmayacak.
+Siluetlerde yoğun indigo, sis boş, halatta ince çift çizgi; küçük pas tokası.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-Hayalet yüz, görünür düdük, nota, yazı, fener, aynı sis kompozisyonu AD-04/05/06/07, martı, beceriksiz nöbetçi yok.
+NONE
 
-Manifest çapraz riski: Diğer sis kartları ve görünmeyen tehdit klişesi; pilotta aşırı açıklama riski.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: Diğer sis kartları ve görünmeyen tehdit klişesi; pilotta aşırı açıklama riski.
+- Tekrarlanmayacaklar: Hayalet, müzik notası, konuşma balonu, görünür düdük, aynı kişiler, fener/hayvan yok.
+- Dönem kontrolü: 1721 gemi düdüğü olası basit kemik/metal araçtır fakat kadrajda görünmez; modern siren yok.
 
 ### Küçük baskı kabul kanıtı
 
-Kare thumbnail’de üç farklı yön, boş merkez ve titreşen halat okunmalı. Titreşim çizgisi çıkarıldığında sahne hâlâ ‘kaynağı belirsiz ses’ hissi taşımalı; çizgi yalnız doğrulayıcıdır.
-
-Dönem ve dünya kontrolü: 1721 gemi düdüğü olası basit kemik/metal araçtır fakat kadrajda görünmez; modern siren yok.
+Kare thumbnail’de boş sis merkezi ve üç dinleme yönü anlaşılmalı. Titreşim çizgisi kaybolsa bile sahne ‘kaynağı bilinmeyen ses’ hissini korumalı.
 
 ## HAR-KY-06 — İğne Deliğinden Sefer (Kayalık 1/1)
 
-Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); identity lookup only via e91581 technical map, rejected art excluded
+Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); rejected visual art excluded
 
 Exact copy — değiştirilmez:
 
@@ -488,53 +510,55 @@ Exact copy — değiştirilmez:
 - Etki: Gemi 1 Gövde kaybeder; sonra isterse bir ek normal hareket yapar.
 - Flavor: Kestirme kısa sürdü. Tamiri sürmedi.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Bu pilot, kaya kartlarının yalnız büyük taş portresi olmamasını ve mekanik sonucu öğretici ikon olmadan taşımasını sınar. Hasar ile devam olasılığı aynı ana hareketin iki fiziksel izi olmalıdır.
+Hasar ve devam seçeneğini iki ayrı eylemle değil, dar geçitten çıkışın geride bıraktığı fiziksel kıymık/izle aynı ana harekette birleştirir.
 
-### Sistem sınavı
+Kare kartta gerçekçi gemi-geçit ölçüsü, jeoloji, tek hareket ve ciddi hasarda şaka olmaması.
 
-Kare kartta dar mekân, jeoloji, hız, 1 Gövde kaybı ve isteğe bağlı ek hareketi tek geçişte birleştirme.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Nefes tutuluyor; geçiş bir çizik pahasına.
 - Amaç: Hasar + isteğe bağlı ek hareketi aynı karede iki eyleme bölmeden, geminin iğne deliği kadar dar doğal açıklıktan sıkışarak çıkış ışığına ivmelenmesiyle anlatmak.
-- Destedeki ritim görevi: Pilot olarak dar kadrajda hız, hasar, devam seçeneği ve çıkış negatif alanını aynı anda sınar.
+- Ritim görevi: Pilot olarak dar kadrajda hız, hasar, devam seçeneği ve çıkış negatif alanını aynı anda sınar.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-İki kaya iğnesi farklı jeoloji ve konturla; aralık gerçek gemi genişliğine yalnız küçültülmüş yelkenle izin verir. Gemi önceki Harita kartlarındaki genel siluetin kopyası değil, bu dar geçide uygun üst arma düzeniyle. İnsanlar yalnız ölçek noktaları; yüz yok.
+İki kaya iğnesi farklı kırık yapıda; gemi yelken küçültmüş ve fiziksel olarak aralığa sığar. Tek fiil açık suya sıyrılmadır. Bordadaki yeni soyulma ve gerideki kıymık hasarın sonucu olarak statik izdir. Geçidi geniş gösteren gevşek halat şakası kaldırılır.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: Küçük gemi ve iki yüksek kaya iğnesi olay öznesi; güvertede insanlar yalnız ölçek.
 
-Tek hareket: gemi bir bordasını kayaya sürter, tek kaplama kıymığını geride bırakırken pruvası açık su üçgenine çıkar. Kamera geçidin içinden, pruva yönüne alçak. Koyu iki kaya yan çene; açık çıkış üst/orta; temas noktası alt üçte odak.
+Ana biçim: İki kaya koyu dikey çene, aradaki gemi ince kama; çıkışta geniş açık su üçgeni.
 
-Manifest taşıyıcı metaforu: Geride kalan ahşap kıymık izi hasarı, öndeki açılan wake ek hareket olasılığını yazısız birleştirir.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Gemi dar kaya aralığından açık suya sıyrılır.
+- Mekân: Gerçek deniz kemeri değil, iki kaya iğnesi arasındaki dar akıntılı boğaz.
+- Karta özgü metafor: Geride kalan ahşap kıymık izi hasarı, öndeki açılan wake ek hareket olasılığını yazısız birleştirir.
 
-Kayada dik çatlak + sert çapraz, suda geçit akıntısı yönünde uzun çizgi, gemide yoğun gravür. Kurum, indigo, meşe; kıymıkta açık kemik. Çıkış glow değil taramanın azalması.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Kayalığın içinden pruva yönüne alçak bakış; odak borda-temas ve ilerideki açık üçgen; gök/su negatif alan.
 
-Yan kayadaki eski gevşek halat, geçidi olduğundan geniş göstermeye çalışır; yazı/işaret yok. Odağı bozarsa çıkarılır.
+Kayada sert dik çapraz, su yönünde uzun çizgi, gemide sık gravür; kurum, indigo, meşe.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-KY-10’un iki taraflı simetrik sıkışması, KY-07’nin yatay gizli kanalı, GUC-27’nin eski/yeni wake X’i, mağara kemeri, yüz/hayvan, zafer ışığı yok.
+NONE
 
-Manifest çapraz riski: KY-07 kestirme, KY-10 iki taraf ve GUC-27 pilotundaki rota manevrası.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: KY-07 kestirme, KY-10 iki taraf ve GUC-27 pilotundaki rota manevrası.
+- Tekrarlanmayacaklar: Aynı V kanal, iki taraftan aynı anda sürtünme, zaman izi, yüz/hayvan, zafer ışığı yok.
+- Dönem kontrolü: Kaya aralığı, akıntı ve yelkenlerin küçültülmesi gerçekçi; gemi fiziksel olarak açıklığa sığar.
 
 ### Küçük baskı kabul kanıtı
 
-Thumbnail’de ‘sürtündü ama çıktı ve devam edebilir’ aynı anda okunmalı. Geminin açıklığa fiziksel olarak sığdığı ölçek çizim aşamasında üst görünüş kaba ölçüyle doğrulanmalı; finalde diyagram gösterilmez.
-
-Dönem ve dünya kontrolü: Kaya aralığı, akıntı ve yelkenlerin küçültülmesi gerçekçi; gemi fiziksel olarak açıklığa sığar.
+Thumbnail’de ‘hasar alarak çıktı’ okunmalı; KY-10’un iki taraflı simetrik kaybına veya GUC-27’nin kesişen zaman izine benzememeli.
 
 ## HAR-AA-06 — Gümrükçünün Tek Yaşadığı Ada (Ada 1/1)
 
-Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); identity lookup only via e91581 technical map, rejected art excluded
+Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); rejected visual art excluded
 
 Exact copy — değiştirilmez:
 
@@ -542,53 +566,55 @@ Exact copy — değiştirilmez:
 - Etki: Gemideki herkes en fazla bir Güç tutar; fazlasını kapalı atar.
 - Flavor: Gümrükçü tek kişiydi. Yetkisi kalabalıktı.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Bu kart aynı insan modelini kostümle çoğaltma yasağının en doğrudan stres testidir. Ayrıca gümrüğü form, damga yazısı veya modern pasaport bankosu kullanmadan anlaşılır kılmalıdır.
+Kalabalık insan çeşitliliği, dönem bürokrasisi ve iki nesneden birini kapalı atma mekaniği için en sert üretim sınavıdır.
 
-### Sistem sınavı
+Kopyalanmamış altı beden, tek ıskarta hareketi, kapalı atma, yazısız usul ve yalnız karta özgü tek gerekçeli şaka.
 
-Kalabalıkta benzersiz yüz/beden üretimi, dönem bürokrasisi, tek memur–çok yetki karşıtlığı, yazısız mekanik indirgeme.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Küçük makamın büyük baskısı; sıra daralıyor.
 - Amaç: Herkesin en fazla bir Güç tutmasını, tek gümrükçünün sınırlı bedeni ile uzun denetim düzeninin görsel karşıtlığıyla anlatmak.
-- Destedeki ritim görevi: Pilot olarak kalabalıkta yüz/beden çeşitliliği, tek hareket, mekanik indirgeme ve dönem bürokrasisi sınanır.
+- Ritim görevi: Pilot olarak kalabalıkta yüz/beden çeşitliliği, tek hareket, mekanik indirgeme ve dönem bürokrasisi sınanır.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-Gümrükçü 50’lerinde, ince, alopesi nedeniyle yüz kılsız; uzun kulak, kısa geniş burun, düz gövde, küçük nasırlı eller. Kuyrukta en az altı farklı beden silueti: uzun yaşlı kadın, kısa geniş genç erkek, ince koyu tenli orta yaşlı kadın, bir omzu düşük yaşlı erkek, yuvarlak gövdeli kısa kadın, uzun boyunlu yetişkin. Yüzler tekrar etmez; herkes tam ayrıntılı değil.
+Gümrükçü 50’lerinde, ince, yüz kılsız; uzun kulak, kısa geniş burun, düz gövde. Kuyrukta en az altı ayrı beden/siluet; ortak yüz temelinin kostüm varyasyonu yok. Gümrükçü yalnız fazla nesneyi kapalı ıskarta sepetine indirir; diğer nesne masada sahibine ait durağan durumdur. ‘İade’ alternatifi yoktur.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: İnce, ellili yaşlarda, alopesi nedeniyle sakal/bıyıksız yalnız gümrükçü; farklı ellerden oluşan kuyruk, aynı model yok.
 
-Rüzgârlı çıplak adada tek odalı kulübe önündeki dar masa. Tek hareket: gümrükçü bir kişinin iki nesnesinden birini geri iterken diğerini kapalı sepete indirir. Masanın uzun perspektifinde her sonraki kişide yalnız bir nesne görünür. Kamera masanın ucundan, kaçış noktası açık denize.
+Ana biçim: Tek küçük dik figür, önünde her kişiden yalnız bir nesne kalan uzun dar masa; fazla nesneler kapalı sepetlere gider.
 
-Manifest taşıyıcı metaforu: Masanın bir kişilik genişliği tüm kalabalığı ritmik olarak tek nesneye indirir; yetkinin kalabalığı.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Gümrükçü fazla nesneyi kapalı ıskarta sepetine indirir.
+- Mekân: Rüzgârlı çıplak adada tek odalı gümrük kulübesi ve dar iskele; gerçek kıyı.
+- Karta özgü metafor: Masanın bir kişilik genişliği tüm kalabalığı ritmik olarak tek nesneye indirir; yetkinin kalabalığı.
 
-Ön odakta yüz/eller daha belirgin, kuyruk ilerledikçe çizgi seyrelir; kopyala-yapıştır siluet yok. Taş grisi, meşe, indigo; küçük mühür kırmızısı yalnız balmumu parçasında, yazısız. Modern düzgün üniforma yok.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Masanın ucundan uzun tek kaçışlı perspektif; odak gümrükçünün seçen eli; arka açık deniz negatif alan.
 
-Gümrükçünün kendi tarafındaki iki kişisel nesneden birini de aynı kapalı sepete koyması; kural kendisine işler. Karikatür huysuz memur yüzü yok.
+Masa/giyside kontrollü paralel, yüzlerde çeşitlilik ama seyrek; taş grisi, meşe, indigo, küçük mühür kırmızısı; yazı yok.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-Okunabilir form, damga, liman adı, masa etiketi, bıyıklı memur klişesi, aynı altı yüzün kostüm varyasyonu, GUC-04 arama üstten planı, hayvan yok.
+KEEP — Gümrükçünün kendi masasındaki fazla kişisel nesne çoktan aynı kapalı ıskarta sepetindedir. GEREKÇE: Yetkinin kendisine de uygulandığını yazısız gösterir; kalabalığı veya memuru karikatürleştirmez.
 
-Manifest çapraz riski: GUC-04 arama, GUC-20 sayım ve bürokrasi komedisi; aynı yüz çoğaltma riski.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: GUC-04 arama, GUC-20 sayım ve bürokrasi komedisi; aynı yüz çoğaltma riski.
+- Tekrarlanmayacaklar: Okunabilir form/etiket, üniforma logosu, kalabalık aynı yüz, bıyıklı memur klişesi, tabela, hayvan yok.
+- Dönem kontrolü: 1721 kıyı gümrüğü masa, balmumu/mühür araçları ve sepetlerle; modern pasaport bankosu/damga yazısı yok.
 
 ### Küçük baskı kabul kanıtı
 
-Siyah siluet testinde altı beden ayrılmalı. Küçük baskıda mekanik ‘iki nesneden biri kalır’ olarak okunmalı; sepetin içi veya atılan exact Güç görünmemeli.
-
-Dönem ve dünya kontrolü: 1721 kıyı gümrüğü masa, balmumu/mühür araçları ve sepetlerle; modern pasaport bankosu/damga yazısı yok.
+Siyah siluet testinde altı beden ayrılmalı. Kapalı sepetin içi görünmemeli. Korunan şaka yalnız gümrükçünün kendi fazla nesnesinin önceden aynı sepete konmuş olmasıdır; başka komik memur jesti yok.
 
 ## HAR-FN-04 — Geceleri Parlayan Yalan (Deniz Feneri 1/1)
 
-Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); identity lookup only via e91581 technical map, rejected art excluded
+Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); rejected visual art excluded
 
 Exact copy — değiştirilmez:
 
@@ -596,53 +622,55 @@ Exact copy — değiştirilmez:
 - Etki: Bir sonraki rota mümkünse komşu başka bir yasal Yakın Ufka rastgele sapar.
 - Flavor: Işık doğruydu. Yer yanlış.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Fener ailesinin en riskli kartı, kolayca doğaüstü sahte kuleye veya parlak dijital ışına dönüşür. Pilot, yanlış yönü fiziksel yansıma ve kompozisyonla kurmalıdır.
+Yanlış yönü gelişmiş optik, mika levha ya da metal yüzey yansımasına veya hayalet kuleye başvurmadan 1721’e uygun fiziksel işaret ateşiyle kurar.
 
-### Sistem sınavı
+Tek dönemsel ışık kaynağı, yanlış burun, karanlık değer düzeni, sabotaj/hata belirsizliği ve sıfır şaka.
 
-Gece değer düzeni, fiziksel doğru ışık/yanlış yer, rastgele komşu sapma, dönemsel optik ve glow yasağı.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Doğru ışık, yanlış kıyı; güven sarsılıyor.
-- Amaç: Bir sonraki rotanın komşu yasal Ufka sapmasını büyülü sahte fener değil, gerçek kule ışığının kıyıdaki cilalı levha/ıslak kayadan ikinci kez yansıyıp yanlış konumda görünmesiyle anlatmak.
-- Destedeki ritim görevi: Pilot olarak gece değerleri, iki ışık kaynağı, nedensel yanlış yön ve yazısız mekanik okunurluğunu sınar; fener dizisini kuşkuyla kapatır.
+- Amaç: Bir sonraki rotanın komşu yasal Ufka sapmasını büyülü sahte kule veya optik yansımayla değil, yanlış kıyı burnuna yerleştirilmiş dönemsel basit işaret ateşinin fiziksel ikna gücüyle anlatmak.
+- Ritim görevi: Pilot olarak tek küçük ateş, koyu komşu burun, dönen pruva ve geniş gece boşluğu ile yazısız yanlış yön okunurluğunu sınar; fener dizisini kuşkuyla kapatır.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-İki kıyı burnu: solda uzakta gerçek yağ feneri, sağda daha yakın ıslak mika/metal levha ve su yansıması. Kule erken 18. yüzyıl açık ateş/yağ düzeni; Fresnel lensi yok. Gemi küçük ve gerçek rüzgâr yönüne bağlı; insan yüzü görünmez.
+Yanlış kıyı burnunda taş kaide üzerindeki dövme demir ızgara üzerinde küçük kömür işaret ateşi. Gemi tek fiille bu ateşe döner. İkinci parlak kule, ayna, mika, metal/catoptric reflektör, Argand, Fresnel, elektrik ve modern beacon yok. Ateşi kimin yaktığı, hata mı sabotaj mı olduğu ve Siyah Mühür bağlantısı açıklanmaz.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: İnsan yok; yanlış kıyı burnunda taş kaide üzerindeki küçük kömür işaret ateşi, karanlıkta ona dönen gemi ve uzakta ışık vermeyen gerçek kıyı kütlesi.
 
-Tek hareket: gemi pruvası daha yakın görünen yansımaya doğru dönmeye başlar; gerçek kule kadrajın sol kenarında sabit kalır. Kamera gemi güvertesinden göz hizasında. İki küçük açık ışık noktası, aralarında koyu deniz ve pruva bağı; yanlış ışık daha büyük ama daha ‘parlak efektli’ değildir.
+Ana biçim: Yanlış burundaki alçak ateş noktası ile dönen gemi arasındaki tek diyagonal; ikinci parlak ışık, ayna, mika, metal optik veya hayalet kule yok.
 
-Manifest taşıyıcı metaforu: Islak mika/metal levha ve su yüzeyi yanlış ‘yer’ yaratır; ışığın kendisi fiziksel ve doğrudur.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Gemi pruvası yanlış burundaki basit işaret ateşine döner.
+- Mekân: İki komşu kıyı burnu olan gece yaklaşımı; yanıltıcı kömür ateşi taş kaide üzerindeki demir ızgarada, döneme uygun fiziksel kıyı işaretidir.
+- Karta özgü metafor: Doğru yanan fakat yanlış yerde duran küçük kömür işaret ateşi; kimin yaktığı, hata mı sabotaj mı olduğu ve Siyah Mühür bağlantısı açıklanmaz.
 
-Karanlıkta indigo/kurum iki kat tarama; ışıklar yalnız taramasız küçük kâğıt rezervi. Islak levhada pas/sert çizgi; sis parçaları çizgi yoğunluğunu keser. Gradient, bloom, lens flare yok.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Gemi güvertesinden göz hizası; odak yanlış burundaki küçük ateş ve dönen pruva bağı; diğer kıyı koyu, merkez deniz sakin negatif alan.
 
-Yanlış yansımayı yaratan levha gündüz sıradan bir kıyı donanımı olacak kadar eğri ve yamalıdır; ayrı şaka figürü yok.
+Karanlıkta indigo/kurum iki kat tarama; ateş yalnız küçük kâğıt rezervi ve donuk hardal. Işın, yansıma, mika, metal reflektör, gradient, bloom veya lens flare yok.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-Hayalet kule, iki tam kule, modern kırmızı/yeşil beacon, Fresnel ışınları, AD-20 iki tekne X’i, GUC-26 panjurlu el feneri, martı yok.
+NONE
 
-Manifest çapraz riski: AD-20 fener alayı, FN-01 yön açma ve sahte büyülü ışık klişesi.
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: AD-20’nin hareketli fenerli tekneleri ve FN-01’in gerçek vardiya feneri. Fark: tek alçak kıyı ateşi yanlış burunda sabit durur.
+- Tekrarlanmayacaklar: Hayalet kule, ayna, mika, metal optik, ikinci parlak kule, modern beacon rengi, Fresnel, Argand, elektrik, Siyah Mühür işareti, hayvan ve ikincil şaka yok.
+- Dönem kontrolü: 1721’e uygun açık kömür işaret ateşi; catoptric reflektör, Argand, Fresnel, elektrik ve modern beacon yok.
 
 ### Küçük baskı kabul kanıtı
 
-Renk kapatıldığında iki ışığın konum farkı ve geminin yanlış olana döndüğü anlaşılmalı. 180 derece arka yüz güvenliği bu ön yüze uygulanmaz; fakat kare kompozisyonun yönü exact mekanik dışında ekstra bilgi öğretmemeli.
-
-Dönem ve dünya kontrolü: 1721 yağ feneri ve basit yansıtıcı yüzey; elektrik, modern beacon rengi veya gelişmiş lens yok.
+Renk kapatıldığında ateş noktası, yanlış burun ve dönen pruva ilişkisi okunmalı. Ateş glow/ışın değil küçük kâğıt rezervi ve çevre taramasının azalmasıyla görünmeli.
 
 ## SET-KP-01 — Kaptan Makamı (Yardımcı 1/1)
 
-Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); identity lookup only via e91581 technical map, rejected art excluded
+Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); rejected visual art excluded
 
 Exact copy — değiştirilmez:
 
@@ -650,72 +678,73 @@ Exact copy — değiştirilmez:
 - Etki: Kaptanlık açık bir makamdır; Sadakati kanıtlamaz. Kaptan değişebilir; makam oyundan kalkmaz.
 - Flavor: Makam kalır. Şüphe de.
 
-### Neden pilot
+### Neden pilot / sistem sınavı
 
-Kaptan Makamı bütün dünya görüşünün özetidir: kişi değişir, makam kalır, sadakat kanıtlanmaz. Kaptan yüzü veya gösterişli şapka kullanmak exact anlamı daraltır ve STYLE_ONLY kartı kopyalama riskini büyütür.
+Kaptanlığın açık, değişebilir ve Sadakati kanıtlamayan makamını; Gusto’nun yokluğunu çözmeden ve STYLE_ONLY KAPTAN portresini kopyalamadan anlatır.
 
-### Sistem sınavı
+Portresiz yetki, tek anahtar bırakma fiili, CAN-04 belirsizliği, kurumsal destek dili ve sıfır ikincil şaka.
 
-Otoriteyi portresiz anlatma, açık/değişebilir makam, Sadakat spoiler’ı vermeme, SUPPORT ailesine kurumsal ikonografi ve STYLE_ONLY referanstan tam kopuş.
-
-### İlk iki saniye ve görsel amaç
+### İlk iki saniye ve dramaturji
 
 - Duygu: Boş sandalye bile herkesi hizalıyor; sadakat görünmüyor.
-- Amaç: Kaptanlığın açık, değişebilir ve sadakati kanıtlamayan bir makam olduğunu herhangi bir Kaptan yüzünü yüceltmeden; sandalyeye yaklaşan farklı eller ve yerinde kalan fiziksel düzenle anlatmak.
-- Destedeki ritim görevi: Pilot olarak boş makam, çoklu kimlik, spoiler vermeyen Sadakat, kurumsal anlatı ve destek ailesinin merkez ikonografisini sınar.
+- Amaç: Gusto’nun yokluğundan doğan açık, değişebilir ve Sadakati kanıtlamayan Kaptan makamını, hiçbir Kaptan yüzünü yüceltmeden anlatmak.
+- Ritim görevi: Pilot olarak boş makam, çoklu kimlik, spoiler vermeyen Sadakat, kurumsal anlatı ve destek ailesinin merkez ikonografisini sınar.
 
-### Özne ve üretim tanımı
+### Özne üretim spesifikasyonu
 
-Ana özne duvara/güverteye sabit sade deniz sandalyesi ve küçük masa. Sandalye boş. Üç yönden gelen üç el farklı yaş, ten ve meslek izine sahip; hiçbir el diğer pilotlardan kopyalanmaz. Arkada yağlı lacivert çalışma ceketi asılı olabilir; üç köşeli şapka ana ikon değildir. Ağır warded makam anahtarı kişisel değil kurumsal nesne.
+Boş, güverteye sabit sade sandalye; önünde küçük masa ve ağır makam anahtarı. Bir el anahtarı bırakır; diğer eller yalnız yaklaşan/çekilmiş durum olarak donuktur. Farklı ayakkabı aşınmaları makamın kullanıcı değiştirdiğini gösterir. Sandalye kamaları maddi tarih olabilir ama şaka olarak sunulmaz. Gusto’ya ait beden, kaçış izi, siyah balmumu veya kişisel suç kanıtı yok.
 
-### Tek hareket, mekân ve kadraj
+Manifest öznesi: Sandalye boş; üç farklı yaş/ten/iş izine sahip el kadrajın üç yanından gelir, hiçbir tam karakter yok.
 
-Tek hareket: bir el anahtarı masaya bırakırken ikinci el sandalye sırtından çekilir; üçüncü el yaklaşır ama dokunmaz. Kamera oturak yüksekliğinin biraz altında, cepheden; boş oturak merkez değil hafif alt üçte. Lomboz açık negatif alan; deniz görünür ama gemi portresi yok.
+Ana biçim: Çivilenmiş sade koltuk ana dikey kütle; çıkarılabilir üç köşeli olmayan yağlı kaptan ceketi koltuğun arkasında; eller eşit uzaklıkta.
 
-Manifest taşıyıcı metaforu: Aynı noktada üst üste binmiş farklı ayakkabı aşınma izleri, Kaptanın değiştiğini; sabit cıvata/düzen makamın kaldığını anlatır.
+### Tek ana hareket ve gerçek mekân
 
-### Çizgi, değer ve palet
+- Tek fiil: Bir el makam anahtarını boş sandalyenin önündeki masaya bırakır.
+- Mekân: Kıç kamara sefer divanı; duvara sabitlenmiş deniz sandalyesi, küçük masa ve lomboz.
+- Karta özgü metafor: Boş sandalyenin önündeki ağır makam anahtarı ve farklı kullanıcılardan kalmış ayakkabı aşınmaları; boşluk Gusto’nun kaderini değil yalnız yokluğunu taşır.
 
-Ahşapta üst üste binmiş onarım/kullanım izleri; ellerde ayrı yön taraması; lomboz çizgisiz açık alan. Tar, meşe, soluk indigo; küçük mühür kırmızısı yalnız anahtar yanındaki balmumu izinde. Taht gibi altın/parlaklık yok.
+### Kadraj, çizgi ve palet
 
-### Azami tek yazısız ikincil şaka
+Sandalyenin oturma yüksekliğinden hafif alçak cephe; odak bırakılan ağır anahtar ve boş oturak; lomboz açık negatif alan.
 
-Sandalye ayağındaki üç farklı dönemden onarım kaması, makamın kusursuz değil kalıcı olduğunu söyler. Ayrı komik yüz/nesne yok.
+Ahşapta çok katmanlı kullanım çizgisi, ellerde özgün tarama; tar, meşe, soluk indigo, küçük mühür kırmızısı; yazı/logo yok.
 
-### Tekrar / benzerlik güvenlik duvarı
+### İkincil yazısız şaka
 
-Ekli KAPTAN kartının yüzü, iri burun, kollar çapraz poz, şapka, kuş, gemi, çerçeve ve çizgi deseni; GUC-15 eski şapkası; GUC-22 çatlak kupa; taht, arma/logo, Sadakat rengi/simgesi, hayvan yok.
+NONE
 
-Manifest çapraz riski: GUC-15 şapka, GUC-22 kupa, KAPTAN STYLE_ONLY kartı ve nihai lider portresiyle kopya riski.
+### v2.7 anlatısal omurga uygulaması
+
+The empty, transferable command seat exists because Gusto is absent. No personal relic, black-wax mark, shadow figure or hand identifies what happened to him or whether the next Captain is loyal.
+
+### Tekrar / dönem güvenlik duvarı
+
+- Benzerlik riski: GUC-15 şapka, GUC-22 kupa, KAPTAN STYLE_ONLY kartı ve nihai lider portresiyle kopya riski.
+- Tekrarlanmayacaklar: STYLE_ONLY KAPTAN yüzü/pozu/şapkası/kuşu/gemisi; GUC-15 şapkası; GUC-22 kupası; Gusto bedeni veya kaçış izi; Siyah Mühür/balmumu; arma/logo; Sadakat kodu ve hayvan yok.
+- Dönem kontrolü: 1721 kıç kamara sandalyesi, warded makam anahtarı ve sabitleme düzeni; taht/modern ofis koltuğu/üniforma rozeti yok.
 
 ### Küçük baskı kabul kanıtı
 
-Kart metni kapalıyken ‘boş ama devredilen gemi makamı’ okunmalı; ‘iyi Kaptan’, ‘kötü Kaptan’ veya ‘sadık lider’ okunmamalı. Siluet testi STYLE_ONLY KAPTAN referansıyla hiçbir bileşen çakışmadığını göstermeli.
-
-Dönem ve dünya kontrolü: 1721 kıç kamara sandalyesi, warded makam anahtarı ve sabitleme düzeni; taht/modern ofis koltuğu/üniforma rozeti yok.
+Metin kapalıyken ‘boş ama devredilen gemi makamı’ okunmalı; ‘Gusto öldü/kaçtı’, ‘iyi Kaptan’ veya ‘sadık lider’ okunmamalı. STYLE_ONLY referansla yüz, poz, şapka, kuş, gemi ve kompozisyon çakışması sıfır olmalı.
 
 ## 15. Paket düzeyinde kabul ölçütleri
 
-Pilot paketi ancak aşağıdaki on iki koşul birlikte sağlandığında Sanat Yönetimi tarafından Görsel Tasarıma üretim tavsiyesi alabilir:
-
-- Üç Karakterin yüz, beden, el ve siluetleri birbirinden ve manifestteki diğer 17 Karakterden ayrılır.
-- GUC-06 üzerinde hiçbir okunabilir yazı yoktur; balık işareti harf değildir.
-- GUC-27 tek gemi ve kalan fiziksel iz ile anlaşılır; büyü/zaman portalı yoktur.
-- ERZ-01’in çürümesi renk kapatıldığında malzeme çizgisiyle anlaşılır; fare/böcek yoktur.
-- SAD-H-03 Hain’i şeytanlaştırmaz ve BACK_LOYALTY’ye hiçbir bilgi sızdırmaz.
-- HAR-AD-08 ses efekti, nota, görünür düdük veya hayalet kullanmaz.
-- HAR-KY-06 gemiyi gerçek ölçekte geçitten geçirir; hasar ile çıkış aynı harekettir.
-- HAR-AA-06 kalabalığı kopyalanmış model değildir; sahne-içi form/damga/tabela yoktur.
-- HAR-FN-04 1721 yağ feneri mantığında kalır; Fresnel lensi, elektrik veya glow yoktur.
-- SET-KP-01 KAPTAN STYLE_ONLY referansından yüz, poz, şapka, kuş, gemi, nesne ve kompozisyon almaz.
-- Contact sheet daha sonra Görsel Tasarımca üretildiğinde pilotlar açık/koyu, yakın/geniş ve insan/nesne/coğrafya ritminde kümelenmez.
-- Proje sahibi estetik karar verir; Baş Editör exact copy, entegrasyon ve dispozisyonu yönetir.
+- KAR-01/KAR-05, KAR-04/KAR-06 ve KAR-02/KAR-15 çarpışmaları Bible matrisindeki temel anatomilerle kapanır.
+- 12 pilotun single_main_action alanında tek görsel fiil vardır; eğik çizgiyle bırakılmış seçenek yoktur.
+- GUC-06’da harf yoktur; balık piktogramı ana anlatı aracıdır ve komik kuyruk şakası kaldırılmıştır.
+- GUC-27, ERZ-01, SAD-H-03, HAR-AD-08, HAR-KY-06, HAR-FN-04 ve SET-KP-01 dahil 11 pilotun şaka alanı NONE’dır.
+- HAR-AA-06’daki tek şaka karta özgü gerekçelidir; iade alternatifi kaldırılmış, kapalı ıskarta seçilmiştir.
+- SAD-H-03, SET-KP-01 ve hiçbir pilot Siyah Mühür’ü logo/kanıt veya Gusto’nun kaderini sonuç olarak vermez.
+- HAR-FN-04 yalnız yanlış burundaki basit kömür işaret ateşini kullanır; optik yansıma ve gelişmiş teknoloji yoktur.
+- Proje sahibi estetik karar vermeden ve Baş Editör dispozisyon sağlamadan Görsel Tasarım üretime başlamaz.
 
 ## 16. Dispozisyon
 
 ART_DIRECTION_STAGE: BRIEF  
-CREATIVE_VERDICT: PILOT_PRODUCTION_BRIEFS_READY / PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_REVIEW  
+INPUT_VISUAL_COMMIT: NONE — BRIEF STAGE  
+CREATIVE_VERDICT: ART_DIRECTION_BRIEF_REWORK_DELIVERED / PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_REVIEW  
 PROJECT_OWNER_DECISION_REQUIRED: YES  
-FINAL_VISUAL_AND_PDF_OWNER: Görsel Tasarım  
+FINAL_VISUAL_AND_PDF_OWNER: Görsel Tasarım — NOT AUTHORIZED  
 INTEGRATION_AND_DISPOSITION: Baş Editör  
 LOCK_REQUESTED: NO

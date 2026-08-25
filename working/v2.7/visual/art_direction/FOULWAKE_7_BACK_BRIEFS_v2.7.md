@@ -1,6 +1,8 @@
 # FOULWAKE 7 BACK BRIEFS v2.7
 
-Status: BRIEF — arka yüz sanat fikri ve risk analizi; final görsel/render/PDF değildir.  
+Status: REWORKED BRIEF — arka yüz sanat fikri ve risk analizi; final görsel/render/PDF değildir.  
+Review input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
+Visual production authorized: NO  
 Source branch: work/v2.7-art-direction  
 Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
 Baseline: v2.6 STABLE / LOCKED  
@@ -28,7 +30,9 @@ Topoloji notu: v2.6 STABLE / LOCKED, Kayalık arkasını Açık Denizden ayrı t
 
 - Okunabilir yazı, logo, oyun adı, kart tür etiketi, sayı, harf, yön oku, pusula harfi, arma ve slogan yok.
 - Ön yüzün kart adı, karakteri, nesnesi, olayı, ahlak durumu veya mekaniği arka yüzde görünmez.
+- Siyah balmumu ve Siyah Mühür hiçbir arka yüzde motif, logo, renk kodu veya kanıt izi değildir; özellikle BACK_LOYALTY’de Tayfa/Hain sızıntısı yaratacak koyu varyant bulunmaz.
 - Aile içindeki bütün fiziksel kopyalar bit-bit exact aynı master dosyayı kullanır; kart başına farklı eskitme, leke veya renk varyantı yok.
+- v2.7 anlatısal görsel omurga arka yüzlere taşınmaz: tiryak sandığı, Gusto eşyası, Siyah Mühür ve Veyr izi binary tasarımına girmez.
 - Kâğıt, katran, tuz, kenevir, oksit ve eski baskı çizgisi ön yüzlerle aynı dünyadadır. Arka yüz ayrı bir “marka logosu” katmanı değildir.
 - Ekli KAPTAN STYLE_ONLY referansından yüz, şapka, kuş, gemi, çerçeve, kompozisyon, nesne veya çizgi alınmaz.
 - Reddedilmiş e91581 arka yüzleri sanat girdisi değildir; yalnız teknik tarih olarak dışlanır.
@@ -222,32 +226,35 @@ Aile Ada olarak hissedilir; altı Ada kartından hangisi olduğu ve kart yönü 
 
 ## 8. BACK_LIGHTHOUSE — 4
 
-### Sanat fikri: “Fener odasının üstten halkası”
+### Sanat fikri: “Ateş ızgarası ve fener odası halkası”
 
-Dikey kule veya tek yönlü ışın arka yüzde yön sızdırır. Bunun yerine fener odasının tam üstten, radyal ama logo olmayan yapısal halkası kullanılır: merkezde küçük mat yağ haznesi; çevrede dört eşit panjur/metal reflektör parçası ve taş duvar halkası. Işık huzmesi yoktur; taramanın azaldığı dört eşit açıklık yalnız malzeme düzenini verir.
+Dikey kule veya tek yönlü ışın arka yüzde yön sızdırır. Bunun yerine erken 18. yüzyıl fener odasının tam üstten, exact 180 güvenli yapısal kesiti kullanılır: merkezde basit dövme demir ateş ızgarasında düşük bir kömür ateşi; çevrede dört eş taş taşıyıcı, kalın cam bölme ve havalandırma açıklığı. Görsel bir optik aygıt, logo veya kusursuz rozet değildir.
+
+Merkez ateş tek bir “alev yönü” taşımaz. Köz ve küçük alev rezervleri karşılıklı eşlenir; ışık huzmesi çizilmez. Hacim, merkez çevresindeki kurum taramasının kontrollü azalmasıyla kurulur.
 
 ### Çizgi ve palet
 
-- Metalde kısa paralel, taş halkada düzensiz kırık, kurumda mat çapraz.
-- Kurum, taş grisi, kemik ve çok küçük donuk hardal.
-- Elektrik sarısı, Fresnel prizması, parlayan halo, kule silueti yok.
-- Logo/arma gibi kusursuz geometrik rozet görünümü kırık el çizgisiyle önlenir; exact dönüş yine master yapısından gelir.
+- Demir ateş ızgarasında kısa sert paralel; taş halkada düzensiz kırık; kalın camda yalnız birkaç düz kenar; havalandırmada mat kurum.
+- Kurum, taş grisi, kemik ve çok küçük donuk hardal/kızıl köz.
+- Catoptric metal reflektör, optik ayna, Argand, Fresnel, elektrik, modern beacon rengi, ışın veya glow yok.
+- Merkezi düzen elde çizilmiş yapısal eşitsizlik taşır; exact 180 güvenlik eşli çizgi gruplarıyla sağlanır, dijital amblem görünümüyle değil.
 
 ### 180 derece yapısı
 
-Dört panjurdan karşılıklı ikiler exact yarım dönüş eşidir; yağ haznesi merkezde. Kurum ve aşınma iki eşli çift halinde. “Alevin üstü” yok; alev doğrudan çizilmez.
+Merkez ateş ızgarası iki yarım dönüş eşli demir grubundan oluşur. Karşılıklı taş taşıyıcılar, kalın cam bölmeleri, havalandırma açıklıkları, kurum lekeleri ve köz rezervleri exact eşlidir. Üst/altı belirleyen baca kapağı, merdiven, kapı, tek alev veya duman yönü yoktur.
 
 ### Risk analizi
 
-- Dikey yön sızıntısı: kule, merdiven, ışın ve ufuk yasak.
-- POWER’daki Fırtına Feneri ile karışma: elde taşınır fener değil mimari halka; dış çerçeve taş.
-- SUPPORT ile kurumsal rozet benzerliği: merkezde mühür/anahtar yok, ışık mekanizması malzemesi belirgin.
-- Anakronizm: Fresnel lensi, elektrik ampulü ve modern beacon yok.
-- Parlaklık: hardal alan vernikle parlamaz; baskı lotunda dört kart eşit.
+- Dikey yön sızıntısı: kule profili, merdiven, kapı, ışın ve ufuk yasak.
+- Teknoloji riski: catoptric metal reflektör, optik ayna, Argand, Fresnel, elektrik veya modern beacon çağrışımı reddedilir.
+- POWER’daki Fırtına Feneri ile karışma: elde taşınır kandil değil, taş/cam/havalandırmalı mimari halka ve merkezi ateş ızgarası.
+- SUPPORT ile kurumsal rozet benzerliği: mühür, anahtar, balmumu veya palamar yok; taş ve kurum yapısı kusursuz geometriden bilinçli uzak tutulur.
+- Arka-yüz anlatı sızıntısı: Siyah balmumu, Siyah Mühür, Gusto izi ve tiryak yükü yok.
+- Parlaklık: köz/hardal alan spot vernikle parlamaz; dört kart aynı master ve mat süreçten çıkar.
 
 ### Kabul ölçütü
 
-Dört kart fener ailesi olarak okunur fakat belirli kule, yön, açık/kapalı ışık veya ön kart kimliği sızdırmaz.
+Dört kart fener ailesi olarak okunur; fakat belirli kule, yön, açık/kapalı olay, ön kart kimliği veya modern optik teknoloji sızdırmaz. Flatten edilmiş dosya 180 derece rotate/difference testinde exact eşleşir.
 
 ## 9. BACK_SUPPORT — 3
 
@@ -305,13 +312,14 @@ Onaydan sonra Görsel Tasarım her binary için tek master üretir ve:
 - hiçbir karta kart-başına random distress eklemez;
 - test baskısı başarısızsa sanat dosyasını revize eder, kart kopyalarını ayrı ayrı “düzeltmez”.
 
-Bu iş emri dosya formatı, DPI, bleed veya ICC profilini kilitlemez; bunlar Görsel Tasarımın teknik üretim ve Baş Editör entegrasyon alanıdır. Sanat fikri ve sızıntı riskleri bağlayıcı brief olarak sunulur.
+Bu reworked iş emri dosya formatı, DPI, bleed veya ICC profilini kilitlemez; bunlar Görsel Tasarımın teknik üretim ve Baş Editör entegrasyon alanıdır. Sanat fikri ve sızıntı riskleri bağlayıcı brief olarak sunulur.
 
 ## 12. Dispozisyon
 
 ART_DIRECTION_STAGE: BRIEF  
-CREATIVE_VERDICT: SEVEN_BACK_BRIEFS_READY / PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_REVIEW  
+INPUT_VISUAL_COMMIT: NONE — BRIEF STAGE  
+CREATIVE_VERDICT: SEVEN_BACK_BRIEFS_REWORKED / PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_REVIEW  
 PROJECT_OWNER_DECISION_REQUIRED: YES  
-FINAL_VISUAL_AND_PDF_OWNER: Görsel Tasarım  
+FINAL_VISUAL_AND_PDF_OWNER: Görsel Tasarım — NOT AUTHORIZED  
 INTEGRATION_AND_DISPOSITION: Baş Editör  
 LOCK_REQUESTED: NO
