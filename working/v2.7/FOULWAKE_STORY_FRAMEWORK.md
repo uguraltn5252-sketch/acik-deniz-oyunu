@@ -188,6 +188,7 @@ Bir değişiklik kabul edilirse yalnız hedef parça ve zorunlu doğrudan bağla
 | `CHG-20260820-02` | 20 Ağustos 2026 | Kural kitabı anlatı blokları | TASLAK | 3.1, 3.3, 3.4 anlatı notu, 3.6 ve Bölüm 17 güncellendi; mekanik akış korunmuştur. |
 | `CHG-20260820-03` | 20 Ağustos 2026 | Karakter ve Güç kartı metinleri | TASLAK | 20 Karakter ve 30 Güç kimliği/etkisi korunarak yalnız seçili ad ve flavor alanları güncellendi. |
 | `CHG-20260820-04` | 20 Ağustos 2026 | CAN-08 / CAN-09 sınıflandırması | TASLAK | Maddeler v2.7 DRAFT koruma ilkesi olarak yeniden sınıflandırıldı; kanon iddiası kaldırıldı. |
+| `CHG-20260820-05` | 20 Ağustos 2026 | 3.6 Sadakat anlatısı | TASLAK | Değişken Hain sayısında tam beş kişiyi ima eden sayım kaldırıldı; tekliflerin sayısı açık bırakıldı. |
 
 ## 13. Aktif v2.7 anlatı kaynakları
 

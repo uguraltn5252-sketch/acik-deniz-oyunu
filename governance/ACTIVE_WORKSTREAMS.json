@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "updated_at": "2026-08-20T15:56:10+03:00",
+  "schema_version": 2,
+  "updated_at": "2026-08-25T00:00:00+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -12,10 +12,10 @@
   },
   "active_draft": {
     "version": "v2.7",
-    "status": "DRAFT_NOT_LOCKED",
+    "status": "DRAFT_NOT_LOCKED_RELEASE_BLOCKED",
     "branch": "v2.7-design",
     "workspace": "working/v2.7",
-    "last_content_audit_head": "9758b848f0395525b395e3f2ccf9e9f7408fed99",
+    "audit_parent": "fb73852d76c45977a0ed3bcf0af8cae68f813fb0",
     "baseline": "v2.6"
   },
   "release_readiness": {
@@ -23,7 +23,8 @@
     "lock_allowed": false,
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
-    "basis": "2026-08-20 chief-editor audit; 3/3 communication ACK complete; Story workstream accepted for Visual input; Visual and Simulation deliveries pending"
+    "active_visual_candidate": null,
+    "basis": "Story accepted; visible Visual delivery recorded but all front/back art rejected; source ambiguity, new art, physical proof and Simulation delivery pending"
   },
   "roles": {
     "chief_editor": {
@@ -41,38 +42,15 @@
     "story_editor": {
       "official_chat": "Foulwake Hikâye Editör",
       "work_branch": "work/v2.7-story",
-      "may_change": [
-        "narrative",
-        "visible names",
-        "flavor text",
-        "rulebook story layer"
-      ],
-      "must_preserve": [
-        "card count",
-        "card ids",
-        "effects",
-        "timing",
-        "deck behavior",
-        "rule flow"
-      ]
+      "may_change": ["narrative", "visible names", "flavor text", "rulebook story layer"],
+      "must_preserve": ["card count", "card ids", "effects", "timing", "deck behavior", "rule flow"]
     },
     "visual_design": {
       "official_chat": "FOULWAKE görsel tasarım",
       "work_branch": "work/v2.7-visual",
-      "may_change": [
-        "illustration",
-        "layout",
-        "typography",
-        "icons",
-        "print presentation"
-      ],
-      "must_preserve": [
-        "mechanics",
-        "approved copy",
-        "lore canon",
-        "card identity",
-        "secrecy model"
-      ]
+      "may_change": ["original illustration", "layout", "typography", "icons", "print presentation"],
+      "must_preserve": ["mechanics", "exact approved copy", "lore canon", "card identity", "secrecy model"],
+      "binding_rework_directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
     },
     "simulation_test": {
       "official_chat": "Simülasyon Testi",
@@ -80,12 +58,6 @@
       "independent_qa": true,
       "mandatory_release_gate": true,
       "write_scope": "working/v2.7/qa/**",
-      "verdicts": [
-        "PASS",
-        "PASS_WITH_MINOR_ISSUES",
-        "FAIL",
-        "BLOCKER"
-      ],
       "may_change_mechanics": false,
       "may_lock_release": false
     }
@@ -115,10 +87,7 @@
     "required": 3,
     "acknowledged": 3,
     "all_named_chats_acknowledged": true,
-    "chief_editor_disposition": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY",
-    "specialist_delivery_completed": false,
-    "specialist_revalidation_completed": false,
-    "work_branches_created": false
+    "chief_editor_disposition": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY"
   },
   "specialist_deliveries": {
     "story": {
@@ -127,173 +96,120 @@
       "official_chat": "Foulwake Hikâye Editör",
       "source_branch": "work/v2.7-story",
       "source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
-      "integrated_to_v2_7_design": false,
-      "next_recipient": "FOULWAKE görsel tasarım"
+      "integrated_to_v2_7_design": true
     },
     "visual": {
-      "status": "AUTHORIZED_BRANCH_CREATED_PENDING_VISIBLE_CHAT_DELIVERY",
+      "status": "DELIVERED_REJECTED_ART_REWORK_REQUIRED",
+      "evidence_path": "governance/VISUAL_HANDOFF_20260825.json",
       "official_chat": "FOULWAKE görsel tasarım",
-      "work_branch": "work/v2.7-visual",
-      "branch_created": true,
-      "start_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37"
+      "source_branch": "work/v2.7-visual",
+      "source_commit": "e91581bb336dfcbab5da1d48a256577f9251f891",
+      "full_production_delivery_commit": "494b8440bba722a9053f72b2fdeffc4286a61e17",
+      "technical_pipeline_reference_only": true,
+      "art_accepted": false,
+      "active_candidate": false,
+      "rework_authorized": true
     },
     "simulation": {
-      "status": "PENDING_SPECIALIST_DELIVERY",
+      "status": "PENDING_NEW_ART_CANDIDATE",
       "official_chat": "Simülasyon Testi",
       "work_branch": "work/v2.7-simulation",
-      "branch_created": false
+      "branch_created": false,
+      "may_start": false
     }
   },
-  "cross_workstream_handoff": {
-    "source_commit": "52f6c3b3c196a5af9c48d4694cd3091eb3da8129",
-    "evidence_classification": "PREVIOUS_TEMPORARY_SUBAGENT_AUDIT_RECLASSIFIED_AS_NON_OFFICIAL",
-    "communication_acknowledgement": "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY",
-    "story_evidence_path": "governance/STORY_HANDOFF_20260820.json",
-    "story_source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
-    "story_to_visual": "ACCEPTED_READY_FOR_VISUAL_INPUT",
-    "story_to_simulation": "RECORDED_FOR_LATER_EXACT_CANDIDATE_QA",
-    "visual_to_simulation": "PENDING_SPECIALIST_DELIVERY",
-    "simulation_to_story": "PENDING_QA_FINDINGS",
-    "simulation_to_visual": "PENDING_QA_FINDINGS",
-    "simulation_to_chief_editor": "PENDING_SPECIALIST_DELIVERY",
-    "chief_editor_disposition": "STORY_ACCEPTED_VISUAL_AND_SIMULATION_DELIVERIES_PENDING",
-    "final_directives": "STORY_ACCEPTED_FOR_VISUAL_INPUT_V2_7_REMAINS_BLOCKED"
+  "visual_rework_contract": {
+    "fronts_required": 121,
+    "front_artwork_rule": "ONE_SEMANTICALLY_DISTINCT_ORIGINAL_SCENE_PER_CARD",
+    "style_reference": "USER_PROVIDED_KAPTAN_STYLE_ONLY_NO_COPY",
+    "text_in_illustration": "FORBIDDEN",
+    "unique_hash_counts_as_unique_art": false,
+    "pilot_approval_required_before_full_deck": true,
+    "back_assets_required": 7,
+    "back_mapping": {
+      "BACK_CHARACTER": 20,
+      "BACK_POWER": 31,
+      "BACK_LOYALTY": 15,
+      "BACK_SEA_ROCK": 42,
+      "BACK_ISLAND": 6,
+      "BACK_LIGHTHOUSE": 4,
+      "BACK_SUPPORT": 3
+    },
+    "back_total": 121,
+    "back_requirements": ["textless", "same binary within family", "exact 180-degree safe", "no cut or brightness leak", "same art language as fronts"]
   },
   "open_blockers": [
     {
       "id": "MEC-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Sea=Rock ortak arka yuzu v2.7 DRAFT icin onayli karardir; v2.6 ayri arka yuz baseline'ina gore bilgi-mimarisi degisikligi tam yeniden test bekliyor",
       "owner": "simulation_test",
-      "decision_status": "APPROVED_FOR_V2.7_DRAFT",
-      "decision_ref": "governance/DECISION_REGISTER.md#dec-20260820-01",
-      "requires": [
-        "source and rulebook information contract alignment",
-        "paired A/B mechanics and strategy tests",
-        "blind human and physical information-leak tests"
-      ]
+      "summary": "Sea=Rock v2.7 DRAFT kararı bilgi mimarisi değişikliğidir; exact yeni aday üzerinde tam Simülasyon ve kör fiziksel sızıntı testi gerekir"
     },
     {
       "id": "SRC-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Kaynak hiyerarsisi dokumante edildi; guncel candidate icin source-to-render-to-PDF provenance ve normalize metin diff'i eksik",
       "owner": "visual_design",
-      "progress": "DOCUMENTATION_ALIGNED",
-      "requires": [
-        "exact source commit and blob hashes",
-        "card and rulebook source-to-render-to-PDF cross-match",
-        "zero unauthorized copy changes"
-      ]
+      "summary": "Eski teknik adayın font ve gömülü self-provenance kayıtları çelişkilidir; yeni sanatta source→render→PDF zinciri sıfırdan ve exact üretilmelidir"
+    },
+    {
+      "id": "SRC-002",
+      "status": "OPEN",
+      "severity": "BLOCKER",
+      "owner": "chief_editor_and_simulation_test",
+      "summary": "v2.6 kayıtları GUC-22=Bayat Peksimet derken v2.7 kaynağı GUC-22=Kaptanın Çatlak Kupası ve GUC-23=Bayat Peksimet der; exact baseline karşılaştırması eksik",
+      "must_not_be_silently_fixed": true
     },
     {
       "id": "ART-001",
-      "status": "OPEN",
+      "status": "OPEN_REWORK_REQUIRED",
       "severity": "BLOCKER",
-      "summary": "Guncel branch'e bagli tam 121 kartlik candidate ve dogrulanabilir artefakt manifestleri yok; reset-oncesi preflight tarihsel kanittir",
       "owner": "visual_design",
-      "requires": [
-        "complete 121/121 candidate deck",
-        "front-back and PDF manifests with hashes",
-        "print-cut-duplex-real-light proof"
-      ]
+      "summary": "Proje sahibi mevcut 121 ön yüz ile bütün arka yüz sanatını reddetti; tam özgün rework ve semantik görsel QA gerekir",
+      "directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
     },
     {
       "id": "QA-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Narrative PASS kaydi reproduction-pending; surumlu baseline, script, ham cikti ve exact-candidate attestation eksik",
       "owner": "simulation_test",
-      "plan": "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
-      "requires": [
-        "versioned validator and fixed baseline",
-        "commands, raw outputs and hashes",
-        "SIM_QA_ATTESTATION bound to the candidate commit"
-      ]
+      "summary": "Exact candidate'a bağlı yeniden üretilebilir tam QA ve SIM_QA_ATTESTATION yok"
     },
     {
       "id": "QA-002",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Yeni duzen icin fiziksel proof, kor arka-yuz siniflandirma ve kor insan sosyal deneyim testi yok",
       "owner": "simulation_test",
-      "plan": "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
-      "requires": [
-        "physical print-cut-duplex-real-light proof",
-        "blind Sea-Rock leak classification",
-        "blind human playtest evidence"
-      ]
+      "summary": "Fiziksel baskı/kesim/duplex/ışık, kör arka-yüz ve kör insan masa testleri yapılmadı"
     },
     {
       "id": "GOV-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "main ve v2.7-design durum kayitlari cakisiyor; dal ayrismis, v2.7 PR ve zorunlu status check yok",
       "owner": "chief_editor",
-      "requires": [
-        "intentional branch reconciliation",
-        "release PR",
-        "required governance check before merge"
-      ]
+      "summary": "main ve v2.7-design ayrışmış; branch protection/ruleset ve zorunlu status check yok",
+      "file_level_controls_present": true,
+      "platform_enforcement_present": false
     },
     {
       "id": "COM-001",
       "status": "OPEN",
       "severity": "BLOCKER",
-      "summary": "Onceki gecici alt-ajan incelemeleri gorunur uzman teslimi gibi kaydedilmisti; 3/3 iletisim ACK ve Story revalidasyonu tamamlandi, Visual ile Simulation branch-bound teslimleri bekleniyor",
       "owner": "chief_editor",
-      "progress": {
-        "visible_chat_acknowledgements": "COMPLETE_3_OF_3_COMMUNICATION_TEST_ONLY",
-        "independent_specialist_revalidation": {
-          "story": "ACCEPTED",
-          "visual": "PENDING",
-          "simulation": "PENDING"
-        },
-        "work_branches_created": {
-          "story": true,
-          "visual": true,
-          "simulation": false,
-          "completed": 2,
-          "required": 3
-        },
-        "branch_bound_specialist_deliveries": {
-          "story": "ACCEPTED",
-          "visual": "PENDING",
-          "simulation": "PENDING"
-        }
-      },
-      "completed": [
-        "named visible-chat communication acknowledgement for all three workstreams",
-        "chief-editor scope review of the three communication-test replies",
-        "independent Story revalidation in Foulwake Hikâye Editör",
-        "branch-bound Story handoff accepted at e04eef7f1fef6ea407feaaf26558551297c44b37",
-        "work/v2.7-story and work/v2.7-visual branches created"
-      ],
-      "requires": [
-        "independent Visual and Simulation specialist delivery",
-        "creation of work/v2.7-simulation at first authorized Simulation work",
-        "branch-bound Visual and Simulation handoffs using the required template"
-      ]
+      "summary": "Story teslimi kabul edildi; Visual teslimi gerçek fakat reddedildi; yeni Visual teslimi ve bağımsız Simulation teslimi bekleniyor"
+    }
+  ],
+  "resolved_blockers": [
+    {
+      "id": "CAN-001",
+      "status": "RESOLVED",
+      "resolution": "CAN-08 ve CAN-09 v2.7 DRAFT TASLAK koruma ilkesi olarak sınıflandırıldı",
+      "evidence_path": "governance/STORY_HANDOFF_20260820.json"
     }
   ],
   "decision_register": "governance/DECISION_REGISTER.md",
   "assignment_register": "governance/WORKSTREAM_ASSIGNMENTS.md",
   "qa_resolution_plan": "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
-  "resolved_blockers": [
-    {
-      "id": "CAN-001",
-      "status": "RESOLVED",
-      "severity": "BLOCKER",
-      "resolution": "CAN-08 and CAN-09 reclassified from KANON to v2.7 DRAFT TASLAK protection principles",
-      "official_story_revalidation": "ACCEPTED",
-      "official_story_revalidation_evidence": "governance/STORY_HANDOFF_20260820.json",
-      "official_story_source_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
-      "evidence": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
-      "protected_files_unchanged": [
-        "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
-        "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json"
-      ]
-    }
-  ]
+  "latest_audit": "governance/CHIEF_EDITOR_AUDIT_20260825.md"
 }

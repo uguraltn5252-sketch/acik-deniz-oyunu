@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_VISUAL_WORKSTREAM_HANDOFF_AND_CHIEF_EDITOR_DISPOSITION",
+  "recorded_at": "2026-08-25T00:00:00+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "status": "REJECTED_ART_REWORK_REQUIRED",
+  "visual_delivery": {
+    "workstream": "Görsel Tasarım",
+    "visible_chat": "FOULWAKE görsel tasarım",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "source_branch": "work/v2.7-visual",
+    "source_commit": "e91581bb336dfcbab5da1d48a256577f9251f891",
+    "full_production_delivery_commit": "494b8440bba722a9053f72b2fdeffc4286a61e17",
+    "scope": "121 ön yüz, 7 arka yüz, 121 duplex eşleme, kart/rulebook PDF ve source→render→PDF kanıt zinciri",
+    "changed_files": [
+      "working/v2.7/BINARY_ARTIFACTS.md",
+      "working/v2.7/visual/FOULWAKE_VISUAL_REVALIDATION_v2.7.md",
+      "working/v2.7/visual/manifests/FOULWAKE_CARD_INVENTORY_v2.7.json",
+      "working/v2.7/visual/manifests/FOULWAKE_v2.7_121_SOURCE_RENDER_PDF_MAP.json",
+      "working/v2.7/visual/manifests/FOULWAKE_v2.7_FULL_PRODUCTION_PREFLIGHT.json",
+      "working/v2.7/visual/manifests/FOULWAKE_v2.7_FULL_PRODUCTION_PROVENANCE.json"
+    ],
+    "reported_result": "FULL_VISUAL_DIGITAL_CANDIDATE_DELIVERED / DIGITAL_PREFLIGHT_PASS_WITH_OCR_SOFT_WARNING",
+    "reported_counts": {
+      "fronts": 121,
+      "unique_ids": 121,
+      "unique_render_sha256": 121,
+      "back_assets": 7,
+      "duplex_mappings": 121,
+      "print_pdf_pages": 48,
+      "review_pdf_pages": 16,
+      "rulebook_pdf_pages": 29,
+      "source_family_illustration_plates": 6
+    },
+    "protected_fields_confirmed": [
+      "mechanics",
+      "timing",
+      "card ids and counts",
+      "deck behavior",
+      "lore",
+      "releases",
+      "governance",
+      "PROJECT_STATE.md",
+      "AI_HANDOFF.md",
+      "main",
+      "v2.6"
+    ],
+    "physical_tests": "PENDING_NOT_RUN",
+    "simulation_handoff_started": false,
+    "temporary_subagent_used": false,
+    "lock_requested": false
+  },
+  "chief_editor_audit": {
+    "branch_head_verified": true,
+    "technical_inventory_present": true,
+    "technical_pipeline_classification": "HISTORICAL_REFERENCE_ONLY",
+    "art_acceptance": "FAIL",
+    "back_art_acceptance": "FAIL",
+    "release_pass": false,
+    "lock_allowed": false,
+    "findings": [
+      {
+        "id": "ART-001-A",
+        "severity": "BLOCKER",
+        "finding": "121 farklı render hashinin 121 özgün sanat eseri olduğu varsayılmış; kaynak paketi yalnız 6 aile illüstrasyon plakası içeriyor.",
+        "disposition": "UNIQUE_RENDER_SHA_IS_NOT_UNIQUE_ARTWORK"
+      },
+      {
+        "id": "ART-001-B",
+        "severity": "BLOCKER",
+        "finding": "Proje sahibi bütün ön yüz ve arka yüz sanatını özensiz/tekrarlı bularak reddetti.",
+        "disposition": "FULL_DECK_ART_REWORK_REQUIRED"
+      },
+      {
+        "id": "ART-001-C",
+        "severity": "BLOCKER",
+        "finding": "İllüstrasyonlarda gereksiz veya anlamsız yazı üretme riski için bağlayıcı metinsiz-illüstrasyon kapısı yoktu.",
+        "disposition": "TEXT_IN_ILLUSTRATION_FORBIDDEN"
+      },
+      {
+        "id": "ART-001-D",
+        "severity": "BLOCKER",
+        "finding": "BACK_SEA_ROCK yön güvenliği kanıtlanmadı; önceki dijital incelemede exact 180 derece simetri koşulunu karşılamadı.",
+        "disposition": "REGENERATE_ROTATION_SAFE_BACK"
+      },
+      {
+        "id": "SRC-001-A",
+        "severity": "MAJOR",
+        "finding": "Preflight içindeki font_table_has_embedded_dejavu=false kaydı, materialize edilen baskı PDF'sindeki gömülü DejaVu kaydıyla çelişiyor.",
+        "disposition": "PROVENANCE_METADATA_MUST_BE_REBUILT"
+      },
+      {
+        "id": "SRC-001-B",
+        "severity": "MAJOR",
+        "finding": "Kaynak ZIP içindeki gömülü self-provenance/final-commit alanları nihai dış kayıtla aynı sürümde değil.",
+        "disposition": "EMBEDDED_AND_EXTERNAL_MANIFESTS_MUST_MATCH_EXACTLY"
+      },
+      {
+        "id": "QA-002-A",
+        "severity": "BLOCKER",
+        "finding": "Fiziksel baskı, kesim, duplex, opaklık/ışık ve kör yön-sızıntı testleri yapılmadı.",
+        "disposition": "PENDING_NEW_ART_CANDIDATE"
+      }
+    ],
+    "superseding_directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md",
+    "disposition": "VISUAL_DELIVERY_RECORDED_BUT_REJECTED_FOR_ART_REWORK",
+    "next_recipient": "FOULWAKE görsel tasarım",
+    "simulation_may_start": false
+  }
+}

@@ -19,12 +19,62 @@ jobs:
       - name: Validate editorial governance
         run: python governance/validate_governance.py
 
-      - name: Protect locked v2.6 in pull requests
+      - name: Protect locked v2.6
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE_SHA: ${{ github.event.before }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            base_sha="$PR_BASE_SHA"
+          else
+            base_sha="$PUSH_BEFORE_SHA"
+          fi
+          if [ -z "$base_sha" ] || [[ "$base_sha" =~ ^0+$ ]]; then
+            base_sha="$(git rev-list --max-parents=0 HEAD | tail -1)"
+          fi
+          if git diff --name-only "$base_sha" HEAD | grep -q '^releases/v2\.6/'; then
+            echo 'BLOCKER: locked releases/v2.6 content was modified.'
+            exit 1
+          fi
+
+      - name: Validate specialist branch scope
         if: github.event_name == 'pull_request'
         env:
+          HEAD_REF: ${{ github.head_ref }}
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        shell: bash
         run: |
-          if git diff --name-only "$BASE_SHA"...HEAD | grep -q '^releases/v2\.6/'; then
-            echo 'BLOCKER: locked releases/v2.6 content was modified.'
+          set -euo pipefail
+          changed="$(git diff --name-only "$BASE_SHA"...HEAD)"
+
+          protected='^(AI_HANDOFF\.md|PROJECT_STATE\.md|CHANGELOG\.md|README\.md|governance/|releases/|\.github/)'
+          if [[ "$HEAD_REF" == work/v2.7-* ]] && echo "$changed" | grep -Eq "$protected"; then
+            echo 'BLOCKER: specialist branch changed Chief Editor protected paths.'
+            echo "$changed"
+            exit 1
+          fi
+
+          case "$HEAD_REF" in
+            work/v2.7-story)
+              allowed='^working/v2\.7/(FOULWAKE_STORY_FRAMEWORK\.md|FOULWAKE_RULEBOOK_STORY_v2\.7\.md|FOULWAKE_CARD_TEXTS_v2\.7\.json|FOULWAKE_NARRATIVE_VALIDATION_v2\.7\.md|FOULWAKE_STORY_REVALIDATION_v2\.7\.md)$'
+              ;;
+            work/v2.7-visual)
+              allowed='^working/v2\.7/(BINARY_ARTIFACTS\.md|FOULWAKE_VISUAL_SYSTEM\.md|visual/)'
+              ;;
+            work/v2.7-simulation)
+              allowed='^working/v2\.7/qa/'
+              ;;
+            *)
+              exit 0
+              ;;
+          esac
+
+          invalid="$(echo "$changed" | grep -Ev "$allowed" || true)"
+          if [ -n "$invalid" ]; then
+            echo 'BLOCKER: specialist branch contains out-of-scope files:'
+            echo "$invalid"
             exit 1
           fi

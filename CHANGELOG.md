@@ -1,5 +1,25 @@
 # Changelog
 
+## v2.7 - Aktif taslak / tam deste sanat rework
+
+**Tarih:** 25 Ağustos 2026  
+**Durum:** **DRAFT / NOT LOCKED / RELEASE BLOCKED**
+
+- Görünür Hikâye teslimi `e04eef7...` exact commitinde kabul edildi ve değişen
+  üç Hikâye blobu `v2.7-design`a entegre edildi.
+- Görünür Görsel teslimi `e91581...` exact head ile kaydedildi; 121 ön yüz, 7
+  arka yüz ve PDF/hash zinciri teknik olarak mevcut olsa da proje sahibi bütün
+  ön/arka yüz sanatını reddetti.
+- Eski görsel teslim `REJECTED_ART / TECHNICAL_PIPELINE_REFERENCE_ONLY` olarak
+  sınıflandırıldı; aktif candidate değildir.
+- 121 ayrı özgün sahne, KAPTAN STYLE_ONLY sanat dili, resim-içi yazı yasağı,
+  kontrollü mizah, 7 arka-yüz topolojisi ve pilot-onay kapısı bağlayıcı yapıldı.
+- `SRC-002` açıldı: v2.6 `GUC-22 = Bayat Peksimet` kaydı ile v2.7
+  `GUC-22 = Kaptanın Çatlak Kupası`, `GUC-23 = Bayat Peksimet` kaydı exact
+  baseline kanıtıyla çözülmeden değiştirilmez.
+- Simülasyon yeni kabul edilmiş görsel candidate oluşana kadar başlamaz.
+- `releases/v2.6/**`, `main` ve kilitli artefaktlar değiştirilmedi.
+
 ## v2.6 - Entegre kural/anlatı ve fiziksel bileşen sürümü
 
 **Tarih:** 19 Ağustos 2026  

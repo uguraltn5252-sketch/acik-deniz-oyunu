@@ -9,6 +9,19 @@ Bu repository oyunun kalıcı ve denetlenebilir kaynak kaydıdır.
 - v2.5 önceki kilitli mekanik baseline ve tarihsel geri dönüş referansıdır.
 - v2.6 yerinde değiştirilmez; sonraki çalışma **v2.7+ DRAFT** hattında açılır.
 
+## Aktif v2.7 durumu
+
+- Entegrasyon dalı: `v2.7-design`
+- Güncel hüküm: **DRAFT / NOT LOCKED / RELEASE BLOCKED**
+- Hikâye teslimi kabul edilmiş ve entegrasyon dalına alınmıştır.
+- `work/v2.7-visual@e91581...` teslimi gerçektir; ancak proje sahibi bütün ön
+  ve arka yüz sanatını reddetmiştir. Eski çıktı yalnız teknik referanstır.
+- Aktif görsel candidate ve Simülasyon attestation yoktur.
+- Bağlayıcı rework:
+  `working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`
+- Açık blockerlar ve exact kanıtlar `PROJECT_STATE.md` ile
+  `governance/ACTIVE_WORKSTREAMS.json` içindedir.
+
 ## Her yeni ChatGPT oturumunda
 
 1. `AI_HANDOFF.md` ve `PROJECT_STATE.md` okunur.

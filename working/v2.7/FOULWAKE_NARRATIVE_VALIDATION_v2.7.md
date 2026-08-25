@@ -5,6 +5,15 @@
 **Kaynak:** v2.6 STABLE / LOCKED ve doğrulanmış v2.5 mekanik kart JSON'u  
 **Release kapısı:** `QA-001 OPEN`
 
+> **25 Ağustos 2026 Baş Editör dispozisyonu:** Bu kayıt tarihsel bir
+> karşılaştırma iddiasıdır; bağımsız PASS değildir. Kilitli v2.6
+> `CARD_BASELINE.md` içindeki `GUC-22 = Bayat Peksimet` kaydı ile aktif v2.7
+> Card Texts içindeki `GUC-22 = Kaptanın Çatlak Kupası`,
+> `GUC-23 = Bayat Peksimet` eşlemesi çelişir. Aşağıdaki Güç kimliği/effect PASS
+> satırları exact baseline/script ile yeniden üretilene kadar `SRC-002 OPEN`
+> ve `QA-001 OPEN` altında bağlayıcı olmayan kayıt olarak okunur. Kimlik veya
+> effect sessizce değiştirilmez.
+
 ## Kanıt sınırı
 
 Bu dosya önceki karşılaştırmanın kayda alınmış sonucudur. Karşılaştırmayı çalıştıran

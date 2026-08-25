@@ -1,120 +1,135 @@
 # FOULWAKE Görsel Sistem
 
-**Durum:** v2.7 DRAFT / NOT LOCKED  
-**Görsel yön onayı:** 20 Ağustos 2026  
+**Durum:** v2.7 DRAFT / NOT LOCKED / ART REWORK REQUIRED  
 **Mekanik baseline:** v2.6 STABLE / LOCKED  
-**v2.7 görünen kart metni:** `FOULWAKE_CARD_TEXTS_v2.7.json`  
-**v2.7 kural kitabı anlatı metni:** `FOULWAKE_RULEBOOK_STORY_v2.7.md`  
-**Ton ve lore çiti:** `FOULWAKE_STORY_FRAMEWORK.md`  
-**Kapsam:** Kartlar ve kural kitabı
+**Bağlayıcı rework:** `visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`  
+**Kapsam:** 121 kartın bütün ön/arka yüzleri ve 29 sayfalık kural kitabı
 
-Bu dosya ayrı bir dünya ansiklopedisi değildir. FOULWAKE kartları ile kural kitabının aynı üretim dilinde kalması için gereken kısa görsel standardıdır. Kullanıcının açık `kilitle`, `stable yap` veya `release et` talimatı olmadan kilitlenmez.
+Bu dosya ortak sanat, yerleşim ve baskı sistemini tanımlar. Kart başına üretim,
+arka-yüz topolojisi, pilot ve QA ayrıntılarında rework direktifi üstündür.
+`work/v2.7-visual@e91581...` teslimindeki sanat ve önceki “onaylı örnekler”
+reddedilmiştir; yalnız teknik üretim hattı tarihidir.
 
-## Kaynak önceliği ve değişiklik sınırı
+## 1. Kaynak sözleşmesi
 
-Kaynaklar arasında fark görüldüğünde aşağıdaki sıra bağlayıcıdır:
+1. Değişmeyen mekanik/kimlik/adet/effect/zamanlama/deste davranışı/kural akışı:
+   `releases/v2.6/` ve `AI_HANDOFF.md`.
+2. 20 Karakter + 30 Güç görünen metni:
+   `FOULWAKE_CARD_TEXTS_v2.7.json`.
+3. Tanımlı rulebook anlatı blokları:
+   `FOULWAKE_RULEBOOK_STORY_v2.7.md`.
+4. Ton/lore çiti: `FOULWAKE_STORY_FRAMEWORK.md`.
+5. En yeni sanat kararı:
+   `visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`.
+6. Ortak yerleşim/baskı standardı: bu dosya.
 
-1. `releases/v2.6/` ve `AI_HANDOFF.md`; kart kimliği, adet, `effect`, zamanlama, başlangıç havuzu, deste davranışı, kural akışı ve diğer mekanik alanların baseline'ıdır.
-2. `FOULWAKE_CARD_TEXTS_v2.7.json`; 20 Karakter ve 30 Güç kartının v2.7 görünen metin kaynağıdır. Harita, Sadakat, Çürümüş Erzak ve yardımcı kart metinleri v2.6 baseline'ından alınır.
-3. `FOULWAKE_RULEBOOK_STORY_v2.7.md`; yalnız 3.1, 3.3, 3.4 anlatı notu, 3.6 ve Bölüm 17 için v2.7 anlatı katmanıdır. Diğer işlem, tablo ve hızlı referanslar v2.6 mekanik kaynağından alınır.
-4. `FOULWAKE_STORY_FRAMEWORK.md`; ton ve lore kısıtıdır. DRAFT içindeki etiketler tek başına mekaniği veya release kanonunu değiştirmez.
-5. Bu dosya; illüstrasyon, yerleşim, tipografi ve baskı sunumunu yönetir; üstteki kaynakların metin veya mekanik hükmünü değiştirmez.
+Çelişki otomatik seçilmez; üretim durur ve exact alanla Baş Editöre handoff
+edilir. Özellikle `SRC-002` GUC-22/GUC-23 çelişkisi Görsel hattı tarafından
+yeniden numaralandırılamaz.
 
-Bir çelişki otomatik seçilmez. Üretim durdurulur ve dosya/alan adıyla Baş Editöre handoff edilir.
+## 2. Sanat dili
 
-## 1. Temel sanat dili
+- Kullanıcının KAPTAN karakter kartı yalnız `STYLE_ONLY` referanstır. Karakter,
+  yüz, beden, poz, kompozisyon, kadraj, dekor, çizgi veya piksel kopyalanmaz.
+- Elde çizilmiş mürekkep; ince karakterli kontur; çapraz tarama ve gravür
+  dokusu.
+- Hacim tarama/çizgiyle; sinematik boya gradyanı ve parlak yapay zekâ renderı
+  olmadan kurulur.
+- Mat, sınırlı palet: kâğıt, lacivert, kirli mavi-gri, pas/kahverengi; kontrollü
+  hardal ve kırmızı vurgu.
+- 1721 dönemi gemi/liman/giysi/araç dili; modern nesne, büyü, neon, 3B,
+  fotogerçekçilik ve çocuk kitabı estetiği yok.
+- Aynı çizerin tek evreni hissi vardır; aynı insan/sahne/plakanın türevleri yoktur.
 
-- Hızlı ve karakterli mürekkep çizgisi; gravür etkisi taşıyan yoğun tarama.
-- Eskimiş kâğıt ve mat baskı hissi; yüzey dokusu okunurluğun önüne geçmez.
-- Sınırlı, kirli ve denizci paleti: lacivert, kemik, pas, hardal ve zeytin tonları.
-- Yetişkin karikatürü: iri yüz ifadeleri, yıpranmış bedenler ve yaşanmış kıyafetler.
-- Dünya ciddi ve tehlikelidir; komedi, karakterlerin küçük zaaflarından ve arka plandaki sessiz aksiliklerden doğar.
-- 1721 dönemine uygun gemi, liman, giysi, araç ve malzeme kullanılır. Modern nesne, çağdaş davranış, büyü efekti veya parlak fantastik görsel yoktur.
+## 3. Özgünlük sistemi
 
-## 2. Referans kullanımı
+- 121 kartın her biri ayrı `art_brief_id` ve `original_artwork_id` alır.
+- Aynı aile plakasının crop/recolor/mirror/rotate/kostüm varyasyonu kabul edilmez.
+- Karakterlerde yaş, yüz geometrisi, saç/sakal, beden, siluet, poz, ifade,
+  kıyafet ve mesleki el/beden izi ayrı tasarlanır.
+- Diğer ailelerde kart metni/işlevi ayrı görsel olaya dönüşür; yalnız başlığı
+  değişmiş ortak sahne kullanılmaz.
+- `unique render SHA` dosya farkını kanıtlar; özgün sanat kanıtı değildir.
+- Kör contact sheet incelemesi ve manuel semantik hüküm zorunludur.
 
-Kullanıcı tarafından verilen görseller yalnızca **STYLE_ONLY** referanstır. Piksel, karakter, poz, kompozisyon, çerçeve veya hazır dekor doğrudan alınmaz; her FOULWAKE illüstrasyonu özgün olarak kurulur.
+## 4. Resim-içi yazı ve mizah
 
-## 3. Mizah dağılımı
+- İllüstrasyon alanında tabela, pankart, slogan, konuşma balonu, isimlik,
+  açıklama, etiket veya saçma/anlamsız okunabilir yazı yoktur.
+- Harita, kitap, defter, sandık/fıçı üstü ve dekor yalnız okunamayan çizgisel
+  doku kullanabilir; harf/sayı/kelime üretemez.
+- Okunabilir metin yalnız exact başlık, effect, flavor ve kart kimliğidir.
+- Şaka zorunlu değildir; varsa karttan türeyen en fazla bir ikincil şakadır.
+- Fare, martı, papağan, aynı tayfa, düşme/kayma veya çalınan nesne kalıbı
+  tekrar eden maskot olamaz.
 
-Fare bir komedi maskotu değildir ve her kartta kullanılmaz. Komedi kaynakları kart ailesi boyunca dönüşümlü dağıtılır:
+## 5. Kesin ölçüler
 
-- fare veya başka küçük liman hayvanları;
-- martıların yiyecek, belge ya da küçük eşya çalması;
-- arka planda yanlış işi yapan veya beceriksizce hırsızlık eden tayfa;
-- iki karakter arasındaki sessiz bakış ve yanlış anlaşılma;
-- ana olayla çelişen küçük, fiziksel bir arka plan davranışı;
-- eşyanın kendi durumundan doğan kuru mizah.
-
-Her illüstrasyonda en fazla bir ikincil görsel şaka bulunur. Şaka ana olayı, kart etkisini veya tehlike duygusunu gölgeleyemez. Aynı hayvan ya da aynı şaka kalıbı arka arkaya kullanılmaz.
-
-## 4. Kesin ölçüler
-
-| Bileşen | Kesim ölçüsü | Taşma paylı çalışma ölçüsü |
+| Bileşen | Kesim | Taşmalı çalışma |
 |---|---:|---:|
-| Harita kartı | 70 × 70 mm | 76 × 76 mm |
-| Karakter kartı | 70 × 120 mm | 76 × 126 mm |
-| Poker kartı | 63,5 × 88,9 mm | 69,5 × 94,9 mm |
+| Harita | 70 × 70 mm | 76 × 76 mm |
+| Karakter | 70 × 120 mm | 76 × 126 mm |
+| Poker | 63,5 × 88,9 mm | 69,5 × 94,9 mm |
 | Kural kitabı | A4 | 210 × 297 mm |
 
-Kartlar `%100` ölçekte basılır; `sayfaya sığdır / fit-to-page` kapalıdır. Taşma payı her kenarda 3 mm'dir.
+Kartlar `%100` ölçekte basılır; fit-to-page kapalıdır. Her kenarda 3 mm taşma
+payı vardır. Etkin çözünürlük en az 300 dpi'dır.
 
-## 5. Kart yüzü
+## 6. Kart ön yüzü
 
-Görsel sıra değişmez: **başlık → illüstrasyon → kart etkisi → tat metni → kart kimliği**. Başlık, etki, tat metni ve kart kimliği yukarıdaki kaynak önceliğinden birebir alınır; Görsel Tasarım bunları kısaltmaz, yeniden yazmaz veya yeniden yorumlamaz. FOULWAKE logosu kart yüzlerinde kullanılmaz.
+Sıra: **başlık → illüstrasyon → effect → flavor → kart kimliği**.
 
-- Başlık, eskimiş kâğıt şerit üzerinde yüksek kontrastlıdır.
-- İllüstrasyon kartın en büyük alanıdır fakat metin kutusunu sıkıştırmaz.
-- Etki metni açık zemin ve koyu mürekkeple basılır.
-- Tat metni ikincil ve italiktir; mekanik metinle karıştırılmaz.
-- Kart kimliği küçük ama baskıda okunabilir tutulur.
+- Bağlayıcı metin kelimesi kelimesine kullanılır; kısaltma ve yeniden yazım yok.
+- Başlık yüksek kontrastlı eski kâğıt şerittedir.
+- İllüstrasyon en büyük alandır fakat metin kutusunu sıkıştırmaz.
+- Effect ve flavor tipografik olarak açıkça ayrılır.
+- Kart kimliği baskıda okunur; FOULWAKE logosu kart yüzünde kullanılmaz.
+- Taşma çözümü metni budamak veya okunamayacak kadar küçültmek değildir.
 
-## 6. Kart arka yüzü
+## 7. Kart arka yüzü
 
-- Arka yüzde yazı, logo veya kart türünü açık eden etiket bulunmaz.
-- **Bağlayıcı v2.7 DRAFT kararı:** Açık Deniz ve Kayalık aynı binary kesintisiz deniz arka yüzünü kullanır; Görsel Tasarım ayrı Kayalık arka yüzüne dönmez.
-- Bu karar, v2.6'nın ayrı Kayalık kategori arka yüzünden bilinçli olarak ayrılır ve gizli bilgi mimarisini değiştiren bir v2.7 mekanik değişikliğidir. Kilitli v2.6'yı geriye dönük değiştirmez.
-- Ortak arka yüz, exact candidate üzerinde tam Simülasyon yeniden testi ve kör insan bilgi-sızıntısı testi geçmeden release için onaylanmış sayılmaz. O zamana kadar karar DRAFT içinde uygulanır, release hükmü BLOCKER kalır.
-- Ada ve Deniz Feneri aileleri kendi desen sistemine sahip olabilir; aynı aile içindeki binary görsel aynıdır.
-- Yön bilgisi istemeden açığa çıkmamalı; desen döndürüldüğünde fark yaratmamalıdır.
+Arka yüz ön yüzün kopyası değil, aynı çizgi/tarama/mat palet dilinde metinsiz
+bir desendir.
 
-## 7. Kural kitabı
+| Binary | Eşleme |
+|---|---:|
+| `BACK_CHARACTER` | 20 |
+| `BACK_POWER` | 31 |
+| `BACK_LOYALTY` | 15 |
+| `BACK_SEA_ROCK` | 42 |
+| `BACK_ISLAND` | 6 |
+| `BACK_LIGHTHOUSE` | 4 |
+| `BACK_SUPPORT` | 3 |
 
-- A4 ve mevcut 29 sayfalık içerik akışı korunur.
-- Kapak illüstrasyonu oyunun ciddiyetini taşır; tek bir küçük arka plan şakası yeterlidir.
-- İç sayfalarda ince çerçeve, sıcak kâğıt ve sınırlı pas rengi vurgu kullanılır.
-- Şema, tablo ve örnekler bezeme uğruna küçültülmez.
-- v2.6 mekanik işlem, tablo ve hızlı referansları korunur; v2.7 anlatı blokları ve güncellenmiş görünen ad başvuruları yukarıdaki kaynaklardan birebir yerleştirilir. Görsel Tasarım metni yeniden yazmaz.
-- Güncel 29 sayfalık akış metni eksiltmeden yerleştirilemiyorsa metin budanmaz veya okunamayacak kadar küçültülmez; taşma dosya ve bölüm adıyla Baş Editöre handoff edilir.
+Toplam 7 binary / 121 eşleme. Aile içinde exact aynı binary; yazı/logo/etiket
+yok; exact 180° yön güvenli; kesim, kenar, parlaklık, opaklık ve duplex sızıntısı
+yok. Sea=Rock v2.7 DRAFT kararıdır; v2.6'nın ayrı Kayalık arka yüzünü
+değiştirmez ve tam Simülasyon + kör fiziksel test geçmeden release olamaz.
 
-## 8. Kullanılmayacak yaklaşımlar
+## 8. Kural kitabı
 
-- Fotogerçekçi, parlak 3B, temiz vektör, neon, büyü parlaması veya çocuk kitabı estetiği.
-- Her karta gelişigüzel çapa, pusula, kafatası, papağan, göz bandı veya kanca eklemek.
-- Aynı farenin, kuşun ya da tayfanın her görselde tekrar eden maskota dönüşmesi.
-- Görsel şakanın kart metnini açıklaması, gizemi çözmesi veya Gusto/Siyah Mühür cevaplarını açığa çıkarması.
-- Baskı dosyası yerine sahte masa, kutu veya elde tutulan kart mockup'ı üretmek.
+- A4 ve 29 sayfalık içerik akışı korunur.
+- Mekanik tablo, şema ve hızlı referans bezeme uğruna küçültülmez.
+- v2.6 mekanik sayfaları ile exact v2.7 anlatı blokları kaynak sözleşmesine göre
+  yerleştirilir; metin yeniden yazılmaz.
+- Kapak ve iç sanat kartlarla aynı mürekkep/gravür/palet dilindedir.
+- Dekor yazısı ve tekrarlı maskot kullanılmaz.
 
-## 9. Mevcut v2.7 üretim örnekleri
+## 9. Üretim kapısı
 
-- `visual/cards/KAR-01_Uzakgoren_front.png`
-- `visual/cards/GUC-24_Islak_Corap_front.png`
-- `visual/cards/HAR-AD-09_Deryanin_Gobek_Deligi_front.png`
-- `visual/cards/BACK_SEA_ROCK.png`
-- `visual/cards/FOULWAKE_v2.7_APPROVED_ART_DIRECTION_PRINT_SET.pdf`
-- `visual/rulebook/FOULWAKE_v2.7_RULEBOOK_VISUAL_DRAFT.pdf`
+1. 121 art brief + 7 arka-yüz briefi.
+2. 12 ön-yüz pilotu + 7 arka-yüz taslağı.
+3. Kullanıcı ve Baş Editör açık kabulü.
+4. 121/121 tam yayılım ve kör contact sheet QA.
+5. Exact source→render→PDF, metin, ölçü, DPI, glif, taşma ve duplex preflight.
+6. Fiziksel baskı/kesim/ışık ve kör sızıntı testi.
+7. Bağımsız Simülasyon Testi exact candidate attestation.
 
-Bu örnekler sanat yönünü ve üretim hiyerarşisini onaylar; v2.7'yi kilitlemez. Tam deste uygulaması aile aile ilerler ve fiziksel prova sonrası sonlandırılır.
+Pilot kabulü olmadan tam üretim veya PDF yapılmaz. Eski e91581 render/PDF/hash
+zinciri yeni adayda kullanılamaz.
 
-## 10. Candidate ve kanıt durumu
+## 10. Candidate hükmü
 
-Güncel dalda GitHub'dan doğrulanabilir tam 121 kartlık release candidate yoktur. Yukarıdaki örnekler sanat yönü kanıtıdır; tam deste, kaynak izlenebilirliği veya final preflight kanıtı değildir. Temiz v2.7 sıfırlamasından önceki tam deste ve final preflight kayıtları yalnız tarihsel kanıttır; `SRC-001` veya `ART-001` engelini kapatmaz.
-
-Bir görsel candidate ancak aşağıdaki kanıtlar birlikte üretildiğinde Baş Editöre teslim edilir:
-
-- exact source commit ile bütün kaynak dosyaların blob/SHA-256 kayıtları;
-- 121 fiziksel kart kimliğinin her biri için ön yüz, arka yüz eşlemesi, ölçü, piksel, DPI, taşma payı ve SHA-256 manifesti;
-- kart kimliği → kaynak kaydı → render → baskı PDF sayfası ve kural bölümü → kaynak blok → render → PDF sayfası izlenebilirliği;
-- tam kart PDF'si ile 29 sayfalık kural kitabı PDF'sinin hash, sayfa, font/glif, taşma ve metin eşleme preflight'ı;
-- `%100` ölçekte fiziksel baskı, kesim, duplex hizalama ve gerçek ışıkta okunabilirlik kanıtı;
-- ortak Açık Deniz + Kayalık arka yüzü için tam Simülasyon ve kör insan bilgi-sızıntısı yeniden test kaydı.
+Güncel aktif v2.7 görsel candidate **yoktur**. Yeni candidate ancak rework
+direktifindeki sanat, metin, arka-yüz, provenance, teknik ve fiziksel kanıtların
+tamamı exact commite bağlandıktan ve Baş Editörce kabul edildikten sonra vardır.

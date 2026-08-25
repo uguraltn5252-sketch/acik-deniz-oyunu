@@ -1,5 +1,38 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 25 Ağustos 2026 — GITHUB DENETİMİ / GÖRSEL TESLİM RET VE TAM REWORK
+
+**Denetim parent'ı:** `v2.7-design@fb73852d76c45977a0ed3bcf0af8cae68f813fb0`  
+**Hikâye:** `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`  
+**Görsel:** `work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891`  
+**Kanıt:** `governance/CHIEF_EDITOR_AUDIT_20260825.md` ve
+`governance/VISUAL_HANDOFF_20260825.json`
+
+Baş Editör aktif dalları, yönetişim, kaynak hiyerarşisi, Görsel manifestler,
+QA/release kapıları ve GitHub koruma dosyalarını yeniden denetledi.
+
+**Dispozisyonlar:**
+
+- Hikâye teslimi kabulünü korur; exact değişen üç Hikâye blobu entegrasyon
+  dalına alınmıştır.
+- Görsel teslim gerçek bir görünür sohbet teslimidir fakat sanat kabulü
+  `FAIL`dır. Bütün ön ve arka yüzler rework olacaktır.
+- e91581 çıktıları silinmez; `TECHNICAL_PIPELINE_REFERENCE_ONLY` olarak kalır
+  ve yeni candidate'a kaynak olamaz.
+- KAPTAN yalnız STYLE_ONLY referanstır; 121 kart ayrı brief/sahne alır.
+- İllüstrasyon alanında gereksiz veya anlamsız okunabilir yazı yasaktır.
+- Yedi back topolojisi `20+31+15+42+6+4+3=121`; aile içinde exact aynı,
+  metinsiz ve 180° yön güvenlidir.
+- 12 ön-yüz pilotu + 7 back taslağı kullanıcı ve Baş Editörce kabul edilmeden
+  tam üretim/PDF yoktur.
+- `SRC-002` GUC-22/GUC-23 kimlik çelişkisi exact baseline kanıtı gelmeden
+  sessizce düzeltilemez.
+- Simülasyon yeni tam adaydan önce başlamaz; release ve kilit BLOCKERdır.
+
+`main` ile `v2.7-design` ayrışması ve branch protection/ruleset yokluğu
+`GOV-001` altında açık kalır. Bu dosya düzeltmesi repository ayarlarını
+değiştirmez ve kullanıcıyı platform düzeyinde kilitlemez.
+
 ## 20 Ağustos 2026 — HİKÂYE WORKSTREAM PASS KABULÜ / GÖRSEL BAŞLANGIÇ
 
 **Görünür sohbet:** `Foulwake Hikâye Editör`  

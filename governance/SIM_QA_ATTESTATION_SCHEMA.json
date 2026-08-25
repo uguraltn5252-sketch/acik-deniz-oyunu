@@ -22,49 +22,20 @@
     "evidence_bundle_sha256"
   ],
   "properties": {
-    "version": {
-      "type": "string"
-    },
-    "candidate_commit": {
-      "type": "string",
-      "pattern": "^[0-9a-f]{40}$"
-    },
-    "baseline_commit": {
-      "type": "string",
-      "pattern": "^[0-9a-f]{40}$"
-    },
-    "validator_hashes": {
-      "type": "object",
-      "minProperties": 1
-    },
-    "test_commands": {
-      "type": "array",
-      "minItems": 1
-    },
-    "seeds_and_samples": {
-      "type": "object"
-    },
-    "raw_output_hashes": {
-      "type": "object",
-      "minProperties": 1
-    },
-    "source_render_pdf_traceability": {
-      "type": "object"
-    },
-    "artifact_manifests": {
-      "type": "array",
-      "minItems": 1
-    },
-    "physical_test_evidence": {
-      "type": "array",
-      "minItems": 1
-    },
-    "blind_human_test_evidence": {
-      "type": "array",
-      "minItems": 1
-    },
+    "version": {"type": "string"},
+    "candidate_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "baseline_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "validator_hashes": {"type": "object", "minProperties": 1},
+    "test_commands": {"type": "array", "minItems": 1},
+    "seeds_and_samples": {"type": "object"},
+    "raw_output_hashes": {"type": "object", "minProperties": 1},
+    "source_render_pdf_traceability": {"type": "object"},
+    "artifact_manifests": {"type": "array", "minItems": 1},
+    "physical_test_evidence": {"type": "array", "minItems": 1},
+    "blind_human_test_evidence": {"type": "array", "minItems": 1},
     "gate_verdicts": {
       "type": "object",
+      "additionalProperties": false,
       "required": [
         "identity",
         "static",
@@ -72,24 +43,28 @@
         "regression_fuzz",
         "balance_strategy",
         "social_experience",
-        "visual",
-        "package"
-      ]
+        "art_semantic_review",
+        "illustration_text_guard",
+        "back_design_and_information_leak",
+        "visual_readability",
+        "package_and_provenance"
+      ],
+      "properties": {
+        "identity": {"type": "string"},
+        "static": {"type": "string"},
+        "exact_mechanics": {"type": "string"},
+        "regression_fuzz": {"type": "string"},
+        "balance_strategy": {"type": "string"},
+        "social_experience": {"type": "string"},
+        "art_semantic_review": {"type": "string"},
+        "illustration_text_guard": {"type": "string"},
+        "back_design_and_information_leak": {"type": "string"},
+        "visual_readability": {"type": "string"},
+        "package_and_provenance": {"type": "string"}
+      }
     },
-    "open_issues": {
-      "type": "array"
-    },
-    "overall_verdict": {
-      "enum": [
-        "PASS",
-        "PASS_WITH_MINOR_ISSUES",
-        "FAIL",
-        "BLOCKER"
-      ]
-    },
-    "evidence_bundle_sha256": {
-      "type": "string",
-      "pattern": "^[0-9a-f]{64}$"
-    }
+    "open_issues": {"type": "array"},
+    "overall_verdict": {"enum": ["PASS", "PASS_WITH_MINOR_ISSUES", "FAIL", "BLOCKER"]},
+    "evidence_bundle_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
   }
 }

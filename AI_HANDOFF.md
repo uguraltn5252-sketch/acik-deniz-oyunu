@@ -1,10 +1,31 @@
-# AI Handoff Protocol
+# FOULWAKE AI Handoff Protokolü
 
-Bu dosya farklı ChatGPT oturumları/model sürümleri arasında oyunun kanonik durumunu yeniden kurmak için zorunlu protokoldür.
+Bu dosya yeni bir oturumun kanonik proje durumunu kısa ve doğrulanabilir
+biçimde kurması için zorunlu başlangıç kaydıdır.
 
-## Baş editörlük yönetişimi
+## Güncel hüküm
 
-Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
+- **Son kullanıcı-onaylı sürüm:** `v2.6 STABLE / LOCKED`
+- **Kanonik kilitli kaynak:** `releases/v2.6/`
+- **Aktif çalışma:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`
+- **Entegrasyon dalı:** `v2.7-design`
+- **Aktif görsel candidate:** **YOK**
+- **Simülasyon attestation:** **YOK**
+- **Kilit izni:** **YOK**
+
+Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
+üzerinde Görsel girdisi olarak kabul edilmiş ve exact kabul edilen üç Hikâye
+blobu `v2.7-design`a entegre edilmiştir. Görsel teslim
+`work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891`
+üzerinde gerçekten yapılmıştır; ancak proje sahibi bütün ön ve arka yüz
+sanatını reddetmiştir. Baş Editör dispozisyonu
+`DELIVERED_REJECTED_ART_REWORK_REQUIRED`dır. Eski PDF/render/hash kayıtları
+yalnız teknik üretim hattı referansıdır, release candidate değildir.
+
+`work/v2.7-simulation` henüz yoktur. Yeni görsel pilot ve tam aday Baş Editörce
+kabul edilmeden Simülasyon başlamaz.
+
+## Her oturumda zorunlu okuma sırası
 
 1. `AI_HANDOFF.md`
 2. `PROJECT_STATE.md`
@@ -13,123 +34,99 @@ Her çalışma oturumu aşağıdaki dosyaları bu sırayla okumalıdır:
 5. `governance/ACTIVE_WORKSTREAMS.json`
 6. `governance/WORKSTREAM_ASSIGNMENTS.md`
 7. `governance/WORKSTREAM_PROTOCOL.md`
-8. `governance/COORDINATION_LOG.md` içindeki en son kayıt
+8. `governance/CHIEF_EDITOR_AUDIT_20260825.md`
+9. `governance/COORDINATION_LOG.md` içindeki en yeni kayıt
 
-- Kanonik durum, kaynak önceliği, release entegrasyonu ve kilitleme yalnız Baş Editör tarafından yürütülür.
-- Proje sahibinin açık `kilitle`, `stable yap` veya `release et` talimatı kilit sürecinin zorunlu tetikleyicisidir; tek başına yeterli değildir.
-- Simülasyon Testi bağımsız ve zorunlu release kapısıdır. Mekanik, matematik, strateji, sosyal deneyim, görsel kullanılabilirlik, PDF, baskı, manifest ve dosya bütünlüğünü kapsar.
-- Açık `FAIL`, `BLOCKER` veya tam candidate commite bağlı olmayan test sonucu varken sürüm kilitlenmez.
-- Hikâye, Görsel Tasarım ve Simülasyon Testi başka hattın alanını sessizce değiştirmez; zorunlu handoff biçimini kullanır.
-- GitHub'a yazılmış olmak bir çıktıyı kendiliğinden kanon, STABLE veya LOCKED yapmaz.
+Görsel çalışma ayrıca
+`working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`
+dosyasını okumadan üretime başlayamaz.
 
-## Resmî çalışma alanı ve geçici ajan yasağı
+## Resmî çalışma alanları
 
-- Resmî uzman alanları kullanıcının oluşturduğu `Foulwake Hikâye Editör`,
-  `FOULWAKE görsel tasarım` ve `Simülasyon Testi` görünür sohbetleridir.
-- Bir iş yalnız ilgili görünür sohbet içinde yapılıp
-  `VISIBLE_CHAT_ACK: YES` handoffuyla exact commite bağlandığında o uzman hatta
-  mal edilir.
-- Geçici alt ajan oluşturmak yasaktır. Çok zorunlu istisna yalnız proje
-  sahibinin önceden açık izniyle mümkündür; sonuç `TEMPORARY_SUBAGENT` olarak
-  etiketlenir ve uzman sohbet teslimi, onayı veya PASS'i sayılmaz.
-- Baş Editör başka görünür sohbetin geçmişine doğrudan mesaj ekleyemez. GitHub
-  görev kaydı `PENDING_VISIBLE_CHAT_ACK` iş emridir; kendi başına iletişim veya
-  kabul kanıtı değildir.
-- Uzman dalları `work/v2.7-story`, `work/v2.7-visual` ve
-  `work/v2.7-simulation`; entegrasyon hedefi `v2.7-design`dır. Kanonik durum,
-  `main`, release ve kilit yalnız Baş Editör kapsamındadır.
+| Hat | Görünür sohbet | Dal | Yetki |
+|---|---|---|---|
+| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | Lore, anlatı ve mekanik olmayan görünen metin |
+| Görsel | `FOULWAKE görsel tasarım` | `work/v2.7-visual` | Özgün illüstrasyon, yerleşim, tipografi, baskı |
+| Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | Bağımsız QA ve kanıt; mekanik değişiklik yok |
+| Baş Editör | Bu çalışma | `v2.7-design` | Kanon, çakışma, entegrasyon, release ve kilit |
 
-### Güncel görünür sohbet ACK durumu
+Resmî uzman işi yalnız doğru görünür sohbetten
+`VISIBLE_CHAT_ACK: YES`, exact dal/commit ve zorunlu handoff alanlarıyla
+geldiğinde o hatta mal edilir. Geçici alt ajan oluşturmak yasaktır; çok zorunlu
+istisna ancak proje sahibinin önceden açık izniyle mümkündür ve yine uzman
+teslimi sayılmaz.
 
-20 Ağustos 2026 tarihinde proje sahibi üç resmî görünür sohbete ayrı ayrı
-salt-okunur iletişim testi iletti. `Foulwake Hikâye Editör`, `FOULWAKE görsel
-tasarım` ve `Simülasyon Testi`, kaynak
-`v2.7-design@52f6c3b3c196a5af9c48d4694cd3091eb3da8129` için
-`VISIBLE_CHAT_ACK: YES` verdi. Baş Editör bu üç cevabı yalnız
-`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` olarak kabul etti.
+## Güncel kanıt kayıtları
 
-Bu 3/3 ACK; uzman yeniden doğrulaması, çalışma dalı oluşturulması, dosya
-değişikliği, commit, test, PASS, blocker kapanışı veya release teslimi değildir.
-İletişim testinin bağlayıcı kanıtı
-`governance/VISIBLE_CHAT_ACKS_20260820.json` içindedir; bu tarihsel kayıt daha
-sonraki uzman teslimlerinin yerine geçmez.
+- İletişim testi: `governance/VISIBLE_CHAT_ACKS_20260820.json` — yalnız 3/3
+  `COMMUNICATION_TEST_ONLY` ACK.
+- Hikâye teslimi: `governance/STORY_HANDOFF_20260820.json` —
+  `ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT`.
+- Görsel teslim ve ret: `governance/VISUAL_HANDOFF_20260825.json` —
+  `REJECTED_ART_REWORK_REQUIRED`.
+- Son Baş Editör denetimi: `governance/CHIEF_EDITOR_AUDIT_20260825.md`.
 
-### Güncel uzman teslim durumu
+GitHub'a yazılmış olmak bir çıktıyı kendiliğinden kanon, PASS, STABLE veya
+LOCKED yapmaz.
 
-`Foulwake Hikâye Editör`, `work/v2.7-story` dalında bağımsız revalidasyonunu
-`e04eef7f1fef6ea407feaaf26558551297c44b37` commitinde teslim etmiştir. Baş
-Editör commit kapsamını, korunan alanları, 20 Karakter / 30 Güç / 50 benzersiz
-kimliği ve kaynak bloblarını doğrulamış; sonucu
-`ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT` olarak kabul etmiştir. Tam
-handoff kanıtı `governance/STORY_HANDOFF_20260820.json` içindedir.
+## Kaynak önceliği
 
-`work/v2.7-visual`, kabul edilen Hikâye commitinden oluşturulmuştur ve Görsel
-Tasarımın gerçek teslimi beklenmektedir. `work/v2.7-simulation` henüz
-oluşturulmamıştır. Hikâye kabulü release PASS'i değildir; Story değişiklikleri
-henüz `v2.7-design`a entegre edilmemiştir. `COM-001`, Görsel ve Simülasyon
-branch-bound teslimleri tamamlanana kadar açık kalır.
+1. Proje sahibinin en yeni açık kararı.
+2. Değişmeyen mekanik ve içerik için `v2.6 STABLE / LOCKED`.
+3. `governance/DECISION_REGISTER.md` içindeki aktif v2.7 DRAFT kararları.
+4. `working/v2.7/SOURCE_HIERARCHY_v2.7.json` içindeki alan kaynakları.
+5. Taslak üretim ve kanıt dosyaları.
 
-## Aktif v2.7 kararları
+Çelişki otomatik seçilmez; çalışma durur ve Baş Editöre handoff edilir.
 
-- **Sea=Rock:** Açık Deniz ve Kayalık v2.7 DRAFT içinde aynı metinsiz binary
-  arka yüzü kullanır. Bu, proje sahibinin bağlayıcı taslak kararıdır; yeniden
-  sorulmaz veya Görsel Tasarım tarafından ayrı Kayalık arka yüzüne çevrilmez.
-- Bu karar v2.6'nın ayrı Kayalık arka yüzünü geriye dönük değiştirmez ve bilgi
-  mimarisi farkı nedeniyle exact candidate üzerinde tam Simülasyon ile kör
-  fiziksel sızıntı testi geçmeden release olamaz.
-- v2.7 Karakter/Güç görünen metni `FOULWAKE_CARD_TEXTS_v2.7.json`; tanımlı
-  rulebook anlatı blokları `FOULWAKE_RULEBOOK_STORY_v2.7.md`; ton/lore çiti
-  `FOULWAKE_STORY_FRAMEWORK.md` kaynağından alınır.
-- Reset öncesi 121/121 üretim tarihsel kanıttır; güncel branch ve exact
-  candidate ile bağlanmadan v2.7 release kanıtı değildir.
+### Açık kaynak çelişkisi: `SRC-002`
 
-## Sürüm durumu
+Kilitli v2.6 kayıtları Bayat Peksimet'i `GUC-22` olarak gösterirken aktif v2.7
+Card Texts `GUC-22 = Kaptanın Çatlak Kupası`, `GUC-23 = Bayat Peksimet` der.
+Exact baseline/script kanıtı GitHub'da yoktur. Bu kimlikler tahminle
+değiştirilemez; Simülasyon/baş editör exact karşılaştırması beklenir.
 
-- **Son kullanıcı onaylı kilitli stabil sürüm:** `v2.6 STABLE / LOCKED` — `releases/v2.6/`.
-- `v2.5` önceki kilitli mekanik baseline ve tarihsel geri dönüş referansıdır.
-- Otomatik "en yeni LOCKED/STABLE" çalışma protokolü **v2.6'yı** seçmelidir.
-- v2.6 yerinde değiştirilmez; yeni çalışma `v2.7+ DRAFT` olarak açılır.
+## Bağlayıcı görsel rework özeti
 
-## Her yeni çalışma oturumunda
-
-1. `AI_HANDOFF.md` ve `PROJECT_STATE.md` dosyalarını oku.
-2. `releases/v2.6/README_RELEASE_v2.6.md`, `V26_RELEASE_MANIFEST.json`, `BINARY_ARTIFACTS.md`, `CARD_BASELINE.md`, `V26_RELEASE_VALIDATE_OUTPUT.txt` ve `V26_BLIND_RULEBOOK_AUDIT.md` dosyalarını kontrol et.
-3. v2.6 artefaktlarının hashlerini manifestteki değerlerle doğrula.
-4. Mekanik motor ayrıntısı gerektiğinde `releases/v2.5/` baseline kayıtlarını kullan.
-5. v2.6 üzerinde yerinde değişiklik yapma. Her yeni fikir, kart, kural, hikâye veya fiziksel bileşen değişikliği v2.7+ DRAFT hattında tutulur.
-6. v2.7 işi için `working/v2.7/SOURCE_HIERARCHY_v2.7.json`,
-   `V27_MECHANIC_DECISIONS.json` ve
-   `working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md` dosyalarını kontrol et.
+- KAPTAN görseli yalnız sanat dili için `STYLE_ONLY`; karakter, yüz, poz,
+  kompozisyon veya piksel kopyalanmaz.
+- 121 kartın her biri ayrı art brief ve semantik olarak ayrı özgün sahne alır.
+- Önceki altı aile plakası ve türevleri kullanılamaz.
+- İllüstrasyon alanında tabela, slogan, konuşma balonu, açıklama veya saçma /
+  anlamsız okunabilir yazı yoktur.
+- Okunabilir metin yalnız exact başlık, effect, flavor ve kart kimliğidir.
+- `unique render SHA`, özgün sanat kanıtı değildir; kör contact-sheet incelemesi
+  zorunludur.
+- Arka yüz topolojisi 7 binarydir: Karakter 20; Güç+Çürümüş 31; Sadakat 15;
+  Deniz+Kayalık 42; Ada 6; Deniz Feneri 4; yardımcı 3.
+- Arka yüzler ön yüzlerle aynı sanat dilindedir fakat ön yüzün kopyası değildir;
+  metinsiz, aile içinde exact aynı ve 180° yön güvenlidir.
+- 12 ön-yüz pilotu ve 7 arka-yüz taslağı kullanıcı + Baş Editör onayı almadan
+  tam 121 üretime geçilmez.
 
 ## v2.6 kilitli omurga
 
-- Gemi `SET-KL-01` Kalkış Limanında başlar; `SET-VL-01` Varış/Hedef Limanı üst sıra hedef sütununa hizalanır.
-- Kaptan makamı `SET-KP-01` açık yardımcı kartıyla takip edilir.
-- İlk gün yalnız Kaptan seçimi; ilk tarafsız gecede Kaptan Sadakatini bilmeden tam 1 yasal Yakın Ufka gizlice bakar.
-- Sadakatler ertesi sabah dağıtılır; ilk gerçek rota normal eşzamanlı oylamadır ve Kaptan rota oyu 2 sayar.
-- İlk Hain uyanışı Sadakatlerden sonraki ilk yolculuk gecesidir; Hainler birbirini tanır, 1 Yakın Ufka bakar, saldırı yapamaz.
-- Başlangıç paketi N-1 gerçek Güç + Çürümüş Erzak; Çürümüş Erzak sahibi sonuçtan sonra 1 gerçek Güç çeker.
-- Gövde 2.
-- İskorbüt etkinse Liman Gecesinden önce Ada ziyareti zorunludur; Ada girişinde olaydan önce temizlenir.
-- Kamusal Harita açmaları açık kalır; ziyaret edilmedikçe olay çözülmez; açık Geçilmez anında engeldir.
-- Relocation guard ve Ada çevresi Girdap/Ters Akıntı invariantı korunur.
-- Kaderi Yeniden Yaz × Geçilmez hükmü v2.5 mekanik baseline ile aynıdır.
-- Kaptan ölür, Kamaraya girer, mahsur kalır, Kayıkçı seferine çıkar veya başarılı İsyanla düşerse hemen yenisi seçilir.
-- Hain tablosu: 6:1, 7:2, 8–10:3, 11–13:4, 14–15:5.
-- Ana kart seti: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita = 118 ana kart.
-- Yardımcı kartlar: Kalkış Limanı + Varış Limanı + Kaptan = 3 kart; toplam 121 basılabilir fiziksel kart.
-- Mahkûm için ayrı kart/token yok; Moderatör not alır.
-- **Kayalık arka yüzleri KAYALIK kategorisi olarak kalır. Açık Deniz ile aynı arka yüz yapma deneyi v2.6'ya alınmamıştır.**
+- 118 ana kart: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita.
+- 3 yardımcı kart: `SET-KL-01`, `SET-VL-01`, `SET-KP-01`; toplam 121 basılabilir
+  fiziksel kart.
+- Mahkûm için ayrı kart/token yoktur; Moderatör not alır.
+- Gövde 2; Hain tablosu 6:1, 7:2, 8–10:3, 11–13:4, 14–15:5.
+- v2.6 Kayalık arka yüzü Açık Denizden ayrıdır. Sea=Rock yalnız v2.7 DRAFT
+  kararıdır ve tam yeniden test gerektirir.
+- Kilitli artefakt hashleri `releases/v2.6/V26_RELEASE_MANIFEST.json` ve
+  `releases/v2.6/SHA256SUMS.txt` içindedir.
 
-## Kilitli artefaktlar
+## Kilit kuralı
 
-- Kural PDF: `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf`
-  - SHA-256: `192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a`
-- Kart PDF: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf`
-  - SHA-256: `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298`
-- Full ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip`
-  - SHA-256: `ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534`
+Kilit sürecini yalnız proje sahibinin açık `kilitle`, `stable yap` veya
+`release et` talimatı başlatır; kilidi yalnız Baş Editör uygular. Açık
+`FAIL/BLOCKER`, eksik exact candidate, eksik fiziksel kanıt veya geçersiz
+Simülasyon attestation varken sürüm kilitlenmez.
 
-## Kısa devam komutu
+## Güncel devam komutu
 
-> GitHub'daki Açık Deniz reposunda `v2.7-design` dalını aç. `AI_HANDOFF.md`, `PROJECT_STATE.md`, `governance/EDITORIAL_CHARTER.md` ve `governance/DECISION_REGISTER.md` dosyalarını oku. Son kullanıcı-onaylı kilitli sürüm olarak v2.6 STABLE / LOCKED'u kullan. `governance/ACTIVE_WORKSTREAMS.json` içindeki açık engelleri, görünür sohbet kabul durumunu ve görev sahiplerini kontrol et. Yalnız kendi uzman dalında çalış; v2.6'yı yerinde değiştirme ve görünür sohbet handoffu olmadan işi teslim edilmiş sayma.
+> `v2.7-design` dalında zorunlu yönetişim dosyalarını ve
+> `FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md` dosyasını oku. v2.6'yı
+> değiştirme. Eski e91581 görsel teslimini yalnız reddedilmiş teknik referans
+> say. Kendi görünür sohbet ve dal/yetki alanında çalış; exact handoff olmadan
+> teslim veya PASS ilan etme.

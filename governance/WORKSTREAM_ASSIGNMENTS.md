@@ -1,71 +1,86 @@
 # FOULWAKE v2.7 Çalışma Hattı Görevleri
 
-**Durum:** ACTIVE / RELEASE BLOCKED
+**Durum:** ACTIVE / RELEASE BLOCKED  
+**Baseline:** v2.6 STABLE / LOCKED  
+**Entegrasyon hedefi:** `v2.7-design`
 
-**Yönetişim tabanı:** `v2.7-design@bc148e33343b4066259a996a9c299aab17fd8e3d`
+## Güncel teslim tablosu
 
-**Kabul edilen Hikâye kaynağı:** `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
-
-**Baseline:** v2.6 STABLE / LOCKED
-
-Önceki çapraz denetim geçici alt ajanlarla yapılmıştır ve resmî uzman teslimi
-değildir. Üç görünür sohbetin 3/3 iletişim ACK kaydı yalnız
-`COMMUNICATION_TEST_ONLY` kapsamındadır. Bunun ardından `Foulwake Hikâye
-Editör` görünür sohbeti bağımsız revalidasyonunu kendi dalında teslim etmiş;
-Baş Editör exact commit ve kapsamı doğrulayarak Görsel Tasarım girdisi olarak
-kabul etmiştir. Görsel ve Simülasyon gerçek teslimleri henüz beklenmektedir.
-
-## Görünür sohbet ve dal haritası
-
-| Hat | Resmî görünür sohbet | Çalışma dalı | Güncel kabul |
+| Hat | Görünür sohbet / dal | Durum | Bağlayıcı kanıt |
 |---|---|---|---|
-| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` |
-| Görsel | `FOULWAKE görsel tasarım` | `work/v2.7-visual` | `AUTHORIZED_BRANCH_CREATED / PENDING_VISIBLE_CHAT_DELIVERY` |
-| Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_REAL_DELIVERY` |
+| Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
+| Görsel | `FOULWAKE görsel tasarım` / `work/v2.7-visual` | `DELIVERED / REJECTED_ART_REWORK_REQUIRED` | `VISUAL_HANDOFF_20260825.json`, head `e91581...` |
+| Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
+| Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
 
-Hikâye tesliminin bağlayıcı kaydı
-`governance/STORY_HANDOFF_20260820.json` içindedir. Bu kabul release PASS'i,
-mekanik eşdeğerlik veya kilit değildir; Hikâye değişiklikleri henüz
-`v2.7-design`a entegre edilmemiş, exact çalışma commitinde tutulmuştur.
+## Hikâye Editörü
 
-## Sorumluluk haritası
+- Kabul edilen kaynak commitini korur; yeni görsel üretim sırasında exact metin
+  sorusu gelirse yalnız hikâye/görünen metin alanında cevap verir.
+- Kart kimliği, effect, zamanlama ve deste davranışını değiştirmez.
+- `SRC-002` için tahmin yürütmez; exact baseline karşılaştırmasını Baş Editör ve
+  Simülasyona bırakır.
+- Yeni görev yoksa dalı değiştirmez.
 
-| Engel | Birincil sorumlu | Destek | Teslim | Kapanış ölçütü |
-|---|---|---|---|---|
-| `CAN-001` | Hikâye | Baş Editör | `CAN-08/09` sınıflandırma düzeltmesi | İki satır `TASLAK`; diğer Story kaynakları ve mekanik alanlar değişmez |
-| `MEC-001` | Simülasyon Testi | Görsel + Baş Editör | Ortak Sea=Rock bilgi modeli için spec ve tam A/B QA | Karar kaydı + kaynak uyumu + mekanik/stratejik/sosyal/kör fiziksel PASS |
-| `SRC-001` | Görsel Tasarım | Hikâye + Simülasyon | Tek kaynak hiyerarşisi ve source → render → PDF izlenebilirliği | Exact source/blob kayıtları ve sıfır yetkisiz metin farkı |
-| `ART-001` | Görsel Tasarım | Simülasyon | Tam 121 kart candidate ve artefakt manifestleri | 121/121 kimlik, front/back eşleme, hash, PDF preflight ve fiziksel prova |
-| `QA-001` | Simülasyon Testi | Hikâye | Yeniden üretilebilir narrative/mechanics karşılaştırması | Sürümlü baseline, script, komut, ham çıktı ve hashler |
-| `QA-002` | Simülasyon Testi | Görsel | Fiziksel ve kör insan test paketi | Print/cut/duplex/ışık, arka yüz sızıntısı ve kör masa testi kayıtları |
-| `GOV-001` | Baş Editör | Bütün hatlar | Dal uzlaştırması, release PR ve zorunlu check | Tutarlı state, intentional merge planı ve korunan release akışı |
-| `COM-001` | Baş Editör | Bütün görünür uzman sohbetleri | Yanlış atıfların kaldırılması; 3/3 iletişim ACK tamamlandı | Her uzman sohbetinde bağımsız revalidasyon, oluşturulmuş çalışma dalı ve branch-bound gerçek teslim |
+## Görsel Tasarım — aktif görev
 
-## Bağlayıcı teslim sırası
+Bağlayıcı iş emri:
+`working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`
 
-1. Her görünür uzman sohbet kendi görevini bu kayıttan okur ve kendi çalışma dalında yürütür.
-2. Hikâye, görünür sohbet handoffuyla kesin metin alanlarını ve korunacak mekanik alanları Görsel Tasarıma verir.
-3. Görsel Tasarım kaynakları değiştirmeden candidate üretir ve manifestleri görünür Simülasyon Testi sohbetine devreder.
-4. Simülasyon exact candidate üzerinde bütün kapıları çalıştırır; ürünü değiştirmez.
-5. Baş Editör görünür sohbet handofflarını ve exact commitleri karşılaştırır, kapsam ihlalini reddeder ve kabul edilenleri `v2.7-design`a entegre eder.
-6. Yeni ürün candidate commit'i önceki bütün v2.7 attestation sonuçlarını geçersiz kılar.
+1. Reddedilen `e91581...` görsellerini, altı aile plakasını, render/PDF'leri ve
+   arka yüzleri yeni sanatın girdisi olarak kullanma.
+2. 121 kart için ayrı art-brief envanteri; 7 arka yüz için ayrı brief üret.
+3. KAPTAN referansını yalnız STYLE_ONLY kullan; karakter/yüz/poz/kompozisyon
+   kopyalama.
+4. İllüstrasyon alanında gereksiz veya anlamsız okunabilir yazı üretme.
+5. 12 ön-yüz pilotu ve 7 arka-yüz taslağını tek contact sheetlerle teslim et.
+6. Kullanıcı + Baş Editör pilot kabulü olmadan tam 121 üretim/PDF yapma.
+7. Tam üretimde her kart için semantik özgünlük ve text-in-art alanlarını
+   manifestte kaydet; `unique SHA`yı sanat özgünlüğü sayma.
+8. Exact kart metnini değiştirme; taşmayı Baş Editöre handoff et.
 
-## Hattın değişiklik sınırı
+Görsel hattın bir sonraki sonucu `PILOT_DELIVERED / PENDING_CHIEF_EDITOR_AND_OWNER_ACCEPTANCE`
+olmalıdır; release veya Simülasyon PASS'i değildir.
 
-- Hikâye; kart kimliği/adedi, etki, zamanlama, deste davranışı veya kural akışını değiştiremez.
-- Görsel; metni kısaltamaz, yeniden yazamaz, mekanik veya lore hükmü üretemez.
-- Simülasyon; bulguyu doğrudan yeni kurala çeviremez, candidate ürünü değiştiremez ve kilitleyemez.
-- Hiçbir hat `PROJECT_STATE.md`, `AI_HANDOFF.md`, `governance/**` veya `releases/**`
-  alanında Baş Editörden bağımsız kanonik değişiklik yapamaz.
+## Simülasyon Testi — bekleyen görev
 
-Her teslim `WORKSTREAM_PROTOCOL.md` içindeki zorunlu handoff biçimiyle Baş Editöre gönderilir.
+Yeni görsel candidate Baş Editörce kabul edilmeden iş başlatılmaz ve
+`work/v2.7-simulation` oluşturulmaz. Yetkili handoff geldiğinde:
 
-Geçici alt ajan raporu, GitHub iş emri veya başka bir sohbetin özeti bu teslimin
-yerine geçmez ve uzman hat adına `ACKNOWLEDGED`, `DELIVERED` veya `PASS`
-durumu oluşturmaz.
+- `SRC-002` GUC-22/GUC-23 exact baseline karşılaştırması;
+- 121 kimlik, mekanik eşdeğerlik ve source→render→PDF;
+- kör contact-sheet sanat tekrar incelemesi;
+- resim-içi yazı, dönem uyumu, mizah tekrarı ve bilgi sızıntısı;
+- yedi arka-yüz binary eşlemesi, 180° yön güvenliği, kesim/parlaklık/duplex;
+- fiziksel proof, kör insan ve oyun/sosyal deneyim testleri;
+- exact candidate bağlı `SIM_QA_ATTESTATION_v2.7.json`
 
-`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY`, uzman teslimi değildir.
-`work/v2.7-story` ve `work/v2.7-visual` oluşturulmuştur;
-`work/v2.7-simulation` ilk yetkili Simülasyon çalışmasında oluşturulacaktır.
-`COM-001`, Görsel ve Simülasyon branch-bound gerçek teslimleri tamamlanana kadar
-açık kalır.
+üretir. Bulguyu mekanik veya görsel değişikliğe dönüştürmez.
+
+## Baş Editör
+
+- Exact handoff, dal kapsamı, kaynak ve kanıt zincirini doğrular.
+- Pilot kabul/ret dispozisyonunu kaydeder.
+- `SRC-002`, `GOV-001` ve çalışma hattı çakışmalarını yönetir.
+- Release candidate yalnız bütün blockerlar kapanınca ve Simülasyon kapısı
+  geçince oluşturulur.
+- Kilit yalnız proje sahibinin açık talimatıyla ve Baş Editör tarafından yapılır.
+
+## Açık blocker sahipliği
+
+| Blocker | Sahip | Durum |
+|---|---|---|
+| `MEC-001` | Simülasyon | Yeni candidate bekliyor |
+| `SRC-001` | Görsel | Yeni provenance bekliyor |
+| `SRC-002` | Baş Editör + Simülasyon | Exact baseline çözümü bekliyor |
+| `ART-001` | Görsel | Tam rework gerekiyor |
+| `QA-001`, `QA-002` | Simülasyon | Yeni candidate bekliyor |
+| `GOV-001`, `COM-001` | Baş Editör | Açık |
+
+## Zorunlu handoff
+
+Her teslim `WORKSTREAM`, `VISIBLE_CHAT`, `VISIBLE_CHAT_ACK: YES`,
+`EVIDENCE_TYPE: VISIBLE_CHAT_WORKSTREAM`, `SOURCE_BRANCH`, exact
+`SOURCE_COMMIT`, `BASELINE_RELEASE`, `SCOPE`, `CHANGED_FILES`,
+`PROTECTED_FIELDS_CONFIRMED`, `TESTS_RUN`, `RESULT`, `OPEN_RISKS`,
+`NEXT_RECIPIENT` ve `LOCK_REQUESTED: NO` alanlarını içerir.

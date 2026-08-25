@@ -4,29 +4,40 @@
 **Kapsam:** v2.7 DRAFT ve sonraki çalışma hatları  
 **Kilitli baseline:** v2.6 STABLE / LOCKED
 
-Bu dosya, sohbetler arasında tekrar tartışılmaması gereken açık proje sahibi
-kararlarını kanonik durumdan ve release kilidinden ayırarak kaydeder. Bir kararın
-`APPROVED FOR DRAFT` olması, sürümün `STABLE / LOCKED` olduğu anlamına gelmez.
+Bu kayıt proje sahibinin tekrar sorulmaması gereken açık kararlarını tutar.
+`APPROVED FOR DRAFT`, release veya `STABLE / LOCKED` anlamına gelmez. Daha yeni
+karar daha eski kararı yalnız açıkça `SUPERSEDED` olarak işaretlendiğinde
+geçersiz kılar.
 
-| Karar | Durum | Bağlayıcı hüküm | Sonuç / zorunlu kapı |
+| Karar | Durum | Bağlayıcı hüküm | Zorunlu kapı |
 |---|---|---|---|
-| `DEC-20260820-01` | APPROVED FOR v2.7 DRAFT | Açık Deniz ve Kayalık aynı, metinsiz ve yön sızdırmayan binary arka yüzü kullanır. | v2.6'nın ayrı Kayalık arka yüzünü geriye dönük değiştirmez. Bilgi mimarisi farkı nedeniyle exact candidate üzerinde tam Simülasyon ve kör fiziksel sızıntı testi zorunludur. |
-| `DEC-20260820-02` | APPROVED FOR v2.7 DRAFT | Karakter/Güç görünen metni `FOULWAKE_CARD_TEXTS_v2.7.json`; tanımlı rulebook anlatı blokları `FOULWAKE_RULEBOOK_STORY_v2.7.md`; ton/lore çiti `FOULWAKE_STORY_FRAMEWORK.md` kaynağından alınır. | Kimlik, adet, etki, zamanlama, deste davranışı ve kural akışı v2.6 mekanik baseline'ından korunur. |
-| `DEC-20260820-03` | APPROVED VISUAL DIRECTION | Mürekkep/gravür etkili yetişkin karikatürü ve sınırlı dönem paleti kullanılır; mizah yalnız fareye bağlanmaz. | Sanat yönü onayı release kilidi değildir; tam 121 kart, preflight ve fiziksel prova gerekir. |
-| `DEC-20260820-04` | ACTIVE QA MANDATE | Simülasyon Testi mekanik, matematik, strateji, sosyal deneyim, sıkılma, adalet, görsel kullanılabilirlik, PDF, baskı, manifest ve dosya bütünlüğünü denetler. | Tek bir validator veya kazanma oranı genel PASS sayılmaz. Exact-candidate attestation zorunludur. |
-| `DEC-20260820-05` | LOCK POLICY | Proje sahibi açık `kilitle`, `stable yap` veya `release et` talimatıyla süreci başlatır; kilidi yalnız Baş Editör uygular. | Açık FAIL/BLOCKER, eksik candidate veya geçersiz attestation varken kilit uygulanmaz. |
-| `DEC-20260820-06` | WORKSTREAM IDENTITY POLICY | Resmî Hikâye, Görsel Tasarım veya Simülasyon işi yalnız kullanıcının oluşturduğu aynı adlı görünür sohbet içinde yapılıp zorunlu handoff ile kaydedildiğinde o hatta mal edilir. Geçici alt ajan kullanımı yasaktır; çok zorunlu istisna ancak proje sahibinin önceden açık izniyle mümkündür. | İzinli geçici alt ajan çıktısı dahi görünür uzman sohbetinin teslimi veya onayı sayılmaz; açıkça `TEMPORARY_SUBAGENT` olarak etiketlenir. |
-| `DEC-20260820-07` | WORKSTREAM BRANCH POLICY | Görünür uzman sohbetleri yalnız kendi çalışma dalı ve yetki alanında teslim üretir: `work/v2.7-story`, `work/v2.7-visual`, `work/v2.7-simulation`. Entegrasyon hedefi `v2.7-design`dır. | Uzmanlar `governance/**`, `releases/**` veya kanonik durum dosyalarını değiştiremez; kabul, entegrasyon, `main`/release geçişi ve kilit yalnız Baş Editördedir. |
-| `DEC-20260820-08` | COMMUNICATION EVIDENCE POLICY | GitHub görev kaydı bir görünür sohbete otomatik mesaj gönderildiği veya görevin kabul edildiği anlamına gelmez. | İlgili görünür sohbet kendi geçmişinde görevi okuyup `VISIBLE_CHAT_ACK: YES` içeren handoff vermeden durum `PENDING_VISIBLE_CHAT_ACK` kalır. |
+| `DEC-20260820-01` | APPROVED FOR v2.7 DRAFT | Açık Deniz ve Kayalık aynı metinsiz binary arka yüzü kullanır. | v2.6'yı değiştirmez; exact candidate üzerinde tam Simülasyon ve kör fiziksel sızıntı testi gerekir. |
+| `DEC-20260820-02` | ACTIVE SOURCE CONTRACT | Karakter/Güç görünen metni `FOULWAKE_CARD_TEXTS_v2.7.json`; rulebook anlatı blokları `FOULWAKE_RULEBOOK_STORY_v2.7.md`; ton/lore çiti `FOULWAKE_STORY_FRAMEWORK.md` kaynağından alınır. | Kimlik, adet, effect, zamanlama, deste davranışı ve kural akışı v2.6 baseline'ından korunur; çelişki durdurulur. |
+| `DEC-20260820-03` | SUPERSEDED 2026-08-25 | Önceki genel mürekkep/gravür sanat yönü onayı. | Eski örnek ve tam üretim sanatı artık kabul kanıtı değildir; `DEC-20260825-01..05` uygulanır. |
+| `DEC-20260820-04` | ACTIVE QA MANDATE | Simülasyon mekanik, matematik, strateji, sosyal deneyim, görsel kullanılabilirlik, PDF, baskı, manifest ve dosya bütünlüğünü denetler. | Tek validator/hash veya kazanma oranı genel PASS değildir; exact-candidate attestation gerekir. |
+| `DEC-20260820-05` | LOCK POLICY | Kilit sürecini proje sahibi açık talimatla başlatır; kilidi yalnız Baş Editör uygular. | Açık FAIL/BLOCKER veya eksik candidate/attestation varken kilit yoktur. |
+| `DEC-20260820-06` | WORKSTREAM IDENTITY | Resmî uzman işi yalnız kullanıcının oluşturduğu görünür sohbet ve exact branch-bound handoff ile o hatta mal edilir. Geçici alt ajan yasaktır. | Önceden izinli istisna bile uzman teslimi/PASS sayılmaz. |
+| `DEC-20260820-07` | WORKSTREAM BRANCH | Uzman dalları `work/v2.7-story`, `work/v2.7-visual`, `work/v2.7-simulation`; entegrasyon hedefi `v2.7-design`dır. | Governance, releases, main ve kilit yalnız Baş Editördedir. |
+| `DEC-20260820-08` | COMMUNICATION EVIDENCE | GitHub iş emri görünür sohbet ACK'i değildir. | Doğru sohbet `VISIBLE_CHAT_ACK: YES` handoff vermeden teslim kaydedilemez. |
+| `DEC-20260825-01` | BINDING ART REJECTION | `work/v2.7-visual@e91581...` teslimindeki bütün ön ve arka yüz sanatı reddedildi. | Eski render/PDF/plakalar yalnız teknik tarihsel referanstır; yeni candidate olamaz. |
+| `DEC-20260825-02` | BINDING FULL-DECK REWORK | 121 kartın her biri ayrı art brief ve semantik olarak ayrı, sıfırdan özgün sahne alır. | Aile plakası türevi ve `unique SHA = unique artwork` kabulü yasaktır; kör contact-sheet QA gerekir. |
+| `DEC-20260825-03` | BINDING STYLE/TEXT RULE | Kullanıcının KAPTAN görseli STYLE_ONLY referanstır. İllüstrasyon alanına tabela, slogan, konuşma balonu, açıklama veya saçma/anlamsız okunabilir yazı eklenmez. | Okunabilir metin yalnız exact başlık/effect/flavor/kimlik alanlarında olabilir. |
+| `DEC-20260825-04` | BINDING BACK TOPOLOGY | 7 arka yüz: Karakter 20; Güç+Çürümüş 31; Sadakat 15; Deniz+Kayalık 42; Ada 6; Deniz Feneri 4; yardımcı 3. | Metinsiz, aile içinde exact aynı, 180° güvenli, kesim/parlaklık sızıntısız ve önlerle aynı sanat dilinde olmalıdır. |
+| `DEC-20260825-05` | BINDING PRODUCTION GATE | 12 ön-yüz pilotu ve 7 arka-yüz taslağı kullanıcı ile Baş Editörce kabul edilmeden tam 121 üretim/PDF başlamaz. | Pilot ret edilirse brief/sanat düzeltilir; teknik hash başarısı bu kapıyı atlayamaz. |
+
+## Açık kaynak dispozisyonu
+
+`SRC-002`: v2.6 kayıtlarındaki `GUC-22 = Bayat Peksimet` ile v2.7 kaynağındaki
+`GUC-22 = Kaptanın Çatlak Kupası`, `GUC-23 = Bayat Peksimet` çelişkisi karar
+değildir. Exact kilitli kaynak karşılaştırması veya proje sahibinin açık hükmü
+gelmeden Baş Editör, Hikâye veya Görsel hattı kimlik/effect alanını değiştiremez.
 
 ## Uygulama kuralı
 
-- Proje sahibinin daha yeni açık kararı bu kayıtla çelişirse Baş Editör önce bu
-  dosyayı ve etkilenen çalışma kaynaklarını günceller.
-- Taslak karar kilitli v2.6'yı yerinde değiştirmez.
-- Hikâye, Görsel veya Simülasyon hattı bu kararları tek taraflı yeniden açamaz;
-  uygulama riski veya test sonucu Baş Editöre handoff edilir.
-- Reset öncesi üretim ve preflight kayıtları tarihsel kanıttır; güncel branch ve
-  exact candidate ile yeniden bağlanmadan release kanıtı sayılmaz.
-- Geçici alt ajan raporları uzman sohbet onayı olarak kaydedilemez ve blocker
-  kapatamaz. Önceki yanlış atıflar `COM-001` altında yeniden doğrulanır.
+- Daha yeni açık kullanıcı kararı önce bu dosyaya ve etkilenen aktif DRAFT
+  kaynaklarına kaydedilir.
+- Taslak karar v2.6'yı yerinde değiştirmez.
+- Eski teslimler silinmez; yanlışlıkla yeniden aday olmamaları için açık
+  sınıflandırılır.
+- Sohbet özeti, geçici ajan raporu veya GitHub'a yazılmış dosya tek başına
+  release kanıtı değildir.
