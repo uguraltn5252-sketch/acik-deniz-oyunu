@@ -6,7 +6,7 @@
   "source_branch": "work/v2.7-visual",
   "visual_branch_base_commit": "e91581bb336dfcbab5da1d48a256577f9251f891",
   "chief_editor_source_commit": "59affee8cf36e2c5fd4738fc7c7797c3fc9daeb4",
-  "pilot_delivery_commit": "PENDING_EXACT_COMMIT_METADATA",
+  "pilot_delivery_commit": "4576302a4c11b6fa257509967ce9e0eaa8066cd4",
   "source_policy": {
     "style_reference_sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
     "style_reference_role": "STYLE_ONLY",
