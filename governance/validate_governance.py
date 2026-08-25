@@ -85,6 +85,7 @@ REQUIRED_PATHS = [
     "governance/STORY_HANDOFF_20260820.json",
     "governance/VISUAL_HANDOFF_20260825.json",
     "governance/ART_DIRECTION_ACK_20260825.json",
+    "governance/ART_DIRECTION_HANDOFF_20260825.json",
     "governance/SIM_QA_ATTESTATION_SCHEMA.json",
     "governance/LOCK_AUTHORIZATION_SCHEMA.json",
     "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
@@ -93,6 +94,10 @@ REQUIRED_PATHS = [
     "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
     "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
+    "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md",
+    "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
     "working/v2.7/BINARY_ARTIFACTS.md",
     "working/v2.7/V27_MECHANIC_DECISIONS.json",
     "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
@@ -183,18 +188,26 @@ if activation.get("creative_work_authorized") is not True:
 deliveries = state.get("specialist_deliveries", {})
 story = deliveries.get("story", {})
 art_direction = deliveries.get("art_direction", {})
-if art_direction.get("status") != "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT":
-    error("Art Direction delivery status must record accepted communication ACK")
+if art_direction.get("status") != "ART_DIRECTION_BRIEF_ACCEPTED_READY_FOR_EXACT_PILOT_REVIEW":
+    error("Art Direction delivery status must record accepted brief package")
 if art_direction.get("work_branch") != "work/v2.7-art-direction":
     error("Art Direction delivery branch is wrong")
 if art_direction.get("may_start_creative_work") is not True:
-    error("Art Direction creative work must be enabled after visible-chat ACK")
-if art_direction.get("delivery_recorded") is not False:
-    error("Communication ACK cannot be counted as creative Art Direction delivery")
+    error("Art Direction creative work must remain enabled")
+if art_direction.get("delivery_recorded") is not True:
+    error("accepted Art Direction brief delivery must be recorded")
 if art_direction.get("communication_ack_recorded") is not True:
-    error("Art Direction communication ACK must be recorded")
+    error("Art Direction communication ACK must remain recorded")
 if art_direction.get("ack_evidence_path") != "governance/ART_DIRECTION_ACK_20260825.json":
-    error("Art Direction delivery evidence path is wrong")
+    error("Art Direction ACK evidence path is wrong")
+if art_direction.get("evidence_path") != "governance/ART_DIRECTION_HANDOFF_20260825.json":
+    error("Art Direction accepted handoff evidence path is wrong")
+if art_direction.get("source_commit") != "7418d9c2c89c265cb6efd30f6a5a7f2addd528da":
+    error("Art Direction accepted source commit is wrong")
+if art_direction.get("integrated_to_v2_7_design") is not True:
+    error("accepted Art Direction package must be integrated")
+if art_direction.get("project_owner_final_approval") is not True or art_direction.get("art_direction_brief_pass") is not True:
+    error("Art Direction brief requires project-owner and Chief Editor acceptance")
 if story.get("status") != "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT":
     error("Story delivery acceptance is missing")
 if story.get("source_commit") != "e04eef7f1fef6ea407feaaf26558551297c44b37":
@@ -210,6 +223,16 @@ if visual.get("full_production_delivery_commit") != "494b8440bba722a9053f72b2fde
     error("Visual full-production commit is wrong")
 if visual.get("art_accepted") is not False or visual.get("active_candidate") is not False:
     error("Rejected Visual art must not become an active candidate")
+if visual.get("observed_pilot_commit") != "b4afbcf49784b85338453cbf29a956cbb620c9e6":
+    error("observed pre-brief Visual pilot commit is wrong")
+if visual.get("observed_pilot_classification") != "PRE_BRIEF_IN_FLIGHT_PILOT_REVIEW_INPUT_ONLY":
+    error("pre-brief Visual pilot must remain review input only")
+if visual.get("observed_pilot_visible_chat_handoff_received") is not False:
+    error("GitHub pilot cannot count as visible-chat handoff")
+if visual.get("observed_pilot_art_accepted") is not False:
+    error("pre-brief Visual pilot cannot be art-accepted")
+if visual.get("pilot_only_production_authorized") is not True or visual.get("full_production_authorized") is not False:
+    error("Visual authorization must remain pilot-only")
 simulation = deliveries.get("simulation", {})
 if simulation.get("status") != "PENDING_NEW_ART_CANDIDATE":
     error("Simulation must wait for a new accepted art candidate")
@@ -275,6 +298,39 @@ if art_ack_disposition.get("specialist_creative_delivery_completed") is not Fals
 if art_ack_disposition.get("release_pass") is not False or art_ack_disposition.get("lock_allowed") is not False:
     error("Art Direction ACK cannot grant release or lock")
 
+art_handoff = read_json("governance/ART_DIRECTION_HANDOFF_20260825.json")
+if art_handoff.get("record_type") != "VISIBLE_CHAT_ART_DIRECTION_BRIEF_HANDOFF_AND_CHIEF_EDITOR_DISPOSITION":
+    error("Art Direction handoff record type is wrong")
+if art_handoff.get("status") != "ART_DIRECTION_BRIEF_ACCEPTED_PILOT_ONLY_AUTHORIZED":
+    error("Art Direction handoff status is wrong")
+art_delivery = art_handoff.get("art_direction_delivery", {})
+if art_delivery.get("visible_chat") != "FOULWAKE Sanat Yönetmeni" or art_delivery.get("visible_chat_ack") is not True:
+    error("Art Direction handoff requires correct visible chat ACK")
+if art_delivery.get("source_branch") != "work/v2.7-art-direction" or art_delivery.get("source_commit") != "7418d9c2c89c265cb6efd30f6a5a7f2addd528da":
+    error("Art Direction accepted branch/commit mismatch")
+if art_delivery.get("temporary_subagent_used") is not False or art_delivery.get("lock_requested") is not False:
+    error("Art Direction accepted delivery cannot use temporary agents or request lock")
+if art_delivery.get("source_risk") != "SRC-002":
+    error("Art Direction handoff must preserve SRC-002")
+owner_decision = art_handoff.get("project_owner_decision", {})
+if owner_decision.get("decision") != "OPTION_2 — FAMILY-VISIBLE MAP BACKS" or owner_decision.get("final_rework_approved") is not True:
+    error("project-owner family-visible map-back approval is missing")
+art_disposition = art_handoff.get("chief_editor_disposition", {})
+if art_disposition.get("art_direction_brief_pass") != "GRANTED":
+    error("Chief Editor Art Direction brief PASS is missing")
+if art_disposition.get("visual_production_authorized") != "PILOT_ONLY" or art_disposition.get("full_121_production_authorized") is not False:
+    error("Art Direction acceptance may authorize pilot only")
+if art_disposition.get("simulation_may_start") is not False or art_disposition.get("release_pass") is not False or art_disposition.get("lock_allowed") is not False:
+    error("Art Direction brief acceptance cannot grant Simulation, release or lock")
+observed_pilot = art_handoff.get("observed_visual_pilot", {})
+if observed_pilot.get("source_commit") != "b4afbcf49784b85338453cbf29a956cbb620c9e6":
+    error("Art Direction handoff observed Visual pilot commit is wrong")
+if observed_pilot.get("visible_chat_handoff_received") is not False or observed_pilot.get("art_accepted") is not False:
+    error("observed pre-brief Visual pilot cannot count as handoff or accepted art")
+if observed_pilot.get("classification") != "PRE_BRIEF_IN_FLIGHT_PILOT_REVIEW_INPUT_ONLY":
+    error("observed Visual pilot classification is wrong")
+
+
 visual_evidence = read_json("governance/VISUAL_HANDOFF_20260825.json")
 if visual_evidence.get("record_type") != "VISIBLE_CHAT_VISUAL_WORKSTREAM_HANDOFF_AND_CHIEF_EDITOR_DISPOSITION":
     error("Visual evidence record type is wrong")
@@ -321,6 +377,17 @@ for path, expected_sha in expected_story_blobs.items():
         error(f"integrated Story blob differs from accepted handoff: {path}")
 
 
+expected_art_direction_blobs = {
+    "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "11adbf70986401b25872101f986b07ecb9b992b4",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "16e41ce2fd237dbf1cf43a87a9c682ff1ebb3f7b",
+    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "7af68a33d2e40ee924a2aeb49f75881035ee6fee",
+    "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "bb9f9de721d359c08a3f9310eed7e4ed73d24b0e",
+}
+for path, expected_sha in expected_art_direction_blobs.items():
+    if git_blob_sha(path) != expected_sha:
+        error(f"integrated Art Direction blob differs from accepted handoff: {path}")
+
+
 # Active source hierarchy and card source checks.
 hierarchy = read_json("working/v2.7/SOURCE_HIERARCHY_v2.7.json")
 priorities = [item.get("priority") for item in hierarchy.get("sources", [])]
@@ -335,6 +402,18 @@ if directive_path not in art_source.get("paths", []):
 art_direction_path = "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md"
 if art_direction_path not in art_source.get("paths", []):
     error("source hierarchy does not include binding Art Direction work order")
+accepted_art_paths = {
+    "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md",
+    "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
+}
+if not accepted_art_paths.issubset(set(art_source.get("paths", []))):
+    error("source hierarchy does not include the accepted Art Direction package")
+if art_source.get("accepted_art_direction_source_commit") != "7418d9c2c89c265cb6efd30f6a5a7f2addd528da":
+    error("source hierarchy accepted Art Direction commit is wrong")
+if art_source.get("production_authorization") != "PILOT_ONLY" or art_source.get("full_production_authorized") is not False:
+    error("source hierarchy must authorize pilot only")
 if hierarchy.get("candidate_commit") is not None:
     error("source hierarchy cannot claim a candidate during rework")
 
@@ -373,24 +452,27 @@ require_markers("PROJECT_STATE.md", [
     "bütün ön/arka yüz sanatı reddedildi",
     "branch protection/ruleset",
     "Sanat Yönetimi",
-    "Yaratıcı brief/inceleme",
-    "FIRST CREATIVE ASSIGNMENT READY",
+    "PILOT REVIEW REQUIRED",
+    "ART_DIRECTION BRIEF ACCEPTED",
 ])
 require_markers("governance/DECISION_REGISTER.md", [
     "DEC-20260825-01",
     "DEC-20260825-05",
     "DEC-20260825-06",
+    "DEC-20260825-08",
+    "DEC-20260825-09",
+    "DEC-20260825-10",
     "BINDING CREATIVE GATE",
     "SUPERSEDED 2026-08-25",
     "saçma/anlamsız okunabilir yazı",
 ])
 require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
-    "DELIVERED / REJECTED_ART_REWORK_REQUIRED",
+    "PRE_BRIEF_PILOT_DETECTED",
     "PENDING_NEW_ART_CANDIDATE",
     "SRC-002",
     "FOULWAKE Sanat Yönetmeni",
-    "READY_FOR_FIRST_CREATIVE_ASSIGNMENT",
-    "ART_DIRECTION_ACK_20260825.json",
+    "READY_FOR_EXACT_PILOT_REVIEW",
+    "ART_DIRECTION_HANDOFF_20260825.json",
     "REDRAW_BRIEF",
 ])
 require_markers("governance/WORKSTREAM_PROTOCOL.md", [
@@ -428,6 +510,9 @@ require_markers("working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.
     "yalnız STYLE_ONLY",
     "Resim içindeki yazı yasağı",
     "BACK_POWER",
+    "BACK_SEA_ROCK",
+    "anonim genel ada",
+    "Sabit 5×5",
     "unique render SHA = unique artwork",
     "12 ön",
 ])

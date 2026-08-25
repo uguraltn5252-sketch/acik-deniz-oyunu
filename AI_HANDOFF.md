@@ -11,7 +11,7 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / CREATIVE_WORK_READY`
+- **Sanat Yönetimi:** `ART_DIRECTION_BRIEF_ACCEPTED / PILOT_ONLY_AUTHORIZED`
 - **Kilit izni:** **YOK**
 
 Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
@@ -23,13 +23,22 @@ sanatını reddetmiştir. Baş Editör dispozisyonu
 `DELIVERED_REJECTED_ART_REWORK_REQUIRED`dır. Eski PDF/render/hash kayıtları
 yalnız teknik üretim hattı referansıdır, release candidate değildir.
 
-`FOULWAKE Sanat Yönetmeni` görünür sohbeti `work/v2.7-art-direction@3f50cdbf...`
-üzerinde iletişim testini geçmiştir. Baş Editör dispozisyonu
-`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT`dır.
-Bu bir yaratıcı teslim veya sanat PASS'i değildir. İlk gerçek görev FOULWAKE
-Art Direction Bible, 121 kartlık yaratıcı brief/özgünlük manifesti, 12 pilot
-üretim briefi ve 7 arka-yüz briefidir; final görsel/render/PDF üretilemez. `work/v2.7-simulation` henüz yoktur. Yeni görsel pilot ve tam
-aday Baş Editörce kabul edilmeden Simülasyon başlamaz.
+`FOULWAKE Sanat Yönetmeni` görünür sohbetinin iletişim testi önce
+`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` olarak kabul edilmiştir. Ardından
+`work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`
+üzerindeki Art Direction Bible, 121 kart brief manifesti, 12 pilot production
+briefi ve 7 arka-yüz briefi Baş Editör incelemesini geçmiş; proje sahibi
+`OPTION_2 — FAMILY-VISIBLE MAP BACKS` kararını ve nihai briefi açıkça
+onaylamıştır. Paket `ART_DIRECTION_BRIEF_ACCEPTED` olarak `v2.7-design`a
+entegre edilmiştir.
+
+`work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
+üzerinde kabul edilen nihai brief öncesinde oluşturulmuş 12 ön-yüz + 7 arka-yüz
+pilotu tespit edilmiştir. Bu GitHub varlığı henüz görünür sohbet handoffu,
+pilot kabulü, aktif candidate veya sanat PASS'i değildir. İlk sonraki kapı,
+bu exact pilotun kabul edilen `7418d9c2...` briefleriyle Sanat Yönetmeni
+tarafından incelenmesidir. Yalnız pilot inceleme/rework üretimi yetkilidir;
+tam 121 üretim, PDF, Simülasyon, release ve kilit yetkili değildir.
 
 ## Her oturumda zorunlu okuma sırası
 
@@ -70,7 +79,10 @@ teslimi sayılmaz.
 - İlk üç hat iletişim testi: `governance/VISIBLE_CHAT_ACKS_20260820.json` —
   yalnız 3/3 `COMMUNICATION_TEST_ONLY` ACK.
 - Sanat Yönetimi iletişim testi: `governance/ART_DIRECTION_ACK_20260825.json` —
-  ACK kabul edildi; ilk yaratıcı görev yetkili, yaratıcı teslim henüz yoktur.
+  tarihsel ACK kaydıdır.
+- Sanat Yönetimi brief teslimi ve proje sahibi onayı:
+  `governance/ART_DIRECTION_HANDOFF_20260825.json` — exact `7418d9c2...`
+  paketi kabul edildi; yalnız pilot aşaması yetkilidir.
 - Hikâye teslimi: `governance/STORY_HANDOFF_20260820.json` —
   `ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT`.
 - Görsel teslim ve ret: `governance/VISUAL_HANDOFF_20260825.json` —
@@ -112,6 +124,12 @@ değiştirilemez; Simülasyon/baş editör exact karşılaştırması beklenir.
   Deniz+Kayalık 42; Ada 6; Deniz Feneri 4; yardımcı 3.
 - Arka yüzler ön yüzlerle aynı sanat dilindedir fakat ön yüzün kopyası değildir;
   metinsiz, aile içinde exact aynı ve 180° yön güvenlidir.
+- Harita arka yüzlerinde aile görünürlüğü bağlayıcıdır: `BACK_SEA_ROCK` genel
+  denizdir ve Açık Deniz/Kayalık ayrımını gizler; `BACK_ISLAND` anonim genel
+  adayı, `BACK_LIGHTHOUSE` 1721'e uygun anonim genel feneri açıkça gösterir.
+  Hiçbiri exact ön kartı veya sonucu sızdırmaz.
+- Sabit 5×5/grid/kart sayısı şartı yoktur; değişken, kurala uygun masa
+  düzenlerinde ortak harita-denizi, 180° güvenliği ve bilgi körlüğü test edilir.
 - Sanat Yönetmeni salt kontrol listesi değil; dünya, doku, kompozisyon, karakter
   ayrışması ve deste ritmi için yaratıcı brief/eleştiri üretir. Final görseli
   Görsel Tasarım üretir; nihai estetik karar proje sahibinindir.
@@ -139,9 +157,9 @@ Simülasyon attestation varken sürüm kilitlenmez.
 
 ## Güncel devam komutu
 
-> `v2.7-design` dalında zorunlu yönetişim dosyalarını,
-> `FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md` ve
-> `FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md` dosyalarını oku. v2.6'yı
-> değiştirme. Eski e91581 görsel teslimini yalnız reddedilmiş teknik referans
-> say. Kendi görünür sohbet ve dal/yetki alanında çalış; exact handoff olmadan
-> teslim veya PASS ilan etme.
+> `v2.7-design` dalındaki zorunlu yönetişim dosyalarını ve kabul edilmiş
+> `7418d9c2...` Sanat Yönetimi paketini oku. v2.6'yı değiştirme. Sanat Yönetmeni
+> önce `work/v2.7-visual@b4afbcf...` pilotunu exact contact sheetler üzerinden
+> inceleyip `PASS_RECOMMENDATION` veya somut `REWORK_REQUIRED` handoffu versin.
+> Görsel Tasarım yalnız pilot reworkü yapabilir; kullanıcı + Baş Editör pilot
+> kabulü olmadan kalan 109 ön yüz, tam PDF, Simülasyon, release veya kilit yoktur.

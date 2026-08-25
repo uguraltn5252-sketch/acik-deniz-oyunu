@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_ART_DIRECTION_BRIEF_HANDOFF_AND_CHIEF_EDITOR_DISPOSITION",
+  "recorded_at": "2026-08-25T16:52:38+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "status": "ART_DIRECTION_BRIEF_ACCEPTED_PILOT_ONLY_AUTHORIZED",
+  "art_direction_delivery": {
+    "workstream": "Sanat Yönetimi",
+    "visible_chat": "FOULWAKE Sanat Yönetmeni",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "source_branch": "work/v2.7-art-direction",
+    "source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "reviewed_commit": "d578feca0efff8589448f4d3a168d662f6c7a3f4",
+    "chief_editor_source": "v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1",
+    "scope": "FOULWAKE art direction backbone, 121 card briefs, 12 pilot production briefs, 7 back briefs, and family-visible variable-layout map-back rework",
+    "accepted_package_files": [
+      "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md"
+    ],
+    "targeted_rework_files": [
+      "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md"
+    ],
+    "protected_fields_confirmed": true,
+    "temporary_subagent_used": false,
+    "lock_requested": false,
+    "input_visual_branch": "NONE — BRIEF STAGE",
+    "input_visual_commit": "NONE — BRIEF STAGE",
+    "input_contact_sheets": "NONE — BRIEF STAGE",
+    "style_reference_evidence": true,
+    "map_table_reference_evidence": true,
+    "source_risk": "SRC-002",
+    "result": "PASS — FAMILY_VISIBLE_VARIABLE_LAYOUT_MAP_BACK_REWORK_DELIVERED"
+  },
+  "project_owner_decision": {
+    "decision": "OPTION_2 — FAMILY-VISIBLE MAP BACKS",
+    "decision_recorded": true,
+    "final_rework_approved": true,
+    "approved_at": "2026-08-25T16:52:38+03:00"
+  },
+  "chief_editor_disposition": {
+    "art_direction_brief_pass": "GRANTED",
+    "accepted_source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "integrate_to_v2_7_design": true,
+    "visual_production_authorized": "PILOT_ONLY",
+    "full_121_production_authorized": false,
+    "simulation_may_start": false,
+    "release_pass": false,
+    "lock_allowed": false,
+    "next_recipient": "FOULWAKE Sanat Yönetmeni",
+    "next_action": "Review exact pre-brief Visual pilot b4afbcf against accepted 7418d9c2 package before Visual rework."
+  },
+  "observed_visual_pilot": {
+    "source_branch": "work/v2.7-visual",
+    "source_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+    "chief_editor_source_commit": "59affee8cf36e2c5fd4738fc7c7797c3fc9daeb4",
+    "scope": "12 front pilots, 7 back pilots, contact sheets and provenance",
+    "visible_chat_handoff_received": false,
+    "classification": "PRE_BRIEF_IN_FLIGHT_PILOT_REVIEW_INPUT_ONLY",
+    "art_accepted": false,
+    "active_visual_candidate": false,
+    "may_expand_to_full_121": false
+  },
+  "open_risks": [
+    "SRC-002 remains open before lock.",
+    "The b4afbcf pilot has not yet received visible-chat handoff or Art Direction review.",
+    "Variable-layout digital and physical map mockups have not been accepted.",
+    "Physical print, cut, duplex, opacity/light and blind leakage tests are pending."
+  ]
+}

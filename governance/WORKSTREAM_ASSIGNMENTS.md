@@ -9,8 +9,8 @@
 | Hat | Görünür sohbet / dal | Durum | Bağlayıcı kanıt |
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
-| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / READY_FOR_FIRST_CREATIVE_ASSIGNMENT` | `ART_DIRECTION_ACK_20260825.json`; yaratıcı teslim henüz yok |
-| Görsel | `FOULWAKE görsel tasarım` / `work/v2.7-visual` | `DELIVERED / REJECTED_ART_REWORK_REQUIRED` | `VISUAL_HANDOFF_20260825.json`, head `e91581...` |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `ART_DIRECTION_BRIEF_ACCEPTED / READY_FOR_EXACT_PILOT_REVIEW` | `ART_DIRECTION_HANDOFF_20260825.json`, commit `7418d9c2...` |
+| Görsel | `FOULWAKE görsel tasarım` / `work/v2.7-visual` | `PRE_BRIEF_PILOT_DETECTED / VISIBLE_HANDOFF_AND_ART_REVIEW_PENDING` | Reddedilen teslim `e91581...`; gözlenen pilot head `b4afbcf...` |
 | Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
 | Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
 
@@ -23,54 +23,52 @@
   Simülasyona bırakır.
 - Yeni görev yoksa dalı değiştirmez.
 
-## Sanat Yönetmeni — aktivasyon ve yaratıcı görev
+## Sanat Yönetmeni — kabul edilen brief ve exact pilot incelemesi
 
-Bağlayıcı iş emri:
-`working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
+Bağlayıcı kaynaklar:
 
-1. İletişim testi `work/v2.7-art-direction@3f50cdbf...` için kabul edildi;
-   bu yalnız kimlik/yetki ACK'idir.
-2. İlk yaratıcı teslimde FOULWAKE Art Direction Bible, 121 kartlık yaratıcı
-   brief/özgünlük manifesti, 12 pilot için production-ready brief ve 7 arka-yüz
-   briefi üretir. Görsel üretmez.
-3. KAPTAN referansını yalnız STYLE_ONLY okur; reddedilmiş e91581 sanatını yeni
-   sanatın referansı olarak kullanmaz.
-4. FOULWAKE dünyasının ruhu, çizgi/tarama/malzeme dili, kompozisyon çeşitliliği
-   ve deste ritmi için yaratıcı omurga kurar.
-5. Görsel Tasarımın sonraki uygulamasını exact commit/contact sheet üzerinden
-   inceler, yeniden yazar veya somut düzeltme briefi verir.
-6. 12 pilot ve 7 arka-yüz contact sheetini isim/metin kapalı da değerlendirir;
-   aynı yüz, poz, sahne, hayvan, şaka, siluet ve yapay zekâ parlaklığını işaretler.
-7. `ART_DIRECTION_*_PASS_RECOMMENDATION` veya `REWORK_REQUIRED` verir;
-   kendisini kullanıcı/Chief Editor/release PASS'i yerine koymaz.
-8. Final illüstrasyon, render, PDF ve baskı üretmez; bunlar Görsel Tasarımdadır.
+- `governance/ART_DIRECTION_HANDOFF_20260825.json`
+- `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md`
+- `working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json`
+- `working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md`
+- `working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md`
 
-Görsel dalda yeni pilot commit'i henüz yoktur; head hâlâ reddedilmiş
-`e91581...` teknik referansıdır. Bu nedenle Görsel Tasarım yeni pilot üretimini
-Sanat Yönetimi brief teslimi ve Baş Editör yönlendirmesine kadar bekletir.
+1. Exact kabul edilen brief source `7418d9c2c89c265cb6efd30f6a5a7f2addd528da`dır; içerik brief kapısını geçmiştir.
+2. İlk sonraki görev `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6` pilotunu ve contact sheetlerini
+   salt-okunur incelemektir. Bu pilot kabul edilen brief öncesinde üretildiği
+   için otomatik PASS veya otomatik ret değildir.
+3. 12 ön yüzü başlık/metin açık ve kapalı; 7 arka yüzü aile, exact kimlik,
+   180° güvenliği, resim-içi yazı, tekrar, dönem, doku ve deste ritmi açısından
+   değerlendirir.
+4. Harita arkalarında aile görünürlüğünü ve exact ön-kart körlüğünü ayrı test
+   eder; sabit 5×5 aramaz, değişken kurala uygun düzen kanıtı ister.
+5. Sonuç `ART_DIRECTION_PILOT_PASS_RECOMMENDATION` veya exact dosya/kart
+   düzeyinde `REWORK_REQUIRED` olur. `KEEP`, `REMOVE`, `REDRAW_BRIEF`
+   ve Görsel Tasarımın uygulayacağı somut öncelik sırası verilir.
+6. Final illüstrasyon, render, PDF ve baskı üretmez; brief dışında alan
+   değiştirmez ve geçici ajan kullanmaz.
 
-## Görsel Tasarım — aktif görev
+## Görsel Tasarım — pilot-only yetki
 
-Bağlayıcı iş emri:
-`working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`
+Bağlayıcı kaynaklar kabul edilen `7418d9c2c89c265cb6efd30f6a5a7f2addd528da` Sanat Yönetimi paketi,
+`FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md` ve exact kart metnidir.
 
-1. Reddedilen `e91581...` görsellerini, altı aile plakasını, render/PDF'leri ve
-   arka yüzleri yeni sanatın girdisi olarak kullanma.
-2. 121 kart için ayrı art-brief envanteri; 7 arka yüz için ayrı brief üret.
-3. KAPTAN referansını yalnız STYLE_ONLY kullan; karakter/yüz/poz/kompozisyon
-   kopyalama.
-4. İllüstrasyon alanında gereksiz veya anlamsız okunabilir yazı üretme.
-5. 12 ön-yüz pilotu ve 7 arka-yüz taslağını tek contact sheetlerle teslim et.
-6. Sanat Yönetmeni yaratıcı incelemesi ile kullanıcı + Baş Editör pilot kabulü
-   olmadan tam 121 üretim/PDF yapma.
-7. Tam üretimde her kart için semantik özgünlük ve text-in-art alanlarını
-   manifestte kaydet; `unique SHA`yı sanat özgünlüğü sayma.
-8. Exact kart metnini değiştirme; taşmayı Baş Editöre handoff et.
-
-Görsel hattın bir sonraki sonucu `PILOT_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
-olmalıdır. Eski iş emrindeki sonuç etiketiyle gelen in-flight pilot reddedilmez;
-Baş Editör onu Sanat Yönetmenine yönlendirir. Hiçbiri release veya Simülasyon
-PASS'i değildir.
+1. `b4afbcf49784b85338453cbf29a956cbb620c9e6` pilotu korunur; ancak görünür sohbet handoffu ve Sanat Yönetmeni
+   incelemesi olmadan kabul edilmiş pilot veya aktif candidate sayılamaz.
+2. Sanat Yönetmeninin exact review handoffundan sonra yalnız belirtilen 12 ön
+   yüz, 7 arka yüz, contact sheet ve değişken harita mockup'larında rework
+   yapabilir.
+3. Reddedilen `e91581...` varlıkları, altı aile plakası ve türevleri yeni
+   sanatın girdisi olamaz.
+4. KAPTAN yalnız STYLE_ONLY kullanılır; illüstrasyon alanında gereksiz veya
+   anlamsız okunabilir yazı üretilmez; exact copy değiştirilmez.
+5. Harita arkaları: Sea/Rock genel deniz ve subtype kör; Island anonim genel ada;
+   Lighthouse 1721'e uygun anonim genel fener. Aile görünür, exact ön kart ve
+   sonuç kördür; sabit 5×5 şartı yoktur.
+6. Kullanıcı + Baş Editör pilot kabulü olmadan kalan 109 ön yüz, tam 121
+   üretim, tam PDF veya Simülasyon handoffu başlatılmaz.
+7. Sonuç `PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
+   olmalı; `LOCK_REQUESTED: NO` kalmalıdır.
 
 ## Simülasyon Testi — bekleyen görev
 
@@ -104,7 +102,7 @@ Yeni görsel candidate Baş Editörce kabul edilmeden iş başlatılmaz ve
 | `MEC-001` | Simülasyon | Yeni candidate bekliyor |
 | `SRC-001` | Görsel | Yeni provenance bekliyor |
 | `SRC-002` | Baş Editör + Simülasyon | Exact baseline çözümü bekliyor |
-| `ART-001` | Sanat Yönetimi + Görsel | Yaratıcı kapı ve tam rework gerekiyor |
+| `ART-001` | Sanat Yönetimi + Görsel | Brief kapısı geçti; exact pilot review/rework ve tam özgün yayılım bekleniyor |
 | `QA-001`, `QA-002` | Simülasyon | Yeni candidate bekliyor |
 | `GOV-001`, `COM-001` | Baş Editör | Açık |
 

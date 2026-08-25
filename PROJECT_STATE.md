@@ -6,7 +6,7 @@
 **Entegrasyon dalı:** `v2.7-design`  
 **Aktif workspace:** `working/v2.7/`  
 **Aktif görsel candidate:** YOK  
-**Sanat Yönetimi:** `COMMUNICATION ACK ACCEPTED / FIRST CREATIVE ASSIGNMENT READY`  
+**Sanat Yönetimi:** `ART_DIRECTION BRIEF ACCEPTED / PILOT REVIEW READY`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
 
 ## Çalışma hattı durumu
@@ -14,8 +14,8 @@
 | Hat | Exact kaynak | Baş Editör hükmü | Sonraki adım |
 |---|---|---|---|
 | Hikâye | `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` | Kabul edildi ve exact üç Hikâye blobu entegre edildi; release PASS değil | Görsel için exact metin girdisi |
-| Sanat Yönetimi | `work/v2.7-art-direction@3f50cdbf1abf43b929bfdb4564055c9c63f79f21` | İletişim ACK'i kabul edildi; yaratıcı teslim yok | Art Direction Bible + 121 brief manifesti + 12 pilot/7 arka-yüz briefi |
-| Görsel | `work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891` | Teslim gerçek; bütün ön/arka yüz sanatı reddedildi | Tam deste rework pilotu |
+| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | `ART_DIRECTION_BRIEF_PASS`; proje sahibi nihai briefi onayladı; exact dört dosya entegre edildi | `b4afbcf...` pilotunu bağımsız yaratıcı inceleme |
+| Görsel | Resmî reddedilen teslim `e91581...`; gözlenen pilot head `b4afbcf...` | 12 ön + 7 arka pilot GitHub'da var; nihai brief öncesi üretildi, görünür handoff ve sanat kabulü yok | Sanat Yönetmeni incelemesi sonrası yalnız pilot reworkü |
 | Simülasyon | dal yok | Başlamadı | Yeni görsel aday kabulünden sonra |
 
 Görsel teslimin `121/121`, 7 arka yüz ve PDF/hash zinciri teknik olarak kayıtlı
@@ -24,12 +24,18 @@ plakası bulunması, tekrarlı/türev sanatın 121 farklı render hashine dönü
 izin vermiştir. Eski teslim artık `TECHNICAL_PIPELINE_REFERENCE_ONLY`dır;
 aktif release candidate yoktur.
 
-Sanat Yönetimi yeni ve bağımsız bir yaratıcı hattır: checklist QA değil,
-FOULWAKE dünyasını, çizgi/malzeme dilini, görsel dramaturjiyi, kartlar arası
-ayrışmayı ve deste ritmini kurar. Görsel Tasarım final üretimi yapar; Sanat
-Yönetmeni brief/eleştiri ve rework tavsiyesi verir. Nihai estetik karar proje sahibinindir. Görünür sohbet iletişim ACK'i
-`ART_DIRECTION_ACK_20260825.json` ile kabul edilmiştir; ancak henüz yaratıcı
-brief, review veya PASS teslimi yoktur.
+Sanat Yönetiminin exact `7418d9c2...` paketi; dünya hissi, çizgi ve malzeme
+dili, görsel dramaturji, 121 ayrı brief, 12 pilot production briefi ve 7 arka
+yüz briefi olarak kabul edilmiştir. Proje sahibi aile-görünür harita arkalarını
+ve sabit 5×5 şartının kaldırılmasını nihai olarak onaylamıştır. Bu brief kabulü
+final görsel kabulü değildir.
+
+Görsel dalında `b4afbcf...` pilotu tespit edilmiştir; kaynak kaydı
+`59affee8...` Baş Editör iş emrine bağlıdır ve kabul edilen `7418d9c2...`
+brieflerinden önce üretilmiştir. Bu nedenle silinmez veya kendiliğinden
+reddedilmez; Sanat Yönetmeninin exact pilot incelemesine girdi olur. Görünür
+Görsel handoffu ve kullanıcı/Baş Editör pilot kabulü gelmeden aktif candidate
+veya tam üretim sayılamaz.
 
 ## Bağlayıcı yeni görsel yön
 
@@ -43,6 +49,10 @@ brief, review veya PASS teslimi yoktur.
 - Mizah en fazla bir ikincil şaka; tekrar eden martı/fare/papağan/tayfa maskotu
   yok.
 - Arka yüzler aynı FOULWAKE sanat dilinde, metinsiz ve 180° yön güvenli.
+- `BACK_SEA_ROCK` genel deniz olarak Açık Deniz/Kayalık ayrımını gizler;
+  `BACK_ISLAND` anonim genel ada, `BACK_LIGHTHOUSE` 1721'e uygun anonim genel
+  fener gösterir. Aile görünür; exact ön kart ve sonuç gizlidir.
+- Sabit 5×5/grid şartı yoktur; değişken kurala uygun masa düzenleri kullanılır.
 - Deniz+Kayalık 42 aynı binary; Deniz Feneri 4 aynı; Ada 6 aynı. Tam topoloji:
   Karakter 20, Güç+Çürümüş 31, Sadakat 15, Deniz+Kayalık 42, Ada 6, Deniz
   Feneri 4, yardımcı 3.
@@ -56,11 +66,11 @@ brief, review veya PASS teslimi yoktur.
 | `MEC-001` | Simülasyon | OPEN | Sea=Rock için exact adayda tam ve kör fiziksel test |
 | `SRC-001` | Görsel | OPEN | Yeni adayda tutarlı source→render→PDF ve iç/dış provenance |
 | `SRC-002` | Baş Editör + Simülasyon | OPEN | GUC-22/GUC-23 için kilitli v2.6 exact kaynak karşılaştırması veya açık kullanıcı kararı |
-| `ART-001` | Sanat Yönetimi + Görsel | REWORK REQUIRED | Yaratıcı brief/inceleme, 121 özgün ön yüz, 7 kabul edilmiş arka yüz, kör contact-sheet QA |
+| `ART-001` | Sanat Yönetimi + Görsel | PILOT REVIEW REQUIRED | Kabul edilmiş brief karşısında exact pilot incelemesi; ardından pilot kabulü, 121 özgün ön yüz, 7 kabul edilmiş arka yüz ve kör contact-sheet QA |
 | `QA-001` | Simülasyon | OPEN | Exact candidate'a bağlı yeniden üretilebilir tam attestation |
 | `QA-002` | Simülasyon | OPEN | Fiziksel proof, kör sızıntı ve kör insan masa testi |
 | `GOV-001` | Baş Editör | OPEN | main uzlaştırması, branch protection/ruleset, required status check |
-| `COM-001` | Baş Editör | OPEN | Sanat Yönetimi ACK/teslimi, yeni Görsel ve bağımsız Simülasyon branch-bound teslimleri |
+| `COM-001` | Baş Editör | OPEN | Sanat Yönetimi brief teslimi tamamlandı; görünür Görsel pilot handoffu, pilot dispozisyonu ve bağımsız Simülasyon teslimi bekleniyor |
 
 `CAN-001` çözülmüştür: CAN-08/09 v2.7 DRAFT `TASLAK` koruma ilkeleridir.
 
@@ -95,7 +105,12 @@ ayrıdır.
 - `governance/STORY_HANDOFF_20260820.json`
 - `governance/VISUAL_HANDOFF_20260825.json`
 - `governance/ART_DIRECTION_ACK_20260825.json`
+- `governance/ART_DIRECTION_HANDOFF_20260825.json`
 - `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
+- `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md`
+- `working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json`
+- `working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md`
+- `working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md`
 - `working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md`
 
 ## Kilit hükmü

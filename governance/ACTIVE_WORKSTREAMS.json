@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-25T13:42:24.020+03:00",
+  "updated_at": "2026-08-25T16:52:38+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -24,7 +24,7 @@
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
     "active_visual_candidate": null,
-    "basis": "Story accepted; Visual delivery recorded but all art rejected; Art Direction communication ACK accepted and first creative brief/review pending; source ambiguity, new art, physical proof and Simulation delivery pending"
+    "basis": "Story accepted; Art Direction brief package accepted at 7418d9c2 and pilot-only stage authorized; pre-brief Visual pilot b4afbcf detected but not accepted or candidate; SRC-002, pilot review/rework, full original art, physical proof and Simulation delivery pending"
   },
   "roles": {
     "chief_editor": {
@@ -150,18 +150,24 @@
       "integrated_to_v2_7_design": true
     },
     "art_direction": {
-      "status": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT",
+      "status": "ART_DIRECTION_BRIEF_ACCEPTED_READY_FOR_EXACT_PILOT_REVIEW",
       "official_chat": "FOULWAKE Sanat Yönetmeni",
       "work_branch": "work/v2.7-art-direction",
       "branch_created": true,
       "work_order": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
       "may_start_creative_work": true,
       "first_gate": "COMMUNICATION_TEST_ACCEPTED",
-      "delivery_recorded": false,
-      "source_commit": "3f50cdbf1abf43b929bfdb4564055c9c63f79f21",
+      "delivery_recorded": true,
+      "source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
       "communication_ack_recorded": true,
       "ack_evidence_path": "governance/ART_DIRECTION_ACK_20260825.json",
-      "first_authorized_assignment": "ART_DIRECTION_BIBLE_121_BRIEF_MANIFEST_12_PILOT_AND_7_BACK_BRIEFS"
+      "first_authorized_assignment": "ART_DIRECTION_BIBLE_121_BRIEF_MANIFEST_12_PILOT_AND_7_BACK_BRIEFS",
+      "integrated_to_v2_7_design": true,
+      "evidence_path": "governance/ART_DIRECTION_HANDOFF_20260825.json",
+      "project_owner_final_approval": true,
+      "art_direction_brief_pass": true,
+      "next_input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+      "next_stage": "EXACT_PILOT_REVIEW"
     },
     "visual": {
       "status": "DELIVERED_REJECTED_ART_REWORK_REQUIRED",
@@ -173,7 +179,15 @@
       "technical_pipeline_reference_only": true,
       "art_accepted": false,
       "active_candidate": false,
-      "rework_authorized": true
+      "rework_authorized": true,
+      "observed_branch_head": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+      "observed_pilot_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+      "observed_pilot_scope": "12_FRONTS_7_BACKS_CONTACT_SHEETS",
+      "observed_pilot_classification": "PRE_BRIEF_IN_FLIGHT_PILOT_REVIEW_INPUT_ONLY",
+      "observed_pilot_visible_chat_handoff_received": false,
+      "observed_pilot_art_accepted": false,
+      "pilot_only_production_authorized": true,
+      "full_production_authorized": false
     },
     "simulation": {
       "status": "PENDING_NEW_ART_CANDIDATE",
@@ -210,7 +224,18 @@
     ],
     "art_direction_review_required": true,
     "art_direction_work_order": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
-    "art_direction_recommendation_is_release_pass": false
+    "art_direction_recommendation_is_release_pass": false,
+    "accepted_art_direction_source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "accepted_art_direction_evidence": "governance/ART_DIRECTION_HANDOFF_20260825.json",
+    "production_authorization": "PILOT_ONLY",
+    "full_121_production_authorized": false,
+    "map_back_information_contract": {
+      "BACK_SEA_ROCK": "FAMILY_VISIBLE_AS_SEA_ROCK_ONLY_SUBTYPE_AND_EXACT_FRONT_BLIND",
+      "BACK_ISLAND": "GENERIC_ISLAND_FAMILY_VISIBLE_EXACT_FRONT_AND_RESULT_BLIND",
+      "BACK_LIGHTHOUSE": "GENERIC_1721_LIGHTHOUSE_FAMILY_VISIBLE_EXACT_FRONT_AND_RESULT_BLIND"
+    },
+    "fixed_grid_or_5x5_required": false,
+    "representative_variable_layout_qa_required": true
   },
   "open_blockers": [
     {
@@ -237,10 +262,10 @@
     },
     {
       "id": "ART-001",
-      "status": "OPEN_REWORK_REQUIRED",
+      "status": "OPEN_PILOT_REVIEW_REQUIRED",
       "severity": "BLOCKER",
       "owner": "art_direction_and_visual_design",
-      "summary": "Proje sahibi mevcut 121 ön yüz ile bütün arka yüz sanatını reddetti; Sanat Yönetmeni yaratıcı brief/inceleme kapısı ile Görsel Tasarımın tam özgün reworkü ve semantik görsel QA gerekir",
+      "summary": "Art Direction brief package accepted; pre-brief Visual pilot b4afbcf requires exact Art Direction review/rework, then owner/Chief pilot acceptance, 121 original fronts, 7 accepted backs and semantic contact-sheet QA",
       "directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
     },
     {
@@ -271,7 +296,7 @@
       "status": "OPEN",
       "severity": "BLOCKER",
       "owner": "chief_editor",
-      "summary": "Story teslimi kabul edildi; Art Direction iletişim ACK'i kabul edildi fakat yaratıcı teslim bekleniyor; reddedilen Visual yerine yeni Visual teslimi ve bağımsız Simulation teslimi bekleniyor"
+      "summary": "Story and Art Direction brief deliveries accepted; visible-chat Visual pilot handoff/disposition and independent Simulation delivery remain pending"
     }
   ],
   "resolved_blockers": [
@@ -309,5 +334,19 @@
     "visible_chat_ack": true,
     "chief_editor_disposition": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT",
     "creative_delivery_completed": false
+  },
+  "art_direction_brief_acceptance": {
+    "status": "ACCEPTED",
+    "source_branch": "work/v2.7-art-direction",
+    "source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "evidence_path": "governance/ART_DIRECTION_HANDOFF_20260825.json",
+    "project_owner_decision": "OPTION_2_FAMILY_VISIBLE_MAP_BACKS",
+    "project_owner_final_approval": true,
+    "chief_editor_brief_pass": true,
+    "integrated_to_v2_7_design": true,
+    "visual_production_authorized": "PILOT_ONLY",
+    "full_production_authorized": false,
+    "next_recipient": "FOULWAKE Sanat Yönetmeni",
+    "next_input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6"
   }
 }

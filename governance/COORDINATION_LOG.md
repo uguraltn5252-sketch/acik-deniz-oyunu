@@ -1,5 +1,35 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 25 Ağustos 2026 — SANAT YÖNÜ BRIEF KABULÜ / PİLOT-ONLY YETKİ
+
+**Görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  
+**Kabul edilen kaynak:** `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`  
+**Proje sahibi kararı:** `OPTION_2 — FAMILY-VISIBLE MAP BACKS / FINAL APPROVED`  
+**Kanıt:** `governance/ART_DIRECTION_HANDOFF_20260825.json`
+
+Baş Editör branch headini, `d578feca... → 7418d9c2...` fast-forward zincirini,
+exact iki dosyalık hedefli map-back reworkünü ve toplam dört dosyalık brief
+paketini doğruladı. Aile görünürlüğü ile exact ön-kart gizliliği ayrılmıştır:
+Deniz/Kayalık aynı genel deniz arkasını kullanır; Ada genel ada, Fener 1721'e
+uygun genel fener gösterir. Sabit 5×5 veya sabit kart sayısı koşulu yoktur.
+
+Proje sahibi nihai reworkü açıkça onayladı. Baş Editör dispozisyonu
+`ART_DIRECTION_BRIEF_ACCEPTED / PILOT_ONLY_AUTHORIZED`dır. Tam 121 üretim,
+tam PDF, Simülasyon, release ve kilit yetkili değildir; `SRC-002` açıktır.
+
+GitHub denetiminde `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6` üzerinde 12 ön-yüz + 7 arka-yüz
+pilotu bulundu. Bu pilot `59affee8...` iş emrine bağlı ve kabul edilen nihai
+brief öncesinde üretilmiştir. GitHub varlığı görünür sohbet handoffu veya sanat
+kabulü değildir. Silinmeden `PRE_BRIEF_IN_FLIGHT_PILOT / REVIEW_INPUT_ONLY`
+olarak korunur ve ilk sonraki görev, Sanat Yönetmeninin bu exact commit ile
+contact sheetleri kabul edilen `7418d9c2...` briefleri karşısında
+incelemesidir. Görsel Tasarım yalnız bu incelemeden doğan pilot reworkünü
+uygulayabilir.
+
+Bu GitHub kaydı diğer görünür sohbetin geçmişine mesaj eklemez. Resmî uzman
+adımı için görev metni ilgili görünür sohbete proje sahibi tarafından
+iletilmeli ve yeni exact handoff `VISIBLE_CHAT_ACK: YES` ile dönmelidir.
+
 ## 25 Ağustos 2026 — SANAT YÖNETİMİ İLETİŞİM ACK KABULÜ
 
 **Görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  

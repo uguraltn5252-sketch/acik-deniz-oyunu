@@ -55,12 +55,21 @@
       "scope": "art_layout_typography_and_print_presentation",
       "paths": [
         "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
+        "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+        "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+        "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md",
+        "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
         "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md",
         "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
       ],
       "supersedes": "work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891 art assets",
       "old_assets_classification": "REJECTED_ART_TECHNICAL_REFERENCE_ONLY",
-      "art_direction_gate": "FOULWAKE Sanat Yönetmeni review recommendation required before owner and Chief Editor pilot disposition"
+      "art_direction_gate": "FOULWAKE Sanat Yönetmeni review recommendation required before owner and Chief Editor pilot disposition",
+      "accepted_art_direction_source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+      "accepted_art_direction_evidence": "governance/ART_DIRECTION_HANDOFF_20260825.json",
+      "production_authorization": "PILOT_ONLY",
+      "full_production_authorized": false,
+      "map_back_decision": "FAMILY_VISIBLE_EXACT_FRONT_BLIND_VARIABLE_LAYOUT"
     }
   ],
   "non_source_evidence": [
@@ -71,6 +80,10 @@
     {
       "path": "work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891",
       "reason": "Rejected art delivery; technical pipeline history only."
+    },
+    {
+      "path": "work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6",
+      "reason": "Pre-brief in-flight 12+7 pilot detected; Art Direction review input only, not an accepted pilot or active candidate."
     }
   ]
 }

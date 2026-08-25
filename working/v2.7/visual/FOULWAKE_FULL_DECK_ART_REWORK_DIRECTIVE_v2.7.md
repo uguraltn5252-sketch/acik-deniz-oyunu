@@ -13,6 +13,11 @@ bütün arka yüz ailelerini** kapsar. Önceki tam dijital teslim teknik üretim
 zinciri için tarihsel referans olarak kalır; sanatı, illüstrasyon plakaları,
 renderları, PDF'leri veya arka yüzleri yeni adayda kullanılamaz.
 
+Kabul edilen ayrıntılı sanat yönü kaynağı
+`work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`
+üzerindeki Art Direction Bible, 121 brief manifesti, 12 pilot production briefi
+ve 7 arka-yüz briefidir. Çelişkide üretim durur ve Baş Editöre handoff edilir.
+
 ## 1. Değiştirilemeyen kaynak sözleşmesi
 
 - Kart kimliği, adet, mekanik etki, zamanlama, grup, başlangıç havuzu, deste
@@ -116,7 +121,20 @@ Zorunlu arka yüz koşulları:
   sızdırmaz;
 - `BACK_SEA_ROCK` Deniz/Kayalık ayrımı üretmez;
 - `BACK_LOYALTY` Sadakat kimliğini veya tarafını sızdırmaz;
-- Ada ve Deniz Feneri birbirinden ayrılır, kendi aileleri içinde aynıdır.
+- `BACK_SEA_ROCK` genel keşfedilmemiş deniz gösterir; kaya, sığlık, kırıcı
+  köpük veya jeolojik ipucu içermez ve Açık Deniz/Kayalık subtype'ını gizler.
+- `BACK_ISLAND` açıkça görülen fakat altı ön yüzden hiçbirine özgü olmayan
+  anonim genel ada gösterir; aile görünür, exact ön kimlik ve sonuç gizlidir.
+- `BACK_LIGHTHOUSE` açıkça görülen fakat dört ön yüzden hiçbirine özgü olmayan,
+  1721'e uygun anonim genel fener gösterir; aile görünür, exact ön kimlik ve
+  sonuç gizlidir. Argand, Fresnel, elektrik ve modern beacon yoktur.
+- Üç harita arkası aynı deniz, mürekkep, tarama, mat palet, kâğıt ve kenar
+  ritmini paylaşır; ada/fener ikon, rozet veya madalyon gibi yapıştırılmaz.
+- Sabit 5×5, grid, satır/sütun veya kart sayısı kabul koşulu değildir. Kompakt,
+  genişleyen, uzayan ve farklı komşuluklu kurala uygun değişken masa düzenleri
+  ile kısmi açılma mockup'ları kullanılır.
+- Harita arkasında yazı, sayı, rota, pusula, koordinat, yön oku, logo, halo veya
+  gereksiz dekoratif şekil yoktur.
 
 ## 7. Aşamalı üretim kapısı
 
