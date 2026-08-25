@@ -1,5 +1,35 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 25 Ağustos 2026 — EXACT PİLOT İNCELEMESİ / REWORK DİSPOZİSYONU
+
+**Görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  
+**Kabul edilen brief:** `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`  
+**İncelenen Görsel:** `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`  
+**Kanıt:** `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json`
+
+Sanat Yönetmeni 12 ön yüz, 7 arka yüz ve 3 contact sheetin exact 22/22 Git
+blobunu doğrulayıp `REWORK_REQUIRED` verdi. Önlerde 3 KEEP / 9 REWORK,
+arkalarda 0 KEEP / 7 REWORK vardır. Teknik exact metin, açık model klonlama,
+KAPTAN STYLE_ONLY ve ön-yüz çizgi/malzeme dili geçmiştir; arka yüz malzeme
+dili, dönemsel fener, aile görünürlüğü ve değişken harita düzeni kanıtı
+geçmemiştir.
+
+Baş Editör yaratıcı incelemeyi kabul etmiş, mevcut pilotu reddetmiş ve önceki
+proje sahibi `PILOT_ONLY` yetkisi altında hedefli reworkü açmıştır. Önceki
+pilot ile kabul edilmiş zor-vaka 12'lisi yalnız beş kartta örtüştüğü için
+Görsel Tasarım bu turda 9 retin tamamını rastgele üretmeyecektir. Sonraki
+candidate exact kabul edilmiş 12 karttır: `SAD-H-03` ile `HAR-KY-06`
+değişmeden korunur; on kart yeni/yeniden çizilir. Set dışındaki `GUC-24`
+provisional KEEP olarak saklanır; altı set-dışı ret pilot PASS sonrasına
+ertelenir. Yedi arka yüzün tamamı sıfırdan yapılır.
+
+Bağlayıcı uygulama:
+`working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`.
+
+Tam 121 üretim, PDF, Simülasyon, release ve kilit yetkili değildir. `SRC-002`
+ve fiziksel test riskleri açıktır. GitHub iş emri görünür Görsel sohbet ACK'i
+değildir; proje sahibi metni `FOULWAKE görsel tasarım` sohbetine iletmelidir.
+
 ## 25 Ağustos 2026 — SANAT YÖNÜ BRIEF KABULÜ / PİLOT-ONLY YETKİ
 
 **Görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  

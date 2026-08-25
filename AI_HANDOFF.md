@@ -11,7 +11,7 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `ART_DIRECTION_BRIEF_ACCEPTED / PILOT_ONLY_AUTHORIZED`
+- **Sanat Yönetimi:** `PILOT_REVIEW_FAIL / TARGETED_PILOT_REWORK_AUTHORIZED`
 - **Kilit izni:** **YOK**
 
 Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
@@ -33,12 +33,16 @@ onaylamıştır. Paket `ART_DIRECTION_BRIEF_ACCEPTED` olarak `v2.7-design`a
 entegre edilmiştir.
 
 `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
-üzerinde kabul edilen nihai brief öncesinde oluşturulmuş 12 ön-yüz + 7 arka-yüz
-pilotu tespit edilmiştir. Bu GitHub varlığı henüz görünür sohbet handoffu,
-pilot kabulü, aktif candidate veya sanat PASS'i değildir. İlk sonraki kapı,
-bu exact pilotun kabul edilen `7418d9c2...` briefleriyle Sanat Yönetmeni
-tarafından incelenmesidir. Yalnız pilot inceleme/rework üretimi yetkilidir;
-tam 121 üretim, PDF, Simülasyon, release ve kilit yetkili değildir.
+üzerindeki brief-öncesi 12 ön-yüz + 7 arka-yüz pilotu, görünür `FOULWAKE
+Sanat Yönetmeni` sohbetinde exact 22/22 Git blob doğrulamasıyla incelenmiştir.
+Sonuç `REWORK_REQUIRED`dır: 3 ön yüz KEEP, 9 ön yüz REWORK; 7 arka yüzün
+tamamı REWORK. Baş Editör incelemeyi kabul etmiş, ancak bağlayıcı sonraki
+pilot setini kabul edilmiş zor-vaka 12'lisiyle sınırlandırmıştır. İki exact
+KEEP (`SAD-H-03`, `HAR-KY-06`) yeniden kullanılacak; on kabul edilmiş pilot
+kartı üretilecek/yeniden çizilecek ve yedi arka yüz sıfırdan kurulacaktır.
+`GUC-24` provisional KEEP olarak sonraki tam-deste incelemesine saklanır; set
+dışı altı ret bu pilot geçene kadar üretilmez. Yalnız bu pilot reworkü
+etkindir; tam 121 üretim, PDF, Simülasyon, release ve kilit yetkili değildir.
 
 ## Her oturumda zorunlu okuma sırası
 
@@ -83,6 +87,10 @@ teslimi sayılmaz.
 - Sanat Yönetimi brief teslimi ve proje sahibi onayı:
   `governance/ART_DIRECTION_HANDOFF_20260825.json` — exact `7418d9c2...`
   paketi kabul edildi; yalnız pilot aşaması yetkilidir.
+- Exact pilot yaratıcı incelemesi:
+  `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json` — `b4afbcf...`
+  için `REWORK_REQUIRED`; bağlayıcı uygulama emri
+  `working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`.
 - Hikâye teslimi: `governance/STORY_HANDOFF_20260820.json` —
   `ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT`.
 - Görsel teslim ve ret: `governance/VISUAL_HANDOFF_20260825.json` —
@@ -133,8 +141,9 @@ değiştirilemez; Simülasyon/baş editör exact karşılaştırması beklenir.
 - Sanat Yönetmeni salt kontrol listesi değil; dünya, doku, kompozisyon, karakter
   ayrışması ve deste ritmi için yaratıcı brief/eleştiri üretir. Final görseli
   Görsel Tasarım üretir; nihai estetik karar proje sahibinindir.
-- 12 ön-yüz pilotu ve 7 arka-yüz taslağı Sanat Yönetmeni incelemesi ile kullanıcı
-  + Baş Editör onayı almadan tam 121 üretime geçilmez.
+- Kabul edilmiş zor-vaka setindeki 12 ön-yüz pilotu ve sıfırdan yedi arka-yüz,
+  Sanat Yönetmeni incelemesi ile kullanıcı + Baş Editör onayı almadan tam 121
+  üretime geçilmez. `b4afbcf...` bu kapıda `REWORK_REQUIRED` almıştır.
 
 ## v2.6 kilitli omurga
 
@@ -157,9 +166,10 @@ Simülasyon attestation varken sürüm kilitlenmez.
 
 ## Güncel devam komutu
 
-> `v2.7-design` dalındaki zorunlu yönetişim dosyalarını ve kabul edilmiş
-> `7418d9c2...` Sanat Yönetimi paketini oku. v2.6'yı değiştirme. Sanat Yönetmeni
-> önce `work/v2.7-visual@b4afbcf...` pilotunu exact contact sheetler üzerinden
-> inceleyip `PASS_RECOMMENDATION` veya somut `REWORK_REQUIRED` handoffu versin.
-> Görsel Tasarım yalnız pilot reworkü yapabilir; kullanıcı + Baş Editör pilot
-> kabulü olmadan kalan 109 ön yüz, tam PDF, Simülasyon, release veya kilit yoktur.
+> `v2.7-design` dalındaki zorunlu yönetişim dosyalarını,
+> `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json` ve
+> `working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md` dosyasını oku.
+> Görsel Tasarım yalnız kabul edilmiş 12 kartlık zor-vaka pilotu ile sıfırdan
+> yedi arka yüzü üretip visible-chat handoffu versin. Kullanıcı + Baş Editör
+> pilot kabulü olmadan kalan 109 ön yüz, tam PDF, Simülasyon, release veya kilit
+> yoktur.

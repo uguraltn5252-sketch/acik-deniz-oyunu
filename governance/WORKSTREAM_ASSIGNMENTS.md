@@ -9,8 +9,8 @@
 | Hat | Görünür sohbet / dal | Durum | Bağlayıcı kanıt |
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
-| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `ART_DIRECTION_BRIEF_ACCEPTED / READY_FOR_EXACT_PILOT_REVIEW` | `ART_DIRECTION_HANDOFF_20260825.json`, commit `7418d9c2...` |
-| Görsel | `FOULWAKE görsel tasarım` / `work/v2.7-visual` | `PRE_BRIEF_PILOT_DETECTED / VISIBLE_HANDOFF_AND_ART_REVIEW_PENDING` | Reddedilen teslim `e91581...`; gözlenen pilot head `b4afbcf...` |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `EXACT_PILOT_REVIEW_COMPLETE / REWORK_REQUIRED` | `ART_DIRECTION_PILOT_REVIEW_20260825.json`; input `b4afbcf...` |
+| Görsel | `FOULWAKE görsel tasarım` / `work/v2.7-visual` | `TARGETED_ACCEPTED_12_PILOT_REWORK_AUTHORIZED` | `FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`; başlangıç head `b4afbcf...` |
 | Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
 | Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
 
@@ -23,52 +23,45 @@
   Simülasyona bırakır.
 - Yeni görev yoksa dalı değiştirmez.
 
-## Sanat Yönetmeni — kabul edilen brief ve exact pilot incelemesi
+## Sanat Yönetmeni — exact pilot review tamamlandı
 
-Bağlayıcı kaynaklar:
+Bağlayıcı inceleme kanıtı
+`governance/ART_DIRECTION_PILOT_REVIEW_20260825.json`dır.
 
-- `governance/ART_DIRECTION_HANDOFF_20260825.json`
-- `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md`
-- `working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json`
-- `working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md`
-- `working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md`
+1. `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
+   için sonuç `REWORK_REQUIRED`: 3 ön KEEP, 9 ön REWORK; 7 arka yüz REWORK.
+2. Sonraki Görsel candidate gelene kadar yeni brief veya final sanat üretmez.
+3. Revize exact commit geldiğinde 12 kabul edilmiş zor-vaka kartını, 7 arka
+   yüzü ve bütün contact-sheet/mockup kanıtını yeniden inceler.
+4. Sonraki sonuç `ART_DIRECTION_PILOT_PASS_RECOMMENDATION` veya exact
+   dosya/kart düzeyinde yeni `REWORK_REQUIRED` olur.
+5. Final kullanıcı onayı, release veya kilit vermez; geçici ajan kullanmaz.
 
-1. Exact kabul edilen brief source `7418d9c2c89c265cb6efd30f6a5a7f2addd528da`dır; içerik brief kapısını geçmiştir.
-2. İlk sonraki görev `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6` pilotunu ve contact sheetlerini
-   salt-okunur incelemektir. Bu pilot kabul edilen brief öncesinde üretildiği
-   için otomatik PASS veya otomatik ret değildir.
-3. 12 ön yüzü başlık/metin açık ve kapalı; 7 arka yüzü aile, exact kimlik,
-   180° güvenliği, resim-içi yazı, tekrar, dönem, doku ve deste ritmi açısından
-   değerlendirir.
-4. Harita arkalarında aile görünürlüğünü ve exact ön-kart körlüğünü ayrı test
-   eder; sabit 5×5 aramaz, değişken kurala uygun düzen kanıtı ister.
-5. Sonuç `ART_DIRECTION_PILOT_PASS_RECOMMENDATION` veya exact dosya/kart
-   düzeyinde `REWORK_REQUIRED` olur. `KEEP`, `REMOVE`, `REDRAW_BRIEF`
-   ve Görsel Tasarımın uygulayacağı somut öncelik sırası verilir.
-6. Final illüstrasyon, render, PDF ve baskı üretmez; brief dışında alan
-   değiştirmez ve geçici ajan kullanmaz.
+## Görsel Tasarım — bağlayıcı hedefli pilot reworkü
 
-## Görsel Tasarım — pilot-only yetki
+Bağlayıcı uygulama kaynağı
+`working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`dır.
 
-Bağlayıcı kaynaklar kabul edilen `7418d9c2c89c265cb6efd30f6a5a7f2addd528da` Sanat Yönetimi paketi,
-`FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md` ve exact kart metnidir.
-
-1. `b4afbcf49784b85338453cbf29a956cbb620c9e6` pilotu korunur; ancak görünür sohbet handoffu ve Sanat Yönetmeni
-   incelemesi olmadan kabul edilmiş pilot veya aktif candidate sayılamaz.
-2. Sanat Yönetmeninin exact review handoffundan sonra yalnız belirtilen 12 ön
-   yüz, 7 arka yüz, contact sheet ve değişken harita mockup'larında rework
-   yapabilir.
-3. Reddedilen `e91581...` varlıkları, altı aile plakası ve türevleri yeni
-   sanatın girdisi olamaz.
-4. KAPTAN yalnız STYLE_ONLY kullanılır; illüstrasyon alanında gereksiz veya
-   anlamsız okunabilir yazı üretilmez; exact copy değiştirilmez.
-5. Harita arkaları: Sea/Rock genel deniz ve subtype kör; Island anonim genel ada;
-   Lighthouse 1721'e uygun anonim genel fener. Aile görünür, exact ön kart ve
-   sonuç kördür; sabit 5×5 şartı yoktur.
-6. Kullanıcı + Baş Editör pilot kabulü olmadan kalan 109 ön yüz, tam 121
-   üretim, tam PDF veya Simülasyon handoffu başlatılmaz.
-7. Sonuç `PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
-   olmalı; `LOCK_REQUESTED: NO` kalmalıdır.
+1. Çalışma `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
+   üzerinden başlar; geçmiş yeniden yazılmaz.
+2. Exact pilot seti yalnız şunlardır: `KAR-01, KAR-06, KAR-19, GUC-06,
+   GUC-27, ERZ-01, SAD-H-03, HAR-AD-08, HAR-KY-06, HAR-AA-06, HAR-FN-04,
+   SET-KP-01`.
+3. `SAD-H-03` ve `HAR-KY-06` exact KEEP varlıkları değiştirilmeden alınır.
+   Diğer on kart accepted brief ve review kararına göre üretilir/yeniden çizilir.
+4. `GUC-24` provisional KEEP olarak bu turun dışında saklanır. `KAR-02,
+   KAR-05, KAR-18, GUC-03, HAR-AA-04, SET-KL-01` reworkleri pilot PASS
+   sonrasına ertelenir; bu turda 12 ön yüz sınırı aşılmaz.
+5. Yedi arka yüzün tamamı mevcut sanattan türetilmeden sıfırdan yapılır.
+   Madalyon/arma/rozet/kaleidoskopik simetri yoktur.
+6. Harita arkaları aile-görünür/exact-kimlik-kördür; Sea/Rock subtype kör,
+   Island anonim ada, Lighthouse 1721'e uygun anonim fenerdir.
+7. Sabit 5×5 aranmaz. En az üç kurala uygun farklı düzenin kapalı ve kısmen
+   açılmış mockup'ları, rastgele 180° karşılıkları ve kör testleri üretilir.
+8. Exact copy değişmez; resim-içi gereksiz/anlamsız yazı veya glyph yoktur.
+9. Tam 121, PDF, Simülasyon, release ve kilit yoktur. Sonuç
+   `PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
+   ve `LOCK_REQUESTED: NO` olmalıdır.
 
 ## Simülasyon Testi — bekleyen görev
 
@@ -102,7 +95,7 @@ Yeni görsel candidate Baş Editörce kabul edilmeden iş başlatılmaz ve
 | `MEC-001` | Simülasyon | Yeni candidate bekliyor |
 | `SRC-001` | Görsel | Yeni provenance bekliyor |
 | `SRC-002` | Baş Editör + Simülasyon | Exact baseline çözümü bekliyor |
-| `ART-001` | Sanat Yönetimi + Görsel | Brief kapısı geçti; exact pilot review/rework ve tam özgün yayılım bekleniyor |
+| `ART-001` | Sanat Yönetimi + Görsel | Exact review FAIL; kabul edilmiş 12-pilot ve 7 arka-yüz reworkü, yeniden review ve tam özgün yayılım bekleniyor |
 | `QA-001`, `QA-002` | Simülasyon | Yeni candidate bekliyor |
 | `GOV-001`, `COM-001` | Baş Editör | Açık |
 

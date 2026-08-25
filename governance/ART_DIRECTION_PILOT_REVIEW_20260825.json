@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_ART_DIRECTION_EXACT_PILOT_REVIEW_AND_CHIEF_EDITOR_DISPOSITION",
+  "recorded_at": "2026-08-25T17:37:30+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "status": "REWORK_REQUIRED_ACCEPTED_FOR_PILOT_REWORK",
+  "art_direction_review": {
+    "workstream": "Sanat Yönetimi",
+    "visible_chat": "FOULWAKE Sanat Yönetmeni",
+    "visible_chat_ack": true,
+    "evidence_type": "EXACT_VISUAL_PILOT_REVIEW",
+    "chief_editor_source": "v2.7-design@44c17a3d0eb358562b110000a9caacec18b0c0a6",
+    "accepted_art_direction_source": "work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "input_visual_branch": "work/v2.7-visual",
+    "input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+    "changed_files": [],
+    "temporary_subagents": [],
+    "input_contact_sheets": [
+      "FOULWAKE_PILOT_FRONTS_CONTACT_SHEET_v2.7.png",
+      "FOULWAKE_PILOT_BACKS_CONTACT_SHEET_v2.7.png",
+      "FOULWAKE_PILOT_SEMANTIC_BLIND_CONTACT_SHEET_v2.7.png"
+    ],
+    "exact_input_verification": "PASS — 12 fronts, 7 backs and 3 contact sheets; 22/22 Git blob identities matched the exact Visual commit tree.",
+    "art_direction_pilot_pass_recommendation": false,
+    "result": "REWORK_REQUIRED",
+    "protected_fields_confirmed": true,
+    "lock_requested": false
+  },
+  "front_disposition": {
+    "totals": {
+      "keep": 3,
+      "rework_required": 9
+    },
+    "items": [
+      {
+        "card_id": "KAR-02",
+        "file": "KAR-02_front.png",
+        "decision": "REWORK_REQUIRED_TARGETED_REDRAW",
+        "brief": "Keep compass-and-map action; replace the broad curly-haired base with Kıyıçizen's thin body, straight hair and side-table silhouette."
+      },
+      {
+        "card_id": "KAR-05",
+        "file": "KAR-05_front.png",
+        "decision": "REWORK_REQUIRED_FULL_REDRAW",
+        "brief": "Tahtakakan must be an older thin woman listening to the hull with her ear against the planking; not a large hammering man."
+      },
+      {
+        "card_id": "KAR-18",
+        "file": "KAR-18_front.png",
+        "decision": "REWORK_REQUIRED_TARGETED_REDRAW",
+        "brief": "Body and rope remain committed to the forward task while only the head and gaze turn toward the shrinking shore."
+      },
+      {
+        "card_id": "GUC-03",
+        "file": "GUC-03_front.png",
+        "decision": "REWORK_REQUIRED_FULL_REDRAW",
+        "brief": "Remove four hands and central compass medallion; use two distinct hands, one real horizon passage and a compass-versus-pointed-direction conflict."
+      },
+      {
+        "card_id": "GUC-24",
+        "file": "GUC-24_front.png",
+        "decision": "KEEP",
+        "brief": "The textless transfer of one wet sock between two hands reads clearly; no joke needs to be added."
+      },
+      {
+        "card_id": "ERZ-01",
+        "file": "ERZ-01_front.png",
+        "decision": "REWORK_REQUIRED_FULL_REDRAW",
+        "brief": "Remove people, hands and tongs; show one leaking barrel spoiling multiple provisions as a systemic material process."
+      },
+      {
+        "card_id": "SAD-H-03",
+        "file": "SAD-H-03_front.png",
+        "decision": "KEEP",
+        "brief": "The overextended defensive arm and social tension read strongly without revealing the loyalty result."
+      },
+      {
+        "card_id": "HAR-AD-08",
+        "file": "HAR-AD-08_front.png",
+        "decision": "REWORK_REQUIRED_FULL_REDRAW",
+        "brief": "The whistle owner remains unseen; three lookouts turn in different directions in dense fog while only the rigging line vibrates."
+      },
+      {
+        "card_id": "HAR-KY-06",
+        "file": "HAR-KY-06_front.png",
+        "decision": "KEEP",
+        "brief": "The narrow rock pressure and squeezing ship create the intended claustrophobic single action."
+      },
+      {
+        "card_id": "HAR-AA-04",
+        "file": "HAR-AA-04_front.png",
+        "decision": "REWORK_REQUIRED_FULL_REDRAW",
+        "brief": "Show the older woman shipwright, heated plank and one final wedge strike; remove the meaningless glyph artifact."
+      },
+      {
+        "card_id": "HAR-FN-04",
+        "file": "HAR-FN-04_front.png",
+        "decision": "REWORK_REQUIRED_FULL_REDRAW",
+        "brief": "Remove large tower and directional beam; show the bow turning toward a small coal signal fire on the wrong headland."
+      },
+      {
+        "card_id": "SET-KL-01",
+        "file": "SET-KL-01_front.png",
+        "decision": "REWORK_REQUIRED_FULL_REDRAW",
+        "brief": "Show the last mooring line being cast off, health pressure, experimental cargo and a small iron-cornered box without resolving its mystery."
+      }
+    ]
+  },
+  "back_disposition": {
+    "totals": {
+      "keep": 0,
+      "rework_required": 7
+    },
+    "shared_failure": "All seven are pixel-exact 180-degree safe, but achieve it through digital mirroring, medallions, badges and kaleidoscopic symmetry instead of the accepted material and natural system.",
+    "items": [
+      {
+        "back_id": "BACK_CHARACTER",
+        "file": "BACK_CHARACTER.png",
+        "decision": "REWORK_REQUIRED",
+        "brief": "Remove four pistol-like objects, crest and empty central medallion; build a material rope-and-cloth surface without object-icon treatment."
+      },
+      {
+        "back_id": "BACK_POWER",
+        "file": "BACK_POWER.png",
+        "decision": "REWORK_REQUIRED",
+        "brief": "Remove central wheel/lens and repeated metal hook-anchor ornaments; use neutral oily cloth and equipment-roll material language."
+      },
+      {
+        "back_id": "BACK_LOYALTY",
+        "file": "BACK_LOYALTY.png",
+        "decision": "REWORK_REQUIRED",
+        "brief": "Remove empty seal medallion and decorative rope rings; use folded dark linen and a neutral knot that leaks no moral code."
+      },
+      {
+        "back_id": "BACK_SEA_ROCK",
+        "file": "BACK_SEA_ROCK.png",
+        "decision": "REWORK_REQUIRED",
+        "brief": "Remove central rock and breaking foam; show only a generic unexplored sea with no Sea/Rock subtype clue."
+      },
+      {
+        "back_id": "BACK_ISLAND",
+        "file": "BACK_ISLAND.png",
+        "decision": "REWORK_REQUIRED",
+        "brief": "Remove four-way abstract land medallion; place one generic island as a natural part of the common sea, revealing family only."
+      },
+      {
+        "back_id": "BACK_LIGHTHOUSE",
+        "file": "BACK_LIGHTHOUSE.png",
+        "decision": "REWORK_REQUIRED",
+        "brief": "Remove radial optical/lens/compass target; place a generic 1721-safe lighthouse in the common coast-and-sea system without beam badge."
+      },
+      {
+        "back_id": "BACK_SUPPORT",
+        "file": "BACK_SUPPORT.png",
+        "decision": "REWORK_REQUIRED",
+        "brief": "Remove chain, wheel/propeller and mechanical crest; use two bollards, a mooring ring and quiet material deck language."
+      }
+    ]
+  },
+  "audit_results": {
+    "exact_card_text": "PASS_12_OF_12",
+    "same_face_body_model": "PASS_NO_OPEN_CLONING",
+    "pose_scene_rhythm": "PARTIAL_FAIL_HAND_CENTERED_EXPLANATION_CLUSTER",
+    "repeated_animal_or_joke": "PASS",
+    "kaptan_style_only": "PASS",
+    "front_material_and_line_language": "PASS",
+    "back_material_and_line_language": "FAIL",
+    "readable_text_in_art": "PASS",
+    "meaningless_glyph_artifact": "FAIL_HAR_AA_04",
+    "period_1721": "FAIL_HAR_FN_04_AND_BACK_LIGHTHOUSE",
+    "back_topology": "PASS_20_31_15_42_6_4_3",
+    "back_180_pixel_safety": "PASS_7_OF_7",
+    "open_sea_rock_blindness": "TECHNICAL_PASS_ART_DIRECTION_FAIL",
+    "island_family_visibility": "PARTIAL_FAIL",
+    "lighthouse_family_visibility": "FAIL",
+    "representative_variable_map_layout_qa": "FAIL_MISSING_EVIDENCE"
+  },
+  "chief_editor_disposition": {
+    "art_direction_review_accepted": true,
+    "reviewed_pilot_accepted": false,
+    "current_pilot_classification": "PRE_BRIEF_PILOT_REVIEWED_REWORK_REQUIRED_INPUT_ONLY",
+    "visual_production_authorized": "PILOT_ONLY",
+    "next_visual_scope": "ACCEPTED_12_PILOT_PLUS_7_BACKS_ONLY",
+    "next_pilot_front_ids": [
+      "KAR-01",
+      "KAR-06",
+      "KAR-19",
+      "GUC-06",
+      "GUC-27",
+      "ERZ-01",
+      "SAD-H-03",
+      "HAR-AD-08",
+      "HAR-KY-06",
+      "HAR-AA-06",
+      "HAR-FN-04",
+      "SET-KP-01"
+    ],
+    "exact_reuse_from_reviewed_pilot": [
+      "SAD-H-03",
+      "HAR-KY-06"
+    ],
+    "create_or_redraw_for_next_pilot": [
+      "KAR-01",
+      "KAR-06",
+      "KAR-19",
+      "GUC-06",
+      "GUC-27",
+      "ERZ-01",
+      "HAR-AD-08",
+      "HAR-AA-06",
+      "HAR-FN-04",
+      "SET-KP-01"
+    ],
+    "provisional_keep_outside_next_pilot": [
+      "GUC-24"
+    ],
+    "deferred_rework_until_pilot_pass": [
+      "KAR-02",
+      "KAR-05",
+      "KAR-18",
+      "GUC-03",
+      "HAR-AA-04",
+      "SET-KL-01"
+    ],
+    "redraw_all_back_ids": [
+      "BACK_CHARACTER",
+      "BACK_POWER",
+      "BACK_LOYALTY",
+      "BACK_SEA_ROCK",
+      "BACK_ISLAND",
+      "BACK_LIGHTHOUSE",
+      "BACK_SUPPORT"
+    ],
+    "work_order": "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
+    "full_121_production_authorized": false,
+    "simulation_may_start": false,
+    "release_pass": false,
+    "lock_allowed": false,
+    "final_aesthetic_acceptance_required_after_rework": true,
+    "next_recipient": "FOULWAKE görsel tasarım"
+  },
+  "open_risks": [
+    "SRC-002 remains open before lock.",
+    "Only 5 of the reviewed pre-brief fronts overlap the accepted 12-pilot set; the next candidate must use the accepted hard-case set.",
+    "Representative rules-legal variable-layout closed/open map mockups are missing.",
+    "Physical print, cut, duplex, opacity, brightness and table-distance tests remain pending.",
+    "Full production remains unauthorized."
+  ]
+}

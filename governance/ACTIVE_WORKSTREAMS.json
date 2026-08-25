@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-25T16:52:38+03:00",
+  "updated_at": "2026-08-25T17:37:30+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -24,7 +24,7 @@
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
     "active_visual_candidate": null,
-    "basis": "Story accepted; Art Direction brief package accepted at 7418d9c2 and pilot-only stage authorized; pre-brief Visual pilot b4afbcf detected but not accepted or candidate; SRC-002, pilot review/rework, full original art, physical proof and Simulation delivery pending"
+    "basis": "Story accepted; Art Direction brief accepted; exact pre-brief Visual pilot b4afbcf reviewed REWORK_REQUIRED (3/12 front KEEP, 9/12 rework, 0/7 back KEEP); targeted accepted-12 pilot plus 7-back rework pending; SRC-002, physical proof and Simulation delivery open"
   },
   "roles": {
     "chief_editor": {
@@ -150,7 +150,7 @@
       "integrated_to_v2_7_design": true
     },
     "art_direction": {
-      "status": "ART_DIRECTION_BRIEF_ACCEPTED_READY_FOR_EXACT_PILOT_REVIEW",
+      "status": "ART_DIRECTION_PILOT_REVIEW_REWORK_REQUIRED",
       "official_chat": "FOULWAKE Sanat Yönetmeni",
       "work_branch": "work/v2.7-art-direction",
       "branch_created": true,
@@ -167,7 +167,19 @@
       "project_owner_final_approval": true,
       "art_direction_brief_pass": true,
       "next_input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-      "next_stage": "EXACT_PILOT_REVIEW"
+      "next_stage": "WAITING_FOR_REVISED_ACCEPTED_12_PILOT",
+      "pilot_review_recorded": true,
+      "pilot_review_evidence_path": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
+      "reviewed_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+      "pilot_review_result": "REWORK_REQUIRED",
+      "front_review_counts": {
+        "keep": 3,
+        "rework_required": 9
+      },
+      "back_review_counts": {
+        "keep": 0,
+        "rework_required": 7
+      }
     },
     "visual": {
       "status": "DELIVERED_REJECTED_ART_REWORK_REQUIRED",
@@ -183,11 +195,67 @@
       "observed_branch_head": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
       "observed_pilot_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
       "observed_pilot_scope": "12_FRONTS_7_BACKS_CONTACT_SHEETS",
-      "observed_pilot_classification": "PRE_BRIEF_IN_FLIGHT_PILOT_REVIEW_INPUT_ONLY",
+      "observed_pilot_classification": "PRE_BRIEF_PILOT_REVIEWED_REWORK_REQUIRED_INPUT_ONLY",
       "observed_pilot_visible_chat_handoff_received": false,
       "observed_pilot_art_accepted": false,
       "pilot_only_production_authorized": true,
-      "full_production_authorized": false
+      "full_production_authorized": false,
+      "art_direction_review_received": true,
+      "art_direction_review_result": "REWORK_REQUIRED",
+      "art_direction_review_evidence": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
+      "current_pilot_accepted": false,
+      "pilot_rework_order": "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
+      "next_pilot_scope": "ACCEPTED_12_PILOT_PLUS_7_BACKS_ONLY",
+      "next_pilot_front_ids": [
+        "KAR-01",
+        "KAR-06",
+        "KAR-19",
+        "GUC-06",
+        "GUC-27",
+        "ERZ-01",
+        "SAD-H-03",
+        "HAR-AD-08",
+        "HAR-KY-06",
+        "HAR-AA-06",
+        "HAR-FN-04",
+        "SET-KP-01"
+      ],
+      "next_pilot_exact_reuse": [
+        "SAD-H-03",
+        "HAR-KY-06"
+      ],
+      "next_pilot_create_or_redraw": [
+        "KAR-01",
+        "KAR-06",
+        "KAR-19",
+        "GUC-06",
+        "GUC-27",
+        "ERZ-01",
+        "HAR-AD-08",
+        "HAR-AA-06",
+        "HAR-FN-04",
+        "SET-KP-01"
+      ],
+      "provisional_keep_outside_next_pilot": [
+        "GUC-24"
+      ],
+      "deferred_rework_until_pilot_pass": [
+        "KAR-02",
+        "KAR-05",
+        "KAR-18",
+        "GUC-03",
+        "HAR-AA-04",
+        "SET-KL-01"
+      ],
+      "redraw_all_back_ids": [
+        "BACK_CHARACTER",
+        "BACK_POWER",
+        "BACK_LOYALTY",
+        "BACK_SEA_ROCK",
+        "BACK_ISLAND",
+        "BACK_LIGHTHOUSE",
+        "BACK_SUPPORT"
+      ]
     },
     "simulation": {
       "status": "PENDING_NEW_ART_CANDIDATE",
@@ -235,7 +303,59 @@
       "BACK_LIGHTHOUSE": "GENERIC_1721_LIGHTHOUSE_FAMILY_VISIBLE_EXACT_FRONT_AND_RESULT_BLIND"
     },
     "fixed_grid_or_5x5_required": false,
-    "representative_variable_layout_qa_required": true
+    "representative_variable_layout_qa_required": true,
+    "pilot_review_evidence": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
+    "current_pilot_result": "REWORK_REQUIRED",
+    "current_pilot_front_counts": {
+      "keep": 3,
+      "rework_required": 9
+    },
+    "current_pilot_back_counts": {
+      "keep": 0,
+      "rework_required": 7
+    },
+    "visual_rework_order": "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
+    "next_pilot_front_ids": [
+      "KAR-01",
+      "KAR-06",
+      "KAR-19",
+      "GUC-06",
+      "GUC-27",
+      "ERZ-01",
+      "SAD-H-03",
+      "HAR-AD-08",
+      "HAR-KY-06",
+      "HAR-AA-06",
+      "HAR-FN-04",
+      "SET-KP-01"
+    ],
+    "next_pilot_exact_reuse": [
+      "SAD-H-03",
+      "HAR-KY-06"
+    ],
+    "next_pilot_create_or_redraw": [
+      "KAR-01",
+      "KAR-06",
+      "KAR-19",
+      "GUC-06",
+      "GUC-27",
+      "ERZ-01",
+      "HAR-AD-08",
+      "HAR-AA-06",
+      "HAR-FN-04",
+      "SET-KP-01"
+    ],
+    "provisional_keep_outside_next_pilot": [
+      "GUC-24"
+    ],
+    "deferred_rework_until_pilot_pass": [
+      "KAR-02",
+      "KAR-05",
+      "KAR-18",
+      "GUC-03",
+      "HAR-AA-04",
+      "SET-KL-01"
+    ]
   },
   "open_blockers": [
     {
@@ -262,10 +382,10 @@
     },
     {
       "id": "ART-001",
-      "status": "OPEN_PILOT_REVIEW_REQUIRED",
+      "status": "OPEN_PILOT_REWORK_REQUIRED",
       "severity": "BLOCKER",
       "owner": "art_direction_and_visual_design",
-      "summary": "Art Direction brief package accepted; pre-brief Visual pilot b4afbcf requires exact Art Direction review/rework, then owner/Chief pilot acceptance, 121 original fronts, 7 accepted backs and semantic contact-sheet QA",
+      "summary": "Exact Art Direction review completed: b4afbcf pilot is REWORK_REQUIRED (3 front KEEP, 9 front rework, 7/7 back rework). Next gate is the accepted 12 hard-case fronts plus 7 rebuilt backs, variable-layout evidence, re-review and owner/Chief acceptance.",
       "directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
     },
     {
@@ -296,7 +416,7 @@
       "status": "OPEN",
       "severity": "BLOCKER",
       "owner": "chief_editor",
-      "summary": "Story and Art Direction brief deliveries accepted; visible-chat Visual pilot handoff/disposition and independent Simulation delivery remain pending"
+      "summary": "Story, Art Direction brief and exact Art Direction pilot review are recorded; visible-chat Visual rework handoff, revised pilot disposition and independent Simulation delivery remain pending"
     }
   ],
   "resolved_blockers": [
@@ -346,7 +466,27 @@
     "integrated_to_v2_7_design": true,
     "visual_production_authorized": "PILOT_ONLY",
     "full_production_authorized": false,
-    "next_recipient": "FOULWAKE Sanat Yönetmeni",
-    "next_input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6"
+    "next_recipient": "FOULWAKE görsel tasarım",
+    "next_input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+    "next_stage": "TARGETED_ACCEPTED_12_PILOT_REWORK"
+  },
+  "art_direction_pilot_review": {
+    "status": "REWORK_REQUIRED_ACCEPTED_FOR_PILOT_REWORK",
+    "evidence_path": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
+    "official_chat": "FOULWAKE Sanat Yönetmeni",
+    "input_visual_branch": "work/v2.7-visual",
+    "input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+    "exact_input_files_verified": 22,
+    "front_counts": {
+      "keep": 3,
+      "rework_required": 9
+    },
+    "back_counts": {
+      "keep": 0,
+      "rework_required": 7
+    },
+    "project_owner_final_aesthetic_acceptance_pending_after_rework": true,
+    "next_recipient": "FOULWAKE görsel tasarım",
+    "full_production_authorized": false
   }
 }

@@ -86,6 +86,7 @@ REQUIRED_PATHS = [
     "governance/VISUAL_HANDOFF_20260825.json",
     "governance/ART_DIRECTION_ACK_20260825.json",
     "governance/ART_DIRECTION_HANDOFF_20260825.json",
+    "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
     "governance/SIM_QA_ATTESTATION_SCHEMA.json",
     "governance/LOCK_AUTHORIZATION_SCHEMA.json",
     "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
@@ -93,6 +94,7 @@ REQUIRED_PATHS = [
     "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
     "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
     "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md",
+    "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
     "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
@@ -188,8 +190,8 @@ if activation.get("creative_work_authorized") is not True:
 deliveries = state.get("specialist_deliveries", {})
 story = deliveries.get("story", {})
 art_direction = deliveries.get("art_direction", {})
-if art_direction.get("status") != "ART_DIRECTION_BRIEF_ACCEPTED_READY_FOR_EXACT_PILOT_REVIEW":
-    error("Art Direction delivery status must record accepted brief package")
+if art_direction.get("status") != "ART_DIRECTION_PILOT_REVIEW_REWORK_REQUIRED":
+    error("Art Direction delivery status must record completed pilot review and required rework")
 if art_direction.get("work_branch") != "work/v2.7-art-direction":
     error("Art Direction delivery branch is wrong")
 if art_direction.get("may_start_creative_work") is not True:
@@ -225,14 +227,23 @@ if visual.get("art_accepted") is not False or visual.get("active_candidate") is 
     error("Rejected Visual art must not become an active candidate")
 if visual.get("observed_pilot_commit") != "b4afbcf49784b85338453cbf29a956cbb620c9e6":
     error("observed pre-brief Visual pilot commit is wrong")
-if visual.get("observed_pilot_classification") != "PRE_BRIEF_IN_FLIGHT_PILOT_REVIEW_INPUT_ONLY":
-    error("pre-brief Visual pilot must remain review input only")
+if visual.get("observed_pilot_classification") != "PRE_BRIEF_PILOT_REVIEWED_REWORK_REQUIRED_INPUT_ONLY":
+    error("pre-brief Visual pilot must remain reviewed rework input only")
 if visual.get("observed_pilot_visible_chat_handoff_received") is not False:
     error("GitHub pilot cannot count as visible-chat handoff")
 if visual.get("observed_pilot_art_accepted") is not False:
     error("pre-brief Visual pilot cannot be art-accepted")
 if visual.get("pilot_only_production_authorized") is not True or visual.get("full_production_authorized") is not False:
     error("Visual authorization must remain pilot-only")
+if visual.get("art_direction_review_received") is not True or visual.get("art_direction_review_result") != "REWORK_REQUIRED":
+    error("Visual pilot must record the exact Art Direction REWORK_REQUIRED review")
+if visual.get("art_direction_review_evidence") != "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json":
+    error("Visual pilot Art Direction review evidence path is wrong")
+expected_next_pilot = ["KAR-01", "KAR-06", "KAR-19", "GUC-06", "GUC-27", "ERZ-01", "SAD-H-03", "HAR-AD-08", "HAR-KY-06", "HAR-AA-06", "HAR-FN-04", "SET-KP-01"]
+if visual.get("next_pilot_front_ids") != expected_next_pilot:
+    error("next Visual pilot must use the accepted 12 hard-case card set")
+if visual.get("next_pilot_exact_reuse") != ["SAD-H-03", "HAR-KY-06"]:
+    error("only the two overlapping exact KEEP fronts may be reused in the next pilot")
 simulation = deliveries.get("simulation", {})
 if simulation.get("status") != "PENDING_NEW_ART_CANDIDATE":
     error("Simulation must wait for a new accepted art candidate")
@@ -331,6 +342,42 @@ if observed_pilot.get("classification") != "PRE_BRIEF_IN_FLIGHT_PILOT_REVIEW_INP
     error("observed Visual pilot classification is wrong")
 
 
+art_review = read_json("governance/ART_DIRECTION_PILOT_REVIEW_20260825.json")
+if art_review.get("record_type") != "VISIBLE_CHAT_ART_DIRECTION_EXACT_PILOT_REVIEW_AND_CHIEF_EDITOR_DISPOSITION":
+    error("Art Direction pilot review record type is wrong")
+if art_review.get("status") != "REWORK_REQUIRED_ACCEPTED_FOR_PILOT_REWORK":
+    error("Art Direction pilot review status is wrong")
+review_delivery = art_review.get("art_direction_review", {})
+if review_delivery.get("visible_chat") != "FOULWAKE Sanat Yönetmeni" or review_delivery.get("visible_chat_ack") is not True:
+    error("Art Direction pilot review requires the correct visible chat ACK")
+if review_delivery.get("evidence_type") != "EXACT_VISUAL_PILOT_REVIEW":
+    error("Art Direction pilot review evidence type is wrong")
+if review_delivery.get("input_visual_branch") != "work/v2.7-visual" or review_delivery.get("input_visual_commit") != "b4afbcf49784b85338453cbf29a956cbb620c9e6":
+    error("Art Direction pilot review exact Visual input is wrong")
+if review_delivery.get("changed_files") != [] or review_delivery.get("temporary_subagents") != []:
+    error("Art Direction exact pilot review must be read-only and use no temporary subagents")
+if review_delivery.get("lock_requested") is not False or review_delivery.get("art_direction_pilot_pass_recommendation") is not False:
+    error("Rejected pilot review cannot request lock or recommend PASS")
+front_totals = art_review.get("front_disposition", {}).get("totals", {})
+back_totals = art_review.get("back_disposition", {}).get("totals", {})
+if front_totals != {"keep": 3, "rework_required": 9}:
+    error("Art Direction front review counts must be 3 KEEP / 9 REWORK")
+if back_totals != {"keep": 0, "rework_required": 7}:
+    error("Art Direction back review counts must be 0 KEEP / 7 REWORK")
+review_disposition = art_review.get("chief_editor_disposition", {})
+if review_disposition.get("reviewed_pilot_accepted") is not False:
+    error("reviewed b4afbcf pilot cannot be accepted")
+if review_disposition.get("visual_production_authorized") != "PILOT_ONLY" or review_disposition.get("full_121_production_authorized") is not False:
+    error("pilot review disposition must remain pilot-only")
+if review_disposition.get("next_pilot_front_ids") != expected_next_pilot:
+    error("pilot review disposition must route the accepted 12 hard-case cards")
+if review_disposition.get("exact_reuse_from_reviewed_pilot") != ["SAD-H-03", "HAR-KY-06"]:
+    error("pilot review exact KEEP reuse set is wrong")
+if review_disposition.get("redraw_all_back_ids") != ["BACK_CHARACTER", "BACK_POWER", "BACK_LOYALTY", "BACK_SEA_ROCK", "BACK_ISLAND", "BACK_LIGHTHOUSE", "BACK_SUPPORT"]:
+    error("all seven pilot backs must be redrawn")
+if review_disposition.get("simulation_may_start") is not False or review_disposition.get("release_pass") is not False or review_disposition.get("lock_allowed") is not False:
+    error("pilot review cannot grant Simulation, release or lock")
+
 visual_evidence = read_json("governance/VISUAL_HANDOFF_20260825.json")
 if visual_evidence.get("record_type") != "VISIBLE_CHAT_VISUAL_WORKSTREAM_HANDOFF_AND_CHIEF_EDITOR_DISPOSITION":
     error("Visual evidence record type is wrong")
@@ -399,6 +446,13 @@ art_source = hierarchy.get("sources", [{}] * 5)[4] if len(hierarchy.get("sources
 directive_path = "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
 if directive_path not in art_source.get("paths", []):
     error("source hierarchy does not include binding visual rework directive")
+pilot_order_path = "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md"
+if pilot_order_path not in art_source.get("paths", []):
+    error("source hierarchy does not include binding pilot rework order")
+if art_source.get("art_direction_pilot_review_evidence") != "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json":
+    error("source hierarchy pilot review evidence is wrong")
+if art_source.get("current_pilot_result") != "REWORK_REQUIRED":
+    error("source hierarchy must record the current pilot REWORK_REQUIRED result")
 art_direction_path = "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md"
 if art_direction_path not in art_source.get("paths", []):
     error("source hierarchy does not include binding Art Direction work order")
@@ -445,6 +499,8 @@ require_markers("AI_HANDOFF.md", [
     "FOULWAKE Sanat Yönetmeni",
     "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY",
     "ART_DIRECTION_ACK_20260825.json",
+    "ART_DIRECTION_PILOT_REVIEW_20260825.json",
+    "FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
 ])
 require_markers("PROJECT_STATE.md", [
     "Aktif görsel candidate",
@@ -452,8 +508,9 @@ require_markers("PROJECT_STATE.md", [
     "TECHNICAL_PIPELINE_REFERENCE_ONLY",
     "branch protection/ruleset",
     "Sanat Yönetimi",
-    "PILOT REVIEW REQUIRED",
+    "PILOT REWORK REQUIRED",
     "ART_DIRECTION BRIEF ACCEPTED",
+    "ART_DIRECTION_PILOT_REVIEW_20260825.json",
 ])
 require_markers("governance/DECISION_REGISTER.md", [
     "DEC-20260825-01",
@@ -462,18 +519,32 @@ require_markers("governance/DECISION_REGISTER.md", [
     "DEC-20260825-08",
     "DEC-20260825-09",
     "DEC-20260825-10",
+    "DEC-20260825-11",
+    "BINDING PILOT REVIEW DISPOSITION",
     "BINDING CREATIVE GATE",
     "SUPERSEDED 2026-08-25",
     "saçma/anlamsız okunabilir yazı",
 ])
 require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
-    "PRE_BRIEF_PILOT_DETECTED",
+    "TARGETED_ACCEPTED_12_PILOT_REWORK_AUTHORIZED",
     "PENDING_NEW_ART_CANDIDATE",
     "SRC-002",
     "FOULWAKE Sanat Yönetmeni",
-    "READY_FOR_EXACT_PILOT_REVIEW",
-    "ART_DIRECTION_HANDOFF_20260825.json",
+    "EXACT_PILOT_REVIEW_COMPLETE",
+    "ART_DIRECTION_PILOT_REVIEW_20260825.json",
+    "FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
     "REDRAW_BRIEF",
+])
+require_markers("working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md", [
+    "KAR-01",
+    "SAD-H-03",
+    "HAR-KY-06",
+    "BACK_SEA_ROCK",
+    "BACK_ISLAND",
+    "BACK_LIGHTHOUSE",
+    "Sabit 5×5'e bağlı olmayan",
+    "PILOT_REWORK_DELIVERED",
+    "LOCK_REQUESTED: NO",
 ])
 require_markers("governance/WORKSTREAM_PROTOCOL.md", [
     "VISIBLE_CHAT_ACK: YES",

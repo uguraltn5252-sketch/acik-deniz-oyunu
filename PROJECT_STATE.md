@@ -6,7 +6,7 @@
 **Entegrasyon dalı:** `v2.7-design`  
 **Aktif workspace:** `working/v2.7/`  
 **Aktif görsel candidate:** YOK  
-**Sanat Yönetimi:** `ART_DIRECTION BRIEF ACCEPTED / PILOT REVIEW READY`  
+**Sanat Yönetimi:** `ART_DIRECTION BRIEF ACCEPTED / EXACT PILOT REVIEW REWORK REQUIRED`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
 
 ## Çalışma hattı durumu
@@ -14,8 +14,8 @@
 | Hat | Exact kaynak | Baş Editör hükmü | Sonraki adım |
 |---|---|---|---|
 | Hikâye | `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` | Kabul edildi ve exact üç Hikâye blobu entegre edildi; release PASS değil | Görsel için exact metin girdisi |
-| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | `ART_DIRECTION_BRIEF_PASS`; proje sahibi nihai briefi onayladı; exact dört dosya entegre edildi | `b4afbcf...` pilotunu bağımsız yaratıcı inceleme |
-| Görsel | Resmî reddedilen teslim `e91581...`; gözlenen pilot head `b4afbcf...` | 12 ön + 7 arka pilot GitHub'da var; nihai brief öncesi üretildi, görünür handoff ve sanat kabulü yok | Sanat Yönetmeni incelemesi sonrası yalnız pilot reworkü |
+| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | Brief PASS korunur; exact `b4afbcf...` pilot incelemesi `REWORK_REQUIRED` | Revize exact pilot geldikten sonra yeniden yaratıcı inceleme |
+| Görsel | Reddedilen tam teslim `e91581...`; incelenen pilot `b4afbcf...` | Pilot sanat kabulü FAIL: 3/12 KEEP, 9/12 REWORK; 0/7 arka yüz KEEP | Yalnız kabul edilmiş zor-vaka 12'lisi + sıfırdan 7 arka yüz reworkü |
 | Simülasyon | dal yok | Başlamadı | Yeni görsel aday kabulünden sonra |
 
 Görsel teslimin `121/121`, 7 arka yüz ve PDF/hash zinciri teknik olarak kayıtlı
@@ -30,12 +30,14 @@ yüz briefi olarak kabul edilmiştir. Proje sahibi aile-görünür harita arkala
 ve sabit 5×5 şartının kaldırılmasını nihai olarak onaylamıştır. Bu brief kabulü
 final görsel kabulü değildir.
 
-Görsel dalında `b4afbcf...` pilotu tespit edilmiştir; kaynak kaydı
-`59affee8...` Baş Editör iş emrine bağlıdır ve kabul edilen `7418d9c2...`
-brieflerinden önce üretilmiştir. Bu nedenle silinmez veya kendiliğinden
-reddedilmez; Sanat Yönetmeninin exact pilot incelemesine girdi olur. Görünür
-Görsel handoffu ve kullanıcı/Baş Editör pilot kabulü gelmeden aktif candidate
-veya tam üretim sayılamaz.
+Görsel dalındaki `b4afbcf...` brief-öncesi pilot exact olarak incelenmiş ve
+`REWORK_REQUIRED` almıştır. Üç ön yüz (`GUC-24`, `SAD-H-03`, `HAR-KY-06`)
+KEEP; dokuz ön yüz REWORK; yedi arka yüzün tamamı REWORK'tür. Sonraki pilot,
+kabul edilmiş zor-vaka 12'lisine dönmek zorundadır: `SAD-H-03` ile `HAR-KY-06`
+exact korunur, üç örtüşen ret düzeltilir ve yedi eksik zor-vaka kartı üretilir.
+`GUC-24` set dışı provisional KEEP olarak saklanır; diğer set dışı retler pilot
+kabulünden sonraya ertelenir. Görünür Görsel rework handoffu ve kullanıcı/Baş
+Editör kabulü gelmeden aktif candidate veya tam üretim sayılamaz.
 
 ## Bağlayıcı yeni görsel yön
 
@@ -66,11 +68,11 @@ veya tam üretim sayılamaz.
 | `MEC-001` | Simülasyon | OPEN | Sea=Rock için exact adayda tam ve kör fiziksel test |
 | `SRC-001` | Görsel | OPEN | Yeni adayda tutarlı source→render→PDF ve iç/dış provenance |
 | `SRC-002` | Baş Editör + Simülasyon | OPEN | GUC-22/GUC-23 için kilitli v2.6 exact kaynak karşılaştırması veya açık kullanıcı kararı |
-| `ART-001` | Sanat Yönetimi + Görsel | PILOT REVIEW REQUIRED | Kabul edilmiş brief karşısında exact pilot incelemesi; ardından pilot kabulü, 121 özgün ön yüz, 7 kabul edilmiş arka yüz ve kör contact-sheet QA |
+| `ART-001` | Sanat Yönetimi + Görsel | PILOT REWORK REQUIRED | Exact inceleme tamamlandı; kabul edilmiş 12 zor-vaka pilotu, sıfırdan 7 arka yüz, yeniden yaratıcı inceleme ve kullanıcı/Baş Editör pilot kabulü gerekir |
 | `QA-001` | Simülasyon | OPEN | Exact candidate'a bağlı yeniden üretilebilir tam attestation |
 | `QA-002` | Simülasyon | OPEN | Fiziksel proof, kör sızıntı ve kör insan masa testi |
 | `GOV-001` | Baş Editör | OPEN | main uzlaştırması, branch protection/ruleset, required status check |
-| `COM-001` | Baş Editör | OPEN | Sanat Yönetimi brief teslimi tamamlandı; görünür Görsel pilot handoffu, pilot dispozisyonu ve bağımsız Simülasyon teslimi bekleniyor |
+| `COM-001` | Baş Editör | OPEN | Sanat Yönetimi briefi ve exact pilot review teslimi tamamlandı; görünür Görsel rework handoffu, pilot kabulü ve bağımsız Simülasyon teslimi bekleniyor |
 
 `CAN-001` çözülmüştür: CAN-08/09 v2.7 DRAFT `TASLAK` koruma ilkeleridir.
 
@@ -106,6 +108,8 @@ ayrıdır.
 - `governance/VISUAL_HANDOFF_20260825.json`
 - `governance/ART_DIRECTION_ACK_20260825.json`
 - `governance/ART_DIRECTION_HANDOFF_20260825.json`
+- `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json`
+- `working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`
 - `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
 - `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md`
 - `working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json`
