@@ -1,0 +1,1010 @@
+{
+  "schema_version": "1.0",
+  "project": "FOULWAKE",
+  "version": "v2.7",
+  "status": "PILOT_DELIVERED / PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+  "source_branch": "work/v2.7-visual",
+  "visual_branch_base_commit": "e91581bb336dfcbab5da1d48a256577f9251f891",
+  "chief_editor_source_commit": "59affee8cf36e2c5fd4738fc7c7797c3fc9daeb4",
+  "pilot_delivery_commit": "PENDING_EXACT_COMMIT_METADATA",
+  "binding_card_text_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+  "tests": {
+    "art_brief_manifest": {
+      "cards": 121,
+      "unique_card_ids": 121,
+      "unique_semantic_brief_signatures": 121,
+      "result": "COMPLETE_FOR_PILOT_GATE"
+    },
+    "pilot_family_distribution": {
+      "character": 3,
+      "power": 2,
+      "rotten_provisions": 1,
+      "loyalty": 1,
+      "map_open_sea": 1,
+      "map_rock": 1,
+      "map_island": 1,
+      "map_lighthouse": 1,
+      "support": 1
+    },
+    "exact_current_character_power_copy": {
+      "records_checked": 50,
+      "exact": true
+    },
+    "front_digital_preflight": [
+      {
+        "card_id": "KAR-02",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/KAR-02_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "64f9974b156bd5db88724c8331c16d01d8f340bdd549906ebae2db3e9037ad13",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "KAR-05",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/KAR-05_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "037b7bd83b4e732aee76d11bfe691b9ed59608f9dca130a00889c6487fab83a3",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "KAR-18",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/KAR-18_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "6c96d957893b91e20aedc0a2bd2e686590fb183b4f151b933e20b0bf62ac64c8",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "GUC-03",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/GUC-03_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "62793b026791caaa63777d4b7cb83307142c53056e059ed19281eead6de0259c",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "GUC-24",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/GUC-24_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "d22c728eb9824282d0f9d41273f4fb7f90315f67a53a1449b636f3703c422731",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "ERZ-01",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/ERZ-01_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "555ef7a879bec1657a0dea9843190d1c27d0ba6417ced473f35748fed412a87a",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "SAD-H-03",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/SAD-H-03_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "3a22e82d4fd41a787d347d60341a073aa930effeae0f972a55d804e5ef12b3a8",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "HAR-AD-08",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/HAR-AD-08_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "999b656353c738a4544560b56cc08bb39b007fda697c286a61ad90e4f9b74b69",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "HAR-KY-06",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/HAR-KY-06_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "8036fbb33dd2e8b18c9157a367c7b7ab7f175a8192f8a4d0a1504f3a380df101",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "HAR-AA-04",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/HAR-AA-04_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "b01296654ece6a49e5ac3946d1451999459de4d7bbb6ca3aada299d580fd1316",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "HAR-FN-04",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/HAR-FN-04_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "6aebface07c201ed7d5446c93c25d6c9b38e9f88e578c84b0bd2cfd81327e2c4",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      },
+      {
+        "card_id": "SET-KL-01",
+        "path": "working/v2.7/visual/rework_pilot/pilot_fronts/SET-KL-01_front.png",
+        "png_verify_and_decode": true,
+        "pixels_match_inventory": true,
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "overflow": false,
+        "safe_area_layout_check": true,
+        "exact_visible_copy_payload_sha256": "089b9846ddd853a616fec14467c76e83d1e8232343c2d4493d5d0e371faf4304",
+        "text_in_illustration": false,
+        "text_in_illustration_review_method": "manual contact-sheet review plus GUC-03 enlarged dial correction; no readable token observed",
+        "rejected_asset_reused": false
+      }
+    ],
+    "back_digital_preflight": [
+      {
+        "back_asset_id": "BACK_CHARACTER",
+        "mapped_count": 20,
+        "path": "working/v2.7/visual/rework_pilot/pilot_backs/BACK_CHARACTER.png",
+        "sha256": "dcc77d4c1f337ebc9d22b93ac84e2e532c0e579b9f0955d4730f011e11690abd",
+        "pixels": [
+          898,
+          1488
+        ],
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "exact_180_degree_pixel_safe": true,
+        "same_binary_within_family": true,
+        "text_in_illustration": false,
+        "rejected_asset_reused": false
+      },
+      {
+        "back_asset_id": "BACK_POWER",
+        "mapped_count": 31,
+        "path": "working/v2.7/visual/rework_pilot/pilot_backs/BACK_POWER.png",
+        "sha256": "9040211a5ee91f8476a67c3bf8d165ae8fc855e0f835a67299c8d93f5f78ac4a",
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "exact_180_degree_pixel_safe": true,
+        "same_binary_within_family": true,
+        "text_in_illustration": false,
+        "rejected_asset_reused": false
+      },
+      {
+        "back_asset_id": "BACK_LOYALTY",
+        "mapped_count": 15,
+        "path": "working/v2.7/visual/rework_pilot/pilot_backs/BACK_LOYALTY.png",
+        "sha256": "ec393f1c670a32f3e802a64f7f4bb308b8e58b062668843ad036090c5a1532fc",
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "exact_180_degree_pixel_safe": true,
+        "same_binary_within_family": true,
+        "text_in_illustration": false,
+        "rejected_asset_reused": false
+      },
+      {
+        "back_asset_id": "BACK_SEA_ROCK",
+        "mapped_count": 42,
+        "path": "working/v2.7/visual/rework_pilot/pilot_backs/BACK_SEA_ROCK.png",
+        "sha256": "f665eb7e1bc26b7af0f2a1ab730a0474c421d32406c8071f5cfc3c043cc30476",
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "exact_180_degree_pixel_safe": true,
+        "same_binary_within_family": true,
+        "text_in_illustration": false,
+        "rejected_asset_reused": false
+      },
+      {
+        "back_asset_id": "BACK_ISLAND",
+        "mapped_count": 6,
+        "path": "working/v2.7/visual/rework_pilot/pilot_backs/BACK_ISLAND.png",
+        "sha256": "a597c4d42db34edf6dfdcf1e17ed23f6a06960c794420af7ac8ec4a16a63859d",
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "exact_180_degree_pixel_safe": true,
+        "same_binary_within_family": true,
+        "text_in_illustration": false,
+        "rejected_asset_reused": false
+      },
+      {
+        "back_asset_id": "BACK_LIGHTHOUSE",
+        "mapped_count": 4,
+        "path": "working/v2.7/visual/rework_pilot/pilot_backs/BACK_LIGHTHOUSE.png",
+        "sha256": "007e970725afa152d11ec0ce1e2da3382e2a081487762c08996c7ab30dfbcb49",
+        "pixels": [
+          898,
+          898
+        ],
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "exact_180_degree_pixel_safe": true,
+        "same_binary_within_family": true,
+        "text_in_illustration": false,
+        "rejected_asset_reused": false
+      },
+      {
+        "back_asset_id": "BACK_SUPPORT",
+        "mapped_count": 3,
+        "path": "working/v2.7/visual/rework_pilot/pilot_backs/BACK_SUPPORT.png",
+        "sha256": "97a1f8d98cb1f043d61be21c0234f1106f495f7132a316933d235fe8de38115d",
+        "pixels": [
+          821,
+          1121
+        ],
+        "dpi_300": true,
+        "mode": "RGB",
+        "alpha_channel": false,
+        "exact_180_degree_pixel_safe": true,
+        "same_binary_within_family": true,
+        "text_in_illustration": false,
+        "rejected_asset_reused": false
+      }
+    ],
+    "back_mapping": {
+      "mapped_cards": 121,
+      "unique_card_ids": 121,
+      "counts": {
+        "BACK_CHARACTER": 20,
+        "BACK_ISLAND": 6,
+        "BACK_LIGHTHOUSE": 4,
+        "BACK_LOYALTY": 15,
+        "BACK_POWER": 31,
+        "BACK_SEA_ROCK": 42,
+        "BACK_SUPPORT": 3
+      },
+      "sea_and_rock_shared_binary": "BACK_SEA_ROCK",
+      "sea_and_rock_mapped_cards": 42,
+      "mapping": [
+        {
+          "card_id": "KAR-01",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-02",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-03",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-04",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-05",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-06",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-07",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-08",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-09",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-10",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-11",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-12",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-13",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-14",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-15",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-16",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-17",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-18",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-19",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "KAR-20",
+          "family": "character",
+          "back_asset_id": "BACK_CHARACTER"
+        },
+        {
+          "card_id": "GUC-01A",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-01B",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-02A",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-02B",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-03",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-04",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-05",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-06",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-07",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-08",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-09",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-10",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-11",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-12",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-13",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-14",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-15",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-16",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-17",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-18",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-19",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-20",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-21",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-22",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-23",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-24",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-25",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-26",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-27",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "GUC-28",
+          "family": "power",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "ERZ-01",
+          "family": "rotten_provisions",
+          "back_asset_id": "BACK_POWER"
+        },
+        {
+          "card_id": "SAD-T-01",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-T-02",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-T-03",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-T-04",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-T-05",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-T-06",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-T-07",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-T-08",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-T-09",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-T-10",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-H-01",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-H-02",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-H-03",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-H-04",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "SAD-H-05",
+          "family": "loyalty",
+          "back_asset_id": "BACK_LOYALTY"
+        },
+        {
+          "card_id": "HAR-AD-01",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-02",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-03",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-04",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-05",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-06",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-07",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-08",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-09",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-10",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-11",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-12",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-13",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-14",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-15",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-16",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-17",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-18",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-19",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-20",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-21",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-22",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-23",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-24",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-25",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-26",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-27",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-28",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-29",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AD-30",
+          "family": "map_open_sea",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-01",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-02",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-03",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-04",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-05",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-06",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-07",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-08",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-09",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-10",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-11",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-KY-12",
+          "family": "map_rock",
+          "back_asset_id": "BACK_SEA_ROCK"
+        },
+        {
+          "card_id": "HAR-AA-01",
+          "family": "map_island",
+          "back_asset_id": "BACK_ISLAND"
+        },
+        {
+          "card_id": "HAR-AA-02",
+          "family": "map_island",
+          "back_asset_id": "BACK_ISLAND"
+        },
+        {
+          "card_id": "HAR-AA-03",
+          "family": "map_island",
+          "back_asset_id": "BACK_ISLAND"
+        },
+        {
+          "card_id": "HAR-AA-04",
+          "family": "map_island",
+          "back_asset_id": "BACK_ISLAND"
+        },
+        {
+          "card_id": "HAR-AA-05",
+          "family": "map_island",
+          "back_asset_id": "BACK_ISLAND"
+        },
+        {
+          "card_id": "HAR-AA-06",
+          "family": "map_island",
+          "back_asset_id": "BACK_ISLAND"
+        },
+        {
+          "card_id": "HAR-FN-01",
+          "family": "map_lighthouse",
+          "back_asset_id": "BACK_LIGHTHOUSE"
+        },
+        {
+          "card_id": "HAR-FN-02",
+          "family": "map_lighthouse",
+          "back_asset_id": "BACK_LIGHTHOUSE"
+        },
+        {
+          "card_id": "HAR-FN-03",
+          "family": "map_lighthouse",
+          "back_asset_id": "BACK_LIGHTHOUSE"
+        },
+        {
+          "card_id": "HAR-FN-04",
+          "family": "map_lighthouse",
+          "back_asset_id": "BACK_LIGHTHOUSE"
+        },
+        {
+          "card_id": "SET-KL-01",
+          "family": "support",
+          "back_asset_id": "BACK_SUPPORT"
+        },
+        {
+          "card_id": "SET-VL-01",
+          "family": "support",
+          "back_asset_id": "BACK_SUPPORT"
+        },
+        {
+          "card_id": "SET-KP-01",
+          "family": "support",
+          "back_asset_id": "BACK_SUPPORT"
+        }
+      ]
+    },
+    "text_in_illustration": {
+      "required_value": false,
+      "fronts_checked": 12,
+      "backs_checked": 7,
+      "value": false,
+      "manual_review": "19/19 source artworks and both contact sheets; GUC-03 dial corrected and rechecked",
+      "ocr_advisory": "tesseract 5.3.4 eng/osd psm11 run; engraving creates false glyph positives, so OCR was not used as the sole pass/fail oracle"
+    },
+    "rejected_asset_reuse": {
+      "required_value": false,
+      "value": false,
+      "generator_input_whitelist": [
+        "user-provided KAPTAN STYLE_ONLY image",
+        "new GUC-03 pilot itself for one compliance edit"
+      ],
+      "rejected_e915_assets_supplied_to_generator": [],
+      "manual_semantic_comparison_contact_sheet": "working/v2.7/visual/rework_pilot/contact_sheets/FOULWAKE_PILOT_SEMANTIC_BLIND_CONTACT_SHEET_v2.7.png",
+      "old_rejected_hashes_seen": 142,
+      "exact_hash_matches": [],
+      "hash_check_limitation": "Supplementary only; unique hash is not treated as proof of unique artwork."
+    },
+    "canonical_png_integrity": {
+      "files": 22,
+      "verify_and_full_decode": true
+    },
+    "contact_sheets": {
+      "fronts": 1,
+      "backs": 1,
+      "semantic_blind": 1
+    }
+  },
+  "controls": {
+    "remaining_109_fronts_generated": false,
+    "full_card_pdf_created": false,
+    "simulation_started": false,
+    "pass_release_or_lock_declared": false,
+    "temporary_agents_used": false
+  },
+  "physical_tests": {
+    "print": "NOT_RUN",
+    "cut": "NOT_RUN",
+    "duplex_alignment": "NOT_RUN",
+    "light_leak": "NOT_RUN",
+    "blind_orientation_leak": "NOT_RUN"
+  },
+  "open_risks": [
+    "Project Owner and Chief Editor have not accepted the pilot.",
+    "Physical print/cut/duplex/light and blind orientation-leak tests were not run.",
+    "Remaining 109 fronts, full card PDF, full 29-page rulebook integration and Simulation Test are blocked by the pilot acceptance gate.",
+    "OCR language pack is English-only and engraving produces false glyph positives; text-in-illustration control therefore includes manual visual review."
+  ],
+  "result": "PILOT_DELIVERED / PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE"
+}
