@@ -6,7 +6,7 @@
 **Entegrasyon dalı:** `v2.7-design`  
 **Aktif workspace:** `working/v2.7/`  
 **Aktif görsel candidate:** YOK  
-**Sanat Yönetimi:** `WORK ORDER READY / VISIBLE CHAT ACK PENDING`  
+**Sanat Yönetimi:** `COMMUNICATION ACK ACCEPTED / FIRST CREATIVE ASSIGNMENT READY`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
 
 ## Çalışma hattı durumu
@@ -14,7 +14,7 @@
 | Hat | Exact kaynak | Baş Editör hükmü | Sonraki adım |
 |---|---|---|---|
 | Hikâye | `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` | Kabul edildi ve exact üç Hikâye blobu entegre edildi; release PASS değil | Görsel için exact metin girdisi |
-| Sanat Yönetimi | `work/v2.7-art-direction` | İş emri ve dal hazır; görünür sohbet ACK'i/teslim yok | İletişim testi, sonra brief/pilot yaratıcı incelemesi |
+| Sanat Yönetimi | `work/v2.7-art-direction@3f50cdbf1abf43b929bfdb4564055c9c63f79f21` | İletişim ACK'i kabul edildi; yaratıcı teslim yok | Art Direction Bible + 121 brief manifesti + 12 pilot/7 arka-yüz briefi |
 | Görsel | `work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891` | Teslim gerçek; bütün ön/arka yüz sanatı reddedildi | Tam deste rework pilotu |
 | Simülasyon | dal yok | Başlamadı | Yeni görsel aday kabulünden sonra |
 
@@ -27,8 +27,9 @@ aktif release candidate yoktur.
 Sanat Yönetimi yeni ve bağımsız bir yaratıcı hattır: checklist QA değil,
 FOULWAKE dünyasını, çizgi/malzeme dilini, görsel dramaturjiyi, kartlar arası
 ayrışmayı ve deste ritmini kurar. Görsel Tasarım final üretimi yapar; Sanat
-Yönetmeni brief/eleştiri ve rework tavsiyesi verir. Nihai estetik karar proje
-sahibinindir. Görünür sohbet ACK'i gelmeden bu role teslim mal edilemez.
+Yönetmeni brief/eleştiri ve rework tavsiyesi verir. Nihai estetik karar proje sahibinindir. Görünür sohbet iletişim ACK'i
+`ART_DIRECTION_ACK_20260825.json` ile kabul edilmiştir; ancak henüz yaratıcı
+brief, review veya PASS teslimi yoktur.
 
 ## Bağlayıcı yeni görsel yön
 
@@ -93,6 +94,7 @@ ayrıdır.
 - `governance/CHIEF_EDITOR_AUDIT_20260825.md`
 - `governance/STORY_HANDOFF_20260820.json`
 - `governance/VISUAL_HANDOFF_20260825.json`
+- `governance/ART_DIRECTION_ACK_20260825.json`
 - `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
 - `working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md`
 

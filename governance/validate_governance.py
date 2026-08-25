@@ -84,6 +84,7 @@ REQUIRED_PATHS = [
     "governance/VISIBLE_CHAT_ACKS_20260820.json",
     "governance/STORY_HANDOFF_20260820.json",
     "governance/VISUAL_HANDOFF_20260825.json",
+    "governance/ART_DIRECTION_ACK_20260825.json",
     "governance/SIM_QA_ATTESTATION_SCHEMA.json",
     "governance/LOCK_AUTHORIZATION_SCHEMA.json",
     "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
@@ -166,24 +167,34 @@ if art_direction_role.get("may_produce_final_art") is not False:
 if art_direction_role.get("final_aesthetic_authority") != "project_owner":
     error("final aesthetic authority must remain with project owner")
 activation = state.get("art_direction_activation", {})
-if activation.get("status") != "PENDING_VISIBLE_CHAT_ACK":
-    error("Art Direction must remain pending visible-chat ACK until evidence arrives")
+if activation.get("status") != "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_CREATIVE_WORK":
+    error("Art Direction communication ACK activation status is wrong")
 if activation.get("branch_created") is not True:
     error("Art Direction branch activation must be recorded")
 if activation.get("temporary_subagents_used") is not False:
     error("Art Direction activation cannot use temporary subagents")
+if activation.get("source_commit") != "3f50cdbf1abf43b929bfdb4564055c9c63f79f21":
+    error("Art Direction activation source commit is wrong")
+if activation.get("ack_evidence_path") != "governance/ART_DIRECTION_ACK_20260825.json":
+    error("Art Direction activation evidence path is wrong")
+if activation.get("creative_work_authorized") is not True:
+    error("Art Direction creative work must be authorized after accepted ACK")
 
 deliveries = state.get("specialist_deliveries", {})
 story = deliveries.get("story", {})
 art_direction = deliveries.get("art_direction", {})
-if art_direction.get("status") != "PENDING_VISIBLE_CHAT_ACK_AND_FIRST_REVIEW":
-    error("Art Direction delivery status must remain pending visible-chat ACK")
+if art_direction.get("status") != "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT":
+    error("Art Direction delivery status must record accepted communication ACK")
 if art_direction.get("work_branch") != "work/v2.7-art-direction":
     error("Art Direction delivery branch is wrong")
-if art_direction.get("may_start_creative_work") is not False:
-    error("Art Direction creative work cannot start before visible-chat ACK")
+if art_direction.get("may_start_creative_work") is not True:
+    error("Art Direction creative work must be enabled after visible-chat ACK")
 if art_direction.get("delivery_recorded") is not False:
-    error("Art Direction delivery cannot be fabricated before visible-chat ACK")
+    error("Communication ACK cannot be counted as creative Art Direction delivery")
+if art_direction.get("communication_ack_recorded") is not True:
+    error("Art Direction communication ACK must be recorded")
+if art_direction.get("ack_evidence_path") != "governance/ART_DIRECTION_ACK_20260825.json":
+    error("Art Direction delivery evidence path is wrong")
 if story.get("status") != "ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT":
     error("Story delivery acceptance is missing")
 if story.get("source_commit") != "e04eef7f1fef6ea407feaaf26558551297c44b37":
@@ -241,6 +252,28 @@ if contract.get("art_direction_work_order") != "working/v2.7/visual/art_directio
 if contract.get("art_direction_recommendation_is_release_pass") is not False:
     error("Art Direction recommendation cannot count as release PASS")
 
+
+art_ack = read_json("governance/ART_DIRECTION_ACK_20260825.json")
+if art_ack.get("record_type") != "VISIBLE_CHAT_ART_DIRECTION_COMMUNICATION_TEST_AND_CHIEF_EDITOR_DISPOSITION":
+    error("Art Direction ACK record type is wrong")
+if art_ack.get("status") != "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT":
+    error("Art Direction ACK status is wrong")
+art_ack_delivery = art_ack.get("art_direction_ack", {})
+if art_ack_delivery.get("visible_chat") != "FOULWAKE Sanat Yönetmeni" or art_ack_delivery.get("visible_chat_ack") is not True:
+    error("Art Direction ACK requires correct visible chat")
+if art_ack_delivery.get("source_branch") != "work/v2.7-art-direction" or art_ack_delivery.get("source_commit") != "3f50cdbf1abf43b929bfdb4564055c9c63f79f21":
+    error("Art Direction ACK branch/commit mismatch")
+if art_ack_delivery.get("changed_files") != []:
+    error("Art Direction communication test must not change files")
+if art_ack_delivery.get("temporary_subagent_used") is not False or art_ack_delivery.get("lock_requested") is not False:
+    error("Art Direction communication test cannot use temporary agents or request lock")
+art_ack_disposition = art_ack.get("chief_editor_disposition", {})
+if art_ack_disposition.get("communication_test") != "ACCEPTED" or art_ack_disposition.get("creative_work_authorized") is not True:
+    error("Art Direction ACK Chief Editor disposition is wrong")
+if art_ack_disposition.get("specialist_creative_delivery_completed") is not False:
+    error("Communication ACK cannot complete creative Art Direction delivery")
+if art_ack_disposition.get("release_pass") is not False or art_ack_disposition.get("lock_allowed") is not False:
+    error("Art Direction ACK cannot grant release or lock")
 
 visual_evidence = read_json("governance/VISUAL_HANDOFF_20260825.json")
 if visual_evidence.get("record_type") != "VISIBLE_CHAT_VISUAL_WORKSTREAM_HANDOFF_AND_CHIEF_EDITOR_DISPOSITION":
@@ -331,7 +364,8 @@ require_markers("AI_HANDOFF.md", [
     "SRC-002",
     "Geçici alt ajan oluşturmak yasaktır",
     "FOULWAKE Sanat Yönetmeni",
-    "PENDING_VISIBLE_CHAT_ACK",
+    "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY",
+    "ART_DIRECTION_ACK_20260825.json",
 ])
 require_markers("PROJECT_STATE.md", [
     "Aktif görsel candidate",
@@ -340,6 +374,7 @@ require_markers("PROJECT_STATE.md", [
     "branch protection/ruleset",
     "Sanat Yönetimi",
     "Yaratıcı brief/inceleme",
+    "FIRST CREATIVE ASSIGNMENT READY",
 ])
 require_markers("governance/DECISION_REGISTER.md", [
     "DEC-20260825-01",
@@ -354,7 +389,8 @@ require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
     "PENDING_NEW_ART_CANDIDATE",
     "SRC-002",
     "FOULWAKE Sanat Yönetmeni",
-    "PENDING_VISIBLE_CHAT_ACK",
+    "READY_FOR_FIRST_CREATIVE_ASSIGNMENT",
+    "ART_DIRECTION_ACK_20260825.json",
     "REDRAW_BRIEF",
 ])
 require_markers("governance/WORKSTREAM_PROTOCOL.md", [
@@ -373,6 +409,8 @@ require_markers("working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_OR
     "Nihai estetik karar proje sahibinindir",
     "VISIBLE_CHAT_ACK: YES",
     "Geçici alt ajan oluşturulamaz",
+    "İlk görünür sohbet testi — tamamlandı",
+    "FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7",
 ])
 require_markers("governance/RELEASE_GATE.md", [
     "semantik özgünlük",

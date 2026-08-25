@@ -1,5 +1,27 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 25 Ağustos 2026 — SANAT YÖNETİMİ İLETİŞİM ACK KABULÜ
+
+**Görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  
+**Kaynak:** `work/v2.7-art-direction@3f50cdbf1abf43b929bfdb4564055c9c63f79f21`  
+**Kanıt:** `governance/ART_DIRECTION_ACK_20260825.json`
+
+Proje sahibinin ilettiği handoff; doğru görünür sohbet, exact dal/commit,
+`VISIBLE_CHAT_ACK: YES`, salt-okunur test, `CHANGED_FILES: NONE`, korunan
+alanlar ve `LOCK_REQUESTED: NO` içerir. GitHub doğrulamasında Sanat Yönetimi
+dalı source commitle birebirdir; dalda yaratıcı dosya veya başka değişiklik
+yoktur. Geçici ajan kullanılmamıştır.
+
+**Baş Editör dispozisyonu:**
+`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT`.
+
+İlk yetkili yaratıcı görev; FOULWAKE Art Direction Bible, 121 kartlık yaratıcı
+brief/özgünlük manifesti, 12 pilot production briefi ve 7 arka-yüz briefidir.
+Final illüstrasyon, render veya PDF bu hatta üretilemez. Görsel dalda yeni pilot
+commit'i bulunmadığından Görsel Tasarım, bu brief teslimi ve proje sahibi/Baş
+Editör yönlendirmesini bekler. Bu ACK yaratıcı PASS, Visual candidate, blocker
+kapanışı, release veya kilit değildir.
+
 ## 25 Ağustos 2026 — SANAT YÖNETİMİ HATTININ ETKİNLEŞTİRİLMESİ
 
 **Başlangıç kaynağı:** `v2.7-design@59affee8cf36e2c5fd4738fc7c7797c3fc9daeb4`  

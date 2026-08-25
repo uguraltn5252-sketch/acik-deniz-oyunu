@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-25T13:27:03.541+03:00",
+  "updated_at": "2026-08-25T13:42:24.020+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -24,7 +24,7 @@
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
     "active_visual_candidate": null,
-    "basis": "Story accepted; visible Visual delivery recorded but all front/back art rejected; Art Direction visible-chat ACK/review, source ambiguity, new art, physical proof and Simulation delivery pending"
+    "basis": "Story accepted; Visual delivery recorded but all art rejected; Art Direction communication ACK accepted and first creative brief/review pending; source ambiguity, new art, physical proof and Simulation delivery pending"
   },
   "roles": {
     "chief_editor": {
@@ -150,14 +150,18 @@
       "integrated_to_v2_7_design": true
     },
     "art_direction": {
-      "status": "PENDING_VISIBLE_CHAT_ACK_AND_FIRST_REVIEW",
+      "status": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT",
       "official_chat": "FOULWAKE Sanat Yönetmeni",
       "work_branch": "work/v2.7-art-direction",
       "branch_created": true,
       "work_order": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
-      "may_start_creative_work": false,
-      "first_gate": "COMMUNICATION_TEST_ONLY",
-      "delivery_recorded": false
+      "may_start_creative_work": true,
+      "first_gate": "COMMUNICATION_TEST_ACCEPTED",
+      "delivery_recorded": false,
+      "source_commit": "3f50cdbf1abf43b929bfdb4564055c9c63f79f21",
+      "communication_ack_recorded": true,
+      "ack_evidence_path": "governance/ART_DIRECTION_ACK_20260825.json",
+      "first_authorized_assignment": "ART_DIRECTION_BIBLE_121_BRIEF_MANIFEST_12_PILOT_AND_7_BACK_BRIEFS"
     },
     "visual": {
       "status": "DELIVERED_REJECTED_ART_REWORK_REQUIRED",
@@ -267,7 +271,7 @@
       "status": "OPEN",
       "severity": "BLOCKER",
       "owner": "chief_editor",
-      "summary": "Story teslimi kabul edildi; Visual teslimi gerçek fakat reddedildi; Sanat Yönetmeni görünür sohbet ACK/incelemesi, yeni Visual teslimi ve bağımsız Simulation teslimi bekleniyor"
+      "summary": "Story teslimi kabul edildi; Art Direction iletişim ACK'i kabul edildi fakat yaratıcı teslim bekleniyor; reddedilen Visual yerine yeni Visual teslimi ve bağımsız Simulation teslimi bekleniyor"
     }
   ],
   "resolved_blockers": [
@@ -283,7 +287,7 @@
   "qa_resolution_plan": "working/v2.7/qa/RELEASE_BLOCKER_RESOLUTION_PLAN_v2.7.md",
   "latest_audit": "governance/CHIEF_EDITOR_AUDIT_20260825.md",
   "art_direction_activation": {
-    "status": "PENDING_VISIBLE_CHAT_ACK",
+    "status": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_CREATIVE_WORK",
     "official_chat": "FOULWAKE Sanat Yönetmeni",
     "work_branch": "work/v2.7-art-direction",
     "branch_creation_authorized": true,
@@ -291,6 +295,19 @@
     "work_order": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
     "actual_kaptan_reference_in_github": false,
     "reference_attachment_required_in_visible_chat": true,
-    "temporary_subagents_used": false
+    "temporary_subagents_used": false,
+    "source_commit": "3f50cdbf1abf43b929bfdb4564055c9c63f79f21",
+    "acknowledged_at": "2026-08-25T13:42:24.020+03:00",
+    "ack_evidence_path": "governance/ART_DIRECTION_ACK_20260825.json",
+    "creative_work_authorized": true
+  },
+  "art_direction_acknowledgement": {
+    "evidence_path": "governance/ART_DIRECTION_ACK_20260825.json",
+    "source_branch": "work/v2.7-art-direction",
+    "source_commit": "3f50cdbf1abf43b929bfdb4564055c9c63f79f21",
+    "scope": "COMMUNICATION_TEST_ONLY",
+    "visible_chat_ack": true,
+    "chief_editor_disposition": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT",
+    "creative_delivery_completed": false
   }
 }

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_ART_DIRECTION_COMMUNICATION_TEST_AND_CHIEF_EDITOR_DISPOSITION",
+  "recorded_at": "2026-08-25T13:42:24.020+03:00",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "integration_branch": "v2.7-design",
+  "source_commit": "3f50cdbf1abf43b929bfdb4564055c9c63f79f21",
+  "status": "ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT",
+  "art_direction_ack": {
+    "workstream": "Sanat Yönetimi",
+    "visible_chat": "FOULWAKE Sanat Yönetmeni",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "source_branch": "work/v2.7-art-direction",
+    "source_commit": "3f50cdbf1abf43b929bfdb4564055c9c63f79f21",
+    "scope": "Yalnız iletişim testi ve Sanat Yönetmeni yetki alanının doğrulanması",
+    "write_scope_confirmed": "working/v2.7/visual/art_direction/**",
+    "style_reference": "KAPTAN — STYLE_ONLY / NOT_EVALUATED_IN_COMMUNICATION_TEST",
+    "protected_fields_confirmed": [
+      "exact approved copy",
+      "mechanics",
+      "lore",
+      "governance",
+      "releases",
+      "lock"
+    ],
+    "final_art_and_pdf_owner": "Görsel Tasarım",
+    "final_aesthetic_authority": "Proje sahibi",
+    "integration_and_disposition_owner": "Baş Editör",
+    "changed_files": [],
+    "tests_run": "GOVERNANCE_FILES_READ_ONLY",
+    "result": "ACKNOWLEDGED — COMMUNICATION TEST ONLY",
+    "open_risks": "Existing project blockers unchanged; Visual Design work not evaluated",
+    "next_recipient": "Baş Editör",
+    "temporary_subagent_used": false,
+    "lock_requested": false
+  },
+  "chief_editor_verification": {
+    "branch_exists": true,
+    "branch_head_equals_source_commit": true,
+    "source_commit_is_art_direction_activation_commit": true,
+    "branch_changes_since_source_commit": [],
+    "changed_files_none_confirmed": true,
+    "required_handoff_fields_present": true,
+    "authority_boundaries_match_governance": true,
+    "kaptan_reference_binary_in_github": false,
+    "style_only_reference_acknowledged": true,
+    "reference_not_evaluated_in_test": true,
+    "current_visual_branch_head": "e91581bb336dfcbab5da1d48a256577f9251f891",
+    "new_visual_pilot_commit_present": false
+  },
+  "chief_editor_disposition": {
+    "communication_test": "ACCEPTED",
+    "creative_work_authorized": true,
+    "specialist_creative_delivery_completed": false,
+    "first_authorized_assignment": "Create FOULWAKE Art Direction Bible, 121-card creative brief/uniqueness manifest, 12 pilot production briefs and 7 back briefs; no final art, render or PDF",
+    "visual_production_gate": "Visual Design waits for Art Direction brief handoff and project-owner/Chief Editor disposition before producing or expanding the pilot",
+    "release_pass": false,
+    "lock_allowed": false
+  },
+  "limitations": [
+    "This record proves visible-chat identity and authority acknowledgement only.",
+    "It is not an Art Direction creative review, Visual candidate, QA PASS, blocker closure, release or lock.",
+    "The KAPTAN image remains a visible-chat STYLE_ONLY attachment and is not stored as a GitHub binary."
+  ]
+}

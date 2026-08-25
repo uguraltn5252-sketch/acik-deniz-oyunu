@@ -9,7 +9,7 @@
 | Hat | Görünür sohbet / dal | Durum | Bağlayıcı kanıt |
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
-| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `WORK_ORDER_READY / PENDING_VISIBLE_CHAT_ACK` | `FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`; teslim henüz yok |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / READY_FOR_FIRST_CREATIVE_ASSIGNMENT` | `ART_DIRECTION_ACK_20260825.json`; yaratıcı teslim henüz yok |
 | Görsel | `FOULWAKE görsel tasarım` / `work/v2.7-visual` | `DELIVERED / REJECTED_ART_REWORK_REQUIRED` | `VISUAL_HANDOFF_20260825.json`, head `e91581...` |
 | Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
 | Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
@@ -28,22 +28,26 @@
 Bağlayıcı iş emri:
 `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
 
-1. İlk olarak yalnız salt-okunur iletişim testi ve `VISIBLE_CHAT_ACK: YES`
-   verir; ACK öncesi brief, görsel, commit veya değerlendirme üretmez.
-2. KAPTAN referansını yalnız STYLE_ONLY okur; asıl görsel kullanıcı tarafından
-   bu görünür sohbete ayrıca eklenir.
-3. FOULWAKE dünyasının ruhu, çizgi/tarama/malzeme dili, kompozisyon çeşitliliği
+1. İletişim testi `work/v2.7-art-direction@3f50cdbf...` için kabul edildi;
+   bu yalnız kimlik/yetki ACK'idir.
+2. İlk yaratıcı teslimde FOULWAKE Art Direction Bible, 121 kartlık yaratıcı
+   brief/özgünlük manifesti, 12 pilot için production-ready brief ve 7 arka-yüz
+   briefi üretir. Görsel üretmez.
+3. KAPTAN referansını yalnız STYLE_ONLY okur; reddedilmiş e91581 sanatını yeni
+   sanatın referansı olarak kullanmaz.
+4. FOULWAKE dünyasının ruhu, çizgi/tarama/malzeme dili, kompozisyon çeşitliliği
    ve deste ritmi için yaratıcı omurga kurar.
-4. Görsel Tasarımın 121 ön + 7 arka briefini inceler, yeniden yazar veya somut
-   düzeltme briefi verir.
-5. 12 pilot ve 7 arka-yüz contact sheetini isim/metin kapalı da değerlendirir;
+5. Görsel Tasarımın sonraki uygulamasını exact commit/contact sheet üzerinden
+   inceler, yeniden yazar veya somut düzeltme briefi verir.
+6. 12 pilot ve 7 arka-yüz contact sheetini isim/metin kapalı da değerlendirir;
    aynı yüz, poz, sahne, hayvan, şaka, siluet ve yapay zekâ parlaklığını işaretler.
-6. `ART_DIRECTION_*_PASS_RECOMMENDATION` veya `REWORK_REQUIRED` verir;
+7. `ART_DIRECTION_*_PASS_RECOMMENDATION` veya `REWORK_REQUIRED` verir;
    kendisini kullanıcı/Chief Editor/release PASS'i yerine koymaz.
-7. Final illüstrasyon, render, PDF ve baskı üretmez; bunlar Görsel Tasarımdadır.
+8. Final illüstrasyon, render, PDF ve baskı üretmez; bunlar Görsel Tasarımdadır.
 
-Görsel pilot daha önceki iş emriyle başlamışsa çöpe atılmaz; exact Görsel commit
-Sanat Yönetmeninin ilk review girdisi olur.
+Görsel dalda yeni pilot commit'i henüz yoktur; head hâlâ reddedilmiş
+`e91581...` teknik referansıdır. Bu nedenle Görsel Tasarım yeni pilot üretimini
+Sanat Yönetimi brief teslimi ve Baş Editör yönlendirmesine kadar bekletir.
 
 ## Görsel Tasarım — aktif görev
 

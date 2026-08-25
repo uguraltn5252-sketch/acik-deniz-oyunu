@@ -1,6 +1,6 @@
 # FOULWAKE Sanat Yönetmeni İş Emri — v2.7
 
-**Durum:** ACTIVE WORK ORDER / VISIBLE CHAT ACK PENDING / NOT LOCKED  
+**Durum:** COMMUNICATION ACK ACCEPTED / FIRST CREATIVE ASSIGNMENT AUTHORIZED / NOT LOCKED  
 **Resmî görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  
 **Çalışma dalı:** `work/v2.7-art-direction`  
 **Yazma kapsamı:** `working/v2.7/visual/art_direction/**`  
@@ -163,9 +163,14 @@ Kaynak çelişkisi veya taşma sorunu exact dosya/kart/alanla Baş Editöre akta
 Geçici alt ajan oluşturulamaz. Çok zorunlu istisna ancak proje sahibinin
 önceden açık izniyle mümkündür ve yine Sanat Yönetmeni teslimi sayılmaz.
 
-## 9. İlk görünür sohbet testi
+## 9. İlk görünür sohbet testi — tamamlandı
 
-İlk görev yalnız iletişim testidir:
+`work/v2.7-art-direction@3f50cdbf1abf43b929bfdb4564055c9c63f79f21`
+iletişim testi Baş Editörce kabul edilmiştir. Kanıt:
+`governance/ART_DIRECTION_ACK_20260825.json`.
+
+Bu kabul yalnız kimlik ve yetki sınırıdır; yaratıcı teslim/PASS değildir.
+İletişim testinde uygulanan kurallar şunlardı:
 
 - bu iş emri ve zorunlu governance kaynakları salt okunur incelenir;
 - dosya, commit, push, brief, görsel veya değerlendirme üretilmez;
@@ -173,7 +178,26 @@ Geçici alt ajan oluşturulamaz. Çok zorunlu istisna ancak proje sahibinin
 - `RESULT: ACKNOWLEDGED — COMMUNICATION TEST ONLY`;
 - `LOCK_REQUESTED: NO`.
 
-Baş Editör bu ACK’i doğruladıktan sonra yaratıcı değerlendirme işi başlar.
+Baş Editör ACK'i doğrulamıştır.
+
+### 9.1 İlk yetkili yaratıcı görev
+
+Sanat Yönetmeni kendi dalında şu metinsel teslimleri üretir:
+
+1. `FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md`: dünya hissi, sanat ilkeleri,
+   çizgi/tarama/malzeme, palet, dönem, kompozisyon ailesi, karakter çeşitliliği,
+   harita/olay dili, mizah ve arka-yüz ilkeleri.
+2. `FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.md` veya doğrulanabilir JSON eşleniği:
+   121 kartın her biri için görsel dramaturji ve diğer kartlardan ayrışma planı.
+3. `FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md`: bağlayıcı 12 pilotun
+   production-ready yaratıcı briefleri.
+4. `FOULWAKE_7_BACK_BRIEFS_v2.7.md`: yedi binary arka yüzün sanat fikri,
+   aile ilişkisi ve yön/sızıntı riski.
+
+Bu aşamada illüstrasyon, render, contact sheet, PDF veya baskı paketi üretmez.
+Reddedilmiş e91581 sanatını görsel referans olarak kullanmaz; yalnız teknik
+tarihsel kayıt sayar. Exact metin ve mekanik kaynakları değiştirmez. Teslim
+kendi dalında exact commit ve zorunlu handoffla Baş Editöre gelir.
 
 ## 10. Zorunlu teslim ekleri
 

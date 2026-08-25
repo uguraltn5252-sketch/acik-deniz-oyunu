@@ -11,7 +11,7 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `PENDING_VISIBLE_CHAT_ACK / WORK_ORDER_READY`
+- **Sanat Yönetimi:** `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / CREATIVE_WORK_READY`
 - **Kilit izni:** **YOK**
 
 Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
@@ -23,10 +23,12 @@ sanatını reddetmiştir. Baş Editör dispozisyonu
 `DELIVERED_REJECTED_ART_REWORK_REQUIRED`dır. Eski PDF/render/hash kayıtları
 yalnız teknik üretim hattı referansıdır, release candidate değildir.
 
-`work/v2.7-art-direction` kalıcı Sanat Yönetimi hattı olarak etkinleştirilmiştir;
-ancak `FOULWAKE Sanat Yönetmeni` görünür sohbetinden henüz iletişim ACK'i veya
-teslim yoktur. Bu nedenle ona çalışma yapılmış gibi mal edilemez. İlk kapı yalnız
-iletişim testidir. `work/v2.7-simulation` henüz yoktur. Yeni görsel pilot ve tam
+`FOULWAKE Sanat Yönetmeni` görünür sohbeti `work/v2.7-art-direction@3f50cdbf...`
+üzerinde iletişim testini geçmiştir. Baş Editör dispozisyonu
+`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY_READY_FOR_FIRST_CREATIVE_ASSIGNMENT`dır.
+Bu bir yaratıcı teslim veya sanat PASS'i değildir. İlk gerçek görev FOULWAKE
+Art Direction Bible, 121 kartlık yaratıcı brief/özgünlük manifesti, 12 pilot
+üretim briefi ve 7 arka-yüz briefidir; final görsel/render/PDF üretilemez. `work/v2.7-simulation` henüz yoktur. Yeni görsel pilot ve tam
 aday Baş Editörce kabul edilmeden Simülasyon başlamaz.
 
 ## Her oturumda zorunlu okuma sırası
@@ -67,8 +69,8 @@ teslimi sayılmaz.
 
 - İlk üç hat iletişim testi: `governance/VISIBLE_CHAT_ACKS_20260820.json` —
   yalnız 3/3 `COMMUNICATION_TEST_ONLY` ACK.
-- Sanat Yönetimi aktivasyonu: iş emri ve dal hazır; görünür sohbet ACK'i ve
-  yaratıcı teslim henüz yoktur.
+- Sanat Yönetimi iletişim testi: `governance/ART_DIRECTION_ACK_20260825.json` —
+  ACK kabul edildi; ilk yaratıcı görev yetkili, yaratıcı teslim henüz yoktur.
 - Hikâye teslimi: `governance/STORY_HANDOFF_20260820.json` —
   `ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT`.
 - Görsel teslim ve ret: `governance/VISUAL_HANDOFF_20260825.json` —
