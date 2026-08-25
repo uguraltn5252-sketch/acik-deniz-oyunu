@@ -1,15 +1,15 @@
 # FOULWAKE ART DIRECTION BIBLE v2.7
 
-Status: TARGETED MAP-BACK TABLE-COHERENCE REWORK — PROJECT OWNER AND CHIEF EDITOR REVIEW REQUIRED  
+Status: FAMILY-VISIBLE / VARIABLE-LAYOUT MAP-BACK REWORK — PROJECT OWNER AND CHIEF EDITOR REVIEW REQUIRED  
 Workstream: Sanat Yönetimi  
 Source branch: work/v2.7-art-direction  
 Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
 Baseline: v2.6 STABLE / LOCKED  
-Accepted package baseline: work/v2.7-art-direction@f0389711ebefaad7170cbee7f1a0ab09cf128b15 — NON-MAP-BACK CONTENT PROTECTED  
-Chief Editor targeted disposition: TARGETED_REWORK_REQUIRED — MAP_BACK_TABLE_COHERENCE  
-Project Owner direction: closed map cards must read first as one undiscovered FOULWAKE sea; no visual production.  
+Reviewed package baseline: work/v2.7-art-direction@d578feca0efff8589448f4d3a168d662f6c7a3f4 — SCOPE/FILE INTEGRITY VERIFIED; FAMILY VISIBILITY REWORK REQUIRED  
+Chief Editor disposition: REWORK_REQUIRED — FAMILY_VISIBLE / VARIABLE-LAYOUT MAP BACKS  
+Project Owner decision: OPTION_2 — FAMILY-VISIBLE MAP BACKS. Aile görünürlüğü izinli ve bağlayıcıdır; belirli ön kart kimliği ile sonucu gizli kalır.  
 Visual production authorized: NO  
-Scope: Görsel üretim öncesi bağlayıcı sanat yönü; bu revizyon yalnız BACK_SEA_ROCK, BACK_ISLAND ve BACK_LIGHTHOUSE ortak masa sistemidir. İllüstrasyon, kart renderı, PDF, contact sheet veya baskı paketi değildir.
+Scope: Görsel üretim öncesi bağlayıcı sanat yönü; bu revizyon yalnız BACK_SEA_ROCK, BACK_ISLAND ve BACK_LIGHTHOUSE ile bunların değişken, kurala uygun masa düzenlerindeki ortak deniz sistemidir. İllüstrasyon, kart renderı, PDF, contact sheet veya baskı paketi değildir.
 
 ## 1. Yetki, kaynak ve sınır
 
@@ -544,72 +544,97 @@ Merak → maddi güven → kuşku → hasar → kuru rahatlama → yeniden kuşk
 
 ## 15. Arka yüz ilkeleri
 
-Yedi arka yüz ön yüzlerle aynı sanat dünyasına aittir; ayrı bir logo sistemi veya soyut dijital desen değildir. f0389711… içindeki BACK_CHARACTER, BACK_POWER, BACK_LOYALTY ve BACK_SUPPORT yönleri korunur. Bu targeted rework yalnız BACK_SEA_ROCK, BACK_ISLAND ve BACK_LIGHTHOUSE’ın ortak masa görünümünü değiştirir.
+Yedi arka yüz ön yüzlerle aynı sanat dünyasına aittir; ayrı bir logo sistemi veya soyut dijital desen değildir. f0389711… içindeki BACK_CHARACTER, BACK_POWER, BACK_LOYALTY ve BACK_SUPPORT yönleri korunur. d578feca… içindeki dosya ve kapsam bütünlüğü de korunur. Bu hedefli rework yalnız BACK_SEA_ROCK, BACK_ISLAND ve BACK_LIGHTHOUSE’ın aile görünürlüğünü ve değişken masa davranışını değiştirir.
 
-### 15.1 Korunan topoloji ve güvenlik
+### 15.1 Korunan topoloji ve bağlayıcı bilgi sözleşmesi
 
-- BACK_SEA_ROCK = 42; 30 Açık Deniz ile 12 Kayalık exact aynı arka yüzü kullanır.
-- BACK_ISLAND = 6; altı Ada exact aynı aile masterını kullanır.
-- BACK_LIGHTHOUSE = 4; dört Deniz Feneri exact aynı aile masterını kullanır.
+| Binary | Exact adet/master | Arka yüzün söylemesine izin verilen tek aile bilgisi | Kesinlikle söyleyemeyeceği bilgi |
+|---|---:|---|---|
+| BACK_SEA_ROCK | 42; 30 Açık Deniz + 12 Kayalık exact aynı master | Kartın Açık Deniz/Kayalık ortak ailesinde olduğu | Açık Deniz mi Kayalık mı olduğu; belirli ön kimlik, sonuç, güven/tehdit veya yön |
+| BACK_ISLAND | 6; altı Ada exact aynı master | Kartın Ada ailesinde olduğu; genel ve anonim kara görülür | Altı Ada önünden hangisi olduğu; özel kıyı, yerleşim, ürün, kişi, olay veya sonuç |
+| BACK_LIGHTHOUSE | 4; dört Deniz Feneri exact aynı master | Kartın Deniz Feneri ailesinde olduğu; genel ve anonim fener görülür | Dört Fener önünden hangisi olduğu; özel yapı, hasar, ışık davranışı, paket, kıyı, olay veya sonuç |
+
+Proje sahibi kararına göre aile görünürlüğü bilgi sızıntısı değildir. Sızıntı, arka yüzün aile bilgisinden ileri gidip belirli ön kartı, alt türü, sonucu, güvenli/tehlikeli hâli veya yönü tahmin ettirmesidir. Kart adı; effect veya flavor içeriği; olumlu/olumsuz sonuç; güven/tehdit durumu; ön yüzdeki özel mekân, karakter, nesne veya sahne; kart yönü kesinlikle gösterilemez.
+
 - Üç binary ayrı kalır, fakat aynı COMMON_MAP_BACK_VISUAL_SYSTEM içinden çıkar.
-- Aynı aile içindeki bütün fiziksel kopyalar bit-bit exact aynı dosyayı kullanır.
-- 180 derece dönüşte bilgi sızıntısı olmaz; çizgi, değer, leke, kâğıt lifi ve aşınma exact dönüş güvenli masterın parçasıdır.
-- BACK_SEA_ROCK arkasından Açık Deniz/Kayalık ayrımı hiçbir yolla okunamaz.
-- Okunabilir yazı, logo, tür etiketi, sayı, yön işareti, koordinat, rota çizgisi, pusula gülü ve geçici lore motifi yoktur.
-- Parlaklık, vernik, kesim, koyu köşe veya tekil baskı kiri kartı, aile içi kopyayı ya da yönü tanıtamaz.
+- Aynı ailedeki bütün fiziksel kopyalar bit-bit exact aynı master dosyayı kullanır.
+- BACK_SEA_ROCK arkasında kaya, sığlık, köpüren kırıcı dalga, jeolojik işaret veya başka bir Açık Deniz/Kayalık ayracı yoktur.
+- BACK_ISLAND’daki ada altı ön yüzdeki hiçbir özel adanın biçimi, kıyısı veya içeriği değildir.
+- BACK_LIGHTHOUSE’daki fener dört ön yüzdeki hiçbir özel kulenin mimarisi, durumu veya olayını taşımaz.
+- Okunabilir yazı, logo, tür etiketi, sayı, yön işareti, koordinat, rota çizgisi ve pusula gülü yoktur.
+- Parlaklık, vernik, kesim, koyu köşe, baskı kiri veya eskitme kartı, kopyayı ya da yönü tanıtamaz.
+- Exact 180 derece güvenliği sanat kompozisyonunun parçasıdır; sonradan eklenen dijital simetri efekti değildir.
 
 ### 15.2 Referans sınırı
 
-Ekli 5×5 masa görseli MAP_TABLE_REFERENCE: TABLE_READ_ONLY / COMPOSITION_PRINCIPLE_ONLY olarak sınıflandırılır. Yalnız kapalı kartların tek bir geniş keşfedilmemiş deniz alanı gibi okunması ilkesi alınır. Referanstaki dalga çizgileri, renk, çerçeve, kart yüzleri, dizilim ve yüzey düzeni kopyalanmaz. KAPTAN görseli ayrı olarak yalnız STYLE_ONLY kalır; iki referans birbirinin yetkisini genişletmez.
+Ekli masa görseli MAP_TABLE_REFERENCE: TABLE_READ_ONLY / COMPOSITION_PRINCIPLE_ONLY olarak sınıflandırılır. Yalnız kapalı kartların birlikte tek bir keşfedilmemiş deniz alanı gibi okunması ilkesi alınır. Referanstaki 5×5 sayı, sabit grid, satır/sütun düzeni, dalga çizgileri, renk, çerçeve, kart yüzleri ve yüzey yerleşimi kopyalanmaz veya üretim şartı yapılmaz. KAPTAN görseli ayrı olarak yalnız STYLE_ONLY kalır; iki referans birbirinin yetkisini genişletmez.
 
 ### 15.3 COMMON_MAP_BACK_VISUAL_SYSTEM
 
-Harita arka yüzlerinin birincil kompozisyon birimi tek kart değil, masadaki kapalı harita alanıdır. Tasarım iki mesafede aynı anda çalışır:
+Harita arka yüzlerinin bağlayıcı kompozisyon birimi sabit bir grid değil, oyun sırasında kurallara uygun biçimde oluşan değişken harita alanıdır. Sistem kompakt, genişleyen, uzayan ve komşuluğu değişen düzenlerde aynı ilkelerle çalışır.
 
-- **Normal masa mesafesinde:** göz önce 5×5 veya benzer alanı tek, kesintisiz ve henüz açılmamış FOULWAKE denizi olarak algılar. Tekil kart merkezleri, rozetler ve aile madalyonları öne çıkmaz.
-- **Yakın kart mesafesinde:** üç binary yalnız su davranışındaki ölçülü farkla ayırt edilir; hiçbiri belirli ön kart kimliğini, yönü veya Açık Deniz/Kayalık alt türünü sızdırmaz.
+1. **Ortak deniz omurgası:** Üç ailede aynı çizgi kalınlığı merdiveni, kısa/kırık su çizgileri, seyrek çapraz tarama, mat kâğıt ve değer zarfı kullanılır. Deniz, ada ve fenerin çevresinde farklı bir “kart zemini”ne dönüşmez.
+2. **Mat malzeme:** Kurum indigosu, tuz mavi-grisi, tar grisi ve kemik kâğıt rezervi ana palettir. Kara ve taş aynı mat baskı dünyasına küçük sıcak/soğuk değer ayrımlarıyla girer; doygun aile renk kodu yoktur.
+3. **Çizgiyle hacim:** Su, kara ve taş hacmi boya gradyanı, glow veya dijital noise ile değil; çizgi aralığı, çapraz tarama, kâğıt rezervi ve kontur basıncıyla kurulur.
+4. **Kenar bağımsızlığı:** Yüzey trim ve bleed’e kadar sürer. Kenar zarfında üç aile aynı dalga ölçeği, ortalama çizgi yoğunluğu ve değer aralığını paylaşır. Uzun rota benzeri çizgi trimde kesilmez; literal komşu eşleşmesi aranmaz.
+5. **İstatistiksel devamlılık:** Kartlar farklı sayıda ve farklı komşulukta birleştiğinde devamlılık, tek çizginin karşı karta bağlanmasıyla değil aynı ölçek, hava, değer ve kenar ritmiyle kurulur. Bu nedenle sistem belirli satır, sütun, kart sayısı veya dizilime bağımlı değildir.
+6. **Odaksız ana zemin:** BACK_SEA_ROCK’ta merkez, köşe veya eksen ayrıcalıklı değildir. Ada ve fener ailelerinde görünür coğrafya vardır; fakat dekoratif halka, rozet, renk adası veya merkezî grafik alanla zeminden koparılmaz.
+7. **Exact master tekrarının yönetimi:** Büyük tekil su lekesi, imza dalga, merkez koyuluğu ve kolay ezberlenen çizgi takımyıldızı yoktur. Çok sayıda küçük yarım-dönüş eşli mikro-küme normal masa mesafesinde tekrar değil deniz ritmi oluşturur.
+8. **Açılan ön yüzlerle bağ:** Kapalı arka yüzler sessiz keşfedilmemiş alan; açılan ön yüzler aynı çizgi/malzeme dünyasında keşfedilmiş olay ve coğrafya parçalarıdır. Arka yüzler ön yüz kontrastıyla yarışmaz.
+9. **Mekanik tarafsızlık:** Sanat yeni bir kurulum, sabit grid, yön, rota veya komşuluk kuralı önermez. Yalnız mevcut kurallarda oluşan alanı görsel olarak birleştirir.
 
-Ortak sistemin bağlayıcı yüzey dilinde:
+### 15.4 Aile-görünür doğal coğrafya
 
-1. Deniz çizgisi kart yüzeyine eşit dağılır; merkez, köşe veya eksen ayrıcalıklı bölge değildir.
-2. Tekrar eden yatay dalga sıraları yerine gözlenmiş su hareketini çağrıştıran kısa, kırık ve farklı uzunluklu çizgi kümeleri kullanılır. Kümeler üç küçük ölçekte dolaşır; hiçbir tekil “imza dalga”, büyük leke veya tanınabilir glyph oluşmaz.
-3. Hacim boya gradyanıyla değil, çizgi aralığı, kesilen kâğıt rezervi ve düşük kontrastlı tarama yoğunluğuyla kurulur.
-4. Ortak palet kurum indigosu, tuz mavi-grisi, tar grisi ve kemik kâğıt rezervidir. Üç ailenin ortalama değer alanı aynı deniz zemininde kalır; aile farkı doygun renk kodu değildir.
-5. Yüzey trim ve bleed’e kadar sürer. Dekoratif çerçeve yoktur. Üretim için keyline zorunluysa üç ailede exact aynı, ince ve dalga çizgisinden daha düşük kontrastlı teknik yapı kullanılır.
-6. Kenara yakın çizgiler kısa, düşük kontrastlı ve ortak ölçektedir; tek uzun koyu çizgi trimde kesilip komşu karta “devam etmesi gereken” sahte bir yol bırakmaz. Rastgele komşulukta literal çizgi eşleşmesi değil, istatistiksel ölçek/değer devamlılığı aranır.
-7. Exact master tekrarının duvar kâğıdı gibi görünmemesi için büyük odak, tekil leke, merkezde kontrast yığılması ve kolay ezberlenen çizgi takımyıldızı yasaktır. Çok sayıda küçük 180-eşli mikro-küme kullanılır; tekrar yakın incelemede mevcuttur, normal masa mesafesinde ritme dönüşür.
-8. 180 derece güvenliği radyal amblemle değil, yüzey boyunca dağılmış çizgi mikro-kümelerinin uzak yarım-dönüş eşleriyle kurulur. Dönüş merkezi sıradan su alanıdır; yıldız, halka, kesişim veya koyu çekirdek taşımaz.
-
-### 15.4 Sembolsüz aile ayrımı
-
-| Binary | Ortak denizdeki rol | İzin verilen mikro-fark | Yasak |
+| Binary | Sanatsal rol | Aileyi görünür kılan çözüm | Ön-kart sızıntısını önleyen yasak |
 |---|---|---|---|
-| BACK_SEA_ROCK | Nötr ana deniz zemini | Orta aralıklı kırık su çizgisi; palet ve değer için baseline | Merkezî koyu leke, dört yönlü akıntı, kaya/köpük/sığlık işareti |
-| BACK_ISLAND | Aynı denizin bir mikro-adım daha yavaş ve tortulu hâli | Yüzeye eşit dağılmış biraz geniş çizgi aralığı ve çok hafif daha sıcak tuz-grisi alt ton | Kara lekesi, ada silueti, gelgit halkası, kıyı, palmiye, bina |
-| BACK_LIGHTHOUSE | Aynı denizin bir mikro-adım daha ince rüzgârla taranmış hâli | Yüzeye eşit dağılmış ince çapraz-rüzgâr çizgisi ve çok hafif daha soğuk/açık hava değeri | Ateş ızgarası, fener odası halkası, kule, alev, ışın, beacon, radyal düzen |
+| BACK_SEA_ROCK | Ortak denizin nötr ve en geniş zemini | Genel, keşfedilmemiş açık su | Kaya, resif, sığlık, köpüren kırıcı dalga, jeolojik renk veya belirli olay havası |
+| BACK_ISLAND | Ortak denizde doğal bir kara eşiği | Dik kuşbakışında tek, alçak ve anonim ada; deniz kartın bütün kenarlarına ulaşır | Yerleşim, gümrük, kamp, tersane, erzak, bayrak, insan, ürün, özel palmiye düzeni veya ön yüzlerden birine benzeyen kıyı |
+| BACK_LIGHTHOUSE | Ortak denizde insan yapımı fakat anonim seyir unsuru | Çok dik kuşbakışında alçak nötr kaya üzerinde küçük, dönemsel ve açıkça fener olan taş kule | Yanıltıcı ışık, ışın, özel ateş, saklı paket, belirli hasar, özel kıyı, olay sonucu veya dört ön yüzden birine özgü mimari |
 
-Mikro-farklar yakın mesafede aileyi seçtirebilir; 5×5 masa mesafesinde kartları üç ayrı renk veya desen adasına bölmemelidir. Ortak çizgi ölçeği, kenar ritmi, kâğıt ve mat baskı hissi aile farkından daha baskındır.
+**Ada çözümü:** Kara kütlesi kart ortasında bir madalyon gibi yüzmez. İki karşıt burun ve aralarında alçak bir omurga taşıyan, elle çizilmiş uzun bir kıyı kütlesi denizin içine doğal biçimde oturur. Deniz halkası, halo, etiket alanı ve kusursuz geometrik çevre yoktur. İç ayrıntı yalnız anonim taş, düşük çalı ve aşınmış topraktır; belirli iklim veya ekonomi anlatılmaz. Ada, normal masa mesafesinde aileyi seçtirecek kadar açık; altı ön adadan birini çağrıştırmayacak kadar geneldir.
 
-### 15.5 Keşif sonrası masa ilişkisi
+**Fener çözümü:** Ufuksuz, çok dik kuşbakışı seçilir. Küçük, sade yığma taş kule ve basit fener üst yapısı alçak, anonim bir kaya sırtına gömülür; çevresindeki deniz üç aileyle aynı kenar ritmini sürdürür. Kule etrafında rozet halkası, ışık halesi, ışın, pusula geometrisi veya boşaltılmış grafik disk yoktur. Kule bir ikon gibi suyun üstüne yapıştırılmaz; kaya, su ve bakım aşınmasıyla aynı fiziksel sahnenin parçasıdır. Normal masa mesafesinde aile okunur, belirli fener veya olay okunmaz.
 
-Kapalı harita alanı, açılan ön yüzleri çevreleyen sessiz ana denizdir. Birkaç kart açıldığında ön yüzler bu alanın üzerine yapıştırılmış posterler gibi değil, ortak denizde keşfedilmiş olay/coğrafya parçaları gibi okunmalıdır. Bu hüküm kabul edilmiş ön-yüz brieflerini değiştirmez; arka yüzün değer, çizgi ve çerçeve davranışını sınırlar. Kapalı zemin ön yüzlerin ana figür ve olay kontrastıyla yarışmaz.
+### 15.5 Exact 180 derece için sanatsal kurgu
 
-### 15.6 Zorunlu Görsel Tasarım masa QA’sı
+- **BACK_SEA_ROCK:** Dağılmış su çizgisi mikro-kümeleri uzak yarım-dönüş eşleriyle exact dengelenir. Dönüş merkezi sıradan sudur; dört kollu akıntı ve koyu çekirdek yoktur.
+- **BACK_ISLAND:** Tek ada gövdesi dönüş merkezinden doğal bir uzun eksenle geçer. İki burun, iki küçük koy, taş/çalı kümeleri ve kıyı kırıkları yarım-dönüş eşlidir; sağ-sol ayna simetrisi veya kusursuz oval değildir. Yerel kıyı düzensizliği korunur, fakat bütün flattened master 180 derece döndüğünde exact eşleşir.
+- **BACK_LIGHTHOUSE:** Tek kule exact dönüş noktasına yerleşir; bu nokta grafik amblem değil fiziksel yön-güvenliği çözümüdür. Kulenin sade çokgen planı, fener üst yapısı, kaya sırtının iki ucu, su yarıkları ve bakım aşınmaları yarım-dönüş eşlidir. Kuleyi çevreleyen halka, radyal çizgi veya simetrik boşluk diski yoktur; kaya sırtı merkezden iki yana uzanarak kompakt rozet siluetini kırar.
+- Üçünde de ufuk, tek yönlü gölge, rüzgâr oku, tek tarafta köpük, üst/alt değer farkı ve serbest uç yoktur.
+- Eskitme, kâğıt lifi ve baskı kayması sonradan rastgele filtrelenmez; exact dönüş eşli masterın içindedir.
+- 180 güvenliği yalnız düz/ters görsel bakışla değil flattened rotate/difference testiyle doğrulanır.
 
-Görsel üretim yetkisi verilirse Görsel Tasarım şu kanıtları üretmeden harita arka yüzleri kabul adayı olamaz:
+### 15.6 Değişken masa ve keşif sonrası ilişki
 
-1. Üç binaryyi birlikte kullanan kapalı 5×5 masa mockup’ı.
-2. Aynı kartların rastgele 180 derece çevrildiği ikinci 5×5 mockup.
-3. Belgelenmiş normal masa bakış mesafesinden bütünlük incelemesi.
-4. Kart birleşimlerinde kenar, dalga ölçeği, çizgi yoğunluğu ve değer kopması incelemesi.
-5. Merkezî şekil, amblem, madalyon ve her kartta tekrarlanan göz alıcı leke kontrolü.
-6. BACK_SEA_ROCK için Açık Deniz/Kayalık kör sınıflandırma testi.
-7. Ada ve Fener binarylerinin yalnız amaçlanan aile bilgisini taşıdığı, belirli ön kimliği sızdırmadığı kontrol.
-8. Okunabilir yazı, sayı, yön, koordinat, rota, pusula ve anlamsız script kontrolü.
-9. Mat baskıda koyu kare, parlaklık farkı ve kart-başına tanınabilir leke kontrolü.
-10. Birkaç ön yüz açılarak hazırlanan keşif-sonrası masa mockup’ı.
+Sabit 5×5, grid, satır, sütun veya kart sayısı koşulu yoktur. Ortak sistem, kuralların izin verdiği farklı kart sayıları ve farklı harita biçimlerinde çalışmalıdır.
 
-Kabul cümlesi: **Kart adları ve tekil sınırlar uzaktan seçilmeden önce masa, üzerinde bazı kartlar duran bir alan değil; parça parça keşfedilen tek bir FOULWAKE denizi gibi görünmelidir.**
+- Kompakt bir kümede de uzayan/dağılan bir haritada da ortak deniz kenar zarfı sert kopmaz.
+- Ada ve fener farklı ailelerle hangi kenardan komşu olursa olsun ayrı bir poster, logo veya renk karesi gibi görünmez.
+- Rastgele 180 derece dönüşler denizin ritmini, adanın doğal coğrafyasını ve fenerin yön güvenliğini bozmaz.
+- Ada ve fenerin aile görünürlüğü normal masa mesafesinde korunur; bu görünürlük ön kimlik tahminine dönüşmez.
+- Birkaç ön yüz açıldığında kapalı alan, açılan sahneleri çevreleyen ortak keşfedilmemiş deniz olarak kalır.
+- Literal kıyı/dalga eşleşmesi gerekmediği için geçerli bir düzenin başka bir düzene dönüşmesi sanatı “yanlış dizilmiş” göstermez.
+
+### 15.7 REPRESENTATIVE_VARIABLE_MAP_LAYOUT_QA
+
+Görsel üretim yetkisi verilirse Görsel Tasarım aşağıdaki kanıtların tümünü üretmeden harita arka yüzleri kabul adayı olamaz:
+
+1. Üç aileyi birlikte gösteren, kural kitabına uygun tamamen kapalı temsilî harita düzenleri.
+2. Aynı kartların rastgele 180 derece çevrildiği temsilî düzenler.
+3. Bazı kartların açıldığı keşif-sonrası masa düzenleri.
+4. Kuralların izin verdiği ölçüde daha kompakt ve daha geniş/uzayan harita düzenleri.
+5. Ada, Fener ve Deniz/Kayalık ailelerinin farklı komşuluklarda bulunduğu örnekler.
+6. BACK_SEA_ROCK için Açık Deniz/Kayalık kör ayrım testi.
+7. Altı Ada ön kimliği için kör tahmin testi.
+8. Dört Deniz Feneri ön kimliği için kör tahmin testi.
+9. Ada ve Fener ailelerinin normal masa mesafesinde anlaşılabildiği kontrol.
+10. Ada ve fener unsurlarının ikon, rozet veya madalyon gibi görünmediği sanat incelemesi.
+11. Okunabilir yazı, sayı, rota, pusula, koordinat, yön işareti ve gereksiz şekil kontrolü.
+12. Kart kenarı, kesim, parlaklık, exact master ve yön sızıntısı kontrolü.
+13. Farklı kurala uygun düzenlerde ortak deniz hissinin korunduğu kontrol.
+14. Arka yüzlerin açılan ön yüzlerle aynı FOULWAKE sanat dünyasına ait göründüğü kontrol.
+
+Kabul cümlesi: **Oyuncu kapalı kartın Deniz/Kayalık, Ada veya Fener ailesinden olduğunu anlayabilir; ancak kart çevrilmeden hangi ön kart olduğunu veya sonucunu tahmin edemez. Harita, belirli bir ölçü veya dizilimde değil, oyun sırasında oluşabilecek kurala uygun farklı masa düzenlerinde tek bir keşfedilmemiş FOULWAKE denizi gibi görünür.**
 
 Ayrı yedi brief ve ayrıntılı risk/QA sözleşmesi FOULWAKE_7_BACK_BRIEFS_v2.7.md içindedir.
 
@@ -674,4 +699,4 @@ Herhangi bir “hayır” taslağı üretimden sanat yönü düzeltmesine dönd�
 
 ## 19. Dispozisyon
 
-Bu owner-directed artistic depth rework Bible ve ona bağlı 121 manifest, 12 pilot production briefi ve 7 arka yüz briefi BRIEF aşamasındadır. Önceki 3cbfc215 teslimine ART_DIRECTION_BRIEF_PASS verilmemiştir; bu sürüm yeni Baş Editör/proje sahibi değerlendirmesine sunulur. Görsel Tasarım üretime yalnız proje sahibi ve Baş Editör değerlendirmesinden sonra geçmelidir. Sanat Yönetimi tavsiye ve yaratıcı kontrol verir; kilit talep etmez.
+Bu targeted rework, d578feca… üstündeki kapsam ve dosya bütünlüğünü koruyarak yalnız üç harita arka yüzünü proje sahibinin OPTION_2 — FAMILY-VISIBLE MAP BACKS kararına göre yeniden kurar. 121 ön-yüz briefi, 12 pilot production briefi, diğer dört arka-yüz yönü ve kabul edilmiş sanat omurgası değiştirilmemiştir. Paket BRIEF aşamasında yeni proje sahibi ve Baş Editör değerlendirmesine sunulur. Görsel Tasarım üretime yalnız bu değerlendirme sonrasında geçebilir; görsel üretim hâlen yetkili değildir. Sanat Yönetimi yaratıcı brief ve kontrol verir, kilit talep etmez.
