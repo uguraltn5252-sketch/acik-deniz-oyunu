@@ -11,6 +11,7 @@ Bu paket yalnız resmî 12 ön yüzü, sıfırdan üretilmiş yedi binary arka y
 - Baş Editör: `v2.7-design@1560b6eb1cc75b282c598cc4697921b9f472ce84`
 - Kabul edilmiş Sanat Yönetimi: `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`
 - İncelenmiş Görsel kaynak / çalışma başlangıcı: `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
+- Görsel teslim commit'i: `work/v2.7-visual@bf944125ee35fecd722628f6a9be5f5dfcd5707a`
 - Çalışma dalı: `work/v2.7-visual`
 
 ## Üretim özeti
