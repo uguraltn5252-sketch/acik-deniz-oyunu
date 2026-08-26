@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-25T17:37:30+03:00",
+  "updated_at": "2026-08-26T15:58:21+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -24,7 +24,7 @@
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
     "active_visual_candidate": null,
-    "basis": "Story accepted; Art Direction brief accepted; exact pre-brief Visual pilot b4afbcf reviewed REWORK_REQUIRED (3/12 front KEEP, 9/12 rework, 0/7 back KEEP); targeted accepted-12 pilot plus 7-back rework pending; SRC-002, physical proof and Simulation delivery open"
+    "basis": "Story accepted; Art Direction brief accepted; pre-brief b4afbcf pilot reviewed REWORK_REQUIRED; revised accepted-12 plus 7-back package observed at 1b27232a; permanent successor chat acknowledged but official Visual delivery handoff and Art Direction re-review remain pending; SRC-002, physical proof and Simulation delivery open"
   },
   "roles": {
     "chief_editor": {
@@ -84,7 +84,10 @@
       "binding_work_order": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md"
     },
     "visual_design": {
-      "official_chat": "FOULWAKE görsel tasarım",
+      "official_chat": "FOULWAKE Görsel Tasarım 2",
+      "predecessor_chat": "FOULWAKE görsel tasarım",
+      "successor_status": "PERMANENT_WORKSTREAM_REPLACEMENT_ACK_ACCEPTED",
+      "successor_ack_evidence": "governance/VISUAL_SUCCESSOR_ACK_20260826.json",
       "work_branch": "work/v2.7-visual",
       "may_change": [
         "original illustration",
@@ -101,7 +104,8 @@
         "secrecy model",
         "accepted art-direction briefs and recorded rework decisions"
       ],
-      "binding_rework_directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
+      "binding_rework_directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md",
+      "new_visual_production_authorized": false
     },
     "simulation_test": {
       "official_chat": "Simülasyon Testi",
@@ -166,8 +170,8 @@
       "evidence_path": "governance/ART_DIRECTION_HANDOFF_20260825.json",
       "project_owner_final_approval": true,
       "art_direction_brief_pass": true,
-      "next_input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-      "next_stage": "WAITING_FOR_REVISED_ACCEPTED_12_PILOT",
+      "next_input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+      "next_stage": "WAITING_FOR_OFFICIAL_VISUAL_HANDOFF_THEN_REVISED_PILOT_REVIEW",
       "pilot_review_recorded": true,
       "pilot_review_evidence_path": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
       "reviewed_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
@@ -182,27 +186,37 @@
       }
     },
     "visual": {
-      "status": "DELIVERED_REJECTED_ART_REWORK_REQUIRED",
-      "evidence_path": "governance/VISUAL_HANDOFF_20260825.json",
-      "official_chat": "FOULWAKE görsel tasarım",
+      "status": "PERMANENT_SUCCESSOR_ACKNOWLEDGED_EXISTING_PILOT_PRESERVED_OFFICIAL_DELIVERY_HANDOFF_PENDING",
+      "evidence_path": "governance/VISUAL_SUCCESSOR_ACK_20260826.json",
+      "historical_rejected_full_deck_evidence_path": "governance/VISUAL_HANDOFF_20260825.json",
+      "official_chat": "FOULWAKE Görsel Tasarım 2",
+      "predecessor_chat": "FOULWAKE görsel tasarım",
       "source_branch": "work/v2.7-visual",
-      "source_commit": "e91581bb336dfcbab5da1d48a256577f9251f891",
+      "source_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+      "canonical_pilot_delivery_commit": "bf944125ee35fecd722628f6a9be5f5dfcd5707a",
+      "pilot_evidence_commit": "1ab579c27ee26205cbc87718995da021ef6da84d",
       "full_production_delivery_commit": "494b8440bba722a9053f72b2fdeffc4286a61e17",
       "technical_pipeline_reference_only": true,
       "art_accepted": false,
       "active_candidate": false,
       "rework_authorized": true,
-      "observed_branch_head": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-      "observed_pilot_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-      "observed_pilot_scope": "12_FRONTS_7_BACKS_CONTACT_SHEETS",
-      "observed_pilot_classification": "PRE_BRIEF_PILOT_REVIEWED_REWORK_REQUIRED_INPUT_ONLY",
+      "observed_branch_head": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+      "observed_pilot_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+      "observed_pilot_scope": "ACCEPTED_12_FRONTS_7_BACKS_CONTACT_SHEETS_VARIABLE_LAYOUT_EVIDENCE",
+      "observed_pilot_classification": "REVISED_PILOT_PACKAGE_OBSERVED_OFFICIAL_VISUAL_DELIVERY_HANDOFF_PENDING",
       "observed_pilot_visible_chat_handoff_received": false,
       "observed_pilot_art_accepted": false,
       "pilot_only_production_authorized": true,
+      "pilot_authorization_consumed": true,
+      "new_visual_production_authorized": false,
+      "successor_visible_chat_ack_received": true,
+      "successor_ack_evidence": "governance/VISUAL_SUCCESSOR_ACK_20260826.json",
+      "official_pilot_delivery_handoff_received": false,
       "full_production_authorized": false,
       "art_direction_review_received": true,
       "art_direction_review_result": "REWORK_REQUIRED",
       "art_direction_review_evidence": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
+      "revised_pilot_art_direction_review_received": false,
       "current_pilot_accepted": false,
       "pilot_rework_order": "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
       "next_pilot_scope": "ACCEPTED_12_PILOT_PLUS_7_BACKS_ONLY",
@@ -295,7 +309,7 @@
     "art_direction_recommendation_is_release_pass": false,
     "accepted_art_direction_source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
     "accepted_art_direction_evidence": "governance/ART_DIRECTION_HANDOFF_20260825.json",
-    "production_authorization": "PILOT_ONLY",
+    "production_authorization": "PILOT_ONLY_CONSUMED_NO_NEW_PRODUCTION_PENDING_HANDOFF",
     "full_121_production_authorized": false,
     "map_back_information_contract": {
       "BACK_SEA_ROCK": "FAMILY_VISIBLE_AS_SEA_ROCK_ONLY_SUBTYPE_AND_EXACT_FRONT_BLIND",
@@ -382,10 +396,10 @@
     },
     {
       "id": "ART-001",
-      "status": "OPEN_PILOT_REWORK_REQUIRED",
+      "status": "OPEN_PILOT_PACKAGE_OBSERVED_HANDOFF_AND_REVIEW_PENDING",
       "severity": "BLOCKER",
       "owner": "art_direction_and_visual_design",
-      "summary": "Exact Art Direction review completed: b4afbcf pilot is REWORK_REQUIRED (3 front KEEP, 9 front rework, 7/7 back rework). Next gate is the accepted 12 hard-case fronts plus 7 rebuilt backs, variable-layout evidence, re-review and owner/Chief acceptance.",
+      "summary": "Revised accepted-12 plus 7-back package is observed at 1b27232a and the permanent successor chat is acknowledged. Official Visual delivery handoff, Art Direction re-review and owner/Chief acceptance remain pending.",
       "directive": "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md"
     },
     {
@@ -416,7 +430,7 @@
       "status": "OPEN",
       "severity": "BLOCKER",
       "owner": "chief_editor",
-      "summary": "Story, Art Direction brief and exact Art Direction pilot review are recorded; visible-chat Visual rework handoff, revised pilot disposition and independent Simulation delivery remain pending"
+      "summary": "Story, Art Direction brief/review and permanent Visual successor ACK are recorded; official Visual pilot delivery handoff, revised pilot disposition and independent Simulation delivery remain pending"
     }
   ],
   "resolved_blockers": [
@@ -466,9 +480,9 @@
     "integrated_to_v2_7_design": true,
     "visual_production_authorized": "PILOT_ONLY",
     "full_production_authorized": false,
-    "next_recipient": "FOULWAKE görsel tasarım",
-    "next_input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-    "next_stage": "TARGETED_ACCEPTED_12_PILOT_REWORK"
+    "next_recipient": "FOULWAKE Görsel Tasarım 2",
+    "next_input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+    "next_stage": "OFFICIAL_EXISTING_PILOT_HANDOFF_ONLY"
   },
   "art_direction_pilot_review": {
     "status": "REWORK_REQUIRED_ACCEPTED_FOR_PILOT_REWORK",
@@ -486,7 +500,23 @@
       "rework_required": 7
     },
     "project_owner_final_aesthetic_acceptance_pending_after_rework": true,
-    "next_recipient": "FOULWAKE görsel tasarım",
+    "next_recipient": "FOULWAKE Görsel Tasarım 2",
     "full_production_authorized": false
+  },
+  "visual_successor_acknowledgement": {
+    "status": "ACCEPTED",
+    "evidence_path": "governance/VISUAL_SUCCESSOR_ACK_20260826.json",
+    "predecessor_chat": "FOULWAKE görsel tasarım",
+    "official_successor_chat": "FOULWAKE Görsel Tasarım 2",
+    "source_branch": "work/v2.7-visual",
+    "source_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+    "canonical_delivery_commit": "bf944125ee35fecd722628f6a9be5f5dfcd5707a",
+    "evidence_commit": "1ab579c27ee26205cbc87718995da021ef6da84d",
+    "visible_chat_ack": true,
+    "handoff_scope": "PERMANENT_SUCCESSOR_ACK_ONLY",
+    "official_pilot_delivery_completed": false,
+    "new_visual_production_authorized": false,
+    "temporary_subagents_used": false,
+    "next_stage": "OFFICIAL_EXISTING_PILOT_HANDOFF"
   }
 }

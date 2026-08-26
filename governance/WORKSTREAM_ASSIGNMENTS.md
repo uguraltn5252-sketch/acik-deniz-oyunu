@@ -10,7 +10,7 @@
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
 | Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `EXACT_PILOT_REVIEW_COMPLETE / REWORK_REQUIRED` | `ART_DIRECTION_PILOT_REVIEW_20260825.json`; input `b4afbcf...` |
-| Görsel | `FOULWAKE görsel tasarım` / `work/v2.7-visual` | `TARGETED_ACCEPTED_12_PILOT_REWORK_AUTHORIZED` | `FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`; başlangıç head `b4afbcf...` |
+| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `PERMANENT_SUCCESSOR_ACK_ACCEPTED / EXISTING_PILOT_HANDOFF_PENDING` | `VISUAL_SUCCESSOR_ACK_20260826.json`; gözlenen head `1b27232a...` |
 | Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
 | Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
 
@@ -37,13 +37,27 @@ Bağlayıcı inceleme kanıtı
    dosya/kart düzeyinde yeni `REWORK_REQUIRED` olur.
 5. Final kullanıcı onayı, release veya kilit vermez; geçici ajan kullanmaz.
 
-## Görsel Tasarım — bağlayıcı hedefli pilot reworkü
+## Görsel Tasarım — kalıcı halef ACK kabulü / final pilot handoffu bekleniyor
 
 Bağlayıcı uygulama kaynağı
 `working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`dır.
 
-1. Çalışma `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
-   üzerinden başlar; geçmiş yeniden yazılmaz.
+Resmî görünür sohbet artık `FOULWAKE Görsel Tasarım 2`dir. Önceki
+`FOULWAKE görsel tasarım` sohbeti yanıt vermez hâle geldiği için emekli
+edilmiştir; geçmiş teslimlerinin GitHub kanıtı korunur. Kalıcı halef exact
+`work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` başını ve zorunlu
+kaynakları salt-okunur doğrulamış, dosya değiştirmeden devir ACK'i vermiştir.
+Kanıt `governance/VISUAL_SUCCESSOR_ACK_20260826.json`dır.
+
+Pilot üretimi `bf944125ee35fecd722628f6a9be5f5dfcd5707a` üzerinde, teslim
+metadata'sı `1ab579c27ee26205cbc87718995da021ef6da84d` üzerinde ve geçici encoder
+dosyalarının temizliği `1b27232a...` üzerinde gözlenmiştir. Bu GitHub paketi
+henüz resmî Görsel teslim handoffu veya sanat kabulü değildir. Yeni üretim
+yetkisi yoktur. Halefin sıradaki tek görevi mevcut paketi değiştirmeden,
+görsele özgü zorunlu alanlarla final handoff vermektir.
+
+1. Tarihsel üretim `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
+   üzerinden başlamış ve geçmiş yeniden yazılmadan tamamlanmıştır.
 2. Exact pilot seti yalnız şunlardır: `KAR-01, KAR-06, KAR-19, GUC-06,
    GUC-27, ERZ-01, SAD-H-03, HAR-AD-08, HAR-KY-06, HAR-AA-06, HAR-FN-04,
    SET-KP-01`.
@@ -59,7 +73,7 @@ Bağlayıcı uygulama kaynağı
 7. Sabit 5×5 aranmaz. En az üç kurala uygun farklı düzenin kapalı ve kısmen
    açılmış mockup'ları, rastgele 180° karşılıkları ve kör testleri üretilir.
 8. Exact copy değişmez; resim-içi gereksiz/anlamsız yazı veya glyph yoktur.
-9. Tam 121, PDF, Simülasyon, release ve kilit yoktur. Sonuç
+9. Tam 121, PDF, Simülasyon, release ve kilit yoktur. Resmî teslim sonucu
    `PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
    ve `LOCK_REQUESTED: NO` olmalıdır.
 
@@ -95,7 +109,7 @@ Yeni görsel candidate Baş Editörce kabul edilmeden iş başlatılmaz ve
 | `MEC-001` | Simülasyon | Yeni candidate bekliyor |
 | `SRC-001` | Görsel | Yeni provenance bekliyor |
 | `SRC-002` | Baş Editör + Simülasyon | Exact baseline çözümü bekliyor |
-| `ART-001` | Sanat Yönetimi + Görsel | Exact review FAIL; kabul edilmiş 12-pilot ve 7 arka-yüz reworkü, yeniden review ve tam özgün yayılım bekleniyor |
+| `ART-001` | Sanat Yönetimi + Görsel | `1b27232a...` paketi gözlendi; resmî Görsel handoff, yeniden review ve tam özgün yayılım bekleniyor |
 | `QA-001`, `QA-002` | Simülasyon | Yeni candidate bekliyor |
 | `GOV-001`, `COM-001` | Baş Editör | Açık |
 

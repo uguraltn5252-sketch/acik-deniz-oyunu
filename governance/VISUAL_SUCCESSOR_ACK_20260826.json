@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_VISUAL_WORKSTREAM_SUCCESSOR_ACK",
+  "recorded_at": "2026-08-26T15:58:21+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "chief_editor_source": "v2.7-design@1560b6eb1cc75b282c598cc4697921b9f472ce84",
+  "predecessor": {
+    "visible_chat": "FOULWAKE görsel tasarım",
+    "status": "UNRESPONSIVE_RETIRED",
+    "github_history_preserved": true
+  },
+  "successor_ack": {
+    "workstream": "Görsel Tasarım",
+    "visible_chat": "FOULWAKE Görsel Tasarım 2",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "successor_status": "PERMANENT_WORKSTREAM_REPLACEMENT",
+    "source_branch": "work/v2.7-visual",
+    "source_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+    "canonical_delivery_commit": "bf944125ee35fecd722628f6a9be5f5dfcd5707a",
+    "evidence_commit": "1ab579c27ee26205cbc87718995da021ef6da84d",
+    "accepted_art_direction_source": "work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "scope": "Kalıcı Görsel Tasarım workstream devri ve mevcut pilot tesliminin salt-okunur doğrulanması",
+    "changed_files": [],
+    "protected_fields_confirmed": true,
+    "tests_run": [
+      "EXACT_BRANCH_HEAD_VERIFIED",
+      "AI_HANDOFF.md_READ_ONLY",
+      "PROJECT_STATE.md_READ_ONLY",
+      "governance/WORKSTREAM_ASSIGNMENTS.md_READ_ONLY",
+      "governance/WORKSTREAM_PROTOCOL.md_READ_ONLY",
+      "ACCEPTED_ART_DIRECTION_SOURCES_READ_ONLY",
+      "EXISTING_PILOT_DELIVERY_REPORT_READ_ONLY"
+    ],
+    "temporary_subagents_used": false,
+    "production_status": "EXISTING_PILOT_DELIVERED",
+    "new_visual_production_authorized": false,
+    "result": "SUCCESSOR_ACKNOWLEDGED_EXISTING_PILOT_PRESERVED_NO_PRODUCTION_STARTED",
+    "open_risks": [
+      "AESTHETIC_ACCEPTANCE_PENDING",
+      "PHYSICAL_TESTS_PENDING",
+      "SRC-002_OPEN"
+    ],
+    "next_recipient": "Baş Editör",
+    "lock_requested": false
+  },
+  "chief_editor_exact_verification": {
+    "integration_branch_head": "1560b6eb1cc75b282c598cc4697921b9f472ce84",
+    "visual_branch_head": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+    "art_direction_branch_head": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "reported_refs_match": true,
+    "visual_files_changed_by_successor_ack": false
+  },
+  "chief_editor_disposition": "PERMANENT_WORKSTREAM_SUCCESSOR_ACK_ACCEPTED",
+  "limitations": [
+    "This record accepts the permanent visible-chat role transfer only.",
+    "It is not the visual pilot delivery handoff.",
+    "It is not an Art Direction pass or project-owner aesthetic acceptance.",
+    "No new visual production, full 121 propagation, PDF, Simulation, release or lock is authorized."
+  ],
+  "next_action": "FOULWAKE Görsel Tasarım 2 must issue the exact existing pilot final handoff without changing files; Chief Editor verification precedes Art Direction re-review",
+  "temporary_subagents_used": false,
+  "lock_requested": false
+}

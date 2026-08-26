@@ -10,8 +10,9 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Aktif çalışma:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
+- **Gözlenen pilot paketi:** `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` / `OFFICIAL_VISUAL_DELIVERY_HANDOFF_PENDING`
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `PILOT_REVIEW_FAIL / TARGETED_PILOT_REWORK_AUTHORIZED`
+- **Sanat Yönetimi:** `PILOT_REVIEW_FAIL / REVISED_PILOT_PACKAGE_OBSERVED / RE-REVIEW_NOT_STARTED`
 - **Kilit izni:** **YOK**
 
 Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
@@ -44,6 +45,17 @@ kartı üretilecek/yeniden çizilecek ve yedi arka yüz sıfırdan kurulacaktır
 dışı altı ret bu pilot geçene kadar üretilmez. Yalnız bu pilot reworkü
 etkindir; tam 121 üretim, PDF, Simülasyon, release ve kilit yetkili değildir.
 
+Yetkili hedefli rework paketi Görsel dalında üretilmiştir: kanonik üretim
+commit'i `bf944125ee35fecd722628f6a9be5f5dfcd5707a`, kanıt commit'i
+`1ab579c27ee26205cbc87718995da021ef6da84d` ve temizlenmiş dal başı
+`1b27232a53b09ac3ff00030f625bfc2703d15764`dır. Önceki görünür Görsel sohbet
+nihai teslimi veremeden yanıt vermez hâle gelmiştir. Proje sahibinin açtığı
+kalıcı halef `FOULWAKE Görsel Tasarım 2`, exact dal başını ve kaynakları
+salt-okunur doğrulayıp `VISIBLE_CHAT_ACK: YES` vermiştir. Baş Editör bu devri
+`PERMANENT_WORKSTREAM_SUCCESSOR_ACK_ACCEPTED` olarak kabul eder. Bu yalnız rol
+devridir; pilotun resmî Görsel teslim handoffu, Sanat Yönetimi PASS'i, proje
+sahibi estetik kabulü, full production, Simülasyon, release veya kilit değildir.
+
 ## Her oturumda zorunlu okuma sırası
 
 1. `AI_HANDOFF.md`
@@ -68,7 +80,7 @@ dosyasını okumadan üretime başlayamaz.
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | Lore, anlatı ve mekanik olmayan görünen metin |
 | Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` | `work/v2.7-art-direction` | Sanat yönü, görsel dramaturji, brief ve bağımsız yaratıcı eleştiri |
-| Görsel | `FOULWAKE görsel tasarım` | `work/v2.7-visual` | Özgün illüstrasyon, yerleşim, tipografi, baskı |
+| Görsel | `FOULWAKE Görsel Tasarım 2` | `work/v2.7-visual` | Özgün illüstrasyon, yerleşim, tipografi, baskı |
 | Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | Bağımsız QA ve kanıt; mekanik değişiklik yok |
 | Baş Editör | Bu çalışma | `v2.7-design` | Kanon, çakışma, entegrasyon, release ve kilit |
 
@@ -95,6 +107,8 @@ teslimi sayılmaz.
   `ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT`.
 - Görsel teslim ve ret: `governance/VISUAL_HANDOFF_20260825.json` —
   `REJECTED_ART_REWORK_REQUIRED`.
+- Kalıcı Görsel halef ACK'i: `governance/VISUAL_SUCCESSOR_ACK_20260826.json` —
+  `PERMANENT_WORKSTREAM_SUCCESSOR_ACK_ACCEPTED`; üretim teslimi değildir.
 - Son Baş Editör denetimi: `governance/CHIEF_EDITOR_AUDIT_20260825.md`.
 
 GitHub'a yazılmış olmak bir çıktıyı kendiliğinden kanon, PASS, STABLE veya
@@ -167,9 +181,10 @@ Simülasyon attestation varken sürüm kilitlenmez.
 ## Güncel devam komutu
 
 > `v2.7-design` dalındaki zorunlu yönetişim dosyalarını,
-> `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json` ve
-> `working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md` dosyasını oku.
-> Görsel Tasarım yalnız kabul edilmiş 12 kartlık zor-vaka pilotu ile sıfırdan
-> yedi arka yüzü üretip visible-chat handoffu versin. Kullanıcı + Baş Editör
-> pilot kabulü olmadan kalan 109 ön yüz, tam PDF, Simülasyon, release veya kilit
-> yoktur.
+> `governance/VISUAL_SUCCESSOR_ACK_20260826.json` ile
+> `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` üzerindeki mevcut
+> pilot raporu ve manifestleri oku. `FOULWAKE Görsel Tasarım 2` yeni üretim,
+> dosya değişikliği veya commit yapmadan mevcut 12 ön-yüz + 7 arka-yüz pilotu
+> için görsele özgü zorunlu final handoffu versin. Bu handoff Baş Editörce
+> doğrulanmadan Sanat Yönetimi yeniden incelemesi başlamaz; kalan 109 ön yüz,
+> tam PDF, Simülasyon, release ve kilit yoktur.

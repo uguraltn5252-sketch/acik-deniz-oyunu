@@ -1,5 +1,29 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 26 Ağustos 2026 — KALICI GÖRSEL TASARIM HALEFİ / ACK KABULÜ
+
+**Önceki görünür sohbet:** `FOULWAKE görsel tasarım` — yanıt vermiyor / emekli  
+**Kalıcı halef:** `FOULWAKE Görsel Tasarım 2`  
+**Görsel dal başı:** `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764`  
+**Kanonik üretim:** `bf944125ee35fecd722628f6a9be5f5dfcd5707a`  
+**Teslim metadata'sı:** `1ab579c27ee26205cbc87718995da021ef6da84d`  
+**Kanıt:** `governance/VISUAL_SUCCESSOR_ACK_20260826.json`
+
+Proje sahibinin açtığı kalıcı halef sohbet; doğru görünür sohbet adı, exact
+dal/commit, kabul edilmiş Sanat Yönetimi kaynağı, `VISIBLE_CHAT_ACK: YES`,
+salt-okunur `TESTS_RUN`, `CHANGED_FILES: NONE`, korunan alanlar,
+`TEMPORARY_SUBAGENTS: NONE` ve `LOCK_REQUESTED: NO` ile devir ACK'i vermiştir.
+Baş Editör exact Görsel, Sanat Yönetimi ve entegrasyon dal başlarını
+doğrulamış ve dispozisyonu
+`PERMANENT_WORKSTREAM_SUCCESSOR_ACK_ACCEPTED` olarak kaydetmiştir.
+
+Bu ACK mevcut pilot paketini korur ancak görsel teslim veya sanat PASS'i
+değildir. `FOULWAKE Görsel Tasarım 2` yeni üretim yapmadan mevcut paket için
+görsele özgü final handoff verecektir. Bu handoff doğrulanmadan Sanat
+Yönetiminin `1b27232a...` yeniden incelemesi başlatılmaz. Tam 121, PDF,
+Simülasyon, release ve kilit yetkili değildir; fiziksel testler ile `SRC-002`
+açıktır.
+
 ## 25 Ağustos 2026 — EXACT PİLOT İNCELEMESİ / REWORK DİSPOZİSYONU
 
 **Görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  
