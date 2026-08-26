@@ -7,6 +7,7 @@
 **Aktif workspace:** `working/v2.7/`  
 **Aktif görsel candidate:** YOK — exact pilot paketi `1b27232a...` üzerinde gözlendi; resmî Görsel teslim handoffu bekleniyor  
 **Sanat Yönetimi:** `ART_DIRECTION BRIEF ACCEPTED / REVISED PILOT RE-REVIEW NOT STARTED`  
+**Görsel kapısı:** `PILOT REWORK REQUIRED / PACKAGE OBSERVED / OFFICIAL HANDOFF PENDING`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
 
 ## Çalışma hattı durumu

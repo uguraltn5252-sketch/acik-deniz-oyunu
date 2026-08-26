@@ -10,7 +10,7 @@
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
 | Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `EXACT_PILOT_REVIEW_COMPLETE / REWORK_REQUIRED` | `ART_DIRECTION_PILOT_REVIEW_20260825.json`; input `b4afbcf...` |
-| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `PERMANENT_SUCCESSOR_ACK_ACCEPTED / EXISTING_PILOT_HANDOFF_PENDING` | `VISUAL_SUCCESSOR_ACK_20260826.json`; gözlenen head `1b27232a...` |
+| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `TARGETED_ACCEPTED_12_PILOT_REWORK_AUTHORIZED / PACKAGE_OBSERVED / SUCCESSOR_ACK_ACCEPTED / HANDOFF_PENDING` | `VISUAL_SUCCESSOR_ACK_20260826.json`; gözlenen head `1b27232a...` |
 | Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
 | Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
 
