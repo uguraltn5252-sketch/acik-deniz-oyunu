@@ -9,8 +9,8 @@
 | Hat | Görünür sohbet / dal | Durum | Bağlayıcı kanıt |
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
-| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `EXACT_PILOT_REVIEW_COMPLETE / REWORK_REQUIRED` | `ART_DIRECTION_PILOT_REVIEW_20260825.json`; input `b4afbcf...` |
-| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `TARGETED_ACCEPTED_12_PILOT_REWORK_AUTHORIZED / PACKAGE_OBSERVED / SUCCESSOR_ACK_ACCEPTED / HANDOFF_PENDING` | `VISUAL_SUCCESSOR_ACK_20260826.json`; gözlenen head `1b27232a...` |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `EXACT_PILOT_REVIEW_COMPLETE / PRIOR REWORK_REQUIRED / REVISED EXACT REVIEW AUTHORIZED` | `VISUAL_PILOT_HANDOFF_20260826.json`; yeni input `1b27232a...` |
+| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `TARGETED_ACCEPTED_12_PILOT_REWORK_AUTHORIZED / PILOT_REWORK_DELIVERED / OFFICIAL_HANDOFF_ACCEPTED / ART_REVIEW_PENDING` | `VISUAL_PILOT_HANDOFF_20260826.json`; source `1b27232a...` |
 | Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
 | Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
 
@@ -23,21 +23,22 @@
   Simülasyona bırakır.
 - Yeni görev yoksa dalı değiştirmez.
 
-## Sanat Yönetmeni — exact pilot review tamamlandı
+## Sanat Yönetmeni — önceki review tamamlandı / revize exact review yetkili
 
 Bağlayıcı inceleme kanıtı
 `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json`dır.
 
 1. `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
    için sonuç `REWORK_REQUIRED`: 3 ön KEEP, 9 ön REWORK; 7 arka yüz REWORK.
-2. Sonraki Görsel candidate gelene kadar yeni brief veya final sanat üretmez.
-3. Revize exact commit geldiğinde 12 kabul edilmiş zor-vaka kartını, 7 arka
-   yüzü ve bütün contact-sheet/mockup kanıtını yeniden inceler.
+2. Revize Görsel handoff `governance/VISUAL_PILOT_HANDOFF_20260826.json` ile
+   kabul edilmiştir; exact inceleme girdisi `work/v2.7-visual@1b27232a...`dır.
+3. On iki kabul edilmiş zor-vaka kartını, 7 arka yüzü ve bütün
+   contact-sheet/mockup kanıtını yeniden inceler; final sanat üretmez.
 4. Sonraki sonuç `ART_DIRECTION_PILOT_PASS_RECOMMENDATION` veya exact
    dosya/kart düzeyinde yeni `REWORK_REQUIRED` olur.
 5. Final kullanıcı onayı, release veya kilit vermez; geçici ajan kullanmaz.
 
-## Görsel Tasarım — kalıcı halef ACK kabulü / final pilot handoffu bekleniyor
+## Görsel Tasarım — resmî pilot handoffu kabul edildi / sanat review bekleniyor
 
 Bağlayıcı uygulama kaynağı
 `working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`dır.
@@ -52,9 +53,10 @@ Kanıt `governance/VISUAL_SUCCESSOR_ACK_20260826.json`dır.
 Pilot üretimi `bf944125ee35fecd722628f6a9be5f5dfcd5707a` üzerinde, teslim
 metadata'sı `1ab579c27ee26205cbc87718995da021ef6da84d` üzerinde ve geçici encoder
 dosyalarının temizliği `1b27232a...` üzerinde gözlenmiştir. Bu GitHub paketi
-henüz resmî Görsel teslim handoffu veya sanat kabulü değildir. Yeni üretim
-yetkisi yoktur. Halefin sıradaki tek görevi mevcut paketi değiştirmeden,
-görsele özgü zorunlu alanlarla final handoff vermektir.
+için resmî Görsel teslim handoffu alınmış ve exact teknik kapsam Baş Editörce
+Sanat Yönetimi incelemesine giriş olarak kabul edilmiştir. Bu sanat kabulü
+değildir. Yeni üretim yetkisi yoktur; Görsel hat Sanat Yönetimi dispozisyonunu
+bekler.
 
 1. Tarihsel üretim `work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
    üzerinden başlamış ve geçmiş yeniden yazılmadan tamamlanmıştır.
@@ -109,7 +111,7 @@ Yeni görsel candidate Baş Editörce kabul edilmeden iş başlatılmaz ve
 | `MEC-001` | Simülasyon | Yeni candidate bekliyor |
 | `SRC-001` | Görsel | Yeni provenance bekliyor |
 | `SRC-002` | Baş Editör + Simülasyon | Exact baseline çözümü bekliyor |
-| `ART-001` | Sanat Yönetimi + Görsel | `1b27232a...` paketi gözlendi; resmî Görsel handoff, yeniden review ve tam özgün yayılım bekleniyor |
+| `ART-001` | Sanat Yönetimi + Görsel | `1b27232a...` resmî handoffu kabul edildi; yeniden review ve kullanıcı/Baş Editör pilot kabulü bekleniyor |
 | `QA-001`, `QA-002` | Simülasyon | Yeni candidate bekliyor |
 | `GOV-001`, `COM-001` | Baş Editör | Açık |
 

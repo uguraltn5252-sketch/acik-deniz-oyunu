@@ -1,13 +1,13 @@
 # FOULWAKE Proje Durumu
 
-**Son güncelleme:** 26 Ağustos 2026  
+**Son güncelleme:** 27 Ağustos 2026  
 **Kilitli sürüm:** `v2.6 STABLE / LOCKED`  
 **Aktif taslak:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`  
 **Entegrasyon dalı:** `v2.7-design`  
 **Aktif workspace:** `working/v2.7/`  
-**Aktif görsel candidate:** YOK — exact pilot paketi `1b27232a...` üzerinde gözlendi; resmî Görsel teslim handoffu bekleniyor  
-**Sanat Yönetimi:** `ART_DIRECTION BRIEF ACCEPTED / REVISED PILOT RE-REVIEW NOT STARTED`  
-**Görsel kapısı:** `PILOT REWORK REQUIRED / PACKAGE OBSERVED / OFFICIAL HANDOFF PENDING`  
+**Aktif görsel candidate:** YOK — exact pilot handoffu `1b27232a...` için yalnız Sanat Yönetimi incelemesine giriş olarak kabul edildi  
+**Sanat Yönetimi:** `ART_DIRECTION BRIEF ACCEPTED / REVISED PILOT EXACT REVIEW AUTHORIZED / NOT STARTED`  
+**Görsel kapısı:** `PILOT REWORK REQUIRED COMPLETED / OFFICIAL HANDOFF ACCEPTED / ART DIRECTION REVIEW PENDING`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
 
 ## Çalışma hattı durumu
@@ -15,8 +15,8 @@
 | Hat | Exact kaynak | Baş Editör hükmü | Sonraki adım |
 |---|---|---|---|
 | Hikâye | `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` | Kabul edildi ve exact üç Hikâye blobu entegre edildi; release PASS değil | Görsel için exact metin girdisi |
-| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | Brief PASS korunur; exact `b4afbcf...` pilot incelemesi `REWORK_REQUIRED` | Yeni Görsel handoff doğrulandıktan sonra `1b27232a...` paketini yeniden inceleme |
-| Görsel | `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` | Hedefli pilot paketi gözlendi; kalıcı halef ACK kabul edildi; sanat ve teslim PASS'i verilmedi | `FOULWAKE Görsel Tasarım 2` yalnız mevcut paket için final handoff verecek |
+| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | Brief PASS korunur; exact `b4afbcf...` pilot incelemesi `REWORK_REQUIRED`; revize review yetkili | `1b27232a...` paketini kart-kart ve arka-yüz-bazında yeniden inceleme |
+| Görsel | `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` | Resmî pilot handoffu teknik olarak doğrulandı; sanat PASS'i veya aktif candidate verilmedi | Sanat Yönetimi dispozisyonunu bekleme; yeni üretim yok |
 | Simülasyon | dal yok | Başlamadı | Yeni görsel aday kabulünden sonra |
 
 Görsel teslimin `121/121`, 7 arka yüz ve PDF/hash zinciri teknik olarak kayıtlı
@@ -46,8 +46,11 @@ Hedefli rework üretimi GitHub'da tamamlanmıştır: `bf944125...` kanonik üret
 içerir. Önceki Görsel sohbet yanıt vermez hâle geldiği için proje sahibi
 `FOULWAKE Görsel Tasarım 2` kalıcı halef sohbetini açmış; bu sohbet exact
 kaynakları salt-okunur doğrulayarak rol devrini kabul etmiştir. Halef ACK'i
-üretim teslim handoffu değildir. Yeni üretim yetkisi yoktur; sıradaki adım
-mevcut paketin görsele özgü zorunlu handoffudur.
+üretim teslim handoffu değildir. Halef daha sonra mevcut paket için zorunlu
+Görsel handoffu vermiş; Baş Editör exact 62 dosyalık ağacı ve teknik kanıtı
+doğrulayarak `VISUAL_PILOT_HANDOFF_ACCEPTED_FOR_ART_DIRECTION_REVIEW`
+dispozisyonu vermiştir. Yeni üretim yetkisi yoktur; sıradaki adım Sanat
+Yönetiminin exact yaratıcı incelemesidir.
 
 ## Bağlayıcı yeni görsel yön
 
@@ -78,11 +81,11 @@ mevcut paketin görsele özgü zorunlu handoffudur.
 | `MEC-001` | Simülasyon | OPEN | Sea=Rock için exact adayda tam ve kör fiziksel test |
 | `SRC-001` | Görsel | OPEN | Yeni adayda tutarlı source→render→PDF ve iç/dış provenance |
 | `SRC-002` | Baş Editör + Simülasyon | OPEN | GUC-22/GUC-23 için kilitli v2.6 exact kaynak karşılaştırması veya açık kullanıcı kararı |
-| `ART-001` | Sanat Yönetimi + Görsel | PILOT PACKAGE OBSERVED / HANDOFF AND REVIEW PENDING | `1b27232a...` paketi için resmî Görsel teslim handoffu, yeniden yaratıcı inceleme ve kullanıcı/Baş Editör pilot kabulü gerekir |
+| `ART-001` | Sanat Yönetimi + Görsel | OFFICIAL HANDOFF ACCEPTED / ART REVIEW PENDING | `1b27232a...` paketi için yeniden yaratıcı inceleme ve kullanıcı/Baş Editör pilot kabulü gerekir |
 | `QA-001` | Simülasyon | OPEN | Exact candidate'a bağlı yeniden üretilebilir tam attestation |
 | `QA-002` | Simülasyon | OPEN | Fiziksel proof, kör sızıntı ve kör insan masa testi |
 | `GOV-001` | Baş Editör | OPEN | main uzlaştırması, branch protection/ruleset, required status check |
-| `COM-001` | Baş Editör | OPEN | Kalıcı Görsel halef ACK'i tamamlandı; mevcut paket için resmî Görsel teslim handoffu, pilot kabulü ve bağımsız Simülasyon teslimi bekleniyor |
+| `COM-001` | Baş Editör | OPEN | Görsel handoff kaydedildi; Sanat Yönetimi dispozisyonu, kullanıcı/Baş Editör pilot kabulü ve bağımsız Simülasyon teslimi bekleniyor |
 
 `CAN-001` çözülmüştür: CAN-08/09 v2.7 DRAFT `TASLAK` koruma ilkeleridir.
 
@@ -117,6 +120,7 @@ ayrıdır.
 - `governance/STORY_HANDOFF_20260820.json`
 - `governance/VISUAL_HANDOFF_20260825.json`
 - `governance/VISUAL_SUCCESSOR_ACK_20260826.json`
+- `governance/VISUAL_PILOT_HANDOFF_20260826.json`
 - `governance/ART_DIRECTION_ACK_20260825.json`
 - `governance/ART_DIRECTION_HANDOFF_20260825.json`
 - `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json`

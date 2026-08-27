@@ -1,5 +1,33 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 27 Ağustos 2026 — REVİZE PİLOT GÖRSEL HANDOFFU / SANAT İNCELEMESİNE GİRİŞ
+
+**Görünür sohbet:** `FOULWAKE Görsel Tasarım 2`  
+**Görsel kaynak:** `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764`  
+**Kanonik üretim:** `bf944125ee35fecd722628f6a9be5f5dfcd5707a`  
+**Teslim metadata'sı:** `1ab579c27ee26205cbc87718995da021ef6da84d`  
+**Baş Editör kabul commiti:** `v2.7-design@6978512261ba8ea6d934eb4d9eaf3bd888bd4f95`  
+**Kanıt:** `governance/VISUAL_PILOT_HANDOFF_20260826.json`
+
+Kalıcı Görsel halef; exact dal/commit, 12 ön yüz, 7 arka yüz, 17 source-art,
+10 sketch gate, 5 contact sheet, 6 değişken harita düzeni, 4 manifest/kanıt
+kaydı ve 1 rapordan oluşan 62 dosyalık paket için zorunlu görünür handoffu
+vermiştir. Baş Editör exact Git ağacını, grup sayımlarını, geçici
+`.writing.png` bulunmadığını, 61 dosyalık SHA-256 indeksini ve teknik
+manifestlerin iç tutarlılığını doğrulamıştır.
+
+Baş Editör dispozisyonu
+`VISUAL_PILOT_HANDOFF_ACCEPTED_FOR_ART_DIRECTION_REVIEW`dür. Bu yalnız exact
+Sanat Yönetimi incelemesine giriş kabulüdür; Sanat Yönetimi PASS'i, proje
+sahibi estetik kabulü, aktif Görsel candidate veya tam üretim değildir.
+`FOULWAKE Sanat Yönetmeni` şimdi kabul edilmiş `7418d9c2...` briefleri
+karşısında exact `1b27232a...` paketini kart-kart, arka-yüz-bazında ve bütün
+contact-sheet/değişken-harita ritmiyle yeniden inceleyecektir.
+
+Yeni Görsel üretim, kalan 109 ön yüz, tam PDF, Simülasyon, release ve kilit
+yetkili değildir. Fiziksel baskı/kesim/duplex/ışık testleri ile `SRC-002`
+açıktır; geçici ajan kullanılmamıştır.
+
 ## 26 Ağustos 2026 — KALICI GÖRSEL TASARIM HALEFİ / ACK KABULÜ
 
 **Önceki görünür sohbet:** `FOULWAKE görsel tasarım` — yanıt vermiyor / emekli  

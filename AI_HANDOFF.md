@@ -10,9 +10,9 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Aktif çalışma:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
-- **Gözlenen pilot paketi:** `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` / `OFFICIAL_VISUAL_DELIVERY_HANDOFF_PENDING`
+- **Gözlenen pilot paketi:** `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` / `OFFICIAL_VISUAL_HANDOFF_ACCEPTED_FOR_ART_DIRECTION_REVIEW`
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `PILOT_REVIEW_FAIL / REVISED_PILOT_PACKAGE_OBSERVED / RE-REVIEW_NOT_STARTED`
+- **Sanat Yönetimi:** `PILOT_REVIEW_FAIL / REVISED_PILOT_EXACT_REVIEW_AUTHORIZED / RE-REVIEW_NOT_STARTED`
 - **Kilit izni:** **YOK**
 
 Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
@@ -52,9 +52,13 @@ commit'i `bf944125ee35fecd722628f6a9be5f5dfcd5707a`, kanıt commit'i
 nihai teslimi veremeden yanıt vermez hâle gelmiştir. Proje sahibinin açtığı
 kalıcı halef `FOULWAKE Görsel Tasarım 2`, exact dal başını ve kaynakları
 salt-okunur doğrulayıp `VISIBLE_CHAT_ACK: YES` vermiştir. Baş Editör bu devri
-`PERMANENT_WORKSTREAM_SUCCESSOR_ACK_ACCEPTED` olarak kabul eder. Bu yalnız rol
-devridir; pilotun resmî Görsel teslim handoffu, Sanat Yönetimi PASS'i, proje
-sahibi estetik kabulü, full production, Simülasyon, release veya kilit değildir.
+`PERMANENT_WORKSTREAM_SUCCESSOR_ACK_ACCEPTED` olarak kabul eder. Halef daha
+sonra exact 62 dosyalık paket için görsele özgü final handoffu vermiş; Baş
+Editör dal başını, grup sayımlarını, 61 dosyalık SHA-256 indeksini ve teknik
+manifestleri doğrulayarak handoffu Sanat Yönetimi incelemesine giriş olarak
+kabul etmiştir. Kanıt `governance/VISUAL_PILOT_HANDOFF_20260826.json`dır. Bu
+kabul Sanat Yönetimi PASS'i, proje sahibi estetik kabulü, aktif candidate,
+full production, Simülasyon, release veya kilit değildir.
 
 ## Her oturumda zorunlu okuma sırası
 
@@ -109,6 +113,9 @@ teslimi sayılmaz.
   `REJECTED_ART_REWORK_REQUIRED`.
 - Kalıcı Görsel halef ACK'i: `governance/VISUAL_SUCCESSOR_ACK_20260826.json` —
   `PERMANENT_WORKSTREAM_SUCCESSOR_ACK_ACCEPTED`; üretim teslimi değildir.
+- Revize pilotun resmî Görsel handoffu:
+  `governance/VISUAL_PILOT_HANDOFF_20260826.json` — exact `1b27232a...`
+  paketi yalnız Sanat Yönetimi incelemesine giriş için kabul edildi.
 - Son Baş Editör denetimi: `governance/CHIEF_EDITOR_AUDIT_20260825.md`.
 
 GitHub'a yazılmış olmak bir çıktıyı kendiliğinden kanon, PASS, STABLE veya
@@ -181,10 +188,11 @@ Simülasyon attestation varken sürüm kilitlenmez.
 ## Güncel devam komutu
 
 > `v2.7-design` dalındaki zorunlu yönetişim dosyalarını,
-> `governance/VISUAL_SUCCESSOR_ACK_20260826.json` ile
-> `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` üzerindeki mevcut
-> pilot raporu ve manifestleri oku. `FOULWAKE Görsel Tasarım 2` yeni üretim,
-> dosya değişikliği veya commit yapmadan mevcut 12 ön-yüz + 7 arka-yüz pilotu
-> için görsele özgü zorunlu final handoffu versin. Bu handoff Baş Editörce
-> doğrulanmadan Sanat Yönetimi yeniden incelemesi başlamaz; kalan 109 ön yüz,
-> tam PDF, Simülasyon, release ve kilit yoktur.
+> `governance/VISUAL_PILOT_HANDOFF_20260826.json` ile kabul edilmiş
+> `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`
+> brieflerini oku. `FOULWAKE Sanat Yönetmeni`, exact
+> `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` paketindeki 12 ön
+> yüzü, 7 arka yüzü, 5 contact sheeti ve 6 değişken harita düzenini bağımsız
+> görsel incelemeye alsın; kart-kart ve arka-yüz-bazında KEEP/REWORK dispozisyonu
+> versin. Bu aşamada Görsel üretim, kalan 109 ön yüz, tam PDF, Simülasyon,
+> release ve kilit yoktur.
