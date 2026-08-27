@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_VISUAL_PILOT_HANDOFF",
+  "recorded_at": "2026-08-26T16:28:40+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "chief_editor_source": "v2.7-design@e0803eaba8d867c85a1f1eadfc8e320213b28f94",
+  "visual_handoff": {
+    "workstream": "Görsel Tasarım",
+    "visible_chat": "FOULWAKE Görsel Tasarım 2",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "source_branch": "work/v2.7-visual",
+    "source_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+    "canonical_delivery_commit": "bf944125ee35fecd722628f6a9be5f5dfcd5707a",
+    "evidence_commit": "1ab579c27ee26205cbc87718995da021ef6da84d",
+    "accepted_art_direction_source": "work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "pilot_or_full": "PILOT_ONLY",
+    "scope": "Mevcut 12 ön-yüz, 7 arka-yüz ve kanıt paketinin salt-okunur final handoffu",
+    "changed_files": [],
+    "protected_fields_confirmed": true,
+    "temporary_subagents_used": false,
+    "new_visual_production_authorized": false,
+    "full_121_production_authorized": false,
+    "simulation_authorized": false,
+    "result": "PILOT_REWORK_DELIVERED_PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+    "open_risks": [
+      "AESTHETIC_ACCEPTANCE_PENDING",
+      "PHYSICAL_PRINT_CUT_DUPLEX_LIGHT_TESTS_PENDING",
+      "SRC-002_OPEN"
+    ],
+    "next_recipient": "Baş Editör",
+    "lock_requested": false
+  },
+  "chief_editor_exact_verification": {
+    "integration_branch_head": "e0803eaba8d867c85a1f1eadfc8e320213b28f94",
+    "visual_branch_head": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+    "art_direction_branch_head": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "visual_history": {
+      "base_reviewed_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+      "ahead_by": 3,
+      "behind_by": 0,
+      "total_commits": 3
+    },
+    "package_prefix": "working/v2.7/visual/pilot_rework/",
+    "exact_tree_blob_count": 62,
+    "file_groups": {
+      "delivery_report": 1,
+      "manifest_and_evidence_records": 4,
+      "pilot_fronts": 12,
+      "pilot_backs": 7,
+      "source_art": 17,
+      "sketch_gates": 10,
+      "contact_sheets": 5,
+      "variable_map_layouts": 6
+    },
+    "temporary_writing_png_count": 0,
+    "sha256_index": {
+      "indexed_files": 61,
+      "checksum_file_excluded_from_self_index": true,
+      "missing": 0,
+      "extra": 0,
+      "invalid": 0,
+      "duplicate_paths": 0,
+      "result": "PASS"
+    },
+    "art_brief_manifest": {
+      "pilot_fronts": 12,
+      "unique_card_ids": 12,
+      "new_original": 10,
+      "exact_keep": 2,
+      "pilot_backs": 7,
+      "exact_keep_ids": [
+        "SAD-H-03",
+        "HAR-KY-06"
+      ],
+      "text_in_illustration_false": "12/12",
+      "rejected_asset_reused_false": "12/12"
+    },
+    "back_mapping": {
+      "BACK_CHARACTER": 20,
+      "BACK_POWER": 31,
+      "BACK_LOYALTY": 15,
+      "BACK_SEA_ROCK": 42,
+      "BACK_ISLAND": 6,
+      "BACK_LIGHTHOUSE": 4,
+      "BACK_SUPPORT": 3,
+      "total": 121,
+      "exact_180_degree_pixel_safe": "7/7",
+      "derived_from_prior_back_false": "7/7"
+    },
+    "control_manifest_result": "PASS",
+    "control_manifest_failures": [],
+    "contact_sheets_sha256_verified": "5/5",
+    "variable_map_layouts_opened": "6/6",
+    "physical_tests": {
+      "print": "NOT_RUN",
+      "cut": "NOT_RUN",
+      "duplex": "NOT_RUN",
+      "light": "NOT_RUN",
+      "blind_orientation": "NOT_RUN"
+    },
+    "reported_refs_match": true,
+    "handoff_changed_visual_files": false
+  },
+  "chief_editor_disposition": "VISUAL_PILOT_HANDOFF_ACCEPTED_FOR_ART_DIRECTION_REVIEW",
+  "acceptance_scope": [
+    "The exact branch-bound Visual handoff is accepted as complete.",
+    "The 62-file package and internal technical evidence are coherent enough to enter exact Art Direction review.",
+    "Historical rejected pilot and rejected full-deck records remain historical and are not overwritten."
+  ],
+  "limitations": [
+    "This is not an Art Direction pass or project-owner aesthetic acceptance.",
+    "Manifest PASS, unique hashes and 180-degree pixel checks do not establish artistic quality.",
+    "There is no active visual release candidate.",
+    "No new visual production, full 121 propagation, PDF, Simulation, release or lock is authorized.",
+    "Physical print, cut, duplex, light and blind orientation tests remain NOT_RUN.",
+    "SRC-002 remains open."
+  ],
+  "next_action": "FOULWAKE Sanat Yönetmeni must visually inspect exact work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764 against accepted art-direction source 7418d9c2c89c265cb6efd30f6a5a7f2addd528da and return a card-by-card and back-by-back creative disposition",
+  "art_direction_review_authorized": true,
+  "visual_production_authorized": false,
+  "simulation_authorized": false,
+  "temporary_subagents_used": false,
+  "lock_requested": false
+}
