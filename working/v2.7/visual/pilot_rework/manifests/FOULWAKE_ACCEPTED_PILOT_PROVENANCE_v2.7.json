@@ -1,12 +1,12 @@
 {
   "schema_version": "2.7-accepted-pilot-provenance-1.0",
   "project": "FOULWAKE",
-  "status": "PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+  "status": "TARGETED_PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
   "source_branch": "work/v2.7-visual",
-  "input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-  "chief_editor_source_commit": "1560b6eb1cc75b282c598cc4697921b9f472ce84",
+  "input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+  "chief_editor_source_commit": "74ac7eb764089a894b109990c1bc10304b7a614d",
   "accepted_art_direction_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
-  "visual_delivery_commit": "bf944125ee35fecd722628f6a9be5f5dfcd5707a",
+  "visual_delivery_commit": "PENDING_TARGETED_REWORK_DELIVERY_COMMIT",
   "policy": {
     "exact_keep_ids": [
       "HAR-KY-06",
@@ -37,7 +37,11 @@
     "rejected_asset_reused": false,
     "full_121_fronts_created": false,
     "full_pdf_created": false,
-    "simulation_handoff_started": false
+    "simulation_handoff_started": false,
+    "targeted_rework_only": true,
+    "authorized_changed_files_exact": 25,
+    "main_keep_assets_byte_exact": 15,
+    "protected_gates_byte_exact": 9
   },
   "fronts": [
     {
@@ -61,8 +65,8 @@
       "accepted_brief_action": "Çıplak gözle ufuk çizgisindeki tek belirsiz kırılmayı seçer.",
       "source_art": {
         "path": "working/v2.7/visual/pilot_rework/source_art/KAR-01_illustration.jpg",
-        "sha256": "f549c4300719009930e4fcd2cfac913f7c9056b9f9612ffdd6fa3c3ddfa8367c",
-        "bytes": 1057372,
+        "sha256": "53a490df27d2a25abd7cc466d4cec7cc4257c770862a607300f432521265617a",
+        "bytes": 988933,
         "pixels": [
           1024,
           1536
@@ -75,8 +79,8 @@
       },
       "sketch_gate": {
         "path": "working/v2.7/visual/pilot_rework/sketch_gates/KAR-01_three_thumbnail_gate.jpg",
-        "sha256": "37a37adb2c5c239e64dbb05486890ad5c04e2e172b6bd5baf916be6604271c7c",
-        "bytes": 1048533,
+        "sha256": "6ff42632d3199b3adb0961341fc83ecc2927b173434a1c2d3325bf274851a93a",
+        "bytes": 973226,
         "pixels": [
           1536,
           1024
@@ -89,8 +93,8 @@
       },
       "render": {
         "path": "working/v2.7/visual/pilot_rework/pilot_fronts/KAR-01_front.png",
-        "sha256": "e7755bf0e487e6886d253075820bf61456f692e7f4419996eaa9c0c85b1f871d",
-        "bytes": 2010041,
+        "sha256": "c7139e03b6627ccbd2f40ad4da0abaa4d19890607bd678164fd8bbe626c7d375",
+        "bytes": 2009753,
         "pixels": [
           898,
           1488
@@ -119,7 +123,18 @@
       },
       "text_in_illustration": false,
       "rejected_asset_reused": false,
-      "overflow": false
+      "overflow": false,
+      "targeted_rework_selection": {
+        "new_gate": true,
+        "gate_geometry_count": 3,
+        "gate_geometries": [
+          "OPEN_FORK",
+          "COMPRESSED_DIAGONAL",
+          "TWISTED_S_CURVE"
+        ],
+        "selected_direction": "GATE_PANEL_1_OPEN_FORK",
+        "selection_reason": "Open-fork body transfers rope load through the lowered right shoulder while the naked eye locks to one thin mustard horizon break."
+      }
     },
     {
       "card_id": "KAR-06",
@@ -758,8 +773,8 @@
       "accepted_brief_action": "Gümrükçü fazla nesneyi kapalı ıskarta sepetine indirir.",
       "source_art": {
         "path": "working/v2.7/visual/pilot_rework/source_art/HAR-AA-06_illustration.jpg",
-        "sha256": "c41da8154d6bcf0537853106f19d83a1c0cd83094db5dece8f8bc8a7068cf6a0",
-        "bytes": 1037670,
+        "sha256": "3d33d79c37834de370714d6fa3fc21b9d11763cfd0e98faafcea8c15b1700a7d",
+        "bytes": 1089674,
         "pixels": [
           1254,
           1254
@@ -786,8 +801,8 @@
       },
       "render": {
         "path": "working/v2.7/visual/pilot_rework/pilot_fronts/HAR-AA-06_front.png",
-        "sha256": "e2d5df890d8b07bbd7ab09bfdebd96bda6608ed062a113e853bafcda13817ba2",
-        "bytes": 1229740,
+        "sha256": "acac0f763d1256652047af7f40131fb3f262132f40eeb5697d166ae4ca2728f5",
+        "bytes": 1319175,
         "pixels": [
           898,
           898
@@ -815,7 +830,14 @@
       },
       "text_in_illustration": false,
       "rejected_asset_reused": false,
-      "overflow": false
+      "overflow": false,
+      "targeted_rework_selection": {
+        "gate_reused_byte_exact": true,
+        "selected_direction": "GATE_PANEL_2_OVERHEAD_CLOSED_BASKET",
+        "selection_reason": "The overhead closed-basket direction keeps six distinct bodies and sends the official's hand directly to the opaque lid slit.",
+        "closed_basket_interior_hidden": true,
+        "tabletop_inspection_puck_removed": true
+      }
     },
     {
       "card_id": "HAR-FN-04",
@@ -1167,8 +1189,8 @@
       "mapped_count": 6,
       "source_art": {
         "path": "working/v2.7/visual/pilot_rework/source_art/BACK_ISLAND_source.jpg",
-        "sha256": "508516554a157e075f883d82583ec2825dd91e3040e5bcdebab0156c1cd59614",
-        "bytes": 1061627,
+        "sha256": "0aa05f2d364bb89d5752a1f39dfcc636c1a87a347e6dbf199ef1309aa7668078",
+        "bytes": 891151,
         "pixels": [
           1254,
           1254
@@ -1179,11 +1201,11 @@
         ],
         "mode": "RGB"
       },
-      "imagegen_workspace_output_sha256": "886f8f7c8000ead53aff2320d6701db3dd4b346cda344e29618ac9720bec2f92",
+      "imagegen_workspace_output_sha256": "08db277fc8d88bd34646dfed74931679d0a073fe3312a5e2144577d5b2619bbb",
       "render": {
         "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_ISLAND.png",
-        "sha256": "4344f2b403c6de6858b3a36a46a272222be14dfdb0248373ef9efcc8113f9094",
-        "bytes": 1757843,
+        "sha256": "90176a6a50fb6636a997558da30bd51fe21bc4ff0460b6ea0152fc2993c31f37",
+        "bytes": 1515535,
         "pixels": [
           898,
           898
@@ -1205,15 +1227,21 @@
         "icon": false,
         "kaleidoscopic_digital_symmetry": false
       },
-      "rejected_asset_reused": false
+      "rejected_asset_reused": false,
+      "targeted_rework_derivation": {
+        "source_visual_generation": "NEW_ORIGINAL_FROM_BINDING_REWORK_BRIEF",
+        "sea_value_and_edge_reference": "BACK_SEA_ROCK",
+        "render_transform": "RESIZE_898_AND_INTEGER_PAIRWISE_180_AVERAGE",
+        "exact_180_degree_pixel_safe": true
+      }
     },
     {
       "back_asset_id": "BACK_LIGHTHOUSE",
       "mapped_count": 4,
       "source_art": {
         "path": "working/v2.7/visual/pilot_rework/source_art/BACK_LIGHTHOUSE_source.jpg",
-        "sha256": "41063af52270e19ed0d81f62509dbd03a4b676a8fecedff360ffb877d168227d",
-        "bytes": 1152771,
+        "sha256": "b29b8e103809322c6b85800cd36b3f991ac3945e16ced0e5a4e9adac04890c85",
+        "bytes": 941067,
         "pixels": [
           1254,
           1254
@@ -1224,11 +1252,11 @@
         ],
         "mode": "RGB"
       },
-      "imagegen_workspace_output_sha256": "7c47f9002a7d8452279cd1efecb528bfb75cc0890fe9b16bc0cb8941712a6a56",
+      "imagegen_workspace_output_sha256": "af6b50d57f9af3aca551f7cabd17434c3295d094b9b0a3fefd42926dd27b12be",
       "render": {
         "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_LIGHTHOUSE.png",
-        "sha256": "6e0700215e57e7a2f1ed187b551ac1610b5345be554b95349165ae886d71437e",
-        "bytes": 2011836,
+        "sha256": "4a40af93ac5fd28423a384135be897e115da30dc7bb8de6b6763f730e0059854",
+        "bytes": 1633178,
         "pixels": [
           898,
           898
@@ -1250,7 +1278,13 @@
         "icon": false,
         "kaleidoscopic_digital_symmetry": false
       },
-      "rejected_asset_reused": false
+      "rejected_asset_reused": false,
+      "targeted_rework_derivation": {
+        "source_visual_generation": "NEW_ORIGINAL_FROM_BINDING_REWORK_BRIEF",
+        "sea_value_and_edge_reference": "BACK_SEA_ROCK",
+        "render_transform": "RESIZE_898_AND_INTEGER_PAIRWISE_180_AVERAGE",
+        "exact_180_degree_pixel_safe": true
+      }
     },
     {
       "back_asset_id": "BACK_SUPPORT",
@@ -1301,8 +1335,8 @@
   "contact_sheets": [
     {
       "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_12_PILOT_FRONTS_CONTACT_SHEET_v2.7.png",
-      "sha256": "065355f06e47d8fef6961f104a9575ce8838eb2c6db6b816c92205efe8dc2ba0",
-      "bytes": 4113407,
+      "sha256": "84ff4b50aa0cef455960bf6af6911e85e278aa040de73dfb4b0efdd588974b83",
+      "bytes": 4128278,
       "pixels": [
         1740,
         1790
@@ -1315,8 +1349,8 @@
     },
     {
       "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_12_PILOT_SEMANTIC_BLIND_CONTACT_SHEET_v2.7.png",
-      "sha256": "70d70eb22314643d67407c3a158f0fc6608df3df1605efee95deef8238d85fb9",
-      "bytes": 3301451,
+      "sha256": "a7c25d6404477b27090e8a7e1020a5bd0d7aff66fd2b84f648a0973b96a0079f",
+      "bytes": 3322940,
       "pixels": [
         1610,
         1220
@@ -1329,8 +1363,8 @@
     },
     {
       "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_7_BACKS_CONTACT_SHEET_v2.7.png",
-      "sha256": "221ec5abbd0445c263957f1a752ddd7539b6d248ed7e54d30419bf99e89f0d35",
-      "bytes": 3374690,
+      "sha256": "cf2efc8d94560c78dd4b3e12581bafa066180c45d85b83f2b0770465a7b2ae03",
+      "bytes": 3286073,
       "pixels": [
         1780,
         1190
@@ -1343,8 +1377,8 @@
     },
     {
       "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_10_REDRAW_THUMBNAIL_GATES_v2.7.png",
-      "sha256": "cdd6e751e850126de8db650d675263ad38bd406a0cc672e3e4a3e0c234535220",
-      "bytes": 3278386,
+      "sha256": "78b8d97e8ad9512bc9c638405f43505eec343611ea94a388236675ce0d5a3e96",
+      "bytes": 3267538,
       "pixels": [
         1000,
         2020
@@ -1357,8 +1391,8 @@
     },
     {
       "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_3_VARIABLE_MAP_LAYOUTS_CONTACT_SHEET_v2.7.png",
-      "sha256": "7dbe6984647df950e124e924545c13716677e7c495536a7bf77424878d71eeaa",
-      "bytes": 2111008,
+      "sha256": "3c725f5144dca32116ae2e805840b25db4e21fceb559c1840afaa1056ae9d264",
+      "bytes": 2075117,
       "pixels": [
         1350,
         1580
@@ -1378,8 +1412,8 @@
       "fixed_5x5": false,
       "closed": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_CLOSED_v2.7.png",
-        "sha256": "d101a8fca36765e51db0d653b75d0963485ff592d935d0af6827757e0e5a4143",
-        "bytes": 1151876,
+        "sha256": "8c4b20e12029bdecf18a8441198832627841417601117d1a3d0b62463a722d2d",
+        "bytes": 1108014,
         "pixels": [
           1110,
           920
@@ -1392,8 +1426,8 @@
       },
       "partially_open": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_PARTIALLY_OPEN_v2.7.png",
-        "sha256": "393918a7777f7c19bd7a930d82a9537c4eaaf0962f7f5d2a6d4f4d06af058caf",
-        "bytes": 1185219,
+        "sha256": "934183b446ebcbed4abfb5e41b0a9806d38e660c6fb3f0315aa6a4257c530f66",
+        "bytes": 1142597,
         "pixels": [
           1110,
           920
@@ -1416,8 +1450,8 @@
       "fixed_5x5": false,
       "closed": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_CLOSED_v2.7.png",
-        "sha256": "be51ed31da8a7484189297d5a15ed212d950b6aebf49affd5028c77a8678548e",
-        "bytes": 1240505,
+        "sha256": "c953e09dec6c483c5292e9a6dbf8320dd7ed3a6cd096e1b15517c8038fb2cda1",
+        "bytes": 1201701,
         "pixels": [
           1680,
           730
@@ -1430,8 +1464,8 @@
       },
       "partially_open": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_PARTIALLY_OPEN_v2.7.png",
-        "sha256": "acbf02dde2aa8e4dc0f050632869df5c4f1ac7f777b882c857e03a7c38adf1f2",
-        "bytes": 1347167,
+        "sha256": "e1f97c569facdd2ead6a75aa24f8172efc95ffc3b7667362b73b6b735d840d78",
+        "bytes": 1309301,
         "pixels": [
           1680,
           730
@@ -1454,8 +1488,8 @@
       "fixed_5x5": false,
       "closed": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_CLOSED_v2.7.png",
-        "sha256": "55a3540a738477017386ed35d4a434b5001d7742e81efc79151e8618c0000bdc",
-        "bytes": 1481501,
+        "sha256": "7c985df528889d9cac01cc1981e4561b58631b52739fa33c584da72fd7347663",
+        "bytes": 1436324,
         "pixels": [
           1300,
           1110
@@ -1468,8 +1502,8 @@
       },
       "partially_open": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_PARTIALLY_OPEN_v2.7.png",
-        "sha256": "c9737c7bdf5914b2e9003778cdd38983f965083a8c114355b76b1b8d29abdeb6",
-        "bytes": 1639342,
+        "sha256": "645f39e33c8e68cb88b12c7387dc61eeb2ec09c377a28ca071471760bf02718b",
+        "bytes": 1595180,
         "pixels": [
           1300,
           1110
@@ -1503,5 +1537,7 @@
     "duplex": "NOT_RUN",
     "light_leak": "NOT_RUN",
     "blind_orientation_leak": "NOT_RUN"
-  }
+  },
+  "art_direction_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
+  "binding_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md"
 }

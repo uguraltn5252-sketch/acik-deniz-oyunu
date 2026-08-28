@@ -2,9 +2,9 @@
   "schema_version": "2.7-accepted-pilot-control-1.0",
   "project": "FOULWAKE",
   "source_branch": "work/v2.7-visual",
-  "input_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-  "visual_delivery_commit": "bf944125ee35fecd722628f6a9be5f5dfcd5707a",
-  "chief_editor_source_commit": "1560b6eb1cc75b282c598cc4697921b9f472ce84",
+  "input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+  "visual_delivery_commit": "PENDING_TARGETED_REWORK_DELIVERY_COMMIT",
+  "chief_editor_source_commit": "74ac7eb764089a894b109990c1bc10304b7a614d",
   "accepted_art_direction_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
   "result": "PASS",
   "failures": [],
@@ -635,50 +635,16 @@
         },
         {
           "path": "working/v2.7/visual/pilot_rework/source_art/BACK_ISLAND_source.jpg",
-          "ocr_nonempty": true,
-          "candidate_tokens_sample": [
-            "eee",
-            "Zante",
-            "igh",
-            "ears",
-            "TON",
-            "CAS",
-            "Pee",
-            "Sag",
-            "bee",
-            "pSts",
-            "fig",
-            "ore",
-            "Sis",
-            "Sac",
-            "GEG",
-            "ast",
-            "Raps",
-            "S65"
-          ],
-          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "ocr_nonempty": false,
+          "candidate_tokens_sample": [],
+          "automated_result_interpretation": "NO_TEXT_DETECTED",
           "manual_visual_review_coherent_readable_text_detected": false
         },
         {
           "path": "working/v2.7/visual/pilot_rework/source_art/BACK_LIGHTHOUSE_source.jpg",
-          "ocr_nonempty": true,
-          "candidate_tokens_sample": [
-            "Cis",
-            "S53",
-            "rss",
-            "SSA",
-            "SAS",
-            "Duraes",
-            "Se4",
-            "Few",
-            "aCe",
-            "tae",
-            "Bes",
-            "Pane",
-            "tees",
-            "Zag"
-          ],
-          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "ocr_nonempty": false,
+          "candidate_tokens_sample": [],
+          "automated_result_interpretation": "NO_TEXT_DETECTED",
           "manual_visual_review_coherent_readable_text_detected": false
         },
         {
@@ -825,17 +791,9 @@
         },
         {
           "path": "working/v2.7/visual/pilot_rework/source_art/HAR-AA-06_illustration.jpg",
-          "ocr_nonempty": true,
-          "candidate_tokens_sample": [
-            "SSS",
-            "iis",
-            "cof",
-            "S43",
-            "peel",
-            "SEZ",
-            "ish"
-          ],
-          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "ocr_nonempty": false,
+          "candidate_tokens_sample": [],
+          "automated_result_interpretation": "NO_TEXT_DETECTED",
           "manual_visual_review_coherent_readable_text_detected": false
         },
         {
@@ -880,14 +838,9 @@
         },
         {
           "path": "working/v2.7/visual/pilot_rework/source_art/KAR-01_illustration.jpg",
-          "ocr_nonempty": true,
-          "candidate_tokens_sample": [
-            "Sie",
-            "pee",
-            "Tae",
-            "aes"
-          ],
-          "automated_result_interpretation": "LINE_ART_FALSE_POSITIVES_EXPECTED",
+          "ocr_nonempty": false,
+          "candidate_tokens_sample": [],
+          "automated_result_interpretation": "NO_TEXT_DETECTED",
           "manual_visual_review_coherent_readable_text_detected": false
         },
         {
@@ -926,7 +879,7 @@
         }
       ],
       "pass": true,
-      "note": "OCR pseudo-tokens from engraved strokes were manually checked; no coherent readable writing is present."
+      "note": "Targeted four source-art files returned empty Tesseract output and were manually inspected; unchanged engraved sources retain their prior reviewed records."
     },
     "variable_map_layouts": {
       "layout_count": 3,
@@ -948,6 +901,49 @@
       "full_pdf_created_false": true,
       "full_121_created_false": true,
       "pass": true
+    },
+    "targeted_rework_scope_and_gate_integrity": {
+      "authorized_changed_files_exact": 25,
+      "actual_changed_files_exact": 25,
+      "main_keep_assets_byte_exact": 15,
+      "protected_gates_byte_exact": 9,
+      "har_aa_06_gate_byte_exact": true,
+      "kar_01_new_gate_geometry_count": 3,
+      "contact_sheets_regenerated": 5,
+      "map_layout_rasters_regenerated": 6,
+      "pass": true
+    },
+    "targeted_visual_brief_checks": {
+      "KAR-01": {
+        "selected_gate_direction": "GATE_PANEL_1_OPEN_FORK",
+        "right_shoulder_and_rigging_load_legible": true,
+        "single_thin_mustard_horizon_break": true,
+        "binocular_pointing_bird_supernatural_eye_absent": true,
+        "pass": true
+      },
+      "HAR-AA-06": {
+        "selected_gate_direction": "GATE_PANEL_2_OVERHEAD_CLOSED_BASKET",
+        "hand_direct_to_closed_lid": true,
+        "object_crosses_narrow_lid_gap": true,
+        "basket_interior_hidden": true,
+        "tabletop_weighing_inspection_puck_absent": true,
+        "pass": true
+      },
+      "BACK_ISLAND": {
+        "asymmetric_low_land_spine": true,
+        "two_small_interrupted_foam_regions": true,
+        "sea_to_four_edges": true,
+        "halo_sticker_tile_absent": true,
+        "pass": true
+      },
+      "BACK_LIGHTHOUSE": {
+        "small_plain_polygonal_masonry_tower_in_diagonal_ridge": true,
+        "sea_to_four_edges": true,
+        "circular_islet_concentric_surf_target_badge_absent": true,
+        "beam_glow_ring_round_lens_modern_beacon_absent": true,
+        "pass": true
+      },
+      "pass": true
     }
   },
   "physical_tests": {
@@ -956,5 +952,7 @@
     "duplex": "NOT_RUN",
     "light": "NOT_RUN",
     "blind_orientation_leak": "NOT_RUN"
-  }
+  },
+  "art_direction_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
+  "binding_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md"
 }

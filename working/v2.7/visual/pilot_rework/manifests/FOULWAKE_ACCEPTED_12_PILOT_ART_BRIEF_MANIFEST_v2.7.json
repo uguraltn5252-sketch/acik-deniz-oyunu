@@ -1,15 +1,19 @@
 {
   "schema_version": "2.7-accepted-pilot-production-brief-1.0",
   "project": "FOULWAKE",
-  "status": "PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+  "status": "TARGETED_PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
   "sources": {
-    "chief_editor_source": "1560b6eb1cc75b282c598cc4697921b9f472ce84",
+    "chief_editor_source": "74ac7eb764089a894b109990c1bc10304b7a614d",
     "accepted_art_direction_source": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
-    "reviewed_visual_source": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
+    "reviewed_visual_source": "1b27232a53b09ac3ff00030f625bfc2703d15764",
     "art_direction_bible_blob": "11adbf70986401b25872101f986b07ecb9b992b4",
     "art_brief_manifest_blob": "16e41ce2fd237dbf1cf43a87a9c682ff1ebb3f7b",
     "pilot_production_briefs_blob": "7af68a33d2e40ee924a2aeb49f75881035ee6fee",
-    "back_briefs_blob": "bb9f9de721d359c08a3f9310eed7e4ed73d24b0e"
+    "back_briefs_blob": "bb9f9de721d359c08a3f9310eed7e4ed73d24b0e",
+    "art_direction_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
+    "binding_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
+    "input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+    "targeted_rework_delivery_commit": "PENDING_TARGETED_REWORK_DELIVERY_COMMIT"
   },
   "official_pilot_ids": [
     "KAR-01",
@@ -52,7 +56,20 @@
         "flavor": "Tehlikeyi uzaktan görür. İnsanları hâlâ yakından çözemedi."
       },
       "text_in_illustration": false,
-      "rejected_asset_reused": false
+      "rejected_asset_reused": false,
+      "targeted_rework": {
+        "gate_geometry_count": 3,
+        "gate_geometries": [
+          "OPEN_FORK",
+          "COMPRESSED_DIAGONAL",
+          "TWISTED_S_CURVE"
+        ],
+        "selected_gate_direction": "GATE_PANEL_1_OPEN_FORK",
+        "right_shoulder_loaded_down": true,
+        "body_physically_loads_rigging": true,
+        "naked_eye_to_single_thin_mustard_horizon_break": true,
+        "forbidden_binocular_pointing_bird_supernatural_eye": false
+      }
     },
     {
       "card_id": "KAR-06",
@@ -179,7 +196,15 @@
         "flavor": "Gümrükçü tek kişiydi. Yetkisi kalabalıktı."
       },
       "text_in_illustration": false,
-      "rejected_asset_reused": false
+      "rejected_asset_reused": false,
+      "targeted_rework": {
+        "gate_reused_byte_exact": true,
+        "selected_gate_direction": "GATE_PANEL_2_OVERHEAD_CLOSED_BASKET",
+        "hand_direct_to_closed_lid": true,
+        "excess_object_halfway_through_narrow_lid_gap": true,
+        "basket_interior_visible": false,
+        "tabletop_weighing_or_inspection_puck_present": false
+      }
     },
     {
       "card_id": "HAR-FN-04",
@@ -239,13 +264,29 @@
       "back_asset_id": "BACK_ISLAND",
       "mapped_count": 6,
       "exact_180_degree_pixel_safe": true,
-      "derived_from_prior_back": false
+      "derived_from_prior_back": false,
+      "targeted_rework": {
+        "sea_reference": "BACK_SEA_ROCK",
+        "low_asymmetric_land_spine": true,
+        "foam_regions": 2,
+        "full_foam_halo": false,
+        "sea_reaches_all_four_edges": true,
+        "sticker_or_tile_effect": false
+      }
     },
     {
       "back_asset_id": "BACK_LIGHTHOUSE",
       "mapped_count": 4,
       "exact_180_degree_pixel_safe": true,
-      "derived_from_prior_back": false
+      "derived_from_prior_back": false,
+      "targeted_rework": {
+        "sea_reference": "BACK_SEA_ROCK",
+        "low_diagonal_rock_ridge": true,
+        "small_plain_polygonal_masonry_tower": true,
+        "circular_islet_or_concentric_surf": false,
+        "beam_glow_ring_round_lens_modern_beacon": false,
+        "sea_reaches_all_four_edges": true
+      }
     },
     {
       "back_asset_id": "BACK_SUPPORT",
@@ -263,6 +304,31 @@
     "full_121_fronts_created": false,
     "full_pdf_created": false,
     "simulation_handoff_started": false,
-    "release_or_lock_declared": false
+    "release_or_lock_declared": false,
+    "authorized_changed_files_exact": 25
+  },
+  "targeted_rework": {
+    "authorized_changed_files_exact": 25,
+    "primary_renders": [
+      "KAR-01_front.png",
+      "HAR-AA-06_front.png",
+      "BACK_ISLAND.png",
+      "BACK_LIGHTHOUSE.png"
+    ],
+    "source_art_counterparts": [
+      "KAR-01_illustration.jpg",
+      "HAR-AA-06_illustration.jpg",
+      "BACK_ISLAND_source.jpg",
+      "BACK_LIGHTHOUSE_source.jpg"
+    ],
+    "new_gate": "KAR-01_three_thumbnail_gate.jpg",
+    "byte_exact_reused_gate": "HAR-AA-06_three_thumbnail_gate.jpg",
+    "derived_contact_sheets": 5,
+    "derived_map_layout_rasters": 6,
+    "main_keep_assets": 15,
+    "protected_gate_count": 9,
+    "full_121_fronts_created": false,
+    "full_pdf_created": false,
+    "simulation_handoff_started": false
   }
 }
