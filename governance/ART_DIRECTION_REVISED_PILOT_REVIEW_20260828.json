@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_ART_DIRECTION_REVISED_EXACT_PILOT_REVIEW_AND_CHIEF_EDITOR_DISPOSITION",
+  "recorded_at": "2026-08-28T10:50:14+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": {
+    "version": "v2.6",
+    "status": "STABLE_LOCKED",
+    "mutable": false
+  },
+  "status": "REVISED_PILOT_REWORK_REQUIRED_ACCEPTED_FOR_TARGETED_REWORK",
+  "art_direction_review": {
+    "workstream": "Sanat Yönetimi",
+    "visible_chat": "FOULWAKE Sanat Yönetmeni",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "review_evidence_type": "EXACT_VISUAL_PILOT_REVIEW",
+    "source_branch": "work/v2.7-art-direction",
+    "source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "chief_editor_source": "v2.7-design@6cbdeacc4618332d6e8efc03a7558b0b7c5bf799",
+    "input_visual_branch": "work/v2.7-visual",
+    "input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+    "art_direction_stage": "REVISED_ACCEPTED_12_PILOT_EXACT_REVIEW",
+    "scope": {
+      "pilot_fronts": 12,
+      "pilot_backs": 7,
+      "sketch_gates": 10,
+      "contact_sheets": 5,
+      "variable_map_layouts": 6,
+      "exact_visual_files_opened": 40
+    },
+    "changed_files": [],
+    "protected_fields_confirmed": true,
+    "temporary_subagents": [],
+    "new_visual_production_authorized": false,
+    "full_121_production_authorized": false,
+    "simulation_authorized": false,
+    "lock_requested": false,
+    "result": "REWORK_REQUIRED_PENDING_CHIEF_EDITOR_DISPOSITION",
+    "tests_run": {
+      "mandatory_source_chain": "PASS",
+      "visual_handoff_acceptance_and_evidence": "PASS",
+      "canonical_delivery_evidence_binding": "PASS",
+      "exact_visual_open": "PASS_40_OF_40",
+      "front_review": "PASS_12_OF_12",
+      "back_review": "PASS_7_OF_7",
+      "sketch_gate_review": "PASS_10_OF_10",
+      "contact_sheet_review": "PASS_5_OF_5",
+      "variable_layout_review": "PASS_6_OF_6",
+      "exact_card_text": "PASS_12_OF_12",
+      "same_model_pose_animal_joke_scan": "PASS",
+      "kaptan_style_only": "PASS",
+      "text_and_meaningless_glyph_scan": "PASS",
+      "period_1721": "PASS",
+      "digital_gloss_scan": "PASS",
+      "technical_180_safety": "PASS_7_OF_7",
+      "artistic_180_safety": "PARTIAL_5_OF_7",
+      "sea_rock_blindness": "PASS",
+      "fixed_5x5_independence": "PASS",
+      "variable_map_geometry": "PASS"
+    }
+  },
+  "creative_verdict": "REWORK_REQUIRED",
+  "foulwake_world_fit": {
+    "result": "PARTIAL_PASS",
+    "main_assets_keep": 15,
+    "main_assets_rework_required": 4
+  },
+  "material_and_line_language": "Genel mat indigo–oker, mürekkep, tarama, kirli kâğıt ve eski baskı dili KEEP. BACK_ISLAND ve BACK_LIGHTHOUSE çevresindeki yüksek değerli köpük sistemi rework.",
+  "composition_and_deck_rhythm": "Genel ritim güçlü; KAR-01 bağlayıcı bedensel ufuk seçimi yerine kahraman portresine, HAR-AA-06 kapalı ıskarta fiili yerine masa üstü incelemeye kayıyor.",
+  "front_disposition": {
+    "totals": {
+      "keep": 10,
+      "rework_required": 2
+    },
+    "items": [
+      {
+        "id": "KAR-01",
+        "file": "KAR-01_front.png",
+        "decision": "REWORK_REQUIRED",
+        "reason": "Kahramanca ufka bakış; tek belirsiz ufuk kırılması ve bedensel iş okunmuyor."
+      },
+      {
+        "id": "KAR-06",
+        "file": "KAR-06_front.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "KAR-19",
+        "file": "KAR-19_front.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "GUC-06",
+        "file": "GUC-06_front.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "GUC-27",
+        "file": "GUC-27_front.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "ERZ-01",
+        "file": "ERZ-01_front.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "SAD-H-03",
+        "file": "SAD-H-03_front.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "HAR-AD-08",
+        "file": "HAR-AD-08_front.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "HAR-KY-06",
+        "file": "HAR-KY-06_front.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "HAR-AA-06",
+        "file": "HAR-AA-06_front.png",
+        "decision": "REWORK_REQUIRED",
+        "reason": "El kapalı ıskarta sepeti yerine masa üstü inceleme noktasına iner."
+      },
+      {
+        "id": "HAR-FN-04",
+        "file": "HAR-FN-04_front.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "SET-KP-01",
+        "file": "SET-KP-01_front.png",
+        "decision": "KEEP"
+      }
+    ]
+  },
+  "back_disposition": {
+    "totals": {
+      "keep": 5,
+      "rework_required": 2
+    },
+    "items": [
+      {
+        "id": "BACK_CHARACTER",
+        "file": "BACK_CHARACTER.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "BACK_POWER",
+        "file": "BACK_POWER.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "BACK_LOYALTY",
+        "file": "BACK_LOYALTY.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "BACK_SEA_ROCK",
+        "file": "BACK_SEA_ROCK.png",
+        "decision": "KEEP"
+      },
+      {
+        "id": "BACK_ISLAND",
+        "file": "BACK_ISLAND.png",
+        "decision": "REWORK_REQUIRED",
+        "reason": "Tam parlak köpük halosu sticker/özel karo etkisi üretiyor."
+      },
+      {
+        "id": "BACK_LIGHTHOUSE",
+        "file": "BACK_LIGHTHOUSE.png",
+        "decision": "REWORK_REQUIRED",
+        "reason": "Dairesel islet ve konsantrik köpük hedef/rozet, kapstan/optik çağrışımı üretiyor."
+      },
+      {
+        "id": "BACK_SUPPORT",
+        "file": "BACK_SUPPORT.png",
+        "decision": "KEEP"
+      }
+    ]
+  },
+  "contact_sheet_and_layout_qa": {
+    "front_and_semantic_blind": "PASS_WITH_KAR_01_AND_HAR_AA_06_EXCEPTIONS",
+    "sketch_gates": "9_OF_10_PASS_KAR_01_REQUIRES_THREE_NEW_BODY_GEOMETRIES",
+    "har_aa_06_existing_gate": "KEEP_USE_ACCEPTABLE_CLOSED_BASKET_DIRECTION",
+    "back_contact_sheet": "REWORK_REQUIRED_BACK_ISLAND_AND_BACK_LIGHTHOUSE",
+    "variable_geometries": [
+      "COMPACT_CLUSTER",
+      "ELONGATED_ROUTE",
+      "IRREGULAR_BRANCH"
+    ],
+    "six_layout_positions_and_orientations": "KEEP_REGENERATE_WITH_REWORKED_MASTERS",
+    "family_visibility": {
+      "sea_rock": "PASS",
+      "island": "PASS",
+      "lighthouse": "PARTIAL_FAIL"
+    },
+    "exact_front_identity_and_result_blindness": "PASS"
+  },
+  "redraw_briefs": {
+    "KAR-01": "Çok uzun kırklı kadın, ana direk çarmıhı ve geniş gök korunur. Heykelsi profil kalkar; sağ omuz halat yüküyle düşer, gövde armaya ağırlık verir. Çıplak göz ve küçük baş eğimi kart boyunda seçilen tek ince hardal ufuk kırılmasına kilitlenir. Üç yeni gate üç ayrı beden geometrisi olmalıdır.",
+    "HAR-AA-06": "Altı beden, kulübe, uzun masa, küçük yüz-kılsız memur ve kapalı sepet korunur. El doğrudan kapak üzerine gider; fazla nesne dar aralıktan aşağı geçer, iç görünmez. Her kişi için tek kalan nesne sahibiyle hizalıdır. İnceleme puku kalkar.",
+    "BACK_ISLAND": "BACK_SEA_ROCK ölçek/kenar değerleri korunur. Asimetrik alçak kara omurgası, kesintili iki küçük köpük bölgesi; deniz dört kenara sürer. Halo, temiz grafik boşluk ve exact ada özelliği yoktur.",
+    "BACK_LIGHTHOUSE": "Dairesel islet/konsantrik surf kalkar. Çok dik kuşbakışında alçak çapraz kaya sırtına gömülü küçük sade çokgen yığma-taş kule; ışın, glow, halka, lens, modern beacon yoktur."
+  },
+  "keep": {
+    "fronts": [
+      "KAR-06",
+      "KAR-19",
+      "GUC-06",
+      "GUC-27",
+      "ERZ-01",
+      "SAD-H-03",
+      "HAR-AD-08",
+      "HAR-KY-06",
+      "HAR-FN-04",
+      "SET-KP-01"
+    ],
+    "backs": [
+      "BACK_CHARACTER",
+      "BACK_POWER",
+      "BACK_LOYALTY",
+      "BACK_SEA_ROCK",
+      "BACK_SUPPORT"
+    ],
+    "shared": [
+      "EXACT_CARD_TEXT_12_OF_12",
+      "CURRENT_CARD_FRAME_SYSTEM",
+      "KAPTAN_STYLE_ONLY",
+      "MATTE_INDIGO_OCHRE_INK_HATCH_DIRTY_PAPER",
+      "THREE_VARIABLE_MAP_GEOMETRIES",
+      "FAMILY_VISIBLE_EXACT_IDENTITY_BLIND",
+      "TECHNICAL_180_AND_42_6_4_TOPOLOGY"
+    ]
+  },
+  "remove_motifs": {
+    "KAR-01": [
+      "HEROIC_STATUE_PROFILE",
+      "EMPTY_HORIZON_WITHOUT_VALUE_BREAK"
+    ],
+    "HAR-AA-06": [
+      "TABLETOP_INSPECTION_POINT",
+      "HAND_AWAY_FROM_CLOSED_DISCARD_BASKET"
+    ],
+    "BACK_ISLAND": [
+      "FULL_FOAM_HALO",
+      "CLEAN_CENTER_VOID",
+      "STICKER_TILE_EFFECT"
+    ],
+    "BACK_LIGHTHOUSE": [
+      "CIRCULAR_ISLET",
+      "CONCENTRIC_SURF_TARGET",
+      "ROUND_LENS_CAPSTAN_READING",
+      "CENTRAL_EMBLEM_EFFECT"
+    ]
+  },
+  "chief_editor_disposition": {
+    "art_direction_review_accepted": true,
+    "reviewed_visual_pilot_accepted": false,
+    "current_pilot_accepted": false,
+    "visual_production_authorized": "TARGETED_PILOT_REWORK_ONLY",
+    "binding_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
+    "primary_assets_to_rework": [
+      "KAR-01_front.png",
+      "HAR-AA-06_front.png",
+      "BACK_ISLAND.png",
+      "BACK_LIGHTHOUSE.png"
+    ],
+    "keep_front_ids": [
+      "KAR-06",
+      "KAR-19",
+      "GUC-06",
+      "GUC-27",
+      "ERZ-01",
+      "SAD-H-03",
+      "HAR-AD-08",
+      "HAR-KY-06",
+      "HAR-FN-04",
+      "SET-KP-01"
+    ],
+    "keep_back_ids": [
+      "BACK_CHARACTER",
+      "BACK_POWER",
+      "BACK_LOYALTY",
+      "BACK_SEA_ROCK",
+      "BACK_SUPPORT"
+    ],
+    "required_regeneration": {
+      "kar_01_sketch_gate": 1,
+      "har_aa_06_sketch_gate": 0,
+      "contact_sheets": 5,
+      "variable_map_layouts": 6,
+      "report": 1,
+      "manifests_and_checksums": 4
+    },
+    "authorized_changed_files_exact": 25,
+    "full_121_production_authorized": false,
+    "simulation_may_start": false,
+    "release_pass": false,
+    "lock_allowed": false,
+    "project_owner_final_aesthetic_acceptance_pending": true,
+    "next_recipient": "FOULWAKE Görsel Tasarım 2"
+  },
+  "physical_test_limitation": "Baskı, kesim, duplex, ışık ve normal masa-mesafesi testleri yapılmadı.",
+  "open_risks": [
+    "KAR-19 çizme izi ile arka-yüz master tekrarının gerçek ölçekte okunurluğu doğrulanmalıdır.",
+    "Ada/Fener exact 180° piksel eşleşmesi ve kör exact-kimlik testleri yeniden çalıştırılmalıdır.",
+    "Altı map-layout ve beş contact sheet yeniden türetilmeden kabul kanıtı sayılamaz.",
+    "SRC-002 açıktır.",
+    "Tam 121 üretim yetkili değildir."
+  ]
+}

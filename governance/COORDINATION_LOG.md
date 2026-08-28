@@ -1,5 +1,26 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 28 Ağustos 2026 — REVİZE EXACT PİLOT / HEDEFLİ DÖRT-ASSET REWORK
+
+**Görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  
+**Sanat Yönetimi:** `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`  
+**İncelenen Görsel:** `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764`  
+**Baş Editör baz kaynağı:** `v2.7-design@6cbdeacc4618332d6e8efc03a7558b0b7c5bf799`  
+**Kanıt:** `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`  
+**İş emri:** `working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`
+
+Sanat Yönetmeni exact 40/40 incelemeyi tamamladı. Manifest/checksum PASS'i
+sanatsal PASS yerine kullanılmadı. Sonuç `REWORK_REQUIRED`: önlerde
+10 KEEP / 2 REWORK; arkalarda 5 KEEP / 2 REWORK.
+
+Rework `KAR-01_front.png`, `HAR-AA-06_front.png`, `BACK_ISLAND.png`
+ve `BACK_LIGHTHOUSE.png`dır. Baş Editör mevcut pilotu kabul etmedi; yalnız
+dört render/source, `KAR-01` gate'i, 5 sheet, 6 mevcut layout, 1 rapor ve
+4 manifestten oluşan exact 25 dosyalık hedefli reworkü açtı. On beş ana KEEP
+ve dokuz gate byte-exact kalır. Tam 121, PDF, Simülasyon, release ve kilit
+yoktur. Fiziksel testler ile `SRC-002` açık; geçici ajan kullanılmamıştır.
+
+
 ## 27 Ağustos 2026 — REVİZE PİLOT GÖRSEL HANDOFFU / SANAT İNCELEMESİNE GİRİŞ
 
 **Görünür sohbet:** `FOULWAKE Görsel Tasarım 2`  

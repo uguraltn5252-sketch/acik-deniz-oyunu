@@ -10,9 +10,10 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Aktif çalışma:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
-- **Gözlenen pilot paketi:** `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` / `OFFICIAL_VISUAL_HANDOFF_ACCEPTED_FOR_ART_DIRECTION_REVIEW`
+- **Gözlenen pilot paketi:** `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` / `REVISED_EXACT_REVIEW_REWORK_REQUIRED`
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `PILOT_REVIEW_FAIL / REVISED_PILOT_EXACT_REVIEW_AUTHORIZED / RE-REVIEW_NOT_STARTED`
+- **Sanat Yönetimi:** `REVISED_PILOT_REVIEW_COMPLETE / 10+5 KEEP / 2+2 REWORK`
+- **Görsel üretim yetkisi:** `TARGETED_FOUR_MASTER_PILOT_REWORK_ONLY`
 - **Kilit izni:** **YOK**
 
 Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
@@ -59,6 +60,15 @@ manifestleri doğrulayarak handoffu Sanat Yönetimi incelemesine giriş olarak
 kabul etmiştir. Kanıt `governance/VISUAL_PILOT_HANDOFF_20260826.json`dır. Bu
 kabul Sanat Yönetimi PASS'i, proje sahibi estetik kabulü, aktif candidate,
 full production, Simülasyon, release veya kilit değildir.
+
+Revize exact paket, görünür `FOULWAKE Sanat Yönetmeni` hattında 40/40
+görsel açılarak bağımsız incelenmiştir. Sonuç `REWORK_REQUIRED`dır:
+önlerde 10 KEEP / 2 REWORK (`KAR-01`, `HAR-AA-06`); arkalarda 5 KEEP /
+2 REWORK (`BACK_ISLAND`, `BACK_LIGHTHOUSE`). On beş ana KEEP
+byte-exact korunur. Dört render/source, yalnız `KAR-01` gate'i, beş contact
+sheet, altı mevcut layout, bir rapor ve dört manifestten oluşan exact 25
+dosyalık rework yetkilidir. Kanıt `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`, uygulama
+`working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`dır. Tam 121, PDF, Simülasyon, release ve kilit değildir.
 
 ## Her oturumda zorunlu okuma sırası
 
@@ -187,12 +197,10 @@ Simülasyon attestation varken sürüm kilitlenmez.
 
 ## Güncel devam komutu
 
-> `v2.7-design` dalındaki zorunlu yönetişim dosyalarını,
-> `governance/VISUAL_PILOT_HANDOFF_20260826.json` ile kabul edilmiş
-> `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`
-> brieflerini oku. `FOULWAKE Sanat Yönetmeni`, exact
-> `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` paketindeki 12 ön
-> yüzü, 7 arka yüzü, 5 contact sheeti ve 6 değişken harita düzenini bağımsız
-> görsel incelemeye alsın; kart-kart ve arka-yüz-bazında KEEP/REWORK dispozisyonu
-> versin. Bu aşamada Görsel üretim, kalan 109 ön yüz, tam PDF, Simülasyon,
-> release ve kilit yoktur.
+> `v2.7-design` üzerindeki `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json` ve
+> `working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md` kaynaklarını oku. `FOULWAKE Görsel Tasarım 2`, exact
+> `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` paketinden yalnız `KAR-01`,
+> `HAR-AA-06`, `BACK_ISLAND`, `BACK_LIGHTHOUSE` ve tanımlı bağımlı
+> kanıtları değiştirerek 25 dosyalık hedefli pilot reworkünü uygulasın. On beş
+> ana KEEP ve dokuz korunmuş gate byte-exact kalmalıdır. Tam 121, PDF,
+> Simülasyon, release ve kilit yoktur.
