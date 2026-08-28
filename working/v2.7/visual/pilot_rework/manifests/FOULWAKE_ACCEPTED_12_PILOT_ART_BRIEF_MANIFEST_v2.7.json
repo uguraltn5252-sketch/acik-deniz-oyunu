@@ -13,7 +13,7 @@
     "art_direction_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
     "binding_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
     "input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
-    "targeted_rework_delivery_commit": "PENDING_TARGETED_REWORK_DELIVERY_COMMIT"
+    "targeted_rework_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d"
   },
   "official_pilot_ids": [
     "KAR-01",

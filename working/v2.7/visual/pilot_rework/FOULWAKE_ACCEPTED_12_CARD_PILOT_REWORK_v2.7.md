@@ -13,7 +13,7 @@ Bu paket yalnız dört yetkili ana görseli ve source-art karşılıklarını ye
 - Sanat Yönetimi inceleme kanıtı: `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`
 - Bağlayıcı hedefli rework emri: `working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`
 - İncelenen Görsel / çalışma başlangıcı: `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764`
-- Hedefli rework teslim commit'i: `work/v2.7-visual@PENDING_TARGETED_REWORK_DELIVERY_COMMIT`
+- Hedefli rework teslim commit'i: `work/v2.7-visual@88907294edd326c118573f5ada7406e5fc42ee4d`
 - Çalışma dalı: `work/v2.7-visual`
 
 ## Yetkili dört ana rework
