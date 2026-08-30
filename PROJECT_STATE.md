@@ -16,7 +16,7 @@ Proje sahibi exact `23c062f6...` pilotuna estetik kabul vermedi. Önceki Sanat Y
 
 Yüklenen `KAPTAN` kartı `working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg` yolunda exact saklanır. Geminin ve martının tekrarı bağlayıcı değildir; bağlayıcı olan kalın mürekkep, yoğun gravür taraması, sıcak kirli kâğıt, mat lacivert–oker–pas paleti, grotesk ama tutarlı karakter geometrisi ve eski basım kart hissidir. `SET-KP-01` teknik kimliği korunur, görünen adı `KAPTAN` olur ve mevcut devredilebilir kaptanlık mekaniği korunur.
 
-Mevcut validatorın final kart yazısını kanonik kaynakla piksel/render düzeyinde karşılaştırmadığı, yalnız manifestteki self-declared `exact: true` alanına güvendiği tespit edilmiştir. Görsel model metin üretemez; final metin şablonla yerleştirilir ve OCR/render-source → kanonik exact karşılaştırması olmadan ön yüz KEEP sayılamaz.
+Mevcut validatorın final kart yazısını kanonik kaynakla piksel/render düzeyinde karşılaştırmadığı, yalnız manifestteki self-declared `exact: true` alanına güvendiği tespit edilmiştir. Görsel model metin üretemez; final metin şablonla yerleştirilir ve OCR/render-source → kanonik exact karşılaştırması olmadan ön yüz KEEP sayılamaz. Her uyuşmazlığın zorunlu sonucu `BLOCKED_COPY_DRIFT`tir.
 
 Yeni iş emri: `working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md`. Şu anda yalnız en fazla 700 kelime/1 dosyalık Sanat Yönetimi mikro patchi yetkilidir; Görsel üretim kapalıdır.
 
