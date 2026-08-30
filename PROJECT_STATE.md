@@ -5,9 +5,9 @@
 **Aktif taslak:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`  
 **Entegrasyon dalı:** `v2.7-design`  
 **Aktif workspace:** `working/v2.7/`  
-**Aktif görsel candidate:** YOK — exact `0cb2bd6f...` pilotunda yalnız `BACK_LIGHTHOUSE` REWORK_REQUIRED  
-**Sanat Yönetimi:** `12 FRONT KEEP / 6 BACK KEEP / 1 BACK REWORK`  
-**Görsel kapısı:** `BACK_LIGHTHOUSE-ONLY PILOT REWORK AUTHORIZED / 15 FILES EXACT`  
+**Aktif görsel candidate:** YOK — exact `23c062f6...` lighthouse-only handoffu Sanat Yönetimi incelemesini bekliyor  
+**Sanat Yönetimi:** `BACK_LIGHTHOUSE FINAL EXACT REVIEW PENDING`  
+**Görsel kapısı:** `15 FILE HANDOFF ACCEPTED FOR ART DIRECTION REVIEW / PRODUCTION PAUSED`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
 
 ## Çalışma hattı durumu
@@ -15,9 +15,11 @@
 | Hat | Exact kaynak | Baş Editör hükmü | Sonraki adım |
 |---|---|---|---|
 | Hikâye | `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` | Kabul edildi ve exact üç Hikâye blobu entegre edildi; release PASS değil | Görsel için exact metin girdisi |
-| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | Exact `0cb2bd6f...` incelemesi: KAR-01, HAR-AA-06 ve BACK_ISLAND KEEP; yalnız BACK_LIGHTHOUSE REWORK | Son fener teslimini yeniden inceleme |
-| Görsel | `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` | 25/25 teslim doğrulandı; yalnız fener ve bağlı kanıtlar için 15 dosyalık rework yetkili | `FOULWAKE Görsel Tasarım 2` lighthouse-only emrini uygular |
+| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | Exact `23c062f6...` final fener paketinin bağımsız estetik incelemesi yetkili | BACK_LIGHTHOUSE, 2 sheet ve 6 layout rasterını exact açıp karar verir |
+| Görsel | `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` | Exact 15 dosyalık handoff kabul edildi; kanonik üretim `c8081aa9...` | Üretim durur; Sanat Yönetimi sonucunu bekler |
 | Simülasyon | dal yok | Başlamadı | Yeni görsel aday kabulünden sonra |
+
+Lighthouse-only teslim zinciri GitHub'da exact doğrulanmıştır: başlangıç `0cb2bd6f03e2d84948741c162f22b8fd2ff064ad`, kanonik üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`, kanıt ve dal başı `23c062f6de06c32eab224b3440c8474725d4fe9e`. Cumulative fark yalnız yetkili 15 dosyadır; takip commiti yalnız rapor ile dört manifest/checksum/provenance kaydını teslim hashine bağlar. Teknik handoff `governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json` ile Sanat Yönetimi incelemesine kabul edilmiştir. Bu estetik kabul, proje sahibi onayı veya aktif candidate değildir.
 
 Görsel teslimin `121/121`, 7 arka yüz ve PDF/hash zinciri teknik olarak kayıtlı
 olması sanat kabulü değildir. Kaynak pakette yalnız altı aile illüstrasyon

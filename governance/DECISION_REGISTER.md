@@ -35,6 +35,8 @@ geçersiz kılar.
 | `DEC-20260830-01` | BINDING TARGETED REWORK REVIEW | `work/v2.7-visual@0cb2bd6f...` exact incelemesinde `KAR-01`, `HAR-AA-06` ve `BACK_ISLAND` KEEP; yalnız `BACK_LIGHTHOUSE` REWORK_REQUIREDdır. | Üç kabul dondurulur. Fener ailesi normal dijital masa-layout mesafesinde anlaşılmadan pilot kabul edilmez. |
 | `DEC-20260830-02` | BACK_LIGHTHOUSE-ONLY AUTHORIZATION | Yalnız fener source/renderı, 2 etkilenen sheet, 6 layout, 1 rapor ve 4 kanıt kaydı; exact 15 dosya değişebilir. | 18 ana görsel, 16 source-art, 10 gate ve 3 etkilenmeyen sheet byte-exact kalır; kapsam sapması BLOCKEDdır. Tam 121/PDF/Simülasyon/release/kilit yoktur. |
 
+| `DEC-20260830-03` | LIGHTHOUSE-ONLY HANDOFF ACCEPTANCE | `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` exact 15-file handoff; kanonik üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`, evidence/head `23c062f6de06c32eab224b3440c8474725d4fe9e` olarak teknik açıdan tutarlı bulundu. | Yalnız exact Sanat Yönetimi incelemesine giriş kabulüdür. Yeni Görsel üretim, tam 121, PDF, Simülasyon, release ve kilit yoktur; aktif candidate ve estetik PASS oluşmaz. |
+
 ## Açık kaynak dispozisyonu
 
 `SRC-002`: v2.6 kayıtlarındaki `GUC-22 = Bayat Peksimet` ile v2.7 kaynağındaki

@@ -75,8 +75,8 @@
       "map_back_decision": "FAMILY_VISIBLE_EXACT_FRONT_BLIND_VARIABLE_LAYOUT",
       "art_direction_pilot_review_evidence": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
       "reviewed_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-      "current_pilot_result": "REWORK_REQUIRED_BACK_LIGHTHOUSE_ONLY",
-      "next_pilot_scope": "BACK_LIGHTHOUSE_ONLY_PLUS_DEPENDENT_EVIDENCE",
+      "current_pilot_result": "PENDING_EXACT_ART_DIRECTION_LIGHTHOUSE_REVIEW",
+      "next_pilot_scope": "EXACT_9_RASTER_LIGHTHOUSE_REVIEW_ONLY",
       "revised_art_direction_pilot_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
       "revised_reviewed_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
       "current_pilot_front_counts": {
@@ -115,10 +115,14 @@
         "BACK_SUPPORT"
       ],
       "authorized_changed_files_exact": 15,
-      "pilot_authorization_state": "BACK_LIGHTHOUSE_ONLY_REWORK_ACTIVE",
+      "pilot_authorization_state": "CONSUMED_PENDING_ART_DIRECTION_REVIEW",
       "art_direction_lighthouse_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
       "latest_reviewed_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
-      "latest_visual_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d"
+      "latest_visual_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb",
+      "latest_visual_evidence_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+      "latest_visual_handoff_evidence": "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
+      "art_direction_review_input_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+      "new_visual_production_authorized": false
     }
   ],
   "non_source_evidence": [

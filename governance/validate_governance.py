@@ -89,6 +89,7 @@ REQUIRED_PATHS = [
     "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
     "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
     "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+    "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
     "governance/SIM_QA_ATTESTATION_SCHEMA.json",
     "governance/LOCK_AUTHORIZATION_SCHEMA.json",
     "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
@@ -221,8 +222,8 @@ if story.get("source_commit") != "e04eef7f1fef6ea407feaaf26558551297c44b37":
 if story.get("integrated_to_v2_7_design") is not True:
     error("accepted Story blobs must be recorded as integrated")
 visual = deliveries.get("visual", {})
-if visual.get("status") != "BACK_LIGHTHOUSE_ONLY_REWORK_AUTHORIZED":
-    error("Visual status must record lighthouse-only pilot rework authorization")
+if visual.get("status") != "LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_ART_DIRECTION_REVIEW":
+    error("Visual status must record lighthouse-only handoff acceptance for Art Direction review")
 if visual.get("source_commit") != "e91581bb336dfcbab5da1d48a256577f9251f891":
     error("Visual delivery exact head is wrong")
 if visual.get("full_production_delivery_commit") != "494b8440bba722a9053f72b2fdeffc4286a61e17":
@@ -267,8 +268,10 @@ if revised_review.get("authorized_changed_files_exact") != 25:
     error("targeted rework changed-file budget must be 25")
 if visual.get("targeted_rework_order") != "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md":
     error("Visual lighthouse-only rework order path is wrong")
-if visual.get("new_visual_production_authorized") is not True:
-    error("lighthouse-only pilot rework must be authorized")
+if visual.get("new_visual_production_authorized") is not False or visual.get("rework_authorized") is not False:
+    error("Visual production must pause after lighthouse-only handoff")
+if visual.get("lighthouse_only_authorization_consumed") is not True:
+    error("lighthouse-only authorization must be recorded as consumed")
 if visual.get("full_production_authorized") is not False:
     error("full production must remain unauthorized")
 if visual.get("targeted_rework_front_ids") != []:
@@ -277,8 +280,16 @@ if visual.get("targeted_rework_back_ids") != ["BACK_LIGHTHOUSE"]:
     error("Visual lighthouse-only back set is wrong")
 if visual.get("authorized_changed_files_exact") != 15:
     error("Visual lighthouse-only changed-file budget is wrong")
-if visual.get("current_workstream_branch_head") != "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad":
+if visual.get("current_workstream_branch_head") != "23c062f6de06c32eab224b3440c8474725d4fe9e":
     error("Visual current branch head is wrong")
+if visual.get("lighthouse_only_canonical_delivery_commit") != "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb":
+    error("lighthouse-only canonical delivery commit is wrong")
+if visual.get("lighthouse_only_evidence_commit") != "23c062f6de06c32eab224b3440c8474725d4fe9e":
+    error("lighthouse-only evidence commit is wrong")
+if visual.get("lighthouse_only_handoff_evidence") != "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json":
+    error("lighthouse-only handoff evidence path is wrong")
+if visual.get("lighthouse_only_changed_files_exact") != 15:
+    error("lighthouse-only delivered changed-file count is wrong")
 if visual.get("targeted_four_master_delivery_commit") != "88907294edd326c118573f5ada7406e5fc42ee4d":
     error("targeted four-master canonical delivery commit is wrong")
 if visual.get("byte_exact_keep_main_assets") != 18 or visual.get("byte_exact_keep_source_art") != 16:
@@ -305,6 +316,26 @@ if lighthouse_review.get("authorized_changed_files_exact") != 15:
     error("lighthouse-only authorization must be 15 files")
 if lighthouse_review.get("full_121_production_authorized") is not False or lighthouse_review.get("simulation_authorized") is not False:
     error("lighthouse review cannot grant full production or Simulation")
+
+visual_lighthouse_handoff = state.get("visual_lighthouse_handoff", {})
+if visual_lighthouse_handoff.get("status") != "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW":
+    error("visual lighthouse handoff state is missing")
+if visual_lighthouse_handoff.get("evidence_path") != "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json":
+    error("visual lighthouse handoff state evidence path is wrong")
+if visual_lighthouse_handoff.get("source_commit") != "23c062f6de06c32eab224b3440c8474725d4fe9e":
+    error("visual lighthouse handoff source commit is wrong")
+if visual_lighthouse_handoff.get("canonical_delivery_commit") != "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb":
+    error("visual lighthouse handoff canonical delivery is wrong")
+if visual_lighthouse_handoff.get("input_visual_commit") != "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad":
+    error("visual lighthouse handoff input commit is wrong")
+if visual_lighthouse_handoff.get("changed_files_exact") != 15:
+    error("visual lighthouse handoff changed-file count is wrong")
+if visual_lighthouse_handoff.get("technical_handoff_accepted") is not True or visual_lighthouse_handoff.get("aesthetic_accepted") is not False:
+    error("visual lighthouse handoff acceptance boundary is wrong")
+if visual_lighthouse_handoff.get("art_direction_review_authorized") is not True or visual_lighthouse_handoff.get("visual_production_authorized") is not False:
+    error("visual lighthouse handoff next-stage authorization is wrong")
+if visual_lighthouse_handoff.get("full_121_production_authorized") is not False or visual_lighthouse_handoff.get("simulation_authorized") is not False:
+    error("visual lighthouse handoff cannot grant full production or Simulation")
 
 simulation = deliveries.get("simulation", {})
 if simulation.get("status") != "PENDING_NEW_ART_CANDIDATE":
@@ -503,6 +534,52 @@ if lighthouse_disposition.get("full_121_production_authorized") is not False or 
 if lighthouse_disposition.get("release_pass") is not False or lighthouse_disposition.get("lock_allowed") is not False:
     error("lighthouse-only review cannot grant release or lock")
 
+visual_lighthouse_evidence = read_json("governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json")
+if visual_lighthouse_evidence.get("record_type") != "VISIBLE_CHAT_VISUAL_LIGHTHOUSE_ONLY_HANDOFF":
+    error("visual lighthouse handoff record type is wrong")
+visual_lighthouse_delivery = visual_lighthouse_evidence.get("visual_handoff", {})
+if visual_lighthouse_delivery.get("visible_chat") != "FOULWAKE Görsel Tasarım 2" or visual_lighthouse_delivery.get("visible_chat_ack") is not True:
+    error("visual lighthouse handoff requires correct visible chat ACK")
+if visual_lighthouse_delivery.get("evidence_type") != "VISIBLE_CHAT_WORKSTREAM":
+    error("visual lighthouse handoff evidence type is wrong")
+if visual_lighthouse_delivery.get("source_branch") != "work/v2.7-visual":
+    error("visual lighthouse handoff branch is wrong")
+if visual_lighthouse_delivery.get("source_commit") != "23c062f6de06c32eab224b3440c8474725d4fe9e":
+    error("visual lighthouse handoff source commit is wrong")
+if visual_lighthouse_delivery.get("canonical_delivery_commit") != "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb":
+    error("visual lighthouse handoff canonical delivery is wrong")
+if visual_lighthouse_delivery.get("evidence_commit") != "23c062f6de06c32eab224b3440c8474725d4fe9e":
+    error("visual lighthouse handoff evidence commit is wrong")
+if visual_lighthouse_delivery.get("input_visual_commit") != "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad":
+    error("visual lighthouse handoff input commit is wrong")
+if visual_lighthouse_delivery.get("changed_files_exact") != 15:
+    error("visual lighthouse handoff file count is wrong")
+if visual_lighthouse_delivery.get("temporary_subagents_used") is not False or visual_lighthouse_delivery.get("lock_requested") is not False:
+    error("visual lighthouse handoff cannot use temporary subagents or request lock")
+if visual_lighthouse_delivery.get("full_121_production_authorized") is not False or visual_lighthouse_delivery.get("simulation_authorized") is not False:
+    error("visual lighthouse handoff cannot grant full production or Simulation")
+visual_lighthouse_exact = visual_lighthouse_evidence.get("chief_editor_exact_verification", {})
+if visual_lighthouse_exact.get("cumulative_changed_files_exact") != 15:
+    error("visual lighthouse exact cumulative file count is wrong")
+if len(visual_lighthouse_exact.get("cumulative_changed_files", [])) != 15:
+    error("visual lighthouse exact path list must contain 15 files")
+if visual_lighthouse_exact.get("evidence_followup_changed_files_exact") != 5:
+    error("visual lighthouse evidence followup scope is wrong")
+keep_counts = visual_lighthouse_exact.get("byte_exact_keep", {})
+if keep_counts != {"main_assets": 18, "source_art": 16, "sketch_gates": 10, "unaffected_contact_sheets": 3, "accepted_kar_01_har_aa_06_back_island": True}:
+    error("visual lighthouse byte-exact KEEP counts are wrong")
+sha_index = visual_lighthouse_exact.get("sha256_index", {})
+if sha_index.get("indexed_files") != 61 or sha_index.get("unique_paths") != 61 or sha_index.get("pending_delivery_placeholders") != 0:
+    error("visual lighthouse SHA-256 index summary is wrong")
+if visual_lighthouse_exact.get("chief_editor_aesthetic_pass_declared") is not False:
+    error("Chief Editor technical handoff cannot self-declare aesthetic pass")
+if visual_lighthouse_evidence.get("chief_editor_disposition") != "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW":
+    error("visual lighthouse Chief Editor disposition is wrong")
+if visual_lighthouse_evidence.get("art_direction_review_authorized") is not True or visual_lighthouse_evidence.get("visual_production_authorized") is not False:
+    error("visual lighthouse evidence next-stage authorization is wrong")
+if visual_lighthouse_evidence.get("temporary_subagents_used") is not False or visual_lighthouse_evidence.get("lock_requested") is not False:
+    error("visual lighthouse evidence cannot use temporary subagents or request lock")
+
 visual_evidence = read_json("governance/VISUAL_HANDOFF_20260825.json")
 if visual_evidence.get("record_type") != "VISIBLE_CHAT_VISUAL_WORKSTREAM_HANDOFF_AND_CHIEF_EDITOR_DISPOSITION":
     error("Visual evidence record type is wrong")
@@ -588,8 +665,20 @@ if art_source.get("authorized_changed_files_exact") != 15:
     error("source hierarchy lighthouse-only changed-file budget is wrong")
 if art_source.get("art_direction_pilot_review_evidence") != "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json":
     error("source hierarchy pilot review evidence is wrong")
-if art_source.get("current_pilot_result") != "REWORK_REQUIRED_BACK_LIGHTHOUSE_ONLY":
-    error("source hierarchy must record BACK_LIGHTHOUSE-only rework")
+if art_source.get("current_pilot_result") != "PENDING_EXACT_ART_DIRECTION_LIGHTHOUSE_REVIEW":
+    error("source hierarchy must record pending exact lighthouse review")
+if art_source.get("pilot_authorization_state") != "CONSUMED_PENDING_ART_DIRECTION_REVIEW":
+    error("source hierarchy pilot authorization state is wrong")
+if art_source.get("latest_visual_delivery_commit") != "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb":
+    error("source hierarchy latest Visual delivery is wrong")
+if art_source.get("latest_visual_evidence_commit") != "23c062f6de06c32eab224b3440c8474725d4fe9e":
+    error("source hierarchy latest Visual evidence commit is wrong")
+if art_source.get("latest_visual_handoff_evidence") != "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json":
+    error("source hierarchy latest Visual handoff evidence is wrong")
+if art_source.get("art_direction_review_input_commit") != "23c062f6de06c32eab224b3440c8474725d4fe9e":
+    error("source hierarchy Art Direction review input is wrong")
+if art_source.get("new_visual_production_authorized") is not False:
+    error("source hierarchy must pause Visual production")
 art_direction_path = "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md"
 if art_direction_path not in art_source.get("paths", []):
     error("source hierarchy does not include binding Art Direction work order")
@@ -641,7 +730,9 @@ require_markers("AI_HANDOFF.md", [
     "FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
     "ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
     "FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
-    "BACK_LIGHTHOUSE_ONLY_PILOT_REWORK",
+    "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW",
+    "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
+    "23c062f6de06c32eab224b3440c8474725d4fe9e",
 ])
 require_markers("PROJECT_STATE.md", [
     "Aktif görsel candidate",
@@ -652,7 +743,8 @@ require_markers("PROJECT_STATE.md", [
     "ART_DIRECTION_PILOT_REVIEW_20260825.json",
     "ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
     "ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
-    "BACK_LIGHTHOUSE-ONLY PILOT REWORK AUTHORIZED",
+    "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
+    "15 FILE HANDOFF ACCEPTED FOR ART DIRECTION REVIEW",
 ])
 require_markers("governance/DECISION_REGISTER.md", [
     "DEC-20260825-01",
@@ -671,6 +763,8 @@ require_markers("governance/DECISION_REGISTER.md", [
     "DEC-20260830-01",
     "DEC-20260830-02",
     "BACK_LIGHTHOUSE-ONLY AUTHORIZATION",
+    "DEC-20260830-03",
+    "LIGHTHOUSE-ONLY HANDOFF ACCEPTANCE",
 ])
 require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
     "PENDING_NEW_ART_CANDIDATE",
@@ -681,7 +775,9 @@ require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
     "REVISED_EXACT_PILOT_REVIEW_COMPLETE",
     "ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
     "ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
-    "BACK_LIGHTHOUSE_ONLY_PILOT_REWORK_AUTHORIZED",
+    "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
+    "LIGHTHOUSE_FINAL_EXACT_REVIEW_AUTHORIZED",
+    "LIGHTHOUSE_ONLY_HANDOFF_DELIVERED / PRODUCTION_PAUSED",
 ])
 require_markers("working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md", [
     "KAR-01",

@@ -9,8 +9,8 @@
 | Hat | Görünür sohbet / dal | Durum | Bağlayıcı kanıt |
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
-| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `THREE_TARGETED_REWORKS_KEEP / BACK_LIGHTHOUSE_REWORK_REQUIRED` | `ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`; input `0cb2bd6f...` |
-| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `BACK_LIGHTHOUSE_ONLY_PILOT_REWORK_AUTHORIZED` | `FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`; base `0cb2bd6f...` |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `LIGHTHOUSE_FINAL_EXACT_REVIEW_AUTHORIZED` | `governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json`; input `23c062f6...` |
+| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `LIGHTHOUSE_ONLY_HANDOFF_DELIVERED / PRODUCTION_PAUSED` | kanonik `c8081aa9...`; head `23c062f6...` |
 | Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
 | Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
 
@@ -23,40 +23,27 @@
   Simülasyona bırakır.
 - Yeni görev yoksa dalı değiştirmez.
 
-## Sanat Yönetmeni — üç rework KEEP / yalnız BACK_LIGHTHOUSE açık
+## Sanat Yönetmeni — exact final fener incelemesi
 
-Bağlayıcı kanıt `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`dır.
+Bağlayıcı Görsel handoff kanıtı `governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json`dır.
 
-1. Exact `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` incelendi.
-2. `KAR-01`, `HAR-AA-06` ve `BACK_ISLAND`: KEEP.
-3. `BACK_LIGHTHOUSE`: REWORK_REQUIRED; kule kapalı düzen ve contact sheet
-   ölçeğinde kayboluyor, Fener ailesi yerine ikinci Ada/kayalık okunuyor.
-4. Yeni fener tesliminde yalnız aile görünürlüğü, exact kimlik/sonuç körlüğü,
-   1721 uygunluğu, ortak deniz ve yasak motifleri yeniden inceler.
-5. Final üretmez, kullanıcı/release/kilit PASS'i vermez, geçici ajan kullanmaz.
+1. Exact `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` paketini inceler.
+2. Görsel olarak açılacak exact rasterlar: `BACK_LIGHTHOUSE.png`, iki etkilenen contact sheet ve altı mevcut map-layout rasterı — toplam 9.
+3. Normal dijital masa mesafesinde fener ailesi görünürlüğü; Ada/kayalık/kulübe/kapstan yanlış okuması; 1721 uygunluğu; ortak deniz ve çapraz kaya sırtı; exact ön kimlik/sonuç körlüğü; ışın/glow/halo/lens/modern beacon/rozet yasağını değerlendirir.
+4. `KAR-01`, `HAR-AA-06`, `BACK_ISLAND` ve diğer 18 ana KEEP görseli yeniden açmaz; Git exact koruması tarihsel kabulü dondurur.
+5. Manifest veya teknik PASS'i estetik PASS yerine kullanmaz.
+6. Final üretmez, dosya değiştirmez, kullanıcı/release/kilit PASS'i vermez ve geçici ajan kullanmaz.
 
-Tarihsel `REVISED_EXACT_PILOT_REVIEW_COMPLETE`,
-`ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json` ve
-`REDRAW_BRIEF` kayıtları korunur.
+Tarihsel `EXACT_PILOT_REVIEW_COMPLETE`, `REVISED_EXACT_PILOT_REVIEW_COMPLETE`, `REDRAW_BRIEF`, `ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json` ve `ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json` kayıtları korunur.
 
-## Görsel Tasarım — BACK_LIGHTHOUSE-only / 15 dosya
+## Görsel Tasarım — handoff teslim edildi / üretim durdu
 
-Bağlayıcı emir `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`dır. Önceki dört-varlık emri tarihsel teslim
-zinciri olarak korunur.
-
-1. Yalnız `BACK_LIGHTHOUSE.png` ve `BACK_LIGHTHOUSE_source.jpg` değişir.
-2. Mevcut ortak deniz ve çapraz kaya sırtı korunur; kule 1721'e uygun anonim
-   seyir yapısı olarak normal dijital masa mesafesinde okunacak kadar büyütülür
-   ve değer olarak ayrılır.
-3. Işın, glow, halo, lens, modern beacon, dairesel platform, rozet veya exact
-   ön fener/sonuç sızıntısı yoktur.
-4. Yalnız 2 contact sheet, 6 mevcut layout, 1 rapor ve 4 kanıt kaydı yenilenir.
-5. Exact `CHANGED_FILES: 15`; 18 ana görsel, 16 source-art, 10 gate ve
-   3 etkilenmeyen sheet byte-exact kalır.
-6. Başka fark `BLOCKED_SCOPE_DRIFT`dır.
-7. Tam 121, PDF, Simülasyon, release ve kilit yoktur. Sonuç
-   `BACK_LIGHTHOUSE_ONLY_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
-   ve `LOCK_REQUESTED: NO` olmalıdır.
+1. Exact dal başı `23c062f6de06c32eab224b3440c8474725d4fe9e`; kanonik lighthouse-only üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`dır.
+2. Cumulative `0cb2bd6f03e2d84948741c162f22b8fd2ff064ad..23c062f6de06c32eab224b3440c8474725d4fe9e` farkı exact 15 dosyadır.
+3. Teknik handoff `VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW` olarak kabul edilmiştir; estetik PASS değildir.
+4. Yeni görsel, düzeltme, contact sheet/layout türetimi, tam 121, PDF, Simülasyon, release veya kilit üretmez.
+5. Sanat Yönetimi kararı gelene kadar dalı değiştirmez; kapsam açılması ancak yeni exact Baş Editör emriyle olur.
+6. `TEMPORARY_SUBAGENTS: NONE` ve `LOCK_REQUESTED: NO` korunur.
 
 ## Simülasyon Testi — bekleyen görev
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-30T07:44:25+03:00",
+  "updated_at": "2026-08-30T18:00:20+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -24,7 +24,7 @@
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
     "active_visual_candidate": null,
-    "basis": "Exact 0cb2bd6f targeted Visual delivery passed Art Direction for KAR-01, HAR-AA-06 and BACK_ISLAND; only BACK_LIGHTHOUSE remains REWORK_REQUIRED because lighthouse-family visibility fails at normal digital table-layout distance. A 15-file lighthouse-only rework is authorized; no accepted candidate, full 121, Simulation, physical proof or SRC-002 resolution."
+    "basis": "Exact 23c062f6 lighthouse-only Visual handoff is technically complete and accepted only for independent Art Direction review. No active candidate exists until BACK_LIGHTHOUSE family visibility and world-fit receive Art Direction, project-owner and Chief Editor acceptance; full 121, Simulation, physical proof and SRC-002 remain open."
   },
   "roles": {
     "chief_editor": {
@@ -203,21 +203,21 @@
       "targeted_delivery_commit_reviewed": "88907294edd326c118573f5ada7406e5fc42ee4d"
     },
     "visual": {
-      "status": "BACK_LIGHTHOUSE_ONLY_REWORK_AUTHORIZED",
+      "status": "LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_ART_DIRECTION_REVIEW",
       "evidence_path": "governance/VISUAL_HANDOFF_20260825.json",
       "successor_ack_evidence_path": "governance/VISUAL_SUCCESSOR_ACK_20260826.json",
       "official_chat": "FOULWAKE Görsel Tasarım 2",
       "predecessor_chat": "FOULWAKE görsel tasarım",
       "source_branch": "work/v2.7-visual",
       "source_commit": "e91581bb336dfcbab5da1d48a256577f9251f891",
-      "current_workstream_branch_head": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+      "current_workstream_branch_head": "23c062f6de06c32eab224b3440c8474725d4fe9e",
       "canonical_pilot_delivery_commit": "bf944125ee35fecd722628f6a9be5f5dfcd5707a",
       "pilot_evidence_commit": "1ab579c27ee26205cbc87718995da021ef6da84d",
       "full_production_delivery_commit": "494b8440bba722a9053f72b2fdeffc4286a61e17",
       "technical_pipeline_reference_only": true,
       "art_accepted": false,
       "active_candidate": false,
-      "rework_authorized": true,
+      "rework_authorized": false,
       "observed_branch_head": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
       "observed_pilot_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
       "observed_pilot_scope": "12_FRONTS_7_BACKS_CONTACT_SHEETS",
@@ -229,7 +229,7 @@
       "observed_pilot_art_accepted": false,
       "pilot_only_production_authorized": true,
       "pilot_authorization_consumed": true,
-      "new_visual_production_authorized": true,
+      "new_visual_production_authorized": false,
       "successor_visible_chat_ack_received": true,
       "successor_ack_evidence": "governance/VISUAL_SUCCESSOR_ACK_20260826.json",
       "official_pilot_delivery_handoff_received": true,
@@ -332,7 +332,16 @@
       "byte_exact_keep_main_assets": 18,
       "byte_exact_keep_source_art": 16,
       "byte_exact_keep_sketch_gates": 10,
-      "byte_exact_keep_unaffected_contact_sheets": 3
+      "byte_exact_keep_unaffected_contact_sheets": 3,
+      "lighthouse_only_authorization_consumed": true,
+      "lighthouse_only_handoff_received": true,
+      "lighthouse_only_handoff_evidence": "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
+      "lighthouse_only_canonical_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb",
+      "lighthouse_only_evidence_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+      "lighthouse_only_input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+      "lighthouse_only_changed_files_exact": 15,
+      "lighthouse_only_chief_disposition": "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW",
+      "next_recipient": "FOULWAKE Sanat Yönetmeni"
     },
     "simulation": {
       "status": "PENDING_NEW_ART_CANDIDATE",
@@ -709,6 +718,31 @@
     "next_recipient": "FOULWAKE Görsel Tasarım 2",
     "full_121_production_authorized": false,
     "simulation_authorized": false,
+    "lock_requested": false
+  },
+  "visual_lighthouse_handoff": {
+    "status": "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW",
+    "evidence_path": "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
+    "official_chat": "FOULWAKE Görsel Tasarım 2",
+    "source_branch": "work/v2.7-visual",
+    "source_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "canonical_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb",
+    "evidence_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+    "chief_editor_source": "v2.7-design@b7fce6bf33c23278c3228fe5932e651dc715e694",
+    "accepted_art_direction_source": "work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "changed_files_exact": 15,
+    "byte_exact_keep_main_assets": 18,
+    "byte_exact_keep_source_art": 16,
+    "byte_exact_keep_sketch_gates": 10,
+    "byte_exact_keep_unaffected_contact_sheets": 3,
+    "technical_handoff_accepted": true,
+    "aesthetic_accepted": false,
+    "art_direction_review_authorized": true,
+    "visual_production_authorized": false,
+    "full_121_production_authorized": false,
+    "simulation_authorized": false,
+    "next_recipient": "FOULWAKE Sanat Yönetmeni",
     "lock_requested": false
   }
 }

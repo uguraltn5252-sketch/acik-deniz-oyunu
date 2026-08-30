@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_VISUAL_LIGHTHOUSE_ONLY_HANDOFF",
+  "recorded_at": "2026-08-30T18:00:20+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "chief_editor_source": "v2.7-design@b7fce6bf33c23278c3228fe5932e651dc715e694",
+  "visual_handoff": {
+    "workstream": "Görsel Tasarım",
+    "visible_chat": "FOULWAKE Görsel Tasarım 2",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "source_branch": "work/v2.7-visual",
+    "source_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "canonical_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb",
+    "evidence_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+    "accepted_art_direction_source": "work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "pilot_or_full": "PILOT_ONLY",
+    "scope": "BACK_LIGHTHOUSE source/render ve yalnız bağlı kanıtların son hedefli reworkü",
+    "changed_files_exact": 15,
+    "protected_fields_confirmed": true,
+    "temporary_subagents_used": false,
+    "full_121_production_authorized": false,
+    "simulation_authorized": false,
+    "result": "BACK_LIGHTHOUSE_ONLY_REWORK_DELIVERED_PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+    "open_risks": [
+      "AESTHETIC_ACCEPTANCE_PENDING",
+      "PHYSICAL_PRINT_CUT_DUPLEX_LIGHT_REAL_TABLE_DISTANCE_TESTS_PENDING",
+      "SRC-002_OPEN"
+    ],
+    "next_recipient": "Baş Editör",
+    "lock_requested": false
+  },
+  "chief_editor_exact_verification": {
+    "integration_branch_head": "b7fce6bf33c23278c3228fe5932e651dc715e694",
+    "visual_branch_head": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "art_direction_branch_head": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "visual_history": {
+      "base_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+      "ahead_by": 2,
+      "behind_by": 0,
+      "total_commits": 2,
+      "canonical_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb",
+      "evidence_followup_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e"
+    },
+    "cumulative_changed_files_exact": 15,
+    "cumulative_changed_files": [
+      "working/v2.7/visual/pilot_rework/FOULWAKE_ACCEPTED_12_CARD_PILOT_REWORK_v2.7.md",
+      "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_3_VARIABLE_MAP_LAYOUTS_CONTACT_SHEET_v2.7.png",
+      "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_7_BACKS_CONTACT_SHEET_v2.7.png",
+      "working/v2.7/visual/pilot_rework/manifests/FOULWAKE_ACCEPTED_12_PILOT_ART_BRIEF_MANIFEST_v2.7.json",
+      "working/v2.7/visual/pilot_rework/manifests/FOULWAKE_ACCEPTED_PILOT_CONTROL_CHECKS_v2.7.json",
+      "working/v2.7/visual/pilot_rework/manifests/FOULWAKE_ACCEPTED_PILOT_PROVENANCE_v2.7.json",
+      "working/v2.7/visual/pilot_rework/manifests/FOULWAKE_ACCEPTED_PILOT_SHA256SUMS_v2.7.txt",
+      "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_CLOSED_v2.7.png",
+      "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_PARTIALLY_OPEN_v2.7.png",
+      "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_CLOSED_v2.7.png",
+      "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_PARTIALLY_OPEN_v2.7.png",
+      "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_CLOSED_v2.7.png",
+      "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_PARTIALLY_OPEN_v2.7.png",
+      "working/v2.7/visual/pilot_rework/pilot_backs/BACK_LIGHTHOUSE.png",
+      "working/v2.7/visual/pilot_rework/source_art/BACK_LIGHTHOUSE_source.jpg"
+    ],
+    "evidence_followup_changed_files_exact": 5,
+    "evidence_followup_scope": [
+      "working/v2.7/visual/pilot_rework/FOULWAKE_ACCEPTED_12_CARD_PILOT_REWORK_v2.7.md",
+      "working/v2.7/visual/pilot_rework/manifests/FOULWAKE_ACCEPTED_12_PILOT_ART_BRIEF_MANIFEST_v2.7.json",
+      "working/v2.7/visual/pilot_rework/manifests/FOULWAKE_ACCEPTED_PILOT_CONTROL_CHECKS_v2.7.json",
+      "working/v2.7/visual/pilot_rework/manifests/FOULWAKE_ACCEPTED_PILOT_PROVENANCE_v2.7.json",
+      "working/v2.7/visual/pilot_rework/manifests/FOULWAKE_ACCEPTED_PILOT_SHA256SUMS_v2.7.txt"
+    ],
+    "byte_exact_keep": {
+      "main_assets": 18,
+      "source_art": 16,
+      "sketch_gates": 10,
+      "unaffected_contact_sheets": 3,
+      "accepted_kar_01_har_aa_06_back_island": true
+    },
+    "regenerated": {
+      "lighthouse_source_art": 1,
+      "lighthouse_back_render": 1,
+      "contact_sheets": 2,
+      "variable_map_layout_rasters": 6,
+      "report": 1,
+      "manifest_checksum_provenance_records": 4
+    },
+    "sha256_index": {
+      "indexed_files": 61,
+      "unique_paths": 61,
+      "checksum_file_excluded_from_self_index": true,
+      "pending_delivery_placeholders": 0
+    },
+    "control_manifest_result": "PASS",
+    "control_manifest_failures": [],
+    "reported_preflight": {
+      "lighthouse_family_visibility": "TECHNICAL_PASS",
+      "island_rock_hut_capstan_misread": false,
+      "exact_front_identity_and_result_blindness": true,
+      "exact_180_degree_pixel_safety": true,
+      "contact_sheets_visually_opened": "2/2",
+      "map_layouts_visually_opened": "6/6",
+      "back_mapping": "20/31/15/42/6/4/3=121",
+      "temporary_writing_png_count": 0
+    },
+    "chief_editor_aesthetic_pass_declared": false,
+    "reported_refs_match": true
+  },
+  "chief_editor_disposition": "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW",
+  "acceptance_scope": [
+    "Exact 15-file branch-bound handoff is complete and internally coherent.",
+    "The package may enter independent Art Direction review of the revised lighthouse family.",
+    "All non-authorized Visual files remain byte-exact by cumulative Git comparison."
+  ],
+  "limitations": [
+    "This is not an Art Direction pass or project-owner aesthetic acceptance.",
+    "Technical family-visibility preflight does not establish artistic quality.",
+    "There is no active visual release candidate.",
+    "No further visual production, full 121 propagation, PDF, Simulation, release or lock is authorized.",
+    "Physical print, cut, duplex, light and real table-distance tests remain NOT_RUN.",
+    "SRC-002 remains open."
+  ],
+  "next_action": "FOULWAKE Sanat Yönetmeni must visually inspect exact work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e, especially BACK_LIGHTHOUSE, two affected contact sheets and six variable-layout rasters, against accepted Art Direction source 7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+  "art_direction_review_authorized": true,
+  "visual_production_authorized": false,
+  "simulation_authorized": false,
+  "temporary_subagents_used": false,
+  "lock_requested": false
+}

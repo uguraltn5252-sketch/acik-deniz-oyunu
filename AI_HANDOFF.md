@@ -10,11 +10,13 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Aktif çalışma:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
-- **Gözlenen pilot paketi:** `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` / `THREE_TARGETED_REWORKS_KEEP_ONE_REWORK`
+- **Gözlenen pilot paketi:** `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` / `LIGHTHOUSE_ONLY_HANDOFF_PENDING_ART_DIRECTION_REVIEW`
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `12 FRONT KEEP / 6 BACK KEEP / BACK_LIGHTHOUSE REWORK_REQUIRED`
-- **Görsel üretim yetkisi:** `BACK_LIGHTHOUSE_ONLY_PILOT_REWORK`
+- **Sanat Yönetimi:** `EXACT BACK_LIGHTHOUSE FINAL REVIEW PENDING`
+- **Görsel üretim yetkisi:** **YOK — 15 FILE HANDOFF DELIVERED / PRODUCTION PAUSED**
 - **Kilit izni:** **YOK**
+
+Exact lighthouse-only Görsel teslimi `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` başında alınmıştır. Kanonik üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`, takip kanıt commiti `23c062f6de06c32eab224b3440c8474725d4fe9e` ve cumulative fark exact 15 dosyadır. Rapor ile üç JSON manifest ve 61 girdili SHA-256 indeksi birbirini tutar; 18 ana görsel, 16 source-art, 10 gate ve 3 etkilenmeyen contact sheet Git farkında korunmuştur. Baş Editör dispozisyonu `VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW`dür. Bu estetik PASS veya aktif candidate değildir; yeni Görsel üretim kapalıdır ve exact paket şimdi yalnız `FOULWAKE Sanat Yönetmeni` incelemesine gider. Kanıt: `governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json`.
 
 Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
 üzerinde Görsel girdisi olarak kabul edilmiş ve exact kabul edilen üç Hikâye
