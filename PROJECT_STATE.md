@@ -5,10 +5,20 @@
 **Aktif taslak:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`  
 **Entegrasyon dalı:** `v2.7-design`  
 **Aktif workspace:** `working/v2.7/`  
-**Aktif görsel candidate:** YOK — exact `23c062f6...` pilotu Sanat Yönetimi PASS aldı; proje sahibi + Baş Editör pilot kabulü bekleniyor  
-**Sanat Yönetimi:** `PILOT_ART_DIRECTION_PASS — 12 FRONT KEEP / 7 BACK KEEP`  
-**Görsel kapısı:** `ART DIRECTION PASS / OWNER + CHIEF PILOT DECISION PENDING / PRODUCTION PAUSED`  
+**Aktif görsel candidate:** YOK — exact `23c062f6...` pilotu proje sahibi tarafından estetik olarak reddedildi; tarihsel input only  
+**Sanat Yönetimi:** `ÖNCEKİ PASS TARİHSEL / PROJE SAHİBİ REDDİYLE ÜRETİM İÇİN GEÇERSİZ / KAPTAN STYLE RESET`  
+**Görsel kapısı:** `PROJECT OWNER REJECTED / ART DIRECTION MICRO PATCH ONLY / VISUAL PRODUCTION PAUSED`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
+
+## 30 Ağustos 2026 — Proje sahibi pilot reddi / KAPTAN sanat dili reseti
+
+Proje sahibi exact `23c062f6...` pilotuna estetik kabul vermedi. Önceki Sanat Yönetimi PASS'i tarihsel inceleme kanıtı olarak korunur fakat üretim veya candidate yetkisi vermez. `BACK_SEA_ROCK` aşırı parlak/yapay deniz nedeniyle, `BACK_ISLAND` bütünüyle, `BACK_LIGHTHOUSE` ise zorunlu uzun kayalık ve küçük fener nedeniyle REWORK_REQUIREDdır. Diğer arka yüzler ve 12 ön yüz owner-accepted değildir.
+
+Yüklenen `KAPTAN` kartı `working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg` yolunda exact saklanır. Geminin ve martının tekrarı bağlayıcı değildir; bağlayıcı olan kalın mürekkep, yoğun gravür taraması, sıcak kirli kâğıt, mat lacivert–oker–pas paleti, grotesk ama tutarlı karakter geometrisi ve eski basım kart hissidir. `SET-KP-01` teknik kimliği korunur, görünen adı `KAPTAN` olur ve mevcut devredilebilir kaptanlık mekaniği korunur.
+
+Mevcut validatorın final kart yazısını kanonik kaynakla piksel/render düzeyinde karşılaştırmadığı, yalnız manifestteki self-declared `exact: true` alanına güvendiği tespit edilmiştir. Görsel model metin üretemez; final metin şablonla yerleştirilir ve OCR/render-source → kanonik exact karşılaştırması olmadan ön yüz KEEP sayılamaz.
+
+Yeni iş emri: `working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md`. Şu anda yalnız en fazla 700 kelime/1 dosyalık Sanat Yönetimi mikro patchi yetkilidir; Görsel üretim kapalıdır.
 
 ## Çalışma hattı durumu
 

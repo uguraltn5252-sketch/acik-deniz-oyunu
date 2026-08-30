@@ -1,0 +1,92 @@
+{
+  "schema_version": "2.7-project-owner-visual-rejection-1.0",
+  "project": "FOULWAKE",
+  "decision_date": "2026-08-30",
+  "project_owner": "Ugur Altun",
+  "status": "PROJECT_OWNER_PILOT_REJECTED_ART_DIRECTION_RESET_REQUIRED",
+  "reviewed_visual_branch": "work/v2.7-visual",
+  "reviewed_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+  "prior_art_direction_result": "PILOT_ART_DIRECTION_PASS",
+  "prior_art_direction_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json",
+  "supersedes_prior_art_direction_pass_for_production": true,
+  "active_visual_candidate": null,
+  "project_owner_findings": {
+    "BACK_SEA_ROCK": {
+      "disposition": "REWORK_REQUIRED",
+      "finding": "Deniz gereğinden fazla parlıyor; beyaz/parlak tekrarlar yapay ve anlamsız görünüyor.",
+      "target": "Mat, kirli, derin fakat ışıldamayan deniz; KAPTAN referansındaki mürekkep ve sınırlı palet dili."
+    },
+    "BACK_ISLAND": {
+      "disposition": "REWORK_REQUIRED_FULL_REDRAW",
+      "finding": "Ada arka yüzü estetik olarak kabul edilmedi.",
+      "target": "Sticker/karo hissi olmayan, sade fakat karakterli ada; aynı mat gravür dili."
+    },
+    "BACK_LIGHTHOUSE": {
+      "disposition": "REWORK_REQUIRED",
+      "finding": "Fener fikri anlaşılır; zorunlu uzun kayalık sırt gereksiz ve fener küçük.",
+      "target": "Daha büyük ve açık okunan fener; uzun kayalık zorunlu değil, kompakt kaya/kıyı temeli serbest; exact ön kimlik kör kalır."
+    },
+    "OTHER_BACKS": {
+      "disposition": "HOLD_NOT_OWNER_ACCEPTED",
+      "finding": "Proje sahibi yedi arka yüz paketine genel estetik kabul vermedi."
+    },
+    "PILOT_FRONTS": {
+      "disposition": "HOLD_PENDING_INDEPENDENT_VISIBLE_COPY_AUDIT",
+      "finding": "Kart başlığı/effect/flavor alanlarında değişiklik şüphesi var; manifestteki self-declared exact=true yeterli kanıt değildir."
+    }
+  },
+  "captain_decision": {
+    "technical_id": "SET-KP-01",
+    "visible_name": "KAPTAN",
+    "reference_path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+    "reference_git_blob_sha": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4",
+    "reference_source_sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
+    "reference_media": "JPEG",
+    "reference_dimensions": [
+      896,
+      1536
+    ],
+    "use": "BINDING_ART_LANGUAGE_AND_KAPTAN_CARD_VISUAL_SOURCE",
+    "scene_elements_binding": false,
+    "binding_language": [
+      "kalın karakterli mürekkep konturu",
+      "yoğun gravür ve çapraz tarama",
+      "kirli sıcak kâğıt",
+      "mat lacivert–oker–pas paleti",
+      "grotesk ama tutarlı karakter geometrisi",
+      "elde basılmış eski kart hissi",
+      "yüksek ayrım fakat dijital parlama yok"
+    ],
+    "mechanics_policy": "PRESERVE_CURRENT_TRANSFERABLE_CAPTAINCY_MECHANICS",
+    "exact_effect": "Kaptanlık açık bir makamdır; Sadakati kanıtlamaz. Kaptan değişebilir; makam oyundan kalkmaz.",
+    "exact_flavor": "Makam kalır. Şüphe de."
+  },
+  "copy_control": {
+    "visual_designer_may_rewrite_copy": false,
+    "image_model_may_generate_visible_copy": false,
+    "final_card_copy_must_be_composited_from_canonical_utf8": true,
+    "manifest_boolean_is_sufficient": false,
+    "final_front_ocr_plus_canonical_compare_required": true,
+    "mismatch_result": "BLOCKED_COPY_DRIFT"
+  },
+  "fast_workflow": {
+    "current_authorization": "ART_DIRECTION_MICRO_PATCH_ONLY",
+    "visual_production_authorized": false,
+    "art_direction_delivery_max_words": 700,
+    "art_direction_files_max": 1,
+    "next_visual_gate_after_owner_acceptance": "6 LOW_RES THUMBNAILS ONLY — 2 SEA_ROCK + 2 ISLAND + 2 LIGHTHOUSE",
+    "forbidden_before_thumbnail_acceptance": [
+      "300 dpi finals",
+      "contact sheets",
+      "map layouts",
+      "PDF",
+      "full manifests",
+      "full 121 production"
+    ]
+  },
+  "full_121_production_authorized": false,
+  "simulation_authorized": false,
+  "release_authorized": false,
+  "lock_requested": false,
+  "temporary_subagents": "NONE"
+}

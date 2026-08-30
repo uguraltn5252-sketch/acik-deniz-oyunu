@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-30T18:28:02+03:00",
+  "updated_at": "2026-08-30T21:00:00+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -24,7 +24,7 @@
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
     "active_visual_candidate": null,
-    "basis": "Exact 23c062f6 lighthouse-only Visual package received final Art Direction KEEP: 12 fronts KEEP / 7 backs KEEP. Project-owner final aesthetic acceptance and Chief Editor pilot acceptance remain pending; no active candidate exists, and full 121, Simulation, physical proof, release, lock and SRC-002 remain open."
+    "basis": "Project owner rejected exact 23c062f6 pilot aesthetically. Prior Art Direction PASS is historical only; no active candidate. Only a one-file Art Direction KAPTAN-language micro patch is authorized; Visual production, full 121, Simulation, physical proof, release and lock remain blocked."
   },
   "roles": {
     "chief_editor": {
@@ -807,5 +807,17 @@
     "physical_tests_status": "NOT_RUN",
     "next_recipient": "Proje sahibi / Baş Editör",
     "lock_requested": false
+  },
+  "project_owner_override": {
+    "status": "PROJECT_OWNER_PILOT_REJECTED_ART_DIRECTION_RESET_REQUIRED",
+    "evidence_path": "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json",
+    "reviewed_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "supersedes_prior_art_direction_pass_for_production": true,
+    "active_visual_candidate": null,
+    "current_authorization": "ART_DIRECTION_MICRO_PATCH_ONLY",
+    "visual_production_authorized": false,
+    "binding_order": "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md",
+    "art_language_reference": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+    "copy_audit_required": true
   }
 }

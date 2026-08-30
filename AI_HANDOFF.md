@@ -5,15 +5,22 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 
 ## Güncel hüküm
 
+## Proje sahibi override — 30 Ağustos 2026
+
+Exact `23c062f6...` pilotu proje sahibi tarafından estetik olarak reddedildi. Bu, önceki `PILOT_ART_DIRECTION_PASS` kararını tarihsel kanıt olarak korur ancak üretim/candidate bakımından geçersiz kılar. Bağlayıcı kayıt: `governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json`; yeni kısa iş emri: `working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md`.
+
+KAPTAN ana sanat dili referansı `working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg` yolundadır. `SET-KP-01` teknik kimliği korunur, görünen ad `KAPTAN`dır ve devredilebilir kaptanlık mekaniği korunur. Görsel model görünen kart metni üretemez; final metin yalnız kanonik kaynaktan şablonla yerleştirilir ve gerçek OCR/render-source exact karşılaştırması gerekir.
+
+
 - **Son kullanıcı-onaylı sürüm:** `v2.6 STABLE / LOCKED`
 - **Kanonik kilitli kaynak:** `releases/v2.6/`
 - **Aktif çalışma:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
-- **Gözlenen pilot paketi:** `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` / `PILOT_ART_DIRECTION_PASS_PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
+- **Gözlenen pilot paketi:** `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` / `PROJECT_OWNER_REJECTED / HISTORICAL_INPUT_ONLY`
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `PILOT ART DIRECTION PASS — 12 FRONT KEEP / 7 BACK KEEP`
-- **Görsel üretim yetkisi:** **YOK — ART DIRECTION PASS / OWNER + CHIEF PILOT DECISION PENDING**
+- **Sanat Yönetimi:** `ÖNCEKİ PASS TARİHSEL / KAPTAN ART-LANGUAGE RESET REQUIRED`
+- **Görsel üretim yetkisi:** **YOK — YALNIZ SANAT YÖNETİMİ MİKRO PATCHİ YETKİLİ**
 - **Kilit izni:** **YOK**
 
 Sanat Yönetmeni exact `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` paketindeki `BACK_LIGHTHOUSE`, iki bağlı contact sheet ve altı değişken layout rasterını 9/9 açarak nihai incelemeyi tamamlamıştır. `BACK_LIGHTHOUSE: KEEP`; pilot toplamı `12 FRONT KEEP / 7 BACK KEEP` ve sonuç `PILOT_ART_DIRECTION_PASS`tır. Baş Editör bu görünür handoffu exact kaynak zinciriyle geçerli Sanat Yönetimi kanıtı olarak kaydeder; fakat proje sahibinin nihai estetik kabulü ve Baş Editör pilot kabulü henüz yoktur. Aktif candidate, yeni Görsel üretim, tam 121, PDF, Simülasyon, release veya kilit oluşmaz. Kanıt: `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json`.

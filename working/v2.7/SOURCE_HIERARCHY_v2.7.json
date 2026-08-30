@@ -63,7 +63,10 @@
         "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
         "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
         "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
-        "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
+        "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+        "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+        "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md",
+        "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json"
       ],
       "supersedes": "work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891 art assets",
       "old_assets_classification": "REJECTED_ART_TECHNICAL_REFERENCE_ONLY",
@@ -125,7 +128,16 @@
       "art_direction_final_result": "PILOT_ART_DIRECTION_PASS",
       "project_owner_final_aesthetic_acceptance": false,
       "chief_editor_pilot_acceptance": false,
-      "active_visual_candidate": false
+      "active_visual_candidate": false,
+      "project_owner_override_current": true,
+      "project_owner_pilot_disposition": "REJECTED_ART_DIRECTION_RESET_REQUIRED",
+      "supersedes_art_direction_pass_for_production": true,
+      "art_language_reference_path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+      "art_language_reference_git_blob_sha": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4",
+      "current_owner_order": "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md",
+      "current_authorized_scope": "ART_DIRECTION_MICRO_PATCH_ONLY",
+      "visual_production_authorized_after_override": false,
+      "final_front_copy_audit_required": true
     }
   ],
   "non_source_evidence": [
@@ -141,5 +153,14 @@
       "path": "work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6",
       "reason": "Pre-brief 12+7 pilot reviewed by visible Art Direction: REWORK_REQUIRED. It remains rework input only, not an accepted pilot or active candidate."
     }
-  ]
+  ],
+  "project_owner_override": {
+    "status": "PROJECT_OWNER_PILOT_REJECTED_ART_DIRECTION_RESET_REQUIRED",
+    "evidence_path": "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json",
+    "supersedes_prior_art_direction_pass_for_production": true,
+    "active_visual_candidate": false,
+    "current_authorization": "ART_DIRECTION_MICRO_PATCH_ONLY",
+    "visual_production_authorized": false,
+    "copy_audit_required": true
+  }
 }

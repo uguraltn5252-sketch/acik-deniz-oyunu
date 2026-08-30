@@ -788,6 +788,50 @@ if sea_rock.get("value") != "SEA_ROCK_SHARED_BACK" or sea_rock.get("release_stat
     error("Sea=Rock draft decision/retest blocker changed")
 
 
+
+# Current project-owner visual override supersedes the historical Art Direction
+# PASS for production/candidate purposes while preserving that review as history.
+owner_rejection = read_json("governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json")
+if owner_rejection.get("status") != "PROJECT_OWNER_PILOT_REJECTED_ART_DIRECTION_RESET_REQUIRED":
+    error("current project-owner visual rejection status is wrong")
+if owner_rejection.get("reviewed_visual_commit") != "23c062f6de06c32eab224b3440c8474725d4fe9e":
+    error("project-owner rejection is bound to the wrong Visual commit")
+if owner_rejection.get("supersedes_prior_art_direction_pass_for_production") is not True:
+    error("project-owner rejection must supersede prior art PASS for production")
+if owner_rejection.get("active_visual_candidate") is not None:
+    error("owner-rejected pilot cannot be an active candidate")
+captain_decision = owner_rejection.get("captain_decision", {})
+if captain_decision.get("visible_name") != "KAPTAN" or captain_decision.get("technical_id") != "SET-KP-01":
+    error("KAPTAN visible-name / technical-id decision mismatch")
+if captain_decision.get("mechanics_policy") != "PRESERVE_CURRENT_TRANSFERABLE_CAPTAINCY_MECHANICS":
+    error("KAPTAN decision must preserve current transferable captaincy mechanics")
+copy_control = owner_rejection.get("copy_control", {})
+if copy_control.get("visual_designer_may_rewrite_copy") is not False or copy_control.get("image_model_may_generate_visible_copy") is not False:
+    error("Visual/Image model must not rewrite or generate visible card copy")
+if copy_control.get("final_front_ocr_plus_canonical_compare_required") is not True:
+    error("final front copy requires real OCR/render-source comparison")
+reference_path = "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg"
+if not (ROOT / reference_path).is_file():
+    error("binding KAPTAN art-language reference is missing")
+elif git_blob_sha(reference_path) != "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4":
+    error("binding KAPTAN art-language reference blob changed")
+owner_active = read_json("governance/ACTIVE_WORKSTREAMS.json").get("project_owner_override", {})
+if owner_active.get("status") != "PROJECT_OWNER_PILOT_REJECTED_ART_DIRECTION_RESET_REQUIRED":
+    error("ACTIVE_WORKSTREAMS lost current owner override")
+if owner_active.get("visual_production_authorized") is not False:
+    error("owner override cannot authorize Visual production")
+owner_hierarchy = read_json("working/v2.7/SOURCE_HIERARCHY_v2.7.json")
+if owner_hierarchy.get("project_owner_override", {}).get("current_authorization") != "ART_DIRECTION_MICRO_PATCH_ONLY":
+    error("source hierarchy owner override must authorize Art Direction micro patch only")
+owner_art_source = next((item for item in owner_hierarchy.get("sources", []) if item.get("priority") == 5), {})
+for required_owner_path in ("working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg", "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md", "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json"):
+    if required_owner_path not in owner_art_source.get("paths", []):
+        error(f"source hierarchy missing owner override path: {required_owner_path}")
+require_markers("PROJECT_STATE.md", ["PROJECT OWNER REJECTED", "KAPTAN sanat dili reseti", "BLOCKED_COPY_DRIFT"])
+require_markers("AI_HANDOFF.md", ["PROJECT_OWNER_REJECTED", "KAPTAN ana sanat dili referansı", "YALNIZ SANAT YÖNETİMİ MİKRO PATCHİ YETKİLİ"])
+require_markers("governance/DECISION_REGISTER.md", ["DEC-20260830-05", "DEC-20260830-06", "DEC-20260830-07", "BINDING COPY LOCK / FAST GATE"])
+require_markers("working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md", ["BACK_SEA_ROCK", "BACK_ISLAND", "BACK_LIGHTHOUSE", "700 kelimelik", "BLOCKED_COPY_DRIFT", "FULL_121_PRODUCTION_AUTHORIZED: NO"])
+
 # Human-readable contracts must contain the high-risk rules.
 require_markers("AI_HANDOFF.md", [
     "v2.6 STABLE / LOCKED",
