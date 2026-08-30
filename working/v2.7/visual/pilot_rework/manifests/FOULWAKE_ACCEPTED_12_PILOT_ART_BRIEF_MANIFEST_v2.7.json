@@ -16,7 +16,7 @@
     "targeted_rework_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
     "chief_editor_disposition_commit": "eb595a017351623a7d7efff6f352dbbc2cb56e8f",
     "canonical_prior_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
-    "lighthouse_only_delivery_commit": "PENDING_LIGHTHOUSE_ONLY_DELIVERY_COMMIT"
+    "lighthouse_only_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb"
   },
   "official_pilot_ids": [
     "KAR-01",

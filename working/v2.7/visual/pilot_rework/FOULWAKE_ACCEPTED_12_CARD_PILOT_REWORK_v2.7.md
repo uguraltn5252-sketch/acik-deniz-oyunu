@@ -15,7 +15,7 @@ Bu paket yalnız `BACK_LIGHTHOUSE` source/renderını ve doğrudan bağlı pilot
 - Bağlayıcı lighthouse-only rework emri: `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`
 - Exact Görsel başlangıcı: `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad`
 - Önceki kanonik teslim: `88907294edd326c118573f5ada7406e5fc42ee4d`
-- Lighthouse-only teslim commit'i: `work/v2.7-visual@PENDING_LIGHTHOUSE_ONLY_DELIVERY_COMMIT`
+- Lighthouse-only teslim commit'i: `work/v2.7-visual@c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`
 
 ## Yetkili tek ana rework
 

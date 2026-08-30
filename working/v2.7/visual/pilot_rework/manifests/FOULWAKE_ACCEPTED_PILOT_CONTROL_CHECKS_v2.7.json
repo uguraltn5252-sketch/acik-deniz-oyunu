@@ -3,7 +3,7 @@
   "project": "FOULWAKE",
   "source_branch": "work/v2.7-visual",
   "input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
-  "visual_delivery_commit": "PENDING_LIGHTHOUSE_ONLY_DELIVERY_COMMIT",
+  "visual_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb",
   "chief_editor_source_commit": "b7fce6bf33c23278c3228fe5932e651dc715e694",
   "accepted_art_direction_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
   "result": "PASS",
