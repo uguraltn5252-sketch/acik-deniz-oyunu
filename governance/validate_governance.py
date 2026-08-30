@@ -810,6 +810,25 @@ if copy_control.get("visual_designer_may_rewrite_copy") is not False or copy_con
     error("Visual/Image model must not rewrite or generate visible card copy")
 if copy_control.get("final_front_ocr_plus_canonical_compare_required") is not True:
     error("final front copy requires real OCR/render-source comparison")
+framing_control = owner_rejection.get("framing_control", {})
+if framing_control.get("art_direction_must_review_framing") is not True:
+    error("Art Direction framing review must be mandatory")
+if framing_control.get("visual_designer_may_self_approve_framing") is not False:
+    error("Visual Design must not self-approve framing")
+if framing_control.get("failure_result") != "BLOCKED_FRAMING_DRIFT":
+    error("framing failure result must be BLOCKED_FRAMING_DRIFT")
+if framing_control.get("dispositions") != ["FRAMING_PASS", "REFRAME_REQUIRED"]:
+    error("framing dispositions must be exact")
+required_framing_checks = set(framing_control.get("required_checks", []))
+for required_framing_check in (
+    "exact physical card aspect ratio and designated illustration window",
+    "3 mm bleed and 4–5 mm safe area",
+    "no accidental crop of face, hands or essential objects",
+    "no collision with title, effect, flavor or card-id areas",
+    "thumbnail and normal table-distance readability",
+):
+    if required_framing_check not in required_framing_checks:
+        error(f"framing control missing check: {required_framing_check}")
 reference_path = "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg"
 if not (ROOT / reference_path).is_file():
     error("binding KAPTAN art-language reference is missing")
@@ -827,10 +846,10 @@ owner_art_source = next((item for item in owner_hierarchy.get("sources", []) if 
 for required_owner_path in ("working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg", "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md", "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json"):
     if required_owner_path not in owner_art_source.get("paths", []):
         error(f"source hierarchy missing owner override path: {required_owner_path}")
-require_markers("PROJECT_STATE.md", ["PROJECT OWNER REJECTED", "KAPTAN sanat dili reseti", "BLOCKED_COPY_DRIFT"])
+require_markers("PROJECT_STATE.md", ["PROJECT OWNER REJECTED", "KAPTAN sanat dili reseti", "BLOCKED_COPY_DRIFT", "BLOCKED_FRAMING_DRIFT"])
 require_markers("AI_HANDOFF.md", ["PROJECT_OWNER_REJECTED", "KAPTAN ana sanat dili referansı", "YALNIZ SANAT YÖNETİMİ MİKRO PATCHİ YETKİLİ"])
-require_markers("governance/DECISION_REGISTER.md", ["DEC-20260830-05", "DEC-20260830-06", "DEC-20260830-07", "BINDING COPY LOCK / FAST GATE"])
-require_markers("working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md", ["BACK_SEA_ROCK", "BACK_ISLAND", "BACK_LIGHTHOUSE", "700 kelimelik", "BLOCKED_COPY_DRIFT", "FULL_121_PRODUCTION_AUTHORIZED: NO"])
+require_markers("governance/DECISION_REGISTER.md", ["DEC-20260830-05", "DEC-20260830-06", "DEC-20260830-07", "DEC-20260830-08", "BINDING COPY LOCK / FAST GATE", "BINDING ART DIRECTION FRAMING GATE"])
+require_markers("working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md", ["BACK_SEA_ROCK", "BACK_ISLAND", "BACK_LIGHTHOUSE", "700 kelimelik", "BLOCKED_COPY_DRIFT", "FRAMING_PASS", "REFRAME_REQUIRED", "BLOCKED_FRAMING_DRIFT", "4–5 mm", "FULL_121_PRODUCTION_AUTHORIZED: NO"])
 
 # Human-readable contracts must contain the high-risk rules.
 require_markers("AI_HANDOFF.md", [

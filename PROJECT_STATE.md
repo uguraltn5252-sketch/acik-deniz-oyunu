@@ -20,6 +20,8 @@ Mevcut validatorın final kart yazısını kanonik kaynakla piksel/render düzey
 
 Yeni iş emri: `working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md`. Şu anda yalnız en fazla 700 kelime/1 dosyalık Sanat Yönetimi mikro patchi yetkilidir; Görsel üretim kapalıdır.
 
+Proje sahibi ayrıca bütün kart illüstrasyonlarında bağımsız Sanat Yönetimi kadraj kapısını zorunlu kılmıştır. Kart türünün exact oranı, 3 mm taşma, 4–5 mm güvenli alan, figür/nesne ölçeği, odak, istemsiz yüz/el/nesne kesimi, metin alanı çakışması ve thumbnail/masa-mesafesi okunurluğu incelenir. Görsel Tasarım kendi kadrajına PASS veremez; yalnız `FRAMING_PASS` veya `REFRAME_REQUIRED` verilir ve sapmanın sonucu `BLOCKED_FRAMING_DRIFT`tir.
+
 ## Çalışma hattı durumu
 
 | Hat | Exact kaynak | Baş Editör hükmü | Sonraki adım |

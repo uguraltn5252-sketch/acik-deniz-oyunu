@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.7-project-owner-visual-rejection-1.0",
+  "schema_version": "2.7-project-owner-visual-rejection-1.1",
   "project": "FOULWAKE",
   "decision_date": "2026-08-30",
   "project_owner": "Ugur Altun",
@@ -68,6 +68,27 @@
     "manifest_boolean_is_sufficient": false,
     "final_front_ocr_plus_canonical_compare_required": true,
     "mismatch_result": "BLOCKED_COPY_DRIFT"
+  },
+  "framing_control": {
+    "art_direction_must_review_framing": true,
+    "visual_designer_may_self_approve_framing": false,
+    "applies_to": "ALL_FRONT_AND_BACK_CARD_ILLUSTRATIONS_AT_EVERY_VISUAL_GATE",
+    "required_checks": [
+      "exact physical card aspect ratio and designated illustration window",
+      "3 mm bleed and 4–5 mm safe area",
+      "subject scale, focal hierarchy and visual balance",
+      "no accidental crop of face, hands or essential objects",
+      "no collision with title, effect, flavor or card-id areas",
+      "line-only silhouette and scene readability",
+      "thumbnail and normal table-distance readability",
+      "composition variety without repeated hand-centered or same-model framing"
+    ],
+    "dispositions": [
+      "FRAMING_PASS",
+      "REFRAME_REQUIRED"
+    ],
+    "failure_result": "BLOCKED_FRAMING_DRIFT",
+    "full_121_requires_prior_framing_pass": true
   },
   "fast_workflow": {
     "current_authorization": "ART_DIRECTION_MICRO_PATCH_ONLY",

@@ -1,6 +1,6 @@
 # FOULWAKE v2.7 — Proje Sahibi Görsel Reset / Hızlı Mikro Kapı İş Emri
 
-**Baş Editör kaynağı:** `v2.7-design@6e4f8f55d6f173d13293818f663e0fd6c0ae3d43`  
+**Baş Editör kaynağı:** `v2.7-design@7ce0b8c00f275e5b135201c54d4adf6aad45ac43`  
 **Reddedilen exact pilot:** `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e`  
 **Proje sahibi kanıtı:** `governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json`  
 **Bağlayıcı KAPTAN referansı:** `working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg`  
@@ -23,6 +23,20 @@ Bağlayıcı görsel dil:
 - abartılı fakat tutarlı yüz/beden geometrisi;
 - eski basım kart hissi;
 - açık dijital boya, plastik AI parlaklığı, krom/specular deniz ve neon ışık yok.
+
+### Kadraj ve kart içi kompozisyon kapısı
+
+Bütün ön ve arka kart illüstrasyonlarının kadrajını Sanat Yönetmeni bağımsız inceler; Görsel Tasarım kendi kadrajına PASS veremez. İnceleme şu exact ölçütleri kapsar:
+
+- kart türünün exact fiziksel oranı, 3 mm taşma ve 4–5 mm güvenli alan;
+- ana figür/nesne ölçeği, odak hiyerarşisi ve görsel denge;
+- yüz, el ve gerekli nesnelerin istemsiz veya anlamsız kesilmemesi;
+- illüstrasyonun başlık, effect, flavor ve card-id alanlarıyla çakışmaması;
+- çizgi/siluet düzeyinde sahne okunurluğu;
+- thumbnail ve normal masa mesafesinde ana fikrin seçilmesi;
+- el-merkezli tekrar, aynı-model hissi ve tekdüze yakın/uzak plan tekrarının olmaması.
+
+Her görsel için yalnız `FRAMING_PASS` veya `REFRAME_REQUIRED` verilir. Kadraj PASS olmadan görsel KEEP veya finale geçemez; sapmanın sonucu `BLOCKED_FRAMING_DRIFT`tir.
 
 KAPTAN kartında mevcut devredilebilir kaptanlık mekaniği korunur:
 
@@ -57,6 +71,7 @@ Yalnız `FOULWAKE Sanat Yönetmeni`:
 
 - KAPTAN referansını exact açar;
 - en fazla **700 kelimelik tek bir sanat dili patchi** üretir;
+- aynı patch içinde bütün kartlar için bağlayıcı kadraj kontrol standardını tanımlar;
 - yalnız bir yeni dosya oluşturur:  
   `working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md`;
 - mevcut 121 manifesti, contact sheetleri, rasterları veya PDF'leri yeniden üretmez;
@@ -70,11 +85,13 @@ Yalnız altı düşük çözünürlüklü thumbnail:
 - 2 × `BACK_ISLAND`
 - 2 × `BACK_LIGHTHOUSE`
 
+Altı thumbnail exact arka-yüz oranında sunulur. Sanat Yönetmeni her birini kadraj ölçütleriyle ayrı değerlendirir; `FRAMING_PASS` almayan yön seçime veya finale gidemez.
+
 Tek sheet olabilir. 300 dpi final, source-art paketi, provenance, SHA indeksi, altı layout, PDF ve 121 üretim yapılmaz.
 
 ### Aşama C — proje sahibi yönleri seçerse
 
-Yalnız üç seçilmiş arka yüz finale alınır ve tek küçük masa örneğinde denenir. Bundan önce kanıt paketi şişirilmez.
+Yalnız üç seçilmiş arka yüz, Sanat Yönetmeninin final kadraj kontrolünden sonra finale alınır ve tek küçük masa örneğinde denenir. Bundan önce kanıt paketi şişirilmez.
 
 ## 6. Zorunlu kısa handoff
 
