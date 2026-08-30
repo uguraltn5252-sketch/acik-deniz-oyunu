@@ -726,8 +726,8 @@ if lighthouse_order_path not in art_source.get("paths", []):
     error("source hierarchy does not include lighthouse-only rework order")
 if art_source.get("art_direction_lighthouse_review_evidence") != "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json":
     error("source hierarchy lighthouse-only evidence is wrong")
-if art_source.get("authorized_changed_files_exact") != 15:
-    error("source hierarchy lighthouse-only changed-file budget is wrong")
+if art_source.get("authorized_changed_files_exact") != 0:
+    error("source hierarchy must not retain a Visual changed-file authorization after Art Direction PASS")
 if art_source.get("art_direction_pilot_review_evidence") != "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json":
     error("source hierarchy pilot review evidence is wrong")
 if art_source.get("current_pilot_result") != "PILOT_ART_DIRECTION_PASS_PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE":
@@ -820,7 +820,6 @@ require_markers("PROJECT_STATE.md", [
     "ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
     "ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
     "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
-    "15 FILE HANDOFF ACCEPTED FOR ART DIRECTION REVIEW",
     "ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json",
     "PILOT_ART_DIRECTION_PASS",
     "12 FRONT KEEP / 7 BACK KEEP",
@@ -848,7 +847,7 @@ require_markers("governance/DECISION_REGISTER.md", [
     "FINAL LIGHTHOUSE ART DIRECTION REVIEW",
 ])
 require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
-    "PENDING_NEW_ART_CANDIDATE",
+    "PENDING_OWNER_CHIEF_PILOT_ACCEPTANCE",
     "SRC-002",
     "FOULWAKE Sanat Yönetmeni",
     "EXACT_PILOT_REVIEW_COMPLETE",
@@ -857,8 +856,8 @@ require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
     "ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
     "ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
     "VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
-    "LIGHTHOUSE_FINAL_EXACT_REVIEW_AUTHORIZED",
-    "LIGHTHOUSE_ONLY_HANDOFF_DELIVERED / PRODUCTION_PAUSED",
+    "PILOT_ART_DIRECTION_PASS / OWNER + CHIEF PENDING",
+    "PILOT_ART_DIRECTION_PASS_RECORDED / PRODUCTION_PAUSED",
     "ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json",
     "PILOT_ART_DIRECTION_PASS",
 ])
