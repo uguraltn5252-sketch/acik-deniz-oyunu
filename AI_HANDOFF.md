@@ -10,11 +10,13 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Aktif çalışma:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
-- **Gözlenen pilot paketi:** `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` / `LIGHTHOUSE_ONLY_HANDOFF_PENDING_ART_DIRECTION_REVIEW`
+- **Gözlenen pilot paketi:** `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` / `PILOT_ART_DIRECTION_PASS_PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `EXACT BACK_LIGHTHOUSE FINAL REVIEW PENDING`
-- **Görsel üretim yetkisi:** **YOK — 15 FILE HANDOFF DELIVERED / PRODUCTION PAUSED**
+- **Sanat Yönetimi:** `PILOT ART DIRECTION PASS — 12 FRONT KEEP / 7 BACK KEEP`
+- **Görsel üretim yetkisi:** **YOK — ART DIRECTION PASS / OWNER + CHIEF PILOT DECISION PENDING**
 - **Kilit izni:** **YOK**
+
+Sanat Yönetmeni exact `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` paketindeki `BACK_LIGHTHOUSE`, iki bağlı contact sheet ve altı değişken layout rasterını 9/9 açarak nihai incelemeyi tamamlamıştır. `BACK_LIGHTHOUSE: KEEP`; pilot toplamı `12 FRONT KEEP / 7 BACK KEEP` ve sonuç `PILOT_ART_DIRECTION_PASS`tır. Baş Editör bu görünür handoffu exact kaynak zinciriyle geçerli Sanat Yönetimi kanıtı olarak kaydeder; fakat proje sahibinin nihai estetik kabulü ve Baş Editör pilot kabulü henüz yoktur. Aktif candidate, yeni Görsel üretim, tam 121, PDF, Simülasyon, release veya kilit oluşmaz. Kanıt: `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json`.
 
 Exact lighthouse-only Görsel teslimi `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` başında alınmıştır. Kanonik üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`, takip kanıt commiti `23c062f6de06c32eab224b3440c8474725d4fe9e` ve cumulative fark exact 15 dosyadır. Rapor ile üç JSON manifest ve 61 girdili SHA-256 indeksi birbirini tutar; 18 ana görsel, 16 source-art, 10 gate ve 3 etkilenmeyen contact sheet Git farkında korunmuştur. Baş Editör dispozisyonu `VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW`dür. Bu estetik PASS veya aktif candidate değildir; yeni Görsel üretim kapalıdır ve exact paket şimdi yalnız `FOULWAKE Sanat Yönetmeni` incelemesine gider. Kanıt: `governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json`.
 
@@ -141,6 +143,7 @@ teslimi sayılmaz.
 - Revize pilotun resmî Görsel handoffu:
   `governance/VISUAL_PILOT_HANDOFF_20260826.json` — exact `1b27232a...`
   paketi yalnız Sanat Yönetimi incelemesine giriş için kabul edildi.
+- Nihai fener Sanat Yönetimi incelemesi: `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json` — exact `23c062f6...` için `PILOT_ART_DIRECTION_PASS`; proje sahibi ve Baş Editör pilot kararı bekleniyor.
 - Son Baş Editör denetimi: `governance/CHIEF_EDITOR_AUDIT_20260825.md`.
 
 GitHub'a yazılmış olmak bir çıktıyı kendiliğinden kanon, PASS, STABLE veya
@@ -212,10 +215,4 @@ Simülasyon attestation varken sürüm kilitlenmez.
 
 ## Güncel devam komutu
 
-> `v2.7-design` üzerindeki `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json` ve `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`
-> kaynaklarını oku. `FOULWAKE Görsel Tasarım 2`, exact
-> `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` başından yalnız `BACK_LIGHTHOUSE`
-> source/renderı ile iki contact sheet, altı mevcut layout, bir rapor ve dört
-> kanıt kaydını değiştirerek 15 dosyalık son hedefli reworkü uygulasın. Başka
-> ana görsel, source-art, gate, sheet, geometri, tam 121, PDF, Simülasyon,
-> release veya kilit yoktur.
+> `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json` kaydını oku. Exact pilot Sanat Yönetimi kapısını `12 FRONT KEEP / 7 BACK KEEP` ile geçmiştir. Proje sahibinin açık pilot estetik kararını al; bu karar gelmeden aktif candidate, yeni Görsel üretim, tam 121, PDF, Simülasyon, release veya kilit açma.

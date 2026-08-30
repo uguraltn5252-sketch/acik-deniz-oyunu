@@ -70,13 +70,13 @@
       "art_direction_gate": "FOULWAKE Sanat Yönetmeni review recommendation required before owner and Chief Editor pilot disposition",
       "accepted_art_direction_source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
       "accepted_art_direction_evidence": "governance/ART_DIRECTION_HANDOFF_20260825.json",
-      "production_authorization": "PILOT_ONLY",
+      "production_authorization": "NONE_PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_PILOT_ACCEPTANCE",
       "full_production_authorized": false,
       "map_back_decision": "FAMILY_VISIBLE_EXACT_FRONT_BLIND_VARIABLE_LAYOUT",
       "art_direction_pilot_review_evidence": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
       "reviewed_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-      "current_pilot_result": "PENDING_EXACT_ART_DIRECTION_LIGHTHOUSE_REVIEW",
-      "next_pilot_scope": "EXACT_9_RASTER_LIGHTHOUSE_REVIEW_ONLY",
+      "current_pilot_result": "PILOT_ART_DIRECTION_PASS_PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+      "next_pilot_scope": "PROJECT_OWNER_PILOT_AESTHETIC_DECISION",
       "revised_art_direction_pilot_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
       "revised_reviewed_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
       "current_pilot_front_counts": {
@@ -84,14 +84,12 @@
         "rework_required": 0
       },
       "current_pilot_back_counts": {
-        "keep": 6,
-        "rework_required": 1
+        "keep": 7,
+        "rework_required": 0
       },
       "targeted_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
       "targeted_rework_front_ids": [],
-      "targeted_rework_back_ids": [
-        "BACK_LIGHTHOUSE"
-      ],
+      "targeted_rework_back_ids": [],
       "byte_exact_keep_front_ids": [
         "KAR-01",
         "KAR-06",
@@ -114,15 +112,20 @@
         "BACK_ISLAND",
         "BACK_SUPPORT"
       ],
-      "authorized_changed_files_exact": 15,
-      "pilot_authorization_state": "CONSUMED_PENDING_ART_DIRECTION_REVIEW",
+      "authorized_changed_files_exact": 0,
+      "pilot_authorization_state": "CONSUMED_ART_DIRECTION_PASS_PENDING_OWNER_CHIEF",
       "art_direction_lighthouse_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
-      "latest_reviewed_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+      "latest_reviewed_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
       "latest_visual_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb",
       "latest_visual_evidence_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
       "latest_visual_handoff_evidence": "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
       "art_direction_review_input_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
-      "new_visual_production_authorized": false
+      "new_visual_production_authorized": false,
+      "art_direction_lighthouse_final_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json",
+      "art_direction_final_result": "PILOT_ART_DIRECTION_PASS",
+      "project_owner_final_aesthetic_acceptance": false,
+      "chief_editor_pilot_acceptance": false,
+      "active_visual_candidate": false
     }
   ],
   "non_source_evidence": [

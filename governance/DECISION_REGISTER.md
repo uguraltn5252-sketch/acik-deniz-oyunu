@@ -37,6 +37,8 @@ geçersiz kılar.
 
 | `DEC-20260830-03` | LIGHTHOUSE-ONLY HANDOFF ACCEPTANCE | `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` exact 15-file handoff; kanonik üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`, evidence/head `23c062f6de06c32eab224b3440c8474725d4fe9e` olarak teknik açıdan tutarlı bulundu. | Yalnız exact Sanat Yönetimi incelemesine giriş kabulüdür. Yeni Görsel üretim, tam 121, PDF, Simülasyon, release ve kilit yoktur; aktif candidate ve estetik PASS oluşmaz. |
 
+| `DEC-20260830-04` | FINAL LIGHTHOUSE ART DIRECTION REVIEW | `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` exact 9-raster incelemesinde `BACK_LIGHTHOUSE` KEEP; pilot toplamı 12 ön KEEP / 7 arka KEEP ve `PILOT_ART_DIRECTION_PASS`. | Sanat Yönetimi kapısı geçmiştir; proje sahibinin açık pilot estetik kararı ve Baş Editör pilot kabulü gelmeden aktif candidate, yeni Görsel üretim, tam 121, PDF, Simülasyon, release veya kilit yoktur. |
+
 ## Açık kaynak dispozisyonu
 
 `SRC-002`: v2.6 kayıtlarındaki `GUC-22 = Bayat Peksimet` ile v2.7 kaynağındaki

@@ -9,9 +9,9 @@
 | Hat | Görünür sohbet / dal | Durum | Bağlayıcı kanıt |
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
-| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `LIGHTHOUSE_FINAL_EXACT_REVIEW_AUTHORIZED` | `governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json`; input `23c062f6...` |
-| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `LIGHTHOUSE_ONLY_HANDOFF_DELIVERED / PRODUCTION_PAUSED` | kanonik `c8081aa9...`; head `23c062f6...` |
-| Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `PILOT_ART_DIRECTION_PASS / OWNER + CHIEF PENDING` | `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json`; input `23c062f6...` |
+| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `PILOT_ART_DIRECTION_PASS_RECORDED / PRODUCTION_PAUSED` | kanonik `c8081aa9...`; head `23c062f6...` |
+| Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_OWNER_CHIEF_PILOT_ACCEPTANCE` | Dal henüz yok |
 | Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
 
 ## Hikâye Editörü
@@ -23,26 +23,23 @@
   Simülasyona bırakır.
 - Yeni görev yoksa dalı değiştirmez.
 
-## Sanat Yönetmeni — exact final fener incelemesi
+## Sanat Yönetmeni — final inceleme tamamlandı
 
-Bağlayıcı Görsel handoff kanıtı `governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json`dır.
+Bağlayıcı nihai inceleme kaydı `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json`dır.
 
-1. Exact `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` paketini inceler.
-2. Görsel olarak açılacak exact rasterlar: `BACK_LIGHTHOUSE.png`, iki etkilenen contact sheet ve altı mevcut map-layout rasterı — toplam 9.
-3. Normal dijital masa mesafesinde fener ailesi görünürlüğü; Ada/kayalık/kulübe/kapstan yanlış okuması; 1721 uygunluğu; ortak deniz ve çapraz kaya sırtı; exact ön kimlik/sonuç körlüğü; ışın/glow/halo/lens/modern beacon/rozet yasağını değerlendirir.
-4. `KAR-01`, `HAR-AA-06`, `BACK_ISLAND` ve diğer 18 ana KEEP görseli yeniden açmaz; Git exact koruması tarihsel kabulü dondurur.
-5. Manifest veya teknik PASS'i estetik PASS yerine kullanmaz.
-6. Final üretmez, dosya değiştirmez, kullanıcı/release/kilit PASS'i vermez ve geçici ajan kullanmaz.
-
-Tarihsel `EXACT_PILOT_REVIEW_COMPLETE`, `REVISED_EXACT_PILOT_REVIEW_COMPLETE`, `REDRAW_BRIEF`, `ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json` ve `ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json` kayıtları korunur.
+1. Exact `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` üzerinde 9/9 raster açıldı.
+2. `BACK_LIGHTHOUSE: KEEP`; final pilot dispozisyonu `12 FRONT KEEP / 7 BACK KEEP`.
+3. `PILOT_ART_DIRECTION_PASS` yalnız Sanat Yönetimi kapısını geçer; proje sahibi veya release/kilit PASS'i değildir.
+4. Yeni sanat yönü veya üretim görevi yoktur. Proje sahibinin açık pilot estetik kararı beklenir.
+5. Tarihsel `EXACT_PILOT_REVIEW_COMPLETE`, `REVISED_EXACT_PILOT_REVIEW_COMPLETE`, `REDRAW_BRIEF`, `ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`, `ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json` ve `VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json` kayıtları korunur.
 
 ## Görsel Tasarım — handoff teslim edildi / üretim durdu
 
 1. Exact dal başı `23c062f6de06c32eab224b3440c8474725d4fe9e`; kanonik lighthouse-only üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`dır.
 2. Cumulative `0cb2bd6f03e2d84948741c162f22b8fd2ff064ad..23c062f6de06c32eab224b3440c8474725d4fe9e` farkı exact 15 dosyadır.
-3. Teknik handoff `VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW` olarak kabul edilmiştir; estetik PASS değildir.
+3. Sanat Yönetimi exact pakete `PILOT_ART_DIRECTION_PASS` vermiştir; bu proje sahibi estetik kabulü veya aktif candidate değildir.
 4. Yeni görsel, düzeltme, contact sheet/layout türetimi, tam 121, PDF, Simülasyon, release veya kilit üretmez.
-5. Sanat Yönetimi kararı gelene kadar dalı değiştirmez; kapsam açılması ancak yeni exact Baş Editör emriyle olur.
+5. Proje sahibi + Baş Editör pilot kararı gelene kadar dalı değiştirmez; kapsam açılması ancak yeni exact Baş Editör emriyle olur.
 6. `TEMPORARY_SUBAGENTS: NONE` ve `LOCK_REQUESTED: NO` korunur.
 
 ## Simülasyon Testi — bekleyen görev
@@ -77,7 +74,7 @@ Yeni görsel candidate Baş Editörce kabul edilmeden iş başlatılmaz ve
 | `MEC-001` | Simülasyon | Yeni candidate bekliyor |
 | `SRC-001` | Görsel | Yeni provenance bekliyor |
 | `SRC-002` | Baş Editör + Simülasyon | Exact baseline çözümü bekliyor |
-| `ART-001` | Sanat Yönetimi + Görsel | Yalnız `BACK_LIGHTHOUSE` reworkü ve son sanat kabulü bekleniyor |
+| `ART-001` | Proje sahibi + Baş Editör | Sanat Yönetimi PASS; açık pilot estetik kabulü ve Baş Editör dispozisyonu bekleniyor |
 | `QA-001`, `QA-002` | Simülasyon | Yeni candidate bekliyor |
 | `GOV-001`, `COM-001` | Baş Editör | Açık |
 

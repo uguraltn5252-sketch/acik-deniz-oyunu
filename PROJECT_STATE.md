@@ -5,9 +5,9 @@
 **Aktif taslak:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`  
 **Entegrasyon dalı:** `v2.7-design`  
 **Aktif workspace:** `working/v2.7/`  
-**Aktif görsel candidate:** YOK — exact `23c062f6...` lighthouse-only handoffu Sanat Yönetimi incelemesini bekliyor  
-**Sanat Yönetimi:** `BACK_LIGHTHOUSE FINAL EXACT REVIEW PENDING`  
-**Görsel kapısı:** `15 FILE HANDOFF ACCEPTED FOR ART DIRECTION REVIEW / PRODUCTION PAUSED`  
+**Aktif görsel candidate:** YOK — exact `23c062f6...` pilotu Sanat Yönetimi PASS aldı; proje sahibi + Baş Editör pilot kabulü bekleniyor  
+**Sanat Yönetimi:** `PILOT_ART_DIRECTION_PASS — 12 FRONT KEEP / 7 BACK KEEP`  
+**Görsel kapısı:** `ART DIRECTION PASS / OWNER + CHIEF PILOT DECISION PENDING / PRODUCTION PAUSED`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
 
 ## Çalışma hattı durumu
@@ -15,9 +15,9 @@
 | Hat | Exact kaynak | Baş Editör hükmü | Sonraki adım |
 |---|---|---|---|
 | Hikâye | `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` | Kabul edildi ve exact üç Hikâye blobu entegre edildi; release PASS değil | Görsel için exact metin girdisi |
-| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | Exact `23c062f6...` final fener paketinin bağımsız estetik incelemesi yetkili | BACK_LIGHTHOUSE, 2 sheet ve 6 layout rasterını exact açıp karar verir |
-| Görsel | `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` | Exact 15 dosyalık handoff kabul edildi; kanonik üretim `c8081aa9...` | Üretim durur; Sanat Yönetimi sonucunu bekler |
-| Simülasyon | dal yok | Başlamadı | Yeni görsel aday kabulünden sonra |
+| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | Exact `23c062f6...` için final karar `PILOT_ART_DIRECTION_PASS`; 12 ön ve 7 arka KEEP | Proje sahibinin açık pilot estetik kararını bekler |
+| Görsel | `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` | Exact pilot Sanat Yönetimi PASS aldı; henüz aktif candidate değildir | Üretim durur; proje sahibi + Baş Editör pilot kararını bekler |
+| Simülasyon | dal yok | Başlamadı | Proje sahibi + Baş Editör exact pilotu kabul edip yeni aşamayı yetkilendirirse |
 
 Lighthouse-only teslim zinciri GitHub'da exact doğrulanmıştır: başlangıç `0cb2bd6f03e2d84948741c162f22b8fd2ff064ad`, kanonik üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`, kanıt ve dal başı `23c062f6de06c32eab224b3440c8474725d4fe9e`. Cumulative fark yalnız yetkili 15 dosyadır; takip commiti yalnız rapor ile dört manifest/checksum/provenance kaydını teslim hashine bağlar. Teknik handoff `governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json` ile Sanat Yönetimi incelemesine kabul edilmiştir. Bu estetik kabul, proje sahibi onayı veya aktif candidate değildir.
 
@@ -86,6 +86,12 @@ layout, bir rapor ve dört kanıt kaydından oluşan exact 15 dosyalık reworkü
 açtı. On sekiz ana görsel, on altı source-art, on gate ve üç etkilenmeyen sheet
 byte-exact donduruldu. Kanıt `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`; emir `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`dır.
 
+## 30 Ağustos 2026 — Nihai fener KEEP / pilot Sanat Yönetimi PASS
+
+Sanat Yönetmeni exact `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` paketinde `BACK_LIGHTHOUSE`, iki bağlı contact sheet ve altı değişken layout rasterını 9/9 açmıştır. Kule normal dijital masa mesafesinde anonim 1721 seyir yapısı olarak okunur; Ada/kayalık/kulübe/kapstan yanılgısı, yasak optik/rozet motifi ve exact ön kimlik/sonuç sızıntısı yoktur. `BACK_LIGHTHOUSE: KEEP`; pilot toplamı `12 FRONT KEEP / 7 BACK KEEP` ve sonuç `PILOT_ART_DIRECTION_PASS`tır.
+
+Baş Editör görünür handoffu exact kaynak zinciri açısından kabul edip `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json` ile kaydetmiştir. Bu kayıt Sanat Yönetimi kapısını kapatır; proje sahibinin nihai estetik kabulünü veya Baş Editör pilot kabulünü varsaymaz. Aktif candidate, yeni üretim, tam 121, PDF, Simülasyon, release ve kilit hâlâ yoktur. Fiziksel baskı/kesim/duplex/ışık/gerçek masa-mesafesi testleri ile `SRC-002` açıktır.
+
 ## Bağlayıcı yeni görsel yön
 
 `working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md` bütün
@@ -115,11 +121,11 @@ byte-exact donduruldu. Kanıt `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_2
 | `MEC-001` | Simülasyon | OPEN | Sea=Rock için exact adayda tam ve kör fiziksel test |
 | `SRC-001` | Görsel | OPEN | Yeni adayda tutarlı source→render→PDF ve iç/dış provenance |
 | `SRC-002` | Baş Editör + Simülasyon | OPEN | GUC-22/GUC-23 için kilitli v2.6 exact kaynak karşılaştırması veya açık kullanıcı kararı |
-| `ART-001` | Sanat Yönetimi + Görsel | BACK_LIGHTHOUSE-ONLY REWORK AUTHORIZED | Fener source/renderı ve yalnız bağlı 13 kanıt dosyası düzeltilip yeniden incelenmelidir |
+| `ART-001` | Proje sahibi + Baş Editör | ART DIRECTION PASS / OWNER + CHIEF PENDING | Exact pilot 12/12 ön ve 7/7 arka KEEP aldı; açık pilot estetik kabulü ve Baş Editör dispozisyonu gerekir |
 | `QA-001` | Simülasyon | OPEN | Exact candidate'a bağlı yeniden üretilebilir tam attestation |
 | `QA-002` | Simülasyon | OPEN | Fiziksel proof, kör sızıntı ve kör insan masa testi |
 | `GOV-001` | Baş Editör | OPEN | main uzlaştırması, branch protection/ruleset, required status check |
-| `COM-001` | Baş Editör | OPEN | `0cb2bd6f...` sanat dispozisyonu kaydedildi; fener-only Görsel handoffu, kullanıcı/Baş Editör pilot kabulü ve bağımsız Simülasyon bekleniyor |
+| `COM-001` | Baş Editör | OPEN | `23c062f6...` için Sanat Yönetimi PASS kaydedildi; proje sahibi + Baş Editör pilot kararı bekleniyor |
 
 `CAN-001` çözülmüştür: CAN-08/09 v2.7 DRAFT `TASLAK` koruma ilkeleridir.
 
@@ -160,6 +166,7 @@ ayrıdır.
 - `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json`
 - `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`
 - `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`
+- `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json`
 - `working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`
 - `working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`
 - `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`

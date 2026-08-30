@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_AND_CHIEF_EDITOR_RECORD",
+  "recorded_at": "2026-08-30T18:28:02+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": {
+    "version": "v2.6",
+    "status": "STABLE_LOCKED",
+    "mutable": false
+  },
+  "status": "PILOT_ART_DIRECTION_PASS_PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+  "art_direction_review": {
+    "workstream": "Sanat Yönetimi",
+    "visible_chat": "FOULWAKE Sanat Yönetmeni",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "review_evidence_type": "EXACT_VISUAL_LIGHTHOUSE_FINAL_REVIEW",
+    "source_branch": "work/v2.7-art-direction",
+    "source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "chief_editor_source": "v2.7-design@7d18ae9b9b0d03de33362e803896c26c29fd0dca",
+    "input_visual_branch": "work/v2.7-visual",
+    "input_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "canonical_visual_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb",
+    "art_direction_stage": "BACK_LIGHTHOUSE_FINAL_EXACT_REVIEW",
+    "scope": "BACK_LIGHTHOUSE, 2 bağlı contact sheet ve 6 değişken layout rasterının bağımsız nihai sanat incelemesi",
+    "changed_files": [],
+    "protected_fields_confirmed": true,
+    "exact_visuals_opened": "9/9",
+    "back_lighthouse_disposition": "KEEP",
+    "lighthouse_family_visibility": "PASS",
+    "island_rock_hut_capstan_misread": false,
+    "period_1721": "PASS",
+    "exact_front_identity_and_result_blindness": "PASS",
+    "forbidden_optical_and_badge_motifs": "PASS",
+    "material_and_line_language": "PASS",
+    "variable_layout_world_fit": "PASS",
+    "creative_verdict": "KEEP",
+    "pilot_front_counts": {
+      "keep": 12,
+      "rework_required": 0
+    },
+    "pilot_back_counts": {
+      "keep": 7,
+      "rework_required": 0
+    },
+    "result": "PILOT_ART_DIRECTION_PASS_PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+    "physical_test_limitation": "Baskı, kesim, duplex, ışık ve gerçek masa-mesafesi testleri yapılmadı.",
+    "temporary_subagents": [],
+    "new_visual_production_authorized": false,
+    "full_121_production_authorized": false,
+    "simulation_authorized": false,
+    "next_recipient": "Baş Editör",
+    "lock_requested": false
+  },
+  "chief_editor_exact_verification": {
+    "integration_branch_head": "7d18ae9b9b0d03de33362e803896c26c29fd0dca",
+    "visual_branch_head": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "art_direction_branch_head": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "reviewed_rasters_exact": 9,
+    "reviewed_rasters": [
+      {
+        "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_LIGHTHOUSE.png",
+        "blob_sha": "9a9351b19eb621fdebc7a121b4825534f4e21394",
+        "bytes": 1539884
+      },
+      {
+        "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_7_BACKS_CONTACT_SHEET_v2.7.png",
+        "blob_sha": "91c21194684edf31a6e45e8dd2d886260dd8a08f",
+        "bytes": 3276228
+      },
+      {
+        "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_3_VARIABLE_MAP_LAYOUTS_CONTACT_SHEET_v2.7.png",
+        "blob_sha": "5c40c1de5bc4701897a51d335281bff1aeffa319",
+        "bytes": 2073104
+      },
+      {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_CLOSED_v2.7.png",
+        "blob_sha": "e60f4cc49e56a2aad6253fe74389d3af3f4eb831",
+        "bytes": 1103751
+      },
+      {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_PARTIALLY_OPEN_v2.7.png",
+        "blob_sha": "49654e1f51f2cf57bb8704adbef9354112586ea6",
+        "bytes": 1138356
+      },
+      {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_CLOSED_v2.7.png",
+        "blob_sha": "bebc7d5380b4ce004b73150399f653ba7dcb8bb0",
+        "bytes": 1199067
+      },
+      {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_PARTIALLY_OPEN_v2.7.png",
+        "blob_sha": "19a732009c1af8f9edf9f43700fceac0993a35b8",
+        "bytes": 1307207
+      },
+      {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_CLOSED_v2.7.png",
+        "blob_sha": "976d08d31b324f4a97e743ba97836d2a4b2a4c9f",
+        "bytes": 1432761
+      },
+      {
+        "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_PARTIALLY_OPEN_v2.7.png",
+        "blob_sha": "565784c4f500586ab68f528bb2b767da9246babc",
+        "bytes": 1592308
+      }
+    ],
+    "prior_visual_handoff_evidence": "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
+    "reported_refs_match": true,
+    "chief_editor_evidence_acceptance": true,
+    "chief_editor_pilot_art_acceptance": false
+  },
+  "chief_editor_disposition": "ART_DIRECTION_PASS_RECORDED_PENDING_PROJECT_OWNER_PILOT_DECISION",
+  "acceptance_scope": [
+    "The visible Art Direction handoff is complete and exact-ref coherent.",
+    "BACK_LIGHTHOUSE is KEEP; the pilot Art Direction disposition is 12 fronts KEEP / 7 backs KEEP.",
+    "The Art Direction gate is passed for the exact pilot package."
+  ],
+  "limitations": [
+    "Project-owner final aesthetic acceptance has not yet been explicitly granted.",
+    "There is no active visual candidate until project-owner and Chief Editor pilot acceptance are recorded.",
+    "No new Visual production, full 121 propagation, PDF, Simulation, release or lock is authorized.",
+    "Physical print, cut, duplex, light and real table-distance tests remain NOT_RUN.",
+    "SRC-002 remains open."
+  ],
+  "project_owner_final_aesthetic_acceptance_pending": true,
+  "chief_editor_pilot_art_acceptance_pending": true,
+  "active_visual_candidate": false,
+  "visual_production_authorized": false,
+  "full_121_production_authorized": false,
+  "simulation_authorized": false,
+  "release_pass": false,
+  "temporary_subagents_used": false,
+  "lock_requested": false,
+  "next_action": "Obtain an explicit project-owner pilot disposition; then the Chief Editor may accept or reject the exact pilot and define the next bounded stage."
+}
