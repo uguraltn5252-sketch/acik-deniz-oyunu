@@ -2,9 +2,9 @@
   "schema_version": "2.7-accepted-pilot-control-1.0",
   "project": "FOULWAKE",
   "source_branch": "work/v2.7-visual",
-  "input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
-  "visual_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
-  "chief_editor_source_commit": "74ac7eb764089a894b109990c1bc10304b7a614d",
+  "input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+  "visual_delivery_commit": "PENDING_LIGHTHOUSE_ONLY_DELIVERY_COMMIT",
+  "chief_editor_source_commit": "b7fce6bf33c23278c3228fe5932e651dc715e694",
   "accepted_art_direction_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
   "result": "PASS",
   "failures": [],
@@ -879,7 +879,7 @@
         }
       ],
       "pass": true,
-      "note": "Targeted four source-art files returned empty Tesseract output and were manually inspected; unchanged engraved sources retain their prior reviewed records."
+      "note": "The lighthouse-only source returned empty Tesseract output and was manually inspected; all protected source-art retains exact input bytes."
     },
     "variable_map_layouts": {
       "layout_count": 3,
@@ -891,7 +891,10 @@
       ],
       "all_orthogonally_connected": true,
       "all_not_fixed_5x5": true,
-      "pass": true
+      "pass": true,
+      "visually_opened": 6,
+      "lighthouse_cell_positions_preserved": 12,
+      "identities_open_closed_states_and_orientations_preserved": true
     },
     "policy_flags": {
       "front_text_in_illustration_false": true,
@@ -903,13 +906,15 @@
       "pass": true
     },
     "targeted_rework_scope_and_gate_integrity": {
-      "authorized_changed_files_exact": 25,
-      "actual_changed_files_exact": 25,
-      "main_keep_assets_byte_exact": 15,
-      "protected_gates_byte_exact": 9,
-      "har_aa_06_gate_byte_exact": true,
-      "kar_01_new_gate_geometry_count": 3,
-      "contact_sheets_regenerated": 5,
+      "scope": "BACK_LIGHTHOUSE_ONLY_PLUS_DIRECT_EVIDENCE",
+      "authorized_changed_files_exact": 15,
+      "actual_changed_files_exact": 15,
+      "main_assets_byte_exact": 18,
+      "source_art_byte_exact": 16,
+      "sketch_gates_byte_exact": 10,
+      "unaffected_contact_sheets_byte_exact": 3,
+      "accepted_kar_01_har_aa_06_back_island_byte_exact": true,
+      "contact_sheets_regenerated": 2,
       "map_layout_rasters_regenerated": 6,
       "pass": true
     },
@@ -944,6 +949,32 @@
         "pass": true
       },
       "pass": true
+    },
+    "prior_targeted_rework_scope_and_gate_integrity": {
+      "authorized_changed_files_exact": 25,
+      "actual_changed_files_exact": 25,
+      "main_keep_assets_byte_exact": 15,
+      "protected_gates_byte_exact": 9,
+      "har_aa_06_gate_byte_exact": true,
+      "kar_01_new_gate_geometry_count": 3,
+      "contact_sheets_regenerated": 5,
+      "map_layout_rasters_regenerated": 6,
+      "pass": true
+    },
+    "lighthouse_only_visual_brief_checks": {
+      "existing_shared_sea_and_low_diagonal_ridge_preserved": true,
+      "polygonal_masonry_walls_and_plain_upper_chamber_legible": true,
+      "normal_digital_table_distance_family_visibility": true,
+      "island_rock_hut_capstan_misread": false,
+      "exact_front_identity_and_result_blindness": true,
+      "beam_glow_halo_fresnel_argand_round_lens_modern_beacon_absent": true,
+      "circular_platform_target_badge_medallion_absent": true,
+      "back_contact_sheet_visually_opened": true,
+      "six_map_layout_rasters_visually_opened": true,
+      "three_variable_geometries_preserved": true,
+      "aesthetic_pass_self_declared": false,
+      "acceptance_pending": "ART_DIRECTION_PROJECT_OWNER_CHIEF_EDITOR",
+      "technical_pass": true
     }
   },
   "physical_tests": {
@@ -953,6 +984,8 @@
     "light": "NOT_RUN",
     "blind_orientation_leak": "NOT_RUN"
   },
-  "art_direction_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
-  "binding_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md"
+  "art_direction_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+  "binding_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+  "chief_editor_disposition_commit": "eb595a017351623a7d7efff6f352dbbc2cb56e8f",
+  "canonical_prior_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d"
 }

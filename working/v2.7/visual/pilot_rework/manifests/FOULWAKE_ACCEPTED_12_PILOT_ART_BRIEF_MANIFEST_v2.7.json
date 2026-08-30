@@ -1,19 +1,22 @@
 {
   "schema_version": "2.7-accepted-pilot-production-brief-1.0",
   "project": "FOULWAKE",
-  "status": "TARGETED_PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+  "status": "BACK_LIGHTHOUSE_ONLY_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
   "sources": {
-    "chief_editor_source": "74ac7eb764089a894b109990c1bc10304b7a614d",
+    "chief_editor_source": "b7fce6bf33c23278c3228fe5932e651dc715e694",
     "accepted_art_direction_source": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
-    "reviewed_visual_source": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+    "reviewed_visual_source": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
     "art_direction_bible_blob": "11adbf70986401b25872101f986b07ecb9b992b4",
     "art_brief_manifest_blob": "16e41ce2fd237dbf1cf43a87a9c682ff1ebb3f7b",
     "pilot_production_briefs_blob": "7af68a33d2e40ee924a2aeb49f75881035ee6fee",
     "back_briefs_blob": "bb9f9de721d359c08a3f9310eed7e4ed73d24b0e",
-    "art_direction_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
-    "binding_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
-    "input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
-    "targeted_rework_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d"
+    "art_direction_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+    "binding_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+    "input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+    "targeted_rework_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
+    "chief_editor_disposition_commit": "eb595a017351623a7d7efff6f352dbbc2cb56e8f",
+    "canonical_prior_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
+    "lighthouse_only_delivery_commit": "PENDING_LIGHTHOUSE_ONLY_DELIVERY_COMMIT"
   },
   "official_pilot_ids": [
     "KAR-01",
@@ -281,11 +284,18 @@
       "derived_from_prior_back": false,
       "targeted_rework": {
         "sea_reference": "BACK_SEA_ROCK",
-        "low_diagonal_rock_ridge": true,
-        "small_plain_polygonal_masonry_tower": true,
-        "circular_islet_or_concentric_surf": false,
-        "beam_glow_ring_round_lens_modern_beacon": false,
-        "sea_reaches_all_four_edges": true
+        "existing_shared_sea_preserved": true,
+        "low_diagonal_rock_ridge_preserved": true,
+        "enlarged_plain_polygonal_masonry_tower": true,
+        "plain_upper_fire_watch_chamber_legible": true,
+        "tower_value_separated_from_rock": true,
+        "normal_digital_table_distance_family_visible": true,
+        "misread_as_island_rock_hut_or_capstan": false,
+        "exact_front_identity_and_result_blind": true,
+        "beam_glow_halo_lens_modern_beacon": false,
+        "circular_platform_target_badge_medallion": false,
+        "sea_reaches_all_four_edges": true,
+        "aesthetic_acceptance_pending": true
       }
     },
     {
@@ -305,9 +315,30 @@
     "full_pdf_created": false,
     "simulation_handoff_started": false,
     "release_or_lock_declared": false,
-    "authorized_changed_files_exact": 25
+    "authorized_changed_files_exact": 15
   },
   "targeted_rework": {
+    "scope": "BACK_LIGHTHOUSE_ONLY_PLUS_DIRECT_EVIDENCE",
+    "authorized_changed_files_exact": 15,
+    "primary_render": "BACK_LIGHTHOUSE.png",
+    "source_art_counterpart": "BACK_LIGHTHOUSE_source.jpg",
+    "derived_contact_sheets": 2,
+    "derived_map_layout_rasters": 6,
+    "byte_exact_main_assets": 18,
+    "byte_exact_source_art": 16,
+    "byte_exact_sketch_gates": 10,
+    "byte_exact_unaffected_contact_sheets": 3,
+    "accepted_keep_assets": [
+      "KAR-01",
+      "HAR-AA-06",
+      "BACK_ISLAND"
+    ],
+    "full_121_fronts_created": false,
+    "full_pdf_created": false,
+    "simulation_handoff_started": false,
+    "aesthetic_acceptance_self_declared": false
+  },
+  "prior_targeted_rework": {
     "authorized_changed_files_exact": 25,
     "primary_renders": [
       "KAR-01_front.png",

@@ -1,12 +1,12 @@
 {
   "schema_version": "2.7-accepted-pilot-provenance-1.0",
   "project": "FOULWAKE",
-  "status": "TARGETED_PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
+  "status": "BACK_LIGHTHOUSE_ONLY_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
   "source_branch": "work/v2.7-visual",
-  "input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
-  "chief_editor_source_commit": "74ac7eb764089a894b109990c1bc10304b7a614d",
+  "input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+  "chief_editor_source_commit": "b7fce6bf33c23278c3228fe5932e651dc715e694",
   "accepted_art_direction_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
-  "visual_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
+  "visual_delivery_commit": "PENDING_LIGHTHOUSE_ONLY_DELIVERY_COMMIT",
   "policy": {
     "exact_keep_ids": [
       "HAR-KY-06",
@@ -39,9 +39,11 @@
     "full_pdf_created": false,
     "simulation_handoff_started": false,
     "targeted_rework_only": true,
-    "authorized_changed_files_exact": 25,
-    "main_keep_assets_byte_exact": 15,
-    "protected_gates_byte_exact": 9
+    "authorized_changed_files_exact": 15,
+    "main_keep_assets_byte_exact": 18,
+    "protected_gates_byte_exact": 10,
+    "source_art_keep_byte_exact": 16,
+    "unaffected_contact_sheets_byte_exact": 3
   },
   "fronts": [
     {
@@ -1240,8 +1242,8 @@
       "mapped_count": 4,
       "source_art": {
         "path": "working/v2.7/visual/pilot_rework/source_art/BACK_LIGHTHOUSE_source.jpg",
-        "sha256": "b29b8e103809322c6b85800cd36b3f991ac3945e16ced0e5a4e9adac04890c85",
-        "bytes": 941067,
+        "sha256": "e550b505cc67b23fe74ca82167dfa2a2b4a4e9cd98299ff821e5bd18c16b1091",
+        "bytes": 859845,
         "pixels": [
           1254,
           1254
@@ -1252,11 +1254,11 @@
         ],
         "mode": "RGB"
       },
-      "imagegen_workspace_output_sha256": "af6b50d57f9af3aca551f7cabd17434c3295d094b9b0a3fefd42926dd27b12be",
+      "imagegen_workspace_output_sha256": "dce2bb07ca7ece850e9beda27fccb67655ab8843ac6946edad76890897725e54",
       "render": {
         "path": "working/v2.7/visual/pilot_rework/pilot_backs/BACK_LIGHTHOUSE.png",
-        "sha256": "4a40af93ac5fd28423a384135be897e115da30dc7bb8de6b6763f730e0059854",
-        "bytes": 1633178,
+        "sha256": "7792b1cf7200e393382866d3f08f79e1e78971620ff3da01e0e547064ba4ce9b",
+        "bytes": 1539884,
         "pixels": [
           898,
           898
@@ -1280,10 +1282,16 @@
       },
       "rejected_asset_reused": false,
       "targeted_rework_derivation": {
-        "source_visual_generation": "NEW_ORIGINAL_FROM_BINDING_REWORK_BRIEF",
-        "sea_value_and_edge_reference": "BACK_SEA_ROCK",
+        "source_visual_generation": "PRECISE_OBJECT_EDIT_FROM_0CB2BD6F_SOURCE",
+        "changed_subject": "CENTRAL_MASONRY_LIGHTHOUSE_ONLY",
+        "preserved_scene": "SHARED_SEA_LOW_DIAGONAL_RIDGE_RESTRAINED_FOAM",
         "render_transform": "RESIZE_898_AND_INTEGER_PAIRWISE_180_AVERAGE",
-        "exact_180_degree_pixel_safe": true
+        "exact_180_degree_pixel_safe": true,
+        "normal_digital_table_distance_family_visible": true,
+        "island_rock_hut_capstan_misread": false,
+        "exact_front_identity_and_result_blind": true,
+        "forbidden_optics_and_badge_motifs_absent": true,
+        "aesthetic_acceptance_self_declared": false
       }
     },
     {
@@ -1363,8 +1371,8 @@
     },
     {
       "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_ACCEPTED_7_BACKS_CONTACT_SHEET_v2.7.png",
-      "sha256": "cf2efc8d94560c78dd4b3e12581bafa066180c45d85b83f2b0770465a7b2ae03",
-      "bytes": 3286073,
+      "sha256": "fdce992e5bea0273ade5b6dc8f6c90f179a0d3bb0ad1d28d5c9de9b8b84c6ee4",
+      "bytes": 3276228,
       "pixels": [
         1780,
         1190
@@ -1391,8 +1399,8 @@
     },
     {
       "path": "working/v2.7/visual/pilot_rework/contact_sheets/FOULWAKE_3_VARIABLE_MAP_LAYOUTS_CONTACT_SHEET_v2.7.png",
-      "sha256": "3c725f5144dca32116ae2e805840b25db4e21fceb559c1840afaa1056ae9d264",
-      "bytes": 2075117,
+      "sha256": "4980572f3d1c74292ef2946a507bb92ae59a3d8c4dea4c8d54f838d9cb606f38",
+      "bytes": 2073104,
       "pixels": [
         1350,
         1580
@@ -1412,8 +1420,8 @@
       "fixed_5x5": false,
       "closed": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_CLOSED_v2.7.png",
-        "sha256": "8c4b20e12029bdecf18a8441198832627841417601117d1a3d0b62463a722d2d",
-        "bytes": 1108014,
+        "sha256": "78ef14feeea0c5a86ed6bde37c92ee9ab07e774dbbdf526317a4ccafa289c002",
+        "bytes": 1103751,
         "pixels": [
           1110,
           920
@@ -1426,8 +1434,8 @@
       },
       "partially_open": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_COMPACT_CLUSTER_PARTIALLY_OPEN_v2.7.png",
-        "sha256": "934183b446ebcbed4abfb5e41b0a9806d38e660c6fb3f0315aa6a4257c530f66",
-        "bytes": 1142597,
+        "sha256": "d7f786f1120773f92c957aa0caac59937ef75c0dc674052af2b06c308f4f770f",
+        "bytes": 1138356,
         "pixels": [
           1110,
           920
@@ -1450,8 +1458,8 @@
       "fixed_5x5": false,
       "closed": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_CLOSED_v2.7.png",
-        "sha256": "c953e09dec6c483c5292e9a6dbf8320dd7ed3a6cd096e1b15517c8038fb2cda1",
-        "bytes": 1201701,
+        "sha256": "734c7c7ffc20ff0da3d629bab3adfff841fa0d4c1b9e585e6cd01563fefaef0f",
+        "bytes": 1199067,
         "pixels": [
           1680,
           730
@@ -1464,8 +1472,8 @@
       },
       "partially_open": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_ELONGATED_ROUTE_PARTIALLY_OPEN_v2.7.png",
-        "sha256": "e1f97c569facdd2ead6a75aa24f8172efc95ffc3b7667362b73b6b735d840d78",
-        "bytes": 1309301,
+        "sha256": "4a21e0dd1eec9d23c84920dfc2bf1b5c931f0b2ac846b2fdaedb21a3b4f81cef",
+        "bytes": 1307207,
         "pixels": [
           1680,
           730
@@ -1488,8 +1496,8 @@
       "fixed_5x5": false,
       "closed": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_CLOSED_v2.7.png",
-        "sha256": "7c985df528889d9cac01cc1981e4561b58631b52739fa33c584da72fd7347663",
-        "bytes": 1436324,
+        "sha256": "13509456bcd785d997ebe0d8b111c39f5b9850ece144e8838a2639b5cb8da026",
+        "bytes": 1432761,
         "pixels": [
           1300,
           1110
@@ -1502,8 +1510,8 @@
       },
       "partially_open": {
         "path": "working/v2.7/visual/pilot_rework/map_layouts/FOULWAKE_VARIABLE_MAP_IRREGULAR_BRANCH_PARTIALLY_OPEN_v2.7.png",
-        "sha256": "645f39e33c8e68cb88b12c7387dc61eeb2ec09c377a28ca071471760bf02718b",
-        "bytes": 1595180,
+        "sha256": "9a9ce7df9095063c5f602ac97534d4461499d582078fb3babcaa4f79d3ca243c",
+        "bytes": 1592308,
         "pixels": [
           1300,
           1110
@@ -1538,6 +1546,37 @@
     "light_leak": "NOT_RUN",
     "blind_orientation_leak": "NOT_RUN"
   },
-  "art_direction_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
-  "binding_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md"
+  "art_direction_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+  "binding_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+  "chief_editor_disposition_commit": "eb595a017351623a7d7efff6f352dbbc2cb56e8f",
+  "canonical_prior_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
+  "lighthouse_only_source_render_sheet_layout_chain": {
+    "source_sha256": "e550b505cc67b23fe74ca82167dfa2a2b4a4e9cd98299ff821e5bd18c16b1091",
+    "render_sha256": "7792b1cf7200e393382866d3f08f79e1e78971620ff3da01e0e547064ba4ce9b",
+    "contact_sheet_sha256": {
+      "FOULWAKE_ACCEPTED_7_BACKS_CONTACT_SHEET_v2.7.png": "fdce992e5bea0273ade5b6dc8f6c90f179a0d3bb0ad1d28d5c9de9b8b84c6ee4",
+      "FOULWAKE_3_VARIABLE_MAP_LAYOUTS_CONTACT_SHEET_v2.7.png": "4980572f3d1c74292ef2946a507bb92ae59a3d8c4dea4c8d54f838d9cb606f38"
+    },
+    "layout_sha256": {
+      "COMPACT_CLUSTER": {
+        "closed": "78ef14feeea0c5a86ed6bde37c92ee9ab07e774dbbdf526317a4ccafa289c002",
+        "partially_open": "d7f786f1120773f92c957aa0caac59937ef75c0dc674052af2b06c308f4f770f"
+      },
+      "ELONGATED_ROUTE": {
+        "closed": "734c7c7ffc20ff0da3d629bab3adfff841fa0d4c1b9e585e6cd01563fefaef0f",
+        "partially_open": "4a21e0dd1eec9d23c84920dfc2bf1b5c931f0b2ac846b2fdaedb21a3b4f81cef"
+      },
+      "IRREGULAR_BRANCH": {
+        "closed": "13509456bcd785d997ebe0d8b111c39f5b9850ece144e8838a2639b5cb8da026",
+        "partially_open": "9a9ce7df9095063c5f602ac97534d4461499d582078fb3babcaa4f79d3ca243c"
+      }
+    },
+    "lighthouse_cells_updated": 12,
+    "layout_geometries": [
+      "COMPACT_CLUSTER",
+      "ELONGATED_ROUTE",
+      "IRREGULAR_BRANCH"
+    ],
+    "identities_cells_states_orientations_preserved": true
+  }
 }
