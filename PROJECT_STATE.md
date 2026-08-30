@@ -1,13 +1,13 @@
 # FOULWAKE Proje Durumu
 
-**Son güncelleme:** 28 Ağustos 2026  
+**Son güncelleme:** 30 Ağustos 2026  
 **Kilitli sürüm:** `v2.6 STABLE / LOCKED`  
 **Aktif taslak:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`  
 **Entegrasyon dalı:** `v2.7-design`  
 **Aktif workspace:** `working/v2.7/`  
-**Aktif görsel candidate:** YOK — exact `1b27232a...` pilotu `REWORK_REQUIRED`  
-**Sanat Yönetimi:** `REVISED PILOT EXACT REVIEW COMPLETE / 10 FRONT KEEP + 2 REWORK / 5 BACK KEEP + 2 REWORK`  
-**Görsel kapısı:** `TARGETED FOUR-MASTER PILOT REWORK AUTHORIZED / 25 FILES EXACT`  
+**Aktif görsel candidate:** YOK — exact `0cb2bd6f...` pilotunda yalnız `BACK_LIGHTHOUSE` REWORK_REQUIRED  
+**Sanat Yönetimi:** `12 FRONT KEEP / 6 BACK KEEP / 1 BACK REWORK`  
+**Görsel kapısı:** `BACK_LIGHTHOUSE-ONLY PILOT REWORK AUTHORIZED / 15 FILES EXACT`  
 **Genel hüküm:** **BLOCKER — KİLİT VE RELEASE YASAK**
 
 ## Çalışma hattı durumu
@@ -15,8 +15,8 @@
 | Hat | Exact kaynak | Baş Editör hükmü | Sonraki adım |
 |---|---|---|---|
 | Hikâye | `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` | Kabul edildi ve exact üç Hikâye blobu entegre edildi; release PASS değil | Görsel için exact metin girdisi |
-| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | Revize exact inceleme tamamlandı: 10 ön + 5 arka KEEP; 2 ön + 2 arka REWORK | Hedefli Görsel rework teslimini yeniden inceleme |
-| Görsel | `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` | Dört ana asset ve bağlı kanıtlar için 25 dosyalık hedefli rework yetkili; sanat PASS'i değil | `FOULWAKE Görsel Tasarım 2` exact iş emrini uygular |
+| Sanat Yönetimi | `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da` | Exact `0cb2bd6f...` incelemesi: KAR-01, HAR-AA-06 ve BACK_ISLAND KEEP; yalnız BACK_LIGHTHOUSE REWORK | Son fener teslimini yeniden inceleme |
+| Görsel | `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` | 25/25 teslim doğrulandı; yalnız fener ve bağlı kanıtlar için 15 dosyalık rework yetkili | `FOULWAKE Görsel Tasarım 2` lighthouse-only emrini uygular |
 | Simülasyon | dal yok | Başlamadı | Yeni görsel aday kabulünden sonra |
 
 Görsel teslimin `121/121`, 7 arka yüz ve PDF/hash zinciri teknik olarak kayıtlı
@@ -66,6 +66,24 @@ ana KEEP ile dokuz korunmuş gate byte-exact kalır. Kanıt
 `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`; iş emri `working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`dır. Tam 121, PDF, Simülasyon,
 release ve kilit kapalıdır.
 
+## 30 Ağustos 2026 — Üç rework kabul / yalnız BACK_LIGHTHOUSE açık
+
+Görsel üretim `88907294edd326c118573f5ada7406e5fc42ee4d` commitinde 25 dosya olarak tamamlanmış,
+kanıt zinciri `0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` head'inde bağlanmıştır. Exact fark ve
+manifestler; 25/25 kapsamı, 15/15 önceki ana KEEP'i, 9/9 gate'i, üç değişken
+geometriyi ve tam 121 üretimin başlamadığını doğrular.
+
+Sanat Yönetmeni `KAR-01`, `HAR-AA-06` ve `BACK_ISLAND` için KEEP verdi.
+`BACK_LIGHTHOUSE` üzerindeki rozet sorunu çözülmüş olsa da kule normal
+dijital masa-layout mesafesinde kaybolduğu için kart ikinci bir Ada/kayalık
+sırtı gibi okunuyor. Fener ailesi güvenilir anlaşılmadığından pilot kabul
+edilmedi.
+
+Baş Editör yalnız fener source/renderı, iki etkilenen contact sheet, altı
+layout, bir rapor ve dört kanıt kaydından oluşan exact 15 dosyalık reworkü
+açtı. On sekiz ana görsel, on altı source-art, on gate ve üç etkilenmeyen sheet
+byte-exact donduruldu. Kanıt `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`; emir `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`dır.
+
 ## Bağlayıcı yeni görsel yön
 
 `working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md` bütün
@@ -95,11 +113,11 @@ release ve kilit kapalıdır.
 | `MEC-001` | Simülasyon | OPEN | Sea=Rock için exact adayda tam ve kör fiziksel test |
 | `SRC-001` | Görsel | OPEN | Yeni adayda tutarlı source→render→PDF ve iç/dış provenance |
 | `SRC-002` | Baş Editör + Simülasyon | OPEN | GUC-22/GUC-23 için kilitli v2.6 exact kaynak karşılaştırması veya açık kullanıcı kararı |
-| `ART-001` | Sanat Yönetimi + Görsel | TARGETED FOUR-MASTER REWORK AUTHORIZED | Dört ana asset ve bağlı 5 contact sheet/6 layout düzeltilip yeniden incelenmelidir |
+| `ART-001` | Sanat Yönetimi + Görsel | BACK_LIGHTHOUSE-ONLY REWORK AUTHORIZED | Fener source/renderı ve yalnız bağlı 13 kanıt dosyası düzeltilip yeniden incelenmelidir |
 | `QA-001` | Simülasyon | OPEN | Exact candidate'a bağlı yeniden üretilebilir tam attestation |
 | `QA-002` | Simülasyon | OPEN | Fiziksel proof, kör sızıntı ve kör insan masa testi |
 | `GOV-001` | Baş Editör | OPEN | main uzlaştırması, branch protection/ruleset, required status check |
-| `COM-001` | Baş Editör | OPEN | Revize Sanat Yönetimi dispozisyonu kaydedildi; hedefli Görsel handoffu, kullanıcı/Baş Editör pilot kabulü ve bağımsız Simülasyon teslimi bekleniyor |
+| `COM-001` | Baş Editör | OPEN | `0cb2bd6f...` sanat dispozisyonu kaydedildi; fener-only Görsel handoffu, kullanıcı/Baş Editör pilot kabulü ve bağımsız Simülasyon bekleniyor |
 
 `CAN-001` çözülmüştür: CAN-08/09 v2.7 DRAFT `TASLAK` koruma ilkeleridir.
 
@@ -139,8 +157,10 @@ ayrıdır.
 - `governance/ART_DIRECTION_HANDOFF_20260825.json`
 - `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json`
 - `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`
+- `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`
 - `working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`
 - `working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`
+- `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`
 - `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
 - `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md`
 - `working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json`

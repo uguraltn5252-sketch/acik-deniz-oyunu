@@ -88,6 +88,7 @@ REQUIRED_PATHS = [
     "governance/ART_DIRECTION_HANDOFF_20260825.json",
     "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
     "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
+    "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
     "governance/SIM_QA_ATTESTATION_SCHEMA.json",
     "governance/LOCK_AUTHORIZATION_SCHEMA.json",
     "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
@@ -97,6 +98,7 @@ REQUIRED_PATHS = [
     "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md",
     "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
     "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
+    "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
     "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
@@ -192,8 +194,8 @@ if activation.get("creative_work_authorized") is not True:
 deliveries = state.get("specialist_deliveries", {})
 story = deliveries.get("story", {})
 art_direction = deliveries.get("art_direction", {})
-if art_direction.get("status") != "REVISED_PILOT_REVIEW_REWORK_REQUIRED":
-    error("Art Direction delivery status must record revised pilot review and required targeted rework")
+if art_direction.get("status") != "BACK_LIGHTHOUSE_ONLY_REWORK_REQUIRED":
+    error("Art Direction status must record the lighthouse-only rework disposition")
 if art_direction.get("work_branch") != "work/v2.7-art-direction":
     error("Art Direction delivery branch is wrong")
 if art_direction.get("may_start_creative_work") is not True:
@@ -219,8 +221,8 @@ if story.get("source_commit") != "e04eef7f1fef6ea407feaaf26558551297c44b37":
 if story.get("integrated_to_v2_7_design") is not True:
     error("accepted Story blobs must be recorded as integrated")
 visual = deliveries.get("visual", {})
-if visual.get("status") != "TARGETED_PILOT_REWORK_AUTHORIZED":
-    error("Visual status must record targeted pilot rework authorization")
+if visual.get("status") != "BACK_LIGHTHOUSE_ONLY_REWORK_AUTHORIZED":
+    error("Visual status must record lighthouse-only pilot rework authorization")
 if visual.get("source_commit") != "e91581bb336dfcbab5da1d48a256577f9251f891":
     error("Visual delivery exact head is wrong")
 if visual.get("full_production_delivery_commit") != "494b8440bba722a9053f72b2fdeffc4286a61e17":
@@ -244,8 +246,8 @@ if visual.get("art_direction_review_evidence") != "governance/ART_DIRECTION_PILO
 expected_next_pilot = ["KAR-01", "KAR-06", "KAR-19", "GUC-06", "GUC-27", "ERZ-01", "SAD-H-03", "HAR-AD-08", "HAR-KY-06", "HAR-AA-06", "HAR-FN-04", "SET-KP-01"]
 if visual.get("next_pilot_front_ids") != expected_next_pilot:
     error("next Visual pilot must use the accepted 12 hard-case card set")
-if visual.get("next_pilot_exact_reuse") != ["KAR-06","KAR-19","GUC-06","GUC-27","ERZ-01","SAD-H-03","HAR-AD-08","HAR-KY-06","HAR-FN-04","SET-KP-01"]:
-    error("revised pilot must preserve all ten exact KEEP fronts")
+if visual.get("next_pilot_exact_reuse") != expected_next_pilot:
+    error("lighthouse-only rework must preserve all twelve pilot fronts")
 revised_review = state.get("revised_art_direction_pilot_review", {})
 if revised_review.get("status") != "REWORK_REQUIRED_ACCEPTED_FOR_TARGETED_PILOT_REWORK":
     error("revised Art Direction review disposition is missing")
@@ -263,18 +265,46 @@ if revised_review.get("rework_back_ids") != ["BACK_ISLAND", "BACK_LIGHTHOUSE"]:
     error("revised back rework set is wrong")
 if revised_review.get("authorized_changed_files_exact") != 25:
     error("targeted rework changed-file budget must be 25")
-if visual.get("targeted_rework_order") != "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md":
-    error("Visual targeted rework order path is wrong")
+if visual.get("targeted_rework_order") != "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md":
+    error("Visual lighthouse-only rework order path is wrong")
 if visual.get("new_visual_production_authorized") is not True:
-    error("targeted pilot rework must be authorized")
+    error("lighthouse-only pilot rework must be authorized")
 if visual.get("full_production_authorized") is not False:
     error("full production must remain unauthorized")
-if visual.get("targeted_rework_front_ids") != ["KAR-01", "HAR-AA-06"]:
-    error("Visual targeted front set is wrong")
-if visual.get("targeted_rework_back_ids") != ["BACK_ISLAND", "BACK_LIGHTHOUSE"]:
-    error("Visual targeted back set is wrong")
-if visual.get("authorized_changed_files_exact") != 25:
-    error("Visual targeted changed-file budget is wrong")
+if visual.get("targeted_rework_front_ids") != []:
+    error("lighthouse-only rework cannot change pilot fronts")
+if visual.get("targeted_rework_back_ids") != ["BACK_LIGHTHOUSE"]:
+    error("Visual lighthouse-only back set is wrong")
+if visual.get("authorized_changed_files_exact") != 15:
+    error("Visual lighthouse-only changed-file budget is wrong")
+if visual.get("current_workstream_branch_head") != "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad":
+    error("Visual current branch head is wrong")
+if visual.get("targeted_four_master_delivery_commit") != "88907294edd326c118573f5ada7406e5fc42ee4d":
+    error("targeted four-master canonical delivery commit is wrong")
+if visual.get("byte_exact_keep_main_assets") != 18 or visual.get("byte_exact_keep_source_art") != 16:
+    error("lighthouse-only main/source KEEP counts are wrong")
+if visual.get("byte_exact_keep_sketch_gates") != 10 or visual.get("byte_exact_keep_unaffected_contact_sheets") != 3:
+    error("lighthouse-only gate/contact KEEP counts are wrong")
+
+lighthouse_review = state.get("art_direction_lighthouse_review", {})
+if lighthouse_review.get("status") != "BACK_LIGHTHOUSE_ONLY_REWORK_REQUIRED_ACCEPTED":
+    error("lighthouse-only Art Direction disposition is missing")
+if lighthouse_review.get("evidence_path") != "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json":
+    error("lighthouse-only review evidence path is wrong")
+if lighthouse_review.get("input_visual_commit") != "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad":
+    error("lighthouse-only reviewed Visual commit is wrong")
+if lighthouse_review.get("canonical_visual_delivery_commit") != "88907294edd326c118573f5ada7406e5fc42ee4d":
+    error("lighthouse-only canonical delivery commit is wrong")
+if lighthouse_review.get("accepted_new_keep_assets") != ["KAR-01", "HAR-AA-06", "BACK_ISLAND"]:
+    error("three newly accepted assets are wrong")
+if lighthouse_review.get("rework_back_ids") != ["BACK_LIGHTHOUSE"]:
+    error("only BACK_LIGHTHOUSE may remain in rework")
+if lighthouse_review.get("main_asset_counts") != {"keep": 18, "rework_required": 1}:
+    error("main asset counts must be 18 KEEP / 1 REWORK")
+if lighthouse_review.get("authorized_changed_files_exact") != 15:
+    error("lighthouse-only authorization must be 15 files")
+if lighthouse_review.get("full_121_production_authorized") is not False or lighthouse_review.get("simulation_authorized") is not False:
+    error("lighthouse review cannot grant full production or Simulation")
 
 simulation = deliveries.get("simulation", {})
 if simulation.get("status") != "PENDING_NEW_ART_CANDIDATE":
@@ -440,6 +470,39 @@ if revised_disposition.get("full_121_production_authorized") is not False or rev
 if revised_disposition.get("release_pass") is not False or revised_disposition.get("lock_allowed") is not False:
     error("revised review cannot grant release or lock")
 
+lighthouse_art_review = read_json("governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json")
+if lighthouse_art_review.get("record_type") != "VISIBLE_CHAT_ART_DIRECTION_TARGETED_PILOT_ACCEPTANCE_REVIEW_AND_CHIEF_EDITOR_DISPOSITION":
+    error("lighthouse-only review record type is wrong")
+if lighthouse_art_review.get("status") != "BACK_LIGHTHOUSE_ONLY_REWORK_REQUIRED_ACCEPTED_FOR_FINAL_TARGETED_REWORK":
+    error("lighthouse-only review status is wrong")
+lighthouse_delivery = lighthouse_art_review.get("art_direction_review", {})
+if lighthouse_delivery.get("visible_chat") != "FOULWAKE Sanat Yönetmeni" or lighthouse_delivery.get("visible_chat_ack") is not True:
+    error("lighthouse-only review requires correct visible chat ACK")
+if lighthouse_delivery.get("evidence_type") != "VISIBLE_CHAT_WORKSTREAM" or lighthouse_delivery.get("review_evidence_type") != "EXACT_VISUAL_PILOT_REVIEW":
+    error("lighthouse-only review evidence types are wrong")
+if lighthouse_delivery.get("input_visual_commit") != "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad":
+    error("lighthouse-only review input commit is wrong")
+if lighthouse_delivery.get("canonical_visual_delivery_commit") != "88907294edd326c118573f5ada7406e5fc42ee4d":
+    error("lighthouse-only canonical delivery is wrong")
+if lighthouse_delivery.get("changed_files") != [] or lighthouse_delivery.get("temporary_subagents") != []:
+    error("lighthouse-only Art Direction review must be read-only and use no temporary subagents")
+chain = lighthouse_art_review.get("exact_chain_verification", {})
+if chain.get("changed_files_from_prior_visual_input") != 25 or chain.get("main_keep_assets_byte_exact") != 15:
+    error("reviewed 25-file targeted chain is wrong")
+if chain.get("protected_sketch_gates_byte_exact") != 9 or chain.get("full_121_production_started") is not False:
+    error("reviewed gate/full-production scope is wrong")
+lighthouse_disposition = lighthouse_art_review.get("chief_editor_disposition", {})
+if lighthouse_disposition.get("visual_production_authorized") != "BACK_LIGHTHOUSE_ONLY_PILOT_REWORK":
+    error("Chief Editor must authorize lighthouse-only rework")
+if lighthouse_disposition.get("authorized_changed_files_exact") != 15:
+    error("Chief Editor lighthouse-only file budget is wrong")
+if lighthouse_disposition.get("byte_exact_main_assets_required") != 18 or lighthouse_disposition.get("byte_exact_sketch_gates_required") != 10:
+    error("Chief Editor lighthouse-only KEEP requirements are wrong")
+if lighthouse_disposition.get("full_121_production_authorized") is not False or lighthouse_disposition.get("simulation_may_start") is not False:
+    error("lighthouse-only review cannot grant full production or Simulation")
+if lighthouse_disposition.get("release_pass") is not False or lighthouse_disposition.get("lock_allowed") is not False:
+    error("lighthouse-only review cannot grant release or lock")
+
 visual_evidence = read_json("governance/VISUAL_HANDOFF_20260825.json")
 if visual_evidence.get("record_type") != "VISIBLE_CHAT_VISUAL_WORKSTREAM_HANDOFF_AND_CHIEF_EDITOR_DISPOSITION":
     error("Visual evidence record type is wrong")
@@ -516,12 +579,17 @@ if targeted_order_path not in art_source.get("paths", []):
     error("source hierarchy does not include revised targeted pilot rework order")
 if art_source.get("revised_art_direction_pilot_review_evidence") != "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json":
     error("source hierarchy revised pilot review evidence is wrong")
-if art_source.get("authorized_changed_files_exact") != 25:
-    error("source hierarchy targeted changed-file budget is wrong")
+lighthouse_order_path = "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md"
+if lighthouse_order_path not in art_source.get("paths", []):
+    error("source hierarchy does not include lighthouse-only rework order")
+if art_source.get("art_direction_lighthouse_review_evidence") != "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json":
+    error("source hierarchy lighthouse-only evidence is wrong")
+if art_source.get("authorized_changed_files_exact") != 15:
+    error("source hierarchy lighthouse-only changed-file budget is wrong")
 if art_source.get("art_direction_pilot_review_evidence") != "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json":
     error("source hierarchy pilot review evidence is wrong")
-if art_source.get("current_pilot_result") != "REWORK_REQUIRED":
-    error("source hierarchy must record the current pilot REWORK_REQUIRED result")
+if art_source.get("current_pilot_result") != "REWORK_REQUIRED_BACK_LIGHTHOUSE_ONLY":
+    error("source hierarchy must record BACK_LIGHTHOUSE-only rework")
 art_direction_path = "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md"
 if art_direction_path not in art_source.get("paths", []):
     error("source hierarchy does not include binding Art Direction work order")
@@ -571,7 +639,9 @@ require_markers("AI_HANDOFF.md", [
     "ART_DIRECTION_PILOT_REVIEW_20260825.json",
     "FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",    "ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
     "FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
-    "TARGETED_FOUR_MASTER_PILOT_REWORK_ONLY",
+    "ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+    "FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+    "BACK_LIGHTHOUSE_ONLY_PILOT_REWORK",
 ])
 require_markers("PROJECT_STATE.md", [
     "Aktif görsel candidate",
@@ -581,7 +651,8 @@ require_markers("PROJECT_STATE.md", [
     "Sanat Yönetimi",
     "ART_DIRECTION_PILOT_REVIEW_20260825.json",
     "ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
-    "TARGETED FOUR-MASTER PILOT REWORK AUTHORIZED",
+    "ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+    "BACK_LIGHTHOUSE-ONLY PILOT REWORK AUTHORIZED",
 ])
 require_markers("governance/DECISION_REGISTER.md", [
     "DEC-20260825-01",
@@ -597,6 +668,9 @@ require_markers("governance/DECISION_REGISTER.md", [
     "saçma/anlamsız okunabilir yazı",    "DEC-20260828-01",
     "DEC-20260828-02",
     "TARGETED PILOT REWORK AUTHORIZATION",
+    "DEC-20260830-01",
+    "DEC-20260830-02",
+    "BACK_LIGHTHOUSE-ONLY AUTHORIZATION",
 ])
 require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
     "PENDING_NEW_ART_CANDIDATE",
@@ -607,8 +681,9 @@ require_markers("governance/WORKSTREAM_ASSIGNMENTS.md", [
     "FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
     "REDRAW_BRIEF",
     "REVISED_EXACT_PILOT_REVIEW_COMPLETE",
-    "TARGETED_FOUR_MASTER_PILOT_REWORK_AUTHORIZED",
     "ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
+    "ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+    "BACK_LIGHTHOUSE_ONLY_PILOT_REWORK_AUTHORIZED",
 ])
 require_markers("working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md", [
     "KAR-01",
@@ -630,6 +705,18 @@ require_markers("working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDE
     "25",
     "BYTE_EXACT_KEEP_VERIFIED",
     "TARGETED_PILOT_REWORK_DELIVERED",
+    "LOCK_REQUESTED: NO",
+])
+
+require_markers("working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md", [
+    "BACK_LIGHTHOUSE",
+    "CHANGED_FILES: 15",
+    "18/19 ana görsel",
+    "16/17 source-art",
+    "10/10 sketch gate",
+    "LIGHTHOUSE_FAMILY_VISIBILITY_CHECK",
+    "BACK_LIGHTHOUSE_ONLY_REWORK_DELIVERED",
+    "BLOCKED_SCOPE_DRIFT",
     "LOCK_REQUESTED: NO",
 ])
 

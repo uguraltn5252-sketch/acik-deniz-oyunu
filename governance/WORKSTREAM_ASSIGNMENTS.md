@@ -9,8 +9,8 @@
 | Hat | Görünür sohbet / dal | Durum | Bağlayıcı kanıt |
 |---|---|---|---|
 | Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
-| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `REVISED_EXACT_PILOT_REVIEW_COMPLETE / REWORK_REQUIRED` | `ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`; input `1b27232a...` |
-| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `TARGETED_FOUR_MASTER_PILOT_REWORK_AUTHORIZED` | `FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`; base `1b27232a...` |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `THREE_TARGETED_REWORKS_KEEP / BACK_LIGHTHOUSE_REWORK_REQUIRED` | `ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`; input `0cb2bd6f...` |
+| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `BACK_LIGHTHOUSE_ONLY_PILOT_REWORK_AUTHORIZED` | `FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`; base `0cb2bd6f...` |
 | Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_NEW_ART_CANDIDATE` | Dal henüz yok |
 | Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
 
@@ -23,38 +23,39 @@
   Simülasyona bırakır.
 - Yeni görev yoksa dalı değiştirmez.
 
-## Sanat Yönetmeni — revize exact review tamamlandı / hedefli rework bekleniyor
+## Sanat Yönetmeni — üç rework KEEP / yalnız BACK_LIGHTHOUSE açık
 
-Bağlayıcı kanıt `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`dır.
+Bağlayıcı kanıt `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`dır.
 
-1. Exact `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` girdisindeki 40/40 görsel açıldı.
-2. Önler 10 KEEP / 2 REWORK: `KAR-01`, `HAR-AA-06`.
-3. Arkalar 5 KEEP / 2 REWORK: `BACK_ISLAND`, `BACK_LIGHTHOUSE`.
-4. Sanatsal 180° Ada/Fener nedeniyle 5/7; teknik exact 180° 7/7.
-5. Beş contact sheet ve altı layout aynı geometri/konum/yönlerle yenilenir.
-6. Hedefli teslim geldiğinde aynı brieflerle yeniden inceler; final üretmez,
-   kullanıcı/release/kilit PASS'i vermez ve geçici ajan kullanmaz.
+1. Exact `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` incelendi.
+2. `KAR-01`, `HAR-AA-06` ve `BACK_ISLAND`: KEEP.
+3. `BACK_LIGHTHOUSE`: REWORK_REQUIRED; kule kapalı düzen ve contact sheet
+   ölçeğinde kayboluyor, Fener ailesi yerine ikinci Ada/kayalık okunuyor.
+4. Yeni fener tesliminde yalnız aile görünürlüğü, exact kimlik/sonuç körlüğü,
+   1721 uygunluğu, ortak deniz ve yasak motifleri yeniden inceler.
+5. Final üretmez, kullanıcı/release/kilit PASS'i vermez, geçici ajan kullanmaz.
 
-Tarihsel `EXACT_PILOT_REVIEW_COMPLETE`,
-`governance/ART_DIRECTION_PILOT_REVIEW_20260825.json` ve
-`REDRAW_BRIEF` kayıtları korunur; yeni hüküm 28 Ağustos kanıtıdır.
+Tarihsel `REVISED_EXACT_PILOT_REVIEW_COMPLETE`,
+`ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json` ve
+`REDRAW_BRIEF` kayıtları korunur.
 
-## Görsel Tasarım — dört ana asset / 25 dosya hedefli rework yetkili
+## Görsel Tasarım — BACK_LIGHTHOUSE-only / 15 dosya
 
-Bağlayıcı kaynak `working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`dır. Tarihsel
-`working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md` korunur.
+Bağlayıcı emir `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`dır. Önceki dört-varlık emri tarihsel teslim
+zinciri olarak korunur.
 
-1. Byte-exact KEEP önler: `KAR-06`, `KAR-19`, `GUC-06`, `GUC-27`, `ERZ-01`, `SAD-H-03`, `HAR-AD-08`, `HAR-KY-06`, `HAR-FN-04`, `SET-KP-01`.
-2. Byte-exact KEEP arkalar: `BACK_CHARACTER`, `BACK_POWER`, `BACK_LOYALTY`, `BACK_SEA_ROCK`, `BACK_SUPPORT`.
-3. Yalnız `KAR-01`, `HAR-AA-06`, `BACK_ISLAND`,
-   `BACK_LIGHTHOUSE` render/source dosyaları değişir.
-4. Yalnız `KAR-01` gate'i üç beden geometrisiyle yenilenir.
-   `HAR-AA-06` gate'i korunur; kapalı-sepet yönü finale taşınır.
-5. Beş sheet ve altı layout aynı kimlik/konum/yön/geometriyle türetilir.
-6. Rapor ve dört manifest yeni hash/provenance ile güncellenir.
-7. Exact `CHANGED_FILES` 25'tir; başka değişiklik `BLOCKED_SCOPE_DRIFT`.
-8. Tam 121, PDF, Simülasyon, release ve kilit yoktur. Sonuç
-   `TARGETED_PILOT_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
+1. Yalnız `BACK_LIGHTHOUSE.png` ve `BACK_LIGHTHOUSE_source.jpg` değişir.
+2. Mevcut ortak deniz ve çapraz kaya sırtı korunur; kule 1721'e uygun anonim
+   seyir yapısı olarak normal dijital masa mesafesinde okunacak kadar büyütülür
+   ve değer olarak ayrılır.
+3. Işın, glow, halo, lens, modern beacon, dairesel platform, rozet veya exact
+   ön fener/sonuç sızıntısı yoktur.
+4. Yalnız 2 contact sheet, 6 mevcut layout, 1 rapor ve 4 kanıt kaydı yenilenir.
+5. Exact `CHANGED_FILES: 15`; 18 ana görsel, 16 source-art, 10 gate ve
+   3 etkilenmeyen sheet byte-exact kalır.
+6. Başka fark `BLOCKED_SCOPE_DRIFT`dır.
+7. Tam 121, PDF, Simülasyon, release ve kilit yoktur. Sonuç
+   `BACK_LIGHTHOUSE_ONLY_REWORK_DELIVERED / PENDING_ART_DIRECTION_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE`
    ve `LOCK_REQUESTED: NO` olmalıdır.
 
 ## Simülasyon Testi — bekleyen görev
@@ -89,7 +90,7 @@ Yeni görsel candidate Baş Editörce kabul edilmeden iş başlatılmaz ve
 | `MEC-001` | Simülasyon | Yeni candidate bekliyor |
 | `SRC-001` | Görsel | Yeni provenance bekliyor |
 | `SRC-002` | Baş Editör + Simülasyon | Exact baseline çözümü bekliyor |
-| `ART-001` | Sanat Yönetimi + Görsel | `1b27232a...` resmî handoffu kabul edildi; yeniden review ve kullanıcı/Baş Editör pilot kabulü bekleniyor |
+| `ART-001` | Sanat Yönetimi + Görsel | Yalnız `BACK_LIGHTHOUSE` reworkü ve son sanat kabulü bekleniyor |
 | `QA-001`, `QA-002` | Simülasyon | Yeni candidate bekliyor |
 | `GOV-001`, `COM-001` | Baş Editör | Açık |
 

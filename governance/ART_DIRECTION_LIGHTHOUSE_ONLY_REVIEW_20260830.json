@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "record_type": "VISIBLE_CHAT_ART_DIRECTION_TARGETED_PILOT_ACCEPTANCE_REVIEW_AND_CHIEF_EDITOR_DISPOSITION",
+  "recorded_at": "2026-08-30T07:44:25+03:00",
+  "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
+  "baseline_release": {
+    "version": "v2.6",
+    "status": "STABLE_LOCKED",
+    "mutable": false
+  },
+  "status": "BACK_LIGHTHOUSE_ONLY_REWORK_REQUIRED_ACCEPTED_FOR_FINAL_TARGETED_REWORK",
+  "art_direction_review": {
+    "workstream": "Sanat Yönetimi",
+    "visible_chat": "FOULWAKE Sanat Yönetmeni",
+    "visible_chat_ack": true,
+    "evidence_type": "VISIBLE_CHAT_WORKSTREAM",
+    "review_evidence_type": "EXACT_VISUAL_PILOT_REVIEW",
+    "source_branch": "work/v2.7-art-direction",
+    "source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "chief_editor_source": "v2.7-design@74ac7eb764089a894b109990c1bc10304b7a614d",
+    "input_visual_branch": "work/v2.7-visual",
+    "input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+    "canonical_visual_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
+    "scope": "Four targeted primary reworks and their contact-sheet/map-layout evidence",
+    "changed_files": [],
+    "protected_fields_confirmed": true,
+    "temporary_subagents": [],
+    "full_121_production_authorized": false,
+    "simulation_authorized": false,
+    "lock_requested": false,
+    "result": "REWORK_REQUIRED_BACK_LIGHTHOUSE_ONLY_PENDING_CHIEF_EDITOR_DISPOSITION"
+  },
+  "exact_chain_verification": {
+    "visual_branch_head": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+    "visual_branch_head_verified": true,
+    "targeted_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
+    "evidence_binding_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+    "commits_from_prior_visual_input": 2,
+    "changed_files_from_prior_visual_input": 25,
+    "authorized_changed_files_exact": 25,
+    "main_keep_assets_byte_exact": 15,
+    "protected_sketch_gates_byte_exact": 9,
+    "variable_map_geometries": [
+      "COMPACT_CLUSTER",
+      "ELONGATED_ROUTE",
+      "IRREGULAR_BRANCH"
+    ],
+    "fixed_5x5_dependency": false,
+    "full_121_production_started": false
+  },
+  "disposition": {
+    "fronts": {
+      "keep": 12,
+      "rework_required": 0,
+      "items": [
+        {
+          "id": "KAR-01",
+          "file": "KAR-01_front.png",
+          "decision": "KEEP",
+          "reason": "Heykelsi poz kalktı; üç gate ayrı beden geometrileri sunuyor; final arma yükünü ve ince ufuk kırılmasını taşıyor."
+        },
+        {
+          "id": "HAR-AA-06",
+          "file": "HAR-AA-06_front.png",
+          "decision": "KEEP",
+          "reason": "Fazla nesne kapalı sepet aralığından geçiyor; tartım/inceleme hareketi kaldırıldı."
+        }
+      ],
+      "other_fronts": "KEEP_FROM_PRIOR_ACCEPTED_DISPOSITION"
+    },
+    "backs": {
+      "keep": 6,
+      "rework_required": 1,
+      "items": [
+        {
+          "id": "BACK_ISLAND",
+          "file": "BACK_ISLAND.png",
+          "decision": "KEEP",
+          "reason": "Halo/sticker kaldırıldı; anonim kara ortak denizin doğal parçası."
+        },
+        {
+          "id": "BACK_LIGHTHOUSE",
+          "file": "BACK_LIGHTHOUSE.png",
+          "decision": "REWORK_REQUIRED",
+          "reason": "Dairesel rozet kalktı fakat kule normal dijital masa mesafesinde kayboluyor; kapalı layout ve contact sheet üzerinde ikinci Ada/kayalık sırtı gibi okunuyor ve Fener ailesi güvenilir biçimde anlaşılmıyor."
+        }
+      ],
+      "other_backs": "KEEP_FROM_PRIOR_ACCEPTED_DISPOSITION"
+    }
+  },
+  "creative_verdict": "REWORK_REQUIRED_BACK_LIGHTHOUSE_ONLY",
+  "accepted_new_keep_assets": [
+    "KAR-01_front.png",
+    "HAR-AA-06_front.png",
+    "BACK_ISLAND.png"
+  ],
+  "current_main_asset_totals": {
+    "keep": 18,
+    "rework_required": 1,
+    "total": 19
+  },
+  "redraw_brief": {
+    "asset": "BACK_LIGHTHOUSE",
+    "preserve": [
+      "CURRENT_SHARED_SEA",
+      "LOW_DIAGONAL_ROCK_RIDGE",
+      "RESTRAINED_SEA_AND_FOAM",
+      "ANONYMOUS_FAMILY_VISIBLE_EXACT_IDENTITY_AND_RESULT_BLINDNESS"
+    ],
+    "change": [
+      "Enlarge the central masonry tower enough for polygonal walls and a plain upper fire/watch chamber to remain legible in normal digital table-layout evidence.",
+      "Separate tower value from the ridge without glow, beam or halo.",
+      "Make it read as an anonymous 1721 navigation structure rather than rock, hut or capstan."
+    ],
+    "forbidden": [
+      "BEAM",
+      "GLOW",
+      "HALO",
+      "FRESNEL_OR_ARGAND",
+      "ROUND_LENS",
+      "CIRCULAR_PLATFORM",
+      "MODERN_BEACON",
+      "BADGE_OR_MEDALLION",
+      "EXACT_FRONT_LIGHTHOUSE_OR_RESULT_LEAK"
+    ]
+  },
+  "dependent_evidence_required": {
+    "lighthouse_source_art": 1,
+    "lighthouse_back_render": 1,
+    "backs_contact_sheet": 1,
+    "variable_map_contact_sheet": 1,
+    "variable_map_layout_rasters": 6,
+    "delivery_report": 1,
+    "manifests_and_checksums": 4,
+    "authorized_changed_files_exact": 15
+  },
+  "chief_editor_disposition": {
+    "art_direction_review_accepted": true,
+    "current_pilot_accepted": false,
+    "visual_production_authorized": "BACK_LIGHTHOUSE_ONLY_PILOT_REWORK",
+    "binding_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+    "byte_exact_main_assets_required": 18,
+    "byte_exact_source_art_required": 16,
+    "byte_exact_sketch_gates_required": 10,
+    "byte_exact_unaffected_contact_sheets_required": 3,
+    "authorized_changed_files_exact": 15,
+    "full_121_production_authorized": false,
+    "simulation_may_start": false,
+    "release_pass": false,
+    "lock_allowed": false,
+    "project_owner_final_aesthetic_acceptance_pending": true,
+    "next_recipient": "FOULWAKE Görsel Tasarım 2"
+  },
+  "physical_test_limitation": "Baskı, kesim, duplex, ışık ve gerçek masa-mesafesi testleri yapılmadı.",
+  "open_risks": [
+    "BACK_LIGHTHOUSE family visibility remains unresolved in normal digital table-layout evidence.",
+    "Physical print/cut/duplex/light and real table-distance tests remain not run.",
+    "SRC-002 remains open.",
+    "Full 121 production remains unauthorized."
+  ]
+}

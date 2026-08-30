@@ -62,6 +62,7 @@
         "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md",
         "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
         "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
+        "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
         "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
       ],
       "supersedes": "work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891 art assets",
@@ -74,28 +75,25 @@
       "map_back_decision": "FAMILY_VISIBLE_EXACT_FRONT_BLIND_VARIABLE_LAYOUT",
       "art_direction_pilot_review_evidence": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
       "reviewed_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-      "current_pilot_result": "REWORK_REQUIRED",
-      "next_pilot_scope": "TARGETED_FOUR_MASTER_PLUS_DEPENDENT_EVIDENCE",
+      "current_pilot_result": "REWORK_REQUIRED_BACK_LIGHTHOUSE_ONLY",
+      "next_pilot_scope": "BACK_LIGHTHOUSE_ONLY_PLUS_DEPENDENT_EVIDENCE",
       "revised_art_direction_pilot_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
       "revised_reviewed_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
       "current_pilot_front_counts": {
-        "keep": 10,
-        "rework_required": 2
+        "keep": 12,
+        "rework_required": 0
       },
       "current_pilot_back_counts": {
-        "keep": 5,
-        "rework_required": 2
+        "keep": 6,
+        "rework_required": 1
       },
-      "targeted_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
-      "targeted_rework_front_ids": [
-        "KAR-01",
-        "HAR-AA-06"
-      ],
+      "targeted_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+      "targeted_rework_front_ids": [],
       "targeted_rework_back_ids": [
-        "BACK_ISLAND",
         "BACK_LIGHTHOUSE"
       ],
       "byte_exact_keep_front_ids": [
+        "KAR-01",
         "KAR-06",
         "KAR-19",
         "GUC-06",
@@ -104,6 +102,7 @@
         "SAD-H-03",
         "HAR-AD-08",
         "HAR-KY-06",
+        "HAR-AA-06",
         "HAR-FN-04",
         "SET-KP-01"
       ],
@@ -112,10 +111,14 @@
         "BACK_POWER",
         "BACK_LOYALTY",
         "BACK_SEA_ROCK",
+        "BACK_ISLAND",
         "BACK_SUPPORT"
       ],
-      "authorized_changed_files_exact": 25,
-      "pilot_authorization_state": "TARGETED_REWORK_ACTIVE"
+      "authorized_changed_files_exact": 15,
+      "pilot_authorization_state": "BACK_LIGHTHOUSE_ONLY_REWORK_ACTIVE",
+      "art_direction_lighthouse_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+      "latest_reviewed_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+      "latest_visual_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d"
     }
   ],
   "non_source_evidence": [

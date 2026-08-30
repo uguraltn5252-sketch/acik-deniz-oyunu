@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-28T10:50:14+03:00",
+  "updated_at": "2026-08-30T07:44:25+03:00",
   "project": "FOULWAKE",
   "repository": "uguraltn5252-sketch/acik-deniz-oyunu",
   "project_owner": "Ugur Altun",
@@ -24,7 +24,7 @@
     "candidate_commit_bound": false,
     "simulation_attestation_present": false,
     "active_visual_candidate": null,
-    "basis": "Revised exact Art Direction review at 1b27232a is REWORK_REQUIRED: 10 front KEEP / 2 rework and 5 back KEEP / 2 rework. Targeted four-master rework plus dependent evidence is authorized; no accepted candidate, full 121, Simulation attestation, physical proof or SRC-002 resolution."
+    "basis": "Exact 0cb2bd6f targeted Visual delivery passed Art Direction for KAR-01, HAR-AA-06 and BACK_ISLAND; only BACK_LIGHTHOUSE remains REWORK_REQUIRED because lighthouse-family visibility fails at normal digital table-layout distance. A 15-file lighthouse-only rework is authorized; no accepted candidate, full 121, Simulation, physical proof or SRC-002 resolution."
   },
   "roles": {
     "chief_editor": {
@@ -105,9 +105,9 @@
         "secrecy model",
         "accepted art-direction briefs and recorded rework decisions"
       ],
-      "binding_rework_directive": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
+      "binding_rework_directive": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
       "new_visual_production_authorized": true,
-      "authorized_scope": "TARGETED_FOUR_MASTER_PILOT_REWORK_ONLY"
+      "authorized_scope": "BACK_LIGHTHOUSE_ONLY_PILOT_REWORK"
     },
     "simulation_test": {
       "official_chat": "Simülasyon Testi",
@@ -156,7 +156,7 @@
       "integrated_to_v2_7_design": true
     },
     "art_direction": {
-      "status": "REVISED_PILOT_REVIEW_REWORK_REQUIRED",
+      "status": "BACK_LIGHTHOUSE_ONLY_REWORK_REQUIRED",
       "official_chat": "FOULWAKE Sanat Yönetmeni",
       "work_branch": "work/v2.7-art-direction",
       "branch_created": true,
@@ -173,18 +173,18 @@
       "project_owner_final_approval": true,
       "art_direction_brief_pass": true,
       "next_input_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
-      "next_stage": "TARGETED_VISUAL_PILOT_REWORK",
+      "next_stage": "BACK_LIGHTHOUSE_ONLY_VISUAL_REWORK",
       "pilot_review_recorded": true,
       "pilot_review_evidence_path": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
       "reviewed_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
       "pilot_review_result": "REWORK_REQUIRED",
       "front_review_counts": {
-        "keep": 3,
-        "rework_required": 9
+        "keep": 12,
+        "rework_required": 0
       },
       "back_review_counts": {
-        "keep": 0,
-        "rework_required": 7
+        "keep": 6,
+        "rework_required": 1
       },
       "revised_review_received": true,
       "revised_review_evidence_path": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
@@ -196,17 +196,21 @@
       "revised_back_review_counts": {
         "keep": 5,
         "rework_required": 2
-      }
+      },
+      "lighthouse_review_received": true,
+      "lighthouse_review_evidence_path": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+      "lighthouse_review_input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+      "targeted_delivery_commit_reviewed": "88907294edd326c118573f5ada7406e5fc42ee4d"
     },
     "visual": {
-      "status": "TARGETED_PILOT_REWORK_AUTHORIZED",
+      "status": "BACK_LIGHTHOUSE_ONLY_REWORK_AUTHORIZED",
       "evidence_path": "governance/VISUAL_HANDOFF_20260825.json",
       "successor_ack_evidence_path": "governance/VISUAL_SUCCESSOR_ACK_20260826.json",
       "official_chat": "FOULWAKE Görsel Tasarım 2",
       "predecessor_chat": "FOULWAKE görsel tasarım",
       "source_branch": "work/v2.7-visual",
       "source_commit": "e91581bb336dfcbab5da1d48a256577f9251f891",
-      "current_workstream_branch_head": "1b27232a53b09ac3ff00030f625bfc2703d15764",
+      "current_workstream_branch_head": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
       "canonical_pilot_delivery_commit": "bf944125ee35fecd722628f6a9be5f5dfcd5707a",
       "pilot_evidence_commit": "1ab579c27ee26205cbc87718995da021ef6da84d",
       "full_production_delivery_commit": "494b8440bba722a9053f72b2fdeffc4286a61e17",
@@ -255,6 +259,7 @@
         "SET-KP-01"
       ],
       "next_pilot_exact_reuse": [
+        "KAR-01",
         "KAR-06",
         "KAR-19",
         "GUC-06",
@@ -263,13 +268,11 @@
         "SAD-H-03",
         "HAR-AD-08",
         "HAR-KY-06",
+        "HAR-AA-06",
         "HAR-FN-04",
         "SET-KP-01"
       ],
-      "next_pilot_create_or_redraw": [
-        "KAR-01",
-        "HAR-AA-06"
-      ],
+      "next_pilot_create_or_redraw": [],
       "provisional_keep_outside_next_pilot": [
         "GUC-24"
       ],
@@ -292,16 +295,13 @@
       ],
       "revised_pilot_art_direction_review_result": "REWORK_REQUIRED",
       "revised_pilot_art_direction_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
-      "targeted_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
-      "targeted_rework_front_ids": [
-        "KAR-01",
-        "HAR-AA-06"
-      ],
+      "targeted_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+      "targeted_rework_front_ids": [],
       "targeted_rework_back_ids": [
-        "BACK_ISLAND",
         "BACK_LIGHTHOUSE"
       ],
       "byte_exact_keep_front_ids": [
+        "KAR-01",
         "KAR-06",
         "KAR-19",
         "GUC-06",
@@ -310,6 +310,7 @@
         "SAD-H-03",
         "HAR-AD-08",
         "HAR-KY-06",
+        "HAR-AA-06",
         "HAR-FN-04",
         "SET-KP-01"
       ],
@@ -318,11 +319,20 @@
         "BACK_POWER",
         "BACK_LOYALTY",
         "BACK_SEA_ROCK",
+        "BACK_ISLAND",
         "BACK_SUPPORT"
       ],
-      "regenerate_contact_sheets": 5,
+      "regenerate_contact_sheets": 2,
       "regenerate_variable_map_layouts": 6,
-      "authorized_changed_files_exact": 25
+      "authorized_changed_files_exact": 15,
+      "targeted_four_master_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
+      "targeted_four_master_evidence_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+      "targeted_four_master_review_result": "THREE_KEEP_ONE_REWORK_REQUIRED",
+      "targeted_four_master_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+      "byte_exact_keep_main_assets": 18,
+      "byte_exact_keep_source_art": 16,
+      "byte_exact_keep_sketch_gates": 10,
+      "byte_exact_keep_unaffected_contact_sheets": 3
     },
     "simulation": {
       "status": "PENDING_NEW_ART_CANDIDATE",
@@ -377,14 +387,14 @@
     "revised_pilot_handoff_evidence": "governance/VISUAL_PILOT_HANDOFF_20260826.json",
     "revised_pilot_art_direction_review_authorized": false,
     "current_pilot_front_counts": {
-      "keep": 10,
-      "rework_required": 2
+      "keep": 12,
+      "rework_required": 0
     },
     "current_pilot_back_counts": {
-      "keep": 5,
-      "rework_required": 2
+      "keep": 6,
+      "rework_required": 1
     },
-    "visual_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
+    "visual_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
     "next_pilot_front_ids": [
       "KAR-01",
       "KAR-06",
@@ -400,6 +410,7 @@
       "SET-KP-01"
     ],
     "next_pilot_exact_reuse": [
+      "KAR-01",
       "KAR-06",
       "KAR-19",
       "GUC-06",
@@ -408,13 +419,11 @@
       "SAD-H-03",
       "HAR-AD-08",
       "HAR-KY-06",
+      "HAR-AA-06",
       "HAR-FN-04",
       "SET-KP-01"
     ],
-    "next_pilot_create_or_redraw": [
-      "KAR-01",
-      "HAR-AA-06"
-    ],
+    "next_pilot_create_or_redraw": [],
     "provisional_keep_outside_next_pilot": [
       "GUC-24"
     ],
@@ -426,16 +435,17 @@
       "HAR-AA-04",
       "SET-KL-01"
     ],
-    "pilot_authorization_state": "TARGETED_FOUR_MASTER_REWORK_ACTIVE",
+    "pilot_authorization_state": "BACK_LIGHTHOUSE_ONLY_REWORK_ACTIVE",
     "revised_pilot_art_direction_review_received": true,
     "revised_pilot_art_direction_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
     "targeted_rework_back_ids": [
-      "BACK_ISLAND",
       "BACK_LIGHTHOUSE"
     ],
-    "required_contact_sheet_regeneration": 5,
+    "required_contact_sheet_regeneration": 2,
     "required_variable_layout_regeneration": 6,
-    "authorized_changed_files_exact": 25
+    "authorized_changed_files_exact": 15,
+    "latest_art_direction_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+    "latest_reviewed_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad"
   },
   "open_blockers": [
     {
@@ -462,11 +472,11 @@
     },
     {
       "id": "ART-001",
-      "status": "OPEN_TARGETED_FOUR_MASTER_PILOT_REWORK_AUTHORIZED",
+      "status": "OPEN_BACK_LIGHTHOUSE_ONLY_REWORK_AUTHORIZED",
       "severity": "BLOCKER",
       "owner": "art_direction_and_visual_design",
-      "summary": "Revised exact Art Direction review rejected KAR-01, HAR-AA-06, BACK_ISLAND and BACK_LIGHTHOUSE at 1b27232a. Fifteen main KEEP assets are immutable; four masters plus 5 sheets/6 layouts require rework.",
-      "directive": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md"
+      "summary": "Exact 0cb2bd6f review accepted KAR-01, HAR-AA-06 and BACK_ISLAND. BACK_LIGHTHOUSE remains unreadable as the Lighthouse family at normal digital table-layout distance; only its source/render and 13 dependent evidence files may change.",
+      "directive": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md"
     },
     {
       "id": "QA-001",
@@ -496,7 +506,7 @@
       "status": "OPEN",
       "severity": "BLOCKER",
       "owner": "chief_editor",
-      "summary": "Revised Art Direction REWORK disposition is recorded; targeted Visual handoff, owner/Chief pilot acceptance and independent Simulation delivery remain pending."
+      "summary": "The exact 0cb2bd6f Art Direction disposition is recorded; BACK_LIGHTHOUSE-only Visual handoff, owner/Chief pilot acceptance and independent Simulation delivery remain pending."
     }
   ],
   "resolved_blockers": [
@@ -665,6 +675,36 @@
     ],
     "targeted_rework_order": "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
     "authorized_changed_files_exact": 25,
+    "project_owner_final_aesthetic_acceptance_pending": true,
+    "next_recipient": "FOULWAKE Görsel Tasarım 2",
+    "full_121_production_authorized": false,
+    "simulation_authorized": false,
+    "lock_requested": false
+  },
+  "art_direction_lighthouse_review": {
+    "status": "BACK_LIGHTHOUSE_ONLY_REWORK_REQUIRED_ACCEPTED",
+    "evidence_path": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
+    "official_chat": "FOULWAKE Sanat Yönetmeni",
+    "source_branch": "work/v2.7-art-direction",
+    "source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
+    "chief_editor_source": "v2.7-design@74ac7eb764089a894b109990c1bc10304b7a614d",
+    "input_visual_branch": "work/v2.7-visual",
+    "input_visual_commit": "0cb2bd6f03e2d84948741c162f22b8fd2ff064ad",
+    "canonical_visual_delivery_commit": "88907294edd326c118573f5ada7406e5fc42ee4d",
+    "accepted_new_keep_assets": [
+      "KAR-01",
+      "HAR-AA-06",
+      "BACK_ISLAND"
+    ],
+    "rework_back_ids": [
+      "BACK_LIGHTHOUSE"
+    ],
+    "main_asset_counts": {
+      "keep": 18,
+      "rework_required": 1
+    },
+    "targeted_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+    "authorized_changed_files_exact": 15,
     "project_owner_final_aesthetic_acceptance_pending": true,
     "next_recipient": "FOULWAKE Görsel Tasarım 2",
     "full_121_production_authorized": false,

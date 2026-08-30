@@ -1,5 +1,31 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 30 Ağustos 2026 — ÜÇ REWORK KEEP / BACK_LIGHTHOUSE-ONLY
+
+**Görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  
+**Sanat Yönetimi:** `work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`  
+**İncelenen Görsel:** `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad`  
+**Ana üretim:** `88907294edd326c118573f5ada7406e5fc42ee4d`  
+**Baş Editör baz kaynağı:** `v2.7-design@74ac7eb764089a894b109990c1bc10304b7a614d`  
+**Kanıt:** `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`  
+**İş emri:** `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`
+
+GitHub exact zinciri doğrulandı: ana üretim 25 dosyalık `88907294edd326c118573f5ada7406e5fc42ee4d`,
+takip commit'i `0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` yalnız rapor ve dört kanıt kaydını teslim
+hashine bağlar. Dal head'i exact; 15/15 ana KEEP, 9/9 gate, üç geometri,
+6 layout ve full-production yasağı manifestlerde tutarlıdır.
+
+Sanat Yönetmeni `KAR-01`, `HAR-AA-06`, `BACK_ISLAND` için KEEP;
+`BACK_LIGHTHOUSE` için REWORK_REQUIRED verdi. Rozet kaldırılmıştır fakat
+kule masa-layout ölçeğinde kaybolur ve kart ikinci Ada/kayalık gibi okunur.
+
+Baş Editör mevcut pilotu kabul etmedi ve yalnız fener source/renderı ile
+13 bağlı kanıt dosyasını kapsayan exact 15 dosyalık son reworkü açtı. On sekiz
+ana görsel, on altı source-art, on gate ve üç etkilenmeyen sheet byte-exact
+donduruldu. Tam 121, PDF, Simülasyon, release ve kilit yoktur. Fiziksel testler
+ile `SRC-002` açıktır; geçici ajan kullanılmamıştır.
+
+
 ## 28 Ağustos 2026 — REVİZE EXACT PİLOT / HEDEFLİ DÖRT-ASSET REWORK
 
 **Görünür sohbet:** `FOULWAKE Sanat Yönetmeni`  

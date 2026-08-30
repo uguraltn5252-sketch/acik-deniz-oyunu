@@ -10,10 +10,10 @@ biçimde kurması için zorunlu başlangıç kaydıdır.
 - **Aktif çalışma:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`
 - **Entegrasyon dalı:** `v2.7-design`
 - **Aktif görsel candidate:** **YOK**
-- **Gözlenen pilot paketi:** `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` / `REVISED_EXACT_REVIEW_REWORK_REQUIRED`
+- **Gözlenen pilot paketi:** `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` / `THREE_TARGETED_REWORKS_KEEP_ONE_REWORK`
 - **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `REVISED_PILOT_REVIEW_COMPLETE / 10+5 KEEP / 2+2 REWORK`
-- **Görsel üretim yetkisi:** `TARGETED_FOUR_MASTER_PILOT_REWORK_ONLY`
+- **Sanat Yönetimi:** `12 FRONT KEEP / 6 BACK KEEP / BACK_LIGHTHOUSE REWORK_REQUIRED`
+- **Görsel üretim yetkisi:** `BACK_LIGHTHOUSE_ONLY_PILOT_REWORK`
 - **Kilit izni:** **YOK**
 
 Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
@@ -69,6 +69,19 @@ byte-exact korunur. Dört render/source, yalnız `KAR-01` gate'i, beş contact
 sheet, altı mevcut layout, bir rapor ve dört manifestten oluşan exact 25
 dosyalık rework yetkilidir. Kanıt `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`, uygulama
 `working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`dır. Tam 121, PDF, Simülasyon, release ve kilit değildir.
+
+Dört ana varlıklı hedefli teslimin üretim commit'i
+`88907294edd326c118573f5ada7406e5fc42ee4d`, rapor/manifest bağlama head'i
+`0cb2bd6f03e2d84948741c162f22b8fd2ff064ad`dır. Git farkı exact 25/25 dosyadır; 15 ana KEEP ve 9 gate
+byte-exact korunmuştur. Sanat Yönetmeni bu exact adayı inceleyerek
+`KAR-01`, `HAR-AA-06` ve `BACK_ISLAND` varlıklarını KEEP vermiştir.
+Yalnız `BACK_LIGHTHOUSE`, normal dijital masa-layout mesafesinde Fener
+ailesi olarak güvenilir okunmadığı için `REWORK_REQUIRED`dır.
+
+Yeni kapsam yalnız fener source/renderı, iki etkilenen contact sheet, altı
+mevcut layout, bir rapor ve dört kanıt kaydıdır: exact 15 dosya. Diğer
+18 ana görsel, 16 source-art, 10 gate ve üç etkilenmeyen contact sheet
+byte-exact kalır. Kanıt `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`; iş emri `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`dır.
 
 ## Her oturumda zorunlu okuma sırası
 
@@ -197,10 +210,10 @@ Simülasyon attestation varken sürüm kilitlenmez.
 
 ## Güncel devam komutu
 
-> `v2.7-design` üzerindeki `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json` ve
-> `working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md` kaynaklarını oku. `FOULWAKE Görsel Tasarım 2`, exact
-> `work/v2.7-visual@1b27232a53b09ac3ff00030f625bfc2703d15764` paketinden yalnız `KAR-01`,
-> `HAR-AA-06`, `BACK_ISLAND`, `BACK_LIGHTHOUSE` ve tanımlı bağımlı
-> kanıtları değiştirerek 25 dosyalık hedefli pilot reworkünü uygulasın. On beş
-> ana KEEP ve dokuz korunmuş gate byte-exact kalmalıdır. Tam 121, PDF,
-> Simülasyon, release ve kilit yoktur.
+> `v2.7-design` üzerindeki `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json` ve `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`
+> kaynaklarını oku. `FOULWAKE Görsel Tasarım 2`, exact
+> `work/v2.7-visual@0cb2bd6f03e2d84948741c162f22b8fd2ff064ad` başından yalnız `BACK_LIGHTHOUSE`
+> source/renderı ile iki contact sheet, altı mevcut layout, bir rapor ve dört
+> kanıt kaydını değiştirerek 15 dosyalık son hedefli reworkü uygulasın. Başka
+> ana görsel, source-art, gate, sheet, geometri, tam 121, PDF, Simülasyon,
+> release veya kilit yoktur.
