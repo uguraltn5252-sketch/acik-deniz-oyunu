@@ -44,6 +44,11 @@ geçersiz kılar.
 | `DEC-20260830-07` | BINDING COPY LOCK / FAST GATE | Görsel model kart yazısı üretmez; metin kanonik UTF-8 kaynaktan şablonla yerleştirilir ve final front OCR/render-source exact karşılaştırması gerekir. | Şu anda yalnız 1 dosya/700 kelimelik Sanat Yönetimi patchi; kabulden sonra yalnız 6 düşük çözünürlüklü arka-yüz thumbnailı. Final/manifest/layout/PDF yoktur. |
 | `DEC-20260830-08` | BINDING ART DIRECTION FRAMING GATE | Sanat Yönetmeni bütün ön/arka kart illüstrasyonlarında exact kart oranı, 3 mm taşma, 4–5 mm güvenli alan, odak/ölçek, istemsiz kesim, metin alanı çakışması, thumbnail/masa-mesafesi okunurluğu ve kadraj çeşitliliğini bağımsız inceler. | Görsel Tasarım kendi kadrajına PASS veremez. Yalnız `FRAMING_PASS` veya `REFRAME_REQUIRED`; PASS olmadan KEEP/final/tam 121 yoktur ve sonuç `BLOCKED_FRAMING_DRIFT`tir. |
 
+
+| `DEC-20260830-09` | BINDING KAPTAN VISUAL + COPY CORRECTION | Yüklenen kart `SET-KP-01` için ana görsel ve exact visible-copy kaynağıdır: KAPTAN / ÖZEL YETENEK / “Oylamada eşitlik olursa, senin tarafın geçerli olur.” / “Lidere et. Gemi senin emrinde.” | Önceki farklı ad, boş sandalye ve eski effect/flavor v2.7 üretimi için supersededtır; v2.6 yerinde değişmez. |
+| `DEC-20260830-10` | BINDING DEFAULT-DENY WORKSTREAM SCOPE | Uzman dalı yalnız CURRENT_STAGE ve WORKSTREAM_SCOPE_BASELINES içinde exact yetkili path/bütçeyi reset baseline'dan sonraki cumulative diffte değiştirebilir. | Eski iş emri, PASS veya dal sahipliği yetki değildir; direct push ve PR aynı scope kontrolünden geçer. |
+| `DEC-20260830-11` | BINDING TOOL / PLUGIN EVIDENCE | Her handoff TOOLS_USED, PLUGINS_USED, PLUGINS_AVAILABLE_BUT_NOT_USED ve NOT_USED_REASON alanlarını verir. | Görevde zorunlu aracın kullanılmaması veya beyan edilmemesi BLOCKED_EVIDENCE_GAP'tir; kurulu eklenti sırf kurulu olduğu için otomatik zorunlu değildir. |
+
 ## Açık kaynak dispozisyonu
 
 `SRC-002`: v2.6 kayıtlarındaki `GUC-22 = Bayat Peksimet` ile v2.7 kaynağındaki

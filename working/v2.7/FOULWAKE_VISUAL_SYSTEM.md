@@ -1,6 +1,7 @@
 # FOULWAKE Görsel Sistem
 
-**Durum:** v2.7 DRAFT / NOT LOCKED / ART REWORK REQUIRED  
+**Durum:** v2.7 DRAFT / OWNER-REJECTED / VISUAL PRODUCTION PAUSED  
+**Güncel yetki:** `governance/CURRENT_STAGE.json`  
 **Mekanik baseline:** v2.6 STABLE / LOCKED  
 **Sanat Yönetimi:** `visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`  
 **Bağlayıcı rework:** `visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`  
@@ -13,18 +14,19 @@ reddedilmiştir; yalnız teknik üretim hattı tarihidir.
 
 ## 1. Kaynak sözleşmesi
 
-1. Değişmeyen mekanik/kimlik/adet/effect/zamanlama/deste davranışı/kural akışı:
+1. Güncel görev/yazma yetkisi: `governance/CURRENT_STAGE.json`.
+2. Değişmeyen mekanik/kimlik/adet/effect/zamanlama/deste davranışı/kural akışı:
    `releases/v2.6/` ve `AI_HANDOFF.md`.
-2. 20 Karakter + 30 Güç görünen metni:
+3. 20 Karakter + 30 Güç görünen metni:
    `FOULWAKE_CARD_TEXTS_v2.7.json`.
-3. Tanımlı rulebook anlatı blokları:
+4. Tanımlı rulebook anlatı blokları:
    `FOULWAKE_RULEBOOK_STORY_v2.7.md`.
-4. Ton/lore çiti: `FOULWAKE_STORY_FRAMEWORK.md`.
-5. Sanat Yönetmeni yaratıcı rolü ve inceleme yöntemi:
+5. Ton/lore çiti: `FOULWAKE_STORY_FRAMEWORK.md`.
+6. Sanat Yönetmeni yaratıcı rolü ve inceleme yöntemi:
    `visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`.
-6. En yeni sanat kararı:
+7. En yeni sanat kararı:
    `visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`.
-7. Ortak yerleşim/baskı standardı: bu dosya.
+8. Ortak yerleşim/baskı standardı: bu dosya.
 
 Çelişki otomatik seçilmez; üretim durur ve exact alanla Baş Editöre handoff
 edilir. Özellikle `SRC-002` GUC-22/GUC-23 çelişkisi Görsel hattı tarafından
@@ -32,8 +34,13 @@ yeniden numaralandırılamaz.
 
 ## 2. Sanat dili
 
-- Kullanıcının KAPTAN karakter kartı yalnız `STYLE_ONLY` referanstır. Karakter,
-  yüz, beden, poz, kompozisyon, kadraj, dekor, çizgi veya piksel kopyalanmaz.
+- Yüklenen KAPTAN kartı `SET-KP-01` için bağlayıcı ana görsel kaynaktır.
+  KAPTAN figürü ve ana kart kompozisyonu korunur; yalnız küçük crop, ölçek,
+  renk ve arka-plan temizliği yapılabilir. Boş sandalye veya başka özneyle
+  değiştirilemez.
+- Aynı görsel bütün deste için mürekkep, gravür taraması, sıcak kirli kâğıt ve
+  mat lacivert–oker–pas sanat dili anahtarıdır. Gemi, martı ve aynı sahne diğer
+  kartlar için zorunlu değildir.
 - Elde çizilmiş mürekkep; ince karakterli kontur; çapraz tarama ve gravür
   dokusu.
 - Hacim tarama/çizgiyle; sinematik boya gradyanı ve parlak yapay zekâ renderı
@@ -83,11 +90,27 @@ payı vardır. Etkin çözünürlük en az 300 dpi'dır.
 Sıra: **başlık → illüstrasyon → effect → flavor → kart kimliği**.
 
 - Bağlayıcı metin kelimesi kelimesine kullanılır; kısaltma ve yeniden yazım yok.
+- `SET-KP-01` görünen copy kaynağı
+  `FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json`dır: KAPTAN / ÖZEL YETENEK /
+  “Oylamada eşitlik olursa, senin tarafın geçerli olur.” /
+  “Lidere et. Gemi senin emrinde.”
+- Görsel model okunabilir kart yazısı üretmez. Metin kanonik UTF-8 kaynaktan
+  şablonla yerleştirilir; OCR veya render-source exact karşılaştırması
+  zorunludur. Sapma `BLOCKED_COPY_DRIFT`tir.
 - Başlık yüksek kontrastlı eski kâğıt şerittedir.
 - İllüstrasyon en büyük alandır fakat metin kutusunu sıkıştırmaz.
 - Effect ve flavor tipografik olarak açıkça ayrılır.
 - Kart kimliği baskıda okunur; FOULWAKE logosu kart yüzünde kullanılmaz.
 - Taşma çözümü metni budamak veya okunamayacak kadar küçültmek değildir.
+
+## 6A. Bağımsız kadraj kapısı
+
+Bütün ön ve arka kart illüstrasyonlarını Sanat Yönetmeni exact oran, 3 mm
+taşma, 4–5 mm güvenli alan, özne ölçeği, odak, yüz/el/ana nesne kesimi,
+metin alanı çakışması, thumbnail/masa-mesafesi okunurluğu ve kadraj çeşitliliği
+için inceler. Görsel Tasarım kendi kadrajına PASS veremez. Yalnız
+`FRAMING_PASS` veya `REFRAME_REQUIRED`; sapma
+`BLOCKED_FRAMING_DRIFT`tir.
 
 ## 7. Kart arka yüzü
 
@@ -106,7 +129,10 @@ bir desendir.
 
 Toplam 7 binary / 121 eşleme. Aile içinde exact aynı binary; yazı/logo/etiket
 yok; exact 180° yön güvenli; kesim, kenar, parlaklık, opaklık ve duplex sızıntısı
-yok. Sea=Rock v2.7 DRAFT kararıdır; v2.6'nın ayrı Kayalık arka yüzünü
+yok. BACK_SEA_ROCK mat ve ışıldamayan denizdir; BACK_ISLAND eski varlıktan
+türetilmeden FULL REDRAW yapılır; BACK_LIGHTHOUSE daha büyük okunur ve uzun
+kayalık sırt zorunlu değildir. Sea=Rock v2.7 DRAFT kararıdır; v2.6'nın ayrı
+Kayalık arka yüzünü
 değiştirmez ve tam Simülasyon + kör fiziksel test geçmeden release olamaz.
 
 ## 8. Kural kitabı

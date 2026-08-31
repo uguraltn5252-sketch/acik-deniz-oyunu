@@ -1,6 +1,6 @@
 # FOULWAKE v2.7 — Proje Sahibi Görsel Reset / Hızlı Mikro Kapı İş Emri
 
-**Baş Editör kaynağı:** `v2.7-design@7ce0b8c00f275e5b135201c54d4adf6aad45ac43`  
+**Güncel yetki:** `governance/CURRENT_STAGE.json` / `STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION`  
 **Reddedilen exact pilot:** `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e`  
 **Proje sahibi kanıtı:** `governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json`  
 **Bağlayıcı KAPTAN referansı:** `working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg`  
@@ -38,10 +38,16 @@ Bütün ön ve arka kart illüstrasyonlarının kadrajını Sanat Yönetmeni ba�
 
 Her görsel için yalnız `FRAMING_PASS` veya `REFRAME_REQUIRED` verilir. Kadraj PASS olmadan görsel KEEP veya finale geçemez; sapmanın sonucu `BLOCKED_FRAMING_DRIFT`tir.
 
-KAPTAN kartında mevcut devredilebilir kaptanlık mekaniği korunur:
+KAPTAN kartının görünen copy'si yüklenen karttan exact korunur:
 
-- Effect: **Kaptanlık açık bir makamdır; Sadakati kanıtlamaz. Kaptan değişebilir; makam oyundan kalkmaz.**
-- Flavor: **Makam kalır. Şüphe de.**
+- Başlık: **KAPTAN**
+- Bölüm: **ÖZEL YETENEK**
+- Effect: **Oylamada eşitlik olursa, senin tarafın geçerli olur.**
+- Flavor: **Lidere et. Gemi senin emrinde.**
+
+Kanonik UTF-8 kaynak:
+`working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json`.
+Önceki farklı ad/boş sandalye çözümü kullanılmaz.
 
 ## 3. Proje sahibinin arka-yüz dispozisyonu
 

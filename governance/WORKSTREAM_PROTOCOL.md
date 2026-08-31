@@ -1,156 +1,138 @@
 # FOULWAKE Çalışma Hatları ve İletişim Protokolü
 
-## 1. Zorunlu başlangıç
+## 1. Yetki modeli
 
-Her hat çalışmadan önce şu sırayı okur:
+`governance/CURRENT_STAGE.json` tek güncel görev kaynağıdır. Uzman yazması
+**default-deny**dır: dalın adı veya eski iş emri tek başına yetki vermez.
+Yetki için aynı anda şunlar gerekir:
+
+1. doğru görünür sohbet ve `VISIBLE_CHAT_ACK: YES`;
+2. exact branch ve reset baseline;
+3. `CURRENT_STAGE` içinde aktif iş;
+4. `WORKSTREAM_SCOPE_BASELINES.json` içinde exact izin;
+5. cumulative farkın dosya, adet, tür ve boyut/kelime sınırlarına uyması.
+
+Tarihsel PASS, handoff veya iş emri yalnız kanıttır. Çelişkide iş durur ve
+`BLOCKED_SOURCE_CONFLICT` ile Baş Editöre dönülür.
+
+## 2. Zorunlu başlangıç
 
 1. `AI_HANDOFF.md`
-2. `PROJECT_STATE.md`
-3. `governance/EDITORIAL_CHARTER.md`
+2. `governance/CURRENT_STAGE.json`
+3. `PROJECT_STATE.md`
 4. `governance/DECISION_REGISTER.md`
 5. `governance/ACTIVE_WORKSTREAMS.json`
 6. `governance/WORKSTREAM_ASSIGNMENTS.md`
-7. Bu protokol ve ilgili hat kaynakları
+7. Bu protokol
+8. `governance/SUPERSESSION_MAP.json`
+9. Exact iş emri ve kaynaklar
 
-Aktif branch/head ve son `STABLE / LOCKED` baseline exact olarak doğrulanır.
-Kaynak çelişkisi otomatik çözülmez; iş durur ve Baş Editöre handoff edilir.
+Başlamadan remote branch head, reset baseline, locked v2.6 tree SHA ve exact
+authorization doğrulanır. Drift varsa üretim yapılmadan
+`BLOCKED_BRANCH_DRIFT` veya `BLOCKED_SCOPE_DRIFT` verilir.
 
-## 2. Görünür sohbet ve ajan kuralı
+## 3. Resmî hatlar ve alan sınırları
 
-- Resmî uzman alanları `Foulwake Hikâye Editör`, `FOULWAKE Sanat Yönetmeni`,
-  `FOULWAKE görsel tasarım` ve `Simülasyon Testi` görünür sohbetleridir.
-- Geçici alt ajan oluşturulmaz. Çok zorunlu istisna proje sahibinin önceden
-  açık iznini gerektirir; sonuç `TEMPORARY_SUBAGENT` kalır ve uzman teslimi,
-  PASS veya blocker kapanışı sayılamaz.
-- GitHub iş emri bir sohbete otomatik mesaj veya ACK değildir. İlgili sohbet
-  kendi geçmişinde okuyup exact handoff vermeden `ACKNOWLEDGED/DELIVERED`
-  kaydedilemez.
-
-## 3. Dal ve yazma sınırları
-
-| Görünür sohbet | Dal | Yazma kapsamı | Yasak alan |
+| Hat | Görünür sohbet | Dal | Normal sahiplik |
 |---|---|---|---|
-| Hikâye | `work/v2.7-story` | Onaylı hikâye ve mekanik olmayan görünen metin | Görsel, QA, governance, releases, main, mekanik |
-| Sanat Yönetimi | `work/v2.7-art-direction` | `working/v2.7/visual/art_direction/**` sanat yönü, brief ve yaratıcı eleştiri | Final görsel/PDF, metin, lore, mekanik, QA, governance, releases, main |
-| Görsel | `work/v2.7-visual` | Özgün illüstrasyon, yerleşim, baskı, görsel manifest | Hikâye hükmü, mekanik, QA hükmü, governance, releases, main |
-| Simülasyon | `work/v2.7-simulation` | `working/v2.7/qa/**` kanıtları | Ürün içeriği, mekanik değişiklik, governance, releases, main |
+| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | Lore ve mekanik olmayan görünen metin |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` | `work/v2.7-art-direction` | Sanat yönü, brief, kadraj ve bağımsız eleştiri |
+| Görsel | `FOULWAKE Görsel Tasarım 2` | `work/v2.7-visual` | Yetkili özgün illüstrasyon, layout ve baskı çıktısı |
+| Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | Bağımsız QA/analiz kanıtı |
+| Baş Editör | Bu sohbet | `v2.7-design` | Kanon, governance, entegrasyon, candidate, release ve lock |
 
-Entegrasyon hedefi `v2.7-design`dır. `PROJECT_STATE.md`, `AI_HANDOFF.md`,
-`CHANGELOG.md`, `README.md` kanonik durumu, `governance/**`, `releases/**`,
-`main` ve kilit alanları yalnız Baş Editör kapsamındadır.
+Normal sahiplik aktif yetki değildir. Exact izin yoksa yazma yoktur.
+`governance/**`, `releases/**`, `.github/**`, `AI_HANDOFF.md`,
+`PROJECT_STATE.md`, `README.md` ve `CHANGELOG.md` yalnız Baş Editördedir.
 
-## 4. Hikâye hattı
+Geçici alt ajan, proje sahibinin önceden açık izni yoksa kullanılmaz. İzinli
+çıktı bile görünür uzman handoffunun yerine geçmez.
 
-Birincil kaynaklar:
+## 4. İçerik ve copy kilidi
 
-- `working/v2.7/FOULWAKE_STORY_FRAMEWORK.md`
-- `working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md`
-- `working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json`
-- `working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md` — yalnız kayıtlı kanıt
+Kart kimliği, adet, title, section label, effect, flavor, zamanlama, grup,
+deste davranışı ve kural akışı uzman tarafından yeniden yazılamaz. Kaynak
+önceliği `working/v2.7/SOURCE_HIERARCHY_v2.7.json` içindedir.
 
-Kart adedi/kimliği, `effect`, zamanlama, grup, başlangıç havuzu, desteye dönüş,
-deste davranışı ve kural akışı değiştirilemez. `SRC-002` GUC-22/GUC-23
-çelişkisi Hikâye hattında tahminle çözülmez.
+`SET-KP-01` için exact v2.7 copy:
+`working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json`.
 
-## 5. Sanat Yönetimi hattı
+Görsel model okunabilir kart metni üretmez. İllüstrasyon metinsiz hazırlanır;
+copy kanonik UTF-8 kaynaktan şablonla yerleştirilir. Final ön yüzde card-id,
+title, section label, effect ve flavor OCR veya doğrudan render-source ile
+exact karşılaştırılır. Manifestte `exact:true` beyanı kanıt değildir. Sapma
+`BLOCKED_COPY_DRIFT`tir.
 
-Birincil kaynaklar:
+`SRC-002` çözülmeden GUC-22/GUC-23 kimlikleri tahminle değiştirilemez.
 
-- `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
-- `working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`
-- exact kart metni, kabul edilmiş hikâye kaynakları ve değişmeyen v2.6 baseline
-- kullanıcı tarafından aynı görünür sohbete eklenen KAPTAN STYLE_ONLY referansı
-- incelenecek exact Görsel branch/commit ve contact sheetleri
+## 5. Sanat Yönetimi
 
-Sanat Yönetmeni teknik checklist uygulamakla yetinmez; dünya hissi, görsel
-dramaturji, karakter/olay ayrışması, kompozisyon, çizgi-tarama-malzeme dili,
-mat palet, dönem doğruluğu, mizah ölçüsü ve deste ritmi için yaratıcı hüküm
-üretir. Genel sıfat değil, korunacak/çıkarılacak/yeniden çizilecek unsurları
-somutlaştıran brief verir.
+Sanat Yönetmeni final raster/PDF üretmez ve metin/mekanik/lore değiştirmez.
+Dünya hissi, çizgi/tarama/malzeme, dönem, palet, sahne ayrışması, kompozisyon,
+kadraj ve deste ritmi için uygulanabilir hüküm verir.
 
-Yazma kapsamı yalnız `working/v2.7/visual/art_direction/**`dır. Final sanat,
-render, PDF ve baskı Görsel Tasarıma aittir. Exact metin/mekanik/lore ile
-governance/release/kilit alanları değiştirilemez. Sanat Yönetmeni tavsiyesi
-proje sahibinin nihai estetik kararı veya Baş Editör/release PASS'i değildir.
+Yüklenen KAPTAN kartı `SET-KP-01` için bağlayıcı görsel kaynaktır; “stil-only”
+değildir. Küçük crop/ölçek/renk/arka-plan temizliği dışında figür ve ana
+kompozisyon korunur. Gemi ve martı diğer kartlar için zorunlu değildir; deste
+genelinde mürekkep/gravür/kâğıt/mat palet dili bağlayıcıdır.
 
-İlk kapı iletişim testidir. `VISIBLE_CHAT_ACK: YES` gelmeden yaratıcı iş bu
-hatta mal edilemez. Görsel pilot daha önce başlamışsa exact teslim ilk review
-girdisi olur; çalışma otomatik olarak geçersiz veya kabul edilmiş sayılmaz.
+Her ön/arka illüstrasyon için Sanat Yönetimi şunları kontrol eder:
 
-## 6. Görsel hattı
+- exact kart oranı ve illüstrasyon penceresi;
+- 3 mm taşma ve 4–5 mm güvenli alan;
+- özne ölçeği, odak, görsel denge ve gerekli negatif alan;
+- yüz/el/ana nesne üzerinde anlamsız kesim;
+- title/effect/flavor/card-id çakışması;
+- thumbnail ve normal masa-mesafesi okunurluğu;
+- aynı plan, aynı model veya el-merkezli kadraj tekrarı.
 
-Birincil kaynaklar:
+Görsel Tasarım kendi kadrajını onaylayamaz. Sonuç yalnız `FRAMING_PASS` veya
+`REFRAME_REQUIRED`dır. PASS olmadan KEEP/final/tam üretim yoktur; sapma
+`BLOCKED_FRAMING_DRIFT`tir.
 
-- `working/v2.7/SOURCE_HIERARCHY_v2.7.json`
-- `working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`
-- `working/v2.7/FOULWAKE_VISUAL_SYSTEM.md`
-- exact görünen metin ve v2.6 değişmeyen baseline kaynakları
+## 6. Görsel üretim
 
-### 6.1 Korunan içerik
+Yalnız `CURRENT_STAGE` exact yetki verdiğinde çalışır.
 
-- Metin kısaltılmaz, düzeltilmez, yeniden yazılmaz; noktalama ve anlam
-  değiştirilmez.
-- Taşma, eksik glif veya okunabilirlik sorunu dosya/kart/alan adıyla Baş
-  Editöre iletilir.
-- Lore veya mekanik hakkında yeni hüküm üretilmez.
+- Her kart ayrı brief ve semantik olarak ayrı sahne alır.
+- Reddedilmiş assetin crop/recolor/mirror/türev kullanımı yasaktır.
+- `unique render SHA` özgün sanat kanıtı değildir.
+- İllüstrasyonda tabela, slogan, konuşma balonu veya anlamsız okunabilir yazı yok.
+- Arka yüz topolojisi exact `20+31+15+42+6+4+3=121`, yedi binarydir.
+- Aile içinde exact aynı; metinsiz; 180° güvenli; kesim, değer, parlaklık,
+  opaklık ve duplex sızıntısızdır.
+- `BACK_SEA_ROCK` mat olmalı; `BACK_ISLAND` sıfırdan çizilmeli;
+  `BACK_LIGHTHOUSE` daha büyük okunabilir ve uzun kaya sırtına bağlı olmamalıdır.
+- Teknik preflight estetik/kadraj kabulünün yerine geçmez.
 
-### 6.2 Sanat üretimi
+## 7. Simülasyon
 
-- KAPTAN görseli `STYLE_ONLY`; karakter, yüz, poz, kompozisyon veya piksel
-  kopyalanmaz.
-- Her kart ayrı art brief ve ayrı özgün sahne alır. Reddedilmiş aile plakası,
-  kırpım, recolor, mirror, kostüm değişimi veya türev temel kullanılamaz.
-- İllüstrasyon alanında tabela, slogan, konuşma balonu, açıklama veya
-  saçma/anlamsız okunabilir yazı yoktur.
-- Mizah karttan türetilir; en fazla bir ikincil şaka vardır; aynı hayvan/tayfa/
-  poz/şaka maskota dönüşmez.
-- `unique render SHA`, sanatsal özgünlük kanıtı değildir.
+Aktif exact candidate ve Baş Editör emri olmadan dal açılmaz. Yetkili testte:
 
-### 6.3 Pilot ve tam yayılım
+- Data Analytics ile yeniden üretilebilir analiz, seed, komut, ham çıktı ve hash;
+- kimlik/mekanik, matematik, strateji, sosyal deneyim, öğretilebilirlik;
+- copy/kadraj/semantik görsel, arka-yüz bilgi sızıntısı;
+- PDF, baskı, provenance ve fiziksel kanıt
 
-Önce 121 brief, 12 ön-yüz pilotu ve 7 arka-yüz taslağı teslim edilir. Sanat
-Yönetmeninin bağımsız yaratıcı incelemesi ile kullanıcı ve Baş Editörün açık
-pilot kabulü olmadan kalan kartlar veya tam PDF üretilmez.
-Tam yayılımda aile ve tam deste contact sheetleri başlık/metin kapalı semantik
-QA'dan geçer.
+ayrı gate'lerdir. Game Studio yalnız tarayıcı prototipi açıkça istenirse
+kullanılır. Sonuç `PASS`, `PASS_WITH_MINOR_ISSUES`, `FAIL` veya `BLOCKER`dır.
+Candidate değişirse eski attestation geçersizdir.
 
-### 6.4 Arka yüz sözleşmesi
+## 8. Araç ve eklenti sorumluluğu
 
-Yedi binary eşleme zorunludur: `BACK_CHARACTER=20`, `BACK_POWER=31`,
-`BACK_LOYALTY=15`, `BACK_SEA_ROCK=42`, `BACK_ISLAND=6`,
-`BACK_LIGHTHOUSE=4`, `BACK_SUPPORT=3`.
+Kurulu eklenti otomatik zorunlu değildir; görev için zorunlu araç exact iş
+emrinde yazılır. Her handoff şunları doldurur:
 
-Arka yüzler metinsiz, önlerle aynı sanat dilinde, aile içinde exact aynı,
-180° yön güvenli ve kesim/parlaklık/duplex sızıntısızdır. Sea=Rock ile Sadakat
-özellikle kör fiziksel sınıflandırma testine tabidir.
+- `TOOLS_USED`
+- `PLUGINS_USED`
+- `PLUGINS_AVAILABLE_BUT_NOT_USED`
+- `NOT_USED_REASON`
 
-## 7. Simülasyon hattı
+Görsel üretimde kullanılan model, Figma/Canva ve dış editörler; Simülasyonda
+Data Analytics ve varsa Game Studio açıkça beyan edilir. Beyansız araç sonucu
+`BLOCKED_EVIDENCE_GAP` olarak ele alınır.
 
-Okuma kapsamı bütün projedir; yazma kapsamı `working/v2.7/qa/**`dır.
-
-- Doğru baseline ve exact candidate belirlenir.
-- Kimlik/mekanik, matematik, strateji, sosyal deneyim, öğretilebilirlik, görsel
-  semantik kalite, okunabilirlik, PDF, baskı, manifest ve provenance ayrı
-  katmanlarda denetlenir.
-- 121 farklı hash, 121 özgün sanat olarak kabul edilmez; contact sheet ve
-  kör insan semantik incelemesi gerekir.
-- Resim-içi okunabilir yazı, dönem dışı nesne, tekrar eden yüz/poz/sahne/şaka,
-  arka-yüz yön/kesim/parlaklık sızıntısı ayrı bulgudur.
-- Sonuç `PASS`, `PASS_WITH_MINOR_ISSUES`, `FAIL` veya `BLOCKER` olur.
-- Mekanik/görsel değişiklik uygulanmaz; kanıt ve öneri Baş Editöre gönderilir.
-- Nihai kanıt `working/v2.7/qa/SIM_QA_ATTESTATION_v2.7.json` içinde exact
-  candidate commitine bağlanır. Candidate değişirse eski attestation geçersizdir.
-
-## 8. Baş Editör
-
-- Handoffun görünür sohbet, dal, exact commit, kapsam ve kanıtını doğrular.
-- Alan ihlalini geri çevirir; çakışmada kaynak önceliğini uygular.
-- Kullanıcının yaratıcı/mekanik kararını kayda alır fakat kendiliğinden yeni
-  kanon üretmez.
-- Pilot ve tam aday için ayrı kabul/ret dispozisyonu verir.
-- Simülasyon kapısından sonra release/kilit değerlendirmesi yapar.
-
-## 9. Zorunlu handoff biçimi
+## 9. Handoff şablonu
 
 ```text
 WORKSTREAM:
@@ -159,32 +141,37 @@ VISIBLE_CHAT_ACK: YES
 EVIDENCE_TYPE: VISIBLE_CHAT_WORKSTREAM
 SOURCE_BRANCH:
 SOURCE_COMMIT:
-BASELINE_RELEASE:
+AUTHORIZATION_STAGE:
+AUTHORIZATION_BASELINE:
+BASELINE_RELEASE: v2.6 STABLE / LOCKED
 SCOPE:
 CHANGED_FILES:
 PROTECTED_FIELDS_CONFIRMED:
+COPY_SOURCE:
+COPY_AUDIT:
+FRAMING_DISPOSITION:
 TESTS_RUN:
+TOOLS_USED:
+PLUGINS_USED:
+PLUGINS_AVAILABLE_BUT_NOT_USED:
+NOT_USED_REASON:
 RESULT:
 OPEN_RISKS:
-NEXT_RECIPIENT:
+NEXT_RECIPIENT: Baş Editör
+TEMPORARY_SUBAGENTS: NONE
 LOCK_REQUESTED: NO
 ```
 
-Sanat Yönetimi teslimi ayrıca `ART_DIRECTION_STAGE`, `INPUT_VISUAL_COMMIT`,
-`CREATIVE_VERDICT`, `FOULWAKE_WORLD_FIT`, `MATERIAL_AND_LINE_LANGUAGE`,
-`COMPOSITION_AND_DECK_RHYTHM`, `KEEP`, `REMOVE` ve `REDRAW_BRIEF` verir.
-Görsel teslim ayrıca `PILOT_OR_FULL`, `ART_BRIEF_MANIFEST`,
-`CONTACT_SHEETS`, `TEXT_IN_ILLUSTRATION_CHECK`, `BACK_MAPPING_CHECK` ve
-`REJECTED_ASSET_REUSE_CHECK` kanıtlarını verir. Simülasyon teslimi candidate
-commit, komut, seed/örneklem, ham çıktı hashleri ve attestation yolunu verir.
+Sanat Yönetimi ayrıca `ART_DIRECTION_STAGE`, `INPUT_VISUAL_COMMIT`,
+`CREATIVE_VERDICT`, `KEEP`, `REMOVE`, `REDRAW_BRIEF` ve görsel başına kadraj
+dispozisyonu verir. Görsel ayrıca art brief, provenance, contact sheet,
+copy/OCR ve back-mapping kanıtı verir. Simülasyon candidate, seed/örneklem,
+komut, ham çıktı hashleri ve attestation yolunu verir.
 
-## 10. Çakışma ve teslim kuralı
+## 10. Candidate, release ve lock
 
-- Başka hattın alanı sessizce değiştirilmez.
-- Sorun exact dosya/alan/commit ile handoff edilir.
-- Baş Editör yönlendirmeden iki çözüm aynı dosyaya uygulanmaz.
-- Sanat Yönetmeni ile Görsel Tasarım birbirinin yerine PASS veremez; yaratıcı
-  yön ile final üretim ayrı exact handofflarla izlenir.
-- Görünür sohbet + exact branch commit + zorunlu handoff + Baş Editör
-  dispozisyonu birlikte yoksa iş tamamlanmış sayılmaz.
-- GitHub'a yazılmış çıktı kendiliğinden kanon, PASS, release veya kilit değildir.
+Handoff, PASS tavsiyesi, commit veya hash candidate değildir. Candidate'ı yalnız
+Baş Editör exact commit ve kanıtlarla ilan eder. Release için bağımsız
+Simülasyon, fiziksel kanıt, kapanmış blockerlar ve proje sahibinin açık kabulü
+gerekir. Kilit yalnız proje sahibinin açık `kilitle/stable/release` talimatıyla
+Baş Editörce uygulanır.

@@ -1,41 +1,78 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://foulwake.local/governance/LOCK_AUTHORIZATION_SCHEMA.json",
-  "title": "FOULWAKE Lock Authorization",
+  "$id": "https://foulwake.local/schemas/LOCK_AUTHORIZATION_SCHEMA.json",
+  "title": "FOULWAKE project-owner lock authorization",
   "type": "object",
   "additionalProperties": false,
   "required": [
+    "schema_version",
+    "project",
     "version",
-    "authorized_by_project_owner",
-    "owner_instruction_reference",
-    "executed_by_role",
+    "project_owner_command",
+    "project_owner_command_evidence",
+    "chief_editor_source",
+    "current_stage",
+    "candidate_branch",
     "candidate_commit",
+    "candidate_tree",
     "simulation_attestation_path",
+    "simulation_attestation_sha256",
     "simulation_verdict",
-    "open_blockers"
+    "physical_evidence",
+    "open_blockers",
+    "locked_release_tree_before",
+    "lock_requested",
+    "authorized_by"
   ],
   "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "project": {
+      "const": "FOULWAKE"
+    },
     "version": {
       "type": "string",
       "pattern": "^v[0-9]+\\.[0-9]+$"
     },
-    "authorized_by_project_owner": {
-      "const": true
+    "project_owner_command": {
+      "enum": [
+        "KİLİTLE",
+        "STABLE YAP",
+        "RELEASE ET"
+      ]
     },
-    "owner_instruction_reference": {
+    "project_owner_command_evidence": {
       "type": "string",
       "minLength": 1
     },
-    "executed_by_role": {
-      "const": "chief_editor"
+    "chief_editor_source": {
+      "type": "string",
+      "pattern": "^v2\\.7-design@[0-9a-f]{40}$"
+    },
+    "current_stage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate_branch": {
+      "type": "string",
+      "minLength": 1
     },
     "candidate_commit": {
       "type": "string",
       "pattern": "^[0-9a-f]{40}$"
     },
+    "candidate_tree": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
     "simulation_attestation_path": {
       "type": "string",
-      "pattern": "^working/v[0-9]+\\.[0-9]+/qa/SIM_QA_ATTESTATION_v[0-9]+\\.[0-9]+\\.json$"
+      "pattern": "^working/v2\\.7/qa/.+\\.json$"
+    },
+    "simulation_attestation_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
     },
     "simulation_verdict": {
       "enum": [
@@ -43,9 +80,25 @@
         "PASS_WITH_MINOR_ISSUES"
       ]
     },
+    "physical_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
     "open_blockers": {
       "type": "array",
       "maxItems": 0
+    },
+    "locked_release_tree_before": {
+      "const": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+    },
+    "lock_requested": {
+      "const": true
+    },
+    "authorized_by": {
+      "const": "PROJECT_OWNER_AND_CHIEF_EDITOR"
     }
   }
 }

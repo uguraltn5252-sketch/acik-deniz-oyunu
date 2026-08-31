@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.7 governance/system audit — 2026-08-30
+
+- Exact owner-rejected pilot state consolidated into `governance/CURRENT_STAGE.json`; active candidate remains null.
+- Uploaded KAPTAN card made the binding `SET-KP-01` visual and exact visible-copy source; obsolete empty-seat/different-name production brief removed from active sources.
+- Exact KAPTAN title, section label, effect and flavor moved to `FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json`.
+- Copy lock now requires canonical UTF-8 template composition plus OCR/render-source comparison; drift blocks as `BLOCKED_COPY_DRIFT`.
+- Independent Art Direction framing review is mandatory for every front/back; Visual cannot self-pass; drift blocks as `BLOCKED_FRAMING_DRIFT`.
+- BACK_SEA_ROCK matte/no-shine, BACK_ISLAND full-redraw and larger/free-base BACK_LIGHTHOUSE requirements integrated.
+- Specialist writes changed to default-deny cumulative scope validation from verified reset baselines, including direct pushes.
+- Locked v2.6 is protected by exact Git tree SHA; checkout action pinned to v7.0.1 commit.
+- SIM/lock schemas, PR handoff, plugin/tool evidence and release gates strengthened.
+- SRC-002 exact comparison recorded; project-owner choice remains required.
+- Branch ruleset limitation remains `GOV-001`; no v2.6 file or specialist branch was changed.
+
+
 ## v2.7 - Aktif taslak / tam deste sanat rework
 
 **Tarih:** 25 Ağustos 2026  

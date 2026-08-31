@@ -1,89 +1,69 @@
-# FOULWAKE v2.7 Çalışma Hattı Görevleri
+# FOULWAKE Çalışma Hattı Görevleri
 
-**Durum:** ACTIVE / RELEASE BLOCKED  
-**Baseline:** v2.6 STABLE / LOCKED  
-**Entegrasyon hedefi:** `v2.7-design`
+**Aktif visual candidate:** **YOK**  
+**Yetki kaynağı:** `governance/CURRENT_STAGE.json`  
+**Kapsam politikası:** `governance/WORKSTREAM_SCOPE_BASELINES.json`  
+**Varsayılan:** Exact güncel yetki yoksa yazma yoktur.
 
-## Güncel teslim tablosu
+## Güncel görev tablosu
 
-| Hat | Görünür sohbet / dal | Durum | Bağlayıcı kanıt |
-|---|---|---|---|
-| Hikâye | `Foulwake Hikâye Editör` / `work/v2.7-story` | `ACCEPTED_STORY_WORKSTREAM_PASS / READY_FOR_VISUAL_INPUT` | `STORY_HANDOFF_20260820.json`, commit `e04eef7...` |
-| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction` | `PILOT_ART_DIRECTION_PASS / OWNER + CHIEF PENDING` | `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json`; input `23c062f6...` |
-| Görsel | `FOULWAKE Görsel Tasarım 2` / `work/v2.7-visual` | `PILOT_ART_DIRECTION_PASS_RECORDED / PRODUCTION_PAUSED` | kanonik `c8081aa9...`; head `23c062f6...` |
-| Simülasyon | `Simülasyon Testi` / `work/v2.7-simulation` | `ACKNOWLEDGED_COMMUNICATION_TEST_ONLY / PENDING_OWNER_CHIEF_PILOT_ACCEPTANCE` | Dal henüz yok |
-| Baş Editör | `v2.7-design` | `GOVERNANCE_FIXED / RELEASE_BLOCKED` | `CHIEF_EDITOR_AUDIT_20260825.md` |
+| Hat | Görünür sohbet | Dal / reset baseline | Durum | Şu anda yapılabilecek iş |
+|---|---|---|---|---|
+| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story@e04eef7f...` | PAUSED | Hiçbir dosya değişikliği yok |
+| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` | `work/v2.7-art-direction@11913681...` | REWORK_REQUIRED | Yalnız KAPTAN patch dosyasını ≤700 kelimeyle düzelt |
+| Görsel | `FOULWAKE Görsel Tasarım 2` | `work/v2.7-visual@23c062f6...` | OWNER-REJECTED / PAUSED | Hiçbir görsel veya kanıt üretme |
+| Simülasyon | `Simülasyon Testi` | Dal yok | NOT STARTED | Dal açma ve test başlatma |
+| Baş Editör | Bu sohbet | `v2.7-design` | ACTIVE | Kaynak, governance, entegrasyon ve kapsam denetimi |
 
-## Hikâye Editörü
+## Sanat Yönetimi — exact mevcut görev
 
-- Kabul edilen kaynak commitini korur; yeni görsel üretim sırasında exact metin
-  sorusu gelirse yalnız hikâye/görünen metin alanında cevap verir.
-- Kart kimliği, effect, zamanlama ve deste davranışını değiştirmez.
-- `SRC-002` için tahmin yürütmez; exact baseline karşılaştırmasını Baş Editör ve
-  Simülasyona bırakır.
-- Yeni görev yoksa dalı değiştirmez.
+Yalnız şu dosya değişebilir:
 
-## Sanat Yönetmeni — final inceleme tamamlandı
+`working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md`
 
-Bağlayıcı nihai inceleme kaydı `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json`dır.
+Cumulative fark `119136812c2c749e14e675f1400640664fa044bc..HEAD` üzerinden
+hesaplanır; en fazla 1 dosya, Markdown ve 700 kelime.
 
-1. Exact `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` üzerinde 9/9 raster açıldı.
-2. `BACK_LIGHTHOUSE: KEEP`; final pilot dispozisyonu `12 FRONT KEEP / 7 BACK KEEP`.
-3. `PILOT_ART_DIRECTION_PASS` yalnız Sanat Yönetimi kapısını geçer; proje sahibi veya release/kilit PASS'i değildir.
-4. Yeni sanat yönü veya üretim görevi yoktur. Proje sahibinin açık pilot estetik kararı beklenir.
-5. Tarihsel `EXACT_PILOT_REVIEW_COMPLETE`, `REVISED_EXACT_PILOT_REVIEW_COMPLETE`, `REDRAW_BRIEF`, `ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`, `ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json` ve `VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json` kayıtları korunur.
+Patch:
 
-## Görsel Tasarım — handoff teslim edildi / üretim durdu
+- gönderilen KAPTAN kartını `SET-KP-01` için ana görsel kaynak olarak tanımlar;
+- exact görünen copyyi
+  `working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` kaynağına bağlar;
+- bütün ön/arka kartlar için bağımsız `FRAMING_PASS / REFRAME_REQUIRED`
+  kapısını ekler;
+- görsel üretim yetkisi vermez.
 
-1. Exact dal başı `23c062f6de06c32eab224b3440c8474725d4fe9e`; kanonik lighthouse-only üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`dır.
-2. Cumulative `0cb2bd6f03e2d84948741c162f22b8fd2ff064ad..23c062f6de06c32eab224b3440c8474725d4fe9e` farkı exact 15 dosyadır.
-3. Sanat Yönetimi exact pakete `PILOT_ART_DIRECTION_PASS` vermiştir; bu proje sahibi estetik kabulü veya aktif candidate değildir.
-4. Yeni görsel, düzeltme, contact sheet/layout türetimi, tam 121, PDF, Simülasyon, release veya kilit üretmez.
-5. Proje sahibi + Baş Editör pilot kararı gelene kadar dalı değiştirmez; kapsam açılması ancak yeni exact Baş Editör emriyle olur.
-6. `TEMPORARY_SUBAGENTS: NONE` ve `LOCK_REQUESTED: NO` korunur.
+Raster, thumbnail, contact sheet, layout, manifest, PDF, kaynak paket, release
+ve lock alanları kapsam dışıdır.
 
-## Simülasyon Testi — bekleyen görev
+## Görsel — bekleme hükmü
 
-Yeni görsel candidate Baş Editörce kabul edilmeden iş başlatılmaz ve
-`work/v2.7-simulation` oluşturulmaz. Yetkili handoff geldiğinde:
+`23c062f6...` pilotu proje sahibi tarafından reddedildi. Eski Sanat Yönetimi
+PASS'i veya teknik manifestler üretim yetkisi değildir. KAPTAN görseli boş
+sandalye/başka figürle değiştirilemez; görünen copy görsel modelce yazılamaz.
+Yeni Görsel iş ancak düzeltilmiş patchin proje sahibi kabulünden sonra yeni
+exact Baş Editör emriyle açılır.
 
-- `SRC-002` GUC-22/GUC-23 exact baseline karşılaştırması;
-- 121 kimlik, mekanik eşdeğerlik ve source→render→PDF;
-- Sanat Yönetmeni dispozisyonu ile kör contact-sheet sanat tekrar incelemesi;
-- resim-içi yazı, dönem uyumu, mizah tekrarı ve bilgi sızıntısı;
-- yedi arka-yüz binary eşlemesi, 180° yön güvenliği, kesim/parlaklık/duplex;
-- fiziksel proof, kör insan ve oyun/sosyal deneyim testleri;
-- exact candidate bağlı `SIM_QA_ATTESTATION_v2.7.json`
+## Simülasyon — bekleme hükmü
 
-üretir. Bulguyu mekanik veya görsel değişikliğe dönüştürmez.
+Aktif candidate ve `SRC-002` kararı yokken dal açılmaz. İleride yetki verilirse
+Data Analytics kullanımı ve yeniden üretilebilir seed/komut/ham çıktı kanıtı
+zorunludur. Game Studio yalnız oynanabilir tarayıcı prototipi açıkça
+yetkilendirilirse gerekir.
 
-## Baş Editör
+## Baş Editör sorumlulukları
 
-- Exact handoff, dal kapsamı, kaynak ve kanıt zincirini doğrular.
-- Sanat Yönetmeni tavsiyesini kullanıcı kararıyla birlikte doğrular ve pilot
-  kabul/ret dispozisyonunu kaydeder.
-- `SRC-002`, `GOV-001` ve çalışma hattı çakışmalarını yönetir.
-- Release candidate yalnız bütün blockerlar kapanınca ve Simülasyon kapısı
-  geçince oluşturulur.
-- Kilit yalnız proje sahibinin açık talimatıyla ve Baş Editör tarafından yapılır.
+- `CURRENT_STAGE` ile görevleri tekil ve çelişkisiz tutmak.
+- Specialist cumulative farklarını reset baseline üzerinden denetlemek.
+- `releases/v2.6` exact tree SHA'sını korumak.
+- KAPTAN copy, kadraj, provenance ve tool/plugin beyanlarını doğrulamak.
+- `SRC-002` için proje sahibinin seçimini beklemek; tahminle kimlik değiştirmemek.
+- Candidate, Simülasyon, release ve lock kapılarını ayrı tutmak.
 
-## Açık blocker sahipliği
+## Handoff asgari alanları
 
-| Blocker | Sahip | Durum |
-|---|---|---|
-| `MEC-001` | Simülasyon | Yeni candidate bekliyor |
-| `SRC-001` | Görsel | Yeni provenance bekliyor |
-| `SRC-002` | Baş Editör + Simülasyon | Exact baseline çözümü bekliyor |
-| `ART-001` | Proje sahibi + Baş Editör | Sanat Yönetimi PASS; açık pilot estetik kabulü ve Baş Editör dispozisyonu bekleniyor |
-| `QA-001`, `QA-002` | Simülasyon | Yeni candidate bekliyor |
-| `GOV-001`, `COM-001` | Baş Editör | Açık |
-
-## Zorunlu handoff
-
-Her teslim `WORKSTREAM`, `VISIBLE_CHAT`, `VISIBLE_CHAT_ACK: YES`,
-`EVIDENCE_TYPE: VISIBLE_CHAT_WORKSTREAM`, `SOURCE_BRANCH`, exact
-`SOURCE_COMMIT`, `BASELINE_RELEASE`, `SCOPE`, `CHANGED_FILES`,
-`PROTECTED_FIELDS_CONFIRMED`, `TESTS_RUN`, `RESULT`, `OPEN_RISKS`,
-`NEXT_RECIPIENT` ve `LOCK_REQUESTED: NO` alanlarını içerir. Sanat Yönetimi
-ayrıca iş emrindeki `ART_DIRECTION_STAGE`, exact Görsel girdi commit'i,
-`CREATIVE_VERDICT`, `KEEP`, `REMOVE` ve `REDRAW_BRIEF` alanlarını verir.
+`WORKSTREAM`, `VISIBLE_CHAT`, `VISIBLE_CHAT_ACK`, `SOURCE_BRANCH`,
+`SOURCE_COMMIT`, `AUTHORIZATION_STAGE`, `SCOPE`, `CHANGED_FILES`,
+`PROTECTED_FIELDS_CONFIRMED`, `TESTS_RUN`, `TOOLS_USED`, `PLUGINS_USED`,
+`PLUGINS_AVAILABLE_BUT_NOT_USED`, `NOT_USED_REASON`, `RESULT`,
+`OPEN_RISKS`, `NEXT_RECIPIENT`, `LOCK_REQUESTED`.

@@ -3,63 +3,66 @@
 - **WORKSTREAM:**
 - **VISIBLE_CHAT:**
 - **VISIBLE_CHAT_ACK:** YES / NO
-- **EVIDENCE_TYPE:** VISIBLE_CHAT_WORKSTREAM / TEMPORARY_SUBAGENT / CHIEF_EDITOR
+- **EVIDENCE_TYPE:** VISIBLE_CHAT_WORKSTREAM / CHIEF_EDITOR
 - **SOURCE_BRANCH:**
 - **SOURCE_COMMIT:**
+- **AUTHORIZATION_STAGE:**
+- **AUTHORIZATION_BASELINE:**
+- **CHIEF_EDITOR_ORDER:**
 - **BASELINE_RELEASE:** v2.6 STABLE / LOCKED
 - **SCOPE:**
+- **CHANGED_FILES:**
 
-## Değişen dosyalar
+## Yetki ve kapsam
 
-- 
+- [ ] `governance/CURRENT_STAGE.json` ile exact görev eşleşiyor.
+- [ ] Cumulative diff reset baseline'dan hesaplandı.
+- [ ] Yalnız exact izinli path/adet/tür/kelime veya binary bütçesi kullanıldı.
+- [ ] `releases/v2.6` exact tree SHA'sı değişmedi.
+- [ ] Chief Editor korumalı alanları specialist branchten değiştirilmedi.
+- [ ] Başka hattın alanında sessiz değişiklik yok.
+- [ ] Bu PR candidate, release veya lock ilan etmiyor.
 
-## Ortak doğrulama
+## Kaynak ve copy
 
-- [ ] `AI_HANDOFF.md`, `PROJECT_STATE.md` ve zorunlu `governance/**` kaynakları okundu.
-- [ ] Kilitli `releases/v2.6/**` değiştirilmedi.
-- [ ] Kart kimliği/adedi, effect, zamanlama, deste davranışı ve kural akışı kapsam dışıysa korundu.
-- [ ] Başka çalışma hattının alanında sessiz değişiklik yapılmadı.
-- [ ] Uzman teslimiyse doğru görünür sohbet ve `VISIBLE_CHAT_ACK: YES` var.
-- [ ] Geçici alt ajan çıktısı uzman teslimi, PASS veya blocker kapanışı sayılmadı.
-- [ ] Kaynak dal doğru: `work/v2.7-story`, `work/v2.7-art-direction`, `work/v2.7-visual` veya `work/v2.7-simulation`.
-- [ ] Exact commit, test komutları/çıktıları ve açık riskler aşağıda kayıtlı.
-- [ ] Bu PR release veya kilit değildir.
+- **COPY_SOURCE:**
+- **COPY_AUDIT:** OCR / RENDER_SOURCE_COMPARE / N-A
+- **COPY_AUDIT_EVIDENCE:**
+- [ ] Kimlik, title, section label, effect, flavor, zamanlama, adet ve davranış
+      kanonik kaynaktan exact korundu.
+- [ ] Görsel model okunabilir kart copy'si üretmedi.
+- [ ] Copy uyuşmazlığı varsa `BLOCKED_COPY_DRIFT` verildi.
+- [ ] `SRC-002` tahminle çözülmedi.
 
-## Sanat Yönetimi teslim alanları — yalnız Sanat Yönetimi hattı
+## Sanat Yönetimi ve kadraj
 
-- **ART_DIRECTION_STAGE:** BRIEF / PILOT / FULL_DECK / BACKS / N-A
-- **INPUT_VISUAL_BRANCH:**
+- **ART_DIRECTION_STAGE:**
 - **INPUT_VISUAL_COMMIT:**
-- **INPUT_CONTACT_SHEETS:**
 - **CREATIVE_VERDICT:**
-- **FOULWAKE_WORLD_FIT:**
-- **MATERIAL_AND_LINE_LANGUAGE:**
-- **COMPOSITION_AND_DECK_RHYTHM:**
-- **KEEP:**
-- **REMOVE:**
-- **REDRAW_BRIEF:**
-- [ ] Genel sıfat/puan yerine uygulanabilir yaratıcı gerekçe verildi.
-- [ ] Final sanat/PDF üretilmedi; metin, mekanik ve lore değiştirilmedi.
-- [ ] Sanat tavsiyesi nihai kullanıcı veya release PASS'i sayılmadı.
+- **FRAMING_DISPOSITION:** FRAMING_PASS / REFRAME_REQUIRED / N-A
+- **FRAMING_EVIDENCE:**
+- [ ] Kart oranı, bleed, safe area, özne ölçeği, odak, gerekli crop,
+      metin çakışması, thumbnail/masa okunurluğu ve kadraj çeşitliliği incelendi.
+- [ ] Görsel Tasarım kendi kadrajına PASS vermedi.
+- [ ] KAPTAN için gönderilen ana figür/kompozisyon ve exact copy korundu.
+- [ ] BACK_SEA_ROCK matlık, BACK_ISLAND full redraw ve BACK_LIGHTHOUSE
+      ölçek/serbest temel hükmü uygulandı.
 
-## Görsel teslim alanları — yalnız Görsel hattı
+## Araçlar ve kanıt
 
-- **PILOT_OR_FULL:** PILOT / FULL / N-A
-- **ART_BRIEF_MANIFEST:**
-- **CONTACT_SHEETS:**
-- **TEXT_IN_ILLUSTRATION_CHECK:** PASS / FAIL / N-A
-- **REJECTED_ASSET_REUSE_CHECK:** PASS / FAIL / N-A
-- **BACK_MAPPING_CHECK:** PASS / FAIL / N-A
-- **SEMANTIC_ART_REVIEW:** PASS / FAIL / N-A
-- [ ] `unique render SHA`, özgün sanat kanıtı olarak kullanılmadı.
-- [ ] İllüstrasyonda gereksiz/anlamsız okunabilir yazı yok.
-- [ ] 7 arka yüz / 121 eşleme ve 180° yön güvenliği doğrulandı.
-- [ ] Pilot kullanıcı + Baş Editörce kabul edilmeden tam üretime geçilmedi.
+- **TESTS_RUN:**
+- **TOOLS_USED:**
+- **PLUGINS_USED:**
+- **PLUGINS_AVAILABLE_BUT_NOT_USED:**
+- **NOT_USED_REASON:**
+- **PROTECTED_FIELDS_CONFIRMED:** YES / NO
+- **TEMPORARY_SUBAGENTS:** NONE / PREAUTHORIZED_EXCEPTION
+- **OPEN_RISKS:**
 
 ## Sonuç
 
-**TESTS_RUN:**  
-**RESULT:**  
-**OPEN_RISKS:**  
-**NEXT_RECIPIENT:** Baş Editör  
-**LOCK_REQUESTED:** NO
+- **RESULT:**
+- **NEXT_RECIPIENT:** Baş Editör
+- **FULL_121_PRODUCTION_AUTHORIZED:** NO
+- **SIMULATION_AUTHORIZED:** NO
+- **LOCK_REQUESTED:** NO

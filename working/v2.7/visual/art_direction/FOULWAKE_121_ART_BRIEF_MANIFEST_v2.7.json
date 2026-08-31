@@ -3,7 +3,7 @@
   "project": "FOULWAKE",
   "document": "FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7",
   "art_direction_stage": "BRIEF",
-  "status": "OWNER_DIRECTED_ARTISTIC_DEPTH_REWORK / PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_REVIEW",
+  "status": "DRAFT / PROJECT_OWNER_KAPTAN_OVERRIDE_APPLIED / VISUAL_PRODUCTION_NOT_AUTHORIZED",
   "source_branch": "work/v2.7-art-direction",
   "chief_editor_source": "v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1",
   "baseline_release": "v2.6 STABLE / LOCKED",
@@ -576,7 +576,7 @@
       "framing_viewpoint_focus_negative_space": "Bel hizasında üç çeyrek kadraj; çark dairesi kadrajı keser, yüz merkezden kaçık; açılan tarafta boş deniz şeridi yön değişimini okutur.",
       "line_hatching_palette_approach": "Kalın kontur yalnız eller/çarkta; yağmur için eğik paralel çizgi, ceket için çapraz tarama; lacivert-katran siyahı, köpükte kâğıt ışığı, bilek bağında küçük kırmızımsı vurgu.",
       "secondary_wordless_joke_max_one": "NONE",
-      "similarity_risk_with_other_cards": "SET-KP-01 ve KAPTAN STYLE_ONLY referansıyla otorite pozu benzerleşebilir.",
+      "similarity_risk_with_other_cards": "SET-KP-01 KAPTANla otorite pozu benzerleşebilir; KAPTAN figürü yalnız kendi kartında korunur.",
       "specifically_do_not_repeat_face_pose_scene_animal_humor": "Trikorn, kollar çapraz, göğüs portresi, martı ve referans KAPTAN’ın yüz/poz/kompozisyonu kesinlikle kullanılmaz.",
       "visual_rhythm_role_in_deck": "Deste ritminde ilk güçlü diyagonal hareket ve koyu kütle.",
       "period_and_world_check": "Dönem dümeni, takoz ve yağlı yün ceket; modern metal dümen donanımı yok."
@@ -10727,89 +10727,100 @@
       "manifest_index": 121,
       "card_identity": {
         "id": "SET-KP-01",
-        "exact_name": "Kaptan Makamı",
+        "exact_name": "KAPTAN",
         "front_family": "SUPPORT",
         "back_binary": "BACK_SUPPORT",
         "pilot_selected": true
       },
       "exact_source": {
-        "authority_priority": 1,
-        "authority_scope": "v2.6_locked_unchanged_content",
-        "release_manifest": "releases/v2.6/V26_RELEASE_MANIFEST.json",
-        "release_manifest_commit": "29da7e35c4d940e1836bc3852a67d0cc7a5904a1",
-        "locked_artifact_path": "/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf",
-        "locked_artifact_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+        "authority_priority": 0,
+        "authority_scope": "project_owner_uploaded_card_override",
+        "decision_evidence": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
+        "exact_copy_source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+        "visual_source": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+        "visual_source_sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
+        "dimensions_px": [
+          896,
+          1536
+        ],
         "selector": "SET-KP-01",
-        "lookup_evidence": "working/v2.7/visual/manifests/FOULWAKE_v2.7_121_SOURCE_RENDER_PDF_MAP.json@e91581bb336dfcbab5da1d48a256577f9251f891",
-        "lookup_limit": "IDENTITY / EXACT COPY / PAGE INDEX ONLY — ALL e91581 ART REJECTED AND EXCLUDED",
-        "source_status": "v2.6 STABLE / LOCKED"
+        "source_status": "BINDING v2.7 PROJECT OWNER OVERRIDE / v2.6 UNCHANGED"
       },
       "exact_copy": {
-        "name": "Kaptan Makamı",
-        "effect": "Kaptanlık açık bir makamdır; Sadakati kanıtlamaz. Kaptan değişebilir; makam oyundan kalkmaz.",
-        "flavor": "Makam kalır. Şüphe de."
+        "name": "KAPTAN",
+        "section_label": "ÖZEL YETENEK",
+        "effect": "Oylamada eşitlik olursa, senin tarafın geçerli olur.",
+        "flavor": "Lidere et. Gemi senin emrinde."
       },
-      "first_two_seconds_emotion": "Boş sandalye bile herkesi hizalıyor; sadakat görünmüyor.",
-      "visual_narrative_aim": "Gusto’nun yokluğundan doğan açık, değişebilir ve Sadakati kanıtlamayan Kaptan makamını, hiçbir Kaptan yüzünü yüceltmeden anlatmak.",
+      "first_two_seconds_emotion": "Dik başlı, kendinden emin kaptan; eşitlikte sözü ağırlık kazanır.",
+      "visual_narrative_aim": "Proje sahibinin gönderdiği kolları bağlı KAPTAN figürünü ve ana kart kompozisyonunu koruyarak, otoriteyi doğrudan ve mizahi fakat tehditkâr bir karakter portresiyle anlatmak.",
       "protected_intent": {
-        "emotional_read": "Boş sandalye bile herkesi hizalıyor; sadakat görünmüyor.",
-        "dramatic_truth": "Gusto’nun yokluğundan doğan açık, değişebilir ve Sadakati kanıtlamayan Kaptan makamını, hiçbir Kaptan yüzünü yüceltmeden anlatmak.",
-        "gameplay_truth": "Kaptan Makamı, bir kahramanın mülkü değil; masadaki kurulumun ve kamusal/aktarılabilir kurumun maddi eşiğidir.",
-        "must_read_at_card_scale": "Bir el makam anahtarını boş sandalyenin önündeki masaya bırakır.",
-        "must_remain_unresolved": "Kişinin Sadakati ile birlikte deneysel yükün sonucu, kayıp komuta figürünün akıbeti ve düşmanca ağın kesin kimliği."
+        "emotional_read": "Dik başlı, kendinden emin kaptan; eşitlikte sözü ağırlık kazanır.",
+        "dramatic_truth": "KAPTAN bir boş makam veya sembolik sandalye değil, gönderilen ana karakter portresidir.",
+        "gameplay_truth": "Oylamada eşitlik oluştuğunda KAPTANın tarafı geçerli olur.",
+        "must_read_at_card_scale": "Kolları bağlı, iri ve inatçı kaptan figürü ilk bakışta ana özne olarak okunur.",
+        "must_remain_unresolved": "KAPTANın Sadakati ve oyun içindeki tarafı görselden anlaşılamaz."
       },
       "solution_status": {
-        "exact_copy": "BINDING_SOURCE_COPY",
+        "exact_copy": "BINDING_PROJECT_OWNER_COPY",
         "first_two_seconds_emotion": "BINDING",
-        "visual_narrative_aim": "BINDING_INTENT",
-        "subject_character_event_identity": "STARTING_VECTOR_WITH_IDENTITY_GUARD",
-        "age_face_body_silhouette_or_event_main_form": "COLLISION_GUARD",
-        "single_main_action": "BINDING_SINGLE_PREDICATE",
-        "real_ship_sea_coast_location": "BINDING_PERIOD_FUNCTION / LOCAL_LAYOUT_OPEN",
-        "card_specific_object_or_visual_metaphor": "STARTING_VECTOR / PERIOD_EQUIVALENT_ALLOWED",
-        "framing_viewpoint_focus_negative_space": "STARTING_VECTOR / RHYTHM_FUNCTION_BINDING",
-        "line_hatching_palette_approach": "FAMILY_GUARD / ARTIST_LINE_AUTHORED",
-        "secondary_wordless_joke_max_one": "BINDING_NONE",
+        "visual_narrative_aim": "BINDING_OWNER_VISUAL_SOURCE",
+        "subject_character_event_identity": "BINDING_OWNER_VISUAL_SOURCE",
+        "age_face_body_silhouette_or_event_main_form": "BINDING_WITH_MINOR_EDIT_WINDOW",
+        "single_main_action": "BINDING_POSE",
+        "real_ship_sea_coast_location": "SOURCE_SCENE / MINOR_BACKGROUND_EDIT_ALLOWED",
+        "card_specific_object_or_visual_metaphor": "SOURCE_SCENE / NOT_DECK_WIDE_MOTIF",
+        "framing_viewpoint_focus_negative_space": "BINDING_OWNER_COMPOSITION / FRAMING_GATE_REQUIRED",
+        "line_hatching_palette_approach": "BINDING_DECK_ART_LANGUAGE",
+        "secondary_wordless_joke_max_one": "SOURCE_INCIDENTAL_ELEMENTS_ALLOWED",
         "similarity_risk_with_other_cards": "BINDING_REVIEW_GUARD",
         "period_and_world_check": "BINDING"
       },
       "artist_interpretive_space": {
         "open_decisions": [
-          "İşlevi koruyan dönemsel mimari/ekipman ayrıntısı",
-          "Kamusal sistem niteliğini koruyan kamera ve insan yoğunluğu",
-          "İsim, arma veya yazıya ihtiyaç duymayan maddi metafor"
+          "Exact 7:12 veya production template içinde küçük crop/ölçek düzeltmesi",
+          "Mat lacivert–oker–pas değerlerini koruyan küçük renk normalizasyonu",
+          "KAPTAN figürünü değiştirmeyen küçük arka-plan veya çerçeve temizliği"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: SET-KP-01 / Kaptan Makamı",
-          "Tek ana görsel fiil: Bir el makam anahtarını boş sandalyenin önündeki masaya bırakır.",
-          "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
-          "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
+          "SET-KP-01 ana görseli yüklenen KAPTAN kartıdır",
+          "Başlık, bölüm, effect ve flavor exact owner copy'dir",
+          "KAPTAN figürü boş sandalye, makam anahtarı veya başka özneyle değişmez",
+          "Görsel model okunabilir copy üretmez",
+          "Final kadrajı Sanat Yönetmeni bağımsız değerlendirir"
         ],
-        "replacement_rule": "A starting-vector object, crop or gesture may change only when the replacement is more period-plausible or emotionally precise and preserves the protected intent, single predicate, deck rhythm and collision guard.",
-        "approval_evidence": "Three black-and-white thumbnails after visual-production authorization; at least one must reject the obvious solution without violating the contract."
+        "replacement_rule": "Ana figür ve kompozisyon değiştirilemez; yalnız proje sahibinin izin verdiği küçük crop, ölçek, renk ve arka-plan düzenlemeleri yapılabilir.",
+        "approval_evidence": "Exact referans karşılaştırması, OCR/render-source copy karşılaştırması ve FRAMING_PASS."
       },
       "rename_resilience": {
-        "status": "PASS_REQUIRED",
-        "current_proper_nouns_are_source_labels_not_visual_motifs": true,
-        "card_specific_note": "Kayıp komuta figürü adlandırılmaz veya kişisel relikle markalanmaz; yalnız devredilebilir boş makam görünür.",
-        "test": "Replace any proper noun with its functional description. The scene must still communicate the same emotional and gameplay truth."
+        "status": "NOT_APPLICABLE_OWNER_EXACT_TITLE",
+        "current_proper_nouns_are_source_labels_not_visual_motifs": false,
+        "card_specific_note": "KAPTAN başlığı proje sahibinin exact görünen kart adıdır.",
+        "test": "Rendered title must compare exactly to KAPTAN."
       },
-      "director_question": "Kaptan Makamı, bir kişinin portresi veya lore amblemi olmadan kamusal ve devredilebilir oyun işlevini taşıyor mu? Mevcut özel adlar ve lore işaretleri silinse bile aynı dramatik işlev ayakta kalıyor mu?",
-      "artist_value_add_target": "Kaptan Makamı için sanatçı katkısı, briefteki nesneleri saymak değil; “Boş sandalye bile herkesi hizalıyor; sadakat görünmüyor.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.",
-      "obvious_solution_to_avoid": "STYLE_ONLY KAPTAN yüzü/pozu/şapkası/kuşu/gemisi; GUC-15 şapkası; GUC-22 kupası; Gusto bedeni veya kaçış izi; Siyah Mühür/balmumu; arma/logo; Sadakat kodu ve hayvan yok.",
-      "subject_character_event_identity": "Sandalye boş; üç farklı yaş/ten/iş izine sahip el kadrajın üç yanından gelir, hiçbir tam karakter yok.",
-      "age_face_body_silhouette_or_event_main_form": "Çivilenmiş sade koltuk ana dikey kütle; çıkarılabilir üç köşeli olmayan yağlı kaptan ceketi koltuğun arkasında; eller eşit uzaklıkta.",
-      "single_main_action": "Bir el makam anahtarını boş sandalyenin önündeki masaya bırakır.",
-      "real_ship_sea_coast_location": "Kıç kamara sefer divanı; duvara sabitlenmiş deniz sandalyesi, küçük masa ve lomboz.",
-      "card_specific_object_or_visual_metaphor": "Boş sandalyenin önündeki ağır makam anahtarı ve farklı kullanıcılardan kalmış ayakkabı aşınmaları; boşluk Gusto’nun kaderini değil yalnız yokluğunu taşır.",
-      "framing_viewpoint_focus_negative_space": "Sandalyenin oturma yüksekliğinden hafif alçak cephe; odak bırakılan ağır anahtar ve boş oturak; lomboz açık negatif alan.",
-      "line_hatching_palette_approach": "Ahşapta çok katmanlı kullanım çizgisi, ellerde özgün tarama; tar, meşe, soluk indigo, küçük mühür kırmızısı; yazı/logo yok.",
-      "secondary_wordless_joke_max_one": "NONE",
-      "similarity_risk_with_other_cards": "GUC-15 şapka, GUC-22 kupa, KAPTAN STYLE_ONLY kartı ve nihai lider portresiyle kopya riski.",
-      "specifically_do_not_repeat_face_pose_scene_animal_humor": "STYLE_ONLY KAPTAN yüzü/pozu/şapkası/kuşu/gemisi; GUC-15 şapkası; GUC-22 kupası; Gusto bedeni veya kaçış izi; Siyah Mühür/balmumu; arma/logo; Sadakat kodu ve hayvan yok.",
-      "visual_rhythm_role_in_deck": "Pilot olarak boş makam, çoklu kimlik, spoiler vermeyen Sadakat, kurumsal anlatı ve destek ailesinin merkez ikonografisini sınar.",
-      "period_and_world_check": "1721 kıç kamara sandalyesi, warded makam anahtarı ve sabitleme düzeni; taht/modern ofis koltuğu/üniforma rozeti yok.",
-      "v27_narrative_spine_application": "The empty, transferable command seat exists because Gusto is absent. No personal relic, black-wax mark, shadow figure or hand identifies what happened to him or whether the next Captain is loyal."
+      "director_question": "Gönderilen KAPTAN figürü ve kartın güçlü dikey kadrajı korunuyor mu; küçük düzenleme ana karakteri, yüzü, kolları veya copy alanını zayıflatıyor mu?",
+      "artist_value_add_target": "Yeni bir KAPTAN icat etmek değil; yüklenen kartın mürekkep, tarama, kâğıt ve mat renk dilini üretim şablonunda temiz ve baskıya dayanıklı biçimde korumak.",
+      "obvious_solution_to_avoid": "Boş sandalye, makam anahtarı, portresiz kurum metaforu, başka kaptan yüzü, dijital parlama, mekanik rewrite ve yeni okunabilir resim-içi yazı.",
+      "subject_character_event_identity": "Yüklenen karttaki kolları bağlı, üç köşeli şapkalı, iri yüzlü KAPTAN ana figürü; figür değişmez.",
+      "age_face_body_silhouette_or_event_main_form": "Geniş şapka, büyük baş-gövde oranı ve göğüste bağlı kollarla güçlü merkezi dikey siluet.",
+      "single_main_action": "KAPTAN kollarını bağlayarak dik ve meydan okuyan bir duruş sergiler.",
+      "real_ship_sea_coast_location": "Yüklenen kartın deniz/gemi arka planı korunabilir veya ana figürü bozmadan sadeleştirilebilir.",
+      "card_specific_object_or_visual_metaphor": "Şapka ve bağlı kollar otoriteyi taşır; gemi ve martı deste genelinde tekrar eden motif değildir.",
+      "framing_viewpoint_focus_negative_space": "Exact 7:12 dikey kaynak oranı korunur. Yüz, şapka, kollar ve apoletler istemsiz kesilmez; title ile effect/flavor alanı figürle çakışmaz. Sanat Yönetimi FRAMING_PASS zorunludur.",
+      "line_hatching_palette_approach": "Kalın siyah mürekkep, yoğun gravür/çapraz tarama, sıcak kirli kâğıt, mat lacivert, oker, pas ve kirli krem; plastik AI parlaklığı yok.",
+      "secondary_wordless_joke_max_one": "Kaynak görseldeki martı yalnız mevcut arka-plan öğesidir; deste genelinde tekrarlanmaz ve yeni şaka eklenmez.",
+      "similarity_risk_with_other_cards": "Diğer kartlarda aynı kaptan yüzü, bağlı-kol pozu, şapka silueti, gemi veya martı tekrar edilmemelidir.",
+      "specifically_do_not_repeat_face_pose_scene_animal_humor": "KAPTAN figürü diğer kartlara kopyalanmaz; SET-KP-01 içinde ise başka figürle değiştirilmez.",
+      "visual_rhythm_role_in_deck": "Destede tek güçlü, cepheden karakter portresi ve yardımcı kart odağı; diğer kartların kadrajlarıyla bilinçli kontrast kurar.",
+      "period_and_world_check": "1721 üç köşeli şapka, lacivert denizci ceketi, apolet ve yelkenli arka planı; modern nişan, plastik yüzey veya optik efekt yok.",
+      "v27_narrative_spine_application": "KAPTANın Sadakati görselden açığa çıkmaz; kart yalnız eşitlik anındaki oyun otoritesini taşır."
     }
-  ]
+  ],
+  "current_stage": "governance/CURRENT_STAGE.json",
+  "project_owner_override": {
+    "evidence": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
+    "copy_source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+    "visual_source": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+    "stage": "STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION"
+  }
 }

@@ -1,14 +1,14 @@
 # FOULWAKE 12 PILOT PRODUCTION BRIEFS v2.7
 
-Status: OWNER-DIRECTED ARTISTIC DEPTH REWORK — final illüstrasyon/render/PDF değildir.  
-Chief Editor disposition input: work/v2.7-art-direction@3cbfc2155246a6f7fce81e814df6725d7391f119 — REWORK_REQUIRED  
-Prior corrected brief head: work/v2.7-art-direction@968873d28f96d48ea64e7a04d5c82a808a4bc612  
-Project Owner direction: rules-literate, name-resilient, artistically authored pass; no visual production.  
+Status: OWNER RESET APPLIED / 12 FRONTS HOLD / VISUAL PRODUCTION PAUSED  
+Current authority: governance/CURRENT_STAGE.json  
+Project Owner correction: SET-KP-01 is the uploaded KAPTAN visual and exact-copy source  
+Framing gate: independent Art Direction review required for every front/back  
 Visual production authorized: NO  
 Source branch: work/v2.7-art-direction  
-Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
 Baseline: v2.6 STABLE / LOCKED  
 Decision gate: PROJECT OWNER + CHIEF EDITOR  
+Production owner after a new exact order: Görsel Tasarım
 Production owner after approval: Görsel Tasarım
 
 ## 1. Pilot seçimi ve rework sonucu
@@ -28,7 +28,7 @@ On iki pilot seçimi korunmuştur. Rework, seçimleri kolaylaştırmaz; her biri
 | Kayalık | HAR-KY-06 İğne Deliğinden Sefer | Tek sıyrılma fiili; hasar statik iz |
 | Ada | HAR-AA-06 Gümrükçünün Tek Yaşadığı Ada | Kapalı ıskarta seçildi; tek gerekçeli şaka |
 | Deniz Feneri | HAR-FN-04 Geceleri Parlayan Yalan | Yanlış burunda basit ateş; gelişmiş optik yok |
-| Yardımcı | SET-KP-01 Kaptan Makamı | Gusto belirsizliği, tek anahtar fiili, şaka yok |
+| Yardımcı | SET-KP-01 KAPTAN | Yüklenen ana figür, exact copy, sanat dili ve kadraj kapısı |
 
 Pilotların 1’i gerekçeli ikincil yazısız şaka içerir; 11’i NONE’dır. Hiçbir şaka ölüm, ağır hasar, Sadakat, Çürümüş Erzak, tehdit, fener yanıltması veya makam sahnesine eklenmez.
 
@@ -76,7 +76,7 @@ Exact copy — değiştirilmez:
 
 İlk Karakter pilotu, FOULWAKE insan dilinin kahraman korsan portresi olmadan çalışmasını ve KAR-05 ile ortak yaşlı-uzun-kemikli kadın temelinin gerçekten kaldırıldığını ölçer.
 
-Yüz/beden/meslek ayrımı, geniş negatif alan, çıplak gözle gözcülük ve STYLE_ONLY KAPTAN kartından tam kopuş.
+Yüz/beden/meslek ayrımı, geniş negatif alan, çıplak gözle gözcülük ve OWNER_SOURCE KAPTAN kartından tam kopuş.
 
 ### İlk iki saniye ve dramaturji
 
@@ -903,85 +903,57 @@ Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting
 
 Renk kapatıldığında ateş noktası, yanlış burun ve dönen pruva ilişkisi okunmalı. Ateş glow/ışın değil küçük kâğıt rezervi ve çevre taramasının azalmasıyla görünmeli.
 
-## SET-KP-01 — Kaptan Makamı (Yardımcı 1/1)
+## SET-KP-01 — KAPTAN (Yardımcı 1/1)
 
-Exact source: v2.6 STABLE / LOCKED — /Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf (sha256 769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298); rejected visual art excluded
+Exact owner source:
+
+- Görsel: `working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg`
+- Copy: `working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json`
+- Karar: `governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json`
 
 Exact copy — değiştirilmez:
 
-- Ad: Kaptan Makamı
-- Etki: Kaptanlık açık bir makamdır; Sadakati kanıtlamaz. Kaptan değişebilir; makam oyundan kalkmaz.
-- Flavor: Makam kalır. Şüphe de.
+- Ad: KAPTAN
+- Bölüm: ÖZEL YETENEK
+- Etki: Oylamada eşitlik olursa, senin tarafın geçerli olur.
+- Flavor: Lidere et. Gemi senin emrinde.
 
 ### Neden pilot / sistem sınavı
 
-Kaptanlığın açık, değişebilir ve Sadakati kanıtlamayan makamını; Gusto’nun yokluğunu çözmeden ve STYLE_ONLY KAPTAN portresini kopyalamadan anlatır.
+Bu kart yeni bir kaptan tasarlama görevi değildir. Gönderilen kolları bağlı
+KAPTAN figürünün ve ana kompozisyonun korunmasını; bütün desteye taşınacak
+mürekkep/gravür/kirli kâğıt/mat palet dilini; exact copy ve bağımsız kadraj
+kapısını birlikte sınar.
 
-Portresiz yetki, tek anahtar bırakma fiili, CAN-04 belirsizliği, kurumsal destek dili ve sıfır ikincil şaka.
+### Bağlayıcı görsel çözüm
 
-### İlk iki saniye ve dramaturji
+Ana özne yüklenen karttaki iri yüzlü, üç köşeli şapkalı ve kolları bağlı
+KAPTANdır. Boş sandalye, makam anahtarı, portresiz kurum metaforu veya başka
+karakter kullanılmaz. Küçük crop, ölçek, renk ve arka-plan temizliği dışında
+figür ve ana kompozisyon değiştirilmez.
 
-- Duygu: Boş sandalye bile herkesi hizalıyor; sadakat görünmüyor.
-- Amaç: Gusto’nun yokluğundan doğan açık, değişebilir ve Sadakati kanıtlamayan Kaptan makamını, hiçbir Kaptan yüzünü yüceltmeden anlatmak.
-- Ritim görevi: Pilot olarak boş makam, çoklu kimlik, spoiler vermeyen Sadakat, kurumsal anlatı ve destek ailesinin merkez ikonografisini sınar.
-
-### Özne üretim spesifikasyonu
-
-Boş, güverteye sabit sade sandalye; önünde küçük masa ve ağır makam anahtarı. Bir el anahtarı bırakır; diğer eller yalnız yaklaşan/çekilmiş durum olarak donuktur. Farklı ayakkabı aşınmaları makamın kullanıcı değiştirdiğini gösterir. Sandalye kamaları maddi tarih olabilir ama şaka olarak sunulmaz. Gusto’ya ait beden, kaçış izi, siyah balmumu veya kişisel suç kanıtı yok.
-
-Manifest öznesi: Sandalye boş; üç farklı yaş/ten/iş izine sahip el kadrajın üç yanından gelir, hiçbir tam karakter yok.
-
-Ana biçim: Çivilenmiş sade koltuk ana dikey kütle; çıkarılabilir üç köşeli olmayan yağlı kaptan ceketi koltuğun arkasında; eller eşit uzaklıkta.
-
-### Tek ana hareket ve gerçek mekân
-
-- Tek fiil: Bir el makam anahtarını boş sandalyenin önündeki masaya bırakır.
-- Mekân: Kıç kamara sefer divanı; duvara sabitlenmiş deniz sandalyesi, küçük masa ve lomboz.
-- Karta özgü metafor: Boş sandalyenin önündeki ağır makam anahtarı ve farklı kullanıcılardan kalmış ayakkabı aşınmaları; boşluk Gusto’nun kaderini değil yalnız yokluğunu taşır.
+Gemi ve martı kaynakta kalabilir fakat diğer kartlarda tekrarlanması gerekmez.
+Yeni şaka veya okunabilir resim-içi yazı eklenmez.
 
 ### Kadraj, çizgi ve palet
 
-Sandalyenin oturma yüksekliğinden hafif alçak cephe; odak bırakılan ağır anahtar ve boş oturak; lomboz açık negatif alan.
+Exact 7:12 dikey oran korunur. Yüz, şapka, kollar ve apoletler istemsiz
+kesilmez; KAPTAN title alanı ile effect/flavor kutusu ana figürle çakışmaz.
+Thumbnail ve normal masa mesafesinde önce KAPTAN yüzü/silueti, sonra metin
+hiyerarşisi okunur.
 
-Ahşapta çok katmanlı kullanım çizgisi, ellerde özgün tarama; tar, meşe, soluk indigo, küçük mühür kırmızısı; yazı/logo yok.
+Kalın siyah mürekkep, yoğun gravür ve çapraz tarama, sıcak kirli kâğıt, mat
+lacivert–oker–pas–kirli krem korunur. Airbrush, bloom, krom/specular deniz,
+plastik AI cilası ve neon beyaz yoktur.
 
-### İkincil yazısız şaka
+### Zorunlu kanıt
 
-NONE
-
-### v2.7 anlatısal omurga uygulaması
-
-The empty, transferable command seat exists because Gusto is absent. No personal relic, black-wax mark, shadow figure or hand identifies what happened to him or whether the next Captain is loyal.
-
-### Tekrar / dönem güvenlik duvarı
-
-- Benzerlik riski: GUC-15 şapka, GUC-22 kupa, KAPTAN STYLE_ONLY kartı ve nihai lider portresiyle kopya riski.
-- Tekrarlanmayacaklar: STYLE_ONLY KAPTAN yüzü/pozu/şapkası/kuşu/gemisi; GUC-15 şapkası; GUC-22 kupası; Gusto bedeni veya kaçış izi; Siyah Mühür/balmumu; arma/logo; Sadakat kodu ve hayvan yok.
-- Dönem kontrolü: 1721 kıç kamara sandalyesi, warded makam anahtarı ve sabitleme düzeni; taht/modern ofis koltuğu/üniforma rozeti yok.
-
-### Bağlayıcı niyet ve sanatçı payı
-
-**Korunacak okuma:** Boş sandalye bile herkesi hizalıyor; sadakat görünmüyor. Kaptan Makamı, bir kahramanın mülkü değil; masadaki kurulumun ve kamusal/aktarılabilir kurumun maddi eşiğidir.
-
-**Tek fiil:** Bir el makam anahtarını boş sandalyenin önündeki masaya bırakır.
-
-**Açık tutulacak kararlar:**
-
-- İşlevi koruyan dönemsel mimari/ekipman ayrıntısı
-- Kamusal sistem niteliğini koruyan kamera ve insan yoğunluğu
-- İsim, arma veya yazıya ihtiyaç duymayan maddi metafor
-
-Aşağıdaki özne, nesne ve kadraj tarifleri çarpışmayı önleyen **starting vector**dür; nesne sayım listesi veya kilitli çekim değildir. Eşdeğer çözüm ancak protected intent’i, tek fiili, dönem sınırını, negatif alan görevini ve diğer kartlardan ayrımı daha iyi koruyorsa önerilir.
-
-**İlk eleştiri sorusu:** Kaptan Makamı, bir kişinin portresi veya lore amblemi olmadan kamusal ve devredilebilir oyun işlevini taşıyor mu? Mevcut özel adlar ve lore işaretleri silinse bile aynı dramatik işlev ayakta kalıyor mu?
-
-**İsim dayanımı:** Kayıp komuta figürü adlandırılmaz veya kişisel relikle markalanmaz; yalnız devredilebilir boş makam görünür.
-
-**Sanatçı katkısı hedefi:** Kaptan Makamı için sanatçı katkısı, briefteki nesneleri saymak değil; “Boş sandalye bile herkesi hizalıyor; sadakat görünmüyor.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.
-
-### Küçük baskı kabul kanıtı
-
-Metin kapalıyken ‘boş ama devredilen gemi makamı’ okunmalı; ‘Gusto öldü/kaçtı’, ‘iyi Kaptan’ veya ‘sadık lider’ okunmamalı. STYLE_ONLY referansla yüz, poz, şapka, kuş, gemi ve kompozisyon çakışması sıfır olmalı.
+- Referans → render ana figür/kompozisyon karşılaştırması
+- Canonical UTF-8 → template → OCR/render-source exact copy karşılaştırması
+- 3 mm bleed ve 4–5 mm safe area overlay
+- Sanat Yönetimi `FRAMING_PASS` veya `REFRAME_REQUIRED`
+- Görsel Tasarım self-PASS kullanmaz
+- Sapmalar: `BLOCKED_COPY_DRIFT` veya `BLOCKED_FRAMING_DRIFT`
 
 ## 15. Paket düzeyinde kabul ölçütleri
 

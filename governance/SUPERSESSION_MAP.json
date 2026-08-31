@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "current_stage": "STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION",
+  "rule": "Only CURRENT_STAGE.json may declare a currently authorized task. Historical evidence remains immutable and cannot authorize work.",
+  "supersessions": [
+    {
+      "topic": "PILOT_ART_DIRECTION_PASS",
+      "superseded_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json",
+      "superseded_for": [
+        "candidate",
+        "production",
+        "simulation",
+        "release",
+        "lock"
+      ],
+      "by": "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json",
+      "current": "PROJECT_OWNER_REJECTED / NO ACTIVE CANDIDATE"
+    },
+    {
+      "topic": "KAPTAN_STYLE_ONLY",
+      "superseded_sources": [
+        "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md@7418d9c2",
+        "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json@7418d9c2",
+        "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md@7418d9c2"
+      ],
+      "by": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
+      "current": "UPLOADED_KAPTAN_IS_BINDING_SET_KP_01_VISUAL_AND_COPY_SOURCE"
+    },
+    {
+      "topic": "OLD_VISUAL_WORK_ORDERS",
+      "historical_only": [
+        "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
+        "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
+        "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md"
+      ],
+      "current_order": "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md",
+      "current_authorized_action": "ART_DIRECTION_PATCH_CORRECTION_ONLY"
+    }
+  ]
+}

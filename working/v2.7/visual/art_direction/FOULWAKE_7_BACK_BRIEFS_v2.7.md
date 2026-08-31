@@ -1,16 +1,16 @@
 # FOULWAKE 7 BACK BRIEFS v2.7
 
-Status: FAMILY-VISIBLE / VARIABLE-LAYOUT MAP-BACK REWORK — arka yüz sanat fikri ve risk analizi; final görsel/render/PDF değildir.  
-Reviewed package baseline: work/v2.7-art-direction@d578feca0efff8589448f4d3a168d662f6c7a3f4 — SCOPE/FILE INTEGRITY VERIFIED; CHARACTER / POWER / LOYALTY / SUPPORT BACKS PROTECTED  
-Chief Editor disposition: REWORK_REQUIRED — FAMILY_VISIBLE / VARIABLE-LAYOUT MAP BACKS  
-Project Owner decision: OPTION_2 — FAMILY-VISIBLE MAP BACKS; aile bilgisi görünür, belirli ön kimlik ve sonuç gizlidir.  
+Status: OWNER RESET / THREE BACKS REWORK_REQUIRED / OTHER FOUR HOLD  
+Current authority: governance/CURRENT_STAGE.json  
+Rejected input: work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e  
+Project Owner: BACK_SEA_ROCK matte; BACK_ISLAND FULL REDRAW; BACK_LIGHTHOUSE larger and no forced long ridge  
+Framing gate: independent Art Direction review required  
 Visual production authorized: NO  
 Source branch: work/v2.7-art-direction  
-Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
 Baseline: v2.6 STABLE / LOCKED  
 Decision gate: PROJECT OWNER + CHIEF EDITOR  
-Production owner after approval: Görsel Tasarım  
-Targeted rework scope: BACK_SEA_ROCK / BACK_ISLAND / BACK_LIGHTHOUSE ortak ve değişken masa sistemi; diğer dört arka-yüz yönü korunur.
+Production owner after a new exact order: Görsel Tasarım  
+Target scope: three rejected map backs; CHARACTER / POWER / LOYALTY / SUPPORT remain HOLD, not owner-accepted.
 
 ## 1. Bağlayıcı topoloji
 
@@ -22,7 +22,7 @@ Targeted rework scope: BACK_SEA_ROCK / BACK_ISLAND / BACK_LIGHTHOUSE ortak ve de
 | BACK_SEA_ROCK | 42 | 30 Açık Deniz + 12 Kayalık |
 | BACK_ISLAND | 6 | 6 Ada |
 | BACK_LIGHTHOUSE | 4 | 4 Deniz Feneri |
-| BACK_SUPPORT | 3 | 2 Liman + Kaptan Makamı |
+| BACK_SUPPORT | 3 | 2 Liman + KAPTAN |
 | Toplam | 121 | Yedi exact binary |
 
 Topoloji notu: v2.6 STABLE / LOCKED, Kayalık arkasını Açık Denizden ayrı tutar. Exact v2.7 iş emri yedi binary içinde BACK_SEA_ROCK ortak arkasını ister. Bu brief v2.6’yı değiştirmez ve v2.7’yi kilitlemez; yeni ortak arka yüz yalnız DRAFT öneridir ve proje sahibi + Baş Editör dispozisyonu gerektirir.
@@ -48,7 +48,9 @@ Arka yüzler yedi ayrı logo değildir. Masada yüzü kapalı duran kart, FOULWA
 - Aile içindeki bütün fiziksel kopyalar bit-bit exact aynı master dosyayı kullanır; kart başına farklı eskitme, leke veya renk varyantı yok.
 - v2.7 anlatısal görsel omurga arka yüzlere taşınmaz: tiryak sandığı, Gusto eşyası, Siyah Mühür ve Veyr izi binary tasarımına girmez.
 - Kâğıt, katran, tuz, kenevir, oksit ve eski baskı çizgisi ön yüzlerle aynı dünyadadır. Arka yüz ayrı bir “marka logosu” katmanı değildir.
-- Ekli KAPTAN STYLE_ONLY referansından yüz, şapka, kuş, gemi, çerçeve, kompozisyon, nesne veya çizgi alınmaz.
+- Yüklenen KAPTAN kartı SET-KP-01 için görsel/copy kaynağı ve deste için
+  mürekkep–gravür–kâğıt–mat palet dilidir. KAPTAN figürü arka yüzlere
+  kopyalanmaz; gemi ve martı zorunlu motif değildir.
 - Reddedilmiş e91581 arka yüzleri sanat girdisi değildir; yalnız teknik tarih olarak dışlanır.
 
 ### 2.3 Exact 180 derece güvenliği
@@ -89,7 +91,9 @@ Her binary için Görsel Tasarım daha sonra şu kanıtları üretmelidir; bu be
 
 ### Referans sınıflandırması
 
-Ekli masa örneği MAP_TABLE_REFERENCE: TABLE_READ_ONLY / COMPOSITION_PRINCIPLE_ONLY olarak sınıflandırılır. Ondan yalnız “kapalı kartlar birlikte tek bir keşfedilmemiş deniz/oyun alanı okur” ilkesi alınır. Örneğin 5×5 kart sayısı, sabit grid, satır/sütun, dalga çizgileri, renkleri, çerçevesi, kart yüzleri ve yerleşimi kopyalanmaz veya üretim şartı yapılmaz. KAPTAN ayrı bir STYLE_ONLY referanstır; harita-masası referansı KAPTAN’ın, KAPTAN da harita-masası referansının yetkisini genişletmez.
+Ekli masa örneği MAP_TABLE_REFERENCE: TABLE_READ_ONLY / COMPOSITION_PRINCIPLE_ONLY olarak sınıflandırılır. Ondan yalnız “kapalı kartlar birlikte tek bir keşfedilmemiş deniz/oyun alanı okur” ilkesi alınır. Örneğin 5×5 kart sayısı, sabit grid, satır/sütun, dalga çizgileri, renkleri, çerçevesi, kart yüzleri ve yerleşimi kopyalanmaz veya üretim şartı yapılmaz. KAPTAN, SET-KP-01 görsel/copy kaynağı ve deste sanat dili anahtarıdır;
+harita-masası referansı KAPTANın, KAPTAN da harita-masası referansının yetkisini
+genişletmez.
 
 ### Bağlayıcı aile görünürlüğü ve bilgi sınırı
 
@@ -286,9 +290,11 @@ Arka yüze bakarak Tayfa/Hain tahmin doğruluğu şans düzeyini aşmamalı; kar
 
 ## 6. BACK_SEA_ROCK — 42
 
-### Sanat fikri: “İsimsiz açık su”
+### Sanat fikri: “Mat ve ışıldamayan isimsiz açık su”
 
-BACK_SEA_ROCK, COMMON_MAP_BACK_VISUAL_SYSTEM’in nötr deniz baseline’ıdır. Oyuncu arka yüzden kartın Açık Deniz/Kayalık ortak ailesinde olduğunu bilir; fakat su yüzeyinde hangi alt türün geleceğine dair hiçbir ipucu bulamaz. Kartın tamamına yayılan kısa/kırık çizgiler, kâğıt rezervi ve seyrek tarama dışında ayrı motif yoktur.
+BACK_SEA_ROCK, COMMON_MAP_BACK_VISUAL_SYSTEM’in nötr, mat ve ışıldamayan deniz
+baseline’ıdır. Önceki beyaz parlama pulları, krom/specular etki, düzenli
+parlak dalga tepesi, bloom ve plastik AI cilası yeniden kullanılamaz. Oyuncu arka yüzden kartın Açık Deniz/Kayalık ortak ailesinde olduğunu bilir; fakat su yüzeyinde hangi alt türün geleceğine dair hiçbir ipucu bulamaz. Kartın tamamına yayılan kısa/kırık çizgiler, kâğıt rezervi ve seyrek tarama dışında ayrı motif yoktur.
 
 Bu master 30 Açık Deniz ve 12 Kayalık için bit-bit exact aynıdır. Kaya, sığlık, resif, köpüren kırıcı dalga, keskin jeolojik tarama, koyu dip lekesi veya “tehlikeli su” rengi kullanılmaz.
 
@@ -328,9 +334,11 @@ Bu master 30 Açık Deniz ve 12 Kayalık için bit-bit exact aynıdır. Kaya, s�
 
 ## 7. BACK_ISLAND — 6
 
-### Sanat fikri: “İsimsiz kara eşiği”
+### Sanat fikri: “İsimsiz kara eşiği” — FULL REDRAW
 
-BACK_ISLAND’da aile bilgisi kasıtlı olarak görünür: ortak FOULWAKE denizinin içinde genel bir ada vardır. Bu ada altı ön yüzden hiçbirine ait değildir; belirli liman, ekonomi, insan topluluğu, ürün, olay veya kıyı kimliği taşımaz. Altı Ada kartının tamamı bit-bit exact aynı masterı kullanır.
+BACK_ISLAND önceki reddedilmiş ada varlığından crop, paint-over, recolor,
+trace veya türev almadan sıfırdan çizilir. BACK_ISLAND’da aile bilgisi
+kasıtlı olarak görünür: ortak FOULWAKE denizinin içinde genel bir ada vardır. Bu ada altı ön yüzden hiçbirine ait değildir; belirli liman, ekonomi, insan topluluğu, ürün, olay veya kıyı kimliği taşımaz. Altı Ada kartının tamamı bit-bit exact aynı masterı kullanır.
 
 Dik kuşbakışında görülen tek, alçak kara gövdesi karşıt iki burun ve aralarında aşınmış bir omurga taşır. Kusursuz oval, ortalanmış renk diski veya etrafı halka gibi boşaltılmış madalyon değildir. Deniz adanın çevresinde ve dört kart kenarında kesintisiz ortak zemini sürdürür.
 
@@ -370,53 +378,59 @@ Oyuncu kartın Ada ailesinde olduğunu normal masa mesafesinde anlayabilir; alt�
 
 ## 8. BACK_LIGHTHOUSE — 4
 
-### Sanat fikri: “Adsız seyir nöbeti”
+### Sanat fikri: “Büyük ve adsız seyir nöbeti”
 
-BACK_LIGHTHOUSE’da aile bilgisi kasıtlı olarak görünür: ortak FOULWAKE denizinde genel bir deniz feneri vardır. Bu kule dört ön fenerden hiçbirine ait değildir; özel mimari, hasar, saklı paket, yanıltıcı ışık, olay veya kıyı kimliği taşımaz. Dört Deniz Feneri kartının tamamı bit-bit exact aynı masterı kullanır.
+BACK_LIGHTHOUSE ortak FOULWAKE denizinde anonim, 1721’e uygun bir deniz
+fenerini aile düzeyinde açıkça gösterir. Fener daha büyük ve normal kart, thumbnail ve masa mesafesinde ilk bakışta
+okunur. Uzun kayalık sırt zorunlu değildir; kompakt kaya, kısa burun veya sade kıyı temeli kullanılabilir.
 
-Ufuksuz, çok dik kuşbakışında küçük ve sade yığma taş kule, alçak anonim bir kaya sırtına gömülür. Çevresindeki deniz diğer iki aileyle aynı kenar ritmini sürdürür. Kule etrafında rozet halkası, ışık halesi, ışın, pusula geometrisi veya boş grafik disk yoktur; kaya ve bakım aşınması, feneri suya yapıştırılmış sembol değil fiziksel seyir unsuru yapar.
+Kule dört exact ön fenerden hiçbirine ait özel mimari, hasar, saklı paket,
+yanıltıcı ışık, sonuç veya kıyı kimliği taşımaz. Dört kart bit-bit exact aynı
+masterı kullanır.
 
-### Korunacak duygu ve sanatçı payı
+### Çizgi, palet ve kompozisyon
 
-**Korunacak duygu:** Açık denizde insan eliyle tutulmuş nöbet; kurtuluş sözü değil, bakım isteyen kırılgan bir yön bulma ihtimali.
+- Deniz BACK_SEA_ROCK ile aynı mat, ışıldamayan çizgi/değer/kenar zarfındadır.
+- Ana kule yığma taş gövde ve sade üst seyir/ateş yapısıyla küçük ölçekte bile
+  açıkça okunur; kaya kütlesi kuleyi yutamaz.
+- Fener merkez rozet, hedef veya suya yapıştırılmış ikon gibi durmaz.
+- Kompakt fiziksel temel kuleyi denize bağlar; uzun diyagonal kaya, iki yana
+  uzanan eş sırt veya belirli komşu kart şartı yoktur.
+- Taş grisi, kurum indigosu, tuz mavi-grisi, tar grisi ve kemik rezerv; parlak
+  sarı beacon veya doygun aile rengi yoktur.
+- Işın, glow, halo, lens, ayna/reflektör gösterisi, Argand, Fresnel, elektrik,
+  modern beacon, pusula, hedef, rozet ve madalyon yoktur.
 
-**Açık karar alanı:** Sanatçı taşın tuz aşınmasını, kaya-su temasını ve sade üst yapının el çizgisini kurabilir. Kuleyi FOULWAKE’a özgü yorgun bir yapı yapabilir; fakat dört ön fenerden birinin olayını, durumunu veya siluetini alamaz.
+### Kadraj ve 180 derece
 
-**İlk eleştiri sorusu:** Fener ailesi normal masa mesafesinde açıkça okunurken kule bir logo/beacon ikonu gibi mi parlıyor; yoksa aynı denizde gerçekten duran anonim ve dönemsel bir yapı mı?
+Kule ile kompakt temel exact yarım dönüş eşliği içinde kurulur. Simetri grafik
+amblemden değil fiziksel taş/kıyı dağılımından gelir. Ufuk ve tek yönlü gölge
+yoktur; dört kenarın deniz zarfı eşdeğerdir. 180° test pixel-exact yapılır.
 
-### Çizgi, palet ve kenar
-
-- Deniz, BACK_SEA_ROCK ile aynı çizgi ölçeği, değer zarfı ve dört kenar ritmini taşır.
-- Kule sade yığma taş gövde, küçük bakım çıkıntısı ve basit fener üst yapısıyla okunur; arma, tabela, kapı numarası veya özel mimari bezeme yoktur.
-- Taş grisi, kurum indigosu, tuz mavi-grisi, tar grisi ve kemik rezerv kullanılır; parlak sarı beacon veya doygun aile rengi yoktur.
-- İç ışık teknolojisi gösteri motifi yapılmaz. 1721’e uygun kömür/odun ateşi, camla çevrili basit ateş ya da basit yağ ışığı varsayılabilir; dışarı yayılan ışın veya özel ateş davranışı çizilmez.
-- Argand, Fresnel, elektrik, modern beacon, catoptric gösteri, gelişmiş metal reflektör, glow ve modern optik yoktur.
-- Yanıltıcı ışık, özel ateş, saklı paket, belirli yapı hasarı, özel kıyı veya olay sonucu yoktur.
-- Kaya/kule topluluğu kenara taşmaz ve belirli komşu istemez; deniz dört kenarda ortak zarfı korur.
-
-### 180 derece ve tekrar yapısı
-
-Tek kule exact dönüş noktasına yerleşir; bu konum kart-sırtı logosu değil yön-güvenli fiziksel sahne çözümüdür. Sade çokgen kule planı, basit fener üst yapısı, iki yana uzanan alçak kaya sırtı, su yarıkları ve tuz aşınmaları yarım-dönüş eşlidir. Kuleyi çevreleyen halka, radyal çizgi, kusursuz daire veya boşaltılmış merkez diski yoktur. Çok dik kuşbakışı, yönlü ufuk ve tek taraflı gölgeyi kaldırır. Flattened master 180 derece döndüğünde exact eşleşir.
+Sanat Yönetmeni ayrıca kulenin kart içindeki ölçeğini, güvenli alanını, deniz
+negatif alanını, kaya tarafından örtülmemesini ve normal masa-mesafesi
+okunurluğunu değerlendirir. Görsel Tasarım self-PASS veremez.
 
 ### Risk analizi
 
-- **Ön kimlik sızıntısı:** dört ön fenerden birinin kule oranı, hasarı, saklı nesnesi, ışık davranışı, özel kayası veya kıyısı çağrıştırılırsa brief FAIL’dir.
-- **Sonuç sızıntısı:** güvenli/yanıltıcı, yanar/söner, kurtarır/tehdit eder gibi sonucu kodlayan ışık, hava veya renk ayrımı yoktur.
-- **İkon/rozet riski:** halo, ışın, merkez halkası, kompakt amblem silueti ve grafik boşluk reddedilir; kaya sırtı ile su sahneyi genişletir.
-- **Dönem riski:** Argand, Fresnel, elektrik, modern beacon, gelişmiş reflektör ve dönem dışı cam/metal optik reddedilir.
-- **Aile kaybı:** normal masa mesafesinde fener ailesi anlaşılmıyorsa taş gövde/kaya-su değer ayrımı ölçülü güçlendirilir; ışın, glow, yazı veya logo eklenmez.
-- **Yerleşim bağımlılığı:** fener belirli komşu, sabit grid veya kart sayısına ihtiyaç duymaz.
-- **Fayans etkisi:** aynı fener görünür biçimde tekrar edecektir; bu kasıtlı aile bilgisidir. Buna ikinci bir su landmarkı veya köşe işareti eklenmez.
+- **Aile kaybı:** kule küçük veya kayaya gömülü okunuyorsa REFRAME_REQUIRED.
+- **Ada/kayalık yanlış okuması:** insan yapımı kule ilk bakışta seçilmiyorsa FAIL.
+- **Ön kimlik sızıntısı:** exact ön mimari, hasar, ışık davranışı veya sonuç yok.
+- **İkon/rozet:** halo, halka, hedef, radyal çizgi ve grafik merkez diski yok.
+- **Dönem:** gelişmiş optik ve modern beacon yok.
+- **Yerleşim:** sabit grid, uzun sırt veya belirli komşu gerektirmez.
 
 ### Kabul ölçütü
 
-Oyuncu kartın Deniz Feneri ailesinde olduğunu normal masa mesafesinde anlayabilir; dört ön fenerden hangisi olduğunu, sonucunu veya yönünü tahmin edemez. Fener, farklı geçerli komşuluklarda rozet değil ortak FOULWAKE denizindeki anonim ve 1721’e uygun seyir yapısı gibi görünür.
+Oyuncu Deniz Feneri ailesini normal mesafede anlayabilir; dört önden hangisi
+olduğunu, sonucunu veya yönünü tahmin edemez. Fener daha büyük, fiziksel ve
+dönemsel görünür; FRAMING_PASS ve exact 180° PASS olmadan KEEP verilmez.
 
 ## 9. BACK_SUPPORT — 3
 
 ### Sanat fikri: “İki rıhtım, bir boş merkez”
 
-İki karşıt yönde exact eşli taş rıhtım babası ve aralarında merkezi boş bırakan tek kenevir palamar halkası. Merkezde kişi, sandalye, liman adı, anahtar veya mühür yoktur. Bu boşluk Kalkış, Varış ve Kaptan Makamı için ortak olan “işlevin insan/yer değişse de kalması” fikrini taşır.
+İki karşıt yönde exact eşli taş rıhtım babası ve aralarında merkezi boş bırakan tek kenevir palamar halkası. Merkezde kişi, sandalye, liman adı, anahtar veya mühür yoktur. Bu boşluk Kalkış, Varış ve KAPTAN için ortak olan “işlevin insan/yer değişse de kalması” fikrini taşır.
 
 Rıhtım babaları belirli bir limanı anlatmaz; taş/ahşap karışımı nötr gemi altyapısıdır. Palamar iki yönü bağlar ama ok veya rota değildir.
 
@@ -450,7 +464,7 @@ Rıhtım babaları belirli bir limanı anlatmaz; taş/ahşap karışımı nötr 
 
 ### Kabul ölçütü
 
-Üç kart aynı kurumsal destek ailesi olarak hissedilir; Kalkış, Varış veya Kaptan Makamı ayrımı ve yönü arka yüzden öğrenilemez.
+Üç kart aynı kurumsal destek ailesi olarak hissedilir; Kalkış, Varış veya KAPTAN ayrımı ve yönü arka yüzden öğrenilemez.
 
 ## 9A. REPRESENTATIVE_VARIABLE_MAP_LAYOUT_QA — zorunlu kanıtlar
 

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "blocker_id": "SRC-002",
+  "status": "PROJECT_OWNER_DECISION_REQUIRED",
+  "compared_at": "2026-08-30",
+  "locked_v26": {
+    "source": "releases/v2.6/CARD_BASELINE.md",
+    "assertion": "GUC-22 = Bayat Peksimet",
+    "immutable": true
+  },
+  "draft_v27": {
+    "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+    "records": [
+      {
+        "id": "GUC-22",
+        "name": "Kaptanın Çatlak Kupası",
+        "group": "Oylama",
+        "time": "Rota oylaması",
+        "effect": "Kaptanın bu rota oylamasındaki 2 oyunu 1'e indir.",
+        "flavor": "Kupadaki çatlak, otoritedekinden küçüktü."
+      },
+      {
+        "id": "GUC-23",
+        "name": "Bayat Peksimet",
+        "group": "Etkileşim",
+        "time": "Gündüz - rota öncesi",
+        "effect": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz.",
+        "flavor": "Konuşmayı kesmez. Çiğnemeyi uzatır."
+      }
+    ]
+  },
+  "finding": "The locked baseline and v2.7 draft disagree on the identity assigned to Bayat Peksimet. Repository evidence does not prove whether GUC-23 is an intentional addition/renumbering or drift.",
+  "forbidden_resolution": [
+    "silent renumbering",
+    "copying the draft into v2.6",
+    "guessing from artwork or filenames"
+  ],
+  "required_owner_decision": [
+    "Keep v2.6 identity: GUC-22 remains Bayat Peksimet and decide the fate of Kaptanın Çatlak Kupası.",
+    "Approve v2.7 identity change: GUC-22 becomes Kaptanın Çatlak Kupası and GUC-23 becomes Bayat Peksimet."
+  ],
+  "impact": "No release candidate, simulation identity baseline or final 121 manifest may be declared exact until resolved."
+}

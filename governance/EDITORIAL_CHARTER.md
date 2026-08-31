@@ -39,9 +39,12 @@ Bu tüzük, FOULWAKE projesindeki Hikâye, Sanat Yönetimi, Görsel Tasarım, Si
   `work/v2.7-art-direction`, `work/v2.7-visual` ve
   `work/v2.7-simulation`dır. Bu dallar ilk yetkili teslim
   sırasında oluşturulur; entegrasyon hedefi `v2.7-design`dır.
-- Uzman sohbetler kendi dal ve sahip oldukları dosyalarda commit/push yapabilir.
-  `governance/**`, `releases/**`, kanonik durum, entegrasyon, `main` geçişi ve
-  kilit işlemleri yalnız Baş Editör kapsamındadır.
+- Dal/dosya sahipliği tek başına yazma yetkisi değildir. Uzman sohbetler yalnız
+  `governance/CURRENT_STAGE.json` ve
+  `governance/WORKSTREAM_SCOPE_BASELINES.json` içinde exact yetkili path ve
+  bütçede commit/push yapabilir; varsayılan politika deny'dır.
+- `governance/**`, `releases/**`, `.github/**`, kanonik durum,
+  entegrasyon, `main` geçişi ve kilit işlemleri yalnız Baş Editör kapsamındadır.
 - GitHub görev kaydı veya başka bir sohbette yazılan özet, görünür uzman
   sohbetinden `VISIBLE_CHAT_ACK: YES` handoffu gelmeden kabul edilmiş sayılmaz.
 
@@ -56,6 +59,10 @@ Bu tüzük, FOULWAKE projesindeki Hikâye, Sanat Yönetimi, Görsel Tasarım, Si
   Yönetmeni de final üretimi veya nihai kullanıcı onayını üstlenemez.
 - Nihai estetik karar proje sahibinindir; Baş Editör exact kaynak, sınır,
   entegrasyon ve kabul/ret kaydını yönetir.
+- Görsel model canonical copy üretemez veya yeniden yazamaz; template +
+  OCR/render-source exact kontrolü zorunludur.
+- Sanat Yönetmeni bütün front/back illüstrasyonlarının kadrajını bağımsız
+  değerlendirir; Görsel Tasarım self-PASS veremez.
 
 ## 3. Korunan alanlar
 

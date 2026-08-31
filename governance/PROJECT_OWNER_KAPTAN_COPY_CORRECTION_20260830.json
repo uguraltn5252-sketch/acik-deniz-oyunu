@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "project": "FOULWAKE",
+  "decision_date": "2026-08-30",
+  "authority": "PROJECT_OWNER",
+  "status": "BINDING_V2_7_DRAFT_OVERRIDE",
+  "reason": "The prior governance record preserved an invented Kaptan Makamı treatment and did not preserve the uploaded card's internal copy.",
+  "technical_id": "SET-KP-01",
+  "source_image": {
+    "path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+    "git_blob_sha": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4",
+    "sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
+    "dimensions_px": [
+      896,
+      1536
+    ],
+    "aspect_ratio": "7:12",
+    "use": "BINDING_SET_KP_01_CARD_VISUAL_SOURCE_AND_DECK_ART_LANGUAGE"
+  },
+  "exact_visible_copy": {
+    "title": "KAPTAN",
+    "section_label": "ÖZEL YETENEK",
+    "effect": "Oylamada eşitlik olursa, senin tarafın geçerli olur.",
+    "flavor": "Lidere et. Gemi senin emrinde."
+  },
+  "allowed_visual_edits": [
+    "minor crop or scale correction within the exact 7:12 card ratio",
+    "minor color normalization that preserves the matte ink-and-paper language",
+    "minor background or border cleanup that does not replace the captain figure",
+    "template recomposition from canonical UTF-8 copy"
+  ],
+  "prohibited_changes": [
+    "replace the captain with an empty chair or another subject",
+    "rename the visible card to Kaptan Makamı",
+    "rewrite title, section label, effect or flavor",
+    "treat the uploaded KAPTAN image as style-only",
+    "reuse ship, gull or scene elements as mandatory motifs on other cards"
+  ],
+  "baseline_effect": "This v2.7 DRAFT override does not modify releases/v2.6 in place.",
+  "copy_failure": "BLOCKED_COPY_DRIFT",
+  "framing_required": true,
+  "full_121_production_authorized": false,
+  "simulation_authorized": false,
+  "release_authorized": false,
+  "lock_requested": false
+}

@@ -1,96 +1,103 @@
 # FOULWAKE Release ve Kilitleme Kapısı
 
-## Sonuç sınıfları
+## Önkoşul
 
-| Sonuç | Anlamı | Kilit |
+`governance/CURRENT_STAGE.json` içinde active candidate `null` ise release
+değerlendirmesi başlamaz. Tarihsel PASS, Görsel handoffu, benzersiz hash veya
+GitHub commiti candidate değildir.
+
+| Sonuç | Anlam | Release/lock |
 |---|---|---|
-| `PASS` | Bütün zorunlu kontroller geçti | Değerlendirilebilir |
-| `PASS_WITH_MINOR_ISSUES` | Kanon/mekanik/kullanılabilirliği bozmayan kayıtlı küçük sorunlar | Baş Editör değerlendirebilir |
-| `FAIL` | Bir veya daha fazla kapı geçmedi | Yasak |
-| `BLOCKER` | Yanlış kaynak, mekanik drift, reddedilmiş/eksik temel artefakt, bilgi sızıntısı veya ciddi çakışma | Derhal durur |
+| `PASS` | Bütün zorunlu gate'ler aynı exact candidate üzerinde geçti | Proje sahibi kilit talimatı verirse değerlendirilebilir |
+| `PASS_WITH_MINOR_ISSUES` | Kanon/mekanik/kullanılabilirliği bozmayan kayıtlı küçük sorun | Baş Editör ve proje sahibi değerlendirmesi gerekir |
+| `FAIL` | En az bir gate geçmedi | Yasak |
+| `BLOCKER` | Kaynak, mekanik, sanat, bilgi sızıntısı, fiziksel kanıt veya governance sorunu | Derhal durur |
 
-## Zorunlu kapılar
+## 1. Kaynak ve governance
 
-### 1. Kaynak ve sürüm bütünlüğü
+- Exact candidate ve Baş Editör kabul commiti var mı?
+- `releases/v2.6` tree SHA
+  `efb41c46f06174c42dcdab2859b7c0ba517f86f0` olarak korunuyor mu?
+- `SRC-002` proje sahibi kararıyla kapandı mı?
+- Specialist değişiklikleri yetkili baseline, exact path ve kapsam içinde mi?
+- Güncel stage ile handoffun `AUTHORIZATION_STAGE` alanı eşleşiyor mu?
+- Açık blocker veya superseded iş emri aktif kaynak gibi kullanılmış mı?
 
-- Son `STABLE / LOCKED` baseline ve exact candidate commit doğru mu?
-- `releases/v2.6/**` değişmedi mi?
-- Kimlik/adet/effect/zamanlama/deste davranışı/kural akışı kaynaklarla aynı mı?
-- `SRC-002` GUC-22/GUC-23 çelişkisi exact kaynakla çözüldü mü?
-- İç ve dış manifest, ZIP self-provenance, blob, SHA-256, boyut ve yol kayıtları
-  aynı candidate'ı mı gösteriyor?
+## 2. Kimlik, mekanik ve exact copy
 
-### 2. Mekanik, matematik ve strateji
+- 121 kimlik/adet/aile ve `20+31+15+42+6+4+3` back mapping exact mı?
+- Title, section label, effect, flavor, zamanlama, group ve davranış doğru
+  kanonik kaynaktan mı?
+- `SET-KP-01` görünen başlık `KAPTAN` ve exact owner copy mi?
+- Görsel model kart yazısı üretmemiş mi?
+- Her front için OCR veya render-source → kanonik UTF-8 exact karşılaştırması
+  var mı?
+- Tek uyuşmazlık `BLOCKED_COPY_DRIFT` olarak ele alındı mı?
 
-- 6–15 oyuncu, bütün harita şekli ve süreler test edildi mi?
-- Illegal durum, kilitlenme, sonsuz döngü, zorunlu kayıp veya baskın/sahte
-  strateji var mı?
-- Sea=Rock bilgi modeli A/B ve yetkili/yetkisiz bilgi sözleşmesini koruyor mu?
+## 3. Sanat ve semantik özgünlük
 
-### 3. Sosyal deneyim
-
-- Şüphe/güven anlamlı bilgiye dayanıyor mu?
-- Bekleme, susma, elenme, sıkılma, adalet, kingmaking ve moderatör yükü
-  ölçüldü mü?
-- Kör yeni oyuncu testleri ve öğretilebilirlik kanıtı var mı?
-
-### 4. Görsel sanat ve semantik özgünlük
-
-- Proje sahibinin reddettiği eski ön/arka yüz, aile plakası veya türevi yeniden
-  kullanılmış mı? Kullanıldıysa `BLOCKER`.
-- 121 kartın ayrı art briefi ve semantik olarak ayrı özgün sahnesi var mı?
-- KAPTAN referansı yalnız STYLE_ONLY mı; yüz/poz/kompozisyon kopyası yok mu?
-- Başlık ve metin kapalı contact sheetlerde aynı yüz, saç/sakal, beden, poz,
-  kadraj, sahne, siluet, hayvan veya şaka tekrarı var mı?
+- KAPTAN kartı yüklenen ana figür/kompozisyonu koruyor mu; boş sandalye veya
+  başka figürle değiştirilmiş mi?
+- Deste, KAPTANın mürekkep/gravür/kirli kâğıt/mat palet dilini taşıyor mu?
+- Gemi/martı/sahne yanlışlıkla deste genelinde zorunlu motif yapılmış mı?
+- Reddedilmiş asset, aile plakası veya türevi yeniden kullanılmış mı?
+- 121 ayrı brief ve semantik olarak ayrı sahne insan gözüyle doğrulanmış mı?
+- Resim-içi anlamsız yazı, dönem dışı nesne, tekrarlı yüz/poz/hayvan/şaka var mı?
 - `unique render SHA` yalnız dosya farkı olarak mı yorumlanmış?
-- İllüstrasyonda tabela, slogan, konuşma balonu, açıklama veya anlamsız
-  okunabilir resim-içi yazı var mı? Varsa `BLOCKER`.
-- Mizah en fazla bir ikincil şaka mı; aynı maskot/şaka kalıbı tekrar ediyor mu?
-- Çizgi, tarama, mat palet ve eski baskı dili bütün destede tutarlı mı?
 
-### 5. Kart arka yüzleri ve bilgi sızıntısı
+## 4. Kadraj
 
-- Exact mapping `20+31+15+42+6+4+3 = 121` ve 7 binary mi?
-- Aile içi binaryler byte/piksel olarak aynı mı?
-- Sea+Rock ve Sadakat gizli bilgiyi sızdırmıyor mu?
-- Bütün arka yüzler metinsiz ve exact 180° yön güvenli mi?
-- Kesim, kenar koyuluğu, parlaklık, opaklık ve duplex sapması aile/yön
-  sınıflandırmasına izin veriyor mu?
-- Arka yüzler önlerle aynı sanat dilinde fakat ön yüz kopyası olmadan mı üretildi?
+Her front ve back için bağımsız Sanat Yönetimi kanıtı gerekir:
 
-### 6. Metin, düzen ve erişilebilirlik
+- exact kart oranı ve illüstrasyon penceresi;
+- 3 mm taşma, 4–5 mm güvenli alan;
+- ana özne ölçeği, odak, denge, negatif alan;
+- yüz/el/gerekli nesnede anlamsız kesim;
+- title/effect/flavor/card-id çakışması;
+- thumbnail ve normal masa-mesafesi okunurluğu;
+- plan/model/kadraj çeşitliliği.
 
-- Exact başlık/effect/flavor/kimlik kaynağı kelimesi kelimesine korunmuş mu?
-- Eksik glif, overflow, kesilen metin, aşırı küçültme veya düşük kontrast var mı?
-- İllüstrasyon mekanik metni bastırıyor mu?
-- Gerçek kart ölçüsünde ve gerçek ışıkta okunabilirlik eşiği geçildi mi?
+Yalnız `FRAMING_PASS` veya `REFRAME_REQUIRED` kabul edilir. Görsel Tasarımın
+self-PASS'i geçersizdir. Her eksik/başarısız kayıt `BLOCKED_FRAMING_DRIFT`tir.
 
-### 7. PDF, baskı ve artefakt
+## 5. Arka yüzler ve bilgi sızıntısı
 
-- 121/121 source→render→PDF ön/arka sayfa/slot zinciri var mı?
-- Ölçü, 300 dpi, 3 mm taşma, font, glif, sayfa, XObject ve duplex doğru mu?
-- Fiziksel baskı/kesim/duplex/opaklık/ışık kanıtı var mı?
-- Kaynak ZIP iç ve dış manifestleri exact aynı final commit/hashleri mi taşıyor?
+- Yedi binary ve 121 eşleme exact mı?
+- Aile içinde binaryler byte/piksel aynı ve exact 180° güvenli mi?
+- Kesim, kenar, değer, parlaklık, opaklık ve duplex yön/aile bilgisi sızdırıyor mu?
+- `BACK_SEA_ROCK` mat mı; krom/specular, beyaz parlama veya AI cilası var mı?
+- `BACK_ISLAND` önceki reddedilmiş adadan türetilmeden tam yeniden çizilmiş mi?
+- `BACK_LIGHTHOUSE` normal mesafede büyük ve okunur mu; uzun kayalık sırt
+  zorunlu kompozisyon dayanağı yapılmış mı?
+- Aile bilgisi görünürken exact ön kimlik ve sonuç kör mü?
 
-## Kilitleme sırası
+## 6. Mekanik, strateji ve sosyal deneyim
 
-1. Hikâye ve Görsel handoffları kabul edilir.
-2. Baş Editör kaynak, kapsam, sanat ve kanon denetimi yapar.
-3. Exact ürün candidate commit'i dondurulur.
-4. Simülasyon Testi bütün kapıları aynı candidate üzerinde uygular.
-5. FAIL/BLOCKER düzeltilir; yeni candidate oluşursa önceki sonuçlar iptal edilir.
-6. Fiziksel ve kör insan kanıtları tamamlanır.
-7. Proje sahibi açık kilitleme talimatı verir.
-8. Baş Editör attestation, manifest, checksum ve açık blocker listesini doğrular.
-9. Yalnız bundan sonra release ve kanonik durum güncellenir.
+- 6–15 oyuncu, bütün yasal harita şekilleri ve süreler test edildi mi?
+- Illegal durum, kilitlenme, sonsuz döngü, zorunlu kayıp veya baskın strateji var mı?
+- Sea=Rock bilgi modeli yetkili/yetkisiz bilgiyi ve A/B karşılaştırmasını koruyor mu?
+- Şüphe, bekleme, susma, elenme, adalet, kingmaking, moderatör yükü,
+  öğretilebilirlik ve kör yeni oyuncu testi ölçüldü mü?
 
-## Bağlayıcı attestation
+## 7. PDF, baskı ve provenance
 
-Release kapısında yalnız exact candidate'a bağlı
-`working/v2.7/qa/SIM_QA_ATTESTATION_v2.7.json` ve hashli kanıt paketi
-bağlayıcıdır. En az kimlik/mekanik, matematik, strateji, sosyal deneyim,
-semantik sanat, arka-yüz/bilgi sızıntısı, metin/düzen, paket/provenance,
-fiziksel kanıt ve açık sorun hükümlerini içerir.
+- 121/121 source→render→PDF slot zinciri exact mı?
+- Ölçü, 300 dpi, 3 mm taşma, font/glif, sayfa, duplex ve imposition doğru mu?
+- Source, render, sheet, layout, PDF ve dış paket hashleri aynı candidate'a mı bağlı?
+- Gerçek baskı, kesim, duplex, opaklık, ışık ve masa-mesafesi kanıtı var mı?
+- Tools/plugins beyanı ve yeniden üretilebilir komut/seed kaydı tamam mı?
 
-Eski candidate'ın PASS kaydı yeni candidate'a taşınmaz. GitHub'a yazılmış olmak,
-farklı SHA üretmek veya yalnız dijital preflight geçmek release PASS'i değildir.
+## 8. Zorunlu sıra
+
+1. Sanat yönü + proje sahibi yön kabulü.
+2. Yetkili küçük görsel kapılar.
+3. Copy ve kadraj PASS.
+4. Baş Editör exact candidate ilanı.
+5. Data Analytics tabanlı bağımsız Simülasyon ve QA attestation.
+6. Fiziksel/kör insan kanıtı.
+7. Bütün blockerların kapanışı.
+8. Proje sahibinin açık kilitleme talimatı.
+9. Baş Editör release/lock uygulaması.
+
+Eski candidate attestationı yeni commite taşınmaz. Release kanıtı exact
+`working/v2.7/qa/SIM_QA_ATTESTATION_v2.7.json` ve ona bağlı hashli pakettir.

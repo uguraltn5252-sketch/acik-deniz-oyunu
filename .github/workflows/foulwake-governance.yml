@@ -2,82 +2,94 @@ name: FOULWAKE Governance
 
 on:
   pull_request:
+    branches:
+      - main
+      - v2.7-design
   push:
     branches:
       - main
       - v2.7-design
+      - 'work/**'
+
+permissions:
+  contents: read
 
 jobs:
   governance:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout exact commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
+          persist-credentials: false
 
-      - name: Validate editorial governance
-        run: python governance/validate_governance.py
+      - name: Protect locked v2.6 tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected='efb41c46f06174c42dcdab2859b7c0ba517f86f0'
+          actual="$(git rev-parse HEAD:releases/v2.6)"
+          if [ "$actual" != "$expected" ]; then
+            echo "BLOCKER: releases/v2.6 tree drift: $actual"
+            exit 1
+          fi
 
-      - name: Protect locked v2.6
+      - name: Resolve workstream
+        id: route
         env:
           EVENT_NAME: ${{ github.event_name }}
-          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          PUSH_BEFORE_SHA: ${{ github.event.before }}
+          HEAD_REF: ${{ github.head_ref }}
+          REF_NAME: ${{ github.ref_name }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PUSH_SHA: ${{ github.sha }}
         shell: bash
         run: |
           set -euo pipefail
           if [ "$EVENT_NAME" = "pull_request" ]; then
-            base_sha="$PR_BASE_SHA"
+            branch="$HEAD_REF"
+            head_sha="$PR_HEAD_SHA"
           else
-            base_sha="$PUSH_BEFORE_SHA"
+            branch="$REF_NAME"
+            head_sha="$PUSH_SHA"
           fi
-          if [ -z "$base_sha" ] || [[ "$base_sha" =~ ^0+$ ]]; then
-            base_sha="$(git rev-list --max-parents=0 HEAD | tail -1)"
-          fi
-          if git diff --name-only "$base_sha" HEAD | grep -q '^releases/v2\.6/'; then
-            echo 'BLOCKER: locked releases/v2.6 content was modified.'
-            exit 1
-          fi
-
-      - name: Validate specialist branch scope
-        if: github.event_name == 'pull_request'
-        env:
-          HEAD_REF: ${{ github.head_ref }}
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          changed="$(git diff --name-only "$BASE_SHA"...HEAD)"
-
-          protected='^(AI_HANDOFF\.md|PROJECT_STATE\.md|CHANGELOG\.md|README\.md|governance/|releases/|\.github/)'
-          if [[ "$HEAD_REF" == work/v2.7-* ]] && echo "$changed" | grep -Eq "$protected"; then
-            echo 'BLOCKER: specialist branch changed Chief Editor protected paths.'
-            echo "$changed"
-            exit 1
-          fi
-
-          case "$HEAD_REF" in
-            work/v2.7-story)
-              allowed='^working/v2\.7/(FOULWAKE_STORY_FRAMEWORK\.md|FOULWAKE_RULEBOOK_STORY_v2\.7\.md|FOULWAKE_CARD_TEXTS_v2\.7\.json|FOULWAKE_NARRATIVE_VALIDATION_v2\.7\.md|FOULWAKE_STORY_REVALIDATION_v2\.7\.md)$'
-              ;;
-            work/v2.7-art-direction)
-              allowed='^working/v2\.7/visual/art_direction/'
-              ;;
-            work/v2.7-visual)
-              allowed='^working/v2\.7/(BINARY_ARTIFACTS\.md|FOULWAKE_VISUAL_SYSTEM\.md|visual/)'
-              ;;
-            work/v2.7-simulation)
-              allowed='^working/v2\.7/qa/'
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          echo "head_sha=$head_sha" >> "$GITHUB_OUTPUT"
+          case "$branch" in
+            work/*)
+              echo "specialist=true" >> "$GITHUB_OUTPUT"
               ;;
             *)
-              exit 0
+              echo "specialist=false" >> "$GITHUB_OUTPUT"
               ;;
           esac
 
-          invalid="$(echo "$changed" | grep -Ev "$allowed" || true)"
-          if [ -n "$invalid" ]; then
-            echo 'BLOCKER: specialist branch contains out-of-scope files:'
-            echo "$invalid"
-            exit 1
-          fi
+      - name: Load authoritative specialist policy
+        if: steps.route.outputs.specialist == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin v2.7-design
+          git show origin/v2.7-design:governance/validate_workstream_scope.py > /tmp/validate_workstream_scope.py
+          git show origin/v2.7-design:governance/WORKSTREAM_SCOPE_BASELINES.json > /tmp/WORKSTREAM_SCOPE_BASELINES.json
+
+      - name: Validate specialist cumulative scope
+        if: steps.route.outputs.specialist == 'true'
+        env:
+          WORKSTREAM_BRANCH: ${{ steps.route.outputs.branch }}
+          HEAD_SHA: ${{ steps.route.outputs.head_sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python /tmp/validate_workstream_scope.py \
+            --config /tmp/WORKSTREAM_SCOPE_BASELINES.json \
+            --branch "$WORKSTREAM_BRANCH" \
+            --head "$HEAD_SHA"
+
+      - name: Validate integrated governance
+        if: steps.route.outputs.specialist != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile governance/validate_governance.py governance/validate_workstream_scope.py
+          python governance/validate_governance.py

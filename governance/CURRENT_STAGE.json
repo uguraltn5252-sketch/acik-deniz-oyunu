@@ -1,0 +1,106 @@
+{
+  "schema_version": "3.0",
+  "stage_id": "STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION",
+  "updated_at": "2026-08-30",
+  "authority": [
+    "PROJECT_OWNER",
+    "CHIEF_EDITOR"
+  ],
+  "integration_branch": "v2.7-design",
+  "baseline_release": "v2.6 STABLE / LOCKED",
+  "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
+  "release_status": "DRAFT / NOT LOCKED / RELEASE BLOCKED",
+  "active_visual_candidate": null,
+  "rejected_visual_input": {
+    "branch": "work/v2.7-visual",
+    "commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "status": "PROJECT_OWNER_REJECTED / HISTORICAL_EVIDENCE_ONLY"
+  },
+  "project_owner_controls": {
+    "decision_evidence": [
+      "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json",
+      "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json"
+    ],
+    "kaptan": {
+      "technical_id": "SET-KP-01",
+      "visible_title": "KAPTAN",
+      "section_label": "ÖZEL YETENEK",
+      "effect": "Oylamada eşitlik olursa, senin tarafın geçerli olur.",
+      "flavor": "Lidere et. Gemi senin emrinde.",
+      "image_source": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+      "image_policy": "BINDING_KAPTAN_CARD_VISUAL_SOURCE / SMALL_CROP_SCALE_COLOR_BACKGROUND_EDITS_ONLY",
+      "deck_policy": "BINDING_ART_LANGUAGE / SHIP_GULL_AND_SCENE_NOT_DECK_WIDE_REQUIREMENTS"
+    },
+    "copy_lock": {
+      "image_model_visible_copy": false,
+      "source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "placement": "TEMPLATE_COMPOSITE_FROM_CANONICAL_UTF8",
+      "evidence": "OCR_OR_RENDER_SOURCE_EXACT_COMPARE",
+      "failure": "BLOCKED_COPY_DRIFT"
+    },
+    "framing_gate": {
+      "reviewer": "FOULWAKE Sanat Yönetmeni",
+      "visual_self_approval": false,
+      "scope": "ALL_FRONT_AND_BACK_CARD_ILLUSTRATIONS_AT_EVERY_GATE",
+      "dispositions": [
+        "FRAMING_PASS",
+        "REFRAME_REQUIRED"
+      ],
+      "failure": "BLOCKED_FRAMING_DRIFT"
+    },
+    "backs": {
+      "BACK_SEA_ROCK": "REWORK_REQUIRED / MATTE_NO_SHINE",
+      "BACK_ISLAND": "REWORK_REQUIRED / FULL_REDRAW",
+      "BACK_LIGHTHOUSE": "REWORK_REQUIRED / LARGER_LIGHTHOUSE / LONG_RIDGE_NOT_REQUIRED",
+      "other_four": "HOLD / NOT_OWNER_ACCEPTED"
+    }
+  },
+  "current_authorization": {
+    "workstream": "Sanat Yönetimi",
+    "visible_chat": "FOULWAKE Sanat Yönetmeni",
+    "branch": "work/v2.7-art-direction",
+    "input_commit": "119136812c2c749e14e675f1400640664fa044bc",
+    "disposition_of_input": "REWORK_REQUIRED",
+    "exact_path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
+    "max_changed_files": 1,
+    "max_words": 700,
+    "required_corrections": [
+      "State that the uploaded KAPTAN card is the binding SET-KP-01 visual source, not merely a style reference.",
+      "Use the exact owner-authorized visible copy from FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json.",
+      "Add the independent all-card framing gate and its two allowed dispositions.",
+      "Do not create or edit any raster, layout, contact sheet, manifest, PDF or release artifact."
+    ],
+    "result_expected": "ART_LANGUAGE_PATCH_CORRECTED / PENDING_PROJECT_OWNER_ACCEPTANCE"
+  },
+  "default_write_policy": "DENY_UNLESS_EXACTLY_AUTHORIZED_ABOVE",
+  "workstream_status": {
+    "story": "PAUSED / ACCEPTED HISTORICAL INPUT",
+    "art_direction": "ONE_FILE_CORRECTION_AUTHORIZED",
+    "visual": "PAUSED / NO WRITES",
+    "simulation": "NOT_STARTED / NO BRANCH / NO WRITES",
+    "chief_editor": "GOVERNANCE_INTEGRATION_AND_AUDIT"
+  },
+  "next_stage_requires": [
+    "Corrected Art Direction patch on the authorized branch and exact path.",
+    "Project-owner acceptance of that patch.",
+    "New Chief Editor order before any six-thumbnail visual exploration."
+  ],
+  "forbidden_now": [
+    "new visual production",
+    "full 121 production",
+    "contact sheets or layouts",
+    "PDF or print package",
+    "simulation",
+    "release",
+    "lock"
+  ],
+  "open_blockers": [
+    "ART-001",
+    "SRC-002",
+    "MEC-001",
+    "QA-001",
+    "QA-002",
+    "GOV-001",
+    "PHYSICAL-PROOF"
+  ]
+}

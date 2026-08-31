@@ -1,5 +1,30 @@
 # FOULWAKE Baş Editör Koordinasyon Kaydı
 
+## 30 Ağustos 2026 — SİSTEM DENETİMİ / DEFAULT-DENY GOVERNANCE RESET
+
+Proje sahibinin kapsamlı denetim emriyle repositorydeki 131 text dosyası, 39
+JSON, dokuz Python aracı, workflow, branch/head zincirleri, locked v2.6 ağacı,
+121 art-brief kaydı ve specialist kapsamları incelendi.
+
+Aktif durum dosyalarının önceki Sanat Yönetimi PASS'ini ve eski üretim
+emirlerini hâlâ güncel gibi sunduğu; KAPTAN briefinin owner-uploaded kartı
+reddedip boş sandalye/farklı ad ve farklı copy ürettiği; Görsel hattın direct
+pushlarının denetlenmediği; Visual scope regexinin art-direction/references
+alanlarını da kapsadığı; attestation şemalarının serbest verdict kabul ettiği
+saptandı.
+
+Düzeltme tek CURRENT_STAGE kaynağı, default-deny specialist baselines,
+owner-exact KAPTAN visual/copy override, copy ve kadraj kapıları, üç back brief
+düzeltmesi, direct-push CI, exact v2.6 tree koruması ve güçlendirilmiş release
+şemalarıyla uygulandı. Tarihsel kanıtlar silinmedi; SUPERSESSION_MAP ile
+yetkisiz kanıt olarak sınıflandırıldı. Specialist branchler ve releases/v2.6
+değiştirilmedi.
+
+SRC-002 proje sahibi kararı gerektirir. GitHub plan/visibility nedeniyle
+branch ruleset etkinleştirilemedi; GOV-001 açık kalır. Ayrıntı:
+`governance/CHIEF_EDITOR_SYSTEM_AUDIT_20260830.md`.
+
+
 ## 30 Ağustos 2026 — NİHAİ FENER KEEP / PİLOT SANAT YÖNETİMİ PASS
 
 Görünür `FOULWAKE Sanat Yönetmeni` sohbeti, exact

@@ -85,7 +85,8 @@ Sınır aşımı `FAIL`; illegal durum, sızıntı veya motor hatası `BLOCKER`d
 
 ### 5.3 Stil, dönem, yazı ve mizah
 
-- KAPTAN referansı STYLE_ONLY; karakter/yüz/poz/kompozisyon kopyası: `0`.
+- KAPTAN yüklenen owner source'a exact bağlıdır; ana figür/kompozisyon korunur,
+  diğer kartlarda KAPTAN yüzü/pozu/gemi/martı tekrarı: `0`.
 - Çizgi/tarama/mat palet ve eski baskı tutarlılığı: bütün ailelerde PASS.
 - Modern nesne, büyü, parlak 3B/dijital boya sapması: `0`.
 - İllüstrasyonda tabela, slogan, konuşma balonu, açıklama veya anlamsız
@@ -163,3 +164,19 @@ oyuncunun konuşma payı en fazla %35; pasif bekleme p90 toplam sürenin en fazl
    değiştirir.
 6. Release, C ürün ağacı + Q kanıtı + açık blocker listesi boş olduğunda
    değerlendirilebilir.
+
+
+## 2026-08-30 owner reset ek kapıları
+
+- Aktif candidate yok; bu plan şu anda Simülasyon yetkisi vermez.
+- SET-KP-01 exact copy kaynağı:
+  `working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json`.
+- Her front için OCR/render-source → canonical UTF-8 exact karşılaştırması;
+  sapma `BLOCKED_COPY_DRIFT`.
+- Her front/back için bağımsız Sanat Yönetimi kadraj dispozisyonu;
+  `FRAMING_PASS` veya `REFRAME_REQUIRED`; sapma
+  `BLOCKED_FRAMING_DRIFT`.
+- BACK_SEA_ROCK matlık, BACK_ISLAND FULL REDRAW ve BACK_LIGHTHOUSE daha büyük /
+  uzun sırt zorunlu değil hükümleri ayrı test edilir.
+- Yetkili Simülasyon başladığında Data Analytics, seed, komut, ham çıktı ve
+  hash beyanı zorunludur; Game Studio yalnız tarayıcı prototipi istenirse.

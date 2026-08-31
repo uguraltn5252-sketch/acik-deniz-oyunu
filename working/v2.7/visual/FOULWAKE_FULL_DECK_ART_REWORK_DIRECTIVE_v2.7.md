@@ -1,15 +1,17 @@
 # FOULWAKE v2.7 — Tam Deste Görsel Rework Direktifi
 
-**Durum:** BAĞLAYICI v2.7 DRAFT İŞ EMRİ / NOT LOCKED  
+**Durum:** BAĞLAYICI TASARIM SÖZLEŞMESİ / GÜNCEL ÜRETİM YETKİSİ DEĞİL / NOT LOCKED  
+**Güncel görev:** `governance/CURRENT_STAGE.json`; Visual production paused  
 **Karar tarihi:** 25 Ağustos 2026  
 **Yetkili karar:** Proje sahibi; Baş Editör kaydı  
 **Yaratıcı inceleme:** `FOULWAKE Sanat Yönetmeni` / `work/v2.7-art-direction`  
-**Uygulayan görünür sohbet:** `FOULWAKE görsel tasarım`  
+**Uygulayan görünür sohbet:** `FOULWAKE Görsel Tasarım 2`  
 **Çalışma dalı:** `work/v2.7-visual`  
 **Reddedilen teknik referans:** `work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891`
 
-Bu direktif yalnız karakter kartlarını değil, **121 kartın bütün ön yüzlerini ve
-bütün arka yüz ailelerini** kapsar. Önceki tam dijital teslim teknik üretim
+Bu direktif gelecekte yetki verildiğinde uygulanacak tasarım sözleşmesidir;
+kendi başına Görsel dalını açmaz. Yalnız karakter kartlarını değil,
+**121 kartın bütün ön yüzlerini ve bütün arka yüz ailelerini** kapsar. Önceki tam dijital teslim teknik üretim
 zinciri için tarihsel referans olarak kalır; sanatı, illüstrasyon plakaları,
 renderları, PDF'leri veya arka yüzleri yeni adayda kullanılamaz.
 
@@ -35,9 +37,12 @@ ve 7 arka-yüz briefidir. Çelişkide üretim durur ve Baş Editöre handoff edi
 
 ## 2. Ana sanat dili
 
-Kullanıcının gönderdiği KAPTAN karakter kartı **yalnız STYLE_ONLY** referanstır.
-Karakter, yüz, beden, poz, kompozisyon, kadraj, nesne, dekor, piksel veya çizgi
-kopyalanmaz ve izlenmez.
+Yüklenen KAPTAN kartı `SET-KP-01` için bağlayıcı görsel ve copy kaynağıdır.
+KAPTAN figürü ile ana kompozisyon korunur; yalnız küçük crop, ölçek, renk ve
+arka-plan temizliği yapılabilir. Boş sandalye veya başka özneyle değiştirilmez.
+Aynı kart bütün deste için mürekkep, yoğun gravür taraması, sıcak kirli kâğıt ve
+mat lacivert–oker–pas sanat dili anahtarıdır. Gemi, martı ve sahne diğer
+kartlarda kopyalanmak zorunda değildir.
 
 - Belirgin çizgisel, elde çizilmiş mürekkep illüstrasyonu.
 - İnce ama karakterli kontur, çapraz tarama ve eski gravür dokusu.
@@ -50,6 +55,21 @@ kopyalanmaz ve izlenmez.
   nesne, büyü efekti ve çağdaş tabela dili yoktur.
 - Kartlar tek çizerin aynı dünyasına ait görünür; fakat isimler kapatıldığında
   dahi aynı görselin veya aynı insan modelinin varyasyonları gibi görünmez.
+
+### 2A. Proje sahibi güncel override
+
+- Görünen KAPTAN copy'si yalnız
+  `working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` kaynağından
+  şablonla yerleştirilir. Görsel model copy üretmez; OCR/render-source exact
+  karşılaştırma zorunludur. Sapma `BLOCKED_COPY_DRIFT`.
+- BACK_SEA_ROCK mat ve ışıldamayan denizdir.
+- BACK_ISLAND önceki varlıktan türetilmeden FULL REDRAW yapılır.
+- BACK_LIGHTHOUSE normal mesafede daha büyük okunur; uzun kayalık sırt zorunlu
+  değildir.
+- Diğer dört arka yüz owner-accepted değildir; HOLD.
+- Bütün ön/arka illüstrasyonlar bağımsız Sanat Yönetimi kadraj kapısından geçer.
+  Görsel Tasarım self-PASS veremez; yalnız `FRAMING_PASS` veya
+  `REFRAME_REQUIRED`. Sapma `BLOCKED_FRAMING_DRIFT`.
 
 ## 3. Ön yüz özgünlüğü
 
@@ -156,9 +176,12 @@ Tam 121 üretime doğrudan geçilmez.
    açık kabul vermeden kalan 109 ön yüze ve baskı PDF'sine geçilmez.
 6. **Tam yayılım:** 121/121 özgün ön yüz, 7 arka yüz ve aile contact sheetleri
    üretilir; Sanat Yönetmeni tam deste yaratıcı incelemesini tekrarlar.
-7. **Teknik preflight:** Exact metin, ölçü, DPI, taşma, glif, PDF, duplex,
+7. **Copy ve kadraj preflight:** Canonical UTF-8 → template → OCR/render-source
+   exact karşılaştırması ile bağımsız Sanat Yönetimi kadraj dispozisyonu
+   doğrulanır.
+8. **Teknik preflight:** Ölçü, DPI, taşma, glif, PDF, duplex,
    source→render→PDF ve hash zinciri doğrulanır.
-8. **Fiziksel/Simülasyon kapısı:** Baskı, kesim, gerçek ışık, kör arka-yüz
+9. **Fiziksel/Simülasyon kapısı:** Baskı, kesim, gerçek ışık, kör arka-yüz
    sızıntısı ve bağımsız Simülasyon Testi yapılır.
 
 Daha önceki Baş Editör emriyle başlamış bir pilot geçersiz sayılmaz; exact

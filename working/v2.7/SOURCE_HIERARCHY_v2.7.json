@@ -1,166 +1,67 @@
 {
-  "schema_version": 2,
-  "version": "v2.7",
-  "status": "DRAFT_NOT_LOCKED_RELEASE_BLOCKED",
+  "schema_version": "3.0",
+  "version": "v2.7 DRAFT",
+  "status": "NOT LOCKED / RELEASE BLOCKED",
+  "current_stage": "governance/CURRENT_STAGE.json",
   "candidate_commit": null,
   "conflict_action": "STOP_AND_HANDOFF_TO_CHIEF_EDITOR",
-  "sources": [
+  "priority_order": [
     {
       "priority": 1,
-      "scope": "mechanics_and_unchanged_content",
-      "paths": [
-        "AI_HANDOFF.md",
-        "releases/v2.6/"
-      ],
-      "protects": [
-        "card ids and counts",
-        "effects and timing",
-        "start pools and deck behavior",
-        "rule flow",
-        "all unchanged card families"
+      "source": "latest explicit project-owner decision",
+      "implementation": [
+        "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
+        "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json"
       ]
     },
     {
       "priority": 2,
-      "scope": "v2.7_character_and_power_visible_copy",
-      "paths": [
-        "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json"
-      ],
-      "open_conflict": "SRC-002_GUC_22_GUC_23_REQUIRES_EXACT_BASELINE_RESOLUTION"
+      "source": "releases/v2.6/",
+      "scope": "unchanged identity, count, mechanics and rules only; immutable"
     },
     {
       "priority": 3,
-      "scope": "v2.7_rulebook_story_overlay_only",
-      "paths": [
-        "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md"
-      ],
-      "allowed_sections": [
-        "3.1",
-        "3.3 narrative note",
-        "3.4 narrative note",
-        "3.6",
-        "17"
-      ]
+      "source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "scope": "SET-KP-01 exact visible v2.7 copy"
     },
     {
       "priority": 4,
-      "scope": "tone_and_lore_constraints",
-      "paths": [
-        "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
-      ],
-      "note": "DRAFT labels do not create release canon."
+      "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "scope": "v2.7 character and power visible copy; SRC-002 unresolved"
     },
     {
       "priority": 5,
-      "scope": "art_layout_typography_and_print_presentation",
-      "paths": [
-        "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md",
-        "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
-        "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
-        "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md",
-        "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
-        "working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md",
-        "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
-        "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
-        "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
-        "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
-        "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
-        "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md",
-        "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json"
-      ],
-      "supersedes": "work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891 art assets",
-      "old_assets_classification": "REJECTED_ART_TECHNICAL_REFERENCE_ONLY",
-      "art_direction_gate": "FOULWAKE Sanat Yönetmeni review recommendation required before owner and Chief Editor pilot disposition",
-      "accepted_art_direction_source_commit": "7418d9c2c89c265cb6efd30f6a5a7f2addd528da",
-      "accepted_art_direction_evidence": "governance/ART_DIRECTION_HANDOFF_20260825.json",
-      "production_authorization": "NONE_PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_PILOT_ACCEPTANCE",
-      "full_production_authorized": false,
-      "map_back_decision": "FAMILY_VISIBLE_EXACT_FRONT_BLIND_VARIABLE_LAYOUT",
-      "art_direction_pilot_review_evidence": "governance/ART_DIRECTION_PILOT_REVIEW_20260825.json",
-      "reviewed_visual_commit": "b4afbcf49784b85338453cbf29a956cbb620c9e6",
-      "current_pilot_result": "PILOT_ART_DIRECTION_PASS_PENDING_PROJECT_OWNER_AND_CHIEF_EDITOR_ACCEPTANCE",
-      "next_pilot_scope": "PROJECT_OWNER_PILOT_AESTHETIC_DECISION",
-      "revised_art_direction_pilot_review_evidence": "governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json",
-      "revised_reviewed_visual_commit": "1b27232a53b09ac3ff00030f625bfc2703d15764",
-      "current_pilot_front_counts": {
-        "keep": 12,
-        "rework_required": 0
-      },
-      "current_pilot_back_counts": {
-        "keep": 7,
-        "rework_required": 0
-      },
-      "targeted_rework_order": "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
-      "targeted_rework_front_ids": [],
-      "targeted_rework_back_ids": [],
-      "byte_exact_keep_front_ids": [
-        "KAR-01",
-        "KAR-06",
-        "KAR-19",
-        "GUC-06",
-        "GUC-27",
-        "ERZ-01",
-        "SAD-H-03",
-        "HAR-AD-08",
-        "HAR-KY-06",
-        "HAR-AA-06",
-        "HAR-FN-04",
-        "SET-KP-01"
-      ],
-      "byte_exact_keep_back_ids": [
-        "BACK_CHARACTER",
-        "BACK_POWER",
-        "BACK_LOYALTY",
-        "BACK_SEA_ROCK",
-        "BACK_ISLAND",
-        "BACK_SUPPORT"
-      ],
-      "authorized_changed_files_exact": 0,
-      "pilot_authorization_state": "CONSUMED_ART_DIRECTION_PASS_PENDING_OWNER_CHIEF",
-      "art_direction_lighthouse_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json",
-      "latest_reviewed_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
-      "latest_visual_delivery_commit": "c8081aa9f781737b0d7e14c8b224bf1fd988e8bb",
-      "latest_visual_evidence_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
-      "latest_visual_handoff_evidence": "governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json",
-      "art_direction_review_input_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
-      "new_visual_production_authorized": false,
-      "art_direction_lighthouse_final_review_evidence": "governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json",
-      "art_direction_final_result": "PILOT_ART_DIRECTION_PASS",
-      "project_owner_final_aesthetic_acceptance": false,
-      "chief_editor_pilot_acceptance": false,
-      "active_visual_candidate": false,
-      "project_owner_override_current": true,
-      "project_owner_pilot_disposition": "REJECTED_ART_DIRECTION_RESET_REQUIRED",
-      "supersedes_art_direction_pass_for_production": true,
-      "art_language_reference_path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
-      "art_language_reference_git_blob_sha": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4",
-      "current_owner_order": "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md",
-      "current_authorized_scope": "ART_DIRECTION_MICRO_PATCH_ONLY",
-      "visual_production_authorized_after_override": false,
-      "final_front_copy_audit_required": true
-    }
-  ],
-  "non_source_evidence": [
-    {
-      "path": "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
-      "reason": "Recorded result; not production copy or binding PASS until reproduced."
+      "source": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md and working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "scope": "defined narrative blocks and tone/lore fence"
     },
     {
-      "path": "work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891",
-      "reason": "Rejected art delivery; technical pipeline history only."
-    },
-    {
-      "path": "work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6",
-      "reason": "Pre-brief 12+7 pilot reviewed by visible Art Direction: REWORK_REQUIRED. It remains rework input only, not an accepted pilot or active candidate."
+      "priority": 6,
+      "source": "current active visual and art-direction specifications",
+      "scope": "art, layout and production only; cannot rewrite content"
     }
   ],
-  "project_owner_override": {
-    "status": "PROJECT_OWNER_PILOT_REJECTED_ART_DIRECTION_RESET_REQUIRED",
-    "evidence_path": "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json",
-    "supersedes_prior_art_direction_pass_for_production": true,
-    "active_visual_candidate": false,
-    "current_authorization": "ART_DIRECTION_MICRO_PATCH_ONLY",
-    "visual_production_authorized": false,
-    "copy_audit_required": true
-  }
+  "active_sources": {
+    "task_authority": "governance/CURRENT_STAGE.json",
+    "specialist_scope": "governance/WORKSTREAM_SCOPE_BASELINES.json",
+    "kaptan_copy": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+    "visual_system": "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+    "current_order": "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md"
+  },
+  "historical_only": {
+    "rejected_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "prior_art_direction_pass": "governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json",
+    "previous_orders": [
+      "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
+      "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
+      "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md"
+    ],
+    "classification": "EVIDENCE_ONLY / NO AUTHORIZATION"
+  },
+  "unresolved": [
+    {
+      "id": "SRC-002",
+      "evidence": "governance/SRC_002_COMPARISON_20260830.json",
+      "action": "PROJECT_OWNER_DECISION_REQUIRED"
+    }
+  ]
 }

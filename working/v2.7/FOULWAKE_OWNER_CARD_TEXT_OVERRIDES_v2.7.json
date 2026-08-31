@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "version": "v2.7 DRAFT",
+  "status": "PROJECT_OWNER_BINDING_OVERRIDE / NOT LOCKED",
+  "authority": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
+  "records": [
+    {
+      "id": "SET-KP-01",
+      "title": "KAPTAN",
+      "section_label": "ÖZEL YETENEK",
+      "effect": "Oylamada eşitlik olursa, senin tarafın geçerli olur.",
+      "flavor": "Lidere et. Gemi senin emrinde.",
+      "copy_policy": "EXACT / NO REWRITE / TEMPLATE_COMPOSITE_ONLY",
+      "visual_source": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg"
+    }
+  ]
+}

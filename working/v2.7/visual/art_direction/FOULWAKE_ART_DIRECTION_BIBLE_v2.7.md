@@ -1,15 +1,14 @@
 # FOULWAKE ART DIRECTION BIBLE v2.7
 
-Status: FAMILY-VISIBLE / VARIABLE-LAYOUT MAP-BACK REWORK — PROJECT OWNER AND CHIEF EDITOR REVIEW REQUIRED  
+Status: OWNER RESET / KAPTAN VISUAL+COPY / FRAMING GATE / VISUAL PRODUCTION PAUSED  
 Workstream: Sanat Yönetimi  
 Source branch: work/v2.7-art-direction  
-Chief Editor source: v2.7-design@29da7e35c4d940e1836bc3852a67d0cc7a5904a1  
+Current authority: governance/CURRENT_STAGE.json / STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION  
 Baseline: v2.6 STABLE / LOCKED  
-Reviewed package baseline: work/v2.7-art-direction@d578feca0efff8589448f4d3a168d662f6c7a3f4 — SCOPE/FILE INTEGRITY VERIFIED; FAMILY VISIBILITY REWORK REQUIRED  
-Chief Editor disposition: REWORK_REQUIRED — FAMILY_VISIBLE / VARIABLE-LAYOUT MAP BACKS  
-Project Owner decision: OPTION_2 — FAMILY-VISIBLE MAP BACKS. Aile görünürlüğü izinli ve bağlayıcıdır; belirli ön kart kimliği ile sonucu gizli kalır.  
+Historical accepted brief source: work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da  
+Project Owner override: KAPTAN uploaded-card source; copy lock; framing gate; three back reworks  
 Visual production authorized: NO  
-Scope: Görsel üretim öncesi bağlayıcı sanat yönü; bu revizyon yalnız BACK_SEA_ROCK, BACK_ISLAND ve BACK_LIGHTHOUSE ile bunların değişken, kurala uygun masa düzenlerindeki ortak deniz sistemidir. İllüstrasyon, kart renderı, PDF, contact sheet veya baskı paketi değildir.
+Current write scope: only the existing KAPTAN patch correction; this Bible is an integrated source contract, not an authorization.
 
 ## 1. Yetki, kaynak ve sınır
 
@@ -27,7 +26,13 @@ Kaynak riski SRC-002 açık tutulur: aktif v2.7 metin kaynağı GUC-22’yi Kapt
 
 work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891 içindeki sanat bütünüyle REJECTED_ART / TECHNICAL_PIPELINE_REFERENCE_ONLY’dir. Yalnız 121 kimliğin kilitli PDF envanteriyle eşlenmesini doğrulayan teknik indeks olarak kullanılmış; kompozisyon, karakter, renk, ışık, nesne, çizgi veya mizah kaynağı yapılmamıştır.
 
-Ekli KAPTAN kartı STYLE_ONLY referanstır. Ondan yalnız şu soyut gözlemler alınabilir: eski baskı hissi, mat yüzey, okunur büyük-küçük değer ayrımı ve el çizgisi sıcaklığı. Yüz, beden, poz, kuş, gemi, şapka, çerçeve düzeni, nesne yerleşimi, kompozisyon ve çizgi deseni kopyalanamaz.
+Yüklenen KAPTAN kartı `SET-KP-01` için bağlayıcı ana görsel ve copy kaynağıdır.
+KAPTAN figürü ile ana kompozisyon korunur; yalnız küçük crop, ölçek, renk veya
+arka-plan temizliği yapılabilir. Boş sandalye ya da başka özneyle değiştirilemez.
+Aynı kart bütün deste için eski baskı, kalın mürekkep, yoğun gravür taraması,
+sıcak kirli kâğıt ve mat lacivert–oker–pas dili anahtarıdır. Gemi ve martı diğer
+kartlarda kopyalanmak zorunda değildir. Exact copy
+`working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` kaynağındadır.
 
 ## 2. Tek cümlelik sanat tezi
 
@@ -567,7 +572,13 @@ Proje sahibi kararına göre aile görünürlüğü bilgi sızıntısı değildi
 
 ### 15.2 Referans sınırı
 
-Ekli masa görseli MAP_TABLE_REFERENCE: TABLE_READ_ONLY / COMPOSITION_PRINCIPLE_ONLY olarak sınıflandırılır. Yalnız kapalı kartların birlikte tek bir keşfedilmemiş deniz alanı gibi okunması ilkesi alınır. Referanstaki 5×5 sayı, sabit grid, satır/sütun düzeni, dalga çizgileri, renk, çerçeve, kart yüzleri ve yüzey yerleşimi kopyalanmaz veya üretim şartı yapılmaz. KAPTAN görseli ayrı olarak yalnız STYLE_ONLY kalır; iki referans birbirinin yetkisini genişletmez.
+Ekli masa görseli MAP_TABLE_REFERENCE: TABLE_READ_ONLY /
+COMPOSITION_PRINCIPLE_ONLY olarak sınıflandırılır. Yalnız kapalı kartların
+birlikte tek bir keşfedilmemiş deniz alanı gibi okunması ilkesi alınır.
+Referanstaki 5×5 sayı, sabit grid, satır/sütun düzeni, dalga çizgileri, renk,
+çerçeve, kart yüzleri ve yüzey yerleşimi kopyalanmaz veya üretim şartı yapılmaz.
+KAPTAN ise `SET-KP-01` görsel/copy kaynağı ve deste sanat dili anahtarıdır;
+harita-masa referansının yetkisini genişletmez.
 
 ### 15.3 COMMON_MAP_BACK_VISUAL_SYSTEM
 
@@ -694,9 +705,23 @@ Herhangi bir “hayır” taslağı üretimden sanat yönü düzeltmesine dönd�
 - Tabela, slogan, konuşma balonu, anlamsız yazı veya okunabilir sahne-içi belge.
 - Airbrush glow, boya gradyanı, plastik yüz, krom metal, stok grunge filtresi.
 - Kart mekaniklerini ikonlaştırıp illüstrasyonu infografiğe çevirmek.
-- Karakter, yüz, poz, kompozisyon, nesne veya çizgiyi STYLE_ONLY KAPTAN kartından kopyalamak.
+- KAPTAN figürünü başka kartlara kopyalamak veya SET-KP-01'de KAPTANı boş
+  sandalye/başka özneyle değiştirmek.
 - Final görsel, render, PDF, contact sheet veya baskı paketi üretimini Sanat Yönetimi içinde yapmak.
 
-## 19. Dispozisyon
+## 19. Güncel owner override ve dispozisyon
 
-Bu targeted rework, d578feca… üstündeki kapsam ve dosya bütünlüğünü koruyarak yalnız üç harita arka yüzünü proje sahibinin OPTION_2 — FAMILY-VISIBLE MAP BACKS kararına göre yeniden kurar. 121 ön-yüz briefi, 12 pilot production briefi, diğer dört arka-yüz yönü ve kabul edilmiş sanat omurgası değiştirilmemiştir. Paket BRIEF aşamasında yeni proje sahibi ve Baş Editör değerlendirmesine sunulur. Görsel Tasarım üretime yalnız bu değerlendirme sonrasında geçebilir; görsel üretim hâlen yetkili değildir. Sanat Yönetimi yaratıcı brief ve kontrol verir, kilit talep etmez.
+Proje sahibi exact 23c062f6… pilotunu reddetmiştir. KAPTAN görsel/copy sözleşmesi
+bu Bible'daki önceki portresiz çözümü supersede eder. BACK_SEA_ROCK mat ve
+ışıldamayan deniz olarak rework edilir; BACK_ISLAND eski varlıktan türetilmeden
+FULL REDRAW yapılır; BACK_LIGHTHOUSE daha büyük okunur ve uzun kayalık sırt
+zorunlu değildir. Diğer dört arka HOLD'dur.
+
+Bütün ön/arka illüstrasyonlar exact oran, 3 mm bleed, 4–5 mm safe area, özne
+ölçeği, odak, gerekli crop, metin alanı çakışması, thumbnail/masa okunurluğu ve
+kadraj çeşitliliği için bağımsız Sanat Yönetimi kapısından geçer. Görsel
+Tasarım self-PASS veremez; yalnız FRAMING_PASS veya REFRAME_REQUIRED. Sapma
+BLOCKED_FRAMING_DRIFT'tir.
+
+Güncel yetki yalnız CURRENT_STAGE içindeki tek dosyalık patch düzeltmesidir.
+Yeni görsel, full 121, PDF, Simülasyon, release veya lock yetkili değildir.

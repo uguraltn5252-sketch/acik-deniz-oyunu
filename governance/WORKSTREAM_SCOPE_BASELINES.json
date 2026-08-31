@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "config_branch": "v2.7-design",
+  "policy": "DEFAULT_DENY / CUMULATIVE_DIFF_FROM_RESET_BASELINE",
+  "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
+  "protected_exact_paths": [
+    "AI_HANDOFF.md",
+    "PROJECT_STATE.md",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "protected_prefixes": [
+    "governance/",
+    "releases/",
+    ".github/"
+  ],
+  "branches": {
+    "work/v2.7-story": {
+      "baseline_commit": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "authorization": null
+    },
+    "work/v2.7-art-direction": {
+      "baseline_commit": "119136812c2c749e14e675f1400640664fa044bc",
+      "authorization": {
+        "stage_id": "STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION",
+        "exact_paths": [
+          "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md"
+        ],
+        "max_changed_files": 1,
+        "allowed_extensions": [
+          ".md"
+        ],
+        "max_words_per_file": 700,
+        "binary_files_allowed": false
+      }
+    },
+    "work/v2.7-visual": {
+      "baseline_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+      "authorization": null
+    },
+    "work/v2.7-simulation": {
+      "baseline_commit": null,
+      "authorization": null,
+      "branch_must_not_exist": true
+    }
+  }
+}

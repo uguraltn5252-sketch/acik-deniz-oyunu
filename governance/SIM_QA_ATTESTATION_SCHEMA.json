@@ -1,70 +1,411 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://foulwake.local/governance/SIM_QA_ATTESTATION_SCHEMA.json",
-  "title": "FOULWAKE Simulation QA Attestation",
+  "$id": "https://foulwake.local/schemas/SIM_QA_ATTESTATION_SCHEMA.json",
+  "title": "FOULWAKE exact-candidate Simulation and QA attestation",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "version",
+    "schema_version",
+    "current_stage",
+    "baseline_release",
+    "candidate_branch",
     "candidate_commit",
-    "baseline_commit",
-    "validator_hashes",
-    "test_commands",
-    "seeds_and_samples",
-    "raw_output_hashes",
-    "source_render_pdf_traceability",
-    "artifact_manifests",
-    "physical_test_evidence",
-    "blind_human_test_evidence",
-    "gate_verdicts",
-    "open_issues",
+    "candidate_tree",
+    "source_identity_gate",
+    "mechanics_gate",
+    "strategy_gate",
+    "social_gate",
+    "art_semantics_gate",
+    "copy_gate",
+    "framing_gate",
+    "backs_gate",
+    "package_gate",
+    "physical_gate",
+    "tools",
     "overall_verdict",
-    "evidence_bundle_sha256"
+    "open_issues",
+    "lock_requested"
   ],
   "properties": {
-    "version": {"type": "string"},
-    "candidate_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
-    "baseline_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
-    "validator_hashes": {"type": "object", "minProperties": 1},
-    "test_commands": {"type": "array", "minItems": 1},
-    "seeds_and_samples": {"type": "object"},
-    "raw_output_hashes": {"type": "object", "minProperties": 1},
-    "source_render_pdf_traceability": {"type": "object"},
-    "artifact_manifests": {"type": "array", "minItems": 1},
-    "physical_test_evidence": {"type": "array", "minItems": 1},
-    "blind_human_test_evidence": {"type": "array", "minItems": 1},
-    "gate_verdicts": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "current_stage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "baseline_release": {
+      "const": "v2.6 STABLE / LOCKED"
+    },
+    "candidate_branch": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "candidate_tree": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "source_identity_gate": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "identity",
-        "static",
-        "exact_mechanics",
-        "regression_fuzz",
-        "balance_strategy",
-        "social_experience",
-        "art_semantic_review",
-        "illustration_text_guard",
-        "back_design_and_information_leak",
-        "visual_readability",
-        "package_and_provenance"
+        "verdict",
+        "evidence"
       ],
       "properties": {
-        "identity": {"type": "string"},
-        "static": {"type": "string"},
-        "exact_mechanics": {"type": "string"},
-        "regression_fuzz": {"type": "string"},
-        "balance_strategy": {"type": "string"},
-        "social_experience": {"type": "string"},
-        "art_semantic_review": {"type": "string"},
-        "illustration_text_guard": {"type": "string"},
-        "back_design_and_information_leak": {"type": "string"},
-        "visual_readability": {"type": "string"},
-        "package_and_provenance": {"type": "string"}
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
       }
     },
-    "open_issues": {"type": "array"},
-    "overall_verdict": {"enum": ["PASS", "PASS_WITH_MINOR_ISSUES", "FAIL", "BLOCKER"]},
-    "evidence_bundle_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    "mechanics_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "evidence"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "strategy_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "evidence"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "social_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "evidence"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "art_semantics_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "evidence"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "copy_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "evidence"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "framing_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "evidence"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "backs_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "evidence"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "package_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "evidence"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "physical_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "evidence"
+      ],
+      "properties": {
+        "verdict": {
+          "enum": [
+            "PASS",
+            "PASS_WITH_MINOR_ISSUES",
+            "FAIL",
+            "BLOCKER"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "tools": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tools_used",
+        "plugins_used",
+        "plugins_available_but_not_used",
+        "not_used_reason",
+        "commands",
+        "seeds",
+        "raw_output_hashes"
+      ],
+      "properties": {
+        "tools_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "plugins_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "plugins_available_but_not_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "not_used_reason": {
+          "type": "string"
+        },
+        "commands": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "seeds": {
+          "type": "array",
+          "items": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "minItems": 1
+        },
+        "raw_output_hashes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "overall_verdict": {
+      "enum": [
+        "PASS",
+        "PASS_WITH_MINOR_ISSUES",
+        "FAIL",
+        "BLOCKER"
+      ]
+    },
+    "open_issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lock_requested": {
+      "const": false
+    }
   }
 }

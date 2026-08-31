@@ -1,55 +1,82 @@
-# Açık Deniz Sosyal Çıkarım Oyunu
+# Açık Deniz / FOULWAKE
 
-Bu repository oyunun kalıcı ve denetlenebilir kaynak kaydıdır.
+Bu repository oyunun kalıcı, sürümlü ve denetlenebilir kaynak kaydıdır.
 
 ## Kanonik durum
 
-- Son kullanıcı-onaylı kilitli/stabil sürüm: **v2.6 STABLE / LOCKED**
-- Kanonik release kaydı: `releases/v2.6/`
-- v2.5 önceki kilitli mekanik baseline ve tarihsel geri dönüş referansıdır.
-- v2.6 yerinde değiştirilmez; sonraki çalışma **v2.7+ DRAFT** hattında açılır.
-
-## Aktif v2.7 durumu
-
+- Son kullanıcı-onaylı sürüm: **v2.6 STABLE / LOCKED**
+- Kilitli kaynak: `releases/v2.6/`
+- Exact locked tree:
+  `efb41c46f06174c42dcdab2859b7c0ba517f86f0`
+- Aktif çalışma: **v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED**
 - Entegrasyon dalı: `v2.7-design`
-- Güncel hüküm: **DRAFT / NOT LOCKED / RELEASE BLOCKED**
-- Hikâye teslimi kabul edilmiş ve entegrasyon dalına alınmıştır.
-- `work/v2.7-visual@e91581...` teslimi gerçektir; ancak proje sahibi bütün ön
-  ve arka yüz sanatını reddetmiştir. Eski çıktı yalnız teknik referanstır.
-- Aktif görsel candidate ve Simülasyon attestation yoktur.
-- Bağlayıcı rework:
-  `working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`
-- Açık blockerlar ve exact kanıtlar `PROJECT_STATE.md` ile
-  `governance/ACTIVE_WORKSTREAMS.json` içindedir.
+- Aktif v2.7 visual candidate: **YOK**
+- Tam 121, Simülasyon, PDF, release ve lock: **YETKİSİZ**
 
-## Her yeni ChatGPT oturumunda
+## Tek güncel görev kaynağı
 
-1. `AI_HANDOFF.md` ve `PROJECT_STATE.md` okunur.
-2. `releases/v2.6/README_RELEASE_v2.6.md`, `V26_RELEASE_MANIFEST.json`, `BINARY_ARTIFACTS.md`, `CARD_BASELINE.md` ve doğrulama raporları kontrol edilir.
-3. v2.6 artefakt hashleri manifestle doğrulanır.
-4. Mekanik motor ayrıntısı gerektiğinde v2.5 baseline kayıtlarına bakılır.
-5. v2.6 üzerinde yerinde değişiklik yapılmaz.
+`governance/CURRENT_STAGE.json`, mevcut aşama ve yazma yetkisi için tek
+makine-okunur kaynaktır. Eski iş emirleri, PASS kayıtları ve specialist
+commitleri tarihsel kanıttır; kendi başına yeni iş başlatamaz.
 
-## v2.6 kilitli artefaktları
+Güncel aşama:
+`STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION`.
 
-- Kural kitabı: `/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf`
-  - 29 sayfa A4
-  - SHA-256: `192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a`
-- Tam kart seti: `/Oyun-GitHub/v2.6/OYUN_Kartlar_A4_Prototip_v2.6.pdf`
-  - 34 sayfa A4
-  - 118 ana kart + 3 yardımcı kart = 121 basılabilir fiziksel kart
-  - SHA-256: `769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298`
-- Full ZIP: `/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip`
-  - SHA-256: `ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534`
+Yalnız Sanat Yönetimi dalında, exact KAPTAN patch dosyasının tek dosya /
+en fazla 700 kelimelik düzeltmesi yetkilidir. Hikâye, Görsel ve Simülasyon
+yazmaya kapalıdır.
 
-## v2.6 önemli fiziksel kararları
+## Proje sahibi KAPTAN hükmü
 
-- Yardımcı kartlar: Kalkış Limanı (`SET-KL-01`), Varış/Hedef Limanı (`SET-VL-01`), Kaptan makamı (`SET-KP-01`).
-- Mahkûm için ayrı kart/token yoktur; Moderatör not alır.
-- Çürümüş Erzak ve Bayat Peksimet değiştirilmemiştir.
-- Kayalık kartlarının arka yüzleri **KAYALIK kategori yüzü** olarak korunmuştur; Açık Deniz ile aynı arka yüz yapma deneyi v2.6'ya alınmamıştır.
+Yüklenen KAPTAN kartı `SET-KP-01` için bağlayıcı ana görsel ve copy kaynağıdır:
 
-## Önceki baseline
+- Başlık: **KAPTAN**
+- Bölüm: **ÖZEL YETENEK**
+- Etki: **Oylamada eşitlik olursa, senin tarafın geçerli olur.**
+- Flavor: **Lidere et. Gemi senin emrinde.**
+- Görsel:
+  `working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg`
 
-`/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.5.zip`  
-SHA-256: `975dd77d435a835fcf3faa864c5624b0542fadb419fa7d34217ed32fe87aa046`
+KAPTAN figürü ve ana kompozisyonu yalnız küçük crop/ölçek/renk/arka-plan
+düzeltmesiyle korunur. Gemi ve martı diğer kartlarda zorunlu değildir.
+Exact copy:
+`working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json`.
+
+Görsel model kart yazısı üretmez; copy şablonla yerleştirilir ve OCR veya
+render-source karşılaştırması gerekir. Bütün kartlar bağımsız Sanat Yönetimi
+kadraj kapısından geçer.
+
+## Arka yüz düzeltmeleri
+
+- `BACK_SEA_ROCK`: mat, ışıldamayan deniz.
+- `BACK_ISLAND`: önceki varlıktan türetilmeden FULL REDRAW.
+- `BACK_LIGHTHOUSE`: daha büyük fener; uzun kayalık sırt zorunlu değil.
+- Diğer dört arka: HOLD; proje sahibi kabulü yok.
+
+## Çalışmaya başlamadan
+
+1. `AI_HANDOFF.md`
+2. `governance/CURRENT_STAGE.json`
+3. `PROJECT_STATE.md`
+4. `governance/WORKSTREAM_PROTOCOL.md`
+5. `governance/WORKSTREAM_SCOPE_BASELINES.json`
+6. İlgili exact kaynak ve iş emri
+
+Uzman değişiklikleri reset baseline'dan sonraki cumulative diff ile denetlenir.
+Exact güncel yetki yoksa CI yazmayı reddeder.
+
+## Açık kritik konular
+
+- `SRC-002`: v2.6 `GUC-22 = Bayat Peksimet`; v2.7 `GUC-22 = Kaptanın Çatlak
+  Kupası` ve `GUC-23 = Bayat Peksimet`. Proje sahibi kararı gerekir:
+  `governance/SRC_002_COMPARISON_20260830.json`.
+- `GOV-001`: GitHub branch protection/ruleset mevcut plan/visibility altında
+  etkinleştirilemiyor. CI doğrudan pushları denetler fakat platform düzeyinde
+  pushu önceden engelleyemez.
+- Fiziksel baskı, kesim, duplex, opaklık, ışık ve gerçek masa-mesafesi kanıtı yok.
+
+## v2.6 artefaktları
+
+Kural kitabı, kart PDF'i, release manifesti ve SHA-256 kayıtları
+`releases/v2.6/` içindedir. v2.6 yerinde değiştirilmez; sonraki kararlar yalnız
+v2.7+ DRAFT içinde uygulanır.

@@ -1,225 +1,123 @@
-# FOULWAKE AI Handoff Protokolü
+# FOULWAKE AI Handoff
 
-Bu dosya yeni bir oturumun kanonik proje durumunu kısa ve doğrulanabilir
-biçimde kurması için zorunlu başlangıç kaydıdır.
+Bu dosya yeni oturumun başlangıç noktasıdır. Güncel görev ve yazma yetkisi için
+tek makine-okunur kaynak `governance/CURRENT_STAGE.json` dosyasıdır. Tarihsel
+handoff, PASS, iş emri veya specialist branch çıktısı kendi başına yeni iş
+yetkisi vermez.
 
-## Güncel hüküm
+## Güncel durum — 30 Ağustos 2026
 
-## Proje sahibi override — 30 Ağustos 2026
+- Son kilitli sürüm: **v2.6 STABLE / LOCKED**; exact kaynak `releases/v2.6/`.
+- Aktif çalışma: **v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED**.
+- Entegrasyon dalı: `v2.7-design`.
+- Aktif görsel candidate: **YOK**.
+- `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e`:
+  proje sahibi tarafından reddedilmiş tarihsel kanıt.
+- Tam 121, PDF, Simülasyon, release ve kilit: **YETKİSİZ**.
+- Varsayılan uzman yazma politikası: **DENY**.
 
-Exact `23c062f6...` pilotu proje sahibi tarafından estetik olarak reddedildi. Bu, önceki `PILOT_ART_DIRECTION_PASS` kararını tarihsel kanıt olarak korur ancak üretim/candidate bakımından geçersiz kılar. Bağlayıcı kayıt: `governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json`; yeni kısa iş emri: `working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md`.
+## Şu anda yetkili tek iş
 
-KAPTAN ana sanat dili referansı `working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg` yolundadır. `SET-KP-01` teknik kimliği korunur, görünen ad `KAPTAN`dır ve devredilebilir kaptanlık mekaniği korunur. Görsel model görünen kart metni üretemez; final metin yalnız kanonik kaynaktan şablonla yerleştirilir ve gerçek OCR/render-source exact karşılaştırması gerekir.
+`FOULWAKE Sanat Yönetmeni`, `work/v2.7-art-direction` dalında yalnız
+`working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md`
+dosyasını düzeltebilir. Başlangıç commiti
+`119136812c2c749e14e675f1400640664fa044bc`; toplam fark en fazla bir Markdown
+dosyası ve 700 kelimedir.
 
+Patch şu dört noktayı açıkça bağlamalıdır:
 
-- **Son kullanıcı-onaylı sürüm:** `v2.6 STABLE / LOCKED`
-- **Kanonik kilitli kaynak:** `releases/v2.6/`
-- **Aktif çalışma:** `v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED`
-- **Entegrasyon dalı:** `v2.7-design`
-- **Aktif görsel candidate:** **YOK**
-- **Gözlenen pilot paketi:** `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` / `PROJECT_OWNER_REJECTED / HISTORICAL_INPUT_ONLY`
-- **Simülasyon attestation:** **YOK**
-- **Sanat Yönetimi:** `ÖNCEKİ PASS TARİHSEL / KAPTAN ART-LANGUAGE RESET REQUIRED`
-- **Görsel üretim yetkisi:** **YOK — YALNIZ SANAT YÖNETİMİ MİKRO PATCHİ YETKİLİ**
-- **Kilit izni:** **YOK**
+1. Yüklenen KAPTAN kartı yalnız stil örneği değil, `SET-KP-01` kartının
+   bağlayıcı görsel kaynağıdır.
+2. Görünen copy yalnız
+   `working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` kaynağından gelir.
+3. Bütün ön/arka kartlar için bağımsız Sanat Yönetimi kadraj kapısı vardır.
+4. Raster, thumbnail, contact sheet, layout, manifest, PDF veya tam üretim yoktur.
 
-Sanat Yönetmeni exact `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` paketindeki `BACK_LIGHTHOUSE`, iki bağlı contact sheet ve altı değişken layout rasterını 9/9 açarak nihai incelemeyi tamamlamıştır. `BACK_LIGHTHOUSE: KEEP`; pilot toplamı `12 FRONT KEEP / 7 BACK KEEP` ve sonuç `PILOT_ART_DIRECTION_PASS`tır. Baş Editör bu görünür handoffu exact kaynak zinciriyle geçerli Sanat Yönetimi kanıtı olarak kaydeder; fakat proje sahibinin nihai estetik kabulü ve Baş Editör pilot kabulü henüz yoktur. Aktif candidate, yeni Görsel üretim, tam 121, PDF, Simülasyon, release veya kilit oluşmaz. Kanıt: `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json`.
+Diğer bütün hatlar yazmaya kapalıdır. Yeni aşama ancak düzeltilmiş patchin proje
+sahibi tarafından kabulü ve yeni exact Baş Editör emriyle açılır.
 
-Exact lighthouse-only Görsel teslimi `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` başında alınmıştır. Kanonik üretim `c8081aa9f781737b0d7e14c8b224bf1fd988e8bb`, takip kanıt commiti `23c062f6de06c32eab224b3440c8474725d4fe9e` ve cumulative fark exact 15 dosyadır. Rapor ile üç JSON manifest ve 61 girdili SHA-256 indeksi birbirini tutar; 18 ana görsel, 16 source-art, 10 gate ve 3 etkilenmeyen contact sheet Git farkında korunmuştur. Baş Editör dispozisyonu `VISUAL_LIGHTHOUSE_ONLY_HANDOFF_ACCEPTED_FOR_EXACT_ART_DIRECTION_REVIEW`dür. Bu estetik PASS veya aktif candidate değildir; yeni Görsel üretim kapalıdır ve exact paket şimdi yalnız `FOULWAKE Sanat Yönetmeni` incelemesine gider. Kanıt: `governance/VISUAL_LIGHTHOUSE_ONLY_HANDOFF_20260830.json`.
+## KAPTAN exact sözleşmesi
 
-Hikâye teslimi `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37`
-üzerinde Görsel girdisi olarak kabul edilmiş ve exact kabul edilen üç Hikâye
-blobu `v2.7-design`a entegre edilmiştir. Görsel teslim
-`work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891`
-üzerinde gerçekten yapılmıştır; ancak proje sahibi bütün ön ve arka yüz
-sanatını reddetmiştir. Baş Editör dispozisyonu
-`DELIVERED_REJECTED_ART_REWORK_REQUIRED`dır. Eski PDF/render/hash kayıtları
-yalnız teknik üretim hattı referansıdır, release candidate değildir.
+- Teknik kimlik: `SET-KP-01`.
+- Görünen başlık: **KAPTAN**.
+- Bölüm etiketi: **ÖZEL YETENEK**.
+- Etki: **Oylamada eşitlik olursa, senin tarafın geçerli olur.**
+- Flavor: **Lidere et. Gemi senin emrinde.**
+- Görsel kaynak:
+  `working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg`.
+- Kaynak, KAPTAN figürü ve kart kompozisyonu için bağlayıcıdır; küçük
+  crop/ölçek/renk/arka-plan temizliği yapılabilir. Boş sandalye veya başka özneyle
+  değiştirilemez.
+- Gemi, martı ve sahne diğer kartlar için zorunlu motif değildir; bağlayıcı
+  deste dili mürekkep, yoğun gravür taraması, sıcak kirli kâğıt, mat
+  lacivert–oker–pas paleti ve eski basım kart hissidir.
+- Görsel model okunabilir kart metni üretmez. Copy kanonik UTF-8 kaynaktan
+  şablonla yerleştirilir; OCR veya render-source exact karşılaştırması gerekir.
+  Sapma: `BLOCKED_COPY_DRIFT`.
 
-`FOULWAKE Sanat Yönetmeni` görünür sohbetinin iletişim testi önce
-`ACKNOWLEDGED_COMMUNICATION_TEST_ONLY` olarak kabul edilmiştir. Ardından
-`work/v2.7-art-direction@7418d9c2c89c265cb6efd30f6a5a7f2addd528da`
-üzerindeki Art Direction Bible, 121 kart brief manifesti, 12 pilot production
-briefi ve 7 arka-yüz briefi Baş Editör incelemesini geçmiş; proje sahibi
-`OPTION_2 — FAMILY-VISIBLE MAP BACKS` kararını ve nihai briefi açıkça
-onaylamıştır. Paket `ART_DIRECTION_BRIEF_ACCEPTED` olarak `v2.7-design`a
-entegre edilmiştir.
+## Kadraj kapısı
 
-`work/v2.7-visual@b4afbcf49784b85338453cbf29a956cbb620c9e6`
-üzerindeki brief-öncesi 12 ön-yüz + 7 arka-yüz pilotu, görünür `FOULWAKE
-Sanat Yönetmeni` sohbetinde exact 22/22 Git blob doğrulamasıyla incelenmiştir.
-Sonuç `REWORK_REQUIRED`dır: 3 ön yüz KEEP, 9 ön yüz REWORK; 7 arka yüzün
-tamamı REWORK. Baş Editör incelemeyi kabul etmiş, ancak bağlayıcı sonraki
-pilot setini kabul edilmiş zor-vaka 12'lisiyle sınırlandırmıştır. İki exact
-KEEP (`SAD-H-03`, `HAR-KY-06`) yeniden kullanılacak; on kabul edilmiş pilot
-kartı üretilecek/yeniden çizilecek ve yedi arka yüz sıfırdan kurulacaktır.
-`GUC-24` provisional KEEP olarak sonraki tam-deste incelemesine saklanır; set
-dışı altı ret bu pilot geçene kadar üretilmez. Yalnız bu pilot reworkü
-etkindir; tam 121 üretim, PDF, Simülasyon, release ve kilit yetkili değildir.
+Sanat Yönetmeni bütün ön ve arka kart illüstrasyonlarında kart oranı, 3 mm
+taşma, 4–5 mm güvenli alan, ana figür/nesne ölçeği, odak, istemsiz yüz/el/nesne
+kesimi, metin alanı çakışması, thumbnail ve masa-mesafesi okunurluğu ile
+kadraj çeşitliliğini inceler. Görsel Tasarım kendi kadrajına PASS veremez.
+Yalnız `FRAMING_PASS` veya `REFRAME_REQUIRED` kullanılabilir; sapma
+`BLOCKED_FRAMING_DRIFT`tir.
 
-Yetkili hedefli rework paketi Görsel dalında üretilmiştir: kanonik üretim
-commit'i `bf944125ee35fecd722628f6a9be5f5dfcd5707a`, kanıt commit'i
-`1ab579c27ee26205cbc87718995da021ef6da84d` ve temizlenmiş dal başı
-`1b27232a53b09ac3ff00030f625bfc2703d15764`dır. Önceki görünür Görsel sohbet
-nihai teslimi veremeden yanıt vermez hâle gelmiştir. Proje sahibinin açtığı
-kalıcı halef `FOULWAKE Görsel Tasarım 2`, exact dal başını ve kaynakları
-salt-okunur doğrulayıp `VISIBLE_CHAT_ACK: YES` vermiştir. Baş Editör bu devri
-`PERMANENT_WORKSTREAM_SUCCESSOR_ACK_ACCEPTED` olarak kabul eder. Halef daha
-sonra exact 62 dosyalık paket için görsele özgü final handoffu vermiş; Baş
-Editör dal başını, grup sayımlarını, 61 dosyalık SHA-256 indeksini ve teknik
-manifestleri doğrulayarak handoffu Sanat Yönetimi incelemesine giriş olarak
-kabul etmiştir. Kanıt `governance/VISUAL_PILOT_HANDOFF_20260826.json`dır. Bu
-kabul Sanat Yönetimi PASS'i, proje sahibi estetik kabulü, aktif candidate,
-full production, Simülasyon, release veya kilit değildir.
+## Arka yüz owner dispozisyonu
 
-Revize exact paket, görünür `FOULWAKE Sanat Yönetmeni` hattında 40/40
-görsel açılarak bağımsız incelenmiştir. Sonuç `REWORK_REQUIRED`dır:
-önlerde 10 KEEP / 2 REWORK (`KAR-01`, `HAR-AA-06`); arkalarda 5 KEEP /
-2 REWORK (`BACK_ISLAND`, `BACK_LIGHTHOUSE`). On beş ana KEEP
-byte-exact korunur. Dört render/source, yalnız `KAR-01` gate'i, beş contact
-sheet, altı mevcut layout, bir rapor ve dört manifestten oluşan exact 25
-dosyalık rework yetkilidir. Kanıt `governance/ART_DIRECTION_REVISED_PILOT_REVIEW_20260828.json`, uygulama
-`working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md`dır. Tam 121, PDF, Simülasyon, release ve kilit değildir.
+| Varlık | Güncel hüküm |
+|---|---|
+| `BACK_SEA_ROCK` | `REWORK_REQUIRED` — mat deniz; beyaz parlama, krom/specular veya plastik AI cilası yok |
+| `BACK_ISLAND` | `REWORK_REQUIRED / FULL_REDRAW` — eski ada türetilmez; sticker/rozet/karo hissi yok |
+| `BACK_LIGHTHOUSE` | `REWORK_REQUIRED` — fener daha büyük; uzun kayalık sırt zorunlu değil |
+| Diğer dört arka | `HOLD` — proje sahibi kabulü yok |
 
-Dört ana varlıklı hedefli teslimin üretim commit'i
-`88907294edd326c118573f5ada7406e5fc42ee4d`, rapor/manifest bağlama head'i
-`0cb2bd6f03e2d84948741c162f22b8fd2ff064ad`dır. Git farkı exact 25/25 dosyadır; 15 ana KEEP ve 9 gate
-byte-exact korunmuştur. Sanat Yönetmeni bu exact adayı inceleyerek
-`KAR-01`, `HAR-AA-06` ve `BACK_ISLAND` varlıklarını KEEP vermiştir.
-Yalnız `BACK_LIGHTHOUSE`, normal dijital masa-layout mesafesinde Fener
-ailesi olarak güvenilir okunmadığı için `REWORK_REQUIRED`dır.
-
-Yeni kapsam yalnız fener source/renderı, iki etkilenen contact sheet, altı
-mevcut layout, bir rapor ve dört kanıt kaydıdır: exact 15 dosya. Diğer
-18 ana görsel, 16 source-art, 10 gate ve üç etkilenmeyen contact sheet
-byte-exact kalır. Kanıt `governance/ART_DIRECTION_LIGHTHOUSE_ONLY_REVIEW_20260830.json`; iş emri `working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md`dır.
-
-## Her oturumda zorunlu okuma sırası
+## Zorunlu okuma sırası
 
 1. `AI_HANDOFF.md`
-2. `PROJECT_STATE.md`
-3. `governance/EDITORIAL_CHARTER.md`
+2. `governance/CURRENT_STAGE.json`
+3. `PROJECT_STATE.md`
 4. `governance/DECISION_REGISTER.md`
 5. `governance/ACTIVE_WORKSTREAMS.json`
 6. `governance/WORKSTREAM_ASSIGNMENTS.md`
 7. `governance/WORKSTREAM_PROTOCOL.md`
-8. `governance/CHIEF_EDITOR_AUDIT_20260825.md`
-9. `governance/COORDINATION_LOG.md` içindeki en yeni kayıt
-10. Sanat/Görsel çalışma için
-    `working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md`
-
-Görsel çalışma ayrıca
-`working/v2.7/visual/FOULWAKE_FULL_DECK_ART_REWORK_DIRECTIVE_v2.7.md`
-dosyasını okumadan üretime başlayamaz.
-
-## Resmî çalışma alanları
-
-| Hat | Görünür sohbet | Dal | Yetki |
-|---|---|---|---|
-| Hikâye | `Foulwake Hikâye Editör` | `work/v2.7-story` | Lore, anlatı ve mekanik olmayan görünen metin |
-| Sanat Yönetimi | `FOULWAKE Sanat Yönetmeni` | `work/v2.7-art-direction` | Sanat yönü, görsel dramaturji, brief ve bağımsız yaratıcı eleştiri |
-| Görsel | `FOULWAKE Görsel Tasarım 2` | `work/v2.7-visual` | Özgün illüstrasyon, yerleşim, tipografi, baskı |
-| Simülasyon | `Simülasyon Testi` | `work/v2.7-simulation` | Bağımsız QA ve kanıt; mekanik değişiklik yok |
-| Baş Editör | Bu çalışma | `v2.7-design` | Kanon, çakışma, entegrasyon, release ve kilit |
-
-Resmî uzman işi yalnız doğru görünür sohbetten
-`VISIBLE_CHAT_ACK: YES`, exact dal/commit ve zorunlu handoff alanlarıyla
-geldiğinde o hatta mal edilir. Geçici alt ajan oluşturmak yasaktır; çok zorunlu
-istisna ancak proje sahibinin önceden açık izniyle mümkündür ve yine uzman
-teslimi sayılmaz.
-
-## Güncel kanıt kayıtları
-
-- İlk üç hat iletişim testi: `governance/VISIBLE_CHAT_ACKS_20260820.json` —
-  yalnız 3/3 `COMMUNICATION_TEST_ONLY` ACK.
-- Sanat Yönetimi iletişim testi: `governance/ART_DIRECTION_ACK_20260825.json` —
-  tarihsel ACK kaydıdır.
-- Sanat Yönetimi brief teslimi ve proje sahibi onayı:
-  `governance/ART_DIRECTION_HANDOFF_20260825.json` — exact `7418d9c2...`
-  paketi kabul edildi; yalnız pilot aşaması yetkilidir.
-- Exact pilot yaratıcı incelemesi:
-  `governance/ART_DIRECTION_PILOT_REVIEW_20260825.json` — `b4afbcf...`
-  için `REWORK_REQUIRED`; bağlayıcı uygulama emri
-  `working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md`.
-- Hikâye teslimi: `governance/STORY_HANDOFF_20260820.json` —
-  `ACCEPTED_STORY_WORKSTREAM_PASS_FOR_VISUAL_INPUT`.
-- Görsel teslim ve ret: `governance/VISUAL_HANDOFF_20260825.json` —
-  `REJECTED_ART_REWORK_REQUIRED`.
-- Kalıcı Görsel halef ACK'i: `governance/VISUAL_SUCCESSOR_ACK_20260826.json` —
-  `PERMANENT_WORKSTREAM_SUCCESSOR_ACK_ACCEPTED`; üretim teslimi değildir.
-- Revize pilotun resmî Görsel handoffu:
-  `governance/VISUAL_PILOT_HANDOFF_20260826.json` — exact `1b27232a...`
-  paketi yalnız Sanat Yönetimi incelemesine giriş için kabul edildi.
-- Nihai fener Sanat Yönetimi incelemesi: `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json` — exact `23c062f6...` için `PILOT_ART_DIRECTION_PASS`; proje sahibi ve Baş Editör pilot kararı bekleniyor.
-- Son Baş Editör denetimi: `governance/CHIEF_EDITOR_AUDIT_20260825.md`.
-
-GitHub'a yazılmış olmak bir çıktıyı kendiliğinden kanon, PASS, STABLE veya
-LOCKED yapmaz.
+8. `governance/SUPERSESSION_MAP.json`
+9. İlgili exact iş emri ve kaynak dosyaları
 
 ## Kaynak önceliği
 
-1. Proje sahibinin en yeni açık kararı.
-2. Değişmeyen mekanik ve içerik için `v2.6 STABLE / LOCKED`.
-3. `governance/DECISION_REGISTER.md` içindeki aktif v2.7 DRAFT kararları.
-4. `working/v2.7/SOURCE_HIERARCHY_v2.7.json` içindeki alan kaynakları.
-5. Taslak üretim ve kanıt dosyaları.
+1. Proje sahibinin en yeni açık kararı ve ona bağlı düzeltme kaydı.
+2. Değişmeyen içerik/mekanik için v2.6 STABLE / LOCKED.
+3. `governance/CURRENT_STAGE.json` içindeki aktif yetki.
+4. `governance/DECISION_REGISTER.md` ve
+   `working/v2.7/SOURCE_HIERARCHY_v2.7.json`.
+5. Tarihsel üretim ve inceleme kanıtları.
 
-Çelişki otomatik seçilmez; çalışma durur ve Baş Editöre handoff edilir.
+Çelişkide otomatik seçim yapılmaz. İş durur ve exact dosya/alan/commit ile Baş
+Editöre dönülür.
 
-### Açık kaynak çelişkisi: `SRC-002`
+## Açık kritik çelişki
 
-Kilitli v2.6 kayıtları Bayat Peksimet'i `GUC-22` olarak gösterirken aktif v2.7
-Card Texts `GUC-22 = Kaptanın Çatlak Kupası`, `GUC-23 = Bayat Peksimet` der.
-Exact baseline/script kanıtı GitHub'da yoktur. Bu kimlikler tahminle
-değiştirilemez; Simülasyon/baş editör exact karşılaştırması beklenir.
+`SRC-002` exact karşılaştırması
+`governance/SRC_002_COMPARISON_20260830.json` içindedir. v2.6
+`GUC-22 = Bayat Peksimet` derken v2.7, `GUC-22 = Kaptanın Çatlak Kupası` ve
+`GUC-23 = Bayat Peksimet` diyor. Proje sahibi karar vermeden kimlikler
+düzeltilemez ve final 121/candidate/simülasyon baselineı kurulamaz.
 
-## Bağlayıcı görsel rework özeti
+## Kalıcı güvenlik kuralları
 
-- KAPTAN görseli yalnız sanat dili için `STYLE_ONLY`; karakter, yüz, poz,
-  kompozisyon veya piksel kopyalanmaz.
-- 121 kartın her biri ayrı art brief ve semantik olarak ayrı özgün sahne alır.
-- Önceki altı aile plakası ve türevleri kullanılamaz.
-- İllüstrasyon alanında tabela, slogan, konuşma balonu, açıklama veya saçma /
-  anlamsız okunabilir yazı yoktur.
-- Okunabilir metin yalnız exact başlık, effect, flavor ve kart kimliğidir.
-- `unique render SHA`, özgün sanat kanıtı değildir; kör contact-sheet incelemesi
-  zorunludur.
-- Arka yüz topolojisi 7 binarydir: Karakter 20; Güç+Çürümüş 31; Sadakat 15;
-  Deniz+Kayalık 42; Ada 6; Deniz Feneri 4; yardımcı 3.
-- Arka yüzler ön yüzlerle aynı sanat dilindedir fakat ön yüzün kopyası değildir;
-  metinsiz, aile içinde exact aynı ve 180° yön güvenlidir.
-- Harita arka yüzlerinde aile görünürlüğü bağlayıcıdır: `BACK_SEA_ROCK` genel
-  denizdir ve Açık Deniz/Kayalık ayrımını gizler; `BACK_ISLAND` anonim genel
-  adayı, `BACK_LIGHTHOUSE` 1721'e uygun anonim genel feneri açıkça gösterir.
-  Hiçbiri exact ön kartı veya sonucu sızdırmaz.
-- Sabit 5×5/grid/kart sayısı şartı yoktur; değişken, kurala uygun masa
-  düzenlerinde ortak harita-denizi, 180° güvenliği ve bilgi körlüğü test edilir.
-- Sanat Yönetmeni salt kontrol listesi değil; dünya, doku, kompozisyon, karakter
-  ayrışması ve deste ritmi için yaratıcı brief/eleştiri üretir. Final görseli
-  Görsel Tasarım üretir; nihai estetik karar proje sahibinindir.
-- Kabul edilmiş zor-vaka setindeki 12 ön-yüz pilotu ve sıfırdan yedi arka-yüz,
-  Sanat Yönetmeni incelemesi ile kullanıcı + Baş Editör onayı almadan tam 121
-  üretime geçilmez. `b4afbcf...` bu kapıda `REWORK_REQUIRED` almıştır.
-
-## v2.6 kilitli omurga
-
-- 118 ana kart: 20 Karakter / 30 Güç / 1 Çürümüş Erzak / 15 Sadakat / 52 Harita.
-- 3 yardımcı kart: `SET-KL-01`, `SET-VL-01`, `SET-KP-01`; toplam 121 basılabilir
-  fiziksel kart.
-- Mahkûm için ayrı kart/token yoktur; Moderatör not alır.
-- Gövde 2; Hain tablosu 6:1, 7:2, 8–10:3, 11–13:4, 14–15:5.
-- v2.6 Kayalık arka yüzü Açık Denizden ayrıdır. Sea=Rock yalnız v2.7 DRAFT
-  kararıdır ve tam yeniden test gerektirir.
-- Kilitli artefakt hashleri `releases/v2.6/V26_RELEASE_MANIFEST.json` ve
-  `releases/v2.6/SHA256SUMS.txt` içindedir.
-
-## Kilit kuralı
-
-Kilit sürecini yalnız proje sahibinin açık `kilitle`, `stable yap` veya
-`release et` talimatı başlatır; kilidi yalnız Baş Editör uygular. Açık
-`FAIL/BLOCKER`, eksik exact candidate, eksik fiziksel kanıt veya geçersiz
-Simülasyon attestation varken sürüm kilitlenmez.
+- `releases/v2.6/` yerinde değişmez.
+- GitHub'a yazılmış olmak PASS, candidate, release veya lock değildir.
+- Specialist dalı yalnız `CURRENT_STAGE` ve
+  `WORKSTREAM_SCOPE_BASELINES.json` içinde exact yetkilendirilmiş dosyayı
+  değiştirebilir.
+- Handoff `TOOLS_USED`, `PLUGINS_USED`,
+  `PLUGINS_AVAILABLE_BUT_NOT_USED` ve `NOT_USED_REASON` alanlarını içerir.
+- Kilit sürecini yalnız proje sahibinin açık `kilitle/stable/release` talimatı
+  başlatır; açık blocker varken uygulanmaz.
 
 ## Güncel devam komutu
 
-> `governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json` kaydını oku. Exact pilot Sanat Yönetimi kapısını `12 FRONT KEEP / 7 BACK KEEP` ile geçmiştir. Proje sahibinin açık pilot estetik kararını al; bu karar gelmeden aktif candidate, yeni Görsel üretim, tam 121, PDF, Simülasyon, release veya kilit açma.
+> `governance/CURRENT_STAGE.json` içindeki tek dosyalık Sanat Yönetimi patch
+> düzeltmesini bekle. Bunun dışında üretim başlatma.
