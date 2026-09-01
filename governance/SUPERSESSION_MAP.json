@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "current_stage": "STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION",
+  "schema_version": "1.1",
+  "current_stage": "STAGE-20260901-V3-CLEAN-CLOSURE",
   "rule": "Only CURRENT_STAGE.json may declare a currently authorized task. Historical evidence remains immutable and cannot authorize work.",
   "supersessions": [
     {
@@ -23,18 +23,21 @@
         "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json@7418d9c2",
         "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md@7418d9c2"
       ],
-      "by": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
-      "current": "UPLOADED_KAPTAN_IS_BINDING_SET_KP_01_VISUAL_AND_COPY_SOURCE"
+      "by": "work/v2.7-art-direction@917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "current": "PROJECT_OWNER_ACCEPTED KAPTAN VISUAL/COPY/FRAMING CONTRACT"
     },
     {
-      "topic": "OLD_VISUAL_WORK_ORDERS",
+      "topic": "OLD_VISUAL_AND_MICRO_GATE_ORDERS",
       "historical_only": [
         "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
         "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
-        "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md"
+        "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+        "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md"
       ],
-      "current_order": "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md",
-      "current_authorized_action": "ART_DIRECTION_PATCH_CORRECTION_ONLY"
+      "completed_by": "work/v2.7-art-direction@917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "current_order": null,
+      "current_authorized_action": null,
+      "current": "V3_CLEAN_CLOSURE / NO_ACTIVE_SPECIALIST_WRITES"
     }
   ]
 }

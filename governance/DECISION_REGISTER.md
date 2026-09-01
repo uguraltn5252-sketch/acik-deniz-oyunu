@@ -49,6 +49,9 @@ geçersiz kılar.
 | `DEC-20260830-10` | BINDING DEFAULT-DENY WORKSTREAM SCOPE | Uzman dalı yalnız CURRENT_STAGE ve WORKSTREAM_SCOPE_BASELINES içinde exact yetkili path/bütçeyi reset baseline'dan sonraki cumulative diffte değiştirebilir. | Eski iş emri, PASS veya dal sahipliği yetki değildir; direct push ve PR aynı scope kontrolünden geçer. |
 | `DEC-20260830-11` | BINDING TOOL / PLUGIN EVIDENCE | Her handoff TOOLS_USED, PLUGINS_USED, PLUGINS_AVAILABLE_BUT_NOT_USED ve NOT_USED_REASON alanlarını verir. | Görevde zorunlu aracın kullanılmaması veya beyan edilmemesi BLOCKED_EVIDENCE_GAP'tir; kurulu eklenti sırf kurulu olduğu için otomatik zorunlu değildir. |
 
+| `DEC-20260901-01` | PROJECT OWNER ART DIRECTION PATCH ACCEPTANCE | `work/v2.7-art-direction@917f8b71f47eeecdfb12b7ec930796bf111e2858` exact KAPTAN patchi; bağlayıcı görsel kaynak, exact copy, bağımsız kadraj ve yaratıcı kalite standardı kabul edildi. | Kabul Görsel/thumbnail/candidate/tam 121/PDF/Simülasyon/release/lock yetkisi vermez. |
+| `DEC-20260901-02` | V3 CLEAN CLOSURE / V4 ENTRY GATE | `governance/CURRENT_STAGE.json` tek geri dönüş checkpointidir; v4 ayrı branchte paralel kurulur ve parity/negative test olmadan cutover yapılamaz. | LEAN GOVERNANCE SHALL REDUCE CONTEXT AND CEREMONY, NEVER REVIEW DEPTH, CREATIVE SCRUTINY, EVIDENCE QUALITY OR PROJECT OWNER CONTROL. |
+
 ## Açık kaynak dispozisyonu
 
 `SRC-002`: v2.6 kayıtlarındaki `GUC-22 = Bayat Peksimet` ile v2.7 kaynağındaki

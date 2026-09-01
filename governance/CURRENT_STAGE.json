@@ -1,26 +1,81 @@
 {
   "schema_version": "3.0",
-  "stage_id": "STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION",
-  "updated_at": "2026-08-30",
+  "stage_id": "STAGE-20260901-V3-CLEAN-CLOSURE",
+  "stage_status": "V3_CLEAN_CLOSURE_COMPLETE",
+  "updated_at": "2026-09-01",
   "authority": [
     "PROJECT_OWNER",
     "CHIEF_EDITOR"
   ],
   "integration_branch": "v2.7-design",
+  "canonical_checkpoint": {
+    "file": "governance/CURRENT_STAGE.json",
+    "git_binding": "THE_COMMIT_CONTAINING_THIS_FILE",
+    "pre_closure_integration_head": "0d7731a59f3ff689174a34bbfe5491e908c64dd3",
+    "rollback_policy": "Use the exact closure commit; never reconstruct state from chat."
+  },
   "baseline_release": "v2.6 STABLE / LOCKED",
   "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
-  "release_status": "DRAFT / NOT LOCKED / RELEASE BLOCKED",
+  "release_status": "v2.7 DRAFT / NOT LOCKED / RELEASE BLOCKED",
   "active_visual_candidate": null,
-  "rejected_visual_input": {
-    "branch": "work/v2.7-visual",
-    "commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
-    "status": "PROJECT_OWNER_REJECTED / HISTORICAL_EVIDENCE_ONLY"
+  "workstreams": {
+    "story": {
+      "branch": "work/v2.7-story",
+      "head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "status": "PAUSED / ACCEPTED HISTORICAL INPUT",
+      "authorization": null
+    },
+    "art_direction": {
+      "branch": "work/v2.7-art-direction",
+      "baseline_commit": "119136812c2c749e14e675f1400640664fa044bc",
+      "head": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "accepted_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "accepted_path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
+      "accepted_blob_sha": "bae77450d6d10e1e3234a3473bf68ffa1efff810",
+      "reported_word_count": 637,
+      "max_words": 700,
+      "status": "PATCH_ACCEPTED_BY_PROJECT_OWNER / PAUSED",
+      "authorization": null,
+      "validator_word_count": 645
+    },
+    "visual": {
+      "branch": "work/v2.7-visual",
+      "head": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+      "status": "PROJECT_OWNER_REJECTED / HOLD / HISTORICAL_EVIDENCE_ONLY",
+      "authorization": null
+    },
+    "simulation": {
+      "branch": "work/v2.7-simulation",
+      "head": null,
+      "status": "NOT_STARTED / BRANCH_ABSENT / NO_WRITES",
+      "authorization": null
+    }
+  },
+  "project_owner_acceptance": {
+    "decision_date": "2026-09-01",
+    "accepted_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+    "accepted_file": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
+    "scope_audit": "PASS / EXACT_ONE_MARKDOWN / REPORTED_637 / V3_VALIDATOR_645 / LIMIT_700 / NO_BINARY_OR_FORBIDDEN_ARTIFACT",
+    "content_audit": "PASS",
+    "accepted_contracts": [
+      "KAPTAN_BINDING_VISUAL_SOURCE",
+      "EXACT_COPY_LOCK",
+      "INDEPENDENT_ART_DIRECTION_FRAMING_GATE",
+      "FRAMING_PASS_OR_REFRAME_REQUIRED",
+      "ART_LANGUAGE_AND_CREATIVE_QUALITY_STANDARD"
+    ],
+    "does_not_authorize": [
+      "visual production",
+      "thumbnails",
+      "pilot or candidate",
+      "full 121 production",
+      "PDF or print package",
+      "simulation",
+      "release",
+      "lock"
+    ]
   },
   "project_owner_controls": {
-    "decision_evidence": [
-      "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json",
-      "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json"
-    ],
     "kaptan": {
       "technical_id": "SET-KP-01",
       "visible_title": "KAPTAN",
@@ -46,6 +101,15 @@
         "FRAMING_PASS",
         "REFRAME_REQUIRED"
       ],
+      "review_dimensions": [
+        "bleed and safe area",
+        "subject scale and focus",
+        "unintended crop",
+        "copy-area collision",
+        "thumbnail and table-distance readability",
+        "repeated plan/model/pose",
+        "full-deck composition rhythm"
+      ],
       "failure": "BLOCKED_FRAMING_DRIFT"
     },
     "backs": {
@@ -55,52 +119,74 @@
       "other_four": "HOLD / NOT_OWNER_ACCEPTED"
     }
   },
-  "current_authorization": {
-    "workstream": "Sanat Yönetimi",
-    "visible_chat": "FOULWAKE Sanat Yönetmeni",
-    "branch": "work/v2.7-art-direction",
-    "input_commit": "119136812c2c749e14e675f1400640664fa044bc",
-    "disposition_of_input": "REWORK_REQUIRED",
-    "exact_path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
-    "max_changed_files": 1,
-    "max_words": 700,
-    "required_corrections": [
-      "State that the uploaded KAPTAN card is the binding SET-KP-01 visual source, not merely a style reference.",
-      "Use the exact owner-authorized visible copy from FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json.",
-      "Add the independent all-card framing gate and its two allowed dispositions.",
-      "Do not create or edit any raster, layout, contact sheet, manifest, PDF or release artifact."
-    ],
-    "result_expected": "ART_LANGUAGE_PATCH_CORRECTED / PENDING_PROJECT_OWNER_ACCEPTANCE"
-  },
+  "current_authorization": null,
   "default_write_policy": "DENY_UNLESS_EXACTLY_AUTHORIZED_ABOVE",
-  "workstream_status": {
-    "story": "PAUSED / ACCEPTED HISTORICAL INPUT",
-    "art_direction": "ONE_FILE_CORRECTION_AUTHORIZED",
-    "visual": "PAUSED / NO WRITES",
-    "simulation": "NOT_STARTED / NO BRANCH / NO WRITES",
-    "chief_editor": "GOVERNANCE_INTEGRATION_AND_AUDIT"
+  "permissions": {
+    "visual_production": false,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": false,
+    "release": false,
+    "lock": false
   },
-  "next_stage_requires": [
-    "Corrected Art Direction patch on the authorized branch and exact path.",
-    "Project-owner acceptance of that patch.",
-    "New Chief Editor order before any six-thumbnail visual exploration."
-  ],
+  "open_blockers": {
+    "ART-001": "OPEN / owner-rejected visual package; no replacement candidate",
+    "SRC-002": "OPEN / GUC-22 and GUC-23 owner identity decision required",
+    "MEC-001": "OPEN / Sea=Rock simulation absent",
+    "QA-001": "OPEN / no active candidate attestation",
+    "QA-002": "OPEN / physical and human evidence absent",
+    "GOV-001": "OPEN / server-side branch protection unavailable",
+    "GOV-002": "OPEN / existing specialist branch push produced no Actions run; v4 bootstrap must close this",
+    "PHYSICAL-PROOF": "OPEN / print, cut, duplex, opacity, light and table-distance tests absent"
+  },
+  "v4_migration_gate": {
+    "status": "V4_MIGRATION_READY / NOT_STARTED",
+    "quality_principle": "LEAN GOVERNANCE SHALL REDUCE CONTEXT AND CEREMONY, NEVER REVIEW DEPTH, CREATIVE SCRUTINY, EVIDENCE QUALITY OR PROJECT OWNER CONTROL.",
+    "control_removal_rule": [
+      "A repeated chat/protocol control may be removed only when moved to more reliable automation.",
+      "Or it must remain unchanged in the relevant independent specialist quality gate."
+    ],
+    "entry_conditions": [
+      "Migration uses a separate branch.",
+      "Game content and production artifacts are out of migration scope.",
+      "This exact v3 checkpoint remains the rollback source.",
+      "v4 is installed in parallel before cutover.",
+      "The generic validator is compared against the v3 validator.",
+      "Negative and failure-path tests are run.",
+      "Quality-gate parity is proven before cutover.",
+      "Old chats are renewed only after successful cutover."
+    ],
+    "protected_quality_gates": [
+      "independent Art Direction",
+      "framing",
+      "semantic visual fit",
+      "art language",
+      "anatomy and object integrity",
+      "composition",
+      "originality and deck repetition",
+      "period fit",
+      "exact copy",
+      "back secrecy and topology",
+      "pilot and project-owner aesthetic acceptance",
+      "full-deck cohesion",
+      "independent Simulation and QA",
+      "physical print, duplex and table evidence",
+      "v2.6 immutability",
+      "explicit project-owner release and lock control"
+    ]
+  },
+  "next_action": "WAIT_FOR_A_NEW_EXACT_CHIEF_EDITOR_ORDER_TO_START_V4_ON_A_SEPARATE_BRANCH",
   "forbidden_now": [
     "new visual production",
+    "thumbnail production",
+    "pilot or candidate declaration",
     "full 121 production",
-    "contact sheets or layouts",
     "PDF or print package",
     "simulation",
     "release",
-    "lock"
-  ],
-  "open_blockers": [
-    "ART-001",
-    "SRC-002",
-    "MEC-001",
-    "QA-001",
-    "QA-002",
-    "GOV-001",
-    "PHYSICAL-PROOF"
+    "lock",
+    "v4 implementation on v2.7-design"
   ]
 }

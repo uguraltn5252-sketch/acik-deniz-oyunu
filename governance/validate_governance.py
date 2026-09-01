@@ -90,36 +90,56 @@ require(
 
 stage = load_json("governance/CURRENT_STAGE.json")
 require(stage.get("schema_version") == "3.0", "CURRENT_STAGE schema must be 3.0")
-require(
-    stage.get("stage_id") == "STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION",
-    "unexpected current stage",
-)
+require(stage.get("stage_id") == "STAGE-20260901-V3-CLEAN-CLOSURE", "unexpected current stage")
+require(stage.get("stage_status") == "V3_CLEAN_CLOSURE_COMPLETE", "v3 closure is not complete")
 require(stage.get("active_visual_candidate") is None, "active visual candidate must be null")
+require(stage.get("current_authorization") is None, "v3 closure must have no active authorization")
 require(
     stage.get("default_write_policy") == "DENY_UNLESS_EXACTLY_AUTHORIZED_ABOVE",
     "current stage is not fail-closed",
 )
-authorization = stage.get("current_authorization", {})
-require(authorization.get("branch") == "work/v2.7-art-direction", "only Art Direction may currently write")
-require(authorization.get("max_changed_files") == 1, "current file budget must be one")
-require(authorization.get("max_words") == 700, "current word budget must be 700")
+require(stage.get("locked_release_tree_sha") == expected_v26_tree, "CURRENT_STAGE v2.6 tree drift")
+workstreams = stage.get("workstreams", {})
+require(workstreams.get("story", {}).get("head") == "e04eef7f1fef6ea407feaaf26558551297c44b37", "story checkpoint head drift")
+require(workstreams.get("art_direction", {}).get("baseline_commit") == "119136812c2c749e14e675f1400640664fa044bc", "Art Direction accepted baseline drift")
+require(workstreams.get("art_direction", {}).get("accepted_commit") == "917f8b71f47eeecdfb12b7ec930796bf111e2858", "Art Direction accepted commit drift")
+require(workstreams.get("art_direction", {}).get("accepted_blob_sha") == "bae77450d6d10e1e3234a3473bf68ffa1efff810", "Art Direction accepted blob drift")
+require(workstreams.get("art_direction", {}).get("validator_word_count") == 645, "Art Direction validator word count record drift")
+require(workstreams.get("visual", {}).get("head") == "23c062f6de06c32eab224b3440c8474725d4fe9e", "Visual checkpoint head drift")
+require(workstreams.get("simulation", {}).get("head") is None, "Simulation must remain absent")
+require(all(item.get("authorization") is None for item in workstreams.values()), "specialist authorization remains open")
+
+permissions = stage.get("permissions", {})
+for permission in [
+    "visual_production","thumbnails","pilot_or_candidate","full_121_production",
+    "pdf_or_print_package","simulation","release","lock",
+]:
+    require(permissions.get(permission) is False, f"closure permission must be false: {permission}")
+
+migration = stage.get("v4_migration_gate", {})
+require(migration.get("status") == "V4_MIGRATION_READY / NOT_STARTED", "v4 migration gate status drift")
 require(
-    authorization.get("exact_path")
-    == "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
-    "wrong current exact path",
+    migration.get("quality_principle")
+    == "LEAN GOVERNANCE SHALL REDUCE CONTEXT AND CEREMONY, NEVER REVIEW DEPTH, CREATIVE SCRUTINY, EVIDENCE QUALITY OR PROJECT OWNER CONTROL.",
+    "lean-governance quality principle drift",
 )
+require(len(migration.get("entry_conditions", [])) == 8, "v4 entry-condition count drift")
+require(len(migration.get("protected_quality_gates", [])) >= 15, "v4 quality-gate parity set incomplete")
 
 scope = load_json("governance/WORKSTREAM_SCOPE_BASELINES.json")
 require(scope.get("locked_release_tree_sha") == expected_v26_tree, "scope config v2.6 tree drift")
+require(scope.get("checkpoint_stage") == stage.get("stage_id"), "scope/stage checkpoint mismatch")
 branches = scope.get("branches", {})
 require(set(branches) == {
     "work/v2.7-story","work/v2.7-art-direction","work/v2.7-visual","work/v2.7-simulation",
 }, "scope config branch set drift")
-art_auth = branches.get("work/v2.7-art-direction", {}).get("authorization", {})
-require(art_auth.get("stage_id") == stage.get("stage_id"), "scope/stage authorization mismatch")
-require(art_auth.get("exact_paths") == [authorization.get("exact_path")], "scope/stage path mismatch")
-require(branches.get("work/v2.7-story", {}).get("authorization") is None, "story must be paused")
-require(branches.get("work/v2.7-visual", {}).get("authorization") is None, "visual must be paused")
+require(branches.get("work/v2.7-story", {}).get("baseline_commit") == "e04eef7f1fef6ea407feaaf26558551297c44b37", "story scope baseline drift")
+require(branches.get("work/v2.7-art-direction", {}).get("baseline_commit") == "917f8b71f47eeecdfb12b7ec930796bf111e2858", "Art Direction scope baseline drift")
+require(branches.get("work/v2.7-art-direction", {}).get("accepted_from_baseline") == "119136812c2c749e14e675f1400640664fa044bc", "Art Direction provenance baseline drift")
+require(branches.get("work/v2.7-visual", {}).get("baseline_commit") == "23c062f6de06c32eab224b3440c8474725d4fe9e", "Visual scope baseline drift")
+require(all(
+    policy.get("authorization") is None for policy in branches.values()
+), "a specialist write authorization remains open")
 require(branches.get("work/v2.7-simulation", {}).get("branch_must_not_exist") is True, "simulation branch must remain forbidden")
 
 owner = load_json("governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json")
@@ -169,6 +189,29 @@ require(kp.get("exact_copy", {}).get("effect") == expected_copy["effect"], "mani
 require(kp.get("exact_copy", {}).get("flavor") == expected_copy["flavor"], "manifest KAPTAN flavor drift")
 require(kp.get("exact_source", {}).get("authority_scope") == "project_owner_uploaded_card_override", "manifest KAPTAN source is not the project-owner upload")
 
+accepted_patch_path = "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md"
+accepted_patch = (ROOT / accepted_patch_path).read_text(encoding="utf-8")
+require(git_tree(accepted_patch_path) == "bae77450d6d10e1e3234a3473bf68ffa1efff810", "accepted Art Direction patch blob drift")
+require(len(re.findall(r"\b[\w’'-]+\b", accepted_patch, flags=re.UNICODE)) <= 700, "accepted Art Direction patch exceeds 700 words")
+for phrase in [
+    "bağlayıcı ana görsel kaynağıdır",
+    "kaynak yalnız `STYLE_ONLY` değildir",
+    "boş sandalye veya farklı ana özneyle değiştirilemez",
+    "FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+    "Görsel üretim modeli bu metni üretmez",
+    "bütün ön ve arka kart illüstrasyonlarının kadrajını",
+    "kendi kadrajına nihai PASS veremez",
+    "FRAMING_PASS",
+    "REFRAME_REQUIRED",
+    "3 mm bleed",
+    "4–5 mm safe area",
+    "thumbnail ve normal masa-mesafesi okunurluğu",
+    "aynı plan, model, poz",
+    "deste genelindeki kompozisyon ve kadraj ritmi",
+    "yalınlaştırma sanat değerlendirmesinin derinliğini",
+]:
+    require(phrase in accepted_patch, f"accepted Art Direction patch semantic drift: {phrase}")
+
 active_docs = [
     "AI_HANDOFF.md","PROJECT_STATE.md","governance/WORKSTREAM_ASSIGNMENTS.md",
     "governance/WORKSTREAM_PROTOCOL.md","governance/RELEASE_GATE.md",
@@ -192,7 +235,8 @@ for phrase in ["mat ve ışıldamayan","FULL REDRAW","Uzun kayalık sırt zorunl
 for relative in ["AI_HANDOFF.md","PROJECT_STATE.md","governance/WORKSTREAM_ASSIGNMENTS.md"]:
     text = (ROOT / relative).read_text(encoding="utf-8")
     require("candidate" in text and "**YOK**" in text, f"{relative}: no-candidate state is not explicit")
-    require("11913681" in text, f"{relative}: current Art Direction baseline missing")
+    require("917f8b71" in text, f"{relative}: accepted Art Direction commit missing")
+    require("V3_CLEAN_CLOSURE_COMPLETE" in text, f"{relative}: v3 closure state missing")
 
 source_hierarchy = load_json("working/v2.7/SOURCE_HIERARCHY_v2.7.json")
 require(source_hierarchy.get("candidate_commit") is None, "source hierarchy candidate must be null")
@@ -230,7 +274,7 @@ require(lock_schema.get("properties", {}).get("open_blockers", {}).get("maxItems
 require(lock_schema.get("properties", {}).get("locked_release_tree_before", {}).get("const") == expected_v26_tree, "lock schema v2.6 tree drift")
 
 decisions = (ROOT / "governance/DECISION_REGISTER.md").read_text(encoding="utf-8")
-for decision in ["DEC-20260830-09","DEC-20260830-10","DEC-20260830-11"]:
+for decision in ["DEC-20260830-09","DEC-20260830-10","DEC-20260830-11","DEC-20260901-01","DEC-20260901-02"]:
     require(decision in decisions, f"decision register missing {decision}")
 require((ROOT / "governance/CHIEF_EDITOR_SYSTEM_AUDIT_20260830.md").is_file(), "Chief Editor system audit report missing")
 
@@ -243,7 +287,7 @@ if ERRORS:
 print("FOULWAKE governance validation: PASS")
 print("- all JSON parsed")
 print("- locked v2.6 exact tree preserved")
-print("- current stage and specialist scopes are fail-closed")
+print("- v3 clean closure checkpoint and specialist scopes are fail-closed")
 print("- KAPTAN visual/copy owner override is exact")
 print("- 121 IDs, families and seven back mappings are consistent")
-print("- copy, framing, plugin evidence and release schemas are enforced")
+print("- accepted Art Direction patch, copy, framing and v4 quality parity are enforced")

@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "version": "v2.7 DRAFT",
-  "status": "NOT LOCKED / RELEASE BLOCKED",
+  "status": "V3_CLEAN_CLOSURE / NOT LOCKED / RELEASE BLOCKED",
   "current_stage": "governance/CURRENT_STAGE.json",
   "candidate_commit": null,
   "conflict_action": "STOP_AND_HANDOFF_TO_CHIEF_EDITOR",
@@ -10,6 +10,7 @@
       "priority": 1,
       "source": "latest explicit project-owner decision",
       "implementation": [
+        "governance/CURRENT_STAGE.json",
         "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
         "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json"
       ]
@@ -36,7 +37,7 @@
     },
     {
       "priority": 6,
-      "source": "current active visual and art-direction specifications",
+      "source": "accepted art-direction specifications",
       "scope": "art, layout and production only; cannot rewrite content"
     }
   ],
@@ -45,11 +46,17 @@
     "specialist_scope": "governance/WORKSTREAM_SCOPE_BASELINES.json",
     "kaptan_copy": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
     "visual_system": "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
-    "current_order": "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md"
+    "current_order": null,
+    "accepted_art_direction_patch": {
+      "commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
+      "blob_sha": "bae77450d6d10e1e3234a3473bf68ffa1efff810"
+    }
   },
   "historical_only": {
     "rejected_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
     "prior_art_direction_pass": "governance/ART_DIRECTION_LIGHTHOUSE_FINAL_REVIEW_20260830.json",
+    "completed_micro_gate_order": "working/v2.7/visual/FOULWAKE_OWNER_RESET_FAST_MICRO_GATE_ORDER_v2.7.md",
     "previous_orders": [
       "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
       "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",

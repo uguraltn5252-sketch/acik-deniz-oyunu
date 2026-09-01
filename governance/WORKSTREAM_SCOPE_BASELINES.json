@@ -1,5 +1,6 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "checkpoint_stage": "STAGE-20260901-V3-CLEAN-CLOSURE",
   "config_branch": "v2.7-design",
   "policy": "DEFAULT_DENY / CUMULATIVE_DIFF_FROM_RESET_BASELINE",
   "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
@@ -20,19 +21,10 @@
       "authorization": null
     },
     "work/v2.7-art-direction": {
-      "baseline_commit": "119136812c2c749e14e675f1400640664fa044bc",
-      "authorization": {
-        "stage_id": "STAGE-20260830-KAPTAN-FRAMING-PATCH-CORRECTION",
-        "exact_paths": [
-          "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md"
-        ],
-        "max_changed_files": 1,
-        "allowed_extensions": [
-          ".md"
-        ],
-        "max_words_per_file": 700,
-        "binary_files_allowed": false
-      }
+      "baseline_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "accepted_from_baseline": "119136812c2c749e14e675f1400640664fa044bc",
+      "accepted_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "authorization": null
     },
     "work/v2.7-visual": {
       "baseline_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
