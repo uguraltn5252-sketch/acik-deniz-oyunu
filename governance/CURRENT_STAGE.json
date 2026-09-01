@@ -137,7 +137,7 @@
     "MEC-001": "OPEN / Sea=Rock simulation absent",
     "QA-001": "OPEN / no active candidate attestation",
     "QA-002": "OPEN / physical and human evidence absent",
-    "GOV-001": "OPEN / server-side branch protection unavailable",
+    "GOV-001": "OPEN / repository is public; main and v2.7-design branch protection and rulesets are not configured",
     "GOV-002": "OPEN / existing specialist branch push produced no Actions run; v4 bootstrap must close this",
     "PHYSICAL-PROOF": "OPEN / print, cut, duplex, opacity, light and table-distance tests absent"
   },
