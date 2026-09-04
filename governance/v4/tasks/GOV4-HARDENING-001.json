@@ -4,15 +4,15 @@
   "task_id": "GOV4-HARDENING-001",
   "task_type": "GOVERNANCE_V4_PRE_PRODUCTION_HARDENING",
   "project_task": true,
-  "status": "ACTIVE",
+  "status": "PENDING / BLOCKED_BY_SRC-002 / NOT_AUTHORIZED",
   "issued_by": "PROJECT_OWNER",
   "executor_role": "CHIEF_EDITOR",
   "reviewer_roles": [
     "SIMULATION_QA"
   ],
   "authorization": {
-    "enabled": true,
-    "write_authorized": true,
+    "enabled": false,
+    "write_authorized": false,
     "allowed_actions": [
       "WRITE",
       "MANAGE_STATE",
@@ -71,6 +71,13 @@
     ]
   },
   "open_dependency": "SRC-002",
+  "reactivation": {
+    "automatic_reactivation": false,
+    "required_conditions": [
+      "SRC-002_RESOLVED",
+      "NEW_EXACT_PROJECT_OWNER_AUTHORIZATION"
+    ]
+  },
   "temporary_subagents": {
     "maximum": 0,
     "reason": "Bounded single-writer governance hardening."

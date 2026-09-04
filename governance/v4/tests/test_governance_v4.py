@@ -64,12 +64,9 @@ class GovernanceV4Tests(unittest.TestCase):
 
     def test_02_generic_repository_validator_passes(self) -> None:
         result = validator.validate_repository(ROOT)
-        self.assertEqual(result["active_task_id"], "GOV4-HARDENING-001")
+        self.assertEqual(result["active_task_id"], None)
         self.assertTrue(result["cutover_performed"])
-        self.assertEqual(
-            result["loaded_task_ids"],
-            ["GOV4-CUTOVER-001", "GOV4-HARDENING-001"],
-        )
+        self.assertEqual(result["loaded_task_ids"], ["GOV4-CUTOVER-001"])
 
     def test_03_separate_migration_rework_audit_passes(self) -> None:
         accepted = self.state["migration_control"]["accepted_migration_commit"]
@@ -241,13 +238,15 @@ class GovernanceV4Tests(unittest.TestCase):
     def test_12_bootstrap_is_noncanonical_and_reflects_task_binding(self) -> None:
         visual = bootstrap.build_bootstrap(ROOT, "VISUAL_DESIGN")
         self.assertIn("GENERATED / NON_CANONICAL", visual)
-        self.assertIn("ACTIVE_PROJECT_TASK: GOV4-HARDENING-001", visual)
+        self.assertIn("ACTIVE_PROJECT_TASK: NONE", visual)
         self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", visual)
-        self.assertIn("CURRENT_ROLE_TASK_ACTIONS: NONE", visual)
         chief = bootstrap.build_bootstrap(ROOT, "CHIEF_EDITOR")
-        self.assertIn("TASK_BINDING: ACTIVE_PROJECT_TASK", chief)
-        self.assertIn("CURRENT_WRITE_AUTHORIZED: TRUE", chief)
-        self.assertIn("CURRENT_ROLE_TASK_ACTIONS: WRITE, MANAGE_STATE", chief)
+        self.assertIn("ACTIVE_PROJECT_TASK: NONE", chief)
+        self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", chief)
+        hardening = bootstrap.build_bootstrap(ROOT, "CHIEF_EDITOR", "GOV4-HARDENING-001")
+        self.assertIn("TASK_BINDING: INACTIVE / NO AUTHORITY", hardening)
+        self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", hardening)
+        self.assertIn("CURRENT_ROLE_TASK_ACTIONS: NONE", hardening)
         cutover = bootstrap.build_bootstrap(ROOT, "PROJECT_OWNER", "GOV4-CUTOVER-001")
         self.assertIn("TASK_BINDING: MIGRATION_CONTROL_ONLY", cutover)
         self.assertIn("CURRENT_ROLE_TASK_ACTIONS: NONE", cutover)

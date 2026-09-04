@@ -2,7 +2,7 @@
   "schema_version": "4.0",
   "canonical": true,
   "state_id": "V4-CUTOVER-20260904",
-  "status": "V4_CUTOVER_COMPLETE / GOVERNANCE_ACTIVE / ALL_PRODUCTION_CLOSED",
+  "status": "V4_CUTOVER_COMPLETE / GOVERNANCE_ACTIVE / IDLE_FAIL_CLOSED",
   "updated_at": "2026-09-04",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "GOV4-HARDENING-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -23,6 +23,7 @@
     "parallel_install": false,
     "cutover_performed": true,
     "cutover_commit_binding": "THE_COMMIT_CONTAINING_THIS_STATE",
+    "cutover_commit": "ffdfb4a3e1f4746f2b24940ee156816618bc13fc",
     "project_owner_cutover_approval": {
       "decision": "CUTOVER_APPROVED / GOVERNANCE_ONLY / FAIL_CLOSED",
       "accepted_commit": "a99add7abe91d6c2676046831229a7248c7e1351",
@@ -85,7 +86,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "COMPLETE_GOV4-HARDENING-001_BEFORE_ANY_VISUAL_THUMBNAIL_FULL_121_OR_PDF_TASK",
+  "next_action": "AWAIT_NEW_EXACT_PROJECT_OWNER_TASK_AFTER_SRC-002_RESOLUTION",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
