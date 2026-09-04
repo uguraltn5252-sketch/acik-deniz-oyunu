@@ -1,0 +1,128 @@
+{
+  "schema_version": "4.0",
+  "canonical": true,
+  "registry_id": "FOULWAKE-V4-ROLE-REGISTRY",
+  "default_policy": "DENY",
+  "task_scoped_writes": true,
+  "roles": {
+    "PROJECT_OWNER": {
+      "owns": [
+        "canon",
+        "material aesthetic decisions",
+        "material mechanics and player-experience decisions",
+        "release",
+        "lock",
+        "governance cutover"
+      ],
+      "allowed_actions": [
+        "READ_ONLY_VALIDATION",
+        "CANON_DECISION",
+        "PROJECT_OWNER_AESTHETIC_ACCEPTANCE",
+        "MECHANIC_OR_PLAYER_EXPERIENCE_DECISION",
+        "EXPENSIVE_OR_IRREVERSIBLE_PRODUCTION_DECISION",
+        "CUTOVER_DECISION",
+        "RELEASE",
+        "LOCK"
+      ],
+      "writes_require_exact_task": true
+    },
+    "CHIEF_EDITOR": {
+      "owns": [
+        "task issuance",
+        "integration",
+        "runtime state",
+        "source conflict management"
+      ],
+      "allowed_actions": [
+        "READ_ONLY_VALIDATION",
+        "OPEN_TASK",
+        "INTEGRATE",
+        "MANAGE_STATE",
+        "RESOLVE_SOURCE_CONFLICT",
+        "WRITE"
+      ],
+      "cannot": [
+        "assume project-owner approval",
+        "self-authorize release or lock"
+      ],
+      "writes_require_exact_task": true
+    },
+    "STORY_EDITOR": {
+      "owns": [
+        "story",
+        "flavor",
+        "period language"
+      ],
+      "allowed_actions": [
+        "READ_ONLY_VALIDATION",
+        "PRODUCE_STORY",
+        "PRODUCE_FLAVOR",
+        "PERIOD_LANGUAGE_REVIEW"
+      ],
+      "cannot": [
+        "change mechanics",
+        "change layout"
+      ],
+      "writes_require_exact_task": true
+    },
+    "VISUAL_DESIGN": {
+      "owns": [
+        "visual production",
+        "layout production"
+      ],
+      "allowed_actions": [
+        "READ_ONLY_VALIDATION",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT"
+      ],
+      "cannot": [
+        "give final PASS to own work",
+        "make FRAMING_PASS or REFRAME_REQUIRED decisions",
+        "generate or rewrite card copy"
+      ],
+      "writes_require_exact_task": true
+    },
+    "ART_DIRECTION": {
+      "owns": [
+        "art language",
+        "framing",
+        "composition",
+        "deck rhythm"
+      ],
+      "allowed_actions": [
+        "READ_ONLY_VALIDATION",
+        "ART_LANGUAGE_REVIEW",
+        "FRAMING_DECISION",
+        "COMPOSITION_REVIEW",
+        "DECK_RHYTHM_REVIEW",
+        "AESTHETIC_RECOMMENDATION"
+      ],
+      "cannot": [
+        "own visual production",
+        "replace project-owner aesthetic acceptance"
+      ],
+      "writes_require_exact_task": true
+    },
+    "SIMULATION_QA": {
+      "owns": [
+        "mechanics validation",
+        "balance evidence",
+        "exact-copy QA",
+        "digital and physical evidence review"
+      ],
+      "allowed_actions": [
+        "READ_ONLY_VALIDATION",
+        "RUN_SIMULATION",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "PHYSICAL_EVIDENCE_REVIEW",
+        "RULES_INTEGRITY_REVIEW"
+      ],
+      "cannot": [
+        "directly change story, mechanics, card copy, visual or layout content",
+        "replace project-owner release or lock"
+      ],
+      "writes_require_exact_task": true
+    }
+  }
+}

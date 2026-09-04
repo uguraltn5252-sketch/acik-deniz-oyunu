@@ -1,0 +1,158 @@
+{
+  "schema_version": "4.0",
+  "canonical": true,
+  "contract_set_id": "FOULWAKE-V4-PERMANENT-CONTRACTS",
+  "quality_principle": "LEAN GOVERNANCE SHALL REDUCE CONTEXT AND CEREMONY, NEVER REVIEW DEPTH, CREATIVE SCRUTINY, EVIDENCE QUALITY OR PROJECT OWNER CONTROL.",
+  "control_removal_rule": {
+    "allowed_only_if": [
+      "The control moves to more reliable automated validation.",
+      "The control remains unchanged in the relevant independent specialist quality gate."
+    ],
+    "insufficient_reason": "Chat or token length alone never justifies removing a quality control."
+  },
+  "canonical_source_hierarchy": {
+    "active_state": "governance/v4/runtime/STATE.json",
+    "active_task_authority_pattern": "governance/v4/tasks/<TASK_ID>.json",
+    "permanent_contracts": "governance/v4/contracts/CONTRACTS.json",
+    "role_authority": "governance/v4/roles/REGISTRY.json",
+    "exact_card_copy": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+    "v3_rollback_checkpoint": "v2.7-design@5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
+    "history_policy": "history/evidence is non-canonical, cannot authorize work, and cannot override runtime, task, contract or role records"
+  },
+  "protected_quality_gates": [
+    "V2_6_IMMUTABILITY",
+    "CANONICAL_SOURCE_HIERARCHY",
+    "EXACT_COPY",
+    "KAPTAN_OWNER_CONTRACT",
+    "INDEPENDENT_ART_DIRECTION",
+    "FRAMING_PASS_OR_REFRAME_REQUIRED",
+    "SEMANTIC_VISUAL_FIT",
+    "COMPOSITION_AND_ANATOMY_OBJECT_INTEGRITY",
+    "ORIGINALITY_AND_DECK_REPETITION",
+    "PERIOD_FIT",
+    "BACK_SECRECY_AND_TOPOLOGY",
+    "PROJECT_OWNER_AESTHETIC_ACCEPTANCE",
+    "FULL_DECK_COHESION_REVIEW",
+    "INDEPENDENT_SIMULATION_QA",
+    "PHYSICAL_PRINT_DUPLEX_TABLE_EVIDENCE",
+    "EXPLICIT_PROJECT_OWNER_RELEASE_AND_LOCK"
+  ],
+  "owner_controls": {
+    "kaptan": {
+      "technical_id": "SET-KP-01",
+      "visible_title": "KAPTAN",
+      "binding_visual_source": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+      "source_sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
+      "source_git_blob": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4",
+      "source_policy": "BINDING_KAPTAN_CARD_VISUAL_SOURCE / NOT_STYLE_ONLY",
+      "main_subject_policy": "The KAPTAN main figure and composition cannot be replaced by an empty chair or another main subject.",
+      "allowed_small_changes": [
+        "crop",
+        "scale",
+        "color",
+        "background"
+      ],
+      "deck_language_policy": "Binding art language; ship, gull and the exact scene are not deck-wide requirements.",
+      "accepted_art_direction_patch": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
+      "accepted_patch_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "accepted_patch_blob": "bae77450d6d10e1e3234a3473bf68ffa1efff810"
+    },
+    "exact_copy": {
+      "source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "source_sha256": "8eca6db58c866b247cb6197aec2022ff0210e50e2fba98a4fcc02fbed4eabd55",
+      "source_git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30",
+      "identity_field": "id",
+      "visible_fields": [
+        "title",
+        "section_label",
+        "effect",
+        "flavor"
+      ],
+      "image_model_may_generate_or_rewrite_copy": false,
+      "placement": "TEMPLATE_COMPOSITE_FROM_CANONICAL_UTF8",
+      "verification": "OCR_OR_RENDER_SOURCE_EXACT_COMPARE",
+      "failure_code": "BLOCKED_COPY_DRIFT"
+    },
+    "framing": {
+      "scope": "ALL_FRONT_AND_BACK_CARD_ILLUSTRATIONS_AT_EVERY_GATE",
+      "independent_reviewer_role": "ART_DIRECTION",
+      "producer_role": "VISUAL_DESIGN",
+      "producer_self_approval": false,
+      "allowed_dispositions": [
+        "FRAMING_PASS",
+        "REFRAME_REQUIRED"
+      ],
+      "required_dimensions": [
+        "bleed",
+        "safe area",
+        "subject scale",
+        "focus",
+        "unintended crop",
+        "copy-area collision",
+        "thumbnail and table-distance readability",
+        "repeated plan/model/pose",
+        "full-deck composition rhythm"
+      ],
+      "failure_code": "BLOCKED_FRAMING_DRIFT"
+    }
+  },
+  "project_owner_required_actions": [
+    "CANON_DECISION",
+    "PROJECT_OWNER_AESTHETIC_ACCEPTANCE",
+    "MECHANIC_OR_PLAYER_EXPERIENCE_DECISION",
+    "EXPENSIVE_OR_IRREVERSIBLE_PRODUCTION_DECISION",
+    "CUTOVER_DECISION",
+    "RELEASE",
+    "LOCK"
+  ],
+  "release_and_lock": {
+    "required_role": "PROJECT_OWNER",
+    "explicit_decision_required": true,
+    "open_blockers_must_be_empty": true,
+    "required_permission_must_be_true": true
+  },
+  "rules_integrity": {
+    "permanent_rules_editor_role": false,
+    "allowed_review_task_type": "RULES_INTEGRITY_REVIEW",
+    "review_is_read_only": true
+  },
+  "temporary_subagents": {
+    "default": "DO_NOT_USE",
+    "normal_maximum": 2,
+    "exceptional_full_deck_maximum": 3,
+    "allowed_work": "Independent, bounded and predominantly read-only review.",
+    "same_file_parallel_writes": false,
+    "may_make_final_aesthetic_canon_or_release_decision": false,
+    "evidence_requirement": "Record the reason and short findings; do not copy raw logs into the main handoff."
+  },
+  "skills_and_plugins": {
+    "continuous_or_mandatory_use": false,
+    "use_only_when": "The tool materially improves task quality or reliability.",
+    "irrelevant_calls_forbidden": true,
+    "raw_tool_output_in_main_handoff": false,
+    "evidence_fields": [
+      "tool_or_plugin",
+      "concrete_benefit"
+    ],
+    "repeatable_work": "Prefer bootstrap or skill instructions over long repeated chat commands."
+  },
+  "project_owner_decision_requests": {
+    "material_decisions_only": true,
+    "option_count_min": 2,
+    "option_count_max": 3,
+    "recommended_option_first": true,
+    "short_impact_required": true,
+    "routine_reversible_technical_details_must_not_block_owner": true
+  },
+  "cutover_conditions": [
+    "Migration remains on a separate branch.",
+    "Game content and production artifacts remain unchanged.",
+    "The exact v3 rollback checkpoint is preserved.",
+    "v4 is installed in parallel.",
+    "The v3 and v4 validators both pass.",
+    "Parity and negative tests pass.",
+    "Quality-gate parity is proven.",
+    "Project owner explicitly approves cutover.",
+    "Old specialist chats are replaced only after successful cutover."
+  ]
+}

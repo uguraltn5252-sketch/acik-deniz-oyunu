@@ -1,0 +1,95 @@
+{
+  "schema_version": "4.0",
+  "canonical": true,
+  "state_id": "V4-PARALLEL-20260904",
+  "status": "V4_PARALLEL_BUILD_COMPLETE / PARITY_PASS / PENDING_PROJECT_OWNER_CUTOVER_APPROVAL",
+  "updated_at": "2026-09-04",
+  "source_checkpoint": {
+    "branch": "v2.7-design",
+    "commit": "5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
+    "v3_stage_id": "STAGE-20260901-V3-CLEAN-CLOSURE",
+    "v3_status": "V3_CLEAN_CLOSURE_COMPLETE",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
+    "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
+  },
+  "active_project_task_id": null,
+  "current_project_authorization": null,
+  "migration_control": {
+    "branch": "migration/governance-v4",
+    "task_id": "GOV4-MIGRATION-001",
+    "task_ref": "governance/v4/tasks/GOV4-MIGRATION-001.json",
+    "evidence_ref": "governance/v4/evidence/MIGRATION_RESULT.json",
+    "parallel_install": true,
+    "cutover_performed": false,
+    "project_owner_cutover_approval": null
+  },
+  "active_visual_candidate": null,
+  "workstreams": {
+    "story": {
+      "branch": "work/v2.7-story",
+      "head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "status": "PAUSED / ACCEPTED HISTORICAL INPUT"
+    },
+    "art_direction": {
+      "branch": "work/v2.7-art-direction",
+      "head": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "accepted_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "status": "PATCH_ACCEPTED_BY_PROJECT_OWNER / PAUSED"
+    },
+    "visual": {
+      "branch": "work/v2.7-visual",
+      "head": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+      "status": "PROJECT_OWNER_REJECTED / HOLD / HISTORICAL_EVIDENCE_ONLY"
+    },
+    "simulation": {
+      "branch": "work/v2.7-simulation",
+      "head": null,
+      "status": "NOT_STARTED / BRANCH_ABSENT / NO_WRITES"
+    }
+  },
+  "visual_dispositions": {
+    "BACK_SEA_ROCK": "REWORK_REQUIRED / MATTE_NO_SHINE",
+    "BACK_ISLAND": "REWORK_REQUIRED / FULL_REDRAW",
+    "BACK_LIGHTHOUSE": "REWORK_REQUIRED / LARGER_LIGHTHOUSE / LONG_RIDGE_NOT_REQUIRED",
+    "OTHER_FOUR_BACKS": "HOLD / NOT_OWNER_ACCEPTED"
+  },
+  "permissions": {
+    "visual_production": false,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "open_blockers": {
+    "ART-001": "Owner-rejected visual package; no replacement candidate.",
+    "SRC-002": "GUC-22 and GUC-23 owner identity decision required.",
+    "MEC-001": "Sea=Rock simulation absent.",
+    "QA-001": "No active candidate attestation.",
+    "QA-002": "Physical and human evidence absent.",
+    "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
+    "GOV-002": "Existing specialist branch push produced no Actions run; bootstrap enforcement remains open.",
+    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
+  },
+  "canonical_refs": {
+    "contracts": "governance/v4/contracts/CONTRACTS.json",
+    "roles": "governance/v4/roles/REGISTRY.json"
+  },
+  "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
+  "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
+  "next_action": "PROJECT_OWNER_REVIEWS_PARITY_EVIDENCE_AND_DECIDES_CUTOVER",
+  "forbidden_without_new_exact_authorization": [
+    "game-content change",
+    "visual or layout production",
+    "thumbnail or candidate declaration",
+    "full 121 production",
+    "PDF or print package",
+    "simulation",
+    "release",
+    "lock",
+    "merge to v2.7-design",
+    "specialist-chat replacement"
+  ]
+}

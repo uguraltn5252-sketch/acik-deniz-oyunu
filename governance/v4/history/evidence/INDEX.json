@@ -1,0 +1,38 @@
+{
+  "schema_version": "4.0",
+  "canonical": false,
+  "may_authorize_work": false,
+  "purpose": "Historical provenance and external-reference backlog only.",
+  "records": [
+    {
+      "evidence_id": "V3-CLEAN-CLOSURE",
+      "type": "ROLLBACK_CHECKPOINT",
+      "branch": "v2.7-design",
+      "commit": "5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
+      "status": "V3_CLEAN_CLOSURE_COMPLETE"
+    },
+    {
+      "evidence_id": "ART-DIRECTION-KAPTAN-PATCH",
+      "type": "PROJECT_OWNER_ACCEPTED_INPUT",
+      "branch": "work/v2.7-art-direction",
+      "commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md"
+    },
+    {
+      "evidence_id": "VISUAL-PRE-RESET",
+      "type": "HISTORICAL_REJECTED_VISUAL_INPUT",
+      "branch": "work/v2.7-visual",
+      "commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+      "status": "PROJECT_OWNER_REJECTED / HOLD / NOT_A_CANDIDATE"
+    },
+    {
+      "evidence_id": "EXTERNAL-RULEBOOK-DRAFT",
+      "type": "EXTERNAL_REFERENCE_BACKLOG",
+      "filename": "FOULWAKE_Kural_Kitabi_v2.7_TASLAK.pdf",
+      "sha256": "09b3c87199aeafe6c8a4df06e4d294625594d6c36b4ce5066da7e3fc926b4156",
+      "status": "NON_CANONICAL_DRAFT / REFERENCE_ONLY",
+      "repository_artifact_present": false,
+      "repository_inclusion": "FORBIDDEN_IN_GOV4_MIGRATION_TASK"
+    }
+  ]
+}

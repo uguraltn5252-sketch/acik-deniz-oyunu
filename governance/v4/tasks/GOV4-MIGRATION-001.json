@@ -1,0 +1,74 @@
+{
+  "schema_version": "4.0",
+  "canonical_task_authority": true,
+  "task_id": "GOV4-MIGRATION-001",
+  "task_type": "GOVERNANCE_PARALLEL_MIGRATION",
+  "project_task": false,
+  "status": "DELIVERED / READ_ONLY_PENDING_PROJECT_OWNER_CUTOVER_DECISION",
+  "issued_by": "PROJECT_OWNER",
+  "executor_role": "CHIEF_EDITOR",
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "delivery_scope": {
+    "branch": "migration/governance-v4",
+    "allowed_globs": [
+      "governance/v4/**"
+    ],
+    "expected_paths": [
+      "governance/v4/bootstrap.py",
+      "governance/v4/contracts/CONTRACTS.json",
+      "governance/v4/evidence/MIGRATION_RESULT.json",
+      "governance/v4/history/evidence/INDEX.json",
+      "governance/v4/roles/REGISTRY.json",
+      "governance/v4/runtime/STATE.json",
+      "governance/v4/tasks/GOV4-MIGRATION-001.json",
+      "governance/v4/tests/fixtures/NEGATIVE_CASES.json",
+      "governance/v4/tests/test_governance_v4.py",
+      "governance/v4/validator.py"
+    ],
+    "max_changed_files": 10,
+    "allowed_extensions": [
+      ".json",
+      ".py"
+    ],
+    "forbidden_prefixes": [
+      ".github/",
+      "releases/",
+      "working/"
+    ],
+    "forbidden_exact_paths": [
+      "AI_HANDOFF.md",
+      "PROJECT_STATE.md",
+      "governance/CURRENT_STAGE.json",
+      "governance/validate_governance.py",
+      "governance/validate_workstream_scope.py"
+    ],
+    "binary_files_allowed": false,
+    "game_content_or_production_artifacts_allowed": false
+  },
+  "current_authorization": {
+    "write_authorized": false,
+    "allowed_actions": [
+      "READ_ONLY_VALIDATION",
+      "CUTOVER_DECISION"
+    ],
+    "closure_reason": "Parallel build delivered; no additional write is authorized by this task."
+  },
+  "required_checks": [
+    "V3_VALIDATOR_PASS",
+    "V4_GENERIC_VALIDATOR_PASS",
+    "V26_TREE_EXACT",
+    "V3_V4_PARITY_PASS",
+    "NEGATIVE_TESTS_PASS",
+    "SCOPE_EXACT",
+    "NO_CUTOVER"
+  ],
+  "temporary_subagents": {
+    "used": 0,
+    "reason": "Single-writer migration was sufficiently bounded; independent subagents were unnecessary."
+  },
+  "completion_evidence": "governance/v4/evidence/MIGRATION_RESULT.json"
+}

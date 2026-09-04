@@ -1,0 +1,111 @@
+{
+  "schema_version": "4.0",
+  "evidence_type": "GOVERNANCE_V4_PARALLEL_MIGRATION",
+  "canonical_authority": false,
+  "migration_commit_binding": "THE_COMMIT_CONTAINING_THIS_FILE",
+  "source_verification": {
+    "branch": "v2.7-design",
+    "head": "5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
+    "root_tree": "dc8e6d8c451c4cc37263572b86672b71e1964947",
+    "v26_locked_tree": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
+    "v3_status": "V3_CLEAN_CLOSURE_COMPLETE",
+    "active_candidate": null,
+    "all_project_permissions_closed": true,
+    "result": "PASS"
+  },
+  "migration_branch": "migration/governance-v4",
+  "scope_audit": {
+    "source": "governance/v4/tasks/GOV4-MIGRATION-001.json#/delivery_scope",
+    "changed_files": 10,
+    "only_governance_v4": true,
+    "binary_or_production_artifact_changes": 0,
+    "v3_governance_changed": false,
+    "working_v2_7_changed": false,
+    "releases_v2_6_changed": false,
+    "result": "PASS"
+  },
+  "v4_structure": {
+    "runtime_state": "governance/v4/runtime/STATE.json",
+    "task_authority": "governance/v4/tasks/GOV4-MIGRATION-001.json",
+    "contracts": "governance/v4/contracts/CONTRACTS.json",
+    "role_registry": "governance/v4/roles/REGISTRY.json",
+    "generic_validator": "governance/v4/validator.py",
+    "bootstrap_generator": "governance/v4/bootstrap.py",
+    "tests": "governance/v4/tests/test_governance_v4.py",
+    "fixtures": "governance/v4/tests/fixtures/NEGATIVE_CASES.json",
+    "history_evidence": "governance/v4/history/evidence/INDEX.json"
+  },
+  "validator_result": {
+    "v3_command": "python3 governance/validate_governance.py",
+    "v3_result": "PASS",
+    "v4_command": "python3 governance/v4/validator.py --audit-branch migration/governance-v4",
+    "v4_result": "PASS"
+  },
+  "parity_result": {
+    "result": "PASS",
+    "assertions": [
+      "write_authority",
+      "active_task",
+      "v26_tree",
+      "active_candidate",
+      "open_blockers",
+      "permissions",
+      "workstream_heads",
+      "accepted_art_direction"
+    ],
+    "protected_quality_gate_count": 16
+  },
+  "negative_test_result": {
+    "result": "PASS",
+    "passed": 9,
+    "failed": 0,
+    "cases": [
+      "NEG-01-WRONG-BRANCH",
+      "NEG-02-OUT-OF-SCOPE-FILE",
+      "NEG-03-V26-TREE-DRIFT",
+      "NEG-04-SPECIALIST-SELF-APPROVAL",
+      "NEG-05-EXACT-COPY-DRIFT",
+      "NEG-06-CLOSED-TASK-REUSE",
+      "NEG-07-BLOCKERS-OPEN-RELEASE",
+      "NEG-08-VISUAL-FRAMING-PASS",
+      "NEG-09-OWNER-BYPASS"
+    ]
+  },
+  "test_suite": {
+    "command": "python3 -m unittest discover -s governance/v4/tests -p 'test_*.py' -v",
+    "tests_run": 12,
+    "failures": 0,
+    "errors": 0,
+    "result": "PASS"
+  },
+  "temporary_subagents": {
+    "used": 0,
+    "reason": "No independent subtask justified delegation; a single writer avoided parallel-file conflicts."
+  },
+  "skills_or_plugins_used": [
+    {
+      "tool_or_plugin": "GitHub",
+      "concrete_benefit": "Verified exact remote refs, commit/tree identity and created the isolated migration branch and commit."
+    },
+    {
+      "tool_or_plugin": "personal-context skill",
+      "concrete_benefit": "Preserved the user's prior KAPTAN, copy-lock, framing and lean-governance constraints."
+    }
+  ],
+  "game_content_or_production_artifact_changed": false,
+  "cutover_performed": false,
+  "merged_to_v2_7_design": false,
+  "specialist_chats_replaced": false,
+  "open_blockers": [
+    "ART-001",
+    "SRC-002",
+    "MEC-001",
+    "QA-001",
+    "QA-002",
+    "GOV-001",
+    "GOV-002",
+    "PHYSICAL-PROOF"
+  ],
+  "result": "V4_PARALLEL_BUILD_COMPLETE / PARITY_PASS / PENDING_PROJECT_OWNER_CUTOVER_APPROVAL",
+  "next_action": "PROJECT_OWNER_REVIEWS_THIS_EXACT_MIGRATION_COMMIT_AND_APPROVES_OR_REJECTS_CUTOVER"
+}

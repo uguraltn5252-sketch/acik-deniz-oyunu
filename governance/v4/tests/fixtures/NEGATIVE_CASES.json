@@ -1,0 +1,90 @@
+{
+  "schema_version": "4.0",
+  "canonical": false,
+  "fixture_type": "FAIL_CLOSED_NEGATIVE_CASES",
+  "cases": [
+    {
+      "id": "NEG-01-WRONG-BRANCH",
+      "type": "DELIVERY_SCOPE",
+      "branch": "v2.7-design",
+      "paths": "TASK_EXPECTED_PATHS",
+      "expected_code": "WRONG_BRANCH"
+    },
+    {
+      "id": "NEG-02-OUT-OF-SCOPE-FILE",
+      "type": "DELIVERY_SCOPE",
+      "branch": "migration/governance-v4",
+      "paths": [
+        "working/v2.7/UNAUTHORIZED.md"
+      ],
+      "expected_code": "OUT_OF_SCOPE_PATH"
+    },
+    {
+      "id": "NEG-03-V26-TREE-DRIFT",
+      "type": "LOCKED_TREE",
+      "actual": "0000000000000000000000000000000000000000",
+      "expected_code": "V26_TREE_DRIFT"
+    },
+    {
+      "id": "NEG-04-SPECIALIST-SELF-APPROVAL",
+      "type": "ACTION",
+      "request": {
+        "role": "VISUAL_DESIGN",
+        "action": "FINAL_AESTHETIC_APPROVAL",
+        "producer_role": "VISUAL_DESIGN"
+      },
+      "expected_code": "SELF_APPROVAL_FORBIDDEN"
+    },
+    {
+      "id": "NEG-05-EXACT-COPY-DRIFT",
+      "type": "COPY_MUTATION",
+      "mutation": {
+        "title": "KAPTAN MAKAMI"
+      },
+      "expected_code": "EXACT_COPY_DRIFT"
+    },
+    {
+      "id": "NEG-06-CLOSED-TASK-REUSE",
+      "type": "ACTION",
+      "request": {
+        "role": "CHIEF_EDITOR",
+        "action": "WRITE",
+        "task_id": "GOV4-MIGRATION-001",
+        "branch": "migration/governance-v4",
+        "path": "governance/v4/runtime/STATE.json"
+      },
+      "expected_code": "TASK_CLOSED"
+    },
+    {
+      "id": "NEG-07-BLOCKERS-OPEN-RELEASE",
+      "type": "ACTION",
+      "request": {
+        "role": "PROJECT_OWNER",
+        "action": "RELEASE",
+        "explicit_owner_decision": true
+      },
+      "expected_code": "OPEN_BLOCKERS"
+    },
+    {
+      "id": "NEG-08-VISUAL-FRAMING-PASS",
+      "type": "ACTION",
+      "request": {
+        "role": "VISUAL_DESIGN",
+        "action": "FRAMING_DECISION",
+        "producer_role": "VISUAL_DESIGN",
+        "disposition": "FRAMING_PASS"
+      },
+      "expected_code": "FRAMING_REVIEWER_INVALID"
+    },
+    {
+      "id": "NEG-09-OWNER-BYPASS",
+      "type": "ACTION",
+      "request": {
+        "role": "CHIEF_EDITOR",
+        "action": "PROJECT_OWNER_AESTHETIC_ACCEPTANCE",
+        "producer_role": "VISUAL_DESIGN"
+      },
+      "expected_code": "PROJECT_OWNER_REQUIRED"
+    }
+  ]
+}
