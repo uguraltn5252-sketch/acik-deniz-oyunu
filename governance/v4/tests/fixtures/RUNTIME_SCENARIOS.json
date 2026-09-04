@@ -16,6 +16,10 @@
       "active_visual_candidate": null,
       "permissions": {
         "visual_production": false,
+        "thumbnails": false,
+        "pilot_or_candidate": false,
+        "full_121_production": false,
+        "pdf_or_print_package": false,
         "simulation": false,
         "release": false,
         "lock": false
@@ -28,6 +32,8 @@
       "migration_control": {
         "task_id": null,
         "cutover_performed": true,
+        "cutover_commit_binding": "EXPLICIT_CUTOVER_COMMIT",
+        "cutover_commit": "cccccccccccccccccccccccccccccccccccccccc",
         "project_owner_cutover_approval": "EXPLICIT"
       },
       "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
@@ -45,6 +51,10 @@
       "active_visual_candidate": null,
       "permissions": {
         "visual_production": false,
+        "thumbnails": false,
+        "pilot_or_candidate": false,
+        "full_121_production": false,
+        "pdf_or_print_package": false,
         "simulation": false,
         "release": false,
         "lock": false
@@ -57,6 +67,8 @@
       "migration_control": {
         "task_id": null,
         "cutover_performed": true,
+        "cutover_commit_binding": "EXPLICIT_CUTOVER_COMMIT",
+        "cutover_commit": "cccccccccccccccccccccccccccccccccccccccc",
         "project_owner_cutover_approval": "EXPLICIT"
       },
       "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
@@ -74,6 +86,10 @@
       "active_visual_candidate": null,
       "permissions": {
         "visual_production": true,
+        "thumbnails": true,
+        "pilot_or_candidate": true,
+        "full_121_production": true,
+        "pdf_or_print_package": true,
         "simulation": false,
         "release": false,
         "lock": false
@@ -86,6 +102,8 @@
       "migration_control": {
         "task_id": null,
         "cutover_performed": true,
+        "cutover_commit_binding": "EXPLICIT_CUTOVER_COMMIT",
+        "cutover_commit": "cccccccccccccccccccccccccccccccccccccccc",
         "project_owner_cutover_approval": "EXPLICIT"
       },
       "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
@@ -103,6 +121,10 @@
       "active_visual_candidate": null,
       "permissions": {
         "visual_production": false,
+        "thumbnails": false,
+        "pilot_or_candidate": false,
+        "full_121_production": false,
+        "pdf_or_print_package": false,
         "simulation": false,
         "release": false,
         "lock": false
@@ -115,6 +137,8 @@
       "migration_control": {
         "task_id": null,
         "cutover_performed": true,
+        "cutover_commit_binding": "EXPLICIT_CUTOVER_COMMIT",
+        "cutover_commit": "cccccccccccccccccccccccccccccccccccccccc",
         "project_owner_cutover_approval": "EXPLICIT"
       },
       "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
@@ -132,6 +156,10 @@
       "active_visual_candidate": null,
       "permissions": {
         "visual_production": false,
+        "thumbnails": false,
+        "pilot_or_candidate": false,
+        "full_121_production": false,
+        "pdf_or_print_package": false,
         "simulation": false,
         "release": false,
         "lock": false
@@ -144,6 +172,8 @@
       "migration_control": {
         "task_id": null,
         "cutover_performed": true,
+        "cutover_commit_binding": "EXPLICIT_CUTOVER_COMMIT",
+        "cutover_commit": "cccccccccccccccccccccccccccccccccccccccc",
         "project_owner_cutover_approval": "EXPLICIT"
       },
       "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
@@ -161,6 +191,10 @@
       "active_visual_candidate": null,
       "permissions": {
         "visual_production": false,
+        "thumbnails": false,
+        "pilot_or_candidate": false,
+        "full_121_production": false,
+        "pdf_or_print_package": false,
         "simulation": false,
         "release": true,
         "lock": false
@@ -175,6 +209,8 @@
       "migration_control": {
         "task_id": null,
         "cutover_performed": true,
+        "cutover_commit_binding": "EXPLICIT_CUTOVER_COMMIT",
+        "cutover_commit": "cccccccccccccccccccccccccccccccccccccccc",
         "project_owner_cutover_approval": "EXPLICIT"
       },
       "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
@@ -197,6 +233,11 @@
         "write_authorized": true,
         "allowed_actions": [
           "PRODUCE_VISUAL",
+          "PRODUCE_LAYOUT",
+          "PRODUCE_THUMBNAIL",
+          "PRODUCE_PILOT_OR_CANDIDATE",
+          "PRODUCE_FULL_121",
+          "PRODUCE_PDF_OR_PRINT_PACKAGE",
           "FRAMING_DECISION",
           "COPY_CHECK",
           "QA_REVIEW",
@@ -204,7 +245,12 @@
         ],
         "role_actions": {
           "VISUAL_DESIGN": [
-            "PRODUCE_VISUAL"
+            "PRODUCE_VISUAL",
+            "PRODUCE_LAYOUT",
+            "PRODUCE_THUMBNAIL",
+            "PRODUCE_PILOT_OR_CANDIDATE",
+            "PRODUCE_FULL_121",
+            "PRODUCE_PDF_OR_PRINT_PACKAGE"
           ],
           "ART_DIRECTION": [
             "FRAMING_DECISION"

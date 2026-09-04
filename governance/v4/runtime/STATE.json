@@ -1,8 +1,8 @@
 {
-  "schema_version": "4.0",
+  "schema_version": "4.2",
   "canonical": true,
   "state_id": "V4-CUTOVER-20260904",
-  "status": "V4_CUTOVER_COMPLETE / GOVERNANCE_ACTIVE / IDLE_FAIL_CLOSED",
+  "status": "SRC-002_RESOLVED / GOV4_HARDENING_COMPLETE / GOVERNANCE_IDLE_FAIL_CLOSED",
   "updated_at": "2026-09-04",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -22,13 +22,33 @@
     "accepted_migration_commit": "a99add7abe91d6c2676046831229a7248c7e1351",
     "parallel_install": false,
     "cutover_performed": true,
-    "cutover_commit_binding": "THE_COMMIT_CONTAINING_THIS_STATE",
+    "cutover_commit_binding": "EXPLICIT_CUTOVER_COMMIT",
     "cutover_commit": "ffdfb4a3e1f4746f2b24940ee156816618bc13fc",
     "project_owner_cutover_approval": {
       "decision": "CUTOVER_APPROVED / GOVERNANCE_ONLY / FAIL_CLOSED",
       "accepted_commit": "a99add7abe91d6c2676046831229a7248c7e1351",
       "recorded_at": "2026-09-04"
     }
+  },
+  "resolved_source_decisions": {
+    "SRC-002": {
+      "status": "RESOLVED / PROJECT_OWNER_BINDING_CANON",
+      "decision_scope": "IDENTITY_MAPPING_ONLY / NO_GAME_CONTENT_CHANGE",
+      "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "source_git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "identity_field": "name",
+      "mapping": {
+        "GUC-22": "Kaptanın Çatlak Kupası",
+        "GUC-23": "Bayat Peksimet",
+        "GUC-24": "Islak Çorap"
+      }
+    }
+  },
+  "hardening_control": {
+    "task_id": "GOV4-HARDENING-001",
+    "task_ref": "governance/v4/tasks/GOV4-HARDENING-001.json",
+    "evidence_ref": "governance/v4/evidence/HARDENING_RESULT.json",
+    "status": "CLOSED / HARDENING_COMPLETE"
   },
   "active_visual_candidate": null,
   "workstreams": {
@@ -72,7 +92,6 @@
   },
   "open_blockers": {
     "ART-001": "Owner-rejected visual package; no replacement candidate.",
-    "SRC-002": "GUC-22 and GUC-23 owner identity decision required.",
     "MEC-001": "Sea=Rock simulation absent.",
     "QA-001": "No active candidate attestation.",
     "QA-002": "Physical and human evidence absent.",
@@ -86,7 +105,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "AWAIT_NEW_EXACT_PROJECT_OWNER_TASK_AFTER_SRC-002_RESOLUTION",
+  "next_action": "AWAIT_NEW_EXACT_PROJECT_OWNER_TASK / ALL_PRODUCTION_REMAINS_CLOSED",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",

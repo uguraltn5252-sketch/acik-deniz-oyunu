@@ -1,5 +1,5 @@
 {
-  "schema_version": "4.0",
+  "schema_version": "4.2",
   "canonical": true,
   "contract_set_id": "FOULWAKE-V4-PERMANENT-CONTRACTS",
   "quality_principle": "LEAN GOVERNANCE SHALL REDUCE CONTEXT AND CEREMONY, NEVER REVIEW DEPTH, CREATIVE SCRUTINY, EVIDENCE QUALITY OR PROJECT OWNER CONTROL.",
@@ -16,6 +16,8 @@
     "permanent_contracts": "governance/v4/contracts/CONTRACTS.json",
     "role_authority": "governance/v4/roles/REGISTRY.json",
     "exact_card_copy": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+    "full_v27_card_copy": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+    "copy_resolution_order": "PROJECT_OWNER_OVERRIDE_THEN_FULL_V27_SOURCE",
     "v3_rollback_checkpoint": "v2.7-design@5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
     "history_policy": "history/evidence is non-canonical, cannot authorize work, and cannot override runtime, task, contract or role records"
   },
@@ -41,7 +43,11 @@
       "PRODUCE_STORY",
       "PRODUCE_FLAVOR",
       "PRODUCE_VISUAL",
-      "PRODUCE_LAYOUT"
+      "PRODUCE_LAYOUT",
+      "PRODUCE_THUMBNAIL",
+      "PRODUCE_PILOT_OR_CANDIDATE",
+      "PRODUCE_FULL_121",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE"
     ],
     "self_approval_actions": [
       "FINAL_AESTHETIC_APPROVAL",
@@ -50,9 +56,24 @@
     "copy_check_actions": [
       "COPY_CHECK"
     ],
+    "general_production_actions": [
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT"
+    ],
+    "granular_production_actions": {
+      "PRODUCE_THUMBNAIL": "thumbnails",
+      "PRODUCE_PILOT_OR_CANDIDATE": "pilot_or_candidate",
+      "PRODUCE_FULL_121": "full_121_production",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE": "pdf_or_print_package"
+    },
+    "production_master_permission": "visual_production",
     "action_permission_map": {
       "PRODUCE_VISUAL": "visual_production",
       "PRODUCE_LAYOUT": "visual_production",
+      "PRODUCE_THUMBNAIL": "thumbnails",
+      "PRODUCE_PILOT_OR_CANDIDATE": "pilot_or_candidate",
+      "PRODUCE_FULL_121": "full_121_production",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE": "pdf_or_print_package",
       "RUN_SIMULATION": "simulation",
       "RELEASE": "release",
       "LOCK": "lock"
@@ -110,7 +131,36 @@
       "image_model_may_generate_or_rewrite_copy": false,
       "placement": "TEMPLATE_COMPOSITE_FROM_CANONICAL_UTF8",
       "verification": "OCR_OR_RENDER_SOURCE_EXACT_COMPARE",
-      "failure_code": "BLOCKED_COPY_DRIFT"
+      "failure_code": "BLOCKED_COPY_DRIFT",
+      "source_precedence": [
+        "PROJECT_OWNER_OVERRIDE",
+        "FULL_V27_SOURCE"
+      ],
+      "required_identity_decision": "SRC-002",
+      "full_source": {
+        "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+        "source_sha256": "8042a62875ea53ee2676d850b0e6e9083a1a098ab2f3984fbb4aeca25dea2675",
+        "source_git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "collections": {
+          "characters": {
+            "visible_fields": [
+              "name",
+              "role",
+              "effect",
+              "flavor"
+            ]
+          },
+          "powers": {
+            "visible_fields": [
+              "name",
+              "group",
+              "time",
+              "effect",
+              "flavor"
+            ]
+          }
+        }
+      }
     },
     "framing": {
       "action": "FRAMING_DECISION",

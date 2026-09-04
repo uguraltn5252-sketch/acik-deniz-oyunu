@@ -1,0 +1,88 @@
+{
+  "schema_version": "4.2",
+  "evidence_type": "GOVERNANCE_V4_PRE_PRODUCTION_HARDENING",
+  "canonical_authority": false,
+  "hardening_commit_binding": "THE_COMMIT_CONTAINING_THIS_FILE",
+  "source": {
+    "branch": "v2.7-design",
+    "head": "c189c52d74750a6094c493333a69c31bf574a64c",
+    "v26_locked_tree": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "task": {
+    "task_id": "GOV4-HARDENING-001",
+    "final_status": "CLOSED / HARDENING_COMPLETE",
+    "active_project_task": null,
+    "authorization_enabled": false,
+    "write_authorized": false
+  },
+  "src_002": {
+    "status": "RESOLVED / PROJECT_OWNER_BINDING_CANON",
+    "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+    "source_git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+    "mapping": {
+      "GUC-22": "Kaptanın Çatlak Kupası",
+      "GUC-23": "Bayat Peksimet",
+      "GUC-24": "Islak Çorap"
+    },
+    "only_src_002_blocker_removed": true
+  },
+  "copy_resolver": {
+    "order": [
+      "PROJECT_OWNER_OVERRIDE",
+      "FULL_V27_SOURCE"
+    ],
+    "card_id_required": true,
+    "owner_override_git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30",
+    "full_source_git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+    "resolved_record_count": 51,
+    "positive_records": [
+      "SET-KP-01",
+      "GUC-22",
+      "GUC-23",
+      "KAR-01"
+    ],
+    "unknown_id_rejected": true,
+    "duplicate_id_rejected": true,
+    "unexpected_field_rejected": true,
+    "copy_drift_rejected": true
+  },
+  "granular_permission_gates": {
+    "PRODUCE_THUMBNAIL": "thumbnails",
+    "PRODUCE_PILOT_OR_CANDIDATE": "pilot_or_candidate",
+    "PRODUCE_FULL_121": "full_121_production",
+    "PRODUCE_PDF_OR_PRINT_PACKAGE": "pdf_or_print_package",
+    "production_master_permission": "visual_production",
+    "general_produce_visual_rejected": true,
+    "general_produce_layout_rejected": true
+  },
+  "scope_audit": {
+    "changed_files": 9,
+    "only_task_authorized_governance_v4_paths": true,
+    "game_content_or_production_artifact_changed": false,
+    "binary_files_changed": 0
+  },
+  "verification": {
+    "v3_validator": "PASS",
+    "v4_runtime_validator": "PASS",
+    "unit_tests": {
+      "passed": 21,
+      "failed": 0
+    },
+    "negative_checks": {
+      "passed": 35,
+      "failed": 0,
+      "named_fixture_cases": 24,
+      "no_active_task_action_classes": 10,
+      "permission_bypass_checks": 1
+    },
+    "v26_tree": "PASS",
+    "source_blobs_unchanged": true,
+    "content_immutability": "PASS"
+  },
+  "temporary_agent": {
+    "used": false,
+    "reason": "The bounded resolver and permission changes were directly covered by deterministic tests."
+  },
+  "result": "SRC-002_RESOLVED / GOV4_HARDENING_COMPLETE / GOVERNANCE_IDLE_FAIL_CLOSED",
+  "next_action": "AWAIT_NEW_EXACT_PROJECT_OWNER_TASK / ALL_PRODUCTION_REMAINS_CLOSED"
+}

@@ -19,7 +19,7 @@
       "state": "visual_active",
       "request": {
         "role": "VISUAL_DESIGN",
-        "action": "PRODUCE_VISUAL",
+        "action": "PRODUCE_THUMBNAIL",
         "task_id": "VISUAL-EXAMPLE-001",
         "branch": "v2.7-design",
         "path": "working/v2.7/visual/example/card.png"
@@ -31,7 +31,7 @@
       "state": "visual_active",
       "request": {
         "role": "VISUAL_DESIGN",
-        "action": "PRODUCE_VISUAL",
+        "action": "PRODUCE_THUMBNAIL",
         "task_id": "VISUAL-EXAMPLE-001",
         "branch": "work/v2.7-visual",
         "path": "working/v2.7/UNAUTHORIZED.png"
@@ -67,6 +67,7 @@
       "request": {
         "role": "SIMULATION_QA",
         "action": "COPY_CHECK",
+        "card_id": "SET-KP-01",
         "task_id": "VISUAL-EXAMPLE-001",
         "branch": "work/v2.7-visual",
         "path": "working/v2.7/visual/example/card.png"
@@ -154,7 +155,7 @@
       "state": "visual_active",
       "request": {
         "role": "VISUAL_DESIGN",
-        "action": "PRODUCE_LAYOUT",
+        "action": "ART_LANGUAGE_REVIEW",
         "task_id": "VISUAL-EXAMPLE-001",
         "branch": "work/v2.7-visual",
         "path": "working/v2.7/visual/example/layout.png"
@@ -192,7 +193,7 @@
       "state": "visual_active",
       "request": {
         "role": "STORY_EDITOR",
-        "action": "PRODUCE_VISUAL",
+        "action": "PRODUCE_THUMBNAIL",
         "task_id": "VISUAL-EXAMPLE-001",
         "branch": "work/v2.7-visual",
         "path": "working/v2.7/visual/example/card.png"
@@ -210,6 +211,114 @@
         "path": "working/v2.7/visual/art_direction/example/review.md"
       },
       "expected_code": "ROLE_TASK_MISMATCH"
+    },
+    {
+      "id": "NEG-17-UNKNOWN-CARD-ID",
+      "state": "visual_active",
+      "request": {
+        "role": "SIMULATION_QA",
+        "action": "COPY_CHECK",
+        "card_id": "UNKNOWN-999",
+        "task_id": "VISUAL-EXAMPLE-001",
+        "branch": "work/v2.7-visual",
+        "path": "working/v2.7/visual/example/card.png",
+        "copy_record": {
+          "id": "UNKNOWN-999"
+        }
+      },
+      "expected_code": "UNKNOWN_CARD_ID"
+    },
+    {
+      "id": "NEG-18-UNEXPECTED-COPY-FIELD",
+      "state": "visual_active",
+      "copy_mutation": {
+        "unexpected_field": "not canonical"
+      },
+      "request": {
+        "role": "SIMULATION_QA",
+        "action": "COPY_CHECK",
+        "card_id": "SET-KP-01",
+        "task_id": "VISUAL-EXAMPLE-001",
+        "branch": "work/v2.7-visual",
+        "path": "working/v2.7/visual/example/card.png"
+      },
+      "expected_code": "COPY_FIELD_SET_MISMATCH"
+    },
+    {
+      "id": "NEG-19-FULL-SOURCE-COPY-DRIFT",
+      "state": "visual_active",
+      "copy_mutation": {
+        "name": "Yanlış Kimlik"
+      },
+      "request": {
+        "role": "SIMULATION_QA",
+        "action": "COPY_CHECK",
+        "card_id": "GUC-22",
+        "task_id": "VISUAL-EXAMPLE-001",
+        "branch": "work/v2.7-visual",
+        "path": "working/v2.7/visual/example/card.png"
+      },
+      "expected_code": "EXACT_COPY_DRIFT"
+    },
+    {
+      "id": "NEG-20-GRANULAR-PERMISSION-CLOSED",
+      "state": "visual_active",
+      "permission_overrides": {
+        "thumbnails": false
+      },
+      "request": {
+        "role": "VISUAL_DESIGN",
+        "action": "PRODUCE_THUMBNAIL",
+        "task_id": "VISUAL-EXAMPLE-001",
+        "branch": "work/v2.7-visual",
+        "path": "working/v2.7/visual/example/card.png"
+      },
+      "expected_code": "PERMISSION_CLOSED"
+    },
+    {
+      "id": "NEG-21-PRODUCTION-MASTER-PERMISSION-CLOSED",
+      "state": "visual_active",
+      "permission_overrides": {
+        "visual_production": false
+      },
+      "request": {
+        "role": "VISUAL_DESIGN",
+        "action": "PRODUCE_FULL_121",
+        "task_id": "VISUAL-EXAMPLE-001",
+        "branch": "work/v2.7-visual",
+        "path": "working/v2.7/visual/example/card.png"
+      },
+      "expected_code": "PERMISSION_CLOSED"
+    },
+    {
+      "id": "NEG-22-GENERAL-VISUAL-BYPASS",
+      "state": "visual_active",
+      "request": {
+        "role": "VISUAL_DESIGN",
+        "action": "PRODUCE_VISUAL",
+        "task_id": "VISUAL-EXAMPLE-001",
+        "branch": "work/v2.7-visual",
+        "path": "working/v2.7/visual/example/card.png"
+      },
+      "expected_code": "GRANULAR_ACTION_REQUIRED"
+    },
+    {
+      "id": "NEG-23-GENERAL-LAYOUT-BYPASS",
+      "state": "visual_active",
+      "request": {
+        "role": "VISUAL_DESIGN",
+        "action": "PRODUCE_LAYOUT",
+        "task_id": "VISUAL-EXAMPLE-001",
+        "branch": "work/v2.7-visual",
+        "path": "working/v2.7/visual/example/layout.png"
+      },
+      "expected_code": "GRANULAR_ACTION_REQUIRED"
+    },
+    {
+      "id": "NEG-24-DUPLICATE-COPY-ID",
+      "type": "DUPLICATE_COPY_ID",
+      "collection": "powers",
+      "expected_code": "DUPLICATE_COPY_ID"
     }
   ]
 }

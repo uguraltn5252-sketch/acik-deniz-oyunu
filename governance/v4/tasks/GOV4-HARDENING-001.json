@@ -1,10 +1,10 @@
 {
-  "schema_version": "4.1",
+  "schema_version": "4.2",
   "canonical_task_authority": true,
   "task_id": "GOV4-HARDENING-001",
   "task_type": "GOVERNANCE_V4_PRE_PRODUCTION_HARDENING",
   "project_task": true,
-  "status": "PENDING / BLOCKED_BY_SRC-002 / NOT_AUTHORIZED",
+  "status": "CLOSED / HARDENING_COMPLETE",
   "issued_by": "PROJECT_OWNER",
   "executor_role": "CHIEF_EDITOR",
   "reviewer_roles": [
@@ -54,12 +54,12 @@
   },
   "required_hardening": {
     "permission_actions": {
-      "thumbnails": "EXPLICIT_ACTION_REQUIRED",
-      "pilot_or_candidate": "EXPLICIT_ACTION_REQUIRED",
-      "full_121_production": "EXPLICIT_ACTION_REQUIRED",
-      "pdf_or_print_package": "EXPLICIT_ACTION_REQUIRED"
+      "thumbnails": "PRODUCE_THUMBNAIL",
+      "pilot_or_candidate": "PRODUCE_PILOT_OR_CANDIDATE",
+      "full_121_production": "PRODUCE_FULL_121",
+      "pdf_or_print_package": "PRODUCE_PDF_OR_PRINT_PACKAGE"
     },
-    "copy_resolution": "COPY_CHECK must resolve the complete canonical visible-copy source established after SRC-002, not only the KAPTAN owner override."
+    "copy_resolution": "COMPLETE / CARD_ID_REQUIRED / PROJECT_OWNER_OVERRIDE_THEN_FULL_V27_SOURCE"
   },
   "production_gate": {
     "task_completion_required_before_related_production_task": true,
@@ -70,13 +70,20 @@
       "pdf_or_print_package"
     ]
   },
-  "open_dependency": "SRC-002",
+  "open_dependency": null,
   "reactivation": {
     "automatic_reactivation": false,
-    "required_conditions": [
+    "source_head": "c189c52d74750a6094c493333a69c31bf574a64c",
+    "project_owner_decision": "SRC-002 OWNER DECISION + GOV4-HARDENING-001",
+    "conditions_satisfied": [
       "SRC-002_RESOLVED",
       "NEW_EXACT_PROJECT_OWNER_AUTHORIZATION"
     ]
+  },
+  "completion": {
+    "opened_and_completed_in_same_authorized_change": true,
+    "closed_fail_closed": true,
+    "completion_evidence": "governance/v4/evidence/HARDENING_RESULT.json"
   },
   "temporary_subagents": {
     "maximum": 0,

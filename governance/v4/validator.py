@@ -15,6 +15,7 @@ from typing import Any, Iterable, Mapping
 V4_DIR = Path(__file__).resolve().parent
 DEFAULT_ROOT = V4_DIR.parents[1]
 SHA_RE = re.compile(r"[0-9a-f]{40}")
+SHA256_RE = re.compile(r"[0-9a-f]{64}")
 TASK_ID_RE = re.compile(r"[A-Z0-9][A-Z0-9_-]*")
 
 
@@ -143,12 +144,106 @@ def validate_exact_copy(
     canonical: dict[str, Any],
     fields: Iterable[str],
 ) -> None:
+    expected_fields = list(fields)
+    missing = sorted(set(expected_fields) - set(supplied))
+    unexpected = sorted(set(supplied) - set(expected_fields))
+    require(
+        not missing and not unexpected,
+        "COPY_FIELD_SET_MISMATCH",
+        f"missing={missing}; unexpected={unexpected}",
+    )
     differing = sorted(
         field
-        for field in fields
-        if field not in supplied or supplied.get(field) != canonical.get(field)
+        for field in expected_fields
+        if supplied.get(field) != canonical.get(field)
     )
     require(not differing, "EXACT_COPY_DRIFT", ", ".join(differing))
+
+
+def normalized_copy_record(
+    record: Any,
+    identity_field: str,
+    visible_fields: Iterable[str],
+    source_label: str,
+) -> dict[str, Any]:
+    require(isinstance(record, dict), "COPY_RECORD_SCHEMA", source_label)
+    fields = [identity_field, *visible_fields]
+    require(len(fields) == len(set(fields)), "COPY_RECORD_SCHEMA", f"duplicate field in {source_label}")
+    missing = [field for field in fields if field not in record]
+    require(not missing, "COPY_RECORD_SCHEMA", f"{source_label}: missing {missing}")
+    require(
+        all(isinstance(record[field], str) and record[field] for field in fields),
+        "COPY_RECORD_SCHEMA",
+        source_label,
+    )
+    return {field: record[field] for field in fields}
+
+
+def build_canonical_copy_index(
+    owner_document: dict[str, Any],
+    full_document: dict[str, Any],
+    copy_contract: dict[str, Any],
+) -> dict[str, dict[str, Any]]:
+    identity_field = copy_contract.get("identity_field")
+    require(isinstance(identity_field, str) and identity_field, "COPY_CONTRACT_SCHEMA", "identity_field")
+    owner_fields = string_list(
+        copy_contract.get("visible_fields"),
+        "COPY_CONTRACT_SCHEMA",
+        "owner override visible_fields",
+    )
+    owner_records = owner_document.get("records")
+    require(isinstance(owner_records, list) and owner_records, "COPY_SOURCE_SCHEMA", "owner records")
+
+    index: dict[str, dict[str, Any]] = {}
+    for position, record in enumerate(owner_records):
+        normalized = normalized_copy_record(
+            record,
+            identity_field,
+            owner_fields,
+            f"owner override record {position}",
+        )
+        card_id = normalized[identity_field]
+        require(card_id not in index, "DUPLICATE_COPY_ID", card_id)
+        index[card_id] = normalized
+
+    full_source = copy_contract.get("full_source")
+    require(isinstance(full_source, dict), "COPY_CONTRACT_SCHEMA", "full_source")
+    collections = full_source.get("collections")
+    require(isinstance(collections, dict) and collections, "COPY_CONTRACT_SCHEMA", "collections")
+    full_seen: set[str] = set()
+    for collection_name, collection_contract in collections.items():
+        records = full_document.get(collection_name)
+        require(isinstance(records, list), "COPY_SOURCE_SCHEMA", collection_name)
+        require(isinstance(collection_contract, dict), "COPY_CONTRACT_SCHEMA", collection_name)
+        visible_fields = string_list(
+            collection_contract.get("visible_fields"),
+            "COPY_CONTRACT_SCHEMA",
+            f"{collection_name}.visible_fields",
+        )
+        for position, record in enumerate(records):
+            normalized = normalized_copy_record(
+                record,
+                identity_field,
+                visible_fields,
+                f"{collection_name} record {position}",
+            )
+            card_id = normalized[identity_field]
+            require(card_id not in full_seen, "DUPLICATE_COPY_ID", card_id)
+            full_seen.add(card_id)
+            if card_id not in index:
+                index[card_id] = normalized
+    return index
+
+
+def load_canonical_copy_index(
+    root: Path,
+    contracts: dict[str, Any],
+) -> dict[str, dict[str, Any]]:
+    copy_contract = contracts.get("owner_controls", {}).get("exact_copy", {})
+    owner_document = load_json(root / normalize_path(copy_contract["source"]))
+    full_source = copy_contract.get("full_source", {})
+    full_document = load_json(root / normalize_path(full_source["source"]))
+    return build_canonical_copy_index(owner_document, full_document, copy_contract)
 
 
 def validate_state_document(state: dict[str, Any]) -> None:
@@ -202,6 +297,17 @@ def validate_state_document(state: dict[str, Any]) -> None:
         require(isinstance(migration.get("cutover_performed"), bool), "STATE_SCHEMA", "cutover_performed")
         task_id = migration.get("task_id")
         require(task_id is None or valid_task_id(task_id), "STATE_SCHEMA", "migration task_id")
+        if migration.get("cutover_performed") is True:
+            require(
+                migration.get("cutover_commit_binding") == "EXPLICIT_CUTOVER_COMMIT",
+                "CUTOVER_BINDING_DRIFT",
+                str(migration.get("cutover_commit_binding")),
+            )
+            require(
+                SHA_RE.fullmatch(str(migration.get("cutover_commit", ""))) is not None,
+                "STATE_SCHEMA",
+                "cutover_commit",
+            )
 
 
 def validate_registry_document(registry: dict[str, Any]) -> None:
@@ -240,6 +346,7 @@ def validate_contracts_document(contracts: dict[str, Any], registry: dict[str, A
         "write_actions",
         "self_approval_actions",
         "copy_check_actions",
+        "general_production_actions",
     ):
         string_list(
             policy.get(key),
@@ -276,6 +383,72 @@ def validate_contracts_document(contracts: dict[str, Any], registry: dict[str, A
         "CONTRACT_SCHEMA",
         "action_permission_map entries",
     )
+    granular_actions = policy.get("granular_production_actions")
+    require(
+        isinstance(granular_actions, dict) and granular_actions,
+        "CONTRACT_SCHEMA",
+        "granular_production_actions",
+    )
+    require(
+        len(granular_actions.values()) == len(set(granular_actions.values())),
+        "CONTRACT_SCHEMA",
+        "granular permissions must be one-to-one",
+    )
+    require(
+        all(
+            action in registry_actions
+            and isinstance(permission, str)
+            and permission
+            and permission_map.get(action) == permission
+            for action, permission in granular_actions.items()
+        ),
+        "CONTRACT_SCHEMA",
+        "granular action permission mapping",
+    )
+    require(
+        not set(policy["general_production_actions"]) & set(granular_actions),
+        "CONTRACT_SCHEMA",
+        "general and granular production actions overlap",
+    )
+    require(
+        all(action in registry_actions for action in policy["general_production_actions"]),
+        "CONTRACT_SCHEMA",
+        "general production actions",
+    )
+    require(
+        isinstance(policy.get("production_master_permission"), str)
+        and policy["production_master_permission"],
+        "CONTRACT_SCHEMA",
+        "production_master_permission",
+    )
+
+    copy_contract = contracts.get("owner_controls", {}).get("exact_copy", {})
+    for key in ("source", "source_sha256", "source_git_blob", "identity_field"):
+        require(isinstance(copy_contract.get(key), str) and copy_contract[key], "COPY_CONTRACT_SCHEMA", key)
+    require(SHA256_RE.fullmatch(copy_contract["source_sha256"]) is not None, "COPY_CONTRACT_SCHEMA", "source_sha256")
+    require(SHA_RE.fullmatch(copy_contract["source_git_blob"]) is not None, "COPY_CONTRACT_SCHEMA", "source_git_blob")
+    string_list(copy_contract.get("visible_fields"), "COPY_CONTRACT_SCHEMA", "visible_fields")
+    require(
+        copy_contract.get("source_precedence") == ["PROJECT_OWNER_OVERRIDE", "FULL_V27_SOURCE"],
+        "COPY_PRECEDENCE_INVALID",
+        str(copy_contract.get("source_precedence")),
+    )
+    require(
+        isinstance(copy_contract.get("required_identity_decision"), str)
+        and copy_contract["required_identity_decision"],
+        "COPY_CONTRACT_SCHEMA",
+        "required_identity_decision",
+    )
+    full_source = copy_contract.get("full_source")
+    require(isinstance(full_source, dict), "COPY_CONTRACT_SCHEMA", "full_source")
+    for key in ("source", "source_sha256", "source_git_blob"):
+        require(isinstance(full_source.get(key), str) and full_source[key], "COPY_CONTRACT_SCHEMA", f"full_source.{key}")
+    require(SHA256_RE.fullmatch(full_source["source_sha256"]) is not None, "COPY_CONTRACT_SCHEMA", "full_source.source_sha256")
+    require(SHA_RE.fullmatch(full_source["source_git_blob"]) is not None, "COPY_CONTRACT_SCHEMA", "full_source.source_git_blob")
+    require(isinstance(full_source.get("collections"), dict) and full_source["collections"], "COPY_CONTRACT_SCHEMA", "full_source.collections")
+    for collection_name, collection in full_source["collections"].items():
+        require(isinstance(collection, dict), "COPY_CONTRACT_SCHEMA", collection_name)
+        string_list(collection.get("visible_fields"), "COPY_CONTRACT_SCHEMA", f"{collection_name}.visible_fields")
     require(policy["cutover_required_role"] in roles, "CONTRACT_SCHEMA", "cutover role")
     framing = contracts.get("owner_controls", {}).get("framing", {})
     require(isinstance(framing.get("action"), str), "CONTRACT_SCHEMA", "framing.action")
@@ -342,6 +515,14 @@ def validate_runtime_documents(
         validate_task_document(task, registry)
 
     active_id = state.get("active_project_task_id")
+    if (state.get("migration_control") or {}).get("cutover_performed") is True:
+        policy = contracts["runtime_authorization"]
+        required_permissions = {
+            policy["production_master_permission"],
+            *policy["granular_production_actions"].values(),
+        }
+        missing_permissions = sorted(required_permissions - set(state["permissions"]))
+        require(not missing_permissions, "STATE_PERMISSION_MISSING", ", ".join(missing_permissions))
     if active_id is None:
         return
     require(active_id in tasks, "TASK_NOT_FOUND", active_id)
@@ -394,7 +575,7 @@ def authorize_request(
     registry: dict[str, Any],
     contracts: dict[str, Any],
     request: dict[str, Any],
-    canonical_copy: dict[str, Any] | None = None,
+    canonical_copies: Mapping[str, dict[str, Any]] | None = None,
 ) -> None:
     validate_runtime_documents(state, tasks, contracts, registry)
     role = request.get("role")
@@ -457,17 +638,30 @@ def authorize_request(
 
     bind_task_request(task, registry, contracts, request)
 
+    if action in set(policy.get("general_production_actions", [])):
+        reject("GRANULAR_ACTION_REQUIRED", action)
+
     permission = policy.get("action_permission_map", {}).get(action)
     if permission is not None:
-        require(permission in state["permissions"], "STATE_PERMISSION_MISSING", permission)
-        require(state["permissions"][permission] is True, "PERMISSION_CLOSED", action)
+        required_permissions = [permission]
+        if action in policy.get("granular_production_actions", {}):
+            required_permissions.insert(0, policy["production_master_permission"])
+        for permission_key in required_permissions:
+            require(permission_key in state["permissions"], "STATE_PERMISSION_MISSING", permission_key)
+            require(
+                state["permissions"][permission_key] is True,
+                "PERMISSION_CLOSED",
+                f"{action}: {permission_key}",
+            )
 
     if action in set(policy.get("copy_check_actions", [])):
-        require(canonical_copy is not None, "CANONICAL_COPY_UNAVAILABLE", action)
+        require(canonical_copies is not None, "CANONICAL_COPY_UNAVAILABLE", action)
+        card_id = request.get("card_id")
+        require(isinstance(card_id, str) and card_id, "CARD_ID_REQUIRED", action)
+        require(card_id in canonical_copies, "UNKNOWN_CARD_ID", card_id)
         require(isinstance(request.get("copy_record"), dict), "COPY_RECORD_REQUIRED", action)
-        copy_contract = contracts.get("owner_controls", {}).get("exact_copy", {})
-        fields = [copy_contract.get("identity_field"), *copy_contract.get("visible_fields", [])]
-        validate_exact_copy(request["copy_record"], canonical_copy, [field for field in fields if field])
+        canonical_copy = canonical_copies[card_id]
+        validate_exact_copy(request["copy_record"], canonical_copy, canonical_copy.keys())
 
     release = contracts.get("release_and_lock", {})
     if action in set(release.get("actions", [])):
@@ -503,6 +697,11 @@ def verify_contract_integrity(root: Path, contracts: dict[str, Any]) -> None:
     pins = [
         (kaptan.get("binding_visual_source"), kaptan.get("source_sha256"), kaptan.get("source_git_blob")),
         (exact_copy.get("source"), exact_copy.get("source_sha256"), exact_copy.get("source_git_blob")),
+        (
+            exact_copy.get("full_source", {}).get("source"),
+            exact_copy.get("full_source", {}).get("source_sha256"),
+            exact_copy.get("full_source", {}).get("source_git_blob"),
+        ),
         (kaptan.get("accepted_art_direction_patch"), None, kaptan.get("accepted_patch_blob")),
     ]
     for relative, expected_hash, expected_blob in pins:
@@ -516,11 +715,87 @@ def verify_contract_integrity(root: Path, contracts: dict[str, Any]) -> None:
             require(git(root, "rev-parse", f"HEAD:{normalized}") == expected_blob, "PINNED_SOURCE_BLOB_DRIFT", normalized)
 
 
+def verify_resolved_source_decision(
+    state: dict[str, Any],
+    contracts: dict[str, Any],
+    canonical_copies: Mapping[str, dict[str, Any]],
+) -> None:
+    copy_contract = contracts["owner_controls"]["exact_copy"]
+    decision_id = copy_contract["required_identity_decision"]
+    decisions = state.get("resolved_source_decisions")
+    require(isinstance(decisions, dict), "SOURCE_DECISION_MISSING", decision_id)
+    require(decision_id in decisions, "SOURCE_DECISION_MISSING", decision_id)
+    decision = decisions[decision_id]
+    require(isinstance(decision, dict), "SOURCE_DECISION_SCHEMA", decision_id)
+    require(
+        decision.get("status") == "RESOLVED / PROJECT_OWNER_BINDING_CANON",
+        "SOURCE_DECISION_UNRESOLVED",
+        decision_id,
+    )
+    require(decision_id not in state.get("open_blockers", {}), "RESOLVED_BLOCKER_STILL_OPEN", decision_id)
+    full_source = copy_contract["full_source"]
+    require(decision.get("source") == full_source["source"], "SOURCE_DECISION_DRIFT", decision_id)
+    require(decision.get("source_git_blob") == full_source["source_git_blob"], "SOURCE_DECISION_DRIFT", decision_id)
+    identity_field = decision.get("identity_field")
+    require(isinstance(identity_field, str) and identity_field, "SOURCE_DECISION_SCHEMA", "identity_field")
+    mapping = decision.get("mapping")
+    require(isinstance(mapping, dict) and mapping, "SOURCE_DECISION_SCHEMA", "mapping")
+    for card_id, identity in mapping.items():
+        require(card_id in canonical_copies, "SOURCE_DECISION_UNKNOWN_ID", str(card_id))
+        canonical = canonical_copies[card_id]
+        require(identity_field in canonical, "SOURCE_DECISION_FIELD_MISSING", f"{card_id}: {identity_field}")
+        require(canonical[identity_field] == identity, "SOURCE_DECISION_MAPPING_DRIFT", card_id)
+
+
+def verify_hardening_closure(
+    root: Path,
+    state: dict[str, Any],
+    contracts: dict[str, Any],
+    registry: dict[str, Any],
+) -> None:
+    control = state.get("hardening_control")
+    require(isinstance(control, dict), "HARDENING_CONTROL_MISSING", "runtime state")
+    task_id = control.get("task_id")
+    require(valid_task_id(task_id), "HARDENING_CONTROL_SCHEMA", str(task_id))
+    expected_task_ref = f"governance/v4/tasks/{task_id}.json"
+    require(control.get("task_ref") == expected_task_ref, "HARDENING_CONTROL_SCHEMA", "task_ref")
+    task = load_task(root, task_id)
+    validate_task_document(task, registry)
+    require(
+        task.get("status") == "CLOSED / HARDENING_COMPLETE"
+        and control.get("status") == task.get("status"),
+        "HARDENING_NOT_CLOSED",
+        str(task.get("status")),
+    )
+    authorization = task["authorization"]
+    require(authorization.get("enabled") is False, "HARDENING_AUTHORITY_OPEN", "enabled")
+    require(authorization.get("write_authorized") is False, "HARDENING_AUTHORITY_OPEN", "write")
+    require(state.get("active_project_task_id") is None, "HARDENING_RUNTIME_NOT_IDLE", str(task_id))
+    require(all(value is False for value in state["permissions"].values()), "HARDENING_PERMISSION_OPEN", task_id)
+
+    evidence_ref = control.get("evidence_ref")
+    require(isinstance(evidence_ref, str), "HARDENING_CONTROL_SCHEMA", "evidence_ref")
+    evidence = load_json(resolve_governance_ref(root, evidence_ref))
+    require(evidence.get("canonical_authority") is False, "HARDENING_EVIDENCE_AUTHORITY", evidence_ref)
+    require(evidence.get("task", {}).get("task_id") == task_id, "HARDENING_EVIDENCE_DRIFT", "task_id")
+    require(evidence.get("task", {}).get("final_status") == task["status"], "HARDENING_EVIDENCE_DRIFT", "status")
+    require(evidence.get("result") == state.get("status"), "HARDENING_EVIDENCE_DRIFT", "result")
+
+    source_head = task.get("reactivation", {}).get("source_head")
+    require(SHA_RE.fullmatch(str(source_head or "")) is not None, "HARDENING_CONTROL_SCHEMA", "source_head")
+    before = json.loads(git(root, "show", f"{source_head}:governance/v4/runtime/STATE.json"))
+    decision_id = contracts["owner_controls"]["exact_copy"]["required_identity_decision"]
+    expected_blockers = dict(before["open_blockers"])
+    require(decision_id in expected_blockers, "HARDENING_SOURCE_DRIFT", decision_id)
+    expected_blockers.pop(decision_id)
+    require(state["open_blockers"] == expected_blockers, "HARDENING_BLOCKER_SCOPE", decision_id)
+
+
 def validate_repository(root: Path = DEFAULT_ROOT) -> dict[str, Any]:
     root = root.resolve()
     for path in sorted((root / "governance" / "v4").rglob("*.json")):
         load_json(path)
-    state, tasks, contracts, _registry = load_repository_bundle(root)
+    state, tasks, contracts, registry = load_repository_bundle(root)
 
     source = state["source_checkpoint"]
     expected_tree = source["locked_release_tree_sha"]
@@ -536,6 +811,21 @@ def validate_repository(root: Path = DEFAULT_ROOT) -> dict[str, Any]:
     )
     require(ancestry.returncode == 0, "SOURCE_NOT_ANCESTOR", source_commit)
     verify_contract_integrity(root, contracts)
+    canonical_copies = load_canonical_copy_index(root, contracts)
+    verify_resolved_source_decision(state, contracts, canonical_copies)
+    verify_hardening_closure(root, state, contracts, registry)
+    migration = state.get("migration_control") or {}
+    if migration.get("cutover_performed") is True:
+        cutover_commit = migration["cutover_commit"]
+        require(git(root, "cat-file", "-t", cutover_commit, check=False) == "commit", "CUTOVER_COMMIT_UNAVAILABLE", cutover_commit)
+        cutover_ancestry = subprocess.run(
+            ["git", "merge-base", "--is-ancestor", cutover_commit, "HEAD"],
+            cwd=root,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=False,
+        )
+        require(cutover_ancestry.returncode == 0, "CUTOVER_COMMIT_NOT_ANCESTOR", cutover_commit)
     return {
         "state_id": state["state_id"],
         "status": state["status"],
@@ -543,6 +833,7 @@ def validate_repository(root: Path = DEFAULT_ROOT) -> dict[str, Any]:
         "locked_release_tree_sha": expected_tree,
         "cutover_performed": (state.get("migration_control") or {}).get("cutover_performed"),
         "loaded_task_ids": sorted(tasks),
+        "canonical_copy_records": len(canonical_copies),
     }
 
 
@@ -550,11 +841,8 @@ def authorize_repository_request(root: Path, request: dict[str, Any]) -> None:
     task_id = request.get("task_id")
     extras = [task_id] if valid_task_id(task_id) else []
     state, tasks, contracts, registry = load_repository_bundle(root.resolve(), extras)
-    copy_contract = contracts.get("owner_controls", {}).get("exact_copy", {})
-    copy_doc = load_json(root / normalize_path(copy_contract["source"]))
-    records = copy_doc.get("records", [])
-    require(len(records) == 1, "CANONICAL_COPY_UNAVAILABLE", copy_contract["source"])
-    authorize_request(state, tasks, registry, contracts, request, records[0])
+    canonical_copies = load_canonical_copy_index(root, contracts)
+    authorize_request(state, tasks, registry, contracts, request, canonical_copies)
 
 
 def main() -> None:

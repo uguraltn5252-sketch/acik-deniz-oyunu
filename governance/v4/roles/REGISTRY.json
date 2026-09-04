@@ -1,5 +1,5 @@
 {
-  "schema_version": "4.0",
+  "schema_version": "4.2",
   "canonical": true,
   "registry_id": "FOULWAKE-V4-ROLE-REGISTRY",
   "default_policy": "DENY",
@@ -73,7 +73,11 @@
       "allowed_actions": [
         "READ_ONLY_VALIDATION",
         "PRODUCE_VISUAL",
-        "PRODUCE_LAYOUT"
+        "PRODUCE_LAYOUT",
+        "PRODUCE_THUMBNAIL",
+        "PRODUCE_PILOT_OR_CANDIDATE",
+        "PRODUCE_FULL_121",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE"
       ],
       "cannot": [
         "give final PASS to own work",
