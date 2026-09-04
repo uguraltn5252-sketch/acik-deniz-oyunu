@@ -52,14 +52,35 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
 
     if task:
         authorization = task.get("authorization", {})
-        role_actions = authorization.get("role_actions", {}).get(role_name, [])
+        assigned_role_actions = authorization.get("role_actions", {}).get(role_name, [])
+        policy = contracts.get("runtime_authorization", {})
+        active_binding = (
+            binding == "ACTIVE_PROJECT_TASK"
+            and task.get("status") in policy.get("active_task_statuses", [])
+        )
+        migration_binding = (
+            binding == "MIGRATION_CONTROL_ONLY"
+            and task.get("status") in policy.get("cutover_review_statuses", [])
+            and (state.get("migration_control") or {}).get("cutover_performed") is False
+        )
+        task_effective = authorization.get("enabled") is True and (
+            active_binding or migration_binding
+        )
+        role_actions = assigned_role_actions if task_effective else []
+        write_actions = set(policy.get("write_actions", []))
+        write_authorized = (
+            task_effective
+            and active_binding
+            and authorization.get("write_authorized") is True
+            and bool(write_actions.intersection(role_actions))
+        )
         lines.extend([
             "",
             f"TASK_ID: {task.get('task_id')}",
             f"TASK_STATUS: {task.get('status')}",
             f"TASK_BINDING: {binding}",
             f"TASK_BRANCH: {task.get('scope', {}).get('branch')}",
-            f"CURRENT_WRITE_AUTHORIZED: {str(authorization.get('write_authorized') is True and binding == 'ACTIVE_PROJECT_TASK').upper()}",
+            f"CURRENT_WRITE_AUTHORIZED: {str(write_authorized).upper()}",
             "CURRENT_ROLE_TASK_ACTIONS: " + (", ".join(role_actions) or "NONE"),
         ])
     else:

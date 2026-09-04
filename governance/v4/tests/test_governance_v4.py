@@ -7,6 +7,7 @@ import copy
 import json
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -63,14 +64,29 @@ class GovernanceV4Tests(unittest.TestCase):
 
     def test_02_generic_repository_validator_passes(self) -> None:
         result = validator.validate_repository(ROOT)
-        self.assertEqual(result["active_task_id"], None)
-        self.assertFalse(result["cutover_performed"])
-        self.assertEqual(result["loaded_task_ids"], ["GOV4-REWORK-001"])
+        self.assertEqual(result["active_task_id"], "GOV4-HARDENING-001")
+        self.assertTrue(result["cutover_performed"])
+        self.assertEqual(
+            result["loaded_task_ids"],
+            ["GOV4-CUTOVER-001", "GOV4-HARDENING-001"],
+        )
 
     def test_03_separate_migration_rework_audit_passes(self) -> None:
-        result = migration_audit.validate_rework(ROOT)
-        self.assertEqual(result["changed_files"], 10)
-        self.assertTrue(all(result["parity"].values()))
+        accepted = self.state["migration_control"]["accepted_migration_commit"]
+        with tempfile.TemporaryDirectory(prefix="foulwake-v4-audit-") as temporary:
+            clone = Path(temporary) / "accepted-migration"
+            subprocess.run(
+                ["git", "clone", "--quiet", "--shared", "--no-checkout", str(ROOT), str(clone)],
+                check=True,
+            )
+            subprocess.run(
+                ["git", "checkout", "--quiet", "-b", "migration/governance-v4", accepted],
+                cwd=clone,
+                check=True,
+            )
+            result = migration_audit.validate_rework(clone)
+            self.assertEqual(result["changed_files"], 10)
+            self.assertTrue(all(result["parity"].values()))
 
     def test_04_runtime_validator_has_no_snapshot_constants(self) -> None:
         source = (V4 / "validator.py").read_text(encoding="utf-8")
@@ -176,29 +192,65 @@ class GovernanceV4Tests(unittest.TestCase):
         )
 
     def test_11_owner_cutover_uses_only_exact_migration_control_exception(self) -> None:
+        accepted = self.state["migration_control"]["accepted_migration_commit"]
+        pre_cutover_state = json.loads(
+            validator.git(
+                ROOT,
+                "show",
+                f"{accepted}:governance/v4/runtime/STATE.json",
+            )
+        )
+        pre_cutover_task_id = pre_cutover_state["migration_control"]["task_id"]
+        pre_cutover_task = json.loads(
+            validator.git(
+                ROOT,
+                "show",
+                f"{accepted}:governance/v4/tasks/{pre_cutover_task_id}.json",
+            )
+        )
         validator.authorize_request(
-            self.state,
-            self.tasks,
+            pre_cutover_state,
+            {pre_cutover_task_id: pre_cutover_task},
             self.registry,
             self.contracts,
             {
                 "role": "PROJECT_OWNER",
                 "action": "CUTOVER_DECISION",
-                "task_id": "GOV4-REWORK-001",
+                "task_id": pre_cutover_task_id,
                 "branch": "migration/governance-v4",
                 "path": "governance/v4/evidence/REWORK_RESULT.json",
             },
             self.canonical_copy,
         )
+        with self.assertRaises(validator.GovernanceViolation):
+            validator.authorize_request(
+                self.state,
+                self.tasks,
+                self.registry,
+                self.contracts,
+                {
+                    "role": "PROJECT_OWNER",
+                    "action": "CUTOVER_DECISION",
+                    "task_id": "GOV4-CUTOVER-001",
+                    "branch": "v2.7-design",
+                    "path": "governance/v4/evidence/CUTOVER_RESULT.json",
+                },
+                self.canonical_copy,
+            )
 
     def test_12_bootstrap_is_noncanonical_and_reflects_task_binding(self) -> None:
-        idle = bootstrap.build_bootstrap(ROOT, "VISUAL_DESIGN")
-        self.assertIn("GENERATED / NON_CANONICAL", idle)
-        self.assertIn("ACTIVE_PROJECT_TASK: NONE", idle)
-        self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", idle)
-        migration = bootstrap.build_bootstrap(ROOT, "PROJECT_OWNER", "GOV4-REWORK-001")
-        self.assertIn("TASK_BINDING: MIGRATION_CONTROL_ONLY", migration)
-        self.assertIn("CURRENT_ROLE_TASK_ACTIONS: CUTOVER_DECISION", migration)
+        visual = bootstrap.build_bootstrap(ROOT, "VISUAL_DESIGN")
+        self.assertIn("GENERATED / NON_CANONICAL", visual)
+        self.assertIn("ACTIVE_PROJECT_TASK: GOV4-HARDENING-001", visual)
+        self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", visual)
+        self.assertIn("CURRENT_ROLE_TASK_ACTIONS: NONE", visual)
+        chief = bootstrap.build_bootstrap(ROOT, "CHIEF_EDITOR")
+        self.assertIn("TASK_BINDING: ACTIVE_PROJECT_TASK", chief)
+        self.assertIn("CURRENT_WRITE_AUTHORIZED: TRUE", chief)
+        self.assertIn("CURRENT_ROLE_TASK_ACTIONS: WRITE, MANAGE_STATE", chief)
+        cutover = bootstrap.build_bootstrap(ROOT, "PROJECT_OWNER", "GOV4-CUTOVER-001")
+        self.assertIn("TASK_BINDING: MIGRATION_CONTROL_ONLY", cutover)
+        self.assertIn("CURRENT_ROLE_TASK_ACTIONS: NONE", cutover)
 
     def test_13_original_migration_result_and_task_are_unchanged(self) -> None:
         baseline = "e891a678822c5cb1773714f2ceda33eaccee9a57"

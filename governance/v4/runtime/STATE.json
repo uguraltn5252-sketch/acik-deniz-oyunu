@@ -1,8 +1,8 @@
 {
   "schema_version": "4.0",
   "canonical": true,
-  "state_id": "V4-REWORK-20260904",
-  "status": "V4_REWORK_COMPLETE / GENERIC_RUNTIME_PASS / PENDING_PROJECT_OWNER_CUTOVER_APPROVAL",
+  "state_id": "V4-CUTOVER-20260904",
+  "status": "V4_CUTOVER_COMPLETE / GOVERNANCE_ACTIVE / ALL_PRODUCTION_CLOSED",
   "updated_at": "2026-09-04",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,16 +12,22 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": null,
+  "active_project_task_id": "GOV4-HARDENING-001",
   "migration_control": {
-    "branch": "migration/governance-v4",
-    "task_id": "GOV4-REWORK-001",
-    "task_ref": "governance/v4/tasks/GOV4-REWORK-001.json",
-    "evidence_ref": "governance/v4/evidence/REWORK_RESULT.json",
-    "rework_source_commit": "e891a678822c5cb1773714f2ceda33eaccee9a57",
-    "parallel_install": true,
-    "cutover_performed": false,
-    "project_owner_cutover_approval": null
+    "branch": "v2.7-design",
+    "task_id": "GOV4-CUTOVER-001",
+    "task_ref": "governance/v4/tasks/GOV4-CUTOVER-001.json",
+    "evidence_ref": "governance/v4/evidence/CUTOVER_RESULT.json",
+    "accepted_migration_branch": "migration/governance-v4",
+    "accepted_migration_commit": "a99add7abe91d6c2676046831229a7248c7e1351",
+    "parallel_install": false,
+    "cutover_performed": true,
+    "cutover_commit_binding": "THE_COMMIT_CONTAINING_THIS_STATE",
+    "project_owner_cutover_approval": {
+      "decision": "CUTOVER_APPROVED / GOVERNANCE_ONLY / FAIL_CLOSED",
+      "accepted_commit": "a99add7abe91d6c2676046831229a7248c7e1351",
+      "recorded_at": "2026-09-04"
+    }
   },
   "active_visual_candidate": null,
   "workstreams": {
@@ -79,7 +85,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "PROJECT_OWNER_REVIEWS_GENERIC_RUNTIME_REWORK_AND_DECIDES_CUTOVER",
+  "next_action": "COMPLETE_GOV4-HARDENING-001_BEFORE_ANY_VISUAL_THUMBNAIL_FULL_121_OR_PDF_TASK",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -89,7 +95,8 @@
     "simulation",
     "release",
     "lock",
-    "merge to v2.7-design",
+    "production task before GOV4-HARDENING-001 completion",
+    "integration outside an exact active task",
     "specialist-chat replacement"
   ]
 }

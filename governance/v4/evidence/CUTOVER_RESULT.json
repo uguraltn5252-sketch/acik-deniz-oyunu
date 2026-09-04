@@ -1,0 +1,89 @@
+{
+  "schema_version": "4.1",
+  "evidence_type": "GOVERNANCE_V4_CUTOVER",
+  "canonical_authority": false,
+  "cutover_commit_binding": "THE_COMMIT_CONTAINING_THIS_FILE",
+  "project_owner_decision": {
+    "decision": "CUTOVER_APPROVED / GOVERNANCE_ONLY / FAIL_CLOSED",
+    "accepted_migration_commit": "a99add7abe91d6c2676046831229a7248c7e1351"
+  },
+  "integration": {
+    "target_branch": "v2.7-design",
+    "pre_cutover_head": "5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
+    "accepted_migration_commit": "a99add7abe91d6c2676046831229a7248c7e1351",
+    "history_preserved": true,
+    "integration_mode": "FAST_FORWARD_ANCESTRY_PLUS_CUTOVER_RECORD_COMMIT",
+    "v3_checkpoint_preserved": true,
+    "v26_locked_tree": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "cutover_scope": {
+    "changed_files_after_accepted_migration": 6,
+    "only_governance_v4": true,
+    "game_content_or_production_artifact_changed": false,
+    "v3_governance_changed": false,
+    "releases_v2_6_changed": false,
+    "historical_migration_evidence_changed": false,
+    "result": "PASS"
+  },
+  "runtime": {
+    "v4_canonical": true,
+    "cutover_performed": true,
+    "active_project_task": "GOV4-HARDENING-001",
+    "active_task_type": "GOVERNANCE_ONLY / PRE_PRODUCTION_HARDENING",
+    "active_visual_candidate": null,
+    "all_production_simulation_release_lock_permissions_closed": true,
+    "result": "PASS"
+  },
+  "verification": {
+    "runtime_validator": "PASS",
+    "unit_tests": {
+      "passed": 17,
+      "failed": 0
+    },
+    "negative_checks": {
+      "passed": 23,
+      "failed": 0,
+      "original_nine_retained": true
+    },
+    "v26_tree": "PASS",
+    "content_immutability": "PASS"
+  },
+  "hardening_required": {
+    "task_id": "GOV4-HARDENING-001",
+    "task_ref": "governance/v4/tasks/GOV4-HARDENING-001.json",
+    "blocks_related_production_tasks_until_complete": true,
+    "permission_keys": [
+      "thumbnails",
+      "pilot_or_candidate",
+      "full_121_production",
+      "pdf_or_print_package"
+    ],
+    "full_canonical_copy_resolver_after_src_002": true
+  },
+  "temporary_subagents": {
+    "used": 0,
+    "reason": "The cutover was an exact, bounded, single-writer governance operation."
+  },
+  "skills_or_plugins_used": [
+    {
+      "tool_or_plugin": "GitHub",
+      "concrete_benefit": "Verified exact remote heads and preserved commit ancestry while updating only v2.7-design."
+    },
+    {
+      "tool_or_plugin": "personal-context skill",
+      "concrete_benefit": "Preserved the owner's fail-closed, KAPTAN, exact-copy and production-closure decisions."
+    }
+  ],
+  "open_blockers": [
+    "ART-001",
+    "SRC-002",
+    "MEC-001",
+    "QA-001",
+    "QA-002",
+    "GOV-001",
+    "GOV-002",
+    "PHYSICAL-PROOF"
+  ],
+  "result": "V4_CUTOVER_COMPLETE / GOVERNANCE_ACTIVE / ALL_PRODUCTION_CLOSED",
+  "next_action": "COMPLETE_GOV4-HARDENING-001_BEFORE_ANY_RELATED_PRODUCTION_TASK"
+}

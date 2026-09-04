@@ -1,0 +1,73 @@
+{
+  "schema_version": "4.1",
+  "canonical_task_authority": true,
+  "task_id": "GOV4-CUTOVER-001",
+  "task_type": "GOVERNANCE_V4_CUTOVER",
+  "project_task": false,
+  "status": "CLOSED / CUTOVER_EXECUTED",
+  "issued_by": "PROJECT_OWNER",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "source": {
+    "branch": "migration/governance-v4",
+    "accepted_migration_commit": "a99add7abe91d6c2676046831229a7248c7e1351",
+    "v3_checkpoint": "5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "project_owner_decision": {
+    "decision": "CUTOVER_APPROVED / GOVERNANCE_ONLY / FAIL_CLOSED",
+    "accepted_commit": "a99add7abe91d6c2676046831229a7248c7e1351"
+  },
+  "authorization": {
+    "enabled": false,
+    "write_authorized": false,
+    "allowed_actions": [
+      "CUTOVER_DECISION"
+    ],
+    "role_actions": {
+      "PROJECT_OWNER": [
+        "CUTOVER_DECISION"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_globs": [],
+    "allowed_exact_paths": [
+      "governance/v4/bootstrap.py",
+      "governance/v4/evidence/CUTOVER_RESULT.json",
+      "governance/v4/runtime/STATE.json",
+      "governance/v4/tasks/GOV4-CUTOVER-001.json",
+      "governance/v4/tasks/GOV4-HARDENING-001.json",
+      "governance/v4/tests/test_governance_v4.py"
+    ],
+    "expected_paths": [
+      "governance/v4/bootstrap.py",
+      "governance/v4/evidence/CUTOVER_RESULT.json",
+      "governance/v4/runtime/STATE.json",
+      "governance/v4/tasks/GOV4-CUTOVER-001.json",
+      "governance/v4/tasks/GOV4-HARDENING-001.json",
+      "governance/v4/tests/test_governance_v4.py"
+    ],
+    "max_changed_files": 6,
+    "allowed_extensions": [
+      ".json",
+      ".py"
+    ],
+    "binary_files_allowed": false,
+    "game_content_or_production_artifacts_allowed": false
+  },
+  "protected_unchanged_paths": [
+    "governance/v4/evidence/MIGRATION_RESULT.json",
+    "governance/v4/evidence/REWORK_RESULT.json",
+    "governance/v4/tasks/GOV4-MIGRATION-001.json",
+    "governance/v4/tasks/GOV4-REWORK-001.json",
+    "governance/v4/history/evidence/INDEX.json",
+    "governance/CURRENT_STAGE.json",
+    "releases/v2.6"
+  ],
+  "completion_evidence": "governance/v4/evidence/CUTOVER_RESULT.json",
+  "result": "V4_CUTOVER_COMPLETE / GOVERNANCE_ACTIVE / ALL_PRODUCTION_CLOSED"
+}

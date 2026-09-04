@@ -1,0 +1,80 @@
+{
+  "schema_version": "4.1",
+  "canonical_task_authority": true,
+  "task_id": "GOV4-HARDENING-001",
+  "task_type": "GOVERNANCE_V4_PRE_PRODUCTION_HARDENING",
+  "project_task": true,
+  "status": "ACTIVE",
+  "issued_by": "PROJECT_OWNER",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "SIMULATION_QA"
+  ],
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "MANAGE_STATE",
+      "COPY_CHECK",
+      "QA_REVIEW"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "MANAGE_STATE"
+      ],
+      "SIMULATION_QA": [
+        "COPY_CHECK",
+        "QA_REVIEW"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_globs": [],
+    "allowed_exact_paths": [
+      "governance/v4/contracts/CONTRACTS.json",
+      "governance/v4/evidence/HARDENING_RESULT.json",
+      "governance/v4/roles/REGISTRY.json",
+      "governance/v4/runtime/STATE.json",
+      "governance/v4/tasks/GOV4-HARDENING-001.json",
+      "governance/v4/tests/fixtures/NEGATIVE_CASES.json",
+      "governance/v4/tests/fixtures/RUNTIME_SCENARIOS.json",
+      "governance/v4/tests/test_governance_v4.py",
+      "governance/v4/validator.py"
+    ],
+    "max_changed_files": 9,
+    "allowed_extensions": [
+      ".json",
+      ".py"
+    ],
+    "binary_files_allowed": false,
+    "game_content_or_production_artifacts_allowed": false
+  },
+  "required_hardening": {
+    "permission_actions": {
+      "thumbnails": "EXPLICIT_ACTION_REQUIRED",
+      "pilot_or_candidate": "EXPLICIT_ACTION_REQUIRED",
+      "full_121_production": "EXPLICIT_ACTION_REQUIRED",
+      "pdf_or_print_package": "EXPLICIT_ACTION_REQUIRED"
+    },
+    "copy_resolution": "COPY_CHECK must resolve the complete canonical visible-copy source established after SRC-002, not only the KAPTAN owner override."
+  },
+  "production_gate": {
+    "task_completion_required_before_related_production_task": true,
+    "permissions_must_remain_false_until_completion": [
+      "thumbnails",
+      "pilot_or_candidate",
+      "full_121_production",
+      "pdf_or_print_package"
+    ]
+  },
+  "open_dependency": "SRC-002",
+  "temporary_subagents": {
+    "maximum": 0,
+    "reason": "Bounded single-writer governance hardening."
+  },
+  "completion_evidence": "governance/v4/evidence/HARDENING_RESULT.json",
+  "completion_result": "HARDENING_COMPLETE / PRE_PRODUCTION_ACTION_GATES_PASS / FULL_COPY_RESOLVER_PASS"
+}
