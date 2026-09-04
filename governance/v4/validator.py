@@ -1,65 +1,21 @@
 #!/usr/bin/env python3
-"""Task-independent, fail-closed validation for FOULWAKE Governance v4."""
+"""Generic, data-driven runtime authorization for FOULWAKE Governance v4."""
 
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path, PurePosixPath
-from typing import Any, Iterable
+from typing import Any, Iterable, Mapping
 
 V4_DIR = Path(__file__).resolve().parent
 DEFAULT_ROOT = V4_DIR.parents[1]
-EXPECTED_SOURCE = "5564c7fbdea297ab1b8b3fa675c83f6e788151f1"
-EXPECTED_V26_TREE = "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
-EXPECTED_BRANCH = "migration/governance-v4"
-QUALITY_PRINCIPLE = (
-    "LEAN GOVERNANCE SHALL REDUCE CONTEXT AND CEREMONY, NEVER REVIEW DEPTH, "
-    "CREATIVE SCRUTINY, EVIDENCE QUALITY OR PROJECT OWNER CONTROL."
-)
-EXPECTED_BLOCKERS = {
-    "ART-001", "SRC-002", "MEC-001", "QA-001", "QA-002",
-    "GOV-001", "GOV-002", "PHYSICAL-PROOF",
-}
-EXPECTED_ROLES = {
-    "PROJECT_OWNER", "CHIEF_EDITOR", "STORY_EDITOR", "VISUAL_DESIGN",
-    "ART_DIRECTION", "SIMULATION_QA",
-}
-EXPECTED_GATES = {
-    "V2_6_IMMUTABILITY",
-    "CANONICAL_SOURCE_HIERARCHY",
-    "EXACT_COPY",
-    "KAPTAN_OWNER_CONTRACT",
-    "INDEPENDENT_ART_DIRECTION",
-    "FRAMING_PASS_OR_REFRAME_REQUIRED",
-    "SEMANTIC_VISUAL_FIT",
-    "COMPOSITION_AND_ANATOMY_OBJECT_INTEGRITY",
-    "ORIGINALITY_AND_DECK_REPETITION",
-    "PERIOD_FIT",
-    "BACK_SECRECY_AND_TOPOLOGY",
-    "PROJECT_OWNER_AESTHETIC_ACCEPTANCE",
-    "FULL_DECK_COHESION_REVIEW",
-    "INDEPENDENT_SIMULATION_QA",
-    "PHYSICAL_PRINT_DUPLEX_TABLE_EVIDENCE",
-    "EXPLICIT_PROJECT_OWNER_RELEASE_AND_LOCK",
-}
-OWNER_REQUIRED_ACTIONS = {
-    "CANON_DECISION",
-    "PROJECT_OWNER_AESTHETIC_ACCEPTANCE",
-    "MECHANIC_OR_PLAYER_EXPERIENCE_DECISION",
-    "EXPENSIVE_OR_IRREVERSIBLE_PRODUCTION_DECISION",
-    "CUTOVER_DECISION",
-    "RELEASE",
-    "LOCK",
-}
-WRITE_ACTIONS = {
-    "WRITE", "OPEN_TASK", "INTEGRATE", "MANAGE_STATE",
-    "PRODUCE_STORY", "PRODUCE_FLAVOR", "PRODUCE_VISUAL",
-    "PRODUCE_LAYOUT",
-}
+SHA_RE = re.compile(r"[0-9a-f]{40}")
+TASK_ID_RE = re.compile(r"[A-Z0-9][A-Z0-9_-]*")
 
 
 class GovernanceViolation(ValueError):
@@ -75,39 +31,28 @@ def reject(code: str, detail: str) -> None:
     raise GovernanceViolation(code, detail)
 
 
+def require(condition: bool, code: str, detail: str) -> None:
+    if not condition:
+        reject(code, detail)
+
+
 def load_json(path: Path) -> dict[str, Any]:
     def unique_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
-        value: dict[str, Any] = {}
-        for key, item in pairs:
-            if key in value:
+        result: dict[str, Any] = {}
+        for key, value in pairs:
+            if key in result:
                 raise ValueError(f"duplicate key: {key}")
-            value[key] = item
-        return value
+            result[key] = value
+        return result
 
     try:
         value = json.loads(
             path.read_text(encoding="utf-8"), object_pairs_hook=unique_object
         )
-    except Exception as exc:  # fail closed with the original parse reason
+    except Exception as exc:
         reject("INVALID_JSON", f"{path}: {exc}")
-    if not isinstance(value, dict):
-        reject("INVALID_JSON_ROOT", f"{path} must contain a JSON object")
+    require(isinstance(value, dict), "INVALID_JSON_ROOT", str(path))
     return value
-
-
-def load_task(root: Path, task_id: str) -> dict[str, Any]:
-    if not task_id or any(char not in "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for char in task_id):
-        reject("INVALID_TASK_ID", str(task_id))
-    task = load_json(root / "governance" / "v4" / "tasks" / f"{task_id}.json")
-    if task.get("task_id") != task_id:
-        reject("TASK_ID_DRIFT", f"requested {task_id}, record has {task.get('task_id')}")
-    if task.get("canonical_task_authority") is not True:
-        reject("TASK_NOT_CANONICAL", task_id)
-    return task
-
-
-def sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def git(root: Path, *args: str, check: bool = True) -> str:
@@ -124,14 +69,51 @@ def git(root: Path, *args: str, check: bool = True) -> str:
     return result.stdout.strip()
 
 
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 def normalize_path(value: str) -> str:
+    require(isinstance(value, str), "INVALID_PATH", repr(value))
     path = PurePosixPath(value)
-    if path.is_absolute() or ".." in path.parts or value.startswith("./"):
-        reject("INVALID_PATH", value)
+    require(
+        not path.is_absolute() and ".." not in path.parts and not value.startswith("./"),
+        "INVALID_PATH",
+        value,
+    )
     normalized = path.as_posix()
-    if normalized in {"", "."}:
-        reject("INVALID_PATH", value)
+    require(normalized not in {"", "."}, "INVALID_PATH", value)
     return normalized
+
+
+def resolve_governance_ref(root: Path, value: str) -> Path:
+    relative = normalize_path(value)
+    require(
+        relative.startswith("governance/v4/"),
+        "CANONICAL_REF_OUTSIDE_V4",
+        relative,
+    )
+    return root / relative
+
+
+def valid_task_id(value: Any) -> bool:
+    return isinstance(value, str) and TASK_ID_RE.fullmatch(value) is not None
+
+
+def load_task(root: Path, task_id: str) -> dict[str, Any]:
+    require(valid_task_id(task_id), "INVALID_TASK_ID", str(task_id))
+    task = load_json(root / "governance" / "v4" / "tasks" / f"{task_id}.json")
+    require(task.get("task_id") == task_id, "TASK_ID_DRIFT", task_id)
+    require(task.get("canonical_task_authority") is True, "TASK_NOT_CANONICAL", task_id)
+    return task
+
+
+def string_list(value: Any, code: str, label: str, allow_empty: bool = False) -> list[str]:
+    require(isinstance(value, list), code, f"{label} must be a list")
+    require(allow_empty or bool(value), code, f"{label} must not be empty")
+    require(all(isinstance(item, str) and item for item in value), code, label)
+    require(len(value) == len(set(value)), code, f"{label} contains duplicates")
+    return value
 
 
 def matches_glob(path: str, pattern: str) -> bool:
@@ -141,415 +123,460 @@ def matches_glob(path: str, pattern: str) -> bool:
     return PurePosixPath(path).match(pattern)
 
 
-def validate_locked_tree(actual: str, expected: str = EXPECTED_V26_TREE) -> None:
-    if actual != expected:
-        reject("V26_TREE_DRIFT", f"expected {expected}, got {actual}")
+def scope_allows(scope: dict[str, Any], path: str) -> bool:
+    normalized = normalize_path(path)
+    if normalized in set(scope.get("forbidden_exact_paths", [])):
+        return False
+    if any(normalized.startswith(prefix) for prefix in scope.get("forbidden_prefixes", [])):
+        return False
+    exact_paths = set(scope.get("allowed_exact_paths", []))
+    globs = scope.get("allowed_globs", [])
+    return normalized in exact_paths or any(matches_glob(normalized, pattern) for pattern in globs)
 
 
-def audit_delivery_scope(
-    task: dict[str, Any],
-    branch: str,
-    changed_paths: Iterable[str],
-    binary_paths: Iterable[str] = (),
-) -> None:
-    scope = task.get("delivery_scope", {})
-    if branch != scope.get("branch"):
-        reject("WRONG_BRANCH", f"expected {scope.get('branch')}, got {branch}")
-
-    paths = [normalize_path(item) for item in changed_paths]
-    if len(paths) != len(set(paths)):
-        reject("DUPLICATE_CHANGED_PATH", "changed path list contains duplicates")
-
-    forbidden_exact = set(scope.get("forbidden_exact_paths", []))
-    forbidden_prefixes = tuple(scope.get("forbidden_prefixes", []))
-    for path in paths:
-        if path in forbidden_exact or path.startswith(forbidden_prefixes):
-            reject("OUT_OF_SCOPE_PATH", path)
-        if not any(matches_glob(path, pattern) for pattern in scope.get("allowed_globs", [])):
-            reject("OUT_OF_SCOPE_PATH", path)
-
-    expected = set(scope.get("expected_paths", []))
-    if expected and set(paths) != expected:
-        missing = sorted(expected - set(paths))
-        extra = sorted(set(paths) - expected)
-        reject("SCOPE_PATH_SET_DRIFT", f"missing={missing}; extra={extra}")
-
-    maximum = scope.get("max_changed_files")
-    if not isinstance(maximum, int) or len(paths) > maximum:
-        reject("CHANGED_FILE_BUDGET", f"{len(paths)} > {maximum}")
-
-    allowed_extensions = set(scope.get("allowed_extensions", []))
-    wrong_type = [path for path in paths if PurePosixPath(path).suffix not in allowed_extensions]
-    if wrong_type:
-        reject("DISALLOWED_FILE_TYPE", ", ".join(wrong_type))
-
-    binary = sorted(set(binary_paths))
-    if binary and not scope.get("binary_files_allowed", False):
-        reject("BINARY_CHANGE_FORBIDDEN", ", ".join(binary))
+def validate_locked_tree(actual: str, expected: str) -> None:
+    require(actual == expected, "V26_TREE_DRIFT", f"expected {expected}, got {actual}")
 
 
 def validate_exact_copy(
     supplied: dict[str, Any],
     canonical: dict[str, Any],
-    fields: Iterable[str] | None = None,
+    fields: Iterable[str],
 ) -> None:
-    compared_fields = set(fields) if fields is not None else set(supplied) | set(canonical)
     differing = sorted(
-        key for key in compared_fields
-        if key not in supplied or supplied.get(key) != canonical.get(key)
+        field
+        for field in fields
+        if field not in supplied or supplied.get(field) != canonical.get(field)
     )
-    if differing:
-        reject("EXACT_COPY_DRIFT", ", ".join(differing) or "record differs")
+    require(not differing, "EXACT_COPY_DRIFT", ", ".join(differing))
+
+
+def validate_state_document(state: dict[str, Any]) -> None:
+    require(str(state.get("schema_version", "")).startswith("4."), "STATE_SCHEMA", "schema_version")
+    require(state.get("canonical") is True, "STATE_NOT_CANONICAL", "runtime state")
+    require(isinstance(state.get("state_id"), str) and state["state_id"], "STATE_SCHEMA", "state_id")
+    require(isinstance(state.get("status"), str) and state["status"], "STATE_SCHEMA", "status")
+
+    source = state.get("source_checkpoint")
+    require(isinstance(source, dict), "STATE_SCHEMA", "source_checkpoint")
+    require(SHA_RE.fullmatch(str(source.get("commit", ""))) is not None, "STATE_SCHEMA", "source commit")
+    require(
+        SHA_RE.fullmatch(str(source.get("locked_release_tree_sha", ""))) is not None,
+        "STATE_SCHEMA",
+        "locked_release_tree_sha",
+    )
+
+    active = state.get("active_project_task_id")
+    require(active is None or valid_task_id(active), "STATE_SCHEMA", "active_project_task_id")
+    candidate = state.get("active_visual_candidate")
+    require(candidate is None or isinstance(candidate, str), "STATE_SCHEMA", "active_visual_candidate")
+
+    permissions = state.get("permissions")
+    require(isinstance(permissions, dict) and permissions, "STATE_SCHEMA", "permissions")
+    require(all(isinstance(value, bool) for value in permissions.values()), "STATE_SCHEMA", "permission values")
+    blockers = state.get("open_blockers")
+    require(isinstance(blockers, dict), "STATE_SCHEMA", "open_blockers")
+    require(
+        all(isinstance(key, str) and isinstance(value, str) for key, value in blockers.items()),
+        "STATE_SCHEMA",
+        "open_blockers values",
+    )
+
+    refs = state.get("canonical_refs")
+    require(isinstance(refs, dict), "STATE_SCHEMA", "canonical_refs")
+    for key in ("contracts", "roles"):
+        require(isinstance(refs.get(key), str), "STATE_SCHEMA", f"canonical_refs.{key}")
+        normalize_path(refs[key])
+
+    require(
+        isinstance(state.get("default_policy"), str) and "DENY" in state["default_policy"],
+        "STATE_NOT_FAIL_CLOSED",
+        "default_policy",
+    )
+    if state.get("current_project_authorization") is not None:
+        reject("DUPLICATE_RUNTIME_AUTHORITY", "authorization belongs only in active task")
+
+    migration = state.get("migration_control")
+    if migration is not None:
+        require(isinstance(migration, dict), "STATE_SCHEMA", "migration_control")
+        require(isinstance(migration.get("cutover_performed"), bool), "STATE_SCHEMA", "cutover_performed")
+        task_id = migration.get("task_id")
+        require(task_id is None or valid_task_id(task_id), "STATE_SCHEMA", "migration task_id")
+
+
+def validate_registry_document(registry: dict[str, Any]) -> None:
+    require(str(registry.get("schema_version", "")).startswith("4."), "REGISTRY_SCHEMA", "schema_version")
+    require(registry.get("canonical") is True, "REGISTRY_SCHEMA", "canonical")
+    require(registry.get("default_policy") == "DENY", "REGISTRY_NOT_FAIL_CLOSED", "default_policy")
+    require(registry.get("task_scoped_writes") is True, "REGISTRY_SCHEMA", "task_scoped_writes")
+    roles = registry.get("roles")
+    require(isinstance(roles, dict) and roles, "REGISTRY_SCHEMA", "roles")
+    for role_name, role in roles.items():
+        require(isinstance(role_name, str) and isinstance(role, dict), "REGISTRY_SCHEMA", str(role_name))
+        string_list(role.get("allowed_actions"), "REGISTRY_SCHEMA", f"{role_name}.allowed_actions")
+        require(role.get("writes_require_exact_task") is True, "REGISTRY_SCHEMA", f"{role_name}.writes_require_exact_task")
+
+
+def validate_contracts_document(contracts: dict[str, Any], registry: dict[str, Any]) -> None:
+    require(str(contracts.get("schema_version", "")).startswith("4."), "CONTRACT_SCHEMA", "schema_version")
+    require(contracts.get("canonical") is True, "CONTRACT_SCHEMA", "canonical")
+    require(
+        isinstance(contracts.get("quality_principle"), str) and contracts["quality_principle"],
+        "CONTRACT_SCHEMA",
+        "quality_principle",
+    )
+    string_list(contracts.get("protected_quality_gates"), "CONTRACT_SCHEMA", "protected_quality_gates")
+    string_list(
+        contracts.get("project_owner_required_actions"),
+        "CONTRACT_SCHEMA",
+        "project_owner_required_actions",
+    )
+
+    policy = contracts.get("runtime_authorization")
+    require(isinstance(policy, dict), "CONTRACT_SCHEMA", "runtime_authorization")
+    for key in (
+        "active_task_statuses",
+        "cutover_review_statuses",
+        "write_actions",
+        "self_approval_actions",
+        "copy_check_actions",
+    ):
+        string_list(
+            policy.get(key),
+            "CONTRACT_SCHEMA",
+            f"runtime_authorization.{key}",
+            allow_empty=key == "copy_check_actions",
+        )
+    for key in ("read_only_action", "cutover_action", "cutover_required_role"):
+        require(isinstance(policy.get(key), str) and policy[key], "CONTRACT_SCHEMA", key)
+    require(
+        policy.get("branch_and_path_required_for_non_read_only") is True,
+        "CONTRACT_SCHEMA",
+        "branch/path binding",
+    )
+    require(policy.get("request_task_must_equal_active_project_task") is True, "CONTRACT_SCHEMA", "task binding")
+    require(policy.get("executor_or_explicit_reviewer_required") is True, "CONTRACT_SCHEMA", "role binding")
+
+    roles = registry["roles"]
+    permission_map = policy.get("action_permission_map")
+    require(isinstance(permission_map, dict), "CONTRACT_SCHEMA", "action_permission_map")
+    registry_actions = {
+        action
+        for role in roles.values()
+        for action in role.get("allowed_actions", [])
+    }
+    require(
+        all(
+            isinstance(action, str)
+            and action in registry_actions
+            and isinstance(permission, str)
+            and permission
+            for action, permission in permission_map.items()
+        ),
+        "CONTRACT_SCHEMA",
+        "action_permission_map entries",
+    )
+    require(policy["cutover_required_role"] in roles, "CONTRACT_SCHEMA", "cutover role")
+    framing = contracts.get("owner_controls", {}).get("framing", {})
+    require(isinstance(framing.get("action"), str), "CONTRACT_SCHEMA", "framing.action")
+    require(framing.get("independent_reviewer_role") in roles, "CONTRACT_SCHEMA", "framing reviewer")
+    string_list(framing.get("allowed_dispositions"), "CONTRACT_SCHEMA", "framing dispositions")
+
+
+def validate_task_document(task: dict[str, Any], registry: dict[str, Any]) -> None:
+    task_id = task.get("task_id")
+    require(valid_task_id(task_id), "TASK_SCHEMA", "task_id")
+    require(task.get("canonical_task_authority") is True, "TASK_NOT_CANONICAL", str(task_id))
+    require(isinstance(task.get("status"), str) and task["status"], "TASK_SCHEMA", f"{task_id}.status")
+
+    roles = registry["roles"]
+    executor = task.get("executor_role")
+    require(executor in roles, "TASK_SCHEMA", f"{task_id}.executor_role")
+    reviewers = string_list(
+        task.get("reviewer_roles", []),
+        "TASK_SCHEMA",
+        f"{task_id}.reviewer_roles",
+        allow_empty=True,
+    )
+    require(executor not in reviewers, "TASK_SCHEMA", f"{task_id}: executor cannot review itself")
+    require(all(role in roles for role in reviewers), "TASK_SCHEMA", f"{task_id}.reviewer_roles")
+
+    authorization = task.get("authorization")
+    require(isinstance(authorization, dict), "TASK_SCHEMA", f"{task_id}.authorization")
+    require(isinstance(authorization.get("enabled"), bool), "TASK_SCHEMA", f"{task_id}.authorization.enabled")
+    require(isinstance(authorization.get("write_authorized"), bool), "TASK_SCHEMA", f"{task_id}.write_authorized")
+    allowed = string_list(authorization.get("allowed_actions"), "TASK_SCHEMA", f"{task_id}.allowed_actions")
+    role_actions = authorization.get("role_actions")
+    require(isinstance(role_actions, dict) and role_actions, "TASK_SCHEMA", f"{task_id}.role_actions")
+    participants = {executor, *reviewers}
+    assigned: set[str] = set()
+    for role, actions in role_actions.items():
+        require(role in participants, "TASK_SCHEMA", f"{task_id}: unauthorized role mapping {role}")
+        action_list = string_list(actions, "TASK_SCHEMA", f"{task_id}.{role}.actions")
+        require(set(action_list) <= set(allowed), "TASK_SCHEMA", f"{task_id}: role action outside task list")
+        require(set(action_list) <= set(roles[role]["allowed_actions"]), "TASK_SCHEMA", f"{task_id}: role action outside registry")
+        assigned.update(action_list)
+    require(assigned == set(allowed), "TASK_SCHEMA", f"{task_id}: unassigned or extra action")
+
+    scope = task.get("scope")
+    require(isinstance(scope, dict), "TASK_SCHEMA", f"{task_id}.scope")
+    require(isinstance(scope.get("branch"), str) and scope["branch"], "TASK_SCHEMA", f"{task_id}.scope.branch")
+    globs = string_list(scope.get("allowed_globs", []), "TASK_SCHEMA", f"{task_id}.allowed_globs", allow_empty=True)
+    exact = string_list(scope.get("allowed_exact_paths", []), "TASK_SCHEMA", f"{task_id}.allowed_exact_paths", allow_empty=True)
+    require(bool(globs or exact), "TASK_SCHEMA", f"{task_id}: no allowed paths")
+    for value in [*exact, *scope.get("forbidden_exact_paths", [])]:
+        normalize_path(value)
+
+
+def validate_runtime_documents(
+    state: dict[str, Any],
+    tasks: Mapping[str, dict[str, Any]],
+    contracts: dict[str, Any],
+    registry: dict[str, Any],
+) -> None:
+    validate_state_document(state)
+    validate_registry_document(registry)
+    validate_contracts_document(contracts, registry)
+    for task_id, task in tasks.items():
+        require(task.get("task_id") == task_id, "TASK_ID_DRIFT", task_id)
+        validate_task_document(task, registry)
+
+    active_id = state.get("active_project_task_id")
+    if active_id is None:
+        return
+    require(active_id in tasks, "TASK_NOT_FOUND", active_id)
+    active = tasks[active_id]
+    policy = contracts["runtime_authorization"]
+    require(
+        active.get("status") in policy["active_task_statuses"],
+        "INACTIVE_TASK_REUSE",
+        f"{active_id}: {active.get('status')}",
+    )
+    require(active["authorization"].get("enabled") is True, "TASK_AUTHORIZATION_CLOSED", active_id)
+
+
+def validate_request_location(task: dict[str, Any], request: dict[str, Any]) -> None:
+    scope = task["scope"]
+    branch = request.get("branch")
+    require(isinstance(branch, str), "BRANCH_REQUIRED", task["task_id"])
+    require(branch == scope["branch"], "WRONG_BRANCH", f"expected {scope['branch']}, got {branch}")
+    path = request.get("path")
+    require(isinstance(path, str), "PATH_REQUIRED", task["task_id"])
+    require(scope_allows(scope, path), "OUT_OF_SCOPE_PATH", path)
+
+
+def bind_task_request(
+    task: dict[str, Any],
+    registry: dict[str, Any],
+    contracts: dict[str, Any],
+    request: dict[str, Any],
+) -> None:
+    role = request["role"]
+    action = request["action"]
+    participants = {task["executor_role"], *task.get("reviewer_roles", [])}
+    require(role in participants, "ROLE_TASK_MISMATCH", f"{role} is not assigned to {task['task_id']}")
+    authorization = task["authorization"]
+    require(action in authorization["allowed_actions"], "TASK_ACTION_FORBIDDEN", action)
+    require(
+        action in authorization["role_actions"].get(role, []),
+        "TASK_ACTION_FORBIDDEN",
+        f"{role}: {action}",
+    )
+    require(action in registry["roles"][role]["allowed_actions"], "ROLE_ACTION_FORBIDDEN", f"{role}: {action}")
+    if action in set(contracts["runtime_authorization"]["write_actions"]):
+        require(authorization.get("write_authorized") is True, "TASK_WRITE_CLOSED", task["task_id"])
+    validate_request_location(task, request)
 
 
 def authorize_request(
     state: dict[str, Any],
-    task: dict[str, Any],
+    tasks: Mapping[str, dict[str, Any]],
     registry: dict[str, Any],
     contracts: dict[str, Any],
     request: dict[str, Any],
     canonical_copy: dict[str, Any] | None = None,
 ) -> None:
+    validate_runtime_documents(state, tasks, contracts, registry)
     role = request.get("role")
     action = request.get("action")
-    roles = registry.get("roles", {})
-    if role not in roles:
-        reject("UNKNOWN_ROLE", str(role))
-    if not isinstance(action, str):
-        reject("INVALID_ACTION", "action must be a string")
+    require(role in registry["roles"], "UNKNOWN_ROLE", str(role))
+    require(isinstance(action, str), "INVALID_ACTION", str(action))
 
-    owner_required = set(contracts.get("project_owner_required_actions", []))
-    if action in owner_required and role != "PROJECT_OWNER":
-        reject("PROJECT_OWNER_REQUIRED", action)
+    policy = contracts["runtime_authorization"]
+    if action == policy["read_only_action"]:
+        require(action in registry["roles"][role]["allowed_actions"], "ROLE_ACTION_FORBIDDEN", f"{role}: {action}")
+        return
 
-    if action == "FRAMING_DECISION":
-        framing = contracts.get("owner_controls", {}).get("framing", {})
-        if role != framing.get("independent_reviewer_role"):
-            reject("FRAMING_REVIEWER_INVALID", str(role))
-        if request.get("producer_role") == role:
-            reject("SELF_APPROVAL_FORBIDDEN", "framing reviewer is the producer")
-        if request.get("disposition") not in framing.get("allowed_dispositions", []):
-            reject("INVALID_FRAMING_DISPOSITION", str(request.get("disposition")))
+    if action == policy["cutover_action"]:
+        migration = state.get("migration_control") or {}
+        task_id = request.get("task_id")
+        require(task_id == migration.get("task_id"), "MIGRATION_TASK_MISMATCH", str(task_id))
+        require(task_id in tasks, "TASK_NOT_FOUND", str(task_id))
+        task = tasks[task_id]
+        require(
+            task.get("status") in policy["cutover_review_statuses"],
+            "INACTIVE_TASK_REUSE",
+            f"{task_id}: {task.get('status')}",
+        )
+        require(task["authorization"].get("enabled") is True, "TASK_AUTHORIZATION_CLOSED", task_id)
+        require(role == policy["cutover_required_role"], "PROJECT_OWNER_REQUIRED", action)
+        require(migration.get("cutover_performed") is False, "CUTOVER_ALREADY_PERFORMED", task_id)
+        bind_task_request(task, registry, contracts, request)
+        return
 
-    if (
-        request.get("producer_role") == role
-        and action in {"FINAL_AESTHETIC_APPROVAL", "PROJECT_OWNER_AESTHETIC_ACCEPTANCE"}
-    ):
-        reject("SELF_APPROVAL_FORBIDDEN", f"{role} cannot final-approve its own work")
+    active_id = state.get("active_project_task_id")
+    require(active_id is not None, "NO_ACTIVE_TASK_FOR_SPECIALIST_ACTION", action)
+    require(
+        request.get("task_id") == active_id,
+        "ACTIVE_TASK_MISMATCH",
+        f"expected {active_id}, got {request.get('task_id')}",
+    )
+    require(active_id in tasks, "TASK_NOT_FOUND", active_id)
+    task = tasks[active_id]
+    require(
+        task.get("status") in policy["active_task_statuses"],
+        "INACTIVE_TASK_REUSE",
+        f"{active_id}: {task.get('status')}",
+    )
+    require(task["authorization"].get("enabled") is True, "TASK_AUTHORIZATION_CLOSED", active_id)
 
-    if "copy_record" in request:
-        if canonical_copy is None:
-            reject("CANONICAL_COPY_UNAVAILABLE", "copy comparison source is missing")
-        copy_contract = contracts.get("owner_controls", {}).get("exact_copy", {})
-        copy_fields = [copy_contract.get("identity_field")] + copy_contract.get("visible_fields", [])
-        validate_exact_copy(
-            request["copy_record"], canonical_copy,
-            fields=[field for field in copy_fields if field],
+    if action in set(contracts.get("project_owner_required_actions", [])):
+        require(role == policy["cutover_required_role"], "PROJECT_OWNER_REQUIRED", action)
+    if request.get("producer_role") == role and action in set(policy["self_approval_actions"]):
+        reject("SELF_APPROVAL_FORBIDDEN", f"{role}: {action}")
+
+    framing = contracts.get("owner_controls", {}).get("framing", {})
+    if action == framing.get("action"):
+        require(role == framing.get("independent_reviewer_role"), "FRAMING_REVIEWER_INVALID", str(role))
+        require(request.get("producer_role") != role, "SELF_APPROVAL_FORBIDDEN", "framing reviewer is producer")
+        require(
+            request.get("disposition") in framing.get("allowed_dispositions", []),
+            "INVALID_FRAMING_DISPOSITION",
+            str(request.get("disposition")),
         )
 
-    if action in {"RELEASE", "LOCK"}:
-        if request.get("explicit_owner_decision") is not True:
-            reject("EXPLICIT_OWNER_DECISION_REQUIRED", action)
-        if state.get("open_blockers"):
-            reject("OPEN_BLOCKERS", ", ".join(sorted(state["open_blockers"])))
-        permission_key = action.lower()
-        if state.get("permissions", {}).get(permission_key) is not True:
-            reject("PERMISSION_CLOSED", action)
+    bind_task_request(task, registry, contracts, request)
 
-    if action not in roles[role].get("allowed_actions", []):
-        reject("ROLE_ACTION_FORBIDDEN", f"{role}: {action}")
+    permission = policy.get("action_permission_map", {}).get(action)
+    if permission is not None:
+        require(permission in state["permissions"], "STATE_PERMISSION_MISSING", permission)
+        require(state["permissions"][permission] is True, "PERMISSION_CLOSED", action)
 
-    if action in WRITE_ACTIONS:
-        if request.get("task_id") != task.get("task_id"):
-            reject("TASK_MISMATCH", str(request.get("task_id")))
-        if task.get("current_authorization", {}).get("write_authorized") is not True:
-            reject("TASK_CLOSED", str(task.get("status")))
-        scope = task.get("delivery_scope", {})
-        if request.get("branch") != scope.get("branch"):
-            reject("WRONG_BRANCH", str(request.get("branch")))
-        path = normalize_path(str(request.get("path", "")))
-        if not any(matches_glob(path, pattern) for pattern in scope.get("allowed_globs", [])):
-            reject("OUT_OF_SCOPE_PATH", path)
-    elif request.get("task_id") == task.get("task_id"):
-        allowed = task.get("current_authorization", {}).get("allowed_actions", [])
-        if action not in allowed:
-            reject("TASK_ACTION_FORBIDDEN", action)
+    if action in set(policy.get("copy_check_actions", [])):
+        require(canonical_copy is not None, "CANONICAL_COPY_UNAVAILABLE", action)
+        require(isinstance(request.get("copy_record"), dict), "COPY_RECORD_REQUIRED", action)
+        copy_contract = contracts.get("owner_controls", {}).get("exact_copy", {})
+        fields = [copy_contract.get("identity_field"), *copy_contract.get("visible_fields", [])]
+        validate_exact_copy(request["copy_record"], canonical_copy, [field for field in fields if field])
+
+    release = contracts.get("release_and_lock", {})
+    if action in set(release.get("actions", [])):
+        require(request.get("explicit_owner_decision") is True, "EXPLICIT_OWNER_DECISION_REQUIRED", action)
+        require(not state.get("open_blockers"), "OPEN_BLOCKERS", ", ".join(sorted(state["open_blockers"])))
+        require(state["permissions"].get(action.lower()) is True, "PERMISSION_CLOSED", action)
 
 
-def changed_paths_from_git(root: Path, source: str) -> tuple[list[str], list[str]]:
-    committed = set(filter(None, git(root, "diff", "--name-only", f"{source}..HEAD").splitlines()))
-    status_lines = git(root, "status", "--porcelain", "--untracked-files=all").splitlines()
-    working: set[str] = set()
-    for line in status_lines:
-        if not line:
-            continue
-        value = line[3:]
-        if " -> " in value:
-            value = value.split(" -> ", 1)[1]
-        # Python bytecode is transient execution output, never migration input.
-        # It is intentionally excluded from a source/commit scope audit.
-        parts = PurePosixPath(value).parts
-        if "__pycache__" in parts or value.endswith(".pyc"):
-            continue
-        working.add(value)
-    paths = sorted(committed | working)
+def load_repository_bundle(
+    root: Path,
+    extra_task_ids: Iterable[str] = (),
+) -> tuple[dict[str, Any], dict[str, dict[str, Any]], dict[str, Any], dict[str, Any]]:
+    state = load_json(root / "governance" / "v4" / "runtime" / "STATE.json")
+    validate_state_document(state)
+    contracts = load_json(resolve_governance_ref(root, state["canonical_refs"]["contracts"]))
+    registry = load_json(resolve_governance_ref(root, state["canonical_refs"]["roles"]))
 
-    binary: set[str] = set()
-    for line in git(root, "diff", "--numstat", f"{source}..HEAD").splitlines():
-        parts = line.split("\t")
-        if len(parts) >= 3 and "-" in parts[:2]:
-            binary.add(parts[-1])
-    for relative in working:
-        path = root / relative
-        if path.is_file() and b"\0" in path.read_bytes()[:8192]:
-            binary.add(relative)
-    return paths, sorted(binary)
+    task_ids = set(extra_task_ids)
+    if state.get("active_project_task_id"):
+        task_ids.add(state["active_project_task_id"])
+    migration_id = (state.get("migration_control") or {}).get("task_id")
+    if migration_id:
+        task_ids.add(migration_id)
+    tasks = {task_id: load_task(root, task_id) for task_id in task_ids}
+    validate_runtime_documents(state, tasks, contracts, registry)
+    return state, tasks, contracts, registry
 
 
-def compare_v3_v4(v3: dict[str, Any], state: dict[str, Any]) -> dict[str, bool]:
-    v3_streams = v3.get("workstreams", {})
-    v4_streams = state.get("workstreams", {})
-    return {
-        "write_authority": (
-            v3.get("current_authorization") is None
-            and state.get("current_project_authorization") is None
-        ),
-        "active_task": (
-            v3.get("current_authorization") is None
-            and state.get("active_project_task_id") is None
-        ),
-        "v26_tree": (
-            v3.get("locked_release_tree_sha")
-            == state.get("source_checkpoint", {}).get("locked_release_tree_sha")
-        ),
-        "active_candidate": (
-            v3.get("active_visual_candidate") == state.get("active_visual_candidate")
-        ),
-        "open_blockers": (
-            set(v3.get("open_blockers", {})) == set(state.get("open_blockers", {}))
-        ),
-        "permissions": v3.get("permissions") == state.get("permissions"),
-        "workstream_heads": all(
-            v3_streams.get(name, {}).get("head") == v4_streams.get(name, {}).get("head")
-            for name in {"story", "art_direction", "visual", "simulation"}
-        ),
-        "accepted_art_direction": (
-            v3_streams.get("art_direction", {}).get("accepted_commit")
-            == v4_streams.get("art_direction", {}).get("accepted_commit")
-        ),
-    }
+def verify_contract_integrity(root: Path, contracts: dict[str, Any]) -> None:
+    owner = contracts.get("owner_controls", {})
+    kaptan = owner.get("kaptan", {})
+    exact_copy = owner.get("exact_copy", {})
+    pins = [
+        (kaptan.get("binding_visual_source"), kaptan.get("source_sha256"), kaptan.get("source_git_blob")),
+        (exact_copy.get("source"), exact_copy.get("source_sha256"), exact_copy.get("source_git_blob")),
+        (kaptan.get("accepted_art_direction_patch"), None, kaptan.get("accepted_patch_blob")),
+    ]
+    for relative, expected_hash, expected_blob in pins:
+        require(isinstance(relative, str), "INTEGRITY_PIN_SCHEMA", str(relative))
+        normalized = normalize_path(relative)
+        path = root / normalized
+        require(path.is_file(), "PINNED_SOURCE_MISSING", normalized)
+        if expected_hash is not None:
+            require(sha256(path) == expected_hash, "PINNED_SOURCE_HASH_DRIFT", normalized)
+        if expected_blob is not None:
+            require(git(root, "rev-parse", f"HEAD:{normalized}") == expected_blob, "PINNED_SOURCE_BLOB_DRIFT", normalized)
 
 
-def validate_repository(
-    root: Path = DEFAULT_ROOT,
-    audit_branch: str | None = None,
-    changed_paths: Iterable[str] | None = None,
-) -> dict[str, Any]:
-    v4 = root / "governance" / "v4"
-    state = load_json(v4 / "runtime" / "STATE.json")
-    contracts = load_json(v4 / "contracts" / "CONTRACTS.json")
-    registry = load_json(v4 / "roles" / "REGISTRY.json")
-    history = load_json(v4 / "history" / "evidence" / "INDEX.json")
-    evidence = load_json(v4 / "evidence" / "MIGRATION_RESULT.json")
-    v3 = load_json(root / "governance" / "CURRENT_STAGE.json")
+def validate_repository(root: Path = DEFAULT_ROOT) -> dict[str, Any]:
+    root = root.resolve()
+    for path in sorted((root / "governance" / "v4").rglob("*.json")):
+        load_json(path)
+    state, tasks, contracts, _registry = load_repository_bundle(root)
 
-    migration_task_id = state.get("migration_control", {}).get("task_id")
-    task = load_task(root, migration_task_id)
-
-    for json_path in sorted(v4.rglob("*.json")):
-        load_json(json_path)
-
-    if state.get("canonical") is not True:
-        reject("STATE_NOT_CANONICAL", "runtime/STATE.json")
-    if state.get("status") != (
-        "V4_PARALLEL_BUILD_COMPLETE / PARITY_PASS / "
-        "PENDING_PROJECT_OWNER_CUTOVER_APPROVAL"
-    ):
-        reject("STATE_STATUS_DRIFT", str(state.get("status")))
-    checkpoint = state.get("source_checkpoint", {})
-    if checkpoint.get("commit") != EXPECTED_SOURCE:
-        reject("SOURCE_CHECKPOINT_DRIFT", str(checkpoint.get("commit")))
-    if checkpoint.get("v3_status") != "V3_CLEAN_CLOSURE_COMPLETE":
-        reject("V3_CLOSURE_DRIFT", str(checkpoint.get("v3_status")))
-    if state.get("active_project_task_id") is not None:
-        reject("UNEXPECTED_ACTIVE_PROJECT_TASK", str(state.get("active_project_task_id")))
-    if state.get("active_visual_candidate") is not None:
-        reject("UNEXPECTED_ACTIVE_CANDIDATE", str(state.get("active_visual_candidate")))
-    if state.get("current_project_authorization") is not None:
-        reject("UNEXPECTED_PROJECT_AUTHORIZATION", "authorization must remain null")
-    if set(state.get("open_blockers", {})) != EXPECTED_BLOCKERS:
-        reject("BLOCKER_SET_DRIFT", str(sorted(state.get("open_blockers", {}))))
-    if not state.get("permissions") or any(state["permissions"].values()):
-        reject("PERMISSION_DRIFT", "all project permissions must remain false")
-    migration = state.get("migration_control", {})
-    if migration.get("branch") != EXPECTED_BRANCH:
-        reject("MIGRATION_BRANCH_DRIFT", str(migration.get("branch")))
-    if migration.get("cutover_performed") is not False:
-        reject("CUTOVER_PERFORMED", "parallel build cannot perform cutover")
-    if migration.get("project_owner_cutover_approval") is not None:
-        reject("OWNER_CUTOVER_ASSUMED", "owner approval must remain null")
-
-    expected_refs = {
-        "contracts": "governance/v4/contracts/CONTRACTS.json",
-        "roles": "governance/v4/roles/REGISTRY.json",
-    }
-    if state.get("canonical_refs") != expected_refs:
-        reject("CANONICAL_REFERENCE_DRIFT", str(state.get("canonical_refs")))
-    if history.get("canonical") is not False or history.get("may_authorize_work") is not False:
-        reject("HISTORY_AUTHORITY_LEAK", "history evidence must remain non-authoritative")
-
-    expected_task_ref = f"governance/v4/tasks/{migration_task_id}.json"
-    if state.get("migration_control", {}).get("task_ref") != expected_task_ref:
-        reject("TASK_REFERENCE_DRIFT", str(state.get("migration_control", {}).get("task_ref")))
-    if task.get("source", {}).get("commit") != EXPECTED_SOURCE:
-        reject("TASK_SOURCE_DRIFT", str(task.get("source")))
-    if task.get("current_authorization", {}).get("write_authorized") is not False:
-        reject("MIGRATION_WRITE_LEFT_OPEN", "delivered task must be read-only")
-
-    if contracts.get("quality_principle") != QUALITY_PRINCIPLE:
-        reject("QUALITY_PRINCIPLE_DRIFT", str(contracts.get("quality_principle")))
-    if set(contracts.get("protected_quality_gates", [])) != EXPECTED_GATES:
-        reject("QUALITY_GATE_PARITY_DRIFT", "protected gate set differs")
-    if set(contracts.get("project_owner_required_actions", [])) != OWNER_REQUIRED_ACTIONS:
-        reject("OWNER_CONTROL_DRIFT", "material owner action set differs")
-    framing = contracts.get("owner_controls", {}).get("framing", {})
-    if framing.get("independent_reviewer_role") != "ART_DIRECTION":
-        reject("FRAMING_REVIEWER_DRIFT", str(framing.get("independent_reviewer_role")))
-    if framing.get("producer_self_approval") is not False:
-        reject("FRAMING_SELF_APPROVAL_DRIFT", "producer self-approval must be false")
-    if framing.get("allowed_dispositions") != ["FRAMING_PASS", "REFRAME_REQUIRED"]:
-        reject("FRAMING_DISPOSITION_DRIFT", str(framing.get("allowed_dispositions")))
-    required_dimensions = {
-        "bleed", "safe area", "subject scale", "focus", "unintended crop",
-        "copy-area collision", "thumbnail and table-distance readability",
-        "repeated plan/model/pose", "full-deck composition rhythm",
-    }
-    if set(framing.get("required_dimensions", [])) != required_dimensions:
-        reject("FRAMING_DIMENSION_DRIFT", "framing coverage differs")
-
-    roles = registry.get("roles", {})
-    if set(roles) != EXPECTED_ROLES or "RULES_EDITOR" in roles:
-        reject("ROLE_REGISTRY_DRIFT", str(sorted(roles)))
-    if registry.get("task_scoped_writes") is not True:
-        reject("ROLE_WRITE_POLICY_DRIFT", "writes must be task-scoped")
-    if "FRAMING_DECISION" in roles.get("VISUAL_DESIGN", {}).get("allowed_actions", []):
-        reject("VISUAL_SELF_FRAMING_AUTHORITY", "Visual Design cannot decide framing")
-    if "FRAMING_DECISION" not in roles.get("ART_DIRECTION", {}).get("allowed_actions", []):
-        reject("ART_DIRECTION_FRAMING_MISSING", "Art Direction must decide framing")
-
-    validate_locked_tree(git(root, "rev-parse", "HEAD:releases/v2.6"))
-    if git(root, "cat-file", "-t", EXPECTED_SOURCE, check=False) != "commit":
-        reject("SOURCE_COMMIT_UNAVAILABLE", EXPECTED_SOURCE)
+    source = state["source_checkpoint"]
+    expected_tree = source["locked_release_tree_sha"]
+    validate_locked_tree(git(root, "rev-parse", "HEAD:releases/v2.6"), expected_tree)
+    source_commit = source["commit"]
+    require(git(root, "cat-file", "-t", source_commit, check=False) == "commit", "SOURCE_COMMIT_UNAVAILABLE", source_commit)
     ancestry = subprocess.run(
-        ["git", "merge-base", "--is-ancestor", EXPECTED_SOURCE, "HEAD"],
+        ["git", "merge-base", "--is-ancestor", source_commit, "HEAD"],
         cwd=root,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         check=False,
     )
-    if ancestry.returncode:
-        reject("SOURCE_NOT_ANCESTOR", EXPECTED_SOURCE)
-    v3_blob_at_source = git(root, "rev-parse", f"{EXPECTED_SOURCE}:governance/CURRENT_STAGE.json")
-    v3_blob_at_head = git(root, "rev-parse", "HEAD:governance/CURRENT_STAGE.json")
-    if v3_blob_at_source != v3_blob_at_head:
-        reject("V3_GOVERNANCE_CHANGED", "CURRENT_STAGE.json differs from source checkpoint")
-
-    actual_paths, binary_paths = changed_paths_from_git(root, EXPECTED_SOURCE)
-    if changed_paths is not None:
-        actual_paths = sorted(set(changed_paths))
-    current_branch = audit_branch or git(root, "branch", "--show-current")
-    audit_delivery_scope(task, current_branch, actual_paths, binary_paths)
-
-    parity = compare_v3_v4(v3, state)
-    failed_parity = sorted(name for name, passed in parity.items() if not passed)
-    if failed_parity:
-        reject("V3_V4_PARITY_FAIL", ", ".join(failed_parity))
-
-    owner = contracts.get("owner_controls", {})
-    kaptan = owner.get("kaptan", {})
-    copy_contract = owner.get("exact_copy", {})
-    kaptan_path = root / kaptan.get("binding_visual_source", "")
-    copy_path = root / copy_contract.get("source", "")
-    patch_path = root / kaptan.get("accepted_art_direction_patch", "")
-    if sha256(kaptan_path) != kaptan.get("source_sha256"):
-        reject("KAPTAN_SOURCE_DRIFT", str(kaptan_path))
-    if sha256(copy_path) != copy_contract.get("source_sha256"):
-        reject("EXACT_COPY_SOURCE_DRIFT", str(copy_path))
-    if git(root, "rev-parse", f"HEAD:{kaptan['binding_visual_source']}") != kaptan.get("source_git_blob"):
-        reject("KAPTAN_SOURCE_BLOB_DRIFT", kaptan["binding_visual_source"])
-    if git(root, "rev-parse", f"HEAD:{copy_contract['source']}") != copy_contract.get("source_git_blob"):
-        reject("EXACT_COPY_BLOB_DRIFT", copy_contract["source"])
-    if git(root, "rev-parse", f"HEAD:{kaptan['accepted_art_direction_patch']}") != kaptan.get("accepted_patch_blob"):
-        reject("ART_DIRECTION_PATCH_DRIFT", str(patch_path))
-
-    copy_doc = load_json(copy_path)
-    records = copy_doc.get("records", [])
-    if len(records) != 1 or records[0].get("id") != "SET-KP-01":
-        reject("EXACT_COPY_RECORD_DRIFT", "SET-KP-01 must be the sole owner override")
-
-    tracked = set(git(root, "ls-files").splitlines())
-    draft_name = "FOULWAKE_Kural_Kitabi_v2.7_TASLAK.pdf"
-    if any(PurePosixPath(path).name == draft_name for path in tracked):
-        reject("NONCANONICAL_DRAFT_TRACKED", draft_name)
-    external = next(
-        (item for item in history.get("records", []) if item.get("evidence_id") == "EXTERNAL-RULEBOOK-DRAFT"),
-        {},
-    )
-    if external.get("status") != "NON_CANONICAL_DRAFT / REFERENCE_ONLY":
-        reject("EXTERNAL_DRAFT_STATUS_DRIFT", str(external.get("status")))
-    if external.get("repository_artifact_present") is not False:
-        reject("EXTERNAL_DRAFT_AUTHORITY_LEAK", "draft must stay outside repository")
-
-    if evidence.get("result") != (
-        "V4_PARALLEL_BUILD_COMPLETE / PARITY_PASS / "
-        "PENDING_PROJECT_OWNER_CUTOVER_APPROVAL"
-    ):
-        reject("MIGRATION_EVIDENCE_DRIFT", str(evidence.get("result")))
-    if evidence.get("cutover_performed") is not False:
-        reject("EVIDENCE_CUTOVER_DRIFT", "cutover must be false")
-
+    require(ancestry.returncode == 0, "SOURCE_NOT_ANCESTOR", source_commit)
+    verify_contract_integrity(root, contracts)
     return {
-        "changed_files": len(actual_paths),
-        "v26_tree": EXPECTED_V26_TREE,
-        "parity": parity,
-        "cutover_performed": False,
+        "state_id": state["state_id"],
+        "status": state["status"],
+        "active_task_id": state.get("active_project_task_id"),
+        "locked_release_tree_sha": expected_tree,
+        "cutover_performed": (state.get("migration_control") or {}).get("cutover_performed"),
+        "loaded_task_ids": sorted(tasks),
     }
+
+
+def authorize_repository_request(root: Path, request: dict[str, Any]) -> None:
+    task_id = request.get("task_id")
+    extras = [task_id] if valid_task_id(task_id) else []
+    state, tasks, contracts, registry = load_repository_bundle(root.resolve(), extras)
+    copy_contract = contracts.get("owner_controls", {}).get("exact_copy", {})
+    copy_doc = load_json(root / normalize_path(copy_contract["source"]))
+    records = copy_doc.get("records", [])
+    require(len(records) == 1, "CANONICAL_COPY_UNAVAILABLE", copy_contract["source"])
+    authorize_request(state, tasks, registry, contracts, request, records[0])
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=DEFAULT_ROOT)
-    parser.add_argument("--audit-branch")
-    parser.add_argument("--changed-file", action="append", dest="changed_files")
     parser.add_argument("--request", type=Path)
     args = parser.parse_args()
-
     try:
         if args.request:
-            root = args.root.resolve()
-            state = load_json(root / "governance/v4/runtime/STATE.json")
-            request = load_json(args.request)
-            task_id = request.get("task_id") or state.get("migration_control", {}).get("task_id")
-            task = load_task(root, task_id)
-            registry = load_json(root / "governance/v4/roles/REGISTRY.json")
-            contracts = load_json(root / "governance/v4/contracts/CONTRACTS.json")
-            copy_doc = load_json(root / contracts["owner_controls"]["exact_copy"]["source"])
-            authorize_request(
-                state, task, registry, contracts, request,
-                canonical_copy=copy_doc["records"][0],
-            )
+            authorize_repository_request(args.root.resolve(), load_json(args.request))
             print("FOULWAKE governance v4 request: ALLOW")
             return
-        result = validate_repository(args.root.resolve(), args.audit_branch, args.changed_files)
+        result = validate_repository(args.root)
     except GovernanceViolation as exc:
         print(f"FOULWAKE governance v4: BLOCKED — {exc}", file=sys.stderr)
         raise SystemExit(1)
 
-    print("FOULWAKE governance v4: PASS")
-    print(f"- exact migration scope: {result['changed_files']} files")
-    print(f"- locked v2.6 tree: {result['v26_tree']}")
-    print("- v3/v4 runtime, role and quality-gate parity: PASS")
-    print("- cutover: NO")
+    print("FOULWAKE governance v4 runtime: PASS")
+    print(f"- state: {result['state_id']}")
+    print(f"- active project task: {result['active_task_id'] or 'NONE'}")
+    print(f"- locked v2.6 tree: {result['locked_release_tree_sha']}")
+    print(f"- cutover performed: {str(result['cutover_performed']).upper()}")
 
 
 if __name__ == "__main__":

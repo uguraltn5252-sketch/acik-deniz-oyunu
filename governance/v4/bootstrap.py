@@ -9,19 +9,16 @@ from pathlib import Path
 from validator import (
     DEFAULT_ROOT,
     GovernanceViolation,
-    authorize_request,
+    authorize_repository_request,
     git,
-    load_json,
-    load_task,
+    load_repository_bundle,
     reject,
 )
 
 
 def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> str:
-    v4 = root / "governance" / "v4"
-    state = load_json(v4 / "runtime" / "STATE.json")
-    registry = load_json(v4 / "roles" / "REGISTRY.json")
-    contracts = load_json(v4 / "contracts" / "CONTRACTS.json")
+    extra = [task_id] if task_id else []
+    state, tasks, contracts, registry = load_repository_bundle(root, extra)
 
     roles = registry.get("roles", {})
     if role_name not in roles:
@@ -29,12 +26,15 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
     role = roles[role_name]
 
     selected_task = task_id or state.get("active_project_task_id")
-    task = None
-    if selected_task:
-        task_path = v4 / "tasks" / f"{selected_task}.json"
-        if not task_path.is_file():
-            reject("TASK_NOT_FOUND", selected_task)
-        task = load_json(task_path)
+    task = tasks.get(selected_task) if selected_task else None
+    migration_task = (state.get("migration_control") or {}).get("task_id")
+    binding = "NONE"
+    if selected_task == state.get("active_project_task_id") and selected_task:
+        binding = "ACTIVE_PROJECT_TASK"
+    elif selected_task == migration_task and selected_task:
+        binding = "MIGRATION_CONTROL_ONLY"
+    elif selected_task:
+        binding = "INACTIVE / NO AUTHORITY"
 
     lines = [
         "# GENERATED / NON_CANONICAL — FOULWAKE ROLE BOOTSTRAP",
@@ -51,14 +51,16 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
         lines.append("ROLE_PROHIBITIONS: " + "; ".join(role["cannot"]))
 
     if task:
-        current = task.get("current_authorization", {})
+        authorization = task.get("authorization", {})
+        role_actions = authorization.get("role_actions", {}).get(role_name, [])
         lines.extend([
             "",
             f"TASK_ID: {task.get('task_id')}",
             f"TASK_STATUS: {task.get('status')}",
-            f"TASK_BRANCH: {task.get('delivery_scope', {}).get('branch')}",
-            f"CURRENT_WRITE_AUTHORIZED: {str(current.get('write_authorized')).upper()}",
-            "CURRENT_TASK_ACTIONS: " + ", ".join(current.get("allowed_actions", [])),
+            f"TASK_BINDING: {binding}",
+            f"TASK_BRANCH: {task.get('scope', {}).get('branch')}",
+            f"CURRENT_WRITE_AUTHORIZED: {str(authorization.get('write_authorized') is True and binding == 'ACTIVE_PROJECT_TASK').upper()}",
+            "CURRENT_ROLE_TASK_ACTIONS: " + (", ".join(role_actions) or "NONE"),
         ])
     else:
         lines.extend([
@@ -96,26 +98,17 @@ def main() -> None:
             destination = destination.resolve()
             if destination.parent != generated_root:
                 reject("GENERATED_OUTPUT_SCOPE", str(destination))
-            state = load_json(root / "governance/v4/runtime/STATE.json")
+            state, _tasks, _contracts, _registry = load_repository_bundle(root)
             task_id = args.task_id or state.get("active_project_task_id")
             if not task_id:
                 reject("NO_ACTIVE_TASK", "generated output writes require an exact active task")
-            task = load_task(root, task_id)
-            registry = load_json(root / "governance/v4/roles/REGISTRY.json")
-            contracts = load_json(root / "governance/v4/contracts/CONTRACTS.json")
-            authorize_request(
-                state,
-                task,
-                registry,
-                contracts,
-                {
-                    "role": args.role,
-                    "action": "WRITE",
-                    "task_id": task_id,
-                    "branch": git(root, "branch", "--show-current"),
-                    "path": destination.relative_to(root).as_posix(),
-                },
-            )
+            authorize_repository_request(root, {
+                "role": args.role,
+                "action": "WRITE",
+                "task_id": task_id,
+                "branch": git(root, "branch", "--show-current"),
+                "path": destination.relative_to(root).as_posix(),
+            })
             destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_text(rendered, encoding="utf-8")
             print(destination)

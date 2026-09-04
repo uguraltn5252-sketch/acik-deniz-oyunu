@@ -1,8 +1,8 @@
 {
   "schema_version": "4.0",
   "canonical": true,
-  "state_id": "V4-PARALLEL-20260904",
-  "status": "V4_PARALLEL_BUILD_COMPLETE / PARITY_PASS / PENDING_PROJECT_OWNER_CUTOVER_APPROVAL",
+  "state_id": "V4-REWORK-20260904",
+  "status": "V4_REWORK_COMPLETE / GENERIC_RUNTIME_PASS / PENDING_PROJECT_OWNER_CUTOVER_APPROVAL",
   "updated_at": "2026-09-04",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -13,12 +13,12 @@
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
   "active_project_task_id": null,
-  "current_project_authorization": null,
   "migration_control": {
     "branch": "migration/governance-v4",
-    "task_id": "GOV4-MIGRATION-001",
-    "task_ref": "governance/v4/tasks/GOV4-MIGRATION-001.json",
-    "evidence_ref": "governance/v4/evidence/MIGRATION_RESULT.json",
+    "task_id": "GOV4-REWORK-001",
+    "task_ref": "governance/v4/tasks/GOV4-REWORK-001.json",
+    "evidence_ref": "governance/v4/evidence/REWORK_RESULT.json",
+    "rework_source_commit": "e891a678822c5cb1773714f2ceda33eaccee9a57",
     "parallel_install": true,
     "cutover_performed": false,
     "project_owner_cutover_approval": null
@@ -79,7 +79,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "PROJECT_OWNER_REVIEWS_PARITY_EVIDENCE_AND_DECIDES_CUTOVER",
+  "next_action": "PROJECT_OWNER_REVIEWS_GENERIC_RUNTIME_REWORK_AND_DECIDES_CUTOVER",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",

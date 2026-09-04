@@ -1,0 +1,90 @@
+{
+  "schema_version": "4.1",
+  "canonical_task_authority": true,
+  "task_id": "GOV4-REWORK-001",
+  "task_type": "GOVERNANCE_V4_CUTOVER_REWORK",
+  "project_task": false,
+  "status": "DELIVERED / READ_ONLY_PENDING_PROJECT_OWNER_CUTOVER_DECISION",
+  "issued_by": "PROJECT_OWNER",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "source": {
+    "branch": "migration/governance-v4",
+    "commit": "e891a678822c5cb1773714f2ceda33eaccee9a57",
+    "tree": "98f12279d22d0b7921d0f1e25a7c35706b365195",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": false,
+    "allowed_actions": [
+      "CUTOVER_DECISION"
+    ],
+    "role_actions": {
+      "PROJECT_OWNER": [
+        "CUTOVER_DECISION"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "migration/governance-v4",
+    "allowed_globs": [
+      "governance/v4/**"
+    ],
+    "expected_paths": [
+      "governance/v4/bootstrap.py",
+      "governance/v4/contracts/CONTRACTS.json",
+      "governance/v4/evidence/REWORK_RESULT.json",
+      "governance/v4/migration_audit.py",
+      "governance/v4/runtime/STATE.json",
+      "governance/v4/tasks/GOV4-REWORK-001.json",
+      "governance/v4/tests/fixtures/NEGATIVE_CASES.json",
+      "governance/v4/tests/fixtures/RUNTIME_SCENARIOS.json",
+      "governance/v4/tests/test_governance_v4.py",
+      "governance/v4/validator.py"
+    ],
+    "max_changed_files": 12,
+    "allowed_extensions": [
+      ".json",
+      ".py"
+    ],
+    "forbidden_prefixes": [
+      ".github/",
+      "releases/",
+      "working/"
+    ],
+    "forbidden_exact_paths": [
+      "AI_HANDOFF.md",
+      "PROJECT_STATE.md",
+      "governance/CURRENT_STAGE.json",
+      "governance/validate_governance.py",
+      "governance/validate_workstream_scope.py"
+    ],
+    "binary_files_allowed": false,
+    "game_content_or_production_artifacts_allowed": false
+  },
+  "protected_unchanged_paths": [
+    "governance/v4/evidence/MIGRATION_RESULT.json",
+    "governance/v4/tasks/GOV4-MIGRATION-001.json",
+    "governance/v4/history/evidence/INDEX.json"
+  ],
+  "required_checks": [
+    "GENERIC_RUNTIME_VALIDATOR_PASS",
+    "MIGRATION_REWORK_AUDIT_PASS",
+    "V3_VALIDATOR_PASS",
+    "CUTOVER_STATE_FIXTURE_PASS",
+    "NEW_TASK_WITHOUT_VALIDATOR_CHANGE_PASS",
+    "POSITIVE_AUTHORIZATION_TESTS_PASS",
+    "ORIGINAL_AND_ADDED_NEGATIVE_TESTS_PASS",
+    "V26_TREE_EXACT",
+    "NO_CONTENT_CHANGE",
+    "NO_CUTOVER"
+  ],
+  "temporary_subagents": {
+    "used": 0,
+    "reason": "The rework was bounded and single-writer; delegation was unnecessary."
+  },
+  "completion_evidence": "governance/v4/evidence/REWORK_RESULT.json"
+}

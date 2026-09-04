@@ -19,6 +19,45 @@
     "v3_rollback_checkpoint": "v2.7-design@5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
     "history_policy": "history/evidence is non-canonical, cannot authorize work, and cannot override runtime, task, contract or role records"
   },
+  "runtime_authorization": {
+    "active_task_statuses": [
+      "ACTIVE"
+    ],
+    "read_only_action": "READ_ONLY_VALIDATION",
+    "cutover_action": "CUTOVER_DECISION",
+    "cutover_required_role": "PROJECT_OWNER",
+    "cutover_review_statuses": [
+      "DELIVERED / READ_ONLY_PENDING_PROJECT_OWNER_CUTOVER_DECISION"
+    ],
+    "branch_and_path_required_for_non_read_only": true,
+    "request_task_must_equal_active_project_task": true,
+    "executor_or_explicit_reviewer_required": true,
+    "write_actions": [
+      "WRITE",
+      "OPEN_TASK",
+      "INTEGRATE",
+      "MANAGE_STATE",
+      "RESOLVE_SOURCE_CONFLICT",
+      "PRODUCE_STORY",
+      "PRODUCE_FLAVOR",
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT"
+    ],
+    "self_approval_actions": [
+      "FINAL_AESTHETIC_APPROVAL",
+      "PROJECT_OWNER_AESTHETIC_ACCEPTANCE"
+    ],
+    "copy_check_actions": [
+      "COPY_CHECK"
+    ],
+    "action_permission_map": {
+      "PRODUCE_VISUAL": "visual_production",
+      "PRODUCE_LAYOUT": "visual_production",
+      "RUN_SIMULATION": "simulation",
+      "RELEASE": "release",
+      "LOCK": "lock"
+    }
+  },
   "protected_quality_gates": [
     "V2_6_IMMUTABILITY",
     "CANONICAL_SOURCE_HIERARCHY",
@@ -74,6 +113,7 @@
       "failure_code": "BLOCKED_COPY_DRIFT"
     },
     "framing": {
+      "action": "FRAMING_DECISION",
       "scope": "ALL_FRONT_AND_BACK_CARD_ILLUSTRATIONS_AT_EVERY_GATE",
       "independent_reviewer_role": "ART_DIRECTION",
       "producer_role": "VISUAL_DESIGN",
@@ -106,6 +146,10 @@
     "LOCK"
   ],
   "release_and_lock": {
+    "actions": [
+      "RELEASE",
+      "LOCK"
+    ],
     "required_role": "PROJECT_OWNER",
     "explicit_decision_required": true,
     "open_blockers_must_be_empty": true,

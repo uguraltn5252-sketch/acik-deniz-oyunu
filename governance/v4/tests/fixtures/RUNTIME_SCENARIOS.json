@@ -1,0 +1,326 @@
+{
+  "schema_version": "4.1",
+  "canonical": false,
+  "fixture_type": "GENERIC_RUNTIME_SCENARIOS",
+  "states": {
+    "cutover_complete": {
+      "schema_version": "4.1",
+      "canonical": true,
+      "state_id": "FIXTURE-CUTOVER-COMPLETE",
+      "status": "V4_ACTIVE",
+      "source_checkpoint": {
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "locked_release_tree_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "active_project_task_id": null,
+      "active_visual_candidate": null,
+      "permissions": {
+        "visual_production": false,
+        "simulation": false,
+        "release": false,
+        "lock": false
+      },
+      "open_blockers": {},
+      "canonical_refs": {
+        "contracts": "governance/v4/contracts/CONTRACTS.json",
+        "roles": "governance/v4/roles/REGISTRY.json"
+      },
+      "migration_control": {
+        "task_id": null,
+        "cutover_performed": true,
+        "project_owner_cutover_approval": "EXPLICIT"
+      },
+      "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
+    },
+    "no_active_task": {
+      "schema_version": "4.1",
+      "canonical": true,
+      "state_id": "FIXTURE-NO-ACTIVE-TASK",
+      "status": "V4_ACTIVE / IDLE",
+      "source_checkpoint": {
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "locked_release_tree_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "active_project_task_id": null,
+      "active_visual_candidate": null,
+      "permissions": {
+        "visual_production": false,
+        "simulation": false,
+        "release": false,
+        "lock": false
+      },
+      "open_blockers": {},
+      "canonical_refs": {
+        "contracts": "governance/v4/contracts/CONTRACTS.json",
+        "roles": "governance/v4/roles/REGISTRY.json"
+      },
+      "migration_control": {
+        "task_id": null,
+        "cutover_performed": true,
+        "project_owner_cutover_approval": "EXPLICIT"
+      },
+      "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
+    },
+    "visual_active": {
+      "schema_version": "4.1",
+      "canonical": true,
+      "state_id": "FIXTURE-VISUAL-ACTIVE",
+      "status": "V4_ACTIVE",
+      "source_checkpoint": {
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "locked_release_tree_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "active_project_task_id": "VISUAL-EXAMPLE-001",
+      "active_visual_candidate": null,
+      "permissions": {
+        "visual_production": true,
+        "simulation": false,
+        "release": false,
+        "lock": false
+      },
+      "open_blockers": {},
+      "canonical_refs": {
+        "contracts": "governance/v4/contracts/CONTRACTS.json",
+        "roles": "governance/v4/roles/REGISTRY.json"
+      },
+      "migration_control": {
+        "task_id": null,
+        "cutover_performed": true,
+        "project_owner_cutover_approval": "EXPLICIT"
+      },
+      "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
+    },
+    "art_direction_active": {
+      "schema_version": "4.1",
+      "canonical": true,
+      "state_id": "FIXTURE-ART-DIRECTION-ACTIVE",
+      "status": "V4_ACTIVE",
+      "source_checkpoint": {
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "locked_release_tree_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "active_project_task_id": "ART-EXAMPLE-001",
+      "active_visual_candidate": null,
+      "permissions": {
+        "visual_production": false,
+        "simulation": false,
+        "release": false,
+        "lock": false
+      },
+      "open_blockers": {},
+      "canonical_refs": {
+        "contracts": "governance/v4/contracts/CONTRACTS.json",
+        "roles": "governance/v4/roles/REGISTRY.json"
+      },
+      "migration_control": {
+        "task_id": null,
+        "cutover_performed": true,
+        "project_owner_cutover_approval": "EXPLICIT"
+      },
+      "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
+    },
+    "inactive_task_selected": {
+      "schema_version": "4.1",
+      "canonical": true,
+      "state_id": "FIXTURE-INACTIVE-TASK",
+      "status": "V4_ACTIVE",
+      "source_checkpoint": {
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "locked_release_tree_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "active_project_task_id": "CLOSED-EXAMPLE-001",
+      "active_visual_candidate": null,
+      "permissions": {
+        "visual_production": false,
+        "simulation": false,
+        "release": false,
+        "lock": false
+      },
+      "open_blockers": {},
+      "canonical_refs": {
+        "contracts": "governance/v4/contracts/CONTRACTS.json",
+        "roles": "governance/v4/roles/REGISTRY.json"
+      },
+      "migration_control": {
+        "task_id": null,
+        "cutover_performed": true,
+        "project_owner_cutover_approval": "EXPLICIT"
+      },
+      "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
+    },
+    "release_blocked": {
+      "schema_version": "4.1",
+      "canonical": true,
+      "state_id": "FIXTURE-RELEASE-BLOCKED",
+      "status": "V4_ACTIVE",
+      "source_checkpoint": {
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "locked_release_tree_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "active_project_task_id": "RELEASE-EXAMPLE-001",
+      "active_visual_candidate": null,
+      "permissions": {
+        "visual_production": false,
+        "simulation": false,
+        "release": true,
+        "lock": false
+      },
+      "open_blockers": {
+        "QA-EXAMPLE": "Fixture blocker remains open."
+      },
+      "canonical_refs": {
+        "contracts": "governance/v4/contracts/CONTRACTS.json",
+        "roles": "governance/v4/roles/REGISTRY.json"
+      },
+      "migration_control": {
+        "task_id": null,
+        "cutover_performed": true,
+        "project_owner_cutover_approval": "EXPLICIT"
+      },
+      "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
+    }
+  },
+  "tasks": {
+    "VISUAL-EXAMPLE-001": {
+      "schema_version": "4.1",
+      "canonical_task_authority": true,
+      "task_id": "VISUAL-EXAMPLE-001",
+      "status": "ACTIVE",
+      "executor_role": "VISUAL_DESIGN",
+      "reviewer_roles": [
+        "ART_DIRECTION",
+        "SIMULATION_QA",
+        "PROJECT_OWNER"
+      ],
+      "authorization": {
+        "enabled": true,
+        "write_authorized": true,
+        "allowed_actions": [
+          "PRODUCE_VISUAL",
+          "FRAMING_DECISION",
+          "COPY_CHECK",
+          "QA_REVIEW",
+          "PROJECT_OWNER_AESTHETIC_ACCEPTANCE"
+        ],
+        "role_actions": {
+          "VISUAL_DESIGN": [
+            "PRODUCE_VISUAL"
+          ],
+          "ART_DIRECTION": [
+            "FRAMING_DECISION"
+          ],
+          "SIMULATION_QA": [
+            "COPY_CHECK",
+            "QA_REVIEW"
+          ],
+          "PROJECT_OWNER": [
+            "PROJECT_OWNER_AESTHETIC_ACCEPTANCE"
+          ]
+        }
+      },
+      "scope": {
+        "branch": "work/v2.7-visual",
+        "allowed_globs": [
+          "working/v2.7/visual/example/**"
+        ],
+        "binary_files_allowed": true
+      }
+    },
+    "ART-EXAMPLE-001": {
+      "schema_version": "4.1",
+      "canonical_task_authority": true,
+      "task_id": "ART-EXAMPLE-001",
+      "status": "ACTIVE",
+      "executor_role": "ART_DIRECTION",
+      "reviewer_roles": [
+        "PROJECT_OWNER"
+      ],
+      "authorization": {
+        "enabled": true,
+        "write_authorized": true,
+        "allowed_actions": [
+          "ART_LANGUAGE_REVIEW",
+          "FRAMING_DECISION",
+          "PROJECT_OWNER_AESTHETIC_ACCEPTANCE"
+        ],
+        "role_actions": {
+          "ART_DIRECTION": [
+            "ART_LANGUAGE_REVIEW",
+            "FRAMING_DECISION"
+          ],
+          "PROJECT_OWNER": [
+            "PROJECT_OWNER_AESTHETIC_ACCEPTANCE"
+          ]
+        }
+      },
+      "scope": {
+        "branch": "work/v2.7-art-direction",
+        "allowed_globs": [
+          "working/v2.7/visual/art_direction/example/**"
+        ],
+        "binary_files_allowed": false
+      }
+    },
+    "CLOSED-EXAMPLE-001": {
+      "schema_version": "4.1",
+      "canonical_task_authority": true,
+      "task_id": "CLOSED-EXAMPLE-001",
+      "status": "CLOSED",
+      "executor_role": "VISUAL_DESIGN",
+      "reviewer_roles": [
+        "SIMULATION_QA"
+      ],
+      "authorization": {
+        "enabled": false,
+        "write_authorized": false,
+        "allowed_actions": [
+          "PRODUCE_VISUAL",
+          "QA_REVIEW"
+        ],
+        "role_actions": {
+          "VISUAL_DESIGN": [
+            "PRODUCE_VISUAL"
+          ],
+          "SIMULATION_QA": [
+            "QA_REVIEW"
+          ]
+        }
+      },
+      "scope": {
+        "branch": "work/v2.7-visual",
+        "allowed_globs": [
+          "working/v2.7/visual/example/**"
+        ],
+        "binary_files_allowed": true
+      }
+    },
+    "RELEASE-EXAMPLE-001": {
+      "schema_version": "4.1",
+      "canonical_task_authority": true,
+      "task_id": "RELEASE-EXAMPLE-001",
+      "status": "ACTIVE",
+      "executor_role": "PROJECT_OWNER",
+      "reviewer_roles": [],
+      "authorization": {
+        "enabled": true,
+        "write_authorized": false,
+        "allowed_actions": [
+          "RELEASE"
+        ],
+        "role_actions": {
+          "PROJECT_OWNER": [
+            "RELEASE"
+          ]
+        }
+      },
+      "scope": {
+        "branch": "v2.7-design",
+        "allowed_globs": [],
+        "allowed_exact_paths": [
+          "governance/v4/runtime/STATE.json"
+        ],
+        "binary_files_allowed": false
+      }
+    }
+  }
+}

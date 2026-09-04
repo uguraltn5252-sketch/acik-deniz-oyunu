@@ -1,0 +1,128 @@
+{
+  "schema_version": "4.1",
+  "evidence_type": "GOVERNANCE_V4_GENERIC_RUNTIME_REWORK",
+  "canonical_authority": false,
+  "rework_commit_binding": "THE_COMMIT_CONTAINING_THIS_FILE",
+  "source": {
+    "branch": "migration/governance-v4",
+    "commit": "e891a678822c5cb1773714f2ceda33eaccee9a57",
+    "root_tree": "98f12279d22d0b7921d0f1e25a7c35706b365195",
+    "v26_locked_tree": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "task": {
+    "task_id": "GOV4-REWORK-001",
+    "task_ref": "governance/v4/tasks/GOV4-REWORK-001.json",
+    "status": "DELIVERED / READ_ONLY_PENDING_PROJECT_OWNER_CUTOVER_DECISION"
+  },
+  "scope_audit": {
+    "changed_files": 10,
+    "maximum_changed_files": 12,
+    "only_governance_v4": true,
+    "allowed_file_types_only": true,
+    "binary_or_production_artifact_changes": 0,
+    "v3_governance_changed": false,
+    "working_v2_7_changed": false,
+    "releases_v2_6_changed": false,
+    "original_migration_result_changed": false,
+    "result": "PASS"
+  },
+  "generic_validator": {
+    "runtime_chain": "STATE -> ACTIVE TASK -> CONTRACTS -> ROLE REGISTRY",
+    "snapshot_values_in_runtime_validator": false,
+    "new_stage_requires_validator_code_change": false,
+    "new_task_requires_validator_code_change": false,
+    "cutover_complete_state_supported": true,
+    "result": "PASS"
+  },
+  "task_role_binding": {
+    "exact_active_task_required": true,
+    "active_status_required": true,
+    "task_authorization_required": true,
+    "executor_or_explicit_reviewer_required": true,
+    "allowed_action_required": true,
+    "branch_and_path_scope_required": true,
+    "runtime_permission_required_for_mapped_actions": true,
+    "inactive_task_reuse_denied": true,
+    "specialist_action_without_active_task_denied": true,
+    "cutover_exception_bound_to_exact_migration_control_task": true,
+    "result": "PASS"
+  },
+  "migration_audit": {
+    "implementation": "governance/v4/migration_audit.py",
+    "purpose": "One-time source, scope, protected-evidence, v2.6 and v3 parity audit kept separate from the runtime validator.",
+    "v3_v4_parity_assertions": 8,
+    "original_migration_evidence_byte_exact": true,
+    "result": "PASS"
+  },
+  "positive_test_result": {
+    "result": "PASS",
+    "passed": 8,
+    "failed": 0,
+    "coverage": [
+      "generic repository runtime",
+      "cutover-complete runtime state",
+      "new active task without validator change",
+      "read-only validation without active task",
+      "visual executor action",
+      "explicit independent reviewers",
+      "art-direction executor action",
+      "exact project-owner migration-control cutover decision"
+    ]
+  },
+  "negative_test_result": {
+    "result": "PASS",
+    "passed": 23,
+    "failed": 0,
+    "original_nine_retained": true,
+    "fixture_cases": 16,
+    "additional_no_active_task_action_checks": 6,
+    "runtime_permission_bypass_checks": 1,
+    "added_coverage": [
+      "ROLE_TASK_MISMATCH",
+      "ACTIVE_TASK_MISMATCH",
+      "TASK_ACTION_FORBIDDEN",
+      "NO_ACTIVE_TASK_FOR_SPECIALIST_ACTION",
+      "INACTIVE_TASK_REUSE",
+      "STORY_EDITOR_ON_VISUAL_TASK",
+      "VISUAL_DESIGN_ON_ART_DIRECTION_TASK"
+    ]
+  },
+  "test_suite": {
+    "command": "python3 -m unittest discover -s governance/v4/tests -p 'test_*.py' -v",
+    "tests_run": 17,
+    "failures": 0,
+    "errors": 0,
+    "result": "PASS"
+  },
+  "temporary_subagents": {
+    "used": 0,
+    "reason": "The bounded single-writer rework did not justify delegation."
+  },
+  "skills_or_plugins_used": [
+    {
+      "tool_or_plugin": "GitHub",
+      "concrete_benefit": "Verified exact remote source and protected trees, then delivered only to the migration branch."
+    },
+    {
+      "tool_or_plugin": "personal-context skill",
+      "concrete_benefit": "Preserved the owner's exact-copy, framing, quality-gate and no-cutover constraints."
+    }
+  ],
+  "game_content_or_production_artifact_changed": false,
+  "v26_locked_tree_preserved": true,
+  "cutover_performed": false,
+  "merged_to_v2_7_design": false,
+  "specialist_chats_replaced": false,
+  "open_blockers": [
+    "ART-001",
+    "SRC-002",
+    "MEC-001",
+    "QA-001",
+    "QA-002",
+    "GOV-001",
+    "GOV-002",
+    "PHYSICAL-PROOF"
+  ],
+  "result": "V4_REWORK_COMPLETE / GENERIC_RUNTIME_PASS / PENDING_PROJECT_OWNER_CUTOVER_APPROVAL",
+  "next_action": "PROJECT_OWNER_REVIEWS_THIS_EXACT_REWORK_COMMIT_AND_APPROVES_OR_REJECTS_CUTOVER"
+}
