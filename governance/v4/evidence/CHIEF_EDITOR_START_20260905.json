@@ -1,0 +1,178 @@
+{
+  "schema_version": "4.3",
+  "canonical_authority": false,
+  "evidence_type": "ROLE_START_AND_COORDINATION_CHECK",
+  "task_id": "GOV4-TEAM-COORDINATION-001",
+  "role": "CHIEF_EDITOR",
+  "verified_at_utc": "2026-09-05T08:10:23.996Z",
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "537cc7550e905c0343b81c8021dae57f43966166",
+    "tree": "285f7195fa91d8a6f0c89d5f422a60c52acc5b9d"
+  },
+  "result": "INITIAL_VERIFICATION_PASS / COORDINATION_ACTIVE / SPECIALIST_DELIVERY_PENDING",
+  "authority_refs": [
+    "governance/v4/TEAM_START.md",
+    "governance/v4/roles/CHIEF_EDITOR.md",
+    "governance/v4/runtime/STATE.json",
+    "governance/v4/roles/REGISTRY.json",
+    "governance/v4/tasks/GOV4-TEAM-COORDINATION-001.json",
+    "governance/v4/contracts/CONTRACTS.json"
+  ],
+  "authorization_check": {
+    "action": "WRITE",
+    "branch": "v2.7-design",
+    "path": "governance/v4/evidence/CHIEF_EDITOR_START_20260905.json",
+    "validator_result": "ALLOW"
+  },
+  "ci": {
+    "run_id": 33951870300,
+    "job_id": 101268071026,
+    "commit": "537cc7550e905c0343b81c8021dae57f43966166",
+    "conclusion": "success",
+    "url": "https://github.com/uguraltn5252-sketch/acik-deniz-oyunu/actions/runs/33951870300",
+    "verified_steps": [
+      {
+        "name": "Protect locked v2.6 tree",
+        "conclusion": "success"
+      },
+      {
+        "name": "Validate integrated governance",
+        "conclusion": "success"
+      },
+      {
+        "name": "Test v4 lifecycle and fail-closed boundaries",
+        "conclusion": "success"
+      },
+      {
+        "name": "Validate every workstream against current v4 authority",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "live_workstream_checks": [
+    {
+      "branch": "work/v2.7-story",
+      "changed_files": 0,
+      "head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "status": "PASS / FROZEN / NO_WRITE_AUTHORITY"
+    },
+    {
+      "branch": "work/v2.7-art-direction",
+      "changed_files": 0,
+      "head": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "status": "PASS / FROZEN / NO_WRITE_AUTHORITY"
+    },
+    {
+      "branch": "work/v2.7-visual",
+      "changed_files": 0,
+      "head": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+      "status": "PASS / FROZEN / NO_WRITE_AUTHORITY"
+    },
+    {
+      "authority": "537cc7550e905c0343b81c8021dae57f43966166",
+      "baseline": "75763ab1736733f41eff40618a36a82c8a172909",
+      "branch": "work/v2.7-simulation",
+      "changed_files": 0,
+      "head": "75763ab1736733f41eff40618a36a82c8a172909",
+      "status": "PASS / TASK_SCOPE_ONLY",
+      "task_id": "MEC-SEA-ROCK-PREFLIGHT-001"
+    }
+  ],
+  "locked_v26_tree": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
+  "simulation_handoff": {
+    "task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
+    "executor_role": "SIMULATION_QA",
+    "reviewer_role": "CHIEF_EDITOR",
+    "branch": "work/v2.7-simulation",
+    "source_commit": "9779f6bb05504a01ca9817bcb8d20fc407efe657",
+    "execution_baseline": "75763ab1736733f41eff40618a36a82c8a172909",
+    "current_authority_commit": "537cc7550e905c0343b81c8021dae57f43966166",
+    "input_pins": "5/5 MATCH on authority and execution branch",
+    "delivery_status": "NO_COMMITTED_OUTPUTS_AT_VERIFIED_BRANCH_HEAD",
+    "missing_required_outputs": [
+      "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_v2.7.py",
+      "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_RESULTS_v2.7.json",
+      "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_REPORT_v2.7.md"
+    ],
+    "scope": "Existing three QA outputs only; current v4 authority does not require merging governance into the specialist branch.",
+    "acceptance": "Review source pins, cumulative three-file scope, reproducible command, deterministic configuration, limitations and RESULTS/REPORT agreement. Bind independent acceptance to exact delivery commit and blobs.",
+    "mechanic_blocker": "MEC-001 remains OPEN after this focused preflight; full-engine, human and physical evidence remain separate."
+  },
+  "chat_acknowledgements": {
+    "CHIEF_EDITOR": "VISIBLE_CHAT_ACK / THIS_CONVERSATION",
+    "STORY_EDITOR": "NOT_VERIFIED_IN_THIS_CONVERSATION",
+    "VISUAL_DESIGN": "NOT_VERIFIED_IN_THIS_CONVERSATION",
+    "ART_DIRECTION": "NOT_VERIFIED_IN_THIS_CONVERSATION",
+    "SIMULATION_QA": "NOT_VERIFIED_IN_THIS_CONVERSATION"
+  },
+  "planning_queue": {
+    "authority": "PLANNING_ONLY / NO_NEW_TASK_OPENED",
+    "order": [
+      {
+        "step": 1,
+        "owner": "SIMULATION_QA",
+        "work": "Deliver the currently active Sea/Rock A/B preflight; Chief Editor reviews the exact commit."
+      },
+      {
+        "step": 2,
+        "owner": "CHIEF_EDITOR",
+        "work": "After current-task closure, issue a bounded source/copy inventory and verification task; current resolver covers 51 of 121 identities."
+      },
+      {
+        "step": 3,
+        "owner": "CHIEF_EDITOR",
+        "work": "Issue targeted Story Editor and Art Direction consistency reviews against current owner decisions and pinned accepted sources."
+      },
+      {
+        "step": 4,
+        "owner": "CHIEF_EDITOR",
+        "work": "Open a small visual quality gate only through a new exact task; preserve independent art review and owner aesthetic acceptance before expansion."
+      }
+    ]
+  },
+  "external_enforcement": {
+    "blocker": "GOV-001",
+    "status": "OPEN",
+    "live_branch_protection": {
+      "main": false,
+      "v2.7-design": false
+    },
+    "rulesets": [],
+    "evidence_urls": [
+      "https://api.github.com/repos/uguraltn5252-sketch/acik-deniz-oyunu/branches?per_page=100",
+      "https://api.github.com/repos/uguraltn5252-sketch/acik-deniz-oyunu/rulesets?per_page=100"
+    ]
+  },
+  "retained_limits": {
+    "resolved_copy_records": 51,
+    "expected_deck_records": 121,
+    "open_blockers": [
+      "ART-001",
+      "MEC-001",
+      "QA-001",
+      "QA-002",
+      "GOV-001",
+      "PHYSICAL-PROOF"
+    ],
+    "specialist_output_produced": false,
+    "new_task_opened": false,
+    "production": false,
+    "release": false,
+    "lock": false
+  },
+  "verification_tools": [
+    {
+      "tool": "GitHub connector",
+      "benefit": "Live branch refs, current-HEAD Actions job and repository protection evidence."
+    },
+    {
+      "tool": "Local Git and existing v4 validator/CI/bootstrap",
+      "benefit": "Pinned source reads, exact input/tree verification, authorization and cumulative workstream scope checks."
+    }
+  ],
+  "next_responsible_roles": {
+    "SIMULATION_QA": "Execute and deliver the existing assigned task through its visible role chat.",
+    "CHIEF_EDITOR": "Coordinate verified handoffs and review the delivery; retain ongoing coordination control."
+  }
+}
