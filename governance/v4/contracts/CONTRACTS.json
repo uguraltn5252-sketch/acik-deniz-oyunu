@@ -47,7 +47,18 @@
       "PRODUCE_THUMBNAIL",
       "PRODUCE_PILOT_OR_CANDIDATE",
       "PRODUCE_FULL_121",
-      "PRODUCE_PDF_OR_PRINT_PACKAGE"
+      "PRODUCE_PDF_OR_PRINT_PACKAGE",
+      "PERIOD_LANGUAGE_REVIEW",
+      "ART_LANGUAGE_REVIEW",
+      "FRAMING_DECISION",
+      "COMPOSITION_REVIEW",
+      "DECK_RHYTHM_REVIEW",
+      "AESTHETIC_RECOMMENDATION",
+      "RUN_SIMULATION",
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "PHYSICAL_EVIDENCE_REVIEW",
+      "RULES_INTEGRITY_REVIEW"
     ],
     "self_approval_actions": [
       "FINAL_AESTHETIC_APPROVAL",
@@ -77,6 +88,72 @@
       "RUN_SIMULATION": "simulation",
       "RELEASE": "release",
       "LOCK": "lock"
+    }
+  },
+  "lifecycle": {
+    "completed_hardening": {
+      "task_id": "GOV4-HARDENING-001",
+      "snapshot_commit": "bb2dda4576ec23497b66b662263e45f851e3ca93",
+      "state_ref": "governance/v4/runtime/STATE.json",
+      "evidence_ref": "governance/v4/evidence/HARDENING_RESULT.json",
+      "task_reuse_allowed": false,
+      "evidence_semantics": "IMMUTABLE_HISTORICAL_SNAPSHOT / NOT_LIVE_RUNTIME_AUTHORITY"
+    },
+    "future_runtime": "New exact tasks, task-scoped permissions, status changes and blocker progress are permitted; completed hardening cannot be reused and its resolved source decision cannot reopen.",
+    "task_opening": {
+      "actor": "CHIEF_EDITOR",
+      "authority": "EXPLICIT_PROJECT_OWNER_TASK_RECORDED_IN_TASK",
+      "transition": "IDLE_TO_NEW_ACTIVE_TASK",
+      "validation_command": "python -B governance/v4/validator.py --open-task-from <EXACT_HEAD> --role CHIEF_EDITOR",
+      "scope": "Only new task, runtime state and repository test expectations; no specialist output or blocker closure.",
+      "branch_baseline": "Execution starts from the commit which first adds the task; source.commit pins the validated pre-opening HEAD."
+    },
+    "role_boundaries": {
+      "CHIEF_EDITOR": {
+        "branch": "v2.7-design",
+        "allowed_globs": [
+          "governance/v4/**"
+        ]
+      },
+      "STORY_EDITOR": {
+        "branch": "work/v2.7-story",
+        "allowed_globs": [
+          "working/v2.7/story/**"
+        ],
+        "allowed_exact_paths": [
+          "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+          "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+          "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+        ]
+      },
+      "VISUAL_DESIGN": {
+        "branch": "work/v2.7-visual",
+        "allowed_globs": [
+          "working/v2.7/visual/**"
+        ],
+        "forbidden_prefixes": [
+          "working/v2.7/visual/art_direction/",
+          "working/v2.7/visual/references/"
+        ]
+      },
+      "ART_DIRECTION": {
+        "branch": "work/v2.7-art-direction",
+        "allowed_globs": [
+          "working/v2.7/visual/art_direction/**"
+        ]
+      },
+      "SIMULATION_QA": {
+        "branch": "work/v2.7-simulation",
+        "allowed_globs": [
+          "working/v2.7/qa/**"
+        ]
+      },
+      "PROJECT_OWNER": {
+        "branch": "v2.7-design",
+        "allowed_globs": [
+          "governance/v4/**"
+        ]
+      }
     }
   },
   "protected_quality_gates": [
@@ -160,7 +237,9 @@
             ]
           }
         }
-      }
+      },
+      "expected_full_deck_records": 121,
+      "coverage_status": "PARTIAL: 51 resolvable records; no full-deck exact-copy PASS or full-121 authorization."
     },
     "framing": {
       "action": "FRAMING_DECISION",
@@ -208,7 +287,9 @@
   "rules_integrity": {
     "permanent_rules_editor_role": false,
     "allowed_review_task_type": "RULES_INTEGRITY_REVIEW",
-    "review_is_read_only": true
+    "review_is_read_only": true,
+    "read_only_applies_to": "SOURCE_GAME_CONTENT / NOT_REPOSITORY_REVIEW_OUTPUTS",
+    "repository_review_outputs_require_write_authorized": true
   },
   "temporary_subagents": {
     "default": "DO_NOT_USE",
@@ -248,5 +329,27 @@
     "Quality-gate parity is proven.",
     "Project owner explicitly approves cutover.",
     "Old specialist chats are replaced only after successful cutover."
-  ]
+  ],
+  "operating_context": {
+    "entry": "governance/v4/runtime/STATE.json",
+    "authority": "After the recorded cutover, v4 state + exact active task + contracts + role registry govern current work. V3 CURRENT_STAGE and old root handoffs describe the preserved migration checkpoint, not current task authority.",
+    "bootstrap": "python -B governance/v4/bootstrap.py --role <ROLE>",
+    "read_minimum": [
+      "Current role bootstrap",
+      "Exact active task including pinned inputs and acceptance criteria",
+      "Only input sections needed for that task"
+    ],
+    "expand_context_when": "A source conflict, failed gate or task requirement needs the underlying evidence; never reduce review depth to save tokens.",
+    "handoff_fields": [
+      "TASK_ID",
+      "SOURCE_HEAD",
+      "DELIVERY_COMMIT",
+      "CHANGED_PATHS",
+      "RESULT_AND_EVIDENCE",
+      "OPEN_BLOCKERS",
+      "NEXT_RESPONSIBLE_ROLE"
+    ],
+    "role_rule": "No active role action means no write. Chief Editor opens/integrates; specialists execute their own scope; history and another chat never substitute for current Git authority.",
+    "known_external_enforcement_gap": "GOV-001 and GOV-002 remain OPEN until live GitHub protection and specialist CI evidence exist."
+  }
 }

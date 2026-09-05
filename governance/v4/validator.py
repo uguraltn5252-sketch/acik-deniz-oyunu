@@ -356,6 +356,7 @@ def validate_contracts_document(contracts: dict[str, Any], registry: dict[str, A
         )
     for key in ("read_only_action", "cutover_action", "cutover_required_role"):
         require(isinstance(policy.get(key), str) and policy[key], "CONTRACT_SCHEMA", key)
+    require(policy["read_only_action"] not in policy["write_actions"], "CONTRACT_SCHEMA", "read-only action classified as write")
     require(
         policy.get("branch_and_path_required_for_non_read_only") is True,
         "CONTRACT_SCHEMA",
@@ -515,6 +516,9 @@ def validate_runtime_documents(
         validate_task_document(task, registry)
 
     active_id = state.get("active_project_task_id")
+    completed = contracts.get("lifecycle", {}).get("completed_hardening", {})
+    if active_id is not None and completed.get("task_reuse_allowed") is False:
+        require(active_id != completed.get("task_id"), "INACTIVE_TASK_REUSE", str(active_id))
     if (state.get("migration_control") or {}).get("cutover_performed") is True:
         policy = contracts["runtime_authorization"]
         required_permissions = {
@@ -685,9 +689,167 @@ def load_repository_bundle(
     migration_id = (state.get("migration_control") or {}).get("task_id")
     if migration_id:
         task_ids.add(migration_id)
+    # Discover real registry entries, including orphan ACTIVE tasks. Fixtures are
+    # deliberately outside this directory and never create runtime authority.
+    registry_active = []
+    for path in sorted((root / "governance/v4/tasks").glob("*.json")):
+        record = load_json(path)
+        require(record.get("task_id") == path.stem, "TASK_ID_DRIFT", str(path))
+        if record.get("status") == "ACTIVE":
+            registry_active.append(path.stem)
+        if record.get("project_task") is True:
+            task_ids.add(path.stem)
+        if str(record.get("status", "")).startswith("CLOSED"):
+            auth = record.get("authorization", {})
+            require(auth.get("enabled") is False and auth.get("write_authorized") is False,
+                    "CLOSED_TASK_AUTHORITY_OPEN", path.stem)
+            completed = contracts.get("lifecycle", {}).get("completed_hardening", {}).get("task_id")
+            if record.get("project_task") is True and path.stem != completed:
+                validate_task_closure(root, record)
+    expected_active = [state["active_project_task_id"]] if state.get("active_project_task_id") else []
+    require(registry_active == expected_active, "TASK_REGISTRY_DRIFT", str(registry_active))
     tasks = {task_id: load_task(root, task_id) for task_id in task_ids}
     validate_runtime_documents(state, tasks, contracts, registry)
+    if not expected_active:
+        require(all(value is False for value in state["permissions"].values()),
+                "IDLE_PERMISSION_OPEN", "No task can own an enabled permission")
+    else:
+        validate_live_task(root, tasks[expected_active[0]], state, contracts)
     return state, tasks, contracts, registry
+
+
+def validate_live_task(root: Path, task: dict[str, Any], state: dict[str, Any], contracts: dict[str, Any]) -> None:
+    """Validate actual registry records; synthetic scenario tests use document validation."""
+    task_id = task["task_id"]
+    require(not task.get("completion"), "ACTIVE_BUT_CLOSED_TASK", task_id)
+    require(task.get("project_task") is True, "TASK_NOT_PROJECT_TASK", task_id)
+    require(task.get("issued_by") == "PROJECT_OWNER", "PROJECT_OWNER_REQUIRED", task_id)
+    approval = task.get("owner_authorization", {})
+    require(approval.get("task_id") == task_id and approval.get("decision") == "AUTHORIZED"
+            and approval.get("recorded_from"), "TASK_OWNER_AUTHORIZATION_MISSING", task_id)
+    source = task.get("source", {})
+    baseline = source.get("commit")
+    require(SHA_RE.fullmatch(str(baseline or "")) is not None, "TASK_BASELINE_MISSING", task_id)
+    require(subprocess.run(["git", "merge-base", "--is-ancestor", baseline, "HEAD"], cwd=root,
+                           stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode == 0,
+            "TASK_BASELINE_NOT_ANCESTOR", str(baseline))
+    string_list(task.get("acceptance_criteria"), "TASK_ACCEPTANCE_MISSING", task_id)
+    scope = task["scope"]
+    require(isinstance(scope.get("max_changed_files"), int) and scope["max_changed_files"] > 0,
+            "TASK_SCOPE_LIMIT_MISSING", task_id)
+    string_list(scope.get("allowed_extensions"), "TASK_SCOPE_LIMIT_MISSING", task_id)
+    require(isinstance(scope.get("binary_files_allowed"), bool), "TASK_SCOPE_LIMIT_MISSING", task_id)
+    boundary = contracts["lifecycle"]["role_boundaries"].get(task["executor_role"])
+    require(isinstance(boundary, dict), "ROLE_BOUNDARY_MISSING", task["executor_role"])
+    require(scope["branch"] == boundary["branch"], "ROLE_BRANCH_MISMATCH", task_id)
+    for path in scope.get("allowed_exact_paths", []) + scope.get("allowed_globs", []):
+        require(scope_allows(boundary, path), "ROLE_PATH_MISMATCH", path)
+    granted = task.get("runtime_permissions")
+    require(isinstance(granted, dict) and granted == state["permissions"], "TASK_PERMISSION_DRIFT", task_id)
+    actions = task["authorization"]["allowed_actions"]
+    policy = contracts["runtime_authorization"]
+    permission_actions = {**policy["action_permission_map"], **policy["granular_production_actions"]}
+    for permission, enabled in granted.items():
+        if not enabled:
+            continue
+        require(task["authorization"]["write_authorized"] is True, "TASK_WRITE_CLOSED", task_id)
+        permitted = any(permission_actions.get(action) == permission for action in actions)
+        if permission == policy["production_master_permission"]:
+            permitted = any(action in policy["granular_production_actions"] for action in actions)
+        require(permitted, "UNOWNED_PERMISSION", permission)
+    inputs = task.get("inputs")
+    require(isinstance(inputs, list) and inputs, "TASK_INPUTS_MISSING", task_id)
+    for pin in inputs:
+        require(isinstance(pin, dict) and isinstance(pin.get("path"), str)
+                and SHA_RE.fullmatch(str(pin.get("git_blob", ""))) is not None, "TASK_INPUT_SCHEMA", task_id)
+        relative = normalize_path(pin["path"])
+        require(git(root, "rev-parse", f"{baseline}:{relative}") == pin["git_blob"], "TASK_INPUT_BASELINE_DRIFT", relative)
+        require(git(root, "hash-object", relative) == pin.get("git_blob"), "TASK_INPUT_DRIFT", relative)
+
+
+def validate_task_closure(root: Path, task: dict[str, Any]) -> None:
+    completion = task.get("completion", {})
+    require(isinstance(completion, dict), "TASK_CLOSURE_MISSING", task["task_id"])
+    reviewer = completion.get("accepted_by")
+    require(reviewer in task.get("reviewer_roles", []) and reviewer != task.get("executor_role"),
+            "INDEPENDENT_ACCEPTANCE_MISSING", task["task_id"])
+    delivery = completion.get("delivery_commit")
+    require(SHA_RE.fullmatch(str(delivery or "")) is not None, "DELIVERY_COMMIT_MISSING", task["task_id"])
+    require(subprocess.run(["git", "merge-base", "--is-ancestor", delivery, "HEAD"], cwd=root,
+                           stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode == 0,
+            "DELIVERY_NOT_ANCESTOR", str(delivery))
+    evidence = completion.get("accepted_blobs", {})
+    require(isinstance(evidence, dict) and evidence, "ACCEPTANCE_EVIDENCE_MISSING", task["task_id"])
+    required_outputs = task.get("required_outputs", task["scope"].get("allowed_exact_paths", []))
+    require(set(evidence) == set(required_outputs), "ACCEPTANCE_OUTPUT_SET_DRIFT", task["task_id"])
+    for relative, blob in evidence.items():
+        require(scope_allows(task["scope"], relative), "OUT_OF_SCOPE_PATH", relative)
+        require(git(root, "rev-parse", f"{delivery}:{relative}") == blob
+                and git(root, "hash-object", relative) == blob, "ACCEPTED_ARTIFACT_DRIFT", relative)
+
+
+def validate_task_opening(root: Path, before_commit: str, actor: str) -> dict[str, Any]:
+    """Read-only gate for an owner-issued idle -> ACTIVE repository change."""
+    require(actor == "CHIEF_EDITOR", "TASK_ISSUER_ROLE", str(actor))
+    require(SHA_RE.fullmatch(str(before_commit)) is not None, "TASK_BASELINE_MISSING", str(before_commit))
+    require(git(root, "rev-parse", "HEAD") == before_commit, "STALE_TASK_OPENING_BASELINE", before_commit)
+    before = json.loads(git(root, "show", f"{before_commit}:governance/v4/runtime/STATE.json"))
+    require(before.get("active_project_task_id") is None and all(v is False for v in before["permissions"].values()),
+            "TASK_OPENING_REQUIRES_IDLE", before_commit)
+    result = validate_repository(root)
+    state, tasks, contracts, registry = load_repository_bundle(root)
+    task_id = state.get("active_project_task_id")
+    require(task_id in tasks, "TASK_NOT_FOUND", str(task_id))
+    task_path = f"governance/v4/tasks/{task_id}.json"
+    exists = subprocess.run(["git", "cat-file", "-e", f"{before_commit}:{task_path}"], cwd=root,
+                            stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    require(exists.returncode != 0, "INACTIVE_TASK_REUSE", str(task_id))
+    require(tasks[task_id]["source"]["commit"] == before_commit, "TASK_BASELINE_DRIFT", task_id)
+    require(git(root, "branch", "--show-current") in {"", tasks[task_id]["source"].get("branch")},
+            "TASK_OPENING_BRANCH_MISMATCH", task_id)
+    mutable = {"state_id", "status", "updated_at", "active_project_task_id", "permissions", "workstreams", "next_action"}
+    require({k: v for k, v in state.items() if k not in mutable} ==
+            {k: v for k, v in before.items() if k not in mutable}, "TASK_OPENING_STATE_SCOPE", task_id)
+    for workstream, previous in before.get("workstreams", {}).items():
+        current = state.get("workstreams", {}).get(workstream)
+        if previous.get("branch") == tasks[task_id]["scope"]["branch"]:
+            require(isinstance(current, dict) and current.get("branch") == previous["branch"],
+                    "TASK_OPENING_WORKSTREAM_DRIFT", workstream)
+        else:
+            require(current == previous, "TASK_OPENING_WORKSTREAM_DRIFT", workstream)
+    changed = set(git(root, "diff", "--name-only", before_commit).splitlines())
+    changed.update(git(root, "ls-files", "--others", "--exclude-standard").splitlines())
+    allowed = {task_path, "governance/v4/runtime/STATE.json", "governance/v4/tests/fixtures/RUNTIME_SCENARIOS.json"}
+    require(changed <= allowed, "TASK_OPENING_PATH_SCOPE", str(sorted(changed - allowed)))
+    return result
+
+
+def validate_execution_scope(root: Path, task: dict[str, Any], request: dict[str, Any]) -> None:
+    """Check cumulative Git changes, worktree changes and the real checkout branch."""
+    require(git(root, "branch", "--show-current") == request.get("branch"),
+            "CHECKOUT_BRANCH_MISMATCH", str(request.get("branch")))
+    task_path = f"governance/v4/tasks/{task['task_id']}.json"
+    commits = git(root, "log", "--diff-filter=A", "--format=%H", "HEAD", "--", task_path).splitlines()
+    require(len(commits) == 1, "TASK_ACTIVATION_COMMIT_MISSING", task['task_id'])
+    activation = commits[0]
+    require(git(root, "hash-object", task_path) == git(root, "rev-parse", f"{activation}:{task_path}"),
+            "ACTIVE_TASK_MODIFIED", task['task_id'])
+    paths = set(git(root, "diff", "--name-only", activation).splitlines())
+    paths.update(git(root, "ls-files", "--others", "--exclude-standard").splitlines())
+    paths.add(normalize_path(request["path"]))
+    scope = task["scope"]
+    require(len(paths) <= scope["max_changed_files"], "TASK_FILE_COUNT_EXCEEDED", str(len(paths)))
+    for relative in paths:
+        require(scope_allows(scope, relative), "OUT_OF_SCOPE_PATH", relative)
+        path = root / relative
+        require(path.suffix in scope["allowed_extensions"], "TASK_FILE_TYPE_FORBIDDEN", relative)
+        require(not path.is_symlink() and path.resolve().is_relative_to(root.resolve()), "INVALID_PATH", relative)
+        if path.is_file() and scope["binary_files_allowed"] is False:
+            try:
+                text = path.read_bytes().decode("utf-8")
+            except UnicodeDecodeError:
+                reject("TASK_BINARY_FORBIDDEN", relative)
+            require("\x00" not in text, "TASK_BINARY_FORBIDDEN", relative)
 
 
 def verify_contract_integrity(root: Path, contracts: dict[str, Any]) -> None:
@@ -753,10 +915,28 @@ def verify_hardening_closure(
     contracts: dict[str, Any],
     registry: dict[str, Any],
 ) -> None:
+    # Closure is an immutable historical fact, not a freeze on future live tasks.
+    completed = contracts.get("lifecycle", {}).get("completed_hardening")
+    require(isinstance(completed, dict), "HARDENING_CONTROL_SCHEMA", "completed_hardening")
+    snapshot_commit = completed.get("snapshot_commit")
+    require(SHA_RE.fullmatch(str(snapshot_commit or "")) is not None, "HARDENING_CONTROL_SCHEMA", "snapshot_commit")
+    require(completed.get("task_reuse_allowed") is False, "HARDENING_CONTROL_SCHEMA", "task_reuse_allowed")
+    ancestry = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", snapshot_commit, "HEAD"],
+        cwd=root, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False,
+    )
+    require(ancestry.returncode == 0, "HARDENING_SNAPSHOT_NOT_ANCESTOR", snapshot_commit)
+    state_ref = completed.get("state_ref")
+    require(isinstance(state_ref, str), "HARDENING_CONTROL_SCHEMA", "state_ref")
+    resolve_governance_ref(root, state_ref)
+    snapshot = json.loads(git(root, "show", f"{snapshot_commit}:{state_ref}"))
+    validate_state_document(snapshot)
     control = state.get("hardening_control")
     require(isinstance(control, dict), "HARDENING_CONTROL_MISSING", "runtime state")
     task_id = control.get("task_id")
     require(valid_task_id(task_id), "HARDENING_CONTROL_SCHEMA", str(task_id))
+    require(task_id == completed.get("task_id"), "HARDENING_CONTROL_SCHEMA", "task_id")
+    require(control == snapshot.get("hardening_control"), "HARDENING_CONTROL_SCHEMA", "closure control drift")
     expected_task_ref = f"governance/v4/tasks/{task_id}.json"
     require(control.get("task_ref") == expected_task_ref, "HARDENING_CONTROL_SCHEMA", "task_ref")
     task = load_task(root, task_id)
@@ -770,25 +950,48 @@ def verify_hardening_closure(
     authorization = task["authorization"]
     require(authorization.get("enabled") is False, "HARDENING_AUTHORITY_OPEN", "enabled")
     require(authorization.get("write_authorized") is False, "HARDENING_AUTHORITY_OPEN", "write")
-    require(state.get("active_project_task_id") is None, "HARDENING_RUNTIME_NOT_IDLE", str(task_id))
-    require(all(value is False for value in state["permissions"].values()), "HARDENING_PERMISSION_OPEN", task_id)
+    require(state.get("active_project_task_id") != task_id, "INACTIVE_TASK_REUSE", task_id)
+    require(snapshot.get("active_project_task_id") is None, "HARDENING_RUNTIME_NOT_IDLE", snapshot_commit)
+    require(all(value is False for value in snapshot["permissions"].values()), "HARDENING_PERMISSION_OPEN", snapshot_commit)
 
     evidence_ref = control.get("evidence_ref")
     require(isinstance(evidence_ref, str), "HARDENING_CONTROL_SCHEMA", "evidence_ref")
+    require(evidence_ref == completed.get("evidence_ref"), "HARDENING_CONTROL_SCHEMA", "evidence_ref")
+    for relative in (expected_task_ref, evidence_ref):
+        require(
+            git(root, "hash-object", relative) == git(root, "rev-parse", f"{snapshot_commit}:{relative}"),
+            "HARDENING_SNAPSHOT_DRIFT", relative,
+        )
     evidence = load_json(resolve_governance_ref(root, evidence_ref))
     require(evidence.get("canonical_authority") is False, "HARDENING_EVIDENCE_AUTHORITY", evidence_ref)
     require(evidence.get("task", {}).get("task_id") == task_id, "HARDENING_EVIDENCE_DRIFT", "task_id")
     require(evidence.get("task", {}).get("final_status") == task["status"], "HARDENING_EVIDENCE_DRIFT", "status")
-    require(evidence.get("result") == state.get("status"), "HARDENING_EVIDENCE_DRIFT", "result")
+    require(evidence.get("result") == snapshot.get("status"), "HARDENING_EVIDENCE_DRIFT", "historical result")
+    require(evidence.get("task", {}).get("active_project_task") is None, "HARDENING_EVIDENCE_DRIFT", "historical active task")
+    for key in ("authorization_enabled", "write_authorized"):
+        require(evidence.get("task", {}).get(key) is False, "HARDENING_EVIDENCE_DRIFT", key)
 
     source_head = task.get("reactivation", {}).get("source_head")
     require(SHA_RE.fullmatch(str(source_head or "")) is not None, "HARDENING_CONTROL_SCHEMA", "source_head")
+    require(evidence.get("source", {}).get("head") == source_head, "HARDENING_EVIDENCE_DRIFT", "source_head")
     before = json.loads(git(root, "show", f"{source_head}:governance/v4/runtime/STATE.json"))
     decision_id = contracts["owner_controls"]["exact_copy"]["required_identity_decision"]
     expected_blockers = dict(before["open_blockers"])
     require(decision_id in expected_blockers, "HARDENING_SOURCE_DRIFT", decision_id)
     expected_blockers.pop(decision_id)
-    require(state["open_blockers"] == expected_blockers, "HARDENING_BLOCKER_SCOPE", decision_id)
+    require(snapshot["open_blockers"] == expected_blockers, "HARDENING_BLOCKER_SCOPE", decision_id)
+    require(decision_id not in state["open_blockers"], "RESOLVED_BLOCKER_STILL_OPEN", decision_id)
+    decision = snapshot["resolved_source_decisions"][decision_id]
+    require(state.get("resolved_source_decisions", {}).get(decision_id) == decision, "SOURCE_DECISION_DRIFT", decision_id)
+    for key in ("status", "source", "source_git_blob", "mapping"):
+        require(evidence.get("src_002", {}).get(key) == decision[key], "HARDENING_EVIDENCE_DRIFT", key)
+    historical_contract = json.loads(git(root, "show", f"{snapshot_commit}:{snapshot['canonical_refs']['contracts']}"))["owner_controls"]["exact_copy"]
+    historical_owner = json.loads(git(root, "show", f"{snapshot_commit}:{historical_contract['source']}"))
+    historical_full = json.loads(git(root, "show", f"{snapshot_commit}:{historical_contract['full_source']['source']}"))
+    require(
+        len(build_canonical_copy_index(historical_owner, historical_full, historical_contract)) == evidence.get("copy_resolver", {}).get("resolved_record_count"),
+        "HARDENING_COPY_COUNT_DRIFT", "resolver count",
+    )
 
 
 def validate_repository(root: Path = DEFAULT_ROOT) -> dict[str, Any]:
@@ -800,6 +1003,9 @@ def validate_repository(root: Path = DEFAULT_ROOT) -> dict[str, Any]:
     source = state["source_checkpoint"]
     expected_tree = source["locked_release_tree_sha"]
     validate_locked_tree(git(root, "rev-parse", "HEAD:releases/v2.6"), expected_tree)
+    require(not git(root, "diff", "--name-only", "HEAD", "--", "releases/v2.6")
+            and not git(root, "ls-files", "--others", "--exclude-standard", "--", "releases/v2.6"),
+            "LOCKED_WORKTREE_DRIFT", "releases/v2.6")
     source_commit = source["commit"]
     require(git(root, "cat-file", "-t", source_commit, check=False) == "commit", "SOURCE_COMMIT_UNAVAILABLE", source_commit)
     ancestry = subprocess.run(
@@ -838,19 +1044,37 @@ def validate_repository(root: Path = DEFAULT_ROOT) -> dict[str, Any]:
 
 
 def authorize_repository_request(root: Path, request: dict[str, Any]) -> None:
+    root = root.resolve()
+    if request.get("action") == "OPEN_TASK":
+        result = validate_task_opening(root, request.get("baseline_commit", ""), request.get("role"))
+        require(request.get("task_id") == result["active_task_id"], "ACTIVE_TASK_MISMATCH", str(request.get("task_id")))
+        return
+    validate_repository(root)
     task_id = request.get("task_id")
     extras = [task_id] if valid_task_id(task_id) else []
     state, tasks, contracts, registry = load_repository_bundle(root.resolve(), extras)
     canonical_copies = load_canonical_copy_index(root, contracts)
     authorize_request(state, tasks, registry, contracts, request, canonical_copies)
+    if request.get("action") != contracts["runtime_authorization"]["read_only_action"]:
+        task = tasks[task_id]
+        validate_execution_scope(root, task, request)
+        if request.get("action") == "PRODUCE_FULL_121":
+            require(len(canonical_copies) == contracts["owner_controls"]["exact_copy"]["expected_full_deck_records"],
+                    "COPY_COVERAGE_INCOMPLETE", str(len(canonical_copies)))
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=DEFAULT_ROOT)
     parser.add_argument("--request", type=Path)
+    parser.add_argument("--open-task-from", help="Validate a proposed idle -> ACTIVE change against this exact HEAD")
+    parser.add_argument("--role", help="Role performing the proposed lifecycle transition")
     args = parser.parse_args()
     try:
+        if args.open_task_from:
+            result = validate_task_opening(args.root.resolve(), args.open_task_from, args.role)
+            print(f"FOULWAKE governance v4 task opening: PASS — {result['active_task_id']}")
+            return
         if args.request:
             authorize_repository_request(args.root.resolve(), load_json(args.request))
             print("FOULWAKE governance v4 request: ALLOW")

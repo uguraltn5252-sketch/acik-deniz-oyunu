@@ -2,7 +2,47 @@
   "schema_version": "4.1",
   "canonical": false,
   "fixture_type": "GENERIC_RUNTIME_SCENARIOS",
+  "repository_expectations": {
+    "active_task_id": null,
+    "loaded_task_ids": [
+      "GOV4-CUTOVER-001",
+      "GOV4-HARDENING-001"
+    ],
+    "role_write_authorized": {
+      "VISUAL_DESIGN": false,
+      "CHIEF_EDITOR": false,
+      "SIMULATION_QA": false
+    }
+  },
   "states": {
+    "simulation_active": {
+      "schema_version": "4.2",
+      "canonical": true,
+      "state_id": "FIXTURE-SIMULATION-ACTIVE",
+      "status": "V4_ACTIVE / FOCUSED_PREFLIGHT",
+      "source_checkpoint": {
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "locked_release_tree_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "active_project_task_id": "SIMULATION-EXAMPLE-001",
+      "active_visual_candidate": null,
+      "permissions": {
+        "visual_production": false,
+        "thumbnails": false,
+        "pilot_or_candidate": false,
+        "full_121_production": false,
+        "pdf_or_print_package": false,
+        "simulation": true,
+        "release": false,
+        "lock": false
+      },
+      "open_blockers": {},
+      "canonical_refs": {
+        "contracts": "governance/v4/contracts/CONTRACTS.json",
+        "roles": "governance/v4/roles/REGISTRY.json"
+      },
+      "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION"
+    },
     "cutover_complete": {
       "schema_version": "4.1",
       "canonical": true,
@@ -217,6 +257,45 @@
     }
   },
   "tasks": {
+    "SIMULATION-EXAMPLE-001": {
+      "schema_version": "4.2",
+      "canonical_task_authority": true,
+      "task_id": "SIMULATION-EXAMPLE-001",
+      "task_type": "FOCUSED_MECHANICS_PREFLIGHT",
+      "project_task": true,
+      "status": "ACTIVE",
+      "issued_by": "PROJECT_OWNER",
+      "executor_role": "SIMULATION_QA",
+      "reviewer_roles": [],
+      "authorization": {
+        "enabled": true,
+        "write_authorized": true,
+        "allowed_actions": [
+          "RUN_SIMULATION",
+          "QA_REVIEW",
+          "RULES_INTEGRITY_REVIEW"
+        ],
+        "role_actions": {
+          "SIMULATION_QA": [
+            "RUN_SIMULATION",
+            "QA_REVIEW",
+            "RULES_INTEGRITY_REVIEW"
+          ]
+        }
+      },
+      "scope": {
+        "branch": "work/v2.7-simulation",
+        "allowed_globs": [],
+        "allowed_exact_paths": [
+          "working/v2.7/qa/example/preflight.py"
+        ],
+        "max_changed_files": 1,
+        "allowed_extensions": [
+          ".py"
+        ],
+        "binary_files_allowed": false
+      }
+    },
     "VISUAL-EXAMPLE-001": {
       "schema_version": "4.1",
       "canonical_task_authority": true,

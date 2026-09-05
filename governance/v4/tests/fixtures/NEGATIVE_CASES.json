@@ -319,6 +319,45 @@
       "type": "DUPLICATE_COPY_ID",
       "collection": "powers",
       "expected_code": "DUPLICATE_COPY_ID"
+    },
+    {
+      "id": "NEG-25-SIMULATION-WRITE-CLOSED",
+      "state": "simulation_active",
+      "authorization_overrides": {"write_authorized": false},
+      "request": {
+        "role": "SIMULATION_QA",
+        "action": "RUN_SIMULATION",
+        "task_id": "SIMULATION-EXAMPLE-001",
+        "branch": "work/v2.7-simulation",
+        "path": "working/v2.7/qa/example/preflight.py"
+      },
+      "expected_code": "TASK_WRITE_CLOSED"
+    },
+    {
+      "id": "NEG-26-ART-DIRECTION-WRITE-CLOSED",
+      "state": "art_direction_active",
+      "authorization_overrides": {"write_authorized": false},
+      "request": {
+        "role": "ART_DIRECTION",
+        "action": "ART_LANGUAGE_REVIEW",
+        "task_id": "ART-EXAMPLE-001",
+        "branch": "work/v2.7-art-direction",
+        "path": "working/v2.7/visual/art_direction/example/review.md"
+      },
+      "expected_code": "TASK_WRITE_CLOSED"
+    },
+    {
+      "id": "NEG-27-SIMULATION-PERMISSION-CLOSED",
+      "state": "simulation_active",
+      "permission_overrides": {"simulation": false},
+      "request": {
+        "role": "SIMULATION_QA",
+        "action": "RUN_SIMULATION",
+        "task_id": "SIMULATION-EXAMPLE-001",
+        "branch": "work/v2.7-simulation",
+        "path": "working/v2.7/qa/example/preflight.py"
+      },
+      "expected_code": "PERMISSION_CLOSED"
     }
   ]
 }

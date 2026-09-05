@@ -5,11 +5,14 @@ from __future__ import annotations
 
 import copy
 import json
+import shutil
 import subprocess
 import sys
 import tempfile
 import unittest
+from contextlib import contextmanager
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[3]
 V4 = ROOT / "governance" / "v4"
@@ -27,6 +30,7 @@ def read_json(relative: str) -> dict:
 class GovernanceV4Tests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
+        cls.negative_checks = 0
         cls.state, cls.tasks, cls.contracts, cls.registry = validator.load_repository_bundle(ROOT)
         cls.scenarios = read_json("governance/v4/tests/fixtures/RUNTIME_SCENARIOS.json")
         cls.scenario_states = cls.scenarios["states"]
@@ -40,14 +44,32 @@ class GovernanceV4Tests(unittest.TestCase):
         )
         cls.canonical_copies = validator.load_canonical_copy_index(ROOT, cls.contracts)
 
+    @contextmanager
+    def assert_rejected(self, code: str | None = None):
+        with self.assertRaises(validator.GovernanceViolation) as caught:
+            yield caught
+        if code is not None:
+            self.assertEqual(caught.exception.code, code)
+        type(self).negative_checks += 1
+
+    def hardening_snapshot(self) -> dict:
+        completed = self.contracts["lifecycle"]["completed_hardening"]
+        return json.loads(validator.git(
+            ROOT, "show", f"{completed['snapshot_commit']}:{completed['state_ref']}",
+        ))
+
     def authorize_scenario(
         self,
         state_name: str,
         request: dict,
         mutation: dict | None = None,
         permission_overrides: dict | None = None,
+        authorization_overrides: dict | None = None,
     ) -> None:
         state = copy.deepcopy(self.scenario_states[state_name])
+        tasks = copy.deepcopy(self.scenario_tasks)
+        if authorization_overrides:
+            tasks[state["active_project_task_id"]]["authorization"].update(authorization_overrides)
         if permission_overrides:
             state["permissions"].update(permission_overrides)
         supplied = copy.deepcopy(request)
@@ -58,7 +80,7 @@ class GovernanceV4Tests(unittest.TestCase):
             supplied["copy_record"] = copy_record
         validator.authorize_request(
             state,
-            self.scenario_tasks,
+            tasks,
             self.registry,
             self.contracts,
             supplied,
@@ -78,9 +100,10 @@ class GovernanceV4Tests(unittest.TestCase):
 
     def test_02_generic_repository_validator_passes(self) -> None:
         result = validator.validate_repository(ROOT)
-        self.assertEqual(result["active_task_id"], None)
+        expected = self.scenarios["repository_expectations"]
+        self.assertEqual(result["active_task_id"], expected["active_task_id"])
         self.assertTrue(result["cutover_performed"])
-        self.assertEqual(result["loaded_task_ids"], ["GOV4-CUTOVER-001"])
+        self.assertEqual(result["loaded_task_ids"], expected["loaded_task_ids"])
 
     def test_03_separate_migration_rework_audit_passes(self) -> None:
         accepted = self.state["migration_control"]["accepted_migration_commit"]
@@ -252,7 +275,7 @@ class GovernanceV4Tests(unittest.TestCase):
             },
             self.canonical_copies,
         )
-        with self.assertRaises(validator.GovernanceViolation):
+        with self.assert_rejected():
             validator.authorize_request(
                 self.state,
                 self.tasks,
@@ -269,13 +292,12 @@ class GovernanceV4Tests(unittest.TestCase):
             )
 
     def test_12_bootstrap_is_noncanonical_and_reflects_task_binding(self) -> None:
-        visual = bootstrap.build_bootstrap(ROOT, "VISUAL_DESIGN")
-        self.assertIn("GENERATED / NON_CANONICAL", visual)
-        self.assertIn("ACTIVE_PROJECT_TASK: NONE", visual)
-        self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", visual)
-        chief = bootstrap.build_bootstrap(ROOT, "CHIEF_EDITOR")
-        self.assertIn("ACTIVE_PROJECT_TASK: NONE", chief)
-        self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", chief)
+        expected = self.scenarios["repository_expectations"]
+        for role, authorized in expected["role_write_authorized"].items():
+            rendered = bootstrap.build_bootstrap(ROOT, role)
+            self.assertIn("GENERATED / NON_CANONICAL", rendered)
+            self.assertIn(f"ACTIVE_PROJECT_TASK: {expected['active_task_id'] or 'NONE'}", rendered)
+            self.assertIn(f"CURRENT_WRITE_AUTHORIZED: {str(authorized).upper()}", rendered)
         hardening = bootstrap.build_bootstrap(ROOT, "CHIEF_EDITOR", "GOV4-HARDENING-001")
         self.assertIn("TASK_BINDING: INACTIVE / NO AUTHORITY", hardening)
         self.assertIn("TASK_STATUS: CLOSED / HARDENING_COMPLETE", hardening)
@@ -316,10 +338,17 @@ class GovernanceV4Tests(unittest.TestCase):
 
     def test_15_all_original_and_added_negative_cases_are_rejected(self) -> None:
         cases = self.negatives["cases"]
-        self.assertEqual(len(cases), 24)
+        self.assertGreaterEqual(len(cases), 27)
+        self.assertEqual(len({case["id"] for case in cases}), len(cases))
+        preserved = json.loads(validator.git(
+            ROOT, "show",
+            f"{self.contracts['lifecycle']['completed_hardening']['snapshot_commit']}:governance/v4/tests/fixtures/NEGATIVE_CASES.json",
+        ))["cases"]
+        for original in preserved:
+            self.assertIn(original, cases)
         for case in cases:
             with self.subTest(case=case["id"]):
-                with self.assertRaises(validator.GovernanceViolation) as caught:
+                with self.assert_rejected() as caught:
                     if case.get("type") == "LOCKED_TREE":
                         validator.validate_locked_tree(case["actual"], case["expected"])
                     elif case.get("type") == "DUPLICATE_COPY_ID":
@@ -339,6 +368,7 @@ class GovernanceV4Tests(unittest.TestCase):
                             case["request"],
                             case.get("copy_mutation"),
                             case.get("permission_overrides"),
+                            case.get("authorization_overrides"),
                         )
                 self.assertEqual(caught.exception.code, case["expected_code"])
 
@@ -357,7 +387,7 @@ class GovernanceV4Tests(unittest.TestCase):
         ]
         for role, action in requests:
             with self.subTest(action=action):
-                with self.assertRaises(validator.GovernanceViolation) as caught:
+                with self.assert_rejected() as caught:
                     self.authorize_scenario(
                         "no_active_task",
                         {
@@ -383,7 +413,7 @@ class GovernanceV4Tests(unittest.TestCase):
             "branch": "work/v2.7-visual",
             "path": "working/v2.7/visual/example/card.png",
         }
-        with self.assertRaises(validator.GovernanceViolation) as caught:
+        with self.assert_rejected() as caught:
             validator.authorize_request(
                 state,
                 self.scenario_tasks,
@@ -448,6 +478,7 @@ class GovernanceV4Tests(unittest.TestCase):
 
     def test_21_hardening_closes_idle_and_removes_only_src_002(self) -> None:
         task = read_json("governance/v4/tasks/GOV4-HARDENING-001.json")
+        snapshot = self.hardening_snapshot()
         before = json.loads(
             validator.git(
                 ROOT,
@@ -455,15 +486,223 @@ class GovernanceV4Tests(unittest.TestCase):
                 f"{task['reactivation']['source_head']}:governance/v4/runtime/STATE.json",
             )
         )
-        self.assertIsNone(self.state["active_project_task_id"])
+        self.assertIsNone(snapshot["active_project_task_id"])
         self.assertEqual(task["status"], "CLOSED / HARDENING_COMPLETE")
         self.assertFalse(task["authorization"]["enabled"])
         self.assertFalse(task["authorization"]["write_authorized"])
         expected_blockers = dict(before["open_blockers"])
         expected_blockers.pop("SRC-002")
-        self.assertEqual(self.state["open_blockers"], expected_blockers)
-        self.assertTrue(all(value is False for value in self.state["permissions"].values()))
+        self.assertEqual(snapshot["open_blockers"], expected_blockers)
+        self.assertTrue(all(value is False for value in snapshot["permissions"].values()))
+        evidence = read_json(snapshot["hardening_control"]["evidence_ref"])
+        self.assertEqual(snapshot["status"], evidence["result"])
+
+    def test_22_post_hardening_active_task_passes_full_repository_validation(self) -> None:
+        state = self.hardening_snapshot()
+        state["active_project_task_id"] = "SIMULATION-EXAMPLE-001"
+        state["permissions"]["simulation"] = True
+        state["status"] = "V4_ACTIVE / NEW_EXACT_TASK"
+        tasks = {**self.tasks, **self.scenario_tasks}
+        validator.validate_runtime_documents(state, tasks, self.contracts, self.registry)
+        with patch.object(validator, "load_repository_bundle", return_value=(state, tasks, self.contracts, self.registry)):
+            result = validator.validate_repository(ROOT)
+        self.assertEqual(result["active_task_id"], "SIMULATION-EXAMPLE-001")
+        for action in ("RUN_SIMULATION", "QA_REVIEW", "RULES_INTEGRITY_REVIEW"):
+            self.authorize_scenario("simulation_active", {
+                "role": "SIMULATION_QA", "action": action,
+                "task_id": "SIMULATION-EXAMPLE-001",
+                "branch": "work/v2.7-simulation",
+                "path": "working/v2.7/qa/example/preflight.py",
+            })
+
+    def test_23_live_blockers_may_progress_but_src_002_cannot_reopen(self) -> None:
+        state = self.hardening_snapshot()
+        state["open_blockers"].pop(next(iter(state["open_blockers"])))
+        state["open_blockers"]["NEW-REVIEW"] = "New evidence requirement."
+        state["status"] = "V4_ACTIVE / BLOCKER_PROGRESS"
+        with patch.object(validator, "load_repository_bundle", return_value=(state, self.tasks, self.contracts, self.registry)):
+            validator.validate_repository(ROOT)
+            state["open_blockers"]["SRC-002"] = "Cannot reopen a resolved binding decision."
+            with self.assert_rejected("RESOLVED_BLOCKER_STILL_OPEN"):
+                validator.validate_repository(ROOT)
+
+    def test_24_hardening_cannot_be_reused_or_reauthorized(self) -> None:
+        task_id = self.state["hardening_control"]["task_id"]
+        task = read_json(self.state["hardening_control"]["task_ref"])
+        for key in ("enabled", "write_authorized"):
+            mutated = copy.deepcopy(task)
+            mutated["authorization"][key] = True
+            with patch.object(validator, "load_task", return_value=mutated):
+                with self.assert_rejected("HARDENING_AUTHORITY_OPEN"):
+                    validator.verify_hardening_closure(ROOT, self.state, self.contracts, self.registry)
+        state = copy.deepcopy(self.state)
+        state["active_project_task_id"] = task_id
+        task["status"] = "ACTIVE"
+        task["authorization"].update(enabled=True, write_authorized=True)
+        with self.assert_rejected("INACTIVE_TASK_REUSE"):
+            validator.validate_runtime_documents(state, {task_id: task}, self.contracts, self.registry)
+
+    def test_25_every_repository_output_review_requires_write_authorized(self) -> None:
+        actions = {
+            "STORY_EDITOR": ["PERIOD_LANGUAGE_REVIEW"],
+            "ART_DIRECTION": ["ART_LANGUAGE_REVIEW", "FRAMING_DECISION", "COMPOSITION_REVIEW", "DECK_RHYTHM_REVIEW", "AESTHETIC_RECOMMENDATION"],
+            "SIMULATION_QA": ["RUN_SIMULATION", "QA_REVIEW", "COPY_CHECK", "PHYSICAL_EVIDENCE_REVIEW", "RULES_INTEGRITY_REVIEW"],
+        }
+        for role, role_actions in actions.items():
+            for action in role_actions:
+                with self.subTest(role=role, action=action):
+                    self.assertIn(action, self.contracts["runtime_authorization"]["write_actions"])
+                    state = copy.deepcopy(self.scenario_states["simulation_active"])
+                    task = copy.deepcopy(self.scenario_tasks["SIMULATION-EXAMPLE-001"])
+                    task["executor_role"] = role
+                    task["authorization"].update(allowed_actions=[action], role_actions={role: [action]})
+                    request = {
+                        "role": role, "action": action, "task_id": task["task_id"],
+                        "branch": task["scope"]["branch"], "path": task["scope"]["allowed_exact_paths"][0],
+                        "producer_role": "VISUAL_DESIGN", "disposition": "FRAMING_PASS",
+                        "card_id": "SET-KP-01", "copy_record": self.canonical_copies["SET-KP-01"],
+                    }
+                    validator.authorize_request(state, {task["task_id"]: task}, self.registry, self.contracts, request, self.canonical_copies)
+                    task["authorization"]["write_authorized"] = False
+                    with self.assert_rejected("TASK_WRITE_CLOSED"):
+                        validator.authorize_request(state, {task["task_id"]: task}, self.registry, self.contracts, request, self.canonical_copies)
+
+    def test_26_historical_idle_bootstrap_remains_fail_closed(self) -> None:
+        state = self.hardening_snapshot()
+        with patch.object(bootstrap, "load_repository_bundle", return_value=(state, self.tasks, self.contracts, self.registry)):
+            for role in ("CHIEF_EDITOR", "SIMULATION_QA", "VISUAL_DESIGN"):
+                rendered = bootstrap.build_bootstrap(ROOT, role)
+                self.assertIn("ACTIVE_PROJECT_TASK: NONE", rendered)
+                self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", rendered)
+        self.assertNotIn("READ_ONLY_VALIDATION", self.contracts["runtime_authorization"]["write_actions"])
+        for role in self.registry["roles"]:
+            validator.authorize_request(state, self.tasks, self.registry, self.contracts, {"role": role, "action": "READ_ONLY_VALIDATION"})
+
+    def test_27_hardening_snapshot_evidence_and_mapping_remain_binding(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["resolved_source_decisions"]["SRC-002"]["mapping"].pop("GUC-24")
+        with self.assert_rejected("SOURCE_DECISION_DRIFT"):
+            validator.verify_hardening_closure(ROOT, state, self.contracts, self.registry)
+        contracts = copy.deepcopy(self.contracts)
+        contracts["lifecycle"]["completed_hardening"]["snapshot_commit"] = "0" * 40
+        with self.assert_rejected("HARDENING_SNAPSHOT_NOT_ANCESTOR"):
+            validator.verify_hardening_closure(ROOT, self.state, contracts, self.registry)
+        original_git = validator.git
+        def drifted_evidence(root, *args, **kwargs):
+            if args == ("hash-object", self.state["hardening_control"]["evidence_ref"]):
+                return "0" * 40
+            return original_git(root, *args, **kwargs)
+        with patch.object(validator, "git", side_effect=drifted_evidence):
+            with self.assert_rejected("HARDENING_SNAPSHOT_DRIFT"):
+                validator.verify_hardening_closure(ROOT, self.state, self.contracts, self.registry)
+
+    def test_28_real_git_lifecycle_and_request_integrity(self) -> None:
+        """Exercise real registry/state files and commits, without mocking the loader."""
+        with tempfile.TemporaryDirectory(prefix="foulwake-lifecycle-test-") as temporary:
+            repo = Path(temporary) / "repo"
+            subprocess.run(["git", "clone", "--quiet", "--shared", "--no-checkout", str(ROOT), str(repo)], check=True)
+            snapshot = self.contracts["lifecycle"]["completed_hardening"]["snapshot_commit"]
+            validator.git(repo, "checkout", "--quiet", "--detach", snapshot)
+            for relative in ("governance/v4/contracts/CONTRACTS.json", "governance/v4/validator.py"):
+                shutil.copy2(ROOT / relative, repo / relative)
+            def save(relative, value):
+                path = repo / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            def commit(message):
+                validator.git(repo, "add", "-A")
+                validator.git(repo, "-c", "user.name=Governance test", "-c", "user.email=test@example.invalid", "commit", "--quiet", "-m", message)
+                return validator.git(repo, "rev-parse", "HEAD")
+            baseline = commit("test only: install lifecycle validator")
+            self.assertIsNone(validator.validate_repository(repo)["active_task_id"])
+            task = copy.deepcopy(self.scenario_tasks["SIMULATION-EXAMPLE-001"])
+            task_id = task["task_id"]
+            state = self.hardening_snapshot()
+            state.update(active_project_task_id=task_id, status="TEST / ACTIVE")
+            state["permissions"]["simulation"] = True
+            task.update(source={"branch": "v2.7-design", "commit": baseline},
+                        owner_authorization={"task_id": task_id, "decision": "AUTHORIZED", "recorded_from": "TEST FIXTURE ONLY"},
+                        acceptance_criteria=["Exact evidence files reviewed independently"],
+                        reviewer_roles=["CHIEF_EDITOR"], runtime_permissions=copy.deepcopy(state["permissions"]))
+            source_path = "working/v2.7/V27_MECHANIC_DECISIONS.json"
+            task["inputs"] = [{"path": source_path, "git_blob": validator.git(repo, "rev-parse", f"{baseline}:{source_path}")}]
+            task["scope"]["max_changed_files"] = 3
+            task_path = f"governance/v4/tasks/{task_id}.json"
+            state_path = "governance/v4/runtime/STATE.json"
+            save(task_path, task)
+            save(state_path, state)
+            opening = {"role": "CHIEF_EDITOR", "action": "OPEN_TASK", "task_id": task_id, "baseline_commit": baseline}
+            for role in ("SIMULATION_QA", "VISUAL_DESIGN"):
+                with self.assert_rejected("TASK_ISSUER_ROLE"):
+                    validator.authorize_repository_request(repo, {**opening, "role": role})
+            validator.authorize_repository_request(repo, opening)
+            for field, code in (("source", "TASK_BASELINE_MISSING"), ("acceptance_criteria", "TASK_ACCEPTANCE_MISSING"),
+                                ("owner_authorization", "TASK_OWNER_AUTHORIZATION_MISSING")):
+                broken = copy.deepcopy(task)
+                broken.pop(field)
+                save(task_path, broken)
+                with self.assert_rejected(code):
+                    validator.validate_repository(repo)
+            save(task_path, task)
+            orphan = copy.deepcopy(task)
+            orphan["task_id"] = "ORPHAN-001"
+            save("governance/v4/tasks/ORPHAN-001.json", orphan)
+            with self.assert_rejected("TASK_REGISTRY_DRIFT"):
+                validator.validate_repository(repo)
+            (repo / "governance/v4/tasks/ORPHAN-001.json").unlink()
+            activation = commit("test only: open exact QA task")
+            validator.git(repo, "switch", "--quiet", "-c", task["scope"]["branch"])
+            request = {"role": "SIMULATION_QA", "action": "RUN_SIMULATION", "task_id": task_id,
+                       "branch": task["scope"]["branch"], "path": task["scope"]["allowed_exact_paths"][0]}
+            validator.authorize_repository_request(repo, request)
+            for role in ("CHIEF_EDITOR", "VISUAL_DESIGN", "STORY_EDITOR", "ART_DIRECTION"):
+                with self.assert_rejected("TASK_ACTION_FORBIDDEN" if role == "CHIEF_EDITOR" else "ROLE_TASK_MISMATCH"):
+                    validator.authorize_repository_request(repo, {**request, "role": role})
+            self.assertIn("CURRENT_WRITE_AUTHORIZED: TRUE", bootstrap.build_bootstrap(repo, "SIMULATION_QA"))
+            self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", bootstrap.build_bootstrap(repo, "CHIEF_EDITOR"))
+            source_file = repo / self.contracts["owner_controls"]["exact_copy"]["source"]
+            original = source_file.read_bytes()
+            source_file.write_bytes(original + b"\n")
+            with self.assert_rejected("PINNED_SOURCE_HASH_DRIFT"):
+                validator.authorize_repository_request(repo, request)
+            source_file.write_bytes(original)
+            locked_file = next((repo / "releases/v2.6").glob("*.json"))
+            original = locked_file.read_bytes()
+            locked_file.write_bytes(original + b"\n")
+            with self.assert_rejected("LOCKED_WORKTREE_DRIFT"):
+                validator.authorize_repository_request(repo, request)
+            locked_file.write_bytes(original)
+            forbidden = repo / "governance/UNAUTHORIZED_TEST.md"
+            forbidden.write_text("test only\n")
+            with self.assert_rejected("OUT_OF_SCOPE_PATH"):
+                validator.authorize_repository_request(repo, request)
+            forbidden.unlink()
+            output = repo / request["path"]
+            output.parent.mkdir(parents=True, exist_ok=True)
+            output.write_bytes(b"\x00\xff")
+            with self.assert_rejected("TASK_BINARY_FORBIDDEN"):
+                validator.authorize_repository_request(repo, request)
+            output.write_text("# test fixture only; no simulation executed\n")
+            validator.authorize_repository_request(repo, request)
+            delivery = commit("test only: record dummy evidence")
+            blob = validator.git(repo, "rev-parse", f"{delivery}:{request['path']}")
+            task["status"] = "CLOSED"
+            task["authorization"].update(enabled=False, write_authorized=False)
+            task["completion"] = {"accepted_by": "CHIEF_EDITOR", "delivery_commit": delivery,
+                                  "accepted_blobs": {request["path"]: blob}}
+            state.update(active_project_task_id=None, status="TEST / CLOSED")
+            state["permissions"]["simulation"] = False
+            save(task_path, task)
+            save(state_path, state)
+            self.assertIsNone(validator.validate_repository(repo)["active_task_id"])
+            with self.assert_rejected("NO_ACTIVE_TASK_FOR_SPECIALIST_ACTION"):
+                validator.authorize_repository_request(repo, request)
+            output.write_text("# modified after acceptance\n")
+            with self.assert_rejected("ACCEPTED_ARTIFACT_DRIFT"):
+                validator.validate_repository(repo)
 
 
 if __name__ == "__main__":
-    unittest.main(verbosity=2)
+    program = unittest.main(verbosity=2, exit=False)
+    print(f"Negative controls verified: {GovernanceV4Tests.negative_checks}")
+    raise SystemExit(0 if program.result.wasSuccessful() else 1)
