@@ -1,0 +1,90 @@
+{
+  "schema_version": "4.3",
+  "canonical_authority": false,
+  "result": "TEAM_RELAUNCH_READY / GOV-002_RESOLVED",
+  "recorded_at": "2026-09-05",
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "12d7e1faa3c9306fe94b8239e9fc8748e84a72d6",
+    "tree": "8d3fc4dd65eab6c02b2f324f9cad5a5b0dc032ae"
+  },
+  "owner_authority": "OWNER-DELEGATION-20260905",
+  "integration_ci": {
+    "run_id": 33951532724,
+    "job_id": 101267148068,
+    "head": "12d7e1faa3c9306fe94b8239e9fc8748e84a72d6",
+    "conclusion": "success",
+    "url": "https://github.com/uguraltn5252-sketch/acik-deniz-oyunu/actions/runs/33951532724",
+    "verified_steps": [
+      "Validate integrated governance",
+      "Test v4 lifecycle and fail-closed boundaries",
+      "Validate every workstream against current v4 authority"
+    ]
+  },
+  "simulation_ci": {
+    "run_id": 33949914748,
+    "attempt": 2,
+    "job_id": 101267432670,
+    "branch": "work/v2.7-simulation",
+    "head": "75763ab1736733f41eff40618a36a82c8a172909",
+    "authority_commit": "12d7e1faa3c9306fe94b8239e9fc8748e84a72d6",
+    "conclusion": "success",
+    "url": "https://github.com/uguraltn5252-sketch/acik-deniz-oyunu/actions/runs/33949914748",
+    "previous_failure": "The v3 rule prohibited the Simulation branch from existing.",
+    "verified_result": "PASS / TASK_SCOPE_ONLY",
+    "simulation_executed": false
+  },
+  "tests": {
+    "lifecycle_tests_passed": 28,
+    "counted_negative_controls_passed": 74,
+    "trusted_ci_and_integration_tests_passed": 6,
+    "real_chief_coordination_request": "ALLOW",
+    "source_game_and_art_content": "UNCHANGED; only SOURCE_HIERARCHY routing metadata updated",
+    "locked_v26_tree": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "workstream_refs": [
+    {
+      "branch": "work/v2.7-art-direction",
+      "head": "917f8b71f47eeecdfb12b7ec930796bf111e2858"
+    },
+    {
+      "branch": "work/v2.7-simulation",
+      "head": "75763ab1736733f41eff40618a36a82c8a172909"
+    },
+    {
+      "branch": "work/v2.7-story",
+      "head": "e04eef7f1fef6ea407feaaf26558551297c44b37"
+    },
+    {
+      "branch": "work/v2.7-visual",
+      "head": "23c062f6de06c32eab224b3440c8474725d4fe9e"
+    }
+  ],
+  "handoff": {
+    "common": "governance/v4/TEAM_START.md",
+    "role_briefs": [
+      "governance/v4/roles/CHIEF_EDITOR.md",
+      "governance/v4/roles/STORY_EDITOR.md",
+      "governance/v4/roles/VISUAL_DESIGN.md",
+      "governance/v4/roles/ART_DIRECTION.md",
+      "governance/v4/roles/SIMULATION_QA.md"
+    ],
+    "chat_transfer": "READY_FOR_USER_TO_PASTE / NO_CHAT_ACK_COLLECTED",
+    "task_bindings": {
+      "CHIEF_EDITOR": "GOV4-TEAM-COORDINATION-001 / ACTIVE_CONTROL",
+      "SIMULATION_QA": "MEC-SEA-ROCK-PREFLIGHT-001 / ACTIVE",
+      "STORY_EDITOR": "READ_ONLY_UNTIL_ASSIGNED",
+      "VISUAL_DESIGN": "HOLD_UNTIL_ASSIGNED",
+      "ART_DIRECTION": "READ_ONLY_UNTIL_ASSIGNED"
+    }
+  },
+  "remaining_limits": {
+    "GOV_001": "OPEN: main and v2.7-design protected=false; repository rulesets=[]; connected tools do not expose branch-protection administration.",
+    "copy_coverage": "51/121; full-deck exact-copy acceptance remains unavailable.",
+    "production": "CLOSED",
+    "release": "CLOSED",
+    "lock": "CLOSED",
+    "physical_and_human_evidence": "NOT_PRODUCED",
+    "other_frozen_workstreams": "Their next write task must establish a current baseline and inherit current CI; historical branch workflows are not production authority."
+  }
+}

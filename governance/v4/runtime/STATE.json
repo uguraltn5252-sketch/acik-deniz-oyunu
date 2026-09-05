@@ -2,7 +2,7 @@
   "schema_version": "4.2",
   "canonical": true,
   "state_id": "V4-TEAM-RELAUNCH-20260905",
-  "status": "V4_TEAM_COORDINATION_ACTIVE / MEC_PREFLIGHT_ACTIVE / PRODUCTION_CLOSED",
+  "status": "V4_TEAM_RELAUNCH_READY / GOV-002_RESOLVED / MEC_PREFLIGHT_ACTIVE / PRODUCTION_CLOSED",
   "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -100,7 +100,6 @@
     "QA-001": "No active candidate attestation.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
-    "GOV-002": "V4 CI routing repair prepared; remote workflow and workstream scope verification pending.",
     "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
   },
   "canonical_refs": {
@@ -109,7 +108,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "CHIEF_EDITOR: verify and hand off the five role briefs. SIMULATION_QA: execute only the existing exact Sea/Rock preflight after current CI scope verification.",
+  "next_action": "CHIEF_EDITOR: coordinate the five new role chats using TEAM_START and role briefs. SIMULATION_QA: continue only MEC-SEA-ROCK-PREFLIGHT-001 on its existing baseline; no game simulation has yet run.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -128,5 +127,13 @@
     "task_ref": "governance/v4/tasks/GOV4-TEAM-COORDINATION-001.json",
     "status": "ACTIVE_CONTROL",
     "role": "CHIEF_EDITOR"
+  },
+  "resolved_blockers": {
+    "GOV-002": {
+      "status": "RESOLVED / V4_CI_AND_SIMULATION_RERUN_PASS",
+      "evidence_ref": "governance/v4/evidence/TEAM_RELAUNCH_RESULT.json",
+      "verified_source_commit": "12d7e1faa3c9306fe94b8239e9fc8748e84a72d6",
+      "note": "Simulation rerun attempt 2 PASS at its unchanged activation head; all four workstream refs validated by current integration CI."
+    }
   }
 }
