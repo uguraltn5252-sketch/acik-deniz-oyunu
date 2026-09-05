@@ -4,7 +4,7 @@
   "task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
   "task_type": "FOCUSED_MECHANICS_PREFLIGHT",
   "project_task": true,
-  "status": "ACTIVE",
+  "status": "CLOSED / ACCEPTED_SCOPED_PREFLIGHT / INCONCLUSIVE",
   "issued_by": "PROJECT_OWNER",
   "issued_at": "2026-09-05",
   "executor_role": "SIMULATION_QA",
@@ -28,8 +28,8 @@
     "branch_must_start_at": "that exact activation commit; source.commit is its parent"
   },
   "authorization": {
-    "enabled": true,
-    "write_authorized": true,
+    "enabled": false,
+    "write_authorized": false,
     "allowed_actions": [
       "RUN_SIMULATION",
       "QA_REVIEW",
@@ -71,7 +71,7 @@
     "pilot_or_candidate": false,
     "full_121_production": false,
     "pdf_or_print_package": false,
-    "simulation": true,
+    "simulation": false,
     "release": false,
     "lock": false
   },
@@ -146,5 +146,19 @@
     "real_git_transition_test": "PASS: idle -> owner-issued open -> active specialist request -> independent evidence-bound close; isolated test repository, no game simulation",
     "simulation_executed": false
   },
-  "execution_status": "NOT_STARTED / NO_OUTPUTS / NO_RESULT"
+  "execution_status": "COMPLETED / EVIDENCE_ACCEPTED / FULL_SIMULATION_NOT_ACCEPTED",
+  "completion": {
+    "accepted_by": "CHIEF_EDITOR",
+    "delivery_commit": "5bb108249819bcfeb58da6343cc3cd28e221c410",
+    "accepted_blobs": {
+      "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_v2.7.py": "c0f1e5632f56183dd97a3191b510c23d93d90a16",
+      "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_RESULTS_v2.7.json": "c510e2a89a20b9f6b133943f34ca127eb6750331",
+      "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_REPORT_v2.7.md": "0de1287dfef315cdbcaf88983f21b89226156b1c"
+    },
+    "acceptance_ref": "governance/v4/evidence/MEC-SEA-ROCK-PREFLIGHT-001_ACCEPTANCE.json",
+    "integration_commit": "869485d012fd59bebcfbf8daeaca3e9e48e6eb75",
+    "result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED",
+    "closed_at_utc": "2026-09-05T10:07:17.974853+00:00",
+    "MEC-001": "OPEN"
+  }
 }

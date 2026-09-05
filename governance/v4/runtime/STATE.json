@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-TEAM-RELAUNCH-20260905",
-  "status": "V4_TEAM_RELAUNCH_READY / GOV-002_RESOLVED / MEC_PREFLIGHT_ACTIVE / PRODUCTION_CLOSED",
+  "state_id": "V4-PREFLIGHT-CLOSED-20260905",
+  "status": "V4_COORDINATION_ACTIVE / PREFLIGHT_CLOSED_INCONCLUSIVE / COPY_AUDIT_NEXT / PRODUCTION_CLOSED",
   "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -70,12 +70,14 @@
     },
     "simulation": {
       "branch": "work/v2.7-simulation",
-      "head": "75763ab1736733f41eff40618a36a82c8a172909",
-      "head_binding": "LAST_VERIFIED_REMOTE_HEAD / EXECUTION_BASELINE_FROM_TASK_HISTORY",
+      "head": "5bb108249819bcfeb58da6343cc3cd28e221c410",
+      "head_binding": "ACCEPTED_DELIVERY / FROZEN_UNTIL_NEW_EXACT_TASK",
       "task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
       "source_baseline_commit": "9779f6bb05504a01ca9817bcb8d20fc407efe657",
-      "status": "ACTIVE_TASK_AUTHORIZED / EXECUTION_NOT_STARTED",
-      "branch_preparation": "Remote branch exists at the task activation commit; later output commits are validated cumulatively by v4 CI."
+      "status": "SCOPED_PREFLIGHT_ACCEPTED / INCONCLUSIVE / NO_ACTIVE_WRITE",
+      "branch_preparation": "Accepted delivery is an integration ancestor; the next task requires its own activation baseline.",
+      "accepted_commit": "5bb108249819bcfeb58da6343cc3cd28e221c410",
+      "result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED"
     }
   },
   "visual_dispositions": {
@@ -90,17 +92,19 @@
     "pilot_or_candidate": false,
     "full_121_production": false,
     "pdf_or_print_package": false,
-    "simulation": true,
+    "simulation": false,
     "release": false,
     "lock": false
   },
   "open_blockers": {
     "ART-001": "Owner-rejected visual package; no replacement candidate.",
-    "MEC-001": "Sea=Rock simulation absent.",
+    "MEC-001": "OPEN: scoped Sea/Rock information evidence accepted as INCONCLUSIVE; full observation-correct A/B gameplay, human experience and physical evidence remain absent.",
     "QA-001": "No active candidate attestation.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
-    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
+    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent.",
+    "PREFLIGHT-ENGINE-01": "REPRODUCED: uninformed traitor bluff target reads true hidden front; blocks information-valid full-game A/B outcomes.",
+    "PREFLIGHT-ENGINE-02": "REPRODUCED: optional route-information power used before the first movement contrary to pinned rulebook section 11.3."
   },
   "canonical_refs": {
     "contracts": "governance/v4/contracts/CONTRACTS.json",
@@ -108,7 +112,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "CHIEF_EDITOR: coordinate the five new role chats using TEAM_START and role briefs. SIMULATION_QA: continue only MEC-SEA-ROCK-PREFLIGHT-001 on its existing baseline; no game simulation has yet run.",
+  "next_action": "CHIEF_EDITOR: open the bounded 121-identity copy-source inventory task under recorded delegation. Retain the two reproduced engine blockers for a separate observation-correct engine task; no game-design decision follows from the inconclusive preflight.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -135,5 +139,6 @@
       "verified_source_commit": "12d7e1faa3c9306fe94b8239e9fc8748e84a72d6",
       "note": "Simulation rerun attempt 2 PASS at its unchanged activation head; all four workstream refs validated by current integration CI."
     }
-  }
+  },
+  "last_completed_project_task_id": "MEC-SEA-ROCK-PREFLIGHT-001"
 }

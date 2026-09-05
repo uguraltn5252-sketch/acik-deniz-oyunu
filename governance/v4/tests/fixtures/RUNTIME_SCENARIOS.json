@@ -2,8 +2,12 @@
   "schema_version": "4.1",
   "canonical": false,
   "fixture_type": "GENERIC_RUNTIME_SCENARIOS",
+  "trusted_ci_fixture": {
+    "authority_commit": "dba2dff0b9ec7c1f3361630da41d5f31c232e029",
+    "purpose": "Historical active-task fixture for trusted CI negative controls, independent of live task closure or replacement; never current work authority."
+  },
   "repository_expectations": {
-    "active_task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
+    "active_task_id": null,
     "loaded_task_ids": [
       "GOV4-CUTOVER-001",
       "GOV4-HARDENING-001",
@@ -13,7 +17,7 @@
     "role_write_authorized": {
       "VISUAL_DESIGN": false,
       "CHIEF_EDITOR": true,
-      "SIMULATION_QA": true
+      "SIMULATION_QA": false
     }
   },
   "states": {

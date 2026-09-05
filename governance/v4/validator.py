@@ -878,6 +878,34 @@ def validate_task_opening(root: Path, before_commit: str, actor: str) -> dict[st
     return result
 
 
+def committed_coordination_integrations(root: Path, task: dict[str, Any]) -> set[str]:
+    """Separate immutable accepted deliveries from the coordinator's own writes."""
+    state = load_json(root / "governance/v4/runtime/STATE.json")
+    if task["task_id"] != state.get("coordination_control", {}).get("task_id"):
+        return set()
+    accepted_paths: set[str] = set()
+    for path in sorted((root / "governance/v4/evidence").glob("*.json")):
+        relative = path.relative_to(root).as_posix()
+        committed = git(root, "rev-parse", f"HEAD:{relative}", check=False)
+        # Pending acceptance cannot exempt a pending specialist content write.
+        if not SHA_RE.fullmatch(committed) or git(root, "hash-object", relative) != committed:
+            continue
+        accepted = load_json(path)
+        if accepted.get("status") != "ACCEPTED":
+            continue
+        delivered_task = load_task(root, accepted.get("task_id"))
+        require(delivered_task.get("project_task") is True, "TASK_NOT_PROJECT_TASK", relative)
+        completion = {"accepted_by": accepted.get("reviewer_role"),
+                      "delivery_commit": accepted.get("delivery_commit"),
+                      "accepted_blobs": accepted.get("accepted_blobs")}
+        validate_task_closure(root, {**delivered_task, "completion": completion})
+        for output, blob in completion["accepted_blobs"].items():
+            require(git(root, "rev-parse", f"HEAD:{output}", check=False) == blob,
+                    "INTEGRATION_NOT_COMMITTED", output)
+            accepted_paths.add(output)
+    return accepted_paths
+
+
 def validate_execution_scope(root: Path, task: dict[str, Any], request: dict[str, Any]) -> None:
     """Check cumulative Git changes, worktree changes and the real checkout branch."""
     require(git(root, "branch", "--show-current") == request.get("branch"),
@@ -890,6 +918,8 @@ def validate_execution_scope(root: Path, task: dict[str, Any], request: dict[str
             "ACTIVE_TASK_MODIFIED", task['task_id'])
     paths = set(git(root, "diff", "--name-only", activation).splitlines())
     paths.update(git(root, "ls-files", "--others", "--exclude-standard").splitlines())
+    paths.difference_update(committed_coordination_integrations(root, task))
+    # Even an accepted output cannot become a direct coordinator WRITE target.
     paths.add(normalize_path(request["path"]))
     scope = task["scope"]
     require(len(paths) <= scope["max_changed_files"], "TASK_FILE_COUNT_EXCEEDED", str(len(paths)))

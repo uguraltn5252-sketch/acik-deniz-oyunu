@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "governance/v4"))
 import ci
-from validator import GovernanceViolation, validate_integration_request, authorize_request
+from validator import GovernanceViolation, validate_integration_request, authorize_request, validate_execution_scope
 
 
 class TrustedCITests(unittest.TestCase):
@@ -19,9 +19,13 @@ class TrustedCITests(unittest.TestCase):
         self.temporary = tempfile.TemporaryDirectory(prefix="foulwake-ci-test-")
         self.repo = Path(self.temporary.name) / "repo"
         subprocess.run(["git", "clone", "--quiet", "--shared", "--no-checkout", str(ROOT), str(self.repo)], check=True)
-        state = json.loads((ROOT / "governance/v4/runtime/STATE.json").read_text())
+        # A completed live task must not disable these negative controls. Keep
+        # their real active-task fixture explicit and separate from live state.
+        scenarios = json.loads((ROOT / "governance/v4/tests/fixtures/RUNTIME_SCENARIOS.json").read_text())
+        self.git("checkout", "--quiet", "--detach", scenarios["trusted_ci_fixture"]["authority_commit"])
+        state = json.loads(self.git("show", "HEAD:governance/v4/runtime/STATE.json"))
         self.task_id = state["active_project_task_id"]
-        self.task = json.loads((ROOT / f"governance/v4/tasks/{self.task_id}.json").read_text())
+        self.task = json.loads(self.git("show", f"HEAD:governance/v4/tasks/{self.task_id}.json"))
         self.branch = self.task["scope"]["branch"]
         self.baseline = self.git("log", "--diff-filter=A", "--format=%H", "HEAD", "--", f"governance/v4/tasks/{self.task_id}.json").splitlines()[0]
         self.git("checkout", "--quiet", "--detach", "HEAD")
@@ -103,12 +107,12 @@ class TrustedCITests(unittest.TestCase):
         delivery = self.commit("test only: specialist delivery")
         self.git("update-ref", f"refs/remotes/origin/{self.branch}", delivery)
         self.git("checkout", "--quiet", "-B", "v2.7-design", self.authority)
-        state = json.loads((ROOT / "governance/v4/runtime/STATE.json").read_text())
+        state = json.loads(self.git("show", f"{self.authority}:governance/v4/runtime/STATE.json"))
         control_id = state["coordination_control"]["task_id"]
-        control = json.loads((ROOT / f"governance/v4/tasks/{control_id}.json").read_text())
+        control = json.loads(self.git("show", f"{self.authority}:governance/v4/tasks/{control_id}.json"))
         tasks = {self.task_id: self.task, control_id: control}
-        contracts = json.loads((ROOT / "governance/v4/contracts/CONTRACTS.json").read_text())
-        roles = json.loads((ROOT / "governance/v4/roles/REGISTRY.json").read_text())
+        contracts = json.loads(self.git("show", f"{self.authority}:governance/v4/contracts/CONTRACTS.json"))
+        roles = json.loads(self.git("show", f"{self.authority}:governance/v4/roles/REGISTRY.json"))
         ref = "governance/v4/evidence/TEST_ACCEPTANCE.json"
         accepted = {"task_id": self.task_id, "status": "ACCEPTED", "reviewer_role": "CHIEF_EDITOR",
                     "delivery_commit": delivery, "accepted_blobs": {self.output: self.git("rev-parse", f"{delivery}:{self.output}")}}
@@ -131,6 +135,61 @@ class TrustedCITests(unittest.TestCase):
         self.write(self.output, b"# unauthorized editorial change\n")
         with self.assertRaisesRegex(GovernanceViolation, "INTEGRATION_CONTENT_EDIT"):
             validate_integration_request(self.repo, state, tasks, request)
+
+    def test_idle_authority_freezes_workstream_at_recorded_head(self):
+        self.git("checkout", "--quiet", "--detach", self.authority)
+        path = "governance/v4/runtime/STATE.json"
+        state = json.loads((self.repo / path).read_text())
+        state["active_project_task_id"] = None
+        state["permissions"] = {key: False for key in state["permissions"]}
+        row = next(row for row in state["workstreams"].values() if row["branch"] == self.branch)
+        row["head"] = self.baseline
+        self.write(path, json.dumps(state).encode())
+        idle = self.commit("test only: idle branch authority")
+        checked = ci.validate_branch(self.repo, idle, self.branch, self.baseline)
+        self.assertEqual(checked["status"], "PASS / FROZEN / NO_WRITE_AUTHORITY")
+        self.git("checkout", "--quiet", "--detach", self.baseline)
+        self.write(self.output, b"# unauthorized output after task closure\n")
+        changed = self.commit("test only: write after closure")
+        with self.assertRaisesRegex(GovernanceViolation, "CI_UNAUTHORIZED_BRANCH_CHANGE"):
+            ci.validate_branch(self.repo, idle, self.branch, changed)
+
+    def test_coordination_after_accepted_merge_preserves_content_boundaries(self):
+        outputs = self.task["required_outputs"]
+        for path in outputs:
+            self.write(path, b"# independently accepted test evidence\n")
+        delivery = self.commit("test only: complete specialist delivery")
+        blobs = {path: self.git("rev-parse", f"{delivery}:{path}") for path in outputs}
+        self.git("checkout", "--quiet", "-B", "v2.7-design", self.authority)
+        self.git("-c", "user.name=CI test", "-c", "user.email=test@example.invalid",
+                 "merge", "--no-ff", "--no-commit", delivery)
+        ref = "governance/v4/evidence/TEST_ACCEPTANCE.json"
+        accepted = {"task_id": self.task_id, "status": "ACCEPTED", "reviewer_role": "CHIEF_EDITOR",
+                    "delivery_commit": delivery, "accepted_blobs": blobs}
+        self.write(ref, json.dumps(accepted).encode())
+        integrated = self.commit("test only: accepted specialist integration")
+        state = json.loads((self.repo / "governance/v4/runtime/STATE.json").read_text())
+        control_id = state["coordination_control"]["task_id"]
+        control = json.loads((self.repo / f"governance/v4/tasks/{control_id}.json").read_text())
+        request = {"role": "CHIEF_EDITOR", "action": "MANAGE_STATE", "task_id": control_id,
+                   "branch": "v2.7-design", "path": "governance/v4/runtime/STATE.json"}
+        validate_execution_scope(self.repo, control, request)
+        with self.assertRaisesRegex(GovernanceViolation, "OUT_OF_SCOPE_PATH"):
+            validate_execution_scope(self.repo, control, {**request, "path": self.output})
+        self.write(self.output, b"# unauthorized edit after acceptance\n")
+        with self.assertRaisesRegex(GovernanceViolation, "ACCEPTED_ARTIFACT_DRIFT"):
+            validate_execution_scope(self.repo, control, request)
+        self.git("reset", "--hard", integrated)
+        self.write("working/v2.7/qa/unaccepted.md", b"# never accepted\n")
+        self.commit("test only: unaccepted content history")
+        with self.assertRaisesRegex(GovernanceViolation, "OUT_OF_SCOPE_PATH"):
+            validate_execution_scope(self.repo, control, request)
+        self.git("reset", "--hard", integrated)
+        accepted["reviewer_role"] = "SIMULATION_QA"
+        self.write(ref, json.dumps(accepted).encode())
+        self.commit("test only: producer self acceptance")
+        with self.assertRaisesRegex(GovernanceViolation, "INDEPENDENT_ACCEPTANCE_MISSING"):
+            validate_execution_scope(self.repo, control, request)
 
 
 if __name__ == "__main__":
