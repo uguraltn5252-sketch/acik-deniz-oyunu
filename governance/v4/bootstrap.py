@@ -30,6 +30,10 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
     task = tasks.get(selected_task) if selected_task else None
     if task and not task_id and not task.get("authorization", {}).get("role_actions", {}).get(role_name):
         selected_task, task = None, None
+    read_only_binding = state.get("read_only_assignments", {}).get(role_name, {})
+    if not selected_task and not task_id and read_only_binding:
+        selected_task = read_only_binding["task_id"]
+        task = tasks[selected_task]
     migration_task = (state.get("migration_control") or {}).get("task_id")
     binding = "NONE"
     if selected_task == state.get("active_project_task_id") and selected_task:
@@ -38,6 +42,8 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
         binding = "COORDINATION_CONTROL"
     elif selected_task == migration_task and selected_task:
         binding = "MIGRATION_CONTROL_ONLY"
+    elif selected_task == read_only_binding.get("task_id") and selected_task:
+        binding = "READ_ONLY_ASSIGNMENT"
     elif selected_task:
         binding = "INACTIVE / NO AUTHORITY"
 
@@ -71,8 +77,9 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
             and task.get("status") in policy.get("cutover_review_statuses", [])
             and (state.get("migration_control") or {}).get("cutover_performed") is False
         )
+        review_binding = binding == "READ_ONLY_ASSIGNMENT" and task.get("status") == "READ_ONLY_ASSIGNED"
         task_effective = authorization.get("enabled") is True and (
-            active_binding or migration_binding or control_binding
+            active_binding or migration_binding or control_binding or review_binding
         )
         role_actions = assigned_role_actions if task_effective else []
         write_actions = set(policy.get("write_actions", []))
@@ -95,8 +102,16 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
             lines.extend([
                 f"TASK_REF: governance/v4/tasks/{task['task_id']}.json",
                 f"SOURCE_BASELINE: {task.get('source', {}).get('commit', 'SEE_TASK')}",
-                "ALLOWED_PATHS: " + ", ".join(task.get("scope", {}).get("allowed_exact_paths", []) + task.get("scope", {}).get("allowed_globs", [])),
+                ("READ_ONLY_INPUTS: " + ", ".join(pin["path"] for pin in task.get("inputs", []))) if review_binding else
+                ("ALLOWED_PATHS: " + ", ".join(task.get("scope", {}).get("allowed_exact_paths", []) + task.get("scope", {}).get("allowed_globs", []))),
             ])
+            if review_binding:
+                model = task.get("model_request", {})
+                lines.extend([
+                    "DELIVERY: VISIBLE_ROLE_CHAT_ONLY / NO_REPOSITORY_WRITES",
+                    f"REQUESTED_MODEL: {model.get('display_name', 'SEE_TASK')} / {model.get('reasoning_effort', 'DEFAULT')}",
+                    "MODEL_SWITCH: A request does not change the visible chat's actual model; verify the model selection.",
+                ])
     else:
         lines.extend([
             "",

@@ -1,0 +1,213 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "STORY-COHERENCE-IMMERSION-001",
+  "task_type": "SOURCE_READ_ONLY_STORY_AND_CARD_REVIEW",
+  "project_task": false,
+  "status": "READ_ONLY_ASSIGNED",
+  "issued_by": "CHIEF_EDITOR",
+  "issued_at": "2026-09-05",
+  "executor_role": "STORY_EDITOR",
+  "reviewer_roles": [
+    "CHIEF_EDITOR"
+  ],
+  "owner_authorization": {
+    "task_id": "STORY-COHERENCE-IMMERSION-001",
+    "decision": "AUTHORIZED",
+    "delegation_id": "OWNER-DELEGATION-20260905",
+    "recorded_from": "Project owner requested that the Story Editor review the whole story and cards, identify inconsistencies and ways to immerse players without boredom, and consider how to make the work stronger using the new GPT model. The owner reconfirmed that this conversation remains Chief Editor.",
+    "scope_note": "The visible Story Editor performs the review. Chief Editor assigns and later evaluates it. Existing source/copy QA continues; neither role is replaced by a temporary agent."
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "23b8ba547d58008e69c400140e16ccfc0186aee9",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": false,
+    "allowed_actions": [
+      "READ_ONLY_VALIDATION"
+    ],
+    "role_actions": {
+      "STORY_EDITOR": [
+        "READ_ONLY_VALIDATION"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "work/v2.7-story",
+    "allowed_globs": [],
+    "allowed_exact_paths": [
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+    ],
+    "max_changed_files": 0,
+    "allowed_extensions": [
+      ".md",
+      ".json"
+    ],
+    "binary_files_allowed": false,
+    "note": "Role-owned paths identify the review domain. Zero repository writes are permitted; inputs below are read-only."
+  },
+  "runtime_permissions": {
+    "visual_production": false,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "required_outputs": [],
+  "inputs": [
+    {
+      "git_blob": "962222d83d669763c4ac8e2765f024b9fade180c",
+      "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
+    },
+    {
+      "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md"
+    },
+    {
+      "git_blob": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa",
+      "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+    },
+    {
+      "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json"
+    },
+    {
+      "git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30",
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json"
+    },
+    {
+      "git_blob": "4a1842af4fca3bd0a8ce12ab7fd0d80ae01f8940",
+      "path": "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+    },
+    {
+      "git_blob": "8551f63339fc3b5645330ea2e6d1941d19aa2840",
+      "path": "working/v2.7/V27_MECHANIC_DECISIONS.json"
+    },
+    {
+      "git_blob": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md"
+    },
+    {
+      "git_blob": "bae77450d6d10e1e3234a3473bf68ffa1efff810",
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md"
+    },
+    {
+      "git_blob": "f88e71c6e4355df291a2e70ce1fff461d8145217",
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json"
+    },
+    {
+      "git_blob": "40e9a2cda56c484d88b976941a4a80d46507bc5b",
+      "path": "releases/v2.6/CARD_BASELINE.md"
+    },
+    {
+      "git_blob": "4151feb2d30cc3a720b6bd4a058bd2b6b0120fa6",
+      "path": "governance/v4/contracts/CONTRACTS.json"
+    }
+  ],
+  "execution_context": {
+    "authority": "Read the current v2.7-design state, this task, contracts and role registry. Read pinned source bytes with Git even when the Story branch contains older governance.",
+    "branch_policy": "The Story branch remains frozen. This review needs no branch update, merge, reset, commit, push or PR.",
+    "source_drift": "Recheck input blobs against the task source and current authority. Governance-only progress does not invalidate unchanged inputs; disclose and escalate an actual story/copy/source change.",
+    "other_active_work": "COPY-SOURCE-INVENTORY-001 remains the sole active specialist repository-write task. Do not run or replace its inventory work."
+  },
+  "model_request": {
+    "model_id": "gpt-6-astra",
+    "display_name": "GPT-6 Astra",
+    "reasoning_effort": "xhigh",
+    "ui_selection": "Astra Extra High",
+    "selection_state": "REQUESTED / ACTUAL_STORY_CHAT_MODEL_NOT_VERIFIED",
+    "official_source": "https://learn.chatgpt.com/docs/models",
+    "instruction": "The project owner selects the model in the Story Editor chat. A prompt or task field cannot switch a running model. Report the actual model only when runtime metadata verifies it; otherwise state UNKNOWN. Do not silently claim Astra execution.",
+    "temporary_agents": "DO_NOT_USE"
+  },
+  "purpose": "Hikâye ve kartların aynı özgün dünyaya ait olmasını; oyuncunun kim olduğunu, ne istediğini ve neden önemsemesi gerektiğini kolayca anlamasını; merak, gerilim ve kuru mizahın oyunu ağırlaştırmadan güçlenmesini değerlendirmek.",
+  "review_scope": [
+    {
+      "area": "Bütün hikâye ve nedensellik",
+      "instruction": "Anlatının başlangıç, yolculuk ve hedef bağını yeniden kur. 1721, Arden, San Cordelio, Saint Verena, Gusto ve Siyah Mühür çevresindeki zaman, coğrafya, neden-sonuç, kurum ve kişi ilişkilerini kaynaklarıyla karşılaştır. Framework şablonlarını gerçekleşmiş olay gibi okuma. Bilinçli belirsizlik ile gerçek tutarsızlığı ayır."
+    },
+    {
+      "area": "Oyuncunun dünyaya bağlanması",
+      "instruction": "Oyuncu ilk seçimden önce kim olduğunu, neyin tehlikede olduğunu ve neden diğerlerine ihtiyaç duyduğunu anlıyor mu? Soyut arka planın kararlar, çıkar çatışmaları, kayıp riski ve gemideki somut hayatla ilişkisini değerlendir. Her önerinin oyundaki mevcut bir anla veya mevcut metinle bağını göster."
+    },
+    {
+      "area": "Tempo ve merak",
+      "instruction": "Açılışta duyulması gereken bilgi, oyun sırasında uygun mevcut anlarda verilebilecek atmosfer ve isteğe bağlı arka planı ayır. Uzun açıklama, tekrar, gereksiz özel isim, kopan gerilim ve mecburi okumaları belirle. İpucu veya yeni kural eklemeden oyuncunun keşfetmesine alan açan anlatım öner."
+    },
+    {
+      "area": "Karakterler ve kartlar",
+      "instruction": "Mevcut 20 karakter, 30 güç ve KAPTAN owner override metninin tamamını incele; yalnız örneklemle tüm deste yorumu yapma. İsim, meslek/dönem dili, istek, korku, kusur, ses, flavor ve mekanik anlam arasında uyum ara. Her önemli kart bulgusunu exact kart kimliği, JSON alanı ve kaynak blobuna bağla. Benzer sesleri, aynı şaka kalıbını ve gerekçesiz lore motiflerini ayır."
+    },
+    {
+      "area": "Gizem, bilgi ve adalet",
+      "instruction": "Herkesin bildiği, kişinin bildiği, söylenti olan ve yazarın kesinleştirmediği şeyleri ayır. Gusto'nun akıbeti ve Siyah Mühür'ün niteliğini çözme. Moderatör metni yeni gizli bilgi, işaretlenmiş suçlu veya oyuncuların kararını geçersiz kılan sonuç üretmesin."
+    },
+    {
+      "area": "Mizah ve özgünlük",
+      "instruction": "Ciddi deniz dünyasının içinde kişilerin korku, çıkar, borç, alışkanlık ve çelişkilerinden doğan kuru mizahı değerlendir. Modern espri, zorlanmış aforizma ve her karta şaka yazma eğilimini ayıkla. Daha güçlü olan metni sırf değişiklik yapmak için değiştirme."
+    },
+    {
+      "area": "Hikâye ile sanatın bağı",
+      "instruction": "Art Bible'ın anlatısal niyetini özellikle 2-5, 11-12 ve 19. bölümlerden, kabul edilmiş KAPTAN patch'inden kontrol et. Sanat Yönetmeninin kadraj veya estetik kabul rolünü üstlenmeden metin-görsel niyet çelişkilerini ona yönlendir. Eski art görev statüleri ve brief metinleri kanonik kart copy'si değildir."
+    }
+  ],
+  "coverage": {
+    "known_canonical_resolver_records": 51,
+    "expected_deck_identities": 121,
+    "rule": "İncelenen kaynak ve kart kimliklerini açıkça say. Kimlik manifestini yalnız kapsam denetiminde kullan. Metni bulunmayan veya yeni kaynak denetimi bekleyen kimlikleri UNREVIEWED_SOURCE_GAP olarak ayır; 51 kayıttan 121 kartın tamamı için PASS verme.",
+    "pending_qa": "Copy-source inventory çıktısı henüz kabul edilmediyse bunu bir bağımlılık olarak yaz; tahmin veya sanat brief'i ile eksik kart metni tamamlama."
+  },
+  "source_constraints": [
+    "PROJECT_OWNER_OVERRIDE_THEN_FULL_V27_SOURCE precedence; preserve SET-KP-01 exact owner text.",
+    "SRC-002 mappings remain GUC-22 Kaptanın Çatlak Kupası; GUC-23 Bayat Peksimet; GUC-24 Islak Çorap.",
+    "Review may identify a mechanic/copy conflict and suggest a decision, but cannot change mechanics, identities, quantities, effects, layout, canon or source text.",
+    "Historical PASS and self-generated scores are not independent proof; player immersion and boredom remain hypotheses until tested with people."
+  ],
+  "delivery": {
+    "channel": "VISIBLE_ROLE_CHAT_ONLY",
+    "canonical": false,
+    "sections": [
+      "Kısa genel teşhis: hikâyenin taşıyıcı gücü ve en önemli zayıflığı.",
+      "Korunması gereken güçlü parçalar ve nedenleri.",
+      "Öncelikli tutarsızlıklar: kaynak/kimlik, çelişen iki ifade veya boşluk, oyuncuya etkisi, önerilen işlem.",
+      "Oyuncuyu içine çekmek ve tempoyu korumak için mevcut oyun anlarına bağlı uygulanabilir öneriler.",
+      "En önemli önerileri anlaşılır kılan az sayıda kısa önce/öneri örneği; yayımlanacak yeni metin veya kapsamlı yeniden yazım değildir.",
+      "Taranan hikâye/kart kapsamı, kaynak boşlukları ve diğer rollere yönlendirilecek maddeler.",
+      "Kanon veya mekanik kararı gerektiren noktalar varsa en fazla üç anlamlı seçenek ve gerekçeli öneri."
+    ],
+    "handoff_fields": [
+      "TASK_ID",
+      "SOURCE_HEAD",
+      "DELIVERY_COMMIT",
+      "CHANGED_PATHS",
+      "RESULT_AND_EVIDENCE",
+      "OPEN_BLOCKERS",
+      "NEXT_RESPONSIBLE_ROLE"
+    ],
+    "handoff_values": {
+      "DELIVERY_COMMIT": "NONE / READ_ONLY_CHAT_REVIEW",
+      "CHANGED_PATHS": [],
+      "NEXT_RESPONSIBLE_ROLE": "CHIEF_EDITOR"
+    },
+    "reporting_style": "Önce yüksek etkili bulguları anlat; tekrar eden kontrol listeleri ve geçmiş sohbet dökümleri ekleme. İspatı kaybetmeden kısa ve somut ol."
+  },
+  "acceptance_criteria": [
+    "Story Editor performs the review in its own visible chat; Chief Editor does not produce specialist findings on its behalf.",
+    "All three pinned story documents and all 51 current canonical card records are covered, or omissions are explicitly disclosed. The 121-identity coverage limit is visible.",
+    "Every asserted inconsistency has exact source evidence; stylistic judgment, proposed wording, unresolved canon and player-experience hypotheses are labelled separately.",
+    "Recommendations explain the player-facing benefit, current source/scene affected and any mechanics/canon or other-role dependency.",
+    "No source, card, art, governance, release or branch bytes are changed; existing copy-source QA and every runtime permission remain unchanged.",
+    "Requested and verified actual model are distinguished; no other-chat acknowledgement or execution is fabricated.",
+    "Chief Editor reviews this chat delivery and records accepted findings before opening any implementation task. Material canon, mechanics and aesthetic decisions stay with the project owner."
+  ],
+  "execution_status": "ASSIGNED / VISIBLE_STORY_CHAT_START_NOT_VERIFIED",
+  "next_action": "Story Editor: use current authority and run the read-only review in the visible Story Editor chat. Chief Editor: evaluate the resulting source-backed findings and issue any later implementation tasks."
+}

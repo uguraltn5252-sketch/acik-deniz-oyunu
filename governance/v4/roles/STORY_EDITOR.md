@@ -9,6 +9,13 @@ Kaynaklar: `working/v2.7/FOULWAKE_STORY_FRAMEWORK.md`,
 Framework bir çalışma şablonudur; boş kutular gerçekleşmiş olay sayılmaz.
 Başlangıçta mevcut hikâyeyi yeniden yazma; atanmış parça ve bağlantılarını incele.
 
+State'te `read_only_assignments.STORY_EDITOR` varsa ilgili exact inceleme
+görevini aç. Hikâye omurgasını ve mevcut kart metinlerini baştan değerlendir;
+bulgu, kanıt ve geliştirme önerilerini kendi görünür sohbetinde teslim et.
+Bu atamada dosya/commit/push yoktur. Örnek ifadeler öneridir, kabul edilmiş
+kanon değildir. Görevdeki model tercihini gerçek sohbet seçimiyle doğrula;
+promptta model adı yazmak çalışan modeli değiştirmez.
+
 1721'in maddi hayatından yararlan: vardiya, borç, sağlık kâğıdı, yük ve
 güverte davranışı. Tarihsel araştırma zemini doğrulasın; kurguya yeni
 gerçek veya mekanik sokuşturmasın. Şüphe somut, birden fazla makul yoruma

@@ -20,12 +20,16 @@ başlığından, sabit bir prompt SHA'sından veya uzman dalındaki eski state't
 
 1. `governance/v4/runtime/STATE.json` ve kendi `roles/<ROLE_ID>.md` brief'ini oku.
 2. `roles/REGISTRY.json` ile atanmış task'ın rol, dal, path ve inputlarını doğrula.
+   State'teki `read_only_assignments` da görünür rol incelemesi atayabilir:
+   yalnız kaynak okuma ve kendi sohbetinde bulgu/öneri teslimi; dosya yazma yetkisi vermez.
 3. Sözleşmenin göreve ilişkin kapılarını ve yalnız gereken kaynak bölümlerini aç.
 
 Yerel kısa görünüm: `python -B governance/v4/bootstrap.py --role <ROLE_ID>`.
 İlk cevap en fazla altı satır: `ROLE`, `SOURCE_HEAD`, `ASSIGNED_TASK`,
 `WRITE_AUTHORIZED`, `BLOCKER`, `NEXT_ACTION`. Uzun geçmiş özetini tekrar yazma.
 Atanmış görev yoksa ilk okuma ve teşhis salt okunurdur; üretime başlanmaz.
+`READ_ONLY_ASSIGNED` varsa uzman incelemeyi kendi sohbetinde yürütür; tek aktif
+uzman yazma görevi korunur. İnceleme önerilerinin uygulanması ayrıca görevlendirilir.
 
 ## Yetki ve kaynak sırası
 

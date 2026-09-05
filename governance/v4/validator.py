@@ -701,6 +701,12 @@ def load_repository_bundle(
     registry = load_json(resolve_governance_ref(root, state["canonical_refs"]["roles"]))
 
     task_ids = set(extra_task_ids)
+    read_only = state.get("read_only_assignments", {})
+    require(isinstance(read_only, dict), "READ_ONLY_ASSIGNMENT_SCHEMA", "assignments")
+    for role, binding in read_only.items():
+        require(role in registry["roles"] and isinstance(binding, dict)
+                and valid_task_id(binding.get("task_id")), "READ_ONLY_ASSIGNMENT_SCHEMA", role)
+        task_ids.add(binding["task_id"])
     if state.get("active_project_task_id"):
         task_ids.add(state["active_project_task_id"])
     migration_id = (state.get("migration_control") or {}).get("task_id")
@@ -730,6 +736,7 @@ def load_repository_bundle(
     require(registry_active == expected_active, "TASK_REGISTRY_DRIFT", str(registry_active))
     tasks = {task_id: load_task(root, task_id) for task_id in task_ids}
     validate_runtime_documents(state, tasks, contracts, registry)
+    validate_read_only_assignments(root, state, tasks, contracts, registry)
     if control_id:
         control = tasks[control_id]
         policy = contracts["lifecycle"]["coordination"]
@@ -761,6 +768,52 @@ def load_repository_bundle(
     else:
         validate_live_task(root, tasks[expected_active[0]], state, contracts)
     return state, tasks, contracts, registry
+
+
+def validate_read_only_assignments(root: Path, state: dict[str, Any], tasks: Mapping[str, dict[str, Any]],
+                                   contracts: dict[str, Any], registry: dict[str, Any]) -> None:
+    """Route source review to visible roles without granting another write task."""
+    for role, binding in state.get("read_only_assignments", {}).items():
+        task_id = binding["task_id"]
+        task = tasks[task_id]
+        require(binding.get("task_ref") == f"governance/v4/tasks/{task_id}.json"
+                and binding.get("status") == task.get("status") == "READ_ONLY_ASSIGNED"
+                and task.get("project_task") is False and task.get("executor_role") == role,
+                "READ_ONLY_ASSIGNMENT_BINDING", task_id)
+        authorization = task["authorization"]
+        action = contracts["runtime_authorization"]["read_only_action"]
+        require(authorization == {"enabled": True, "write_authorized": False,
+                                  "allowed_actions": [action], "role_actions": {role: [action]}},
+                "READ_ONLY_ASSIGNMENT_AUTHORITY", task_id)
+        scope = task["scope"]
+        boundary = contracts["lifecycle"]["role_boundaries"][role]
+        require(scope["branch"] == boundary["branch"] and scope.get("max_changed_files") == 0
+                and scope.get("binary_files_allowed") is False
+                and all(scope_allows(boundary, path) for path in
+                        scope.get("allowed_exact_paths", []) + scope.get("allowed_globs", []))
+                and task.get("required_outputs") == []
+                and task.get("delivery", {}).get("channel") == "VISIBLE_ROLE_CHAT_ONLY",
+                "READ_ONLY_ASSIGNMENT_SCOPE", task_id)
+        require(task.get("runtime_permissions") == {key: False for key in state["permissions"]},
+                "READ_ONLY_ASSIGNMENT_PERMISSION", task_id)
+        approval = task.get("owner_authorization", {})
+        delegation = contracts["lifecycle"]["task_issuance_delegation"]
+        require(task.get("issued_by") == "CHIEF_EDITOR"
+                and approval.get("task_id") == task_id and approval.get("decision") == "AUTHORIZED"
+                and approval.get("delegation_id") == delegation["id"] and approval.get("recorded_from"),
+                "READ_ONLY_ASSIGNMENT_OWNER_AUTHORIZATION", task_id)
+        baseline = task.get("source", {}).get("commit")
+        require(SHA_RE.fullmatch(str(baseline or "")) is not None
+                and subprocess.run(["git", "merge-base", "--is-ancestor", baseline, "HEAD"], cwd=root,
+                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode == 0,
+                "READ_ONLY_ASSIGNMENT_BASELINE", task_id)
+        inputs = task.get("inputs")
+        require(isinstance(inputs, list) and bool(inputs), "READ_ONLY_ASSIGNMENT_INPUTS", task_id)
+        for pin in inputs:
+            relative = normalize_path(pin["path"])
+            require(git(root, "rev-parse", f"{baseline}:{relative}") == pin.get("git_blob")
+                    and git(root, "hash-object", relative) == pin.get("git_blob"),
+                    "READ_ONLY_ASSIGNMENT_INPUT_DRIFT", relative)
 
 
 def validate_live_task(root: Path, task: dict[str, Any], state: dict[str, Any], contracts: dict[str, Any]) -> None:

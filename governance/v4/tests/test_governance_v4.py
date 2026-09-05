@@ -711,6 +711,80 @@ class GovernanceV4Tests(unittest.TestCase):
             with self.assert_rejected("ACCEPTED_ARTIFACT_DRIFT"):
                 validator.validate_repository(repo)
 
+    def read_only_assignment_fixture(self):
+        state, tasks = copy.deepcopy(self.state), copy.deepcopy(self.tasks)
+        task_id = "STORY-REVIEW-EXAMPLE-001"
+        path = "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
+        task = {
+            "task_id": task_id, "canonical_task_authority": True,
+            "project_task": False, "status": "READ_ONLY_ASSIGNED",
+            "issued_by": "CHIEF_EDITOR", "executor_role": "STORY_EDITOR",
+            "reviewer_roles": ["CHIEF_EDITOR"],
+            "authorization": {"enabled": True, "write_authorized": False,
+                              "allowed_actions": ["READ_ONLY_VALIDATION"],
+                              "role_actions": {"STORY_EDITOR": ["READ_ONLY_VALIDATION"]}},
+            "scope": {"branch": "work/v2.7-story", "allowed_globs": [],
+                      "allowed_exact_paths": [path], "max_changed_files": 0,
+                      "binary_files_allowed": False},
+            "required_outputs": [], "delivery": {"channel": "VISIBLE_ROLE_CHAT_ONLY"},
+            "runtime_permissions": {key: False for key in state["permissions"]},
+            "owner_authorization": {"task_id": task_id, "decision": "AUTHORIZED",
+                                    "delegation_id": self.contracts["lifecycle"]["task_issuance_delegation"]["id"],
+                                    "recorded_from": "Isolated read-only routing test."},
+            "source": {"commit": validator.git(ROOT, "rev-parse", "HEAD")},
+            "inputs": [{"path": path, "git_blob": validator.git(ROOT, "rev-parse", f"HEAD:{path}")}],
+        }
+        tasks[task_id] = task
+        state.setdefault("read_only_assignments", {})["STORY_EDITOR"] = {
+            "task_id": task_id, "task_ref": f"governance/v4/tasks/{task_id}.json",
+            "status": "READ_ONLY_ASSIGNED",
+        }
+        return state, tasks, task_id
+
+    def test_29_read_only_assignment_routes_the_role_without_replacing_active_work(self):
+        state, tasks, task_id = self.read_only_assignment_fixture()
+        validator.validate_read_only_assignments(ROOT, state, tasks, self.contracts, self.registry)
+        with patch.object(bootstrap, "load_repository_bundle", return_value=(state, tasks, self.contracts, self.registry)):
+            rendered = bootstrap.build_bootstrap(ROOT, "STORY_EDITOR")
+            self.assertIn(f"TASK_ID: {task_id}", rendered)
+            self.assertIn("TASK_BINDING: READ_ONLY_ASSIGNMENT", rendered)
+            self.assertIn("CURRENT_ROLE_TASK_ACTIONS: READ_ONLY_VALIDATION", rendered)
+            self.assertIn("CURRENT_WRITE_AUTHORIZED: FALSE", rendered)
+            self.assertIn("VISIBLE_ROLE_CHAT_ONLY", rendered)
+            unrelated = bootstrap.build_bootstrap(ROOT, "VISUAL_DESIGN", task_id)
+            self.assertIn("TASK_BINDING: INACTIVE / NO AUTHORITY", unrelated)
+            self.assertIn("CURRENT_ROLE_TASK_ACTIONS: NONE", unrelated)
+        self.assertEqual(state["active_project_task_id"], self.state["active_project_task_id"])
+        self.assertEqual(state["permissions"], self.state["permissions"])
+
+    def test_30_read_only_assignment_denies_every_story_write_action(self):
+        state, tasks, task_id = self.read_only_assignment_fixture()
+        request = {"role": "STORY_EDITOR", "task_id": task_id, "branch": "work/v2.7-story",
+                   "path": tasks[task_id]["scope"]["allowed_exact_paths"][0],
+                   "action": "READ_ONLY_VALIDATION"}
+        validator.authorize_request(state, tasks, self.registry, self.contracts, request)
+        for action in ("WRITE", "PRODUCE_STORY", "PRODUCE_FLAVOR", "PERIOD_LANGUAGE_REVIEW"):
+            with self.subTest(action=action), self.assert_rejected():
+                validator.authorize_request(state, tasks, self.registry, self.contracts,
+                                            {**request, "action": action})
+
+    def test_31_read_only_assignment_rejects_widened_authority_and_source_drift(self):
+        cases = [
+            (lambda task: task["authorization"].update(write_authorized=True), "READ_ONLY_ASSIGNMENT_AUTHORITY"),
+            (lambda task: task["authorization"].update(allowed_actions=["PRODUCE_STORY"]), "READ_ONLY_ASSIGNMENT_AUTHORITY"),
+            (lambda task: task["scope"].update(max_changed_files=1), "READ_ONLY_ASSIGNMENT_SCOPE"),
+            (lambda task: task["scope"].update(branch="work/v2.7-visual"), "READ_ONLY_ASSIGNMENT_SCOPE"),
+            (lambda task: task["delivery"].update(channel="REPOSITORY"), "READ_ONLY_ASSIGNMENT_SCOPE"),
+            (lambda task: task["runtime_permissions"].update(simulation=True), "READ_ONLY_ASSIGNMENT_PERMISSION"),
+            (lambda task: task["owner_authorization"].update(decision="UNVERIFIED"), "READ_ONLY_ASSIGNMENT_OWNER_AUTHORIZATION"),
+            (lambda task: task["inputs"][0].update(git_blob="0" * 40), "READ_ONLY_ASSIGNMENT_INPUT_DRIFT"),
+        ]
+        for mutate, code in cases:
+            state, tasks, task_id = self.read_only_assignment_fixture()
+            mutate(tasks[task_id])
+            with self.subTest(code=code), self.assert_rejected(code):
+                validator.validate_read_only_assignments(ROOT, state, tasks, self.contracts, self.registry)
+
 
 if __name__ == "__main__":
     program = unittest.main(verbosity=2, exit=False)

@@ -2,7 +2,7 @@
   "schema_version": "4.2",
   "canonical": true,
   "state_id": "V4-COPY-SOURCE-INVENTORY-20260905",
-  "status": "V4_COORDINATION_ACTIVE / COPY_SOURCE_INVENTORY_ACTIVE / PRODUCTION_CLOSED",
+  "status": "V4_COORDINATION_ACTIVE / COPY_SOURCE_INVENTORY_ACTIVE / STORY_READ_ONLY_REVIEW_ASSIGNED / PRODUCTION_CLOSED",
   "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -112,7 +112,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "SIMULATION_QA: execute COPY-SOURCE-INVENTORY-001 from its exact activation commit and deliver only three source/copy audit files. CHIEF_EDITOR: review that evidence, then issue targeted story/art consistency tasks and separately scope the reproduced engine defects before any full-game A/B result.",
+  "next_action": "SIMULATION_QA: continue COPY-SOURCE-INVENTORY-001 with its unchanged inputs and three-file scope. STORY_EDITOR: perform STORY-COHERENCE-IMMERSION-001 as a read-only review in its visible chat. CHIEF_EDITOR: independently review both deliveries and scope any implementation or engine repair separately.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -140,5 +140,12 @@
       "note": "Simulation rerun attempt 2 PASS at its unchanged activation head; all four workstream refs validated by current integration CI."
     }
   },
-  "last_completed_project_task_id": "MEC-SEA-ROCK-PREFLIGHT-001"
+  "last_completed_project_task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
+  "read_only_assignments": {
+    "STORY_EDITOR": {
+      "task_id": "STORY-COHERENCE-IMMERSION-001",
+      "task_ref": "governance/v4/tasks/STORY-COHERENCE-IMMERSION-001.json",
+      "status": "READ_ONLY_ASSIGNED"
+    }
+  }
 }
