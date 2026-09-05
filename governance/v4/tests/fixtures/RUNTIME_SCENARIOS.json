@@ -7,19 +7,20 @@
     "purpose": "Historical active-task fixture for trusted CI negative controls, independent of live task closure or replacement; never current work authority."
   },
   "repository_expectations": {
-    "active_task_id": null,
+    "active_task_id": "STORY-NARRATIVE-CLARITY-001",
     "loaded_task_ids": [
       "COPY-SOURCE-INVENTORY-001",
       "GOV4-CUTOVER-001",
       "GOV4-HARDENING-001",
       "GOV4-TEAM-COORDINATION-001",
-      "MEC-SEA-ROCK-PREFLIGHT-001"
+      "MEC-SEA-ROCK-PREFLIGHT-001",
+      "STORY-NARRATIVE-CLARITY-001"
     ],
     "role_write_authorized": {
       "VISUAL_DESIGN": false,
       "CHIEF_EDITOR": true,
       "SIMULATION_QA": false,
-      "STORY_EDITOR": false
+      "STORY_EDITOR": true
     }
   },
   "states": {

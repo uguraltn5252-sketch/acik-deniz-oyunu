@@ -1,0 +1,214 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "STORY-NARRATIVE-CLARITY-001",
+  "task_type": "BOUNDED_STORY_TEXT_IMPLEMENTATION",
+  "project_task": true,
+  "status": "ACTIVE",
+  "issued_by": "CHIEF_EDITOR",
+  "issued_at": "2026-09-05",
+  "executor_role": "STORY_EDITOR",
+  "reviewer_roles": [
+    "CHIEF_EDITOR",
+    "SIMULATION_QA"
+  ],
+  "owner_authorization": {
+    "task_id": "STORY-NARRATIVE-CLARITY-001",
+    "decision": "AUTHORIZED",
+    "delegation_id": "OWNER-DELEGATION-20260905",
+    "recorded_from": "Owner requested stronger story and then clarified: Tamam da hikayeyi daha düzeltmedik ki. Chief now assigns actual narrative source edits under the existing delegated PRODUCE_STORY authority.",
+    "scope_note": "Apply the accepted bounded narrative improvements. This is no new canon, mechanics, card-copy or visual decision."
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "175a10c7b6829abfe61c3c95057b6f4e77f2b520",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "execution_baseline": {
+    "binding": "COMMIT_THAT_FIRST_ADDS_THIS_TASK",
+    "resolve_command": "git log --diff-filter=A --format=%H <CURRENT_AUTHORITY_HEAD> -- governance/v4/tasks/STORY-NARRATIVE-CLARITY-001.json",
+    "branch_policy": "Chief fast-forwards work/v2.7-story from the preserved historical delivery to the exact activation commit. Read authority from current v2.7-design; continue edits on the Story branch. Never reset or discard unpublished work."
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "PRODUCE_STORY",
+      "PERIOD_LANGUAGE_REVIEW",
+      "READ_ONLY_VALIDATION"
+    ],
+    "role_actions": {
+      "STORY_EDITOR": [
+        "PRODUCE_STORY",
+        "PERIOD_LANGUAGE_REVIEW"
+      ],
+      "CHIEF_EDITOR": [
+        "READ_ONLY_VALIDATION"
+      ],
+      "SIMULATION_QA": [
+        "READ_ONLY_VALIDATION"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "work/v2.7-story",
+    "allowed_globs": [],
+    "allowed_exact_paths": [
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+    ],
+    "max_changed_files": 3,
+    "allowed_extensions": [
+      ".md"
+    ],
+    "binary_files_allowed": false,
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      "working/v2.7/qa/",
+      "working/v2.7/visual/"
+    ]
+  },
+  "runtime_permissions": {
+    "visual_production": false,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "required_outputs": [
+    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+  ],
+  "inputs": [
+    {
+      "path": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_ACCEPTANCE_20260905.json",
+      "git_blob": "a9c2e4ba598eb6a194a28943359f6f69c078f21c"
+    },
+    {
+      "path": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_REPORT_20260905.md",
+      "git_blob": "82bfc097815c8286bc626009276107e0046c85d9"
+    },
+    {
+      "path": "governance/v4/contracts/CONTRACTS.json",
+      "git_blob": "4151feb2d30cc3a720b6bd4a058bd2b6b0120fa6"
+    },
+    {
+      "path": "governance/v4/roles/STORY_EDITOR.md",
+      "git_blob": "ef009d83c4a0fcf95cbfbad318a406057bbd7ae3"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30"
+    },
+    {
+      "path": "releases/v2.6/BINARY_ARTIFACTS.md",
+      "git_blob": "d01d63bfe8f3b51c5112db9e4f9c435f7aa38172"
+    }
+  ],
+  "output_baselines": [
+    {
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "git_blob": "962222d83d669763c4ac8e2765f024b9fade180c"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "git_blob": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa"
+    }
+  ],
+  "source_read_policy": "inputs are immutable dependencies. The three output_baselines identify the original editable source bytes at source.commit; inspect them with Git and keep the edit limited to the targets below. They are authorized outputs, not immutable current-worktree input pins.",
+  "rulebook_source": {
+    "library_path": "/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf",
+    "sha256": "192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a",
+    "size_bytes": 1104041,
+    "pages": 29,
+    "relevant_pages": [
+      6,
+      7,
+      8,
+      12
+    ],
+    "source_record": "releases/v2.6/BINARY_ARTIFACTS.md",
+    "use": "Verify file hash and read only needed passages. The accepted report records independently checked locators. No PDF creation or editing."
+  },
+  "purpose": "Kabul edilen incelemeyi gerçek hikâye dosyalarında uygulamak: oyuncunun mevcut sorumluluğunu erkene almak, kalkış baskısını hissettirmek ve Siyah Mühür anlatısındaki kesinlik tutarsızlığını gidermek.",
+  "targets": [
+    {
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "section": "§3.1 / OKU",
+      "instruction": "Sefer heyetinin §3.3 içinde zaten bulunan sorumluluğunu açılışta daha erken görünür kıl. Hedef zaten söyleniyor; yeni yükümlülük veya oyuncu geçmişi icat etme. Terkip, formül kutusu ve çıkar çatışmalarının güçlü ayrıntılarını bilgi sırasını iyileştirerek koru."
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "section": "§3.3 / OKU",
+      "instruction": "Kilitli s.6 yeniden karantina riskini mevcut kuru mizahla birleştir; beklemenin somut bedelini ve Kaptan seçimine geçişi güçlendir. Yeni oyun cezası, geri sayım veya dedektiflik aşaması ekleme. Gusto için Bilmiyorsunuz. sınırı ve bütün seçim/d12 hükümleri kalsın."
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "section": "Yeni §5.3 / HİKÂYE MANTIĞI değiştirme bloğu",
+      "instruction": "Kilitli s.12 ilk cümlesindeki kesin ortak irade atfını, v2.7 §17 belirsizliğiyle uyumlu anlatıma dönüştür. Aynı notun mekanik sınırını aşağıdaki protected_tail ile aynen koru. Örgütün niteliğini, ortak efendiyi veya Gusto sonucunu açıklama. Bu yalnız v2.7 anlatı bloğudur; kilitli PDF yerinde değiştirilmez."
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "section": "İlgili değişiklik fişi, kapsam ve günlük",
+      "instruction": "Yalnız bu üç anlatı hedefini ve doğrudan bağlarını kaydet. Boş şablonları doldurma; yeni kanon oluşturma."
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "section": "Yeni tarihli uygulama doğrulama kaydı",
+      "instruction": "Eski 20 Ağustos kabul kaydını tarihsel olarak koru. Uygulanan bölümleri, source/output blob bağını, önce/sonra gerekçelerini ve bağımsız Chief/QA incelemesi beklendiğini yeni kayıtta belirt. Kendi çalışmana nihai kabul veya insan deneyimi PASS verme."
+    }
+  ],
+  "protected_tail": "Ancak bu bir mekanik yasak değildir: Hain oyuncuların yapabilecekleri yalnız yazılı Hain, Karakter ve Güç kurallarıyla belirlenir. Hikâye, bu kuralların tonunu açıklar; yeni yasak eklemez.",
+  "preserve": [
+    "1721, Arden, San Cordelio, Saint Verena, Veyr, Gusto ve Siyah Mühür adları ve mevcut çerçeve.",
+    "Gusto akıbeti, Siyah Mühür yapısı ve terkibin başarısı belirsiz kalır.",
+    "§3.4, §3.6, §17 ve Liman Gecesi metinleri bu görevde korunur; yalnız yeni blok için gerekli bölüm sırası/kapsam başvuruları güncellenebilir.",
+    "ŞİMDİ YAP, KURAL, oy, gece, kart etkisi, kimlik ve adet alanları değişmez.",
+    "KAPTAN override ve KAR-01/02 gece metinleri ile bütün kart JSONları değişmez; onların kararları ayrı yürür."
+  ],
+  "acceptance_criteria": [
+    "Üç exact dosyada gerçek, küçük ve izlenebilir kaynak düzenlemesi teslim edilir; yeniden yalnız inceleme raporu vermek görevi tamamlamaz.",
+    "Kümülatif fark yalnız üç yetkili dosya ve belirtilen anlatı hedefleriyle sınırlıdır; immutable inputs ve locked release değişmez.",
+    "Önce/sonra karşılaştırma her değişikliğin oyuncuya yararını ve korunan anlamı açıklar. Sayısal kelime hedefi tek başına kalite ölçütü değildir.",
+    "§5.3 protected_tail aynen bulunur; yeni yasak, ipucu veya anlatıcı tarafından belirlenmiş suçlu eklenmez.",
+    "Chief anlam, ses ve geçişleri; SIMULATION_QA mekanik değişmediğini bağımsız salt okunur inceler.",
+    "Teslim commit ve output blobları raporlanır; kanonik entegrasyon Chief kabulünden sonra yapılır.",
+    "İnsan denemesi yapılmadıysa sıkılma/immersion iyileşmesi kanıtlanmış diye yazılmaz."
+  ],
+  "model_request": {
+    "requested_model_id": "gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "actual_verified": "UNKNOWN",
+    "instruction": "Model tercihi çalışan sohbeti değiştirmez. Yalnız runtime doğrularsa actual modeli bildir. Geçici ajan kullanma."
+  },
+  "delivery": {
+    "channel": "VISIBLE_STORY_CHAT_AND_STORY_BRANCH_COMMIT",
+    "handoff_fields": [
+      "TASK_ID",
+      "SOURCE_HEAD",
+      "DELIVERY_COMMIT",
+      "CHANGED_PATHS",
+      "RESULT_AND_EVIDENCE",
+      "OPEN_BLOCKERS",
+      "NEXT_RESPONSIBLE_ROLE"
+    ],
+    "next_responsible_role": "CHIEF_EDITOR",
+    "evidence": "Actual edited Markdown files, commit, per-file blobs and short before/after rationale. No release or lock request."
+  },
+  "execution_status": "ASSIGNED / VISIBLE_STORY_CHAT_START_NOT_VERIFIED",
+  "next_action": "STORY_EDITOR: read current authority and this exact task, verify the prepared branch, then edit and commit the three narrative files. CHIEF_EDITOR: inspect the actual delivery and integrate only independently accepted output bytes."
+}

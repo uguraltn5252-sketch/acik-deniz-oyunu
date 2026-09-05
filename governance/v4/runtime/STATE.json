@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-COPY-SOURCE-INVENTORY-20260905",
-  "status": "V4_COORDINATION_ACTIVE / STORY_IMPLEMENTATION_ACTIVATION_READY / COPY_SOURCE_INVENTORY_PAUSED",
+  "state_id": "V4-STORY-NARRATIVE-CLARITY-20260905",
+  "status": "V4_COORDINATION_ACTIVE / STORY_TEXT_WRITE_ACTIVE / COPY_INVENTORY_PAUSED / VISUAL_SIMULATION_RELEASE_CLOSED",
   "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": null,
+  "active_project_task_id": "STORY-NARRATIVE-CLARITY-001",
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -55,7 +55,11 @@
     "story": {
       "branch": "work/v2.7-story",
       "head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
-      "status": "NARRATIVE_CORRECTION_ACTIVATION_READY / SOURCE_TEXT_NOT_YET_CORRECTED"
+      "status": "ACTIVE_NARRATIVE_CORRECTION / EXECUTION_NOT_STARTED",
+      "task_id": "STORY-NARRATIVE-CLARITY-001",
+      "source_baseline_commit": "175a10c7b6829abfe61c3c95057b6f4e77f2b520",
+      "head_binding": "LAST_ACCEPTED_DELIVERY / TASK_ACTIVATION_FROM_GIT",
+      "branch_preparation": "Fast-forward the preserved historical Story branch to the commit that first adds STORY-NARRATIVE-CLARITY-001. Current authority is v2.7-design."
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
@@ -115,7 +119,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "CHIEF_EDITOR: activate STORY-NARRATIVE-CLARITY-001 now. Its three narrative targets have verified sources and do not depend on the 70-card inventory. SIMULATION_QA preserves work while its inventory write task is paused.",
+  "next_action": "STORY_EDITOR: execute STORY-NARRATIVE-CLARITY-001 by editing the three exact narrative files. CHIEF_EDITOR and SIMULATION_QA: independently review the delivery. The paused copy inventory resumes through a fresh exact continuation task after Story integration; no inventory completion is assumed.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
