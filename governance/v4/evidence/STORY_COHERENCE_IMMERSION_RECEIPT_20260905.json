@@ -1,0 +1,87 @@
+{
+  "schema_version": "4.3",
+  "canonical_authority": false,
+  "evidence_type": "READ_ONLY_CHAT_HANDOFF_RECEIPT / PARTIAL_SOURCE_VERIFICATION",
+  "task_id": "STORY-COHERENCE-IMMERSION-001",
+  "coordination_task_id": "GOV4-TEAM-COORDINATION-001",
+  "recorded_at": "2026-09-05",
+  "reviewer_role": "CHIEF_EDITOR",
+  "status": "HANDOFF_RECEIVED / ACCEPTANCE_PENDING_FULL_REPORT",
+  "received_handoff": {
+    "channel": "PROJECT_OWNER_RELAY_TO_CHIEF_EDITOR_CHAT",
+    "TASK_ID": "STORY-COHERENCE-IMMERSION-001",
+    "SOURCE_HEAD": "fb64fbcba2d6f359cc274f9e3cb9aa4df36fae5b",
+    "DELIVERY_COMMIT": "NONE / READ_ONLY_CHAT_REVIEW",
+    "CHANGED_PATHS": [],
+    "RESULT_AND_EVIDENCE": "İnceleme tamamlandı; 3 hikâye belgesi, 51 kart ve kaynaklı bulgular yukarıda.",
+    "OPEN_BLOCKERS": "QA kaynak envanteri; gece adı uyuşmazlığı; KAPTAN kapsam kararı; 70 kartın metin incelemesi.",
+    "NEXT_RESPONSIBLE_ROLE": "CHIEF_EDITOR"
+  },
+  "source_verification": {
+    "live_branch": "v2.7-design",
+    "live_head_at_review": "fb64fbcba2d6f359cc274f9e3cb9aa4df36fae5b",
+    "reported_head_matches": true,
+    "task_source_commit": "23b8ba547d58008e69c400140e16ccfc0186aee9",
+    "task_source_is_ancestor": true,
+    "pinned_inputs_ref": "governance/v4/tasks/STORY-COHERENCE-IMMERSION-001.json#/inputs",
+    "pinned_input_count": 12,
+    "all_pinned_inputs_match_reported_head": true,
+    "source_drift": "NONE / GOVERNANCE_ONLY_PROGRESS",
+    "story_branch_head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+    "story_branch_change_since_assignment": false,
+    "simulation_branch_head": "23b8ba547d58008e69c400140e16ccfc0186aee9",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "independent_source_checks": [
+    {
+      "subject": "KAR-01 / KAR-02 night terminology",
+      "status": "TERMINOLOGY_DIFFERENCE_VERIFIED / MECHANICAL_EQUIVALENCE_NOT_DECIDED",
+      "card_source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "card_source_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+      "card_fields": ["characters[id=KAR-01].effect", "characters[id=KAR-02].effect"],
+      "card_phrase": "Tanışma gecesi hariç",
+      "story_source": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "story_source_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+      "story_section": "Değişmez entegrasyon sınırı / Bölüm akışı korunur",
+      "story_phrase": "ilk tarafsız gece",
+      "limit": "These current repository phrases differ. The complete specialist comparison with the locked rulebook, including any effect on timing, has not been transferred. This receipt authorizes no copy or mechanic correction."
+    },
+    {
+      "subject": "SET-KP-01 owner text",
+      "status": "EXACT_OWNER_TEXT_VERIFIED / REPORTED_SCOPE_ISSUE_PENDING_EVIDENCE",
+      "source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "source_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30",
+      "field": "records[id=SET-KP-01].effect",
+      "effect": "Oylamada eşitlik olursa, senin tarafın geçerli olur.",
+      "authority": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
+      "disposition": "Preserve exact binding owner copy. A scope concern requires the specialist's exact rule comparison; neither older Art Bible wording nor this receipt changes the owner's decision."
+    },
+    {
+      "subject": "Available copy versus reported review coverage",
+      "status": "SOURCE_COUNTS_VERIFIED / COMPLETED_REVIEW_COVERAGE_REPORTED_ONLY",
+      "story_documents": 3,
+      "character_records": 20,
+      "power_records": 30,
+      "owner_override_records": 1,
+      "available_canonical_copy_records": 51,
+      "manifest_identities": 121,
+      "remaining_identities": 70,
+      "remaining_status": "UNREVIEWED_SOURCE_GAP / COPY_INVENTORY_DEPENDENCY",
+      "limit": "Source availability and the owner's relayed completion claim do not independently establish that every record was editorially reviewed. No full-deck PASS is given."
+    }
+  ],
+  "review_limit": {
+    "full_report_available_to_chief": false,
+    "context_retrieval_result": "PARTIAL_PRIOR_CHAT_EXCERPTS_ONLY / NOT_CURRENT_AUTHORITY",
+    "missing_material": [
+      "Full source-backed findings and scanned source/card coverage from the existing review.",
+      "Exact competing passages for reported night timing, KAPTAN scope and the Siyah Mühür certainty concern mentioned in retrieved excerpts.",
+      "The existing concrete opening, pacing and character-voice recommendations, with their source or game-moment links and illustrative examples."
+    ],
+    "verified_actual_model": "UNKNOWN",
+    "acceptance_decision": "PENDING / NO_IMPLEMENTATION_TASK_OPENED",
+    "material_decision_requested": false
+  },
+  "next_action": "Transfer the existing detailed Story Editor report into the Chief Editor review context. Chief Editor then verifies the findings and records acceptance or targeted follow-up; do not rerun the whole review solely because the handoff omitted its body.",
+  "other_work": "COPY-SOURCE-INVENTORY-001 remains the sole active specialist repository-write task with unchanged inputs and scope. All runtime permissions remain false."
+}

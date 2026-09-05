@@ -208,6 +208,14 @@
     "Requested and verified actual model are distinguished; no other-chat acknowledgement or execution is fabricated.",
     "Chief Editor reviews this chat delivery and records accepted findings before opening any implementation task. Material canon, mechanics and aesthetic decisions stay with the project owner."
   ],
-  "execution_status": "ASSIGNED / VISIBLE_STORY_CHAT_START_NOT_VERIFIED",
-  "next_action": "Story Editor: use current authority and run the read-only review in the visible Story Editor chat. Chief Editor: evaluate the resulting source-backed findings and issue any later implementation tasks."
+  "execution_status": "COMPLETION_REPORTED / FULL_REPORT_TRANSFER_PENDING",
+  "review": {
+    "status": "HANDOFF_RECEIVED / ACCEPTANCE_PENDING_FULL_REPORT",
+    "reviewer_role": "CHIEF_EDITOR",
+    "received_at": "2026-09-05",
+    "reported_source_head": "fb64fbcba2d6f359cc274f9e3cb9aa4df36fae5b",
+    "evidence_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_RECEIPT_20260905.json",
+    "note": "The owner relayed the seven-field completion handoff. The detailed report referenced as above was not included; context retrieval recovered only excerpts. Completion of the full editorial review is reported, not independently accepted. Read-only authorization remains available to supply the existing report."
+  },
+  "next_action": "Story Editor: transfer the already completed full report with source-backed findings, recommendations and coverage; no repeat review or file production is requested. Chief Editor: independently assess that report before recording accepted findings or opening an implementation task."
 }

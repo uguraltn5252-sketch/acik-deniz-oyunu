@@ -2,7 +2,7 @@
   "schema_version": "4.2",
   "canonical": true,
   "state_id": "V4-COPY-SOURCE-INVENTORY-20260905",
-  "status": "V4_COORDINATION_ACTIVE / COPY_SOURCE_INVENTORY_ACTIVE / STORY_READ_ONLY_REVIEW_ASSIGNED / PRODUCTION_CLOSED",
+  "status": "V4_COORDINATION_ACTIVE / COPY_SOURCE_INVENTORY_ACTIVE / STORY_REVIEW_DETAIL_PENDING / PRODUCTION_CLOSED",
   "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -112,7 +112,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "SIMULATION_QA: continue COPY-SOURCE-INVENTORY-001 with its unchanged inputs and three-file scope. STORY_EDITOR: perform STORY-COHERENCE-IMMERSION-001 as a read-only review in its visible chat. CHIEF_EDITOR: independently review both deliveries and scope any implementation or engine repair separately.",
+  "next_action": "SIMULATION_QA: continue COPY-SOURCE-INVENTORY-001 with its unchanged inputs and three-file scope. STORY_EDITOR: transfer the existing full review for STORY-COHERENCE-IMMERSION-001; its completion summary has been received. CHIEF_EDITOR: finish independent review when the detailed findings are available, then scope any implementation or engine repair separately.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -145,7 +145,9 @@
     "STORY_EDITOR": {
       "task_id": "STORY-COHERENCE-IMMERSION-001",
       "task_ref": "governance/v4/tasks/STORY-COHERENCE-IMMERSION-001.json",
-      "status": "READ_ONLY_ASSIGNED"
+      "status": "READ_ONLY_ASSIGNED",
+      "review_status": "HANDOFF_RECEIVED / FULL_REPORT_PENDING",
+      "evidence_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_RECEIPT_20260905.json"
     }
   }
 }
