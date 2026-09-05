@@ -54,12 +54,13 @@
   "workstreams": {
     "story": {
       "branch": "work/v2.7-story",
-      "head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "head": "11f58ecf519c9e6ceb5a9e81b6ed88747ae2464e",
       "status": "ACTIVE_NARRATIVE_CORRECTION / EXECUTION_NOT_STARTED",
       "task_id": "STORY-NARRATIVE-CLARITY-001",
       "source_baseline_commit": "175a10c7b6829abfe61c3c95057b6f4e77f2b520",
-      "head_binding": "LAST_ACCEPTED_DELIVERY / TASK_ACTIVATION_FROM_GIT",
-      "branch_preparation": "Fast-forward the preserved historical Story branch to the commit that first adds STORY-NARRATIVE-CLARITY-001. Current authority is v2.7-design."
+      "head_binding": "AUTHORIZED_TASK_ACTIVATION / NOT_A_DELIVERY",
+      "previous_recorded_head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "branch_preparation": "PREPARED: live branch fast-forwarded to the exact STORY-NARRATIVE-CLARITY-001 activation commit. Current authority is v2.7-design; visible Story chat execution has not been verified."
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
@@ -74,8 +75,8 @@
     },
     "simulation": {
       "branch": "work/v2.7-simulation",
-      "head": "5bb108249819bcfeb58da6343cc3cd28e221c410",
-      "head_binding": "LAST_ACCEPTED_DELIVERY / NEW_ACTIVATION_FROM_TASK_HISTORY",
+      "head": "23b8ba547d58008e69c400140e16ccfc0186aee9",
+      "head_binding": "FROZEN_AT_VERIFIED_PAUSE_HEAD / NOT_AN_ACCEPTED_DELIVERY",
       "task_id": "COPY-SOURCE-INVENTORY-001",
       "source_baseline_commit": "54692e3e4da7d1bd9005384ed78286dbbdba8cb3",
       "status": "PAUSED_FOR_STORY_IMPLEMENTATION / INVENTORY_NOT_ACCEPTED_OR_CLOSED",
