@@ -4,7 +4,7 @@
   "task_id": "COPY-SOURCE-INVENTORY-001",
   "task_type": "READ_ONLY_SOURCE_COPY_INVENTORY",
   "project_task": true,
-  "status": "ACTIVE",
+  "status": "PAUSED / STORY_IMPLEMENTATION_PRIORITY",
   "issued_by": "CHIEF_EDITOR",
   "issued_at": "2026-09-05",
   "executor_role": "SIMULATION_QA",
@@ -29,8 +29,8 @@
     "branch_must_start_at": "The exact task-activation commit; coordinator fast-forwards the accepted Simulation branch to that commit. Stop on branch drift instead of resetting specialist work."
   },
   "authorization": {
-    "enabled": true,
-    "write_authorized": true,
+    "enabled": false,
+    "write_authorized": false,
     "allowed_actions": [
       "QA_REVIEW",
       "COPY_CHECK",
@@ -169,5 +169,14 @@
       "NEXT_RESPONSIBLE_ROLE"
     ]
   },
-  "execution_status": "NOT_STARTED / NO_OUTPUTS / NO_RESULT"
+  "execution_status": "PAUSED / NO_DELIVERY_AT_VERIFIED_REMOTE_HEAD",
+  "pause": {
+    "recorded_at": "2026-09-05",
+    "recorded_by": "CHIEF_EDITOR",
+    "source_head": "bccc84dc7f671f37e09a16f604eefa672ef8624c",
+    "branch_head": "23b8ba547d58008e69c400140e16ccfc0186aee9",
+    "reason": "Owner clarified that the story itself still needs correction. The three bounded narrative changes do not depend on the 70-card source inventory. Story implementation is prioritized under existing coordination delegation.",
+    "accepted_or_closed": false,
+    "resume_policy": "Preserve all branch/local QA work. After Story delivery, open a fresh exact continuation task (COPY-SOURCE-INVENTORY-002) from verified current authority and retained inputs; do not reset the branch or reactivate this mutated task record."
+  }
 }

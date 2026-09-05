@@ -2,7 +2,7 @@
   "schema_version": "4.2",
   "canonical": true,
   "state_id": "V4-COPY-SOURCE-INVENTORY-20260905",
-  "status": "V4_COORDINATION_ACTIVE / COPY_SOURCE_INVENTORY_ACTIVE / STORY_REVIEW_ACCEPTED_WITH_CORRECTION / PRODUCTION_CLOSED",
+  "status": "V4_COORDINATION_ACTIVE / STORY_IMPLEMENTATION_ACTIVATION_READY / COPY_SOURCE_INVENTORY_PAUSED",
   "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "COPY-SOURCE-INVENTORY-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -55,7 +55,7 @@
     "story": {
       "branch": "work/v2.7-story",
       "head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
-      "status": "READ_ONLY_REVIEW_ACCEPTED_WITH_CORRECTION / SOURCE_BRANCH_FROZEN / IMPLEMENTATION_QUEUED"
+      "status": "NARRATIVE_CORRECTION_ACTIVATION_READY / SOURCE_TEXT_NOT_YET_CORRECTED"
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
@@ -74,8 +74,8 @@
       "head_binding": "LAST_ACCEPTED_DELIVERY / NEW_ACTIVATION_FROM_TASK_HISTORY",
       "task_id": "COPY-SOURCE-INVENTORY-001",
       "source_baseline_commit": "54692e3e4da7d1bd9005384ed78286dbbdba8cb3",
-      "status": "ACTIVE_COPY_AUDIT / EXECUTION_NOT_STARTED",
-      "branch_preparation": "Fast-forward the unchanged accepted delivery to the exact new task-activation commit before execution. Current authority is always read from v2.7-design.",
+      "status": "PAUSED_FOR_STORY_IMPLEMENTATION / INVENTORY_NOT_ACCEPTED_OR_CLOSED",
+      "branch_preparation": "Preserve the current branch and any unpublished work. Resume inventory through a new exact continuation task after Story implementation review.",
       "accepted_commit": "5bb108249819bcfeb58da6343cc3cd28e221c410",
       "last_accepted_result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED"
     }
@@ -115,7 +115,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "SIMULATION_QA: continue the unchanged COPY-SOURCE-INVENTORY-001; consult accepted SCIM-01/02/04 findings and corrected HAR-AD/HAR-AA labels for its existing discrepancy queue. CHIEF_EDITOR: independently accept/close that delivery, then activate the bounded Story narrative task from the follow-up plan. STORY_EDITOR review is complete; no new Story production is active.",
+  "next_action": "CHIEF_EDITOR: activate STORY-NARRATIVE-CLARITY-001 now. Its three narrative targets have verified sources and do not depend on the 70-card inventory. SIMULATION_QA preserves work while its inventory write task is paused.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -154,5 +154,13 @@
     }
   },
   "last_completed_read_only_task_id": "STORY-COHERENCE-IMMERSION-001",
-  "coordination_followups_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json"
+  "coordination_followups_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json",
+  "paused_project_tasks": {
+    "COPY-SOURCE-INVENTORY-001": {
+      "task_ref": "governance/v4/tasks/COPY-SOURCE-INVENTORY-001.json",
+      "branch_head_at_pause": "23b8ba547d58008e69c400140e16ccfc0186aee9",
+      "reason": "STORY_IMPLEMENTATION_PRIORITY",
+      "resume_task_id": "COPY-SOURCE-INVENTORY-002"
+    }
+  }
 }

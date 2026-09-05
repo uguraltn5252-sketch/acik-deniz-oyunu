@@ -2,31 +2,16 @@
   "schema_version": "4.3",
   "canonical_task_authority": false,
   "plan_id": "STORY-REVIEW-FOLLOWUPS-20260905",
-  "status": "SCOPED_COORDINATION_QUEUE / NOT_EXECUTION_AUTHORITY",
+  "status": "STORY_IMPLEMENTATION_PRIORITIZED / EXACT_ACTIVATION_NEXT",
   "prepared_by": "CHIEF_EDITOR",
   "prepared_at": "2026-09-05",
   "authority_task_id": "GOV4-TEAM-COORDINATION-001",
   "source_head": "1a9e212b7b0df9bfbbdf950657613acccc0c2eda",
   "acceptance_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_ACCEPTANCE_20260905.json",
-  "active_task_unchanged": {
-    "task_id": "COPY-SOURCE-INVENTORY-001",
-    "task_ref": "governance/v4/tasks/COPY-SOURCE-INVENTORY-001.json",
-    "executor_role": "SIMULATION_QA",
-    "branch": "work/v2.7-simulation",
-    "max_changed_files": 3,
-    "task_git_blob": "5f7610a6beef7eb5e8358d8037b265d4de4335a0",
-    "review_hints": [
-      "SCIM-01: KAR-01/02 ile kilitli §3.5, §3.8, §14 zaman karşılaştırması.",
-      "SCIM-02: KAPTAN rota, seçim, Suçlama hedef ön seçimi ve resmî oy ayrımları; owner metni bağlayıcı kalır.",
-      "SCIM-04: GUC-25 oyuncının yazımı.",
-      "SCIM-05: HAR-AD = Açık Deniz 30; HAR-AA = Ada 6."
-    ],
-    "scope_note": "Bunlar mevcut görevin kaynak çatışması ve discrepancy kuyruğu için konum ipuçlarıdır. Task inputları, izinleri veya üç çıktısı değişmez; mevcut exact görevin izin vermediği bir iş yapılmaz."
-  },
   "planned_work": [
     {
       "planned_task_id": "STORY-NARRATIVE-CLARITY-001",
-      "status": "QUEUED / NOT_AUTHORIZED",
+      "status": "READY_FOR_EXACT_ACTIVATION_NOW",
       "executor_role": "STORY_EDITOR",
       "reviewer_roles": [
         "CHIEF_EDITOR",
@@ -34,27 +19,13 @@
       ],
       "branch": "work/v2.7-story",
       "purpose": "Mevcut sorumluluğu açılışta görünür kılmak, kalkış baskısını netleştirmek ve §5.3 anlatı kesinliğini düzeltmek.",
-      "activation_gate": "COPY-SOURCE-INVENTORY-001 teslimi bağımsız kabul edilip aktif görev kapatılır. Chief canlı HEAD/inputları yeniden doğrular ve yeni exact task kaydını ilk kez ACTIVE olarak ekler; bu plan görev aktivasyonu değildir.",
+      "activation_gate": "Activate a new exact task after this recorded priority change; the 70-card QA inventory is not a prerequisite for these three narrative targets.",
       "allowed_exact_paths": [
         "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
         "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
         "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
       ],
       "max_changed_files": 3,
-      "source_input_blobs": [
-        {
-          "git_blob": "962222d83d669763c4ac8e2765f024b9fade180c",
-          "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
-        },
-        {
-          "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
-          "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md"
-        },
-        {
-          "git_blob": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa",
-          "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
-        }
-      ],
       "source_rulebook_sha256": "192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a",
       "targets": [
         "§3.1 OKU: mevcut sefer sorumluluğunu erkene al; hedef, yük ve belirsizliği koru.",
@@ -70,7 +41,21 @@
         "§3.6 kart görme/saklama bağlantısı, §17 isteğe bağlılık ve Liman Gecesi korunur.",
         "QA, §5.3 korunan hükmü ve mekanik değişmediğini; Chief anlam, ses ve geçişleri denetler."
       ],
-      "kaptan_dependency": "KAPTAN exact copy kararı bu anlatı alanlarını değiştirmez; anlatı görevi KAPTAN metnine dokunamaz."
+      "kaptan_dependency": "KAPTAN exact copy kararı bu anlatı alanlarını değiştirmez; anlatı görevi KAPTAN metnine dokunamaz.",
+      "writable_source_baselines": [
+        {
+          "git_blob": "962222d83d669763c4ac8e2765f024b9fade180c",
+          "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
+        },
+        {
+          "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+          "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md"
+        },
+        {
+          "git_blob": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa",
+          "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+        }
+      ]
     },
     {
       "planned_task_id": "STORY-CHARACTER-VOICE-CANDIDATES-001",
@@ -157,5 +142,40 @@
     "visible_chats_contacted_by_tool": false,
     "specialist_execution_confirmed": false,
     "temporary_agents_used": false
-  }
+  },
+  "priority_correction": {
+    "date": "2026-09-05",
+    "owner_message": "Tamam da hikayeyi daha düzeltmedik ki",
+    "decision_by": "CHIEF_EDITOR",
+    "decision": "Remove the unnecessary QA-inventory prerequisite for the bounded narrative correction. Preserve QA progress by pausing its write task, then activate Story as the sole specialist write task. This is implementation priority, not a canon or mechanics decision.",
+    "source_head": "bccc84dc7f671f37e09a16f604eefa672ef8624c",
+    "story_branch_preparation": {
+      "previous_head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+      "unique_commit_count": 1,
+      "unique_changed_paths": [
+        "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+        "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+        "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+      ],
+      "all_three_blobs_identical_to_canonical": true,
+      "method": "Record the already integrated historical Story commit as an additional parent of this governance-only priority commit. Preserve the canonical content tree; this makes subsequent branch preparation a non-forced fast-forward."
+    }
+  },
+  "paused_qa_task": {
+    "task_id": "COPY-SOURCE-INVENTORY-001",
+    "task_ref": "governance/v4/tasks/COPY-SOURCE-INVENTORY-001.json",
+    "executor_role": "SIMULATION_QA",
+    "branch": "work/v2.7-simulation",
+    "max_changed_files": 3,
+    "task_git_blob": "5f7610a6beef7eb5e8358d8037b265d4de4335a0",
+    "review_hints": [
+      "SCIM-01: KAR-01/02 ile kilitli §3.5, §3.8, §14 zaman karşılaştırması.",
+      "SCIM-02: KAPTAN rota, seçim, Suçlama hedef ön seçimi ve resmî oy ayrımları; owner metni bağlayıcı kalır.",
+      "SCIM-04: GUC-25 oyuncının yazımı.",
+      "SCIM-05: HAR-AD = Açık Deniz 30; HAR-AA = Ada 6."
+    ],
+    "scope_note": "Original three output paths and source inputs are preserved. No delivery is accepted. A fresh exact continuation task is required to resume writing.",
+    "status": "PAUSED / RETAINED_FOR_CONTINUATION"
+  },
+  "next_responsible_role": "STORY_EDITOR"
 }
