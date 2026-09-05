@@ -712,7 +712,10 @@ class GovernanceV4Tests(unittest.TestCase):
                 validator.validate_repository(repo)
 
     def read_only_assignment_fixture(self):
-        state, tasks = copy.deepcopy(self.state), copy.deepcopy(self.tasks)
+        # Routing an unassigned Story role must not depend on which role is
+        # currently producing in the real repository.
+        state = copy.deepcopy(self.scenario_states["simulation_active"])
+        tasks = {**copy.deepcopy(self.tasks), **copy.deepcopy(self.scenario_tasks)}
         task_id = "STORY-REVIEW-EXAMPLE-001"
         path = "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
         task = {
@@ -743,6 +746,8 @@ class GovernanceV4Tests(unittest.TestCase):
 
     def test_29_read_only_assignment_routes_the_role_without_replacing_active_work(self):
         state, tasks, task_id = self.read_only_assignment_fixture()
+        active_before = state["active_project_task_id"]
+        permissions_before = copy.deepcopy(state["permissions"])
         validator.validate_read_only_assignments(ROOT, state, tasks, self.contracts, self.registry)
         with patch.object(bootstrap, "load_repository_bundle", return_value=(state, tasks, self.contracts, self.registry)):
             rendered = bootstrap.build_bootstrap(ROOT, "STORY_EDITOR")
@@ -754,8 +759,8 @@ class GovernanceV4Tests(unittest.TestCase):
             unrelated = bootstrap.build_bootstrap(ROOT, "VISUAL_DESIGN", task_id)
             self.assertIn("TASK_BINDING: INACTIVE / NO AUTHORITY", unrelated)
             self.assertIn("CURRENT_ROLE_TASK_ACTIONS: NONE", unrelated)
-        self.assertEqual(state["active_project_task_id"], self.state["active_project_task_id"])
-        self.assertEqual(state["permissions"], self.state["permissions"])
+        self.assertEqual(state["active_project_task_id"], active_before)
+        self.assertEqual(state["permissions"], permissions_before)
 
     def test_30_read_only_assignment_denies_every_story_write_action(self):
         state, tasks, task_id = self.read_only_assignment_fixture()
