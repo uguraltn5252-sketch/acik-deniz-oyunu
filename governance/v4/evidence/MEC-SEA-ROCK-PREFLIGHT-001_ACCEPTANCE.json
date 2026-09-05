@@ -1,0 +1,70 @@
+{
+  "schema_version": "4.3",
+  "canonical_authority": false,
+  "task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
+  "status": "ACCEPTED",
+  "reviewer_role": "CHIEF_EDITOR",
+  "producer_role": "SIMULATION_QA",
+  "reviewed_at_utc": "2026-09-05T09:58:00.412558+00:00",
+  "authority_commit": "dba2dff0b9ec7c1f3361630da41d5f31c232e029",
+  "delivery_commit": "5bb108249819bcfeb58da6343cc3cd28e221c410",
+  "delivery_branch": "work/v2.7-simulation",
+  "execution_baseline": "75763ab1736733f41eff40618a36a82c8a172909",
+  "accepted_blobs": {
+    "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_v2.7.py": "c0f1e5632f56183dd97a3191b510c23d93d90a16",
+    "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_RESULTS_v2.7.json": "c510e2a89a20b9f6b133943f34ca127eb6750331",
+    "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_REPORT_v2.7.md": "0de1287dfef315cdbcaf88983f21b89226156b1c"
+  },
+  "accepted_sha256": {
+    "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_v2.7.py": "541e371cd98c750ce2b612acaa415f35c685f1ebf280d1873e0ee08c188c4827",
+    "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_RESULTS_v2.7.json": "d60cb046618536b59b4e53cea5495119a6b43e103c99d23fdbf1c5dd881dcd5a",
+    "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_REPORT_v2.7.md": "944bfeb308d58b3e97ba7d3cc72147b1e792fcd0313f01e04b2e9a2438b27b86"
+  },
+  "accepted_result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED",
+  "acceptance_scope": "Reproducible scoped information preflight and engine-defect evidence only; no choice between back designs or full-game acceptance.",
+  "checks": {
+    "cumulative_scope": "PASS / three exact added files; no other changes",
+    "source_pins": "PASS / all five inputs unchanged at task source, activation, authority and delivery",
+    "locked_v26_tree": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
+    "package": "PASS / v2.6 ZIP, nested v2.5 ZIP and 44 manifest members match locked hashes",
+    "package_sha256": "ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534",
+    "independent_reproduction": {
+      "command": "python -B working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_v2.7.py --package <verified OYUN_SIMULASYON_PAKETI_v2.6.zip> --authority dba2dff0b9ec7c1f3361630da41d5f31c232e029 --seed 20260905 --samples-per-cell 32 --check",
+      "checkout": "5bb108249819bcfeb58da6343cc3cd28e221c410",
+      "reproduction": "MATCH",
+      "environment_matches": true,
+      "setups": 960,
+      "completed_games": 0,
+      "source_and_delivery_worktree_unchanged": true
+    },
+    "source_review": [
+      "AuditGame._make_claims chooses true_worst for uninformed traitor bluff; hidden-front swap changes target under identical observation and RNG.",
+      "V25AuditGame.run invokes use_day_information before the first movement; pinned rulebook section 11.3 forbids optional route-information powers at that point."
+    ],
+    "results_report_consistency": "PASS / same allowed result; report hashes and regenerated text match",
+    "trusted_workstream_ci": "PASS / all four live workstreams checked with authority dba2dff0b9ec7c1f3361630da41d5f31c232e029",
+    "github_ci": {
+      "delivery_run_id": 33955331528,
+      "delivery_conclusion": "success",
+      "authority_run_id": 33954596223,
+      "authority_conclusion": "success"
+    }
+  },
+  "retained_findings": {
+    "MEC-001": "OPEN; full observation-correct game comparison not completed",
+    "PREFLIGHT-ENGINE-01": "REPRODUCED / uninformed hidden-front access",
+    "PREFLIGHT-ENGINE-02": "REPRODUCED / forbidden first-route information power"
+  },
+  "limits": {
+    "back_design_decision_made": false,
+    "canon_or_mechanics_changed": false,
+    "source_engine_changed": false,
+    "full_simulation_accepted": false,
+    "human_or_physical_evidence_accepted": false,
+    "production_authorized": false,
+    "release_authorized": false,
+    "lock_authorized": false
+  },
+  "next_action": "Integrate only these accepted blobs, close the scoped task with its inconclusive result and retain engine/human/physical blockers. Then issue the bounded copy-source inventory under existing delegation.",
+  "continuity": "Coordination resumed in this conversation at project-owner request; no acknowledgement from other role chats is inferred."
+}
