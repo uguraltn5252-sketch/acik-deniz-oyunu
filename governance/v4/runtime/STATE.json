@@ -1,9 +1,9 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-CUTOVER-20260904",
-  "status": "SRC-002_RESOLVED / GOV4_HARDENING_COMPLETE / GOVERNANCE_IDLE_FAIL_CLOSED",
-  "updated_at": "2026-09-04",
+  "state_id": "V4-MEC-SEA-ROCK-PREFLIGHT-20260905",
+  "status": "GOV4_LIFECYCLE_REPAIRED / MEC_SEA_ROCK_PREFLIGHT_ACTIVE / PRODUCTION_CLOSED",
+  "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
     "commit": "5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": null,
+  "active_project_task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -71,7 +71,11 @@
     "simulation": {
       "branch": "work/v2.7-simulation",
       "head": null,
-      "status": "NOT_STARTED / BRANCH_ABSENT / NO_WRITES"
+      "head_binding": "COMMIT_THAT_FIRST_ADDS_TASK / RESOLVE_FROM_GIT",
+      "task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
+      "source_baseline_commit": "9779f6bb05504a01ca9817bcb8d20fc407efe657",
+      "status": "ACTIVE_TASK_AUTHORIZED / EXECUTION_NOT_STARTED",
+      "branch_preparation": "Create at the exact commit adding this task; verify remote ref before handoff."
     }
   },
   "visual_dispositions": {
@@ -86,7 +90,7 @@
     "pilot_or_candidate": false,
     "full_121_production": false,
     "pdf_or_print_package": false,
-    "simulation": false,
+    "simulation": true,
     "release": false,
     "lock": false
   },
@@ -105,7 +109,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "AWAIT_NEW_EXACT_PROJECT_OWNER_TASK / ALL_PRODUCTION_REMAINS_CLOSED",
+  "next_action": "SIMULATION_QA: execute only MEC-SEA-ROCK-PREFLIGHT-001 on work/v2.7-simulation; three exact QA outputs; MEC-001 remains open.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",

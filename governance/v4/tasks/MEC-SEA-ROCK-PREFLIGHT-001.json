@@ -1,0 +1,150 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
+  "task_type": "FOCUSED_MECHANICS_PREFLIGHT",
+  "project_task": true,
+  "status": "ACTIVE",
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-05",
+  "executor_role": "SIMULATION_QA",
+  "reviewer_roles": [
+    "CHIEF_EDITOR"
+  ],
+  "owner_authorization": {
+    "task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
+    "decision": "AUTHORIZED",
+    "recorded_from": "PROJECT_OWNER instructions of 2026-09-05 05:36:12 UTC: repair lifecycle first; after PASS open this exact task; three QA outputs only. Reconfirmed by project audit follow-up to diagnose and fix the issues.",
+    "scope_note": "Task activation only by Chief Editor; actual preflight execution belongs to SIMULATION_QA. No simulation was executed during activation."
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "9779f6bb05504a01ca9817bcb8d20fc407efe657",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "execution_baseline": {
+    "binding": "COMMIT_THAT_FIRST_ADDS_THIS_TASK",
+    "resolve_command": "git log --diff-filter=A --format=%H HEAD -- governance/v4/tasks/MEC-SEA-ROCK-PREFLIGHT-001.json",
+    "branch_must_start_at": "that exact activation commit; source.commit is its parent"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "RUN_SIMULATION",
+      "QA_REVIEW",
+      "RULES_INTEGRITY_REVIEW"
+    ],
+    "role_actions": {
+      "SIMULATION_QA": [
+        "RUN_SIMULATION",
+        "QA_REVIEW",
+        "RULES_INTEGRITY_REVIEW"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "work/v2.7-simulation",
+    "allowed_globs": [],
+    "allowed_exact_paths": [
+      "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_v2.7.py",
+      "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_RESULTS_v2.7.json",
+      "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_REPORT_v2.7.md"
+    ],
+    "max_changed_files": 3,
+    "allowed_extensions": [
+      ".py",
+      ".json",
+      ".md"
+    ],
+    "binary_files_allowed": false,
+    "game_content_or_production_artifacts_allowed": false,
+    "forbidden_prefixes": [
+      "governance/",
+      "releases/",
+      "working/v2.7/visual/"
+    ]
+  },
+  "runtime_permissions": {
+    "visual_production": false,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": true,
+    "release": false,
+    "lock": false
+  },
+  "required_outputs": [
+    "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_v2.7.py",
+    "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_RESULTS_v2.7.json",
+    "working/v2.7/qa/sea_rock_preflight/FOULWAKE_SEA_ROCK_AB_PREFLIGHT_REPORT_v2.7.md"
+  ],
+  "inputs": [
+    {
+      "path": "releases/v2.6/CARD_BASELINE.md",
+      "git_blob": "40e9a2cda56c484d88b976941a4a80d46507bc5b"
+    },
+    {
+      "path": "releases/v2.6/V26_RELEASE_MANIFEST.json",
+      "git_blob": "11377990fbbe2cc156b954e801cb0bad535c1155"
+    },
+    {
+      "path": "releases/v2.6/SOURCE_PACKAGE.md",
+      "git_blob": "0470dfba2a82c0c4bb297d23eb356bb5b843c99a"
+    },
+    {
+      "path": "releases/v2.5/OYUN_SIMULASYON_SPEC_v2.5.delta.json",
+      "git_blob": "d89fb57e298a943f6db6b548a1fd524747ee4c01"
+    },
+    {
+      "path": "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "git_blob": "8551f63339fc3b5645330ea2e6d1941d19aa2840"
+    }
+  ],
+  "preflight": {
+    "question": "Compare the information effect of separate Sea/Rock backs with the v2.7 shared BACK_SEA_ROCK decision.",
+    "variant_A": "v2.6 locked: distinct Deniz and Kayalık category backs.",
+    "variant_B": "v2.7 draft DEC-20260820-01: shared BACK_SEA_ROCK.",
+    "controlled_scope": "Keep the same source card inventory and applicable mechanics; isolate the back-information model. Do not make a new game-design decision.",
+    "allowed_results": [
+      "PREFLIGHT_SUPPORTS_SHARED_BACK",
+      "PREFLIGHT_SUPPORTS_SEPARATE_BACK",
+      "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED"
+    ],
+    "input_limitation": "Complete mechanical engine is referenced in the external v2.6 source package; its availability and bytes are not verified by this activation. Verify its manifest hash before claiming full-baseline simulation, or document the limited model and use INCONCLUSIVE when evidence is insufficient.",
+    "physical_claims": "No digital result substitutes for blind physical leakage, print/cut/duplex/opacity or human playtest evidence."
+  },
+  "acceptance_criteria": [
+    "Only the three exact QA output paths change cumulatively from the activation commit; no source, gameplay, art, PDF, release or lock changes.",
+    "Record source commit, input hashes, runnable command, environment and deterministic seeds/configuration needed to reproduce the A/B comparison.",
+    "Use the pinned v2.6/v2.7 records for the two back-information models; disclose assumptions, unavailable engine inputs and limitations.",
+    "RESULTS and REPORT agree on exactly one allowed result; no unsupported PASS or invented data.",
+    "Preserve locked v2.6 tree and all production/release/lock permissions as false.",
+    "MEC-001 remains OPEN: this focused preflight does not constitute full simulation or physical/human acceptance.",
+    "Chief Editor reviews the delivered commit and exact output blobs before closure; executor cannot accept its own evidence."
+  ],
+  "handoff": {
+    "bootstrap": "python -B governance/v4/bootstrap.py --role SIMULATION_QA",
+    "read_scope": "This task and its pinned inputs; expand into the verified mechanical package only as needed. Historical art/candidate threads do not authorize this work.",
+    "delivery_fields": [
+      "TASK_ID",
+      "SOURCE_HEAD",
+      "DELIVERY_COMMIT",
+      "CHANGED_PATHS",
+      "RESULT_AND_EVIDENCE",
+      "OPEN_BLOCKERS",
+      "NEXT_RESPONSIBLE_ROLE"
+    ]
+  },
+  "activation_evidence": {
+    "lifecycle_fix_commit": "9779f6bb05504a01ca9817bcb8d20fc407efe657",
+    "v3_validator": "PASS",
+    "v4_validator": "PASS",
+    "tests_passed": 28,
+    "negative_controls_passed": 73,
+    "real_git_transition_test": "PASS: idle -> owner-issued open -> active specialist request -> independent evidence-bound close; isolated test repository, no game simulation",
+    "simulation_executed": false
+  },
+  "execution_status": "NOT_STARTED / NO_OUTPUTS / NO_RESULT"
+}
