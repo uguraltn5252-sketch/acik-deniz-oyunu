@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-PREFLIGHT-CLOSED-20260905",
-  "status": "V4_COORDINATION_ACTIVE / PREFLIGHT_CLOSED_INCONCLUSIVE / COPY_AUDIT_NEXT / PRODUCTION_CLOSED",
+  "state_id": "V4-COPY-SOURCE-INVENTORY-20260905",
+  "status": "V4_COORDINATION_ACTIVE / COPY_SOURCE_INVENTORY_ACTIVE / PRODUCTION_CLOSED",
   "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": null,
+  "active_project_task_id": "COPY-SOURCE-INVENTORY-001",
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -71,13 +71,13 @@
     "simulation": {
       "branch": "work/v2.7-simulation",
       "head": "5bb108249819bcfeb58da6343cc3cd28e221c410",
-      "head_binding": "ACCEPTED_DELIVERY / FROZEN_UNTIL_NEW_EXACT_TASK",
-      "task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
-      "source_baseline_commit": "9779f6bb05504a01ca9817bcb8d20fc407efe657",
-      "status": "SCOPED_PREFLIGHT_ACCEPTED / INCONCLUSIVE / NO_ACTIVE_WRITE",
-      "branch_preparation": "Accepted delivery is an integration ancestor; the next task requires its own activation baseline.",
+      "head_binding": "LAST_ACCEPTED_DELIVERY / NEW_ACTIVATION_FROM_TASK_HISTORY",
+      "task_id": "COPY-SOURCE-INVENTORY-001",
+      "source_baseline_commit": "54692e3e4da7d1bd9005384ed78286dbbdba8cb3",
+      "status": "ACTIVE_COPY_AUDIT / EXECUTION_NOT_STARTED",
+      "branch_preparation": "Fast-forward the unchanged accepted delivery to the exact new task-activation commit before execution. Current authority is always read from v2.7-design.",
       "accepted_commit": "5bb108249819bcfeb58da6343cc3cd28e221c410",
-      "result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED"
+      "last_accepted_result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED"
     }
   },
   "visual_dispositions": {
@@ -112,7 +112,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "CHIEF_EDITOR: open the bounded 121-identity copy-source inventory task under recorded delegation. Retain the two reproduced engine blockers for a separate observation-correct engine task; no game-design decision follows from the inconclusive preflight.",
+  "next_action": "SIMULATION_QA: execute COPY-SOURCE-INVENTORY-001 from its exact activation commit and deliver only three source/copy audit files. CHIEF_EDITOR: review that evidence, then issue targeted story/art consistency tasks and separately scope the reproduced engine defects before any full-game A/B result.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",

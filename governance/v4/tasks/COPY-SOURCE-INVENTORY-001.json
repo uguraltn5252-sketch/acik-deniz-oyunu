@@ -1,0 +1,173 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "COPY-SOURCE-INVENTORY-001",
+  "task_type": "READ_ONLY_SOURCE_COPY_INVENTORY",
+  "project_task": true,
+  "status": "ACTIVE",
+  "issued_by": "CHIEF_EDITOR",
+  "issued_at": "2026-09-05",
+  "executor_role": "SIMULATION_QA",
+  "reviewer_roles": [
+    "CHIEF_EDITOR"
+  ],
+  "owner_authorization": {
+    "task_id": "COPY-SOURCE-INVENTORY-001",
+    "decision": "AUTHORIZED",
+    "delegation_id": "OWNER-DELEGATION-20260905",
+    "recorded_from": "Recorded project-owner delegation permits bounded QA, exact-copy checks and source-conflict investigation. This implements the saved coordination queue after evidence-bound closure of MEC-SEA-ROCK-PREFLIGHT-001.",
+    "scope_note": "Source content stays read-only; only the three audit outputs may be written. No new canon, printed copy, mechanic, engine repair, visual production or simulation is authorized."
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "54692e3e4da7d1bd9005384ed78286dbbdba8cb3",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "execution_baseline": {
+    "binding": "COMMIT_THAT_FIRST_ADDS_THIS_TASK",
+    "resolve_command": "git log --diff-filter=A --format=%H <CURRENT_AUTHORITY_HEAD> -- governance/v4/tasks/COPY-SOURCE-INVENTORY-001.json",
+    "branch_must_start_at": "The exact task-activation commit; coordinator fast-forwards the accepted Simulation branch to that commit. Stop on branch drift instead of resetting specialist work."
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "RULES_INTEGRITY_REVIEW"
+    ],
+    "role_actions": {
+      "SIMULATION_QA": [
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "RULES_INTEGRITY_REVIEW"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "work/v2.7-simulation",
+    "allowed_globs": [],
+    "allowed_exact_paths": [
+      "working/v2.7/qa/copy_source_inventory/FOULWAKE_COPY_SOURCE_INVENTORY_v2.7.py",
+      "working/v2.7/qa/copy_source_inventory/FOULWAKE_COPY_SOURCE_INVENTORY_RESULTS_v2.7.json",
+      "working/v2.7/qa/copy_source_inventory/FOULWAKE_COPY_SOURCE_INVENTORY_REPORT_v2.7.md"
+    ],
+    "max_changed_files": 3,
+    "allowed_extensions": [
+      ".py",
+      ".json",
+      ".md"
+    ],
+    "binary_files_allowed": false,
+    "game_content_or_production_artifacts_allowed": false,
+    "forbidden_prefixes": [
+      "governance/",
+      "releases/",
+      "working/v2.7/visual/",
+      "working/v2.7/qa/sea_rock_preflight/"
+    ]
+  },
+  "runtime_permissions": {
+    "visual_production": false,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "required_outputs": [
+    "working/v2.7/qa/copy_source_inventory/FOULWAKE_COPY_SOURCE_INVENTORY_v2.7.py",
+    "working/v2.7/qa/copy_source_inventory/FOULWAKE_COPY_SOURCE_INVENTORY_RESULTS_v2.7.json",
+    "working/v2.7/qa/copy_source_inventory/FOULWAKE_COPY_SOURCE_INVENTORY_REPORT_v2.7.md"
+  ],
+  "inputs": [
+    {
+      "path": "releases/v2.6/CARD_BASELINE.md",
+      "git_blob": "40e9a2cda56c484d88b976941a4a80d46507bc5b"
+    },
+    {
+      "path": "releases/v2.6/V26_RELEASE_MANIFEST.json",
+      "git_blob": "11377990fbbe2cc156b954e801cb0bad535c1155"
+    },
+    {
+      "path": "releases/v2.6/SOURCE_PACKAGE.md",
+      "git_blob": "0470dfba2a82c0c4bb297d23eb356bb5b843c99a"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30"
+    },
+    {
+      "path": "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+      "git_blob": "4a1842af4fca3bd0a8ce12ab7fd0d80ae01f8940"
+    },
+    {
+      "path": "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "git_blob": "8551f63339fc3b5645330ea2e6d1941d19aa2840"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "git_blob": "f88e71c6e4355df291a2e70ce1fff461d8145217"
+    },
+    {
+      "path": "governance/v4/contracts/CONTRACTS.json",
+      "git_blob": "4151feb2d30cc3a720b6bd4a058bd2b6b0120fa6"
+    }
+  ],
+  "source_package": {
+    "library_path": "/Oyun-GitHub/OYUN_SIMULASYON_PAKETI_v2.6.zip",
+    "sha256": "ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534",
+    "nested_mechanical_zip_sha256": "975dd77d435a835fcf3faa864c5624b0542fadb419fa7d34217ed32fe87aa046",
+    "usage": "Verify size/hash against pinned v2.6 manifest, then nested manifest members; inspect authoritative text/spec data without running the game engine. Package access and verified member paths/hashes belong in evidence."
+  },
+  "audit": {
+    "purpose": "Explain exact visible-copy coverage for all 121 expected card identities and identify what must be resolved before copy/layout production.",
+    "known_current_resolver_coverage": 51,
+    "expected_render_identities": 121,
+    "source_precedence": "Current contract: project-owner override, then canonical v2.7 character/power copy; verified locked baseline may supply remaining categories only with explicit source tracing and conflict disclosure.",
+    "identity_manifest_usage": "The 121-record art manifest is an identity and completeness cross-check only. Its brief prose is not canonical printed copy and cannot fill missing fields. Reconcile its identity/category counts with the locked card baseline and package.",
+    "record_requirements": [
+      "One result row per expected identity, plus separately listed duplicate, missing, extra or conflicting source identities.",
+      "For every visible field, preserve exact UTF-8 source text and a path/member, JSON pointer or line locator, and Git blob or package-member hash. Do not silently normalize Turkish letters, whitespace or punctuation.",
+      "Use explicit RESOLVED, MISSING_SOURCE, SOURCE_CONFLICT or NOT_APPLICABLE_WITH_REASON per field; unresolved fields remain null, not invented copy.",
+      "Separate expected identity coverage, source-located visible fields, current resolver coverage and independently accepted production copy. Their counts must not be conflated.",
+      "Preserve SRC-002 mappings: GUC-22 Kaptanın Çatlak Kupası; GUC-23 Bayat Peksimet; GUC-24 Islak Çorap. Preserve exact SET-KP-01 owner copy.",
+      "Provide a short discrepancy queue with exact sources, impact and responsible role; identify decisions requiring project-owner input without taking those decisions."
+    ],
+    "allowed_results": [
+      "INVENTORY_COMPLETE / COPY_GAPS_REMAIN",
+      "INVENTORY_COMPLETE / ALL_VISIBLE_FIELDS_SOURCE_LOCATED",
+      "BLOCKED_SOURCE_CONFLICT_OR_MISSING_PACKAGE"
+    ],
+    "result_limit": "Even complete source location is not full-deck exact-copy acceptance, print proof or production authorization."
+  },
+  "acceptance_criteria": [
+    "Only the three exact audit outputs change cumulatively from the activation commit; accepted Sea/Rock evidence and every source remain byte-exact.",
+    "Record authority/source/activation commits, all input and package member hashes, environment and a reproducible command; provide a read-only --check mode. No game engine is executed.",
+    "Reconcile all expected identities and category counts; derive counts from records and explicitly enumerate gaps, conflicts, duplicates and any unsupported printed fields.",
+    "Every populated visible field has verifiable source provenance and correct precedence; art briefs, image OCR guesses, model-generated text and inferred mechanics cannot substitute for source copy.",
+    "RESULTS and REPORT agree on one allowed result. Keep the report concise; full per-identity/per-field evidence belongs in JSON.",
+    "All production, thumbnail, simulation, PDF, release and lock permissions remain false; no blocker is closed by the executor.",
+    "CHIEF_EDITOR independently verifies the delivery commit, cumulative scope, source pins, result completeness and exact blobs before acceptance or closure."
+  ],
+  "handoff": {
+    "bootstrap": "python -B governance/v4/bootstrap.py --role SIMULATION_QA",
+    "read_scope": "Current authority, this exact task, pinned copy/source hierarchy and only package members needed for the inventory. Expand only to resolve a documented source conflict.",
+    "delivery_fields": [
+      "TASK_ID",
+      "SOURCE_HEAD",
+      "DELIVERY_COMMIT",
+      "CHANGED_PATHS",
+      "RESULT_AND_EVIDENCE",
+      "OPEN_BLOCKERS",
+      "NEXT_RESPONSIBLE_ROLE"
+    ]
+  },
+  "execution_status": "NOT_STARTED / NO_OUTPUTS / NO_RESULT"
+}
