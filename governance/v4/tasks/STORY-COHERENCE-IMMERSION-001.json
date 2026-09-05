@@ -4,7 +4,7 @@
   "task_id": "STORY-COHERENCE-IMMERSION-001",
   "task_type": "SOURCE_READ_ONLY_STORY_AND_CARD_REVIEW",
   "project_task": false,
-  "status": "READ_ONLY_ASSIGNED",
+  "status": "CLOSED / READ_ONLY_REVIEW_ACCEPTED_WITH_CORRECTION",
   "issued_by": "CHIEF_EDITOR",
   "issued_at": "2026-09-05",
   "executor_role": "STORY_EDITOR",
@@ -24,7 +24,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
   },
   "authorization": {
-    "enabled": true,
+    "enabled": false,
     "write_authorized": false,
     "allowed_actions": [
       "READ_ONLY_VALIDATION"
@@ -208,14 +208,17 @@
     "Requested and verified actual model are distinguished; no other-chat acknowledgement or execution is fabricated.",
     "Chief Editor reviews this chat delivery and records accepted findings before opening any implementation task. Material canon, mechanics and aesthetic decisions stay with the project owner."
   ],
-  "execution_status": "COMPLETION_REPORTED / FULL_REPORT_TRANSFER_PENDING",
+  "execution_status": "COMPLETED / INDEPENDENT_REVIEW_ACCEPTED_WITH_CORRECTION",
   "review": {
-    "status": "HANDOFF_RECEIVED / ACCEPTANCE_PENDING_FULL_REPORT",
+    "status": "ACCEPTED_WITH_RECORDED_CORRECTION",
     "reviewer_role": "CHIEF_EDITOR",
-    "received_at": "2026-09-05",
-    "reported_source_head": "fb64fbcba2d6f359cc274f9e3cb9aa4df36fae5b",
-    "evidence_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_RECEIPT_20260905.json",
-    "note": "The owner relayed the seven-field completion handoff. The detailed report referenced as above was not included; context retrieval recovered only excerpts. Completion of the full editorial review is reported, not independently accepted. Read-only authorization remains available to supply the existing report."
+    "reviewed_at": "2026-09-05",
+    "source_head": "1a9e212b7b0df9bfbbdf950657613acccc0c2eda",
+    "evidence_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_ACCEPTANCE_20260905.json",
+    "report_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_REPORT_20260905.md",
+    "report_git_blob": "82bfc097815c8286bc626009276107e0046c85d9",
+    "receipt_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_RECEIPT_20260905.json",
+    "correction": "HAR-AD is OPEN_SEA (30); HAR-AA is ISLAND (6). Total 51 reviewed and 70 pending unchanged."
   },
-  "next_action": "Story Editor: transfer the already completed full report with source-backed findings, recommendations and coverage; no repeat review or file production is requested. Chief Editor: independently assess that report before recording accepted findings or opening an implementation task."
+  "next_action": "Review task closed. SIMULATION_QA continues COPY-SOURCE-INVENTORY-001; Chief uses the recorded follow-up plan to issue later exact tasks. No Story source write is active."
 }

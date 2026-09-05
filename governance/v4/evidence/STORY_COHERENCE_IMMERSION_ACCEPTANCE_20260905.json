@@ -1,0 +1,758 @@
+{
+  "schema_version": "4.3",
+  "canonical_authority": false,
+  "evidence_type": "INDEPENDENT_CHIEF_EDITOR_REVIEW_OF_VISIBLE_STORY_CHAT_DELIVERY",
+  "task_id": "STORY-COHERENCE-IMMERSION-001",
+  "coordination_task_id": "GOV4-TEAM-COORDINATION-001",
+  "reviewer_role": "CHIEF_EDITOR",
+  "producer_role": "STORY_EDITOR",
+  "recorded_at": "2026-09-05",
+  "status": "ACCEPTED_WITH_RECORDED_CORRECTION",
+  "decision": "Ayrıntılı editoryal rapor ve üç ana kaynak bulgusu kabul edildi. Kapsam tablosundaki Ada/Açık Deniz etiketleri aşağıdaki bağımsız düzeltmeyle okunur. Öneriler uygulama metni, kanon veya oyuncu deneyimi PASS değildir.",
+  "delivery": {
+    "channel": "PROJECT_OWNER_RELAY_OF_VISIBLE_STORY_EDITOR_REPORT",
+    "delivery_commit": null,
+    "declared_changed_paths": [],
+    "report_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_REPORT_20260905.md",
+    "report_git_blob": "82bfc097815c8286bc626009276107e0046c85d9",
+    "transcription": "Full supplied report retained; Markdown tables and handoff line breaks normalized. No specialist Git delivery is invented.",
+    "initial_receipt_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_RECEIPT_20260905.json"
+  },
+  "source_verification": {
+    "authority_head": "1a9e212b7b0df9bfbbdf950657613acccc0c2eda",
+    "review_source_head": "fb64fbcba2d6f359cc274f9e3cb9aa4df36fae5b",
+    "task_source_commit": "23b8ba547d58008e69c400140e16ccfc0186aee9",
+    "pinned_inputs": [
+      {
+        "git_blob": "962222d83d669763c4ac8e2765f024b9fade180c",
+        "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
+      },
+      {
+        "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+        "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md"
+      },
+      {
+        "git_blob": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa",
+        "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+      },
+      {
+        "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json"
+      },
+      {
+        "git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30",
+        "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json"
+      },
+      {
+        "git_blob": "4a1842af4fca3bd0a8ce12ab7fd0d80ae01f8940",
+        "path": "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+      },
+      {
+        "git_blob": "8551f63339fc3b5645330ea2e6d1941d19aa2840",
+        "path": "working/v2.7/V27_MECHANIC_DECISIONS.json"
+      },
+      {
+        "git_blob": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
+        "path": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md"
+      },
+      {
+        "git_blob": "bae77450d6d10e1e3234a3473bf68ffa1efff810",
+        "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md"
+      },
+      {
+        "git_blob": "f88e71c6e4355df291a2e70ce1fff461d8145217",
+        "path": "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json"
+      },
+      {
+        "git_blob": "40e9a2cda56c484d88b976941a4a80d46507bc5b",
+        "path": "releases/v2.6/CARD_BASELINE.md"
+      },
+      {
+        "git_blob": "4151feb2d30cc3a720b6bd4a058bd2b6b0120fa6",
+        "path": "governance/v4/contracts/CONTRACTS.json"
+      }
+    ],
+    "all_12_input_blobs_unchanged": true,
+    "locked_v26_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
+    "rulebook": {
+      "filename": "OYUN_Kural_Kitabi_v2.6.pdf",
+      "sha256": "192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a",
+      "size_bytes": 1104041,
+      "pages": 29,
+      "source_record": {
+        "path": "releases/v2.6/BINARY_ARTIFACTS.md",
+        "git_blob": "d01d63bfe8f3b51c5112db9e4f9c435f7aa38172",
+        "locator": "Kural PDF"
+      },
+      "library_path": "/Oyun-GitHub/v2.6/OYUN_Kural_Kitabi_v2.6.pdf",
+      "independently_read_pages": [
+        6,
+        7,
+        8,
+        12,
+        15,
+        22,
+        29
+      ],
+      "visually_checked_pages": [
+        12,
+        22
+      ],
+      "method": "Cached PDF bytes independently hashed against the locked binary record; page text read with pdfplumber and selected pages rendered with Poppler. No engine executed."
+    },
+    "story_branch_head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
+    "story_branch_unchanged": true,
+    "simulation_branch_head": "23b8ba547d58008e69c400140e16ccfc0186aee9"
+  },
+  "findings": [
+    {
+      "id": "SCIM-01",
+      "subject": "KAR-01 / KAR-02 gece istisnası",
+      "status": "ACCEPTED_SOURCE_CONFLICT",
+      "priority": "P1",
+      "source": [
+        {
+          "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+          "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+          "locator": "/characters/0/effect"
+        },
+        {
+          "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+          "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+          "locator": "/characters/1/effect"
+        }
+      ],
+      "current_texts": [
+        "Tanışma gecesi hariç her gece bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
+        "Tanışma gecesi hariç, Sis olmayan her gece bir Uzak Ufuk kartının olay yüzüne gizlice bakar."
+      ],
+      "rulebook_refs": [
+        {
+          "page": 7,
+          "section": "3.5",
+          "fact": "İlk tarafsız gece yalnız Kaptanın bakışı çalışır; Karakter, Güç ve Hain eylemi çalışmaz."
+        },
+        {
+          "page": 8,
+          "section": "3.8",
+          "fact": "Hainlerin tanıştığı ilk yolculuk gecesinde önce uygun gece Karakterleri işletilir."
+        },
+        {
+          "page": 22,
+          "section": "14",
+          "fact": "Uzakgören ve Kıyıçizen için istisna İlk tarafsız gece hariç olarak yazılıdır."
+        }
+      ],
+      "assessment": "İki farklı gece söz konusudur. Kart ifadesi bilgi edinme zamanını yanlış uygulamaya açık bırakır; yalnız üslup meselesi değildir. Bu, mevcut motorun bu kartları yanlış uyguladığını kanıtlamaz.",
+      "disposition": "SIMULATION_QA mevcut envanterin kaynak çatışması kuyruğunda karşılaştırmayı doğrular. Önerilen yön, yeni mekanik kurmadan kilitli zamanlamayı açık ifade etmektir; exact metin ayrı yetkili düzeltmeyle ele alınır."
+    },
+    {
+      "id": "SCIM-02",
+      "subject": "SET-KP-01 KAPTAN kapsamı",
+      "status": "ACCEPTED_AMBIGUITY / OWNER_DECISION_PENDING",
+      "priority": "P1",
+      "source": [
+        {
+          "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+          "git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30",
+          "locator": "/records/0/effect"
+        },
+        {
+          "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+          "git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30",
+          "locator": "/records/0/flavor"
+        }
+      ],
+      "binding_effect": "Oylamada eşitlik olursa, senin tarafın geçerli olur.",
+      "binding_flavor": "Lidere et. Gemi senin emrinde.",
+      "owner_authority_ref": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
+      "rulebook_refs": [
+        {
+          "page": 12,
+          "section": "5.1",
+          "fact": "Rota oyu 2; beraberlik yalnız berabere seçenekler arasından bozulur."
+        },
+        {
+          "page": 6,
+          "section": "3.3",
+          "fact": "Kaptan seçimi beraberliğinde yeniden oylama, sonra d12 vardır."
+        },
+        {
+          "page": 15,
+          "section": "8.1",
+          "fact": "Suçlama için salt çoğunluk gerekir; ayrı ve resmî olmayan hedef ön seçiminde eşitliği Kaptan bozar."
+        },
+        {
+          "page": 29,
+          "section": "Arka kapak",
+          "fact": "Suçlama/İsyan oyu 1."
+        }
+      ],
+      "assessment": "Oylamada ve senin tarafın ifadeleri bu ayrımları tek başına anlatmıyor. Yalnız rota ifadesine indirgeme de hedef ön seçimi yetkisini atlar. Owner override hâlâ bağlayıcıdır.",
+      "recommendation": "QA karşılaştırmasından sonra mevcut ayrıntılı mekaniği koruyan açıklığı tercih et; nihai exact kart metni ve Lidere et. ifadesi için somut öneriyi proje sahibine sun.",
+      "alternatives": [
+        "Owner onayıyla exact kart metnini ayrıntılı mekanikle uyumlu açıklaştırmak.",
+        "Exact kart metnini koruyup ilgili kural açıklamasında kapsamı belirtmek; kartın tek başına okunmasındaki belirsizlik sürer."
+      ],
+      "owner_decision_recorded": false,
+      "copy_change_authorized": false
+    },
+    {
+      "id": "SCIM-03",
+      "subject": "Siyah Mühür §5.3 anlatı notu",
+      "status": "ACCEPTED_NARRATIVE_INTEGRATION_GAP",
+      "priority": "P1",
+      "source": [
+        {
+          "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+          "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+          "locator": "Değişmez entegrasyon sınırı; §17 Aynı işaret, ayrı eller"
+        },
+        {
+          "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+          "git_blob": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa",
+          "locator": "Anlatı denetimi / tanımlı 3.1, 3.3, 3.4, 3.6, 17 kapsamı"
+        }
+      ],
+      "rulebook_refs": [
+        {
+          "page": 12,
+          "section": "5.3 / HİKÂYE MANTIĞI",
+          "exact_first_sentence": "Siyah Mühür, geminin açık bir siyasi cinayete dönüşmesini istemez."
+        }
+      ],
+      "assessment": "v2.7 belirsizlik ilkesi ile değiştirme kapsamı dışında kalan kesin anlatıcı cümlesi birlikte kullanıldığında tutarsızlık oluşur. Bu karar, incelenmemiş bir v2.7 PDF için artefakt hata iddiası değildir.",
+      "disposition": "Sonraki STORY_EDITOR anlatı görevi §5.3 ilk cümlesini kapsamına alır; örgütün yapısını veya Gusto sonucunu çözmez.",
+      "protected_tail": "Ancak bu bir mekanik yasak değildir: Hain oyuncuların yapabilecekleri yalnız yazılı Hain, Karakter ve Güç kurallarıyla belirlenir. Hikâye, bu kuralların tonunu açıklar; yeni yasak eklemez."
+    },
+    {
+      "id": "SCIM-04",
+      "subject": "GUC-25 yazımı",
+      "status": "ACCEPTED_COPY_TYPO",
+      "priority": "P2",
+      "source": [
+        {
+          "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+          "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+          "locator": "/powers/26/effect"
+        }
+      ],
+      "current_text": "Bir oyuncının önüne koy. Sonraki rastgele Harita hedefinin ilk hedefi o olur; sonra at.",
+      "assessment": "oyuncının sözcüğü kaynakta doğrulandı; önerilen yazım oyuncunun. Etki, zamanlama ve hedef kapsamı değişmez.",
+      "disposition": "Mevcut QA discrepancy kuyruğuna alınır; bu kabul kaynak JSON düzeltmesi değildir."
+    },
+    {
+      "id": "SCIM-05",
+      "subject": "Gelen raporun kalan 70 kimlik tablosu",
+      "status": "REPORT_CORRECTION_RECORDED",
+      "priority": "P2",
+      "source": [
+        {
+          "path": "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+          "git_blob": "f88e71c6e4355df291a2e70ce1fff461d8145217",
+          "locator": "/records/*/card_identity: id, front_family"
+        }
+      ],
+      "reported_error": "Raporda HAR-AD-01–30 Ada, HAR-AA-01–06 Açık deniz olarak etiketlenmiş.",
+      "correct_mapping": [
+        {
+          "ids": "HAR-AD-01–30",
+          "family": "OPEN_SEA",
+          "label": "Açık Deniz",
+          "count": 30
+        },
+        {
+          "ids": "HAR-AA-01–06",
+          "family": "ISLAND",
+          "label": "Ada",
+          "count": 6
+        }
+      ],
+      "disposition": "Baş Editör kapsam etiketlerini bu kayıtla düzeltti. Raporun kimlik listesi ile 51/70/121 toplamları değişmiyor; kaynak manifest veya kart kimliği değiştirilmedi. Yeniden tam inceleme istenmiyor."
+    }
+  ],
+  "editorial_dispositions": [
+    {
+      "area": "Korunacak taşıyıcı parçalar",
+      "decision": "KEEP",
+      "detail": "Gusto/sefer kefaleti; farklı çıkarlar; terkip başarısının belirsizliği; gemide iş ve eşya üzerinden kuru mizah; Tahtakakan–Tahtaya Vuran bağı; birikmiş İskorbüt; Saint Verena son gecesi."
+    },
+    {
+      "area": "§3.1 oyuncunun yeri",
+      "decision": "ACCEPT_DIRECTION_FOR_BOUNDED_REVISION",
+      "detail": "Görev zaten açılışta söyleniyor. Geliştirme, §3.3 mevcut kişisel sorumluluğunu erkene almak ve bilgi sırasını iyileştirmektir; görev yokmuş gibi yeniden kurmak veya yeni zorunluluk eklemek değildir."
+    },
+    {
+      "area": "§3.3 kalkış baskısı",
+      "decision": "ACCEPT_DIRECTION_FOR_BOUNDED_REVISION",
+      "detail": "Kilitli s.6 yeniden karantina riskini doğruluyor. Mevcut mizahla somut gecikme riskini birleştir; Gusto soruşturması ve yeni geri sayım mekaniği ekleme."
+    },
+    {
+      "area": "§3.6 / §17 / Liman Gecesi",
+      "decision": "KEEP_UNLESS_SPECIFIC_NEW_EVIDENCE",
+      "detail": "Sadakat kartını görme/saklama bağlantısı zaten son iki cümlede açık. §17 isteğe bağlı kalır. Son gecenin baskısı ve terkibin belirsizliği korunur; sırf öneri listesinde geçtiği için yeniden yazılmaz."
+    },
+    {
+      "area": "KAR-12 sesi",
+      "decision": "ACCEPT_FOR_SMALL_CANDIDATE_COMPARISON",
+      "detail": "Görme temasından ikna/yönlendirmeye yaklaşan ses önerisi mevcut rota destek etkisiyle karşılaştırılabilir. Örnek cümle otomatik exact kabul değildir."
+    },
+    {
+      "area": "KAR-13–20",
+      "decision": "TARGETED_REVIEW_ONLY / NO_BLANKET_REWRITE",
+      "detail": "İstek, korku veya davranış hipotezi yerinde; tüm sekiz kartın zayıf olduğu veya mekanik eklenmesi gerektiği sonucuna varılamaz. Küçük örneklerle karşılaştır; güçlü kısa mizah ve gizlilik korunsun."
+    },
+    {
+      "area": "KAR-18 dört saat",
+      "decision": "CLARITY_CANDIDATE / NOT_PROVEN_CHRONOLOGY_ERROR",
+      "detail": "Dönüş seferinin başından sayılması mümkün. §3.4 ve §17 ile birlikte değerlendirilir; yeni yolculuk geçmişi icat edilmez."
+    },
+    {
+      "area": "Sanat ve gizli bilgi",
+      "decision": "ACCEPT_GUARDRAILS / NO_AESTHETIC_SIGNOFF",
+      "detail": "KAPTAN figürü otomatik Gusto değildir. Tekrarlanan balmumu/simge gizli bilgi gibi kullanılmaz. Güncel owner kaydı ve Sanat Yönetmeni sınırları korunur."
+    }
+  ],
+  "coverage": {
+    "story_documents": 3,
+    "declared_reviewed_ids": [
+      "KAR-01",
+      "KAR-02",
+      "KAR-03",
+      "KAR-04",
+      "KAR-05",
+      "KAR-06",
+      "KAR-07",
+      "KAR-08",
+      "KAR-09",
+      "KAR-10",
+      "KAR-11",
+      "KAR-12",
+      "KAR-13",
+      "KAR-14",
+      "KAR-15",
+      "KAR-16",
+      "KAR-17",
+      "KAR-18",
+      "KAR-19",
+      "KAR-20",
+      "GUC-01A",
+      "GUC-01B",
+      "GUC-02A",
+      "GUC-02B",
+      "GUC-03",
+      "GUC-04",
+      "GUC-05",
+      "GUC-06",
+      "GUC-07",
+      "GUC-08",
+      "GUC-09",
+      "GUC-10",
+      "GUC-11",
+      "GUC-12",
+      "GUC-13",
+      "GUC-14",
+      "GUC-15",
+      "GUC-16",
+      "GUC-17",
+      "GUC-18",
+      "GUC-19",
+      "GUC-20",
+      "GUC-21",
+      "GUC-22",
+      "GUC-23",
+      "GUC-24",
+      "GUC-25",
+      "GUC-26",
+      "GUC-27",
+      "GUC-28",
+      "SET-KP-01"
+    ],
+    "declared_reviewed_count": 51,
+    "independent_check": "Raporun kimlik kümeleri ve kaynak sayıları karşılaştırıldı; kaynaklı bulgular bağımsız denetlendi. Bu, Baş Editörün uzman yerine ikinci bir tam yaratıcı kart incelemesi yaptığı iddiası değildir.",
+    "remaining_ids_with_correct_families": [
+      {
+        "id": "ERZ-01",
+        "family": "ROTTEN_PROVISIONS",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-01",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-02",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-03",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-04",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-05",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-06",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-07",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-08",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-09",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-T-10",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-H-01",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-H-02",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-H-03",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-H-04",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SAD-H-05",
+        "family": "LOYALTY",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-01",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-02",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-03",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-04",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-05",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-06",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-07",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-08",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-09",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-10",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-11",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-12",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-13",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-14",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-15",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-16",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-17",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-18",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-19",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-20",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-21",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-22",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-23",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-24",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-25",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-26",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-27",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-28",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-29",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AD-30",
+        "family": "OPEN_SEA",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-01",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-02",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-03",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-04",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-05",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-06",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-07",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-08",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-09",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-10",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-11",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-KY-12",
+        "family": "ROCK",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AA-01",
+        "family": "ISLAND",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AA-02",
+        "family": "ISLAND",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AA-03",
+        "family": "ISLAND",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AA-04",
+        "family": "ISLAND",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AA-05",
+        "family": "ISLAND",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-AA-06",
+        "family": "ISLAND",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-FN-01",
+        "family": "LIGHTHOUSE",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-FN-02",
+        "family": "LIGHTHOUSE",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-FN-03",
+        "family": "LIGHTHOUSE",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "HAR-FN-04",
+        "family": "LIGHTHOUSE",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SET-KL-01",
+        "family": "SUPPORT",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      },
+      {
+        "id": "SET-VL-01",
+        "family": "SUPPORT",
+        "status": "UNREVIEWED_SOURCE_GAP"
+      }
+    ],
+    "remaining_count": 70,
+    "expected_identities": 121,
+    "full_deck_copy_pass": false,
+    "source_gap_meaning": "Bu görevde metin incelemesi tamamlanmadı; hiçbir kaynakta metin yok iddiası değil."
+  },
+  "tempo_evidence": {
+    "sections": [
+      "3.1",
+      "3.3",
+      "3.6"
+    ],
+    "word_counts": [
+      149,
+      143,
+      94
+    ],
+    "total": 386,
+    "method": "Each ### OKU block up to ### MEVCUT İŞLEM KORUNUR, split on Unicode whitespace. Independently reproduced.",
+    "limit": "Not total setup narration; no human boredom or immersion measurement."
+  },
+  "model": {
+    "requested": "gpt-6-astra / xhigh",
+    "actual_verified": "UNKNOWN"
+  },
+  "implementation_and_experience": {
+    "proposed_text_accepted_as_source": false,
+    "canon_or_mechanics_changed": false,
+    "human_experience_pass": false,
+    "full_121_production_authorized": false
+  },
+  "followup_plan_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json",
+  "next_responsible_role": "SIMULATION_QA",
+  "next_action": "Mevcut COPY-SOURCE-INVENTORY-001 yürütülür; Baş Editör sonraki exact anlatı görevini kaynak denetimi tesliminin kabul/kapanışından sonra açar."
+}

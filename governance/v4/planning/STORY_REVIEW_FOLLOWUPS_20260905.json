@@ -1,0 +1,161 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": false,
+  "plan_id": "STORY-REVIEW-FOLLOWUPS-20260905",
+  "status": "SCOPED_COORDINATION_QUEUE / NOT_EXECUTION_AUTHORITY",
+  "prepared_by": "CHIEF_EDITOR",
+  "prepared_at": "2026-09-05",
+  "authority_task_id": "GOV4-TEAM-COORDINATION-001",
+  "source_head": "1a9e212b7b0df9bfbbdf950657613acccc0c2eda",
+  "acceptance_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_ACCEPTANCE_20260905.json",
+  "active_task_unchanged": {
+    "task_id": "COPY-SOURCE-INVENTORY-001",
+    "task_ref": "governance/v4/tasks/COPY-SOURCE-INVENTORY-001.json",
+    "executor_role": "SIMULATION_QA",
+    "branch": "work/v2.7-simulation",
+    "max_changed_files": 3,
+    "task_git_blob": "5f7610a6beef7eb5e8358d8037b265d4de4335a0",
+    "review_hints": [
+      "SCIM-01: KAR-01/02 ile kilitli §3.5, §3.8, §14 zaman karşılaştırması.",
+      "SCIM-02: KAPTAN rota, seçim, Suçlama hedef ön seçimi ve resmî oy ayrımları; owner metni bağlayıcı kalır.",
+      "SCIM-04: GUC-25 oyuncının yazımı.",
+      "SCIM-05: HAR-AD = Açık Deniz 30; HAR-AA = Ada 6."
+    ],
+    "scope_note": "Bunlar mevcut görevin kaynak çatışması ve discrepancy kuyruğu için konum ipuçlarıdır. Task inputları, izinleri veya üç çıktısı değişmez; mevcut exact görevin izin vermediği bir iş yapılmaz."
+  },
+  "planned_work": [
+    {
+      "planned_task_id": "STORY-NARRATIVE-CLARITY-001",
+      "status": "QUEUED / NOT_AUTHORIZED",
+      "executor_role": "STORY_EDITOR",
+      "reviewer_roles": [
+        "CHIEF_EDITOR",
+        "SIMULATION_QA"
+      ],
+      "branch": "work/v2.7-story",
+      "purpose": "Mevcut sorumluluğu açılışta görünür kılmak, kalkış baskısını netleştirmek ve §5.3 anlatı kesinliğini düzeltmek.",
+      "activation_gate": "COPY-SOURCE-INVENTORY-001 teslimi bağımsız kabul edilip aktif görev kapatılır. Chief canlı HEAD/inputları yeniden doğrular ve yeni exact task kaydını ilk kez ACTIVE olarak ekler; bu plan görev aktivasyonu değildir.",
+      "allowed_exact_paths": [
+        "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+        "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+        "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+      ],
+      "max_changed_files": 3,
+      "source_input_blobs": [
+        {
+          "git_blob": "962222d83d669763c4ac8e2765f024b9fade180c",
+          "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
+        },
+        {
+          "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+          "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md"
+        },
+        {
+          "git_blob": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa",
+          "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md"
+        }
+      ],
+      "source_rulebook_sha256": "192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a",
+      "targets": [
+        "§3.1 OKU: mevcut sefer sorumluluğunu erkene al; hedef, yük ve belirsizliği koru.",
+        "§3.3 OKU: mevcut karantina riskini kuru mizahla bağla; seçime geçiş ve Bilmiyorsunuz. sınırı kalsın.",
+        "Yeni §5.3 anlatı değiştirme bloğu: yalnız kesin niyet cümlesini gözden geçir; mekanik yasak eklenmediği hükmünü aynen koru.",
+        "Framework: yalnız ilgili değişiklik fişi/kapsam kaydı; şablonları doldurma veya kanonlaştırma.",
+        "Revalidation: exact değişiklik ve bağımsız QA gereğini kaydet; insan deneyimi PASS iddiası yapma."
+      ],
+      "acceptance_criteria": [
+        "ŞİMDİ YAP, KURAL, gece/oy/etki/sayı alanları ve locked release byte-exact korunur.",
+        "Gusto, Siyah Mühür örgütü veya terkibin başarısı kesinleşmez.",
+        "Her değişiklik öncesi/sonrası ve hedef bölümle açıklanır; kelime sayısı tek başına kalite ölçütü değildir.",
+        "§3.6 kart görme/saklama bağlantısı, §17 isteğe bağlılık ve Liman Gecesi korunur.",
+        "QA, §5.3 korunan hükmü ve mekanik değişmediğini; Chief anlam, ses ve geçişleri denetler."
+      ],
+      "kaptan_dependency": "KAPTAN exact copy kararı bu anlatı alanlarını değiştirmez; anlatı görevi KAPTAN metnine dokunamaz."
+    },
+    {
+      "planned_task_id": "STORY-CHARACTER-VOICE-CANDIDATES-001",
+      "status": "QUEUED / NOT_AUTHORIZED",
+      "executor_role": "STORY_EDITOR",
+      "reviewer_roles": [
+        "CHIEF_EDITOR"
+      ],
+      "branch": "work/v2.7-story",
+      "purpose": "Küçük bir karşılaştırmada karakter sesi ve KAR-18 zaman açıklığını geliştirmek.",
+      "activation_gate": "Önce kaynak envanteri ve anlatı düzeltmesinin sonucu değerlendirilir; yeni exact task ve güncel bloblar ayrıca açılır.",
+      "allowed_exact_paths": [
+        "working/v2.7/story/FOULWAKE_CHARACTER_FLAVOR_CANDIDATES_v2.7.json"
+      ],
+      "max_changed_files": 1,
+      "target_ids": [
+        "KAR-12",
+        "KAR-18"
+      ],
+      "optional_selection": "KAR-13–20 içinden en fazla iki ek kimlik; toplam en fazla dört kart. Seçim kaynaklı gerekçe ister.",
+      "source_input_blobs": [
+        {
+          "git_blob": "962222d83d669763c4ac8e2765f024b9fade180c",
+          "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md"
+        },
+        {
+          "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+          "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md"
+        },
+        {
+          "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+          "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json"
+        }
+      ],
+      "record_fields": [
+        "id",
+        "source_blob",
+        "source_pointer",
+        "current_flavor",
+        "proposed_flavor",
+        "why",
+        "preserved_constraints"
+      ],
+      "acceptance_criteria": [
+        "Yalnız aday flavor önerileri; canonical card JSON, effect, name, impact veya use_mode değişmez.",
+        "Uzun geçmiş, yeni yetenek, zorunlu tanışma turu veya gizli bilgi eklenmez.",
+        "KAR-18 kesin kronoloji hatası ilan edilmez; dönüş seferi yorumu ve mevcut metin karşılaştırılır.",
+        "Tahtakakan–Tahtaya Vuran gibi güçlü kısa ilişkiler korunur; her karta şaka veya aynı düzgün cümle kalıbı zorlanmaz."
+      ]
+    },
+    {
+      "planned_task_id": "STORY-REMAINING-COPY-REVIEW-001",
+      "status": "DEPENDENCY_WAIT / NOT_AUTHORIZED",
+      "executor_role": "STORY_EDITOR",
+      "reviewer_roles": [
+        "CHIEF_EDITOR"
+      ],
+      "branch": "work/v2.7-story",
+      "purpose": "Kalan 70 kimliğin envanterden doğrulanan metinlerini aynı hikâye ölçütleriyle incelemek.",
+      "activation_gate": "QA kaynak alanlarını bulup Chief kabul eder; yalnız doğrulanan alanlar exact input olarak sabitlenir. Açık kalan alanlar hâlâ source gap olur.",
+      "planned_delivery": "Read-only visible role chat review; exact zero-write task separately required.",
+      "coverage_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_ACCEPTANCE_20260905.json#/coverage/remaining_ids_with_correct_families"
+    }
+  ],
+  "owner_decision_queue": [
+    {
+      "subject": "SET-KP-01 effect ve Lidere et. ifadesi",
+      "status": "AFTER_QA_COMPARISON / NO_DECISION_ASSUMED",
+      "recommended_direction": "Mevcut ayrıntılı mekanik korunarak kapsamın owner onaylı exact metinle açıklaştırılması.",
+      "next_responsible_role": "CHIEF_EDITOR",
+      "deliverable_before_asking_owner": "QA kaynak tablosu ve somut, karşılaştırılabilir metin önerisi; rota beraberliği ile resmî olmayan Suçlama hedef seçimi ayrımı açık olmalı."
+    }
+  ],
+  "future_human_check": {
+    "status": "NOT_RUN / NOT_AUTHORIZED_BY_THIS_PLAN",
+    "observations": [
+      "Oyuncu ilk seçimden önce görevini ve mevcut kişisel sorumluluğunu kendi sözleriyle açıklayabiliyor mu?",
+      "OKU blokları oyuncu tartışmasını kesiyor mu?",
+      "Kaptan seçimine geçiş gizem sorgusuyla uzuyor mu?"
+    ],
+    "limit": "No quantitative target or boredom claim without an authorized test design."
+  },
+  "communication": {
+    "visible_chats_contacted_by_tool": false,
+    "specialist_execution_confirmed": false,
+    "temporary_agents_used": false
+  }
+}

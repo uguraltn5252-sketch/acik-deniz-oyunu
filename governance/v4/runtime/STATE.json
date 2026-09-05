@@ -2,7 +2,7 @@
   "schema_version": "4.2",
   "canonical": true,
   "state_id": "V4-COPY-SOURCE-INVENTORY-20260905",
-  "status": "V4_COORDINATION_ACTIVE / COPY_SOURCE_INVENTORY_ACTIVE / STORY_REVIEW_DETAIL_PENDING / PRODUCTION_CLOSED",
+  "status": "V4_COORDINATION_ACTIVE / COPY_SOURCE_INVENTORY_ACTIVE / STORY_REVIEW_ACCEPTED_WITH_CORRECTION / PRODUCTION_CLOSED",
   "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -55,7 +55,7 @@
     "story": {
       "branch": "work/v2.7-story",
       "head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
-      "status": "PAUSED / ACCEPTED HISTORICAL INPUT"
+      "status": "READ_ONLY_REVIEW_ACCEPTED_WITH_CORRECTION / SOURCE_BRANCH_FROZEN / IMPLEMENTATION_QUEUED"
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
@@ -104,7 +104,10 @@
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
     "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent.",
     "PREFLIGHT-ENGINE-01": "REPRODUCED: uninformed traitor bluff target reads true hidden front; blocks information-valid full-game A/B outcomes.",
-    "PREFLIGHT-ENGINE-02": "REPRODUCED: optional route-information power used before the first movement contrary to pinned rulebook section 11.3."
+    "PREFLIGHT-ENGINE-02": "REPRODUCED: optional route-information power used before the first movement contrary to pinned rulebook section 11.3.",
+    "COPY-NIGHT-001": "OPEN: KAR-01/02 Tanışma gecesi conflicts with distinct first neutral / first voyage night rules; SCIM-01 source evidence accepted, QA/copy disposition pending.",
+    "COPY-KAPTAN-001": "OPEN: exact owner effect does not express detailed voting distinctions; SCIM-02 ambiguity accepted, QA and concrete owner copy decision pending. Existing override remains binding.",
+    "STORY-COHERENCE-001": "OPEN: preserved v2.6 §5.3 narrative assigns certain intent to Siyah Mühür outside v2.7 replacement blocks; SCIM-03 accepted, bounded Story correction queued."
   },
   "canonical_refs": {
     "contracts": "governance/v4/contracts/CONTRACTS.json",
@@ -112,7 +115,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "SIMULATION_QA: continue COPY-SOURCE-INVENTORY-001 with its unchanged inputs and three-file scope. STORY_EDITOR: transfer the existing full review for STORY-COHERENCE-IMMERSION-001; its completion summary has been received. CHIEF_EDITOR: finish independent review when the detailed findings are available, then scope any implementation or engine repair separately.",
+  "next_action": "SIMULATION_QA: continue the unchanged COPY-SOURCE-INVENTORY-001; consult accepted SCIM-01/02/04 findings and corrected HAR-AD/HAR-AA labels for its existing discrepancy queue. CHIEF_EDITOR: independently accept/close that delivery, then activate the bounded Story narrative task from the follow-up plan. STORY_EDITOR review is complete; no new Story production is active.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -141,13 +144,15 @@
     }
   },
   "last_completed_project_task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
-  "read_only_assignments": {
-    "STORY_EDITOR": {
-      "task_id": "STORY-COHERENCE-IMMERSION-001",
+  "read_only_assignments": {},
+  "completed_read_only_reviews": {
+    "STORY-COHERENCE-IMMERSION-001": {
+      "status": "ACCEPTED_WITH_RECORDED_CORRECTION",
       "task_ref": "governance/v4/tasks/STORY-COHERENCE-IMMERSION-001.json",
-      "status": "READ_ONLY_ASSIGNED",
-      "review_status": "HANDOFF_RECEIVED / FULL_REPORT_PENDING",
-      "evidence_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_RECEIPT_20260905.json"
+      "evidence_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_ACCEPTANCE_20260905.json",
+      "report_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_REPORT_20260905.md"
     }
-  }
+  },
+  "last_completed_read_only_task_id": "STORY-COHERENCE-IMMERSION-001",
+  "coordination_followups_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json"
 }
