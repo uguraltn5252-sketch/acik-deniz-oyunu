@@ -112,7 +112,18 @@
       "CHIEF_EDITOR": {
         "branch": "v2.7-design",
         "allowed_globs": [
-          "governance/v4/**"
+          "governance/**",
+          ".github/**"
+        ],
+        "allowed_exact_paths": [
+          "AI_HANDOFF.md",
+          "PROJECT_STATE.md",
+          "README.md",
+          "CHANGELOG.md",
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+        ],
+        "forbidden_prefixes": [
+          "releases/"
         ]
       },
       "STORY_EDITOR": {
@@ -154,6 +165,72 @@
           "governance/v4/**"
         ]
       }
+    },
+    "coordination": {
+      "role": "CHIEF_EDITOR",
+      "branch": "v2.7-design",
+      "allowed_actions": [
+        "WRITE",
+        "MANAGE_STATE",
+        "OPEN_TASK",
+        "INTEGRATE",
+        "RESOLVE_SOURCE_CONFLICT"
+      ],
+      "allowed_globs": [
+        "governance/**",
+        ".github/**"
+      ],
+      "allowed_exact_paths": [
+        "AI_HANDOFF.md",
+        "PROJECT_STATE.md",
+        "README.md",
+        "CHANGELOG.md",
+        "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+      ],
+      "purpose": "Governance coordination while one specialist project task is active; no specialist output, production, canon, release or lock action.",
+      "integration_scope": {
+        "allowed_globs": [
+          "working/v2.7/**"
+        ],
+        "forbidden_prefixes": [
+          "working/v2.7/visual/references/"
+        ]
+      },
+      "integration_gate": "Only exact active-task output paths from the current specialist delivery ref, independently accepted commit and blob map. Content creation/editing is not an integration action."
+    },
+    "task_issuance_delegation": {
+      "id": "OWNER-DELEGATION-20260905",
+      "authorized_by": "PROJECT_OWNER",
+      "grantee": "CHIEF_EDITOR",
+      "recorded_from": "Current project-owner instruction: full authority to repair the system and prepare the five role chats; supersedes the completed seven-file/two-commit order.",
+      "allowed_actions": [
+        "AESTHETIC_RECOMMENDATION",
+        "ART_LANGUAGE_REVIEW",
+        "COMPOSITION_REVIEW",
+        "COPY_CHECK",
+        "DECK_RHYTHM_REVIEW",
+        "FRAMING_DECISION",
+        "INTEGRATE",
+        "MANAGE_STATE",
+        "OPEN_TASK",
+        "PERIOD_LANGUAGE_REVIEW",
+        "PHYSICAL_EVIDENCE_REVIEW",
+        "PRODUCE_FLAVOR",
+        "PRODUCE_STORY",
+        "PRODUCE_THUMBNAIL",
+        "QA_REVIEW",
+        "READ_ONLY_VALIDATION",
+        "RESOLVE_SOURCE_CONFLICT",
+        "RULES_INTEGRITY_REVIEW",
+        "RUN_SIMULATION",
+        "WRITE"
+      ],
+      "allowed_permissions": [
+        "simulation",
+        "visual_production",
+        "thumbnails"
+      ],
+      "limits": "Exact task, role/path scope, independent review and source integrity remain mandatory; no implicit full production, canon/mechanics change, release or lock."
     }
   },
   "protected_quality_gates": [
@@ -331,7 +408,7 @@
     "Old specialist chats are replaced only after successful cutover."
   ],
   "operating_context": {
-    "entry": "governance/v4/runtime/STATE.json",
+    "entry": "governance/v4/TEAM_START.md",
     "authority": "After the recorded cutover, v4 state + exact active task + contracts + role registry govern current work. V3 CURRENT_STAGE and old root handoffs describe the preserved migration checkpoint, not current task authority.",
     "bootstrap": "python -B governance/v4/bootstrap.py --role <ROLE>",
     "read_minimum": [
@@ -350,6 +427,15 @@
       "NEXT_RESPONSIBLE_ROLE"
     ],
     "role_rule": "No active role action means no write. Chief Editor opens/integrates; specialists execute their own scope; history and another chat never substitute for current Git authority.",
-    "known_external_enforcement_gap": "GOV-001 and GOV-002 remain OPEN until live GitHub protection and specialist CI evidence exist."
+    "known_external_enforcement_gap": "GOV-001: GitHub branch protection requires live settings evidence. GOV-002: close only after current v4 workflow and all workstream checks pass on GitHub."
+  },
+  "protected_content_blobs": {
+    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "962222d83d669763c4ac8e2765f024b9fade180c",
+    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
+    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa",
+    "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "f88e71c6e4355df291a2e70ce1fff461d8145217",
+    "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "df2f74fe3f245bfd5d2fe57439f11c22aeca0e02",
+    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "e9faf109fb5ee912935a7bdf30bc554eae1efa77"
   }
 }

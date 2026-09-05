@@ -1,21 +1,15 @@
-# FOULWAKE Çalışma Hattı Görevleri
+# FOULWAKE — Beş çalışma hattı
 
-**Yetki kaynağı:** `governance/CURRENT_STAGE.json`  
-**Aktif visual candidate:** **YOK**  
-**Kapanış:** **V3_CLEAN_CLOSURE_COMPLETE / V4_MIGRATION_READY / NOT_STARTED**  
-**Varsayılan:** Bütün specialist yazmaları kapalıdır.
+Canlı görev/head kaynağı: `governance/v4/runtime/STATE.json`.
+Bu tablo rol sahipliğini tanımlar; ayrıca görev yetkisi vermez.
 
-| Hat | Exact dal/head | Durum | Aktif görev |
+| Yeni sohbet | ROLE_ID | Dal | Sorumluluk |
 |---|---|---|---|
-| Hikâye | `work/v2.7-story@e04eef7f1fef6ea407feaaf26558551297c44b37` | PAUSED | YOK |
-| Sanat Yönetimi | `work/v2.7-art-direction@917f8b71f47eeecdfb12b7ec930796bf111e2858` | PATCH PROJECT_OWNER_ACCEPTED / PAUSED | YOK |
-| Görsel | `work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` | OWNER-REJECTED / HOLD | YOK |
-| Simülasyon | Dal yok | NOT STARTED | YOK |
-| Baş Editör | `v2.7-design` | V3 CLEAN CLOSURE | Yalnız exact yeni emirle sonraki aşama |
+| FOULWAKE — Baş Editör | CHIEF_EDITOR | v2.7-design | Görev, kaynak, koordinasyon, entegrasyon ve kapılar |
+| FOULWAKE — Hikâye Editörü | STORY_EDITOR | work/v2.7-story | Dünya, karakter sesi, anlatı ve izinli flavor |
+| FOULWAKE — Görsel Tasarım | VISUAL_DESIGN | work/v2.7-visual | Özgün illüstrasyon, kart uygulaması ve yetkili baskı dosyaları |
+| FOULWAKE — Sanat Yönetimi | ART_DIRECTION | work/v2.7-art-direction | Sanatsal yön, brief, bağımsız kadraj ve deste bütünlüğü |
+| FOULWAKE — Simülasyon / QA | SIMULATION_QA | work/v2.7-simulation | Bağımsız test, yeniden üretilebilir kanıt ve belirsizlik |
 
-Sanat Yönetimi kabulü Görsel, thumbnail, candidate, tam 121, PDF, Simülasyon,
-release veya lock yetkisi vermez. Yeni görev için `CURRENT_STAGE.json` ve
-`WORKSTREAM_SCOPE_BASELINES.json` birlikte yeni exact yetki taşımak zorundadır.
-
-v4 migrasyonu hazır fakat başlamamıştır; yalnız ayrı branch ve yeni exact Baş
-Editör emriyle yürütülebilir.
+Ortak başlangıç `governance/v4/TEAM_START.md`; rol brief'leri `governance/v4/roles/<ROLE_ID>.md`.
+Eski sohbet adları yetki kimliği değildir. Baş Editör koordinasyonu ile uzmanın proje görevi ayrı bağlanır. Üreten rol kendi çıktısına nihai kabul vermez.

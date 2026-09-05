@@ -91,5 +91,20 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python -m py_compile governance/validate_governance.py governance/validate_workstream_scope.py
-          python governance/validate_governance.py
+          python -B governance/validate_governance.py
+
+      - name: Test v4 lifecycle and fail-closed boundaries
+        if: steps.route.outputs.specialist != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -B governance/v4/tests/test_governance_v4.py
+          python -B governance/v4/tests/test_ci.py
+
+      - name: Validate every workstream against current v4 authority
+        if: steps.route.outputs.specialist != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin '+refs/heads/work/*:refs/remotes/origin/work/*'
+          python -B governance/v4/ci.py --authority HEAD --all-workstreams

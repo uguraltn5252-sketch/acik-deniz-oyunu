@@ -25,12 +25,17 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
         reject("UNKNOWN_ROLE", role_name)
     role = roles[role_name]
 
-    selected_task = task_id or state.get("active_project_task_id")
+    control_id = (state.get("coordination_control") or {}).get("task_id")
+    selected_task = task_id or (control_id if role_name == "CHIEF_EDITOR" else state.get("active_project_task_id"))
     task = tasks.get(selected_task) if selected_task else None
+    if task and not task_id and not task.get("authorization", {}).get("role_actions", {}).get(role_name):
+        selected_task, task = None, None
     migration_task = (state.get("migration_control") or {}).get("task_id")
     binding = "NONE"
     if selected_task == state.get("active_project_task_id") and selected_task:
         binding = "ACTIVE_PROJECT_TASK"
+    elif selected_task == control_id and selected_task:
+        binding = "COORDINATION_CONTROL"
     elif selected_task == migration_task and selected_task:
         binding = "MIGRATION_CONTROL_ONLY"
     elif selected_task:
@@ -40,6 +45,8 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
         "# GENERATED / NON_CANONICAL — FOULWAKE ROLE BOOTSTRAP",
         "",
         f"ROLE: {role_name}",
+        f"ROLE_BRIEF: {role.get('brief_ref', 'governance/v4/roles/REGISTRY.json')}",
+        "SHARED_QUALITY: governance/v4/TEAM_START.md",
         f"RUNTIME_STATE: governance/v4/runtime/STATE.json ({state.get('status')})",
         f"ACTIVE_PROJECT_TASK: {state.get('active_project_task_id') or 'NONE'}",
         f"ACTIVE_CANDIDATE: {state.get('active_visual_candidate') or 'NONE'}",
@@ -58,19 +65,20 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
             binding == "ACTIVE_PROJECT_TASK"
             and task.get("status") in policy.get("active_task_statuses", [])
         )
+        control_binding = binding == "COORDINATION_CONTROL" and task.get("status") == "ACTIVE_CONTROL" and role_name == "CHIEF_EDITOR"
         migration_binding = (
             binding == "MIGRATION_CONTROL_ONLY"
             and task.get("status") in policy.get("cutover_review_statuses", [])
             and (state.get("migration_control") or {}).get("cutover_performed") is False
         )
         task_effective = authorization.get("enabled") is True and (
-            active_binding or migration_binding
+            active_binding or migration_binding or control_binding
         )
         role_actions = assigned_role_actions if task_effective else []
         write_actions = set(policy.get("write_actions", []))
         write_authorized = (
             task_effective
-            and active_binding
+            and (active_binding or control_binding)
             and authorization.get("write_authorized") is True
             and bool(write_actions.intersection(role_actions))
         )
@@ -83,10 +91,16 @@ def build_bootstrap(root: Path, role_name: str, task_id: str | None = None) -> s
             f"CURRENT_WRITE_AUTHORIZED: {str(write_authorized).upper()}",
             "CURRENT_ROLE_TASK_ACTIONS: " + (", ".join(role_actions) or "NONE"),
         ])
+        if role_actions:
+            lines.extend([
+                f"TASK_REF: governance/v4/tasks/{task['task_id']}.json",
+                f"SOURCE_BASELINE: {task.get('source', {}).get('commit', 'SEE_TASK')}",
+                "ALLOWED_PATHS: " + ", ".join(task.get("scope", {}).get("allowed_exact_paths", []) + task.get("scope", {}).get("allowed_globs", [])),
+            ])
     else:
         lines.extend([
             "",
-            "TASK_STATUS: NO ACTIVE PROJECT TASK",
+            "TASK_STATUS: NO TASK ASSIGNED TO THIS ROLE",
             "CURRENT_WRITE_AUTHORIZED: FALSE",
         ])
 

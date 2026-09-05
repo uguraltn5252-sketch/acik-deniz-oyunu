@@ -636,6 +636,16 @@ class GovernanceV4Tests(unittest.TestCase):
                 with self.assert_rejected("TASK_ISSUER_ROLE"):
                     validator.authorize_repository_request(repo, {**opening, "role": role})
             validator.authorize_repository_request(repo, opening)
+            delegated = copy.deepcopy(task)
+            delegated["issued_by"] = "CHIEF_EDITOR"
+            delegated["owner_authorization"]["delegation_id"] = self.contracts["lifecycle"]["task_issuance_delegation"]["id"]
+            save(task_path, delegated)
+            validator.validate_repository(repo)
+            delegated["owner_authorization"]["delegation_id"] = "UNAUTHORIZED-DELEGATION"
+            save(task_path, delegated)
+            with self.assert_rejected("TASK_DELEGATION_MISSING"):
+                validator.validate_repository(repo)
+            save(task_path, task)
             for field, code in (("source", "TASK_BASELINE_MISSING"), ("acceptance_criteria", "TASK_ACCEPTANCE_MISSING"),
                                 ("owner_authorization", "TASK_OWNER_AUTHORIZATION_MISSING")):
                 broken = copy.deepcopy(task)

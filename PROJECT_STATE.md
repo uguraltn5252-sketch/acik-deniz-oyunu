@@ -1,26 +1,11 @@
-# FOULWAKE Proje Durumu
+# FOULWAKE — Durum kaynağı
 
-**Son güncelleme:** 1 Eylül 2026  
-**Kanonik checkpoint:** `governance/CURRENT_STAGE.json`  
-**Aşama:** `STAGE-20260901-V3-CLEAN-CLOSURE`  
-**Sonuç:** **V3_CLEAN_CLOSURE_COMPLETE / V4_MIGRATION_READY / NOT_STARTED**  
-**Aktif visual candidate:** **YOK**
+Canlı durum: **governance/v4/runtime/STATE.json**, güncel `v2.7-design` HEAD'inde.
+Aktif proje ve koordinasyon görevleri, aday, izinler, workstream durumları ve açık blockerlar bu kaynaktan okunur; burada ikinci state listesi tutulmaz.
 
-Sanat Yönetimi patchi `work/v2.7-art-direction@917f8b71f47eeecdfb12b7ec930796bf111e2858`
-proje sahibi tarafından kabul edildi. Kabul edilen exact dosya ve bütün branch
-head/durumları kanonik checkpoint içindedir.
+- v2.6: STABLE / LOCKED; tree `efb41c46f06174c42dcdab2859b7c0ba517f86f0`.
+- v2.7: DRAFT; artefakt varlığı release kabulü değildir.
+- Governance v4: cutover gerçekleşti; tarihsel hardening canlı görevleri dondurmaz.
+- Yeni sohbet: `governance/v4/TEAM_START.md` ve role özel brief.
 
-Aktif specialist yazma yetkisi yoktur. Görsel üretim, thumbnail, pilot/candidate,
-tam 121, PDF/print package, Simülasyon, release ve lock kapalıdır. Reddedilmiş
-`work/v2.7-visual@23c062f6de06c32eab224b3440c8474725d4fe9e` yalnız tarihsel kanıttır.
-
-KAPTAN sözleşmesi, exact copy, bağımsız `FRAMING_PASS / REFRAME_REQUIRED`
-kadraj kapısı ve arka-yüz dispozisyonları checkpointte bağlayıcıdır. Ayrıntı
-başka durum dosyalarına kopyalanmaz.
-
-Açık blockerların tek güncel listesi `CURRENT_STAGE.json#open_blockers`
-alanıdır. v4 yalnız ayrı branch, yeni exact Baş Editör emri ve checkpointteki
-parity/negative-test şartlarıyla başlayabilir; bu kapanış v4 implementasyonu
-veya üretim yetkisi değildir.
-
-> LEAN GOVERNANCE SHALL REDUCE CONTEXT AND CEREMONY, NEVER REVIEW DEPTH, CREATIVE SCRUTINY, EVIDENCE QUALITY OR PROJECT OWNER CONTROL.
+`CURRENT_STAGE.json` v3 kapanış snapshot'ıdır. Eski iş emri, candidate ve kabulün geçerliliği v4 state ve exact blob/commit bağlarıyla doğrulanır. Bilinmeyen kanıt PASS sayılmaz.

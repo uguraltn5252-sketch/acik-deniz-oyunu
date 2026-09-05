@@ -1,0 +1,74 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "GOV4-TEAM-COORDINATION-001",
+  "task_type": "GOVERNANCE_COORDINATION",
+  "project_task": false,
+  "status": "ACTIVE_CONTROL",
+  "issued_by": "PROJECT_OWNER",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [],
+  "owner_authorization": {
+    "decision": "AUTHORIZED",
+    "delegation_id": "OWNER-DELEGATION-20260905",
+    "recorded_from": "Project owner granted full authority for governance repair and relaunch of Chief Editor, Story, Visual, Art Direction and Simulation chats on 2026-09-05."
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "75763ab1736733f41eff40618a36a82c8a172909"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "MANAGE_STATE",
+      "OPEN_TASK",
+      "INTEGRATE",
+      "RESOLVE_SOURCE_CONFLICT"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "MANAGE_STATE",
+        "OPEN_TASK",
+        "INTEGRATE",
+        "RESOLVE_SOURCE_CONFLICT"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_globs": [
+      "governance/**",
+      ".github/**"
+    ],
+    "allowed_exact_paths": [
+      "AI_HANDOFF.md",
+      "PROJECT_STATE.md",
+      "README.md",
+      "CHANGELOG.md",
+      "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+    ],
+    "forbidden_prefixes": [
+      "releases/"
+    ],
+    "max_changed_files": 64,
+    "allowed_extensions": [
+      ".py",
+      ".json",
+      ".md",
+      ".yml",
+      ".yaml"
+    ],
+    "binary_files_allowed": false
+  },
+  "acceptance_criteria": [
+    "Live v4 governs entry documents and CI; specialist-supplied policy cannot widen its authority.",
+    "Real workstream scope and negative tests pass; source/game/release bytes are preserved except explicit source-routing metadata.",
+    "Five role briefs and concise shared start preserve creative depth, source hierarchy and independent acceptance.",
+    "No specialist output is produced by coordination; active Simulation task keeps its original input pins and scope."
+  ],
+  "operation": "Ongoing governance control, separate from active_project_task_id; allows task records and state management without assuming a specialist role.",
+  "handoff_ref": "governance/v4/TEAM_START.md"
+}

@@ -8,6 +8,7 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 
@@ -45,6 +46,23 @@ def main() -> None:
     parser.add_argument("--branch", required=True)
     parser.add_argument("--head", required=True)
     args = parser.parse_args()
+
+    # Old specialist workflows already fetch this entry point from integration.
+    # Load the v4 checker AND its validator from that same exact trusted commit.
+    authority = git("rev-parse", "refs/remotes/origin/v2.7-design", check=False)
+    state_text = git("show", f"{authority}:governance/v4/runtime/STATE.json", check=False) if authority else ""
+    if state_text:
+        try:
+            active = json.loads(state_text)
+        except ValueError as exc:
+            die(f"invalid authoritative v4 state: {exc}")
+        if active.get("migration_control", {}).get("cutover_performed") is True:
+            with tempfile.TemporaryDirectory(prefix="foulwake-trusted-ci-") as temporary:
+                for name in ("ci.py", "validator.py"):
+                    Path(temporary, name).write_text(git("show", f"{authority}:governance/v4/{name}") + "\n", encoding="utf-8")
+                result = subprocess.run([sys.executable, "-B", str(Path(temporary, "ci.py")),
+                                         "--authority", authority, "--branch", args.branch, "--head", args.head], check=False)
+                raise SystemExit(result.returncode)
 
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
     branches = config.get("branches", {})

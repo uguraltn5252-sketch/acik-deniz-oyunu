@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-MEC-SEA-ROCK-PREFLIGHT-20260905",
-  "status": "GOV4_LIFECYCLE_REPAIRED / MEC_SEA_ROCK_PREFLIGHT_ACTIVE / PRODUCTION_CLOSED",
+  "state_id": "V4-TEAM-RELAUNCH-20260905",
+  "status": "V4_TEAM_COORDINATION_ACTIVE / MEC_PREFLIGHT_ACTIVE / PRODUCTION_CLOSED",
   "updated_at": "2026-09-05",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -70,12 +70,12 @@
     },
     "simulation": {
       "branch": "work/v2.7-simulation",
-      "head": null,
-      "head_binding": "COMMIT_THAT_FIRST_ADDS_TASK / RESOLVE_FROM_GIT",
+      "head": "75763ab1736733f41eff40618a36a82c8a172909",
+      "head_binding": "LAST_VERIFIED_REMOTE_HEAD / EXECUTION_BASELINE_FROM_TASK_HISTORY",
       "task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
       "source_baseline_commit": "9779f6bb05504a01ca9817bcb8d20fc407efe657",
       "status": "ACTIVE_TASK_AUTHORIZED / EXECUTION_NOT_STARTED",
-      "branch_preparation": "Create at the exact commit adding this task; verify remote ref before handoff."
+      "branch_preparation": "Remote branch exists at the task activation commit; later output commits are validated cumulatively by v4 CI."
     }
   },
   "visual_dispositions": {
@@ -100,7 +100,7 @@
     "QA-001": "No active candidate attestation.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
-    "GOV-002": "Existing specialist branch push produced no Actions run; bootstrap enforcement remains open.",
+    "GOV-002": "V4 CI routing repair prepared; remote workflow and workstream scope verification pending.",
     "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
   },
   "canonical_refs": {
@@ -109,7 +109,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "SIMULATION_QA: execute only MEC-SEA-ROCK-PREFLIGHT-001 on work/v2.7-simulation; three exact QA outputs; MEC-001 remains open.",
+  "next_action": "CHIEF_EDITOR: verify and hand off the five role briefs. SIMULATION_QA: execute only the existing exact Sea/Rock preflight after current CI scope verification.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -122,5 +122,11 @@
     "production task before GOV4-HARDENING-001 completion",
     "integration outside an exact active task",
     "specialist-chat replacement"
-  ]
+  ],
+  "coordination_control": {
+    "task_id": "GOV4-TEAM-COORDINATION-001",
+    "task_ref": "governance/v4/tasks/GOV4-TEAM-COORDINATION-001.json",
+    "status": "ACTIVE_CONTROL",
+    "role": "CHIEF_EDITOR"
+  }
 }

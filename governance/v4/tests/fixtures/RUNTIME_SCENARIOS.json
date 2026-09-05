@@ -7,11 +7,12 @@
     "loaded_task_ids": [
       "GOV4-CUTOVER-001",
       "GOV4-HARDENING-001",
+      "GOV4-TEAM-COORDINATION-001",
       "MEC-SEA-ROCK-PREFLIGHT-001"
     ],
     "role_write_authorized": {
       "VISUAL_DESIGN": false,
-      "CHIEF_EDITOR": false,
+      "CHIEF_EDITOR": true,
       "SIMULATION_QA": true
     }
   },

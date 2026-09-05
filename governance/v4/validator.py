@@ -592,6 +592,23 @@ def authorize_request(
         require(action in registry["roles"][role]["allowed_actions"], "ROLE_ACTION_FORBIDDEN", f"{role}: {action}")
         return
 
+    control_id = (state.get("coordination_control") or {}).get("task_id")
+    if control_id and request.get("task_id") == control_id:
+        control = tasks.get(control_id)
+        require(control is not None, "TASK_NOT_FOUND", control_id)
+        require(role == "CHIEF_EDITOR", "COORDINATION_ROLE_REQUIRED", str(role))
+        require(control.get("status") == "ACTIVE_CONTROL" and control["authorization"]["enabled"] is True,
+                "COORDINATION_CLOSED", control_id)
+        require(action in contracts["lifecycle"]["coordination"]["allowed_actions"], "COORDINATION_ACTION_FORBIDDEN", action)
+        if action == "INTEGRATE":
+            require(control["authorization"]["write_authorized"] is True, "TASK_WRITE_CLOSED", control_id)
+            require(request.get("branch") == control["scope"]["branch"], "WRONG_BRANCH", control_id)
+            require(scope_allows(contracts["lifecycle"]["coordination"]["integration_scope"], request.get("path")),
+                    "INTEGRATION_PATH_FORBIDDEN", str(request.get("path")))
+            return  # Repository entry verifies delivery and independent acceptance.
+        bind_task_request(control, registry, contracts, request)
+        return
+
     if action == policy["cutover_action"]:
         migration = state.get("migration_control") or {}
         task_id = request.get("task_id")
@@ -689,6 +706,9 @@ def load_repository_bundle(
     migration_id = (state.get("migration_control") or {}).get("task_id")
     if migration_id:
         task_ids.add(migration_id)
+    control_id = (state.get("coordination_control") or {}).get("task_id")
+    if control_id:
+        task_ids.add(control_id)
     # Discover real registry entries, including orphan ACTIVE tasks. Fixtures are
     # deliberately outside this directory and never create runtime authority.
     registry_active = []
@@ -710,6 +730,31 @@ def load_repository_bundle(
     require(registry_active == expected_active, "TASK_REGISTRY_DRIFT", str(registry_active))
     tasks = {task_id: load_task(root, task_id) for task_id in task_ids}
     validate_runtime_documents(state, tasks, contracts, registry)
+    if control_id:
+        control = tasks[control_id]
+        policy = contracts["lifecycle"]["coordination"]
+        require(control.get("project_task") is False and control.get("status") == "ACTIVE_CONTROL",
+                "COORDINATION_SCHEMA", control_id)
+        binding = state["coordination_control"]
+        require(binding.get("role") == "CHIEF_EDITOR" and binding.get("status") == control["status"]
+                and binding.get("task_ref") == f"governance/v4/tasks/{control_id}.json", "COORDINATION_BINDING_DRIFT", control_id)
+        require(control.get("executor_role") == policy["role"] == "CHIEF_EDITOR"
+                and control.get("issued_by") == "PROJECT_OWNER", "COORDINATION_ROLE_REQUIRED", control_id)
+        require(control.get("owner_authorization", {}).get("decision") == "AUTHORIZED", "COORDINATION_OWNER_AUTHORIZATION_MISSING", control_id)
+        source = control.get("source", {}).get("commit")
+        require(SHA_RE.fullmatch(str(source or "")) is not None, "TASK_BASELINE_MISSING", control_id)
+        require(subprocess.run(["git", "merge-base", "--is-ancestor", source, "HEAD"], cwd=root,
+                               stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode == 0,
+                "TASK_BASELINE_NOT_ANCESTOR", str(source))
+        require(control["scope"].get("binary_files_allowed") is False
+                and isinstance(control["scope"].get("max_changed_files"), int), "COORDINATION_SCHEMA", control_id)
+        require(control["scope"]["branch"] == policy["branch"], "COORDINATION_BRANCH", control_id)
+        require(set(control["authorization"]["allowed_actions"]) <= set(policy["allowed_actions"]),
+                "COORDINATION_ACTION_FORBIDDEN", control_id)
+        require(control["authorization"]["role_actions"] == {"CHIEF_EDITOR": control["authorization"]["allowed_actions"]},
+                "COORDINATION_ROLE_REQUIRED", control_id)
+        for path in control["scope"].get("allowed_exact_paths", []) + control["scope"].get("allowed_globs", []):
+            require(scope_allows(policy, path), "COORDINATION_PATH_FORBIDDEN", path)
     if not expected_active:
         require(all(value is False for value in state["permissions"].values()),
                 "IDLE_PERMISSION_OPEN", "No task can own an enabled permission")
@@ -723,8 +768,17 @@ def validate_live_task(root: Path, task: dict[str, Any], state: dict[str, Any], 
     task_id = task["task_id"]
     require(not task.get("completion"), "ACTIVE_BUT_CLOSED_TASK", task_id)
     require(task.get("project_task") is True, "TASK_NOT_PROJECT_TASK", task_id)
-    require(task.get("issued_by") == "PROJECT_OWNER", "PROJECT_OWNER_REQUIRED", task_id)
     approval = task.get("owner_authorization", {})
+    if task.get("issued_by") == "CHIEF_EDITOR":
+        delegation = contracts["lifecycle"].get("task_issuance_delegation", {})
+        require(delegation.get("authorized_by") == "PROJECT_OWNER"
+                and approval.get("delegation_id") == delegation.get("id"), "TASK_DELEGATION_MISSING", task_id)
+        require(set(task["authorization"]["allowed_actions"]) <= set(delegation.get("allowed_actions", [])),
+                "TASK_DELEGATION_ACTION_FORBIDDEN", task_id)
+        enabled = {key for key, value in task.get("runtime_permissions", {}).items() if value}
+        require(enabled <= set(delegation.get("allowed_permissions", [])), "TASK_DELEGATION_PERMISSION_FORBIDDEN", task_id)
+    else:
+        require(task.get("issued_by") == "PROJECT_OWNER", "PROJECT_OWNER_REQUIRED", task_id)
     require(approval.get("task_id") == task_id and approval.get("decision") == "AUTHORIZED"
             and approval.get("recorded_from"), "TASK_OWNER_AUTHORIZATION_MISSING", task_id)
     source = task.get("source", {})
@@ -1017,6 +1071,8 @@ def validate_repository(root: Path = DEFAULT_ROOT) -> dict[str, Any]:
     )
     require(ancestry.returncode == 0, "SOURCE_NOT_ANCESTOR", source_commit)
     verify_contract_integrity(root, contracts)
+    for relative, expected_blob in contracts.get("protected_content_blobs", {}).items():
+        require(git(root, "hash-object", relative) == expected_blob, "CONTENT_SOURCE_DRIFT", relative)
     canonical_copies = load_canonical_copy_index(root, contracts)
     verify_resolved_source_decision(state, contracts, canonical_copies)
     verify_hardening_closure(root, state, contracts, registry)
@@ -1045,7 +1101,7 @@ def validate_repository(root: Path = DEFAULT_ROOT) -> dict[str, Any]:
 
 def authorize_repository_request(root: Path, request: dict[str, Any]) -> None:
     root = root.resolve()
-    if request.get("action") == "OPEN_TASK":
+    if request.get("action") == "OPEN_TASK" and request.get("baseline_commit"):
         result = validate_task_opening(root, request.get("baseline_commit", ""), request.get("role"))
         require(request.get("task_id") == result["active_task_id"], "ACTIVE_TASK_MISMATCH", str(request.get("task_id")))
         return
@@ -1055,12 +1111,49 @@ def authorize_repository_request(root: Path, request: dict[str, Any]) -> None:
     state, tasks, contracts, registry = load_repository_bundle(root.resolve(), extras)
     canonical_copies = load_canonical_copy_index(root, contracts)
     authorize_request(state, tasks, registry, contracts, request, canonical_copies)
+    if request.get("action") == "INTEGRATE" and task_id == (state.get("coordination_control") or {}).get("task_id"):
+        validate_integration_request(root, state, tasks, request)
+        return
     if request.get("action") != contracts["runtime_authorization"]["read_only_action"]:
         task = tasks[task_id]
         validate_execution_scope(root, task, request)
         if request.get("action") == "PRODUCE_FULL_121":
             require(len(canonical_copies) == contracts["owner_controls"]["exact_copy"]["expected_full_deck_records"],
                     "COPY_COVERAGE_INCOMPLETE", str(len(canonical_copies)))
+
+
+def validate_integration_request(root: Path, state: dict[str, Any], tasks: dict[str, Any], request: dict[str, Any]) -> None:
+    """Chief Editor may copy reviewed specialist bytes, never author them through integration."""
+    from ci import validate_branch
+    require(git(root, "branch", "--show-current") == request["branch"], "CHECKOUT_BRANCH_MISMATCH", request["branch"])
+    active = tasks.get(state.get("active_project_task_id"))
+    require(active is not None, "INTEGRATION_NO_ACTIVE_TASK", str(state.get("active_project_task_id")))
+    path = request["path"]
+    require(scope_allows(active["scope"], path), "INTEGRATION_PATH_FORBIDDEN", path)
+    ref = request.get("acceptance_ref")
+    require(isinstance(ref, str) and ref.startswith("governance/v4/evidence/"), "INTEGRATION_ACCEPTANCE_MISSING", str(ref))
+    accepted = load_json(resolve_governance_ref(root, ref))
+    require(accepted.get("task_id") == active["task_id"] and accepted.get("status") == "ACCEPTED",
+            "INTEGRATION_ACCEPTANCE_MISMATCH", ref)
+    reviewer = accepted.get("reviewer_role")
+    require(reviewer in active.get("reviewer_roles", []) and reviewer != active["executor_role"],
+            "INDEPENDENT_ACCEPTANCE_MISSING", ref)
+    delivery = accepted.get("delivery_commit")
+    require(SHA_RE.fullmatch(str(delivery or "")) is not None, "DELIVERY_COMMIT_MISSING", ref)
+    branch = active["scope"]["branch"]
+    require(git(root, "rev-parse", f"refs/remotes/origin/{branch}") == delivery, "INTEGRATION_STALE_DELIVERY", branch)
+    validate_branch(root, "HEAD", branch, delivery)
+    blobs = accepted.get("accepted_blobs", {})
+    require(path in blobs and git(root, "rev-parse", f"{delivery}:{path}") == blobs[path], "INTEGRATION_BLOB_DRIFT", path)
+    # Any pending content write must already equal an accepted delivery blob.
+    pending = set(git(root, "diff", "--name-only", "HEAD", "--", "working/").splitlines())
+    pending.update(git(root, "ls-files", "--others", "--exclude-standard", "--", "working/").splitlines())
+    control = tasks[state["coordination_control"]["task_id"]]
+    for changed in pending:
+        if scope_allows(control["scope"], changed):
+            continue
+        require(changed in blobs and git(root, "hash-object", changed) == blobs[changed]
+                and git(root, "rev-parse", f"{delivery}:{changed}") == blobs[changed], "INTEGRATION_CONTENT_EDIT", changed)
 
 
 def main() -> None:

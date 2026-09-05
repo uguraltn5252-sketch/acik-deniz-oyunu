@@ -45,7 +45,8 @@
         "assume project-owner approval",
         "self-authorize release or lock"
       ],
-      "writes_require_exact_task": true
+      "writes_require_exact_task": true,
+      "brief_ref": "governance/v4/roles/CHIEF_EDITOR.md"
     },
     "STORY_EDITOR": {
       "owns": [
@@ -63,7 +64,8 @@
         "change mechanics",
         "change layout"
       ],
-      "writes_require_exact_task": true
+      "writes_require_exact_task": true,
+      "brief_ref": "governance/v4/roles/STORY_EDITOR.md"
     },
     "VISUAL_DESIGN": {
       "owns": [
@@ -84,7 +86,8 @@
         "make FRAMING_PASS or REFRAME_REQUIRED decisions",
         "generate or rewrite card copy"
       ],
-      "writes_require_exact_task": true
+      "writes_require_exact_task": true,
+      "brief_ref": "governance/v4/roles/VISUAL_DESIGN.md"
     },
     "ART_DIRECTION": {
       "owns": [
@@ -105,7 +108,8 @@
         "own visual production",
         "replace project-owner aesthetic acceptance"
       ],
-      "writes_require_exact_task": true
+      "writes_require_exact_task": true,
+      "brief_ref": "governance/v4/roles/ART_DIRECTION.md"
     },
     "SIMULATION_QA": {
       "owns": [
@@ -126,7 +130,8 @@
         "directly change story, mechanics, card copy, visual or layout content",
         "replace project-owner release or lock"
       ],
-      "writes_require_exact_task": true
+      "writes_require_exact_task": true,
+      "brief_ref": "governance/v4/roles/SIMULATION_QA.md"
     }
   }
 }

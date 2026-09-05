@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.0",
+  "schema_version": "4.3",
   "version": "v2.7 DRAFT",
-  "status": "V3_CLEAN_CLOSURE / NOT LOCKED / RELEASE BLOCKED",
-  "current_stage": "governance/CURRENT_STAGE.json",
+  "status": "V4_CANONICAL_ROUTING / NOT LOCKED / RELEASE BLOCKED",
+  "current_stage": "governance/v4/runtime/STATE.json",
   "candidate_commit": null,
   "conflict_action": "STOP_AND_HANDOFF_TO_CHIEF_EDITOR",
   "priority_order": [
@@ -10,7 +10,7 @@
       "priority": 1,
       "source": "latest explicit project-owner decision",
       "implementation": [
-        "governance/CURRENT_STAGE.json",
+        "governance/v4/runtime/STATE.json",
         "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
         "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json"
       ]
@@ -28,7 +28,7 @@
     {
       "priority": 4,
       "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-      "scope": "v2.7 character and power visible copy; SRC-002 unresolved"
+      "scope": "v2.7 character and power visible copy; SRC-002 resolved by binding owner identity mapping in v4 state"
     },
     {
       "priority": 5,
@@ -42,11 +42,11 @@
     }
   ],
   "active_sources": {
-    "task_authority": "governance/CURRENT_STAGE.json",
-    "specialist_scope": "governance/WORKSTREAM_SCOPE_BASELINES.json",
+    "task_authority": "governance/v4/runtime/STATE.json",
+    "specialist_scope": "governance/v4/tasks/<ACTIVE_TASK_ID>.json",
     "kaptan_copy": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
     "visual_system": "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
-    "current_order": null,
+    "current_order": "RESOLVE_FROM_V4_STATE",
     "accepted_art_direction_patch": {
       "commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
       "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
@@ -62,13 +62,15 @@
       "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
       "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md"
     ],
-    "classification": "EVIDENCE_ONLY / NO AUTHORIZATION"
+    "classification": "EVIDENCE_ONLY / NO AUTHORIZATION",
+    "v3_checkpoint": "governance/CURRENT_STAGE.json"
   },
-  "unresolved": [
+  "unresolved": [],
+  "resolved": [
     {
       "id": "SRC-002",
-      "evidence": "governance/SRC_002_COMPARISON_20260830.json",
-      "action": "PROJECT_OWNER_DECISION_REQUIRED"
+      "authority": "governance/v4/runtime/STATE.json#resolved_source_decisions/SRC-002",
+      "historical_comparison": "governance/SRC_002_COMPARISON_20260830.json"
     }
   ]
 }

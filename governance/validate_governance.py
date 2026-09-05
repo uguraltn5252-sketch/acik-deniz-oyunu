@@ -14,6 +14,20 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ERRORS: list[str] = []
 
+# A completed cutover routes the entry point to the live v4 validator. The v3
+# implementation below remains executable at its historical Git checkpoint.
+v4_state = ROOT / "governance/v4/runtime/STATE.json"
+if v4_state.exists():
+    try:
+        current = json.loads(v4_state.read_text(encoding="utf-8"))
+    except (ValueError, OSError) as exc:
+        raise SystemExit(f"BLOCKER: invalid v4 state: {exc}")
+    if current.get("migration_control", {}).get("cutover_performed") is True:
+        raise SystemExit(subprocess.run(
+            [sys.executable, "-B", str(ROOT / "governance/v4/validator.py"), "--root", str(ROOT)],
+            cwd=ROOT, check=False,
+        ).returncode)
+
 
 def require(condition: bool, message: str) -> None:
     if not condition:
