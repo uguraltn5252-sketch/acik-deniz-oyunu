@@ -111,7 +111,7 @@ def instructions(c):
 def build_cards():
  missing=[r['id']for r in records if r['id']!='SET-KP-01'and not(layout.ASSETS/(r['id']+'.png')).exists()]
  if missing:raise ValueError({'missing_fronts':missing})
- path=ARTIFACTS/'FOULWAKE_121_KART_TAM_RESiMLi_v2.7.pdf'
+ path=ARTIFACTS/'FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf'
  c=canvas.Canvas(str(path),pagesize=A4,invariant=1,pageCompression=1)
  c.setTitle('FOULWAKE - 121 Resimli Kart');c.setAuthor('FOULWAKE / CHIEF_EDITOR')
  layout.cover(c,'121 resimli kart','Bütün deste · Yedi ortak arka yüz\nA4 · %100 ölçek · uzun kenardan çift taraflı baskı');c.showPage()
