@@ -1,0 +1,177 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+  "task_type": "OWNER_DELEGATED_STORY_RULES_COPY_AND_SIMULATION",
+  "project_task": true,
+  "status": "ACTIVE",
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-07",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "owner_authorization": {
+    "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+    "decision": "AUTHORIZED",
+    "recorded_from": "Explicit current owner instruction to assume Story and Simulation duties, rename the antagonist label, improve rules/cards and complete the revision.",
+    "decision_ref": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json"
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "b4c0f6082ad54c6ec71503baa07943e99a0c1625",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "PRODUCE_STORY",
+      "PRODUCE_FLAVOR",
+      "PERIOD_LANGUAGE_REVIEW",
+      "RUN_SIMULATION",
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "RULES_INTEGRITY_REVIEW"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "PRODUCE_STORY",
+        "PRODUCE_FLAVOR",
+        "PERIOD_LANGUAGE_REVIEW",
+        "RUN_SIMULATION",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "RULES_INTEGRITY_REVIEW"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+      "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "working/v2.7/README_CURRENT_v2.7.md"
+    ],
+    "allowed_globs": [
+      "working/v2.7/qa/editorial_revision/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "working/v2.7/visual/",
+      "governance/",
+      ".github/"
+    ],
+    "max_changed_files": 32,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".csv",
+      ".txt"
+    ],
+    "binary_files_allowed": false
+  },
+  "runtime_permissions": {
+    "visual_production": false,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": true,
+    "release": false,
+    "lock": false
+  },
+  "inputs": [
+    {
+      "path": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
+      "git_blob": "43600302df51145ca5fae20d005582657689f00e"
+    },
+    {
+      "path": "releases/v2.6/SOURCE_PACKAGE.md",
+      "git_blob": "0470dfba2a82c0c4bb297d23eb356bb5b843c99a"
+    },
+    {
+      "path": "releases/v2.6/BINARY_ARTIFACTS.md",
+      "git_blob": "d01d63bfe8f3b51c5112db9e4f9c435f7aa38172"
+    },
+    {
+      "path": "releases/v2.6/CARD_BASELINE.md",
+      "git_blob": "40e9a2cda56c484d88b976941a4a80d46507bc5b"
+    },
+    {
+      "path": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_ACCEPTANCE_20260905.json",
+      "git_blob": "a9c2e4ba598eb6a194a28943359f6f69c078f21c"
+    },
+    {
+      "path": "governance/v4/contracts/CONTRACTS.json",
+      "git_blob": "f74ecf1c5d9cefe3a552754c9e1a4f3715efe438"
+    },
+    {
+      "path": "governance/v4/roles/REGISTRY.json",
+      "git_blob": "5f2245c2efe2a8624f32ede146f1afb6d4b9de1c"
+    }
+  ],
+  "output_baselines": [
+    {
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "git_blob": "f1e0eb75434540a85e8b21484acd99ca0abc66cf"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "git_blob": "962222d83d669763c4ac8e2765f024b9fade180c"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "git_blob": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30"
+    },
+    {
+      "path": "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+      "git_blob": "4a1842af4fca3bd0a8ce12ab7fd0d80ae01f8940"
+    },
+    {
+      "path": "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "git_blob": "8551f63339fc3b5645330ea2e6d1941d19aa2840"
+    }
+  ],
+  "purpose": "Complete an actual v2.7 working-text revision and reproducible rules/simulation evidence in this chat. No further visible-chat handoff is needed for production.",
+  "acceptance_criteria": [
+    "Deliver edited source files, a complete usable rulebook and a complete 121-ID copy inventory; distinguish source recovery from new authorial text.",
+    "Replace Siyah Mühür consistently in active narrative/rules/copy; preserve uncertain Gusto fate, uncertain network structure and unproven medicine.",
+    "Give five traitor cards distinct private, character-independent motives; protect hidden information and unchanged team objectives.",
+    "Use a small number of original, unobtrusive allusions; preserve FOULWAKE agency, period materiality and black comedy.",
+    "Resolve night terminology and Captain voting scope from locked detailed rules; make first-move timing and exceptional effects teachable.",
+    "Repair demonstrated observation/timing defects and run meaningful regression and paired simulation checks; label automation assumptions and unknown human fun honestly.",
+    "Keep card IDs/counts, SRC-002 mapping and locked v2.6 bytes; no visual/art-direction work.",
+    "Record SAME_OPERATOR_SELF_CHECK, exact commits/blobs, human-review status and remaining material limitations. A working delivery is not independent acceptance or release."
+  ],
+  "completion_policy": "Deliver working v2.7 sources and evidence; then close task write permissions. Project owner review and human playtest remain separately and honestly identified; do not invent independent acceptance.",
+  "research_scope": [
+    "One Piece",
+    "Pirates of the Caribbean",
+    "Prens",
+    "Moby-Dick",
+    "historical seafaring material culture",
+    "rule comprehension and hidden-information fairness"
+  ],
+  "execution_status": "IN_PROGRESS_IN_CHIEF_EDITOR_CHAT",
+  "next_responsible_role": "CHIEF_EDITOR"
+}
