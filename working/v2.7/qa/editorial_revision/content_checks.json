@@ -2,7 +2,7 @@
   "status": "PASS / SAME_OPERATOR_CONTENT_CHECK",
   "card_records": 121,
   "recovered_source_records": 70,
-  "field_change_count": 125,
+  "field_change_count": 127,
   "opening_block_word_counts": {
     "3.1": 85,
     "3.3": 99,
@@ -14,14 +14,15 @@
   "sha256": {
     "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "6ebf2f888571775ecf362b950860f65048e9393c148bbbe3a0713ec65c5ba2d8",
     "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "e96608ce2f26c7af9d5fc221723223fc68f01078f8c7d99a8d86c3e2b8f7af49",
-    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "a2fc8633391d33a35828ce47d9b3d9d171495afa1fe7fce0d95a4e932dd733c1",
-    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "8108736e40a9d84b3e5c11a4e4a2586be40f329f8d1f2fbd887ec775e01c4179",
-    "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json": "c50cfaebe49a70513f6f505de799499ffe08ad640ef23de88313d67bd4c3df04",
+    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "16eb81a543be01fa6206d465009bc3fdb13c2f4038509e4e5b4d31b84fa024ea",
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "1195aa7368c6d1781cfab305acc295d8038a6293b51bf7036d47525a8e68688f",
+    "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
     "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json": "dc3ca70f2b84d77eccfc6b8443d172c88a32db4808fe70538e3c1b4cdde2db56",
-    "working/v2.7/qa/editorial_revision/observation_engine.py": "9b55a430a132aa0a09716d010562a4b6c04285b6c9d7fe644444ca07a2c320ac",
+    "working/v2.7/qa/editorial_revision/observation_engine.py": "7622237321070e9854890322257cdfc8037c575b15ffca8ca19369bc3555d1cc",
+    "working/v2.7/qa/editorial_revision/route_ballot.py": "e05622921aa9a178b6d9ffeb94f7ae52fa7bfdd9243d601c6e8aa2fa2975ce77",
     "working/v2.7/qa/editorial_revision/run_simulation.py": "85c6b48b085335f660984b0f1cd81443f0f025ae92ecb1f9f0c3dc215e452b75",
-    "working/v2.7/qa/editorial_revision/test_rules.py": "a8d1945eccc8f443b43ba5db76c0129a2a5f49a1d7467168bc3cca467783efc8",
-    "working/v2.7/qa/editorial_revision/simulation_results.json": "ecca655de236a4d8ce255cb747282d0ad21a796af4808f3fa3603735f1c58b0b",
-    "working/v2.7/qa/editorial_revision/simulation_games.csv": "6b268370d0ec28d79e2c954263b182d574937250bbd2cbde2ca43e9ffbd7c911"
+    "working/v2.7/qa/editorial_revision/test_rules.py": "3b5af94145d909ef7284b38b2697a534778a773cbbd3344846608569590e00b3",
+    "working/v2.7/qa/editorial_revision/simulation_results.json": "173e0592e0f0eb540fdcbead91308e54ac3b10d25171ea35550d8fb611410890",
+    "working/v2.7/qa/editorial_revision/simulation_games.csv": "bdb2335db117c687e2075e2491c8137ac4391bd8837047a0acab50306eb862e8"
   }
 }

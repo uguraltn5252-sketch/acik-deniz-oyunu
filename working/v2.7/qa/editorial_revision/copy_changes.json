@@ -1,6 +1,6 @@
 {
   "baseline": "source_inventory.json#baseline_records",
-  "field_change_count": 125,
+  "field_change_count": 127,
   "changes": [
     {
       "id": "KAR-01",
@@ -159,6 +159,12 @@
       "after": "Tahta bir tabut için kesilmişti. Müşteri iyileşince gemiye yaradı."
     },
     {
+      "id": "GUC-06",
+      "field": "flavor",
+      "before": "Sandığın üstünde büyük balık yazıyor. Yazı aceleyle yazılmış.",
+      "after": "Sandığın üstüne bir balık çizmişler. Boyutunu belirtmeyi unutmuşlar."
+    },
+    {
       "id": "GUC-07",
       "field": "effect",
       "before": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku aç.",
@@ -186,7 +192,7 @@
       "id": "GUC-12",
       "field": "flavor",
       "before": "Sağ taraf geleceği, sol taraf pişmanlığı gösteriyor.",
-      "after": "Sol cam çatlak. Sahibi sağ gözünü kapatıp daha dikkatli bakıyor."
+      "after": "Merceği çatlak. Sahibi her şüpheli şeyi önce camdaki çizgiye yoruyor."
     },
     {
       "id": "GUC-13",
@@ -523,6 +529,12 @@
       "field": "effect",
       "before": "Kaptandaysan İskorbüt etkinleşmez. Kaptan değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonra gerçek bir Güç çek.",
       "after": "Başlangıçta aç. O anda Kaptansan İskorbüt başlamaz; değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonradan Kaptan değişmesi sonucu değiştirmez. Sonra yolculuk destesinden gerçek bir Güç çek."
+    },
+    {
+      "id": "ERZ-01",
+      "field": "flavor",
+      "before": "Peksimet hâlâ yenebilir. Onu söyleyen kişi yenmedi.",
+      "after": "Peksimet hâlâ yenebilir. Bunu söyleyen tadına bakmadı."
     },
     {
       "id": "HAR-AD-02",

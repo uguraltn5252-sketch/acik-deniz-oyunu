@@ -1,3 +1,5 @@
+> **Tarihsel ilk teslim kaydı:** Aşağıdaki 20 test, 125 alan ve A/B sayıları `d96967c0b87490982ebc6bec9363c3d1c2b1646e` teslimini anlatır. Güncel dosyalar ikinci kontrolde yenilendi: 27 test, 127 alan değişikliği, yeni 3.600 yolculuk ve görsel/PDF üretimi için [güncel raporu](../recheck_visual/recheck_report.md) kullanın. Eski görsel kapsam dışı ifadesi güncel görevin yetkisi değildir.
+
 # FOULWAKE - uygulanmış editoryal revizyon ve teknik kanıt
 
 **7 Eylül 2026 · FOULWAKE-EDITORIAL-OVERHAUL-001 · SAME_OPERATOR_SELF_CHECK**

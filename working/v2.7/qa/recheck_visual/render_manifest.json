@@ -1,0 +1,3876 @@
+{
+  "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+  "status": "GENERATED / SAME_OPERATOR_RENDER_INSPECTED / OWNER_REVIEW_PENDING",
+  "cards": [
+    {
+      "id": "KAR-01",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 661.45,
+      "copy_sha256": "c1096d061c76ea459af7bff43a2582563d5b64bcd656deb8d0d7f297d187bab4",
+      "exact_fields": {
+        "name": "Uzakgören",
+        "role": "Gözcü",
+        "effect": "İlk tarafsız gece hariç her yolculuk gecesi, yasal bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
+        "flavor": "Yelkeni görmeden geminin gelişini anlar. Bir yalana kanınca günlerce mesafeyi suçlar."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-02",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "dbe83720206dd39b557cafc6b652564f75f7c308909bf5f8c426adfeab6d9922",
+      "exact_fields": {
+        "name": "Kıyıçizen",
+        "role": "Haritacı",
+        "effect": "İlk tarafsız gece hariç, Sis olmayan her yolculuk gecesi yasal bir Uzak Ufuk kartının olay yüzüne gizlice bakar.",
+        "flavor": "Her itirazını haritanın kenarına not eder. Bir süredir denize yer kalmıyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-03",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d7c6160577391729c39b7961095691fd899e0732c6217df62434448ab5f55c06",
+      "exact_fields": {
+        "name": "Dümenkurdu",
+        "role": "Serdümen",
+        "effect": "Tek kullanım. Bir Harita olayının zorunlu hareket veya rota kilidi etkisini iptal eder.",
+        "flavor": "Dümen onun elindeyken gemi yolu şaşırmaz. Mürettebat şaşırabilir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-04",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d7b869dc2c4f7165f8a011b939758e6117b77bb7abd5a69398462d41e0694d73",
+      "exact_fields": {
+        "name": "Canhalatı",
+        "role": "Palamarcı",
+        "effect": "Tek kullanım. Harita veya Hain saldırısıyla denize düşeni hemen kurtarır. Oylamayla atılana işlemez.",
+        "flavor": "İnsanlara değil, düğümlere güvenir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-05",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "6213652801c789e8cc6e3ce754521b13704fb9390387a2bbf516fbaadc62e5b6",
+      "exact_fields": {
+        "name": "Tahtakakan",
+        "role": "Kalafatçı",
+        "effect": "Tek kullanım. Geminin almak üzere olduğu 1 Gövde hasarını engeller. Kraken'e de işler.",
+        "flavor": "Gemide bir yer gıcırdadığında elinde çekiçle belirir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-06",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 554.08,
+      "copy_sha256": "2ffb000d5a571bfc70b0160dc71e810d2a799d43694ecd6627100151bd73e8af",
+      "exact_fields": {
+        "name": "Dipgören",
+        "role": "Dalgıç",
+        "effect": "Batık Kalyon bulunduğunda bir kez fazladan 1 Güç kartı kazandırır.",
+        "flavor": "Her dalıştan bir şey getirir. Çoğunun sahibi için yeniden dalması gerekir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-07",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "a7dc532b0f4f8b09611c1576a54490e24ab86200d2bd35ed5e4b6ae4ccea0c36",
+      "exact_fields": {
+        "name": "Rüzgârkoklayan",
+        "role": "Yelkenci",
+        "effect": "Bir kez Durgun Deniz veya rüzgâr kaynaklı rota kısıtını gizlice kaldırır.",
+        "flavor": "Yelkeni toplatınca batıl inanç derler. Fırtına çıkınca neden daha önce söylemediğini sorarlar."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-08",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "863c6fc157e6967bde4fa3d9726834ba1d1dab904410fca017a127428a4d0143",
+      "exact_fields": {
+        "name": "Kırık Kürek",
+        "role": "Kayıkçı",
+        "effect": "Tek kullanım. Pusula sunulunca kabul ederse bir mahsuru kurtarmak için bir tam vardiyalık sefere çıkar. Reddederse Pusula atılır; sefer başlamaz ve yetenek harcanmaz.",
+        "flavor": "İkinci küreği kime ödünç verdiğini hatırlıyor. Adamı kurtarmaya pek hevesli değil."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-09",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "cd8c8e9c739d743d903631dc3618e14b9921248e646e9966960f8d23600991bf",
+      "exact_fields": {
+        "name": "Üç Anahtar",
+        "role": "Levazımcı",
+        "effect": "Tek kullanım. Güç kazanılırken bir fazla karta bakılır; sonra biri kapalı atılır. Kazanç sayısı artmaz.",
+        "flavor": "Üç anahtarı var. Kilit açılmayınca sandığın kendisine ait olmadığını söylüyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-10",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "30ee3185eeb00ed86359302506c006891f011dbae30716d65f900fd5707573d8",
+      "exact_fields": {
+        "name": "Güvertebaşı",
+        "role": "Lostromo",
+        "effect": "Tek kullanım. Harita Güç kaybettirecekken seçilen bir oyuncunun bir kartlık kaybını engeller.",
+        "flavor": "Herkesin ne yapması gerektiğini bilir. Özellikle başkalarının."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-11",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "0712858cc0baa91a9858c976203ede18048e301f713dc08165c0eb631bb1c6c9",
+      "exact_fields": {
+        "name": "İskele Sıçanı",
+        "role": "-",
+        "effect": "Ada veya Fener Güç kazandırırken bir kartın alıcısını, karta bakılmadan belirler.",
+        "flavor": "Karaya herkesten önce çıkar. Nasıl indiği sorulmaz."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-12",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "10bbaa406857a452e72af4cb144be304dcd655598eaf1d269786d87c1a97cbd5",
+      "exact_fields": {
+        "name": "Karga Yuvası",
+        "role": "-",
+        "effect": "Tek kullanım. Rota öncesi bir Yakın Ufku işaretler. O rota oy alırsa toplamına +1 eklenir.",
+        "flavor": "Orayı gördüm demedim. Oradan gidelim dedim."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-13",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "47d9a5018868a8307b01576fc76a6452327772c67c55105117b1eb24c4c6dcb1",
+      "exact_fields": {
+        "name": "Kazanbaşı",
+        "role": "Aşçı",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Dünkü çorbayı bugün de dağıtır. Biri beğenince tarifini vermek istemez."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-14",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "c47b95987d3ea63f7b092ad9737e78e0e2af7b1e16d84d3b618261f6927f615d",
+      "exact_fields": {
+        "name": "Fare Nazırı",
+        "role": "-",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Resmî sayımda on dört fare var. On beşincinin çizme giydiğini söylüyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-15",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "b460ac0074cd1c45fb70bb3ba7ade7191e2003d3a7e7504cc1e69a374e2f4633",
+      "exact_fields": {
+        "name": "Papağan Mütercimi",
+        "role": "-",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Kuş konuşmadan tercümeye başlar. İtiraz edene lehçeyi bilmediğini söyler."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-16",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "593747ce16bab1fd4577e95cd42ad23856f554f54b9277ea3b77c0c78e900c92",
+      "exact_fields": {
+        "name": "Fıçı Bekçisi",
+        "role": "-",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Herkes kurtulacaksa fıçıların da çıkarılmasını ister. İsimlerini tayfadan daha iyi bilir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-17",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d9ac6cbe6da77b8c11dcbd87d8774bb86cc945b2bab728ce5d81f3d7cfcf2872",
+      "exact_fields": {
+        "name": "Kafiye Belası",
+        "role": "Gemi Şairi",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Cenaze şiirini erkenden yazdı. Kimin için olduğunu sorana ilhamı boğduğunu söylüyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-18",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "951f90691041912c03b11770b360a949699584cec34a860212209fb22170bc7d",
+      "exact_fields": {
+        "name": "Karayı Özleyen",
+        "role": "Acemi Gemici",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "San Cordelio'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-19",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 551.59,
+      "copy_sha256": "608cdb99bf60114632478e9bebdaf47221aba3381750368956e7f4db22eebf69",
+      "exact_fields": {
+        "name": "Yastıkçı",
+        "role": "Kamarot",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Yastık kılıflarını değiştirirken duyduklarını unuttuğunu söyler. Hatırlaması için genellikle bir iyilik gerekir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-20",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ea9693017c6c100d26360e898831210efbfd635e655928645cea39737146b4c6",
+      "exact_fields": {
+        "name": "Tahtaya Vuran",
+        "role": "Hurafeci",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Her kötü alamette tahtaya vuruyor. Tahtakakan bundan hiç hoşlanmıyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "SET-KL-01",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ee55a0b37adc328f87f0fb519bb01f973e98a422806393fec95da2a3086205bb",
+      "exact_fields": {
+        "name": "KALKIŞ LİMANI",
+        "effect": "Haritanın alt kenarında seçilen başlangıç sütununa hizala. Gemi bu kart üzerinde başlar. Kart Harita karesi değildir ve 52 Haritaya dahil değildir. İlk satırdan acil geri dönüşte gemi buraya dönebilir.",
+        "flavor": "Halatlar çözülmeden önce her yol kolay görünür."
+      },
+      "back": "BACK_SUPPORT"
+    },
+    {
+      "id": "SET-VL-01",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "7c7034b45dbcce232e60b5ea592f8aff3944f8c9b29cd3f7aeee2bfd9be840f6",
+      "exact_fields": {
+        "name": "VARIŞ LİMANI",
+        "effect": "Haritanın üst kenarında seçilen Hedef Liman sütununa hizala. Bu kart Harita karesi değildir. Gemi o sütundaki son sıra kartına girince önce olayı, sonra İskorbütü çöz. Gemi batmadıysa ve İskorbüt temizse Liman Gecesi oynanır.",
+        "flavor": "Rıhtım görünüyor. Sağlık sandalı şafakta gelecek."
+      },
+      "back": "BACK_SUPPORT"
+    },
+    {
+      "id": "SET-KP-01",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 426.04,
+      "copy_sha256": "845e641af284834efc828903644ca0333c0eb8b4ba04b170a65b29c2c2260ff2",
+      "exact_fields": {
+        "title": "KAPTAN",
+        "section_label": "ÖZEL YETENEK",
+        "effect": "Rota oylamasında 2 oy kullanırsın. Rota beraberliğini yalnız berabere seçenekler arasından bozarsın. Suçlama ve İsyanda 1 oy kullanırsın. Suçlama hedefinin ön seçimindeki eşitliği de bozarsın; bu ön seçim resmî oylama değildir.",
+        "flavor": "Dümen sende. Borç hepinizin."
+      },
+      "back": "BACK_SUPPORT"
+    },
+    {
+      "id": "GUC-01A",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "473dee1a97d076edd36ea0215856a4fee4d6271ce8bb90d86b8fe2bfe8dbb167",
+      "exact_fields": {
+        "name": "Mantar Can Halkası",
+        "group": "Kurtarma",
+        "time": "Hemen",
+        "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+        "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-01B",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "473dee1a97d076edd36ea0215856a4fee4d6271ce8bb90d86b8fe2bfe8dbb167",
+      "exact_fields": {
+        "name": "Mantar Can Halkası",
+        "group": "Kurtarma",
+        "time": "Hemen",
+        "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+        "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-02A",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "cf645e7118fb53e060c910b125ffdee3b298d7179705b9c661c17e47da17b536",
+      "exact_fields": {
+        "name": "Kancalı Halat",
+        "group": "Kurtarma",
+        "time": "Hemen",
+        "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+        "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-02B",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "cf645e7118fb53e060c910b125ffdee3b298d7179705b9c661c17e47da17b536",
+      "exact_fields": {
+        "name": "Kancalı Halat",
+        "group": "Kurtarma",
+        "time": "Hemen",
+        "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+        "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-03",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "3bc109df2dfcf9432371ff55d671ea31da46509da9e6151e72054028edb9cd20",
+      "exact_fields": {
+        "name": "Pusula",
+        "group": "Seyir / Kurtarma",
+        "time": "Gündüz",
+        "effect": "İlk rota öncesi kullanılamaz. Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz.",
+        "flavor": "Kuzey yerinde duruyor. Sorun, sahibinin başka bir şey araması."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-04",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "cc860e2aacd31cfb7fe1bf1bf3bd22274f675cfa46ce14d9087931c6847ca940",
+      "exact_fields": {
+        "name": "Güverte Araması",
+        "group": "Etkileşim",
+        "time": "Gündüz - rota öncesi",
+        "effect": "En az iki Gücü olan bir gemi oyuncusu seç. Hedef seçtiği bir Gücü kapalı atar.",
+        "flavor": "Kayıp eşya bulundu. Sahibinin kim olduğu hâlâ şüpheli."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-05",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "fa6e3f686c8b127df03ff66ddf67de607937c4ad1b12644415b62d79bac69bcc",
+      "exact_fields": {
+        "name": "Yama Tahtası",
+        "group": "Gövde",
+        "time": "Hasardan önce",
+        "effect": "Kraken dışındaki 1 Gövde hasarını engelle.",
+        "flavor": "Tahta bir tabut için kesilmişti. Müşteri iyileşince gemiye yaradı."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-06",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 715.86,
+      "copy_sha256": "f4e62e87541433286590693fb0ac099fc0c653f59d4578944fb935c308731d3d",
+      "exact_fields": {
+        "name": "Zıpkın Sandığı",
+        "group": "Gövde",
+        "time": "Hasardan önce",
+        "effect": "Kraken'in vereceği 1 Gövde hasarını engelle.",
+        "flavor": "Sandığın üstüne bir balık çizmişler. Boyutunu belirtmeyi unutmuşlar."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-07",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "3afa249330d2db1144c37f648c798c8209f84a1611f38b3f7475e712dc30b335",
+      "exact_fields": {
+        "name": "Geçici Yeke",
+        "group": "Seyir",
+        "time": "Rota öncesi",
+        "effect": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku rota seçeneği yap. Bu işlem olay yüzünü göstermez.",
+        "flavor": "Geçici çözümler denizde bazen karaya kadar sürer."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-08",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "7256a77cde7613bf0607d11a3c08e20d9d8c90956ab7f12c6da157bd022f06af",
+      "exact_fields": {
+        "name": "Kerteriz Pergeli",
+        "group": "Seyir",
+        "time": "Girdap / Akıntı",
+        "effect": "Girdabın varışını veya Ters Akıntının kapatacağı yasal yönü rastgelelik yerine sen seç.",
+        "flavor": "Üç kişi yön tarif etti. Pergel sahibi üçünün de elini kenara itti."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-09",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "81fa78bec9d0a2265d6adc69ed4d6126d6e55cd9b7c8cefcc2f68192e6996771",
+      "exact_fields": {
+        "name": "Kurşun Ağırlık",
+        "group": "Seyir",
+        "time": "Girdap sırasında",
+        "effect": "Girdabın zorunlu ek hareketini tamamen iptal et.",
+        "flavor": "Bazı sorunlar ancak dibe çekilince çözülür."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-10",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "2bc5918fca374c70b6102aa52d6506e5b424bf4beb443b94d4d8321fdd9becd3",
+      "exact_fields": {
+        "name": "Yedek Yelken",
+        "group": "Seyir",
+        "time": "Rota öncesi",
+        "effect": "Durgun Deniz veya rüzgâr kaynaklı rota kısıtını kaldır.",
+        "flavor": "Birincisi niçin yedek değildi, konuşmayalım."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-11",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "5b1f821486457594d8d081b519324c9811bd040a1463c8e49e728a8aabd2b7fe",
+      "exact_fields": {
+        "name": "Islak Deniz Haritası",
+        "group": "Seyir",
+        "time": "Gündüz - rota öncesi",
+        "effect": "İlk rota öncesi kullanılamaz. İki Yakın Ufuk kartının yerini olay yüzlerine bakmadan değiştir.",
+        "flavor": "Mürekkep aktı; yollar daha yaratıcı oldu."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-12",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d9a5dfc30757532cc347663dcbf82267d589bed96f3cf2f47105401fe08fd134",
+      "exact_fields": {
+        "name": "Kırık Dürbün",
+        "group": "Bilgi",
+        "time": "Gündüz - rota öncesi",
+        "effect": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk kartının olay yüzüne gizlice bak.",
+        "flavor": "Merceği çatlak. Sahibi her şüpheli şeyi önce camdaki çizgiye yoruyor."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-13",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ea2527d902e3945a1612c001b035630799eff5bddcf21ad2fe78fec246038061",
+      "exact_fields": {
+        "name": "Eski Seyir Defteri",
+        "group": "Bilgi",
+        "time": "Sis olmayan gündüz",
+        "effect": "İlk rota öncesi kullanılamaz. Bir Uzak Ufuk seç. Moderatör yalnız Gövde hasarı verebilir veya vermez der.",
+        "flavor": "Kaptanlar ölür; kötü el yazıları kalır."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-14",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "794fc17c5c39a103385c75ca9a25bf9d8d11b17361c528d9d4ddef2dbfe82fa8",
+      "exact_fields": {
+        "name": "Anahtar Deliği",
+        "group": "Bilgi",
+        "time": "Gündüz - yalnız Kamarada",
+        "effect": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk olayına gizlice bak. Kamara Güç yasağının tek yazılı istisnasıdır.",
+        "flavor": "Kamaranın en küçük penceresi, en büyük dedikodusu."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-15",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "818a1b6160d0c8489cb76c4f24490b94023d5aede1484f3b68ea962002bb2d5e",
+      "exact_fields": {
+        "name": "Kaptanın Eski Şapkası",
+        "group": "Oylama",
+        "time": "Rota oylaması",
+        "effect": "Bu rota oylamasında kendi oyuna +1 ekle.",
+        "flavor": "Eski sahibi şapkayı geri istiyor. Önce verdiğin sözü tutman gerek."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-16",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "a936d9e20d80d71149f27cc1e730ffd1d7326a73a5da9383a37e92307215ed98",
+      "exact_fields": {
+        "name": "İsyan Bildirisi",
+        "group": "Oylama",
+        "time": "İsyan",
+        "effect": "Bu İsyan oylamasında kendi oyun 2 sayılsın.",
+        "flavor": "Altında imza yok; herkesin fikri var."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-17",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "3b2cdd1cbebde78546042038cc11d49f674ba2b1af425721b8941763b8034d1f",
+      "exact_fields": {
+        "name": "Papağanın İfadesi",
+        "group": "Etkileşim",
+        "time": "Rota öncesi",
+        "effect": "Hedef rota tavsiyesini açık söyler. Başka rotaya oy verirse oyu 0 sayılır.",
+        "flavor": "Tanık konuştu. Güvenilirliği tartışmalı."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-18",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "3be7452615d10b26d0ef658ada6ab86e1676335e72582b486867e89936f9d752",
+      "exact_fields": {
+        "name": "Mühürlü Emir",
+        "group": "Oylama",
+        "time": "Rota beraberliği",
+        "effect": "Kaptan çözmeden önce berabere rotalardan kazananı seç.",
+        "flavor": "Prensin adı için boşluk bırakılmış. Buyruk üç sayfa."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-19",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d5a169e1d041cfd14bf446544a2522e945eaf7eda98ec0d5dc75f217e679d787",
+      "exact_fields": {
+        "name": "Kaçak Rom",
+        "group": "Etkileşim",
+        "time": "Rota öncesi",
+        "effect": "Bir oyuncu seç. Hedef diğer oyları gördükten sonra en son ve açık oy verir.",
+        "flavor": "Gerçeği söyletmez. Sırayı belli eder."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-20",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "642f1d7f29eb258906bcfa3689aab4bd5152ffd3724c33863663b6edd48deb24",
+      "exact_fields": {
+        "name": "Bir Daha Say",
+        "group": "Oylama",
+        "time": "Oylar açılınca",
+        "effect": "Tam 1 oy farkıyla biten herhangi bir resmî oylamayı bir kez yeniden yaptır. İkinci sonuç kesindir; sonra bu kartı at.",
+        "flavor": "Sefer divanında karar kesindir. Sayım bazen o kadar kesin değildir."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-21",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "43eebfcd0ad215841eb107ff1322cfaf5222831b5a4b74ee739c2dbe64829854",
+      "exact_fields": {
+        "name": "Uğurlu Altın",
+        "group": "Talih",
+        "time": "Kader Zarı sonucu",
+        "effect": "Tamamlanmış rastgele hedef seçimini bir kez yeniden yaptır. İkinci sonuç kesindir.",
+        "flavor": "Önceki sahibi uğur getirdiğini söylemişti. Parayı alırken çok acele etti."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-22",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "b954091f47c54af4f546667c5b9827e9f38c5a9cea9f35e93728a7d11be2577d",
+      "exact_fields": {
+        "name": "Kaptanın Çatlak Kupası",
+        "group": "Oylama",
+        "time": "Rota oylaması",
+        "effect": "Kaptanın bu rota oylamasındaki 2 oyunu 1'e indir.",
+        "flavor": "Kupadaki çatlak, otoritedekinden küçüktü."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-23",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "e39d708247e8ba2894f2829f473d26f684891f55a0db179c26b12d37a3ad15ef",
+      "exact_fields": {
+        "name": "Bayat Peksimet",
+        "group": "Etkileşim",
+        "time": "Gündüz - rota öncesi",
+        "effect": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz. Gücü yoksa susar.",
+        "flavor": "Konuşmayı kesmez. Çiğnemeyi uzatır."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-24",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "41edad9b2d402c667749b3d89e508353492bf561e6c5f1ff8680c2a392fc7e99",
+      "exact_fields": {
+        "name": "Islak Çorap",
+        "group": "Tuhaf",
+        "time": "Başkası Güç kazanırken",
+        "effect": "Kazanç açıklanmadan yeni Gücü sen al, Islak Çorabı asıl alıcıya ver. İkiniz de sonra iki Güç sınırını uygularsınız. Çorap bir Güç sayılır.",
+        "flavor": "Sahibi çorabını geri istiyor. İçinden çıkan eşya hakkında konuşmak istemiyor."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-25",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "e8ff8fd815ae679ae0bdbcdf37170f308e5668432b061ca1029dad2472305ea5",
+      "exact_fields": {
+        "name": "Şüpheli Martı",
+        "group": "Talih",
+        "time": "Gündüz",
+        "effect": "Uygun bir gemi oyuncusunun önüne koy. Sonraki rastgele oyuncu hedefli Harita olayında, o oyuncu hâlâ uygunsa ilk hedef o olur; sonra at.",
+        "flavor": "Martı, onu daha önce görmüş gibi bağırıyor."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-26",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ca22c6563372d4ec3dc3e1893447b1a48f02fe0734ae460208bdd82b4b1da6cb",
+      "exact_fields": {
+        "name": "Fırtına Feneri",
+        "group": "Sis",
+        "time": "Sis açıldığında",
+        "effect": "Bu gece Sis saldırısını kapat. Hainlerin bir Yakın Ufuk bilgi eylemi kalır.",
+        "flavor": "Fitili kısınca herkes itiraz etti. Sabah yağa kimin para verdiğini sordular."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-27",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 2799.6,
+      "copy_sha256": "1a1477f6726b88e74e0f71dee5be34ec3152d13ed2dec803990a7eb337a60495",
+      "exact_fields": {
+        "name": "Kaderi Yeniden Yaz",
+        "group": "Olağanüstü",
+        "time": "Olay açılınca",
+        "effect": "Olayın etkisi uygulanmadan önce gemiyi önceki konumuna döndür ve oradan başka bir yasal Yakın Ufka git. Girilmiş ilk kart açık ve ziyaret edilmiş kalır; olayı tekrar çalışmaz. Ada girişi İskorbütü kalıcı temizler. İlk kart Geçilmezse ona girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
+        "flavor": "Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-28",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "9461325732bb3c9b085ab8c1a9b87a4fe6d1ddc0e8ff2aac77c4493ab8e9e997",
+      "exact_fields": {
+        "name": "Seyir Zabtı",
+        "group": "Olağanüstü",
+        "time": "Zararlı rota sonrası",
+        "effect": "Gövde, oyuncu, Güç veya rota bakımından zarar doğuran rotaya oy veren birini bir gece Kamaraya gönder; Mahkûm sayılmaz. Kullanıldıktan sonra oyun dışına çıkar; Güç destesine yeniden karıştırılmaz.",
+        "flavor": "Rota yanlışsa kâğıt her zaman doğrudur."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "ERZ-01",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 1236.32,
+      "copy_sha256": "0ff280001ce49d575b9928570096c566e42ff93a8c4513999b9e19ed9547ce56",
+      "exact_fields": {
+        "name": "Çürümüş Erzak",
+        "group": "İskorbüt Tehlikesi",
+        "time": "Başlangıçta zorunlu aç",
+        "effect": "Başlangıçta aç. O anda Kaptansan İskorbüt başlamaz; değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonradan Kaptan değişmesi sonucu değiştirmez. Sonra yolculuk destesinden gerçek bir Güç çek.",
+        "flavor": "Peksimet hâlâ yenebilir. Bunu söyleyen tadına bakmadı."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "SAD-T-01",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "a1fb329cba14dfd7027edf7540931b5a1dfabc3e6eaa38682e157b24598bb54e",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Eve son yazdığın mektupta iyi olduğunu söyledin. Bu kez o mektuptan önce varmak istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-02",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "8a2a7ff615e3adf5605d74f051515d26679c872e74bd0f7b51c2ec745f2b8def",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Sağlık kapısının arkasında bir sofralık yerin duruyor. Kapıyı açtırmaya yetmiyor; yine de dönmek için bir sebep."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-03",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "fec9a948cca599fa9ec3271e552622ce2895618bf828c64eeb03717521933b84",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Bu yükü sağlam teslim edersen borcunun son taksiti kapanacak. Alacaklın yıllardır denizin tehlikelerini küçümsüyor."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-04",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "4366791abf86eb625f01e53c308faea57b5c89bcca8b6386143f0d2b13c9837c",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Bir komşun yol paranı verdi. Karşılığında ilaç istemedi; döndüğünde kapısını çalmanı istedi."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-05",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "1ab1976f9d8ed61e70e97b49196989225da349dde8eb224c0715bd74f8834b2c",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Veyr'in işe yaramayan denemeleri de yazdığını gördün. Hiç değilse birinin hesabı doğru tuttuğuna inanmak istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-06",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "94094c242169b2674836fa426edb933b05043fd2c63a5f93c151059383cf23f1",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Bu seferin ücretini peşin harcadın. Dönmezsen ailene para yerine bir açıklama gönderilecek."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-07",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d7a7632e9acfe2d53dc7f77d3c6e706f6d37195cb3d605559922eb111fde9dd8",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Bir sandığın araya girmesini istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-08",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "b92b493981a6d68ed8d3f3dbcb80ccf3761e1614cd5dbf0d8c01681c4895ee1c",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Senin adına bir mezar yeri ayırmışlar. Manzarasını beğenmedin; itirazı şahsen yapmak istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-09",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "0b97d0478bbcaa6db045495f3914966910e238feb981d604117a31fb038313cc",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Yük defterine imza atarken kimse okumanı beklemedi. Okudun. Şimdi herkes kadar sorumlu, çoğundan daha tedirginsin."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-10",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "8f284fd34c96d80874759806510da0c99b77ec9941cc5abf4c04af9c6483cf81",
+      "exact_fields": {
+        "name": "TAYFA",
+        "side": "Tayfa",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Eve götüreceğin hediyeyi kaybettin. Kendin gidersen bir süre bunu konuşmak zorunda kalacaklar. Razısın."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-01",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "4486ef73e4b631d6bf56a2feed07c4019593d749f20af3a4cf7d23ab0ea6eaa6",
+      "exact_fields": {
+        "name": "HAİN",
+        "side": "Hain",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Çocuğunun bakımını üstlenen eczacı artık para almıyor. Defterde borcunun yerine geminin adı yazıyor. Yük teslim edilirse hesap yeniden açılacak. İlk kez ilaç alabiliyorsun; bedelini başkaları ödeyecek."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-02",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "c0b2a8d28a11a1558615edff4ef8b00d3901ca62c55a99b733337b2a733f500d",
+      "exact_fields": {
+        "name": "HAİN",
+        "side": "Hain",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Ailene karantina hanında yer ayırmışlar. Kapı dışarıdan kilitli; her gün için senden ücret istiyorlar. Geminin kayıp haberi gelince çıkış kâğıdını vereceklerini söylediler. Anahtarın fiyatı bir sefer."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-03",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 1796.7,
+      "copy_sha256": "b495c2f8ce601dae8c7bbc9e1c665e876b92522ffd3e811a8d4c1e55e4341fd8",
+      "exact_fields": {
+        "name": "HAİN",
+        "side": "Hain",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Karantinadan bir ölünün sağlık kâğıdıyla kaçtın. Sana gerçek adınla seslenen aracı, kaydı açtırabileceğini söyledi. Yük teslim edilmezse kâğıt yanacakmış. Yeni hayatın eski bir imzaya sığıyor."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-04",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "42e1efe1c6029f9edc5f8466c5e9f468568dbf83d05878d921fa0b6ac74c0794",
+      "exact_fields": {
+        "name": "HAİN",
+        "side": "Hain",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Kardeşinin öldüğü koğuştan kopmuş bir sayfa gösterdiler. Üstünde Veyr'in adı vardı; alt yarısı yoktu. Yükü durdurursan başka aileler aynı mektubu almayacak. Sana öyle söylediler; inanmayı seçtin."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-05",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "9272576d0e44433f9d97ff9da3d622a00d6bfd28578858567b34a9bdba273c6c",
+      "exact_fields": {
+        "name": "HAİN",
+        "side": "Hain",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Kendini çoktan denizde kayıp yazdırdın. Borçların kapandı; cenaze yardımını bir yakının alıyor. Gemi sağ salim dönerse hesap yeniden açılacak. Ölü olarak ilk kez geçinebiliyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "HAR-AD-01",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d4f754c86a83cde6d7e843b444feba09df0a13cf0b04b6b2ba7e18ec8ed9c849",
+      "exact_fields": {
+        "name": "Çarşaf Gibi Deniz",
+        "category": "Açık Deniz",
+        "family": "Sakin Deniz",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Deniz sakin. Masa değil."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-02",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ff6267ece8f9e34e98fb2d5619d8b93034538a69f3accfbaf763d4fb13bd9098",
+      "exact_fields": {
+        "name": "Pruvada Son Yudum",
+        "category": "Açık Deniz",
+        "family": "Sakin Deniz",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Kupanın dibi göründü. Ufuk henüz boş."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-03",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "33446d9c44c81f07311692941055754564cbf3cc6b39a8773401b419edf255f0",
+      "exact_fields": {
+        "name": "Martılar Bile Üşeniyor",
+        "category": "Açık Deniz",
+        "family": "Sakin Deniz",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Biri bağırmadıkça deniz bugün çalışmıyor."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-04",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ca8759b4d7583dd4f9ad47a86a5de10f72b3532f378ede3e2e2f0fc93223549e",
+      "exact_fields": {
+        "name": "Puslu Vardiya",
+        "category": "Açık Deniz",
+        "family": "Sis",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Görüş düştü; kanaatler yükseldi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-05",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ed5ea46d1f532728408b393671b1f712b90a8a348a75b6eabf5048028bd8268f",
+      "exact_fields": {
+        "name": "Burnunun Ucu Cumhuriyeti",
+        "category": "Açık Deniz",
+        "family": "Sis",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Sınırları üç karış, nüfusu gereğinden fazla."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-06",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "cc2beefb0b7174e745b57170f6f524b75c6e895cabe980899e057e17b459eb36",
+      "exact_fields": {
+        "name": "Beyaz Gece",
+        "category": "Açık Deniz",
+        "family": "Sis",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Karanlık değildi. Daha kötüydü: belirsizdi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-07",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "53c285699adf1a8b11db49ff3a56bd5526ba9efe24cfda0b89c0744a428cfc8c",
+      "exact_fields": {
+        "name": "Sis Var, Fikir Çok",
+        "category": "Açık Deniz",
+        "family": "Sis",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Kimse bir şey görmedi; herkes çok emin."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-08",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 1197.65,
+      "copy_sha256": "7a8959bf02236cddd8e5a72e9db6f6445f416ae5152a1c400ec155027b96ea05",
+      "exact_fields": {
+        "name": "İsimsiz Bir Düdük",
+        "category": "Açık Deniz",
+        "family": "Sis",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Nöbetçi düdüğe cevap verdi. İkinci sesi kimse duymadı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-09",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "7f6ff28d594332b3ed12d49aed0fa7303bfe077608bcac12016a7f575f3131a1",
+      "exact_fields": {
+        "name": "Deryanın Göbek Deliği",
+        "category": "Açık Deniz",
+        "family": "Girdap",
+        "effect": "Gemi hemen rastgele bir yasal Yakın Ufka zorunlu ek hareket yapar. Yeni olay da çözülür.",
+        "flavor": "Deniz de bazen kendi etrafında konuşur."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-10",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "211a00813d785409846c90cdc43a737376a516769fbb421a0d7be55dcc875dcd",
+      "exact_fields": {
+        "name": "Tersine Dönen Dünya",
+        "category": "Açık Deniz",
+        "family": "Girdap",
+        "effect": "Gemi hemen rastgele bir yasal Yakın Ufka zorunlu ek hareket yapar. Yeni olay da çözülür.",
+        "flavor": "Pusula sustu. Mide konuştu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-11",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "657de4397942bbb74ba2fa095fbfe21693eec346681228b610b6237ac6fa1413",
+      "exact_fields": {
+        "name": "Körfezin Hırçın Selamı",
+        "category": "Açık Deniz",
+        "family": "Fırtına",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Hoş geldiniz kısmı kısa sürdü."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-12",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "3c4172f799734483c4a2de93f7a8ec552719788ee79a81ba662bfad53edf1424",
+      "exact_fields": {
+        "name": "Direkleri Saydıran Gece",
+        "category": "Açık Deniz",
+        "family": "Fırtına",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gece boyunca direkleri saydılar. Sabah aynı sayıya ulaşamadılar."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-13",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "b78d79844be7a9611e9929dfe6a7265de80d53cf533703c91c23d2c5032dabab",
+      "exact_fields": {
+        "name": "Kolları Fazla Bir Mesele",
+        "category": "Açık Deniz",
+        "family": "Kraken",
+        "effect": "Gemi 1 Gövde kaybeder. Yama Tahtası işlemez; Zıpkın Sandığı veya Tahtakakan engelleyebilir.",
+        "flavor": "Tokalaşmaya çalışmadığı kesindi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-14",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "9f5a82f5932dcb1d42b2961670e438c4d772bd99357d5d2515e534363604fa31",
+      "exact_fields": {
+        "name": "Bir Kişilik Eksildik",
+        "category": "Açık Deniz",
+        "family": "Adam Denize!",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
+        "flavor": "Yoklama denizde icat edilmiş olmalı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-15",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "19f983a0d1267e1e8c51aba3077ae14591c2e463db7c233e8994361218dcbcf0",
+      "exact_fields": {
+        "name": "Güverte Islak, Bahane Kuru",
+        "category": "Açık Deniz",
+        "family": "Adam Denize!",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
+        "flavor": "Güverte silinecekti. İpin nerede olduğu daha önce soruldu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-16",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "52bb6f3c8b963aa37b14f99c70a6f473a3077927e879d8f1cb74fb26976f99f7",
+      "exact_fields": {
+        "name": "Kıpırdamayan Yelken",
+        "category": "Açık Deniz",
+        "family": "Durgun Deniz",
+        "effect": "Bir sonraki rota seçiminde yalnız Pruva önü kullanılabilir. Yasal değilse etki boşa düşer.",
+        "flavor": "Yelkenci kumaşı silkeledi. Hava ikna olmadı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-17",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "1a97d1fb074098638b173e8613246b15744c9bab072cb190246f948eac1586b0",
+      "exact_fields": {
+        "name": "Lodos Arkadan Esiyor",
+        "category": "Açık Deniz",
+        "family": "Uygun Rüzgâr",
+        "effect": "Gemi isterse bir ek normal hareket yapar. Yeni olay da çözülür.",
+        "flavor": "İlk kez herkes aynı yönde konuştu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-18",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "8b8d032699c17abab3e28893789c6f5a33ca5d12a2cccf8d06fb4ef7b3847f2e",
+      "exact_fields": {
+        "name": "Akıntı Postası",
+        "category": "Açık Deniz",
+        "family": "Sürüklenen Sandık",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Gönderen belli değil. Teslim alacak gönüllü çok."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-19",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "0f3b5de65971d56ebbe2b0e6b3ee9c2538514e0a6c34d86f15ab673fcad82a9c",
+      "exact_fields": {
+        "name": "Sahibi Bulunamayan Sandık",
+        "category": "Açık Deniz",
+        "family": "Sürüklenen Sandık",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Sahibi çıkmadı; akrabası on iki kişi çıktı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-20",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ed619b6ba1823c24172703c0d7b196f880ebc77fb81606878a6540df16886a4d",
+      "exact_fields": {
+        "name": "Vergisiz Fener Alayı",
+        "category": "Açık Deniz",
+        "family": "Hayalet Işıkları",
+        "effect": "İki dış Yakın Ufuk kartının yeri olay yüzlerine bakılmadan değiştirilir.",
+        "flavor": "Işıklar yol göstermedi; yolu yerinden oynattı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-21",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "37b4f863ade589973a7f518f0bea98aedcc56e61397a9230306f85347d6cc1b3",
+      "exact_fields": {
+        "name": "Dümeni Dinlemeyen Su",
+        "category": "Açık Deniz",
+        "family": "Ters Akıntı",
+        "effect": "Bir sonraki rotada yasal yönlerden biri Kader Zarıyla kapanır. Bütün yolları kapatamaz.",
+        "flavor": "Gemi geri gitmedi. Deniz öne geçti."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-22",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "8dd40a0c8845565caf08539e10500132d199ef34ec658e6a75db19322bfd74d3",
+      "exact_fields": {
+        "name": "Peksimeti Islatan Sağanak",
+        "category": "Açık Deniz",
+        "family": "Tuzlu Sağanak",
+        "effect": "Gücü olanlar arasından zarla seçilen bir kişi rastgele 1 Güç kaybeder.",
+        "flavor": "Yağmur dindi. Çorabın fikri değişmedi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-23",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "1146406de4b834f1adc8fcc61319333d6d98a1d641f62a0ead0afae437582e46",
+      "exact_fields": {
+        "name": "Uçan Balık Yağmuru",
+        "category": "Açık Deniz",
+        "family": "Uçan Balık Yağmuru",
+        "effect": "Mekanik etki yoktur.",
+        "flavor": "Balıklar uçtu. Kimse rota önerisini geri almadı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-24",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "7e98b98801785f8b75600f373d6e186c41c020106aaf0f660b2fa99489dba637",
+      "exact_fields": {
+        "name": "Güverteyi Yalayan Dalga",
+        "category": "Açık Deniz",
+        "family": "Güverteyi Yalayan Dalga",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
+        "flavor": "Dalga geldi. Deniz suçunu kabul etmedi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-25",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d232f5de2c90fcbafb19eebd2279bd4cd35857b09afdf8d206df6286b6f5a8ed",
+      "exact_fields": {
+        "name": "Direk Çatlatan Bora",
+        "category": "Açık Deniz",
+        "family": "Fırtına",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Kalafatçı çatlağa baktı. Sonra Kaptanın para kesesine."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-26",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "b72ca79bd737806ae67873075586b7d0aec04ac05777327c788c4b97efb5db2d",
+      "exact_fields": {
+        "name": "Mizanayı Döven Dalga",
+        "category": "Açık Deniz",
+        "family": "Fırtına",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Dalga üç kere vurdu. Dördüncüsünde özür dilemedi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-27",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d9ecba1d1518c003f1882399d16953b07d02eac2162d3cd73228234493d90979",
+      "exact_fields": {
+        "name": "Karayel Tokadı",
+        "category": "Açık Deniz",
+        "family": "Fırtına",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Rüzgârın eli ağırmış."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-28",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "088f31c08f026299f0c6784592354d481ddf2e7d14bc93993674f9afbcde5149",
+      "exact_fields": {
+        "name": "Bitmeyen Sağanak",
+        "category": "Açık Deniz",
+        "family": "Fırtına",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Son kuru paçavra da sırayla kullanıldı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-29",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "35f7fa72cc14cb154dd2e416f113551fe96351349f06f27d17711ba542715d65",
+      "exact_fields": {
+        "name": "Alabora Olmadık Sayılır",
+        "category": "Açık Deniz",
+        "family": "Fırtına",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Sayılmaz diyen Kaptandı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-30",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "53ad42fe3a6a2d5aa8076ca0d86ea08f1656c985231ef92f7c320d133fd6c78a",
+      "exact_fields": {
+        "name": "Bir Bulutun Kişisel Meselesi",
+        "category": "Açık Deniz",
+        "family": "Fırtına",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Özellikle bu gemiyi takip ediyor."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-01",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "079e639430f06c8666e956d28d730a2962f481d9a5dc70db8e675056a3f21715",
+      "exact_fields": {
+        "name": "Duvar Gibi Kayalık",
+        "category": "Kayalık",
+        "family": "Geçilmez Kayalık",
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır.",
+        "flavor": "Haritada çizgi değildi. Duvarmış."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-02",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "be272fafc16b9272bc4af9d091a39fc135d72efb8ad0d7378a3f7cea52ce02c3",
+      "exact_fields": {
+        "name": "Dibi Görünen Servet",
+        "category": "Kayalık",
+        "family": "Batık Kalyon",
+        "effect": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanır.",
+        "flavor": "Batık gemi susuyordu; eşyaları konuşkandı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-03",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "e4eb92c75cdc89e8799737f05d7ad567e75d562c54b6adfa1c557e0e6ae7d0aa",
+      "exact_fields": {
+        "name": "Yolun Bittiği Yer",
+        "category": "Kayalık",
+        "family": "Geçilmez Kayalık",
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır.",
+        "flavor": "Kestirme diye bakıldı. Dönüş yolu diye hatırlandı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-04",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "5a9fc9dec6cc82c26bb644b6865548bd3d8825ff84ff21d2335e358d40fa8e2c",
+      "exact_fields": {
+        "name": "Pruva Törpüsü",
+        "category": "Kayalık",
+        "family": "Sivri Kayalık",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gemiyi inceltti, masrafı kalınlaştırdı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-05",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "c95084d5b6fac2d8675a34304b1d492d1ae66ff2ee8bfdfb50814714b88d626e",
+      "exact_fields": {
+        "name": "Taşın Şakası Olmaz",
+        "category": "Kayalık",
+        "family": "Sivri Kayalık",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gülmeyen yalnızca Kalafatçı değildi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-06",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 1197.65,
+      "copy_sha256": "4d9e4b5ad708f9dabbfc980d9a067d2fb640e7fbdd20aab20a250e31ed6536ca",
+      "exact_fields": {
+        "name": "İğne Deliğinden Sefer",
+        "category": "Kayalık",
+        "family": "Dar Resif",
+        "effect": "Gemi 1 Gövde kaybeder; sonra isterse bir ek normal hareket yapar.",
+        "flavor": "Geçit dar, tamircinin isteyeceği ücret genişti."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-07",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "5591c42861fa4aecf31100de09c45ce86d7a3624ab217d4332f19d1f2ccc7b9d",
+      "exact_fields": {
+        "name": "Kestirme Diye Girilen Yer",
+        "category": "Kayalık",
+        "family": "Gizli Geçit",
+        "effect": "Gemi isterse bir ek normal hareket yapar.",
+        "flavor": "Haritada yoktu; tartışmada hep varmış gibi anlatıldı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-08",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ad004ed331ad34b0dc898907717e6d86dc20f4e78b9a676f179e72a469a6ff36",
+      "exact_fields": {
+        "name": "Kaçakçının Unuttuğu Oyuk",
+        "category": "Kayalık",
+        "family": "Kaçakçı Oyuğu",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Kaçakçı gitmiş. Vergi hâlâ gelmemiş."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-09",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "fe8f493f1bab25907d885700ad18c93e2a4bd96b4c842ef4c0de3984ce16be0b",
+      "exact_fields": {
+        "name": "Kırılan Sandıklar",
+        "category": "Kayalık",
+        "family": "Kırılan Sandıklar",
+        "effect": "Gücü olanlar arasından zarla seçilen bir kişi rastgele 1 Güç kaybeder.",
+        "flavor": "Kırılan sandıktı. Suçlanan yine Kaptan oldu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-10",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "4f53ae18ac0584ff0e10f0771bc2b21817594f57ec23135dc00f3d68d48dc5a4",
+      "exact_fields": {
+        "name": "İki Taraftan Sıyırdık",
+        "category": "Kayalık",
+        "family": "İki Taraftan Sıyırdık",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
+        "flavor": "Tek taraftan sıyırmak yeterince heyecanlı değilmiş."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-11",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "42bc202bda30a5ea0c93e8800684d85fa1bd4c04f31744ce0c7f9f9df4189bbb",
+      "exact_fields": {
+        "name": "Suyun Altındaki Diş",
+        "category": "Kayalık",
+        "family": "Sivri Kayalık",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Denizin ağzı yok diyen Haritacı sustu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-12",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "ba8903ef12459534b4ef02372a9ea48bc29f7ec2819c2617774250b7ef0115c7",
+      "exact_fields": {
+        "name": "Haritada İnce Çizgi",
+        "category": "Kayalık",
+        "family": "Sivri Kayalık",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Çizgi yakından bakınca epey kalınmış."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AA-01",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "25dd58c7d12efce2d409c6b14701fe72e5f4cec4c189dc331f2a0d08d97fe030",
+      "exact_fields": {
+        "name": "Ağzı Açık Ambar",
+        "category": "Ada",
+        "family": "Erzak Adası",
+        "effect": "2 Güç kazanılır. İki farklı oyuncuya verilir.",
+        "flavor": "Kimse sahibinin nerede olduğunu sormadı. Soğanlar sağlamdı."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-02",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "d2f4576e30fabb70673bba23534fc8fa2ddeb47d8fee858be71bbdfbbe462f99",
+      "exact_fields": {
+        "name": "Terk Edilmiş Sahil Karakolu",
+        "category": "Ada",
+        "family": "Terk Edilmiş Karakol",
+        "effect": "1 Güç kazanılır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+        "flavor": "Nöbetçi gitmiş; dedikodu defteri kalmış."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-03",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "862d1e65afdc9d91eb00ee5918eb7425abff8ae5fe73ced9989da5cce50cfdff",
+      "exact_fields": {
+        "name": "Misafirperverlik Biraz Fazla",
+        "category": "Ada",
+        "family": "Rehin Adası",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu zorunlu olarak adada bırakılır.",
+        "flavor": "Gitmenize çok üzüldüler. Bu yüzden bırakmadılar."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-04",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "7c50cca466828bb72a298461e3ed964c614a44ec38538b3f22e1965661280157",
+      "exact_fields": {
+        "name": "Bir Ustanın Son Tezgâhı",
+        "category": "Ada",
+        "family": "Tersane Koyu",
+        "effect": "Gemi en fazla 2 Gövdeye kadar 1 Gövde onarır.",
+        "flavor": "Usta deliği görünce sevindi. Sizden saklamaya çalışmadı."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-05",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "bc609331347117e70e5e0eabb5680a25f2f72919ce2ea3e5093799ecfc2c96af",
+      "exact_fields": {
+        "name": "Korsanların Mola Yeri",
+        "category": "Ada",
+        "family": "Korsanların Mola Yeri",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi bütün Güçlerini kaybeder.",
+        "flavor": "Mola verdiler. Sizin eşyalara."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-06",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 1294.01,
+      "copy_sha256": "78f7557a6f79ac9117c1d2ff6e9b24f1fb1c7f2fb2c7268f02f433a37b76d954",
+      "exact_fields": {
+        "name": "Gümrükçünün Tek Yaşadığı Ada",
+        "category": "Ada",
+        "family": "Gümrük Adası",
+        "effect": "Gemideki herkes en fazla bir Güç tutar; fazlasını kapalı atar.",
+        "flavor": "Gümrükçü tek kişiydi. Yetkisi kalabalıktı."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-FN-01",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "1da6e3729b23928d2dfe5ea3063546f57f33b883d05f6b88f6491dc4bda2507c",
+      "exact_fields": {
+        "name": "Vardiya Defterli Fener",
+        "category": "Deniz Feneri",
+        "family": "Çalışan Fener",
+        "effect": "Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+        "flavor": "Işık yol gösterdi; defter kimin baktığını yazdı."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "HAR-FN-02",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "8590a0423c85c9bc57657a70ecbe13acd7f474b93a5084e8580e120eb0976cde",
+      "exact_fields": {
+        "name": "Bekçisi Gitmiş, Işığı Kalmış",
+        "category": "Deniz Feneri",
+        "family": "Terk Edilmiş Fener",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Bekçi not bırakmış: Dönmeyeceğim. Anahtar paspasın altında."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "HAR-FN-03",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": false,
+      "effective_art_dpi": null,
+      "copy_sha256": "87e7a2336e2b53b4d13f6630e7b44888c58d61f8d250c334071cc8f27a204ca4",
+      "exact_fields": {
+        "name": "Fenercinin Zulası",
+        "category": "Deniz Feneri",
+        "family": "Fenercinin Zulası",
+        "effect": "2 Güç kazanılır; iki farklı oyuncuya verilir.",
+        "flavor": "Fenerci yolu değil, sandığı aydınlatmış."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "HAR-FN-04",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "bleed_mm": 3,
+      "safe_mm": 4.5,
+      "effect_pt": 8.6,
+      "flavor_pt": 8,
+      "illustration": true,
+      "effective_art_dpi": 1215.42,
+      "copy_sha256": "ec5b89df446d73816a1e5ae71f91c00eff69f2fce98d3a556dd5796b6b981c59",
+      "exact_fields": {
+        "name": "Geceleri Parlayan Yalan",
+        "category": "Deniz Feneri",
+        "family": "Sahte Fener",
+        "effect": "Bir sonraki rota mümkünse komşu başka bir yasal Yakın Ufka rastgele sapar.",
+        "flavor": "Işık doğruydu. Yer yanlış."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    }
+  ],
+  "card_pdf_positions": [
+    {
+      "id": "KAR-01",
+      "page_1based": 3,
+      "bbox_pt": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-02",
+      "page_1based": 3,
+      "bbox_pt": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-03",
+      "page_1based": 3,
+      "bbox_pt": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "KAR-04",
+      "page_1based": 3,
+      "bbox_pt": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "KAR-05",
+      "page_1based": 5,
+      "bbox_pt": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-06",
+      "page_1based": 5,
+      "bbox_pt": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-07",
+      "page_1based": 5,
+      "bbox_pt": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "KAR-08",
+      "page_1based": 5,
+      "bbox_pt": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "KAR-09",
+      "page_1based": 7,
+      "bbox_pt": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-10",
+      "page_1based": 7,
+      "bbox_pt": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-11",
+      "page_1based": 7,
+      "bbox_pt": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "KAR-12",
+      "page_1based": 7,
+      "bbox_pt": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "KAR-13",
+      "page_1based": 9,
+      "bbox_pt": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-14",
+      "page_1based": 9,
+      "bbox_pt": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-15",
+      "page_1based": 9,
+      "bbox_pt": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "KAR-16",
+      "page_1based": 9,
+      "bbox_pt": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "KAR-17",
+      "page_1based": 11,
+      "bbox_pt": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-18",
+      "page_1based": 11,
+      "bbox_pt": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "KAR-19",
+      "page_1based": 11,
+      "bbox_pt": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "KAR-20",
+      "page_1based": 11,
+      "bbox_pt": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "SET-KL-01",
+      "page_1based": 13,
+      "bbox_pt": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "SET-VL-01",
+      "page_1based": 13,
+      "bbox_pt": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "id": "SET-KP-01",
+      "page_1based": 13,
+      "bbox_pt": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "id": "GUC-01A",
+      "page_1based": 15,
+      "bbox_pt": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-01B",
+      "page_1based": 15,
+      "bbox_pt": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-02A",
+      "page_1based": 15,
+      "bbox_pt": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-02B",
+      "page_1based": 15,
+      "bbox_pt": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-03",
+      "page_1based": 15,
+      "bbox_pt": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "GUC-04",
+      "page_1based": 15,
+      "bbox_pt": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "GUC-05",
+      "page_1based": 17,
+      "bbox_pt": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-06",
+      "page_1based": 17,
+      "bbox_pt": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-07",
+      "page_1based": 17,
+      "bbox_pt": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-08",
+      "page_1based": 17,
+      "bbox_pt": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-09",
+      "page_1based": 17,
+      "bbox_pt": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "GUC-10",
+      "page_1based": 17,
+      "bbox_pt": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "GUC-11",
+      "page_1based": 19,
+      "bbox_pt": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-12",
+      "page_1based": 19,
+      "bbox_pt": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-13",
+      "page_1based": 19,
+      "bbox_pt": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-14",
+      "page_1based": 19,
+      "bbox_pt": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-15",
+      "page_1based": 19,
+      "bbox_pt": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "GUC-16",
+      "page_1based": 19,
+      "bbox_pt": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "GUC-17",
+      "page_1based": 21,
+      "bbox_pt": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-18",
+      "page_1based": 21,
+      "bbox_pt": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-19",
+      "page_1based": 21,
+      "bbox_pt": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-20",
+      "page_1based": 21,
+      "bbox_pt": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-21",
+      "page_1based": 21,
+      "bbox_pt": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "GUC-22",
+      "page_1based": 21,
+      "bbox_pt": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "GUC-23",
+      "page_1based": 23,
+      "bbox_pt": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-24",
+      "page_1based": 23,
+      "bbox_pt": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "GUC-25",
+      "page_1based": 23,
+      "bbox_pt": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-26",
+      "page_1based": 23,
+      "bbox_pt": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "GUC-27",
+      "page_1based": 23,
+      "bbox_pt": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "GUC-28",
+      "page_1based": 23,
+      "bbox_pt": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "ERZ-01",
+      "page_1based": 25,
+      "bbox_pt": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "SAD-T-01",
+      "page_1based": 25,
+      "bbox_pt": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "SAD-T-02",
+      "page_1based": 25,
+      "bbox_pt": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "SAD-T-03",
+      "page_1based": 25,
+      "bbox_pt": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "SAD-T-04",
+      "page_1based": 25,
+      "bbox_pt": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "SAD-T-05",
+      "page_1based": 25,
+      "bbox_pt": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "SAD-T-06",
+      "page_1based": 27,
+      "bbox_pt": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "SAD-T-07",
+      "page_1based": 27,
+      "bbox_pt": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "SAD-T-08",
+      "page_1based": 27,
+      "bbox_pt": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "SAD-T-09",
+      "page_1based": 27,
+      "bbox_pt": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "SAD-T-10",
+      "page_1based": 27,
+      "bbox_pt": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "SAD-H-01",
+      "page_1based": 27,
+      "bbox_pt": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "id": "SAD-H-02",
+      "page_1based": 29,
+      "bbox_pt": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "SAD-H-03",
+      "page_1based": 29,
+      "bbox_pt": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "id": "SAD-H-04",
+      "page_1based": 29,
+      "bbox_pt": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "SAD-H-05",
+      "page_1based": 29,
+      "bbox_pt": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "id": "HAR-AD-01",
+      "page_1based": 31,
+      "bbox_pt": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-02",
+      "page_1based": 31,
+      "bbox_pt": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-03",
+      "page_1based": 31,
+      "bbox_pt": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-04",
+      "page_1based": 31,
+      "bbox_pt": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-05",
+      "page_1based": 31,
+      "bbox_pt": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AD-06",
+      "page_1based": 31,
+      "bbox_pt": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AD-07",
+      "page_1based": 33,
+      "bbox_pt": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-08",
+      "page_1based": 33,
+      "bbox_pt": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-09",
+      "page_1based": 33,
+      "bbox_pt": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-10",
+      "page_1based": 33,
+      "bbox_pt": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-11",
+      "page_1based": 33,
+      "bbox_pt": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AD-12",
+      "page_1based": 33,
+      "bbox_pt": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AD-13",
+      "page_1based": 35,
+      "bbox_pt": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-14",
+      "page_1based": 35,
+      "bbox_pt": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-15",
+      "page_1based": 35,
+      "bbox_pt": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-16",
+      "page_1based": 35,
+      "bbox_pt": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-17",
+      "page_1based": 35,
+      "bbox_pt": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AD-18",
+      "page_1based": 35,
+      "bbox_pt": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AD-19",
+      "page_1based": 37,
+      "bbox_pt": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-20",
+      "page_1based": 37,
+      "bbox_pt": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-21",
+      "page_1based": 37,
+      "bbox_pt": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-22",
+      "page_1based": 37,
+      "bbox_pt": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-23",
+      "page_1based": 37,
+      "bbox_pt": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AD-24",
+      "page_1based": 37,
+      "bbox_pt": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AD-25",
+      "page_1based": 39,
+      "bbox_pt": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-26",
+      "page_1based": 39,
+      "bbox_pt": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AD-27",
+      "page_1based": 39,
+      "bbox_pt": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-28",
+      "page_1based": 39,
+      "bbox_pt": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AD-29",
+      "page_1based": 39,
+      "bbox_pt": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AD-30",
+      "page_1based": 39,
+      "bbox_pt": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-KY-01",
+      "page_1based": 41,
+      "bbox_pt": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-KY-02",
+      "page_1based": 41,
+      "bbox_pt": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-KY-03",
+      "page_1based": 41,
+      "bbox_pt": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-KY-04",
+      "page_1based": 41,
+      "bbox_pt": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-KY-05",
+      "page_1based": 41,
+      "bbox_pt": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-KY-06",
+      "page_1based": 41,
+      "bbox_pt": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-KY-07",
+      "page_1based": 43,
+      "bbox_pt": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-KY-08",
+      "page_1based": 43,
+      "bbox_pt": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-KY-09",
+      "page_1based": 43,
+      "bbox_pt": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-KY-10",
+      "page_1based": 43,
+      "bbox_pt": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-KY-11",
+      "page_1based": 43,
+      "bbox_pt": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-KY-12",
+      "page_1based": 43,
+      "bbox_pt": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AA-01",
+      "page_1based": 45,
+      "bbox_pt": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AA-02",
+      "page_1based": 45,
+      "bbox_pt": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-AA-03",
+      "page_1based": 45,
+      "bbox_pt": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AA-04",
+      "page_1based": 45,
+      "bbox_pt": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-AA-05",
+      "page_1based": 45,
+      "bbox_pt": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-AA-06",
+      "page_1based": 45,
+      "bbox_pt": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "id": "HAR-FN-01",
+      "page_1based": 47,
+      "bbox_pt": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-FN-02",
+      "page_1based": 47,
+      "bbox_pt": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "id": "HAR-FN-03",
+      "page_1based": 47,
+      "bbox_pt": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "id": "HAR-FN-04",
+      "page_1based": 47,
+      "bbox_pt": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    }
+  ],
+  "pilot_ids": [
+    "KAR-01",
+    "KAR-06",
+    "KAR-19",
+    "GUC-06",
+    "GUC-27",
+    "ERZ-01",
+    "SAD-H-03",
+    "HAR-AD-08",
+    "HAR-KY-06",
+    "HAR-AA-06",
+    "HAR-FN-04",
+    "SET-KP-01"
+  ],
+  "back_counts": {
+    "BACK_CHARACTER": 20,
+    "BACK_POWER": 31,
+    "BACK_LOYALTY": 15,
+    "BACK_SEA_ROCK": 42,
+    "BACK_ISLAND": 6,
+    "BACK_LIGHTHOUSE": 4,
+    "BACK_SUPPORT": 3
+  },
+  "files": {
+    "BACK_SEA_ROCK.pdf": "278bd767a2a58a5a2b2fc6540e52dc533ae61475a227891d62a2d2874646bd92",
+    "BACK_ISLAND.pdf": "f4a367e675bb614777c30cd2a0a8c50c633bbfdddfe53e3728b63ef332aef334",
+    "BACK_CHARACTER.pdf": "6c7f70c2eb4c0685a857faee34a70969d8951644a614876bb6d65100ad1a5dc2",
+    "BACK_LOYALTY.pdf": "994251cb827e4fcaeabc050e41e9492a4f5a2bc7be23fe130acedf96e0c217c6",
+    "BACK_POWER.pdf": "9e2ae99f9e583f04384525c9fe3c837ac97776c136878c4865e82f91e24c2335",
+    "BACK_LIGHTHOUSE.pdf": "a687acab4d2c3b20e1a85e4d281c59b2aeb64278306fc4549284c79421c6248f",
+    "FOULWAKE_KURAL_KITABI_v2.7.pdf": "633a9badc3296f45901c12b45ea8830a6fc7086f71f05814088c0c647793a4e7",
+    "FOULWAKE_121_KART_CALISMA_v2.7.pdf": "b496f7c7d14ddab4c0faa25e63567079727fc13e6d679114ee8dd8b136792ed8",
+    "FOULWAKE_GORSEL_INCELEME_v2.7.pdf": "e7013b406474b4df763a83e76005a70b6b402f93f53319961c30d0efdfa10c07",
+    "BACK_SUPPORT.pdf": "4099fa34e7d576f835032373b43b43e54b7aecb103104ceb955654b179cf06d8"
+  },
+  "visual_review_ref": "working/v2.7/qa/recheck_visual/visual_review.md"
+}

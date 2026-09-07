@@ -198,6 +198,46 @@
         "qa/editorial_revision/test_rules.py"
       ],
       "decision": "Kapalı Deniz/Kayalık türü karar önceliklerinden çıkarılır; bilgisiz Hain doğru olayı göremez. İlk rota bilgi kullanımı, Limanda siyaset, Rehin/Gümrük olayları, Güç alıcısı, Kayıkçı vardiyası ve Geçilmez ziyaret kaydı düzeltilir. 20 hedefli regresyon ve 3600 model yolculuğu; tam kart-zamanlama veya insan deneyimi kabulü değildir."
+    },
+    {
+      "id": "ED-18",
+      "subject": "Tekrar sayımı ve sıfır oy",
+      "disposition": "OWNER_DELEGATED_CLARIFICATION_IMPLEMENTED",
+      "locations": [
+        "§5.2",
+        "GUC-15",
+        "GUC-17",
+        "GUC-19",
+        "GUC-20",
+        "GUC-22",
+        "KAR-12"
+      ],
+      "decision": "Bir Daha Say aynı resmî oylamayı yeniden yaptırır. Her seçmen yeniden oy verir; bu oylamaya bağlanmış etkiler korunur. Papağan ile sıfırlanan oyu Şapka diriltmez. Karga yalnız pozitif oy almış işarete +1 verir. Tek tekrar sınırı korunur. Bu ayrıntı önceki metnin sessizce varsayılması değil, yeni owner delegasyonu altında açıklaştırılmış hükümdür.",
+      "authority": "governance/v4/evidence/OWNER_RECHECK_VISUAL_AUTHORITY_20260907.json"
+    },
+    {
+      "id": "ED-19",
+      "subject": "Yeniden kontrol: anlatım ve gündüz Kamara penceresi",
+      "disposition": "IMPLEMENTED_COPY_AND_TIMING_CLARITY",
+      "locations": [
+        "ERZ-01",
+        "GUC-06",
+        "GUC-12",
+        "§3.2",
+        "§8.4"
+      ],
+      "decision": "Erzakta yenmedi/tatmadı özne belirsizliği; Kırık Dürbünde çift göz/cam izlenimi; zıpkın resminde yazı yerine balık çizimi düzeltildi. Kayıkçı ile Kırık Kürek aynı kimliktir. Anahtar Deliği gündüz Kamaraya girişten sonra, gece başlamadan çalışır."
+    },
+    {
+      "id": "ED-20",
+      "subject": "Güncel görsel ve baskı çalışma sürümü",
+      "disposition": "WORKING_PILOT_AND_TEXT_LAYOUT_AUTHORIZED",
+      "locations": [
+        "FOULWAKE_VISUAL_SYSTEM.md",
+        "visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+        "visual/recheck_20260907/"
+      ],
+      "decision": "Yeni owner yetkisiyle 12 ön/7 arka görsel pilot ve bütün 121 metnin çalışma prototipi üretilir. A4 kural kitabında eski 29 sayfa sayısını taklit etmek yerine güncel metnin okunurluğu esas alınır; kilitli 29 sayfalık v2.6 PDF değişmez. Pilot incelemesi pahalı tam illüstrasyon yayılımından önce somut teslim üzerinden yapılır."
     }
   ],
   "not_claimed": [

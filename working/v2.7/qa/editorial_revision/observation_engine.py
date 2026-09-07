@@ -14,6 +14,7 @@ import statistics
 import sys
 import tempfile
 import textwrap
+from route_ballot import choose as choose_observed_route
 
 QA = Path(__file__).resolve().parent
 ROOT = QA.parents[3]
@@ -226,7 +227,9 @@ def make_engine(m):
             candidates = self.active(include_cabin=False)
             if getattr(self, 'require_power_target', False):
                 candidates = [p for p in candidates if p.powers]
-            if not candidates: return []
+            if not candidates:
+                self.marked_marti_pid = None  # The next target event consumes a stale mark.
+                return []
             amount = min(amount, len(candidates))
             if self.marked_marti_pid is not None:
                 marked = [p for p in candidates if p.pid == self.marked_marti_pid]
@@ -300,6 +303,17 @@ def make_engine(m):
             super().role_information(fog)
             for p in temporarily: p.powers.append('anahtar_deligi')
 
+        def cabin_day_window(self):
+            # Called after the day's event/political action, BEFORE night begins.
+            for player in self.players:
+                if player.status == 'ship' and player.cabin and 'anahtar_deligi' in player.powers:
+                    coords = [c for c in self.horizon_coords() if not self.known(player,c)]
+                    if coords:
+                        self.look_for_player(player,coords)
+                        player.powers.remove('anahtar_deligi')
+                        self.record_power_effect('anahtar_deligi')
+                        self.metrics_count['cabin_day_peeks'] += 1
+
         def resolve_event(self, event):
             # v2.7 card text follows locked v2.6 rules over stale legacy policies.
             if event.category == m.ISLAND and self.scurvy_active:
@@ -339,11 +353,7 @@ def make_engine(m):
     ObservedGame._vote_accusation = patched(m, m.AuditGame._vote_accusation, [
         ('if target.traitor:', 'if self.enemy_probability(p, target) < .5:'),
     ])
-    ObservedGame.choose_route = patched(m, m.AuditGame.choose_route, [
-        ('if captain_player.traitor and crew_cups:', 'if crew_cups and self.suspicion[self.captain] >= .46:'),
-        ('elif not captain_player.traitor and hain_cups:', 'elif hain_cups and any(self.enemy_probability(p, captain_player) >= .54 for p in hain_cups):'),
-        ('min(tied, key=self.true_route_value)', 'min(tied, key=lambda c: self.perceived_value(holder, c))'),
-    ])
+    ObservedGame.choose_route = lambda self, candidates, first_move=False: choose_observed_route(self, m, candidates)
     ObservedGame.update_suspicion_after_route = patched(m, m.AuditGame.update_suspicion_after_route, [
         ('if self.player(pid).traitor and delta > 0:', 'if delta > 0:'),
         ('if self.player(claim.pid).traitor and delta > 0:', 'if delta > 0:'),
@@ -354,5 +364,6 @@ def make_engine(m):
     ])
     ObservedGame.run = patched(m, m.V25AuditGame.run, [
         ('self.category_mean[self.grid[(r,c)].category]', 'self.prior((r,c))[0]'),
+        ('self.political_action()', 'self.political_action();self.cabin_day_window()'),
     ])
     return ObservedGame

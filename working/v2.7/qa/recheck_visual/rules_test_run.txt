@@ -1,0 +1,32 @@
+test_boat_trip_takes_whole_day_and_night (__main__.RulesTests.test_boat_trip_takes_whole_day_and_night) ... ok
+test_cabin_hain_does_not_receive_team_peek (__main__.RulesTests.test_cabin_hain_does_not_receive_team_peek) ... ok
+test_captain_tie_is_only_between_leading_routes (__main__.RulesTests.test_captain_tie_is_only_between_leading_routes) ... ok
+test_customs_does_not_discard_loyalty_or_extra_hain_power (__main__.RulesTests.test_customs_does_not_discard_loyalty_or_extra_hain_power) ... ok
+test_engine_recounts_every_voter_and_keeps_captain_weight (__main__.RulesTests.test_engine_recounts_every_voter_and_keeps_captain_weight) ... ok
+test_first_night_characters_work_but_never_attack_even_in_fog (__main__.RulesTests.test_first_night_characters_work_but_never_attack_even_in_fog) ... ok
+test_forced_extra_with_no_target_does_not_reverse (__main__.RulesTests.test_forced_extra_with_no_target_does_not_reverse) ... ok
+test_full_model_finishes_each_player_count (__main__.RulesTests.test_full_model_finishes_each_player_count) ... ok
+test_gains_two_distinct_recipients (__main__.RulesTests.test_gains_two_distinct_recipients) ... ok
+test_hidden_card_permutation_does_not_change_claims_votes_or_peeks (__main__.RulesTests.test_hidden_card_permutation_does_not_change_claims_votes_or_peeks) ... ok
+test_impassable_reveal_is_never_a_visit (__main__.RulesTests.test_impassable_reveal_is_never_a_visit) ... ok
+test_information_power_works_after_first_day (__main__.RulesTests.test_information_power_works_after_first_day) ... ok
+test_initial_real_power_and_neutral_peek_all_counts (__main__.RulesTests.test_initial_real_power_and_neutral_peek_all_counts) ... ok
+test_island_valued_as_cure_by_both_factions (__main__.RulesTests.test_island_valued_as_cure_by_both_factions) ... ok
+test_keyhole_uses_day_cabin_window_and_keeps_information_private (__main__.RulesTests.test_keyhole_uses_day_cabin_window_and_keeps_information_private) ... ok
+test_known_front_retains_information (__main__.RulesTests.test_known_front_retains_information) ... ok
+test_lucky_reroll_can_return_same_target (__main__.RulesTests.test_lucky_reroll_can_return_same_target) ... ok
+test_marti_consumed_when_no_power_target_exists (__main__.RulesTests.test_marti_consumed_when_no_power_target_exists) ... ok
+test_no_first_route_information_power_consumption (__main__.RulesTests.test_no_first_route_information_power_consumption) ... ok
+test_port_skips_new_politics (__main__.RulesTests.test_port_skips_new_politics) ... ok
+test_power_loss_only_targets_holders_and_consumes_stale_seagull (__main__.RulesTests.test_power_loss_only_targets_holders_and_consumes_stale_seagull) ... ok
+test_recount_requires_one_vote_gap_and_cannot_chain (__main__.RulesTests.test_recount_requires_one_vote_gap_and_cannot_chain) ... ok
+test_regular_fog_allows_peek_and_attack (__main__.RulesTests.test_regular_fog_allows_peek_and_attack) ... ok
+test_route_recount_preserves_captain_and_active_modifiers (__main__.RulesTests.test_route_recount_preserves_captain_and_active_modifiers) ... ok
+test_scurvy_clears_before_hostage_even_if_new_stranded_player (__main__.RulesTests.test_scurvy_clears_before_hostage_even_if_new_stranded_player) ... ok
+test_unrevealed_other_loyalty_does_not_change_enemy_estimate (__main__.RulesTests.test_unrevealed_other_loyalty_does_not_change_enemy_estimate) ... ok
+test_zero_parrot_vote_stays_zero_with_hat_and_crow (__main__.RulesTests.test_zero_parrot_vote_stays_zero_with_hat_and_crow) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.313s
+
+OK

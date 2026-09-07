@@ -4,6 +4,7 @@ import os
 import random
 import unittest
 from observation_engine import load_engine, make_engine
+from route_ballot import tally, winners, can_recount
 
 M, TEMP, EVIDENCE = load_engine(os.environ['FOULWAKE_SOURCE_ZIP'])
 G = make_engine(M)
@@ -21,6 +22,64 @@ def clear(g):
 
 
 class RulesTests(unittest.TestCase):
+    def test_keyhole_uses_day_cabin_window_and_keeps_information_private(self):
+        g=game();clear(g);g.day=2
+        p=g.players[0];p.cabin=True;p.powers=['anahtar_deligi']
+        g.role_information(False)
+        self.assertFalse(p.knowledge)
+        self.assertIn('anahtar_deligi',p.powers)
+        g.cabin_day_window()
+        self.assertEqual(len(p.knowledge),1)
+        self.assertNotIn('anahtar_deligi',p.powers)
+        self.assertFalse(g.public_known)
+        self.assertTrue(all(not t.knowledge for t in g.players[1:]))
+
+    def test_route_recount_preserves_captain_and_active_modifiers(self):
+        votes={0:'L',1:'L',2:'R',3:'R',4:'R'}
+        self.assertEqual(tally(votes,0,hat=1), {'L':4,'R':3})
+        votes[1]='R'
+        self.assertEqual(tally(votes,0,hat=1), {'L':2,'R':5})
+        self.assertEqual(tally(votes,0,reduced=True,hat=1), {'L':1,'R':5})
+
+    def test_zero_parrot_vote_stays_zero_with_hat_and_crow(self):
+        counts=tally({0:'L',1:'R',2:'L'},0,hat=1,commitments={1:'L'},crow='R')
+        self.assertEqual(counts.get('R',0),0)
+        self.assertEqual(winners(counts),['L'])
+
+    def test_captain_tie_is_only_between_leading_routes(self):
+        counts=tally({0:'S',1:'L',2:'L',3:'L',4:'R',5:'R',6:'R'},0)
+        self.assertEqual(set(winners(counts)),{'L','R'})
+
+    def test_recount_requires_one_vote_gap_and_cannot_chain(self):
+        self.assertTrue(can_recount({'L':4,'R':3}))
+        self.assertFalse(can_recount({'L':4,'R':3},True))
+        self.assertFalse(can_recount({'L':4,'R':4}))
+        self.assertFalse(can_recount({'L':5,'R':3}))
+
+    def test_engine_recounts_every_voter_and_keeps_captain_weight(self):
+        g=game(n=6);clear(g);g.day=2
+        candidates=g.valid_candidates()[:2]
+        self.assertEqual(len(candidates),2)
+        left,right=[(r,c) for r,c,_ in candidates]
+        for p in g.players:p.traitor=False
+        allies=[p.pid for p in g.players if p.pid!=g.captain][:2]
+        desired={p.pid:left if p.pid in [g.captain,*allies] else right for p in g.players}
+        g._make_claims=lambda c:[]
+        g._score_with_claims=lambda p,c,claims:100 if desired[p.pid]==c else 0
+        g.rng.gauss=lambda a,b:0
+        g.rng.random=lambda:0
+        g.players[0].powers=['bir_daha_say']
+        g.choose_route(candidates)
+        self.assertEqual(g.metrics_count['ballots_cast'],12)
+        self.assertEqual(g.metrics_count['route_recounts'],1)
+        self.assertEqual(g.last_route_weights,{left:4,right:3})
+        self.assertEqual(g.last_choice,left)
+
+    def test_marti_consumed_when_no_power_target_exists(self):
+        g=game();clear(g);g.marked_marti_pid=g.players[0].pid
+        g.resolve_event(next(e for e in g.map_pool if e.kind=='lose_random'))
+        self.assertIsNone(g.marked_marti_pid)
+
     def test_initial_real_power_and_neutral_peek_all_counts(self):
         for n in range(6, 16):
             g = game(n=n)

@@ -1,15 +1,20 @@
-# FOULWAKE - güncel oynama metinleri
+# FOULWAKE — güncel oynama ve inceleme dosyaları
 
-**Kuru Pay · 7 Eylül 2026 · v2.7 çalışma revizyonu**
+**Kuru Pay · 7 Eylül 2026 · v2.7 çalışma sürümü**
 
-Hikâye, kartlar ve kural kitabı düzenlendi. Oyunu başlatmak için [tam kural kitabını](FOULWAKE_KURAL_KITABI_v2.7.md) kullanın; kurulum §3, normal gün/gece akışı §4'tedir. §17 isteğe bağlı arka plandır.
+Hikâye, 121 kart ve kural kitabı düzenlendi; ikinci sistem kontrolü ve somut sanat/grafik pilotu tamamlandı.
 
-- [121 kartın okunabilir metni](FOULWAKE_KART_METINLERI_v2.7.md)
-- [Hikâye ve masada okunacak bloklar](FOULWAKE_RULEBOOK_STORY_v2.7.md)
-- [Hikâye omurgası ve karakter sesi](FOULWAKE_STORY_FRAMEWORK.md)
-- [Kararlar ve değişiklik gerekçeleri](FOULWAKE_EDITORIAL_DECISIONS_v2.7.json)
-- [Kaynak kontrolü ve simülasyon sonuçları](qa/editorial_revision/editorial_report.md)
+- [Tam kural kitabı — 30 sayfa PDF](visual/recheck_20260907/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf)
+- [121 kart — 48 sayfa A4 baskı prototipi](visual/recheck_20260907/pdf/FOULWAKE_121_KART_CALISMA_v2.7.pdf)
+- [12 resimli ön ve 7 arka — 16 sayfa görsel inceleme](visual/recheck_20260907/pdf/FOULWAKE_GORSEL_INCELEME_v2.7.pdf)
+- [Kural kitabının metin kaynağı](FOULWAKE_KURAL_KITABI_v2.7.md) ve [121 kartın okunabilir metni](FOULWAKE_KART_METINLERI_v2.7.md)
+- [Hikâye ve OKU blokları](FOULWAKE_RULEBOOK_STORY_v2.7.md), [hikâye omurgası](FOULWAKE_STORY_FRAMEWORK.md), [uygulanmış kararlar](FOULWAKE_EDITORIAL_DECISIONS_v2.7.json)
+- [İkinci kontrolün sonuçları ve sınırları](qa/recheck_visual/recheck_report.md), [görsel değerlendirme](qa/recheck_visual/visual_review.md)
 
-Eski Siyah Mühür adı yerine **Kuru Pay** kullanılır. Beş Hainin ve on Tayfanın özel gerekçeleri vardır; bunlar ek görev vermez. KAPTAN'ın oy kapsamı, ilk tarafsız gece/ilk yolculuk gecesi ayrımı ve Harita bilgi terimleri açıklaştırıldı. Terkibin başarısı ve Gusto'nun akıbeti belirsizliğini korur.
+İlk oyunda kurulum §3, gün/gece akışı §4; §17 isteğe bağlı arka plandır. 121 kart dosyasının ilk iki sayfası baskı talimatıdır. A4, %100 ve uzun kenardan çift taraflı baskı kullanın; önce yalnız 3–4. sayfayla hizayı deneyin.
 
-Bu dosyalar uygulanmış metin teslimidir. Görseller, sanat yönü ve baskı dosyaları bu revizyonun dışında kaldı; eski PDF yeni metni içermez. Kilitli `releases/v2.6/` değişmedi. 20 teknik regresyon ve 3.600 model yolculuğu çalıştırıldı; insanlarla oynanmış yeni bir oturum veya bütün kart zamanlamalarını kapsayan simülasyon kabulü yoktur.
+Beş Hainin ve on Tayfanın özel gerekçeleri vardır; bunlar ek görev değildir. Kuru Pay bir ortak çıkar lakabıdır. Gusto'nun akıbeti ve terkibin başarısı belirsiz kalır.
+
+12 ön resimlidir; **109 ön yüzde henüz özgün illüstrasyon yoktur**. Bütün kartlar güncel metinle kullanılabilir prototiptir; yedi aile arkası tamamına uygulanmıştır. Eski PDF'ler bu metnin yerine kullanılmaz.
+
+27 hedefli teknik test, 3.600 sezgisel model yolculuğu ve PDF metin/yerleşim denetimi yapıldı. Bu çalışma, yeni bir insan oturumu, tam kurallı simülatör eşdeğerliği, fiziksel baskı veya bağımsız/proje sahibi estetik kabulü değildir. Kilitli v2.6 değişmedi; release/lock verilmedi. Depodaki pilot-önce sıra gereği pahalı tam çizim yayılımından önce somut pilot değerlendirilir.

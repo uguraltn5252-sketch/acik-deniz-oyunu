@@ -57,7 +57,7 @@ def check():
                 changes.append({'id':cid,'field':field,'before':base.get(field),'after':current.get(field)})
     (QA/'copy_changes.json').write_text(json.dumps({'baseline':'source_inventory.json#baseline_records','field_change_count':len(changes),'changes':changes},ensure_ascii=False,indent=2)+'\n')
     outputs=[p for p in P.glob('*.md') if p.name in ('FOULWAKE_RULEBOOK_STORY_v2.7.md','FOULWAKE_KURAL_KITABI_v2.7.md','FOULWAKE_KART_METINLERI_v2.7.md','FOULWAKE_STORY_FRAMEWORK.md')]
-    outputs += [P/'FOULWAKE_CARD_TEXTS_v2.7.json',P/'FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json',QA/'observation_engine.py',QA/'run_simulation.py',QA/'test_rules.py',QA/'simulation_results.json',QA/'simulation_games.csv']
+    outputs += [P/'FOULWAKE_CARD_TEXTS_v2.7.json',P/'FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json',QA/'observation_engine.py',QA/'route_ballot.py',QA/'run_simulation.py',QA/'test_rules.py',QA/'simulation_results.json',QA/'simulation_games.csv']
     result={'status':'PASS / SAME_OPERATOR_CONTENT_CHECK','card_records':121,'recovered_source_records':70,'field_change_count':len(changes),'opening_block_word_counts':word_counts,'opening_three_blocks_total':sum(word_counts.values()),'previous_three_blocks_total':386,'word_count_scope':'Only the three matched OKU blocks; not total setup duration or human boredom evidence.','sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in outputs}}
     (QA/'content_checks.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k!='sha256'},ensure_ascii=False))

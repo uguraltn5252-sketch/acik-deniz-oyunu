@@ -230,7 +230,7 @@ Zaman: Hasardan önce
 
 **Etki:** Kraken'in vereceği 1 Gövde hasarını engelle.
 
-*Sandığın üstünde büyük balık yazıyor. Yazı aceleyle yazılmış.*
+*Sandığın üstüne bir balık çizmişler. Boyutunu belirtmeyi unutmuşlar.*
 
 ### GUC-07 - Geçici Yeke
 
@@ -278,7 +278,7 @@ Zaman: Gündüz - rota öncesi
 
 **Etki:** İlk rota öncesi kullanılamaz. Bir Yakın Ufuk kartının olay yüzüne gizlice bak.
 
-*Sol cam çatlak. Sahibi sağ gözünü kapatıp daha dikkatli bakıyor.*
+*Merceği çatlak. Sahibi her şüpheli şeyi önce camdaki çizgiye yoruyor.*
 
 ### GUC-13 - Eski Seyir Defteri
 
@@ -538,7 +538,7 @@ Zaman: Başlangıçta zorunlu aç
 
 **Etki:** Başlangıçta aç. O anda Kaptansan İskorbüt başlamaz; değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonradan Kaptan değişmesi sonucu değiştirmez. Sonra yolculuk destesinden gerçek bir Güç çek.
 
-*Peksimet hâlâ yenebilir. Onu söyleyen kişi yenmedi.*
+*Peksimet hâlâ yenebilir. Bunu söyleyen tadına bakmadı.*
 
 ## Harita
 

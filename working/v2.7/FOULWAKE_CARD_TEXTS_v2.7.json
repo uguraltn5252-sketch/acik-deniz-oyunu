@@ -308,7 +308,7 @@
       "icon": "harpoon",
       "start": true,
       "effect": "Kraken'in vereceği 1 Gövde hasarını engelle.",
-      "flavor": "Sandığın üstünde büyük balık yazıyor. Yazı aceleyle yazılmış.",
+      "flavor": "Sandığın üstüne bir balık çizmişler. Boyutunu belirtmeyi unutmuşlar.",
       "returns_to_power_deck": true
     },
     {
@@ -374,7 +374,7 @@
       "icon": "spyglass",
       "start": true,
       "effect": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk kartının olay yüzüne gizlice bak.",
-      "flavor": "Sol cam çatlak. Sahibi sağ gözünü kapatıp daha dikkatli bakıyor.",
+      "flavor": "Merceği çatlak. Sahibi her şüpheli şeyi önce camdaki çizgiye yoruyor.",
       "returns_to_power_deck": true
     },
     {
@@ -727,7 +727,7 @@
       "icon": "crate",
       "start": false,
       "effect": "Başlangıçta aç. O anda Kaptansan İskorbüt başlamaz; değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonradan Kaptan değişmesi sonucu değiştirmez. Sonra yolculuk destesinden gerçek bir Güç çek.",
-      "flavor": "Peksimet hâlâ yenebilir. Onu söyleyen kişi yenmedi."
+      "flavor": "Peksimet hâlâ yenebilir. Bunu söyleyen tadına bakmadı."
     }
   ],
   "maps": [

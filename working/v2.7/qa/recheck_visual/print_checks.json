@@ -1,0 +1,305 @@
+{
+  "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+  "classification": "SAME_OPERATOR_TECHNICAL_SELF_CHECK",
+  "failures": [],
+  "cards_checked": 121,
+  "safe_areas_checked": 121,
+  "illustrated_fronts": 12,
+  "text_only_fronts": 109,
+  "back_counts": {
+    "BACK_CHARACTER": 20,
+    "BACK_POWER": 31,
+    "BACK_LOYALTY": 15,
+    "BACK_SEA_ROCK": 42,
+    "BACK_ISLAND": 6,
+    "BACK_LIGHTHOUSE": 4,
+    "BACK_SUPPORT": 3
+  },
+  "family_pdf_image_digests": {
+    "BACK_CHARACTER": [
+      "5182dbb3c18e786d25c4605003f09a72"
+    ],
+    "BACK_SUPPORT": [
+      "d2ff9f26f8aa84c7405de0fbc5a24e51"
+    ],
+    "BACK_POWER": [
+      "2a45512070205bca56fa0d2784050461"
+    ],
+    "BACK_LOYALTY": [
+      "7fe49514be18f2544db14e7c555405e7"
+    ],
+    "BACK_SEA_ROCK": [
+      "245ec36e875f2dbbe625c125e10f82bf"
+    ],
+    "BACK_ISLAND": [
+      "646a463a0dfcf3256387b3895ab18b0f"
+    ],
+    "BACK_LIGHTHOUSE": [
+      "848654377368f332fcdf627a69863adc"
+    ]
+  },
+  "minimum_front_dpi": 426.04,
+  "captain_reference_sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
+  "rulebook_segments_checked": 728,
+  "pdfs": {
+    "BACK_CHARACTER.pdf": {
+      "pages": 1,
+      "bytes": 708106,
+      "sha256": "6c7f70c2eb4c0685a857faee34a70969d8951644a614876bb6d65100ad1a5dc2"
+    },
+    "BACK_ISLAND.pdf": {
+      "pages": 1,
+      "bytes": 478659,
+      "sha256": "f4a367e675bb614777c30cd2a0a8c50c633bbfdddfe53e3728b63ef332aef334"
+    },
+    "BACK_LIGHTHOUSE.pdf": {
+      "pages": 1,
+      "bytes": 472393,
+      "sha256": "a687acab4d2c3b20e1a85e4d281c59b2aeb64278306fc4549284c79421c6248f"
+    },
+    "BACK_LOYALTY.pdf": {
+      "pages": 1,
+      "bytes": 560165,
+      "sha256": "994251cb827e4fcaeabc050e41e9492a4f5a2bc7be23fe130acedf96e0c217c6"
+    },
+    "BACK_POWER.pdf": {
+      "pages": 1,
+      "bytes": 734511,
+      "sha256": "9e2ae99f9e583f04384525c9fe3c837ac97776c136878c4865e82f91e24c2335"
+    },
+    "BACK_SEA_ROCK.pdf": {
+      "pages": 1,
+      "bytes": 479432,
+      "sha256": "278bd767a2a58a5a2b2fc6540e52dc533ae61475a227891d62a2d2874646bd92"
+    },
+    "BACK_SUPPORT.pdf": {
+      "pages": 1,
+      "bytes": 762139,
+      "sha256": "4099fa34e7d576f835032373b43b43e54b7aecb103104ceb955654b179cf06d8"
+    },
+    "FOULWAKE_121_KART_CALISMA_v2.7.pdf": {
+      "pages": 48,
+      "bytes": 12514420,
+      "sha256": "b496f7c7d14ddab4c0faa25e63567079727fc13e6d679114ee8dd8b136792ed8"
+    },
+    "FOULWAKE_GORSEL_INCELEME_v2.7.pdf": {
+      "pages": 16,
+      "bytes": 12466533,
+      "sha256": "e7013b406474b4df763a83e76005a70b6b402f93f53319961c30d0efdfa10c07"
+    },
+    "FOULWAKE_KURAL_KITABI_v2.7.pdf": {
+      "pages": 30,
+      "bytes": 901996,
+      "sha256": "633a9badc3296f45901c12b45ea8830a6fc7086f71f05814088c0c647793a4e7"
+    }
+  },
+  "back_rotation_render": {
+    "BACK_CHARACTER": {
+      "test_raster": [
+        1000,
+        1000
+      ],
+      "mean_channel_delta": 0.682835,
+      "max_channel_delta": 6,
+      "nonzero_channel_fraction": 0.531924,
+      "interpretation": "PDF geometry and shared source checked; any nonzero values are reported, never labelled pixel-exact."
+    },
+    "BACK_ISLAND": {
+      "test_raster": [
+        1000,
+        1000
+      ],
+      "mean_channel_delta": 0.0,
+      "max_channel_delta": 0,
+      "nonzero_channel_fraction": 0.0,
+      "interpretation": "PDF geometry and shared source checked; any nonzero values are reported, never labelled pixel-exact."
+    },
+    "BACK_LIGHTHOUSE": {
+      "test_raster": [
+        1000,
+        1000
+      ],
+      "mean_channel_delta": 0.000248,
+      "max_channel_delta": 1,
+      "nonzero_channel_fraction": 0.000248,
+      "interpretation": "PDF geometry and shared source checked; any nonzero values are reported, never labelled pixel-exact."
+    },
+    "BACK_LOYALTY": {
+      "test_raster": [
+        1000,
+        1000
+      ],
+      "mean_channel_delta": 0.0,
+      "max_channel_delta": 0,
+      "nonzero_channel_fraction": 0.0,
+      "interpretation": "PDF geometry and shared source checked; any nonzero values are reported, never labelled pixel-exact."
+    },
+    "BACK_POWER": {
+      "test_raster": [
+        1000,
+        1000
+      ],
+      "mean_channel_delta": 0.0,
+      "max_channel_delta": 0,
+      "nonzero_channel_fraction": 0.0,
+      "interpretation": "PDF geometry and shared source checked; any nonzero values are reported, never labelled pixel-exact."
+    },
+    "BACK_SEA_ROCK": {
+      "test_raster": [
+        1000,
+        1000
+      ],
+      "mean_channel_delta": 0.0,
+      "max_channel_delta": 0,
+      "nonzero_channel_fraction": 0.0,
+      "interpretation": "PDF geometry and shared source checked; any nonzero values are reported, never labelled pixel-exact."
+    },
+    "BACK_SUPPORT": {
+      "test_raster": [
+        1000,
+        1000
+      ],
+      "mean_channel_delta": 0.751256,
+      "max_channel_delta": 6,
+      "nonzero_channel_fraction": 0.560005,
+      "interpretation": "PDF geometry and shared source checked; any nonzero values are reported, never labelled pixel-exact."
+    }
+  },
+  "source_files": {
+    "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+    "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json": "dc3ca70f2b84d77eccfc6b8443d172c88a32db4808fe70538e3c1b4cdde2db56",
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "1195aa7368c6d1781cfab305acc295d8038a6293b51bf7036d47525a8e68688f",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "8d6198f030ec1c4c7391d61ab630c0fe9b646caea61d112dc8c9eac806937b6c",
+    "working/v2.7/qa/recheck_visual/verify_print.py": "5b5fdbf87f1447ff0dfc5cd57d58e83b3b8d789d792c4f4dac810387911225c1",
+    "working/v2.7/qa/recheck_visual/build_print.py": "396d5775e9493e623f5d3050a2d090e2c348f4965b03e0065425de7ba3f410ff"
+  },
+  "assets": {
+    "BACK_CHARACTER.png": {
+      "sha256": "c018146199a74cb6f1b699e04f0a61f741e5ae2a9c4eb9d9ae961cc851163784",
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    "BACK_ISLAND.png": {
+      "sha256": "82c4c46f709b6a3b9d11c0e3351c66052e49c90394b6f79a2fe08c3cb76972ed",
+      "pixels": [
+        1254,
+        1254
+      ]
+    },
+    "BACK_LIGHTHOUSE.png": {
+      "sha256": "d1fa5f575656d09d49973e305b9762240938e885c1db2c964b6354a66089306e",
+      "pixels": [
+        1254,
+        1254
+      ]
+    },
+    "BACK_LOYALTY.png": {
+      "sha256": "d6af9232f8f31e6c9997fcd31b49bc84f3b6608b62ae46596246d1bc9f4478c3",
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    "BACK_POWER.png": {
+      "sha256": "5122ac5f49b42e0358ec7bea9a1a99513d9704ee4edbd3e473d49ae36493f6eb",
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    "BACK_SEA_ROCK.png": {
+      "sha256": "dae48dc5e4ab3b73503cdd51875b0c322909b38d2f44ac2bc30bf53337859406",
+      "pixels": [
+        1254,
+        1254
+      ]
+    },
+    "BACK_SUPPORT.png": {
+      "sha256": "f2859d65dbfa70c527811ff1e50fe86d91d47372f7b91395c532d71edf9cda8b",
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    "ERZ-01.png": {
+      "sha256": "01225e4608c71a28ea5f554578c58391f3e8b6155f4d0cbcae5d3718e9a62580",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "GUC-06.png": {
+      "sha256": "0b9a06d10440d1d7dd2d86a07d003399ada7c3c2f46b39a1e67866e613c6b61e",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "GUC-27.png": {
+      "sha256": "13e5c23826ac11074dfe8fdb9df89c0fdc6f6c5c7ddb5108c425725034486ab8",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "HAR-AA-06.png": {
+      "sha256": "c65d757f4f659401ef76f2c049aa87a1d316712a20eea849d3da78f083c23646",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "HAR-AD-08.png": {
+      "sha256": "d3a79e6aba4f5acbd10d3e55eebab2c6b3e46b2b634949e61f336fec32214cee",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "HAR-FN-04.png": {
+      "sha256": "379c665560653e829f28409990c0b01fa269ef497d8432901cc027bce4ddaad2",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "HAR-KY-06.png": {
+      "sha256": "68d724857c065ddeacea391c6f9ac3b6ed1bd0e20ac2dd63104d18f34279f288",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "KAR-01.png": {
+      "sha256": "772c396756b805a40a6fcef3201dffc9cb7bff544845cf3edceb9bfdd932c091",
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    "KAR-06.png": {
+      "sha256": "3f627d12126b83135a20df087857e6957feab9c5732e737d8ea9b735f4fb42a2",
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    "KAR-19.png": {
+      "sha256": "62de6a836aa08eff480464aaa0b126105cdd721da344d7f32552dca710206e15",
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    "SAD-H-03.png": {
+      "sha256": "789bed36180c8e3b89ec8afdbf031bf928de4d3ed66bf31bd547fa461c27579b",
+      "pixels": [
+        1536,
+        1024
+      ]
+    }
+  },
+  "status": "PASS"
+}

@@ -25,27 +25,27 @@
   "summary": {
     "A": {
       "games": 1800,
-      "crew_wins": 1069,
-      "crew_win_rate": 0.5938888888888889,
-      "mean_days": 5.596666666666667,
+      "crew_wins": 1059,
+      "crew_win_rate": 0.5883333333333334,
+      "mean_days": 5.576666666666667,
       "reasons": {
-        "port": 1069,
-        "sunk": 601,
-        "scurvy": 110,
-        "crew_extinct": 20
+        "port": 1059,
+        "sunk": 602,
+        "scurvy": 116,
+        "crew_extinct": 23
       },
       "empty_ship_stalemates": 0,
       "identity_discards": 0
     },
     "B": {
       "games": 1800,
-      "crew_wins": 1045,
-      "crew_win_rate": 0.5805555555555556,
-      "mean_days": 5.638888888888889,
+      "crew_wins": 1010,
+      "crew_win_rate": 0.5611111111111111,
+      "mean_days": 5.5905555555555555,
       "reasons": {
-        "port": 1045,
-        "scurvy": 108,
-        "sunk": 623,
+        "port": 1010,
+        "sunk": 639,
+        "scurvy": 127,
         "crew_extinct": 24
       },
       "empty_ship_stalemates": 0,
@@ -56,13 +56,13 @@
     "6": {
       "A": {
         "games": 180,
-        "crew_wins": 87,
-        "crew_win_rate": 0.48333333333333334,
-        "mean_days": 5.361111111111111,
+        "crew_wins": 80,
+        "crew_win_rate": 0.4444444444444444,
+        "mean_days": 5.227777777777778,
         "reasons": {
-          "port": 87,
-          "sunk": 75,
-          "scurvy": 11,
+          "port": 80,
+          "sunk": 84,
+          "scurvy": 9,
           "crew_extinct": 7
         },
         "empty_ship_stalemates": 0,
@@ -70,14 +70,14 @@
       },
       "B": {
         "games": 180,
-        "crew_wins": 81,
-        "crew_win_rate": 0.45,
-        "mean_days": 5.338888888888889,
+        "crew_wins": 74,
+        "crew_win_rate": 0.4111111111111111,
+        "mean_days": 5.188888888888889,
         "reasons": {
-          "port": 81,
-          "scurvy": 10,
-          "sunk": 78,
-          "crew_extinct": 11
+          "port": 74,
+          "sunk": 91,
+          "scurvy": 8,
+          "crew_extinct": 7
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
@@ -88,72 +88,12 @@
         "games": 180,
         "crew_wins": 97,
         "crew_win_rate": 0.5388888888888889,
-        "mean_days": 5.627777777777778,
+        "mean_days": 5.5777777777777775,
         "reasons": {
           "port": 97,
-          "scurvy": 11,
-          "sunk": 64,
-          "crew_extinct": 8
-        },
-        "empty_ship_stalemates": 0,
-        "identity_discards": 0
-      },
-      "B": {
-        "games": 180,
-        "crew_wins": 103,
-        "crew_win_rate": 0.5722222222222222,
-        "mean_days": 5.7,
-        "reasons": {
-          "port": 103,
-          "scurvy": 8,
-          "sunk": 61,
-          "crew_extinct": 8
-        },
-        "empty_ship_stalemates": 0,
-        "identity_discards": 0
-      }
-    },
-    "8": {
-      "A": {
-        "games": 180,
-        "crew_wins": 121,
-        "crew_win_rate": 0.6722222222222223,
-        "mean_days": 5.694444444444445,
-        "reasons": {
-          "port": 121,
-          "sunk": 43,
-          "scurvy": 12,
-          "crew_extinct": 4
-        },
-        "empty_ship_stalemates": 0,
-        "identity_discards": 0
-      },
-      "B": {
-        "games": 180,
-        "crew_wins": 110,
-        "crew_win_rate": 0.6111111111111112,
-        "mean_days": 5.605555555555555,
-        "reasons": {
-          "port": 110,
-          "sunk": 53,
-          "scurvy": 12,
-          "crew_extinct": 5
-        },
-        "empty_ship_stalemates": 0,
-        "identity_discards": 0
-      }
-    },
-    "9": {
-      "A": {
-        "games": 180,
-        "crew_wins": 99,
-        "crew_win_rate": 0.55,
-        "mean_days": 5.522222222222222,
-        "reasons": {
-          "port": 99,
-          "sunk": 71,
-          "scurvy": 9,
-          "crew_extinct": 1
+          "scurvy": 10,
+          "sunk": 66,
+          "crew_extinct": 7
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
@@ -162,11 +102,72 @@
         "games": 180,
         "crew_wins": 97,
         "crew_win_rate": 0.5388888888888889,
-        "mean_days": 5.6722222222222225,
+        "mean_days": 5.583333333333333,
         "reasons": {
           "port": 97,
-          "sunk": 74,
-          "scurvy": 9
+          "scurvy": 11,
+          "sunk": 68,
+          "crew_extinct": 4
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "8": {
+      "A": {
+        "games": 180,
+        "crew_wins": 99,
+        "crew_win_rate": 0.55,
+        "mean_days": 5.622222222222222,
+        "reasons": {
+          "scurvy": 19,
+          "port": 99,
+          "sunk": 56,
+          "crew_extinct": 6
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 96,
+        "crew_win_rate": 0.5333333333333333,
+        "mean_days": 5.561111111111111,
+        "reasons": {
+          "port": 96,
+          "sunk": 58,
+          "crew_extinct": 11,
+          "scurvy": 15
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "9": {
+      "A": {
+        "games": 180,
+        "crew_wins": 107,
+        "crew_win_rate": 0.5944444444444444,
+        "mean_days": 5.683333333333334,
+        "reasons": {
+          "port": 107,
+          "sunk": 58,
+          "scurvy": 12,
+          "crew_extinct": 3
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 107,
+        "crew_win_rate": 0.5944444444444444,
+        "mean_days": 5.655555555555556,
+        "reasons": {
+          "sunk": 57,
+          "scurvy": 15,
+          "port": 107,
+          "crew_extinct": 1
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
@@ -175,26 +176,26 @@
     "10": {
       "A": {
         "games": 180,
-        "crew_wins": 115,
-        "crew_win_rate": 0.6388888888888888,
-        "mean_days": 5.683333333333334,
+        "crew_wins": 109,
+        "crew_win_rate": 0.6055555555555555,
+        "mean_days": 5.616666666666666,
         "reasons": {
-          "port": 115,
-          "sunk": 54,
-          "scurvy": 11
+          "port": 109,
+          "scurvy": 14,
+          "sunk": 57
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
       },
       "B": {
         "games": 180,
-        "crew_wins": 109,
-        "crew_win_rate": 0.6055555555555555,
-        "mean_days": 5.661111111111111,
+        "crew_wins": 99,
+        "crew_win_rate": 0.55,
+        "mean_days": 5.677777777777778,
         "reasons": {
-          "port": 109,
-          "sunk": 60,
-          "scurvy": 11
+          "port": 99,
+          "scurvy": 18,
+          "sunk": 63
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
@@ -203,26 +204,27 @@
     "11": {
       "A": {
         "games": 180,
-        "crew_wins": 113,
-        "crew_win_rate": 0.6277777777777778,
-        "mean_days": 5.716666666666667,
+        "crew_wins": 111,
+        "crew_win_rate": 0.6166666666666667,
+        "mean_days": 5.661111111111111,
         "reasons": {
-          "port": 113,
-          "sunk": 54,
-          "scurvy": 13
+          "port": 111,
+          "sunk": 52,
+          "scurvy": 17
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
       },
       "B": {
         "games": 180,
-        "crew_wins": 111,
-        "crew_win_rate": 0.6166666666666667,
-        "mean_days": 5.711111111111111,
+        "crew_wins": 102,
+        "crew_win_rate": 0.5666666666666667,
+        "mean_days": 5.8,
         "reasons": {
-          "port": 111,
-          "sunk": 56,
-          "scurvy": 13
+          "port": 102,
+          "sunk": 59,
+          "scurvy": 18,
+          "crew_extinct": 1
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
@@ -231,26 +233,26 @@
     "12": {
       "A": {
         "games": 180,
-        "crew_wins": 118,
-        "crew_win_rate": 0.6555555555555556,
-        "mean_days": 5.655555555555556,
+        "crew_wins": 128,
+        "crew_win_rate": 0.7111111111111111,
+        "mean_days": 5.644444444444445,
         "reasons": {
-          "sunk": 52,
-          "port": 118,
-          "scurvy": 10
+          "port": 128,
+          "sunk": 44,
+          "scurvy": 8
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
       },
       "B": {
         "games": 180,
-        "crew_wins": 113,
-        "crew_win_rate": 0.6277777777777778,
-        "mean_days": 5.683333333333334,
+        "crew_wins": 119,
+        "crew_win_rate": 0.6611111111111111,
+        "mean_days": 5.583333333333333,
         "reasons": {
-          "sunk": 57,
-          "port": 113,
-          "scurvy": 10
+          "sunk": 52,
+          "port": 119,
+          "scurvy": 9
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
@@ -259,26 +261,26 @@
     "13": {
       "A": {
         "games": 180,
-        "crew_wins": 114,
-        "crew_win_rate": 0.6333333333333333,
-        "mean_days": 5.644444444444445,
+        "crew_wins": 119,
+        "crew_win_rate": 0.6611111111111111,
+        "mean_days": 5.75,
         "reasons": {
-          "sunk": 52,
-          "port": 114,
-          "scurvy": 14
+          "sunk": 50,
+          "port": 119,
+          "scurvy": 11
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
       },
       "B": {
         "games": 180,
-        "crew_wins": 120,
-        "crew_win_rate": 0.6666666666666666,
-        "mean_days": 5.777777777777778,
+        "crew_wins": 116,
+        "crew_win_rate": 0.6444444444444445,
+        "mean_days": 5.7,
         "reasons": {
-          "sunk": 46,
-          "port": 120,
-          "scurvy": 14
+          "sunk": 51,
+          "port": 116,
+          "scurvy": 13
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
@@ -287,26 +289,26 @@
     "14": {
       "A": {
         "games": 180,
-        "crew_wins": 112,
-        "crew_win_rate": 0.6222222222222222,
-        "mean_days": 5.5777777777777775,
+        "crew_wins": 114,
+        "crew_win_rate": 0.6333333333333333,
+        "mean_days": 5.527777777777778,
         "reasons": {
-          "port": 112,
+          "port": 114,
           "sunk": 59,
-          "scurvy": 9
+          "scurvy": 7
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
       },
       "B": {
         "games": 180,
-        "crew_wins": 113,
-        "crew_win_rate": 0.6277777777777778,
-        "mean_days": 5.688888888888889,
+        "crew_wins": 111,
+        "crew_win_rate": 0.6166666666666667,
+        "mean_days": 5.65,
         "reasons": {
-          "port": 113,
-          "sunk": 57,
-          "scurvy": 10
+          "port": 111,
+          "sunk": 60,
+          "scurvy": 9
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
@@ -315,25 +317,25 @@
     "15": {
       "A": {
         "games": 180,
-        "crew_wins": 93,
-        "crew_win_rate": 0.5166666666666667,
-        "mean_days": 5.483333333333333,
+        "crew_wins": 95,
+        "crew_win_rate": 0.5277777777777778,
+        "mean_days": 5.455555555555556,
         "reasons": {
-          "sunk": 77,
-          "port": 93,
-          "scurvy": 10
+          "sunk": 76,
+          "port": 95,
+          "scurvy": 9
         },
         "empty_ship_stalemates": 0,
         "identity_discards": 0
       },
       "B": {
         "games": 180,
-        "crew_wins": 88,
-        "crew_win_rate": 0.4888888888888889,
-        "mean_days": 5.55,
+        "crew_wins": 89,
+        "crew_win_rate": 0.49444444444444446,
+        "mean_days": 5.5055555555555555,
         "reasons": {
-          "sunk": 81,
-          "port": 88,
+          "sunk": 80,
+          "port": 89,
           "scurvy": 11
         },
         "empty_ship_stalemates": 0,

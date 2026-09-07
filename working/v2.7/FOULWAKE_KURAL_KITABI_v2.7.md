@@ -109,6 +109,8 @@ N oyuncu için N kartlık seti aşağıdaki sınırlarla oluştur; sonra karış
 | 11-12 | 8-10 | 4 | - |
 | 13-15 | 10-12 | 5 | - |
 
+**Kayıkçı**, Kırık Kürek (KAR-08) karakterinin gemideki işidir; ayrı bir karakter veya kart değildir.
+
 Etki, yalnız kurulum ölçüsüdür; oy veya puan değildir. Herkes yalnız kendi kartına bakar. Doğru söylemek, yalan söylemek ve susmak serbesttir. Henüz Güç ve Sadakat yoktur. Açık yetenek kullanılınca Karakter açılır ve açık kalır; gizli yetenek kartı kapalı tutar. Tek kullanımı Moderatör takip eder.
 
 ### 3.3 Gusto ve Kaptan seçimi
@@ -282,7 +284,7 @@ Oy değeri kart etkisiyle değişebilir. Kaptan rota için de yalnız geçerli b
 
 Oylar aynı anda ve açık verilir. Kaçak Rom'un hedefi, kendi yazılı istisnasıyla diğer oyları gördükten sonra verir. Şapka, Çatlak Kupa, Karga Yuvası ve diğer etkiler yalnız kendi penceresinde işler. Karga Yuvası işaretlediği rotaya hiç oy verilmediyse kendiliğinden oy yaratmaz.
 
-Bir Daha Say, resmî sonuç **tam 1 oy farkıyla** bittiyse o oylamayı bir kez bütünüyle tekrar ettirir. İkinci sonuç kesindir; aynı oylama tekrar zincirine girmez. Suçlama hedef ön seçimi bu kartı tetiklemez.
+Bir Daha Say, resmî sonuç **tam 1 oy farkıyla** bittiyse o oylamayı bir kez bütünüyle tekrar ettirir. İkinci sonuç kesindir; aynı oylama tekrar zincirine girmez. Her uygun oyuncu yeniden oy verir; ilk sayımdaki oylar taşınmaz. Bu oylama için önceden açılmış Şapka, Çatlak Kupa, Papağan taahhüdü, Rom sırası ve Karga Yuvası işareti ikinci sayımda da geçerlidir; kartları yeniden harcamazsınız. Papağan taahhüdünü bozanın oyu, Şapka olsa bile 0 kalır. Suçlama hedef ön seçimi bu kartı tetiklemez.
 
 ### 5.3 Gece ve anlatı sınırı
 
@@ -374,7 +376,7 @@ Yalnız Kaptana karşı yapılır. Başarırsa eski Kaptan bir gece Kamaraya gir
 
 Oyuncu Kamaraya girerken Kaptan konuşma izni olup olmadığını açıkça belirler. İzin yoksa konuşma, fısıltı ve işaretle görüş bildirme yoktur. İzin varsa konuşabilir; **yine de** oy veremez, makam taşıyamaz, Karakter/Güç kullanamaz ve gece eylemine katılamaz. Hain saldırısının hedefi değildir.
 
-Anahtar Deliği, Güç yasağının kendi metninde yazan tek istisnasıdır. Konuşma izni yoksa öğrendiğini o gün aktaramaz. Bir gecelik Kamara ertesi şafakta biter; Bir Kez Mahkûm kaydı silinmez. İsyan ve Seyir Zabtı bu kalıcı kaydı oluşturmaz.
+Anahtar Deliği, Güç yasağının kendi metninde yazan tek istisnasıdır. Konuşma izni yoksa öğrendiğini o gün aktaramaz. Kamaraya gündüz giren kişi, gündüz kapanmadan Anahtar Deliğini kullanabilir; geceyi veya ertesi gün rota öncesini beklemez. Bir gecelik Kamara ertesi şafakta biter; Bir Kez Mahkûm kaydı silinmez. İsyan ve Seyir Zabtı bu kalıcı kaydı oluşturmaz.
 
 ## 9. Ölüm, mahsur kalma ve kurtarma
 
@@ -657,4 +659,4 @@ O son gece için ayrı bir felaket icat etmeye gerek yoktur. Aynı güverte, ayn
 
 ---
 
-Bu, güncel metin ve mekanik açıklama çalışma sürümüdür; baskı/görsel paketinin güncellendiği anlamına gelmez. Teknik ve editoryal kontroller aynı operatörce yapılmıştır. İnsanlarla oynanabilirlik, eğlence ve fiziksel arka yüz testi ayrı doğrulama gerektirir. Kaynak ve değişiklik ayrıntıları `FOULWAKE_EDITORIAL_DECISIONS_v2.7.json` ile `qa/editorial_revision/` içindedir.
+Bu, güncel metin ve mekanik açıklama çalışma sürümüdür. Basılabilir çalışma dosyaları ve görsel pilot için README_CURRENT_v2.7.md dosyasına bakın. Teknik ve editoryal kontroller aynı operatörce yapılmıştır. İnsanlarla oynanabilirlik, eğlence ve fiziksel arka yüz testi ayrı doğrulama gerektirir. Kaynak ve değişiklik ayrıntıları `FOULWAKE_EDITORIAL_DECISIONS_v2.7.json` ile `qa/editorial_revision/` içindedir.
