@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-RECHECK-VISUAL-ACTIVE-20260907",
-  "status": "V4_ACTIVE / WHOLE_GAME_RECHECK_THEN_VISUAL_PILOT",
+  "state_id": "V4-RECHECK-VISUAL-DELIVERED-20260907",
+  "status": "V4_ACTIVE / RECHECK_AND_VISUAL_PILOT_DELIVERED / OWNER_REVIEW_PENDING",
   "updated_at": "2026-09-07",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "FOULWAKE-RECHECK-VISUAL-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -61,18 +61,20 @@
       "head_binding": "AUTHORIZED_TASK_ACTIVATION / NOT_A_DELIVERY",
       "previous_recorded_head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
       "branch_preparation": "Preserved at verified activation head; no specialist content delivery. Chief temporarily executes the new task on v2.7-design.",
-      "current_integrated_copy_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e"
+      "current_integrated_copy_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a"
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
       "head": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
       "accepted_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
-      "status": "PATCH_ACCEPTED_BY_PROJECT_OWNER / PAUSED"
+      "status": "PATCH_ACCEPTED_BY_PROJECT_OWNER / PAUSED",
+      "current_integrated_pilot_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a"
     },
     "visual": {
       "branch": "work/v2.7-visual",
       "head": "23c062f6de06c32eab224b3440c8474725d4fe9e",
-      "status": "PROJECT_OWNER_REJECTED / HOLD / HISTORICAL_EVIDENCE_ONLY"
+      "status": "PROJECT_OWNER_REJECTED / HOLD / HISTORICAL_EVIDENCE_ONLY",
+      "current_integrated_pilot_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a"
     },
     "simulation": {
       "branch": "work/v2.7-simulation",
@@ -84,29 +86,29 @@
       "branch_preparation": "Preserved unchanged. Source inventory completed in consolidated delivery; no automatic COPY-SOURCE-INVENTORY-002 continuation.",
       "accepted_commit": "5bb108249819bcfeb58da6343cc3cd28e221c410",
       "last_accepted_result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED",
-      "current_integrated_evidence_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e"
+      "current_integrated_evidence_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a"
     }
   },
   "visual_dispositions": {
-    "BACK_SEA_ROCK": "REWORK_REQUIRED / MATTE_NO_SHINE",
-    "BACK_ISLAND": "REWORK_REQUIRED / FULL_REDRAW",
-    "BACK_LIGHTHOUSE": "REWORK_REQUIRED / LARGER_LIGHTHOUSE / LONG_RIDGE_NOT_REQUIRED",
-    "OTHER_FOUR_BACKS": "HOLD / NOT_OWNER_ACCEPTED"
+    "BACK_SEA_ROCK": "NEW_WORKING_PILOT_DELIVERED / OWNER_REVIEW_PENDING / NOT_ACCEPTED",
+    "BACK_ISLAND": "NEW_WORKING_PILOT_DELIVERED / OWNER_REVIEW_PENDING / NOT_ACCEPTED",
+    "BACK_LIGHTHOUSE": "NEW_WORKING_PILOT_DELIVERED / OWNER_REVIEW_PENDING / NOT_ACCEPTED",
+    "OTHER_FOUR_BACKS": "NEW_WORKING_PILOT_DELIVERED / OWNER_REVIEW_PENDING / NOT_ACCEPTED"
   },
   "permissions": {
-    "visual_production": true,
-    "thumbnails": true,
-    "pilot_or_candidate": true,
-    "full_121_production": true,
-    "pdf_or_print_package": true,
-    "simulation": true,
+    "visual_production": false,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": false,
     "release": false,
     "lock": false
   },
   "open_blockers": {
-    "ART-001": "Owner-rejected visual package; no replacement candidate.",
-    "MEC-001": "3,600 heuristic A/B voyages and 20 targeted regressions delivered. Full card-timing equivalence, human experience and physical shared-back evidence remain absent; balance/release acceptance not given.",
-    "QA-001": "No active candidate attestation.",
+    "ART-001": "12 illustrated fronts and seven new backs delivered; project-owner aesthetic review pending, 109 fronts still text prototypes.",
+    "MEC-001": "27 targeted tests and 3,600 updated heuristic voyages delivered. Full engine equivalence and human experience remain unverified; no balance acceptance.",
+    "QA-001": "Working pilot has source-copy/PDF/geometry self-check; no independent candidate attestation or owner aesthetic acceptance.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
     "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
@@ -117,7 +119,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Recheck the current game, repair remaining defects, then produce scoped illustrated pilot and working PDFs.",
+  "next_action": "Project owner reviews the actual 12-front/seven-back pilot. Continue full illustration rollout only after the pilot decision; human and physical proof remain separate.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -183,9 +185,27 @@
       "delivery_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
       "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
       "limits": "No independent human or full-rule engine acceptance."
+    },
+    "RECOUNT-001": {
+      "status": "FIX_IMPLEMENTED / SAME_OPERATOR_SELF_CHECK",
+      "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+      "delivery_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
+      "evidence_ref": "governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json"
+    },
+    "KEYHOLE-DAY-001": {
+      "status": "FIX_IMPLEMENTED / SAME_OPERATOR_SELF_CHECK",
+      "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+      "delivery_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
+      "evidence_ref": "governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json"
+    },
+    "COPY-ART-DRIFT-001": {
+      "status": "FIX_IMPLEMENTED / SAME_OPERATOR_SELF_CHECK",
+      "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+      "delivery_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
+      "evidence_ref": "governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json"
     }
   },
-  "last_completed_project_task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+  "last_completed_project_task_id": "FOULWAKE-RECHECK-VISUAL-001",
   "read_only_assignments": {},
   "completed_read_only_reviews": {
     "STORY-COHERENCE-IMMERSION-001": {
@@ -206,5 +226,28 @@
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_status": "OWNER_EXTENSION_RECORDED / EXACT_TASK_NOT_YET_ACTIVE"
+  "temporary_delegation_status": "SCOPED_TASK_DELIVERED / PRODUCTION_CLOSED / OWNER_PILOT_REVIEW_PENDING",
+  "current_recheck_delivery": {
+    "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+    "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
+    "evidence_ref": "governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json",
+    "readme": "working/v2.7/README_CURRENT_v2.7.md",
+    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING"
+  },
+  "current_visual_pilot": {
+    "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+    "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
+    "evidence_ref": "governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json",
+    "review_pdf": "working/v2.7/visual/recheck_20260907/pdf/FOULWAKE_GORSEL_INCELEME_v2.7.pdf",
+    "status": "WORKING_PILOT_DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+    "fronts": 12,
+    "backs": 7,
+    "not_an_accepted_candidate": true
+  },
+  "visual_dispositions_history_before_recheck": {
+    "BACK_SEA_ROCK": "REWORK_REQUIRED / MATTE_NO_SHINE",
+    "BACK_ISLAND": "REWORK_REQUIRED / FULL_REDRAW",
+    "BACK_LIGHTHOUSE": "REWORK_REQUIRED / LARGER_LIGHTHOUSE / LONG_RIDGE_NOT_REQUIRED",
+    "OTHER_FOUR_BACKS": "HOLD / NOT_OWNER_ACCEPTED"
+  }
 }

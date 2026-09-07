@@ -41,3 +41,7 @@ Proje sahibi, bu Baş Editör sohbetine hikâye editörlüğü, kart/kural metni
 ## 7 Eylül 2026 yeni görsel görev devri
 
 Proje sahibinin son mesajı önce bütün sistemi yeniden kontrol etmeyi, ardından Sanat Yönetimi ve Görsel Tasarım işlerini de bu Baş Editör sohbetinde yürütmeyi istedi. Önceki dışlama bu yeni görev için geçerli değildir. Yetki `OWNER_RECHECK_VISUAL_AUTHORITY_20260907.json` ve `FOULWAKE-RECHECK-VISUAL-001` kapsamındadır. Somut 12 ön/7 arka pilot, 121 kartın metin prototipi ve kural kitabı hazırlanır; tek operatörün incelemesi bağımsız kabul sayılmaz. Kabul edilmiş KAPTAN ana figürü ile kilitli v2.6 korunur; release/lock açılmaz.
+
+## İkinci kontrol ve görsel pilot teslimi
+
+`FOULWAKE-RECHECK-VISUAL-001` teslim edildi; üretim yetkisi kapandı. Güncel kanıt `governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json`. 27 hedefli test, 3.600 yaklaşık yolculuk, 121 PDF kart metni, 30 sayfalık kitap ve 12 ön/yedi arka çalışma pilotu mevcut. Kalan 109 ön metin prototipidir; tam illüstrasyon yayılımı öncesi somut pilotun proje sahibi estetik değerlendirmesi beklenir. Aynı operatörün kontrolü bağımsız kabul değildir.

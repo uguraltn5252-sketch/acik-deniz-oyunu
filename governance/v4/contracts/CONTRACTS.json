@@ -113,30 +113,14 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**",
-          "working/v2.7/qa/editorial_revision/**",
-          "working/v2.7/qa/recheck_visual/**",
-          "working/v2.7/visual/recheck_20260907/**"
+          ".github/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
-          "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
-          "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
-          "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
-          "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-          "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
-          "working/v2.7/V27_MECHANIC_DECISIONS.json",
-          "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
-          "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
-          "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
-          "working/v2.7/README_CURRENT_v2.7.md",
-          "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
-          "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
-          "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -253,7 +237,8 @@
       "task_id": "FOULWAKE-RECHECK-VISUAL-001",
       "role": "CHIEF_EDITOR",
       "scope": "Latest owner instruction: editorial recheck plus Art Direction and Visual Design; exact task paths and pilot limits only.",
-      "review": "SAME_OPERATOR_SELF_CHECK / OWNER_AESTHETIC_REVIEW_PENDING / NOT_INDEPENDENT"
+      "review": "SAME_OPERATOR_SELF_CHECK / OWNER_AESTHETIC_REVIEW_PENDING / NOT_INDEPENDENT",
+      "status": "DELIVERED / EXACT_TASK_CLOSED / OWNER_PILOT_REVIEW_PENDING"
     }
   },
   "protected_quality_gates": [
@@ -316,8 +301,8 @@
       "required_identity_decision": "SRC-002",
       "full_source": {
         "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "source_sha256": "c50cfaebe49a70513f6f505de799499ffe08ad640ef23de88313d67bd4c3df04",
-        "source_git_blob": "487da695e5a8668f0d18fd94591614ed1502baa7",
+        "source_sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "source_git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
         "collections": {
           "characters": {
             "visible_fields": [
@@ -371,8 +356,8 @@
         "identity_decision_source_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3"
       },
       "expected_full_deck_records": 121,
-      "coverage_status": "COMPLETE_TEXT_SOURCE: 121 resolvable records; self-checked copy, no visual/render/physical acceptance or production authority.",
-      "current_revision_evidence": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json"
+      "coverage_status": "121 canonical text records and PDF layouts self-checked; 12 illustrated fronts/seven backs delivered for owner review. No independent visual or physical acceptance.",
+      "current_revision_evidence": "governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json"
     },
     "framing": {
       "action": "FRAMING_DECISION",
@@ -488,12 +473,13 @@
   "protected_content_blobs": {
     "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "eca6b8ed8178c9ca6c6adc51078e03d4aa9a16c5",
     "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "fc6d55f4a036d8adf15543911ec056754cfc8b37",
-    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "4add93bb768b93d9224295ba750f2d24e45e9d01",
+    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "c8e03a51af6815d63dbc4c95b01296543eec2da7",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
-    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "f88e71c6e4355df291a2e70ce1fff461d8145217",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "28c1100615548b07e527cf50f32071e42c63f5bb",
     "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "df2f74fe3f245bfd5d2fe57439f11c22aeca0e02",
     "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "e9faf109fb5ee912935a7bdf30bc554eae1efa77",
-    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "bc37cf476785f54ddd91c3aa7593af64401aa16a",
-    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "6e88d3591ba7412b0852c8beee8097dd73c8fa14"
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "976ebcaaf1069d0a8a3bcfa64482630d275781ad",
+    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "db98945fdbbdf3cbf37141e2d52e0f3a7770cd79",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "ff60f377037bd82a490d788514b449508d4d849e"
   }
 }
