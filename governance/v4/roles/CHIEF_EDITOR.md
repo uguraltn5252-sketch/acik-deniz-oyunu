@@ -45,3 +45,7 @@ Proje sahibinin son mesajı önce bütün sistemi yeniden kontrol etmeyi, ardın
 ## İkinci kontrol ve görsel pilot teslimi
 
 `FOULWAKE-RECHECK-VISUAL-001` teslim edildi; üretim yetkisi kapandı. Güncel kanıt `governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json`. 27 hedefli test, 3.600 yaklaşık yolculuk, 121 PDF kart metni, 30 sayfalık kitap ve 12 ön/yedi arka çalışma pilotu mevcut. Kalan 109 ön metin prototipidir; tam illüstrasyon yayılımı öncesi somut pilotun proje sahibi estetik değerlendirmesi beklenir. Aynı operatörün kontrolü bağımsız kabul değildir.
+
+## Tam deste çizimi ve fener düzeltmesi
+
+Proje sahibi somut pilot tesliminden sonra “Devam” dedi; ardından fenerin yandan görünümünü araştırıp oyuna uyarlama kararını Baş Editöre verdi. `OWNER_FULL_DECK_ART_AUTHORITY_20260907.json` ve yeni `FOULWAKE-FULL-DECK-ART-001` görevi kalan 109 ön çizimi ile bir Fener arka masterının yenilenmesini kapsar. 12 ön ve diğer altı arka kaynak korunur. Bu devam kararı bağımsız kabul, fiziksel proof veya release/lock değildir. Güncel hikâye adı Kuru Pay; önceki tarihsel bölümdeki Siyah Mühür ifadesi güncel kanon değildir.

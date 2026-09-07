@@ -113,14 +113,19 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**"
+          ".github/**",
+          "working/v2.7/qa/full_deck_art/**",
+          "working/v2.7/visual/full_deck_20260907/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+          "working/v2.7/README_CURRENT_v2.7.md",
+          "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+          "working/v2.7/visual/art_direction/FOULWAKE_FULL_DECK_DECISIONS_v2.7.md"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -233,12 +238,12 @@
       "limits": "Exact task, role/path scope, independent review and source integrity remain mandatory; no implicit full production, canon/mechanics change, release or lock."
     },
     "temporary_consolidated_authority": {
-      "decision_ref": "governance/v4/evidence/OWNER_RECHECK_VISUAL_AUTHORITY_20260907.json",
-      "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+      "decision_ref": "governance/v4/evidence/OWNER_FULL_DECK_ART_AUTHORITY_20260907.json",
+      "task_id": "FOULWAKE-FULL-DECK-ART-001",
       "role": "CHIEF_EDITOR",
-      "scope": "Latest owner instruction: editorial recheck plus Art Direction and Visual Design; exact task paths and pilot limits only.",
-      "review": "SAME_OPERATOR_SELF_CHECK / OWNER_AESTHETIC_REVIEW_PENDING / NOT_INDEPENDENT",
-      "status": "DELIVERED / EXACT_TASK_CLOSED / OWNER_PILOT_REVIEW_PENDING"
+      "scope": "Owner-authorized full illustration continuation and side-view lighthouse revision; current canonical copy remains immutable.",
+      "review": "SAME_OPERATOR_SELF_CHECK / FULL_DECK_OWNER_REVIEW_PENDING / NOT_INDEPENDENT",
+      "status": "OWNER_CONTINUATION_RECORDED / AWAITING_EXACT_TASK"
     }
   },
   "protected_quality_gates": [

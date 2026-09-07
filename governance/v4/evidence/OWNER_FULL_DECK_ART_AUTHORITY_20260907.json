@@ -1,0 +1,46 @@
+{
+  "schema_version": "4.3",
+  "decision_id": "OWNER-FULL-DECK-ART-20260907",
+  "authorized_by": "PROJECT_OWNER",
+  "grantee": "CHIEF_EDITOR",
+  "date": "2026-09-07",
+  "source_head": "29c777edf3b94ec7ab0773462949698e51c70b25",
+  "owner_continuation_quote": "Devam",
+  "continuation_context": "Continuation after delivery of the concrete 12-front/seven-back working pilot and the question about extending that art language to the remaining 109 fronts. This authorizes rollout; it is not a claim of independent candidate acceptance.",
+  "owner_lighthouse_quote": "Bence deniz feneri buna benzer yandan görünse daha guzel olur ama oyuna uyarlaması o havayı vermeli. Arastir dusun illa bu sekilde olmasına gerek yok karar senin",
+  "lighthouse_interpretation": "Research the side-view lighthouse mood using the four owner-supplied images; make the design decision and adapt it to the 1721 world and information-safe common back. This supersedes the pilot roof-plan treatment for BACK_LIGHTHOUSE.",
+  "task_id": "FOULWAKE-FULL-DECK-ART-001",
+  "branch": "v2.7-design",
+  "authorized_work": [
+    "Generate and inspect the remaining 109 distinct front illustrations using the current canonical text and art briefs.",
+    "Preserve the 12 existing illustrated fronts and six other back sources; produce a new side-view lighthouse back master and use it identically for all four lighthouse cards.",
+    "Produce full 121-front illustrated print layouts, transport-sized PDF volumes if needed, a full review inventory and exact copy/geometry/source evidence."
+  ],
+  "scope": {
+    "exact_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_FULL_DECK_DECISIONS_v2.7.md"
+    ],
+    "globs": [
+      "working/v2.7/qa/full_deck_art/**",
+      "working/v2.7/visual/full_deck_20260907/**"
+    ]
+  },
+  "production_limit": {
+    "new_fronts": 109,
+    "retained_fronts": 12,
+    "revised_back_masters": 1,
+    "retained_back_masters": 6,
+    "final_illustrated_fronts": 121
+  },
+  "excluded": [
+    "Changes to canonical card/story/rule text or simulation results",
+    "Modifications to releases/ or the binding KAPTAN source",
+    "Repainting the 12 retained fronts or six retained back sources",
+    "Claims of independent review, completed human or physical proof",
+    "Release or lock"
+  ],
+  "review_semantics": "SAME_OPERATOR_SELF_CHECK; owner continuation and lighthouse steering are recorded, not fabricated all-deck aesthetic acceptance.",
+  "expiry": "This exact task and working delivery."
+}
