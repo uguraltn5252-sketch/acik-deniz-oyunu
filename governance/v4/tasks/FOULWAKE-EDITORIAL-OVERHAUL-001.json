@@ -4,7 +4,7 @@
   "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
   "task_type": "OWNER_DELEGATED_STORY_RULES_COPY_AND_SIMULATION",
   "project_task": true,
-  "status": "ACTIVE",
+  "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
   "issued_by": "PROJECT_OWNER",
   "issued_at": "2026-09-07",
   "executor_role": "CHIEF_EDITOR",
@@ -23,8 +23,8 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
   },
   "authorization": {
-    "enabled": true,
-    "write_authorized": true,
+    "enabled": false,
+    "write_authorized": false,
     "allowed_actions": [
       "WRITE",
       "PRODUCE_STORY",
@@ -173,5 +173,39 @@
     "rule comprehension and hidden-information fairness"
   ],
   "execution_status": "IN_PROGRESS_IN_CHIEF_EDITOR_CHAT",
-  "next_responsible_role": "CHIEF_EDITOR"
+  "next_responsible_role": "CHIEF_EDITOR",
+  "delivery": {
+    "commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
+    "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
+    "changed_paths": [
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+      "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "working/v2.7/qa/editorial_revision/content_checks.json",
+      "working/v2.7/qa/editorial_revision/copy_changes.json",
+      "working/v2.7/qa/editorial_revision/editorial_report.md",
+      "working/v2.7/qa/editorial_revision/human_playtest.md",
+      "working/v2.7/qa/editorial_revision/observation_engine.py",
+      "working/v2.7/qa/editorial_revision/render_texts.py",
+      "working/v2.7/qa/editorial_revision/research_notes.md",
+      "working/v2.7/qa/editorial_revision/rulebook_template.md",
+      "working/v2.7/qa/editorial_revision/run_simulation.py",
+      "working/v2.7/qa/editorial_revision/simulation_games.csv",
+      "working/v2.7/qa/editorial_revision/simulation_results.json",
+      "working/v2.7/qa/editorial_revision/source_inventory.json",
+      "working/v2.7/qa/editorial_revision/test_rules.py",
+      "working/v2.7/qa/editorial_revision/verify_content.py"
+    ],
+    "review_class": "SAME_OPERATOR_SELF_CHECK",
+    "accepted_by": null,
+    "owner_review": "PENDING_NOT_FABRICATED"
+  }
 }

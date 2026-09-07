@@ -54,7 +54,7 @@
       ],
       "writes_require_exact_task": true,
       "brief_ref": "governance/v4/roles/CHIEF_EDITOR.md",
-      "temporary_delegation_ref": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json"
+      "temporary_delegation_status": "COMPLETED / PROJECT_PRODUCTION_AUTHORITY_CLOSED; coordination authority remains separate; action vocabulary retained for historical task validation"
     },
     "STORY_EDITOR": {
       "owns": [

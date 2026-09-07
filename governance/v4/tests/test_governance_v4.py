@@ -442,7 +442,7 @@ class GovernanceV4Tests(unittest.TestCase):
         self.assertEqual(resolved["SET-KP-01"], self.canonical_copies["SET-KP-01"])
 
     def test_19_full_copy_resolver_and_owner_mapping_are_exact(self) -> None:
-        self.assertEqual(len(self.canonical_copies), 51)
+        self.assertEqual(len(self.canonical_copies), 121)
         decision = self.state["resolved_source_decisions"]["SRC-002"]
         self.assertEqual(
             decision["source_git_blob"],
@@ -451,6 +451,15 @@ class GovernanceV4Tests(unittest.TestCase):
         for card_id, expected_name in decision["mapping"].items():
             with self.subTest(card_id=card_id):
                 self.assertEqual(self.canonical_copies[card_id]["name"], expected_name)
+        validator.verify_resolved_source_decision(self.state, self.contracts, self.canonical_copies)
+        changed_pin = copy.deepcopy(self.contracts)
+        changed_pin["owner_controls"]["exact_copy"]["full_source"]["identity_decision_source_blob"] = "0" * 40
+        with self.assert_rejected("SOURCE_DECISION_DRIFT"):
+            validator.verify_resolved_source_decision(self.state, changed_pin, self.canonical_copies)
+        changed_name = copy.deepcopy(self.canonical_copies)
+        changed_name["GUC-23"]["name"] = "Unapproved replacement"
+        with self.assert_rejected("SOURCE_DECISION_MAPPING_DRIFT"):
+            validator.verify_resolved_source_decision(self.state, self.contracts, changed_name)
 
     def test_20_four_granular_production_actions_require_direct_gates(self) -> None:
         granular = self.contracts["runtime_authorization"]["granular_production_actions"]
@@ -603,6 +612,7 @@ class GovernanceV4Tests(unittest.TestCase):
             subprocess.run(["git", "clone", "--quiet", "--shared", "--no-checkout", str(ROOT), str(repo)], check=True)
             snapshot = self.contracts["lifecycle"]["completed_hardening"]["snapshot_commit"]
             validator.git(repo, "checkout", "--quiet", "--detach", snapshot)
+            snapshot_contracts = validator.load_json(repo / "governance/v4/contracts/CONTRACTS.json")
             for relative in ("governance/v4/contracts/CONTRACTS.json", "governance/v4/validator.py"):
                 shutil.copy2(ROOT / relative, repo / relative)
             def save(relative, value):
@@ -613,6 +623,17 @@ class GovernanceV4Tests(unittest.TestCase):
                 validator.git(repo, "add", "-A")
                 validator.git(repo, "-c", "user.name=Governance test", "-c", "user.email=test@example.invalid", "commit", "--quiet", "-m", message)
                 return validator.git(repo, "rev-parse", "HEAD")
+            # This exercise starts at the historical hardening content. Install
+            # current lifecycle logic while keeping its source pins historical;
+            # later authorized copy revisions must not rewrite this fixture.
+            installed_contracts = copy.deepcopy(self.contracts)
+            installed_contracts["owner_controls"]["exact_copy"] = snapshot_contracts["owner_controls"]["exact_copy"]
+            installed_contracts["protected_content_blobs"] = {
+                relative: validator.git(repo, "rev-parse", f"{snapshot}:{relative}")
+                for relative in self.contracts["protected_content_blobs"]
+                if (repo / relative).is_file()
+            }
+            save("governance/v4/contracts/CONTRACTS.json", installed_contracts)
             baseline = commit("test only: install lifecycle validator")
             self.assertIsNone(validator.validate_repository(repo)["active_task_id"])
             task = copy.deepcopy(self.scenario_tasks["SIMULATION-EXAMPLE-001"])

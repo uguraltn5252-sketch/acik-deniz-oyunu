@@ -1034,7 +1034,12 @@ def verify_resolved_source_decision(
     require(decision_id not in state.get("open_blockers", {}), "RESOLVED_BLOCKER_STILL_OPEN", decision_id)
     full_source = copy_contract["full_source"]
     require(decision.get("source") == full_source["source"], "SOURCE_DECISION_DRIFT", decision_id)
-    require(decision.get("source_git_blob") == full_source["source_git_blob"], "SOURCE_DECISION_DRIFT", decision_id)
+    # The historical identity decision stays immutable when an owner-authorized
+    # copy revision advances the current file. Current copy bytes are separately
+    # pinned by verify_contract_integrity; the binding names are checked below.
+    identity_blob = full_source.get("identity_decision_source_blob", full_source["source_git_blob"])
+    require(SHA_RE.fullmatch(str(identity_blob)) is not None, "SOURCE_DECISION_SCHEMA", "identity blob")
+    require(decision.get("source_git_blob") == identity_blob, "SOURCE_DECISION_DRIFT", decision_id)
     identity_field = decision.get("identity_field")
     require(isinstance(identity_field, str) and identity_field, "SOURCE_DECISION_SCHEMA", "identity_field")
     mapping = decision.get("mapping")

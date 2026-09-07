@@ -33,3 +33,7 @@ uzmanların adına hikâye, illüstrasyon veya simülasyon sonucu üretmek deği
 ## 7 Eylül 2026 geçici görev devri
 
 Proje sahibi, bu Baş Editör sohbetine hikâye editörlüğü, kart/kural metni ve simülasyon işini geçici olarak devretti. `OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json` kapsamı ve yeni exact görev, yukarıdaki olağan rol ayrımına bu teslim için açık istisnadır. Siyah Mühür adının değiştirilmesi de istendi. Görsel uzman ve sanat yönetmeni bu devrin dışındadır. Aynı kişinin yaptığı kontroller bağımsız inceleme veya insan deneyimi kanıtı sayılmaz. Yeni görevin bitmesi başka görevler için yazma yetkisi vermez.
+
+## 7 Eylül teslim durumu
+
+`FOULWAKE-EDITORIAL-OVERHAUL-001` çalışma revizyonu teslim edildi. Güncel giriş `working/v2.7/README_CURRENT_v2.7.md`; kanıt `governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json`. Kaynak envanteri 121 metne tamamlandı, hikâye/kart/kural değişiklikleri uygulandı. 20 teknik regresyon ve 3.600 yaklaşık model yolculuğu, bağımsız insan veya tam kural motoru kabulü değildir. Bu teslim için geçici üretim yetkisi kapandı; Story ya da COPY-SOURCE-INVENTORY-002 görevini kendiliğinden başlatma. Görsel/Sanat kapsamı devralınmadı.

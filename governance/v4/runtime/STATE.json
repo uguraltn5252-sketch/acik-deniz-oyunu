@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-CONSOLIDATED-EDITORIAL-ACTIVE-20260907",
-  "status": "V4_ACTIVE / OWNER_DELEGATED_STORY_RULES_SIMULATION / VISUAL_ART_RELEASE_CLOSED",
+  "state_id": "V4-EDITORIAL-REVISION-DELIVERED-20260907",
+  "status": "V4_READY / EDITORIAL_WORKING_REVISION_DELIVERED / OWNER_REVIEW_PENDING / ALL_PRODUCTION_CLOSED",
   "updated_at": "2026-09-07",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -55,12 +55,13 @@
     "story": {
       "branch": "work/v2.7-story",
       "head": "11f58ecf519c9e6ceb5a9e81b6ed88747ae2464e",
-      "status": "FROZEN / SUPERSEDED_BY_OWNER_CONSOLIDATED_TASK",
+      "status": "FROZEN / OWNER_CONSOLIDATED_STORY_REVISION_DELIVERED",
       "task_id": null,
       "source_baseline_commit": "175a10c7b6829abfe61c3c95057b6f4e77f2b520",
       "head_binding": "AUTHORIZED_TASK_ACTIVATION / NOT_A_DELIVERY",
       "previous_recorded_head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
-      "branch_preparation": "Preserved at verified activation head; no specialist content delivery. Chief temporarily executes the new task on v2.7-design."
+      "branch_preparation": "Preserved at verified activation head; no specialist content delivery. Chief temporarily executes the new task on v2.7-design.",
+      "current_integrated_copy_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e"
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
@@ -77,12 +78,13 @@
       "branch": "work/v2.7-simulation",
       "head": "23b8ba547d58008e69c400140e16ccfc0186aee9",
       "head_binding": "FROZEN_AT_VERIFIED_PAUSE_HEAD / NOT_AN_ACCEPTED_DELIVERY",
-      "task_id": "COPY-SOURCE-INVENTORY-001",
+      "task_id": null,
       "source_baseline_commit": "54692e3e4da7d1bd9005384ed78286dbbdba8cb3",
-      "status": "PAUSED_FOR_STORY_IMPLEMENTATION / INVENTORY_NOT_ACCEPTED_OR_CLOSED",
-      "branch_preparation": "Preserve the current branch and any unpublished work. Resume inventory through a new exact continuation task after Story implementation review.",
+      "status": "FROZEN / INVENTORY_SUPERSEDED_BY_OWNER_CONSOLIDATED_DELIVERY / HEURISTIC_STRESS_ONLY",
+      "branch_preparation": "Preserved unchanged. Source inventory completed in consolidated delivery; no automatic COPY-SOURCE-INVENTORY-002 continuation.",
       "accepted_commit": "5bb108249819bcfeb58da6343cc3cd28e221c410",
-      "last_accepted_result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED"
+      "last_accepted_result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED",
+      "current_integrated_evidence_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e"
     }
   },
   "visual_dispositions": {
@@ -97,22 +99,17 @@
     "pilot_or_candidate": false,
     "full_121_production": false,
     "pdf_or_print_package": false,
-    "simulation": true,
+    "simulation": false,
     "release": false,
     "lock": false
   },
   "open_blockers": {
     "ART-001": "Owner-rejected visual package; no replacement candidate.",
-    "MEC-001": "OPEN: scoped Sea/Rock information evidence accepted as INCONCLUSIVE; full observation-correct A/B gameplay, human experience and physical evidence remain absent.",
+    "MEC-001": "3,600 heuristic A/B voyages and 20 targeted regressions delivered. Full card-timing equivalence, human experience and physical shared-back evidence remain absent; balance/release acceptance not given.",
     "QA-001": "No active candidate attestation.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
-    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent.",
-    "PREFLIGHT-ENGINE-01": "REPRODUCED: uninformed traitor bluff target reads true hidden front; blocks information-valid full-game A/B outcomes.",
-    "PREFLIGHT-ENGINE-02": "REPRODUCED: optional route-information power used before the first movement contrary to pinned rulebook section 11.3.",
-    "COPY-NIGHT-001": "OPEN: KAR-01/02 Tanışma gecesi conflicts with distinct first neutral / first voyage night rules; SCIM-01 source evidence accepted, QA/copy disposition pending.",
-    "COPY-KAPTAN-001": "OPEN: exact owner effect does not express detailed voting distinctions; SCIM-02 ambiguity accepted, QA and concrete owner copy decision pending. Existing override remains binding.",
-    "STORY-COHERENCE-001": "OPEN: preserved v2.6 §5.3 narrative assigns certain intent to Siyah Mühür outside v2.7 replacement blocks; SCIM-03 accepted, bounded Story correction queued."
+    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
   },
   "canonical_refs": {
     "contracts": "governance/v4/contracts/CONTRACTS.json",
@@ -120,7 +117,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "CHIEF_EDITOR executes story, complete card copy, rulebook and simulation directly under FOULWAKE-EDITORIAL-OVERHAUL-001.",
+  "next_action": "Current playable text revision is delivered. Owner may review working/v2.7/README_CURRENT_v2.7.md. No Story implementation or source-inventory handoff remains; any subsequent work requires its exact scope. Visual/art roles remain separate.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -146,9 +143,49 @@
       "evidence_ref": "governance/v4/evidence/TEAM_RELAUNCH_RESULT.json",
       "verified_source_commit": "12d7e1faa3c9306fe94b8239e9fc8748e84a72d6",
       "note": "Simulation rerun attempt 2 PASS at its unchanged activation head; all four workstream refs validated by current integration CI."
+    },
+    "COPY-NIGHT-001": {
+      "status": "FIX_IMPLEMENTED / SAME_OPERATOR_REGRESSION_CHECK",
+      "previous_description": "OPEN: KAR-01/02 Tanışma gecesi conflicts with distinct first neutral / first voyage night rules; SCIM-01 source evidence accepted, QA/copy disposition pending.",
+      "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+      "delivery_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
+      "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
+      "limits": "No independent human or full-rule engine acceptance."
+    },
+    "COPY-KAPTAN-001": {
+      "status": "FIX_IMPLEMENTED / SAME_OPERATOR_REGRESSION_CHECK",
+      "previous_description": "OPEN: exact owner effect does not express detailed voting distinctions; SCIM-02 ambiguity accepted, QA and concrete owner copy decision pending. Existing override remains binding.",
+      "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+      "delivery_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
+      "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
+      "limits": "No independent human or full-rule engine acceptance."
+    },
+    "STORY-COHERENCE-001": {
+      "status": "FIX_IMPLEMENTED / SAME_OPERATOR_REGRESSION_CHECK",
+      "previous_description": "OPEN: preserved v2.6 §5.3 narrative assigns certain intent to Siyah Mühür outside v2.7 replacement blocks; SCIM-03 accepted, bounded Story correction queued.",
+      "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+      "delivery_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
+      "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
+      "limits": "No independent human or full-rule engine acceptance."
+    },
+    "PREFLIGHT-ENGINE-01": {
+      "status": "FIX_IMPLEMENTED / SAME_OPERATOR_REGRESSION_CHECK",
+      "previous_description": "REPRODUCED: uninformed traitor bluff target reads true hidden front; blocks information-valid full-game A/B outcomes.",
+      "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+      "delivery_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
+      "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
+      "limits": "No independent human or full-rule engine acceptance."
+    },
+    "PREFLIGHT-ENGINE-02": {
+      "status": "FIX_IMPLEMENTED / SAME_OPERATOR_REGRESSION_CHECK",
+      "previous_description": "REPRODUCED: optional route-information power used before the first movement contrary to pinned rulebook section 11.3.",
+      "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+      "delivery_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
+      "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
+      "limits": "No independent human or full-rule engine acceptance."
     }
   },
-  "last_completed_project_task_id": "MEC-SEA-ROCK-PREFLIGHT-001",
+  "last_completed_project_task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
   "read_only_assignments": {},
   "completed_read_only_reviews": {
     "STORY-COHERENCE-IMMERSION-001": {
@@ -160,13 +197,14 @@
   },
   "last_completed_read_only_task_id": "STORY-COHERENCE-IMMERSION-001",
   "coordination_followups_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json",
-  "paused_project_tasks": {
-    "COPY-SOURCE-INVENTORY-001": {
-      "task_ref": "governance/v4/tasks/COPY-SOURCE-INVENTORY-001.json",
-      "branch_head_at_pause": "23b8ba547d58008e69c400140e16ccfc0186aee9",
-      "reason": "STORY_IMPLEMENTATION_PRIORITY",
-      "resume_task_id": "COPY-SOURCE-INVENTORY-002"
-    }
+  "paused_project_tasks": {},
+  "temporary_delegation_ref": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
+  "current_editorial_delivery": {
+    "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+    "commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
+    "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
+    "readme": "working/v2.7/README_CURRENT_v2.7.md",
+    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_ref": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json"
+  "temporary_delegation_status": "DELIVERY_COMPLETE / NO_FURTHER_PRODUCTION_AUTHORITY"
 }

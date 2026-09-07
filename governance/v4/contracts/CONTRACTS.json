@@ -113,29 +113,17 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**",
-          "working/v2.7/qa/editorial_revision/**"
+          ".github/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
-          "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
-          "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
-          "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
-          "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-          "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
-          "working/v2.7/V27_MECHANIC_DECISIONS.json",
-          "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
-          "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
-          "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
-          "working/v2.7/README_CURRENT_v2.7.md"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
         ],
         "forbidden_prefixes": [
-          "releases/",
-          "working/v2.7/visual/"
+          "releases/"
         ]
       },
       "STORY_EDITOR": {
@@ -292,8 +280,8 @@
     },
     "exact_copy": {
       "source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
-      "source_sha256": "8eca6db58c866b247cb6197aec2022ff0210e50e2fba98a4fcc02fbed4eabd55",
-      "source_git_blob": "1a0e03e19cbe3eacd1769aa186b0a444f4cc3e30",
+      "source_sha256": "dc3ca70f2b84d77eccfc6b8443d172c88a32db4808fe70538e3c1b4cdde2db56",
+      "source_git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e",
       "identity_field": "id",
       "visible_fields": [
         "title",
@@ -312,8 +300,8 @@
       "required_identity_decision": "SRC-002",
       "full_source": {
         "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "source_sha256": "8042a62875ea53ee2676d850b0e6e9083a1a098ab2f3984fbb4aeca25dea2675",
-        "source_git_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3",
+        "source_sha256": "c50cfaebe49a70513f6f505de799499ffe08ad640ef23de88313d67bd4c3df04",
+        "source_git_blob": "487da695e5a8668f0d18fd94591614ed1502baa7",
         "collections": {
           "characters": {
             "visible_fields": [
@@ -331,11 +319,44 @@
               "effect",
               "flavor"
             ]
+          },
+          "loyalties": {
+            "visible_fields": [
+              "name",
+              "side",
+              "effect",
+              "flavor"
+            ]
+          },
+          "provisions": {
+            "visible_fields": [
+              "name",
+              "effect",
+              "flavor"
+            ]
+          },
+          "maps": {
+            "visible_fields": [
+              "name",
+              "category",
+              "family",
+              "effect",
+              "flavor"
+            ]
+          },
+          "utilities": {
+            "visible_fields": [
+              "name",
+              "effect",
+              "flavor"
+            ]
           }
-        }
+        },
+        "identity_decision_source_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3"
       },
       "expected_full_deck_records": 121,
-      "coverage_status": "PARTIAL: 51 resolvable records; no full-deck exact-copy PASS or full-121 authorization."
+      "coverage_status": "COMPLETE_TEXT_SOURCE: 121 resolvable records; self-checked copy, no visual/render/physical acceptance or production authority.",
+      "current_revision_evidence": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json"
     },
     "framing": {
       "action": "FRAMING_DECISION",
@@ -449,12 +470,14 @@
     "known_external_enforcement_gap": "GOV-001: GitHub branch protection requires live settings evidence. GOV-002: close only after current v4 workflow and all workstream checks pass on GitHub."
   },
   "protected_content_blobs": {
-    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "962222d83d669763c4ac8e2765f024b9fade180c",
-    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "f1e0eb75434540a85e8b21484acd99ca0abc66cf",
-    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "2b4b4d423c65d5b72f756d322d9b0bd3c8537afa",
+    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "eca6b8ed8178c9ca6c6adc51078e03d4aa9a16c5",
+    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "fc6d55f4a036d8adf15543911ec056754cfc8b37",
+    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "4add93bb768b93d9224295ba750f2d24e45e9d01",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
     "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "f88e71c6e4355df291a2e70ce1fff461d8145217",
     "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "df2f74fe3f245bfd5d2fe57439f11c22aeca0e02",
-    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "e9faf109fb5ee912935a7bdf30bc554eae1efa77"
+    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "e9faf109fb5ee912935a7bdf30bc554eae1efa77",
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "bc37cf476785f54ddd91c3aa7593af64401aa16a",
+    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "6e88d3591ba7412b0852c8beee8097dd73c8fa14"
   }
 }

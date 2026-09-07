@@ -177,5 +177,9 @@
     "scope_note": "Original three output paths and source inputs are preserved. No delivery is accepted. A fresh exact continuation task is required to resume writing.",
     "status": "PAUSED / RETAINED_FOR_CONTINUATION"
   },
-  "next_responsible_role": "STORY_EDITOR"
+  "next_responsible_role": "STORY_EDITOR",
+  "current_status": "HISTORICAL_PLAN / IMPLEMENTATION_DELIVERED_IN_CONSOLIDATED_TASK",
+  "superseded_by_task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+  "current_delivery_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
+  "current_evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json"
 }

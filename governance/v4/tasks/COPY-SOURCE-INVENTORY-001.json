@@ -4,7 +4,7 @@
   "task_id": "COPY-SOURCE-INVENTORY-001",
   "task_type": "READ_ONLY_SOURCE_COPY_INVENTORY",
   "project_task": true,
-  "status": "PAUSED / STORY_IMPLEMENTATION_PRIORITY",
+  "status": "SUPERSEDED / SOURCE_INVENTORY_DELIVERED_IN_OWNER_CONSOLIDATED_REVISION",
   "issued_by": "CHIEF_EDITOR",
   "issued_at": "2026-09-05",
   "executor_role": "SIMULATION_QA",
@@ -178,5 +178,10 @@
     "reason": "Owner clarified that the story itself still needs correction. The three bounded narrative changes do not depend on the 70-card source inventory. Story implementation is prioritized under existing coordination delegation.",
     "accepted_or_closed": false,
     "resume_policy": "Preserve all branch/local QA work. After Story delivery, open a fresh exact continuation task (COPY-SOURCE-INVENTORY-002) from verified current authority and retained inputs; do not reset the branch or reactivate this mutated task record."
+  },
+  "superseded_by": {
+    "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+    "delivery_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
+    "reason": "The 70-record gap and full 121 text inventory were completed by the explicitly delegated Chief. This is not acceptance of a specialist branch delivery."
   }
 }
