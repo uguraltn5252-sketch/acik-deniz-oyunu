@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-EDITORIAL-REVISION-DELIVERED-20260907",
-  "status": "V4_READY / EDITORIAL_WORKING_REVISION_DELIVERED / OWNER_REVIEW_PENDING / ALL_PRODUCTION_CLOSED",
+  "state_id": "V4-RECHECK-VISUAL-ACTIVE-20260907",
+  "status": "V4_ACTIVE / WHOLE_GAME_RECHECK_THEN_VISUAL_PILOT",
   "updated_at": "2026-09-07",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": null,
+  "active_project_task_id": "FOULWAKE-RECHECK-VISUAL-001",
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -94,12 +94,12 @@
     "OTHER_FOUR_BACKS": "HOLD / NOT_OWNER_ACCEPTED"
   },
   "permissions": {
-    "visual_production": false,
-    "thumbnails": false,
-    "pilot_or_candidate": false,
-    "full_121_production": false,
-    "pdf_or_print_package": false,
-    "simulation": false,
+    "visual_production": true,
+    "thumbnails": true,
+    "pilot_or_candidate": true,
+    "full_121_production": true,
+    "pdf_or_print_package": true,
+    "simulation": true,
     "release": false,
     "lock": false
   },
@@ -117,7 +117,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Open FOULWAKE-RECHECK-VISUAL-001 from this idle checkpoint, then recheck content before producing the bounded visual pilot and working PDFs.",
+  "next_action": "Recheck the current game, repair remaining defects, then produce scoped illustrated pilot and working PDFs.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",

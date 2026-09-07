@@ -1,0 +1,190 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+  "task_type": "OWNER_DELEGATED_WHOLE_GAME_RECHECK_AND_VISUAL_PILOT",
+  "project_task": true,
+  "status": "ACTIVE",
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-07",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "owner_authorization": {
+    "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+    "decision": "AUTHORIZED",
+    "recorded_from": "Latest visible owner instruction to recheck the whole game, then also perform Art Direction and Visual Design.",
+    "decision_ref": "governance/v4/evidence/OWNER_RECHECK_VISUAL_AUTHORITY_20260907.json"
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "ac43b7d2d39451b62eadec1ce2872b06b99d6598",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "PRODUCE_STORY",
+      "PRODUCE_FLAVOR",
+      "PERIOD_LANGUAGE_REVIEW",
+      "RUN_SIMULATION",
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "RULES_INTEGRITY_REVIEW",
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT",
+      "PRODUCE_THUMBNAIL",
+      "PRODUCE_PILOT_OR_CANDIDATE",
+      "PRODUCE_FULL_121",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE",
+      "ART_LANGUAGE_REVIEW",
+      "FRAMING_DECISION",
+      "COMPOSITION_REVIEW",
+      "DECK_RHYTHM_REVIEW",
+      "AESTHETIC_RECOMMENDATION"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "PRODUCE_STORY",
+        "PRODUCE_FLAVOR",
+        "PERIOD_LANGUAGE_REVIEW",
+        "RUN_SIMULATION",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "RULES_INTEGRITY_REVIEW",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT",
+        "PRODUCE_THUMBNAIL",
+        "PRODUCE_PILOT_OR_CANDIDATE",
+        "PRODUCE_FULL_121",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE",
+        "ART_LANGUAGE_REVIEW",
+        "FRAMING_DECISION",
+        "COMPOSITION_REVIEW",
+        "DECK_RHYTHM_REVIEW",
+        "AESTHETIC_RECOMMENDATION"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+      "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+    ],
+    "allowed_globs": [
+      "working/v2.7/qa/editorial_revision/**",
+      "working/v2.7/qa/recheck_visual/**",
+      "working/v2.7/visual/recheck_20260907/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      ".github/",
+      "working/v2.7/visual/references/"
+    ],
+    "max_changed_files": 256,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".csv",
+      ".txt",
+      ".png",
+      ".jpg",
+      ".pdf",
+      ".svg"
+    ],
+    "binary_files_allowed": true
+  },
+  "runtime_permissions": {
+    "visual_production": true,
+    "thumbnails": true,
+    "pilot_or_candidate": true,
+    "full_121_production": true,
+    "pdf_or_print_package": true,
+    "simulation": true,
+    "release": false,
+    "lock": false
+  },
+  "inputs": [
+    {
+      "path": "governance/v4/evidence/OWNER_RECHECK_VISUAL_AUTHORITY_20260907.json",
+      "git_blob": "f0c3485e36152e92094f14634b6fa19e172c654f"
+    },
+    {
+      "path": "releases/v2.6/SOURCE_PACKAGE.md",
+      "git_blob": "0470dfba2a82c0c4bb297d23eb356bb5b843c99a"
+    },
+    {
+      "path": "releases/v2.6/BINARY_ARTIFACTS.md",
+      "git_blob": "d01d63bfe8f3b51c5112db9e4f9c435f7aa38172"
+    },
+    {
+      "path": "releases/v2.6/CARD_BASELINE.md",
+      "git_blob": "40e9a2cda56c484d88b976941a4a80d46507bc5b"
+    },
+    {
+      "path": "governance/v4/contracts/CONTRACTS.json",
+      "git_blob": "6dff6d3eff85146a7a070b935645e82d4ccd6419"
+    },
+    {
+      "path": "governance/v4/roles/REGISTRY.json",
+      "git_blob": "3cf6085dfcee30227b282c4f18df3113cc24aa79"
+    },
+    {
+      "path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+      "git_blob": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
+      "git_blob": "bae77450d6d10e1e3234a3473bf68ffa1efff810"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
+      "git_blob": "df2f74fe3f245bfd5d2fe57439f11c22aeca0e02"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md",
+      "git_blob": "e9faf109fb5ee912935a7bdf30bc554eae1efa77"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+      "git_blob": "4d0d472458369a8e1a4ee36ab828d9354a754b04"
+    }
+  ],
+  "purpose": "Recheck and repair current text/rules, then produce actual illustrated review assets and playable print layouts in this chat.",
+  "acceptance_criteria": [
+    "Review all 121 card IDs and current rules/story; implement source or timing defects with reproducible targeted checks.",
+    "Resolve current art/copy drift without changing the accepted KAPTAN source or locked release.",
+    "Produce 12 pilot fronts with distinct scene intent and seven textless back masters; Sea/Rock same binary, no shine, full island redraw and a larger anonymous lighthouse.",
+    "Produce all 121 canonical card text layouts and the complete A4 rulebook with legible Turkish typography, dimensions, safe areas, PDF extraction checks and visual inspection.",
+    "Unillustrated fronts are clearly identified in the delivery inventory; 121 layout coverage never means 121 original illustrations.",
+    "Record exact provenance and SAME_OPERATOR_SELF_CHECK; do not fabricate independent review, owner acceptance, physical proof, release or lock."
+  ],
+  "completion_policy": "Deliver concrete working pilot, full text prototype, rulebook and evidence. Close production after delivery; owner reviews the actual pilot before any expensive full art rollout.",
+  "production_limits": {
+    "illustrated_pilot_fronts": 12,
+    "back_masters": 7,
+    "full_text_layout_cards": 121,
+    "full_original_art_rollout": false
+  },
+  "execution_status": "IN_PROGRESS_IN_CHIEF_EDITOR_CHAT",
+  "next_responsible_role": "CHIEF_EDITOR"
+}
