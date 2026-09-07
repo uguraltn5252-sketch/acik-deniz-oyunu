@@ -1,0 +1,19 @@
+{
+  "page_size_mm": [
+    76.00001,
+    76.00001
+  ],
+  "trim_mm": [
+    70,
+    70
+  ],
+  "bleed_mm": 3,
+  "pixels": [
+    1000,
+    1000
+  ],
+  "rotation_max_channel_delta": 81,
+  "rotation_mean_channel_delta": 1.904676,
+  "text": "",
+  "status": "DIGITAL_GEOMETRY_CHECK_ONLY"
+}
