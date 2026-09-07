@@ -2093,7 +2093,7 @@
       "asset_path": "working/v2.7/visual/full_deck_20260907/assets/HAR-FN-03.png"
     }
   ],
-  "status": "IN_PROGRESS",
+  "status": "COMPLETE / 109_NEW_FRONTS_AND_ONE_LIGHTHOUSE_BACK_SELECTED / SAME_OPERATOR_SELF_CHECK",
   "task_id": "FOULWAKE-FULL-DECK-ART-001",
   "tool": "image_gen.imagegen"
 }

@@ -27,6 +27,11 @@ records=layout.records;INDEX=layout.INDEX;BACKS=layout.BACKS;CAPTAIN=layout.CAPT
 dimensions=layout.dimensions;back_id=layout.back_id;metadata=layout.metadata
 boxtext=layout.boxtext;page_frame=layout.page_frame
 fitted_image=layout.fitted_image
+TITLE_GAP=1*mm
+META_GAP=1.2*mm
+COPY_BOTTOM=7.8*mm
+COPY_SEPARATOR=2.5*mm
+ART_GAP=2*mm
 
 def front(c,r,x,y,scale=1,record=True):
  # Preserve canonical type sizes. Square maps have a tighter metadata gap,
@@ -35,20 +40,20 @@ def front(c,r,x,y,scale=1,record=True):
  c.setFillColor(layout.PAPER);c.rect(-3*mm,-3*mm,w+6*mm,h+6*mm,fill=1,stroke=0)
  c.setStrokeColor(layout.INK);c.setLineWidth(.7);c.roundRect(mm,mm,w-2*mm,h-2*mm,2*mm,fill=0)
  left=4.5*mm;cw=w-9*mm;top=h-4.5*mm
- th=boxtext(c,r.get('name',r.get('title')),left,top,cw,14 if h>110*mm else 11.2,'Title');top-=th+1.5*mm
+ th=boxtext(c,r.get('name',r.get('title')),left,top,cw,14 if h>110*mm else 11.2,'Title');top-=th+TITLE_GAP
  mh=boxtext(c,metadata(r),left,top,cw,7.6,'Strong',layout.MUTED)
- top-=mh+(1.5 if r['collection']=='maps'else 2.5)*mm
+ top-=mh+META_GAP
  effect=layout.para(r['effect'],8.6,'Body',11.1)
  flavor=layout.para(r['flavor'],8,'Flavor',10.2,color=layout.MUTED)
  _,eh=effect.wrap(cw,10000);_,fh=flavor.wrap(cw,10000)
- copy_top=9*mm+eh+fh+3.5*mm;art_h=top-copy_top-3.5*mm
+ copy_top=COPY_BOTTOM+eh+fh+COPY_SEPARATOR;art_h=top-copy_top-ART_GAP
  if art_h<9*mm:raise ValueError(('Artwork has no readable room',r['id'],art_h/mm))
  art=layout.ASSETS/(r['id']+'.png')
- if r['id']=='SET-KP-01':dpi=fitted_image(c,CAPTAIN,left,copy_top+3.5*mm,cw,art_h,source_rect=(22,180,874,1093))
- else:dpi=fitted_image(c,art,left,copy_top+3.5*mm,cw,art_h)
- effect.drawOn(c,left,copy_top-eh);rule_y=copy_top-eh-1.7*mm
+ if r['id']=='SET-KP-01':dpi=fitted_image(c,CAPTAIN,left,copy_top+ART_GAP,cw,art_h,source_rect=(22,180,874,1093))
+ else:dpi=fitted_image(c,art,left,copy_top+ART_GAP,cw,art_h)
+ effect.drawOn(c,left,copy_top-eh);rule_y=copy_top-eh-1.2*mm
  c.setStrokeColor(layout.LINE);c.setLineWidth(.4);c.line(left,rule_y,w-left,rule_y)
- flavor.drawOn(c,left,rule_y-1.8*mm-fh)
+ flavor.drawOn(c,left,rule_y-1.3*mm-fh)
  c.setFont('Body',6.6);c.setFillColor(layout.MUTED);c.drawString(left,4.5*mm,r['id'])
  if r['collection']=='powers'and r.get('returns_to_power_deck')is False:
   c.drawRightString(w-left,4.5*mm,'Kullanım sonrası oyun dışı')
@@ -86,7 +91,7 @@ def copy_geometry():
   _,mh=layout.para(metadata(r),7.6,'Strong').wrap(cw,10000)
   _,eh=layout.para(r['effect'],8.6,'Body',11.1).wrap(cw,10000)
   _,fh=layout.para(r['flavor'],8,'Flavor',10.2).wrap(cw,10000)
-  art_h=h-4.5*mm-th-1.5*mm-mh-(1.5 if r['collection']=='maps'else 2.5)*mm-(9*mm+eh+fh+3.5*mm)-3.5*mm
+  art_h=h-4.5*mm-th-TITLE_GAP-mh-META_GAP-(COPY_BOTTOM+eh+fh+COPY_SEPARATOR)-ART_GAP
   results.append({'id':r['id'],'art_height_mm':round(art_h/mm,3)})
  if any(x['art_height_mm']<9 for x in results):
   raise ValueError([x for x in results if x['art_height_mm']<9])

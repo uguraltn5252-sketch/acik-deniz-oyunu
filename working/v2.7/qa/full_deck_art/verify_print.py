@@ -80,9 +80,16 @@ def main():
   minimum_front_dpi=min(dpis),back_counts=m['back_counts'],family_pdf_image_digests={k:sorted(v)for k,v in families.items()})
 
  rendered={}
+ def render_hash(page):
+  # Compare under identical MuPDF image/glyph cache conditions. Warm-cache
+  # comparisons after source inspection produced differences that disappeared
+  # when both caches were cleared, with identical content and image streams.
+  fitz.TOOLS.glyph_cache_empty()
+  fitz.TOOLS.store_shrink(100)
+  return hashlib.sha256(page.get_pixmap(dpi=72).samples).hexdigest()
  def page_hash(name,index):
   key=(name,index)
-  if key not in rendered:rendered[key]=hashlib.sha256(docs[name][index].get_pixmap(dpi=72).samples).hexdigest()
+  if key not in rendered:rendered[key]=render_hash(docs[name][index])
   return rendered[key]
  covered={card_name:[],review_name:[]};volume_pages=0
  for volume in m['volumes']:
@@ -98,7 +105,7 @@ def main():
    for j in range(2,len(pages),2):check(pages[j]%2==1 and pages[j+1]==pages[j]+1,'Unbroken duplex pair '+path.name)
   covered[name].extend(pages[intro:])
   for j,original in enumerate(pages):
-   digest=hashlib.sha256(v[j].get_pixmap(dpi=72).samples).hexdigest()
+   digest=render_hash(v[j])
    check(digest==page_hash(name,original-1),'Volume render equals master '+path.name+' page '+str(j+1))
    volume_pages+=1
   v.close()
@@ -135,6 +142,9 @@ def main():
  result['assets']={r['id']:{'path':r['asset_path'],'sha256':r['sha256'],'pixels':list(Image.open(b.R/r['asset_path']).size)}for r in selected}
  result['status']='PASS'if not faults else'FAIL'
  (b.QA/'print_checks.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+ m['status']='VERIFIED / SAME_OPERATOR_TECHNICAL_SELF_CHECK'if not faults else'CHECK_FAILED'
+ m['verification_ref']='working/v2.7/qa/full_deck_art/print_checks.json'
+ (b.QA/'render_manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({k:result[k]for k in ['status','cards_checked','illustrated_fronts','minimum_front_dpi','volume_pages_render_compared','failures']},ensure_ascii=False,indent=2))
  return not faults
 

@@ -1,6 +1,6 @@
 # FOULWAKE - tam deste sanat uygulaması
 
-7 Eylül 2026 · FOULWAKE-FULL-DECK-ART-001 · üretim sürüyor
+7 Eylül 2026 · FOULWAKE-FULL-DECK-ART-001 · tam çalışma destesi tamamlandı
 
 Proje sahibi somut pilotun ardından devam edilmesini, ayrıca fenerin yandan
 görünümünün araştırılıp oyuna uyarlanmasını istedi. Kaynak yetki ve 33 sabit
@@ -19,6 +19,13 @@ Ortadaki sakin su iki yönü bağlar. Dört Fener kartı aynı masterı kullanı
 çalışan, terk edilmiş, zula veya sahte fener olayına özgü kanıt eklenmez.
 Deniz/Kayalık masterı aynıdır; dört kenarda ortak mat deniz aralığı korunur.
 Bu karar önceki pilotun BACK_LIGHTHOUSE çatı planını değiştirir, geçmişi silmez.
+
+HAR-FN-01 önünde de proje sahibinin yandan görünüm isteği uygulanır: önceki
+iç oda brief'inin kamerası dışarı alınır. Panjur açan bekçi, boş defter ve
+gözlem amacı korunur; taş kule, kayaya oyulan basamak ve açık ufuk birlikte
+görünür. Bu, korunan brief dosyası sessizce değiştirilmeden kaydedilmiş kamera
+kararıdır. FN-02 boş bekçi evi ve anahtara, FN-03 merdiven altındaki iki
+donanım paketine odaklanır; FN-04'ün önceki sahte ışık sahnesi korunur.
 
 Araştırma: Fransız Kültür Bakanlığının [Cordouan kaydı](https://cordouan.culture.gouv.fr/en/lighting-way-iron-and-coal)
 erken taş fenerlerde yağ ışığının kalın ve isli camlar arkasında zayıf
@@ -56,3 +63,28 @@ Her yeni resim ayrı incelenir: eylem, yüz ve beden ayrımı, dönem nesnesi,
 gizli bilgi, kesilme, metin alanı ve küçük kart ölçüsü. Tek operatörün
 seçimi SAME_OPERATOR_SELF_CHECK'tir. Tam deste beğenisi, bağımsız inceleme,
 insan oyunu ve fiziksel baskı yapılmış sayılmaz.
+
+## Tamamlanan uygulama
+
+109 yeni ön ve bir yeni arka seçildi; 14 yeniden üretim gerekçesi kayıtta
+korundu. Önceki 12 ön ve altı arka kaynak değişmedi. Bütün 121 ön farklı
+resim nesneleriyle dizildi. Tam istek metinleri ve referanslar `prompts.json`
+içindedir; `generation_plan.json` başlangıç istek planıdır, son yeniden
+üretim istemlerinin yerine kullanılmaz.
+
+Güverte portreleri, ellerin yaptığı iş, boş kıyı, yukarıdan bakış, su hizası
+ve geniş hava olayları dönüşümlü kullanıldı. Aynı kırmızı baş örtülü
+portreye yaklaşan SAD-T-06/09/10, nesne ve el odaklı yeni sonuçlarla ayrıldı.
+Gizli Sadakat görüntüleri karakter yüzüne veya ayrı kazanma hedefine
+bağlanmadı. Mizah; sert peksimet, gümrük, boş kese, kaygan güverte ve
+insanların küçük alışkanlıklarıyla sınırlı tutuldu.
+
+24 sayfalık görsel incelemenin tamamı; dokuz baskı sayfası ve altı kritik
+kartın büyütülmüş renderı gözle incelendi. Otomatik denetim bütün 48 baskı
+sayfasını ve indirme bölümlerindeki 99 sayfayı kapsar. Etki ve flavor yazısı
+küçültülmeden boşluklar sıkılaştırıldı; uzun iki kartın resmi hâlâ diğerlerine
+göre küçüktür. İnsan ve fiziksel baskı değerlendirmesi açık kalır.
+
+Üretici `image_gen.imagegen`; sürümü açıklanmıyor. Ana çalışma modelinin
+doğrulanmış kimliği UNKNOWN. Geçici ajan veya bağımsız değerlendirici
+kullanılmadı. Çalışma görsel seçimi bağımsız sanat kabulü olarak kaydedilmez.

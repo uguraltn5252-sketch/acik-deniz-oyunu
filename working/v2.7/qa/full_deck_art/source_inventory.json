@@ -1,0 +1,1183 @@
+{
+  "task_id": "FOULWAKE-FULL-DECK-ART-001",
+  "status": "SAME_OPERATOR_VERIFIED_WORKING_DELIVERY",
+  "fronts": 121,
+  "back_masters": 7,
+  "retained_fronts": 12,
+  "new_fronts": 109,
+  "retained_back_masters": 6,
+  "new_back_masters": 1,
+  "records": [
+    {
+      "id": "KAR-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/KAR-01.png",
+      "sha256": "772c396756b805a40a6fcef3201dffc9cb7bff544845cf3edceb9bfdd932c091",
+      "git_blob": "f1ca58c47ec349011e1aaa2627cec24c964379dc",
+      "retained": true,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-02",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-02.png",
+      "sha256": "acb617427ad7981702c8e3866b88b4d41f0ac74c38e539c08e4ed89cc668faf3",
+      "git_blob": "20e667e2ec02739e0a79c7941e9096ea5f2094bb",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-03",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-03.png",
+      "sha256": "3e3ad2c00dece3417b0f442f919cc7cb94dc9fae2e7a5e5d892dfc22aeeb4cc7",
+      "git_blob": "505e6324f21a60fefdee77ffdbd55066a92b9ad4",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-04",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-04.png",
+      "sha256": "1e54cb98a2f16c9f14c869399149ceceb9759433d1cc5b1af1022bd115a9c78e",
+      "git_blob": "1042e10c0d03de7d2075fb8fc690a98f4a1339d4",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-05",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-05.png",
+      "sha256": "a70c7c91f58a01db4b35fa640e74d89e8efbc4f0dfdd70da3a4b2b67fd211aac",
+      "git_blob": "b59ca72e565f518db3bff1ba4bb9f6c33a726aad",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-06",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/KAR-06.png",
+      "sha256": "3f627d12126b83135a20df087857e6957feab9c5732e737d8ea9b735f4fb42a2",
+      "git_blob": "0c47960e10ff7392500a771cec44005f188f3669",
+      "retained": true,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-07",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-07.png",
+      "sha256": "bf8592ccaa9a0f1c365d8fa531e0bd7406da7eea72285312c538fece5e0d2ce8",
+      "git_blob": "4734660acf407a929276bacad2275550683ee8d6",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-08",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-08.png",
+      "sha256": "e76cf1b3898ef6e520e6e8603acfe99f02f63cde2998a6308a9e270b66a1b33a",
+      "git_blob": "2c1bc9e25bfa5fa1f95828072942cec15ee4b85c",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-09",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-09.png",
+      "sha256": "97a9b555b77caa828d189a7a6c2b0298e71d9681c97daa97699af1aa7ec026d6",
+      "git_blob": "8a5bff8acc0c44d7f9975abc9be788e4a411a5ed",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-10",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-10.png",
+      "sha256": "d22de0f1be281102cf2da30dce121428ae07c407208849925d2a9230ce077c78",
+      "git_blob": "69fb632f2e20b16fa39287396318495bc49d5206",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-11",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-11.png",
+      "sha256": "62f725c336bf66974cddc2f0e9b0c7ac13f664adc9f0926d9811b1c854e4b572",
+      "git_blob": "54a1a0be6e4c7abeb15a6a9b65a8fe002ded87bc",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-12",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-12.png",
+      "sha256": "7d78fc6d11b41b48b1c1900e710734c4a4baf3966532a6d8c5a9560026c1370c",
+      "git_blob": "badaf89a75e74bec34b5ef5365242acbb6b5b3ed",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-13",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-13.png",
+      "sha256": "8f8aa48e10dbc6b04ab7e5ab01329947369e1751e524ddfd07a6c2799ee969fe",
+      "git_blob": "00cfd3bac943677160ae1e1017a3fa6c4b95455a",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-14",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-14.png",
+      "sha256": "370dda414e97da808e77a71c80a9ef19bb922925470ad1ce17b2bfb073b1e0dd",
+      "git_blob": "62ca9415e78012d95a12c7174e8f936a018863ac",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-15",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-15.png",
+      "sha256": "2b29b3c20c6ce5d15f55690d8bb9eacdb48448c2c7dfe04f327f0a851908a2c6",
+      "git_blob": "77bef9a5c7cd91b007820d19fbdf47d628bfde2d",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-16",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-16.png",
+      "sha256": "4b09f48b8c0a9230df6b16bed79dc8e55e9e4b8c4020c230734c5b035b320eb4",
+      "git_blob": "d85bab7a491155c3b30544cc565b046c707d1c1a",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-17",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-17.png",
+      "sha256": "af18545f42302bcaf6f45985dd4fd606181e5e361a5afd079e89adc15dc9d7c9",
+      "git_blob": "a3eee91235dda6d15908a8fa60048de39cd99906",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-18",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-18.png",
+      "sha256": "b4c7a4eff435a37bb09f325e6516096b5f66452858495fc7bee8cb894f0b59e9",
+      "git_blob": "16da227e83eeee5417e6a2d3fff12ebe0e07405a",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-19",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/KAR-19.png",
+      "sha256": "62de6a836aa08eff480464aaa0b126105cdd721da344d7f32552dca710206e15",
+      "git_blob": "c16684626e5ef350c8f19ba808416d62ec7af61e",
+      "retained": true,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-20",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/KAR-20.png",
+      "sha256": "8c568c1c65503259cc314df26e9475697e5f5d4fa746bb3722f6bc494eacd54f",
+      "git_blob": "d29396186f69eaebe10f25b994d94c6a8080ecf3",
+      "retained": false,
+      "back_family": "BACK_CHARACTER"
+    },
+    {
+      "id": "GUC-01A",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-01A.png",
+      "sha256": "61af3d89afbb65ed4ea98c5be6904cc60532a9320dec25cbbfc8aaef550b0315",
+      "git_blob": "f4aef28734dfed2aa7078d8d6d67379fe4cacacd",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-01B",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-01B.png",
+      "sha256": "072a755b743aba5d3d871a424015512fec7d8edc2ae121e2bfad59e639d38b48",
+      "git_blob": "c751ac1a437abcb895288bcf33a6cdc07deee0af",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-02A",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-02A.png",
+      "sha256": "533e4288475673c668f2d89dff07309727a4e5095f84c6ee857bbe6579a0c264",
+      "git_blob": "c20209df4869ca147f16a22f9a6c8d59c764c0f9",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-02B",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-02B.png",
+      "sha256": "718b01255aa49ef2959041998c930c0ed63621f3489d92fb231a73cd42ba536a",
+      "git_blob": "c75a62b2213372370fc975eba4804012abd450c6",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-03",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-03.png",
+      "sha256": "c148d65e4fc2b2c8ca89205d3d03eb3f9c43053452e71fb3b48ef3541e5d91b8",
+      "git_blob": "955a3b3449618fa1087f8415ab8e819c4319212d",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-04",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-04.png",
+      "sha256": "6ce0d9ef24bb52854a10bb6fbb565c617a730a0aa795fd571284b011211a38a4",
+      "git_blob": "8915ae28bab38af3a83ad7a096d72fea5d062da6",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-05",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-05.png",
+      "sha256": "b90eedf37e48c1406fbd23d2975e56468bf7546c8bd614f77d15b46c8583a414",
+      "git_blob": "676cd26b77485202155cb9c3168164479f5018d7",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-06",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/GUC-06.png",
+      "sha256": "0b9a06d10440d1d7dd2d86a07d003399ada7c3c2f46b39a1e67866e613c6b61e",
+      "git_blob": "92641122d5501b9eec52f637599b238165f597e3",
+      "retained": true,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-07",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-07.png",
+      "sha256": "d7b0759658b6b0a86e739964184b089386da09c9c68d17939977cf745259566f",
+      "git_blob": "a2a6c915585b066f8e113d4cab4a8adc721fca73",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-08",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-08.png",
+      "sha256": "fcfa217d44bca2783a0a93707700f408e36005d9942e4a48623c9e56f8e147ff",
+      "git_blob": "0b4379c599f99d0788837374594dc37e65143aa6",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-09",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-09.png",
+      "sha256": "ef33be079a8cf430beab734e484d0427cb9cd4f46c6de9ab0f46247f7a112947",
+      "git_blob": "b4653b654acff0815bf17ecedf948f6053e3d328",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-10",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-10.png",
+      "sha256": "5461f8bb7d1b63c50b72b7c99cfd535ca57e260ca75c0e0d3d6fbea2d8d1290f",
+      "git_blob": "20caa2dffdf229669b7bdbfc977f4d6c36d52a48",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-11",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-11.png",
+      "sha256": "37630494fd24bd933896cea0696a2e20e505d3646b442cc243ea3d18cdf016e1",
+      "git_blob": "5b5ae9cf41288689e7f3adf7130273ef2c1f5627",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-12",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-12.png",
+      "sha256": "0695baff22e7ee3eada12b5fb39f35b9fe17565ac02cdeb66e8974994281187b",
+      "git_blob": "2dd2ad8b21077237ccab1fbeb46dd3fcb7047855",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-13",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-13.png",
+      "sha256": "592bc2863f279169801702d94311b4c0b8b967b4108fb859ae3284d596c4129a",
+      "git_blob": "fcfd53ce4ed61e7c46465676cd2affd4c25ac626",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-14",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-14.png",
+      "sha256": "dc4ca1e6819dad3c76858fb0e12150768f6ab0f5b50f5721dd371e59277ccbd3",
+      "git_blob": "d1dbe34e92e6eedde21c18b32c8b75b158826339",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-15",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-15.png",
+      "sha256": "00eaba5880449ef029c28bac589512bf6059ecf0c825ee4aad5ea2707a69f6d0",
+      "git_blob": "4bfe9320752bbb3606c7b05790e1da580f4ce689",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-16",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-16.png",
+      "sha256": "75d55ef715a4ffb21774a23680df8675b01b2eb64fd3c7a726fd6fa352daed93",
+      "git_blob": "07b7aa60bd730b1b8cc96f7f0a3c9b4126228e9a",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-17",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-17.png",
+      "sha256": "4a19d456579176cefe5353326c8388181eacfe21de8bfde3adc9fac4e4ad1eca",
+      "git_blob": "aa8c48765268711eb1cc1b4139880a2bd47037fd",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-18",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-18.png",
+      "sha256": "74c0a039d6ded65b51295c183992e3ffaec7709e7d1a37dfa573a91ef0c1a5ce",
+      "git_blob": "746dc128fa6502182d3f83966baf78ca7cb2fa00",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-19",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-19.png",
+      "sha256": "70163f57dff10ad32074ee84dcb03dab6a80810d6299e8fad9b8972b2fcb97ae",
+      "git_blob": "725a3a40116a65dacf6a4157e24f2a719e098a27",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-20",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-20.png",
+      "sha256": "03ee0bbd1e456d5cacee6c033fbc71cc22ee7d32c41eba9f03a32e56319a3e73",
+      "git_blob": "05754c585a8a57e6bf868da4f6afb97ef4c08c5a",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-21",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-21.png",
+      "sha256": "5057b0beb79341dce0e36792535344b82a9454654bc6a572652d04fd049b4c10",
+      "git_blob": "ca0d27563c4c0cd73bf79555b08ad0997fe2e7e8",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-22",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-22.png",
+      "sha256": "bed8da0c64a5fa6545095ce51b003a355511ab63052734af40e5916dad2f163d",
+      "git_blob": "8b8153dfe81afcca4d1957c5d176117f308fc842",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-23",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-23.png",
+      "sha256": "b3eeaec5813f723516ea6781463d8539e920ba661d0deb48272708ad1a80f622",
+      "git_blob": "6b9bad0313444574ca6d10e8fd230f63d02c2548",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-24",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-24.png",
+      "sha256": "ff474ee1faaf3bfee33915bbb6ee55ffb0a47cb7a7546c6860faad1ffe0a3cef",
+      "git_blob": "a3d05aac0888f8ae2121329126a789a8d0ac16a9",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-25",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-25.png",
+      "sha256": "40e7c34d432bd339942565dffc4c2ab3e0aa8449128cee55419cbc2acd1ae4e6",
+      "git_blob": "ed7db8e8acca0dccec1388be0284dd290f8c394a",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-26",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-26.png",
+      "sha256": "a8bff4f68a0bd517ce83ee19d12e3683f56c662935d855960757f9ba9e12b2c5",
+      "git_blob": "b67d2f32d43bd4041c9726b8cdc15d563325df7f",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-27",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/GUC-27.png",
+      "sha256": "13e5c23826ac11074dfe8fdb9df89c0fdc6f6c5c7ddb5108c425725034486ab8",
+      "git_blob": "ab45291ef2f5d996f74fededce4044dfa4d4c45e",
+      "retained": true,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "GUC-28",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/GUC-28.png",
+      "sha256": "23917beb34febe58bc4286c60110c0e713062bbfb555b6cf961919cc83949e2f",
+      "git_blob": "21c5156a625126e6d098d65c94f9af68af209e18",
+      "retained": false,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "ERZ-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/ERZ-01.png",
+      "sha256": "01225e4608c71a28ea5f554578c58391f3e8b6155f4d0cbcae5d3718e9a62580",
+      "git_blob": "1162481a432d839d006621b71839c6a595edb2f2",
+      "retained": true,
+      "back_family": "BACK_POWER"
+    },
+    {
+      "id": "SAD-T-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-01.png",
+      "sha256": "d57a3581eedda934fcf468480a462083f1df6bf949d7d7ad8b25e13469b1c892",
+      "git_blob": "4cad2f71b66bebb91eb7973cf980c310403fd07e",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-02",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-02.png",
+      "sha256": "599feec64babe015392fcb59dcc3b8ec063dca9d2df31fa9ed18cb4fca6262d4",
+      "git_blob": "b8392986f6e6055f3710c9a6adb49b86c57b967f",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-03",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-03.png",
+      "sha256": "b0ff1b783e0eb0b927e1ae7552cda4f356268ca1555667ac83f0b7068546e191",
+      "git_blob": "02985e9be7ba18ba3e2dce0c80706683cf8132cc",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-04",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-04.png",
+      "sha256": "e680001b0cfba2e57a6c11e9700a8b7323ecb8545aeb9470c3680afb01c3fbd0",
+      "git_blob": "b6dfae9f6a80ff0e23c1be1c1cb671a3e8bd9740",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-05",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-05.png",
+      "sha256": "8a64da39db89d43b4bd7f650fd533044ccb8aee055a6053c39b47aed56ed1be9",
+      "git_blob": "844bb8f3f7591dcd421ebb423d03ff544d0ec456",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-06",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-06.png",
+      "sha256": "26f089bf470d023026ca18df29b49d49299c97bc9e24b5b89241e5e47b32b4bb",
+      "git_blob": "fcf02c496e9db6c332086cad34c7421fe63a7cec",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-07",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-07.png",
+      "sha256": "7c9d8a0c8675e67a9805a6ead21505881c4b07d484065829b968cf270d6c877b",
+      "git_blob": "4a88289d687b884afeab8690561af66613f616c2",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-08",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-08.png",
+      "sha256": "91c5d77d4ef9878156ade0c029815fd998ca8ce94c0540787ceaa1b2e8921c87",
+      "git_blob": "75f6a51df4120977501a3131193f8d7c2f54e59e",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-09",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-09.png",
+      "sha256": "8b4d9ebba1c50f0eea00acc556bb95a2341c47aa0d548fe3a51246e8b2465bec",
+      "git_blob": "07ff80d74e4e934cfdc6e4c23a415faa57022f7f",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-10",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-T-10.png",
+      "sha256": "ba888c05c9e08372a2619e9db0c2a1dfd3e46d791da51831e8549f5a1396c833",
+      "git_blob": "d2ac9c491cab3071c46db4d26b485172d8e50296",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-H-01.png",
+      "sha256": "08cd3693be411def8bf84710b39e378f0654f678e0e94521b749eda0e9ccf031",
+      "git_blob": "e19472947ae49762f515725f17a73e1c33429e55",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-02",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-H-02.png",
+      "sha256": "f19da9dddb08aafb5c496ff9636105ce187ad9c18b769d3bb1c98e3a29386055",
+      "git_blob": "f1e8452fab1b98af9d31cb656700f68bce5d84c4",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-03",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/SAD-H-03.png",
+      "sha256": "789bed36180c8e3b89ec8afdbf031bf928de4d3ed66bf31bd547fa461c27579b",
+      "git_blob": "36b84a60f1fe7996c87d1de0d2e548c0f992fa89",
+      "retained": true,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-04",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-H-04.png",
+      "sha256": "b7a1c8fae450c203c8d18a0f6eb9f4ec5b81ad060cfe922db269bd128a0cad6d",
+      "git_blob": "ab7ae4c07ee2ee8e70d4d4392acd8c272f0e9129",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-05",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SAD-H-05.png",
+      "sha256": "5bbea163f570d6e0fc3a4cf825849068f2bd250e26facb59a12ba2c4dcc44d97",
+      "git_blob": "e11d4536694c6012528b5142322cd54eb5b90ab0",
+      "retained": false,
+      "back_family": "BACK_LOYALTY"
+    },
+    {
+      "id": "HAR-AD-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-01.png",
+      "sha256": "fe99711cacdf48b4fb6fc7e9f71d626ce8f3ba41c07f9ef8a3492f5ff12f84f3",
+      "git_blob": "3c0cc2e7c93522dd4521658f2ea55b51dcf92e8e",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-02",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-02.png",
+      "sha256": "a081119862a3fb343b4445f24bd4a9f205533bbf0a5469f067e8de40d26db9eb",
+      "git_blob": "7fc3db597bf03bf23b168141152079cefc474a3e",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-03",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-03.png",
+      "sha256": "3c4f68ba8bb3d3da8601f2838b17acb3bd454723e09a484f45a2b194eac0c0b6",
+      "git_blob": "fbdc432da4b15661fdf2d7fcb068c08fffad54fa",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-04",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-04.png",
+      "sha256": "b3e9f94ee603d3ecdad43b2ef76177f5a5dbd87fe677161d9e3b45e2103794c5",
+      "git_blob": "bfe96880dfeda155d15499785029d45a5d185a9e",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-05",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-05.png",
+      "sha256": "3fa832daeadcbbdac54c55aa5a5deff384f196079446ab79ba2b4fa84e0c2dd1",
+      "git_blob": "ff49054a8f9e114a74f41c3e197388d606f7a2e5",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-06",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-06.png",
+      "sha256": "41d759ec2e198920fdb48cdc5447781eecedf4574a7ae3f70f80ceccd7d76cbf",
+      "git_blob": "aaa84ba1e06133a0d590e78213d50f2bdabad5fc",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-07",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-07.png",
+      "sha256": "a7c2489dd7a220c6e8430a444bcedf3c9e4468b89853ffba332d57a2fc966fff",
+      "git_blob": "ff022cd3a68f6afc52ec1e95b9a6325ab95122d3",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-08",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/HAR-AD-08.png",
+      "sha256": "d3a79e6aba4f5acbd10d3e55eebab2c6b3e46b2b634949e61f336fec32214cee",
+      "git_blob": "fb87df3e25a509cafeef36e5571e0ceccabe31d8",
+      "retained": true,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-09",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-09.png",
+      "sha256": "d609b6c75fb4adfed5c83e5074aa20a22a03216f1e5afe18f9cbcbf9e40e578e",
+      "git_blob": "a821ed7c4d610ec127b32b51aeb0305ae620a55c",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-10",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-10.png",
+      "sha256": "ebb1f8c4116ce9f12d687849c60cdc128f7ea8f437c4aa03019e262c4c6fdafe",
+      "git_blob": "001872988a9bc9184288b67d40191f22455c16f6",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-11",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-11.png",
+      "sha256": "07f7febf4dc3a881f31385a567b2e253973401f9c943898a52b82ce4a00818fd",
+      "git_blob": "9caa95c7e90e3ff6b0c7854b767f04ef680c39b7",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-12",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-12.png",
+      "sha256": "bbbf82b949d78302635a258aa9312b1b086b13fe4d5aa0ee005a268968868ddd",
+      "git_blob": "404722b6744b26b5414989edb509a56a0031e30c",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-13",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-13.png",
+      "sha256": "10109c99ff18abb0df83e7903ba3803832e7dc3925a6277517009684344b461c",
+      "git_blob": "e6d669cacdbf10750a65b52271935e6d49e6ee78",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-14",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-14.png",
+      "sha256": "158887d5acf3199575d0a067c63d4a11887975ff2ededad90660870f9f364198",
+      "git_blob": "88e4cc8a0d9102d3b7f454fcb92618f800a733b1",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-15",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-15.png",
+      "sha256": "15a5d6b0429becb04893f672bd98eed67e3a360fa7b2e657fe45a4c3eb0775f1",
+      "git_blob": "46c43e425e0d73dc9b07d3d800533f0edcba9887",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-16",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-16.png",
+      "sha256": "6fc457b74ec5f833ed824d7c74ced64ab0aa5ff1f070b738f1aa3b0faec57daa",
+      "git_blob": "9d91834febe25c578bf0bd4d829cb40ee5e5fa7b",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-17",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-17.png",
+      "sha256": "4c48d94ffc2ec4b41e8295f64d96b24e45a5ad9c363a5009698463b86a97cdaf",
+      "git_blob": "06b5f14c3414a6d0f531401dbef27999fa6d49c2",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-18",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-18.png",
+      "sha256": "17acc3dbe1e3f264869614d32cfa0d98860e31e8b15d6bc4eaf70be437cc8cfb",
+      "git_blob": "4ccd1ff836d0abcbc871fdcf07b2d5f1b045ca18",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-19",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-19.png",
+      "sha256": "caaf616d7dc565529ed404499ef65be82d73a3cf88fea931ae977ffa01464f36",
+      "git_blob": "978c94f3530aa0503b036b9481c834dd5f16a18d",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-20",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-20.png",
+      "sha256": "362b9045ccbbc641bc6951f1b6370f9f353b86cf05df4f7f819d4e68f4c6125c",
+      "git_blob": "a95ca461b00eb7286e8d0008add9e0698a3bdae9",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-21",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-21.png",
+      "sha256": "5a4b874b959e126a5a47aef7459585ea9e72dffdec8d47f9cd47e497fa50fb52",
+      "git_blob": "e8f2a591dc9acd8122129995fb537825265d73b7",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-22",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-22.png",
+      "sha256": "b633d0f08450ce6bea98515e2e8bd27e86e6f20068debffdd885264add03fa6c",
+      "git_blob": "757abd33309f0dbc24967e9e5fff1ea52d477bec",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-23",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-23.png",
+      "sha256": "bb5c729ce77092a74ed049cc70c6ba2bd8ad09068326137c8f4ffe93c1d97c52",
+      "git_blob": "fdddc4ed4cc5f89ae20835c1afcf3db54e226413",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-24",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-24.png",
+      "sha256": "b4300e229021b81f5896eb9077d20814fdca0260627208afa6f6cfe13d9948b7",
+      "git_blob": "199820aa8cd52424af7960ceb440b5158fbc6b55",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-25",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-25.png",
+      "sha256": "3f0f859001a8f1ad4be396b7384701e896ea1b6fb786d735078cdfeaf5e7ca6e",
+      "git_blob": "21127fb16d3afb59700d90b5fe6a2311a8d24342",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-26",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-26.png",
+      "sha256": "af51945d0742723483021f435123ccdb8892ea274171f0592428d7b18f1335d4",
+      "git_blob": "3ee06f82a27e18e26f56af3fa7d3a359a87a3771",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-27",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-27.png",
+      "sha256": "ff32a310db68d9fcae64cdd41816a3e255b912083a5403db193acf786bd3419c",
+      "git_blob": "7bedd379709b08148fbafba27f025f19349657d8",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-28",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-28.png",
+      "sha256": "87da447743a6481e826b7b7003b47ce20c64d0116f309bfa71b7f9700a44315e",
+      "git_blob": "f327c9bec5c3d2c90a0af0dbdfe035b6d90a163f",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-29",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-29.png",
+      "sha256": "906afeb2ec7981b4bd3a9fa4531ec5ed9f2182d56434da7ec0598e36784a93d4",
+      "git_blob": "cc531a8321ac4ce147628d9dbee2902606b8f11f",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-30",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AD-30.png",
+      "sha256": "380731a10db81e0e87280362436a78cae90bc46164453de56363d190374315a0",
+      "git_blob": "089979e8381a42741e75b03fb6d843e9f4b2bd07",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-01.png",
+      "sha256": "6325a6c74ef935e516f1e87ef61346bdef11dbc3cecd281c33f6dadee5ecb9ef",
+      "git_blob": "8e109922cd3f681c6fad03c45ac35bab30abdb51",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-02",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-02.png",
+      "sha256": "581899d7e9e3336aa2efc08b9bea40ec25682ff24e3404837f9b3f8133fe1520",
+      "git_blob": "4b7400ecf81adc189460b597f8af5a13e56a471e",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-03",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-03.png",
+      "sha256": "bc011c85729657658f3fed71f7f4b4427994447c6063b2514facab92014d047c",
+      "git_blob": "1a615e0955ab775a4f130bc652b883a69e777d67",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-04",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-04.png",
+      "sha256": "3660e854046bd4cc79aa2ad811190740eeceed204fd0404f7823da6a76e3b67d",
+      "git_blob": "d869c78df3a50034248cdce4c4fc25aa2eba9b97",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-05",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-05.png",
+      "sha256": "5dd4506d572793b614ce00860e17303846a6e1db52b84dd49b0ed8259032db69",
+      "git_blob": "f39716fb0186428e16435f7f27010e441816ce13",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-06",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/HAR-KY-06.png",
+      "sha256": "68d724857c065ddeacea391c6f9ac3b6ed1bd0e20ac2dd63104d18f34279f288",
+      "git_blob": "659921485184d24c76935d82ed4fdac324d872da",
+      "retained": true,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-07",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-07.png",
+      "sha256": "daea71db501095ac8f29b694696c66a812827a77240ef13a920eeeb0abc782bd",
+      "git_blob": "aa034b14483249e9b63475b64811924969d88fab",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-08",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-08.png",
+      "sha256": "3260241af2adc5d645782ae913192eef70da6ccc1f9edaea2406ffe1e6271c04",
+      "git_blob": "a55addfdf31d2eb0cb8412bfd2cacab5faebe606",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-09",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-09.png",
+      "sha256": "999aced33d41001b8a17253c3809f3701b76eb19e3d3d15fa13b1d2729e4dcb2",
+      "git_blob": "58c5470f7485686c332412621067ee2d41e64b59",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-10",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-10.png",
+      "sha256": "a67fc400c4404e2c576d2c2cae60642200c143c47831f7b4ee6be05cb35b0dc2",
+      "git_blob": "f9578444e50bd5b1ea1e4904141c51e98fdede86",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-11",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-11.png",
+      "sha256": "2374adfd30c29ffd571fa28cd0f425f749a7ab9e2d4888569c5e0f47c07dda2d",
+      "git_blob": "b9d4e9075314f4afb480466643c034569765cf2d",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-12",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-KY-12.png",
+      "sha256": "cbbb99d80bfed9474d00331584159d1ca83aad99e0699f1437d978e481eeef7b",
+      "git_blob": "4f570fd951a0e74ba94f0938a960e005dca2404b",
+      "retained": false,
+      "back_family": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AA-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AA-01.png",
+      "sha256": "79da92b50e384db9c6e523424fbd3bc4b45f0ac5a0475ff1300b39a0808503a2",
+      "git_blob": "a1dfc40f065ac1775a2106e282ea9986807715c5",
+      "retained": false,
+      "back_family": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-02",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AA-02.png",
+      "sha256": "6d3ca0ee94148fb70d17098c42b97d7d6ca6a0ea4de2aaf9ca07a85c6b2ef3d4",
+      "git_blob": "28b5816631ea0d4b67cb1e7b617f251997099f57",
+      "retained": false,
+      "back_family": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-03",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AA-03.png",
+      "sha256": "9eb87e3cb82059f1f9dc954b2d99bea011c325e367855ac831189a505fb67aaa",
+      "git_blob": "fcd8f9c5afe607b161ead2cf78b08f34b98ffe97",
+      "retained": false,
+      "back_family": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-04",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AA-04.png",
+      "sha256": "fe68eaa7675c1446d1e10c463b43353c6bc8d27e34b5a2d2828f1ef0edd12f9b",
+      "git_blob": "06229e4ffb24dedd8839248d9fd615f97fb614d1",
+      "retained": false,
+      "back_family": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-05",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-AA-05.png",
+      "sha256": "1e98c1c039218d64d32274da09454c0c6729715fcf91ace9dfadad306f34bc0b",
+      "git_blob": "81bbbe2b26c37d0908e36faa3ab661d0c10e6e03",
+      "retained": false,
+      "back_family": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-06",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/HAR-AA-06.png",
+      "sha256": "c65d757f4f659401ef76f2c049aa87a1d316712a20eea849d3da78f083c23646",
+      "git_blob": "6db7a875370c854d1e7113cc9b49b5c0f248e7f1",
+      "retained": true,
+      "back_family": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-FN-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-FN-01.png",
+      "sha256": "b692cae8609aba8f2dbc7985c7ea70ca3bd82841000a5a7675750e720ea6001e",
+      "git_blob": "72d94ae1aa91dc877c59f65bbbc4ba7262185ec6",
+      "retained": false,
+      "back_family": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "HAR-FN-02",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-FN-02.png",
+      "sha256": "e4174d8a44fb938471f21b597656ba7dc60b8503753ccd916423862e4543c529",
+      "git_blob": "ec6f399e75b7cc5936c421f5c5942b5c8889beab",
+      "retained": false,
+      "back_family": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "HAR-FN-03",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/HAR-FN-03.png",
+      "sha256": "e430ead0faf8eba482fa7340f8d92def2aa4584b9daefd51cda26d681c66324c",
+      "git_blob": "4ec093669df690243222183e51e6f95c1c2ee195",
+      "retained": false,
+      "back_family": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "HAR-FN-04",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/recheck_20260907/assets/HAR-FN-04.png",
+      "sha256": "379c665560653e829f28409990c0b01fa269ef497d8432901cc027bce4ddaad2",
+      "git_blob": "7b60089ebdf07a93ac19bb75b582294f065afcf4",
+      "retained": true,
+      "back_family": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "SET-KL-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SET-KL-01.png",
+      "sha256": "62f563064f5813cc5b1a1450e7382632d9f41b019fa0c41c2c723e5c8fb3c6e6",
+      "git_blob": "fcb8ff33d67a77cacef16c4188a338819f3537eb",
+      "retained": false,
+      "back_family": "BACK_SUPPORT"
+    },
+    {
+      "id": "SET-VL-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/SET-VL-01.png",
+      "sha256": "0aa291966e2c68e58c34de00b3bc66743020d396f3e3ed6f31bc2c2d22591a33",
+      "git_blob": "04695b1069c1705053b7c011f929dee7e7e0ccad",
+      "retained": false,
+      "back_family": "BACK_SUPPORT"
+    },
+    {
+      "id": "SET-KP-01",
+      "kind": "FRONT",
+      "source": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+      "sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
+      "git_blob": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4",
+      "retained": true,
+      "back_family": "BACK_SUPPORT"
+    },
+    {
+      "id": "BACK_CHARACTER",
+      "kind": "BACK_MASTER",
+      "source": "working/v2.7/visual/recheck_20260907/assets/BACK_CHARACTER.png",
+      "sha256": "c018146199a74cb6f1b699e04f0a61f741e5ae2a9c4eb9d9ae961cc851163784",
+      "git_blob": "2f2b1679c61c209515332159eeac1767edd79ae2",
+      "retained": true,
+      "card_count": 20
+    },
+    {
+      "id": "BACK_POWER",
+      "kind": "BACK_MASTER",
+      "source": "working/v2.7/visual/recheck_20260907/assets/BACK_POWER.png",
+      "sha256": "5122ac5f49b42e0358ec7bea9a1a99513d9704ee4edbd3e473d49ae36493f6eb",
+      "git_blob": "e2c8c3b5f0b50e785c4eccf7615e99a9484c48a6",
+      "retained": true,
+      "card_count": 31
+    },
+    {
+      "id": "BACK_LOYALTY",
+      "kind": "BACK_MASTER",
+      "source": "working/v2.7/visual/recheck_20260907/assets/BACK_LOYALTY.png",
+      "sha256": "d6af9232f8f31e6c9997fcd31b49bc84f3b6608b62ae46596246d1bc9f4478c3",
+      "git_blob": "75b1e19f260cfa360fe4941037690ae9f0713900",
+      "retained": true,
+      "card_count": 15
+    },
+    {
+      "id": "BACK_SEA_ROCK",
+      "kind": "BACK_MASTER",
+      "source": "working/v2.7/visual/recheck_20260907/assets/BACK_SEA_ROCK.png",
+      "sha256": "dae48dc5e4ab3b73503cdd51875b0c322909b38d2f44ac2bc30bf53337859406",
+      "git_blob": "493ef96fe96c834146f034d181513d4a46a05350",
+      "retained": true,
+      "card_count": 42
+    },
+    {
+      "id": "BACK_ISLAND",
+      "kind": "BACK_MASTER",
+      "source": "working/v2.7/visual/recheck_20260907/assets/BACK_ISLAND.png",
+      "sha256": "82c4c46f709b6a3b9d11c0e3351c66052e49c90394b6f79a2fe08c3cb76972ed",
+      "git_blob": "7befa3bcc82edd758af96aef928ae656ad735540",
+      "retained": true,
+      "card_count": 6
+    },
+    {
+      "id": "BACK_LIGHTHOUSE",
+      "kind": "BACK_MASTER",
+      "source": "working/v2.7/visual/full_deck_20260907/assets/BACK_LIGHTHOUSE.png",
+      "sha256": "b9d24eca472b7563f711b92aab00f371eaf93977ae89aaecbcc08ae14abc6c30",
+      "git_blob": "91443eff2dda8af5c84989a2f6146c1bc3e2bb82",
+      "retained": false,
+      "card_count": 4
+    },
+    {
+      "id": "BACK_SUPPORT",
+      "kind": "BACK_MASTER",
+      "source": "working/v2.7/visual/recheck_20260907/assets/BACK_SUPPORT.png",
+      "sha256": "f2859d65dbfa70c527811ff1e50fe86d91d47372f7b91395c532d71edf9cda8b",
+      "git_blob": "d3ccffb568d7c8b43bcf16363c4a6c05422771c4",
+      "retained": true,
+      "card_count": 3
+    }
+  ],
+  "generation_plan_reproducible_sha256": "ea7fa530a05ab4688e1b0bb8f83c1d0b1adb54d32ca27858b1ca54be19d4c315",
+  "compiled_masters": {
+    "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf": {
+      "pages": 48,
+      "bytes": 79422128,
+      "sha256": "49d09d80e8c39bf41ee170aa2d1cb51384c74bec143e1760adecbc8a903238e5"
+    },
+    "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf": {
+      "pages": 24,
+      "bytes": 79350625,
+      "sha256": "c3e0fc987d7729b703138e28b23f96248fe63d940d65f21867034f32c79c70a3"
+    }
+  },
+  "compiled_master_delivery": "Both standalone masters saved successfully for the owner; identical complete content is also available in repository PDF volumes.",
+  "review": "SAME_OPERATOR_SELF_CHECK",
+  "independent_acceptance": false,
+  "human_playtest": false,
+  "physical_proof": false,
+  "release_or_lock": false
+}
