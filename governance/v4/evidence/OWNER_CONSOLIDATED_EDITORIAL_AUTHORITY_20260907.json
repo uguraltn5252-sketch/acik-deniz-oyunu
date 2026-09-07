@@ -1,0 +1,47 @@
+{
+  "schema_version": "4.3",
+  "decision_id": "OWNER-CONSOLIDATED-EDITORIAL-20260907",
+  "authorized_by": "PROJECT_OWNER",
+  "grantee": "CHIEF_EDITOR",
+  "date": "2026-09-07",
+  "source_head": "78c69e82cb43a635cf319b957633c52b2e879e11",
+  "recorded_from": "Current visible owner message repeated on 6 and 7 September 2026.",
+  "owner_quotes": [
+    "Başeditör olarak hikaye editörünün görevlerini suanlik üzerine al ve sorunlari gider",
+    "Kural kitabını da buna gore duzelt kara Mühür ismi hoşuma gitmedi daha yaratici bisey bul.",
+    "Oyunun içinde kara komedi olacak simdi bunları düşün tüm yetki sende.",
+    "Smilasyon yetkisi de sende",
+    "Bana sadece sorman gereken yerde soru sor."
+  ],
+  "authorized_work": [
+    "Temporarily perform Story Editor and Simulation QA duties in this Chief Editor chat.",
+    "Research and implement a coherent, engaging story, concise rules and all card-copy families.",
+    "Rename Siyah Mühür (owner called it kara Mühür); develop distinct private traitor motives.",
+    "Subtle original allusions to One Piece, Pirates of the Caribbean, Prens and optionally Moby-Dick.",
+    "Resolve rule/copy ambiguities and repair demonstrable simulation defects; run reproducible checks."
+  ],
+  "excluded_work": [
+    "VISUAL_DESIGN",
+    "ART_DIRECTION",
+    "physical print proof",
+    "release",
+    "lock"
+  ],
+  "branch": "v2.7-design",
+  "core_output_paths": [
+    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+    "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+    "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+    "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+    "working/v2.7/V27_MECHANIC_DECISIONS.json",
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+    "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+    "working/v2.7/README_CURRENT_v2.7.md"
+  ],
+  "qa_output_prefix": "working/v2.7/qa/editorial_revision/",
+  "acceptance_semantics": "One operator now holds three duties. Technical self-checks must never be described as independent role review, human playtest or aesthetic acceptance. Working v2.7 delivery is authorized; locked v2.6 remains immutable.",
+  "expiry": "This consolidated editorial task and its delivery only; no authority for another project task without an exact assignment."
+}

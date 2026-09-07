@@ -7,7 +7,7 @@
     "purpose": "Historical active-task fixture for trusted CI negative controls, independent of live task closure or replacement; never current work authority."
   },
   "repository_expectations": {
-    "active_task_id": "STORY-NARRATIVE-CLARITY-001",
+    "active_task_id": null,
     "loaded_task_ids": [
       "COPY-SOURCE-INVENTORY-001",
       "GOV4-CUTOVER-001",
@@ -20,7 +20,7 @@
       "VISUAL_DESIGN": false,
       "CHIEF_EDITOR": true,
       "SIMULATION_QA": false,
-      "STORY_EDITOR": true
+      "STORY_EDITOR": false
     }
   },
   "states": {

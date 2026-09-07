@@ -39,14 +39,22 @@
         "INTEGRATE",
         "MANAGE_STATE",
         "RESOLVE_SOURCE_CONFLICT",
-        "WRITE"
+        "WRITE",
+        "PRODUCE_STORY",
+        "PRODUCE_FLAVOR",
+        "PERIOD_LANGUAGE_REVIEW",
+        "RUN_SIMULATION",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "RULES_INTEGRITY_REVIEW"
       ],
       "cannot": [
         "assume project-owner approval",
         "self-authorize release or lock"
       ],
       "writes_require_exact_task": true,
-      "brief_ref": "governance/v4/roles/CHIEF_EDITOR.md"
+      "brief_ref": "governance/v4/roles/CHIEF_EDITOR.md",
+      "temporary_delegation_ref": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json"
     },
     "STORY_EDITOR": {
       "owns": [

@@ -29,3 +29,7 @@ koruma kanıtı gerekir. Çıktın yeni görev ve doğrulanmış entegrasyondur;
 uzmanların adına hikâye, illüstrasyon veya simülasyon sonucu üretmek değildir.
 
 İçerik entegrasyonu koordinasyon task'ındaki `INTEGRATE` kapısından geçer: `acceptance_ref` altında task_id, ACCEPTED durumu, bağımsız reviewer_role, delivery_commit ve accepted_blobs gerekir. Teslim dalını güncel fetch et; yalnız kabul edilen byte'ları kopyala. Bu kapı özgün uzman üretimi yapma yetkisi değildir.
+
+## 7 Eylül 2026 geçici görev devri
+
+Proje sahibi, bu Baş Editör sohbetine hikâye editörlüğü, kart/kural metni ve simülasyon işini geçici olarak devretti. `OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json` kapsamı ve yeni exact görev, yukarıdaki olağan rol ayrımına bu teslim için açık istisnadır. Siyah Mühür adının değiştirilmesi de istendi. Görsel uzman ve sanat yönetmeni bu devrin dışındadır. Aynı kişinin yaptığı kontroller bağımsız inceleme veya insan deneyimi kanıtı sayılmaz. Yeni görevin bitmesi başka görevler için yazma yetkisi vermez.

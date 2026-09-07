@@ -69,3 +69,7 @@ aktif görev yalnız state'te bulunur. Yeni içerik üretimi bu dosyayla başlam
 
 Handoff yedi alanı `governance/WORKSTREAM_PROTOCOL.md` içindedir. Sohbet
 bağlamını azalt; araştırma, yaratıcı eleştiri ve kanıt kalitesini azaltma.
+
+## 7 Eylül 2026 geçici görev devri
+
+Proje sahibi, bu Baş Editör sohbetine hikâye editörlüğü, kart/kural metni ve simülasyon işini geçici olarak devretti. `OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json` kapsamı ve yeni exact görev, yukarıdaki olağan rol ayrımına bu teslim için açık istisnadır. Siyah Mühür adının değiştirilmesi de istendi. Görsel uzman ve sanat yönetmeni bu devrin dışındadır. Aynı kişinin yaptığı kontroller bağımsız inceleme veya insan deneyimi kanıtı sayılmaz. Yeni görevin bitmesi başka görevler için yazma yetkisi vermez.

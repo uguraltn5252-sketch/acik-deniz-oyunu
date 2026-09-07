@@ -4,7 +4,7 @@
   "task_id": "STORY-NARRATIVE-CLARITY-001",
   "task_type": "BOUNDED_STORY_TEXT_IMPLEMENTATION",
   "project_task": true,
-  "status": "ACTIVE",
+  "status": "SUPERSEDED / OWNER_CONSOLIDATED_EDITORIAL_WORK",
   "issued_by": "CHIEF_EDITOR",
   "issued_at": "2026-09-05",
   "executor_role": "STORY_EDITOR",
@@ -30,8 +30,8 @@
     "branch_policy": "Chief fast-forwards work/v2.7-story from the preserved historical delivery to the exact activation commit. Read authority from current v2.7-design; continue edits on the Story branch. Never reset or discard unpublished work."
   },
   "authorization": {
-    "enabled": true,
-    "write_authorized": true,
+    "enabled": false,
+    "write_authorized": false,
     "allowed_actions": [
       "PRODUCE_STORY",
       "PERIOD_LANGUAGE_REVIEW",
@@ -210,5 +210,7 @@
     "evidence": "Actual edited Markdown files, commit, per-file blobs and short before/after rationale. No release or lock request."
   },
   "execution_status": "ASSIGNED / VISIBLE_STORY_CHAT_START_NOT_VERIFIED",
-  "next_action": "STORY_EDITOR: read current authority and this exact task, verify the prepared branch, then edit and commit the three narrative files. CHIEF_EDITOR: inspect the actual delivery and integrate only independently accepted output bytes."
+  "next_action": "STORY_EDITOR: read current authority and this exact task, verify the prepared branch, then edit and commit the three narrative files. CHIEF_EDITOR: inspect the actual delivery and integrate only independently accepted output bytes.",
+  "superseded_by": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+  "supersession_reason": "Owner explicitly transferred Story and Simulation duties to Chief Editor and expanded requested content scope; no specialist delivery existed at verified branch head 11f58ecf519c9e6ceb5a9e81b6ed88747ae2464e."
 }

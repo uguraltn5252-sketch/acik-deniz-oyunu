@@ -1,9 +1,9 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-STORY-NARRATIVE-CLARITY-20260905",
-  "status": "V4_COORDINATION_ACTIVE / STORY_TEXT_WRITE_ACTIVE / COPY_INVENTORY_PAUSED / VISUAL_SIMULATION_RELEASE_CLOSED",
-  "updated_at": "2026-09-05",
+  "state_id": "V4-CONSOLIDATED-EDITORIAL-PREPARED-20260907",
+  "status": "V4_IDLE / OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_RECORDED",
+  "updated_at": "2026-09-07",
   "source_checkpoint": {
     "branch": "v2.7-design",
     "commit": "5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "STORY-NARRATIVE-CLARITY-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -55,12 +55,12 @@
     "story": {
       "branch": "work/v2.7-story",
       "head": "11f58ecf519c9e6ceb5a9e81b6ed88747ae2464e",
-      "status": "ACTIVE_NARRATIVE_CORRECTION / EXECUTION_NOT_STARTED",
-      "task_id": "STORY-NARRATIVE-CLARITY-001",
+      "status": "FROZEN / SUPERSEDED_BY_OWNER_CONSOLIDATED_TASK",
+      "task_id": null,
       "source_baseline_commit": "175a10c7b6829abfe61c3c95057b6f4e77f2b520",
       "head_binding": "AUTHORIZED_TASK_ACTIVATION / NOT_A_DELIVERY",
       "previous_recorded_head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
-      "branch_preparation": "PREPARED: live branch fast-forwarded to the exact STORY-NARRATIVE-CLARITY-001 activation commit. Current authority is v2.7-design; visible Story chat execution has not been verified."
+      "branch_preparation": "Preserved at verified activation head; no specialist content delivery. Chief temporarily executes the new task on v2.7-design."
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
@@ -120,7 +120,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "STORY_EDITOR: execute STORY-NARRATIVE-CLARITY-001 by editing the three exact narrative files. CHIEF_EDITOR and SIMULATION_QA: independently review the delivery. The paused copy inventory resumes through a fresh exact continuation task after Story integration; no inventory completion is assumed.",
+  "next_action": "Open FOULWAKE-EDITORIAL-OVERHAUL-001 for Chief Editor under the explicit 7 September owner transfer.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -167,5 +167,6 @@
       "reason": "STORY_IMPLEMENTATION_PRIORITY",
       "resume_task_id": "COPY-SOURCE-INVENTORY-002"
     }
-  }
+  },
+  "temporary_delegation_ref": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json"
 }
