@@ -49,3 +49,13 @@ Proje sahibinin son mesajı önce bütün sistemi yeniden kontrol etmeyi, ardın
 ## Tam deste çizimi ve fener düzeltmesi
 
 Proje sahibi somut pilot tesliminden sonra “Devam” dedi; ardından fenerin yandan görünümünü araştırıp oyuna uyarlama kararını Baş Editöre verdi. `OWNER_FULL_DECK_ART_AUTHORITY_20260907.json` ve yeni `FOULWAKE-FULL-DECK-ART-001` görevi kalan 109 ön çizimi ile bir Fener arka masterının yenilenmesini kapsar. 12 ön ve diğer altı arka kaynak korunur. Bu devam kararı bağımsız kabul, fiziksel proof veya release/lock değildir. Güncel hikâye adı Kuru Pay; önceki tarihsel bölümdeki Siyah Mühür ifadesi güncel kanon değildir.
+
+## Tam deste teslimi — güncel durum
+
+`FOULWAKE-FULL-DECK-ART-001` tamamlandı: 121 resimli ön, yedi ortak arka,
+yandan Fener, 48 sayfalık tam kart baskısı ve 24 sayfalık görsel inceleme.
+Kanıt `governance/v4/evidence/FULL_DECK_ART_DELIVERY_20260907.json`;
+güncel giriş `working/v2.7/README_CURRENT_v2.7.md`. Üretim izni kapandı,
+Baş Editörün olağan koordinasyon dosya sınırı geri getirildi. Önceki
+“109 ön eksik” kayıtları tarihsel teslimi anlatır. İnsan oyunu, fiziksel
+baskı ve bağımsız estetik kabul açık; release/lock verilmedi.

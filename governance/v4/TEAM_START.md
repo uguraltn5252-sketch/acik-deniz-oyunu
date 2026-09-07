@@ -6,8 +6,9 @@
 şüphesi oyuncular arasında doğan, arka planı ve sanatı aynı dünyaya ait.
 Kalite yalnız dosya sayısı, render hash'i veya test puanı değildir.
 
-Mevcut kaynaklarda 1721, Arden, San Cordelio, Saint Verena, Gusto ve Siyah
-Mühür korunur. Gusto'nun akıbeti ile Siyah Mühür'ün niteliği kesinleştirilmez.
+Güncel çalışma kaynaklarında 1721, Arden, San Cordelio, Saint Verena, Gusto
+ve Kuru Pay vardır. Proje sahibinin ad değişikliği uygulanmıştır. Gusto'nun
+akıbeti, terkibin başarısı ve Kuru Pay çevresindeki ortaklığın niteliği kesinleştirilmez.
 Dünya ciddidir; insanların korkuları, çıkarları ve kusurları kuru mizahı
 üretir. Görsel omurga ISLAK TANIKLIK, gravür/tarama, mat mürekkep ve tuzlu
 kâğıttır. Bunlar mevcut kaynakların özeti; yeni mekanik veya kanon kararı değildir.
@@ -85,3 +86,13 @@ Proje sahibinin son mesajı önce bütün sistemi yeniden kontrol etmeyi, ardın
 ## Tam deste çizimi ve fener düzeltmesi
 
 Proje sahibi somut pilot tesliminden sonra “Devam” dedi; ardından fenerin yandan görünümünü araştırıp oyuna uyarlama kararını Baş Editöre verdi. `OWNER_FULL_DECK_ART_AUTHORITY_20260907.json` ve yeni `FOULWAKE-FULL-DECK-ART-001` görevi kalan 109 ön çizimi ile bir Fener arka masterının yenilenmesini kapsar. 12 ön ve diğer altı arka kaynak korunur. Bu devam kararı bağımsız kabul, fiziksel proof veya release/lock değildir. Güncel hikâye adı Kuru Pay; önceki tarihsel bölümdeki Siyah Mühür ifadesi güncel kanon değildir.
+
+## Tam deste teslimi — güncel durum
+
+`FOULWAKE-FULL-DECK-ART-001` tamamlandı: 121 resimli ön, yedi ortak arka,
+yandan Fener, 48 sayfalık tam kart baskısı ve 24 sayfalık görsel inceleme.
+Kanıt `governance/v4/evidence/FULL_DECK_ART_DELIVERY_20260907.json`;
+güncel giriş `working/v2.7/README_CURRENT_v2.7.md`. Üretim izni kapandı,
+Baş Editörün olağan koordinasyon dosya sınırı geri getirildi. Önceki
+“109 ön eksik” kayıtları tarihsel teslimi anlatır. İnsan oyunu, fiziksel
+baskı ve bağımsız estetik kabul açık; release/lock verilmedi.

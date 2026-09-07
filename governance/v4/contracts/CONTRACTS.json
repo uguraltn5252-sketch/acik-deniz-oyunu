@@ -113,19 +113,14 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**",
-          "working/v2.7/qa/full_deck_art/**",
-          "working/v2.7/visual/full_deck_20260907/**"
+          ".github/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
-          "working/v2.7/README_CURRENT_v2.7.md",
-          "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
-          "working/v2.7/visual/art_direction/FOULWAKE_FULL_DECK_DECISIONS_v2.7.md"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -243,7 +238,7 @@
       "role": "CHIEF_EDITOR",
       "scope": "Owner-authorized full illustration continuation and side-view lighthouse revision; current canonical copy remains immutable.",
       "review": "SAME_OPERATOR_SELF_CHECK / FULL_DECK_OWNER_REVIEW_PENDING / NOT_INDEPENDENT",
-      "status": "OWNER_CONTINUATION_RECORDED / AWAITING_EXACT_TASK"
+      "status": "DELIVERED / EXACT_TASK_CLOSED / FULL_DECK_OWNER_REVIEW_PENDING"
     }
   },
   "protected_quality_gates": [
