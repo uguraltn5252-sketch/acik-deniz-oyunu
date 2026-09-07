@@ -2,16 +2,18 @@
   "schema_version": "1.0",
   "version": "v2.7 DRAFT",
   "status": "PROJECT_OWNER_BINDING_OVERRIDE / NOT LOCKED",
-  "authority": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
+  "authority": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
   "records": [
     {
       "id": "SET-KP-01",
       "title": "KAPTAN",
       "section_label": "ÖZEL YETENEK",
-      "effect": "Oylamada eşitlik olursa, senin tarafın geçerli olur.",
-      "flavor": "Lidere et. Gemi senin emrinde.",
-      "copy_policy": "EXACT / NO REWRITE / TEMPLATE_COMPOSITE_ONLY",
+      "effect": "Rota oylamasında 2 oy kullanırsın. Rota beraberliğini yalnız berabere seçenekler arasından bozarsın. Suçlama ve İsyanda 1 oy kullanırsın. Suçlama hedefinin ön seçimindeki eşitliği de bozarsın; bu ön seçim resmî oylama değildir.",
+      "flavor": "Dümen sende. Borç hepinizin.",
+      "copy_policy": "EXACT / OWNER_DELEGATED_20260907_REVISION / VISUAL_SOURCE_UNCHANGED",
       "visual_source": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg"
     }
-  ]
+  ],
+  "supersedes_copy_authority": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
+  "revision_date": "2026-09-07"
 }

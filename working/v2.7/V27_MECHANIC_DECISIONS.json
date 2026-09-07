@@ -16,7 +16,26 @@
       "mutates_locked_v2_6": false,
       "visual_rule": "The same textless, rotation-safe binary back is reused for all Sea and Rock cards.",
       "release_gate": "FULL_SIMULATION_AND_BLIND_PHYSICAL_LEAK_TEST",
-      "release_status": "BLOCKER_UNTIL_RETEST"
+      "release_status": "BLOCKER: HEURISTIC_STRESS_COMPLETE; RULE_COMPLETE_HUMAN_AND_PHYSICAL_VALIDATION_ABSENT",
+      "current_evidence": "working/v2.7/qa/editorial_revision/simulation_results.json"
+    },
+    {
+      "id": "DEC-20260907-01",
+      "subject": "captain_and_night_copy_scope",
+      "authority": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
+      "value": "PRESERVE_LOCKED_MECHANICS_AND_CLARIFY_COPY",
+      "details_ref": "FOULWAKE_EDITORIAL_DECISIONS_v2.7.json#ED-04/ED-05",
+      "approved_for": "v2.7_WORKING_REVISION",
+      "mutates_locked_v2_6": false
+    },
+    {
+      "id": "DEC-20260907-02",
+      "subject": "seagull_target_no_longer_eligible",
+      "authority": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
+      "value": "NORMAL_RANDOM_SELECTION_AND_CONSUME_MARKER_ON_NEXT_TARGET_EVENT",
+      "details_ref": "FOULWAKE_EDITORIAL_DECISIONS_v2.7.json#ED-13",
+      "approved_for": "v2.7_WORKING_REVISION",
+      "mutates_locked_v2_6": false
     }
   ]
 }

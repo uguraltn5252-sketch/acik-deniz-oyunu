@@ -1,47 +1,42 @@
 {
-  "version": "v2.7",
-  "status": "DRAFT / NOT LOCKED",
-  "branch": "v2.7-design",
-  "source_baseline": "v2.6 STABLE / LOCKED",
-  "scope": "121 kimlik için v2.7 kart metin kaynağı; KAPTAN exact override dosyasında. Anlatı ve açıklık revizyonu.",
-  "invariants": {
-    "character_count": 20,
-    "power_count": 30,
-    "loyalty_count": 15,
-    "map_count": 52,
-    "provision_count": 1,
-    "utility_count_in_this_file": 2,
-    "captain_override_count": 1,
-    "total_physical_ids": 121,
-    "card_ids_unchanged": true,
-    "card_counts_unchanged": true,
-    "card_timing_unchanged": true,
-    "mechanical_parameters_unchanged": true,
-    "clarification_fields_recorded": true,
-    "no_card_added_or_removed": true
+  "source_head": "78c69e82cb43a635cf319b957633c52b2e879e11",
+  "package_sha256": "ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534",
+  "inner_v25_sha256": "975dd77d435a835fcf3faa864c5624b0542fadb419fa7d34217ed32fe87aa046",
+  "spec_sha256": "8281acdb3835fcadc5f97a24fc934b41a7c377f36b03856ab86632cb971f2b9f",
+  "cards_pdf_sha256": "769eaadf989b3d7e4b35ca00d62b0505bcafd7dc61174a11314b607887de9298",
+  "rulebook_pdf_sha256": "192f790d89e987a312d6a36879e7b063ee13426c9508b4e474f16f2cad723c2a",
+  "coverage": {
+    "characters": 20,
+    "powers": 30,
+    "loyalties": 15,
+    "provisions": 1,
+    "maps": 52,
+    "utilities": 2,
+    "captain": 1,
+    "total": 121
   },
-  "characters": [
-    {
+  "baseline_records": {
+    "KAR-01": {
       "id": "KAR-01",
       "name": "Uzakgören",
       "role": "Gözcü",
       "impact": 2,
       "icon": "eye",
-      "effect": "İlk tarafsız gece hariç her yolculuk gecesi, yasal bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
-      "flavor": "Yelkeni görmeden geminin gelişini anlar. Bir yalana kanınca günlerce mesafeyi suçlar.",
+      "effect": "Tanışma gecesi hariç her gece bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
+      "flavor": "Tehlikeyi uzaktan görür. İnsanları hâlâ yakından çözemedi.",
       "use_mode": "gizli"
     },
-    {
+    "KAR-02": {
       "id": "KAR-02",
       "name": "Kıyıçizen",
       "role": "Haritacı",
       "impact": 2,
       "icon": "map",
-      "effect": "İlk tarafsız gece hariç, Sis olmayan her yolculuk gecesi yasal bir Uzak Ufuk kartının olay yüzüne gizlice bakar.",
-      "flavor": "Her itirazını haritanın kenarına not eder. Bir süredir denize yer kalmıyor.",
+      "effect": "Tanışma gecesi hariç, Sis olmayan her gece bir Uzak Ufuk kartının olay yüzüne gizlice bakar.",
+      "flavor": "Haritada her şey yerli yerinde. Deniz hariç.",
       "use_mode": "gizli"
     },
-    {
+    "KAR-03": {
       "id": "KAR-03",
       "name": "Dümenkurdu",
       "role": "Serdümen",
@@ -51,7 +46,7 @@
       "flavor": "Dümen onun elindeyken gemi yolu şaşırmaz. Mürettebat şaşırabilir.",
       "use_mode": "açık"
     },
-    {
+    "KAR-04": {
       "id": "KAR-04",
       "name": "Canhalatı",
       "role": "Palamarcı",
@@ -61,7 +56,7 @@
       "flavor": "İnsanlara değil, düğümlere güvenir.",
       "use_mode": "açık"
     },
-    {
+    "KAR-05": {
       "id": "KAR-05",
       "name": "Tahtakakan",
       "role": "Kalafatçı",
@@ -71,47 +66,47 @@
       "flavor": "Gemide bir yer gıcırdadığında elinde çekiçle belirir.",
       "use_mode": "açık"
     },
-    {
+    "KAR-06": {
       "id": "KAR-06",
       "name": "Dipgören",
       "role": "Dalgıç",
       "impact": 1,
       "icon": "diver",
       "effect": "Batık Kalyon bulunduğunda bir kez fazladan 1 Güç kartı kazandırır.",
-      "flavor": "Her dalıştan bir şey getirir. Çoğunun sahibi için yeniden dalması gerekir.",
+      "flavor": "Denizin dibinden her seferinde bir şey getiriyor.",
       "use_mode": "açık"
     },
-    {
+    "KAR-07": {
       "id": "KAR-07",
       "name": "Rüzgârkoklayan",
       "role": "Yelkenci",
       "impact": 1,
       "icon": "wind",
       "effect": "Bir kez Durgun Deniz veya rüzgâr kaynaklı rota kısıtını gizlice kaldırır.",
-      "flavor": "Yelkeni toplatınca batıl inanç derler. Fırtına çıkınca neden daha önce söylemediğini sorarlar.",
+      "flavor": "Rüzgâr çıkmadan kokusunu aldığını söylüyor.",
       "use_mode": "gizli"
     },
-    {
+    "KAR-08": {
       "id": "KAR-08",
       "name": "Kırık Kürek",
       "role": "Kayıkçı",
       "impact": 1,
       "icon": "boat",
       "effect": "Tek kullanım. Pusula sunulunca kabul ederse bir mahsuru kurtarmak için bir tam vardiyalık sefere çıkar. Reddederse Pusula atılır; sefer başlamaz ve yetenek harcanmaz.",
-      "flavor": "İkinci küreği kime ödünç verdiğini hatırlıyor. Adamı kurtarmaya pek hevesli değil.",
+      "flavor": "Bir zamanlar iki küreği vardı.",
       "use_mode": "açık"
     },
-    {
+    "KAR-09": {
       "id": "KAR-09",
       "name": "Üç Anahtar",
       "role": "Levazımcı",
       "impact": 1,
       "icon": "keys",
       "effect": "Tek kullanım. Güç kazanılırken bir fazla karta bakılır; sonra biri kapalı atılır. Kazanç sayısı artmaz.",
-      "flavor": "Üç anahtarı var. Kilit açılmayınca sandığın kendisine ait olmadığını söylüyor.",
+      "flavor": "Üç anahtarı var. İkisinin neyi açtığını bilmiyor.",
       "use_mode": "açık"
     },
-    {
+    "KAR-10": {
       "id": "KAR-10",
       "name": "Güvertebaşı",
       "role": "Lostromo",
@@ -121,7 +116,7 @@
       "flavor": "Herkesin ne yapması gerektiğini bilir. Özellikle başkalarının.",
       "use_mode": "açık"
     },
-    {
+    "KAR-11": {
       "id": "KAR-11",
       "name": "İskele Sıçanı",
       "role": "-",
@@ -131,99 +126,97 @@
       "flavor": "Karaya herkesten önce çıkar. Nasıl indiği sorulmaz.",
       "use_mode": "açık"
     },
-    {
+    "KAR-12": {
       "id": "KAR-12",
       "name": "Karga Yuvası",
       "role": "-",
       "impact": 1,
       "icon": "crow",
       "effect": "Tek kullanım. Rota öncesi bir Yakın Ufku işaretler. O rota oy alırsa toplamına +1 eklenir.",
-      "flavor": "Orayı gördüm demedim. Oradan gidelim dedim.",
+      "flavor": "Yukarıdan bakınca herkes küçük görünür. Şüpheler değil.",
       "use_mode": "açık"
     },
-    {
+    "KAR-13": {
       "id": "KAR-13",
       "name": "Kazanbaşı",
       "role": "Aşçı",
       "impact": 0,
       "icon": "pot",
-      "effect": "Özel yeteneği yoktur.",
-      "flavor": "Dünkü çorbayı bugün de dağıtır. Biri beğenince tarifini vermek istemez.",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Bugünün çorbasında ne var? Dünün çorbası.",
       "use_mode": "yeteneksiz"
     },
-    {
+    "KAR-14": {
       "id": "KAR-14",
       "name": "Fare Nazırı",
       "role": "-",
       "impact": 0,
       "icon": "rat",
-      "effect": "Özel yeteneği yoktur.",
+      "effect": "Özel mekanik gücü yoktur.",
       "flavor": "Resmî sayımda on dört fare var. On beşincinin çizme giydiğini söylüyor.",
       "use_mode": "yeteneksiz"
     },
-    {
+    "KAR-15": {
       "id": "KAR-15",
       "name": "Papağan Mütercimi",
       "role": "-",
       "impact": 0,
       "icon": "parrot",
-      "effect": "Özel yeteneği yoktur.",
-      "flavor": "Kuş konuşmadan tercümeye başlar. İtiraz edene lehçeyi bilmediğini söyler.",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Papağanın her cümlesini aynı çeviriyor: Ona güvenme.",
       "use_mode": "yeteneksiz"
     },
-    {
+    "KAR-16": {
       "id": "KAR-16",
       "name": "Fıçı Bekçisi",
       "role": "-",
       "impact": 0,
       "icon": "barrel",
-      "effect": "Özel yeteneği yoktur.",
-      "flavor": "Herkes kurtulacaksa fıçıların da çıkarılmasını ister. İsimlerini tayfadan daha iyi bilir.",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Fıçıların hepsini tanıyor. Tayfanın yarısının adını bilmiyor.",
       "use_mode": "yeteneksiz"
     },
-    {
+    "KAR-17": {
       "id": "KAR-17",
       "name": "Kafiye Belası",
       "role": "Gemi Şairi",
       "impact": 0,
       "icon": "quill",
-      "effect": "Özel yeteneği yoktur.",
-      "flavor": "Cenaze şiirini erkenden yazdı. Kimin için olduğunu sorana ilhamı boğduğunu söylüyor.",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Tayfa onu susturmak için bir keresinde fırtınaya girmeyi kabul etti.",
       "use_mode": "yeteneksiz"
     },
-    {
+    "KAR-18": {
       "id": "KAR-18",
       "name": "Karayı Özleyen",
       "role": "Acemi Gemici",
       "impact": 0,
       "icon": "shore",
-      "effect": "Özel yeteneği yoktur.",
-      "flavor": "San Cordelio'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor.",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Dört saattir denizde. Üç saattir dönüş yolunu soruyor.",
       "use_mode": "yeteneksiz"
     },
-    {
+    "KAR-19": {
       "id": "KAR-19",
       "name": "Yastıkçı",
       "role": "Kamarot",
       "impact": 0,
       "icon": "pillow",
-      "effect": "Özel yeteneği yoktur.",
-      "flavor": "Yastık kılıflarını değiştirirken duyduklarını unuttuğunu söyler. Hatırlaması için genellikle bir iyilik gerekir.",
+      "effect": "Özel mekanik gücü yoktur.",
+      "flavor": "Herkesin kamarasına giriyor. Mesleği gereği olduğunu söylüyor.",
       "use_mode": "yeteneksiz"
     },
-    {
+    "KAR-20": {
       "id": "KAR-20",
       "name": "Tahtaya Vuran",
       "role": "Hurafeci",
       "impact": 0,
       "icon": "wood",
-      "effect": "Özel yeteneği yoktur.",
+      "effect": "Özel mekanik gücü yoktur.",
       "flavor": "Her kötü alamette tahtaya vuruyor. Tahtakakan bundan hiç hoşlanmıyor.",
       "use_mode": "yeteneksiz"
-    }
-  ],
-  "powers": [
-    {
+    },
+    "GUC-01A": {
       "id": "GUC-01A",
       "name": "Mantar Can Halkası",
       "group": "Kurtarma",
@@ -234,7 +227,7 @@
       "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-01B": {
       "id": "GUC-01B",
       "name": "Mantar Can Halkası",
       "group": "Kurtarma",
@@ -245,7 +238,7 @@
       "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-02A": {
       "id": "GUC-02A",
       "name": "Kancalı Halat",
       "group": "Kurtarma",
@@ -256,7 +249,7 @@
       "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-02B": {
       "id": "GUC-02B",
       "name": "Kancalı Halat",
       "group": "Kurtarma",
@@ -267,18 +260,18 @@
       "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-03": {
       "id": "GUC-03",
       "name": "Pusula",
       "group": "Seyir / Kurtarma",
       "time": "Gündüz",
       "icon": "compass",
       "start": true,
-      "effect": "İlk rota öncesi kullanılamaz. Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz.",
-      "flavor": "Kuzey yerinde duruyor. Sorun, sahibinin başka bir şey araması.",
+      "effect": "Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz.",
+      "flavor": "Kuzeyi gösteriyor. Kaptan yine de başka yönü tarif ediyor.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-04": {
       "id": "GUC-04",
       "name": "Güverte Araması",
       "group": "Etkileşim",
@@ -289,7 +282,7 @@
       "flavor": "Kayıp eşya bulundu. Sahibinin kim olduğu hâlâ şüpheli.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-05": {
       "id": "GUC-05",
       "name": "Yama Tahtası",
       "group": "Gövde",
@@ -297,10 +290,10 @@
       "icon": "plank",
       "start": true,
       "effect": "Kraken dışındaki 1 Gövde hasarını engelle.",
-      "flavor": "Tahta bir tabut için kesilmişti. Müşteri iyileşince gemiye yaradı.",
+      "flavor": "Gemi marangozluğu, deliği görmezden gelmeyi bırakınca başlar.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-06": {
       "id": "GUC-06",
       "name": "Zıpkın Sandığı",
       "group": "Gövde",
@@ -311,18 +304,18 @@
       "flavor": "Sandığın üstünde büyük balık yazıyor. Yazı aceleyle yazılmış.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-07": {
       "id": "GUC-07",
       "name": "Geçici Yeke",
       "group": "Seyir",
       "time": "Rota öncesi",
       "icon": "rudder",
       "start": true,
-      "effect": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku rota seçeneği yap. Bu işlem olay yüzünü göstermez.",
+      "effect": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku aç.",
       "flavor": "Geçici çözümler denizde bazen karaya kadar sürer.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-08": {
       "id": "GUC-08",
       "name": "Kerteriz Pergeli",
       "group": "Seyir",
@@ -330,10 +323,10 @@
       "icon": "divider",
       "start": true,
       "effect": "Girdabın varışını veya Ters Akıntının kapatacağı yasal yönü rastgelelik yerine sen seç.",
-      "flavor": "Üç kişi yön tarif etti. Pergel sahibi üçünün de elini kenara itti.",
+      "flavor": "Kuzeyi göstermiyor; ama çok kararlı görünüyor.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-09": {
       "id": "GUC-09",
       "name": "Kurşun Ağırlık",
       "group": "Seyir",
@@ -344,7 +337,7 @@
       "flavor": "Bazı sorunlar ancak dibe çekilince çözülür.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-10": {
       "id": "GUC-10",
       "name": "Yedek Yelken",
       "group": "Seyir",
@@ -355,51 +348,51 @@
       "flavor": "Birincisi niçin yedek değildi, konuşmayalım.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-11": {
       "id": "GUC-11",
       "name": "Islak Deniz Haritası",
       "group": "Seyir",
       "time": "Gündüz - rota öncesi",
       "icon": "map",
       "start": true,
-      "effect": "İlk rota öncesi kullanılamaz. İki Yakın Ufuk kartının yerini olay yüzlerine bakmadan değiştir.",
+      "effect": "İki Yakın Ufuk kartının yerini olay yüzlerine bakmadan değiştir.",
       "flavor": "Mürekkep aktı; yollar daha yaratıcı oldu.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-12": {
       "id": "GUC-12",
       "name": "Kırık Dürbün",
       "group": "Bilgi",
       "time": "Gündüz - rota öncesi",
       "icon": "spyglass",
       "start": true,
-      "effect": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk kartının olay yüzüne gizlice bak.",
-      "flavor": "Sol cam çatlak. Sahibi sağ gözünü kapatıp daha dikkatli bakıyor.",
+      "effect": "Bir Yakın Ufuk kartının olay yüzüne gizlice bak.",
+      "flavor": "Sağ taraf geleceği, sol taraf pişmanlığı gösteriyor.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-13": {
       "id": "GUC-13",
       "name": "Eski Seyir Defteri",
       "group": "Bilgi",
       "time": "Sis olmayan gündüz",
       "icon": "book",
       "start": true,
-      "effect": "İlk rota öncesi kullanılamaz. Bir Uzak Ufuk seç. Moderatör yalnız Gövde hasarı verebilir veya vermez der.",
+      "effect": "Bir Uzak Ufuk seç. Moderatör yalnız Gövde hasarı verebilir veya vermez der.",
       "flavor": "Kaptanlar ölür; kötü el yazıları kalır.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-14": {
       "id": "GUC-14",
       "name": "Anahtar Deliği",
       "group": "Bilgi",
       "time": "Gündüz - yalnız Kamarada",
       "icon": "keyhole",
       "start": true,
-      "effect": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk olayına gizlice bak. Kamara Güç yasağının tek yazılı istisnasıdır.",
+      "effect": "Bir Yakın Ufuk olayına gizlice bak. Kamara Güç yasağının tek yazılı istisnasıdır.",
       "flavor": "Kamaranın en küçük penceresi, en büyük dedikodusu.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-15": {
       "id": "GUC-15",
       "name": "Kaptanın Eski Şapkası",
       "group": "Oylama",
@@ -407,10 +400,10 @@
       "icon": "hat",
       "start": true,
       "effect": "Bu rota oylamasında kendi oyuna +1 ekle.",
-      "flavor": "Eski sahibi şapkayı geri istiyor. Önce verdiğin sözü tutman gerek.",
+      "flavor": "Şapka yetki vermez. Yine de herkes önce şapkaya bakar.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-16": {
       "id": "GUC-16",
       "name": "İsyan Bildirisi",
       "group": "Oylama",
@@ -421,7 +414,7 @@
       "flavor": "Altında imza yok; herkesin fikri var.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-17": {
       "id": "GUC-17",
       "name": "Papağanın İfadesi",
       "group": "Etkileşim",
@@ -432,7 +425,7 @@
       "flavor": "Tanık konuştu. Güvenilirliği tartışmalı.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-18": {
       "id": "GUC-18",
       "name": "Mühürlü Emir",
       "group": "Oylama",
@@ -440,10 +433,10 @@
       "icon": "seal",
       "start": true,
       "effect": "Kaptan çözmeden önce berabere rotalardan kazananı seç.",
-      "flavor": "Prensin adı için boşluk bırakılmış. Buyruk üç sayfa.",
+      "flavor": "Mühür sağlam; mantık biraz su almış.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-19": {
       "id": "GUC-19",
       "name": "Kaçak Rom",
       "group": "Etkileşim",
@@ -454,7 +447,7 @@
       "flavor": "Gerçeği söyletmez. Sırayı belli eder.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-20": {
       "id": "GUC-20",
       "name": "Bir Daha Say",
       "group": "Oylama",
@@ -465,7 +458,7 @@
       "flavor": "Sefer divanında karar kesindir. Sayım bazen o kadar kesin değildir.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-21": {
       "id": "GUC-21",
       "name": "Uğurlu Altın",
       "group": "Talih",
@@ -473,10 +466,10 @@
       "icon": "coin",
       "start": true,
       "effect": "Tamamlanmış rastgele hedef seçimini bir kez yeniden yaptır. İkinci sonuç kesindir.",
-      "flavor": "Önceki sahibi uğur getirdiğini söylemişti. Parayı alırken çok acele etti.",
+      "flavor": "Yazı tura değil; yazgı tura.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-22": {
       "id": "GUC-22",
       "name": "Kaptanın Çatlak Kupası",
       "group": "Oylama",
@@ -487,18 +480,18 @@
       "flavor": "Kupadaki çatlak, otoritedekinden küçüktü.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-23": {
       "id": "GUC-23",
       "name": "Bayat Peksimet",
       "group": "Etkileşim",
       "time": "Gündüz - rota öncesi",
       "icon": "biscuit",
       "start": true,
-      "effect": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz. Gücü yoksa susar.",
+      "effect": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz.",
       "flavor": "Konuşmayı kesmez. Çiğnemeyi uzatır.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-24": {
       "id": "GUC-24",
       "name": "Islak Çorap",
       "group": "Tuhaf",
@@ -506,21 +499,21 @@
       "icon": "sock",
       "start": true,
       "effect": "Kazanç açıklanmadan yeni Gücü sen al, Islak Çorabı asıl alıcıya ver. İkiniz de sonra iki Güç sınırını uygularsınız. Çorap bir Güç sayılır.",
-      "flavor": "Sahibi çorabını geri istiyor. İçinden çıkan eşya hakkında konuşmak istemiyor.",
+      "flavor": "Güverte kâtibi bunu yanlış elde duran doğru eşya diye kaydetti.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-25": {
       "id": "GUC-25",
       "name": "Şüpheli Martı",
       "group": "Talih",
       "time": "Gündüz",
       "icon": "gull",
       "start": true,
-      "effect": "Uygun bir gemi oyuncusunun önüne koy. Sonraki rastgele oyuncu hedefli Harita olayında, o oyuncu hâlâ uygunsa ilk hedef o olur; sonra at.",
+      "effect": "Bir oyuncının önüne koy. Sonraki rastgele Harita hedefinin ilk hedefi o olur; sonra at.",
       "flavor": "Martı, onu daha önce görmüş gibi bağırıyor.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-26": {
       "id": "GUC-26",
       "name": "Fırtına Feneri",
       "group": "Sis",
@@ -528,21 +521,21 @@
       "icon": "lantern",
       "start": true,
       "effect": "Bu gece Sis saldırısını kapat. Hainlerin bir Yakın Ufuk bilgi eylemi kalır.",
-      "flavor": "Fitili kısınca herkes itiraz etti. Sabah yağa kimin para verdiğini sordular.",
+      "flavor": "Işık bazen yolu değil, niyeti bozar.",
       "returns_to_power_deck": true
     },
-    {
+    "GUC-27": {
       "id": "GUC-27",
       "name": "Kaderi Yeniden Yaz",
       "group": "Olağanüstü",
       "time": "Olay açılınca",
       "icon": "quill",
       "start": false,
-      "effect": "Olayın etkisi uygulanmadan önce gemiyi önceki konumuna döndür ve oradan başka bir yasal Yakın Ufka git. Girilmiş ilk kart açık ve ziyaret edilmiş kalır; olayı tekrar çalışmaz. Ada girişi İskorbütü kalıcı temizler. İlk kart Geçilmezse ona girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
+      "effect": "Etki uygulanmadan önce önceki yere dön ve başka yasal Yakın Ufka git. İlk karta gerçekten girildiyse kart açık ve ziyaret edilmiş kalır; olayı yeniden çalışmaz. İlk kart Geçilmez Kayalıksa Gemi o kareye hiç girmiş/ziyaret etmiş sayılmaz; Geçilmez açık engel kalır ve başka yasal Yakın Ufka yönlenilebilir. Ada girişi İskorbütü kalıcı temizler. Kullanıldıktan sonra oyun dışına çıkar.",
       "flavor": "Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir.",
       "returns_to_power_deck": false
     },
-    {
+    "GUC-28": {
       "id": "GUC-28",
       "name": "Seyir Zabtı",
       "group": "Olağanüstü",
@@ -552,186 +545,8 @@
       "effect": "Gövde, oyuncu, Güç veya rota bakımından zarar doğuran rotaya oy veren birini bir gece Kamaraya gönder; Mahkûm sayılmaz. Kullanıldıktan sonra oyun dışına çıkar; Güç destesine yeniden karıştırılmaz.",
       "flavor": "Rota yanlışsa kâğıt her zaman doğrudur.",
       "returns_to_power_deck": false
-    }
-  ],
-  "change_log": [
-    {
-      "ids": [
-        "KAR-14"
-      ],
-      "field": "flavor",
-      "reason": "Gusto gizemini çözmeden gemide yankılamak"
     },
-    {
-      "ids": [
-        "KAR-18"
-      ],
-      "field": "flavor",
-      "reason": "Kuru mizahı daha doğal bir konuşma ritmine çekmek"
-    },
-    {
-      "ids": [
-        "GUC-01A",
-        "GUC-01B"
-      ],
-      "fields": [
-        "name",
-        "flavor"
-      ],
-      "reason": "Modern güvenlik simidi çağrışımını kaba mantar ve halat ekipmanına çevirmek"
-    },
-    {
-      "ids": [
-        "GUC-06"
-      ],
-      "field": "flavor",
-      "reason": "Krakenin varlığını kesinleştirmeden aynı mekanik hedefi korumak"
-    },
-    {
-      "ids": [
-        "GUC-15",
-        "GUC-20",
-        "GUC-24",
-        "GUC-25"
-      ],
-      "field": "flavor",
-      "reason": "Modern soyutlama ve kurum dilini 1721 FOULWAKE dünyasının sefer, kâtip ve güverte diline çevirmek"
-    },
-    {
-      "date": "2026-09-07",
-      "decision": "OWNER-CONSOLIDATED-EDITORIAL-20260907",
-      "detail_source": "qa/editorial_revision/copy_changes.json",
-      "reason": "Full source recovery; night/Captain/first-route clarity; distinct voices and private motives; restrained allusions."
-    }
-  ],
-  "revision_date": "2026-09-07",
-  "editorial_decision_source": "FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
-  "loyalties": [
-    {
-      "id": "SAD-T-01",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Eve son yazdığın mektupta iyi olduğunu söyledin. Bu kez o mektuptan önce varmak istiyorsun."
-    },
-    {
-      "id": "SAD-T-02",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Sağlık kapısının arkasında bir sofralık yerin duruyor. Kapıyı açtırmaya yetmiyor; yine de dönmek için bir sebep."
-    },
-    {
-      "id": "SAD-T-03",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Bu yükü sağlam teslim edersen borcunun son taksiti kapanacak. Alacaklın yıllardır denizin tehlikelerini küçümsüyor."
-    },
-    {
-      "id": "SAD-T-04",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Bir komşun yol paranı verdi. Karşılığında ilaç istemedi; döndüğünde kapısını çalmanı istedi."
-    },
-    {
-      "id": "SAD-T-05",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Veyr'in işe yaramayan denemeleri de yazdığını gördün. Hiç değilse birinin hesabı doğru tuttuğuna inanmak istiyorsun."
-    },
-    {
-      "id": "SAD-T-06",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Bu seferin ücretini peşin harcadın. Dönmezsen ailene para yerine bir açıklama gönderilecek."
-    },
-    {
-      "id": "SAD-T-07",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Bir sandığın araya girmesini istiyorsun."
-    },
-    {
-      "id": "SAD-T-08",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Senin adına bir mezar yeri ayırmışlar. Manzarasını beğenmedin; itirazı şahsen yapmak istiyorsun."
-    },
-    {
-      "id": "SAD-T-09",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Yük defterine imza atarken kimse okumanı beklemedi. Okudun. Şimdi herkes kadar sorumlu, çoğundan daha tedirginsin."
-    },
-    {
-      "id": "SAD-T-10",
-      "name": "TAYFA",
-      "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Eve götüreceğin hediyeyi kaybettin. Kendin gidersen bir süre bunu konuşmak zorunda kalacaklar. Razısın."
-    },
-    {
-      "id": "SAD-H-01",
-      "name": "HAİN",
-      "side": "Hain",
-      "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
-      "flavor": "Çocuğunun bakımını üstlenen eczacı artık para almıyor. Defterde borcunun yerine geminin adı yazıyor. Yük teslim edilirse hesap yeniden açılacak. İlk kez ilaç alabiliyorsun; bedelini başkaları ödeyecek.",
-      "private_motive": "Bakım borcu"
-    },
-    {
-      "id": "SAD-H-02",
-      "name": "HAİN",
-      "side": "Hain",
-      "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
-      "flavor": "Ailene karantina hanında yer ayırmışlar. Kapı dışarıdan kilitli; her gün için senden ücret istiyorlar. Geminin kayıp haberi gelince çıkış kâğıdını vereceklerini söylediler. Anahtarın fiyatı bir sefer.",
-      "private_motive": "Çıkış kâğıdı"
-    },
-    {
-      "id": "SAD-H-03",
-      "name": "HAİN",
-      "side": "Hain",
-      "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
-      "flavor": "Karantinadan bir ölünün sağlık kâğıdıyla kaçtın. Sana gerçek adınla seslenen aracı, kaydı açtırabileceğini söyledi. Yük teslim edilmezse kâğıt yanacakmış. Yeni hayatın eski bir imzaya sığıyor.",
-      "private_motive": "Ödünç kimlik"
-    },
-    {
-      "id": "SAD-H-04",
-      "name": "HAİN",
-      "side": "Hain",
-      "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
-      "flavor": "Kardeşinin öldüğü koğuştan kopmuş bir sayfa gösterdiler. Üstünde Veyr'in adı vardı; alt yarısı yoktu. Yükü durdurursan başka aileler aynı mektubu almayacak. Sana öyle söylediler; inanmayı seçtin.",
-      "private_motive": "Eksik tanıklık"
-    },
-    {
-      "id": "SAD-H-05",
-      "name": "HAİN",
-      "side": "Hain",
-      "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
-      "flavor": "Kendini çoktan denizde kayıp yazdırdın. Borçların kapandı; cenaze yardımını bir yakının alıyor. Gemi sağ salim dönerse hesap yeniden açılacak. Ölü olarak ilk kez geçinebiliyorsun.",
-      "private_motive": "Kayıp kaydı"
-    }
-  ],
-  "provisions": [
-    {
-      "id": "ERZ-01",
-      "name": "Çürümüş Erzak",
-      "group": "İskorbüt Tehlikesi",
-      "time": "Başlangıçta zorunlu aç",
-      "icon": "crate",
-      "start": false,
-      "effect": "Başlangıçta aç. O anda Kaptansan İskorbüt başlamaz; değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonradan Kaptan değişmesi sonucu değiştirmez. Sonra yolculuk destesinden gerçek bir Güç çek.",
-      "flavor": "Peksimet hâlâ yenebilir. Onu söyleyen kişi yenmedi."
-    }
-  ],
-  "maps": [
-    {
+    "HAR-AD-01": {
       "id": "HAR-AD-01",
       "category": "Açık Deniz",
       "family": "Sakin Deniz",
@@ -741,17 +556,17 @@
       "score": 0,
       "damage": false
     },
-    {
+    "HAR-AD-02": {
       "id": "HAR-AD-02",
       "category": "Açık Deniz",
       "family": "Sakin Deniz",
-      "name": "Pruvada Son Yudum",
+      "name": "Pruvada Çay Molası",
       "effect": "Hiçbir şey olmaz.",
-      "flavor": "Kupanın dibi göründü. Ufuk henüz boş.",
+      "flavor": "Çay soğuyana kadar herkes masumdur.",
       "score": 0,
       "damage": false
     },
-    {
+    "HAR-AD-03": {
       "id": "HAR-AD-03",
       "category": "Açık Deniz",
       "family": "Sakin Deniz",
@@ -761,57 +576,57 @@
       "score": 0,
       "damage": false
     },
-    {
+    "HAR-AD-04": {
       "id": "HAR-AD-04",
       "category": "Açık Deniz",
       "family": "Sis",
       "name": "Puslu Vardiya",
-      "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+      "effect": "Bu gece Sis kuralı uygulanır.",
       "flavor": "Görüş düştü; kanaatler yükseldi.",
       "score": -2,
       "damage": false
     },
-    {
+    "HAR-AD-05": {
       "id": "HAR-AD-05",
       "category": "Açık Deniz",
       "family": "Sis",
       "name": "Burnunun Ucu Cumhuriyeti",
-      "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+      "effect": "Bu gece Sis kuralı uygulanır.",
       "flavor": "Sınırları üç karış, nüfusu gereğinden fazla.",
       "score": -2,
       "damage": false
     },
-    {
+    "HAR-AD-06": {
       "id": "HAR-AD-06",
       "category": "Açık Deniz",
       "family": "Sis",
       "name": "Beyaz Gece",
-      "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+      "effect": "Bu gece Sis kuralı uygulanır.",
       "flavor": "Karanlık değildi. Daha kötüydü: belirsizdi.",
       "score": -2,
       "damage": false
     },
-    {
+    "HAR-AD-07": {
       "id": "HAR-AD-07",
       "category": "Açık Deniz",
       "family": "Sis",
       "name": "Sis Var, Fikir Çok",
-      "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+      "effect": "Bu gece Sis kuralı uygulanır.",
       "flavor": "Kimse bir şey görmedi; herkes çok emin.",
       "score": -2,
       "damage": false
     },
-    {
+    "HAR-AD-08": {
       "id": "HAR-AD-08",
       "category": "Açık Deniz",
       "family": "Sis",
       "name": "İsimsiz Bir Düdük",
-      "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
-      "flavor": "Nöbetçi düdüğe cevap verdi. İkinci sesi kimse duymadı.",
+      "effect": "Bu gece Sis kuralı uygulanır.",
+      "flavor": "Ses sancaktan geldi. Yahut herkes öyle dedi.",
       "score": -2,
       "damage": false
     },
-    {
+    "HAR-AD-09": {
       "id": "HAR-AD-09",
       "category": "Açık Deniz",
       "family": "Girdap",
@@ -821,7 +636,7 @@
       "score": -1,
       "damage": false
     },
-    {
+    "HAR-AD-10": {
       "id": "HAR-AD-10",
       "category": "Açık Deniz",
       "family": "Girdap",
@@ -831,37 +646,37 @@
       "score": -1,
       "damage": false
     },
-    {
+    "HAR-AD-11": {
       "id": "HAR-AD-11",
       "category": "Açık Deniz",
       "family": "Fırtına",
-      "name": "Körfezin Hırçın Selamı",
+      "name": "Karadeniz Usulü Karşılama",
       "effect": "Gemi 1 Gövde kaybeder.",
       "flavor": "Hoş geldiniz kısmı kısa sürdü.",
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-AD-12": {
       "id": "HAR-AD-12",
       "category": "Açık Deniz",
       "family": "Fırtına",
       "name": "Direkleri Saydıran Gece",
       "effect": "Gemi 1 Gövde kaybeder.",
-      "flavor": "Gece boyunca direkleri saydılar. Sabah aynı sayıya ulaşamadılar.",
+      "flavor": "Sabah hepsi yerindeydi. Sayı eksikti.",
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-AD-13": {
       "id": "HAR-AD-13",
       "category": "Açık Deniz",
       "family": "Kraken",
       "name": "Kolları Fazla Bir Mesele",
-      "effect": "Gemi 1 Gövde kaybeder. Yama Tahtası işlemez; Zıpkın Sandığı veya Tahtakakan engelleyebilir.",
+      "effect": "Gemi 1 Gövde kaybeder. Yama işlemez; Zıpkın veya Tahtakakan işleyebilir.",
       "flavor": "Tokalaşmaya çalışmadığı kesindi.",
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-AD-14": {
       "id": "HAR-AD-14",
       "category": "Açık Deniz",
       "family": "Adam Denize!",
@@ -871,27 +686,27 @@
       "score": -2,
       "damage": false
     },
-    {
+    "HAR-AD-15": {
       "id": "HAR-AD-15",
       "category": "Açık Deniz",
       "family": "Adam Denize!",
       "name": "Güverte Islak, Bahane Kuru",
       "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
-      "flavor": "Güverte silinecekti. İpin nerede olduğu daha önce soruldu.",
+      "flavor": "Kimsenin ittiği yoktu. Herkesin eli doluydu.",
       "score": -2,
       "damage": false
     },
-    {
+    "HAR-AD-16": {
       "id": "HAR-AD-16",
       "category": "Açık Deniz",
       "family": "Durgun Deniz",
-      "name": "Kıpırdamayan Yelken",
+      "name": "Rüzgârın İstifa Dilekçesi",
       "effect": "Bir sonraki rota seçiminde yalnız Pruva önü kullanılabilir. Yasal değilse etki boşa düşer.",
-      "flavor": "Yelkenci kumaşı silkeledi. Hava ikna olmadı.",
+      "flavor": "Gerekçe: sürekli aksi yönde beklenti.",
       "score": -1,
       "damage": false
     },
-    {
+    "HAR-AD-17": {
       "id": "HAR-AD-17",
       "category": "Açık Deniz",
       "family": "Uygun Rüzgâr",
@@ -901,27 +716,27 @@
       "score": 1,
       "damage": false
     },
-    {
+    "HAR-AD-18": {
       "id": "HAR-AD-18",
       "category": "Açık Deniz",
       "family": "Sürüklenen Sandık",
-      "name": "Akıntı Postası",
-      "effect": "1 Güç kazanılır.",
-      "flavor": "Gönderen belli değil. Teslim alacak gönüllü çok.",
+      "name": "Denizin Kargo Şubesi",
+      "effect": "Tayfa 1 Güç kartı kazanır.",
+      "flavor": "Gönderen belli değil. Teslim alan çok.",
       "score": 1,
       "damage": false
     },
-    {
+    "HAR-AD-19": {
       "id": "HAR-AD-19",
       "category": "Açık Deniz",
       "family": "Sürüklenen Sandık",
       "name": "Sahibi Bulunamayan Sandık",
-      "effect": "1 Güç kazanılır.",
+      "effect": "Tayfa 1 Güç kartı kazanır.",
       "flavor": "Sahibi çıkmadı; akrabası on iki kişi çıktı.",
       "score": 1,
       "damage": false
     },
-    {
+    "HAR-AD-20": {
       "id": "HAR-AD-20",
       "category": "Açık Deniz",
       "family": "Hayalet Işıkları",
@@ -931,17 +746,17 @@
       "score": 0,
       "damage": false
     },
-    {
+    "HAR-AD-21": {
       "id": "HAR-AD-21",
       "category": "Açık Deniz",
       "family": "Ters Akıntı",
-      "name": "Dümeni Dinlemeyen Su",
+      "name": "Denizin Geri Vitesi",
       "effect": "Bir sonraki rotada yasal yönlerden biri Kader Zarıyla kapanır. Bütün yolları kapatamaz.",
       "flavor": "Gemi geri gitmedi. Deniz öne geçti.",
       "score": -1,
       "damage": false
     },
-    {
+    "HAR-AD-22": {
       "id": "HAR-AD-22",
       "category": "Açık Deniz",
       "family": "Tuzlu Sağanak",
@@ -951,7 +766,7 @@
       "score": -1,
       "damage": false
     },
-    {
+    "HAR-AD-23": {
       "id": "HAR-AD-23",
       "category": "Açık Deniz",
       "family": "Uçan Balık Yağmuru",
@@ -961,7 +776,7 @@
       "score": 0,
       "damage": false
     },
-    {
+    "HAR-AD-24": {
       "id": "HAR-AD-24",
       "category": "Açık Deniz",
       "family": "Güverteyi Yalayan Dalga",
@@ -971,17 +786,17 @@
       "score": -1,
       "damage": false
     },
-    {
+    "HAR-AD-25": {
       "id": "HAR-AD-25",
       "category": "Açık Deniz",
       "family": "Fırtına",
       "name": "Direk Çatlatan Bora",
       "effect": "Gemi 1 Gövde kaybeder.",
-      "flavor": "Kalafatçı çatlağa baktı. Sonra Kaptanın para kesesine.",
+      "flavor": "Direk çatlamadı. İki ayrı direk olmaya karar verdi.",
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-AD-26": {
       "id": "HAR-AD-26",
       "category": "Açık Deniz",
       "family": "Fırtına",
@@ -991,7 +806,7 @@
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-AD-27": {
       "id": "HAR-AD-27",
       "category": "Açık Deniz",
       "family": "Fırtına",
@@ -1001,17 +816,17 @@
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-AD-28": {
       "id": "HAR-AD-28",
       "category": "Açık Deniz",
       "family": "Fırtına",
-      "name": "Bitmeyen Sağanak",
+      "name": "Kırkikindi Açıkta Yakaladı",
       "effect": "Gemi 1 Gövde kaybeder.",
-      "flavor": "Son kuru paçavra da sırayla kullanıldı.",
+      "flavor": "İkindi geçti. Kırkı kalmış olabilir.",
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-AD-29": {
       "id": "HAR-AD-29",
       "category": "Açık Deniz",
       "family": "Fırtına",
@@ -1021,7 +836,7 @@
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-AD-30": {
       "id": "HAR-AD-30",
       "category": "Açık Deniz",
       "family": "Fırtına",
@@ -1031,7 +846,7 @@
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-KY-01": {
       "id": "HAR-KY-01",
       "category": "Kayalık",
       "family": "Geçilmez Kayalık",
@@ -1042,17 +857,17 @@
       "damage": false,
       "impassable": true
     },
-    {
+    "HAR-KY-02": {
       "id": "HAR-KY-02",
       "category": "Kayalık",
       "family": "Batık Kalyon",
       "name": "Dibi Görünen Servet",
-      "effect": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanır.",
+      "effect": "Tayfa 1 Güç kazanır. Dipgören kullanılırsa 1 ek Güç kazanır.",
       "flavor": "Batık gemi susuyordu; eşyaları konuşkandı.",
       "score": 1,
       "damage": false
     },
-    {
+    "HAR-KY-03": {
       "id": "HAR-KY-03",
       "category": "Kayalık",
       "family": "Geçilmez Kayalık",
@@ -1063,7 +878,7 @@
       "damage": false,
       "impassable": true
     },
-    {
+    "HAR-KY-04": {
       "id": "HAR-KY-04",
       "category": "Kayalık",
       "family": "Sivri Kayalık",
@@ -1073,7 +888,7 @@
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-KY-05": {
       "id": "HAR-KY-05",
       "category": "Kayalık",
       "family": "Sivri Kayalık",
@@ -1083,17 +898,17 @@
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-KY-06": {
       "id": "HAR-KY-06",
       "category": "Kayalık",
       "family": "Dar Resif",
       "name": "İğne Deliğinden Sefer",
       "effect": "Gemi 1 Gövde kaybeder; sonra isterse bir ek normal hareket yapar.",
-      "flavor": "Geçit dar, tamircinin isteyeceği ücret genişti.",
+      "flavor": "Kestirme kısa sürdü. Tamiri sürmedi.",
       "score": -1,
       "damage": true
     },
-    {
+    "HAR-KY-07": {
       "id": "HAR-KY-07",
       "category": "Kayalık",
       "family": "Gizli Geçit",
@@ -1103,17 +918,17 @@
       "score": 1,
       "damage": false
     },
-    {
+    "HAR-KY-08": {
       "id": "HAR-KY-08",
       "category": "Kayalık",
       "family": "Kaçakçı Oyuğu",
       "name": "Kaçakçının Unuttuğu Oyuk",
-      "effect": "1 Güç kazanılır.",
+      "effect": "Tayfa 1 Güç kazanır.",
       "flavor": "Kaçakçı gitmiş. Vergi hâlâ gelmemiş.",
       "score": 1,
       "damage": false
     },
-    {
+    "HAR-KY-09": {
       "id": "HAR-KY-09",
       "category": "Kayalık",
       "family": "Kırılan Sandıklar",
@@ -1123,7 +938,7 @@
       "score": -1,
       "damage": false
     },
-    {
+    "HAR-KY-10": {
       "id": "HAR-KY-10",
       "category": "Kayalık",
       "family": "İki Taraftan Sıyırdık",
@@ -1133,7 +948,7 @@
       "score": -1,
       "damage": false
     },
-    {
+    "HAR-KY-11": {
       "id": "HAR-KY-11",
       "category": "Kayalık",
       "family": "Sivri Kayalık",
@@ -1143,7 +958,7 @@
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-KY-12": {
       "id": "HAR-KY-12",
       "category": "Kayalık",
       "family": "Sivri Kayalık",
@@ -1153,27 +968,27 @@
       "score": -2,
       "damage": true
     },
-    {
+    "HAR-AA-01": {
       "id": "HAR-AA-01",
       "category": "Ada",
       "family": "Erzak Adası",
-      "name": "Ağzı Açık Ambar",
-      "effect": "2 Güç kazanılır. İki farklı oyuncuya verilir.",
-      "flavor": "Kimse sahibinin nerede olduğunu sormadı. Soğanlar sağlamdı.",
+      "name": "Kumanya Cumhuriyeti",
+      "effect": "Tayfa 2 Güç kazanır. İki farklı oyuncuya verilir.",
+      "flavor": "Yönetim biçimi konserve, resmî dili peksimet.",
       "score": 2,
       "damage": false
     },
-    {
+    "HAR-AA-02": {
       "id": "HAR-AA-02",
       "category": "Ada",
       "family": "Terk Edilmiş Karakol",
       "name": "Terk Edilmiş Sahil Karakolu",
-      "effect": "1 Güç kazanılır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+      "effect": "Tayfa 1 Güç kazanır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
       "flavor": "Nöbetçi gitmiş; dedikodu defteri kalmış.",
       "score": 2,
       "damage": false
     },
-    {
+    "HAR-AA-03": {
       "id": "HAR-AA-03",
       "category": "Ada",
       "family": "Rehin Adası",
@@ -1183,17 +998,17 @@
       "score": -2,
       "damage": false
     },
-    {
+    "HAR-AA-04": {
       "id": "HAR-AA-04",
       "category": "Ada",
       "family": "Tersane Koyu",
       "name": "Bir Ustanın Son Tezgâhı",
       "effect": "Gemi en fazla 2 Gövdeye kadar 1 Gövde onarır.",
-      "flavor": "Usta deliği görünce sevindi. Sizden saklamaya çalışmadı.",
+      "flavor": "Usta ücret istemedi. Sorulmasını da beklemedi.",
       "score": 2,
       "damage": false
     },
-    {
+    "HAR-AA-05": {
       "id": "HAR-AA-05",
       "category": "Ada",
       "family": "Korsanların Mola Yeri",
@@ -1203,7 +1018,7 @@
       "score": -2,
       "damage": false
     },
-    {
+    "HAR-AA-06": {
       "id": "HAR-AA-06",
       "category": "Ada",
       "family": "Gümrük Adası",
@@ -1213,7 +1028,7 @@
       "score": -1,
       "damage": false
     },
-    {
+    "HAR-FN-01": {
       "id": "HAR-FN-01",
       "category": "Deniz Feneri",
       "family": "Çalışan Fener",
@@ -1223,27 +1038,27 @@
       "score": 1,
       "damage": false
     },
-    {
+    "HAR-FN-02": {
       "id": "HAR-FN-02",
       "category": "Deniz Feneri",
       "family": "Terk Edilmiş Fener",
       "name": "Bekçisi Gitmiş, Işığı Kalmış",
-      "effect": "1 Güç kazanılır.",
+      "effect": "Tayfa 1 Güç kazanır.",
       "flavor": "Bekçi not bırakmış: Dönmeyeceğim. Anahtar paspasın altında.",
       "score": 1,
       "damage": false
     },
-    {
+    "HAR-FN-03": {
       "id": "HAR-FN-03",
       "category": "Deniz Feneri",
       "family": "Fenercinin Zulası",
       "name": "Fenercinin Zulası",
-      "effect": "2 Güç kazanılır; iki farklı oyuncuya verilir.",
+      "effect": "Tayfa 2 Güç kazanır.",
       "flavor": "Fenerci yolu değil, sandığı aydınlatmış.",
       "score": 2,
       "damage": false
     },
-    {
+    "HAR-FN-04": {
       "id": "HAR-FN-04",
       "category": "Deniz Feneri",
       "family": "Sahte Fener",
@@ -1252,22 +1067,711 @@
       "flavor": "Işık doğruydu. Yer yanlış.",
       "score": -1,
       "damage": false
-    }
-  ],
-  "utilities": [
-    {
-      "id": "SET-KL-01",
-      "name": "KALKIŞ LİMANI",
-      "place": "San Cordelio",
-      "effect": "Haritanın alt kenarında seçilen başlangıç sütununa hizala. Gemi bu kart üzerinde başlar. Kart Harita karesi değildir ve 52 Haritaya dahil değildir. İlk satırdan acil geri dönüşte gemi buraya dönebilir.",
-      "flavor": "Halatlar çözülmeden önce her yol kolay görünür."
     },
-    {
+    "SAD-T-01": {
+      "id": "SAD-T-01",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-T-02": {
+      "id": "SAD-T-02",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-T-03": {
+      "id": "SAD-T-03",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-T-04": {
+      "id": "SAD-T-04",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-T-05": {
+      "id": "SAD-T-05",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-T-06": {
+      "id": "SAD-T-06",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-T-07": {
+      "id": "SAD-T-07",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-T-08": {
+      "id": "SAD-T-08",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-T-09": {
+      "id": "SAD-T-09",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-T-10": {
+      "id": "SAD-T-10",
+      "side": "Tayfa",
+      "urge": "Yükü Limana ulaştır. Kime güveneceğine dikkat et."
+    },
+    "SAD-H-01": {
+      "id": "SAD-H-01",
+      "side": "Hain",
+      "urge": "Bir doğru bilgiyle güven kazan."
+    },
+    "SAD-H-02": {
+      "id": "SAD-H-02",
+      "side": "Hain",
+      "urge": "Bir gün Hain arkadaşına karşı oy ver."
+    },
+    "SAD-H-03": {
+      "id": "SAD-H-03",
+      "side": "Hain",
+      "urge": "Bir masumu gereğinden fazla savun."
+    },
+    "SAD-H-04": {
+      "id": "SAD-H-04",
+      "side": "Hain",
+      "urge": "Tehlikeli rotayı yalnız denizcilik jargonuyla anlat."
+    },
+    "SAD-H-05": {
+      "id": "SAD-H-05",
+      "side": "Hain",
+      "urge": "Limanı herkesten çok görmek istediğini söyle."
+    },
+    "ERZ-01": {
+      "id": "ERZ-01",
+      "name": "Çürümüş Erzak",
+      "group": "İskorbüt Tehlikesi",
+      "time": "Başlangıçta zorunlu aç",
+      "icon": "crate",
+      "start": false,
+      "effect": "Kaptandaysan İskorbüt etkinleşmez. Kaptan değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonra gerçek bir Güç çek.",
+      "flavor": "Peksimet hâlâ yenebilir. Onu söyleyen kişi yenmedi."
+    },
+    "SET-KP-01": {
+      "id": "SET-KP-01",
+      "title": "KAPTAN",
+      "section_label": "ÖZEL YETENEK",
+      "effect": "Oylamada eşitlik olursa, senin tarafın geçerli olur.",
+      "flavor": "Lidere et. Gemi senin emrinde.",
+      "copy_policy": "EXACT / NO REWRITE / TEMPLATE_COMPOSITE_ONLY",
+      "visual_source": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg"
+    },
+    "SET-VL-01": {
       "id": "SET-VL-01",
       "name": "VARIŞ LİMANI",
-      "place": "Saint Verena",
-      "effect": "Haritanın üst kenarında seçilen Hedef Liman sütununa hizala. Bu kart Harita karesi değildir. Gemi o sütundaki son sıra kartına girince önce olayı, sonra İskorbütü çöz. Gemi batmadıysa ve İskorbüt temizse Liman Gecesi oynanır.",
-      "flavor": "Rıhtım görünüyor. Sağlık sandalı şafakta gelecek."
+      "effect": "Bu kartı Haritanın üst kenarında seçilen Hedef Liman sütununa hizala. Kart Harita karesi değildir. Gemi seçilen üst sıra Harita kartına girdiğinde Varış Limanına ulaşmış sayılır. Önce o Harita olayı çözülür; ardından Liman Gecesi başlar.",
+      "flavor": ""
+    },
+    "SET-KL-01": {
+      "id": "SET-KL-01",
+      "name": "KALKIŞ LİMANI",
+      "effect": "Bu kartı Haritanın alt kenarında seçilen başlangıç sütununa hizala. Gemi bu kartın üzerinde başlar. Kart Harita karesi değildir ve 52 Harita kartına dahil değildir. Acil geri dönüş ilk satırdan geriye inerse Gemi bu karta dönebilir.",
+      "flavor": "Gemi ilk gerçek rota seçimine kadar Kalkış Limanında kalır."
     }
-  ]
+  },
+  "utility_source": "Locked v2.6 card PDF page 33 is the revised utility front source; older SET-KL drawing on page 31 is historical duplicate, not a fourth utility identity.",
+  "review": {
+    "status": "121_OF_121_TEXT_RECORDS_REVIEWED",
+    "reviewer": "CHIEF_EDITOR_WITH_TEMPORARY_STORY_AND_QA_AUTHORITY",
+    "review_class": "SAME_OPERATOR_SOURCE_AND_COPY_CHECK",
+    "original_gap_70": "CLOSED_FOR_TEXT_SOURCE_REVIEW",
+    "not_asserted": [
+      "print layout fit",
+      "art acceptance",
+      "human playtest",
+      "independent QA acceptance"
+    ]
+  },
+  "pdf_front_crosscheck": {
+    "ERZ-01": {
+      "page": 15,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-01": {
+      "page": 17,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-02": {
+      "page": 17,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-03": {
+      "page": 17,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-04": {
+      "page": 17,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-05": {
+      "page": 17,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-06": {
+      "page": 17,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-07": {
+      "page": 17,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-08": {
+      "page": 17,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-09": {
+      "page": 17,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-T-10": {
+      "page": 19,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-H-01": {
+      "page": 19,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-H-02": {
+      "page": 19,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-H-03": {
+      "page": 19,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-H-04": {
+      "page": 19,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SAD-H-05": {
+      "page": 19,
+      "fields": {},
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-01": {
+      "page": 21,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-02": {
+      "page": 21,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-03": {
+      "page": 21,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-04": {
+      "page": 21,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-05": {
+      "page": 21,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-06": {
+      "page": 21,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-07": {
+      "page": 21,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-08": {
+      "page": 21,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-09": {
+      "page": 21,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-10": {
+      "page": 23,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-11": {
+      "page": 23,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-12": {
+      "page": 23,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-13": {
+      "page": 23,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-14": {
+      "page": 23,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-15": {
+      "page": 23,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-16": {
+      "page": 23,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-17": {
+      "page": 23,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-18": {
+      "page": 23,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-19": {
+      "page": 25,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-20": {
+      "page": 25,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-21": {
+      "page": 25,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-22": {
+      "page": 25,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-23": {
+      "page": 25,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-24": {
+      "page": 25,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-25": {
+      "page": 25,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-26": {
+      "page": 25,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-27": {
+      "page": 25,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AD-28": {
+      "page": 27,
+      "fields": {
+        "name": false,
+        "effect": false,
+        "flavor": false
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-AD-29": {
+      "page": 27,
+      "fields": {
+        "name": false,
+        "effect": false,
+        "flavor": false
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-AD-30": {
+      "page": 27,
+      "fields": {
+        "name": false,
+        "effect": false,
+        "flavor": false
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-KY-01": {
+      "page": 27,
+      "fields": {
+        "name": false,
+        "effect": false,
+        "flavor": false
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-KY-02": {
+      "page": 27,
+      "fields": {
+        "name": false,
+        "effect": false,
+        "flavor": false
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-KY-03": {
+      "page": 27,
+      "fields": {
+        "name": false,
+        "effect": false,
+        "flavor": false
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-KY-04": {
+      "page": 27,
+      "fields": {
+        "name": false,
+        "effect": false,
+        "flavor": false
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-KY-05": {
+      "page": 27,
+      "fields": {
+        "name": false,
+        "effect": false,
+        "flavor": false
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-KY-06": {
+      "page": 27,
+      "fields": {
+        "name": false,
+        "effect": false,
+        "flavor": false
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-KY-07": {
+      "page": 29,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-KY-08": {
+      "page": 29,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-KY-09": {
+      "page": 29,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-KY-10": {
+      "page": 29,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-KY-11": {
+      "page": 29,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-KY-12": {
+      "page": 29,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AA-01": {
+      "page": 29,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AA-02": {
+      "page": 29,
+      "fields": {
+        "name": true,
+        "effect": false,
+        "flavor": true
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-AA-03": {
+      "page": 29,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AA-04": {
+      "page": 31,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AA-05": {
+      "page": 31,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-AA-06": {
+      "page": 31,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-FN-01": {
+      "page": 31,
+      "fields": {
+        "name": true,
+        "effect": false,
+        "flavor": true
+      },
+      "method": "VISUAL_READ_OF_RENDERED_LOCKED_PDF",
+      "reviewed": true,
+      "note": "PDF page 27 is raster front with ID index only; pages 29/31 have corrected effect overlays outside normal text extraction order. Visible effect agrees with locked v2.6 rulebook. Baseline spec text preserved separately, not claimed byte-identical."
+    },
+    "HAR-FN-02": {
+      "page": 31,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-FN-03": {
+      "page": 31,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "HAR-FN-04": {
+      "page": 31,
+      "fields": {
+        "name": true,
+        "effect": true,
+        "flavor": true
+      },
+      "method": "NORMALIZED_PER_CARD_TEXT_MATCH"
+    },
+    "SET-KL-01": {
+      "page": 33,
+      "method": "EXTRACTED_FULL_FRONT_TRANSCRIPTION",
+      "reviewed": true
+    },
+    "SET-VL-01": {
+      "page": 33,
+      "method": "EXTRACTED_FULL_FRONT_TRANSCRIPTION",
+      "reviewed": true
+    }
+  }
 }

@@ -1,0 +1,756 @@
+{
+  "baseline": "source_inventory.json#baseline_records",
+  "field_change_count": 125,
+  "changes": [
+    {
+      "id": "KAR-01",
+      "field": "effect",
+      "before": "Tanışma gecesi hariç her gece bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
+      "after": "İlk tarafsız gece hariç her yolculuk gecesi, yasal bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez."
+    },
+    {
+      "id": "KAR-01",
+      "field": "flavor",
+      "before": "Tehlikeyi uzaktan görür. İnsanları hâlâ yakından çözemedi.",
+      "after": "Yelkeni görmeden geminin gelişini anlar. Bir yalana kanınca günlerce mesafeyi suçlar."
+    },
+    {
+      "id": "KAR-02",
+      "field": "effect",
+      "before": "Tanışma gecesi hariç, Sis olmayan her gece bir Uzak Ufuk kartının olay yüzüne gizlice bakar.",
+      "after": "İlk tarafsız gece hariç, Sis olmayan her yolculuk gecesi yasal bir Uzak Ufuk kartının olay yüzüne gizlice bakar."
+    },
+    {
+      "id": "KAR-02",
+      "field": "flavor",
+      "before": "Haritada her şey yerli yerinde. Deniz hariç.",
+      "after": "Her itirazını haritanın kenarına not eder. Bir süredir denize yer kalmıyor."
+    },
+    {
+      "id": "KAR-06",
+      "field": "flavor",
+      "before": "Denizin dibinden her seferinde bir şey getiriyor.",
+      "after": "Her dalıştan bir şey getirir. Çoğunun sahibi için yeniden dalması gerekir."
+    },
+    {
+      "id": "KAR-07",
+      "field": "flavor",
+      "before": "Rüzgâr çıkmadan kokusunu aldığını söylüyor.",
+      "after": "Yelkeni toplatınca batıl inanç derler. Fırtına çıkınca neden daha önce söylemediğini sorarlar."
+    },
+    {
+      "id": "KAR-08",
+      "field": "flavor",
+      "before": "Bir zamanlar iki küreği vardı.",
+      "after": "İkinci küreği kime ödünç verdiğini hatırlıyor. Adamı kurtarmaya pek hevesli değil."
+    },
+    {
+      "id": "KAR-09",
+      "field": "flavor",
+      "before": "Üç anahtarı var. İkisinin neyi açtığını bilmiyor.",
+      "after": "Üç anahtarı var. Kilit açılmayınca sandığın kendisine ait olmadığını söylüyor."
+    },
+    {
+      "id": "KAR-12",
+      "field": "flavor",
+      "before": "Yukarıdan bakınca herkes küçük görünür. Şüpheler değil.",
+      "after": "Orayı gördüm demedim. Oradan gidelim dedim."
+    },
+    {
+      "id": "KAR-13",
+      "field": "effect",
+      "before": "Özel mekanik gücü yoktur.",
+      "after": "Özel yeteneği yoktur."
+    },
+    {
+      "id": "KAR-13",
+      "field": "flavor",
+      "before": "Bugünün çorbasında ne var? Dünün çorbası.",
+      "after": "Dünkü çorbayı bugün de dağıtır. Biri beğenince tarifini vermek istemez."
+    },
+    {
+      "id": "KAR-14",
+      "field": "effect",
+      "before": "Özel mekanik gücü yoktur.",
+      "after": "Özel yeteneği yoktur."
+    },
+    {
+      "id": "KAR-15",
+      "field": "effect",
+      "before": "Özel mekanik gücü yoktur.",
+      "after": "Özel yeteneği yoktur."
+    },
+    {
+      "id": "KAR-15",
+      "field": "flavor",
+      "before": "Papağanın her cümlesini aynı çeviriyor: Ona güvenme.",
+      "after": "Kuş konuşmadan tercümeye başlar. İtiraz edene lehçeyi bilmediğini söyler."
+    },
+    {
+      "id": "KAR-16",
+      "field": "effect",
+      "before": "Özel mekanik gücü yoktur.",
+      "after": "Özel yeteneği yoktur."
+    },
+    {
+      "id": "KAR-16",
+      "field": "flavor",
+      "before": "Fıçıların hepsini tanıyor. Tayfanın yarısının adını bilmiyor.",
+      "after": "Herkes kurtulacaksa fıçıların da çıkarılmasını ister. İsimlerini tayfadan daha iyi bilir."
+    },
+    {
+      "id": "KAR-17",
+      "field": "effect",
+      "before": "Özel mekanik gücü yoktur.",
+      "after": "Özel yeteneği yoktur."
+    },
+    {
+      "id": "KAR-17",
+      "field": "flavor",
+      "before": "Tayfa onu susturmak için bir keresinde fırtınaya girmeyi kabul etti.",
+      "after": "Cenaze şiirini erkenden yazdı. Kimin için olduğunu sorana ilhamı boğduğunu söylüyor."
+    },
+    {
+      "id": "KAR-18",
+      "field": "effect",
+      "before": "Özel mekanik gücü yoktur.",
+      "after": "Özel yeteneği yoktur."
+    },
+    {
+      "id": "KAR-18",
+      "field": "flavor",
+      "before": "Dört saattir denizde. Üç saattir dönüş yolunu soruyor.",
+      "after": "San Cordelio'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor."
+    },
+    {
+      "id": "KAR-19",
+      "field": "effect",
+      "before": "Özel mekanik gücü yoktur.",
+      "after": "Özel yeteneği yoktur."
+    },
+    {
+      "id": "KAR-19",
+      "field": "flavor",
+      "before": "Herkesin kamarasına giriyor. Mesleği gereği olduğunu söylüyor.",
+      "after": "Yastık kılıflarını değiştirirken duyduklarını unuttuğunu söyler. Hatırlaması için genellikle bir iyilik gerekir."
+    },
+    {
+      "id": "KAR-20",
+      "field": "effect",
+      "before": "Özel mekanik gücü yoktur.",
+      "after": "Özel yeteneği yoktur."
+    },
+    {
+      "id": "GUC-03",
+      "field": "effect",
+      "before": "Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz.",
+      "after": "İlk rota öncesi kullanılamaz. Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz."
+    },
+    {
+      "id": "GUC-03",
+      "field": "flavor",
+      "before": "Kuzeyi gösteriyor. Kaptan yine de başka yönü tarif ediyor.",
+      "after": "Kuzey yerinde duruyor. Sorun, sahibinin başka bir şey araması."
+    },
+    {
+      "id": "GUC-05",
+      "field": "flavor",
+      "before": "Gemi marangozluğu, deliği görmezden gelmeyi bırakınca başlar.",
+      "after": "Tahta bir tabut için kesilmişti. Müşteri iyileşince gemiye yaradı."
+    },
+    {
+      "id": "GUC-07",
+      "field": "effect",
+      "before": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku aç.",
+      "after": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku rota seçeneği yap. Bu işlem olay yüzünü göstermez."
+    },
+    {
+      "id": "GUC-08",
+      "field": "flavor",
+      "before": "Kuzeyi göstermiyor; ama çok kararlı görünüyor.",
+      "after": "Üç kişi yön tarif etti. Pergel sahibi üçünün de elini kenara itti."
+    },
+    {
+      "id": "GUC-11",
+      "field": "effect",
+      "before": "İki Yakın Ufuk kartının yerini olay yüzlerine bakmadan değiştir.",
+      "after": "İlk rota öncesi kullanılamaz. İki Yakın Ufuk kartının yerini olay yüzlerine bakmadan değiştir."
+    },
+    {
+      "id": "GUC-12",
+      "field": "effect",
+      "before": "Bir Yakın Ufuk kartının olay yüzüne gizlice bak.",
+      "after": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk kartının olay yüzüne gizlice bak."
+    },
+    {
+      "id": "GUC-12",
+      "field": "flavor",
+      "before": "Sağ taraf geleceği, sol taraf pişmanlığı gösteriyor.",
+      "after": "Sol cam çatlak. Sahibi sağ gözünü kapatıp daha dikkatli bakıyor."
+    },
+    {
+      "id": "GUC-13",
+      "field": "effect",
+      "before": "Bir Uzak Ufuk seç. Moderatör yalnız Gövde hasarı verebilir veya vermez der.",
+      "after": "İlk rota öncesi kullanılamaz. Bir Uzak Ufuk seç. Moderatör yalnız Gövde hasarı verebilir veya vermez der."
+    },
+    {
+      "id": "GUC-14",
+      "field": "effect",
+      "before": "Bir Yakın Ufuk olayına gizlice bak. Kamara Güç yasağının tek yazılı istisnasıdır.",
+      "after": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk olayına gizlice bak. Kamara Güç yasağının tek yazılı istisnasıdır."
+    },
+    {
+      "id": "GUC-15",
+      "field": "flavor",
+      "before": "Şapka yetki vermez. Yine de herkes önce şapkaya bakar.",
+      "after": "Eski sahibi şapkayı geri istiyor. Önce verdiğin sözü tutman gerek."
+    },
+    {
+      "id": "GUC-18",
+      "field": "flavor",
+      "before": "Mühür sağlam; mantık biraz su almış.",
+      "after": "Prensin adı için boşluk bırakılmış. Buyruk üç sayfa."
+    },
+    {
+      "id": "GUC-21",
+      "field": "flavor",
+      "before": "Yazı tura değil; yazgı tura.",
+      "after": "Önceki sahibi uğur getirdiğini söylemişti. Parayı alırken çok acele etti."
+    },
+    {
+      "id": "GUC-23",
+      "field": "effect",
+      "before": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz.",
+      "after": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz. Gücü yoksa susar."
+    },
+    {
+      "id": "GUC-24",
+      "field": "flavor",
+      "before": "Güverte kâtibi bunu yanlış elde duran doğru eşya diye kaydetti.",
+      "after": "Sahibi çorabını geri istiyor. İçinden çıkan eşya hakkında konuşmak istemiyor."
+    },
+    {
+      "id": "GUC-25",
+      "field": "effect",
+      "before": "Bir oyuncının önüne koy. Sonraki rastgele Harita hedefinin ilk hedefi o olur; sonra at.",
+      "after": "Uygun bir gemi oyuncusunun önüne koy. Sonraki rastgele oyuncu hedefli Harita olayında, o oyuncu hâlâ uygunsa ilk hedef o olur; sonra at."
+    },
+    {
+      "id": "GUC-26",
+      "field": "flavor",
+      "before": "Işık bazen yolu değil, niyeti bozar.",
+      "after": "Fitili kısınca herkes itiraz etti. Sabah yağa kimin para verdiğini sordular."
+    },
+    {
+      "id": "GUC-27",
+      "field": "effect",
+      "before": "Etki uygulanmadan önce önceki yere dön ve başka yasal Yakın Ufka git. İlk karta gerçekten girildiyse kart açık ve ziyaret edilmiş kalır; olayı yeniden çalışmaz. İlk kart Geçilmez Kayalıksa Gemi o kareye hiç girmiş/ziyaret etmiş sayılmaz; Geçilmez açık engel kalır ve başka yasal Yakın Ufka yönlenilebilir. Ada girişi İskorbütü kalıcı temizler. Kullanıldıktan sonra oyun dışına çıkar.",
+      "after": "Olayın etkisi uygulanmadan önce gemiyi önceki konumuna döndür ve oradan başka bir yasal Yakın Ufka git. Girilmiş ilk kart açık ve ziyaret edilmiş kalır; olayı tekrar çalışmaz. Ada girişi İskorbütü kalıcı temizler. İlk kart Geçilmezse ona girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar."
+    },
+    {
+      "id": "SAD-T-01",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-01",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-01",
+      "field": "flavor",
+      "before": null,
+      "after": "Eve son yazdığın mektupta iyi olduğunu söyledin. Bu kez o mektuptan önce varmak istiyorsun."
+    },
+    {
+      "id": "SAD-T-02",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-02",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-02",
+      "field": "flavor",
+      "before": null,
+      "after": "Sağlık kapısının arkasında bir sofralık yerin duruyor. Kapıyı açtırmaya yetmiyor; yine de dönmek için bir sebep."
+    },
+    {
+      "id": "SAD-T-03",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-03",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-03",
+      "field": "flavor",
+      "before": null,
+      "after": "Bu yükü sağlam teslim edersen borcunun son taksiti kapanacak. Alacaklın yıllardır denizin tehlikelerini küçümsüyor."
+    },
+    {
+      "id": "SAD-T-04",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-04",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-04",
+      "field": "flavor",
+      "before": null,
+      "after": "Bir komşun yol paranı verdi. Karşılığında ilaç istemedi; döndüğünde kapısını çalmanı istedi."
+    },
+    {
+      "id": "SAD-T-05",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-05",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-05",
+      "field": "flavor",
+      "before": null,
+      "after": "Veyr'in işe yaramayan denemeleri de yazdığını gördün. Hiç değilse birinin hesabı doğru tuttuğuna inanmak istiyorsun."
+    },
+    {
+      "id": "SAD-T-06",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-06",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-06",
+      "field": "flavor",
+      "before": null,
+      "after": "Bu seferin ücretini peşin harcadın. Dönmezsen ailene para yerine bir açıklama gönderilecek."
+    },
+    {
+      "id": "SAD-T-07",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-07",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-07",
+      "field": "flavor",
+      "before": null,
+      "after": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Bir sandığın araya girmesini istiyorsun."
+    },
+    {
+      "id": "SAD-T-08",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-08",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-08",
+      "field": "flavor",
+      "before": null,
+      "after": "Senin adına bir mezar yeri ayırmışlar. Manzarasını beğenmedin; itirazı şahsen yapmak istiyorsun."
+    },
+    {
+      "id": "SAD-T-09",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-09",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-09",
+      "field": "flavor",
+      "before": null,
+      "after": "Yük defterine imza atarken kimse okumanı beklemedi. Okudun. Şimdi herkes kadar sorumlu, çoğundan daha tedirginsin."
+    },
+    {
+      "id": "SAD-T-10",
+      "field": "name",
+      "before": null,
+      "after": "TAYFA"
+    },
+    {
+      "id": "SAD-T-10",
+      "field": "effect",
+      "before": null,
+      "after": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+    },
+    {
+      "id": "SAD-T-10",
+      "field": "flavor",
+      "before": null,
+      "after": "Eve götüreceğin hediyeyi kaybettin. Kendin gidersen bir süre bunu konuşmak zorunda kalacaklar. Razısın."
+    },
+    {
+      "id": "SAD-H-01",
+      "field": "name",
+      "before": null,
+      "after": "HAİN"
+    },
+    {
+      "id": "SAD-H-01",
+      "field": "effect",
+      "before": null,
+      "after": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır."
+    },
+    {
+      "id": "SAD-H-01",
+      "field": "flavor",
+      "before": null,
+      "after": "Çocuğunun bakımını üstlenen eczacı artık para almıyor. Defterde borcunun yerine geminin adı yazıyor. Yük teslim edilirse hesap yeniden açılacak. İlk kez ilaç alabiliyorsun; bedelini başkaları ödeyecek."
+    },
+    {
+      "id": "SAD-H-02",
+      "field": "name",
+      "before": null,
+      "after": "HAİN"
+    },
+    {
+      "id": "SAD-H-02",
+      "field": "effect",
+      "before": null,
+      "after": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır."
+    },
+    {
+      "id": "SAD-H-02",
+      "field": "flavor",
+      "before": null,
+      "after": "Ailene karantina hanında yer ayırmışlar. Kapı dışarıdan kilitli; her gün için senden ücret istiyorlar. Geminin kayıp haberi gelince çıkış kâğıdını vereceklerini söylediler. Anahtarın fiyatı bir sefer."
+    },
+    {
+      "id": "SAD-H-03",
+      "field": "name",
+      "before": null,
+      "after": "HAİN"
+    },
+    {
+      "id": "SAD-H-03",
+      "field": "effect",
+      "before": null,
+      "after": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır."
+    },
+    {
+      "id": "SAD-H-03",
+      "field": "flavor",
+      "before": null,
+      "after": "Karantinadan bir ölünün sağlık kâğıdıyla kaçtın. Sana gerçek adınla seslenen aracı, kaydı açtırabileceğini söyledi. Yük teslim edilmezse kâğıt yanacakmış. Yeni hayatın eski bir imzaya sığıyor."
+    },
+    {
+      "id": "SAD-H-04",
+      "field": "name",
+      "before": null,
+      "after": "HAİN"
+    },
+    {
+      "id": "SAD-H-04",
+      "field": "effect",
+      "before": null,
+      "after": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır."
+    },
+    {
+      "id": "SAD-H-04",
+      "field": "flavor",
+      "before": null,
+      "after": "Kardeşinin öldüğü koğuştan kopmuş bir sayfa gösterdiler. Üstünde Veyr'in adı vardı; alt yarısı yoktu. Yükü durdurursan başka aileler aynı mektubu almayacak. Sana öyle söylediler; inanmayı seçtin."
+    },
+    {
+      "id": "SAD-H-05",
+      "field": "name",
+      "before": null,
+      "after": "HAİN"
+    },
+    {
+      "id": "SAD-H-05",
+      "field": "effect",
+      "before": null,
+      "after": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır."
+    },
+    {
+      "id": "SAD-H-05",
+      "field": "flavor",
+      "before": null,
+      "after": "Kendini çoktan denizde kayıp yazdırdın. Borçların kapandı; cenaze yardımını bir yakının alıyor. Gemi sağ salim dönerse hesap yeniden açılacak. Ölü olarak ilk kez geçinebiliyorsun."
+    },
+    {
+      "id": "ERZ-01",
+      "field": "effect",
+      "before": "Kaptandaysan İskorbüt etkinleşmez. Kaptan değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonra gerçek bir Güç çek.",
+      "after": "Başlangıçta aç. O anda Kaptansan İskorbüt başlamaz; değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonradan Kaptan değişmesi sonucu değiştirmez. Sonra yolculuk destesinden gerçek bir Güç çek."
+    },
+    {
+      "id": "HAR-AD-02",
+      "field": "name",
+      "before": "Pruvada Çay Molası",
+      "after": "Pruvada Son Yudum"
+    },
+    {
+      "id": "HAR-AD-02",
+      "field": "flavor",
+      "before": "Çay soğuyana kadar herkes masumdur.",
+      "after": "Kupanın dibi göründü. Ufuk henüz boş."
+    },
+    {
+      "id": "HAR-AD-04",
+      "field": "effect",
+      "before": "Bu gece Sis kuralı uygulanır.",
+      "after": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur."
+    },
+    {
+      "id": "HAR-AD-05",
+      "field": "effect",
+      "before": "Bu gece Sis kuralı uygulanır.",
+      "after": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur."
+    },
+    {
+      "id": "HAR-AD-06",
+      "field": "effect",
+      "before": "Bu gece Sis kuralı uygulanır.",
+      "after": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur."
+    },
+    {
+      "id": "HAR-AD-07",
+      "field": "effect",
+      "before": "Bu gece Sis kuralı uygulanır.",
+      "after": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur."
+    },
+    {
+      "id": "HAR-AD-08",
+      "field": "effect",
+      "before": "Bu gece Sis kuralı uygulanır.",
+      "after": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur."
+    },
+    {
+      "id": "HAR-AD-08",
+      "field": "flavor",
+      "before": "Ses sancaktan geldi. Yahut herkes öyle dedi.",
+      "after": "Nöbetçi düdüğe cevap verdi. İkinci sesi kimse duymadı."
+    },
+    {
+      "id": "HAR-AD-11",
+      "field": "name",
+      "before": "Karadeniz Usulü Karşılama",
+      "after": "Körfezin Hırçın Selamı"
+    },
+    {
+      "id": "HAR-AD-12",
+      "field": "flavor",
+      "before": "Sabah hepsi yerindeydi. Sayı eksikti.",
+      "after": "Gece boyunca direkleri saydılar. Sabah aynı sayıya ulaşamadılar."
+    },
+    {
+      "id": "HAR-AD-13",
+      "field": "effect",
+      "before": "Gemi 1 Gövde kaybeder. Yama işlemez; Zıpkın veya Tahtakakan işleyebilir.",
+      "after": "Gemi 1 Gövde kaybeder. Yama Tahtası işlemez; Zıpkın Sandığı veya Tahtakakan engelleyebilir."
+    },
+    {
+      "id": "HAR-AD-15",
+      "field": "flavor",
+      "before": "Kimsenin ittiği yoktu. Herkesin eli doluydu.",
+      "after": "Güverte silinecekti. İpin nerede olduğu daha önce soruldu."
+    },
+    {
+      "id": "HAR-AD-16",
+      "field": "name",
+      "before": "Rüzgârın İstifa Dilekçesi",
+      "after": "Kıpırdamayan Yelken"
+    },
+    {
+      "id": "HAR-AD-16",
+      "field": "flavor",
+      "before": "Gerekçe: sürekli aksi yönde beklenti.",
+      "after": "Yelkenci kumaşı silkeledi. Hava ikna olmadı."
+    },
+    {
+      "id": "HAR-AD-18",
+      "field": "name",
+      "before": "Denizin Kargo Şubesi",
+      "after": "Akıntı Postası"
+    },
+    {
+      "id": "HAR-AD-18",
+      "field": "effect",
+      "before": "Tayfa 1 Güç kartı kazanır.",
+      "after": "1 Güç kazanılır."
+    },
+    {
+      "id": "HAR-AD-18",
+      "field": "flavor",
+      "before": "Gönderen belli değil. Teslim alan çok.",
+      "after": "Gönderen belli değil. Teslim alacak gönüllü çok."
+    },
+    {
+      "id": "HAR-AD-19",
+      "field": "effect",
+      "before": "Tayfa 1 Güç kartı kazanır.",
+      "after": "1 Güç kazanılır."
+    },
+    {
+      "id": "HAR-AD-21",
+      "field": "name",
+      "before": "Denizin Geri Vitesi",
+      "after": "Dümeni Dinlemeyen Su"
+    },
+    {
+      "id": "HAR-AD-25",
+      "field": "flavor",
+      "before": "Direk çatlamadı. İki ayrı direk olmaya karar verdi.",
+      "after": "Kalafatçı çatlağa baktı. Sonra Kaptanın para kesesine."
+    },
+    {
+      "id": "HAR-AD-28",
+      "field": "name",
+      "before": "Kırkikindi Açıkta Yakaladı",
+      "after": "Bitmeyen Sağanak"
+    },
+    {
+      "id": "HAR-AD-28",
+      "field": "flavor",
+      "before": "İkindi geçti. Kırkı kalmış olabilir.",
+      "after": "Son kuru paçavra da sırayla kullanıldı."
+    },
+    {
+      "id": "HAR-KY-02",
+      "field": "effect",
+      "before": "Tayfa 1 Güç kazanır. Dipgören kullanılırsa 1 ek Güç kazanır.",
+      "after": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanır."
+    },
+    {
+      "id": "HAR-KY-06",
+      "field": "flavor",
+      "before": "Kestirme kısa sürdü. Tamiri sürmedi.",
+      "after": "Geçit dar, tamircinin isteyeceği ücret genişti."
+    },
+    {
+      "id": "HAR-KY-08",
+      "field": "effect",
+      "before": "Tayfa 1 Güç kazanır.",
+      "after": "1 Güç kazanılır."
+    },
+    {
+      "id": "HAR-AA-01",
+      "field": "name",
+      "before": "Kumanya Cumhuriyeti",
+      "after": "Ağzı Açık Ambar"
+    },
+    {
+      "id": "HAR-AA-01",
+      "field": "effect",
+      "before": "Tayfa 2 Güç kazanır. İki farklı oyuncuya verilir.",
+      "after": "2 Güç kazanılır. İki farklı oyuncuya verilir."
+    },
+    {
+      "id": "HAR-AA-01",
+      "field": "flavor",
+      "before": "Yönetim biçimi konserve, resmî dili peksimet.",
+      "after": "Kimse sahibinin nerede olduğunu sormadı. Soğanlar sağlamdı."
+    },
+    {
+      "id": "HAR-AA-02",
+      "field": "effect",
+      "before": "Tayfa 1 Güç kazanır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+      "after": "1 Güç kazanılır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz."
+    },
+    {
+      "id": "HAR-AA-04",
+      "field": "flavor",
+      "before": "Usta ücret istemedi. Sorulmasını da beklemedi.",
+      "after": "Usta deliği görünce sevindi. Sizden saklamaya çalışmadı."
+    },
+    {
+      "id": "HAR-FN-02",
+      "field": "effect",
+      "before": "Tayfa 1 Güç kazanır.",
+      "after": "1 Güç kazanılır."
+    },
+    {
+      "id": "HAR-FN-03",
+      "field": "effect",
+      "before": "Tayfa 2 Güç kazanır.",
+      "after": "2 Güç kazanılır; iki farklı oyuncuya verilir."
+    },
+    {
+      "id": "SET-KL-01",
+      "field": "effect",
+      "before": "Bu kartı Haritanın alt kenarında seçilen başlangıç sütununa hizala. Gemi bu kartın üzerinde başlar. Kart Harita karesi değildir ve 52 Harita kartına dahil değildir. Acil geri dönüş ilk satırdan geriye inerse Gemi bu karta dönebilir.",
+      "after": "Haritanın alt kenarında seçilen başlangıç sütununa hizala. Gemi bu kart üzerinde başlar. Kart Harita karesi değildir ve 52 Haritaya dahil değildir. İlk satırdan acil geri dönüşte gemi buraya dönebilir."
+    },
+    {
+      "id": "SET-KL-01",
+      "field": "flavor",
+      "before": "Gemi ilk gerçek rota seçimine kadar Kalkış Limanında kalır.",
+      "after": "Halatlar çözülmeden önce her yol kolay görünür."
+    },
+    {
+      "id": "SET-VL-01",
+      "field": "effect",
+      "before": "Bu kartı Haritanın üst kenarında seçilen Hedef Liman sütununa hizala. Kart Harita karesi değildir. Gemi seçilen üst sıra Harita kartına girdiğinde Varış Limanına ulaşmış sayılır. Önce o Harita olayı çözülür; ardından Liman Gecesi başlar.",
+      "after": "Haritanın üst kenarında seçilen Hedef Liman sütununa hizala. Bu kart Harita karesi değildir. Gemi o sütundaki son sıra kartına girince önce olayı, sonra İskorbütü çöz. Gemi batmadıysa ve İskorbüt temizse Liman Gecesi oynanır."
+    },
+    {
+      "id": "SET-VL-01",
+      "field": "flavor",
+      "before": "",
+      "after": "Rıhtım görünüyor. Sağlık sandalı şafakta gelecek."
+    },
+    {
+      "id": "SET-KP-01",
+      "field": "effect",
+      "before": "Oylamada eşitlik olursa, senin tarafın geçerli olur.",
+      "after": "Rota oylamasında 2 oy kullanırsın. Rota beraberliğini yalnız berabere seçenekler arasından bozarsın. Suçlama ve İsyanda 1 oy kullanırsın. Suçlama hedefinin ön seçimindeki eşitliği de bozarsın; bu ön seçim resmî oylama değildir."
+    },
+    {
+      "id": "SET-KP-01",
+      "field": "flavor",
+      "before": "Lidere et. Gemi senin emrinde.",
+      "after": "Dümen sende. Borç hepinizin."
+    }
+  ]
+}

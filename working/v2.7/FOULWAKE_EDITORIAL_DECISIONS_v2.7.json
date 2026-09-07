@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+  "date": "2026-09-07",
+  "authority": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
+  "author_role": "CHIEF_EDITOR",
+  "review_class": "SAME_OPERATOR / OWNER_REVIEW_PENDING",
+  "status": "IMPLEMENTED_WORKING_REVISION / NOT_LOCKED",
+  "decisions": [
+    {
+      "id": "ED-01",
+      "subject": "Kuru Pay",
+      "disposition": "IMPLEMENTED_NARRATIVE",
+      "locations": [
+        "§3.1",
+        "§3.6",
+        "§5.3",
+        "§17"
+      ],
+      "decision": "Siyah/Kara Mühür yerine, kıyıda risk almadan kazanç sağlayanlara verilen Kuru Pay lakabı. Merkezî örgüt, ortak emir veya suçlu kesinleştirilmez."
+    },
+    {
+      "id": "ED-02",
+      "subject": "Oyuncunun açılıştaki yeri",
+      "disposition": "IMPLEMENTED_STYLE",
+      "locations": [
+        "§3.1",
+        "§3.3",
+        "§3.6"
+      ],
+      "decision": "Heyetin yük defterindeki sorumluluğu ilk paragraftadır. Kefalet Kaptan seçimini, karantina riski kalkış baskısını açıklar. Üç eski OKU bloğu 386, karşılık gelen yenileri 236 sözcüktür; bu toplam kurulum süresi değildir."
+    },
+    {
+      "id": "ED-03",
+      "subject": "Kurulum gecesinin kronolojisi",
+      "disposition": "NARRATIVE_CLARIFICATION_NO_TIMING_CHANGE",
+      "locations": [
+        "§3.5"
+      ],
+      "decision": "İlk tarafsız gece kapalı göz kurulum aşamasıdır; yeni Kaptan kalkıştan önce defteri okur. Gelgit baskısına rağmen fazladan bir gün bekledikleri söylenmez."
+    },
+    {
+      "id": "ED-04",
+      "subject": "Gece terminolojisi",
+      "disposition": "SOURCE_CONFLICT_FIXED",
+      "locations": [
+        "KAR-01",
+        "KAR-02",
+        "§3.5",
+        "§3.8",
+        "§14"
+      ],
+      "decision": "Tanışma gecesi istisnası İlk tarafsız gece olarak düzeltilir. İlk yolculuk gecesinde Uzakgören çalışır, Kıyıçizen Sis yoksa çalışır. v2.6 PDF §§3.5/3.8/14, s.7/8/22 esas alınır."
+    },
+    {
+      "id": "ED-05",
+      "subject": "KAPTAN kapsamı",
+      "disposition": "OWNER_DELEGATED_EXACT_COPY_REVISION",
+      "locations": [
+        "SET-KP-01",
+        "§5.1"
+      ],
+      "decision": "Rota oyu 2; Suçlama/İsyan 1. Rota beraberliği yalnız berabere seçenekler arasından çözülür. Suçlama hedef ön seçimi istisnası korunur. Eski exact metin ve Lidere et ifadesi bu açık yetkiyle değiştirilir. Kabul edilmiş görsel kaynak değişmez."
+    },
+    {
+      "id": "ED-06",
+      "subject": "Siyah Mühür kesinlik sorunu",
+      "disposition": "SOURCE_CONFLICT_FIXED",
+      "locations": [
+        "§5.3",
+        "§17"
+      ],
+      "decision": "Anlatıcı ortak irade bildiğini iddia etmez. Hikâyenin yeni mekanik yasak getirmediği mevcut hüküm korunur."
+    },
+    {
+      "id": "ED-07",
+      "subject": "121 kart kaynağı",
+      "disposition": "SOURCE_GAP_CLOSED_FOR_TEXT",
+      "locations": [
+        "source_inventory.json"
+      ],
+      "decision": "20 Karakter + 30 Güç + 15 Sadakat + 1 Erzak + 52 Harita + 2 Liman + 1 KAPTAN. Önceki 70 kayıt açığı kilitli v2.6 paketi, iç v2.5 makine kaynağı ve v2.6 kart PDF karşılaştırmasıyla tamamlanır. Görsel brief metin kaynağı yapılmaz."
+    },
+    {
+      "id": "ED-08",
+      "subject": "Sadakat gerekçeleri",
+      "disposition": "IMPLEMENTED_NONMECHANICAL_FLAVOR",
+      "locations": [
+        "SAD-T-01–10",
+        "SAD-H-01–05"
+      ],
+      "decision": "Beş Hain için eczacı hesabı, rehin aile, sağlık belgesi şantajı, eksik belgeye inanma ve sahte kayıp kaydı. On Tayfaya da kişisel gerekçe yazılır. Ek görev veya kazanma şartı yok; vaatlerin tutulacağı kesin değildir."
+    },
+    {
+      "id": "ED-09",
+      "subject": "Karakter sesi ve dönem dili",
+      "disposition": "IMPLEMENTED_STYLE",
+      "locations": [
+        "KAR-01–20",
+        "HAR-AD-01–30",
+        "HAR-KY-01–12",
+        "HAR-AA-01–06",
+        "HAR-FN-01–04"
+      ],
+      "decision": "Görme/bilme sesleri ayrıştırılır; güçsüz karakterler somut davranış edinir. KAR-18 dönüş yolunu açıklar. Konserve, kargo şubesi, geri vites ve benzeri modern çağrışımlar ayıklanır. Kurulum Etki değerleri değişmez."
+    },
+    {
+      "id": "ED-10",
+      "subject": "Dört örtük gönderme",
+      "disposition": "IMPLEMENTED_STYLE",
+      "locations": [
+        "GUC-03",
+        "GUC-05",
+        "GUC-15",
+        "GUC-18"
+      ],
+      "decision": "Pusula, tabut tahtası, emanet şapka ve adı boş prens buyruğu. İsim/replik/olay zinciri taşınmaz. Kaynaklar research_notes.md içindedir."
+    },
+    {
+      "id": "ED-11",
+      "subject": "İlk rota bilgisi",
+      "disposition": "LOCKED_RULE_EXPLICIT_ON_COPY",
+      "locations": [
+        "GUC-03",
+        "GUC-11",
+        "GUC-12",
+        "GUC-13",
+        "GUC-14",
+        "§3.7"
+      ],
+      "decision": "İlk rota öncesi isteğe bağlı bilgi veya Harita değiştirme yasağı kısa metinlerde görünür olur. Kaynak v2.6 §§3.7 ve 5.2; eski preflightın §11.3 atfı önceki sürümden kalmadır."
+    },
+    {
+      "id": "ED-12",
+      "subject": "Rota seçeneği ve olay yüzü",
+      "disposition": "CLARIFICATION",
+      "locations": [
+        "GUC-07",
+        "§6.3",
+        "§6.4"
+      ],
+      "decision": "Rota seçeneği açmak ile kartı herkese açmak ayrılır; Geçici Yeke bilgi vermez. Gizli bakış, kamusal açılış, gerçek giriş ve tekrar giriş ayrı tabloda anlatılır."
+    },
+    {
+      "id": "ED-13",
+      "subject": "Şüpheli Martı uygunluğu",
+      "disposition": "OWNER_DELEGATED_RULE_CLARIFICATION",
+      "locations": [
+        "GUC-25",
+        "§11"
+      ],
+      "decision": "Yazım hatası giderilir; hedef olay anında hâlâ uygun olmalıdır. Değilse normal rastgele seçim uygulanır ve Martı o tetiklemede tüketilir. Bu son tüketim açıklığı, metnin boşluğunu kapatan güncel yorum kararıdır; eski kaynakta sözcüğü sözcüğüne yazdığı ileri sürülmez."
+    },
+    {
+      "id": "ED-14",
+      "subject": "Güç ve olay ifadeleri",
+      "disposition": "LOCKED_RULE_CLARIFICATIONS",
+      "locations": [
+        "GUC-23",
+        "GUC-27",
+        "HAR-AD-04–08",
+        "HAR-FN-03",
+        "ERZ-01",
+        "SET-VL-01"
+      ],
+      "decision": "Gücü olmayan Peksimet hedefi susar; Kaderi Yeniden Yaz gerçek giriş/Geçilmez/Ada farkını korur; ilk Sis gecesi saldırı yoktur; iki Güç iki farklı alıcıya gider; Erzak sahibi gerçek Güç çeker; Limanda önce olay ve İskorbüt kontrol edilir."
+    },
+    {
+      "id": "ED-15",
+      "subject": "Tam kural kitabı",
+      "disposition": "IMPLEMENTED_COMPLETE_WORKING_MANUAL",
+      "locations": [
+        "FOULWAKE_KURAL_KITABI_v2.7.md"
+      ],
+      "decision": "Kilitli v2.6 §§1–16 hükümleri ve mevcut v2.7 Sea/Rock bilgi kararı bir tam kullanım belgesine taşınır. Hikâye ve kart referansları tek kaynaklardan üretilir. Eski PDF yerinde değiştirilmez; bu metin baskı/yerleşim teslimi değildir."
+    },
+    {
+      "id": "ED-16",
+      "subject": "Değişmeyen mekanik çekirdek",
+      "disposition": "PRESERVED",
+      "locations": [
+        "121 kimlik",
+        "52 Harita",
+        "20 Karakter",
+        "30 gerçek Güç",
+        "§2",
+        "§7",
+        "§12"
+      ],
+      "decision": "Kimlikler, adetler, harita kotaları, Gövde 2, Hain sayıları, zafer koşulları, Etki değerleri ve başlangıç havuzları korunur. SRC-002 GUC-22/23/24 ad eşlemesi aynıdır. Eski kural açıklaştırmaları ile yeni ED-13 yorumu ayrı işaretlenir."
+    },
+    {
+      "id": "ED-17",
+      "subject": "Simülasyon modeli",
+      "disposition": "IMPLEMENTED_TARGETED_FIXES_AND_STRESS",
+      "locations": [
+        "qa/editorial_revision/observation_engine.py",
+        "qa/editorial_revision/test_rules.py"
+      ],
+      "decision": "Kapalı Deniz/Kayalık türü karar önceliklerinden çıkarılır; bilgisiz Hain doğru olayı göremez. İlk rota bilgi kullanımı, Limanda siyaset, Rehin/Gümrük olayları, Güç alıcısı, Kayıkçı vardiyası ve Geçilmez ziyaret kaydı düzeltilir. 20 hedefli regresyon ve 3600 model yolculuğu; tam kart-zamanlama veya insan deneyimi kabulü değildir."
+    }
+  ],
+  "not_claimed": [
+    "independent reviewer acceptance",
+    "human enjoyment or pacing improvement proved",
+    "full card timing simulation equivalence",
+    "visual or physical production acceptance",
+    "release or lock"
+  ],
+  "history": "Earlier review was read-only. This task changes the actual editable sources."
+}

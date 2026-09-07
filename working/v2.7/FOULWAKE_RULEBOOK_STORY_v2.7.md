@@ -1,163 +1,183 @@
-# FOULWAKE - v2.7 Kural Kitabı Hikâye Metni
+# FOULWAKE - Kuru Pay
 
-**Durum:** DRAFT / NOT LOCKED  
-**Çalışma hattı:** `v2.7-design` / `working/v2.7/`  
-**Kaynak:** v2.6 STABLE / LOCKED kural kitabı  
-**Kapsam:** Yalnız hikâye, dünya dili ve mekaniklerin dünyadaki gerekçesi
+**v2.7 çalışma metni · 7 Eylül 2026**
 
-Bu dosya kural kitabının mekanik metnini yeniden yazmaz. v2.6'daki bölüm sırası, kurulum akışı, oyuncu sayıları, oylamalar, gece sırası, kart etkileri, İskorbüt hükümleri, kazanma koşulları ve Moderatör işlemleri değişmeden korunur. Aşağıdaki bloklar v2.7 kural kitabına aynı konumlarda yerleştirilecek anlatı metnidir.
+Kural kitabındaki anlatının kaynak dosyasıdır. Tam oyun akışı `FOULWAKE_KURAL_KITABI_v2.7.md` içindedir. Oyunda yalnız ilgili `OKU` bloğu okunur; §17 isteğe bağlı arka plandır. Proje sahibinin geçici hikâye/kural yetkisiyle hazırlanmıştır. v2.6 kilitli paketi değişmez.
 
-## Değişmez entegrasyon sınırı
-
-- Bölüm akışı korunur: Dünya ve görev -> Karakterler -> Gusto -> Kaptan -> Güç/Çürümüş Erzak -> ilk tarafsız gece -> Sadakat -> ilk rota -> ilk Hain gecesi -> normal sefer.
-- `ŞİMDİ YAP`, `KURAL`, tablolar ve hızlı referanslar v2.6 mekanik kaynağından aynen alınır.
-- Kart adlandırma güncellemesi dışında mekanik terimler değiştirilmez.
-- `GUC-01A/B` kartlarının görünen adı `Can Simidi` yerine `Mantar Can Halkası` olur. Kart kimliği, adedi, zamanlaması ve etkisi aynıdır. Kural kitabındaki iki `Can Simidi` başvurusu da aynı adla güncellenir.
-- Gusto'nun kaderi, Siyah Mühür'ün yapısı ve Veyr'in terkibinin kesin başarısı açıklanmaz.
-
----
-
-## 3.1 Oyuncular oturdu - Dünya ve görev
+## 3.1 Dünya ve görev
 
 ### OKU
 
-Yıl 1721. Arden Krallığı vebanın yeni dalgasıyla çökmenin eşiğinde. Kraliçe Eleonora, uzak San Cordelio Limanı'nda Doktor Mattias Veyr'in gözetiminde hazırlanan deneysel tiryak sandıklarını Saint Verena Karantina Limanı'na ulaştırmanız için bu gemiyi görevlendirdi.
+Yıl 1721. San Cordelio'da yükünüz hazır. Siz, vebanın kırdığı Arden'e dönen sefer heyetisiniz. Yük defterinde adınız var; tiryak sandıklarını ve Doktor Veyr'in deneme defterlerini Saint Verena Karantina Limanı'na siz ulaştıracaksınız.
 
-Sandıkların yanında demir köşeli küçük bir kutu var. Saray buna "formül" diyor. Kutunun içinde yalnız bir malzeme listesi değil; hangi baharatın hangi limandan geldiğini, hangi terkibin kimi öldürdüğünü, hangisinin hastaya bir gece daha kazandırdığını ve Veyr'in uzun dinlendirme süresini kısalttığını ileri sürdüğü usulü gösteren defterler bulunuyor. Veyr buna ilaç demiyor. Kraliyet kâtibi sandıkların üzerine daha kısa bir kelime yazdı: **İLAÇ**.
+Veyr, terkibinin işe yarayacağını henüz kanıtlayamadı. Saray kâtibi sandıklara yine de **İLAÇ** yazdı.
 
-Karantina, tahıl, baharat, sağlık kâğıdı ve kaçak ticaretten servet yapan insanlar bu yük Arden'e ulaşırsa çok para kaybedecek. Liman işçileri, aynı sofraya oturmadıkları hâlde aynı hesaptan kazanan bu insanlara **Siyah Mühür** diyor. Bunun tek bir örgütün adı mı, farklı vurgunculara takılan ortak bir ad mı olduğu bilinmiyor. Bilinen tek şey, geminin varmasını istemeyenlerin denizden daha sabırlı olduğudur.
+Arden'de bu yükü bekleyen insanlar var. Karantinadan, kıtlıktan ve ilaç borcundan kazananlar da var. Liman işçileri bu kazanca **Kuru Pay** diyor: gemiye binmeden alınan pay.
 
-### MEVCUT İŞLEM KORUNUR
+Önünüzdeki sularda birbirinizin bilgisine ihtiyacınız olacak. Aynı gemiye binmiş olmanız, yükün de eve dönmesini istediğiniz anlamına gelmiyor.
 
-Oyunun hedefini tek cümleyle hatırlat ve Karakter kurulumuna geç. v2.6'daki işlem cümlesi ve bütün mekanik hükümler aynen kalır.
+### GEÇİŞ
 
----
+Hedefi kuralla tamamla: “Tayfa, gemiyi Saint Verena'ya ulaştırıp son geceyi atlatmalı. İskorbüt etkinse önce bir Adaya uğramalısınız.” Ardından kapalı Karakterleri dağıt. Henüz kimse Sadakatini bilmez.
 
-## 3.3 Açılış günü - Kaptan Gusto kayıp
-
-### OKU
-
-San Cordelio'da yükleme bitti. Tiryak sandıkları ambarda; demir köşeli formül kutusunun kraliyet mührü sağlam. Gelgit sabah uygun. Gemi beklerse sağlık kâtipleri yükü yeniden sayacak, sonra ilk sayımlarını beğenmeyip bir daha sayacak. Tek sorun şu: Kaptan Gusto yok.
-
-Kamarasında çizmeleri, paltosu, pusulası ve yarım bırakılmış bir bardak şarap bulundu. Seyir defterinin birkaç sayfası koparılmış. Masanın altında küçük bir siyah balmumu parçası var. Kan yok. Kavga izi yok. Gusto da yok.
-
-Daha kötüsü, Gusto ikinci kaptan tayin etmezdi. "Bir gemide iki kaptan varsa iki gemiye ihtiyacınız vardır," dermiş. Şimdi bunun ne kadar akıllıca olduğu tartışmaya açık.
-
-Arden'in mühürlü sefer kefaletine göre atanmış kaptan kaybolur ve ardında vekil bırakmazsa, yük defterinde adı bulunan sefer heyeti aralarından geçici bir Kaptan seçer. Bunun sebebi denizcilere duyulan güven değildir. Kaybolan yükün borcu, oylanan rotaların altına imza atanlara bölüştürülür. Gemi bekleyemez. Saint Verena'ya kadar size komuta edecek Kaptanı aranızdan seçin.
-
-### MEVCUT İŞLEM KORUNUR
-
-v2.6'daki açık Kaptan oylaması, beraberlik ve d12 hükümleri aynen uygulanır. Gusto sorulursa yalnız "Bilmiyorsunuz." denir; balmumu kanıt olarak doğrulanmaz.
-
----
-
-## 3.4 Başlangıç Gücü ve Çürümüş Erzak
-
-### MODERATÖR ANLATI NOTU
-
-İskorbüt birkaç saat içinde ortaya çıkan bir hastalık gibi anlatılmaz. Tayfa Arden'den San Cordelio'ya gelirken haftalarını tuzlu et, peksimet ve gittikçe yumuşayan soğanla geçirdi. Çürümüş Erzak kartı yeni bir hastalık yaratmaz; dönüş yolunda artık saklanamayacak kadar büyüyen eski bir eksikliği gösterir.
-
-Kural metnindeki "Ada girişinde İskorbüt temizlenir" ifadesi, herkesin bir anda iyileştiği anlamına gelmez. Tayfanın taze yiyecek ve kullanılabilir erzak bulup ölümcül gidişi durdurduğu anlamına gelir. Kartın açılması, Kaptandaysa etkisiz kalması ve Ada ziyaretine ilişkin bütün mekanik hükümler v2.6 ile aynıdır.
-
----
-
-## 3.6 İlk yolculuk sabahı - Sadakat
+## 3.3 Kaptan Gusto kayıp
 
 ### OKU
 
-San Cordelio'daki son gece yalnız Kaptan uyanık değildi. Limanın bir yerinde bir borç senedi ateşe tutuldu. Başka bir kapının önüne altın bırakıldı. Birine ailesinin adresi, kapıdaki çatlağa kadar doğru tarif edildi. Bir başkasına Veyr'in terkibinin ilaç değil zehir olduğu söylendi. Kime uzatıldığı bilinmeyen, siyah balmumuyla kapanmış boş bir kâğıt da sabaha kadar ortadan kayboldu.
+Gelgit uygun. Beklerseniz gemi yeniden karantinaya alınabilir. Sağlık kâtibi yükü bir daha saymaya hazır; ücretini de bir daha istiyor. Kaptan Gusto ise yok.
 
-Bu tekliflerin aynı elden çıkıp çıkmadığını bilmiyorsunuz. Kimin para aldığını, kimin korktuğunu, kimin gerçekten doğru şeyi yaptığına inandığını da bilmiyorsunuz. Şafakta herkes aynı güvertede. Artık aynı limana gitmek istemek, aynı amaç için çalışmak anlamına gelmiyor. Sadakatinize bakın. Kartınızı kimseye göstermeyin.
+Kamarasında çizmeleri, paltosu, pusulası ve yarım bardak şarap var. Seyir defterinden birkaç sayfa koparılmış. Masanın altında siyah balmumu. Kan yok, kavga izi yok.
 
-### MEVCUT İŞLEM KORUNUR
+Gusto vekil bırakmazdı. “Bir gemide iki kaptan varsa iki gemiye ihtiyacınız vardır,” derdi. Şimdi bir kaptana razısınız.
 
-Hain tablosu, Sadakat dağıtımı ve ilk Hain gecesine ilişkin bütün hükümler v2.6'dan aynen alınır.
+Arden'in sefer kefaletine göre vekil yoksa yük defterindeki heyet kendi Kaptanını seçer. Bu, denizcilere duyulan güvenin eseri değil. Yük kaybolursa borcu, rotaların altına imza atanlar ödeyecek.
 
----
+Gusto'yu bekleyecek vaktiniz yok. Saint Verena'ya kadar Kaptanınız kim olacak?
 
-# 17. Siyah Mühür
+### GEÇİŞ
 
-Arka plan hikâyesidir; kuralları öğrenmek için zorunlu değildir. Oyunun dünyasını, Gusto'nun gizemini ve kartlardaki kuru mizahın nereden geldiğini anlatır.
+Açık Kaptan seçimini uygula. Seçim, yalnız berabere adaylar arasında bir tekrar ve gerekirse d12 ile biter. Gusto'nun akıbeti sorulursa “Bilmiyorsunuz.” de. Balmumunu belirli bir kişi veya oluşumun kanıtı olarak sunma.
 
-## Veba önce felaketti. Sonra düzen oldu.
+## 3.4 Çürümüş Erzak - anlatı notu
 
-Arden'de veba ilk yıl kapıları kapattı. İkinci yıl pazarları boşalttı. Üçüncü yıl vergi defterlerine yeni sütunlar ekletti. Bir süre sonra insanlar zamanı "salgından önce" ve "son karantinadan beri" diye ölçmeye başladı. Düğünler sağlık kapılarının açıldığı haftalara konuyor, cenazeler çanların yetişebildiği saatlere sıkıştırılıyor, tüccarlar uzak kentlerin ölüm sayılarını rüzgâr raporlarından daha dikkatle izliyordu. İnsanlar hastalıktan nefret ediyordu. Piyasa ise ona alışmıştı.
+İskorbüt o sabah bulaşan yeni bir hastalık değildir. Heyet Arden'den San Cordelio'ya gelirken haftalarını tuzlu et, peksimet ve gittikçe yumuşayan soğanla geçirdi. Erzak kartı, dönüş yolunda artık saklanamayan bu eksikliği görünür kılar.
 
-Karantina depoları büyüdü. Tahıl, sirke, baharat, keten, tabut tahtası ve mucize olduğu yalnız etikette yazan ilaçların fiyatları birlikte yükseldi. Şehre girebilmek için sağlık kâğıdı gerekiyordu; doğru mürekkep, doğru mühür ve çoğu zaman doğru kişinin yanlış tarafa bakması da. Bir banker gemilere kredi verdi, başka bir tüccar depoları tuttu, üçüncüsü muhafız maaşlarını borç verdi, dördüncüsü ölenlerin evlerini satın aldı. Resmî kayıtlarda birbirleriyle ilgileri yoktu. Gayriresmî olarak aynı kıtlıktan kazanıyorlardı.
+Ada girişinde İskorbütün temizlenmesi, herkesin bir anda iyileşmesi anlamına gelmez. Taze yiyecek bulup ölümcül gidişi durdururlar. Veyr'in terkibi, İskorbüt için gereken Ada ziyaretinin yerine geçmez. Kartın açıldığı andaki Kaptanlık istisnası ve bütün Ada hükümleri kural kitabında uygulanır; bunun için hikâyede yeni bir bağışıklık açıklaması uydurulmaz.
 
-Liman işçileri bu görünmeyen ortak hesaba **Siyah Mühür** dedi. Gerçek bir örgüt adı olduğu hiçbir zaman kanıtlanmadı. Büyük bir anlaşmadan sonra siyah balmumundan küçük bir parça bırakıldığı söylenirdi. Başka bir söylentiye göre siyah balmumu yalnızca ucuzdu ve liman işçileri can sıkıntısından komplo uyduruyordu. Her iki söylentiyi yayan adamın sonradan aynı handa işe başlaması tartışmayı pek aydınlatmadı.
+## 3.5 İlk tarafsız gece - Gusto'nun defteri
 
-> San Cordelio'da bir söz vardır: "Veba geldiğinde kapını kapat. Siyah Mühür geldiğinde hesabını."
+### OKU
 
-## Kraliçe kurtuluşu satın aldı
+Kalkıştan önce yeni Kaptana Gusto'nun eksik seyir defteri veriliyor. Kalan sayfalardan, ilk rotalardan yalnız biri hakkında güvenilir bilgi çıkarılabiliyor. Herkes gözlerini kapatsın.
 
-Kraliçe Eleonora halkını kurtarmak istiyordu. Bu doğruydu. Fakat tek doğru değildi. Salgın uzadıkça Arden'de sarayın yapamadığı işleri ticaret aileleri yapmaya başlamıştı: tahıl getiriyor, hastane tedarik ediyor, asker maaşlarını borç veriyor, karantina muhafızlarını finanse ediyorlardı. Devlet her ay biraz daha borçlu, "yardım edenler" her ay biraz daha güçlüydü. Eleonora bir sabah, veba yarın bitse bile krallığın artık kendisine ait olmayabileceğini fark etti.
+### GEÇİŞ
 
-Tam o sırada San Cordelio'dan Doktor Mattias Veyr'in adı geldi. Veyr eski tiryak tariflerini yıllardır değiştiriyor, dozları not ediyor, başarısız denemelerinin üstünü çizmek yerine yanlarına tek kelime yazıyordu: "Neden?" Meslektaşları bu alışkanlığı yorucu buluyordu. Bazıları daha kısa bir kelime tercih ediyordu: "Sapık."
+Yalnız Kaptan, o anda yasal Yakın Ufuktan tam bir olay yüzüne gizlice bakar. Karakterler, Güçler ve Hain eylemi çalışmaz. Sadakat henüz dağıtılmamıştır. Bu, makamın tek özel bakışıdır.
 
-Veyr, San Cordelio lazarettosunda aynı terkibi alan hastalardan kaçının sabaha çıktığını, kaçının üçüncü gün konuşabildiğini, kaçının hiç uyanmadığını yazdı. "Tedavi" kelimesini kullanmayı reddetti. Kraliçenin temsilcileri ise halkın üstünde soru işareti bulunan bir sandık için ölmeyeceğini düşündü ve kapağa daha kısa bir etiket çaktı: **İLAÇ**.
+## 3.6 Sadakat
 
-Asıl değer yalnız sandıklarda değildi. Demir köşeli kutuda malzemelerin kökeni, ölçüler, başarısız denemeler ve Veyr'in terkibi yıllarca dinlendirmeden hazırlanabileceğini ileri sürdüğü usul vardı. Tarifin bir kısmı başka hekimlerce biliniyordu; hangi malzemenin ne zaman değiştirildiği ve bunun hastada ne yaptığı bilinmiyordu. Arden bu kayıtları alırsa terkibi başkasının deposuna ve başkasının mührüne muhtaç olmadan üretmeyi deneyebilirdi.
+### OKU
 
-Bu yüzden aynı kutu farklı insanlar için farklı şeydi: halk için ihtimal, Eleonora için kaybettiği iktidardan bir parça, baharat tüccarı için kapanacak bir hesap, Veyr içinse henüz doğrulanmamış bir iddia.
+Son gece limanda teklifler dolaştı. Kimi için para, kimi için bir kapının açılması, kimi için geçmişinin susması demekti. Kabul edenlerin aynı kişiye borçlandığı bile belli değil.
 
-> Kraliçenin emri üç satırdı: "Terkibi alın. Defterleri alın. Geri dönün." Saray kâtipleri ilk taslakta on yedi satır daha yazmıştı. Eleonora hepsini çizdi. Bir kâtip bunun devlet yönetiminde nadir görülen bir başarı olduğunu not etti.
+Şimdi aynı güvertedesiniz. Birinin eve dönmek istemesi, yükün de eve dönmesini istediği anlamına gelmez. Sadakat kartınıza sessizce bakın. Üzerindeki gerekçe yalnız size ait; kartınızı kimseye göstermeyin.
 
-## Kaptan Gusto'nun son günü
+### GEÇİŞ
 
-Dönüş seferinin kaptanı Gusto Varela'ydı. Kırk yıl denizde kaldığını söylerdi; bunu her anlattığında yaşı değiştiği için sayı kesin değildi. İyi kaptandı. Sinir bozucu derecede iyi. Fırtınayı kokladığını söyler, tayfa güler, sonra fırtına çıkardı. İkinci kaptan tayin etmezdi. "Bir gemide iki kaptan varsa iki gemiye ihtiyacınız vardır," derdi. Bu söz yıllarca bilgelik sayıldı. Gusto kaybolduğu sabah yeniden değerlendirildi.
+Oyuncu sayısına uygun Sadakatleri kapalı dağıt. Karttaki gerekçe kişisel bir anlatı dayanağıdır; ek görev, yetenek veya kazanma şartı değildir. Karakter ve Sadakat bağımsızdır. Aynı karakter başka oyunda başka tarafta olabilir. Hainler henüz tanışmaz.
 
-San Cordelio'ya varınca geminin altını kontrol ettirdi, liman kılavuzuyla kavga etti ve aşçıya çorbanın içindeki şeyin gerçekten balık olup olmadığını sordu. Aşçı soruyu kişisel algıladı. O ana kadar her şey normaldi.
+## 3.7 İlk rota
 
-Akşamüstü Gusto bir sağlık memuruyla görüldü. Memur daha sonra hiç konuşmadıklarını söyledi; ardından konuşmadıkları şeyleri ayrıntılı biçimde anlattı. Meyhaneci Gusto'nun iki kadeh içtiğini söyledi. Hesapta beş kadeh vardı. Gece yarısından sonra Gusto'nun kamarasına döndüğünü gören iki kişi çıktı; ikisi de aynı saatte başka yerde olduklarını iddia ediyordu. Şafakta Gusto yoktu.
+### OKU
 
-Paltosu, çizmeleri ve pusulası kamaradaydı. Seyir defterinden birkaç sayfa koparılmıştı. Masada yarım bardak şarap, yerde küçük bir siyah balmumu parçası vardı. Kapıda zorlama izi yoktu. Kıç merdivenin gece boyunca bağlı kaldığını söyleyen denizci üç gün sonra çok pahalı yeni bir ceket aldı. Ceketin bununla ilgisi olmayabilir. Limanlarda bazen insanlar yalnızca kötü zamanlarda iyi giyinir.
+Halatlar çözülüyor. Kaptan bir rota hakkında bir şey biliyor. Bildiğini söylemek zorunda değil; doğru söylemek zorunda da değil. Önünüzdeki sulardan hangisine birlikte gireceksiniz?
 
-Gusto hakkında yedi söylenti dolaştı. Siyah Mühür'ün onu satın aldığı söylendi. Siyah Mühür diye bir şey olmadığını öğrendiği için öldürüldüğü söylendi. Terkibin işe yaramadığını öğrendiği, tam tersine fazlasıyla iyi çalıştığını öğrendiği, gemideki bir Haini tanıdığı, yalnızca korkup kaçtığı söylendi. Fare Nazırı ise Gusto'nun hiç gitmediğini, "on beşinci fare" kılığında gemide saklandığını söyledi. Son iddia resmî soruşturmaya alınmadı; Fare Nazırı bunu örtbasın kanıtı saydı.
+### GEÇİŞ
 
-**KANON:** Gusto'nun başına ne geldiğinin kesin cevabı yoktur. Siyah balmumu kanıt olmayabilir. Eksik sayfaları kimin aldığı bilinmez. Gusto sonraki kartlarda hatırlatılabilir; hiçbir iz tek başına çözüm oluşturmaz.
+Tartışma, eşzamanlı rota oyu, hareket ve olay. İlk rota öncesinde isteğe bağlı rota bilgisi veya Harita değiştirme etkisi yoktur. Yazılı tepki pencereleri çalışır. İlk yolculuk gününde Suçlama veya İsyan yapılmaz.
 
-## Aynı işaret, ayrı eller
+## 3.8 İlk yolculuk gecesi
 
-Gusto kaybolduğunda yükün karşısında daha kolay bir yol açıldı: geminin kaptanı yoktu ama gemi hâlâ vardı. Kraliyet mührünü taşıyan gemi limanda yakılırsa soruşturma açılırdı. Bir denizci dümeni kırarsa suçlu aranırdı. Tayfa tehlikeli rotayı kendi seçerse yalnız kötü karar kayda geçerdi. Kaza, suçtan daha ucuzdu; üstelik kaza borç defterine isim yazmazdı.
+### OKU
 
-San Cordelio'da bazı tayfaların borcu silindi. Bazılarına altın verildi. Birinin ailesi tehdit edildi. Bir başkasına Veyr'in terkibinin zehir olduğu, gemiyi durdurmanın cinayet değil merhamet sayılacağı anlatıldı. Kapıların bazısında siyah balmumu vardı, bazısında yoktu. Bütün bu insanları tek bir örgütün seçtiğine dair kanıt bulunmadı. Belki aynı ağın ayrı elleriydiler. Belki birbirinden habersiz çıkar sahipleri aynı korkuyu kullandı. Belki de biri Siyah Mühür söylentisini, yaptığı işi kendisinden büyük göstermek için ödünç aldı.
+San Cordelio'nun ışıkları artık görünmüyor. Gündüz birbirini ikna edenler aynı güvertede uyuyacak. Herkes gözlerini kapatsın.
 
-Hainlerin başlangıçta birbirini tanımamasının nedeni budur. İlk açık deniz gecesinde önceden öğretilmiş küçük işaretleri görür ve aynı sonuca çalıştıklarını anlarlar. Bu, aynı efendiye hizmet ettiklerini kanıtlamaz. Bir Hainin başka bir Haine güvenmesi gerektiğini de hiç kanıtlamaz.
+### GEÇİŞ
 
-Hepsine aynı cümle söylenmiş olabilir. Ya da cümleyi içlerinden biri uydurmuş olabilir:
+Önce uygun gece Karakterleri; en son Hainler. Hainler birbirini tanır ve takım olarak bir yasal Yakın Ufka bakar. Bu ilk yolculuk gecesinde Sis olsa da saldırı yoktur. “İlk tarafsız gece” ile bu gece birbirinin yerine kullanılmaz.
 
-> "Gemiyi batırmayın. Geminin batmasını sağlayın."
+## 4.4 Saint Verena ve kapanışlar
 
-## Ve gemide hayat devam etti
+### OKU - LİMAN
 
-Bütün bunlar olurken Kazanbaşı dünkü çorbayı bugünkü çorba olarak servis etmeye devam etti. Fare Nazırı her sabah farklı sayıda fare açıkladı. Papağan Mütercimi kuşun söylediği her şeyi "Ona güvenme" diye çevirdi ve rahatsız edici ölçüde sık haklı çıktı. Gemi Şairi ölüm tehlikesinin eserlerine "iyi malzeme" verdiğini düşünüyor, Acemi Gemici denize açıldıktan dört saat sonra dönüş yolunu soruyordu.
+Saint Verena'nın ışıkları önünüzde. Rıhtımda insanlar var; size doğru gelen sandal yok. Sağlık görevlileri şafakta çıkacak. Bu gece karantina demir yerindesiniz. Sandıkları teslim etmek için bir gece daha dayanmanız gerekiyor.
 
-Haritadaki dünya da aynı mantıkla çalışıyordu. Gümrükçünün Tek Yaşadığı Ada'da nüfus birdi ama evrak sayısı otuz yediydi. Korsanların Mola Yeri gerçekten mola yeriydi; korsanlar yalnızca sizin eşyalarınızla dinleniyordu. Sahte Deniz Feneri çalışıyor, ışık veriyor ve belli ki her gece biri tarafından temizleniyordu. Tek kusuru yanlış yerde olmasıydı.
+### OKU - TAYFA ZAFERİ
 
-Veba arka planda ciddi kaldı. Şaka insanların ölmesi değildi. Şaka, dünya parçalanırken bile sağlık kâtibinin sandıktaki sirke için ikinci mühür istemesiydi.
+Şafakta sağlık sandalı yanaşıyor. Sandıklar ve Veyr'in defterleri tek tek indiriliyor. Görevli, teslim kâğıdını rüzgârdan korumak için sizin ıslak şapkanızı kullanıyor.
 
-## Saint Verena
+Terkibin işe yarayıp yaramayacağını hâlâ bilmiyorsunuz. Ama artık Arden'de deneme şansı var. Bu kez yük defterindeki adınızın karşısına borç yazılmadı.
 
-Saint Verena, Arden'in batı kıyısındaki eski bir hac limanıydı. Salgın yıllarında rıhtımların dışına karantina demir yeri kurulmuştu. Gelen gemiler şehre girmeden önce sağlık kâğıtlarını direğe asar, yükün geldiği limanı bildirir ve son bir gece açıkta beklerdi. O gece gemiden kimse inemezdi. Limandan gelen hiç kimse de gemiye çıkamazdı. En azından kural buydu; Saint Verena'da kuralların kaç paraya esnediği ayrı defterde tutulurdu.
+### OKU - GEMİ BATTI
 
-Bu yüzden limanın ışıklarını görmek görevin bittiği anlamına gelmiyordu. Sağlık görevlileri şafakta gelecek, kraliyet mührünü kontrol edecek, yaşayan tanık olup olmadığına bakacak, tiryak sandıklarını ve Veyr'in defterlerini teslim alacaktı. Sandıkların üstünde **İLAÇ** yazması, içindekinin işe yaradığına dair resmî kanıt sayılmayacaktı. Yalnız sarayın neye umut bağladığını gösterecekti.
+Birkaç hafta sonra kayıp raporuna “deniz şartları” yazılacak. Sigortacı başka bir açıklama isteyecek. Cevap verebilenlerin anlattığıyla kâtiplerin yazdığı birbirini tutmayacak. Kıyıda hangi hesabın kapandığını bilmiyorsunuz.
 
-Denizde tecrübeli insanlar limanı görünce rahatlamaz. Biraz daha sessizleşir. Çünkü insan en büyük hatayı çoğu zaman "artık bitti" dediği anda yapar.
+### OKU - İSKORBÜT
 
-> En tehlikeli kayalık bazen limanın hemen önündedir.
+Sağlık sandalı geldiğinde güverteden cevap gelmiyor. Sandıklar limana kadar ulaşmış. Onları buraya taşıyanlar, yol boyunca ihtiyaç duydukları taze yiyeceğe ulaşamamış. Teslim kâğıdında yükün yanına bir sayı daha yazılıyor.
 
----
+### OKU - BÜTÜN TAYFA ÖLDÜ
 
-## Mekanik bütünlük beyanı
+Gemi hâlâ yüzüyor olabilir. Veyr'in defterleri de yerinde olabilir. Onları teslim etmek için bu yolculuğa çıkan son kişi artık söz alamayacak. Güvertede kalanlar, rapora ne yazılacağını konuşabilir.
 
-Bu anlatı güncellemesinde:
+### GEÇİŞ
 
-- Kaptan seçimi ve Kaptanın oy değeri değişmedi.
-- Rota oylaması, Sadakat dağıtımı ve Hainlerin tanışma zamanı değişmedi.
-- İskorbüt kartının açılma, temizlenme ve kazanma koşulları değişmedi.
-- Gusto'nun defteriyle yapılan ilk tarafsız gece bakışı değişmedi.
-- Kart sayıları, kart kimlikleri ve kart etkileri değişmedi.
-- Saint Verena Liman Gecesi değişmedi.
-- v2.6 STABLE / LOCKED dosyalarına dokunulmadı.
+Yalnız gerçekleşen sonuca ait metni oku. Hain gerekçelerindeki vaatlerin tutulduğunu, bir ailenin kurtulduğunu veya bir borcun silindiğini kesinleştirme. Sonuç, takımların yazılı kazanma koşullarıyla belirlenir.
 
+## 5.3 Gece eylemlerinin hikâye mantığı
+
+Bir geminin kaybolmasını isteyen herkes aynı yolu seçmez. Kaza, açık bir cinayetten daha az soru doğurabilir; bir başkası bu hesabı yapacak kadar sabırlı olmayabilir. Kuru Pay adı altında anlatılanların ortak bir emirle hareket ettiği bilinmiyor.
+
+Ancak bu bir mekanik yasak değildir: Hain oyuncuların yapabilecekleri yalnız yazılı Hain, Karakter ve Güç kurallarıyla belirlenir. Hikâye, bu kuralların tonunu açıklar; yeni yasak eklemez.
+
+## 17. Kuru Pay - isteğe bağlı arka plan
+
+Bu bölüm ilk oyunu başlatmak için okunmaz. Dünya hakkında merak edilenlere cevap verir; gizli kimlikleri çözen bir ipucu listesi değildir.
+
+### Veba önce felaketti. Sonra düzen oldu.
+
+Arden'de ilk yıl kapılar kapandı. İkinci yıl pazarlar boşaldı. Üçüncü yıl vergi defterlerine yeni sütunlar eklendi. İnsanlar düğünlerini sağlık kapılarının açıldığı haftalara koyuyor, tüccarlar uzak kentlerin ölüm sayılarını rüzgâr raporlarından dikkatli okuyordu.
+
+Karantina depoları büyüdü. Tahıl, sirke, keten, tabut tahtası ve mucize olduğu yalnız etiketinde yazan ilaçlar pahalandı. Bir aile depoları kiraladı. Başka biri muhafız maaşlarını borç verdi. Bir banker gemilere kredi açtı; ödemenin gecikmesini de hesaba kattı. Herkes başka bir hizmet veriyordu. Fatura aynı insanlara çıkıyordu.
+
+Liman işçileri bu kazanca **Kuru Pay** adını taktı. Tayfa bir pay için denize çıkardı; kıyıdakilerin payına tuzlu su değmezdi. Zamanla ad, bu işlerden kazananlar ve onların adına dolaşan aracılar için de kullanıldı. Hepsinin aynı sofraya oturduğu kanıtlanmadı. Birileri adı korkutmak için ödünç almış da olabilir.
+
+Siyah balmumu ucuzdu. Sağlık kâğıdında da, borç senedinde de kullanılırdı. Bu yüzden bir yerde bulunması, o yerde ne olduğunu açıklamaya yetmezdi. Söylentiye göre büyük anlaşmalardan sonra masada bir kırıntı bırakılırdı. Başka bir söylentiye göre masaları kimse doğru dürüst temizlemiyordu.
+
+### Kraliçenin hesabı
+
+Eleonora halkını kurtarmak istiyordu. Salgın uzadıkça sarayın yapamadığı işleri ticaret aileleri üstlenmişti: tahıl getiriyor, hastaneleri tedarik ediyor, muhafızların ücretlerini karşılıyorlardı. Kraliçe her ay yeni bir borca imza atıyor; imza isteyenler sarayda biraz daha rahat oturuyordu.
+
+San Cordelio'dan Doktor Mattias Veyr'in adı geldiğinde Eleonora yalnız bir ilaç ihtimali görmedi. Başkasının deposuna muhtaç olmadan üretim yapabilme ihtimalini de gördü.
+
+Veyr, eski tiryak tarifleriyle çalışıyordu. Ölçüleri değiştiriyor, hangi malzemenin nereden geldiğini, hastaların hangilerinin sabaha çıktığını ve hangilerinin uyanmadığını kaydediyordu. Başarısız sayfaları defterden çıkarmıyordu. Saray temsilcisi bunun güven vermediğini söyledi. Veyr, boş sayfaların daha az işe yaradığını söyledi.
+
+Demir köşeli formül kutusunda yalnız tarif yoktu: malzemelerin kökeni, ölçüler, başarısız denemeler ve Veyr'in uzun dinlendirme süresini kısalttığını ileri sürdüğü usul vardı. Doğrulanmış bir çare değildi. Başka hekimlerin sınayabileceği, çoğaltabileceği bir iddiaydı.
+
+Sandıkların üzerindeki **İLAÇ** yazısı daha kesindi. Onu Veyr yazmamıştı.
+
+### Gusto'nun boş kamarası
+
+Kaptan Gusto Varela fırtınayı kokladığını söylerdi. Tayfa güler, ardından yelken küçültürdü. İyi kaptandı; başka bir kaptana ihtiyaç duyulabileceğini düşünmezdi. Vekil bırakmaması yıllarca bir huy olarak anlatıldı. Kaybolduğu sabah bütün geminin sorunu oldu.
+
+San Cordelio'daki son gününde geminin altını kontrol ettirdi, liman kılavuzuyla tartıştı ve aşçıya çorbadaki şeyin gerçekten balık olup olmadığını sordu. Akşam bir sağlık memuruyla görüldüğü söylendi. Memur konuşmadıklarını söyledi; sonra konuşmadıkları konuları sıraladı. Meyhanecinin hatırladığı kadeh sayısıyla hesaptaki sayı da uyuşmadı.
+
+Şafakta çizmeler, palto ve pusula kamaradaydı. Yarım bardak şarap, eksik sayfalar, masanın altında balmumu. Zorlanmış bir kapı veya kavga izi yoktu.
+
+Gusto'nun satın alındığı, öldürüldüğü, terkibi öğrendiği için kaçtığı ya da yalnız borçlarından bıktığı söylendi. Fare Nazırı, on beşinci farenin çizme giydiğini anlattı. Kimse onunla aynı yerde sayım yapmak istemedi.
+
+**Gusto'nun akıbeti bilinmiyor.** Eksik sayfaları kimin aldığı, balmumunun neyle ilgili olduğu ve kaptanın niyeti bu sürümde açıklanmaz. Moderatör oyuncular için gizli bir çözüm seçmez.
+
+### Ayrı kapılara bırakılan teklifler
+
+San Cordelio'da bir aracı, bir borcu silmeyi teklif etti. Başka bir yerde çıkış kâğıdı bekletildi. Birine yıllardır sakladığı bir belgenin satırları okundu. Kimi, bu yükü durdurursa kötülüğü önleyeceğine inandırıldı.
+
+Aracıların aynı hesaba çalışıp çalışmadığı bilinmiyor. Vaatleri tutacakları da bilinmiyor. Onlarla konuşan insanların bazıları korktu, bazıları kazancı hesapladı, bazıları da başka çare görmedi. Bu gerekçeler kötülüğü ortadan kaldırmaz; yalnız insanın kendine nasıl anlattığını gösterir.
+
+İlk yolculuk gecesinde Hainler, limanda öğretilmiş işaretlerden aynı sonuca çalıştıklarını anlar. İşaretlerin aynı olması tek bir efendiyi kanıtlamaz; limanlarda haber de yöntem de el değiştirir. Oyunda artık aynı takımdadırlar. Kartlarındaki özel geçmişler, birbirlerine güvenmelerini zorunlu kılmaz.
+
+### Güvertedeki hayat
+
+Kazanbaşı, fırtınadan önce tencerenin kapağını arar. Fare Nazırı, sayımına kim itiraz ettiyse ertesi sabah onun yatağının altına bakar. Papağan Mütercimi bazen kuş konuşmadan tercümeye başlar. Kafiye Belası cenaze şiirini erken yazmıştır; kimin için olduğunu sorana gücenir.
+
+Bu insanlar aynı yemeği yer, aynı ipi çeker, sonra birbirlerinin söylediklerini tartar. Mizahın yeri burasıdır. Hastanın acısını küçültmekte değil; dünyanın sonu gelirken bile tencere kapağını ödünç vermeyişlerinde.
+
+### Son gece
+
+Saint Verena bir varış noktasıdır; henüz teslim değildir. Gemi karantina demir yerinde bekler. Sağlık görevlileri şafakta mührü, yükü ve yaşayan tanıkları kontrol edecektir.
+
+O son gece için ayrı bir felaket icat etmeye gerek yoktur. Aynı güverte, aynı kartlar ve artık çok yakın görünen kıyı yeter. Oyuncuların son kararını bir anlatıcı müdahalesi geri almaz.
+
+## Uygulama sınırı
+
+Yeni ad, özel gerekçeler ve anlatı bu çalışma metninde uygulanmıştır. Kartların kimlikleri ve takım zafer koşulları korunur. Kuralların açıklığı için yapılan somut değişiklikler `FOULWAKE_EDITORIAL_DECISIONS_v2.7.json` içinde tek tek kayıtlıdır. Aynı operatörün editoryal ve teknik kontrolü, bağımsız insan denemesi olarak sunulmaz.

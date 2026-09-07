@@ -10,6 +10,7 @@
       "priority": 1,
       "source": "latest explicit project-owner decision",
       "implementation": [
+        "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
         "governance/v4/runtime/STATE.json",
         "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
         "governance/PROJECT_OWNER_VISUAL_REJECTION_20260830.json"
@@ -28,7 +29,7 @@
     {
       "priority": 4,
       "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-      "scope": "v2.7 character and power visible copy; SRC-002 resolved by binding owner identity mapping in v4 state"
+      "scope": "All 120 non-Captain v2.7 card identities: character, power, loyalty, provision, map and ports; SRC-002 identity decision remains binding"
     },
     {
       "priority": 5,
@@ -51,7 +52,10 @@
       "commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
       "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
       "blob_sha": "bae77450d6d10e1e3234a3473bf68ffa1efff810"
-    }
+    },
+    "rulebook": "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+    "editorial_decisions": "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+    "current_readme": "working/v2.7/README_CURRENT_v2.7.md"
   },
   "historical_only": {
     "rejected_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
