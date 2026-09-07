@@ -1,0 +1,256 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "FOULWAKE-FULL-DECK-ART-001",
+  "task_type": "OWNER_DELEGATED_FULL_DECK_ILLUSTRATION_AND_LIGHTHOUSE_REVISION",
+  "project_task": true,
+  "status": "ACTIVE",
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-07",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "owner_authorization": {
+    "task_id": "FOULWAKE-FULL-DECK-ART-001",
+    "decision": "AUTHORIZED",
+    "recorded_from": "Owner continuation after concrete pilot delivery, followed by explicit side-view lighthouse steering and creative discretion.",
+    "decision_ref": "governance/v4/evidence/OWNER_FULL_DECK_ART_AUTHORITY_20260907.json"
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "a5bbc04350c2b087a98d8f51a4e62214630ed0af",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT",
+      "PRODUCE_FULL_121",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE",
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "ART_LANGUAGE_REVIEW",
+      "FRAMING_DECISION",
+      "COMPOSITION_REVIEW",
+      "DECK_RHYTHM_REVIEW",
+      "AESTHETIC_RECOMMENDATION"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT",
+        "PRODUCE_FULL_121",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "ART_LANGUAGE_REVIEW",
+        "FRAMING_DECISION",
+        "COMPOSITION_REVIEW",
+        "DECK_RHYTHM_REVIEW",
+        "AESTHETIC_RECOMMENDATION"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_FULL_DECK_DECISIONS_v2.7.md"
+    ],
+    "allowed_globs": [
+      "working/v2.7/qa/full_deck_art/**",
+      "working/v2.7/visual/full_deck_20260907/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      ".github/",
+      "working/v2.7/visual/references/",
+      "working/v2.7/visual/recheck_20260907/"
+    ],
+    "max_changed_files": 256,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".csv",
+      ".txt",
+      ".png",
+      ".jpg",
+      ".pdf",
+      ".svg"
+    ],
+    "binary_files_allowed": true
+  },
+  "runtime_permissions": {
+    "visual_production": true,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": true,
+    "pdf_or_print_package": true,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "inputs": [
+    {
+      "path": "governance/v4/evidence/OWNER_FULL_DECK_ART_AUTHORITY_20260907.json",
+      "git_blob": "d92c6ba89bbbc5b13803cbef3d1f597d337f772a"
+    },
+    {
+      "path": "governance/v4/contracts/CONTRACTS.json",
+      "git_blob": "2df7046cb9462c801215c243f01a3e204d0d3374"
+    },
+    {
+      "path": "governance/v4/roles/REGISTRY.json",
+      "git_blob": "f7df13c753955c0b805cd39e4b90bf210de692da"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "git_blob": "976ebcaaf1069d0a8a3bcfa64482630d275781ad"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "git_blob": "fc6d55f4a036d8adf15543911ec056754cfc8b37"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "git_blob": "28c1100615548b07e527cf50f32071e42c63f5bb"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+      "git_blob": "ff60f377037bd82a490d788514b449508d4d849e"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
+      "git_blob": "bae77450d6d10e1e3234a3473bf68ffa1efff810"
+    },
+    {
+      "path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+      "git_blob": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/prompts.json",
+      "git_blob": "947656304b9b3c53988ce42d7229fa9d39c93b7c"
+    },
+    {
+      "path": "working/v2.7/qa/recheck_visual/build_print.py",
+      "git_blob": "7c51dd6467ce0e1489405900888b44bfc62b740b"
+    },
+    {
+      "path": "working/v2.7/qa/recheck_visual/verify_print.py",
+      "git_blob": "5cea062ca74672092e5a6acfd34133fe00af0f7d"
+    },
+    {
+      "path": "working/v2.7/qa/recheck_visual/render_manifest.json",
+      "git_blob": "57d273f2899b8f0f945fa56868190c3e13d841a7"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/BACK_CHARACTER.png",
+      "git_blob": "2f2b1679c61c209515332159eeac1767edd79ae2"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/BACK_ISLAND.png",
+      "git_blob": "7befa3bcc82edd758af96aef928ae656ad735540"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/BACK_LIGHTHOUSE.png",
+      "git_blob": "e0c640127ee85ca917bf619521daded535c79a3f"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/BACK_LOYALTY.png",
+      "git_blob": "75b1e19f260cfa360fe4941037690ae9f0713900"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/BACK_POWER.png",
+      "git_blob": "e2c8c3b5f0b50e785c4eccf7615e99a9484c48a6"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/BACK_SEA_ROCK.png",
+      "git_blob": "493ef96fe96c834146f034d181513d4a46a05350"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/BACK_SUPPORT.png",
+      "git_blob": "d3ccffb568d7c8b43bcf16363c4a6c05422771c4"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/ERZ-01.png",
+      "git_blob": "1162481a432d839d006621b71839c6a595edb2f2"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/GUC-06.png",
+      "git_blob": "92641122d5501b9eec52f637599b238165f597e3"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/GUC-27.png",
+      "git_blob": "ab45291ef2f5d996f74fededce4044dfa4d4c45e"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/HAR-AA-06.png",
+      "git_blob": "6db7a875370c854d1e7113cc9b49b5c0f248e7f1"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/HAR-AD-08.png",
+      "git_blob": "fb87df3e25a509cafeef36e5571e0ceccabe31d8"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/HAR-FN-04.png",
+      "git_blob": "7b60089ebdf07a93ac19bb75b582294f065afcf4"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/HAR-KY-06.png",
+      "git_blob": "659921485184d24c76935d82ed4fdac324d872da"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/KAR-01.png",
+      "git_blob": "f1ca58c47ec349011e1aaa2627cec24c964379dc"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/KAR-06.png",
+      "git_blob": "0c47960e10ff7392500a771cec44005f188f3669"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/KAR-19.png",
+      "git_blob": "c16684626e5ef350c8f19ba808416d62ec7af61e"
+    },
+    {
+      "path": "working/v2.7/visual/recheck_20260907/assets/SAD-H-03.png",
+      "git_blob": "36b84a60f1fe7996c87d1de0d2e548c0f992fa89"
+    }
+  ],
+  "purpose": "Complete all 121 illustrated front layouts and revise the common lighthouse back to a researched side-view treatment.",
+  "acceptance_criteria": [
+    "Generate 109 distinct original front images bound to the current canonical card texts and briefs; retain 12 previous front images unchanged.",
+    "Research and implement side-view lighthouse mood in 1721 materials; one exact back for all four Lighthouse cards, with half-turn orientation-safe print geometry.",
+    "Keep six other back sources unchanged; Sea/Rock remain exactly the same family master.",
+    "Produce fully illustrated 121-card print PDFs, split into usable volumes when transport size requires, without shrinking canonical copy below the established minimum.",
+    "Inspect each new asset and the final PDF render; verify 121 exact canonical text identities, safe areas, duplex mapping, source hashes and at least 300 DPI illustration placement.",
+    "Preserve locked v2.6, binding KAPTAN source, canonical text, simulation evidence and specialist branch heads.",
+    "Record all generated assets and prompts, rework reasons, same-operator review and remaining human/physical/independent review limits."
+  ],
+  "completion_policy": "Deliver the complete working art and print package; close scoped production permissions. Owner continuation authorizes this rollout, not future release or independent acceptance.",
+  "production_limits": {
+    "new_fronts": 109,
+    "retained_fronts": 12,
+    "revised_back_masters": 1,
+    "retained_back_masters": 6,
+    "full_original_art_rollout": true,
+    "final_illustrated_fronts": 121
+  },
+  "execution_status": "IN_PROGRESS_IN_CHIEF_EDITOR_CHAT",
+  "next_responsible_role": "CHIEF_EDITOR"
+}

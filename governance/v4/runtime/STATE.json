@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-RECHECK-VISUAL-DELIVERED-20260907",
-  "status": "V4_ACTIVE / RECHECK_AND_VISUAL_PILOT_DELIVERED / OWNER_REVIEW_PENDING",
+  "state_id": "V4-FULL-DECK-ART-ACTIVE-20260907",
+  "status": "V4_ACTIVE / FULL_DECK_ART_AND_LIGHTHOUSE_REVISION",
   "updated_at": "2026-09-07",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": null,
+  "active_project_task_id": "FOULWAKE-FULL-DECK-ART-001",
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -96,11 +96,11 @@
     "OTHER_FOUR_BACKS": "NEW_WORKING_PILOT_DELIVERED / OWNER_REVIEW_PENDING / NOT_ACCEPTED"
   },
   "permissions": {
-    "visual_production": false,
+    "visual_production": true,
     "thumbnails": false,
     "pilot_or_candidate": false,
-    "full_121_production": false,
-    "pdf_or_print_package": false,
+    "full_121_production": true,
+    "pdf_or_print_package": true,
     "simulation": false,
     "release": false,
     "lock": false
@@ -119,7 +119,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Open FOULWAKE-FULL-DECK-ART-001 from this checkpoint, revise the lighthouse treatment, then finish remaining 109 front illustrations and complete working print PDFs.",
+  "next_action": "Research and revise the side-view lighthouse, complete remaining 109 front illustrations, then verify and deliver the fully illustrated print package.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
