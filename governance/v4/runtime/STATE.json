@@ -117,7 +117,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Current playable text revision is delivered. Owner may review working/v2.7/README_CURRENT_v2.7.md. No Story implementation or source-inventory handoff remains; any subsequent work requires its exact scope. Visual/art roles remain separate.",
+  "next_action": "Open FOULWAKE-RECHECK-VISUAL-001 from this idle checkpoint, then recheck content before producing the bounded visual pilot and working PDFs.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -198,7 +198,7 @@
   "last_completed_read_only_task_id": "STORY-COHERENCE-IMMERSION-001",
   "coordination_followups_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json",
   "paused_project_tasks": {},
-  "temporary_delegation_ref": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
+  "temporary_delegation_ref": "governance/v4/evidence/OWNER_RECHECK_VISUAL_AUTHORITY_20260907.json",
   "current_editorial_delivery": {
     "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
     "commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
@@ -206,5 +206,5 @@
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_status": "DELIVERY_COMPLETE / NO_FURTHER_PRODUCTION_AUTHORITY"
+  "temporary_delegation_status": "OWNER_EXTENSION_RECORDED / EXACT_TASK_NOT_YET_ACTIVE"
 }

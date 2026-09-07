@@ -1,0 +1,52 @@
+{
+  "schema_version": "4.3",
+  "decision_id": "OWNER-RECHECK-VISUAL-20260907",
+  "authorized_by": "PROJECT_OWNER",
+  "grantee": "CHIEF_EDITOR",
+  "date": "2026-09-07",
+  "source_head": "9dcff6c87dea764b8e7d167ce46619873f885527",
+  "owner_quote": "Tekrar herseyi kontrol et sistemihikayeyi kartlari kural kitabını. Sonra sana yonetmeninin grafik uzmanının işini de yap",
+  "interpretation": "Recheck and repair system/story/cards/rulebook, then also perform Art Direction and Visual Design in this chat. Latest explicit instruction extends the earlier delegation, which excluded these two roles.",
+  "supersedes_exclusions_in": "OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json for this new task only",
+  "task_id": "FOULWAKE-RECHECK-VISUAL-001",
+  "branch": "v2.7-design",
+  "authorized_work": [
+    "Inspect all 121 card texts and their current rule/story/source relationships; implement remaining corrections and reproducible rules checks.",
+    "Update current art direction and all 121 copy-to-brief bindings.",
+    "Produce a concrete 12-front illustrated pilot and seven back masters, including the three required redraws, with honest same-operator visual review.",
+    "Lay out all 121 cards as a playable working prototype, using the illustrated pilot where available; unillustrated fronts must be honestly identified as text prototypes.",
+    "Produce the complete A4 working rulebook, printable prototype and separate illustrated review PDF with exact canonical copy and technical checks."
+  ],
+  "production_limit": "12 pilot fronts, seven back masters, complete text/layout prototype and rulebook. No expensive 121-illustration rollout before review of the concrete pilot.",
+  "scope": {
+    "exact_paths": [
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+      "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+    ],
+    "globs": [
+      "working/v2.7/qa/editorial_revision/**",
+      "working/v2.7/qa/recheck_visual/**",
+      "working/v2.7/visual/recheck_20260907/**"
+    ]
+  },
+  "excluded": [
+    "Modify locked releases/v2.6",
+    "Alter the accepted KAPTAN source figure/composition",
+    "Invent independent review, owner aesthetic acceptance, human playtest or physical print proof",
+    "Release or lock"
+  ],
+  "review_semantics": "SAME_OPERATOR_SELF_CHECK; roles held by one operator do not create independence. Deliver reviewable working assets before any necessary owner decision.",
+  "expiry": "This exact task and working delivery."
+}

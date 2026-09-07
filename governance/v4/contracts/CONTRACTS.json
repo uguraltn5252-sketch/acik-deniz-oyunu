@@ -113,14 +113,30 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**"
+          ".github/**",
+          "working/v2.7/qa/editorial_revision/**",
+          "working/v2.7/qa/recheck_visual/**",
+          "working/v2.7/visual/recheck_20260907/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+          "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+          "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+          "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+          "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+          "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+          "working/v2.7/V27_MECHANIC_DECISIONS.json",
+          "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+          "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+          "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+          "working/v2.7/README_CURRENT_v2.7.md",
+          "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+          "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+          "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -233,11 +249,11 @@
       "limits": "Exact task, role/path scope, independent review and source integrity remain mandatory; no implicit full production, canon/mechanics change, release or lock."
     },
     "temporary_consolidated_authority": {
-      "decision_ref": "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
-      "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
+      "decision_ref": "governance/v4/evidence/OWNER_RECHECK_VISUAL_AUTHORITY_20260907.json",
+      "task_id": "FOULWAKE-RECHECK-VISUAL-001",
       "role": "CHIEF_EDITOR",
-      "scope": "Exact task only; story, text/rules and simulation. Visual and Art Direction are excluded.",
-      "review": "SAME_OPERATOR_SELF_CHECK / HUMAN_REVIEW_UNPERFORMED"
+      "scope": "Latest owner instruction: editorial recheck plus Art Direction and Visual Design; exact task paths and pilot limits only.",
+      "review": "SAME_OPERATOR_SELF_CHECK / OWNER_AESTHETIC_REVIEW_PENDING / NOT_INDEPENDENT"
     }
   },
   "protected_quality_gates": [

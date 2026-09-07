@@ -46,7 +46,18 @@
         "RUN_SIMULATION",
         "QA_REVIEW",
         "COPY_CHECK",
-        "RULES_INTEGRITY_REVIEW"
+        "RULES_INTEGRITY_REVIEW",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT",
+        "PRODUCE_THUMBNAIL",
+        "PRODUCE_PILOT_OR_CANDIDATE",
+        "PRODUCE_FULL_121",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE",
+        "ART_LANGUAGE_REVIEW",
+        "FRAMING_DECISION",
+        "COMPOSITION_REVIEW",
+        "DECK_RHYTHM_REVIEW",
+        "AESTHETIC_RECOMMENDATION"
       ],
       "cannot": [
         "assume project-owner approval",
@@ -54,7 +65,7 @@
       ],
       "writes_require_exact_task": true,
       "brief_ref": "governance/v4/roles/CHIEF_EDITOR.md",
-      "temporary_delegation_status": "COMPLETED / PROJECT_PRODUCTION_AUTHORITY_CLOSED; coordination authority remains separate; action vocabulary retained for historical task validation"
+      "temporary_delegation_status": "OWNER_EXTENSION_RECORDED / AWAITING_EXACT_TASK_ACTIVATION"
     },
     "STORY_EDITOR": {
       "owns": [

@@ -37,3 +37,7 @@ Proje sahibi, bu Baş Editör sohbetine hikâye editörlüğü, kart/kural metni
 ## 7 Eylül teslim durumu
 
 `FOULWAKE-EDITORIAL-OVERHAUL-001` çalışma revizyonu teslim edildi. Güncel giriş `working/v2.7/README_CURRENT_v2.7.md`; kanıt `governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json`. Kaynak envanteri 121 metne tamamlandı, hikâye/kart/kural değişiklikleri uygulandı. 20 teknik regresyon ve 3.600 yaklaşık model yolculuğu, bağımsız insan veya tam kural motoru kabulü değildir. Bu teslim için geçici üretim yetkisi kapandı; Story ya da COPY-SOURCE-INVENTORY-002 görevini kendiliğinden başlatma. Görsel/Sanat kapsamı devralınmadı.
+
+## 7 Eylül 2026 yeni görsel görev devri
+
+Proje sahibinin son mesajı önce bütün sistemi yeniden kontrol etmeyi, ardından Sanat Yönetimi ve Görsel Tasarım işlerini de bu Baş Editör sohbetinde yürütmeyi istedi. Önceki dışlama bu yeni görev için geçerli değildir. Yetki `OWNER_RECHECK_VISUAL_AUTHORITY_20260907.json` ve `FOULWAKE-RECHECK-VISUAL-001` kapsamındadır. Somut 12 ön/7 arka pilot, 121 kartın metin prototipi ve kural kitabı hazırlanır; tek operatörün incelemesi bağımsız kabul sayılmaz. Kabul edilmiş KAPTAN ana figürü ile kilitli v2.6 korunur; release/lock açılmaz.
