@@ -100,3 +100,7 @@ baskı ve bağımsız estetik kabul açık; release/lock verilmedi.
 ## 8 Eylül: bütün oyun incelemesi ve tek fener
 
 Proje sahibinin güncel talimatı `governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json` kaydındadır. `FOULWAKE-WHOLE-GAME-POLISH-001` açıldığında Başeditör hikâye, kural, kart, simülasyon ve görsel düzeltmeleri o görev kapsamında yürütür. Beğenilen fener sahnesi korunur; alttaki ters kule kaldırılır. Fener ailesinin eski 180 derece simetri şartı bu açık kararla aşılmıştır. Diğer gizli arka yüz ve kaynak korumaları sürer.
+
+## 8 Eylül 2026 — tam kontrol teslimi
+
+FOULWAKE-WHOLE-GAME-POLISH-001 uygulandı; güncel teslim governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json kaydındadır. 121 kart, yedi arka yüz ve kural kitabı kontrol edildi. Fener tek ve diktir; beğenilen üst sahne korunmuştur. Geçici üretim yetkileri kapalıdır; güncel durum runtime/STATE.json üzerinden okunur. Bu teslim bağımsız, fiziksel veya insan oyun testi kabulü değildir.

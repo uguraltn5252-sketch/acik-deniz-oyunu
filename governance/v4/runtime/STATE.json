@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-WHOLE-GAME-POLISH-ACTIVE-20260908",
-  "status": "V4_ACTIVE / OWNER_WHOLE_GAME_POLISH",
+  "state_id": "V4-WHOLE-GAME-POLISH-DELIVERED-20260908",
+  "status": "V4_ACTIVE / OWNER_WHOLE_GAME_POLISH_DELIVERED / OWNER_REVIEW_PENDING",
   "updated_at": "2026-09-08",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -61,7 +61,8 @@
       "head_binding": "AUTHORIZED_TASK_ACTIVATION / NOT_A_DELIVERY",
       "previous_recorded_head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
       "branch_preparation": "Preserved at verified activation head; no specialist content delivery. Chief temporarily executes the new task on v2.7-design.",
-      "current_integrated_copy_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a"
+      "current_integrated_copy_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
+      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c"
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
@@ -69,14 +70,16 @@
       "accepted_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
       "status": "PATCH_ACCEPTED_BY_PROJECT_OWNER / PAUSED",
       "current_integrated_pilot_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
-      "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd"
+      "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd",
+      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c"
     },
     "visual": {
       "branch": "work/v2.7-visual",
       "head": "23c062f6de06c32eab224b3440c8474725d4fe9e",
       "status": "PROJECT_OWNER_REJECTED / HOLD / HISTORICAL_EVIDENCE_ONLY",
       "current_integrated_pilot_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
-      "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd"
+      "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd",
+      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c"
     },
     "simulation": {
       "branch": "work/v2.7-simulation",
@@ -88,29 +91,30 @@
       "branch_preparation": "Preserved unchanged. Source inventory completed in consolidated delivery; no automatic COPY-SOURCE-INVENTORY-002 continuation.",
       "accepted_commit": "5bb108249819bcfeb58da6343cc3cd28e221c410",
       "last_accepted_result": "INCONCLUSIVE / HUMAN_PLAYTEST_REQUIRED",
-      "current_integrated_evidence_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a"
+      "current_integrated_evidence_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
+      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c"
     }
   },
   "visual_dispositions": {
     "BACK_SEA_ROCK": "RETAINED_SOURCE_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING",
     "BACK_ISLAND": "RETAINED_SOURCE_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING",
-    "BACK_LIGHTHOUSE": "SIDE_VIEW_REVISION_DELIVERED / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING",
+    "BACK_LIGHTHOUSE": "ONE_UPRIGHT_LIGHTHOUSE / ORIGINAL_UPPER_SCENE_PRESERVED / SAME_OPERATOR_CHECK",
     "OTHER_FOUR_BACKS": "RETAINED_SOURCES_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING"
   },
   "permissions": {
-    "visual_production": true,
+    "visual_production": false,
     "thumbnails": false,
     "pilot_or_candidate": false,
-    "full_121_production": true,
-    "pdf_or_print_package": true,
-    "simulation": true,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": false,
     "release": false,
     "lock": false
   },
   "open_blockers": {
     "ART-001": "121 illustrated fronts and seven common backs delivered; owner all-deck aesthetic review pending. No unillustrated front remains.",
     "MEC-001": "27 targeted tests and 3,600 updated heuristic voyages delivered. Full engine equivalence and human experience remain unverified; no balance acceptance.",
-    "QA-001": "Complete working deck has 121-copy/image/source/PDF/geometry self-check. No independent aesthetic attestation or owner all-deck acceptance.",
+    "QA-001": "121 corrected illustrated fronts and seven common backs self-checked; no independent or owner full-deck aesthetic acceptance.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
     "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
@@ -121,7 +125,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Complete the owner-authorized full audit and corrections in the exact task scope.",
+  "next_action": "Owner reviews the corrected current PDFs; human play and physical proof remain future evidence.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -217,9 +221,15 @@
       "task_id": "FOULWAKE-FULL-DECK-ART-001",
       "delivery_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd",
       "evidence_ref": "governance/v4/evidence/FULL_DECK_ART_DELIVERY_20260907.json"
+    },
+    "LIGHTHOUSE-DUPLICATE": {
+      "status": "FIX_IMPLEMENTED / SINGLE_UPRIGHT / UPPER_SCENE_PIXEL_EQUALITY",
+      "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+      "delivery_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
+      "evidence_ref": "governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json"
     }
   },
-  "last_completed_project_task_id": "FOULWAKE-FULL-DECK-ART-001",
+  "last_completed_project_task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
   "read_only_assignments": {},
   "completed_read_only_reviews": {
     "STORY-COHERENCE-IMMERSION-001": {
@@ -240,7 +250,7 @@
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_status": "AUTHORIZED / AWAITING_EXACT_TASK_OPENING",
+  "temporary_delegation_status": "DELIVERED / SCOPED_PRODUCTION_CLOSED / COORDINATION_ONLY",
   "current_recheck_delivery": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
@@ -253,7 +263,7 @@
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
     "evidence_ref": "governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json",
     "review_pdf": "working/v2.7/visual/recheck_20260907/pdf/FOULWAKE_GORSEL_INCELEME_v2.7.pdf",
-    "status": "OWNER_AUTHORIZED_STYLE_CONTINUATION / LIGHTHOUSE_REVISION_REQUESTED / NO_INDEPENDENT_ACCEPTANCE",
+    "status": "HISTORICAL_PILOT / SUPERSEDED_BY_FULL_DECK_AND_WHOLE_GAME_POLISH",
     "fronts": 12,
     "backs": 7,
     "not_an_accepted_candidate": true,
@@ -271,6 +281,18 @@
     "evidence_ref": "governance/v4/evidence/FULL_DECK_ART_DELIVERY_20260907.json",
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "download_index": "working/v2.7/visual/full_deck_20260907/README.md",
+    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+    "fronts": 121,
+    "backs": 7,
+    "not_an_accepted_candidate": true,
+    "superseded_by": "FOULWAKE-WHOLE-GAME-POLISH-001"
+  },
+  "current_polish_delivery": {
+    "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+    "commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
+    "evidence_ref": "governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json",
+    "readme": "working/v2.7/README_CURRENT_v2.7.md",
+    "download_index": "working/v2.7/visual/polish_20260908/README.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
     "fronts": 121,
     "backs": 7,

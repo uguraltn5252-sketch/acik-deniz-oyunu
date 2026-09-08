@@ -10,6 +10,7 @@
       "priority": 1,
       "source": "latest explicit project-owner decision",
       "implementation": [
+        "governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json",
         "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
         "governance/v4/runtime/STATE.json",
         "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
@@ -55,7 +56,11 @@
     },
     "rulebook": "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
     "editorial_decisions": "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
-    "current_readme": "working/v2.7/README_CURRENT_v2.7.md"
+    "current_readme": "working/v2.7/README_CURRENT_v2.7.md",
+    "current_print_package": "working/v2.7/visual/polish_20260908/README.md",
+    "current_visual_review": "working/v2.7/qa/whole_game_polish_20260908/review.md",
+    "current_revision_evidence": "governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json",
+    "rulebook_pdf": "working/v2.7/visual/polish_20260908/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf"
   },
   "historical_only": {
     "rejected_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",

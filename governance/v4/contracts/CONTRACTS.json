@@ -113,29 +113,14 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**",
-          "working/v2.7/qa/whole_game_polish_20260908/**",
-          "working/v2.7/visual/polish_20260908/**",
-          "working/v2.7/visual/art_direction/**",
-          "working/v2.7/qa/editorial_revision/**"
+          ".github/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
-          "working/v2.7/README_CURRENT_v2.7.md",
-          "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-          "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
-          "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
-          "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
-          "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
-          "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
-          "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
-          "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
-          "working/v2.7/V27_MECHANIC_DECISIONS.json",
-          "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -253,7 +238,8 @@
       "role": "CHIEF_EDITOR",
       "scope": "Owner-authorized whole-game audit and actual corrections; single upright lighthouse supersedes its old two-ended arrangement.",
       "review": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT",
-      "status": "AUTHORIZED / AWAITING_EXACT_TASK_OPENING"
+      "status": "DELIVERED / SCOPED_PRODUCTION_CLOSED",
+      "delivery_evidence": "governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json"
     }
   },
   "protected_quality_gates": [
@@ -316,8 +302,8 @@
       "required_identity_decision": "SRC-002",
       "full_source": {
         "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "source_sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
-        "source_git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
+        "source_sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
+        "source_git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
         "collections": {
           "characters": {
             "visible_fields": [
@@ -371,8 +357,8 @@
         "identity_decision_source_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3"
       },
       "expected_full_deck_records": 121,
-      "coverage_status": "121 canonical text records and PDF layouts self-checked; 12 illustrated fronts/seven backs delivered for owner review. No independent visual or physical acceptance.",
-      "current_revision_evidence": "governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json"
+      "coverage_status": "121 canonical records, 121 illustrated fronts and seven common backs checked in complete PDFs; single upright lighthouse delivered. Same-operator evidence only; no independent or physical acceptance.",
+      "current_revision_evidence": "governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json"
     },
     "framing": {
       "action": "FRAMING_DECISION",
@@ -486,15 +472,15 @@
     "known_external_enforcement_gap": "GOV-001: GitHub branch protection requires live settings evidence. GOV-002: close only after current v4 workflow and all workstream checks pass on GitHub."
   },
   "protected_content_blobs": {
-    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "eca6b8ed8178c9ca6c6adc51078e03d4aa9a16c5",
-    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "fc6d55f4a036d8adf15543911ec056754cfc8b37",
-    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "c8e03a51af6815d63dbc4c95b01296543eec2da7",
+    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "d702d5eb4c00f58bb28fb833f0f3d7b9200db8f4",
+    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "8de5596759493eca263f07dcd356ea72029111b2",
+    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "2942740134cc5c80a6a4730d4bd949fd5eb97c46",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
-    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "28c1100615548b07e527cf50f32071e42c63f5bb",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "200a05d50e8dd6b986a6839161fd84c308824d15",
     "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "df2f74fe3f245bfd5d2fe57439f11c22aeca0e02",
     "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "e9faf109fb5ee912935a7bdf30bc554eae1efa77",
-    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "976ebcaaf1069d0a8a3bcfa64482630d275781ad",
-    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "db98945fdbbdf3cbf37141e2d52e0f3a7770cd79",
-    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "ff60f377037bd82a490d788514b449508d4d849e"
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "6952d8f761416def7ffad0117975a1f6691e0821",
+    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "d4c73ddaba353a49ed22103765e22cd60efaec66",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "16df93d8d704e090a60c3c803c6462dd28bc85a0"
   }
 }
