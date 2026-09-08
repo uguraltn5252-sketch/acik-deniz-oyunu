@@ -1,0 +1,196 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+  "task_type": "OWNER_DELEGATED_WHOLE_GAME_AUDIT_AND_CORRECTION",
+  "project_task": true,
+  "status": "ACTIVE",
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-08",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "owner_authorization": {
+    "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+    "decision": "AUTHORIZED",
+    "recorded_from": "Current owner request for complete fresh audit, corrections, and single upright lighthouse.",
+    "decision_ref": "governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json"
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "b49c1114bc9e92a5ff941be838e14e1bd1328c21",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "PRODUCE_STORY",
+      "PRODUCE_FLAVOR",
+      "PERIOD_LANGUAGE_REVIEW",
+      "RUN_SIMULATION",
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "RULES_INTEGRITY_REVIEW",
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT",
+      "PRODUCE_FULL_121",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE",
+      "ART_LANGUAGE_REVIEW",
+      "FRAMING_DECISION",
+      "COMPOSITION_REVIEW",
+      "DECK_RHYTHM_REVIEW",
+      "AESTHETIC_RECOMMENDATION"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "PRODUCE_STORY",
+        "PRODUCE_FLAVOR",
+        "PERIOD_LANGUAGE_REVIEW",
+        "RUN_SIMULATION",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "RULES_INTEGRITY_REVIEW",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT",
+        "PRODUCE_FULL_121",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE",
+        "ART_LANGUAGE_REVIEW",
+        "FRAMING_DECISION",
+        "COMPOSITION_REVIEW",
+        "DECK_RHYTHM_REVIEW",
+        "AESTHETIC_RECOMMENDATION"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
+    ],
+    "allowed_globs": [
+      "working/v2.7/qa/whole_game_polish_20260908/**",
+      "working/v2.7/visual/polish_20260908/**",
+      "working/v2.7/visual/art_direction/**",
+      "working/v2.7/qa/editorial_revision/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      ".github/",
+      "working/v2.7/visual/references/",
+      "working/v2.7/visual/full_deck_20260907/",
+      "working/v2.7/visual/recheck_20260907/"
+    ],
+    "max_changed_files": 256,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".csv",
+      ".txt",
+      ".png",
+      ".jpg",
+      ".pdf",
+      ".svg"
+    ],
+    "binary_files_allowed": true
+  },
+  "runtime_permissions": {
+    "visual_production": true,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": true,
+    "pdf_or_print_package": true,
+    "simulation": true,
+    "release": false,
+    "lock": false
+  },
+  "inputs": [
+    {
+      "path": "governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json",
+      "git_blob": "e0bf8a390b9762393aaf208475cac6ce008a0f32"
+    },
+    {
+      "path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+      "git_blob": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4"
+    },
+    {
+      "path": "working/v2.7/visual/full_deck_20260907/assets/BACK_LIGHTHOUSE.png",
+      "git_blob": "91443eff2dda8af5c84989a2f6146c1bc3e2bb82"
+    },
+    {
+      "path": "working/v2.7/qa/full_deck_art/build_print.py",
+      "git_blob": "f720047e89988ed918b1fb0420260a17f1df4670"
+    }
+  ],
+  "purpose": "Read and correct the complete current game; preserve the liked lighthouse and remove its inverted duplicate.",
+  "acceptance_criteria": [
+    "Read every current narrative/rule section and all 121 card records, record individual coverage and concrete findings.",
+    "Verify four subtle allusions and evaluate current names/cities in context; apply evidenced editorial corrections consistently.",
+    "Inspect every front, every back and all final PDF pages; retain binding captain and original liked lighthouse upper scene.",
+    "Exactly one upright lighthouse per common back; all four lighthouse backs remain identical. Six other back masters retain secrecy and topology.",
+    "Rebuild complete current 121-card print/review and complete rulebook; test exact copy, safe areas, duplex, source provenance and relevant rules.",
+    "Preserve locked v2.6 and frozen specialist refs; label same-operator evidence without human, independent or release acceptance."
+  ],
+  "completion_policy": "Deliver corrected current sources and PDFs with same-operator evidence, then close scoped permissions.",
+  "baseline_mutable_sources": [
+    {
+      "path": "working/v2.7/README_CURRENT_v2.7.md",
+      "git_blob": "bccb2fbf9f0ed36c7ded58999f7746f8e3ba3084"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "git_blob": "db98945fdbbdf3cbf37141e2d52e0f3a7770cd79"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "git_blob": "976ebcaaf1069d0a8a3bcfa64482630d275781ad"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "git_blob": "fc6d55f4a036d8adf15543911ec056754cfc8b37"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "git_blob": "eca6b8ed8178c9ca6c6adc51078e03d4aa9a16c5"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "git_blob": "c8e03a51af6815d63dbc4c95b01296543eec2da7"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "git_blob": "e5266926009a34e4c2199086a31059d913050acb"
+    },
+    {
+      "path": "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "git_blob": "fd30072a3797673041e84760bccae1425f928bdc"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+      "git_blob": "ed83bb7939fa0cca1d78c2b366421058cae82dd1"
+    }
+  ]
+}
