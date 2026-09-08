@@ -117,7 +117,8 @@
     "QA-001": "121 corrected illustrated fronts and seven common backs self-checked; no independent or owner full-deck aesthetic acceptance.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
-    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
+    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent.",
+    "ART-DESIGN-002": "Owner rejects literal reference crop and insufficient integrated design. Diagnose and replace all 121 front designs."
   },
   "canonical_refs": {
     "contracts": "governance/v4/contracts/CONTRACTS.json",
@@ -125,7 +126,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Owner reviews the corrected current PDFs; human play and physical proof remain future evidence.",
+  "next_action": "Open the exact owner-requested full card art/design correction task.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -242,7 +243,7 @@
   "last_completed_read_only_task_id": "STORY-COHERENCE-IMMERSION-001",
   "coordination_followups_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json",
   "paused_project_tasks": {},
-  "temporary_delegation_ref": "governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json",
+  "temporary_delegation_ref": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json",
   "current_editorial_delivery": {
     "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
     "commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
@@ -250,7 +251,7 @@
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_status": "DELIVERED / SCOPED_PRODUCTION_CLOSED / COORDINATION_ONLY",
+  "temporary_delegation_status": "AUTHORIZED / AWAITING_EXACT_TASK_OPENING",
   "current_recheck_delivery": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",

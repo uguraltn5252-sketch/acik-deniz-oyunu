@@ -1,0 +1,25 @@
+{
+  "schema_version": "4.3",
+  "date": "2026-09-08",
+  "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+  "issued_by": "PROJECT_OWNER",
+  "source_head": "641ed130fc2ae76c4217979d510e19a4676b0f0c",
+  "owner_instruction_verbatim": "Sana dedim ki bu kartlarda bu tasarim felsefesini kullan ama sen bu fotoğrafı kırpıp karta eklemişsin. Ve çoğu kartta hiçbir gorsel yada tasarım yok bu sorunun kaynağını bul duzelt aynısı olmak zorunda degil ama tasarim felsemiz bu. Bunu analiz et sorunun kaynağını bul tüm kartlari incele ve kartlari olustur sonrasinda tek tek kontrol et sanat yonetmeni ve gorsel uzman gibi düşün uygula yaratici düşün oyunun felsefesini yansıtacak ama hemde bir nebze komik olacak",
+  "decisions": {
+    "scope": "Chief Editor temporarily performs Art Direction and Visual Design for all 121 card fronts and matching printed/review design.",
+    "reference_role": "STYLE_AND_INTEGRATED_DESIGN_REFERENCE / NOT_A_CROPPED_FINISHED_CARD",
+    "captain": "Fresh original captain illustration is authorized. Exact face, crossed-arm pose, bird and crop are not binding; captain role and current canonical copy remain.",
+    "design": "Confident comic ink outlines, expressive caricature, deliberate engraving, aged warm paper, limited navy/ochre/rust, integrated border/cartouche/art/copy, situational dry comedy.",
+    "lighthouse": "Retain the already liked single-upright common lighthouse back; do not reintroduce the inverted duplicate.",
+    "full_production": "AUTHORIZED_BY_THIS_REQUEST / NO_ADDITIONAL_PILOT_APPROVAL_REQUIRED",
+    "limits": "No canon or mechanics change, independent-review claim, release, lock or branch deletion."
+  },
+  "reference_upload": {
+    "name": "1000147292.png",
+    "sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a"
+  },
+  "supersedes": [
+    "Only the old literal KAPTAN visual binding and old bare picture-box design; historical source bytes remain preserved."
+  ],
+  "model_and_review": "Same operator; no temporary subagents requested or used."
+}

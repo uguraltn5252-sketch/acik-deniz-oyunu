@@ -27,3 +27,7 @@ Her görsel için `FRAMING_PASS` veya `REFRAME_REQUIRED`; bunun yanında
 yaratıcı gerekçe, en önemli kusur ve en küçük etkili düzeltme. Üreten
 Görsel rolü kendi kadrajını onaylayamaz. Teknik uygunluk estetik kabulün
 yerine geçmez; nihai owner kapısı ayrıca izlenir.
+
+## 8 Eylül — proje sahibinin kart tasarımı düzeltmesi
+
+Güncel governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json kararı referansı tasarım dili olarak tanımlar. Önceki birebir KAPTAN kırpımı/figürü şartı bu görev için geçerli değildir; özgün kaptan çizimi ve 121 kartın bütünlüklü yeniden tasarımı yetkilidir. Güncel kart metinleri ile beğenilen tek fener korunur. Baş Editör bu işte Sanat Yönetimi/Görsel Tasarımı geçici yürütür; aynı operatörün kontrolü bağımsız kabul sayılmaz. Üretim yalnız FOULWAKE-ILLUSTRATED-DESIGN-002 exact görev kaydı açıldığında başlar.

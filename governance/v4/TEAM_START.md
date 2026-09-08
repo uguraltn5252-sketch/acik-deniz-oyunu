@@ -104,3 +104,7 @@ Proje sahibinin güncel talimatı `governance/v4/evidence/OWNER_WHOLE_GAME_POLIS
 ## 8 Eylül 2026 — tam kontrol teslimi
 
 FOULWAKE-WHOLE-GAME-POLISH-001 uygulandı; güncel teslim governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json kaydındadır. 121 kart, yedi arka yüz ve kural kitabı kontrol edildi. Fener tek ve diktir; beğenilen üst sahne korunmuştur. Geçici üretim yetkileri kapalıdır; güncel durum runtime/STATE.json üzerinden okunur. Bu teslim bağımsız, fiziksel veya insan oyun testi kabulü değildir.
+
+## 8 Eylül — proje sahibinin kart tasarımı düzeltmesi
+
+Güncel governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json kararı referansı tasarım dili olarak tanımlar. Önceki birebir KAPTAN kırpımı/figürü şartı bu görev için geçerli değildir; özgün kaptan çizimi ve 121 kartın bütünlüklü yeniden tasarımı yetkilidir. Güncel kart metinleri ile beğenilen tek fener korunur. Baş Editör bu işte Sanat Yönetimi/Görsel Tasarımı geçici yürütür; aynı operatörün kontrolü bağımsız kabul sayılmaz. Üretim yalnız FOULWAKE-ILLUSTRATED-DESIGN-002 exact görev kaydı açıldığında başlar.

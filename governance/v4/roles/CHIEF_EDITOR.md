@@ -63,3 +63,7 @@ baskı ve bağımsız estetik kabul açık; release/lock verilmedi.
 ## 8 Eylül: bütün oyun incelemesi ve tek fener
 
 Proje sahibinin güncel talimatı `governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json` kaydındadır. `FOULWAKE-WHOLE-GAME-POLISH-001` açıldığında Başeditör hikâye, kural, kart, simülasyon ve görsel düzeltmeleri o görev kapsamında yürütür. Beğenilen fener sahnesi korunur; alttaki ters kule kaldırılır. Fener ailesinin eski 180 derece simetri şartı bu açık kararla aşılmıştır. Diğer gizli arka yüz ve kaynak korumaları sürer.
+
+## 8 Eylül — proje sahibinin kart tasarımı düzeltmesi
+
+Güncel governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json kararı referansı tasarım dili olarak tanımlar. Önceki birebir KAPTAN kırpımı/figürü şartı bu görev için geçerli değildir; özgün kaptan çizimi ve 121 kartın bütünlüklü yeniden tasarımı yetkilidir. Güncel kart metinleri ile beğenilen tek fener korunur. Baş Editör bu işte Sanat Yönetimi/Görsel Tasarımı geçici yürütür; aynı operatörün kontrolü bağımsız kabul sayılmaz. Üretim yalnız FOULWAKE-ILLUSTRATED-DESIGN-002 exact görev kaydı açıldığında başlar.

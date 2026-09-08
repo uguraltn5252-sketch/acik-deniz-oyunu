@@ -113,14 +113,19 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**"
+          ".github/**",
+          "working/v2.7/visual/illustrated_design_20260908/**",
+          "working/v2.7/qa/illustrated_design_20260908/**",
+          "working/v2.7/visual/art_direction/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+          "working/v2.7/README_CURRENT_v2.7.md",
+          "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -233,13 +238,12 @@
       "limits": "Exact task, role/path scope, independent review and source integrity remain mandatory; no implicit full production, canon/mechanics change, release or lock."
     },
     "temporary_consolidated_authority": {
-      "decision_ref": "governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json",
-      "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+      "decision_ref": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json",
+      "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
       "role": "CHIEF_EDITOR",
-      "scope": "Owner-authorized whole-game audit and actual corrections; single upright lighthouse supersedes its old two-ended arrangement.",
+      "scope": "Owner-requested complete original card art and integrated design correction.",
       "review": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT",
-      "status": "DELIVERED / SCOPED_PRODUCTION_CLOSED",
-      "delivery_evidence": "governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json"
+      "status": "AUTHORIZED / AWAITING_EXACT_TASK_OPENING"
     }
   },
   "protected_quality_gates": [
@@ -267,18 +271,17 @@
       "binding_visual_source": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
       "source_sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
       "source_git_blob": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4",
-      "source_policy": "BINDING_KAPTAN_CARD_VISUAL_SOURCE / NOT_STYLE_ONLY",
-      "main_subject_policy": "The KAPTAN main figure and composition cannot be replaced by an empty chair or another main subject.",
+      "source_policy": "STYLE_AND_INTEGRATED_DESIGN_REFERENCE / OWNER_CORRECTION_20260908",
+      "main_subject_policy": "Original expressive captain illustration; not required to reuse the supplied face, pose, gull or composition. Must still depict the captain role.",
       "allowed_small_changes": [
-        "crop",
-        "scale",
-        "color",
-        "background"
+        "Original redrawing in the supplied design language is explicitly authorized by the current owner correction."
       ],
       "deck_language_policy": "Binding art language; ship, gull and the exact scene are not deck-wide requirements.",
       "accepted_art_direction_patch": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
       "accepted_patch_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
-      "accepted_patch_blob": "bae77450d6d10e1e3234a3473bf68ffa1efff810"
+      "accepted_patch_blob": "bae77450d6d10e1e3234a3473bf68ffa1efff810",
+      "previous_source_policy": "BINDING_KAPTAN_CARD_VISUAL_SOURCE / NOT_STYLE_ONLY",
+      "current_owner_correction": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json"
     },
     "exact_copy": {
       "source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
