@@ -23,6 +23,13 @@
     "working/v2.7/qa/editorial_revision/run_simulation.py": "85c6b48b085335f660984b0f1cd81443f0f025ae92ecb1f9f0c3dc215e452b75",
     "working/v2.7/qa/editorial_revision/test_rules.py": "3b5af94145d909ef7284b38b2697a534778a773cbbd3344846608569590e00b3",
     "working/v2.7/qa/editorial_revision/simulation_results.json": "173e0592e0f0eb540fdcbead91308e54ac3b10d25171ea35550d8fb611410890",
-    "working/v2.7/qa/editorial_revision/simulation_games.csv": "bdb2335db117c687e2075e2491c8137ac4391bd8837047a0acab50306eb862e8"
-  }
+    "working/v2.7/qa/editorial_revision/simulation_games.csv": "bdb2335db117c687e2075e2491c8137ac4391bd8837047a0acab50306eb862e8",
+    "working/v2.7/qa/whole_game_polish_20260908/run_simulation.py": "55224cb4cf433fc6fe50e8f0f484d8a0c62bbd2019d3716f3a1f856b485774ac",
+    "working/v2.7/qa/whole_game_polish_20260908/simulation_results.json": "6cbdccb7ead49062bfd33e7023b01679c30a6bed8dd5f030a9d54eed0cefb38e",
+    "working/v2.7/qa/whole_game_polish_20260908/simulation_games.csv": "bdb2335db117c687e2075e2491c8137ac4391bd8837047a0acab50306eb862e8"
+  },
+  "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+  "date": "2026-09-08",
+  "field_change_count_scope": "135 fields compared with the historical baseline used by verify_content.py; this task changed 12 distinct card records against 50cb0c7.",
+  "changed_cards_this_task": 12
 }

@@ -1,5 +1,7 @@
 # FOULWAKE - tam deste sanat uygulaması
 
+> **Tarihsel 7 Eylül teslimi.** 8 Eylül güncel kararı `FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md` ve `../polish_20260908/README.md` içindedir. Aşağıdaki iki yönlü fener uygulaması, beğenilen üst çizim korunup ters kopya kaldırılarak değiştirilmiştir. Güncel metin ve PDF yolları da 8 Eylül sürümüdür.
+
 7 Eylül 2026 · FOULWAKE-FULL-DECK-ART-001 · tam çalışma destesi tamamlandı
 
 Proje sahibi somut pilotun ardından devam edilmesini, ayrıca fenerin yandan

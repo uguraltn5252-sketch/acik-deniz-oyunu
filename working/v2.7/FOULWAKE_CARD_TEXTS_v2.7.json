@@ -535,10 +535,10 @@
       "id": "GUC-27",
       "name": "Kaderi Yeniden Yaz",
       "group": "Olağanüstü",
-      "time": "Olay açılınca",
+      "time": "Hareket sırasında",
       "icon": "quill",
       "start": false,
-      "effect": "Olayın etkisi uygulanmadan önce gemiyi önceki konumuna döndür ve oradan başka bir yasal Yakın Ufka git. Girilmiş ilk kart açık ve ziyaret edilmiş kalır; olayı tekrar çalışmaz. Ada girişi İskorbütü kalıcı temizler. İlk kart Geçilmezse ona girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
+      "effect": "Hareket sırasında, olay uygulanmadan önceki konuma dön; oradan başka yasal Yakın Ufka gir. İlk kart açık ve ziyaret edilmiş kalır; olayı tekrarlanmaz. Ada girişi İskorbütü kalıcı temizler. Geçilmeze girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
       "flavor": "Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir.",
       "returns_to_power_deck": false
     },
@@ -602,9 +602,15 @@
       "decision": "OWNER-CONSOLIDATED-EDITORIAL-20260907",
       "detail_source": "qa/editorial_revision/copy_changes.json",
       "reason": "Full source recovery; night/Captain/first-route clarity; distinct voices and private motives; restrained allusions."
+    },
+    {
+      "date": "2026-09-08",
+      "decision": "OWNER-WHOLE-GAME-POLISH-20260908",
+      "detail_source": "qa/whole_game_polish_20260908/changes.json",
+      "reason": "Fresh 121-record review, recipient and reveal clarity, concise long-card copy and concrete flavor."
     }
   ],
-  "revision_date": "2026-09-07",
+  "revision_date": "2026-09-08",
   "editorial_decision_source": "FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
   "loyalties": [
     {
@@ -654,7 +660,7 @@
       "name": "TAYFA",
       "side": "Tayfa",
       "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Bir sandığın araya girmesini istiyorsun."
+      "flavor": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Getirdiğin sandıkların o kapıyı açmasını istiyorsun."
     },
     {
       "id": "SAD-T-08",
@@ -675,7 +681,7 @@
       "name": "TAYFA",
       "side": "Tayfa",
       "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-      "flavor": "Eve götüreceğin hediyeyi kaybettin. Kendin gidersen bir süre bunu konuşmak zorunda kalacaklar. Razısın."
+      "flavor": "Eve götüreceğin hediyeyi kaybettin. Eli boş dönünce söylenecekler. Dönmezsen susacaklar. Söylenmelerine razısın."
     },
     {
       "id": "SAD-H-01",
@@ -865,7 +871,7 @@
       "id": "HAR-AD-14",
       "category": "Açık Deniz",
       "family": "Adam Denize!",
-      "name": "Bir Kişilik Eksildik",
+      "name": "Yoklamada Bir Eksik",
       "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
       "flavor": "Yoklama denizde icat edilmiş olmalı.",
       "score": -2,
@@ -967,7 +973,7 @@
       "family": "Güverteyi Yalayan Dalga",
       "name": "Güverteyi Yalayan Dalga",
       "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
-      "flavor": "Dalga geldi. Deniz suçunu kabul etmedi.",
+      "flavor": "Dalga çekilince güvertede yalnız başkasının çorabı kaldı.",
       "score": -1,
       "damage": false
     },
@@ -987,7 +993,7 @@
       "family": "Fırtına",
       "name": "Mizanayı Döven Dalga",
       "effect": "Gemi 1 Gövde kaybeder.",
-      "flavor": "Dalga üç kere vurdu. Dördüncüsünde özür dilemedi.",
+      "flavor": "Yelkenci yırtığı diktiği yerden tanıdı.",
       "score": -2,
       "damage": true
     },
@@ -1047,8 +1053,8 @@
       "category": "Kayalık",
       "family": "Batık Kalyon",
       "name": "Dibi Görünen Servet",
-      "effect": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanır.",
-      "flavor": "Batık gemi susuyordu; eşyaları konuşkandı.",
+      "effect": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanılır.",
+      "flavor": "Ambarın kilidi hâlâ kapalıydı. Duvarı yoktu.",
       "score": 1,
       "damage": false
     },
@@ -1159,7 +1165,7 @@
       "family": "Erzak Adası",
       "name": "Ağzı Açık Ambar",
       "effect": "2 Güç kazanılır. İki farklı oyuncuya verilir.",
-      "flavor": "Kimse sahibinin nerede olduğunu sormadı. Soğanlar sağlamdı.",
+      "flavor": "Erzağı herkes taşıdı. Borcun kime yazılacağını sonra konuşacaklar.",
       "score": 2,
       "damage": false
     },
@@ -1168,7 +1174,7 @@
       "category": "Ada",
       "family": "Terk Edilmiş Karakol",
       "name": "Terk Edilmiş Sahil Karakolu",
-      "effect": "1 Güç kazanılır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+      "effect": "1 Güç kazanılır. Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
       "flavor": "Nöbetçi gitmiş; dedikodu defteri kalmış.",
       "score": 2,
       "damage": false
@@ -1199,7 +1205,7 @@
       "family": "Korsanların Mola Yeri",
       "name": "Korsanların Mola Yeri",
       "effect": "Gücü olanlar arasından zarla seçilen iki kişi bütün Güçlerini kaybeder.",
-      "flavor": "Mola verdiler. Sizin eşyalara.",
+      "flavor": "Sandıkları taşımayı teklif ettiler. Geri getirmekten söz etmediler.",
       "score": -2,
       "damage": false
     },
@@ -1207,7 +1213,7 @@
       "id": "HAR-AA-06",
       "category": "Ada",
       "family": "Gümrük Adası",
-      "name": "Gümrükçünün Tek Yaşadığı Ada",
+      "name": "Tek Kişilik Gümrük",
       "effect": "Gemideki herkes en fazla bir Güç tutar; fazlasını kapalı atar.",
       "flavor": "Gümrükçü tek kişiydi. Yetkisi kalabalıktı.",
       "score": -1,
@@ -1218,7 +1224,7 @@
       "category": "Deniz Feneri",
       "family": "Çalışan Fener",
       "name": "Vardiya Defterli Fener",
-      "effect": "Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+      "effect": "Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
       "flavor": "Işık yol gösterdi; defter kimin baktığını yazdı.",
       "score": 1,
       "damage": false

@@ -31,7 +31,13 @@ def check():
         base=inventory['baseline_records'][cid]
         for field in ('impact','use_mode','time','start','returns_to_power_deck','score','damage','family','category'):
             if field in base:
-                assert current[field]==base[field], (cid,field)
+                if (cid,field)==('GUC-27','time'):
+                    # Owner-authorized 20260908 wording correction, not a new
+                    # reaction window. Keep both endpoints exact; no broad waiver.
+                    assert base[field]=='Olay açılınca', (cid,field,'baseline')
+                    assert current[field]=='Hareket sırasında', (cid,field,'current')
+                else:
+                    assert current[field]==base[field], (cid,field)
     for cid,name in {'GUC-22':'Kaptanın Çatlak Kupası','GUC-23':'Bayat Peksimet','GUC-24':'Islak Çorap'}.items():
         assert index[cid]['name']==name
     assert len({r['flavor'] for r in cards['loyalties'] if r['id'].startswith('SAD-H-')})==5
@@ -52,7 +58,7 @@ def check():
     changes=[]
     for cid, current in index.items():
         base=inventory['baseline_records'][cid]
-        for field in ('name','title','effect','flavor'):
+        for field in ('name','title','time','effect','flavor'):
             if current.get(field)!=base.get(field):
                 changes.append({'id':cid,'field':field,'before':base.get(field),'after':current.get(field)})
     (QA/'copy_changes.json').write_text(json.dumps({'baseline':'source_inventory.json#baseline_records','field_change_count':len(changes),'changes':changes},ensure_ascii=False,indent=2)+'\n')

@@ -1,20 +1,19 @@
 # FOULWAKE — güncel oynama ve inceleme dosyaları
 
-**Kuru Pay · 7 Eylül 2026 · v2.7 çalışma sürümü**
+**Kuru Pay · 8 Eylül 2026 · v2.7 çalışma sürümü**
 
-Hikâye, 121 kart ve kural kitabı düzenlendi. **121 kartın tamamı artık ayrı ön yüz resmiyle hazır.** Yedi ortak arka yüz uygulanmış; Fener, yandan görülen taş kule ve kayalık sahnesiyle yenilenmiştir.
+Hikâye, 121 kart, kural kitabı ve bütün görseller yeniden kontrol edildi; bulunan metin ve yerleşim sorunları düzeltildi. Beğenilen fener sahnesi korunuyor; aynı karttaki ters ikinci kule kaldırıldı.
 
-- [Tam kural kitabı — 30 sayfa PDF](visual/recheck_20260907/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf)
-- [121 resimli kart — A4 baskı dosyaları ve indirme sırası](visual/full_deck_20260907/README.md)
-- [Bütün deste — görsel inceleme dosyaları](visual/full_deck_20260907/README.md#görsel-inceleme)
-- [Kural kitabının metin kaynağı](FOULWAKE_KURAL_KITABI_v2.7.md) ve [121 kartın okunabilir metni](FOULWAKE_KART_METINLERI_v2.7.md)
-- [Hikâye ve OKU blokları](FOULWAKE_RULEBOOK_STORY_v2.7.md), [hikâye omurgası](FOULWAKE_STORY_FRAMEWORK.md), [uygulanmış kararlar](FOULWAKE_EDITORIAL_DECISIONS_v2.7.json)
-- [Tam deste kontrolü ve görsel değerlendirme](qa/full_deck_art/visual_review.md), [teknik kontrol kaydı](qa/full_deck_art/print_checks.json)
+- [Kural kitabı — 30 sayfa PDF](visual/polish_20260908/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf)
+- [121 resimli kart — güncel A4 baskı dosyaları](visual/polish_20260908/README.md)
+- [Bütün deste — güncel görsel inceleme](visual/polish_20260908/README.md#görsel-inceleme)
+- [Kural kitabının metni](FOULWAKE_KURAL_KITABI_v2.7.md), [121 kartın metni](FOULWAKE_KART_METINLERI_v2.7.md), [hikâye](FOULWAKE_RULEBOOK_STORY_v2.7.md)
+- [Düzeltmeler, göndermeler, adlar ve kontrol kapsamı](qa/whole_game_polish_20260908/review.md)
 
-İlk oyunda kurulum §3, gün/gece akışı §4; §17 isteğe bağlı arka plandır. 121 kart dosyasının ilk iki sayfası baskı talimatıdır. A4, %100 ve uzun kenardan çift taraflı baskı kullanın; önce yalnız 3–4. sayfayla hizayı deneyin.
+İlk oyunda hazırlık §2, masadaki kurulum §3, günlük akış §4; §17 isteğe bağlı arka plandır. Kart dosyasının ilk iki sayfası baskı talimatıdır. A4, %100 ve uzun kenardan çift taraflı baskı kullanın. Önce 3–4. sayfa çiftiyle hizayı deneyin.
 
-Beş Hainin ve on Tayfanın özel gerekçeleri vardır; bunlar ek görev değildir. Kuru Pay bir ortak çıkar lakabıdır. Gusto'nun akıbeti ve terkibin başarısı belirsiz kalır.
+San Cordelio ecza rıhtımından kalkılır; Arden Krallığı'na dönülür; Saint Verena Karantina Limanı'nda son gece geçirilir. Kuru Pay, riski denizde taşımadan kıyıda kazanılan payın lakabıdır. Gusto'nun akıbeti ve terkibin başarısı belirsizdir. Beş Hainin ve on Tayfanın özel gerekçeleri gizlidir; ek görev değildir.
 
-12 önceki ön kaynak korunarak 109 yeni ön çizim eklendi. Yeni dosyalar tam resimli çalışma baskısıdır. `recheck_20260907` içindeki kart prototipi ve pilot inceleme tarihsel teslimdir; 30 sayfalık kural kitabı günceldir.
+27 teknik kural testi ve 3.600 sezgisel model yolculuğu yeniden çalıştırıldı. 121 kartın copy'si, resim kimliği, güvenli alanı ve arka eşleşmesi doğrulandı; indirme bölümlerinin 99 sayfası ana PDF'lerle karşılaştırıldı. İnsanlarla oyun, fiziksel baskı/opaklık ve bağımsız estetik kabul henüz yapılmadı. Kilitli v2.6 değişmedi.
 
-Önceki sistem kontrolünde 27 hedefli teknik test ve 3.600 sezgisel model yolculuğu çalıştırıldı. Bu sanat tesliminde 121 kartın PDF metni, resim kimliği, güvenli alanı ve arka eşleşmesi doğrulandı; bölümlerin 99 sayfası ana PDF'lerle birebir karşılaştırıldı. İnsanlarla oyun, fiziksel baskı/opaklık ve bağımsız estetik değerlendirme henüz yapılmadı. Kilitli v2.6 değişmedi; release/lock verilmedi.
+`recheck_20260907` ve `full_deck_20260907` içindeki PDF'ler önceki teslimlerdir. Güncel kural kitabı ve baskı dosyaları yukarıdaki 8 Eylül bağlantılarıdır.

@@ -42,7 +42,7 @@ def build():
     assert '<!--' not in book, 'Unresolved rulebook placeholder'
     (ROOT / 'FOULWAKE_KURAL_KITABI_v2.7.md').write_text(book)
 
-    text = ['# FOULWAKE - 121 kartın metni', '', '**v2.7 çalışma sürümü · 7 Eylül 2026**', '', 'Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir. Tat metinleri ek kural veya görev vermez. Sadakat gerekçeleri yalnız kart sahibine aittir. Kimlikler korunmuştur.', '']
+    text = ['# FOULWAKE - 121 kartın metni', '', '**v2.7 çalışma sürümü · 8 Eylül 2026**', '', 'Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir. Tat metinleri ek kural veya görev vermez. Sadakat gerekçeleri yalnız kart sahibine aittir. Kimlikler korunmuştur.', '']
     groups = [('Karakter', data['characters']), ('Güç', data['powers']), ('Sadakat', data['loyalties']), ('Erzak', data['provisions']), ('Harita', data['maps']), ('Makam ve Liman', overrides['records'] + data['utilities'])]
     ids = []
     for name, cards in groups:

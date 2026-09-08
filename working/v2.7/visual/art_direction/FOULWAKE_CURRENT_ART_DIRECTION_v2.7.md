@@ -1,73 +1,31 @@
-# FOULWAKE - güncel sanat ve uygulama kararı
+# FOULWAKE — güncel sanat ve uygulama kararı
 
-7 Eylül 2026 · FOULWAKE-RECHECK-VISUAL-001 · çalışma pilotu
+8 Eylül 2026 · FOULWAKE-WHOLE-GAME-POLISH-001 · tam çalışma destesi
 
-## Kaynak
+Güncel teslim `visual/polish_20260908/` içindedir. 121 ayrı ön resim korunmuş, metin ve yerleşim yeniden kontrol edilmiştir. 7 Eylül pilotu ve tam deste üretim kayıtları tarihsel kanıttır; bugünkü kapsamı 12 kartla sınırlamaz.
 
-Güncel hikâye adı Kuru Pay'dır. Güncel kart copy'si `FOULWAKE_CARD_TEXTS_v2.7.json`
-ve KAPTAN için `FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` dosyalarındadır.
-Eski Bible, pilot brief ve kabul edilmiş KAPTAN patch'indeki eski copy alıntıları
-bu kaynakların yerine kullanılamaz. Patch'in kaptan figürü/kompozisyonu ve sanat
-dili bağlayıcılığı sürer. Tarihsel belgeler silinmez.
+## Kaynak ve sanat dili
 
-## Sanat kararı
+Kuru Pay güncel hikâye adıdır. 120 kartın metni `FOULWAKE_CARD_TEXTS_v2.7.json`, KAPTAN'ın metni `FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` içindedir. Manifest bu kaynakların güncel dosya özetlerine bağlıdır. Eski Bible veya patch'teki eski alıntılar güncel copy yerine geçmez.
 
-Kalın canlı mürekkep, yönlü gravür taraması, tuz yemiş sıcak kâğıt ve mat
-lacivert, donuk oker, pas. Küçük ölçekte önce insanın yaptığı iş, sonra nesnenin
-ağırlığı okunur. Kara komedi kurumun veya insan alışkanlığının içinden gelir.
-Resimde yazı, yeni kanıt, örgüt logosu veya iyi/kötü insan renk kodu bulunmaz.
+Canlı mürekkep, yönlü gravür taraması, tuz yemiş sıcak kâğıt; mat lacivert, donuk oker ve pas. Küçük ölçekte önce yapılan iş ve nesnenin ağırlığı okunur. Kara komedi, kurumların ve gemideki alışkanlıkların tehlikeye rağmen sürmesinden doğar. Görsel yeni gizli ipucu, örgüt logosu veya iyi/kötü insan renk kodu üretmez.
 
-KAPTAN resmi yeni bir kişi üretilerek değiştirilmeyecek. Kabul edilmiş kaynağın
-figür ve gemi ilişkisi baskı şablonunda korunur; eski harfler resim olarak
-taşınmaz, güncel copy ayrı ve okunabilir yerleşir. Diğer kartlarda aynı kaptan,
-martı ve gemi tekrarlanmaz.
+KAPTAN'ın kabul edilmiş ana figürü ve kompozisyonu değişmez. Önceki sabit kırpım kullanılır; güncel metin ayrı dizilir. Figür kendiliğinden Gusto diye tanımlanmaz. Diğer kartlara aynı figür, martı veya gemiyi dağıtmak gerekmez.
 
-Üç karakter pilotu birbirinden farklıdır: yüksekte uzun kadın gözcü;
-su hizasında genç, tıraşlı dalgıç; dar koridorda küçük, yaşlı kadın kamarot.
-Nesne kartlarında sırayla açılan sandık, kesişen kıç izi ve sızan erzak kullanılır.
-Manzaralar sisli insan ölçeği, dar boğaz, tek memurun adası ve yanlış kıyı ateşi
-arasında ritim değiştirir. Hepsine aynı kamera veya yüz uygulanmaz.
+## Fener: bir kartta tek kule
 
-SAD-H-03'ün eski “masumu savunan kişi” sahnesi yeni sağlık kâğıdı/kimlik şantajı
-gerekçesiyle uyuşmuyordu. Yeni sahne: yağmurlu sağlık kapısında, okunamayan
-belgeyi kat izinden tutan el ve bekleyen kişinin yarım profili. Sahte ad okunmaz;
-kimse kötücül gölge, hançer, ortak mühür veya belirli Karakter yüzüyle kodlanmaz.
-Diğer 14 Sadakat brief'i de kendi özel gerekçesine bağlandı.
+Proje sahibinin 8 Eylül düzeltmesiyle fener arkasındaki ters ikinci kule kaldırıldı. Beğenilen üst sahne eski kaynaktan aynı ölçekte alınır; altta yalnız deniz devam eder. Dönüş açısı 0°'dir. Dört Fenerin hepsi bu tek ortak kompozisyonu kullanır. Fener, diğer altı arkanın yarım dönüş uygulamasının açık istisnasıdır.
 
-## Arka yüzler
+Nihai master `visual/polish_20260908/pdf/BACK_LIGHTHOUSE.pdf` dosyasıdır. `assets/LIGHTHOUSE_SEA_FILL.png` yalnız alt deniz katmanıdır; tek başına nihai master değildir. Üst sahnenin karşılaştırılan 898×465 piksellik 300 DPI renderı eski kaynakla birebir eşleşmiştir. Birleşim ve tek kule ayrıca gözle kontrol edilmiştir.
 
-Yedi master: Karakter 20; Güç/Erzak 31; Sadakat 15; Deniz/Kayalık 42;
-Ada 6; Fener 4; Yardımcı 3. Aile içinde tek dosya ve tek uygulama kullanılır.
+Deniz/Kayalık 42 kartta aynı arka; Ada 6, Fener 4 ayrı kategori arkası kullanır. Sadakatlerin 15'i tek arka paylaşır. Diğer aileler Karakter 20, Güç/Erzak 31, Yardımcı 3'tür. Arkalarda kimlik, başlık veya ön olaya özel işaret bulunmaz. Fener yönü dört alt olayı ayırmaz; bu, fiziksel opaklık testi yapılmış demek değildir.
 
-Deniz mat, odaksız ve kayasızdır. Ada önceki reddedilmiş resimden türetilmeden
-yeniden çizilir; doğal kıyı ve su aynı dünyadır. Fener bu kez uzaktan seçilen
-büyük, sade taş yapıdır. Üçü de dört kenara uzanan aynı deniz aralığını kullanır;
-çerçeve, rozet, harf veya ön olayın ipucu yoktur. Uzun kaya sırtı şart değildir.
+## Yerleşim
 
-Yön güvenliği grafik yerleşiminde yarım dönüş eşlemesiyle kurulur. Kaynak
-illüstrasyon ve baskı masterı farklı aşamalardır. Son PDF rasterleştirilerek
-180 derece karşılaştırılır; aynı ailede ön kimliğe bağlı eskitme uygulanmaz.
-Bu dijital kontrol, kâğıt opaklığı veya fiziksel çift taraflı baskı kanıtı değildir.
+- Harita 70×70 mm; Karakter ve üç yardımcı 70×120 mm; Güç/Erzak ve Sadakat 63,5×88,9 mm.
+- 3 mm taşma, 4,5 mm metin güvenliği. Etki 8,6; tat metni 8 punto. Kesim çizgileri kart dışındadır.
+- 121 önün kaynağı aynıdır; KAPTAN dışındaki resimler bütünüyle sığdırılır. Uzun metinler anlamı korunarak kısaltılmıştır.
+- Kapak alt başlıkları iki satırdır. Mesleği olmayan karakterde kaynak yer tutucusu olan çizgi basılmaz; Etki ve kullanım bilgisi korunur.
+- A4 kitap 30 sayfadır. Anlatı paragrafları sayfa arasında bölünmez; giriş tablosunun boşluğu azaltılmış, zafer cümlesi bir arada tutulmuştur.
 
-## Okunabilir uygulama
-
-- Harita 70×70 mm; Karakter ve KAPTAN 70×120 mm; Güç/Sadakat 63,5×88,9 mm.
-- İki liman yardımcı kartı da KAPTAN ile aynı 70×120 mm destek biçiminde.
-- 3 mm taşma, en az 4 mm metin güvenliği; kesim çizgileri kart dışında.
-- Güncel copy şablondan alınır; resim modeli başlık, etki veya tat metni yazmaz.
-- Etki, zaman ve Karakter kurulum değeri açık hiyerarşidedir. Tat metni ayrı
-  karakterde ve daha hafif ağırlıktadır; küçük puntoya kaçmak yerine resim alanı
-  gerektiği kadar azaltılır.
-- Kural kitabı A4: giriş, oyun öğretimi, sık kullanılan akış, sonra referans.
-  Güncel metnin sayfa ihtiyacı esas alınır; eski 29 sayfalık PDF değişmez.
-
-## Somut teslim ve değerlendirme sınırı
-
-12 resimli ön pilotu (KAPTAN'ın mevcut resmi dahil), yedi arka master,
-121 kimliğin tamamı için metin prototipi ve tam kural kitabı hazırlanır.
-Kalan 109 ön yüz ayrı illüstrasyon bitmiş gibi sunulmaz. Pilot, bütün desteye
-pahalı yayılımdan önce gerçek resimler üzerinden değerlendirilir.
-
-Aynı operatör sanat ve uygulama işlerini yürütüyor. Kadraj, tekrar, tipografi
-ve teknik kontrol gerekçeleri kaydedilir; bunlar bağımsız sanat kabulü veya
-proje sahibinin beğenisi sayılmaz. İnsan ve fiziksel baskı kontrolleri ayrıca kalır.
+Çalışma SAME_OPERATOR_SELF_CHECK sınıfındadır. Bağımsız sanat kabulü, insanlarla oynanabilirlik ve fiziksel baskı sonucu verilmez. Ayrıntı: `qa/whole_game_polish_20260908/`.

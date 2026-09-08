@@ -1,0 +1,22 @@
+{
+  "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+  "tool": "image_gen.imagegen",
+  "tool_model_version": "UNDISCLOSED",
+  "main_model_identity": "UNKNOWN",
+  "actual_prompt_file": "lighthouse_prompt.txt",
+  "original_source": "working/v2.7/visual/full_deck_20260907/assets/BACK_LIGHTHOUSE.png",
+  "original_sha256": "b9d24eca472b7563f711b92aab00f371eaf93977ae89aaecbcc08ae14abc6c30",
+  "edit_fill_source": "working/v2.7/visual/polish_20260908/assets/LIGHTHOUSE_SEA_FILL.png",
+  "edit_fill_sha256": "fe54d28c3ff2f6dffcb9700c2c8f1a6c1ca8d2a2016199d31162f0dfdbb655f3",
+  "selection": "Only lower sea from imagegen edit is used. Native PDF clip keeps original rows 0..650 at full original scale. No full-scene repaint selected.",
+  "final_master": "working/v2.7/visual/polish_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+  "final_master_sha256": "3357f0a1efcde62b767b9b385da2f1a3742ef4cc8c03c28d97a629c830a3adee",
+  "rotation_degrees": 0,
+  "shared_card_ids": [
+    "HAR-FN-01",
+    "HAR-FN-02",
+    "HAR-FN-03",
+    "HAR-FN-04"
+  ],
+  "preservation_evidence": "lighthouse_preservation_check.json"
+}

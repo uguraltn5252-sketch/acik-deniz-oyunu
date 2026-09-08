@@ -238,6 +238,74 @@
         "visual/recheck_20260907/"
       ],
       "decision": "Yeni owner yetkisiyle 12 ön/7 arka görsel pilot ve bütün 121 metnin çalışma prototipi üretilir. A4 kural kitabında eski 29 sayfa sayısını taklit etmek yerine güncel metnin okunurluğu esas alınır; kilitli 29 sayfalık v2.6 PDF değişmez. Pilot incelemesi pahalı tam illüstrasyon yayılımından önce somut teslim üzerinden yapılır."
+    },
+    {
+      "id": "ED-21",
+      "subject": "Ad ve yer işlevi",
+      "disposition": "IMPLEMENTED_20260908",
+      "locations": [
+        "§3.1",
+        "HAR-AD-14",
+        "HAR-AA-06"
+      ],
+      "decision": "Arden Krallığı, San Cordelio ecza rıhtımı ve Saint Verena Karantina Limanı ayrımı açılışta görünür. KAR, GUC ve mekân adları korunur; HAR-AD-14 Yoklamada Bir Eksik, HAR-AA-06 Tek Kişilik Gümrük olur.",
+      "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001"
+    },
+    {
+      "id": "ED-22",
+      "subject": "Hareket ve alıcı açıklığı",
+      "disposition": "IMPLEMENTED_20260908",
+      "locations": [
+        "HAR-KY-02",
+        "GUC-27",
+        "§6.4"
+      ],
+      "decision": "Batık Kalyon ek Gücü otomatik olarak Dipgören sahibine vermez. Kaderi Yeniden Yaz hareketin ilk giriş olayına/Geçilmez açılmasına tepki verir; önce uzaktan açılmış fakat girilmemiş kartta da çalışır. Zaman etiketi Hareket sırasında olur. Pusula/Fenerin uzaktan göstermesi tek başına tetiklemez.",
+      "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001"
+    },
+    {
+      "id": "ED-23",
+      "subject": "Kısa olay metni ve hedef açıklığı",
+      "disposition": "IMPLEMENTED_20260908",
+      "locations": [
+        "HAR-AA-02",
+        "HAR-FN-01",
+        "§4.2",
+        "§8.4",
+        "§11.2"
+      ],
+      "decision": "Karakol/Fener kamusal açmayı ilk girişten ayıran daha kısa copy kullanır. Gemide bulunan ve Kamarada olmayan hedef tanımı açıklaştırılır. Kaptan Kamaraya girdiyse önce yeni Kaptan seçilir; konuşma iznini o verir.",
+      "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001"
+    },
+    {
+      "id": "ED-24",
+      "subject": "Somut tat metni",
+      "disposition": "IMPLEMENTED_20260908",
+      "locations": [
+        "SAD-T-07",
+        "SAD-T-10",
+        "HAR-AD-24",
+        "HAR-AD-26",
+        "HAR-AA-01",
+        "HAR-AA-05",
+        "HAR-KY-02"
+      ],
+      "decision": "SAD-T-07/10 ve HAR-AD-24/26, HAR-AA-01/05, HAR-KY-02 düzeltildi. Erzak Adası resmindeki alışveriş ile sahipsiz yağma çağrışımı uzlaştırıldı. Dört gönderme birer kartta aynı ölçüde korunur.",
+      "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001"
+    },
+    {
+      "id": "ED-25",
+      "subject": "Tek kule ve okunur baskı",
+      "disposition": "IMPLEMENTED_20260908",
+      "locations": [
+        "BACK_LIGHTHOUSE",
+        "121 fronts",
+        "48-page cards",
+        "30-page book",
+        "24-page review"
+      ],
+      "decision": "Fenerde üst orijinal sahne aynı ölçekle korunur; ters alt kule denizle kapatılır. Dört fenerde aynı yön ve master. Diğer altı arka yarım dönüşte kalır. Bütün ön kaynaklar korunur; uzun copy kısalınca resim alanı büyür. Kapak satırları, boş meslek yer tutucuları ve kitap paragraf bölünmesi düzeltilir.",
+      "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001"
     }
   ],
   "not_claimed": [
@@ -247,5 +315,12 @@
     "visual or physical production acceptance",
     "release or lock"
   ],
-  "history": "Earlier review was read-only. This task changes the actual editable sources."
+  "history": "Earlier review was read-only. This task changes the actual editable sources.",
+  "current_revision": {
+    "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+    "date": "2026-09-08",
+    "authority": "governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json",
+    "evidence": "working/v2.7/qa/whole_game_polish_20260908/review.md",
+    "class": "SAME_OPERATOR_SELF_CHECK / NOT_LOCKED"
+  }
 }

@@ -2,27 +2,27 @@
   "schema_version": "2.7-art-brief-manifest-1.1",
   "project": "FOULWAKE",
   "document": "FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7",
-  "art_direction_stage": "CURRENT_COPY_RECONCILIATION_AND_12_FRONT_7_BACK_PILOT",
-  "status": "CURRENT_COPY_BOUND / WORKING_VISUAL_PILOT / SAME_OPERATOR_REVIEW",
+  "art_direction_stage": "WHOLE_GAME_POLISH / FULL_121",
+  "status": "CURRENT_COPY_BOUND / 121_ILLUSTRATED_FRONTS / SAME_OPERATOR_REVIEW",
   "source_branch": "v2.7-design",
-  "chief_editor_source": "v2.7-design@367d8edd00f756552c1df84954ec438128fa7745",
+  "chief_editor_source": "v2.7-design@30af6cb3c2db567db121781283b05cfcf36782c0",
   "baseline_release": "v2.6 STABLE / LOCKED",
-  "scope": "121 current copy-bound briefs, 12 illustrated working fronts and seven backs; remaining 109 fronts are text layouts. Same-operator self-check, no owner acceptance, release or lock.",
-  "authority": "governance/v4/tasks/FOULWAKE-RECHECK-VISUAL-001.json",
+  "scope": "121 current canonical copy-bound briefs and 121 illustrated fronts; seven backs, one upright lighthouse. Same-operator review; no independent or physical acceptance.",
+  "authority": "governance/v4/tasks/FOULWAKE-WHOLE-GAME-POLISH-001.json",
   "binding_sources": {
     "current_direction": "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
-    "task": "governance/v4/tasks/FOULWAKE-RECHECK-VISUAL-001.json",
+    "task": "governance/v4/tasks/FOULWAKE-WHOLE-GAME-POLISH-001.json",
     "card_copy": {
       "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-      "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
-      "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e"
+      "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
+      "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd"
     },
     "captain_copy": {
       "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
       "sha256": "dc3ca70f2b84d77eccfc6b8443d172c88a32db4808fe70538e3c1b4cdde2db56",
       "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
     },
-    "unchanged_visual_inputs": "See task inputs for exact immutable KAPTAN figure, patch, Bible and prior pilot/back brief blobs."
+    "unchanged_visual_inputs": "The current task pins the owner authority, unchanged KAPTAN JPG, original lighthouse PNG and prior full-deck build script. Historical brief references are context, not new production permission."
   },
   "excluded_visual_sources": {
     "rejected_head": "work/v2.7-visual@e91581bb336dfcbab5da1d48a256577f9251f891",
@@ -34,15 +34,11 @@
   "open_risks": [
     {
       "id": "VISUAL-OWNER-REVIEW",
-      "statement": "Actual pilot is delivered for owner aesthetic review; same operator performed direction, illustration selection and layout."
+      "statement": "Full 121-front working deck; independent and physical review remain separate."
     },
     {
       "id": "PHYSICAL-PROOF",
       "statement": "No printed opacity, duplex registration or cut proof yet."
-    },
-    {
-      "id": "FULL-ART-109",
-      "statement": "109 unillustrated fronts remain text prototypes pending pilot review."
     }
   ],
   "counts": {
@@ -102,8 +98,8 @@
     "No fabricated owner aesthetic acceptance, independent QA, physical proof, release or lock."
   ],
   "review_input": {
-    "task": "governance/v4/tasks/FOULWAKE-RECHECK-VISUAL-001.json",
-    "status": "SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+    "task": "governance/v4/tasks/FOULWAKE-WHOLE-GAME-POLISH-001.json",
+    "status": "SAME_OPERATOR_WHOLE_GAME_RECHECK",
     "historical_reviews": "historical_brief_context.review_input"
   },
   "rework_summary": {
@@ -309,11 +305,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Uzakgören",
@@ -393,11 +389,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-02",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kıyıçizen",
@@ -477,11 +473,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-03",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Dümenkurdu",
@@ -561,11 +557,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-04",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Canhalatı",
@@ -645,11 +641,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-05",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Tahtakakan",
@@ -729,11 +725,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-06",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Dipgören",
@@ -813,11 +809,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-07",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Rüzgârkoklayan",
@@ -897,11 +893,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-08",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kırık Kürek",
@@ -981,11 +977,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-09",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Üç Anahtar",
@@ -1065,11 +1061,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-10",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Güvertebaşı",
@@ -1149,11 +1145,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-11",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "İskele Sıçanı",
@@ -1233,11 +1229,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-12",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Karga Yuvası",
@@ -1317,11 +1313,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-13",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kazanbaşı",
@@ -1401,11 +1397,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-14",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Fare Nazırı",
@@ -1485,11 +1481,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-15",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Papağan Mütercimi",
@@ -1569,11 +1565,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-16",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Fıçı Bekçisi",
@@ -1653,11 +1649,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-17",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kafiye Belası",
@@ -1737,11 +1733,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-18",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Karayı Özleyen",
@@ -1821,11 +1817,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-19",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Yastıkçı",
@@ -1905,11 +1901,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "KAR-20",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Tahtaya Vuran",
@@ -1989,11 +1985,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-01A",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Mantar Can Halkası",
@@ -2074,11 +2070,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-01B",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Mantar Can Halkası",
@@ -2159,11 +2155,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-02A",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kancalı Halat",
@@ -2244,11 +2240,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-02B",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kancalı Halat",
@@ -2329,11 +2325,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-03",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Pusula",
@@ -2414,11 +2410,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-04",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Güverte Araması",
@@ -2499,11 +2495,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-05",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Yama Tahtası",
@@ -2584,11 +2580,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-06",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Zıpkın Sandığı",
@@ -2669,11 +2665,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-07",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Geçici Yeke",
@@ -2754,11 +2750,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-08",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kerteriz Pergeli",
@@ -2839,11 +2835,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-09",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kurşun Ağırlık",
@@ -2924,11 +2920,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-10",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Yedek Yelken",
@@ -3009,11 +3005,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-11",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Islak Deniz Haritası",
@@ -3094,11 +3090,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-12",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kırık Dürbün",
@@ -3179,11 +3175,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-13",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Eski Seyir Defteri",
@@ -3265,11 +3261,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-14",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Anahtar Deliği",
@@ -3350,11 +3346,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-15",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kaptanın Eski Şapkası",
@@ -3435,11 +3431,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-16",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "İsyan Bildirisi",
@@ -3520,11 +3516,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-17",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Papağanın İfadesi",
@@ -3605,11 +3601,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-18",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Mühürlü Emir",
@@ -3691,11 +3687,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-19",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kaçak Rom",
@@ -3776,11 +3772,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-20",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Bir Daha Say",
@@ -3861,11 +3857,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-21",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Uğurlu Altın",
@@ -3946,11 +3942,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-22",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kaptanın Çatlak Kupası",
@@ -4031,11 +4027,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-23",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Bayat Peksimet",
@@ -4116,11 +4112,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-24",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Islak Çorap",
@@ -4201,11 +4197,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-25",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Şüpheli Martı",
@@ -4286,11 +4282,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-26",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Fırtına Feneri",
@@ -4371,17 +4367,17 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-27",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kaderi Yeniden Yaz",
         "group": "Olağanüstü",
-        "time": "Olay açılınca",
-        "effect": "Olayın etkisi uygulanmadan önce gemiyi önceki konumuna döndür ve oradan başka bir yasal Yakın Ufka git. Girilmiş ilk kart açık ve ziyaret edilmiş kalır; olayı tekrar çalışmaz. Ada girişi İskorbütü kalıcı temizler. İlk kart Geçilmezse ona girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
+        "time": "Hareket sırasında",
+        "effect": "Hareket sırasında, olay uygulanmadan önceki konuma dön; oradan başka yasal Yakın Ufka gir. İlk kart açık ve ziyaret edilmiş kalır; olayı tekrarlanmaz. Ada girişi İskorbütü kalıcı temizler. Geçilmeze girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
         "flavor": "Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir."
       },
       "first_two_seconds_emotion": "Geri dönmenin ağırlığı; zafer değil bedelli rota düzeltmesi.",
@@ -4456,11 +4452,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "GUC-28",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Seyir Zabtı",
@@ -4541,11 +4537,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "ERZ-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Çürümüş Erzak",
@@ -4624,11 +4620,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
@@ -4708,11 +4704,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-02",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
@@ -4792,11 +4788,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-03",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
@@ -4876,11 +4872,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-04",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
@@ -4960,11 +4956,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-05",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
@@ -5044,11 +5040,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-06",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
@@ -5128,17 +5124,17 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-07",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
         "side": "Tayfa",
         "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-        "flavor": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Bir sandığın araya girmesini istiyorsun."
+        "flavor": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Getirdiğin sandıkların o kapıyı açmasını istiyorsun."
       },
       "first_two_seconds_emotion": "Aynı kapının iki tarafında bekleyiş.",
       "visual_narrative_aim": "Karantina kapısında iki yandaki insanlar birbirini kapı aralığından görmeye çalışır.",
@@ -5212,11 +5208,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-08",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
@@ -5296,11 +5292,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-09",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
@@ -5380,17 +5376,17 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-T-10",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "TAYFA",
         "side": "Tayfa",
         "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
-        "flavor": "Eve götüreceğin hediyeyi kaybettin. Kendin gidersen bir süre bunu konuşmak zorunda kalacaklar. Razısın."
+        "flavor": "Eve götüreceğin hediyeyi kaybettin. Eli boş dönünce söylenecekler. Dönmezsen susacaklar. Söylenmelerine razısın."
       },
       "first_two_seconds_emotion": "Hediyenin yokluğundan daha değerli bir dönüş.",
       "visual_narrative_aim": "Bir denizci boş hediye bezini katlayıp özenle cebine koyar.",
@@ -5464,11 +5460,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-H-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "HAİN",
@@ -5548,11 +5544,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-H-02",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "HAİN",
@@ -5632,11 +5628,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-H-03",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "HAİN",
@@ -5716,11 +5712,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-H-04",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "HAİN",
@@ -5800,11 +5796,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SAD-H-05",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "HAİN",
@@ -5884,11 +5880,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Çarşaf Gibi Deniz",
@@ -5969,11 +5965,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-02",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Pruvada Son Yudum",
@@ -6013,7 +6009,7 @@
           "Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: HAR-AD-02 / Pruvada Çay Molası",
+          "Exact kimlik ve kaynak metni: HAR-AD-02 / Pruvada Son Yudum",
           "Tek ana görsel fiil: Yaşlı el soğuyan tası küpeşte oluğundan kaymadan yakalar.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -6054,11 +6050,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-03",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Martılar Bile Üşeniyor",
@@ -6139,11 +6135,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-04",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Puslu Vardiya",
@@ -6224,11 +6220,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-05",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Burnunun Ucu Cumhuriyeti",
@@ -6309,11 +6305,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-06",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Beyaz Gece",
@@ -6394,11 +6390,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-07",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Sis Var, Fikir Çok",
@@ -6479,11 +6475,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-08",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "İsimsiz Bir Düdük",
@@ -6564,11 +6560,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-09",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Deryanın Göbek Deliği",
@@ -6649,11 +6645,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-10",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Tersine Dönen Dünya",
@@ -6734,11 +6730,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-11",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Körfezin Hırçın Selamı",
@@ -6778,7 +6774,7 @@
           "Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: HAR-AD-11 / Karadeniz Usulü Karşılama",
+          "Exact kimlik ve kaynak metni: HAR-AD-11 / Körfezin Hırçın Selamı",
           "Tek ana görsel fiil: Dik dalga baş omuzluktan tek kaplama parçasını söker.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -6819,11 +6815,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-12",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Direkleri Saydıran Gece",
@@ -6904,11 +6900,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-13",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kolları Fazla Bir Mesele",
@@ -6982,21 +6978,21 @@
       "manifest_index": 80,
       "card_identity": {
         "id": "HAR-AD-14",
-        "exact_name": "Bir Kişilik Eksildik",
+        "exact_name": "Yoklamada Bir Eksik",
         "front_family": "OPEN_SEA",
         "back_binary": "BACK_SEA_ROCK",
         "pilot_selected": false
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-14",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
-        "name": "Bir Kişilik Eksildik",
+        "name": "Yoklamada Bir Eksik",
         "category": "Açık Deniz",
         "family": "Adam Denize!",
         "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
@@ -7007,7 +7003,7 @@
       "protected_intent": {
         "emotional_read": "Bir insan boşluğu; düşüş olmuş bitmiş.",
         "dramatic_truth": "Rastgele oyuncu düşmesini melodramatik çığlık yerine güvertedeki ani eksik yer ve aşağı uzanan kurtarma ihtiyacıyla anlatmak.",
-        "gameplay_truth": "Bir Kişilik Eksildik, manzara koleksiyonu değil; yüzü açıldığında rota tartışmasını ve geri alınamayan hareketi değiştiren coğrafi/olaysal baskıdır.",
+        "gameplay_truth": "Yoklamada Bir Eksik, manzara koleksiyonu değil; yüzü açıldığında rota tartışmasını ve geri alınamayan hareketi değiştiren coğrafi/olaysal baskıdır.",
         "must_read_at_card_scale": "En yakın el görünmeyen kişiye küpeşteden uzanır.",
         "must_remain_unresolved": "Kart seçilmeden önce oyuncuların niyeti ve olayın sonraki toplumsal sonucu."
       },
@@ -7033,7 +7029,7 @@
           "Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: HAR-AD-14 / Bir Kişilik Eksildik",
+          "Exact kimlik ve kaynak metni: HAR-AD-14 / Yoklamada Bir Eksik",
           "Tek ana görsel fiil: En yakın el görünmeyen kişiye küpeşteden uzanır.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -7047,8 +7043,8 @@
         "card_specific_note": "Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.",
         "test": "Replace any proper noun with its functional description. The scene must still communicate the same emotional and gameplay truth."
       },
-      "director_question": "Bir Kişilik Eksildik yalnız güzel/tehlikeli bir manzara mı, yoksa oyuncuların rota tartışmasını değiştirecek bir karar alanı mı?",
-      "artist_value_add_target": "Bir Kişilik Eksildik için sanatçı katkısı, briefteki nesneleri saymak değil; “Bir insan boşluğu; düşüş olmuş bitmiş.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.",
+      "director_question": "Yoklamada Bir Eksik yalnız güzel/tehlikeli bir manzara mı, yoksa oyuncuların rota tartışmasını değiştirecek bir karar alanı mı?",
+      "artist_value_add_target": "Yoklamada Bir Eksik için sanatçı katkısı, briefteki nesneleri saymak değil; “Bir insan boşluğu; düşüş olmuş bitmiş.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.",
       "obvious_solution_to_avoid": "Can halkası/kanca, görünür düşen yüz, aynı küpeşte, iten el, martı yok.",
       "subject_character_event_identity": "Düşen kişi görünmez; farklı yaşta iki tayfanın elleri küpeşteden aşağı uzanır.",
       "age_face_body_silhouette_or_event_main_form": "Güvertede devrilmiş fakat bağlı ayakkabı değil, tek iş eldiveni; aşağı yönlü iki kol.",
@@ -7074,11 +7070,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-15",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Güverte Islak, Bahane Kuru",
@@ -7159,11 +7155,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-16",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kıpırdamayan Yelken",
@@ -7203,7 +7199,7 @@
           "Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: HAR-AD-16 / Rüzgârın İstifa Dilekçesi",
+          "Exact kimlik ve kaynak metni: HAR-AD-16 / Kıpırdamayan Yelken",
           "Tek ana görsel fiil: Öndeki küçük flok, tek zayıf hava nefesiyle bir an şişer.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -7244,11 +7240,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-17",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Lodos Arkadan Esiyor",
@@ -7329,11 +7325,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-18",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Akıntı Postası",
@@ -7373,7 +7369,7 @@
           "Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: HAR-AD-18 / Denizin Kargo Şubesi",
+          "Exact kimlik ve kaynak metni: HAR-AD-18 / Akıntı Postası",
           "Tek ana görsel fiil: Kanca, ipi kopmamış paketin bağını yakalar.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -7414,11 +7410,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-19",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Sahibi Bulunamayan Sandık",
@@ -7499,11 +7495,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-20",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Vergisiz Fener Alayı",
@@ -7584,11 +7580,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-21",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Dümeni Dinlemeyen Su",
@@ -7628,7 +7624,7 @@
           "Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: HAR-AD-21 / Denizin Geri Vitesi",
+          "Exact kimlik ve kaynak metni: HAR-AD-21 / Dümeni Dinlemeyen Su",
           "Tek ana görsel fiil: Ters akıntı pruvanın bir yanını itip o koridora girişi kapatır.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -7669,11 +7665,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-22",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Peksimeti Islatan Sağanak",
@@ -7754,11 +7750,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-23",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Uçan Balık Yağmuru",
@@ -7839,18 +7835,18 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-24",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Güverteyi Yalayan Dalga",
         "category": "Açık Deniz",
         "family": "Güverteyi Yalayan Dalga",
         "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
-        "flavor": "Dalga geldi. Deniz suçunu kabul etmedi."
+        "flavor": "Dalga çekilince güvertede yalnız başkasının çorabı kaldı."
       },
       "first_two_seconds_emotion": "Geniş darbe; iki kayıp aynı anda.",
       "visual_narrative_aim": "İki kişinin Güç kaybını kişileri zarla hedeflenmiş gibi işaretlemeden, güverteyi süpüren tek dalganın iki ayrı eşya yuvasını boşaltmasıyla anlatmak.",
@@ -7924,11 +7920,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-25",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Direk Çatlatan Bora",
@@ -8009,18 +8005,18 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-26",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Mizanayı Döven Dalga",
         "category": "Açık Deniz",
         "family": "Fırtına",
         "effect": "Gemi 1 Gövde kaybeder.",
-        "flavor": "Dalga üç kere vurdu. Dördüncüsünde özür dilemedi."
+        "flavor": "Yelkenci yırtığı diktiği yerden tanıdı."
       },
       "first_two_seconds_emotion": "Tekrarlı ezilme; üçüncü vuruş bekleniyor.",
       "visual_narrative_aim": "Mizana hasarını tek dev dalga değil, aynı noktaya art arda gelen üç farklı boy dalganın ritmiyle anlatmak.",
@@ -8094,11 +8090,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-27",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Karayel Tokadı",
@@ -8179,11 +8175,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-28",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Bitmeyen Sağanak",
@@ -8223,7 +8219,7 @@
           "Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: HAR-AD-28 / Kırkikindi Açıkta Yakaladı",
+          "Exact kimlik ve kaynak metni: HAR-AD-28 / Bitmeyen Sağanak",
           "Tek ana görsel fiil: Yerel sağanak geminin kıç kaplamasından tek parçayı söker.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -8264,11 +8260,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-29",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Alabora Olmadık Sayılır",
@@ -8349,11 +8345,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AD-30",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Bir Bulutun Kişisel Meselesi",
@@ -8434,11 +8430,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Duvar Gibi Kayalık",
@@ -8519,18 +8515,18 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-02",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Dibi Görünen Servet",
         "category": "Kayalık",
         "family": "Batık Kalyon",
-        "effect": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanır.",
-        "flavor": "Batık gemi susuyordu; eşyaları konuşkandı."
+        "effect": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanılır.",
+        "flavor": "Ambarın kilidi hâlâ kapalıydı. Duvarı yoktu."
       },
       "first_two_seconds_emotion": "Açgözlü açıklık; servet göz önünde ama su altında.",
       "visual_narrative_aim": "Güç kazanımını hazine parıltısı değil, berrak suda parçalanmış batığın işe yarar malzemesinin görünmesiyle anlatmak.",
@@ -8604,11 +8600,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-03",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Yolun Bittiği Yer",
@@ -8689,11 +8685,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-04",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Pruva Törpüsü",
@@ -8774,11 +8770,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-05",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Taşın Şakası Olmaz",
@@ -8859,11 +8855,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-06",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "İğne Deliğinden Sefer",
@@ -8944,11 +8940,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-07",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kestirme Diye Girilen Yer",
@@ -9029,11 +9025,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-08",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kaçakçının Unuttuğu Oyuk",
@@ -9114,11 +9110,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-09",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Kırılan Sandıklar",
@@ -9199,11 +9195,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-10",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "İki Taraftan Sıyırdık",
@@ -9284,11 +9280,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-11",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Suyun Altındaki Diş",
@@ -9369,11 +9365,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-KY-12",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Haritada İnce Çizgi",
@@ -9454,18 +9450,18 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AA-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Ağzı Açık Ambar",
         "category": "Ada",
         "family": "Erzak Adası",
         "effect": "2 Güç kazanılır. İki farklı oyuncuya verilir.",
-        "flavor": "Kimse sahibinin nerede olduğunu sormadı. Soğanlar sağlamdı."
+        "flavor": "Erzağı herkes taşıdı. Borcun kime yazılacağını sonra konuşacaklar."
       },
       "first_two_seconds_emotion": "Bolluk düzenli ama güvenilmez.",
       "visual_narrative_aim": "İki farklı oyuncuya giden iki Gücü, ada ikmalinin cömertliğini modern konserve veya tropik bereket klişesi olmadan çift işlevsel paketle anlatmak.",
@@ -9498,7 +9494,7 @@
           "Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: HAR-AA-01 / Kumanya Cumhuriyeti",
+          "Exact kimlik ve kaynak metni: HAR-AA-01 / Ağzı Açık Ambar",
           "Tek ana görsel fiil: Adalılar iki demeti aynı anda farklı ellere uzatır.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -9539,17 +9535,17 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AA-02",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Terk Edilmiş Sahil Karakolu",
         "category": "Ada",
         "family": "Terk Edilmiş Karakol",
-        "effect": "1 Güç kazanılır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+        "effect": "1 Güç kazanılır. Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
         "flavor": "Nöbetçi gitmiş; dedikodu defteri kalmış."
       },
       "first_two_seconds_emotion": "Boş görev yeri; bilgi insandan uzun yaşamış.",
@@ -9624,11 +9620,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AA-03",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Misafirperverlik Biraz Fazla",
@@ -9709,11 +9705,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AA-04",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Bir Ustanın Son Tezgâhı",
@@ -9794,18 +9790,18 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AA-05",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Korsanların Mola Yeri",
         "category": "Ada",
         "family": "Korsanların Mola Yeri",
         "effect": "Gücü olanlar arasından zarla seçilen iki kişi bütün Güçlerini kaybeder.",
-        "flavor": "Mola verdiler. Sizin eşyalara."
+        "flavor": "Sandıkları taşımayı teklif ettiler. Geri getirmekten söz etmediler."
       },
       "first_two_seconds_emotion": "Dinlenme görüntüsü altında eşya kaybı.",
       "visual_narrative_aim": "İki kişinin bütün Güçlerini kaybetmesini korsan karikatürü veya beceriksiz tayfa olmadan, mola sırasında ustaca kesilen iki eşya bağının tek operasyonuyla anlatmak.",
@@ -9872,21 +9868,21 @@
       "manifest_index": 114,
       "card_identity": {
         "id": "HAR-AA-06",
-        "exact_name": "Gümrükçünün Tek Yaşadığı Ada",
+        "exact_name": "Tek Kişilik Gümrük",
         "front_family": "ISLAND",
         "back_binary": "BACK_ISLAND",
         "pilot_selected": true
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-AA-06",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
-        "name": "Gümrükçünün Tek Yaşadığı Ada",
+        "name": "Tek Kişilik Gümrük",
         "category": "Ada",
         "family": "Gümrük Adası",
         "effect": "Gemideki herkes en fazla bir Güç tutar; fazlasını kapalı atar.",
@@ -9897,7 +9893,7 @@
       "protected_intent": {
         "emotional_read": "Küçük makamın büyük baskısı; sıra daralıyor.",
         "dramatic_truth": "Herkesin en fazla bir Güç tutmasını, tek gümrükçünün sınırlı bedeni ile uzun denetim düzeninin görsel karşıtlığıyla anlatmak.",
-        "gameplay_truth": "Gümrükçünün Tek Yaşadığı Ada, manzara koleksiyonu değil; yüzü açıldığında rota tartışmasını ve geri alınamayan hareketi değiştiren coğrafi/olaysal baskıdır.",
+        "gameplay_truth": "Tek Kişilik Gümrük, manzara koleksiyonu değil; yüzü açıldığında rota tartışmasını ve geri alınamayan hareketi değiştiren coğrafi/olaysal baskıdır.",
         "must_read_at_card_scale": "Gümrükçü fazla nesneyi kapalı ıskarta sepetine indirir.",
         "must_remain_unresolved": "Kart seçilmeden önce oyuncuların niyeti ve olayın sonraki toplumsal sonucu."
       },
@@ -9923,7 +9919,7 @@
           "Kart kimliğine hizmet eden tekil doğal iz; logo, yazı veya tekrar eden maskot olmadan"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: HAR-AA-06 / Gümrükçünün Tek Yaşadığı Ada",
+          "Exact kimlik ve kaynak metni: HAR-AA-06 / Tek Kişilik Gümrük",
           "Tek ana görsel fiil: Gümrükçü fazla nesneyi kapalı ıskarta sepetine indirir.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -9937,8 +9933,8 @@
         "card_specific_note": "Kart adı kaynakta korunur; illüstrasyon okunabilir ad, baş harf, slogan, arma veya özel isim gerektirmeden çalışır.",
         "test": "Replace any proper noun with its functional description. The scene must still communicate the same emotional and gameplay truth."
       },
-      "director_question": "Gümrükçünün Tek Yaşadığı Ada yalnız güzel/tehlikeli bir manzara mı, yoksa oyuncuların rota tartışmasını değiştirecek bir karar alanı mı?",
-      "artist_value_add_target": "Gümrükçünün Tek Yaşadığı Ada için sanatçı katkısı, briefteki nesneleri saymak değil; “Küçük makamın büyük baskısı; sıra daralıyor.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.",
+      "director_question": "Tek Kişilik Gümrük yalnız güzel/tehlikeli bir manzara mı, yoksa oyuncuların rota tartışmasını değiştirecek bir karar alanı mı?",
+      "artist_value_add_target": "Tek Kişilik Gümrük için sanatçı katkısı, briefteki nesneleri saymak değil; “Küçük makamın büyük baskısı; sıra daralıyor.” duygusunu gözlenmiş tek bir beden, malzeme veya mekân davranışıyla yoğunlaştırmaktır.",
       "obvious_solution_to_avoid": "Okunabilir form/etiket, üniforma logosu, kalabalık aynı yüz, bıyıklı memur klişesi, tabela, hayvan yok.",
       "subject_character_event_identity": "İnce, ellili yaşlarda, alopesi nedeniyle sakal/bıyıksız yalnız gümrükçü; farklı ellerden oluşan kuyruk, aynı model yok.",
       "age_face_body_silhouette_or_event_main_form": "Tek küçük dik figür, önünde her kişiden yalnız bir nesne kalan uzun dar masa; fazla nesneler kapalı sepetlere gider.",
@@ -9964,17 +9960,17 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-FN-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Vardiya Defterli Fener",
         "category": "Deniz Feneri",
         "family": "Çalışan Fener",
-        "effect": "Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+        "effect": "Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
         "flavor": "Işık yol gösterdi; defter kimin baktığını yazdı."
       },
       "first_two_seconds_emotion": "Işık ile gözetim aynı şey değil.",
@@ -10049,11 +10045,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-FN-02",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Bekçisi Gitmiş, Işığı Kalmış",
@@ -10134,11 +10130,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-FN-03",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Fenercinin Zulası",
@@ -10219,11 +10215,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "HAR-FN-04",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "Geceleri Parlayan Yalan",
@@ -10304,11 +10300,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SET-KL-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "KALKIŞ LİMANI",
@@ -10346,7 +10342,7 @@
           "İsim, arma veya yazıya ihtiyaç duymayan maddi metafor"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: SET-KL-01 / Kalkış Limanı",
+          "Exact kimlik ve kaynak metni: SET-KL-01 / KALKIŞ LİMANI",
           "Tek ana görsel fiil: San Cordelio’daki son palamar çözülür.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -10388,11 +10384,11 @@
       },
       "exact_source": {
         "repository_path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "git_blob": "0778cd5c79f9216ba803aa392d8ce9b37ede196e",
-        "sha256": "57dfdb77a49fd1a9bd5d8ba2fe3fbc9fc756c5267081efd5097ab393941d36e8",
+        "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
         "selector": "SET-VL-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "name": "VARIŞ LİMANI",
@@ -10430,7 +10426,7 @@
           "İsim, arma veya yazıya ihtiyaç duymayan maddi metafor"
         ],
         "closed_decisions": [
-          "Exact kimlik ve kaynak metni: SET-VL-01 / Varış / Hedef Limanı",
+          "Exact kimlik ve kaynak metni: SET-VL-01 / VARIŞ LİMANI",
           "Tek ana görsel fiil: Liman kılavuz kayığı bekleyen gemiye yaklaşır.",
           "Okunabilir resim-içi yazı, logo ve mechanic spoiler yok",
           "1721 teknoloji/malzeme sınırı ve diğer kartlarla çarpışma yasağı"
@@ -10476,7 +10472,7 @@
         "sha256": "dc3ca70f2b84d77eccfc6b8443d172c88a32db4808fe70538e3c1b4cdde2db56",
         "selector": "SET-KP-01",
         "source_status": "CURRENT_WORKING_SOURCE / EXACT_COPY",
-        "revision_task": "FOULWAKE-RECHECK-VISUAL-001"
+        "revision_task": "FOULWAKE-WHOLE-GAME-POLISH-001"
       },
       "exact_copy": {
         "title": "KAPTAN",
@@ -10548,7 +10544,7 @@
       "v27_narrative_spine_application": "KAPTANın Sadakati görselden açığa çıkmaz; kart yalnız eşitlik anındaki oyun otoritesini taşır."
     }
   ],
-  "current_stage": "FOULWAKE-RECHECK-VISUAL-001",
+  "current_stage": "WHOLE_GAME_POLISH_20260908",
   "project_owner_override": {
     "evidence": "governance/PROJECT_OWNER_KAPTAN_COPY_CORRECTION_20260830.json",
     "copy_source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",

@@ -1,15 +1,15 @@
 # FOULWAKE - hikâye omurgası ve ses kılavuzu
 
-**7 Eylül 2026 · Uygulanmış v2.7 çalışma metni · kilitli sürüm değildir.**
+**8 Eylül 2026 · Uygulanmış v2.7 çalışma metni · kilitli sürüm değildir.**
 
-Bu kayıt artık boş sahne şablonu değildir. Tam anlatı `FOULWAKE_RULEBOOK_STORY_v2.7.md`, oynama sırası `FOULWAKE_KURAL_KITABI_v2.7.md`, kartların asıl metni kart JSON'larıdır. Başeditör, proje sahibinin güncel talimatıyla Hikâye Editörü ve Simülasyon QA görevlerini bu teslim için üstlenmiştir. Önceki CAN-07'nin yalnız küçük öneri üretme sınırı bu açık revizyon talimatıyla aşılmıştır; kilitli v2.6 yeniden yazılmamıştır.
+Bu kayıt artık boş sahne şablonu değildir. Tam anlatı `FOULWAKE_RULEBOOK_STORY_v2.7.md`, oynama sırası `FOULWAKE_KURAL_KITABI_v2.7.md`, kartların asıl metni kart JSON'larıdır. Başeditör, proje sahibinin güncel talimatıyla Hikâye Editörü, Simülasyon QA, Sanat Yönetimi ve Görsel Uygulama görevlerini bu teslim için üstlenmiştir. Önceki CAN-07'nin yalnız küçük öneri üretme sınırı bu açık revizyon talimatıyla aşılmıştır; kilitli v2.6 yeniden yazılmamıştır.
 
 ## Korunan dünya ve değişen ad
 
 | Kimlik | Bu sürümdeki sınır |
 |---|---|
 | CAN-01 | 1721'in maddi zemini: yelken, sağlık kâğıdı, borç, tiryak, karantina ve vardiya. Modern teknoloji veya tıp bilgisi karakterlere aktarılmaz. |
-| CAN-02 | Arden, San Cordelio, Saint Verena, Eleonora, Mattias Veyr ve Gusto Varela korunur. |
+| CAN-02 | Arden Krallığı eve dönüş yeridir; San Cordelio ecza rıhtımı kalkış, Saint Verena Karantina Limanı teslim eşiğidir. Eleonora, Mattias Veyr ve Gusto Varela korunur. |
 | CAN-03 | Eski Siyah Mühür adı yerine **Kuru Pay** kullanılır. Bu, önce kıyıda kalanların kazancına verilen lakaptır; tek merkezli bir örgütün doğrulanmış adı değildir. |
 | CAN-04 | Gusto'nun akıbeti, eksik sayfaların faili ve balmumunun ilişkisi bilinmez. Moderatör gizlice bir doğru cevap seçmez. |
 | CAN-05 | Kara komedi, çıkarın ve gündelik alışkanlığın tehlikede bile sürmesinden doğar. Acı çeken kişiyi şakanın hedefi yapmaya gerek yoktur. |
@@ -51,6 +51,8 @@ Dört küçük gönderme yalnız nesne veya durum düzeyindedir: emanet şapka, 
 
 ## Uygulama disiplini
 
-Atmosfer cümlesi kısa tutulur, ardından yazılı olay uygulanır. Oyuncunun konuşması ve kararı anlatıcı tarafından doldurulmaz. §17 merak edenler içindir. Görsel işaret, kostüm, illüstrasyon veya yerleşim kararı bu teslimin alanı değildir; kabul edilmiş KAPTAN figürü kendiliğinden Gusto yapılmaz.
+Atmosfer cümlesi kısa tutulur, ardından yazılı olay uygulanır. Oyuncunun konuşması ve kararı anlatıcı tarafından doldurulmaz. §17 merak edenler içindir. Görsel ve yerleşim kontrolü 8 Eylül owner yetkisiyle bu teslimin kapsamındadır. Güncel sanat kararı FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md içindedir; kabul edilmiş KAPTAN figürü kendiliğinden Gusto yapılmaz.
 
 Bu revizyonun değişiklikleri ve kaynak karşılaştırmaları `FOULWAKE_EDITORIAL_DECISIONS_v2.7.json` ve `qa/editorial_revision/` altında izlenir. Tarihsel 20 Ağustos hikâye PASS'i önceki committe korunur; yeni metnin insanlarla denendiği anlamına gelmez.
+
+8 Eylül tam kontrolü: `qa/whole_game_polish_20260908/review.md`. Sözcük, kart ve baskı düzeltmeleri burada kayıtlıdır; adların anlatısal işlevi korunur.

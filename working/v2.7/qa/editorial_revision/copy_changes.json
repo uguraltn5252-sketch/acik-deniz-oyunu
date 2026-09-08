@@ -1,6 +1,6 @@
 {
   "baseline": "source_inventory.json#baseline_records",
-  "field_change_count": 127,
+  "field_change_count": 135,
   "changes": [
     {
       "id": "KAR-01",
@@ -250,9 +250,15 @@
     },
     {
       "id": "GUC-27",
+      "field": "time",
+      "before": "Olay açılınca",
+      "after": "Hareket sırasında"
+    },
+    {
+      "id": "GUC-27",
       "field": "effect",
       "before": "Etki uygulanmadan önce önceki yere dön ve başka yasal Yakın Ufka git. İlk karta gerçekten girildiyse kart açık ve ziyaret edilmiş kalır; olayı yeniden çalışmaz. İlk kart Geçilmez Kayalıksa Gemi o kareye hiç girmiş/ziyaret etmiş sayılmaz; Geçilmez açık engel kalır ve başka yasal Yakın Ufka yönlenilebilir. Ada girişi İskorbütü kalıcı temizler. Kullanıldıktan sonra oyun dışına çıkar.",
-      "after": "Olayın etkisi uygulanmadan önce gemiyi önceki konumuna döndür ve oradan başka bir yasal Yakın Ufka git. Girilmiş ilk kart açık ve ziyaret edilmiş kalır; olayı tekrar çalışmaz. Ada girişi İskorbütü kalıcı temizler. İlk kart Geçilmezse ona girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar."
+      "after": "Hareket sırasında, olay uygulanmadan önceki konuma dön; oradan başka yasal Yakın Ufka gir. İlk kart açık ve ziyaret edilmiş kalır; olayı tekrarlanmaz. Ada girişi İskorbütü kalıcı temizler. Geçilmeze girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar."
     },
     {
       "id": "SAD-T-01",
@@ -378,7 +384,7 @@
       "id": "SAD-T-07",
       "field": "flavor",
       "before": null,
-      "after": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Bir sandığın araya girmesini istiyorsun."
+      "after": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Getirdiğin sandıkların o kapıyı açmasını istiyorsun."
     },
     {
       "id": "SAD-T-08",
@@ -432,7 +438,7 @@
       "id": "SAD-T-10",
       "field": "flavor",
       "before": null,
-      "after": "Eve götüreceğin hediyeyi kaybettin. Kendin gidersen bir süre bunu konuşmak zorunda kalacaklar. Razısın."
+      "after": "Eve götüreceğin hediyeyi kaybettin. Eli boş dönünce söylenecekler. Dönmezsen susacaklar. Söylenmelerine razısın."
     },
     {
       "id": "SAD-H-01",
@@ -603,6 +609,12 @@
       "after": "Gemi 1 Gövde kaybeder. Yama Tahtası işlemez; Zıpkın Sandığı veya Tahtakakan engelleyebilir."
     },
     {
+      "id": "HAR-AD-14",
+      "field": "name",
+      "before": "Bir Kişilik Eksildik",
+      "after": "Yoklamada Bir Eksik"
+    },
+    {
       "id": "HAR-AD-15",
       "field": "flavor",
       "before": "Kimsenin ittiği yoktu. Herkesin eli doluydu.",
@@ -651,10 +663,22 @@
       "after": "Dümeni Dinlemeyen Su"
     },
     {
+      "id": "HAR-AD-24",
+      "field": "flavor",
+      "before": "Dalga geldi. Deniz suçunu kabul etmedi.",
+      "after": "Dalga çekilince güvertede yalnız başkasının çorabı kaldı."
+    },
+    {
       "id": "HAR-AD-25",
       "field": "flavor",
       "before": "Direk çatlamadı. İki ayrı direk olmaya karar verdi.",
       "after": "Kalafatçı çatlağa baktı. Sonra Kaptanın para kesesine."
+    },
+    {
+      "id": "HAR-AD-26",
+      "field": "flavor",
+      "before": "Dalga üç kere vurdu. Dördüncüsünde özür dilemedi.",
+      "after": "Yelkenci yırtığı diktiği yerden tanıdı."
     },
     {
       "id": "HAR-AD-28",
@@ -672,7 +696,13 @@
       "id": "HAR-KY-02",
       "field": "effect",
       "before": "Tayfa 1 Güç kazanır. Dipgören kullanılırsa 1 ek Güç kazanır.",
-      "after": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanır."
+      "after": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanılır."
+    },
+    {
+      "id": "HAR-KY-02",
+      "field": "flavor",
+      "before": "Batık gemi susuyordu; eşyaları konuşkandı.",
+      "after": "Ambarın kilidi hâlâ kapalıydı. Duvarı yoktu."
     },
     {
       "id": "HAR-KY-06",
@@ -702,19 +732,37 @@
       "id": "HAR-AA-01",
       "field": "flavor",
       "before": "Yönetim biçimi konserve, resmî dili peksimet.",
-      "after": "Kimse sahibinin nerede olduğunu sormadı. Soğanlar sağlamdı."
+      "after": "Erzağı herkes taşıdı. Borcun kime yazılacağını sonra konuşacaklar."
     },
     {
       "id": "HAR-AA-02",
       "field": "effect",
       "before": "Tayfa 1 Güç kazanır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
-      "after": "1 Güç kazanılır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz."
+      "after": "1 Güç kazanılır. Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür."
     },
     {
       "id": "HAR-AA-04",
       "field": "flavor",
       "before": "Usta ücret istemedi. Sorulmasını da beklemedi.",
       "after": "Usta deliği görünce sevindi. Sizden saklamaya çalışmadı."
+    },
+    {
+      "id": "HAR-AA-05",
+      "field": "flavor",
+      "before": "Mola verdiler. Sizin eşyalara.",
+      "after": "Sandıkları taşımayı teklif ettiler. Geri getirmekten söz etmediler."
+    },
+    {
+      "id": "HAR-AA-06",
+      "field": "name",
+      "before": "Gümrükçünün Tek Yaşadığı Ada",
+      "after": "Tek Kişilik Gümrük"
+    },
+    {
+      "id": "HAR-FN-01",
+      "field": "effect",
+      "before": "Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+      "after": "Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür."
     },
     {
       "id": "HAR-FN-02",

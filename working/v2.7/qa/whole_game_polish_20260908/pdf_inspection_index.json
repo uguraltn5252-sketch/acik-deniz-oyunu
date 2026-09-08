@@ -1,0 +1,652 @@
+{
+  "status": "PASS / SAME_OPERATOR_VISUAL_INSPECTION",
+  "pages": [
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 1,
+      "contact": "cards_01.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 2,
+      "contact": "cards_01.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 3,
+      "contact": "cards_01.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 4,
+      "contact": "cards_01.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 5,
+      "contact": "cards_02.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 6,
+      "contact": "cards_02.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 7,
+      "contact": "cards_02.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 8,
+      "contact": "cards_02.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 9,
+      "contact": "cards_03.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 10,
+      "contact": "cards_03.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 11,
+      "contact": "cards_03.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 12,
+      "contact": "cards_03.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 13,
+      "contact": "cards_04.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 14,
+      "contact": "cards_04.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 15,
+      "contact": "cards_04.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 16,
+      "contact": "cards_04.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 17,
+      "contact": "cards_05.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 18,
+      "contact": "cards_05.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 19,
+      "contact": "cards_05.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 20,
+      "contact": "cards_05.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 21,
+      "contact": "cards_06.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 22,
+      "contact": "cards_06.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 23,
+      "contact": "cards_06.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 24,
+      "contact": "cards_06.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 25,
+      "contact": "cards_07.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 26,
+      "contact": "cards_07.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 27,
+      "contact": "cards_07.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 28,
+      "contact": "cards_07.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 29,
+      "contact": "cards_08.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 30,
+      "contact": "cards_08.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 31,
+      "contact": "cards_08.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 32,
+      "contact": "cards_08.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 33,
+      "contact": "cards_09.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 34,
+      "contact": "cards_09.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 35,
+      "contact": "cards_09.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 36,
+      "contact": "cards_09.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 37,
+      "contact": "cards_10.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 38,
+      "contact": "cards_10.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 39,
+      "contact": "cards_10.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 40,
+      "contact": "cards_10.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 41,
+      "contact": "cards_11.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 42,
+      "contact": "cards_11.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 43,
+      "contact": "cards_11.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 44,
+      "contact": "cards_11.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 45,
+      "contact": "cards_12.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 46,
+      "contact": "cards_12.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 47,
+      "contact": "cards_12.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "page": 48,
+      "contact": "cards_12.png",
+      "source_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 1,
+      "contact": "book_01.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 2,
+      "contact": "book_01.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 3,
+      "contact": "book_01.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 4,
+      "contact": "book_01.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 5,
+      "contact": "book_02.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 6,
+      "contact": "book_02.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 7,
+      "contact": "book_02.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 8,
+      "contact": "book_02.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 9,
+      "contact": "book_03.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 10,
+      "contact": "book_03.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 11,
+      "contact": "book_03.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 12,
+      "contact": "book_03.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 13,
+      "contact": "book_04.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 14,
+      "contact": "book_04.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 15,
+      "contact": "book_04.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 16,
+      "contact": "book_04.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 17,
+      "contact": "book_05.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 18,
+      "contact": "book_05.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 19,
+      "contact": "book_05.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 20,
+      "contact": "book_05.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 21,
+      "contact": "book_06.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 22,
+      "contact": "book_06.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 23,
+      "contact": "book_06.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 24,
+      "contact": "book_06.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 25,
+      "contact": "book_07.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 26,
+      "contact": "book_07.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 27,
+      "contact": "book_07.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 28,
+      "contact": "book_07.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 29,
+      "contact": "book_08.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "page": 30,
+      "contact": "book_08.png",
+      "source_sha256": "341bb61222e15cbfc9cbc6fe5c2fbc6449417e35a64b31e007eb5af5df5b61df"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 1,
+      "contact": "review_01.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 2,
+      "contact": "review_01.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 3,
+      "contact": "review_01.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 4,
+      "contact": "review_01.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 5,
+      "contact": "review_02.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 6,
+      "contact": "review_02.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 7,
+      "contact": "review_02.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 8,
+      "contact": "review_02.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 9,
+      "contact": "review_03.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 10,
+      "contact": "review_03.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 11,
+      "contact": "review_03.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 12,
+      "contact": "review_03.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 13,
+      "contact": "review_04.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 14,
+      "contact": "review_04.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 15,
+      "contact": "review_04.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 16,
+      "contact": "review_04.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 17,
+      "contact": "review_05.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 18,
+      "contact": "review_05.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 19,
+      "contact": "review_05.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 20,
+      "contact": "review_05.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 21,
+      "contact": "review_06.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 22,
+      "contact": "review_06.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 23,
+      "contact": "review_06.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    },
+    {
+      "pdf": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "page": 24,
+      "contact": "review_06.png",
+      "source_sha256": "4469a60727a6ee01bacdf5d76893bbf539ff42c9533e6b192ae1000963e4bf56"
+    }
+  ],
+  "final_changed_sheets": [
+    "cards_01.png",
+    "cards_02.png",
+    "cards_03.png",
+    "cards_04.png",
+    "cards_05.png",
+    "cards_06.png",
+    "cards_07.png",
+    "cards_08.png",
+    "cards_09.png",
+    "cards_10.png",
+    "cards_11.png",
+    "cards_12.png",
+    "book_01.png",
+    "book_02.png",
+    "book_03.png",
+    "book_04.png",
+    "book_05.png",
+    "book_06.png",
+    "book_07.png",
+    "book_08.png",
+    "review_01.png",
+    "review_02.png",
+    "review_03.png",
+    "review_04.png",
+    "review_05.png",
+    "review_06.png"
+  ],
+  "previous_review": "All 102 pages of first pass viewed; final changed sheets re-rendered.",
+  "inspected_pages": 102,
+  "inspected_contact_sheets": 26,
+  "review_method": "All 48 print, 24 review and 30 rulebook pages of the final build were rendered and directly viewed in 26 contact sheets. Detailed card/text checks and 300 DPI lighthouse comparison supplement the page review.",
+  "reviewer": "CHIEF_EDITOR / same operator as producer",
+  "independent_review": false,
+  "physical_print_test": false
+}

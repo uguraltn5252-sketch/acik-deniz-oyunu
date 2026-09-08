@@ -1,0 +1,18 @@
+{
+  "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+  "comparison": "Final upper printed scene vs identical original source at identical scale; native PDF composition, no regenerated upper pixels",
+  "dpi": 300,
+  "comparison_source_rows": [
+    0,
+    649
+  ],
+  "join_source_row": 650,
+  "width_px": 898,
+  "height_px": 465,
+  "exact_pixel_equality": true,
+  "max_channel_difference": 0,
+  "mean_channel_difference": 0.0,
+  "original_raster_sha256": "f5bb30ce3ab82d6f49aa0ae80db3b52b74224167a6ab9d1d002ea0d48ee7f54d",
+  "final_raster_sha256": "f5bb30ce3ab82d6f49aa0ae80db3b52b74224167a6ab9d1d002ea0d48ee7f54d",
+  "scope_limit": "The split boundary itself is visually inspected; the lower sea intentionally changes."
+}

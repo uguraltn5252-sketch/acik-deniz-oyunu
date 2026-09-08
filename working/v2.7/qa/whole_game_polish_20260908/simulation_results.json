@@ -1,0 +1,355 @@
+{
+  "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+  "seed_formula": "SHA256(FOULWAKE-20260907-N-length-persona-index), first 8 bytes big endian",
+  "evidence_class": "HEURISTIC_WHOLE_VOYAGE_STRESS / SAME_OPERATOR / NOT_RULE_COMPLETE / NOT_HUMAN_PLAYTEST",
+  "python": "3.12.13",
+  "source": {
+    "v26_zip_sha256": "ffc9c17c725e6093c62a3ebddc5f19c36fb0647f6a51a3e7014852fe0623d534",
+    "v25_zip_sha256": "975dd77d435a835fcf3faa864c5624b0542fadb419fa7d34217ed32fe87aa046",
+    "verified_manifest_members": 44,
+    "used_member_sha256": {
+      "OYUN_SIMULASYON_SPEC_v2.5.json": "8281acdb3835fcadc5f97a24fc934b41a7c377f36b03856ab86632cb971f2b9f",
+      "prototype_balance_sim_v2_5.py": "b791db9e24140e3be7559593b5030b7d3118d848089d6a8af56d2f42980b8a28",
+      "tam_sistem_sim_v2_5.py": "0493bfb1f4cdeb37a9beeeb726e8abb6509cf1300472d0094fb3766dbdba4024",
+      "OYUN_TAM_KURALLAR_v2.5.md": "8a88b5b7a7be5fcbef1662ce0f7c8b8aa39eba09a20e5dce41f45181d3bdf8bf",
+      "OYUN_SIMULASYON_SPEC_v2.5.delta.json": "7354278d575191a2cb334949015f0c2664041c86985de785ce48c4acd6c443e9"
+    }
+  },
+  "paired_setups": 1800,
+  "total_games": 3600,
+  "seeds_per_player_length_persona": 20,
+  "variants": {
+    "A": "separate Sea/Rock visible category",
+    "B": "shared Sea/Rock visible category; current v2.7 decision"
+  },
+  "summary": {
+    "A": {
+      "games": 1800,
+      "crew_wins": 1059,
+      "crew_win_rate": 0.5883333333333334,
+      "mean_days": 5.576666666666667,
+      "reasons": {
+        "port": 1059,
+        "sunk": 602,
+        "scurvy": 116,
+        "crew_extinct": 23
+      },
+      "empty_ship_stalemates": 0,
+      "identity_discards": 0
+    },
+    "B": {
+      "games": 1800,
+      "crew_wins": 1010,
+      "crew_win_rate": 0.5611111111111111,
+      "mean_days": 5.5905555555555555,
+      "reasons": {
+        "port": 1010,
+        "sunk": 639,
+        "scurvy": 127,
+        "crew_extinct": 24
+      },
+      "empty_ship_stalemates": 0,
+      "identity_discards": 0
+    }
+  },
+  "by_player_count": {
+    "6": {
+      "A": {
+        "games": 180,
+        "crew_wins": 80,
+        "crew_win_rate": 0.4444444444444444,
+        "mean_days": 5.227777777777778,
+        "reasons": {
+          "port": 80,
+          "sunk": 84,
+          "scurvy": 9,
+          "crew_extinct": 7
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 74,
+        "crew_win_rate": 0.4111111111111111,
+        "mean_days": 5.188888888888889,
+        "reasons": {
+          "port": 74,
+          "sunk": 91,
+          "scurvy": 8,
+          "crew_extinct": 7
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "7": {
+      "A": {
+        "games": 180,
+        "crew_wins": 97,
+        "crew_win_rate": 0.5388888888888889,
+        "mean_days": 5.5777777777777775,
+        "reasons": {
+          "port": 97,
+          "scurvy": 10,
+          "sunk": 66,
+          "crew_extinct": 7
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 97,
+        "crew_win_rate": 0.5388888888888889,
+        "mean_days": 5.583333333333333,
+        "reasons": {
+          "port": 97,
+          "scurvy": 11,
+          "sunk": 68,
+          "crew_extinct": 4
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "8": {
+      "A": {
+        "games": 180,
+        "crew_wins": 99,
+        "crew_win_rate": 0.55,
+        "mean_days": 5.622222222222222,
+        "reasons": {
+          "scurvy": 19,
+          "port": 99,
+          "sunk": 56,
+          "crew_extinct": 6
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 96,
+        "crew_win_rate": 0.5333333333333333,
+        "mean_days": 5.561111111111111,
+        "reasons": {
+          "port": 96,
+          "sunk": 58,
+          "crew_extinct": 11,
+          "scurvy": 15
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "9": {
+      "A": {
+        "games": 180,
+        "crew_wins": 107,
+        "crew_win_rate": 0.5944444444444444,
+        "mean_days": 5.683333333333334,
+        "reasons": {
+          "port": 107,
+          "sunk": 58,
+          "scurvy": 12,
+          "crew_extinct": 3
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 107,
+        "crew_win_rate": 0.5944444444444444,
+        "mean_days": 5.655555555555556,
+        "reasons": {
+          "sunk": 57,
+          "scurvy": 15,
+          "port": 107,
+          "crew_extinct": 1
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "10": {
+      "A": {
+        "games": 180,
+        "crew_wins": 109,
+        "crew_win_rate": 0.6055555555555555,
+        "mean_days": 5.616666666666666,
+        "reasons": {
+          "port": 109,
+          "scurvy": 14,
+          "sunk": 57
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 99,
+        "crew_win_rate": 0.55,
+        "mean_days": 5.677777777777778,
+        "reasons": {
+          "port": 99,
+          "scurvy": 18,
+          "sunk": 63
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "11": {
+      "A": {
+        "games": 180,
+        "crew_wins": 111,
+        "crew_win_rate": 0.6166666666666667,
+        "mean_days": 5.661111111111111,
+        "reasons": {
+          "port": 111,
+          "sunk": 52,
+          "scurvy": 17
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 102,
+        "crew_win_rate": 0.5666666666666667,
+        "mean_days": 5.8,
+        "reasons": {
+          "port": 102,
+          "sunk": 59,
+          "scurvy": 18,
+          "crew_extinct": 1
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "12": {
+      "A": {
+        "games": 180,
+        "crew_wins": 128,
+        "crew_win_rate": 0.7111111111111111,
+        "mean_days": 5.644444444444445,
+        "reasons": {
+          "port": 128,
+          "sunk": 44,
+          "scurvy": 8
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 119,
+        "crew_win_rate": 0.6611111111111111,
+        "mean_days": 5.583333333333333,
+        "reasons": {
+          "sunk": 52,
+          "port": 119,
+          "scurvy": 9
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "13": {
+      "A": {
+        "games": 180,
+        "crew_wins": 119,
+        "crew_win_rate": 0.6611111111111111,
+        "mean_days": 5.75,
+        "reasons": {
+          "sunk": 50,
+          "port": 119,
+          "scurvy": 11
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 116,
+        "crew_win_rate": 0.6444444444444445,
+        "mean_days": 5.7,
+        "reasons": {
+          "sunk": 51,
+          "port": 116,
+          "scurvy": 13
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "14": {
+      "A": {
+        "games": 180,
+        "crew_wins": 114,
+        "crew_win_rate": 0.6333333333333333,
+        "mean_days": 5.527777777777778,
+        "reasons": {
+          "port": 114,
+          "sunk": 59,
+          "scurvy": 7
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 111,
+        "crew_win_rate": 0.6166666666666667,
+        "mean_days": 5.65,
+        "reasons": {
+          "port": 111,
+          "sunk": 60,
+          "scurvy": 9
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    },
+    "15": {
+      "A": {
+        "games": 180,
+        "crew_wins": 95,
+        "crew_win_rate": 0.5277777777777778,
+        "mean_days": 5.455555555555556,
+        "reasons": {
+          "sunk": 76,
+          "port": 95,
+          "scurvy": 9
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      },
+      "B": {
+        "games": 180,
+        "crew_wins": 89,
+        "crew_win_rate": 0.49444444444444446,
+        "mean_days": 5.5055555555555555,
+        "reasons": {
+          "sunk": 80,
+          "port": 89,
+          "scurvy": 11
+        },
+        "empty_ship_stalemates": 0,
+        "identity_discards": 0
+      }
+    }
+  },
+  "limitations": [
+    "Social dialogue, Captain elections and revotes remain heuristic abstractions.",
+    "Not all card interactions are modeled: see editorial_report.md; these rates cannot approve balance or physical backs.",
+    "Setup is paired; post-choice random streams diverge. This is not a controlled causal estimate of the back effect.",
+    "No human session, print/physical information leak test, art acceptance or release approval.",
+    "The 20260908 wording and GUC-27 window clarification are source-reviewed; this observation adapter does not execute every current card interaction."
+  ],
+  "run_date": "2026-09-08",
+  "rulebook_sha256": "9f8c34a3d894414c5ea7b21c11f9658abbbc30c6c9a6ee33749d8d8639172a3b"
+}

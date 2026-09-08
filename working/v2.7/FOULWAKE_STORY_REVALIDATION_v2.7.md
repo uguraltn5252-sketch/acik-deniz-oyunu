@@ -1,4 +1,20 @@
-# FOULWAKE - 7 Eylül metin revizyonu kontrolü
+# FOULWAKE — 8 Eylül bütün oyun kontrolü
+
+**IMPLEMENTED / SAME_OPERATOR_SELF_CHECK / NOT_LOCKED**
+
+Güncel görev FOULWAKE-WHOLE-GAME-POLISH-001. Üç hikâye belgesi, tam kural kitabı, 121 kartın bütün görünür metni ve bütün ön/arka resimler yeniden incelendi. Güncel oynama dosyaları `README_CURRENT_v2.7.md`, kapsam ve düzeltmeler `qa/whole_game_polish_20260908/review.md` içindedir.
+
+Üç eşleşen OKU bloğu artık 88 + 99 + 52 = 239 sözcüktür. 7 Eylül'deki 236'ya göre fark, San Cordelio ecza rıhtımı ve Arden Krallığı işlevini açılışta açıklayan üç sözcüktür. Bu sayı toplam kurulum uzunluğu veya sıkılma ölçümü değildir.
+
+Gece ve KAPTAN terminolojisi korunmuş; Batık Kalyon alıcısı, Kaderi Yeniden Yaz'ın hareket penceresi, kamusal açma/ilk giriş ayrımı ve Kaptan Kamaraya girdiğinde yeni Kaptanın izin vermesi açıklaştırılmıştır. İki kart adı kısalmış, yedi tat metni somutlaştırılmıştır. Hain gerekçeleri ve dört örtük gönderme korunmuştur.
+
+27 kural testi ve 3.600 model yolculuğu yeniden çalıştırıldı; tam kart etkileşimi eşdeğerliği veya insan eğlencesi kanıtı değildir. 121 ayrı ön resmi korunmuş; tek kuleli fener ve bütün PDF'ler yeniden üretilmiştir. İnsan oyunu, bağımsız estetik kabul ve fiziksel baskı beklenir.
+
+## Önceki 7 Eylül kontrolünün tarihsel kaydı
+
+Aşağıdaki sayılar ve pilot kapsamı o tarihteki teslimi anlatır; 8 Eylül sonucunun yerine kullanılmaz.
+
+### 7 Eylül metin revizyonu kontrolü
 
 **IMPLEMENTED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING / NOT_LOCKED**
 

@@ -1,18 +1,15 @@
-# FOULWAKE - güncel görsel sistem
+# FOULWAKE — güncel görsel sistem
 
-7 Eylül 2026 tam deste çalışma teslimi. Yetki: governance/v4/tasks/FOULWAKE-FULL-DECK-ART-001.json.
+8 Eylül 2026 · FOULWAKE-WHOLE-GAME-POLISH-001 · tam çalışma destesi.
 
-Güncel sanat ve baskı kararı: [FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md](visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md).
-Tam deste uygulaması ve yeni Fener kararı: [FOULWAKE_FULL_DECK_DECISIONS_v2.7.md](visual/art_direction/FOULWAKE_FULL_DECK_DECISIONS_v2.7.md).
+Güncel karar: [sanat ve uygulama](visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md). Güncel dosyalar: [baskı ve inceleme](visual/polish_20260908/README.md). 7 Eylül pilotu ve ilk tam deste tarihsel teslimlerdir.
 
-Copy: 120 kayıt için FOULWAKE_CARD_TEXTS_v2.7.json; KAPTAN için FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json. 121 brief aynı copy bloblarına bağlanır. KAPTAN ana figürü ve kabul edilmiş sanat patch'i korunur; tarihsel eski copy alıntıları güncel değildir. SRC-002 çözülüdür; 22 Kaptanın Çatlak Kupası, 23 Bayat Peksimet, 24 Islak Çorap.
+120 kartın copy kaynağı `FOULWAKE_CARD_TEXTS_v2.7.json`, KAPTAN'ınki `FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` dosyasıdır. 121 brief aynı güncel kaynaklara bağlanır. SRC-002: GUC-22 Kaptanın Çatlak Kupası, GUC-23 Bayat Peksimet, GUC-24 Islak Çorap. KAPTAN'ın kabul edilmiş resmi ve sabit kırpımı korunur.
 
-Güncel uygulama: visual/full_deck_20260907/. 109 yeni ön, 12 korunmuş ön ve yedi ortak arka ile 121 kartın tamamı resimlidir. Önceki altı arka kaynak korunur; BACK_LIGHTHOUSE yeni yandan görünümle değiştirilir. 48 sayfalık kart ana PDF'si ve 24 sayfalık tam görsel inceleme, depoda onar indirme bölümüne ayrılmıştır. Her baskı bölümü tam ön–arka çiftlerini içerir. Önceki A4 kural kitabı günceldir; eski pilot ve metin prototipi tarihsel olarak korunur.
+121 ayrı ön kaynak değişmedi. Fenerin eski üst sahnesi aynı ölçekte korunurken ters alt kopyası kaldırıldı; altta yalnız deniz vardır. Nihai tek kuleli arka `visual/polish_20260908/pdf/BACK_LIGHTHOUSE.pdf` dosyasıdır. Dört fener bu ortak masterı kullanır. Fener 0° yerleşir; diğer altı aile yarım dönüş eşlemesini korur. Deniz/Kayalık 42 kartta, Sadakat 15 kartta aynı aile arkasını paylaşır.
 
-Kesim: Harita 70×70 mm; Karakter ve üç yardımcı 70×120 mm; Güç/Erzak ve Sadakat 63,5×88,9 mm. Taşma 3 mm; metin güvenliği en az 4 mm. Modelin ürettiği görselde yazı yok; kanonik Türkçe metin ayrı şablonda. Yedi aile arkasında aile içi exact master, yarım dönüş ve gizli kimliği sızdırmama kontrolü yapılır.
+Harita 70×70 mm; Karakter ve üç yardımcı 70×120 mm; Güç/Erzak ve Sadakat 63,5×88,9 mm. Taşma 3 mm, metin güvenliği 4,5 mm. Etki 8,6, tat metni 8 punto. En düşük ön resim çözünürlüğü 386,94 DPI. HAR-AA-02'nin resim alanı 13,853 → 21,684 mm; GUC-27'ninki 14,790 → 18,706 mm. Bu ölçüler fiziksel okunurluk denemesi değildir.
 
-Etki 8,6 punto, flavor 8 punto kalır. Boşluk düzenlemesiyle en dar resim alanı HAR-AA-02'de 13,853 mm, GUC-27'de 14,79 mm olur. Kaynak resimler kırpılmaz; bağlayıcı KAPTAN'ın önceki sabit kırpımı korunur. En düşük ön resim çözünürlüğü 386,94 DPI'dır. Bu sayısal ölçüler fiziksel okunurluk kanıtı değildir.
+48 sayfalık kart PDF'si, 24 sayfalık görsel inceleme ve 30 sayfalık yeni kural kitabı hazırlandı. Depodaki onar indirme bölümünün toplam 99 sayfası ana dosyalarla raster olarak eşleşir; baskı bölümleri tam ön–arka çiftlerini korur. Tek fener üst sahnesinin 300 DPI karşılaştırmasında değişim sıfırdır. Diğer arkalarda kusursuz piksel dönüş simetrisi iddia edilmez.
 
-121 metin ve resim kimliği, 7 aile arkası ve bölümlerdeki 99 sayfa aynı operatörün teknik kontrolünden geçti. Arkalarda aynı kaynak ve 180 derece PDF yerleşimi doğrulandı; renderdaki sıfır olmayan dönüş farkları ölçülerek kaydedildi. Piksel düzeyinde kusursuz dönüş eşitliği iddia edilmez.
-
-Eski reddedilmiş çizim ve PDF'ler yalnız tarihsel kanıttır. Üreten ve inceleyen aynı operatördür; bağımsız onay yazılmaz.
+Kontrol kanıtı: [sonuçlar](qa/whole_game_polish_20260908/print_checks.json), [kaynak korunumu](qa/whole_game_polish_20260908/lighthouse_preservation_check.json), [inceleme](qa/whole_game_polish_20260908/review.md). Tek operatörün kontrolüdür; bağımsız estetik kabul, insan masası veya fiziksel opaklık/baskı sonucu değildir.

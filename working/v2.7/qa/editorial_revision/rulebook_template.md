@@ -1,6 +1,6 @@
 # FOULWAKE - Kuru Pay
 
-**Kural kitabı · v2.7 çalışma sürümü · 7 Eylül 2026**
+**Kural kitabı · v2.7 çalışma sürümü · 8 Eylül 2026**
 
 **6-15 oyuncu ve 1 tarafsız Moderatör.** Gizli sadakat, ortak gemi, birlikte seçilen rota.
 
@@ -25,7 +25,7 @@ Karakter ile Sadakat bağımsızdır. Kaptan Hain çıkabilir; özel yeteneği o
 
 **Hainler kazanır:** Gemi herhangi bir anda 0 Gövdeye düşerse; Limana girilmeden bütün Tayfa ölürse; Liman olayından sonra İskorbüt hâlâ etkinse; ya da Liman Gecesi şafağında yaşayan Tayfa kalmazsa.
 
-Bütün Hainler ölünce oyun bitmez. Mahsur veya Kamaradaki Tayfa hayattadır. Ölmüş bir oyuncu da takımıyla kazanır. **Limanı görmek veya Limana girmek tek başına zafer değildir.**
+Bütün Hainlerin ölmesi oyunu bitirmez. Mahsur veya Kamaradaki Tayfa hayattadır; ölü oyuncu da takımıyla kazanabilir. **Limanı görmek veya Limana girmek tek başına zafer değildir.**
 
 İlk karar için bilmen gereken: Kimse bildiğini doğru anlatmak zorunda değil. Bir rota önermeden önce “Bunu gördün mü, yoksa tahmin mi ediyorsun?” diye sorabilirsin; cevaba inanmak zorunda değilsin.
 
@@ -187,7 +187,7 @@ Gerekli sayıda Hain ve Tayfa kartını kendi gruplarından kapalı ve rastgele 
 
 Kaptan ölürse, Kamaraya girerse, mahsur kalırsa, Kayıkçı seferine çıkarsa veya başarılı İsyanla düşerse yeni Kaptan **hemen** seçilir. Dönen eski Kaptan makamı kendiliğinden geri almaz.
 
-### 4.2 Üç geceyi karıştırma
+### 4.2 Gece sırası ve Sis
 
 | Gece | Karakterler | Hain takımı |
 |---|---|---|
@@ -196,7 +196,7 @@ Kaptan ölürse, Kamaraya girerse, mahsur kalırsa, Kayıkçı seferine çıkars
 | Sonraki normal gece | Yakın → Uzak → diğer yazılı gece etkileri | Bir Yakın Ufka bakış **veya** bir saldırı. |
 | Sonraki Sis gecesi | Aynı sıra; Kıyıçizen çalışmaz. | Bir Yakın Ufka bakış **ve** bir saldırı olabilir. Fırtına Feneri saldırıyı kapatır. |
 
-Saldırı, gemide ve Kamarada olmayan uygun **bir Tayfaya** yapılır. Hain sayısı toplam saldırı sayısını artırmaz. Kamaradaki, mahsur ve Kayıkçı seferindeki Hain katılamaz. Hainler karar veremezse eylem boşa gider; Moderatör seçmez. Son gemi oyuncusunu düşürecek hedefleme yoktur.
+Saldırı, gemide bulunan ve Kamarada olmayan uygun **bir Tayfaya** yapılır. Hain sayısı toplam saldırı sayısını artırmaz. Kamaradaki, mahsur ve Kayıkçı seferindeki Hain katılamaz. Hainler karar veremezse eylem boşa gider; Moderatör seçmez. Son gemi oyuncusunu düşürecek hedefleme yoktur.
 
 ### 4.3 Tarafsız anlatım ve tempo
 
@@ -273,6 +273,8 @@ Kısıtları oluşma sırasıyla uygula; sonra iptal/kaldırma, sonra rota seçe
 | İlk gerçek giriş | Herkes | Açık ve ziyaret edilmiş | Çözülür. |
 | Çözülmüş karta yeniden giriş | Herkes | Ziyaret edilmiş kalır. | Tekrar çözülmez. |
 
+Kaderi Yeniden Yaz, hareket sırasında ilk giriş olayına veya Geçilmezin açılmasına tepki verir. Kart daha önce Pusulayla açılmış olsa da ilk girişte kullanılabilir. Pusula veya Fenerin uzaktaki bir kartı yalnız göstermesi bu pencereyi açmaz.
+
 Pusulayla açılan Geçilmez hemen kamusal engeldir. Gizlice görülen Geçilmez kapalı kalır; otomatik olarak kamusal rota yasağına dönüşmez.
 
 ### 6.5 Geçilmez ve acil geri dönüş
@@ -309,7 +311,7 @@ Liman olayından sonra İskorbüt hâlâ etkinse Hainler kazanır; “bir gece d
 
 İlk yolculuk günü ve Liman hariç, Harita olayı çözüldükten sonra en fazla **bir Suçlama veya İsyan** yapılır. Gündüz fazladan hareket oldu diye ikinci siyasi işlem doğmaz.
 
-Her ikisinde yaşayan, gemide ve Kamarada olmayan oyuncuların **salt çoğunluğu** gerekir: uygun oyuncu sayısının yarısından fazlası. Örneğin 7 uygun oyuncuda 4 destek gerekir. Bir Güç oy değerini değiştirirse yazılı oy değeri uygulanır; Kaptan için temel değer 1'dir. Beraberlik başarı değildir.
+Her ikisinde yaşayan, gemide bulunan ve Kamarada olmayan oyuncuların **salt çoğunluğu** gerekir: uygun oyuncu sayısının yarısından fazlası. Örneğin 7 uygun oyuncuda 4 destek gerekir. Bir Güç oy değerini değiştirirse yazılı oy değeri uygulanır; Kaptan için temel değer 1'dir. Beraberlik başarı değildir.
 
 ### 8.2 Suçlama
 
@@ -326,7 +328,7 @@ Yalnız Kaptana karşı yapılır. Başarırsa eski Kaptan bir gece Kamaraya gir
 
 ### 8.4 Kamara
 
-Oyuncu Kamaraya girerken Kaptan konuşma izni olup olmadığını açıkça belirler. İzin yoksa konuşma, fısıltı ve işaretle görüş bildirme yoktur. İzin varsa konuşabilir; **yine de** oy veremez, makam taşıyamaz, Karakter/Güç kullanamaz ve gece eylemine katılamaz. Hain saldırısının hedefi değildir.
+Oyuncu Kamaraya girerken görevdeki Kaptan konuşma izni olup olmadığını açıkça belirler. Kamaraya giren Kaptansa önce yeni Kaptan seçilir; izni yeni Kaptan verir. İzin yoksa konuşma, fısıltı ve işaretle görüş bildirme yoktur. İzin varsa konuşabilir; **yine de** oy veremez, makam taşıyamaz, Karakter/Güç kullanamaz ve gece eylemine katılamaz. Hain saldırısının hedefi değildir.
 
 Anahtar Deliği, Güç yasağının kendi metninde yazan tek istisnasıdır. Konuşma izni yoksa öğrendiğini o gün aktaramaz. Kamaraya gündüz giren kişi, gündüz kapanmadan Anahtar Deliğini kullanabilir; geceyi veya ertesi gün rota öncesini beklemez. Bir gecelik Kamara ertesi şafakta biter; Bir Kez Mahkûm kaydı silinmez. İsyan ve Seyir Zabtı bu kalıcı kaydı oluşturmaz.
 
@@ -390,7 +392,7 @@ Kaptan seçimindeki d12 bunun tersidir: **en yüksek** kazanır.
 |---|---|
 | Güç kaybı | Yaşayan, gemide, Kamarada olmayan ve en az bir gerçek Gücü olanlar |
 | Adam Denize! / Rehin Adası | Yaşayan, gemide, Kamarada olmayanlar; Kaptan da dahildir. Son gemi oyuncusu korunur. |
-| Hain saldırısı | Yaşayan, gemide ve Kamarada olmayan Tayfa; son gemi oyuncusu korunur. |
+| Hain saldırısı | Yaşayan, gemide bulunan ve Kamarada olmayan Tayfa; son gemi oyuncusu korunur. |
 
 Şüpheli Martı hedefini yalnız **uygunsa** ilk hedef yapar; diğer uygunluk kurallarını kaldırmaz. Kart, sonraki rastgele oyuncu hedefli Harita olayında çözülür ve atılır. Uygun değilse normal seçim uygulanır.
 
@@ -472,4 +474,4 @@ Tamamen önlenmiş etki, kartın adı veya denge etiketi yüzünden zararlı say
 
 ---
 
-Bu, güncel metin ve mekanik açıklama çalışma sürümüdür. Basılabilir çalışma dosyaları ve görsel pilot için README_CURRENT_v2.7.md dosyasına bakın. Teknik ve editoryal kontroller aynı operatörce yapılmıştır. İnsanlarla oynanabilirlik, eğlence ve fiziksel arka yüz testi ayrı doğrulama gerektirir. Kaynak ve değişiklik ayrıntıları `FOULWAKE_EDITORIAL_DECISIONS_v2.7.json` ile `qa/editorial_revision/` içindedir.
+Bu dosya çalışma sürümüdür. Fiziksel baskı ve insanlarla masa denemesi henüz yapılmadı.

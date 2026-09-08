@@ -1,6 +1,6 @@
 # FOULWAKE - Kuru Pay
 
-**v2.7 çalışma metni · 7 Eylül 2026**
+**v2.7 çalışma metni · 8 Eylül 2026**
 
 Kural kitabındaki anlatının kaynak dosyasıdır. Tam oyun akışı `FOULWAKE_KURAL_KITABI_v2.7.md` içindedir. Oyunda yalnız ilgili `OKU` bloğu okunur; §17 isteğe bağlı arka plandır. Proje sahibinin geçici hikâye/kural yetkisiyle hazırlanmıştır. v2.6 kilitli paketi değişmez.
 
@@ -8,7 +8,7 @@ Kural kitabındaki anlatının kaynak dosyasıdır. Tam oyun akışı `FOULWAKE_
 
 ### OKU
 
-Yıl 1721. San Cordelio'da yükünüz hazır. Siz, vebanın kırdığı Arden'e dönen sefer heyetisiniz. Yük defterinde adınız var; tiryak sandıklarını ve Doktor Veyr'in deneme defterlerini Saint Verena Karantina Limanı'na siz ulaştıracaksınız.
+Yıl 1721. San Cordelio'nun ecza rıhtımında yükünüz hazır. Siz, vebanın kırdığı Arden Krallığı'na dönen sefer heyetisiniz. Yük defterinde adınız var; tiryak sandıklarını ve Doktor Veyr'in deneme defterlerini Saint Verena Karantina Limanı'na siz ulaştıracaksınız.
 
 Veyr, terkibinin işe yarayacağını henüz kanıtlayamadı. Saray kâtibi sandıklara yine de **İLAÇ** yazdı.
 

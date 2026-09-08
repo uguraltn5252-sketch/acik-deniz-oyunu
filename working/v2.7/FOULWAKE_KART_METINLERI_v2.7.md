@@ -1,6 +1,6 @@
 # FOULWAKE - 121 kartın metni
 
-**v2.7 çalışma sürümü · 7 Eylül 2026**
+**v2.7 çalışma sürümü · 8 Eylül 2026**
 
 Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir. Tat metinleri ek kural veya görev vermez. Sadakat gerekçeleri yalnız kart sahibine aittir. Kimlikler korunmuştur.
 
@@ -394,9 +394,9 @@ Zaman: Sis açıldığında
 
 ### GUC-27 - Kaderi Yeniden Yaz
 
-Zaman: Olay açılınca
+Zaman: Hareket sırasında
 
-**Etki:** Olayın etkisi uygulanmadan önce gemiyi önceki konumuna döndür ve oradan başka bir yasal Yakın Ufka git. Girilmiş ilk kart açık ve ziyaret edilmiş kalır; olayı tekrar çalışmaz. Ada girişi İskorbütü kalıcı temizler. İlk kart Geçilmezse ona girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.
+**Etki:** Hareket sırasında, olay uygulanmadan önceki konuma dön; oradan başka yasal Yakın Ufka gir. İlk kart açık ve ziyaret edilmiş kalır; olayı tekrarlanmaz. Ada girişi İskorbütü kalıcı temizler. Geçilmeze girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.
 
 *Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir.*
 
@@ -464,7 +464,7 @@ Taraf: Tayfa
 
 **Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
-*Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Bir sandığın araya girmesini istiyorsun.*
+*Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Getirdiğin sandıkların o kapıyı açmasını istiyorsun.*
 
 ### SAD-T-08 - TAYFA
 
@@ -488,7 +488,7 @@ Taraf: Tayfa
 
 **Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
-*Eve götüreceğin hediyeyi kaybettin. Kendin gidersen bir süre bunu konuşmak zorunda kalacaklar. Razısın.*
+*Eve götüreceğin hediyeyi kaybettin. Eli boş dönünce söylenecekler. Dönmezsen susacaklar. Söylenmelerine razısın.*
 
 ### SAD-H-01 - HAİN
 
@@ -646,7 +646,7 @@ Kategori: Açık Deniz · Olay: Kraken
 
 *Tokalaşmaya çalışmadığı kesindi.*
 
-### HAR-AD-14 - Bir Kişilik Eksildik
+### HAR-AD-14 - Yoklamada Bir Eksik
 
 Kategori: Açık Deniz · Olay: Adam Denize!
 
@@ -732,7 +732,7 @@ Kategori: Açık Deniz · Olay: Güverteyi Yalayan Dalga
 
 **Etki:** Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.
 
-*Dalga geldi. Deniz suçunu kabul etmedi.*
+*Dalga çekilince güvertede yalnız başkasının çorabı kaldı.*
 
 ### HAR-AD-25 - Direk Çatlatan Bora
 
@@ -748,7 +748,7 @@ Kategori: Açık Deniz · Olay: Fırtına
 
 **Etki:** Gemi 1 Gövde kaybeder.
 
-*Dalga üç kere vurdu. Dördüncüsünde özür dilemedi.*
+*Yelkenci yırtığı diktiği yerden tanıdı.*
 
 ### HAR-AD-27 - Karayel Tokadı
 
@@ -794,9 +794,9 @@ Kategori: Kayalık · Olay: Geçilmez Kayalık
 
 Kategori: Kayalık · Olay: Batık Kalyon
 
-**Etki:** 1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanır.
+**Etki:** 1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanılır.
 
-*Batık gemi susuyordu; eşyaları konuşkandı.*
+*Ambarın kilidi hâlâ kapalıydı. Duvarı yoktu.*
 
 ### HAR-KY-03 - Yolun Bittiği Yer
 
@@ -884,13 +884,13 @@ Kategori: Ada · Olay: Erzak Adası
 
 **Etki:** 2 Güç kazanılır. İki farklı oyuncuya verilir.
 
-*Kimse sahibinin nerede olduğunu sormadı. Soğanlar sağlamdı.*
+*Erzağı herkes taşıdı. Borcun kime yazılacağını sonra konuşacaklar.*
 
 ### HAR-AA-02 - Terk Edilmiş Sahil Karakolu
 
 Kategori: Ada · Olay: Terk Edilmiş Karakol
 
-**Etki:** 1 Güç kazanılır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.
+**Etki:** 1 Güç kazanılır. Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.
 
 *Nöbetçi gitmiş; dedikodu defteri kalmış.*
 
@@ -916,9 +916,9 @@ Kategori: Ada · Olay: Korsanların Mola Yeri
 
 **Etki:** Gücü olanlar arasından zarla seçilen iki kişi bütün Güçlerini kaybeder.
 
-*Mola verdiler. Sizin eşyalara.*
+*Sandıkları taşımayı teklif ettiler. Geri getirmekten söz etmediler.*
 
-### HAR-AA-06 - Gümrükçünün Tek Yaşadığı Ada
+### HAR-AA-06 - Tek Kişilik Gümrük
 
 Kategori: Ada · Olay: Gümrük Adası
 
@@ -930,7 +930,7 @@ Kategori: Ada · Olay: Gümrük Adası
 
 Kategori: Deniz Feneri · Olay: Çalışan Fener
 
-**Etki:** Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.
+**Etki:** Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.
 
 *Işık yol gösterdi; defter kimin baktığını yazdı.*
 

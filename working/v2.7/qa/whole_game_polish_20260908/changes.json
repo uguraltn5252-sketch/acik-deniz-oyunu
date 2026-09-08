@@ -1,0 +1,177 @@
+{
+  "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+  "source_head": "50cb0c73854364812c5573e75f403619fe18e58a",
+  "changes": [
+    {
+      "id": "HAR-KY-02",
+      "field": "effect",
+      "before": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanır.",
+      "after": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanılır.",
+      "reason": "Alıcı / olay penceresi / ilk giriş açıklığı"
+    },
+    {
+      "id": "HAR-KY-02",
+      "field": "flavor",
+      "before": "Batık gemi susuyordu; eşyaları konuşkandı.",
+      "after": "Ambarın kilidi hâlâ kapalıydı. Duvarı yoktu.",
+      "reason": "Soyut veya eksik ifadeyi somut gemi davranışına çekmek"
+    },
+    {
+      "id": "HAR-AA-02",
+      "field": "effect",
+      "before": "1 Güç kazanılır. Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+      "after": "1 Güç kazanılır. Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
+      "reason": "Alıcı / olay penceresi / ilk giriş açıklığı"
+    },
+    {
+      "id": "HAR-FN-01",
+      "field": "effect",
+      "before": "Kaptan mevcut kapalı Yakın veya Uzak Ufuktan birini seçer; kart herkese açılır ve açık kalır. Karta girilmediyse olay henüz çözülmüş sayılmaz.",
+      "after": "Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
+      "reason": "Alıcı / olay penceresi / ilk giriş açıklığı"
+    },
+    {
+      "id": "GUC-27",
+      "field": "effect",
+      "before": "Olayın etkisi uygulanmadan önce gemiyi önceki konumuna döndür ve oradan başka bir yasal Yakın Ufka git. Girilmiş ilk kart açık ve ziyaret edilmiş kalır; olayı tekrar çalışmaz. Ada girişi İskorbütü kalıcı temizler. İlk kart Geçilmezse ona girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
+      "after": "Hareket sırasında, olay uygulanmadan önceki konuma dön; oradan başka yasal Yakın Ufka gir. İlk kart açık ve ziyaret edilmiş kalır; olayı tekrarlanmaz. Ada girişi İskorbütü kalıcı temizler. Geçilmeze girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
+      "reason": "Alıcı / olay penceresi / ilk giriş açıklığı"
+    },
+    {
+      "id": "HAR-AD-24",
+      "field": "flavor",
+      "before": "Dalga geldi. Deniz suçunu kabul etmedi.",
+      "after": "Dalga çekilince güvertede yalnız başkasının çorabı kaldı.",
+      "reason": "Soyut veya eksik ifadeyi somut gemi davranışına çekmek"
+    },
+    {
+      "id": "HAR-AD-26",
+      "field": "flavor",
+      "before": "Dalga üç kere vurdu. Dördüncüsünde özür dilemedi.",
+      "after": "Yelkenci yırtığı diktiği yerden tanıdı.",
+      "reason": "Soyut veya eksik ifadeyi somut gemi davranışına çekmek"
+    },
+    {
+      "id": "HAR-AA-05",
+      "field": "flavor",
+      "before": "Mola verdiler. Sizin eşyalara.",
+      "after": "Sandıkları taşımayı teklif ettiler. Geri getirmekten söz etmediler.",
+      "reason": "Soyut veya eksik ifadeyi somut gemi davranışına çekmek"
+    },
+    {
+      "id": "SAD-T-07",
+      "field": "flavor",
+      "before": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Bir sandığın araya girmesini istiyorsun.",
+      "after": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Getirdiğin sandıkların o kapıyı açmasını istiyorsun.",
+      "reason": "Soyut veya eksik ifadeyi somut gemi davranışına çekmek"
+    },
+    {
+      "id": "SAD-T-10",
+      "field": "flavor",
+      "before": "Eve götüreceğin hediyeyi kaybettin. Kendin gidersen bir süre bunu konuşmak zorunda kalacaklar. Razısın.",
+      "after": "Eve götüreceğin hediyeyi kaybettin. Eli boş dönünce söylenecekler. Dönmezsen susacaklar. Söylenmelerine razısın.",
+      "reason": "Soyut veya eksik ifadeyi somut gemi davranışına çekmek"
+    },
+    {
+      "path": "FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "before": "Yıl 1721. San Cordelio'da yükünüz hazır. Siz, vebanın kırdığı Arden'e dönen sefer heyetisiniz.",
+      "after": "Yıl 1721. San Cordelio'nun ecza rıhtımında yükünüz hazır. Siz, vebanın kırdığı Arden Krallığı'na dönen sefer heyetisiniz.",
+      "reason": "Başlangıç kentini ve dönülen krallığı tek somut ayrıntıyla ayırmak; özel adlar korunur."
+    },
+    {
+      "path": "FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "before": "**v2.7 çalışma metni · 7 Eylül 2026**",
+      "after": "**v2.7 çalışma metni · 8 Eylül 2026**",
+      "reason": "Güncel revizyon tarihi"
+    },
+    {
+      "path": "qa/editorial_revision/rulebook_template.md",
+      "before": "7 Eylül 2026",
+      "after": "8 Eylül 2026",
+      "reason": "Güncel revizyon tarihi"
+    },
+    {
+      "path": "qa/editorial_revision/rulebook_template.md",
+      "before": "### 4.2 Üç geceyi karıştırma",
+      "after": "### 4.2 Gece sırası ve Sis",
+      "reason": "Tablo dört satır içeriyor; başlık satır sayısı iddia etmesin."
+    },
+    {
+      "path": "qa/editorial_revision/rulebook_template.md",
+      "before": "gemide ve Kamarada olmayan",
+      "after": "gemide bulunan ve Kamarada olmayan",
+      "reason": "Gemide bulunma şartı ile Kamarada olmama şartını ayrı ve olumlu yazmak."
+    },
+    {
+      "path": "qa/editorial_revision/rulebook_template.md",
+      "before": "Oyuncu Kamaraya girerken Kaptan konuşma izni olup olmadığını açıkça belirler.",
+      "after": "Oyuncu Kamaraya girerken görevdeki Kaptan konuşma izni olup olmadığını açıkça belirler. Kamaraya giren Kaptansa önce yeni Kaptan seçilir; izni yeni Kaptan verir.",
+      "reason": "Boşalan makamın kendi konuşma iznini belirlemesini önlemek; hemen seçim kuralıyla uyum."
+    },
+    {
+      "path": "qa/editorial_revision/rulebook_template.md",
+      "before": "Pusulayla açılan Geçilmez hemen kamusal engeldir.",
+      "after": "Kaderi Yeniden Yaz, hareket sırasında ilk giriş olayına veya Geçilmezin açılmasına tepki verir. Kart daha önce Pusulayla açılmış olsa da ilk girişte kullanılabilir. Pusula veya Fenerin uzaktaki bir kartı yalnız göstermesi bu pencereyi açmaz.\n\nPusulayla açılan Geçilmez hemen kamusal engeldir.",
+      "reason": "Kartın yalnız bilgi için açılması ile giriş olayı arasındaki mevcut ayrımı görünür kılmak."
+    },
+    {
+      "path": "qa/editorial_revision/rulebook_template.md",
+      "before": "Basılabilir çalışma dosyaları ve görsel pilot için",
+      "after": "Basılabilir bütün deste ve kural kitabı için",
+      "reason": "Tam desteyi eski pilot olarak yönlendirmemek"
+    },
+    {
+      "path": "qa/editorial_revision/render_texts.py",
+      "before": "7 Eylül 2026",
+      "after": "8 Eylül 2026",
+      "reason": "Üretilen kart dökümünün tarihi"
+    },
+    {
+      "id": "HAR-AD-14",
+      "field": "name",
+      "before": "Bir Kişilik Eksildik",
+      "after": "Yoklamada Bir Eksik",
+      "reason": "Bir kişilik eksildik ifadesini daha doğal ve akılda kalan yoklama adıyla değiştirmek."
+    },
+    {
+      "id": "HAR-AA-06",
+      "field": "name",
+      "before": "Gümrükçünün Tek Yaşadığı Ada",
+      "after": "Tek Kişilik Gümrük",
+      "reason": "Uzun, dolaylı adı kısaltmak; tek memur ve kalabalık yetki komedisini korumak."
+    },
+    {
+      "id": "HAR-AA-01",
+      "field": "flavor",
+      "before": "Kimse sahibinin nerede olduğunu sormadı. Soğanlar sağlamdı.",
+      "after": "Erzağı herkes taşıdı. Borcun kime yazılacağını sonra konuşacaklar.",
+      "reason": "Görselde erzak veren kişiler var; sahipsiz ambar imasını kaldırmak."
+    },
+    {
+      "id": "GUC-27",
+      "field": "time",
+      "before": "Olay açılınca",
+      "after": "Hareket sırasında",
+      "reason": "Başlık etiketini §6.4 ile aynı hareket penceresine bağla; uzaktan açma tetiklenme izlenimini kaldır."
+    },
+    {
+      "id": "RULEBOOK",
+      "field": "§1 closing paragraph",
+      "before": "Bütün Hainler ölünce oyun bitmez. Mahsur veya Kamaradaki Tayfa hayattadır. Ölmüş bir oyuncu da takımıyla kazanır. **Limanı görmek veya Limana girmek tek başına zafer değildir.**",
+      "after": "Bütün Hainlerin ölmesi oyunu bitirmez. Mahsur veya Kamaradaki Tayfa hayattadır; ölü oyuncu da takımıyla kazanabilir. **Limanı görmek veya Limana girmek tek başına zafer değildir.**",
+      "reason": "Zafer koşulu cümlesini tek sayfada tutan anlam eşdeğer kısaltma."
+    },
+    {
+      "id": "RULEBOOK",
+      "field": "closing production note",
+      "before": "Bu, güncel metin ve mekanik açıklama çalışma sürümüdür. Basılabilir bütün deste ve kural kitabı için README_CURRENT_v2.7.md dosyasına bakın. Teknik ve editoryal kontroller aynı operatörce yapılmıştır. İnsanlarla oynanabilirlik, eğlence ve fiziksel arka yüz testi ayrı doğrulama gerektirir. Kaynak ve değişiklik ayrıntıları `FOULWAKE_EDITORIAL_DECISIONS_v2.7.json` ile `qa/editorial_revision/` içindedir.",
+      "after": "Bu dosya çalışma sürümüdür. Fiziksel baskı ve insanlarla masa denemesi henüz yapılmadı.",
+      "reason": "Oyuncu hızlı referansından dosya yolları ve iç üretim ayrıntılarını çıkar."
+    },
+    {
+      "id": "PRINT_LAYOUT",
+      "field": "cover subtitles / character metadata",
+      "reason": "Kapak alt başlıklarındaki gerçek satır sonlarını göster; boş meslek çizgisini kart yüzünde basma."
+    }
+  ]
+}
