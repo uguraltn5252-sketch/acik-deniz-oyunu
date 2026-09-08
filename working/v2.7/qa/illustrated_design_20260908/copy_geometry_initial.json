@@ -1,0 +1,1938 @@
+[
+  {
+    "id": "KAR-01",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-02",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-03",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-04",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.69,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-05",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-06",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-07",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.1,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-08",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 14.93,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 32.99,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-09",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-10",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-11",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-12",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.69,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-13",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 3.73,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.79,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-14",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 3.73,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.79,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-15",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 3.73,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.79,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-16",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 3.73,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.79,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-17",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 3.73,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.79,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-18",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 3.73,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.79,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-19",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 3.73,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.36,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "KAR-20",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 3.73,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.79,
+    "copy_panel_percent": 29,
+    "title_bottom_percent": 14,
+    "art_band_percent": 57
+  },
+  {
+    "id": "GUC-01A",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-01B",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-02A",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-02B",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-03",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 26.13,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 44.19,
+    "copy_panel_percent": 50,
+    "title_bottom_percent": 18,
+    "art_band_percent": 32
+  },
+  {
+    "id": "GUC-04",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-05",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-06",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-07",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 14.93,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 32.99,
+    "copy_panel_percent": 38,
+    "title_bottom_percent": 18,
+    "art_band_percent": 44
+  },
+  {
+    "id": "GUC-08",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-09",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-10",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-11",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.69,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-12",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-13",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.69,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-14",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-15",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-16",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.96,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-17",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.96,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-18",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-19",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.96,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-20",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-21",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.26,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-22",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.96,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-23",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 11.2,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.69,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-24",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 14.93,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 32.99,
+    "copy_panel_percent": 38,
+    "title_bottom_percent": 18,
+    "art_band_percent": 44
+  },
+  {
+    "id": "GUC-25",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 14.93,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 32.99,
+    "copy_panel_percent": 38,
+    "title_bottom_percent": 18,
+    "art_band_percent": 44
+  },
+  {
+    "id": "GUC-26",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 7.46,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.53,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "GUC-27",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 29.86,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 47.92,
+    "copy_panel_percent": 54,
+    "title_bottom_percent": 18,
+    "art_band_percent": 28
+  },
+  {
+    "id": "GUC-28",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 22.39,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 36.89,
+    "copy_panel_percent": 42,
+    "title_bottom_percent": 18,
+    "art_band_percent": 40
+  },
+  {
+    "id": "ERZ-01",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 22.39,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.46,
+    "copy_panel_percent": 46,
+    "title_bottom_percent": 18,
+    "art_band_percent": 36
+  },
+  {
+    "id": "SAD-T-01",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.29,
+    "copy_panel_percent": 46,
+    "title_bottom_percent": 18,
+    "art_band_percent": 36
+  },
+  {
+    "id": "SAD-T-02",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.29,
+    "copy_panel_percent": 46,
+    "title_bottom_percent": 18,
+    "art_band_percent": 36
+  },
+  {
+    "id": "SAD-T-03",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.29,
+    "copy_panel_percent": 46,
+    "title_bottom_percent": 18,
+    "art_band_percent": 36
+  },
+  {
+    "id": "SAD-T-04",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.29,
+    "copy_panel_percent": 46,
+    "title_bottom_percent": 18,
+    "art_band_percent": 36
+  },
+  {
+    "id": "SAD-T-05",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 14.28,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 43.86,
+    "copy_panel_percent": 50,
+    "title_bottom_percent": 18,
+    "art_band_percent": 32
+  },
+  {
+    "id": "SAD-T-06",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.29,
+    "copy_panel_percent": 46,
+    "title_bottom_percent": 18,
+    "art_band_percent": 36
+  },
+  {
+    "id": "SAD-T-07",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 14.28,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 43.86,
+    "copy_panel_percent": 50,
+    "title_bottom_percent": 18,
+    "art_band_percent": 32
+  },
+  {
+    "id": "SAD-T-08",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.29,
+    "copy_panel_percent": 46,
+    "title_bottom_percent": 18,
+    "art_band_percent": 36
+  },
+  {
+    "id": "SAD-T-09",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.29,
+    "copy_panel_percent": 46,
+    "title_bottom_percent": 18,
+    "art_band_percent": 36
+  },
+  {
+    "id": "SAD-T-10",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 10.71,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.29,
+    "copy_panel_percent": 46,
+    "title_bottom_percent": 18,
+    "art_band_percent": 36
+  },
+  {
+    "id": "SAD-H-01",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 14.93,
+    "flavor_mm": 21.42,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 47.27,
+    "copy_panel_percent": 54,
+    "title_bottom_percent": 18,
+    "art_band_percent": 28
+  },
+  {
+    "id": "SAD-H-02",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 14.93,
+    "flavor_mm": 17.85,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 43.7,
+    "copy_panel_percent": 50,
+    "title_bottom_percent": 18,
+    "art_band_percent": 32
+  },
+  {
+    "id": "SAD-H-03",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 14.93,
+    "flavor_mm": 17.85,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 43.7,
+    "copy_panel_percent": 50,
+    "title_bottom_percent": 18,
+    "art_band_percent": 32
+  },
+  {
+    "id": "SAD-H-04",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 14.93,
+    "flavor_mm": 17.85,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 43.7,
+    "copy_panel_percent": 50,
+    "title_bottom_percent": 18,
+    "art_band_percent": 32
+  },
+  {
+    "id": "SAD-H-05",
+    "trim_mm": [
+      63.5,
+      88.9
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 14.93,
+    "flavor_mm": 17.85,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 43.7,
+    "copy_panel_percent": 50,
+    "title_bottom_percent": 18,
+    "art_band_percent": 32
+  },
+  {
+    "id": "HAR-AD-01",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-02",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-03",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-04",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-05",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-06",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-07",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-08",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.2,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AD-09",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 10.95,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.36,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AD-10",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 10.95,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.36,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AD-11",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-12",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.55,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-13",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 10.95,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.36,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AD-14",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-15",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.2,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AD-16",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-17",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-18",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-19",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-20",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-21",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-22",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-23",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-24",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.2,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AD-25",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.55,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-26",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-27",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-28",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-29",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AD-30",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-KY-01",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 14.6,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 29.01,
+    "copy_panel_percent": 42,
+    "title_bottom_percent": 18,
+    "art_band_percent": 40
+  },
+  {
+    "id": "HAR-KY-02",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-KY-03",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 14.6,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 32.5,
+    "copy_panel_percent": 47,
+    "title_bottom_percent": 18,
+    "art_band_percent": 35
+  },
+  {
+    "id": "HAR-KY-04",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-KY-05",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-KY-06",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-KY-07",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.55,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-KY-08",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-KY-09",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-KY-10",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.2,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-KY-11",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-KY-12",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AA-01",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.55,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-AA-02",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 10.95,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.36,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AA-03",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.2,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AA-04",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.2,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AA-05",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.2,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-AA-06",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-FN-01",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 10.95,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 25.36,
+    "copy_panel_percent": 37,
+    "title_bottom_percent": 18,
+    "art_band_percent": 45
+  },
+  {
+    "id": "HAR-FN-02",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 6.98,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.55,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-FN-03",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 3.65,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 18.06,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "HAR-FN-04",
+    "trim_mm": [
+      70.0,
+      70.0
+    ],
+    "body_pt": 9.0,
+    "flavor_pt": 8.6,
+    "effect_mm": 7.3,
+    "flavor_mm": 3.49,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 21.71,
+    "copy_panel_percent": 35,
+    "title_bottom_percent": 18,
+    "art_band_percent": 47
+  },
+  {
+    "id": "SET-KL-01",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 18.66,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 36.72,
+    "copy_panel_percent": 31,
+    "title_bottom_percent": 14,
+    "art_band_percent": 55
+  },
+  {
+    "id": "SET-VL-01",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 22.39,
+    "flavor_mm": 7.14,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 40.46,
+    "copy_panel_percent": 34,
+    "title_bottom_percent": 14,
+    "art_band_percent": 52
+  },
+  {
+    "id": "SET-KP-01",
+    "trim_mm": [
+      70.0,
+      120.0
+    ],
+    "body_pt": 9.2,
+    "flavor_pt": 8.8,
+    "effect_mm": 22.39,
+    "flavor_mm": 3.57,
+    "meta_mm": 2.92,
+    "minimum_copy_mm": 36.89,
+    "copy_panel_percent": 31,
+    "title_bottom_percent": 14,
+    "art_band_percent": 55
+  }
+]

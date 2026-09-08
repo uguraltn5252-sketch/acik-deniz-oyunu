@@ -1,0 +1,28 @@
+{
+  "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+  "status": "PASS",
+  "classification": "SAME_OPERATOR_TECHNICAL_SELF_CHECK",
+  "failures": [],
+  "complete_cards_individually_reviewed": 121,
+  "exact_copy_front_print_review_checks": 363,
+  "original_art_plates": 121,
+  "minimum_original_dpi": 347.13,
+  "back_counts": {
+    "BACK_CHARACTER": 20,
+    "BACK_POWER": 31,
+    "BACK_LOYALTY": 15,
+    "BACK_SEA_ROCK": 42,
+    "BACK_ISLAND": 6,
+    "BACK_LIGHTHOUSE": 4,
+    "BACK_SUPPORT": 3
+  },
+  "front_master_matches_individual_proofs": 121,
+  "volume_pages_render_compared": 132,
+  "lighthouse_master_sha256": "3357f0a1efcde62b767b9b385da2f1a3742ef4cc8c03c28d97a629c830a3adee",
+  "source_head": "e6398070c4a7b479092946261d0e121952dbbfe7",
+  "limits": [
+    "No physical print, opacity, cut or registration proof",
+    "No human play or independent aesthetic acceptance",
+    "No locked release"
+  ]
+}

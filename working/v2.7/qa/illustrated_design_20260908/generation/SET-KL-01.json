@@ -1,0 +1,25 @@
+{
+  "id": "SET-KL-01",
+  "revision": 2,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-9fb61a35-e6cb-4f69-ae51-b20dfd2d24c3.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/SET-KL-01.png",
+  "sha256": "8a8bdb1f36195972eb535ca86ec157d2c4378a3ccab78270b7657a495b480853",
+  "pixels": [
+    958,
+    1642
+  ],
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/SET-KL-01.txt",
+  "planned_prompt_sha256": "15a408a85e716a51680d784d6583e7fbe239d35aa42966092123d5a6416d70b3",
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "actual_prompt_status": "SEE_REVISION_REQUEST_RECORD / NOT_ASSUMED_IDENTICAL_TO_PLAN",
+  "previous_selected_sha256": "72c7f53a955184ae812505da01a96062455ea2847fafc9776ec6b0886bcc7e9e",
+  "actual_request_file": "revision_requests.json",
+  "actual_prompt_sha256": "f2adb46697225db52e88706a14c351cc1cdeade15a0d5170b67c3abcc1410d29",
+  "review_evidence": "../individual_visual_review.json#SET-KL-01",
+  "reviewed_proof_sha256": "0b7c70862168920628d5e82a0f07890abd4cb06a5328fd784540129d0d715e3d",
+  "owner_aesthetic_acceptance": false
+}

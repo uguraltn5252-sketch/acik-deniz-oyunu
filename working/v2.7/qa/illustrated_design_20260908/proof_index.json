@@ -1,0 +1,3995 @@
+[
+  {
+    "id": "ERZ-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/ERZ-01.png",
+    "proof_sha256": "5567970fa5bf27de860ce23be86b4ad2bbf6a1c4ac077c65a6aa414690c74b0e",
+    "asset_sha256": "9d25ad8b6b80ad2be32343a7aee5fbc1af829ebe80afac23aace734414e2e2ce",
+    "placement": {
+      "id": "ERZ-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/ERZ-01.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 22.39,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 44.56,
+      "copy_panel_percent": 51,
+      "title_bottom_percent": 18,
+      "art_band_percent": 31,
+      "actual_panel_mm": 56.01,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Çürümüş Erzak",
+        "effect": "Başlangıçta aç. O anda Kaptansan İskorbüt başlamaz; değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonradan Kaptan değişmesi sonucu değiştirmez. Sonra yolculuk destesinden gerçek bir Güç çek.",
+        "flavor": "Peksimet hâlâ yenebilir. Bunu söyleyen tadına bakmadı."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-01A",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-01A.png",
+    "proof_sha256": "4a7a09db45d4764550afdf718b56872b8957ad96e6cf0b1130defafcd1bacbe6",
+    "asset_sha256": "7ddb41a22f7267b48be866171e2f20657c3f5b5cc0bf01d2855b9fe2840f931f",
+    "placement": {
+      "id": "GUC-01A",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-01A.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.6,
+      "flavor_pt": 9.92,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 38.16,
+      "title_pt": 12.4,
+      "native_exact_copy": {
+        "name": "Mantar Can Halkası",
+        "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+        "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-01B",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-01B.png",
+    "proof_sha256": "b70ccd89c210811003821b98bcbc46838495c3fbfee9692d2d0ed2427dc48fca",
+    "asset_sha256": "43aba6537f9d82e8b3cf52b402c0ac1290b0f7b38d4d2b3a1a7dbba6ba6657c5",
+    "placement": {
+      "id": "GUC-01B",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-01B.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.44,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 37.08,
+      "title_pt": 12.8,
+      "native_exact_copy": {
+        "name": "Mantar Can Halkası",
+        "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+        "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-02A",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-02A.png",
+    "proof_sha256": "d2c876e9b2074857191393a29e6c916df7297f254c6669f13be3c5394a29af81",
+    "asset_sha256": "b143bcd670696bea7a37d42540bbcc97111231ab11150143280a33946600e775",
+    "placement": {
+      "id": "GUC-02A",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-02A.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 38.76,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kancalı Halat",
+        "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+        "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-02B",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-02B.png",
+    "proof_sha256": "8a58fa29574eb86239f897b3f42c782df81e242b1accdb33f6ee7bb6b04cb945",
+    "asset_sha256": "15fbf0eb40b191477f2851ada89f6f2f4142fb1f841792f6bd6bf0b35053fd59",
+    "placement": {
+      "id": "GUC-02B",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-02B.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 37.68,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kancalı Halat",
+        "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+        "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-03",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-03.png",
+    "proof_sha256": "627411235647e11a9fe73feee03038cd3b2ff3ba873c12fec14dd445719e9d15",
+    "asset_sha256": "8b6aa90b54b872670541d6ca94d5399155c6385e4fdaa687f8c855b8b0b5cf1f",
+    "placement": {
+      "id": "GUC-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-03.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 26.13,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 48.29,
+      "copy_panel_percent": 55,
+      "title_bottom_percent": 18,
+      "art_band_percent": 27,
+      "actual_panel_mm": 49.52,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Pusula",
+        "effect": "İlk rota öncesi kullanılamaz. Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz.",
+        "flavor": "Kuzey yerinde duruyor. Sorun, sahibinin başka bir şey araması."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-04",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-04.png",
+    "proof_sha256": "e4f40fc3c981b6f502c46d9537196baad5b32a1d0b318b311c4f8b8c39f14bac",
+    "asset_sha256": "add1a0e850e86c17fd7f871486317ff48d00ff5e8b823c51286ef3e78551ec71",
+    "placement": {
+      "id": "GUC-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-04.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.24,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 38.7,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Güverte Araması",
+        "effect": "En az iki Gücü olan bir gemi oyuncusu seç. Hedef seçtiği bir Gücü kapalı atar.",
+        "flavor": "Kayıp eşya bulundu. Sahibinin kim olduğu hâlâ şüpheli."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-05",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-05.png",
+    "proof_sha256": "df49caa364858b1869041acdeb87c566afe06e453166daed31595e8c464cb165",
+    "asset_sha256": "598e842e350eccd2423563dddd2fe994bbe0f3da7fd7a810db0a1583bfdb2c10",
+    "placement": {
+      "id": "GUC-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-05.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 39.96,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Yama Tahtası",
+        "effect": "Kraken dışındaki 1 Gövde hasarını engelle.",
+        "flavor": "Tahta bir tabut için kesilmişti. Müşteri iyileşince gemiye yaradı."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-06",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-06.png",
+    "proof_sha256": "f872a6e2c26981cb1a3d19438baefb2698efc4f4cd713a0f176a008bb4be4f91",
+    "asset_sha256": "b7edf7f9b0d291cecf63e2e1105acbaebcbc43f79e46b5159fb83e27b30abcb0",
+    "placement": {
+      "id": "GUC-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-06.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 39.06,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Zıpkın Sandığı",
+        "effect": "Kraken'in vereceği 1 Gövde hasarını engelle.",
+        "flavor": "Sandığın üstüne bir balık çizmişler. Boyutunu belirtmeyi unutmuşlar."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-07",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-07.png",
+    "proof_sha256": "b788e5058df4baa2d45fcd56700575480303e7d0393010ec64aacabd37b2065c",
+    "asset_sha256": "5b8627da007150d430ee8e7c6c2719a7646c969979454d8521529f6cac3cc65a",
+    "placement": {
+      "id": "GUC-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-07.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 14.93,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 37.09,
+      "copy_panel_percent": 42,
+      "title_bottom_percent": 18,
+      "art_band_percent": 40,
+      "actual_panel_mm": 39.6,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Geçici Yeke",
+        "effect": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku rota seçeneği yap. Bu işlem olay yüzünü göstermez.",
+        "flavor": "Geçici çözümler denizde bazen karaya kadar sürer."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-08",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-08.png",
+    "proof_sha256": "292b6ffdc692bb555dc1aa25a271e9fbaa2267497e2587b36638b2a3d04268d2",
+    "asset_sha256": "1642f7a9475ea8f36d6728bf4310d0be39c148df313eb41492572b7c3354cb5b",
+    "placement": {
+      "id": "GUC-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-08.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 39.54,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kerteriz Pergeli",
+        "effect": "Girdabın varışını veya Ters Akıntının kapatacağı yasal yönü rastgelelik yerine sen seç.",
+        "flavor": "Üç kişi yön tarif etti. Pergel sahibi üçünün de elini kenara itti."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-09",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-09.png",
+    "proof_sha256": "e18d9cc6865ca6c81753a7bf912efad695f2b574134c01baa2a50d9169cb3327",
+    "asset_sha256": "96bc6c3c7903768f861a8737e54d6cf938cd44dc844827bf81fc289a6ed81303",
+    "placement": {
+      "id": "GUC-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-09.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kurşun Ağırlık",
+        "effect": "Girdabın zorunlu ek hareketini tamamen iptal et.",
+        "flavor": "Bazı sorunlar ancak dibe çekilince çözülür."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-10",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-10.png",
+    "proof_sha256": "027051fbeece12ec40ac422e38d857e55aa498f0bf457604020a52ba8672fc95",
+    "asset_sha256": "409cdffc7e0c405c386004afabe61db75f7d8c0d28e22170ea391460626e68bb",
+    "placement": {
+      "id": "GUC-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-10.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.02,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Yedek Yelken",
+        "effect": "Durgun Deniz veya rüzgâr kaynaklı rota kısıtını kaldır.",
+        "flavor": "Birincisi niçin yedek değildi, konuşmayalım."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-11",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-11.png",
+    "proof_sha256": "69c0887ad7811c61e2eccd2f3bea5fa65d69be8c11a4f2e497f58824ff65c55f",
+    "asset_sha256": "609ceb5607b57ee8b4b93483af5e2da48288040b4e3902767b402c328157b46e",
+    "placement": {
+      "id": "GUC-11",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-11.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.8,
+      "flavor_pt": 9.28,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 36.72,
+      "title_pt": 12.6,
+      "native_exact_copy": {
+        "name": "Islak Deniz Haritası",
+        "effect": "İlk rota öncesi kullanılamaz. İki Yakın Ufuk kartının yerini olay yüzlerine bakmadan değiştir.",
+        "flavor": "Mürekkep aktı; yollar daha yaratıcı oldu."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-12",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-12.png",
+    "proof_sha256": "eae18a40bdb0839d86a3a02026a5e47fe4cce63883f98504f0a4f3d31bc70cb9",
+    "asset_sha256": "59d2a4fc8f5afed1b0209f85c8f030ec28c20c48a7be04043d259635c876d8da",
+    "placement": {
+      "id": "GUC-12",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-12.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kırık Dürbün",
+        "effect": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk kartının olay yüzüne gizlice bak.",
+        "flavor": "Merceği çatlak. Sahibi her şüpheli şeyi önce camdaki çizgiye yoruyor."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-13",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-13.png",
+    "proof_sha256": "f50ac0aafe0bd9bf040dad4a990a40fbd755b5cf4ac19b6feb488643583e4c2e",
+    "asset_sha256": "1aa4789d96b93e529ce5e0535ba50309175c873262ad602a1de436d094677277",
+    "placement": {
+      "id": "GUC-13",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-13.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Eski Seyir Defteri",
+        "effect": "İlk rota öncesi kullanılamaz. Bir Uzak Ufuk seç. Moderatör yalnız Gövde hasarı verebilir veya vermez der.",
+        "flavor": "Kaptanlar ölür; kötü el yazıları kalır."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-14",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-14.png",
+    "proof_sha256": "c3b0f225b9ca9d7c453aefac64f1d29499c225d53db3a70473e86e0be533a9bb",
+    "asset_sha256": "c6bba6a123631d8d096efaea405a4fed6fd982f032f2c3f9a6929bf1c99ba41c",
+    "placement": {
+      "id": "GUC-14",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-14.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 40.02,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Anahtar Deliği",
+        "effect": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk olayına gizlice bak. Kamara Güç yasağının tek yazılı istisnasıdır.",
+        "flavor": "Kamaranın en küçük penceresi, en büyük dedikodusu."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-15",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-15.png",
+    "proof_sha256": "1284654a9c35d8f407569b7f0817d53107b34999dc7dbe30d2c7933d5e171ab4",
+    "asset_sha256": "466ede58380b6ca7b7a489e0a29c8c83f952a220bc022bf1c4eb018f8fa51832",
+    "placement": {
+      "id": "GUC-15",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-15.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 41.63,
+      "title_pt": 11.8,
+      "native_exact_copy": {
+        "name": "Kaptanın Eski Şapkası",
+        "effect": "Bu rota oylamasında kendi oyuna +1 ekle.",
+        "flavor": "Eski sahibi şapkayı geri istiyor. Önce verdiğin sözü tutman gerek."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-16",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-16.png",
+    "proof_sha256": "2ac4ee7adbcb4d0a537ddcb81bcfdacf43a12c87abe1d7d2e68ec13c8bd5feb5",
+    "asset_sha256": "170956c0ea27f848543129c74718a45072319b6056962dcaf03af9555053dd4e",
+    "placement": {
+      "id": "GUC-16",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-16.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 26.06,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.14,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "İsyan Bildirisi",
+        "effect": "Bu İsyan oylamasında kendi oyun 2 sayılsın.",
+        "flavor": "Altında imza yok; herkesin fikri var."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-17",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-17.png",
+    "proof_sha256": "2810db89ba9d83e7bef343614aa693f56825a6779b306f73a7040f536e5e62a0",
+    "asset_sha256": "b772c22813d23b835176de187a3b63c7fd59b480d84d2d478b5d9fa8621b5da9",
+    "placement": {
+      "id": "GUC-17",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-17.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 26.06,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.62,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Papağanın İfadesi",
+        "effect": "Hedef rota tavsiyesini açık söyler. Başka rotaya oy verirse oyu 0 sayılır.",
+        "flavor": "Tanık konuştu. Güvenilirliği tartışmalı."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-18",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-18.png",
+    "proof_sha256": "8add170058cfcb13cd0922861a66266b817fe6ec13d155523125840eebd2e010",
+    "asset_sha256": "b9002bf15059ea96d7e26bb2359ae19c91caf343037a395d6a3d71c1b2e5316d",
+    "placement": {
+      "id": "GUC-18",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-18.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 39.48,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Mühürlü Emir",
+        "effect": "Kaptan çözmeden önce berabere rotalardan kazananı seç.",
+        "flavor": "Prensin adı için boşluk bırakılmış. Buyruk üç sayfa."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-19",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-19.png",
+    "proof_sha256": "54e39b35b880a98ac93e233fed6506226546337900287fdc297fdfb0ac59e86b",
+    "asset_sha256": "24d6daa3008576133c08e183c876781f4f1bfa3a0794de702fa1339ab1642f48",
+    "placement": {
+      "id": "GUC-19",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-19.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 26.06,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 38.76,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kaçak Rom",
+        "effect": "Bir oyuncu seç. Hedef diğer oyları gördükten sonra en son ve açık oy verir.",
+        "flavor": "Gerçeği söyletmez. Sırayı belli eder."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-20",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-20.png",
+    "proof_sha256": "bc3384c5f8eecb049249c641240f37e8edee5c9e1ea916316bb1f60c103b6e89",
+    "asset_sha256": "670c1f1a3a5c812ba869d6c5e767b0f0433be78c0714bc89c6959a04f46e9d1e",
+    "placement": {
+      "id": "GUC-20",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-20.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 37.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Bir Daha Say",
+        "effect": "Tam 1 oy farkıyla biten herhangi bir resmî oylamayı bir kez yeniden yaptır. İkinci sonuç kesindir; sonra bu kartı at.",
+        "flavor": "Sefer divanında karar kesindir. Sayım bazen o kadar kesin değildir."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-21",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-21.png",
+    "proof_sha256": "7292f5d707ff88f9901b5397eb7f2c1ac5bef79864e0d83daa8fe856daa1d0f0",
+    "asset_sha256": "3354c355587f9bb637ead696b30501d3c58b509bdc52afa68b178e3a6f740769",
+    "placement": {
+      "id": "GUC-21",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-21.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.6,
+      "flavor_pt": 9.92,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 42.11,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Uğurlu Altın",
+        "effect": "Tamamlanmış rastgele hedef seçimini bir kez yeniden yaptır. İkinci sonuç kesindir.",
+        "flavor": "Önceki sahibi uğur getirdiğini söylemişti. Parayı alırken çok acele etti."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-22",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-22.png",
+    "proof_sha256": "7c127ab394d86ca6de923c3916a464b285cb700eaaa979a7a039326420543ffa",
+    "asset_sha256": "b981a73798a17c9985a5c876ef98a83c4e4dac36f37f566cf258046cfc552730",
+    "placement": {
+      "id": "GUC-22",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-22.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 26.06,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 39.12,
+      "title_pt": 10.4,
+      "native_exact_copy": {
+        "name": "Kaptanın Çatlak Kupası",
+        "effect": "Kaptanın bu rota oylamasındaki 2 oyunu 1'e indir.",
+        "flavor": "Kupadaki çatlak, otoritedekinden küçüktü."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-23",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-23.png",
+    "proof_sha256": "1451c64ef3c62e31f3732878d25b44f30f73cfa7286a0b8a85eb1fdff95889af",
+    "asset_sha256": "6bbd80991694f2b4d3362a4428e772e0858ad29a60f330e8d82ee0891d8c98eb",
+    "placement": {
+      "id": "GUC-23",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-23.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 41.39,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Bayat Peksimet",
+        "effect": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz. Gücü yoksa susar.",
+        "flavor": "Konuşmayı kesmez. Çiğnemeyi uzatır."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-24",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-24.png",
+    "proof_sha256": "b6d4d12dd87b3d8f15220a6aa57d9bcc5864924c9dfeb39125d1f8043e7d4b1d",
+    "asset_sha256": "72d935b1bef861c1fe4c8d64cc544ce2d279132444654bcd219f0b3f216f5f83",
+    "placement": {
+      "id": "GUC-24",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-24.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 14.93,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 37.09,
+      "copy_panel_percent": 42,
+      "title_bottom_percent": 18,
+      "art_band_percent": 40,
+      "actual_panel_mm": 39.06,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Islak Çorap",
+        "effect": "Kazanç açıklanmadan yeni Gücü sen al, Islak Çorabı asıl alıcıya ver. İkiniz de sonra iki Güç sınırını uygularsınız. Çorap bir Güç sayılır.",
+        "flavor": "Sahibi çorabını geri istiyor. İçinden çıkan eşya hakkında konuşmak istemiyor."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-25",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-25.png",
+    "proof_sha256": "0cbf404f0b66fc8c2e220799c449278886f94ea9a3a01b2077d751a726f05a55",
+    "asset_sha256": "e8f4d9ada3c50ddec16e690fba436343550bd5fcc04c18d79beab9ecd35e446f",
+    "placement": {
+      "id": "GUC-25",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-25.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.6,
+      "effect_mm": 14.93,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 37.09,
+      "copy_panel_percent": 42,
+      "title_bottom_percent": 18,
+      "art_band_percent": 40,
+      "actual_panel_mm": 42.11,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Şüpheli Martı",
+        "effect": "Uygun bir gemi oyuncusunun önüne koy. Sonraki rastgele oyuncu hedefli Harita olayında, o oyuncu hâlâ uygunsa ilk hedef o olur; sonra at.",
+        "flavor": "Martı, onu daha önce görmüş gibi bağırıyor."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-26",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-26.png",
+    "proof_sha256": "4367234cb54c50f46ddefef459f87f7c8edddea6a058d88f6ce75109621619cb",
+    "asset_sha256": "77e0583bd10c1bc80fbfc0c8d0b719f4e8042be04b4fe6a17b027c9035963a79",
+    "placement": {
+      "id": "GUC-26",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-26.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.24,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.41,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Fırtına Feneri",
+        "effect": "Bu gece Sis saldırısını kapat. Hainlerin bir Yakın Ufuk bilgi eylemi kalır.",
+        "flavor": "Fitili kısınca herkes itiraz etti. Sabah yağa kimin para verdiğini sordular."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-27",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-27.png",
+    "proof_sha256": "bd509344f86953780ee077698945b39ebba7399f281d0d13d3880fa955d06d82",
+    "asset_sha256": "613317cce8f87f3c02f6c14bdc35648378bb475ac78e000eddf3244b91dade87",
+    "placement": {
+      "id": "GUC-27",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-27.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 29.86,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 52.02,
+      "copy_panel_percent": 59,
+      "title_bottom_percent": 18,
+      "art_band_percent": 23,
+      "actual_panel_mm": 56.19,
+      "title_pt": 12.4,
+      "native_exact_copy": {
+        "name": "Kaderi Yeniden Yaz",
+        "effect": "Hareket sırasında, olay uygulanmadan önceki konuma dön; oradan başka yasal Yakın Ufka gir. İlk kart açık ve ziyaret edilmiş kalır; olayı tekrarlanmaz. Ada girişi İskorbütü kalıcı temizler. Geçilmeze girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
+        "flavor": "Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "GUC-28",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/GUC-28.png",
+    "proof_sha256": "a8b6194711cb9232d8fa599df9fa7961e50e5e2fda7478de0a79172f12f2d010",
+    "asset_sha256": "9dd359df7695f91b16c532fb228476f985c9a243ac71f98073ff417c79649d8e",
+    "placement": {
+      "id": "GUC-28",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-28.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 22.39,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 40.99,
+      "copy_panel_percent": 47,
+      "title_bottom_percent": 18,
+      "art_band_percent": 35,
+      "actual_panel_mm": 44.09,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Seyir Zabtı",
+        "effect": "Gövde, oyuncu, Güç veya rota bakımından zarar doğuran rotaya oy veren birini bir gece Kamaraya gönder; Mahkûm sayılmaz. Kullanıldıktan sonra oyun dışına çıkar; Güç destesine yeniden karıştırılmaz.",
+        "flavor": "Rota yanlışsa kâğıt her zaman doğrudur."
+      },
+      "back": "BACK_POWER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AA-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AA-01.png",
+    "proof_sha256": "49c40ba9663276729096f8c33ec475db7d5c4a4fd52f72ac7f0a661c56ac0b4e",
+    "asset_sha256": "5ea6e4a812150c170797e552e65351b5402ab702ead2a040a2a86737cb1e7aa4",
+    "placement": {
+      "id": "HAR-AA-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-01.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.96,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Ağzı Açık Ambar",
+        "effect": "2 Güç kazanılır. İki farklı oyuncuya verilir.",
+        "flavor": "Erzağı herkes taşıdı. Borcun kime yazılacağını sonra konuşacaklar."
+      },
+      "back": "BACK_ISLAND"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AA-02",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AA-02.png",
+    "proof_sha256": "17a6e8950a13f6fa2341cf68ee87e07caebc75cf730a54f51e3a06f56f2f32d0",
+    "asset_sha256": "c390c38ec4d395bb5bdcce2cd972093db1811c05e9958ee6981b38df6b131587",
+    "placement": {
+      "id": "HAR-AA-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-02.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 10.95,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.46,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 28.8,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Terk Edilmiş Sahil Karakolu",
+        "effect": "1 Güç kazanılır. Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
+        "flavor": "Nöbetçi gitmiş; dedikodu defteri kalmış."
+      },
+      "back": "BACK_ISLAND"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AA-03",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AA-03.png",
+    "proof_sha256": "773b75a1733a02d557293155868b3f358b8bca2f628ed79377d6a975e3a4af3d",
+    "asset_sha256": "b9e4a561d8b61d56220d7023e0a655d8681d35372f189481f69010476464b1a4",
+    "placement": {
+      "id": "HAR-AA-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-03.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.35,
+      "title_pt": 10.4,
+      "native_exact_copy": {
+        "name": "Misafirperverlik Biraz Fazla",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu zorunlu olarak adada bırakılır.",
+        "flavor": "Gitmenize çok üzüldüler. Bu yüzden bırakmadılar."
+      },
+      "back": "BACK_ISLAND"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AA-04",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AA-04.png",
+    "proof_sha256": "1448925b8c97317eca7b25e0daa80b54b25fd9abe3cfc201ae0fbdb4b0b09348",
+    "asset_sha256": "41f14d9ddbe3bda277d82012ca9ce82027c6915d6e9841c60467c3fb1c961540",
+    "placement": {
+      "id": "HAR-AA-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-04.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.35,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Bir Ustanın Son Tezgâhı",
+        "effect": "Gemi en fazla 2 Gövdeye kadar 1 Gövde onarır.",
+        "flavor": "Usta deliği görünce sevindi. Sizden saklamaya çalışmadı."
+      },
+      "back": "BACK_ISLAND"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AA-05",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AA-05.png",
+    "proof_sha256": "c8c98e6c138deb709ad5d4f548ce5885da881a327d2f2a58dfc76f89c14e1091",
+    "asset_sha256": "045ba0aff1f8f52a457f9f160b9cb5f01b14364295e0c51f2122d7ba0e38c56d",
+    "placement": {
+      "id": "HAR-AA-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-05.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 36.51,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Korsanların Mola Yeri",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi bütün Güçlerini kaybeder.",
+        "flavor": "Sandıkları taşımayı teklif ettiler. Geri getirmekten söz etmediler."
+      },
+      "back": "BACK_ISLAND"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AA-06",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AA-06.png",
+    "proof_sha256": "13e404735307530930fe8307e550e1446e41cb6d2176fe392750787886be5219",
+    "asset_sha256": "b67417b30d237d2c8988a0f3f6d3934676432dcfe9008d11e6e1615a45378e2c",
+    "placement": {
+      "id": "HAR-AA-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-06.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.8,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Tek Kişilik Gümrük",
+        "effect": "Gemideki herkes en fazla bir Güç tutar; fazlasını kapalı atar.",
+        "flavor": "Gümrükçü tek kişiydi. Yetkisi kalabalıktı."
+      },
+      "back": "BACK_ISLAND"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-01.png",
+    "proof_sha256": "303b565d7a2c7ec8f50278d769b6fd27e3636037700aaed9978e5160f724c0c3",
+    "asset_sha256": "7bbdaf948bbc6017cbf39b09d4429f79e114409f09344ddf4055fa4a9ad02e6c",
+    "placement": {
+      "id": "HAR-AD-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-01.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 28.86,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Çarşaf Gibi Deniz",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Deniz sakin. Masa değil."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-02",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-02.png",
+    "proof_sha256": "977d677bb05bd647083b6df5433a8ee9ae14f8e042f667dc96bd6407e2774d2d",
+    "asset_sha256": "5a6201a5c9527d730e6a0fdbe390a5d0b4c1f36587ff92ae3224415308a0b30c",
+    "placement": {
+      "id": "HAR-AD-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-02.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.8,
+      "flavor_pt": 9.24,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 24.73,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Pruvada Son Yudum",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Kupanın dibi göründü. Ufuk henüz boş."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-03",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-03.png",
+    "proof_sha256": "8156091e88612ffdb18ac821de6768635d7387119327fa3d8ee75e8b744eb0ab",
+    "asset_sha256": "c63ce4ec8473af64b733e3bd696da91d85f8b6b6d8e7ed67895618ee8a59a5f3",
+    "placement": {
+      "id": "HAR-AD-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-03.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.04,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 25.62,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Martılar Bile Üşeniyor",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Biri bağırmadıkça deniz bugün çalışmıyor."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-04",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-04.png",
+    "proof_sha256": "c69d4857b33a8d8bf1963e8cf24699032d71c44bb0f7d70f04059631e4c922cd",
+    "asset_sha256": "ba3ff8450c95b587fcf6755ee0de46797f5c5ba1fb192da7f7bda53c4d3e7c95",
+    "placement": {
+      "id": "HAR-AD-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-04.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.4,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.92,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Puslu Vardiya",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Görüş düştü; kanaatler yükseldi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-05",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-05.png",
+    "proof_sha256": "3682a442625816123bdef5962d68489ab79bbad110df24f107b0dd3036fc4265",
+    "asset_sha256": "507d37a1d57024c6a1ffba41ce062fd3421dd165212539c0bbba1c9ca6ab4417",
+    "placement": {
+      "id": "HAR-AD-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-05.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.02,
+      "title_pt": 10.6,
+      "native_exact_copy": {
+        "name": "Burnunun Ucu Cumhuriyeti",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Sınırları üç karış, nüfusu gereğinden fazla."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-06",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-06.png",
+    "proof_sha256": "4e9428567c846f69eedcf3ef031964c5de902ebef5fc23442a415df0801dba85",
+    "asset_sha256": "376bd156cadb6468cd05f4b7558e55a0e0393092bc5222702d8f0e9eee7f00dc",
+    "placement": {
+      "id": "HAR-AD-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-06.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.24,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Beyaz Gece",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Karanlık değildi. Daha kötüydü: belirsizdi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-07",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-07.png",
+    "proof_sha256": "8ade67bd53d0cd054cdd1f08c8c17420d444a30b7141b96094daf743b540c2c3",
+    "asset_sha256": "482f48935ba48ebce2c611f0f10863597739f39a91bc3c8e3f29cddf9f41475f",
+    "placement": {
+      "id": "HAR-AD-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-07.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.4,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.97,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Sis Var, Fikir Çok",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Kimse bir şey görmedi; herkes çok emin."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-08",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-08.png",
+    "proof_sha256": "d207293316a0e36bda9d7f4e7c7944a62a4f277e014b031ae054b6b2fd544170",
+    "asset_sha256": "34230d19ef28e41c272db48797723d68469d66b038b54f4ebf0038995a4a8f28",
+    "placement": {
+      "id": "HAR-AD-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-08.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 29.03,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "İsimsiz Bir Düdük",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Nöbetçi düdüğe cevap verdi. İkinci sesi kimse duymadı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-09",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-09.png",
+    "proof_sha256": "ac266c8d2158dda16eecbe937d08e3a726090f7b60e59ba82b33780c0670bbf1",
+    "asset_sha256": "97a01c475cd98d2a29385f12cbf158f879d05a103265a2fb5db74a367ae93090",
+    "placement": {
+      "id": "HAR-AD-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-09.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.97,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Deryanın Göbek Deliği",
+        "effect": "Gemi hemen rastgele bir yasal Yakın Ufka zorunlu ek hareket yapar. Yeni olay da çözülür.",
+        "flavor": "Deniz de bazen kendi etrafında konuşur."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-10",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-10.png",
+    "proof_sha256": "65ba8a5f5dd0c76249af45577ea0d99b113c50e9eb75cf15022422888a82a3e7",
+    "asset_sha256": "e0cadeb4007682134034c7e58c8c9fe7d845ec91f95377e438f5e846d3a9ee47",
+    "placement": {
+      "id": "HAR-AD-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-10.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.86,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Tersine Dönen Dünya",
+        "effect": "Gemi hemen rastgele bir yasal Yakın Ufka zorunlu ek hareket yapar. Yeni olay da çözülür.",
+        "flavor": "Pusula sustu. Mide konuştu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-11",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-11.png",
+    "proof_sha256": "088682c64c117f27f7f3815ae9c2f54609636e4067bc07f2b61c65e6c4abd4c4",
+    "asset_sha256": "bc223e5819f2926d2d104bd812c473502b30f1779956de3363530a359761621a",
+    "placement": {
+      "id": "HAR-AD-11",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-11.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.56,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 25.06,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Körfezin Hırçın Selamı",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Hoş geldiniz kısmı kısa sürdü."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-12",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-12.png",
+    "proof_sha256": "5f3c4c89be0a999b6a7ab6de93b37bd47392c59b0decb443e10146219104f71e",
+    "asset_sha256": "43129ff2c9ef647f884f8f413022034039207cb525be2fc895facf9515fda2da",
+    "placement": {
+      "id": "HAR-AD-12",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-12.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.29,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Direkleri Saydıran Gece",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gece boyunca direkleri saydılar. Sabah aynı sayıya ulaşamadılar."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-13",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-13.png",
+    "proof_sha256": "7ff0da303af208e067af5be24374ee9a0bc1e4fb77078c256a6ef74d96f03141",
+    "asset_sha256": "1acdc2bc3c2901b412b703c8c588cd8bdf3c5a82764ad47bb2dc35368dd5e0a8",
+    "placement": {
+      "id": "HAR-AD-13",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-13.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 10.95,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.46,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 30.38,
+      "title_pt": 12.8,
+      "native_exact_copy": {
+        "name": "Kolları Fazla Bir Mesele",
+        "effect": "Gemi 1 Gövde kaybeder. Yama Tahtası işlemez; Zıpkın Sandığı veya Tahtakakan engelleyebilir.",
+        "flavor": "Tokalaşmaya çalışmadığı kesindi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-14",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-14.png",
+    "proof_sha256": "3e9c3b5cbc972f2800eb9c826e9f6bf9accfc5a1b884181278c4ab7b08e2b1ad",
+    "asset_sha256": "523484d21247d0a980c22342bcb134f84c0a0d1203a49c43d88be665f7512dee",
+    "placement": {
+      "id": "HAR-AD-14",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-14.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.46,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Yoklamada Bir Eksik",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
+        "flavor": "Yoklama denizde icat edilmiş olmalı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-15",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-15.png",
+    "proof_sha256": "50c62b23cc8ae03210d01319fa96821b1baf639a15a1c2103f028af94e246d8a",
+    "asset_sha256": "b6d12fa95368ccb21f80fbbf3ffd1c149bee185f9fd141146d50f6d55a2804b5",
+    "placement": {
+      "id": "HAR-AD-15",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-15.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.6,
+      "flavor_pt": 9.88,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 33.6,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Güverte Islak, Bahane Kuru",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
+        "flavor": "Güverte silinecekti. İpin nerede olduğu daha önce soruldu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-16",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-16.png",
+    "proof_sha256": "209fdf05c832612fd1a1c93fb823f905b1bea720a384cfce50faec725cbb72ac",
+    "asset_sha256": "239ce15c08a103727ca9feb62d6586802ddfb7d6288e46abb97abb95fac42ac7",
+    "placement": {
+      "id": "HAR-AD-16",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-16.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.91,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Kıpırdamayan Yelken",
+        "effect": "Bir sonraki rota seçiminde yalnız Pruva önü kullanılabilir. Yasal değilse etki boşa düşer.",
+        "flavor": "Yelkenci kumaşı silkeledi. Hava ikna olmadı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-17",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-17.png",
+    "proof_sha256": "4cd49d47eee51c3e19a29b1200baecfa2c6bbf049b1d018dc2f0fa33e931deba",
+    "asset_sha256": "724682c3c49957eb432c422fa54c70006070eb49a92bd2c02f522fd64e406ec2",
+    "placement": {
+      "id": "HAR-AD-17",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-17.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.35,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Lodos Arkadan Esiyor",
+        "effect": "Gemi isterse bir ek normal hareket yapar. Yeni olay da çözülür.",
+        "flavor": "İlk kez herkes aynı yönde konuştu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-18",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-18.png",
+    "proof_sha256": "68d8d81ddded3c8009b55221260df06e38feb33b6e294fea167a2a80f3a5a4dc",
+    "asset_sha256": "406d645d3efb43c9cf9ba3eb837c8bafe307e96f06c5459c3b9a46fce5ab732e",
+    "placement": {
+      "id": "HAR-AD-18",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-18.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.76,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.4,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Akıntı Postası",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Gönderen belli değil. Teslim alacak gönüllü çok."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-19",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-19.png",
+    "proof_sha256": "c06ad594b7bf1f46ec44569db8f024ce9e77714793ca111c29ec1a58cd3472d4",
+    "asset_sha256": "0a06ce9418fc177dc8e407936f0834d5a2f393df2768dd8e0d423e37a6bc8a63",
+    "placement": {
+      "id": "HAR-AD-19",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-19.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.46,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Sahibi Bulunamayan Sandık",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Sahibi çıkmadı; akrabası on iki kişi çıktı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-20",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-20.png",
+    "proof_sha256": "1920735758a035d3bdc214478abb744aa64176cfc1b749d20933db60188acd1c",
+    "asset_sha256": "fc816c0297b3a07df793f1a628b83620c6191b957c7bfeb27ea647afd35b1bef",
+    "placement": {
+      "id": "HAR-AD-20",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-20.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.63,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Vergisiz Fener Alayı",
+        "effect": "İki dış Yakın Ufuk kartının yeri olay yüzlerine bakılmadan değiştirilir.",
+        "flavor": "Işıklar yol göstermedi; yolu yerinden oynattı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-21",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-21.png",
+    "proof_sha256": "6697b16e303587f136b88c6f2e6a29ee548cbad0f100f85c675fec2eb7bed70a",
+    "asset_sha256": "0d1f34119fcfc2af56b1016ef23596767b67f30115193e09de82ca65f3822be4",
+    "placement": {
+      "id": "HAR-AD-21",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-21.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.79,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Dümeni Dinlemeyen Su",
+        "effect": "Bir sonraki rotada yasal yönlerden biri Kader Zarıyla kapanır. Bütün yolları kapatamaz.",
+        "flavor": "Gemi geri gitmedi. Deniz öne geçti."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-22",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-22.png",
+    "proof_sha256": "0e3fe95516cd2d74176bfcf3b276df3cf75f0630569d45efe1a7f2f9b5dd9604",
+    "asset_sha256": "46b8b71070a0e438f35d09c561a8e5e410802ad63d8eb632e95d40f30ebb2118",
+    "placement": {
+      "id": "HAR-AD-22",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-22.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.58,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Peksimeti Islatan Sağanak",
+        "effect": "Gücü olanlar arasından zarla seçilen bir kişi rastgele 1 Güç kaybeder.",
+        "flavor": "Yağmur dindi. Çorabın fikri değişmedi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-23",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-23.png",
+    "proof_sha256": "8828b7501e5d4c3cff8819a257988934fa881f2ef5f5fc218d5c9aa801de6fd8",
+    "asset_sha256": "7b9870ce5808e1f246e6e3b23e62f1f436b2b38233e2ebb174446e785409d081",
+    "placement": {
+      "id": "HAR-AD-23",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-23.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.08,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 25.01,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Uçan Balık Yağmuru",
+        "effect": "Mekanik etki yoktur.",
+        "flavor": "Balıklar uçtu. Kimse rota önerisini geri almadı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-24",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-24.png",
+    "proof_sha256": "de9cb5c9b16fe6758b669223ce0aa36e1ffc1081511a00920f9aab1371ecc03e",
+    "asset_sha256": "feb6b3ea5a2bc6ed2b96952bbd27490bce6ea87ce921aef2ca825e90db7a2aee",
+    "placement": {
+      "id": "HAR-AD-24",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-24.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 37.23,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Güverteyi Yalayan Dalga",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
+        "flavor": "Dalga çekilince güvertede yalnız başkasının çorabı kaldı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-25",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-25.png",
+    "proof_sha256": "326f669f215591e227259b7976591a225b722ceed02d40f24aed27d3630339e3",
+    "asset_sha256": "dfa83e894f884561b1cc0b70e5381719f51bdfca7cedc955398ff29ce8e659c0",
+    "placement": {
+      "id": "HAR-AD-25",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-25.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.68,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Direk Çatlatan Bora",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Kalafatçı çatlağa baktı. Sonra Kaptanın para kesesine."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-26",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-26.png",
+    "proof_sha256": "4cc35f8111667046c01b9bfc0b32883058e124c4fbfadded44cdd55c2734cfc4",
+    "asset_sha256": "8263d1b6c54245ef4e53f6ef8d8734b467f9329168945919b87c51d40c2497da",
+    "placement": {
+      "id": "HAR-AD-26",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-26.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.52,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Mizanayı Döven Dalga",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Yelkenci yırtığı diktiği yerden tanıdı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-27",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-27.png",
+    "proof_sha256": "28439a291a422e4f31ca72c7b549a51e7f73e9f6fd2620cbcd03e97f3ce8c038",
+    "asset_sha256": "6742445e44329902f83f0fb6b2874c8c5ff287424b40cb573c67f3c3fe236460",
+    "placement": {
+      "id": "HAR-AD-27",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-27.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.86,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Karayel Tokadı",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Rüzgârın eli ağırmış."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-28",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-28.png",
+    "proof_sha256": "d69fa1b5998370388e05fb4a1d65e2acf59d215d576c4d48e4ac79db166d77d5",
+    "asset_sha256": "8f8ebb738a29670959f89c05a3ca85d4fc1ac783344783ef85643e019488eda7",
+    "placement": {
+      "id": "HAR-AD-28",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-28.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.13,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Bitmeyen Sağanak",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Son kuru paçavra da sırayla kullanıldı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-29",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-29.png",
+    "proof_sha256": "4947d20aff72bf85944874d356e5d307f19624287e642072b2582bd00265aad0",
+    "asset_sha256": "4bfb436437c678c3a079e6e1cab972afc2adcfec6ac3138077dc725bc6d4889c",
+    "placement": {
+      "id": "HAR-AD-29",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-29.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.56,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 24.95,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Alabora Olmadık Sayılır",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Sayılmaz diyen Kaptandı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-AD-30",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-AD-30.png",
+    "proof_sha256": "40f0543b20863903c63bc3edcbd688aea6058137f10ead0b91b2aee3eb45e284",
+    "asset_sha256": "bcc3f79fc1f8ad4be96305b74e27aacf44ad9fe47c49bf589490166a2e7d2314",
+    "placement": {
+      "id": "HAR-AD-30",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-30.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 25.85,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Bir Bulutun Kişisel Meselesi",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Özellikle bu gemiyi takip ediyor."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-FN-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-FN-01.png",
+    "proof_sha256": "763cfc6be7e7a3b4b055fe2988c29cc63480af5460b1928b554f1ca085c03804",
+    "asset_sha256": "dbf7e743b4c56f0a9f8e197460c04aea9e81af3f98b352ca0fc776d4d3686721",
+    "placement": {
+      "id": "HAR-FN-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-FN-01.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.4,
+      "effect_mm": 10.95,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.46,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 36.62,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Vardiya Defterli Fener",
+        "effect": "Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
+        "flavor": "Işık yol gösterdi; defter kimin baktığını yazdı."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-FN-02",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-FN-02.png",
+    "proof_sha256": "a8658dde589a53c298a01789b46bf4afeb8b6a80cba210cdacdef954671a9b21",
+    "asset_sha256": "597be5b85c7445d2db6450ea092df4016e55c6bcd9a88e23a85ef8d4ff6fa8f0",
+    "placement": {
+      "id": "HAR-FN-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-FN-02.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.68,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Bekçisi Gitmiş, Işığı Kalmış",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Bekçi not bırakmış: Dönmeyeceğim. Anahtar paspasın altında."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-FN-03",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-FN-03.png",
+    "proof_sha256": "86c5ccfd27d68e92d05d87af620a7a08c7e8b9fe7af08cdcdc4890058f85a1f9",
+    "asset_sha256": "623f2da2cb631c64575ca307b68004b61137106f5266decf7de4e938d92174d5",
+    "placement": {
+      "id": "HAR-FN-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-FN-03.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.4,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.19,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Fenercinin Zulası",
+        "effect": "2 Güç kazanılır; iki farklı oyuncuya verilir.",
+        "flavor": "Fenerci yolu değil, sandığı aydınlatmış."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-FN-04",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-FN-04.png",
+    "proof_sha256": "8d7b933b9c128513dca8e6c59a9e0916b64eb57189899c795c395c4d0e888c07",
+    "asset_sha256": "84c55d450e013f7a581bc049e3ac16362886e1c7719c5dab6aff68975a7dfdc6",
+    "placement": {
+      "id": "HAR-FN-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-FN-04.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.8,
+      "flavor_pt": 9.24,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.69,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Geceleri Parlayan Yalan",
+        "effect": "Bir sonraki rota mümkünse komşu başka bir yasal Yakın Ufka rastgele sapar.",
+        "flavor": "Işık doğruydu. Yer yanlış."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-01.png",
+    "proof_sha256": "c6bb948e4f4996c7d8e1f11921f5f5b71d8788565295f0803fc963ebe46e9c4f",
+    "asset_sha256": "cf8d4fd76d41105734f18cc21f6839c12c9a1845f30b426243785f619ddd90dd",
+    "placement": {
+      "id": "HAR-KY-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-01.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.56,
+      "effect_mm": 14.6,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 32.11,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 37.4,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Duvar Gibi Kayalık",
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır.",
+        "flavor": "Haritada çizgi değildi. Duvarmış."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-02",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-02.png",
+    "proof_sha256": "694b63a93df94e9f57eddd0ed71f5b89d1220ea64a57bac75fbf6d4458b0b8ca",
+    "asset_sha256": "0b2b9d081e9d058943889713cd0a0aa80e3af44f3742d0693c1e92dfeb5a2676",
+    "placement": {
+      "id": "HAR-KY-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-02.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.12,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Dibi Görünen Servet",
+        "effect": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanılır.",
+        "flavor": "Ambarın kilidi hâlâ kapalıydı. Duvarı yoktu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-03",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-03.png",
+    "proof_sha256": "88b3aaf812ea36cc0bd229a01642a6d0ecdea4efb1c47e396d46afadbca54e32",
+    "asset_sha256": "b9dcf41f5212e47c476222b079c2727ee0730e8dfe7b31d40e4f01a17a31b7df",
+    "placement": {
+      "id": "HAR-KY-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-03.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 14.6,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 32.11,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 37.46,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Yolun Bittiği Yer",
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır.",
+        "flavor": "Kestirme diye bakıldı. Dönüş yolu diye hatırlandı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-04",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-04.png",
+    "proof_sha256": "8b363d7f851c1ec116cdf58b3d2bf79cb071f5618b7ccd8261c96e15768a8668",
+    "asset_sha256": "0f5b7918553a6c76149761d749bd22117a444208bb42a77a6bdb6f358df175d2",
+    "placement": {
+      "id": "HAR-KY-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-04.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.07,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Pruva Törpüsü",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gemiyi inceltti, masrafı kalınlaştırdı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-05",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-05.png",
+    "proof_sha256": "7f79e09ee94820c33be154a111960917f720d908d244b30ec5ceb866ed8608ba",
+    "asset_sha256": "77ea95c68234a08f13fae303ee389b16a31219358668a443406c3b34ac70d69f",
+    "placement": {
+      "id": "HAR-KY-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-05.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.63,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Taşın Şakası Olmaz",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gülmeyen yalnızca Kalafatçı değildi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-06",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-06.png",
+    "proof_sha256": "1e68163dda50673dc915dc470379b667f886818728978d7573f98261a27b1643",
+    "asset_sha256": "1bbd135f914e06d61c9273409e1cfc3880c4b94ef4df26d12397ca67feddb27f",
+    "placement": {
+      "id": "HAR-KY-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-06.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.23,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "İğne Deliğinden Sefer",
+        "effect": "Gemi 1 Gövde kaybeder; sonra isterse bir ek normal hareket yapar.",
+        "flavor": "Geçit dar, tamircinin isteyeceği ücret genişti."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-07",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-07.png",
+    "proof_sha256": "7fa5711429844035734d2dac201bb0c7ae00c38de7489c515a8e6852f4577b6c",
+    "asset_sha256": "9c4bb346ce50d218881d2c714fb24cb92cde7d5aa080ae6c2fdfa4937df91aa8",
+    "placement": {
+      "id": "HAR-KY-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-07.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.63,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Kestirme Diye Girilen Yer",
+        "effect": "Gemi isterse bir ek normal hareket yapar.",
+        "flavor": "Haritada yoktu; tartışmada hep varmış gibi anlatıldı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-08",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-08.png",
+    "proof_sha256": "64534e847ae3019331b339c8bd19706f01c2005946a17a511deb79261a805453",
+    "asset_sha256": "0ef10c9e324840f546d29d4afeadd2d0628b1a102e08dde1decbe8ba07c83b3f",
+    "placement": {
+      "id": "HAR-KY-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-08.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.74,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Kaçakçının Unuttuğu Oyuk",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Kaçakçı gitmiş. Vergi hâlâ gelmemiş."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-09",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-09.png",
+    "proof_sha256": "3b344c30b38c11b3a677e13bc7e6842886857d01e00aba02e8ad43cf201f4833",
+    "asset_sha256": "5d6a4d7d9787c1f08e7e2fa42329016c731f5f35885e5840de8708f54ba70048",
+    "placement": {
+      "id": "HAR-KY-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-09.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.35,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Kırılan Sandıklar",
+        "effect": "Gücü olanlar arasından zarla seçilen bir kişi rastgele 1 Güç kaybeder.",
+        "flavor": "Kırılan sandıktı. Suçlanan yine Kaptan oldu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-10",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-10.png",
+    "proof_sha256": "3c2fb2e4b3650a57b9bd9dc4c6b959f1828c264d0113eb9e6bd5ad9a7f2add3a",
+    "asset_sha256": "6f0d33d1fd43147dfea9f74fc103212f7382bf48465b77a75f57cc103cdb9d2e",
+    "placement": {
+      "id": "HAR-KY-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-10.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 35.11,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "İki Taraftan Sıyırdık",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
+        "flavor": "Tek taraftan sıyırmak yeterince heyecanlı değilmiş."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-11",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-11.png",
+    "proof_sha256": "92c34961c185b24fa30f26568d6f6605d812545528a17550305f8ed6045f8a17",
+    "asset_sha256": "6d4346a6e476cc0c95d1d2f8677cd13bdfcafcc685a30e40e81ba283f06c4c9f",
+    "placement": {
+      "id": "HAR-KY-11",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-11.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 29.19,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Suyun Altındaki Diş",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Denizin ağzı yok diyen Haritacı sustu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "HAR-KY-12",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/HAR-KY-12.png",
+    "proof_sha256": "0f5ed172a6b961d0046b7a58bf60ffd5f5bf30ebe5ddb7acfa445ad0ae45ac0e",
+    "asset_sha256": "336982ef59c502a373c7ab1355bcae01a495bf50f22d34c0e7c706ef39b05205",
+    "placement": {
+      "id": "HAR-KY-12",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-12.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.58,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Haritada İnce Çizgi",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Çizgi yakından bakınca epey kalınmış."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-01.png",
+    "proof_sha256": "b4e151d3f43446ff77c29bcec6cfee73bd6ba5f858160e4d54872b6b64e7e013",
+    "asset_sha256": "42c04a4c0261f9d3951d73c754eeb2d16e260bdf1639d9edcb2b67bbd9d61c64",
+    "placement": {
+      "id": "KAR-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-01.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.44,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.6,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Uzakgören",
+        "effect": "İlk tarafsız gece hariç her yolculuk gecesi, yasal bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
+        "flavor": "Yelkeni görmeden geminin gelişini anlar. Bir yalana kanınca günlerce mesafeyi suçlar."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-02",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-02.png",
+    "proof_sha256": "e8b01aa2d62556dc2b7ce4ce1046dc3e63bfe4cc674128c2d190873a1f60f92c",
+    "asset_sha256": "81b370c3291fc37431fe09e3d58628a06519b62bd40dd67c957399c1558c1ce5",
+    "placement": {
+      "id": "KAR-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-02.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.36,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Kıyıçizen",
+        "effect": "İlk tarafsız gece hariç, Sis olmayan her yolculuk gecesi yasal bir Uzak Ufuk kartının olay yüzüne gizlice bakar.",
+        "flavor": "Her itirazını haritanın kenarına not eder. Bir süredir denize yer kalmıyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-03",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-03.png",
+    "proof_sha256": "3ebe51c5ab3d4e61979c506be87693a771465d40f5505a8adc84ecb0a98a192c",
+    "asset_sha256": "0d8c123364aaec4f859668269f1d59bf527dd4798a483e66067541495c0fcc11",
+    "placement": {
+      "id": "KAR-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-03.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.96,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Dümenkurdu",
+        "effect": "Tek kullanım. Bir Harita olayının zorunlu hareket veya rota kilidi etkisini iptal eder.",
+        "flavor": "Dümen onun elindeyken gemi yolu şaşırmaz. Mürettebat şaşırabilir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-04",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-04.png",
+    "proof_sha256": "2644c300e5a6c18779ad742390b8fe05029699b304d72116b725ccf80ba5ff6a",
+    "asset_sha256": "ad3c897bac6f525b4751849cee308cb54ec2f3572acc3def0604999a235abb4f",
+    "placement": {
+      "id": "KAR-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-04.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 40.68,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Canhalatı",
+        "effect": "Tek kullanım. Harita veya Hain saldırısıyla denize düşeni hemen kurtarır. Oylamayla atılana işlemez.",
+        "flavor": "İnsanlara değil, düğümlere güvenir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-05",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-05.png",
+    "proof_sha256": "d396febc6c666a0dcfe96c41a123157cdd7bdeed6fd870c25c904239a66f11b2",
+    "asset_sha256": "acc3460733b2b8a064ce1e854d249cdcfb82d7e1be76186892a4c11a3076d3ee",
+    "placement": {
+      "id": "KAR-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-05.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 38.28,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Tahtakakan",
+        "effect": "Tek kullanım. Geminin almak üzere olduğu 1 Gövde hasarını engeller. Kraken'e de işler.",
+        "flavor": "Gemide bir yer gıcırdadığında elinde çekiçle belirir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-06",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-06.png",
+    "proof_sha256": "b81c94dea2c76b4c70fd09eae8b3aa8a993e6b98c1483f6cf23efa1f88e19b98",
+    "asset_sha256": "7be7613f6c1732112ef7f78a34502614d05187f21cfcfdb1b02336e43f0299be",
+    "placement": {
+      "id": "KAR-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-06.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.6,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Dipgören",
+        "effect": "Batık Kalyon bulunduğunda bir kez fazladan 1 Güç kartı kazandırır.",
+        "flavor": "Her dalıştan bir şey getirir. Çoğunun sahibi için yeniden dalması gerekir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-07",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-07.png",
+    "proof_sha256": "13d562b12590a8fd19c51b29e4143a830691a70d7d1c475690590ff1f4b92bed",
+    "asset_sha256": "6f0fde50de1d0b3ea3eb4471b2c0474fad3efee5e5c9a9712b755f78019890e3",
+    "placement": {
+      "id": "KAR-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-07.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 10.71,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.2,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 40.68,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Rüzgârkoklayan",
+        "effect": "Bir kez Durgun Deniz veya rüzgâr kaynaklı rota kısıtını gizlice kaldırır.",
+        "flavor": "Yelkeni toplatınca batıl inanç derler. Fırtına çıkınca neden daha önce söylemediğini sorarlar."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-08",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-08.png",
+    "proof_sha256": "9d97cee86bccaa2b22952c8c65ee3e5c238b534af78406b212748c12937fa42a",
+    "asset_sha256": "1633f1b6487bb8191303241df3f127783a91947ede290a09466108219850d40a",
+    "placement": {
+      "id": "KAR-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-08.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 14.93,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 37.09,
+      "copy_panel_percent": 31,
+      "title_bottom_percent": 14,
+      "art_band_percent": 55,
+      "actual_panel_mm": 41.22,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Kırık Kürek",
+        "effect": "Tek kullanım. Pusula sunulunca kabul ederse bir mahsuru kurtarmak için bir tam vardiyalık sefere çıkar. Reddederse Pusula atılır; sefer başlamaz ve yetenek harcanmaz.",
+        "flavor": "İkinci küreği kime ödünç verdiğini hatırlıyor. Adamı kurtarmaya pek hevesli değil."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-09",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-09.png",
+    "proof_sha256": "8156e789f3a215572d44216dc5869dfd452c2b092fa47b9b3b25f80ee80ceaf5",
+    "asset_sha256": "d2063222af32061f32ba1509c312f43c01653e6c43cec72172397b14f44c139b",
+    "placement": {
+      "id": "KAR-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-09.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.4,
+      "flavor_pt": 9.76,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 40.54,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Üç Anahtar",
+        "effect": "Tek kullanım. Güç kazanılırken bir fazla karta bakılır; sonra biri kapalı atılır. Kazanç sayısı artmaz.",
+        "flavor": "Üç anahtarı var. Kilit açılmayınca sandığın kendisine ait olmadığını söylüyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-10",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-10.png",
+    "proof_sha256": "bb1f5659494e8512ad31e011ed2b50ba5d0e4bbeb8ed9f9fe09e92952798bbb3",
+    "asset_sha256": "4785544f7e565cc8e07ac9a618fd82fa447db3056991c4eed1cdbac89fbf64bd",
+    "placement": {
+      "id": "KAR-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-10.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 41.88,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Güvertebaşı",
+        "effect": "Tek kullanım. Harita Güç kaybettirecekken seçilen bir oyuncunun bir kartlık kaybını engeller.",
+        "flavor": "Herkesin ne yapması gerektiğini bilir. Özellikle başkalarının."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-11",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-11.png",
+    "proof_sha256": "ef1f5a0bc23423868cbec7d811abf04c57b49be90d27efd764e4fb765eaea3b0",
+    "asset_sha256": "4df92445850e566a1a9a855a98b03fe2631dc4abf5417b4133685b5cbbde9d7f",
+    "placement": {
+      "id": "KAR-11",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-11.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.6,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 36.61,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "İskele Sıçanı",
+        "effect": "Ada veya Fener Güç kazandırırken bir kartın alıcısını, karta bakılmadan belirler.",
+        "flavor": "Karaya herkesten önce çıkar. Nasıl indiği sorulmaz."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-12",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-12.png",
+    "proof_sha256": "4fc67b550dc6a2cb9fa831a07c7c6b86ceec7adeee33f30cfa379a487ce264ef",
+    "asset_sha256": "af2ebe3717342a92fd0591379670cb17603c1c727aef356b15ffdfd4ef618009",
+    "placement": {
+      "id": "KAR-12",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-12.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 41.61,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Karga Yuvası",
+        "effect": "Tek kullanım. Rota öncesi bir Yakın Ufku işaretler. O rota oy alırsa toplamına +1 eklenir.",
+        "flavor": "Orayı gördüm demedim. Oradan gidelim dedim."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-13",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-13.png",
+    "proof_sha256": "2d8e181beaa8e4b25daa09a5e5001bd229e82c8fb3780968528840b1a3542220",
+    "asset_sha256": "b1745b618b2139b84291237731fa47d7c90bb95ac96de87677b6dca6f89de77f",
+    "placement": {
+      "id": "KAR-13",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-13.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.61,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Kazanbaşı",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Dünkü çorbayı bugün de dağıtır. Biri beğenince tarifini vermek istemez."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-14",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-14.png",
+    "proof_sha256": "f4aa38109d23dd7d17c18e06356d3c28e58cacdcc324334f0c6a7e89268e8afa",
+    "asset_sha256": "63e972fb7561650f7b4c46fd04024fe63f8d7d831ea705ab64e93ff090a57657",
+    "placement": {
+      "id": "KAR-14",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-14.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.96,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Fare Nazırı",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Resmî sayımda on dört fare var. On beşincinin çizme giydiğini söylüyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-15",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-15.png",
+    "proof_sha256": "2d2b71c960c22f5516a3d7b9d12ddefa70e129d43b24a21222187a322bcbb8e0",
+    "asset_sha256": "753dcd4ef331db276b9ce3381a06d300217c9943ffdd1ee9eeb4da209cfd60e0",
+    "placement": {
+      "id": "KAR-15",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-15.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 42.61,
+      "title_pt": 12.8,
+      "native_exact_copy": {
+        "name": "Papağan Mütercimi",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Kuş konuşmadan tercümeye başlar. İtiraz edene lehçeyi bilmediğini söyler."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-16",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-16.png",
+    "proof_sha256": "73472b5af556b0bc3b999dc28df981d8f700fa0bf55d682ba896c7c837290db3",
+    "asset_sha256": "615108bf3320ea70bcefcb20e90e6d9b7d297277bb48b8775564f58b2a0e80df",
+    "placement": {
+      "id": "KAR-16",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-16.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 38.59,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Fıçı Bekçisi",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Herkes kurtulacaksa fıçıların da çıkarılmasını ister. İsimlerini tayfadan daha iyi bilir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-17",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-17.png",
+    "proof_sha256": "17cf45343cdfb7c1382cf46bac74ad3cf60cee78b2f7c47a904e31101344eea5",
+    "asset_sha256": "764e7715fedf4a0cdf121be5ddc24aa6405e8874ce2692264474782a181c166c",
+    "placement": {
+      "id": "KAR-17",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-17.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 40.27,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Kafiye Belası",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Cenaze şiirini erkenden yazdı. Kimin için olduğunu sorana ilhamı boğduğunu söylüyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-18",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-18.png",
+    "proof_sha256": "595cbe7e46e348239069130da5515005ca0198e430192df42faee4c01d596ace",
+    "asset_sha256": "dbf008454a2a24c73b61e008d57ca87a4247b7ecf582941a81aaf8204061772e",
+    "placement": {
+      "id": "KAR-18",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-18.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 44.14,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Karayı Özleyen",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "San Cordelio'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-19",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-19.png",
+    "proof_sha256": "16e0cc4dace04b4258ef3d24cd1b9efd7576a9c745f9a331afa5f2a6ccb0db11",
+    "asset_sha256": "27d3582aa1d11fae091664673529fee6b676944f0f0ee1e2f701632b3833314f",
+    "placement": {
+      "id": "KAR-19",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-19.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 10.71,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.46,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.68,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Yastıkçı",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Yastık kılıflarını değiştirirken duyduklarını unuttuğunu söyler. Hatırlaması için genellikle bir iyilik gerekir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "KAR-20",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/KAR-20.png",
+    "proof_sha256": "f2423101a0b6fb32c40693310fba3dafeb3db6f6fd65cf84d7ef97fd5db54d25",
+    "asset_sha256": "a9973511f644d3d3745184999bfb429b0fe08649971868079f9e866f41b18176",
+    "placement": {
+      "id": "KAR-20",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-20.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 41.36,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Tahtaya Vuran",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Her kötü alamette tahtaya vuruyor. Tahtakakan bundan hiç hoşlanmıyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-H-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-H-01.png",
+    "proof_sha256": "b6c21e1a051ccd15f10ec5a205cac0cae1b020168020f11bb42a978527a56184",
+    "asset_sha256": "39cee5a64f5d80d012d0f13661a32eb4e6780803aa0dc9611061e752321e038a",
+    "placement": {
+      "id": "SAD-H-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-01.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 14.93,
+      "flavor_mm": 21.42,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 47.25,
+      "copy_panel_percent": 54,
+      "title_bottom_percent": 18,
+      "art_band_percent": 28,
+      "actual_panel_mm": 50.02,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Çocuğunun bakımını üstlenen eczacı artık para almıyor. Defterde borcunun yerine geminin adı yazıyor. Yük teslim edilirse hesap yeniden açılacak. İlk kez ilaç alabiliyorsun; bedelini başkaları ödeyecek."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-H-02",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-H-02.png",
+    "proof_sha256": "8fed1d7c7d3aadaf58cab95621475da2391dd349cf87705d9608c6b0521e1fc9",
+    "asset_sha256": "734883534bacdb07bfb8b810323e2423bdec0e8ce9804481d48ce46a32ed11b4",
+    "placement": {
+      "id": "SAD-H-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-02.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 14.93,
+      "flavor_mm": 17.85,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.68,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 48.4,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Ailene karantina hanında yer ayırmışlar. Kapı dışarıdan kilitli; her gün için senden ücret istiyorlar. Geminin kayıp haberi gelince çıkış kâğıdını vereceklerini söylediler. Anahtarın fiyatı bir sefer."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-H-03",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-H-03.png",
+    "proof_sha256": "3a5df239fc9d0141b51e9e779d95d0742019784e4478f93874988e7413895b5e",
+    "asset_sha256": "8fdc6fb044e1614709940567dff92f5d43c810bcc4978b86ce6f54b5851bf40a",
+    "placement": {
+      "id": "SAD-H-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-03.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 14.93,
+      "flavor_mm": 17.85,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.68,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 47.62,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Karantinadan bir ölünün sağlık kâğıdıyla kaçtın. Sana gerçek adınla seslenen aracı, kaydı açtırabileceğini söyledi. Yük teslim edilmezse kâğıt yanacakmış. Yeni hayatın eski bir imzaya sığıyor."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-H-04",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-H-04.png",
+    "proof_sha256": "bf5c63b51148e224b6a788fe9b839fa9d159327e4804df956660a98d8a16d97c",
+    "asset_sha256": "ed7a1249b13a40723f75f59fecde32492a5161dc08ad23b9ffe79421b82c21d3",
+    "placement": {
+      "id": "SAD-H-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-04.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.8,
+      "flavor_pt": 9.28,
+      "effect_mm": 14.93,
+      "flavor_mm": 17.85,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.68,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 52.9,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Kardeşinin öldüğü koğuştan kopmuş bir sayfa gösterdiler. Üstünde Veyr'in adı vardı; alt yarısı yoktu. Yükü durdurursan başka aileler aynı mektubu almayacak. Sana öyle söylediler; inanmayı seçtin."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-H-05",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-H-05.png",
+    "proof_sha256": "052735bed853171d6e2b0a7402b5ec775ad9b43242447ee04bfe738a389b432f",
+    "asset_sha256": "d0f007408436676308484149e44180e04a693af52ad7483ce3a1600456c83991",
+    "placement": {
+      "id": "SAD-H-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-05.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 14.93,
+      "flavor_mm": 17.85,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.68,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 45.61,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Kendini çoktan denizde kayıp yazdırdın. Borçların kapandı; cenaze yardımını bir yakının alıyor. Gemi sağ salim dönerse hesap yeniden açılacak. Ölü olarak ilk kez geçinebiliyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-01.png",
+    "proof_sha256": "165ba27d6c6ed766442a54795ea19c318c30097c747f6d1025759be5c9af3453",
+    "asset_sha256": "7ac54294b1e3f6a458d7035d9087b489318542a5d1c4ce638d9d7abcfdba2bb3",
+    "placement": {
+      "id": "SAD-T-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-01.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 40.92,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Eve son yazdığın mektupta iyi olduğunu söyledin. Bu kez o mektuptan önce varmak istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-02",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-02.png",
+    "proof_sha256": "8b22ca2c6b4621525e2c2227229ee3f3733b812ee0b02d59ae403d89172f9d42",
+    "asset_sha256": "9806cb52608ee17636f0d40ad11c68d3382cbaa579d7a541af15c0348f20fda8",
+    "placement": {
+      "id": "SAD-T-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-02.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 42.71,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Sağlık kapısının arkasında bir sofralık yerin duruyor. Kapıyı açtırmaya yetmiyor; yine de dönmek için bir sebep."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-03",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-03.png",
+    "proof_sha256": "eee02facbdd236878c09dfb80b6d07e1b617eb04dd929cb33dabdad6ff746e25",
+    "asset_sha256": "ff713a85bee8a0972dba24141776fdabf05a2da5c8665963ce9e77e2cce9ac72",
+    "placement": {
+      "id": "SAD-T-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-03.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 41.04,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Bu yükü sağlam teslim edersen borcunun son taksiti kapanacak. Alacaklın yıllardır denizin tehlikelerini küçümsüyor."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-04",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-04.png",
+    "proof_sha256": "303df995416da66e54efd7eeb12e6cb31cb96bb81c2ea887330c195fa5bef004",
+    "asset_sha256": "874f6cc65f960f3f01b7a035fe05c755f48a03e96c7cdaad842e6ac68ca2d63e",
+    "placement": {
+      "id": "SAD-T-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-04.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 41.45,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Bir komşun yol paranı verdi. Karşılığında ilaç istemedi; döndüğünde kapısını çalmanı istedi."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-05",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-05.png",
+    "proof_sha256": "83441eb9c37da42c8858b18659efcef6076b4c1fadae974aa9a375fc36e29ceb",
+    "asset_sha256": "31a0784157b28f81e82619db29d169d2c0669c55ec5073264404f8c96653651d",
+    "placement": {
+      "id": "SAD-T-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-05.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 14.28,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.84,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 46.43,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Veyr'in işe yaramayan denemeleri de yazdığını gördün. Hiç değilse birinin hesabı doğru tuttuğuna inanmak istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-06",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-06.png",
+    "proof_sha256": "cff9fc9c699c4fedbea1f163bf5977d0ab46dd5857cf28762f0d16c2ed6cd647",
+    "asset_sha256": "5031fff93e392d9bc81fbb9fada3b254471eeb03317a54ff6f79b1d4f2a1b9a1",
+    "placement": {
+      "id": "SAD-T-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-06.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 40.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Bu seferin ücretini peşin harcadın. Dönmezsen ailene para yerine bir açıklama gönderilecek."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-07",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-07.png",
+    "proof_sha256": "6c8637f631a58e5c8e2cea5aa9f53f35a8606d6ff9d13187602b8a8408ed0c6b",
+    "asset_sha256": "3a51b62ceb57197ec60690ed0a0751c1291a68507739d0103ca33fc726e0bec9",
+    "placement": {
+      "id": "SAD-T-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-07.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 18.66,
+      "flavor_mm": 14.28,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.84,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 50.14,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Getirdiğin sandıkların o kapıyı açmasını istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-08",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-08.png",
+    "proof_sha256": "ddb1aaf1ef99f0452921a359fa1465f878afa860088515a5e713e25529c2fec2",
+    "asset_sha256": "9b42b8573769285fc28c859a6d3ef253c349c041b1883f1e77adff5aae617866",
+    "placement": {
+      "id": "SAD-T-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-08.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 43.79,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Senin adına bir mezar yeri ayırmışlar. Manzarasını beğenmedin; itirazı şahsen yapmak istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-09",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-09.png",
+    "proof_sha256": "eea33f7da0cd914377d5fd7222556feba4437c80819559c985e77727f29c48c7",
+    "asset_sha256": "0fb485d42dffdbbe8789bbb3c73c33e6040efff774b0764864ba4839c59c9151",
+    "placement": {
+      "id": "SAD-T-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-09.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 45.05,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Yük defterine imza atarken kimse okumanı beklemedi. Okudun. Şimdi herkes kadar sorumlu, çoğundan daha tedirginsin."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SAD-T-10",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SAD-T-10.png",
+    "proof_sha256": "407c0495228d8872cc9cc1041620e81e6f62d381f2c51b26a0d3cf9c61351ae7",
+    "asset_sha256": "d0b1c87aabdbe5a6504bc3e21256cf942767a041343413970f5a82d0a7d212ca",
+    "placement": {
+      "id": "SAD-T-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-10.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 44.69,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Eve götüreceğin hediyeyi kaybettin. Eli boş dönünce söylenecekler. Dönmezsen susacaklar. Söylenmelerine razısın."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SET-KL-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SET-KL-01.png",
+    "proof_sha256": "0b7c70862168920628d5e82a0f07890abd4cb06a5328fd784540129d0d715e3d",
+    "asset_sha256": "8a8bdb1f36195972eb535ca86ec157d2c4378a3ccab78270b7657a495b480853",
+    "placement": {
+      "id": "SET-KL-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SET-KL-01.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 40.82,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 14,
+      "art_band_percent": 51,
+      "actual_panel_mm": 41.44,
+      "title_pt": 15.2,
+      "native_exact_copy": {
+        "name": "KALKIŞ LİMANI",
+        "effect": "Haritanın alt kenarında seçilen başlangıç sütununa hizala. Gemi bu kart üzerinde başlar. Kart Harita karesi değildir ve 52 Haritaya dahil değildir. İlk satırdan acil geri dönüşte gemi buraya dönebilir.",
+        "flavor": "Halatlar çözülmeden önce her yol kolay görünür."
+      },
+      "back": "BACK_SUPPORT"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SET-KP-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SET-KP-01.png",
+    "proof_sha256": "da7ea26db0dd3e1b4d7f2aff96359b4513330323ee7ba6ea793b333b3d142696",
+    "asset_sha256": "cf384d5ec65cb44c494d9ba731bfd490e1e0465b72e9e857d311c5df21ecfda6",
+    "placement": {
+      "id": "SET-KP-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SET-KP-01.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 22.39,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 40.99,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 14,
+      "art_band_percent": 51,
+      "actual_panel_mm": 41.4,
+      "title_pt": 18.8,
+      "native_exact_copy": {
+        "title": "KAPTAN",
+        "effect": "Rota oylamasında 2 oy kullanırsın. Rota beraberliğini yalnız berabere seçenekler arasından bozarsın. Suçlama ve İsyanda 1 oy kullanırsın. Suçlama hedefinin ön seçimindeki eşitliği de bozarsın; bu ön seçim resmî oylama değildir.",
+        "flavor": "Dümen sende. Borç hepinizin."
+      },
+      "back": "BACK_SUPPORT"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  },
+  {
+    "id": "SET-VL-01",
+    "geometry": "PASS",
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/inspection/SET-VL-01.png",
+    "proof_sha256": "352759efe8a9434801c1d1a199c055800c7577863bfb82fe80528df0ec1b4e83",
+    "asset_sha256": "f5dc363d45513ce3daeaf35b6ae74eb465bacc2c362e67c6a89c56b30e58bb38",
+    "placement": {
+      "id": "SET-VL-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SET-VL-01.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 22.39,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 44.56,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 14,
+      "art_band_percent": 48,
+      "actual_panel_mm": 57.66,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "VARIŞ LİMANI",
+        "effect": "Haritanın üst kenarında seçilen Hedef Liman sütununa hizala. Bu kart Harita karesi değildir. Gemi o sütundaki son sıra kartına girince önce olayı, sonra İskorbütü çöz. Gemi batmadıysa ve İskorbüt temizse Liman Gecesi oynanır.",
+        "flavor": "Rıhtım görünüyor. Sağlık sandalı şafakta gelecek."
+      },
+      "back": "BACK_SUPPORT"
+    },
+    "visual_review": "SAME_OPERATOR_SELF_CHECK_PASS"
+  }
+]

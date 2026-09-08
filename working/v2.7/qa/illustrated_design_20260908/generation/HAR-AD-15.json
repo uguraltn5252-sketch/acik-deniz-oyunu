@@ -1,0 +1,25 @@
+{
+  "id": "HAR-AD-15",
+  "revision": 2,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-1612bbe1-27dc-4985-8a6a-da69f2ecb3f2.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-15.png",
+  "sha256": "b6d12fa95368ccb21f80fbbf3ffd1c149bee185f9fd141146d50f6d55a2804b5",
+  "pixels": [
+    1254,
+    1254
+  ],
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/HAR-AD-15.txt",
+  "planned_prompt_sha256": "06e920455d3b2460e2b502e081ee2a60f2e3e3f3c4b0b835ef5f774e136b0e1a",
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "actual_prompt_status": "SEE_REVISION_REQUEST_RECORD / NOT_ASSUMED_IDENTICAL_TO_PLAN",
+  "previous_selected_sha256": "4880ea2d593321277ae2c19a092fc621676af92b2311b981e13f3edabbbbc614",
+  "actual_request_file": "revision_requests.json",
+  "actual_prompt_sha256": "319eaa77ddfd6bb25528cca408fe58f213c377a1242d583c9441f595de83a37f",
+  "review_evidence": "../individual_visual_review.json#HAR-AD-15",
+  "reviewed_proof_sha256": "50c62b23cc8ae03210d01319fa96821b1baf639a15a1c2103f028af94e246d8a",
+  "owner_aesthetic_acceptance": false
+}

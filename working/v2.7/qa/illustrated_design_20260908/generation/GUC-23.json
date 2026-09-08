@@ -1,0 +1,23 @@
+{
+  "id": "GUC-23",
+  "revision": 1,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-cab1b90a-5fb9-4317-b0da-84265e19a0ab.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/GUC-23.png",
+  "sha256": "6bbd80991694f2b4d3362a4428e772e0858ad29a60f330e8d82ee0891d8c98eb",
+  "pixels": [
+    1060,
+    1484
+  ],
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/GUC-23.txt",
+  "planned_prompt_sha256": "318abecc9a6ae7055c5954901877a2a95f1079bd7b9eb1c9a99dfea9186c26f6",
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "actual_request_file": "actual_requests.json",
+  "actual_prompt_sha256": "318abecc9a6ae7055c5954901877a2a95f1079bd7b9eb1c9a99dfea9186c26f6",
+  "review_evidence": "../individual_visual_review.json#GUC-23",
+  "reviewed_proof_sha256": "1451c64ef3c62e31f3732878d25b44f30f73cfa7286a0b8a85eb1fdff95889af",
+  "owner_aesthetic_acceptance": false
+}

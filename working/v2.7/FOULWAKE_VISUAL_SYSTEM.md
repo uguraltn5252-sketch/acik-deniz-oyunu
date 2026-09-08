@@ -1,15 +1,17 @@
 # FOULWAKE — güncel görsel sistem
 
-8 Eylül 2026 · FOULWAKE-WHOLE-GAME-POLISH-001 · tam çalışma destesi.
+8 Eylül 2026 · FOULWAKE-ILLUSTRATED-DESIGN-002 · 121 özgün tamamlanmış kart.
 
-Güncel karar: [sanat ve uygulama](visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md). Güncel dosyalar: [baskı ve inceleme](visual/polish_20260908/README.md). 7 Eylül pilotu ve ilk tam deste tarihsel teslimlerdir.
+Güncel [sanat kararı](visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md), [baskı ve inceleme](visual/illustrated_design_20260908/README.md), [uygulama kanıtı](qa/illustrated_design_20260908/review.md).
 
-120 kartın copy kaynağı `FOULWAKE_CARD_TEXTS_v2.7.json`, KAPTAN'ınki `FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` dosyasıdır. 121 brief aynı güncel kaynaklara bağlanır. SRC-002: GUC-22 Kaptanın Çatlak Kupası, GUC-23 Bayat Peksimet, GUC-24 Islak Çorap. KAPTAN'ın kabul edilmiş resmi ve sabit kırpımı korunur.
+Referans, tasarım dilini tanımlar: tuz yemiş sıcak kâğıt, elde çekilmiş çift mürekkep çerçeve, kıvrılan başlık şeridi, canlı yüz ve jest, yönlü gravür taraması; mat lacivert, oker ve pas. KAPTAN dahil 121 ön yüz bu dilde özgün üretildi. Referans kırpımı kullanılmaz. Her kaynak levhanın tamamı kendi kartının kesim alanına yerleşir; resim, şerit ve metin zemini birlikte tasarlanır. Kaynak PNG'ler korunur; PDF'lerde kırpmadan, renk değiştirmeden ve yeniden örneklemeden JPEG 93 kodlama kullanılır.
 
-121 ayrı ön kaynak değişmedi. Fenerin eski üst sahnesi aynı ölçekte korunurken ters alt kopyası kaldırıldı; altta yalnız deniz vardır. Nihai tek kuleli arka `visual/polish_20260908/pdf/BACK_LIGHTHOUSE.pdf` dosyasıdır. Dört fener bu ortak masterı kullanır. Fener 0° yerleşir; diğer altı aile yarım dönüş eşlemesini korur. Deniz/Kayalık 42 kartta, Sadakat 15 kartta aynı aile arkasını paylaşır.
+120 kartın exact metni `FOULWAKE_CARD_TEXTS_v2.7.json`, KAPTAN'ınki `FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` içindedir. Metinler resim üretimine yazdırılmaz; PDF'de gömülü Liberation Serif ailesiyle dizilir. Kaynak sözler kısaltılmaz. SRC-002 kimlikleri ve dört küçük gönderme korunur.
 
-Harita 70×70 mm; Karakter ve üç yardımcı 70×120 mm; Güç/Erzak ve Sadakat 63,5×88,9 mm. Taşma 3 mm, metin güvenliği 4,5 mm. Etki 8,6, tat metni 8 punto. En düşük ön resim çözünürlüğü 386,94 DPI. HAR-AA-02'nin resim alanı 13,853 → 21,684 mm; GUC-27'ninki 14,790 → 18,706 mm. Bu ölçüler fiziksel okunurluk denemesi değildir.
+Harita 70×70 mm; Karakter ve üç yardımcı 70×120 mm; Güç/Erzak ve Sadakat 63,5×88,9 mm. Kesim alanının dışında 3 mm düz kâğıt taşması, metinlerde 4,5 mm güvenli alan vardır. Asgari kural boyutu Haritada 9, diğerlerinde 9,2 punto; tat metni Haritada 8,6, diğerlerinde 8,8 puntodur. Alan elverdiğinde metinler büyütülür. Başlıklar kendi şeritlerinin ölçülmüş sınırlarına yerleşir; iki uzun başlığa %92 yatay yazı ölçeği uygulanır. Asgari özgün ön levha çözünürlüğü 347,13 DPI'dır.
 
-48 sayfalık kart PDF'si, 24 sayfalık görsel inceleme ve 30 sayfalık yeni kural kitabı hazırlandı. Depodaki onar indirme bölümünün toplam 99 sayfası ana dosyalarla raster olarak eşleşir; baskı bölümleri tam ön–arka çiftlerini korur. Tek fener üst sahnesinin 300 DPI karşılaştırmasında değişim sıfırdır. Diğer arkalarda kusursuz piksel dönüş simetrisi iddia edilmez.
+Her kartın çizimi incelenir, metin paneli ölçülür, native yazılar eklendikten sonra tam kart yeniden okunur. Eksik levha, kimlik, kaynak uyuşmazlığı veya taşan metin teslimi durdurur. İnceleme PDF'si baskının kullandığı aynı tam kart masterını gösterir. Yalnız çizimi gösteren kontrol, bitmiş kart kabulü sayılmaz.
 
-Kontrol kanıtı: [sonuçlar](qa/whole_game_polish_20260908/print_checks.json), [kaynak korunumu](qa/whole_game_polish_20260908/lighthouse_preservation_check.json), [inceleme](qa/whole_game_polish_20260908/review.md). Tek operatörün kontrolüdür; bağımsız estetik kabul, insan masası veya fiziksel opaklık/baskı sonucu değildir.
+Yedi ortak arka korunur: Karakter 20, Güç/Erzak 31, Sadakat 15, Deniz/Kayalık 42, Ada 6, Fener 4, Yardımcı 3. Fener arkasındaki beğenilen tek, dik kule byte olarak aynı masterdır. Arkalarda kart kimliği ve olaya özgü işaret yoktur. Diğer altı arkanın önceki kompozisyonu native PDF olarak korunur; piksel düzeyinde kusursuz dönüş simetrisi iddia edilmez.
+
+48 sayfalık baskı ve 34 sayfalık tam kart incelemesi tamamlandı. 121 ayrı tam kart incelemesi, 363 exact-copy yerleşim karşılaştırması, 82 son sayfa gözle kontrolü ve 132 bölümlenmiş sayfa render eşleşmesi kaydedildi. Bu SAME_OPERATOR_SELF_CHECK teslimidir; proje sahibi estetik değerlendirmesi, insanlarla oyun ve fiziksel baskı/opaklık kontrolü ayrı kanıt gerektirir. Release/lock verilmedi.

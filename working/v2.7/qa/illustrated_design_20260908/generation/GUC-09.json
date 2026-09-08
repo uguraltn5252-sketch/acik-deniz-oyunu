@@ -1,0 +1,23 @@
+{
+  "id": "GUC-09",
+  "revision": 1,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-eb949073-d5ff-4ad7-997c-9cad6f295936.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/GUC-09.png",
+  "sha256": "96bc6c3c7903768f861a8737e54d6cf938cd44dc844827bf81fc289a6ed81303",
+  "pixels": [
+    1060,
+    1484
+  ],
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/GUC-09.txt",
+  "planned_prompt_sha256": "16ea5c156bd564939150c08ebf2b20aebf799ceb7d86b202c5273cd981a42a47",
+  "actual_request_file": "actual_requests.json",
+  "actual_prompt_sha256": "16ea5c156bd564939150c08ebf2b20aebf799ceb7d86b202c5273cd981a42a47",
+  "review_evidence": "../individual_visual_review.json#GUC-09",
+  "reviewed_proof_sha256": "e18d9cc6865ca6c81753a7bf912efad695f2b574134c01baa2a50d9169cb3327",
+  "owner_aesthetic_acceptance": false
+}

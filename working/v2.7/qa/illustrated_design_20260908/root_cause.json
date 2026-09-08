@@ -1,0 +1,51 @@
+{
+  "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+  "source_head": "641ed130fc2ae76c4217979d510e19a4676b0f0c",
+  "findings": [
+    {
+      "id": "ART-DESIGN-002-A",
+      "source": "working/v2.7/qa/whole_game_polish_20260908/build_print.py",
+      "finding": "KAPTAN path explicitly uses source_rect=(22,180,874,1093), a literal reference crop.",
+      "correction": "Fresh original complete card plate; all 121 share one uncropped renderer."
+    },
+    {
+      "id": "ART-DESIGN-002-B",
+      "source": "working/v2.7/qa/full_deck_art/prepare_prompts.py",
+      "finding": "Old art prompts exclude border, type and layout; final bare template gives the art only the space left after copy.",
+      "correction": "Individually authored integrated full-card plates with measured native-copy areas; expressive comic engraving and original situational humor."
+    },
+    {
+      "id": "ART-DESIGN-002-C",
+      "source": "working/v2.7/qa/whole_game_polish_20260908/build_print.py::build_review",
+      "finding": "Old visual review displays illustrations alone, so complete-card design and type/art balance are not shown.",
+      "correction": "New review must reproduce the same complete cards as the print PDF."
+    },
+    {
+      "id": "ART-DESIGN-002-D",
+      "source": "working/v2.7/qa/recheck_visual/build_print.py::front",
+      "finding": "Historical pilot allows text-only fallback. Latest 48-page deck requires assets, so absence in an older viewed file cannot be attributed to the current complete deck without identifying that file.",
+      "correction": "One current download identity, complete coverage manifest and fail-closed missing-art checks. No unsupported claim that current 121 assets were missing."
+    },
+    {
+      "id": "ART-DESIGN-002-E",
+      "source": "README.md at e6398070c4a7b479092946261d0e121952dbbfe7",
+      "finding": "Repository root labels old recheck_20260907 text prototype and 12-front pilot as current, and says 109 fronts are still unillustrated. Those links bypass the later 121-image delivery.",
+      "correction": "Coordination closure replaces stale root README, PROJECT_STATE and AI_HANDOFF delivery links with the current completed-card index. This is a verified route to the old prototype, not proof of which file the owner opened."
+    }
+  ],
+  "fixed_constraints": [
+    "Canonical copy unchanged",
+    "121 identities unchanged",
+    "Four subtle allusions retained",
+    "Single upright lighthouse master unchanged",
+    "Tayfa/Hain same back; Sea/Rock same back"
+  ],
+  "acceptance": "Implemented; all 121 complete cards and 82 final PDF pages visually checked by the same operator. Owner aesthetic review remains pending.",
+  "evidence": [
+    "individual_visual_review.json",
+    "proof_index.json",
+    "delivery_checks.json",
+    "pdf_inspection_index.json",
+    "render_manifest.json"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "GUC-01B": {
+    "prompt": "Edit this original full card background plate in place. Preserve the exact whole card composition, blank title ribbon, blank lower parchment cartouche, border, sailor pose, facial expression, ropes and engraved comic texture. Change ONLY the lifebuoy material: it must be a handmade 1721 natural cork flotation ring, visibly made of tan brown cork blocks tied with narrow unpainted flax/linen bindings and an old rope. Remove all modern red and white painted or plastic appearance from the ring. Keep its size and position. No text or numbers anywhere. The supplied image is the target to edit; retain all other art.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/GUC-01B.png"
+    ],
+    "revision": 2
+  },
+  "KAR-20": {
+    "prompt": "Edit the FIRST full card background plate. Preserve the foreground superstitious man knocking on the mast, his pose, clothes, face, the mast, sky, rigging, blank title ribbon, entire blank lower text cartouche and ornate frame. Change ONLY the annoyed carpenter in the left background: this is Tahtakakan, the same woman shown in the SECOND reference. Give this background carpenter her short thick dark curly hair, rusty red headband, strong stocky arms, cream rolled sleeves, navy work clothes and leather tool belt; she holds a small wooden-handled hammer and glares at the man knocking. Match that woman's identity without copying her foreground pose. She remains smaller behind the foreground man. Original 1721 comic engraving, same colors and hatching. No text, letters, numbers. Output only the revised FIRST card, complete and uncropped.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/KAR-20.png",
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/KAR-05.png"
+    ],
+    "revision": 2
+  },
+  "HAR-AD-15": {
+    "prompt": "Recompose the supplied square complete card background plate to leave substantially more clear parchment for native rule text. Preserve this same original scene, the same characters, facial expressions, physical joke, period clothing, color and engraved comic style. Preserve the blank curled title ribbon at the top and double ornamental outer frame. The bottom 55% of the entire card height MUST be one quiet blank parchment copy cartouche with no scene, figures, props, large ink marks or text. Move the entire art/copy separator up to 45% of card height measured from the TOP. Redraw the scene as a compact expressive wide vignette between the top title ribbon and that new divider; deliberately simplify distant detail so the main human action remains clear. Do not merely retain the original separator location. No cropping off heads or essential hands; no compressed distorted anatomy. There is a long rule paragraph to typeset later, so the paper area is essential. No letters, no numbers, no words. Output only one complete square card plate.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-15.png"
+    ],
+    "revision": 2
+  },
+  "HAR-AD-24": {
+    "prompt": "Recompose the supplied square complete card background plate to leave substantially more clear parchment for native rule text. Preserve this same original scene, the same characters, facial expressions, physical joke, period clothing, color and engraved comic style. Preserve the blank curled title ribbon at the top and double ornamental outer frame. The bottom 55% of the entire card height MUST be one quiet blank parchment copy cartouche with no scene, figures, props, large ink marks or text. Move the entire art/copy separator up to 45% of card height measured from the TOP. Redraw the scene as a compact expressive wide vignette between the top title ribbon and that new divider; deliberately simplify distant detail so the main human action remains clear. Do not merely retain the original separator location. No cropping off heads or essential hands; no compressed distorted anatomy. There is a long rule paragraph to typeset later, so the paper area is essential. No letters, no numbers, no words. Output only one complete square card plate.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-24.png"
+    ],
+    "revision": 2
+  },
+  "HAR-KY-03": {
+    "prompt": "Recompose the supplied square complete card background plate to leave substantially more clear parchment for native rule text. Preserve this same original scene, the same characters, facial expressions, physical joke, period clothing, color and engraved comic style. Preserve the blank curled title ribbon at the top and double ornamental outer frame. The bottom 65% of the entire card height MUST be one quiet blank parchment copy cartouche with no scene, figures, props, large ink marks or text. Move the entire art/copy separator up to 35% of card height measured from the TOP. Redraw the scene as a compact expressive wide vignette between the top title ribbon and that new divider; deliberately simplify distant detail so the main human action remains clear. Do not merely retain the original separator location. No cropping off heads or essential hands; no compressed distorted anatomy. There is a long rule paragraph to typeset later, so the paper area is essential. No letters, no numbers, no words. Output only one complete square card plate.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-03.png"
+    ],
+    "revision": 2
+  },
+  "KAR-08": {
+    "prompt": "Edit this original complete card plate, keeping its portrait proportions, all borders, blank title ribbon and blank lower copy cartouche unchanged. Keep the grumpy red-bearded boatman seated in his boat with his oar. Correct ONLY the physical footing of the small background man carrying the borrowed oar and hanging laundry: add a clearly supported weathered wooden dock/jetty under his boots, extending from the right shoreline with wooden pilings reaching into the water. He must stand on that dock, not appear to walk on water or float. Preserve his expression and laundry/oar joke. Consistent 1721 engraved comic ink, tan parchment/navy/rust. No readable text or numbers. Entire full card, no crop.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/KAR-08.png"
+    ],
+    "revision": 2
+  },
+  "GUC-27": {
+    "prompt": "Edit and recompose the supplied portrait 5:7 full illustrated card plate. Keep the exact same original expressive human scene and situational joke, 1721 setting, parchment texture, black comic-engraving contours, navy and rust palette, outer double frame and blank curled top ribbon. Move the art/text separator MUCH higher: the bottom 72% of the entire card must be a very large uninterrupted clean blank parchment cartouche. The scene should be redrawn as a compact horizontal vignette under the title ribbon, with recognizable faces and the main prop; simplify distant detail. Do not keep the old divider: it leaves insufficient room for the mandatory long native rule text. No faces, objects, big hatching or ornamental intrusions in this clear central lower area. Preserve a strong visual joke even in the shorter art strip. No letters or words anywhere. Output the entire revised single card, not a cropped piece.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/GUC-27.png"
+    ],
+    "revision": 2
+  },
+  "ERZ-01": {
+    "prompt": "Edit and recompose the supplied portrait 5:7 full illustrated card plate. Keep the exact same original expressive human scene and situational joke, 1721 setting, parchment texture, black comic-engraving contours, navy and rust palette, outer double frame and blank curled top ribbon. Move the art/text separator MUCH higher: the bottom 68% of the entire card must be a very large uninterrupted clean blank parchment cartouche. The scene should be redrawn as a compact horizontal vignette under the title ribbon, with recognizable faces and the main prop; simplify distant detail. Do not keep the old divider: it leaves insufficient room for the mandatory long native rule text. No faces, objects, big hatching or ornamental intrusions in this clear central lower area. Preserve a strong visual joke even in the shorter art strip. No letters or words anywhere. Output the entire revised single card, not a cropped piece.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/ERZ-01.png"
+    ],
+    "revision": 2
+  },
+  "GUC-05": {
+    "prompt": "Edit the supplied full illustrated card background plate. Preserve the complete card, blank title ribbon, large blank lower parchment cartouche, ink frame, woman fitting a coffin-shaped repair plank to the leaking hull, the healthy relieved customer, ship, harbor and all expressions. Change ONLY the black rounded modern-looking hat that the background customer holds: make it a soft worn dark early-eighteenth-century tricorne/cocked felt hat, with three clearly pinched corners and an irregular brim, held in his same hand. Do not change any other object, pose or layout. Same 1721 comic engraving and warm tan/navy/rust palette. No text, words or numbers. One complete card, no crop.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/GUC-05.png"
+    ],
+    "revision": 2
+  },
+  "SET-KL-01": {
+    "prompt": "Edit this complete portrait FOULWAKE departure-port card background plate. Preserve the original customs clerk, worried dock worker tying a rope, cargo crates, loading scene, sailing ship, town, blank title ribbon, ink frame and comic engraving style. Correct the cargo markings: replace EVERY modern-looking red cross on the medicine crates with a small hand-painted black early-apothecary mortar-and-pestle emblem. No red crosses remain. They are uncertain medical cargo in 1721, not modern emergency kits. Also remove the large decorative horizontal line-and-diamond currently floating near the bottom of the blank parchment text cartouche; leave that entire central lower cartouche blank textured parchment for native type and native ornament. Preserve all outer-edge decoration. Keep the divider height, composition, face expressions and color palette. No letters, words, or numbers. One entire flat card, no crop.",
+    "referenced_image_paths": [
+      "working/v2.7/visual/illustrated_design_20260908/assets/SET-KL-01.png"
+    ],
+    "revision": 2
+  },
+  "HAR-AA-05": {
+    "prompt": "Recompose this exact original illustrated full card background for a finished physical card. Preserve its scene identity: two grinning opportunist pirates carrying off a chest and a crate while the astonished sailor waves after them at the island anchorage. Keep the expressive engraved comic characters, distinctive faces, dry humor, 1721 costume and maritime setting, muted navy/ochre/rust on warmly worn parchment, organic double ink frame and blank curled title ribbon. Essential change: make the completely blank lower parchment copy cartouche MUCH TALLER. Square card: the blank lower cartouche must occupy the BOTTOM 58% of total image height; start its horizontal divider at 42% from top. The top blank ribbon stays near the top occupying about 5%-14% of height. Re-stage the intact expressive scene as a shallow wide composition between ribbon and the new high divider. Heads, key prop and joke must remain completely legible, not clipped. Reduce background detail to accommodate; do not simply cover or crop the existing scene. The lower cartouche must be truly empty warm paper, only the outer card border, no props, no inner icons, no central ornaments. No writing, lettering, labels, numbers or invented symbols anywhere. Keep the same aspect ratio and full image boundaries. This is a layout repair of the supplied target art, not an unrelated new scene.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-05.png"
+    ]
+  },
+  "HAR-FN-01": {
+    "prompt": "Recompose this exact original illustrated full card background for a finished physical card. Preserve its scene identity: the comically severe elderly lighthouse keeper with quill and blank open shift ledger, one single upright stone lighthouse and a gull; no duplicate tower. Keep the expressive engraved comic characters, distinctive faces, dry humor, 1721 costume and maritime setting, muted navy/ochre/rust on warmly worn parchment, organic double ink frame and blank curled title ribbon. Essential change: make the completely blank lower parchment copy cartouche MUCH TALLER. Square card: the blank lower cartouche must occupy the BOTTOM 58% of total image height; start its horizontal divider at 42% from top. The top blank ribbon stays near the top occupying about 5%-14% of height. Re-stage the intact expressive scene as a shallow wide composition between ribbon and the new high divider. Heads, key prop and joke must remain completely legible, not clipped. Reduce background detail to accommodate; do not simply cover or crop the existing scene. The lower cartouche must be truly empty warm paper, only the outer card border, no props, no inner icons, no central ornaments. No writing, lettering, labels, numbers or invented symbols anywhere. Keep the same aspect ratio and full image boundaries. This is a layout repair of the supplied target art, not an unrelated new scene.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-FN-01.png"
+    ]
+  },
+  "HAR-KY-01": {
+    "prompt": "Recompose this exact original illustrated full card background for a finished physical card. Preserve its scene identity: the worried woman navigator staring upward at an impassably sheer huge dark cliff, her rolled chart and two crew behind. Keep the expressive engraved comic characters, distinctive faces, dry humor, 1721 costume and maritime setting, muted navy/ochre/rust on warmly worn parchment, organic double ink frame and blank curled title ribbon. Essential change: make the completely blank lower parchment copy cartouche MUCH TALLER. Square card: the blank lower cartouche must occupy the BOTTOM 58% of total image height; start its horizontal divider at 42% from top. The top blank ribbon stays near the top occupying about 5%-14% of height. Re-stage the intact expressive scene as a shallow wide composition between ribbon and the new high divider. Heads, key prop and joke must remain completely legible, not clipped. Reduce background detail to accommodate; do not simply cover or crop the existing scene. The lower cartouche must be truly empty warm paper, only the outer card border, no props, no inner icons, no central ornaments. No writing, lettering, labels, numbers or invented symbols anywhere. Keep the same aspect ratio and full image boundaries. This is a layout repair of the supplied target art, not an unrelated new scene.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-01.png"
+    ]
+  },
+  "HAR-KY-10": {
+    "prompt": "Recompose this exact original illustrated full card background for a finished physical card. Preserve its scene identity: two annoyed sailors each holding a torn cloth from opposite sides as the ship scrapes between two rocks; helmsman at the wheel behind. Keep the expressive engraved comic characters, distinctive faces, dry humor, 1721 costume and maritime setting, muted navy/ochre/rust on warmly worn parchment, organic double ink frame and blank curled title ribbon. Essential change: make the completely blank lower parchment copy cartouche MUCH TALLER. Square card: the blank lower cartouche must occupy the BOTTOM 58% of total image height; start its horizontal divider at 42% from top. The top blank ribbon stays near the top occupying about 5%-14% of height. Re-stage the intact expressive scene as a shallow wide composition between ribbon and the new high divider. Heads, key prop and joke must remain completely legible, not clipped. Reduce background detail to accommodate; do not simply cover or crop the existing scene. The lower cartouche must be truly empty warm paper, only the outer card border, no props, no inner icons, no central ornaments. No writing, lettering, labels, numbers or invented symbols anywhere. Keep the same aspect ratio and full image boundaries. This is a layout repair of the supplied target art, not an unrelated new scene.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-10.png"
+    ]
+  },
+  "SET-VL-01": {
+    "prompt": "Recompose this exact original illustrated full card background for a finished physical card. Preserve its scene identity: the anxious sailor gripping papers on deck looking toward the walled Saint Verena destination harbor, officials at its gate, empty health rowboat and sunset; arrival is not yet completed. Keep the expressive engraved comic characters, distinctive faces, dry humor, 1721 costume and maritime setting, muted navy/ochre/rust on warmly worn parchment, organic double ink frame and blank curled title ribbon. Essential change: make the completely blank lower parchment copy cartouche MUCH TALLER. Portrait card: the blank lower cartouche must occupy the BOTTOM 55% of total image height; start its horizontal divider at 45% from top. The top blank ribbon stays near the top occupying about 5%-14% of height. Re-stage the intact expressive scene as a shallow wide composition between ribbon and the new high divider. Heads, key prop and joke must remain completely legible, not clipped. Reduce background detail to accommodate; do not simply cover or crop the existing scene. The lower cartouche must be truly empty warm paper, only the outer card border, no props, no inner icons, no central ornaments. No writing, lettering, labels, numbers or invented symbols anywhere. Keep the same aspect ratio and full image boundaries. This is a layout repair of the supplied target art, not an unrelated new scene.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/SET-VL-01.png"
+    ]
+  },
+  "SAD-H-01": {
+    "prompt": "Edit this exact full-card original illustration. Preserve the complete upper scene, all faces, poses, props, clothing, blank ribbon, dimensions and horizontal divider in their exact existing locations. Change ONLY the lower blank parchment copy cartouche: remove all decorative ropes, anchors, wheels, barrels, lanterns, waves and diagonal ink hatching from its interior and sides. The whole lower interior must be clean subtly textured warm parchment for legible native type. Retain only the fine double outer border within the outermost 3% of the width and small corner wear confined to that narrow border. Keep the panel area and divider height unchanged. Do not redesign or crop anything. No text, letters, numerals, symbols, inner ornaments or drawn rules. Same original engraved comic style and warm paper color. This is a precise removal of interfering cartouche ornaments, not a new composition.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-01.png"
+    ]
+  },
+  "SAD-H-03": {
+    "prompt": "Edit this exact full-card original illustration. Preserve the complete upper scene, all faces, poses, props, clothing, blank ribbon, dimensions and horizontal divider in their exact existing locations. Change ONLY the lower blank parchment copy cartouche: remove all decorative ropes, anchors, wheels, barrels, lanterns, waves and diagonal ink hatching from its interior and sides. The whole lower interior must be clean subtly textured warm parchment for legible native type. Retain only the fine double outer border within the outermost 3% of the width and small corner wear confined to that narrow border. Keep the panel area and divider height unchanged. Do not redesign or crop anything. No text, letters, numerals, symbols, inner ornaments or drawn rules. Same original engraved comic style and warm paper color. This is a precise removal of interfering cartouche ornaments, not a new composition.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-03.png"
+    ]
+  },
+  "GUC-28": {
+    "prompt": "Edit this exact full-card original illustration. Preserve the complete upper scene, all faces, poses, props, clothing, blank ribbon, dimensions and horizontal divider in their exact existing locations. Change ONLY the lower blank parchment copy cartouche: remove all decorative ropes, anchors, wheels, barrels, lanterns, waves and diagonal ink hatching from its interior and sides. The whole lower interior must be clean subtly textured warm parchment for legible native type. Retain only the fine double outer border within the outermost 3% of the width and small corner wear confined to that narrow border. Keep the panel area and divider height unchanged. Do not redesign or crop anything. No text, letters, numerals, symbols, inner ornaments or drawn rules. Same original engraved comic style and warm paper color. This is a precise removal of interfering cartouche ornaments, not a new composition.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/GUC-28.png"
+    ]
+  },
+  "SAD-T-07": {
+    "prompt": "Edit this exact original full card background plate with no layout changes. Preserve both expressive people, barred quarantine gate, ship harbor, empty title ribbon, completely blank parchment lower cartouche and entire engraved double frame. Change ONLY two modern medical emblems: the red/white cross on the medicine crate and the red cross on the flag behind the gate. Replace each cross with a small simple BLACK apothecary mortar and pestle pictogram, hand-painted and appropriate to a fictional 1721 port. The crate remains brown wood and the flag plain aged cream cloth. No red crosses anywhere. No writing, letters, numerals, watermark or labels. Keep all other pixels and the original comic engraving atmosphere as close as possible.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-07.png"
+    ]
+  },
+  "HAR-AD-09": {
+    "prompt": "Edit this exact full-card original illustration. Preserve the complete upper scene, all faces, poses, props, clothing, blank ribbon, dimensions and horizontal divider in their exact existing locations. Change ONLY the lower blank parchment copy cartouche: remove all decorative ropes, anchors, wheels, barrels, lanterns, waves and diagonal ink hatching from its interior and sides. The whole lower interior must be clean subtly textured warm parchment for legible native type. Retain only the fine double outer border within the outermost 3% of the width and small corner wear confined to that narrow border. Keep the panel area and divider height unchanged. Do not redesign or crop anything. No text, letters, numerals, symbols, inner ornaments or drawn rules. Same original engraved comic style and warm paper color. This is a precise removal of interfering cartouche ornaments, not a new composition.",
+    "referenced_image_paths": [
+      "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-09.png"
+    ]
+  }
+}

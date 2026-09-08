@@ -1,0 +1,3030 @@
+{
+  "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+  "cards": [
+    {
+      "id": "KAR-01",
+      "name": "Uzakgören",
+      "scene": "A gaunt older lookout with an impossibly long neck, hooked nose, knitted cap and narrow suspicious eyes peers through a long brass telescope. His free hand indignantly pushes away a short measuring stick offered by a skeptical shipmate. Distant sail and ragged rigging. His wounded confidence is the joke, not failing eyesight.",
+      "geometry": {
+        "id": "KAR-01",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "382bf03cdc5f91d0165aee8fc9dc21633d53214e5aa3a875f3d106806d582f4f",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-02",
+      "name": "Kıyıçizen",
+      "scene": "An angular middle-aged woman cartographer, rolled sleeves and stubborn raised eyebrow, spreads a chart whose shore occupies only a tiny corner; the rest is crowded with abstract pen hatching. An enormous quill threatens the last patch of sea. No readable writing. She looks utterly satisfied with her corrections.",
+      "geometry": {
+        "id": "KAR-02",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "a25383a07f2c2b66f0cb387b3eeb18f5e9b41b20caad1acaf3b7c90629793ed1",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-03",
+      "name": "Dümenkurdu",
+      "scene": "A broad sturdy helmswoman with a square jaw, tightly tied hair and a calm lopsided smile leans comfortably against a huge wooden wheel. A loose deck bucket and a skinny colleague slide sideways behind her while she remains perfectly upright. Stubborn practical competence amid a tilting deck.",
+      "geometry": {
+        "id": "KAR-03",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "ebafa275e3069b67bbfddee716f4bb501a7e9526241bcc872f07665d4283c641",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-04",
+      "name": "Canhalatı",
+      "scene": "An elderly lean rope keeper with a sharp white beard, knitted cap and pursed lips tenderly checks a magnificent knot. Beside him a soaked sailor waits with outstretched arms, ignored while the knot receives all the attention. Thick coiled rope dominates the foreground; no hanging noose.",
+      "geometry": {
+        "id": "KAR-04",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.69,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "e6af8285f71f668076930069056d3e1ca636dbbfe2496ba28bfcb375a7e8acee",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-05",
+      "name": "Tahtakakan",
+      "scene": "A compact muscular woman carpenter with cropped dark curls and furious eyebrows holds a short hammer poised just above one squeaking deck plank. Her huge leather tool belt nearly outweighs her. In the background an apologetic sailor tiptoes past the offending board. Hammer and hands anatomically clear.",
+      "geometry": {
+        "id": "KAR-05",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "0bee3a75601f2bef84675db0d92cfad25e557cf2b74ddbd2a2ad593f3ad1d928",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-06",
+      "name": "Dipgören",
+      "scene": "A young round-cheeked diver with short wet curls surfaces beside the ship holding a grand silver chamber pot as if it were treasure. An elderly sailor leans over the rail with unmistakable embarrassed recognition. No modern diving suit, no scuba; a plain shirt and safety rope. Dripping discovery and social discomfort.",
+      "geometry": {
+        "id": "KAR-06",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "51fc6a5d884a77eb3a9a50b7b48991bb8d6872f8f4cb51e4ccf005b605195bae",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-07",
+      "name": "Rüzgârkoklayan",
+      "scene": "A tall sinewy older sailmaker woman with a prominent nose, striped head scarf and narrowed thoughtful eyes tests the wind with one damp finger. A smug deckhand keeps pointing at a cloud directly behind his own head. Cloth, hair and rigging all move in one physically consistent wind direction.",
+      "geometry": {
+        "id": "KAR-07",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 10.71,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.1,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "95c9d8012fdd784f2c099453aaa8636715b4c8c6cedc12b046450c661d498e20",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-08",
+      "name": "Kırık Kürek",
+      "scene": "A weathered freckled boatman with a red beard hugs his one remaining wooden oar and scowls at an empty oarlock. Far behind, another sailor tries to look innocent while using a suspiciously matching oar as a clothes pole. Small ordinary rowing boat; no modern rescue equipment.",
+      "geometry": {
+        "id": "KAR-08",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 14.93,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 32.99,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "ead9808a852d5f59ed6837385d4d00939271e63357a738b339118a49e97a51a9",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-09",
+      "name": "Üç Anahtar",
+      "scene": "A short stout chamber steward with an enormous pointed nose, immaculate cravat and three conspicuously different iron keys studies a stubborn chest lock. One eyebrow rises in dignified denial; the chest is clearly too large for his claimed ownership. Exactly three keys, each with a distinct bow.",
+      "geometry": {
+        "id": "KAR-09",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "1e67aa81dd44bed7fcba187ff25a29f028c93d7f3742f8cc2a21e140c2166af7",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-10",
+      "name": "Güvertebaşı",
+      "scene": "An imposing female deck boss with a wide angular face and a tightly knotted head scarf points with great authority toward a stack of work. A tiny exhausted deckhand behind her carries a ridiculous pile of buckets while she holds only a feather-light rag. Self-certainty rather than cruelty.",
+      "geometry": {
+        "id": "KAR-10",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "8c0666ba5c4b04aaded56ffa1acc24b2e9a34ca60e4057ec2740575e62e30be8",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-11",
+      "name": "İskele Sıçanı",
+      "scene": "A wiry young dock runner with a gap-toothed grin, cropped hair and oversized rolled trousers balances easily on a mooring post with a small bundle under one arm. Behind, an older sailor laboriously lowers a ladder that is already unnecessary. Agile human comic pose, no animal-headed character.",
+      "geometry": {
+        "id": "KAR-11",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "49c82f3f87f5c6f55d2cc0e22c3aed55506f27aefb5b4211fd23003f3447a9e6",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-12",
+      "name": "Karga Yuvası",
+      "scene": "A narrow-faced persuader in a battered crow nest leans out and points decisively in one direction while keeping a closed telescope firmly tucked away. A second hand grips the rigging. His broad convincing smile is much stronger than his evidence. Big expressive upper-body composition.",
+      "geometry": {
+        "id": "KAR-12",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.69,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "da636202001a6bf9f0601eb0c2e4015db4a2c9ad008be80d126f8c19673c72f5",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-13",
+      "name": "Kazanbaşı",
+      "scene": "A broad smiling cook with a flushed round face, tiny cap and spectacular soup-stained apron guards a huge kettle like a treasured secret. One hand stirs with an old wooden spoon; a suspiciously identical smaller pot waits behind. Steam, confidence and a hungry skeptical observer.",
+      "geometry": {
+        "id": "KAR-13",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 3.73,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.79,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "66e9d62ac481afbfc7b0a2d1ee5cd4aa257071faeea861eda5259bdb5e3a9ccb",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-14",
+      "name": "Fare Nazırı",
+      "scene": "A pompous rat-census official with a tiny ceremonial hat, oversized nose and solemn pince-nez crouches to inspect a sailor boot. Three ordinary rats queue nearby as if attending an official appointment. He holds a completely blank tally board and quill with absurd bureaucratic dignity. The boot is normal, not a monster.",
+      "geometry": {
+        "id": "KAR-14",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 3.73,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.79,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "64c1952759e13391c11c8e76305ebae9968acd13c57fd5479e7ace08c44886d9",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-15",
+      "name": "Papağan Mütercimi",
+      "scene": "A sharp-eyed plump woman translator with large earrings and an extravagant scarf confidently gestures through a speech before the green parrot on her wrist has opened its beak. The bird gives her a deeply offended sideways stare. Two distinct facial personalities; dry comic timing, no speech bubbles.",
+      "geometry": {
+        "id": "KAR-15",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 3.73,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.79,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "c542d7913936bb60c50aae2ecb5ff29af73398b10647df26b3f0f2c7ab561f64",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-16",
+      "name": "Fıçı Bekçisi",
+      "scene": "A huge gentle barrel keeper with a shaved head, tiny beard and rolled sleeves embraces a battered barrel as affectionately as a family member. Behind him an irritated soaked sailor holds out a hand asking for help. A row of ordinary barrels, no faces painted onto objects.",
+      "geometry": {
+        "id": "KAR-16",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 3.73,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.79,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "aa6194a310d90d77897ff6a3e07f8580c37dd565d872fe6c88d24d059dd1fae6",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-17",
+      "name": "Kafiye Belası",
+      "scene": "A lanky young poet with solemn eyes, drooping black curls and a dramatically high collar rehearses from a completely blank folded paper. A very much alive old sailor behind him recoils at the ceremonial black ribbon tied to the paper. The poet is offended by the interruption. No corpse.",
+      "geometry": {
+        "id": "KAR-17",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 3.73,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.79,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "1d90939545ad422645ef6b5a0c77cf1955c1f417858f7d2e6b212b1164d34f1a",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-18",
+      "name": "Karayı Özleyen",
+      "scene": "A pale anxious novice with a soft round face and an oversized borrowed sailor coat clings to the rail, staring longingly at a distant scrap of shore. His travel bundle is already tied and ready to leave. A gull stands firmly on the deck looking more seaworthy than him. Humor in premature readiness.",
+      "geometry": {
+        "id": "KAR-18",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 3.73,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.79,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "73d9bc62fb387881fb5641973e6cbc281d9dc1f81cb9a544c0628947ab50510c",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-19",
+      "name": "Yastıkçı",
+      "scene": "An observant middle-aged chamber attendant with sleek dark hair, a thin amused smile and neat rolled sleeves holds a plump pillow close while listening through a half-open door. A tiny hidden key peeks from the pillowcase seam. Keep the scene ordinary gossip, no criminal proof or faction symbol.",
+      "geometry": {
+        "id": "KAR-19",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 3.73,
+        "flavor_mm": 10.71,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.36,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "9c2e4961bbbaaee02f0a373ef07d5c44673a8138809147bf15cc39e180eb6026",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "KAR-20",
+      "name": "Tahtaya Vuran",
+      "scene": "A nervous broad-nosed sailor repeatedly knocks on a wooden bulkhead while trying to smile at an ominous cloud. Just behind him a short annoyed carpenter grips a hammer and watches the newly loosened nail. Comic tension between superstition and repair work; no supernatural apparition.",
+      "geometry": {
+        "id": "KAR-20",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 3.73,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.79,
+        "copy_panel_percent": 29,
+        "title_bottom_percent": 14,
+        "art_band_percent": 57
+      },
+      "prompt_sha256": "b9adeb90bdf09ba6ccedbb01756532395d5867a5dbebd63b6b8e8ef600ae7be9",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-01A",
+      "name": "Mantar Can Halkası",
+      "scene": "A cork rescue ring with frayed rope hangs enormous in the foreground. A soaked mustached sailor reaches up toward it with one hopeful hand while a stern rescuer carefully examines the sound cork rather than the dreadful rope. Physical rescue equipment, no plastic or modern buoy colors.",
+      "geometry": {
+        "id": "GUC-01A",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "75ada707cada4f668252d39a8a0523d849945e5fd70ff55fbcb1f0dcb93a3ad7",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-01B",
+      "name": "Mantar Can Halkası",
+      "scene": "A young freckled deckhand proudly presents a stout cork rescue ring while its ancient rope uncoils in a ridiculous tangle around his own boots. The ring is sound and robust; he has not noticed his predicament. Distinct angle and people from the other cork-ring card.",
+      "geometry": {
+        "id": "GUC-01B",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "82a895ba35fcdc7a0dc2574f38aa5e88ba770dad8edea9530bc6fdc95f83c6dc",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-02A",
+      "name": "Kancalı Halat",
+      "scene": "A wiry sailor with a fiercely concentrated face swings a coiled rope with a small iron grappling hook toward the rail. Behind him two earlier coils hang embarrassingly from the same wooden post. Emphasize one clear pair of hands, safe equipment action and determined dignity.",
+      "geometry": {
+        "id": "GUC-02A",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "5d69082f0f436509f0ca944b63739913050dfd5cf3014a789234fad13b2a6660",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-02B",
+      "name": "Kancalı Halat",
+      "scene": "A broad older sailor leans over the gunwale holding a hooked rope; it has snagged the rescued companion by a sturdy belt, and both exchange an awkward relieved look. Sea spray and a lost cap. No injury or blood; the unheroic rescue is the joke.",
+      "geometry": {
+        "id": "GUC-02B",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "2f25d9ac2724e9b02be348d5457a9bb5813fb713e05a551afa88093f9164675e",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-03",
+      "name": "Pusula",
+      "scene": "A big battered brass compass lies in the open palm of a scruffy young sailor. Its single needle clearly points one way while his longing eyes turn toward a tiny ordinary tavern lantern on the distant shore. Subtle desire versus direction, original person, no franchise likeness or compass lettering.",
+      "geometry": {
+        "id": "GUC-03",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 26.13,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 44.19,
+        "copy_panel_percent": 50,
+        "title_bottom_percent": 18,
+        "art_band_percent": 32
+      },
+      "prompt_sha256": "9d09a21e673b5f942f4d6f4fc25ec17191aafefba35ff8c4b3b03ed4fd1681e1",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-04",
+      "name": "Güverte Araması",
+      "scene": "A stern woman searcher holds up a tiny ridiculous striped sock found in a grand uniform pocket. The dignified owner of the uniform looks offended while another sailor suddenly recognizes it. A couple of ordinary pocket objects on a barrel, no incriminating faction clue.",
+      "geometry": {
+        "id": "GUC-04",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "2dadb4d9f499866fd9f9e9b91cb2ddf4efd14aa204903f9ebba4c3ebe71459ef",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-05",
+      "name": "Yama Tahtası",
+      "scene": "A practical carpenter presses a coffin-shaped offcut of wood over a leaking hull seam. Beside her a perfectly healthy former customer holds his hat and looks awkwardly pleased. The plank shape quietly suggests its earlier purpose; no body, grave or explicit literary reference.",
+      "geometry": {
+        "id": "GUC-05",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "dc8174fd5d24d1fe9e2070fc34a20066e58b2992f883924a4a8753ae0f2fe4cb",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-06",
+      "name": "Zıpkın Sandığı",
+      "scene": "An enormous battered chest opens onto stout iron harpoons. A small crudely engraved ordinary fish decorates the lid without any lettering. A skeptical sailor measures the tiny fish with two fingers while the heavy harpoon tips loom behind. No cartoon octopus added to equipment.",
+      "geometry": {
+        "id": "GUC-06",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "c6685f361ff72c41fa2f7c15d30a8c72e313851fa72069e2130efb6a02f32af2",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-07",
+      "name": "Geçici Yeke",
+      "scene": "A stubborn broad-jawed pilot steers using a temporary wooden tiller lashed together from mismatched furniture pieces. One elegant chair leg still has a decorative foot. His companion quietly holds the spare broken pieces. Make the improvised construction mechanically readable.",
+      "geometry": {
+        "id": "GUC-07",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 14.93,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 32.99,
+        "copy_panel_percent": 38,
+        "title_bottom_percent": 18,
+        "art_band_percent": 44
+      },
+      "prompt_sha256": "ed41360519d76a248d3642293541ff704804bf7278623ecdae5183a7fac74429",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-08",
+      "name": "Kerteriz Pergeli",
+      "scene": "A focused elderly navigator plants large brass dividers on a chart while firmly nudging one intrusive pointing hand aside with his forearm. A second advisor leans back offended. Keep hands few and anatomically clear; chart coastlines without letters. Precision defeats unsolicited advice.",
+      "geometry": {
+        "id": "GUC-08",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "295ef3204d4e8d1e9a88c02aedee5fdec89f94784390e512c14aa09c723ae392",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-09",
+      "name": "Kurşun Ağırlık",
+      "scene": "A compact grim sailor calmly lowers a heavy lead sounding weight on a rope beside a wildly swirling patch of sea. His hat is tied under his chin with excessive care. The absurdly solemn care of a very plain heavy object provides the comic note.",
+      "geometry": {
+        "id": "GUC-09",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "16ea5c156bd564939150c08ebf2b20aebf799ceb7d86b202c5273cd981a42a47",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-10",
+      "name": "Yedek Yelken",
+      "scene": "Two mismatched sailors unfurl a patched spare sail; its largest new patch is visibly cut from a once-grand tablecloth. One proudly displays it while the other recognizes the missing household linen. Muted cloth pattern, no modern printed symbols.",
+      "geometry": {
+        "id": "GUC-10",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "23e759a92fcf256f0adb27ecac8e8b2af04c9b5e81f809ce4ffde19b6e91d65e",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-11",
+      "name": "Islak Deniz Haritası",
+      "scene": "A baffled angular cartographer holds up a thoroughly wet sea chart whose simple blue ink coastlines drip onto his spotless boots. The chart remains one sheet, not magical moving terrain. His colleague admires the accidental new shape with misplaced confidence.",
+      "geometry": {
+        "id": "GUC-11",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.69,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "d6adf1788bcdef64d713419b6a7b06ade6db18fe41f44debcc89683de3ac1662",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-12",
+      "name": "Kırık Dürbün",
+      "scene": "A battered brass telescope with a visibly cracked front lens dominates the scene. Its neatly dressed owner looks suspiciously through it at a perfectly ordinary gull, then at the crack, trying to decide whom to blame. Lens crack subtle, no eye injury.",
+      "geometry": {
+        "id": "GUC-12",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "931d28b373a01b1050042f97477b1242e26d5f1d5cfd85588d97d8a69b27f198",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-13",
+      "name": "Eski Seyir Defteri",
+      "scene": "A heavy old ship log lies open under the nose of a frustrated young officer. An ancient portrait miniature clipped to the cover shows a smug previous captain. Dense abstract illegible pen texture only on the page. His enormous quill seems equally unhelpful.",
+      "geometry": {
+        "id": "GUC-13",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.69,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "85d90c271cb734f7848e8dcb7b0ab4930e0e2424d36fb48814356b4ccbb0e714",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-14",
+      "name": "Anahtar Deliği",
+      "scene": "Close view of a large old iron keyhole in a cabin door; a curious eye is visible through it. On the near side an unsuspecting pompous officer practices a commanding pose in a tiny hand mirror. Ordinary gossip, not secret murder evidence.",
+      "geometry": {
+        "id": "GUC-14",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "850963b06054b81171e6fb74b354ef809e0fdd431e9662adef344e357b860582",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-15",
+      "name": "Kaptanın Eski Şapkası",
+      "scene": "A young sailor wears a weather-beaten oversized plain captain hat and tries to look worthy of it. An older broad hand at the edge offers a patient open palm rather than taking it back. A worn hat cord knotted around the wrist hints at a promise. No copied character, logo or costume.",
+      "geometry": {
+        "id": "GUC-15",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "feecdfabf265f7b2b19c6848e90aeff2fdc8ce571fd248235d560bdce63bba55",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-16",
+      "name": "İsyan Bildirisi",
+      "scene": "A curled completely blank mutiny proclamation lies on a barrel with an untouched quill. Two loud argumentative sailors point at one another, each leaving the signing space conspicuously alone. Expressive faces and a dry bureaucratic tableau, no readable text.",
+      "geometry": {
+        "id": "GUC-16",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.96,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "7c30933f75e0f89681b136ee2101073ce492c2bec1e6b6267ab54b103930e5d9",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-17",
+      "name": "Papağanın İfadesi",
+      "scene": "A green parrot stands with magnificent self-importance on the rim of an official inkpot while a weary clerk waits with quill poised. The bird fixes a sailor with a judgmental eye. Witness comedy; no speech bubble or magical truth effect.",
+      "geometry": {
+        "id": "GUC-17",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.96,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "4809aa168514acc36f573bbb08f0e14fe72084c5a09b1df0874775d9fadb555d",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-18",
+      "name": "Mühürlü Emir",
+      "scene": "A minor court messenger in a comically oversized borrowed hat struggles with three long entirely blank pages joined into one instruction roll. At the top a conspicuously empty oval name cartouche has an absurdly grand flourish. A tiny simple crown stamp on tan wax only; no black secret seal, no actor likeness.",
+      "geometry": {
+        "id": "GUC-18",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "fd3d81d776505f094eae93e1205ffbcf1f46f9aa0ffb1e66e808521c553d680d",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-19",
+      "name": "Kaçak Rom",
+      "scene": "A rum bottle peeks from a tightly buttoned navy coat. The owner waits with exaggerated sobriety while two sailors finish placing small voting stones on a barrel. He hides his impatience worse than the bottle. Period glass and cork, no brand label.",
+      "geometry": {
+        "id": "GUC-19",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.96,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "739e273fe4e7cb939ed9243ade49b7c15f8119ad5d31d82a110477ba159c491a",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-20",
+      "name": "Bir Daha Say",
+      "scene": "An exhausted clerk counts a neat row of voting pebbles on a barrel while a pompous onlooker points insistently back to the first pebble. The clerk has tied one knot in his sleeve as a reminder and still looks uncertain. No numeric writing.",
+      "geometry": {
+        "id": "GUC-20",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "02d3793b9ed9d6009e38d4fb643323825b38998df2864df422cc3baba1a4051e",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-21",
+      "name": "Uğurlu Altın",
+      "scene": "A tiny worn gold coin gleams weakly in a hopeful rough palm. The previous owner in the background is already walking briskly away with an over-eager backward smile. The coin is ordinary old money, not a magical glowing artifact.",
+      "geometry": {
+        "id": "GUC-21",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.26,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "8b4f3a15c9aacca2cfa79cd29be5534728a93124d01bed6f9f686251bdb19970",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-22",
+      "name": "Kaptanın Çatlak Kupası",
+      "scene": "A grand naval cup with an obvious hairline crack slowly leaks onto the immaculate sleeve of an offended captain. He continues raising it ceremoniously as a short skeptical sailor watches the drip. Dominant cup and expression; authority visibly less watertight than advertised.",
+      "geometry": {
+        "id": "GUC-22",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.96,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "ecb41f0b6e6069c3b07b266ea2167970c8ebf8f9f9edd1458ef99036021d0924",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-23",
+      "name": "Bayat Peksimet",
+      "scene": "A huge hard ship biscuit occupies the clenched teeth of a usually talkative sailor. His brows strain while his neighbor enjoys the sudden peace with eyes closed. No broken teeth, blood or choking. The long chewing is the joke.",
+      "geometry": {
+        "id": "GUC-23",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 11.2,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.69,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "318abecc9a6ae7055c5954901877a2a95f1079bd7b9eb1c9a99dfea9186c26f6",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-24",
+      "name": "Islak Çorap",
+      "scene": "A smug sailor presents a single sodden striped wool sock with exaggerated ceremony. The disappointed recipient accepts it while glancing toward the small covered parcel now tucked under the giver arm. One sock, two clear hands interacting; no readable labels.",
+      "geometry": {
+        "id": "GUC-24",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 14.93,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 32.99,
+        "copy_panel_percent": 38,
+        "title_bottom_percent": 18,
+        "art_band_percent": 44
+      },
+      "prompt_sha256": "78c7e4f239b03cae26ca148692f87750568ac133618f10e83f5fa119520b8455",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-25",
+      "name": "Şüpheli Martı",
+      "scene": "A large ordinary gull stands on a railing and leans toward an embarrassed sailor with a piercing familiar-looking stare. The sailor tries to pretend he has never met the bird. A crumb on his collar suggests only mundane lunch, not faction guilt.",
+      "geometry": {
+        "id": "GUC-25",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 14.93,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 32.99,
+        "copy_panel_percent": 38,
+        "title_bottom_percent": 18,
+        "art_band_percent": 44
+      },
+      "prompt_sha256": "927ef4463e960074eef5e6063a2b127e8272b4ab579fcb48804470c6a005ff19",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-26",
+      "name": "Fırtına Feneri",
+      "scene": "An elderly sailor carefully turns down the wick of a small period oil storm lantern while a broad-faced companion protests silently with open palms. An almost empty oil flask stands nearby. Warm small flame, matte glass, no electric bulb or searchlight.",
+      "geometry": {
+        "id": "GUC-26",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 7.46,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.53,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "0e79f23d926833da96d46fc98a9cb3b4fbee4111380d3684b93d28d19037606b",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-27",
+      "name": "Kaderi Yeniden Yaz",
+      "scene": "A defiant young cartographer deliberately rubs a wrong graphite course line off a parchment chart with a crust of bread, then points confidently elsewhere. A skeptical navigator holds the compass steady. Human revision, no magic, time portal or glowing fate thread.",
+      "geometry": {
+        "id": "GUC-27",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 29.86,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 47.92,
+        "copy_panel_percent": 54,
+        "title_bottom_percent": 18,
+        "art_band_percent": 28
+      },
+      "prompt_sha256": "d2d0cbd3d24fd98cfa9281259ae9204cd4b3c596dd55ffd2b80ba51ca123d5eb",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "GUC-28",
+      "name": "Seyir Zabtı",
+      "scene": "A solemn clerk holds a thick closed ship log like a shield as a drenched navigator points at the visibly damaged railing. A plain cabin door waits behind them. The absurd correctness of paperwork versus wet reality; no readable accusation or punishment scene.",
+      "geometry": {
+        "id": "GUC-28",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 22.39,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 36.89,
+        "copy_panel_percent": 42,
+        "title_bottom_percent": 18,
+        "art_band_percent": 40
+      },
+      "prompt_sha256": "0cc6555d3ce7453fc940dcd2506f24f156aacc71589106874acbd939aaae5084",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "ERZ-01",
+      "name": "Çürümüş Erzak",
+      "scene": "A plump self-assured provisions officer proudly offers a visibly stale biscuit from a damp sack while carefully keeping his own mouth shut. A skeptical thin cook probes it with a spoon. Small mold speckles, no disgusting gore; institutional optimism versus breakfast.",
+      "geometry": {
+        "id": "ERZ-01",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 22.39,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 40.46,
+        "copy_panel_percent": 46,
+        "title_bottom_percent": 18,
+        "art_band_percent": 36
+      },
+      "prompt_sha256": "b8fc208f7c42817b4c869344d69149f925ebdb366deca331c6b460588710513c",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-01",
+      "name": "TAYFA",
+      "scene": "A tired freckled sailor holds an entirely blank folded letter close to the chest and looks toward a home harbor. A tiny postal rowing boat struggles far behind the ship. Gentle determination with a wry race against one own optimistic message.",
+      "geometry": {
+        "id": "SAD-T-01",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 10.71,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 37.37,
+        "copy_panel_percent": 43,
+        "title_bottom_percent": 18,
+        "art_band_percent": 39
+      },
+      "prompt_sha256": "da14f24656782716f65cc4d1ba97a6dad707630759dec7d1f47af5c18f10fca0",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-02",
+      "name": "TAYFA",
+      "scene": "A warmly lit empty place at a modest supper table is glimpsed through a heavy health-house doorway. In the foreground a sturdy traveler straightens a battered coat and waits with hopeful dignity. No sick child shown, no melodramatic tears; a plate is already carefully laid.",
+      "geometry": {
+        "id": "SAD-T-02",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 10.71,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 37.37,
+        "copy_panel_percent": 43,
+        "title_bottom_percent": 18,
+        "art_band_percent": 39
+      },
+      "prompt_sha256": "3d91888ef314d5f4960c998e125eb469b9f87dd3a9ba76f4eb23531bc6c49460",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-03",
+      "name": "TAYFA",
+      "scene": "A practical middle-aged woman sailor counts one final coin with fierce concentration while an enormously comfortable creditor on the quay waves cheerfully at the rough sea. Contrast in their ideas of risk, no lettering on the ledger she keeps under her arm.",
+      "geometry": {
+        "id": "SAD-T-03",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 10.71,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 37.37,
+        "copy_panel_percent": 43,
+        "title_bottom_percent": 18,
+        "art_band_percent": 39
+      },
+      "prompt_sha256": "65273b3ed4b02f4461ff1bd2710c337d86a4f42650f63d3691af5291241323db",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-04",
+      "name": "TAYFA",
+      "scene": "A weathered traveler remembers a plain neighbor hand offering a small purse across a modest doorstep. The traveler own free hand is already lifted to knock on an imagined return door. One coherent physical scene, humble obligation and a slightly awkward gratitude.",
+      "geometry": {
+        "id": "SAD-T-04",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 10.71,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 37.37,
+        "copy_panel_percent": 43,
+        "title_bottom_percent": 18,
+        "art_band_percent": 39
+      },
+      "prompt_sha256": "fcc27f89bd65db1b5bde36410c91fe3424264d181c21befa9149bcabe1994cdf",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-05",
+      "name": "TAYFA",
+      "scene": "A skeptical sharp-eyed sailor studies a workbench of unsuccessful medicine trials: three ordinary cloudy vials and a meticulously kept blank notebook. An exhausted physician pushes a failed vial aside honestly rather than hiding it. Original anonymous figures; no cure glow or success claim.",
+      "geometry": {
+        "id": "SAD-T-05",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 14.28,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 40.94,
+        "copy_panel_percent": 47,
+        "title_bottom_percent": 18,
+        "art_band_percent": 35
+      },
+      "prompt_sha256": "526099294303ac250531b8dbff58c8f49a895cc6f5ec40f72246078b416f68b6",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-06",
+      "name": "TAYFA",
+      "scene": "A sheepish broad-faced sailor turns an utterly empty purse inside out while a tiny neat family parcel sits ready beside him. He attempts a brave smile at the horizon. The advance pay has clearly gone to ordinary life, not luxury or vice.",
+      "geometry": {
+        "id": "SAD-T-06",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 10.71,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 37.37,
+        "copy_panel_percent": 43,
+        "title_bottom_percent": 18,
+        "art_band_percent": 39
+      },
+      "prompt_sha256": "779d06d3ebf34c7d301ff639129838fe1e0df23d5296ba4765ad7b24a61f4251",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-07",
+      "name": "TAYFA",
+      "scene": "Two ordinary people on opposite sides of a heavy quarantine gate lean in opposite directions trying to see what the other side is doing. A sailor carries a modest medicine chest toward the gate. Wry shared curiosity, no villain uniforms or confirmed cure.",
+      "geometry": {
+        "id": "SAD-T-07",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 14.28,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 40.94,
+        "copy_panel_percent": 47,
+        "title_bottom_percent": 18,
+        "art_band_percent": 35
+      },
+      "prompt_sha256": "0077926dd09f31d4d9135e1b608300842a9802968e6fd7933444239a726fd898",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-08",
+      "name": "TAYFA",
+      "scene": "A very alive elderly sailor with an indignant long face inspects a modest empty grave plot facing a solid ugly wall, while better plots overlook the sea. He points toward the view he would have preferred. No corpse, no names on stones; comedy about an advance reservation.",
+      "geometry": {
+        "id": "SAD-T-08",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 10.71,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 37.37,
+        "copy_panel_percent": 43,
+        "title_bottom_percent": 18,
+        "art_band_percent": 39
+      },
+      "prompt_sha256": "0b48d48b40bded9688d97b5aa608cf5a3a58288b458f49394a48ae8715e8921e",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-09",
+      "name": "TAYFA",
+      "scene": "A wide-eyed young sailor actually reads a long blank cargo manifest while the bored clerk holding the inkpot suddenly becomes uncomfortable. Other departing crew are tiny receding silhouettes. The unexpected responsible reader has discovered the weight of a signature.",
+      "geometry": {
+        "id": "SAD-T-09",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 10.71,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 37.37,
+        "copy_panel_percent": 43,
+        "title_bottom_percent": 18,
+        "art_band_percent": 39
+      },
+      "prompt_sha256": "67b9346f092cd2f7223fde0b4d524308409778e270618019203f39a3d3576c4f",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-T-10",
+      "name": "TAYFA",
+      "scene": "A gruff broad-shouldered sailor peers into an empty gift wrapping while a remembered home doorstep waits behind him. A practical partner with folded arms appears ready for ordinary scolding, and he smiles with relief. Warm domestic comedy, no accusation of abuse.",
+      "geometry": {
+        "id": "SAD-T-10",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 10.71,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 37.37,
+        "copy_panel_percent": 43,
+        "title_bottom_percent": 18,
+        "art_band_percent": 39
+      },
+      "prompt_sha256": "9ffb76a4512013b42a7ec11453ddad733033ed9889e9acc6f2e98edf4be64100",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-H-01",
+      "name": "HAİN",
+      "scene": "A worried exhausted parent in a worn sea coat receives a small medicine vial from a meticulously tidy apothecary. The apothecary sets a tiny wooden ship model on top of the debt ledger in place of coins. Child is not shown. Expressive moral discomfort; the system, not illness, is the dark joke.",
+      "geometry": {
+        "id": "SAD-H-01",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 14.93,
+        "flavor_mm": 21.42,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 44.35,
+        "copy_panel_percent": 50,
+        "title_bottom_percent": 18,
+        "art_band_percent": 32
+      },
+      "prompt_sha256": "f5f7ded5216d4f86959324ba3eb9314e67e28199f9a428a0b6d3db289270b64e",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-H-02",
+      "name": "HAİN",
+      "scene": "A stooped anxious traveler faces an excessively comfortable innkeeper who holds a huge iron key and an absurdly long blank daily bill. A locked quarantine inn door is visible behind. No visible captive suffering; key and charged hospitality create the dark bureaucratic comedy.",
+      "geometry": {
+        "id": "SAD-H-02",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 14.93,
+        "flavor_mm": 17.85,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 40.78,
+        "copy_panel_percent": 46,
+        "title_bottom_percent": 18,
+        "art_band_percent": 36
+      },
+      "prompt_sha256": "3115a89b5e3c9ead2f96feb083b70b7cbbc3d4a49e2c9d302253a1dd9559ac06",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-H-03",
+      "name": "HAİN",
+      "scene": "A nervous living sailor discreetly carries a worn blank health certificate with a black mourning ribbon half-hidden behind it. A neatly dressed broker at the edge recognizes the sailor and raises one knowing eyebrow. No names or explicit guilt emblem; survival trapped in old paperwork.",
+      "geometry": {
+        "id": "SAD-H-03",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 14.93,
+        "flavor_mm": 17.85,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 40.78,
+        "copy_panel_percent": 46,
+        "title_bottom_percent": 18,
+        "art_band_percent": 36
+      },
+      "prompt_sha256": "31c290954d43f3e55d81c6e66cc7666b6eaab26fd1e2eaed6f9d335e843c8121",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-H-04",
+      "name": "HAİN",
+      "scene": "A grieving but stubborn middle-aged traveler studies the torn upper half of a blank medical record offered by an anonymous intermediary. The missing lower half is conspicuous. A sealed ordinary family letter rests nearby. Keep the factual uncertainty visible; no killer, corpse or evil doctor.",
+      "geometry": {
+        "id": "SAD-H-04",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 14.93,
+        "flavor_mm": 17.85,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 40.78,
+        "copy_panel_percent": 46,
+        "title_bottom_percent": 18,
+        "art_band_percent": 36
+      },
+      "prompt_sha256": "911c2b7d6b7677c466715dc317fda5250caad584575ba66217c02cf4f65960a1",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SAD-H-05",
+      "name": "HAİN",
+      "scene": "A healthy mustached sailor with an embarrassed pleased expression receives a small funeral allowance purse while crouching just below a port clerk window. A plain empty coffin-shaped receipt tray sits on the counter, and his borrowed mourning hat is too large. No ghost or corpse; being officially dead pays the bills.",
+      "geometry": {
+        "id": "SAD-H-05",
+        "trim_mm": [
+          63.5,
+          88.9
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 14.93,
+        "flavor_mm": 17.85,
+        "meta_mm": 0.0,
+        "minimum_copy_mm": 40.78,
+        "copy_panel_percent": 46,
+        "title_bottom_percent": 18,
+        "art_band_percent": 36
+      },
+      "prompt_sha256": "7c23a06cece593e5ed89d93b9329e43ae21cd38cc28757abdaee73e405044dc6",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-01",
+      "name": "Çarşaf Gibi Deniz",
+      "scene": "A perfectly flat calm sea seen over the ship rail. Two sailors in the foreground are in the middle of a terribly animated silent argument despite the tranquil horizon. Broad clean blue hatching, comically unnecessary urgency.",
+      "geometry": {
+        "id": "HAR-AD-01",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "b4254dc0aef833f68312cb2ecda0e3fc4d05cfffaef8c1f3dfa0131a2b7bd158",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-02",
+      "name": "Pruvada Son Yudum",
+      "scene": "A long-faced sailor at the prow tips an almost empty metal cup high enough to inspect its last drop; beyond him the broad horizon contains absolutely nothing interesting. Quiet nautical boredom with dignified thirst.",
+      "geometry": {
+        "id": "HAR-AD-02",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "88fa9c45922384a8233b0e89c97090e61a479b0e08de99470a28c824f51f59bf",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-03",
+      "name": "Martılar Bile Üşeniyor",
+      "scene": "Three ordinary gulls lounge lazily on a sagging yardarm while a sailor below waits expectantly for any sign of activity. One gull cannot be bothered to finish opening its beak. Idle sea, warm haze, comic stillness.",
+      "geometry": {
+        "id": "HAR-AD-03",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "ed42bb5491c5ad75c803a4a2b8a005fb2dc2aef8d3679ebec914fff022fb1aa6",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-04",
+      "name": "Puslu Vardiya",
+      "scene": "A foggy night watch. A solemn lookout holds a lantern directly in front of his nose and peers grandly into nothing, while his partner confidently points into opaque pale mist. Close expressive faces against simple fog hatching.",
+      "geometry": {
+        "id": "HAR-AD-04",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "ebc9de4ac9175f49922484e15a2b3f7522d7d87d9a9f95219ae4d91d25749378",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-05",
+      "name": "Burnunun Ucu Cumhuriyeti",
+      "scene": "Two pompous sailors stand far too close nose to nose in dense white fog, each guarding an absurdly tiny patch of deck as though it were a sovereign territory. Their hats almost touch. No flag, map or extra country canon.",
+      "geometry": {
+        "id": "HAR-AD-05",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "eec6dd34c2bbd06308720b4586cf26f363544def4bd7d2b89c42f954f3fe3d2d",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-06",
+      "name": "Beyaz Gece",
+      "scene": "The ship mast disappears into an eerily bright white fog. A sleepy sailor in a night cap shields his eyes from diffuse whiteness while holding an unhelpful dark lantern. Uncertainty rather than supernatural danger; pale paper carries the scene.",
+      "geometry": {
+        "id": "HAR-AD-06",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "35383b9965e8d9653d438c9577db3d982a30a2b44c81003fe567c84dd684018d",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-07",
+      "name": "Sis Var, Fikir Çok",
+      "scene": "Two opinionated sailors point with complete certainty in opposite directions while neither can see past the dense fog touching the rail. A small quiet navigator between them simply closes his compass. Few clear hands and large comic faces.",
+      "geometry": {
+        "id": "HAR-AD-07",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "6035bac6cb3a9136e5e396978e76cf190b97a5fd452af4999e353a293723aa43",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-08",
+      "name": "İsimsiz Bir Düdük",
+      "scene": "A lone watchman with raised eyebrows answers a faint unseen call using a tiny plain boatswain whistle. Thick fog swallows the stern behind him. A nearby gull looks equally puzzled. No hidden attacker, ghost or clue revealed.",
+      "geometry": {
+        "id": "HAR-AD-08",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.2,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "e3375d9c7d17205d98fe94dc12890dbd664f45030e6f9f660bb60a47c5e4940a",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-09",
+      "name": "Deryanın Göbek Deliği",
+      "scene": "High oblique view of a stout merchant ship at the rim of a broad spiral current like a belly button in the sea. At the near rail an irritated officer tries to keep his hat straight. One clear vessel, physical whirling water, no magical portal.",
+      "geometry": {
+        "id": "HAR-AD-09",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 10.95,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.36,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "1391a9152056dcf7d9a25f3fbdab877fa7b123554d0e28587479d80c137591fa",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-10",
+      "name": "Tersine Dönen Dünya",
+      "scene": "A circular current swings the ship while a seasick navigator holds a compass rigidly level and tilts his own body at an absurd angle. The compass remains ordinary; expressive discomfort and a sweeping spiral of waves.",
+      "geometry": {
+        "id": "HAR-AD-10",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 10.95,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.36,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "f96550702492684d770148a0a7e6afdd6e73537b3ce38c43f03f84ba04e722b5",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-11",
+      "name": "Körfezin Hırçın Selamı",
+      "scene": "A huge curling wave greets a small merchant ship entering a rocky bay; a tiny overly polite officer at the bow has his hat raised in greeting just before the spray arrives. Dangerous sea with dry timing, no wrecked corpses.",
+      "geometry": {
+        "id": "HAR-AD-11",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "65abf60281d19e03f78187d0d660979287f09d71bae1889ef9b5e89ceeb7a450",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-12",
+      "name": "Direkleri Saydıran Gece",
+      "scene": "A storm-dark rigging scene: two drenched sailors count upright masts with their fingers while a broken spar hangs awkwardly across the view. Their anxious disagreement is readable, no numbers or writing. Strong diagonal storm hatching.",
+      "geometry": {
+        "id": "HAR-AD-12",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.55,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "e8cb98412c75dfaccdfc71b68ef9927e4f8549417e2c7595eae3159e118524df",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-13",
+      "name": "Kolları Fazla Bir Mesele",
+      "scene": "A single immense octopus-like kraken tentacle curls over the ship rail toward an impeccably polite officer who instinctively offers one tiny handshake, then regrets it. Two additional distant tentacle arcs maximum, no monster face, no gore. Scale and social reflex are the joke.",
+      "geometry": {
+        "id": "HAR-AD-13",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 10.95,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.36,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "5a1a870ec8e292955f9343ba8886c0f92f8eb5c313a14be1c35a3d8f9360a223",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-14",
+      "name": "Yoklamada Bir Eksik",
+      "scene": "At a ship roll call, a stern bosun checks a completely blank board while a single wet cap floats just outside the rail. A crew member points urgently to the cap as the bosun counts the people again. No corpse or confirmed death shown.",
+      "geometry": {
+        "id": "HAR-AD-14",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "379693ad1d430f9c3af2590d75286da7360aa486279cc35a005651de51e96a90",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-15",
+      "name": "Güverte Islak, Bahane Kuru",
+      "scene": "A pompous sailor skids on a wet deck with one boot in the air while a nearby worker holds a completely dry unused mop with embarrassed innocence. The falling sailor can still catch the rail; no injury. Clear physical slippery motion.",
+      "geometry": {
+        "id": "HAR-AD-15",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.2,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "06e920455d3b2460e2b502e081ee2a60f2e3e3f3c4b0b835ef5f774e136b0e1a",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-16",
+      "name": "Kıpırdamayan Yelken",
+      "scene": "A lanky sailmaker vigorously shakes a completely limp sail from below while the air remains utterly still. A tiny gull sits undisturbed on the yard. His determined frown contrasts with the sagging cloth.",
+      "geometry": {
+        "id": "HAR-AD-16",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "f652c2c6fb113da82399c7933849490d64f7d75b783517aeb26edb0e06a87eee",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-17",
+      "name": "Lodos Arkadan Esiyor",
+      "scene": "A patched merchant ship catches a strong following wind; at the rail two habitual arguers find their coats and pointing arms all blown the same way. One clear direction of wind, energetic navy wave hatching and reluctant agreement.",
+      "geometry": {
+        "id": "HAR-AD-17",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "7e26f99867a8752d22fd400ffbdee7209678619b5f614b323283985d372aabe3",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-18",
+      "name": "Akıntı Postası",
+      "scene": "A small sealed plain wooden chest drifts toward the ship on a modest current. Two eager sailors politely pretend not to race toward the same boathook. Anonymous mundane salvage, no skull or secret seal symbol.",
+      "geometry": {
+        "id": "HAR-AD-18",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "9f0c8ef17b169c68907ad5c861b7a1ab385d8713d3f2749a239506d2476faff7",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-19",
+      "name": "Sahibi Bulunamayan Sandık",
+      "scene": "A found battered chest sits on deck between two sailors each making a grand proprietorial gesture while carefully watching the other. A third skinny face peeks from behind a barrel with sudden family interest. Three people maximum, no text.",
+      "geometry": {
+        "id": "HAR-AD-19",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "cfec2be00b402fb7596a7c7130bda65331c7bc27ec2c26ea87e1ad03f8116b61",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-20",
+      "name": "Vergisiz Fener Alayı",
+      "scene": "At dusk a distant line of small warm coastal lanterns confuses a navigator who keeps turning his chart upside down. His skeptical companion watches the lights with folded arms. Ordinary uncertain navigation, no floating magic or extra lighthouse tower.",
+      "geometry": {
+        "id": "HAR-AD-20",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "d16f08e642833f35fd09ba8fe831f52072a886e8302c65e1c66d7aade9674b08",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-21",
+      "name": "Dümeni Dinlemeyen Su",
+      "scene": "A stubborn pilot wrestles the ship wheel while a powerful cross-current carries foam in the contrary direction. The deck bucket slides the opposite way from his pointing boot. Clear water and steering tension, comic offended expression.",
+      "geometry": {
+        "id": "HAR-AD-21",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "4ee44169321d153479cd11ecde530bf743c5716856d35be7768667541749d1b1",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-22",
+      "name": "Peksimeti Islatan Sağanak",
+      "scene": "A relentless rain shower turns a sailor treasured biscuit to mush just as he raises it to his mouth. His single soaked sock hangs from a rail beside him. Keep the joke restrained and readable, no gross closeup.",
+      "geometry": {
+        "id": "HAR-AD-22",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "16b722409a960266e68e6f922f2fed9306cbb72f61e1a7adf169e584e7c0cbe9",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-23",
+      "name": "Uçan Balık Yağmuru",
+      "scene": "A little school of ordinary flying fish sails gracefully past two stunned sailors who keep pointing along their proposed route as if nothing unusual happened. One fish passes directly above a solemn tricorn. Natural fins, no bird wings.",
+      "geometry": {
+        "id": "HAR-AD-23",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "abda20007064d1cbf21e92b42fd06f8021b41f865e9ce6a7d97fb180538f296e",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-24",
+      "name": "Güverteyi Yalayan Dalga",
+      "scene": "A broad wash of water recedes across the deck, taking an ordinary pouch with it while leaving one miserable striped sock perfectly displayed in the center. Two sailors stare at the surviving sock. Dynamic wave but calm comic aftermath.",
+      "geometry": {
+        "id": "HAR-AD-24",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.2,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "4d77d2c667dffc3a59a0f82a9febb5d8b33c4995a7a3308a2897c4ad84936b9a",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-25",
+      "name": "Direk Çatlatan Bora",
+      "scene": "A cracked wooden mast towers behind a practical carpenter who looks from the split timber directly to a captain tiny closed coin purse. The captain pretends to inspect the weather. No numbers on the purse, clear dry repair economics.",
+      "geometry": {
+        "id": "HAR-AD-25",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.55,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "e4989a0607c10c39fc91a5e3150b69eb2e79d88312392715451ca1f37b3160c9",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-26",
+      "name": "Mizanayı Döven Dalga",
+      "scene": "A breaking wave slaps the mizzen sail, reopening a conspicuous old stitched patch. The drenched sailmaker recognizes her own handiwork with wounded professional pride. Rope, stitching and a heavy diagonal navy wave.",
+      "geometry": {
+        "id": "HAR-AD-26",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "32d1d33429c423dd03a86134506ad1499d06f0856dec43885aceb22e61072355",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-27",
+      "name": "Karayel Tokadı",
+      "scene": "A strong cold gust presses a stout sailor cheek sideways and steals the captain grand hat, while a tiny deckhand leans easily with the wind. No actual hand in the wind; physical fabric and comic expression only.",
+      "geometry": {
+        "id": "HAR-AD-27",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "7728e4056f3de7a8fbb0e093a27aec6f746eb5e53c90ba99786e1924da72e63d",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-28",
+      "name": "Bitmeyen Sağanak",
+      "scene": "Two thoroughly soaked sailors solemnly pass one last almost-dry rag between them like a precious ceremonial object while rain continues unabated. The recipient has already prepared an enormous dripping sleeve. Human economy in relentless weather.",
+      "geometry": {
+        "id": "HAR-AD-28",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "e9c57911b80351ff638dec60adece62c9ddac11888cb3c1ecfedf421a0fc90e7",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-29",
+      "name": "Alabora Olmadık Sayılır",
+      "scene": "A merchant ship heels alarmingly; the captain balances his tea cup with supreme confidence while every other loose object slides toward the rail. One anxious sailor clings nearby. Clearly afloat, no total capsize or drowning bodies.",
+      "geometry": {
+        "id": "HAR-AD-29",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "aaf221bbe19d41e490a138b2084f3da5f9d551d1750cc7aa48de452cc98a6642",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AD-30",
+      "name": "Bir Bulutun Kişisel Meselesi",
+      "scene": "One small dark rain cloud sits precisely above the ship while the surrounding sea is clear. A drenched captain glares up at it with personally offended eyebrows. Weather can be coincidental, no eyes or personification drawn on the cloud.",
+      "geometry": {
+        "id": "HAR-AD-30",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "00040779481b932287001254bace27168c9ca765fb36b62b0fdc38f3a7cc6362",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-01",
+      "name": "Duvar Gibi Kayalık",
+      "scene": "A sheer wall of black coastal rock looms directly ahead of a tiny merchant vessel. A cartographer at the near rail holds an absurdly thin line on an otherwise blank chart and looks up in dismay. Solid physical barrier, no passage implied.",
+      "geometry": {
+        "id": "HAR-KY-01",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 14.6,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 29.01,
+        "copy_panel_percent": 42,
+        "title_bottom_percent": 18,
+        "art_band_percent": 40
+      },
+      "prompt_sha256": "9a6ff5d42dff46d02de770bf7e0e4f4789890fc39459f271e2f4b1e782b5e051",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-02",
+      "name": "Dibi Görünen Servet",
+      "scene": "Clear shallow water reveals the broken side of a sunken galleon and a stout still-locked treasure chest exposed inside the absent wall. An excited diver holds up a useless tiny key at the surface. No skeletons or corpses.",
+      "geometry": {
+        "id": "HAR-KY-02",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "5e37e72d713971f795afaf32f3a36dda5d3e3734b45e14367a202b9772e52932",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-03",
+      "name": "Yolun Bittiği Yer",
+      "scene": "A narrow promising gap between sea cliffs ends visibly in solid rock. At the mouth a tiny ship has room to turn; a navigator nervously folds a completely blank shortcut chart. The visual must clearly show no traversable passage.",
+      "geometry": {
+        "id": "HAR-KY-03",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 14.6,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 32.5,
+        "copy_panel_percent": 47,
+        "title_bottom_percent": 18,
+        "art_band_percent": 35
+      },
+      "prompt_sha256": "1174366da8927ef4dde7db3f2ecfdd3048cf6691a3d141c075a8de48cb0659ee",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-04",
+      "name": "Pruva Törpüsü",
+      "scene": "The merchant ship bow scrapes past a coarse rock ridge while a carpenter watches a thin curl of hull wood peel away as if shaved. A captain behind her clutches his purse. No sinking or gore, dry damage economics.",
+      "geometry": {
+        "id": "HAR-KY-04",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "cee08d5b79f719fe993e90f69c952a982b16ef33c97ad77f608ea4f639d7ce7c",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-05",
+      "name": "Taşın Şakası Olmaz",
+      "scene": "An utterly solid blunt rock has just scraped a hull; two soaked sailors stare at it with expressions of unsuccessful negotiation. One still has a conciliatory hand raised. Stone remains natural and faceless.",
+      "geometry": {
+        "id": "HAR-KY-05",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "a8b8242bc565e5cd434bc25762c2b3976b558348d487a72040652a692736564a",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-06",
+      "name": "İğne Deliğinden Sefer",
+      "scene": "A stout merchant ship barely squeezes through a needle-thin rocky channel, scraping one side while clear open sea is visible beyond. A carpenter calmly measures the scrape with a knowing expensive smile. Passage must be visible.",
+      "geometry": {
+        "id": "HAR-KY-06",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "aa07130c0c6ee850c089d9d75707c924ff8b9d2d51e015190d57d764605d9e03",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-07",
+      "name": "Kestirme Diye Girilen Yer",
+      "scene": "A winding secret-looking rocky channel opens onto clear water. A navigator triumphantly points at it while trying to hide his previously blank chart behind his back. One ship and readable navigable gap, no damage implied.",
+      "geometry": {
+        "id": "HAR-KY-07",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.55,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "20f7d191b55a8497fa6c2af56f46d76f4e5f66d72685658e7b5219f1188b2cc6",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-08",
+      "name": "Kaçakçının Unuttuğu Oyuk",
+      "scene": "A small low tide cave contains a forgotten plain smugglers crate tucked behind a rock. A very proper sailor lifts his coat hem to retrieve it with exaggerated innocence. No guards, magic, skull signs or treasure explosion.",
+      "geometry": {
+        "id": "HAR-KY-08",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "ea5cf5fb16ab0c98494f292ef3dd0d15baa119b8605aeee153d7afd94fae4a4d",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-09",
+      "name": "Kırılan Sandıklar",
+      "scene": "A cracked deck chest spills ordinary rope and a small tool toward the gap in the rail after a rocky scrape. The chest owner points at the innocent captain standing nowhere near it. Focus on one broken chest and blame.",
+      "geometry": {
+        "id": "HAR-KY-09",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "4fb69b52c9a4719bfe4d504062f6cb1ffa5a461dc4b53c22ae3d167a46ceaeab",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-10",
+      "name": "İki Taraftan Sıyırdık",
+      "scene": "The ship passes between two close rocks, scraping both gunwales; two sailors clutch the remnants of their empty bags on opposite sides and exchange identical aggrieved looks. Clear physical double scrape, no third rock or total wreck.",
+      "geometry": {
+        "id": "HAR-KY-10",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.2,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "ff527bf2e86808c887b67cc2029a9b12e50088f851bd4a751ea44d9858893bca",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-11",
+      "name": "Suyun Altındaki Diş",
+      "scene": "A single tooth-shaped natural submerged rock presses against the hull beneath clear blue-green water. Above, a cartographer closes his mouth mid-lecture. Rock is stone, not a living monster tooth.",
+      "geometry": {
+        "id": "HAR-KY-11",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "c0d91b899ec3cfcb78b646552698984275ac1a22f7e0716abde95ed4ca48f298",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-KY-12",
+      "name": "Haritada İnce Çizgi",
+      "scene": "A navigator holds a chart with a tiny simple unlettered coastline stroke while a broad jagged rock shelf fills the horizon immediately behind it. His elegant dividers are suddenly much too small. Scale is the quiet joke.",
+      "geometry": {
+        "id": "HAR-KY-12",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "c75d526c9e63a30c6ba67c812642d87b2376bc81c0b90280dfdd39276e67fc7c",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AA-01",
+      "name": "Ağzı Açık Ambar",
+      "scene": "At an island landing, an open old storehouse contains two sturdy provision crates. Two eager sailors each shoulder one while a comfortable tally keeper watches from a shaded stool. Tropical coast restrained, ordinary supplies not gold treasure.",
+      "geometry": {
+        "id": "HAR-AA-01",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.55,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "27ad0ae6ab1d0d906dfb911bff2b1fc84ac81b8aa69c6892dcdbb70a3ec2305f",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AA-02",
+      "name": "Terk Edilmiş Sahil Karakolu",
+      "scene": "An abandoned small coastal watch post with a crooked empty sentry stool and a large open blank logbook. A curious sailor finds both a modest supply bundle and an unobstructed distant sea view through the window. No readable gossip or secret map coordinates.",
+      "geometry": {
+        "id": "HAR-AA-02",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 10.95,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.36,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "3794d53dc6320895252dd7dec63c8fa5770e17ac7d79a90486a71d56c7c89c6a",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AA-03",
+      "name": "Misafirperverlik Biraz Fazla",
+      "scene": "At a small island inn porch, an overwhelmingly hospitable innkeeper happily pulls up another heavy chair while a stranded sailor with packed travel bundle tries politely to leave. A departing ship remains visible offshore. Hospitality is the trap, no ethnic caricature.",
+      "geometry": {
+        "id": "HAR-AA-03",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.2,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "3e3cbf393eba38f50df0741ce60fae421312a235f4095c0210ad1e159a017261",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AA-04",
+      "name": "Bir Ustanın Son Tezgâhı",
+      "scene": "An elderly island shipwright at a last shabby workbench beams at a modest repair hole in a ship plank while the visiting captain watches his own coin purse nervously. Tools carefully worn, delight in paid useful work rather than villainy.",
+      "geometry": {
+        "id": "HAR-AA-04",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.2,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "aae0a2c7d622c4cc6ae5209c5988c36c889f553d4af2150bb417534203334616",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AA-05",
+      "name": "Korsanların Mola Yeri",
+      "scene": "Two cheerfully overhelpful ordinary pirates carry the visitors provision chests away from a beach landing. One visiting sailor still has his polite thank-you hand raised and has only just noticed the direction. No franchise likeness, skull banner or weapons threat.",
+      "geometry": {
+        "id": "HAR-AA-05",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.2,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "c7a119774a962b4274fc6cd3b0e77ac46bfbd1328069ba218ea414786f3891f9",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-AA-06",
+      "name": "Tek Kişilik Gümrük",
+      "scene": "A very small pompous customs official on a towering stool guards a single desk on an otherwise empty island quay. A large sailor meekly holds out two parcels while the official points to exactly one. Grand empty stamp pad, tiny authority with enormous reach.",
+      "geometry": {
+        "id": "HAR-AA-06",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "c9357456749d17701bf8e9eec1b347f87bff723eb4d94ea47db16d207ac27c72",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-FN-01",
+      "name": "Vardiya Defterli Fener",
+      "scene": "ONE squat old stone lighthouse seen from the side on an isolated sea rock, with a warm oil light. In foreground an officious watch keeper holds a completely blank oversized duty log and a very small quill. No second tower, no inverted duplicate, no modern lens beam.",
+      "geometry": {
+        "id": "HAR-FN-01",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 10.95,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 25.36,
+        "copy_panel_percent": 37,
+        "title_bottom_percent": 18,
+        "art_band_percent": 45
+      },
+      "prompt_sha256": "74a8d15e591a22568be3ab9d1d00fd5506db81d62cf7bd0401ffddb4cdbe0ab6",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-FN-02",
+      "name": "Bekçisi Gitmiş, Işığı Kalmış",
+      "scene": "The open doorway at the foot of ONE old stone lighthouse on a rocky islet. An ordinary rusty key peeks from beneath a worn doormat, a pair of abandoned slippers sits inside, and the small warm lantern above still burns. Quiet resigned departure, no readable note.",
+      "geometry": {
+        "id": "HAR-FN-02",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 6.98,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.55,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "2065fad253a5f48619a3626dc6ff29b9af259038039e279613deccd48d0b6882",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-FN-03",
+      "name": "Fenercinin Zulası",
+      "scene": "Inside ONE old lighthouse, a cheerful keeper has aimed his modest oil lantern down at two tucked-away supply chests while a tiny window reveals the dark sea he ought to watch. Two clear chests, one lantern; no second tower or magical beam.",
+      "geometry": {
+        "id": "HAR-FN-03",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 3.65,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 18.06,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "7e39130a9dabcdac7e5a0058442c19f6b2f64d755a91e1478ecc0e006c7ac6a8",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "HAR-FN-04",
+      "name": "Geceleri Parlayan Yalan",
+      "scene": "On a low dangerous headland, a single ordinary lamp on a short wooden post is mistaken at a distance for a coastal navigation light. A worried ship navigator compares its position with his unlettered chart. No extra lighthouse tower, culprit or deliberate criminal revealed.",
+      "geometry": {
+        "id": "HAR-FN-04",
+        "trim_mm": [
+          70.0,
+          70.0
+        ],
+        "body_pt": 9.0,
+        "flavor_pt": 8.6,
+        "effect_mm": 7.3,
+        "flavor_mm": 3.49,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 21.71,
+        "copy_panel_percent": 35,
+        "title_bottom_percent": 18,
+        "art_band_percent": 47
+      },
+      "prompt_sha256": "bf3ebe5b7dc7357a5b587e572a8aea3d0b18e1af22f65e3c9eae8be0f35b2290",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SET-KL-01",
+      "name": "KALKIŞ LİMANI",
+      "scene": "San Cordelio departure quay in 1721. A patched merchant ship strains gently at the last mooring rope. An officious health clerk with oversized cuffs counts medicine chests again while an exhausted sailor discreetly holds the already untied rope. Warm ochre warehouses, crooked tiled roofs and dry departure urgency.",
+      "geometry": {
+        "id": "SET-KL-01",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 18.66,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 36.72,
+        "copy_panel_percent": 31,
+        "title_bottom_percent": 14,
+        "art_band_percent": 55
+      },
+      "prompt_sha256": "15a408a85e716a51680d784d6583e7fbe239d35aa42966092123d5a6416d70b3",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SET-VL-01",
+      "name": "VARIŞ LİMANI",
+      "scene": "Saint Verena arrival harbor before dawn. A tired ship waits just offshore beneath an old stone health-house tower; a small empty inspection boat is still tied firmly to the quay. A sailor at the rail clutches the cargo list with cautious hope. Different architecture from departure, quiet earned suspense, no triumph or proven cure.",
+      "geometry": {
+        "id": "SET-VL-01",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 22.39,
+        "flavor_mm": 7.14,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 40.46,
+        "copy_panel_percent": 34,
+        "title_bottom_percent": 14,
+        "art_band_percent": 52
+      },
+      "prompt_sha256": "b00dc84c3b42bef6d2a275c8711b37e91b292df8ce19f88b8b76d52e138ff49e",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    },
+    {
+      "id": "SET-KP-01",
+      "name": "KAPTAN",
+      "scene": "Original dignified broad captain at the wheel, long drooping mustache, overlarge tricorn, hidden unpaid account roll and exhausted deckhand wringing a wet cap. Comic authority versus shared debt. Use the individually authored captain prompt.",
+      "geometry": {
+        "id": "SET-KP-01",
+        "trim_mm": [
+          70.0,
+          120.0
+        ],
+        "body_pt": 9.2,
+        "flavor_pt": 8.8,
+        "effect_mm": 22.39,
+        "flavor_mm": 3.57,
+        "meta_mm": 2.92,
+        "minimum_copy_mm": 36.89,
+        "copy_panel_percent": 31,
+        "title_bottom_percent": 14,
+        "art_band_percent": 55
+      },
+      "prompt_sha256": "7e6e13400c57e7e5074098cc6bea9ee631e66ae7fe9d1e1196b74b4963c8151a",
+      "status": "PLANNED_ORIGINAL_FULL_CARD_PLATE",
+      "reference_role": "STYLE_ONLY",
+      "copy_source_unchanged": true
+    }
+  ]
+}

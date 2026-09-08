@@ -1,0 +1,24 @@
+{
+  "id": "SAD-H-03",
+  "revision": 2,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-bad4a7b1-c5f3-418b-a36f-f1d8123ac440.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-03.png",
+  "sha256": "8fdc6fb044e1614709940567dff92f5d43c810bcc4978b86ce6f54b5851bf40a",
+  "pixels": [
+    1060,
+    1484
+  ],
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/SAD-H-03.txt",
+  "planned_prompt_sha256": "31c290954d43f3e55d81c6e66cc7666b6eaab26fd1e2eaed6f9d335e843c8121",
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "previous_selected_sha256": "b6eca76586de8905315fd5ff94d217bfe059863999b409c1603adbb0b45ab540",
+  "actual_request_file": "working/v2.7/qa/illustrated_design_20260908/revision_requests.json",
+  "actual_prompt_sha256": "3fda6214d3c77e1c64e36307e260724fba3202f5739b0efb06013eb64701f401",
+  "review_evidence": "../individual_visual_review.json#SAD-H-03",
+  "reviewed_proof_sha256": "3a5df239fc9d0141b51e9e779d95d0742019784e4478f93874988e7413895b5e",
+  "owner_aesthetic_acceptance": false
+}

@@ -1,0 +1,740 @@
+{
+  "SET-KP-01": {
+    "panel_top_from_top": 0.655,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-14": {
+    "panel_top_from_top": 0.667,
+    "title_top_from_top": 0.055,
+    "title_bottom_from_top": 0.122,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-13": {
+    "panel_top_from_top": 0.566,
+    "title_top_from_top": 0.062,
+    "title_bottom_from_top": 0.151,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-01": {
+    "panel_top_from_top": 0.67,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-02": {
+    "panel_top_from_top": 0.672,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-03": {
+    "panel_top_from_top": 0.667,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-04": {
+    "panel_top_from_top": 0.661,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-05": {
+    "panel_top_from_top": 0.681,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-06": {
+    "panel_top_from_top": 0.67,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-07": {
+    "panel_top_from_top": 0.661,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-03": {
+    "panel_top_from_top": 0.443,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-H-05": {
+    "panel_top_from_top": 0.487,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-01A": {
+    "panel_top_from_top": 0.57075,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.61
+  },
+  "GUC-02A": {
+    "panel_top_from_top": 0.56402,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-02B": {
+    "panel_top_from_top": 0.57615,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-04": {
+    "panel_top_from_top": 0.56469,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-06": {
+    "panel_top_from_top": 0.56065,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-07": {
+    "panel_top_from_top": 0.55458,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-08": {
+    "panel_top_from_top": 0.55526,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-09": {
+    "panel_top_from_top": 0.54111,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-10": {
+    "panel_top_from_top": 0.54987,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-11": {
+    "panel_top_from_top": 0.58693,
+    "title_top_from_top": 0.033,
+    "title_bottom_from_top": 0.113,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.6
+  },
+  "GUC-12": {
+    "panel_top_from_top": 0.54111,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-13": {
+    "panel_top_from_top": 0.54111,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-01": {
+    "panel_top_from_top": 0.58772,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-02": {
+    "panel_top_from_top": 0.64673,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-03": {
+    "panel_top_from_top": 0.63397,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-04": {
+    "panel_top_from_top": 0.58692,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-05": {
+    "panel_top_from_top": 0.61404,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.6,
+    "title_horizontal_scale": 0.92
+  },
+  "HAR-AD-06": {
+    "panel_top_from_top": 0.6252,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-07": {
+    "panel_top_from_top": 0.58612,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-08": {
+    "panel_top_from_top": 0.58533,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-10": {
+    "panel_top_from_top": 0.58772,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-11": {
+    "panel_top_from_top": 0.64195,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-12": {
+    "panel_top_from_top": 0.6244,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-14": {
+    "panel_top_from_top": 0.60766,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-16": {
+    "panel_top_from_top": 0.61563,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-17": {
+    "panel_top_from_top": 0.6236,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-18": {
+    "panel_top_from_top": 0.62281,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-19": {
+    "panel_top_from_top": 0.62201,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-20": {
+    "panel_top_from_top": 0.61962,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-21": {
+    "panel_top_from_top": 0.61722,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-22": {
+    "panel_top_from_top": 0.60606,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-23": {
+    "panel_top_from_top": 0.64274,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-25": {
+    "panel_top_from_top": 0.63317,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-26": {
+    "panel_top_from_top": 0.62121,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-27": {
+    "panel_top_from_top": 0.60207,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-28": {
+    "panel_top_from_top": 0.61244,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-29": {
+    "panel_top_from_top": 0.64354,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-30": {
+    "panel_top_from_top": 0.63078,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-09": {
+    "panel_top_from_top": 0.6622,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-10": {
+    "panel_top_from_top": 0.65104,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-11": {
+    "panel_top_from_top": 0.69488,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-12": {
+    "panel_top_from_top": 0.65326,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-13": {
+    "panel_top_from_top": 0.66991,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-15": {
+    "panel_top_from_top": 0.64495,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.55
+  },
+  "KAR-16": {
+    "panel_top_from_top": 0.67844,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-17": {
+    "panel_top_from_top": 0.66443,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-18": {
+    "panel_top_from_top": 0.63216,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-19": {
+    "panel_top_from_top": 0.66931,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-14": {
+    "panel_top_from_top": 0.54987,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-15": {
+    "panel_top_from_top": 0.53167,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.64
+  },
+  "GUC-17": {
+    "panel_top_from_top": 0.54313,
+    "title_top_from_top": 0.03,
+    "title_bottom_from_top": 0.11,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-02": {
+    "panel_top_from_top": 0.64115,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-16": {
+    "panel_top_from_top": 0.54852,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-18": {
+    "panel_top_from_top": 0.55593,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-19": {
+    "panel_top_from_top": 0.56402,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-20": {
+    "panel_top_from_top": 0.5748,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-21": {
+    "panel_top_from_top": 0.52628,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-22": {
+    "panel_top_from_top": 0.55997,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.61
+  },
+  "GUC-23": {
+    "panel_top_from_top": 0.53437,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-24": {
+    "panel_top_from_top": 0.56065,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-25": {
+    "panel_top_from_top": 0.52628,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-26": {
+    "panel_top_from_top": 0.54545,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-01": {
+    "panel_top_from_top": 0.53976,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-02": {
+    "panel_top_from_top": 0.51954,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-03": {
+    "panel_top_from_top": 0.53841,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-04": {
+    "panel_top_from_top": 0.53369,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-05": {
+    "panel_top_from_top": 0.47776,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-06": {
+    "panel_top_from_top": 0.54111,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-08": {
+    "panel_top_from_top": 0.50741,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "ERZ-01": {
+    "panel_top_from_top": 0.36995,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-01B": {
+    "panel_top_from_top": 0.58288,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.63
+  },
+  "GUC-05": {
+    "panel_top_from_top": 0.55054,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-27": {
+    "panel_top_from_top": 0.36792,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.6
+  },
+  "HAR-AA-01": {
+    "panel_top_from_top": 0.62919,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AA-02": {
+    "panel_top_from_top": 0.58852,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AA-03": {
+    "panel_top_from_top": 0.60925,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.6,
+    "title_horizontal_scale": 0.92
+  },
+  "HAR-AA-04": {
+    "panel_top_from_top": 0.60925,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AA-06": {
+    "panel_top_from_top": 0.60287,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-15": {
+    "panel_top_from_top": 0.51994,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-24": {
+    "panel_top_from_top": 0.4681,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-FN-02": {
+    "panel_top_from_top": 0.63317,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-FN-03": {
+    "panel_top_from_top": 0.61164,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-FN-04": {
+    "panel_top_from_top": 0.59011,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-03": {
+    "panel_top_from_top": 0.46491,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-04": {
+    "panel_top_from_top": 0.62759,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-05": {
+    "panel_top_from_top": 0.61962,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-06": {
+    "panel_top_from_top": 0.63955,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-07": {
+    "panel_top_from_top": 0.60526,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-08": {
+    "panel_top_from_top": 0.60367,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-09": {
+    "panel_top_from_top": 0.6236,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-11": {
+    "panel_top_from_top": 0.58293,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-12": {
+    "panel_top_from_top": 0.60606,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-08": {
+    "panel_top_from_top": 0.65652,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "KAR-20": {
+    "panel_top_from_top": 0.6553,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-H-02": {
+    "panel_top_from_top": 0.45553,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-H-04": {
+    "panel_top_from_top": 0.40499,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-09": {
+    "panel_top_from_top": 0.49326,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-10": {
+    "panel_top_from_top": 0.4973,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SET-KL-01": {
+    "panel_top_from_top": 0.65469,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR",
+    "title_width_fraction": 0.61
+  },
+  "HAR-AA-05": {
+    "panel_top_from_top": 0.47847,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-FN-01": {
+    "panel_top_from_top": 0.47687,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-01": {
+    "panel_top_from_top": 0.46571,
+    "title_top_from_top": 0.037,
+    "title_bottom_from_top": 0.117,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-KY-10": {
+    "panel_top_from_top": 0.49841,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SET-VL-01": {
+    "panel_top_from_top": 0.51951,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.125,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "GUC-28": {
+    "panel_top_from_top": 0.50404,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "HAR-AD-09": {
+    "panel_top_from_top": 0.58612,
+    "title_top_from_top": 0.05,
+    "title_bottom_from_top": 0.13,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-H-01": {
+    "panel_top_from_top": 0.43733,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-H-03": {
+    "panel_top_from_top": 0.46429,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  },
+  "SAD-T-07": {
+    "panel_top_from_top": 0.43598,
+    "title_top_from_top": 0.04,
+    "title_bottom_from_top": 0.12,
+    "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
+  }
+}

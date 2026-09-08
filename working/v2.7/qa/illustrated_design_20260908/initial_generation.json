@@ -1,0 +1,32 @@
+[
+  {
+    "id": "KAR-14",
+    "path": "/workspace/scratch/2c8c285219dc/generated_images/exec-7be40d2f-a92f-4528-9e0e-4c0d80d353dc.png",
+    "revision": 1,
+    "sha256": "6ab3bdc80f2dcbf7f3a54c88a916cee5d561457054d7e33306073796def63257"
+  },
+  {
+    "id": "GUC-03",
+    "path": "/workspace/scratch/2c8c285219dc/generated_images/exec-60d8aed2-f8f7-4bd3-9f39-db1b930126fe.png",
+    "revision": 1,
+    "sha256": "2b91f7ac17ea71d667e740b3eec6f1aebdafc0bc1719bb7afd004f2069fe67ee"
+  },
+  {
+    "id": "SAD-H-05",
+    "path": "/workspace/scratch/2c8c285219dc/generated_images/exec-a88b45a8-4b82-4c49-8506-558319f874bb.png",
+    "revision": 1,
+    "sha256": "73b061898be535c0365afebda83b141c91851d5d04e1e66618dc50b257307935"
+  },
+  {
+    "id": "HAR-AD-13",
+    "path": "/workspace/scratch/2c8c285219dc/generated_images/exec-e8600802-921c-4edc-ac73-bbd866cac262.png",
+    "revision": 1,
+    "sha256": "1acdc2bc3c2901b412b703c8c588cd8bdf3c5a82764ad47bb2dc35368dd5e0a8"
+  },
+  {
+    "id": "SET-KP-01",
+    "path": "/workspace/scratch/2c8c285219dc/generated_images/exec-d3580e47-fad8-4046-b74f-fc0fb859500e.png",
+    "revision": 2,
+    "sha256": "cf384d5ec65cb44c494d9ba731bfd490e1e0465b72e9e857d311c5df21ecfda6"
+  }
+]

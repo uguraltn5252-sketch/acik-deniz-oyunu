@@ -1,0 +1,23 @@
+{
+  "id": "HAR-KY-11",
+  "revision": 1,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-cc5e9a83-d57e-4f58-a9c1-0ee1bb697564.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-11.png",
+  "sha256": "6d4346a6e476cc0c95d1d2f8677cd13bdfcafcc685a30e40e81ba283f06c4c9f",
+  "pixels": [
+    1254,
+    1254
+  ],
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/HAR-KY-11.txt",
+  "planned_prompt_sha256": "c0d91b899ec3cfcb78b646552698984275ac1a22f7e0716abde95ed4ca48f298",
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "actual_request_file": "actual_requests.json",
+  "actual_prompt_sha256": "c0d91b899ec3cfcb78b646552698984275ac1a22f7e0716abde95ed4ca48f298",
+  "review_evidence": "../individual_visual_review.json#HAR-KY-11",
+  "reviewed_proof_sha256": "92c34961c185b24fa30f26568d6f6605d812545528a17550305f8ed6045f8a17",
+  "owner_aesthetic_acceptance": false
+}

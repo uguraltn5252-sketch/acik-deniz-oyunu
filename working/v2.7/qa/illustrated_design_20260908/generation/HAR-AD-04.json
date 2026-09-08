@@ -1,0 +1,23 @@
+{
+  "id": "HAR-AD-04",
+  "revision": 1,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-b13e2df7-8108-46f5-b782-96b7c01ac9e4.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-04.png",
+  "sha256": "ba3ff8450c95b587fcf6755ee0de46797f5c5ba1fb192da7f7bda53c4d3e7c95",
+  "pixels": [
+    1254,
+    1254
+  ],
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/HAR-AD-04.txt",
+  "planned_prompt_sha256": "ebc9de4ac9175f49922484e15a2b3f7522d7d87d9a9f95219ae4d91d25749378",
+  "actual_request_file": "actual_requests.json",
+  "actual_prompt_sha256": "ebc9de4ac9175f49922484e15a2b3f7522d7d87d9a9f95219ae4d91d25749378",
+  "review_evidence": "../individual_visual_review.json#HAR-AD-04",
+  "reviewed_proof_sha256": "c69d4857b33a8d8bf1963e8cf24699032d71c44bb0f7d70f04059631e4c922cd",
+  "owner_aesthetic_acceptance": false
+}

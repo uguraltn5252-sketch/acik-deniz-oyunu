@@ -1,0 +1,294 @@
+[
+  {
+    "kind": "review",
+    "source": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+    "pages_1based": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/review_01_04.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Kapak ile ilk 12 karakter: tam kartlar, çerçeve ve metin panelleri sayfa sınırları içinde.",
+    "proof_sha256": "65c78bfada2aaaf236e34bcf592911bc6ccccdae7bb4a8c04a81f05ff69442a5"
+  },
+  {
+    "kind": "review",
+    "source": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+    "pages_1based": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/review_05_08.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Kalan karakterler, iki liman, özgün KAPTAN ve ilk Güçler: grup geçişleri, boş son hücre ve başlıklar doğru.",
+    "proof_sha256": "d3c47332d0f46ae8e9153edb2a6b9c165f5ca2113e1684f9309b05fcaaab874a"
+  },
+  {
+    "kind": "review",
+    "source": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+    "pages_1based": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/review_09_12.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Güç kartları: uzun kuralların panelleri yeterli; pusula, tabut tahtası, şapka ve prens göndermeleri tam kartlarda korunuyor.",
+    "proof_sha256": "4e5038babb6bfb99102a97baf55d4cf18d0e99d37052c65334d9e173cd0ec705"
+  },
+  {
+    "kind": "review",
+    "source": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+    "pages_1based": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/review_13_16.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Güç/Erzak/Tayfa geçişi; uzun GUC-27/28 metinleri ve oyun dışı dipnotları paneller içinde.",
+    "proof_sha256": "57e381e109804801652671fac0afba53b79873b521372ef98a53d5ed794f3526"
+  },
+  {
+    "kind": "review",
+    "source": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+    "pages_1based": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/review_17_20.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Tayfa/Hain gerekçeleri ve ilk Haritalar: tam kartlar, aile ayrımı ve grup sonundaki boş hücreler doğru.",
+    "proof_sha256": "d11362fc4860c018e2bb1bf251b084bd5405335c00f644773bf9a8582aeaa23d"
+  },
+  {
+    "kind": "review",
+    "source": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+    "pages_1based": [
+      21,
+      22,
+      23,
+      24
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/review_21_24.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Harita olayları: uzun adlar şerit içinde; sis, girdap, fırtına ve diğer olayların panelleri çakışmıyor.",
+    "proof_sha256": "416a26dfe868f85a5fd823fe22e1ce6b0b622e5041fedbbddc084330489b03c6"
+  },
+  {
+    "kind": "review",
+    "source": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+    "pages_1based": [
+      25,
+      26,
+      27,
+      28
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/review_25_28.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Açık Deniz ve Kayalık geçişi; tekrar eden etkiler farklı sahnelerle işlenmiş, tam kare kartlar görünür.",
+    "proof_sha256": "cfb456172165ee2a2bd8d22dad2a435bf9d28812ae8113561e190591bfa536c6"
+  },
+  {
+    "kind": "review",
+    "source": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+    "pages_1based": [
+      29,
+      30,
+      31,
+      32
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/review_29_32.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Kalan Kayalık, altı Ada ve dört Fener: uzun başlıklar, büyütülen metin panelleri ve tek kule sahneleri okunur.",
+    "proof_sha256": "6d0a54b33eb9632edfcfc3856bb86017cfd2bdc8c3a29fd9ff409f90139a0720"
+  },
+  {
+    "kind": "review",
+    "source": "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+    "pages_1based": [
+      33,
+      34
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/review_33_34.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Yedi ortak arka ile 5×5 görsel komşuluk: tek dik fener korunuyor; bu düzenin kurulum örneği olmadığı açık.",
+    "proof_sha256": "65a2af575432651e9962f650b048d7188e24402aa83f18def8b061fb2c57f3eb"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_01_04.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Kapak, baskı talimatı ve ilk ön–arka çift: dört karakter, aynı ortak arkalar ve kesim işaretleri doğru.",
+    "proof_sha256": "0c63e2b85b33a5911c7920e9a2d65dda61a312c1561d03b7166bc075fe67d37f"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_05_08.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "KAR-05–12: iki ön–arka çift, ortak karakter arkaları ve kesim boşlukları doğru.",
+    "proof_sha256": "0ea1ab96ea4d3fa55a30304be750c55e2d6d87217f8433f749589223a820961d"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_09_12.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "KAR-13–20: tam boy karakterler, kesim çizgileri ve aynı ortak arka kompozisyonları doğru.",
+    "proof_sha256": "ad9fa3ecd77bd350fd3276f8cae47ace56da9101ea982e8bb6da786cc6e5d9d9"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_13_16.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "İki liman/KAPTAN için üç yardımcı arka aynalanmış; ilk altı Güç için altı ortak Güç arkası mevcut.",
+    "proof_sha256": "a03da974eda1bf135d776a9027edf5fc2fdd45b590992cd1228ac82e4aafc5d3"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_17_20.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "GUC-05–16: altılı A4 dizilimler ve aynı Güç arkaları; gövde/seyir/bilgi kartları tam.",
+    "proof_sha256": "4ec48823ce7b5ee593de28a8e81f0cac708821e2854ad1339bbc04b9bdbd782f"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      21,
+      22,
+      23,
+      24
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_21_24.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "GUC-17–28: iki uzun metinli kart dahil 12 tam ön yüz ve doğru Güç arkaları.",
+    "proof_sha256": "2bc1236c4def289e6e5f47e3717945acb63ace3fd04ef8174031d66a19dc21e9"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      25,
+      26,
+      27,
+      28
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_25_28.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Erzak/Güç arkasının Tayfa/Sadakat arkasından ayrılması ve yatay aynalanması doğru; Hain de aynı Sadakat arkasında.",
+    "proof_sha256": "33e6836400c8fb60f96d548daecf171b6922486860225db37e41b22c8a9318ad"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      29,
+      30,
+      31,
+      32
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_29_32.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Kalan dört Hain aynı Sadakat arkasında; altı ilk Harita ortak deniz arkasında, boş hücreler karşılıklı doğru.",
+    "proof_sha256": "59bd3010a24d09c73ef98f8818682fefd92d7f76360a4565e7a7428ea73373a1"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      33,
+      34,
+      35,
+      36
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_33_36.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "HAR-AD-07–18: altılı kare dizilimler, tam yazılar ve ortak deniz arkaları doğru.",
+    "proof_sha256": "8c853f018d0f68a87914a973f3cae657cdd5883c8b36e8fec8ea81f35873e799"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      37,
+      38,
+      39,
+      40
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_37_40.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "HAR-AD-19–30: uzun adlar, tam sahneler, kesim işaretleri ve deniz arkaları doğru.",
+    "proof_sha256": "355016a590b9dcf1b9a5f8a148166135a3e8faa1c50a0f85d1e6ab7066bc4796"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      41,
+      42,
+      43,
+      44
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_41_44.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "12 Kayalık: ortak deniz arkasından kart olayı sızmıyor; bütün önler ve kesim boşlukları mevcut.",
+    "proof_sha256": "a084bf77878894fbdad341f8aeea068cd446da00769e490a88b680bf11780ca7"
+  },
+  {
+    "kind": "print",
+    "source": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+    "pages_1based": [
+      45,
+      46,
+      47,
+      48
+    ],
+    "proof": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/pdf_inspection/print_45_48.png",
+    "visual_review": "SAME_OPERATOR_VISUAL_PASS",
+    "note": "Altı Ada ile dört Fener doğru arkalarla eşleşiyor; her fener arkasında tek, dik, korunmuş kule var.",
+    "proof_sha256": "b00fadba5555b2474e78d4da0f0a00c555c954062d5d5df4e3b724a3607efc63"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "id": "HAR-KY-03",
+  "revision": 2,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-7ee85203-d777-4413-877f-45b2ef127ba8.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-03.png",
+  "sha256": "b9dcf41f5212e47c476222b079c2727ee0730e8dfe7b31d40e4f01a17a31b7df",
+  "pixels": [
+    1254,
+    1254
+  ],
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/HAR-KY-03.txt",
+  "planned_prompt_sha256": "1174366da8927ef4dde7db3f2ecfdd3048cf6691a3d141c075a8de48cb0659ee",
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "actual_prompt_status": "SEE_REVISION_REQUEST_RECORD / NOT_ASSUMED_IDENTICAL_TO_PLAN",
+  "previous_selected_sha256": "3c2c049c52511d5e97dc6baee9491fbd529ac44d446335c366524c1df4510d66",
+  "actual_request_file": "revision_requests.json",
+  "actual_prompt_sha256": "bcfad3d6a489266c19a5627af32db085c07f9113ec676418ea2ff23efb1d5131",
+  "review_evidence": "../individual_visual_review.json#HAR-KY-03",
+  "reviewed_proof_sha256": "88b3aaf812ea36cc0bd229a01642a6d0ecdea4efb1c47e396d46afadbca54e32",
+  "owner_aesthetic_acceptance": false
+}

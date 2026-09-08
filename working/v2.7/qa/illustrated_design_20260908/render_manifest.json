@@ -1,0 +1,7303 @@
+{
+  "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+  "status": "SAME_OPERATOR_SELF_CHECK_PASS / OWNER_REVIEW_PENDING",
+  "fronts": [
+    {
+      "id": "KAR-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-01.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.44,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.6,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Uzakgören",
+        "effect": "İlk tarafsız gece hariç her yolculuk gecesi, yasal bir Yakın Ufuk kartının olay yüzüne gizlice bakar. Sis onu engellemez.",
+        "flavor": "Yelkeni görmeden geminin gelişini anlar. Bir yalana kanınca günlerce mesafeyi suçlar."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-02.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.36,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Kıyıçizen",
+        "effect": "İlk tarafsız gece hariç, Sis olmayan her yolculuk gecesi yasal bir Uzak Ufuk kartının olay yüzüne gizlice bakar.",
+        "flavor": "Her itirazını haritanın kenarına not eder. Bir süredir denize yer kalmıyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-03.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.96,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Dümenkurdu",
+        "effect": "Tek kullanım. Bir Harita olayının zorunlu hareket veya rota kilidi etkisini iptal eder.",
+        "flavor": "Dümen onun elindeyken gemi yolu şaşırmaz. Mürettebat şaşırabilir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-04.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 40.68,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Canhalatı",
+        "effect": "Tek kullanım. Harita veya Hain saldırısıyla denize düşeni hemen kurtarır. Oylamayla atılana işlemez.",
+        "flavor": "İnsanlara değil, düğümlere güvenir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-05.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 38.28,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Tahtakakan",
+        "effect": "Tek kullanım. Geminin almak üzere olduğu 1 Gövde hasarını engeller. Kraken'e de işler.",
+        "flavor": "Gemide bir yer gıcırdadığında elinde çekiçle belirir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-06.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.6,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Dipgören",
+        "effect": "Batık Kalyon bulunduğunda bir kez fazladan 1 Güç kartı kazandırır.",
+        "flavor": "Her dalıştan bir şey getirir. Çoğunun sahibi için yeniden dalması gerekir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-07.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 10.71,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.2,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 40.68,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Rüzgârkoklayan",
+        "effect": "Bir kez Durgun Deniz veya rüzgâr kaynaklı rota kısıtını gizlice kaldırır.",
+        "flavor": "Yelkeni toplatınca batıl inanç derler. Fırtına çıkınca neden daha önce söylemediğini sorarlar."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-08.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 14.93,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 37.09,
+      "copy_panel_percent": 31,
+      "title_bottom_percent": 14,
+      "art_band_percent": 55,
+      "actual_panel_mm": 41.22,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Kırık Kürek",
+        "effect": "Tek kullanım. Pusula sunulunca kabul ederse bir mahsuru kurtarmak için bir tam vardiyalık sefere çıkar. Reddederse Pusula atılır; sefer başlamaz ve yetenek harcanmaz.",
+        "flavor": "İkinci küreği kime ödünç verdiğini hatırlıyor. Adamı kurtarmaya pek hevesli değil."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-09.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.4,
+      "flavor_pt": 9.76,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 40.54,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Üç Anahtar",
+        "effect": "Tek kullanım. Güç kazanılırken bir fazla karta bakılır; sonra biri kapalı atılır. Kazanç sayısı artmaz.",
+        "flavor": "Üç anahtarı var. Kilit açılmayınca sandığın kendisine ait olmadığını söylüyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-10.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 41.88,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Güvertebaşı",
+        "effect": "Tek kullanım. Harita Güç kaybettirecekken seçilen bir oyuncunun bir kartlık kaybını engeller.",
+        "flavor": "Herkesin ne yapması gerektiğini bilir. Özellikle başkalarının."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-11",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-11.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.6,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 36.61,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "İskele Sıçanı",
+        "effect": "Ada veya Fener Güç kazandırırken bir kartın alıcısını, karta bakılmadan belirler.",
+        "flavor": "Karaya herkesten önce çıkar. Nasıl indiği sorulmaz."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-12",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-12.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 41.61,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Karga Yuvası",
+        "effect": "Tek kullanım. Rota öncesi bir Yakın Ufku işaretler. O rota oy alırsa toplamına +1 eklenir.",
+        "flavor": "Orayı gördüm demedim. Oradan gidelim dedim."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-13",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-13.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.61,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Kazanbaşı",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Dünkü çorbayı bugün de dağıtır. Biri beğenince tarifini vermek istemez."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-14",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-14.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.96,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Fare Nazırı",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Resmî sayımda on dört fare var. On beşincinin çizme giydiğini söylüyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-15",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-15.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 42.61,
+      "title_pt": 12.8,
+      "native_exact_copy": {
+        "name": "Papağan Mütercimi",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Kuş konuşmadan tercümeye başlar. İtiraz edene lehçeyi bilmediğini söyler."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-16",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-16.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 38.59,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Fıçı Bekçisi",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Herkes kurtulacaksa fıçıların da çıkarılmasını ister. İsimlerini tayfadan daha iyi bilir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-17",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-17.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 40.27,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Kafiye Belası",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Cenaze şiirini erkenden yazdı. Kimin için olduğunu sorana ilhamı boğduğunu söylüyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-18",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-18.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 44.14,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Karayı Özleyen",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "San Cordelio'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-19",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-19.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 10.71,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.46,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 39.68,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Yastıkçı",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Yastık kılıflarını değiştirirken duyduklarını unuttuğunu söyler. Hatırlaması için genellikle bir iyilik gerekir."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "KAR-20",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/KAR-20.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 3.73,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 25.89,
+      "copy_panel_percent": 29,
+      "title_bottom_percent": 14,
+      "art_band_percent": 57,
+      "actual_panel_mm": 41.36,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "Tahtaya Vuran",
+        "effect": "Özel yeteneği yoktur.",
+        "flavor": "Her kötü alamette tahtaya vuruyor. Tahtakakan bundan hiç hoşlanmıyor."
+      },
+      "back": "BACK_CHARACTER"
+    },
+    {
+      "id": "GUC-01A",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-01A.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.6,
+      "flavor_pt": 9.92,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 38.16,
+      "title_pt": 12.4,
+      "native_exact_copy": {
+        "name": "Mantar Can Halkası",
+        "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+        "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-01B",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-01B.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.44,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 37.08,
+      "title_pt": 12.8,
+      "native_exact_copy": {
+        "name": "Mantar Can Halkası",
+        "effect": "Harita veya Hain saldırısıyla denize düşeni kurtar. Oylamayla atılana işlemez.",
+        "flavor": "İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-02A",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-02A.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 38.76,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kancalı Halat",
+        "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+        "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-02B",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-02B.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 37.68,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kancalı Halat",
+        "effect": "Yalnız Harita olayıyla denize düşen bir oyuncuyu kurtar.",
+        "flavor": "İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-03.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 26.13,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 48.29,
+      "copy_panel_percent": 55,
+      "title_bottom_percent": 18,
+      "art_band_percent": 27,
+      "actual_panel_mm": 49.52,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Pusula",
+        "effect": "İlk rota öncesi kullanılamaz. Bir yasal Yakın Ufku herkese aç; Harita kartı açık kalır fakat girilmedikçe olayı çözülmez. Alternatif olarak Kayıkçıya kurtarma sun. Kayıkçı reddederse Pusula atılır; sefer başlamaz ve Kayıkçı yeteneği harcanmaz.",
+        "flavor": "Kuzey yerinde duruyor. Sorun, sahibinin başka bir şey araması."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-04.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.24,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 38.7,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Güverte Araması",
+        "effect": "En az iki Gücü olan bir gemi oyuncusu seç. Hedef seçtiği bir Gücü kapalı atar.",
+        "flavor": "Kayıp eşya bulundu. Sahibinin kim olduğu hâlâ şüpheli."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-05.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 39.96,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Yama Tahtası",
+        "effect": "Kraken dışındaki 1 Gövde hasarını engelle.",
+        "flavor": "Tahta bir tabut için kesilmişti. Müşteri iyileşince gemiye yaradı."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-06.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 39.06,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Zıpkın Sandığı",
+        "effect": "Kraken'in vereceği 1 Gövde hasarını engelle.",
+        "flavor": "Sandığın üstüne bir balık çizmişler. Boyutunu belirtmeyi unutmuşlar."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-07.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 14.93,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 37.09,
+      "copy_panel_percent": 42,
+      "title_bottom_percent": 18,
+      "art_band_percent": 40,
+      "actual_panel_mm": 39.6,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Geçici Yeke",
+        "effect": "Bir etki rotayı tek yasal seçeneğe indirdiyse ikinci bir yasal Yakın Ufku rota seçeneği yap. Bu işlem olay yüzünü göstermez.",
+        "flavor": "Geçici çözümler denizde bazen karaya kadar sürer."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-08.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 39.54,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kerteriz Pergeli",
+        "effect": "Girdabın varışını veya Ters Akıntının kapatacağı yasal yönü rastgelelik yerine sen seç.",
+        "flavor": "Üç kişi yön tarif etti. Pergel sahibi üçünün de elini kenara itti."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-09.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kurşun Ağırlık",
+        "effect": "Girdabın zorunlu ek hareketini tamamen iptal et.",
+        "flavor": "Bazı sorunlar ancak dibe çekilince çözülür."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-10.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.02,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Yedek Yelken",
+        "effect": "Durgun Deniz veya rüzgâr kaynaklı rota kısıtını kaldır.",
+        "flavor": "Birincisi niçin yedek değildi, konuşmayalım."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-11",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-11.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.8,
+      "flavor_pt": 9.28,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 36.72,
+      "title_pt": 12.6,
+      "native_exact_copy": {
+        "name": "Islak Deniz Haritası",
+        "effect": "İlk rota öncesi kullanılamaz. İki Yakın Ufuk kartının yerini olay yüzlerine bakmadan değiştir.",
+        "flavor": "Mürekkep aktı; yollar daha yaratıcı oldu."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-12",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-12.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kırık Dürbün",
+        "effect": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk kartının olay yüzüne gizlice bak.",
+        "flavor": "Merceği çatlak. Sahibi her şüpheli şeyi önce camdaki çizgiye yoruyor."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-13",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-13.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Eski Seyir Defteri",
+        "effect": "İlk rota öncesi kullanılamaz. Bir Uzak Ufuk seç. Moderatör yalnız Gövde hasarı verebilir veya vermez der.",
+        "flavor": "Kaptanlar ölür; kötü el yazıları kalır."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-14",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-14.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 40.02,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Anahtar Deliği",
+        "effect": "İlk rota öncesi kullanılamaz. Bir Yakın Ufuk olayına gizlice bak. Kamara Güç yasağının tek yazılı istisnasıdır.",
+        "flavor": "Kamaranın en küçük penceresi, en büyük dedikodusu."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-15",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-15.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 41.63,
+      "title_pt": 11.8,
+      "native_exact_copy": {
+        "name": "Kaptanın Eski Şapkası",
+        "effect": "Bu rota oylamasında kendi oyuna +1 ekle.",
+        "flavor": "Eski sahibi şapkayı geri istiyor. Önce verdiğin sözü tutman gerek."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-16",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-16.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 26.06,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.14,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "İsyan Bildirisi",
+        "effect": "Bu İsyan oylamasında kendi oyun 2 sayılsın.",
+        "flavor": "Altında imza yok; herkesin fikri var."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-17",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-17.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 26.06,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.62,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Papağanın İfadesi",
+        "effect": "Hedef rota tavsiyesini açık söyler. Başka rotaya oy verirse oyu 0 sayılır.",
+        "flavor": "Tanık konuştu. Güvenilirliği tartışmalı."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-18",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-18.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 39.48,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Mühürlü Emir",
+        "effect": "Kaptan çözmeden önce berabere rotalardan kazananı seç.",
+        "flavor": "Prensin adı için boşluk bırakılmış. Buyruk üç sayfa."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-19",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-19.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 26.06,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 38.76,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Kaçak Rom",
+        "effect": "Bir oyuncu seç. Hedef diğer oyları gördükten sonra en son ve açık oy verir.",
+        "flavor": "Gerçeği söyletmez. Sırayı belli eder."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-20",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-20.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 37.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Bir Daha Say",
+        "effect": "Tam 1 oy farkıyla biten herhangi bir resmî oylamayı bir kez yeniden yaptır. İkinci sonuç kesindir; sonra bu kartı at.",
+        "flavor": "Sefer divanında karar kesindir. Sayım bazen o kadar kesin değildir."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-21",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-21.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.6,
+      "flavor_pt": 9.92,
+      "effect_mm": 11.2,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 33.36,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 18,
+      "art_band_percent": 44,
+      "actual_panel_mm": 42.11,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Uğurlu Altın",
+        "effect": "Tamamlanmış rastgele hedef seçimini bir kez yeniden yaptır. İkinci sonuç kesindir.",
+        "flavor": "Önceki sahibi uğur getirdiğini söylemişti. Parayı alırken çok acele etti."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-22",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-22.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 7.46,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 26.06,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 39.12,
+      "title_pt": 10.4,
+      "native_exact_copy": {
+        "name": "Kaptanın Çatlak Kupası",
+        "effect": "Kaptanın bu rota oylamasındaki 2 oyunu 1'e indir.",
+        "flavor": "Kupadaki çatlak, otoritedekinden küçüktü."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-23",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-23.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 11.2,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.79,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 41.39,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Bayat Peksimet",
+        "effect": "Hedef ya bir Gücünü kapalı atar ya da rota sonucu açıklanana kadar konuşamaz. Gücü yoksa susar.",
+        "flavor": "Konuşmayı kesmez. Çiğnemeyi uzatır."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-24",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-24.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 14.93,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 37.09,
+      "copy_panel_percent": 42,
+      "title_bottom_percent": 18,
+      "art_band_percent": 40,
+      "actual_panel_mm": 39.06,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Islak Çorap",
+        "effect": "Kazanç açıklanmadan yeni Gücü sen al, Islak Çorabı asıl alıcıya ver. İkiniz de sonra iki Güç sınırını uygularsınız. Çorap bir Güç sayılır.",
+        "flavor": "Sahibi çorabını geri istiyor. İçinden çıkan eşya hakkında konuşmak istemiyor."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-25",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-25.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.6,
+      "effect_mm": 14.93,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 37.09,
+      "copy_panel_percent": 42,
+      "title_bottom_percent": 18,
+      "art_band_percent": 40,
+      "actual_panel_mm": 42.11,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Şüpheli Martı",
+        "effect": "Uygun bir gemi oyuncusunun önüne koy. Sonraki rastgele oyuncu hedefli Harita olayında, o oyuncu hâlâ uygunsa ilk hedef o olur; sonra at.",
+        "flavor": "Martı, onu daha önce görmüş gibi bağırıyor."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-26",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-26.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.24,
+      "effect_mm": 7.46,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 29.63,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 40.41,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Fırtına Feneri",
+        "effect": "Bu gece Sis saldırısını kapat. Hainlerin bir Yakın Ufuk bilgi eylemi kalır.",
+        "flavor": "Fitili kısınca herkes itiraz etti. Sabah yağa kimin para verdiğini sordular."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-27",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-27.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 29.86,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 52.02,
+      "copy_panel_percent": 59,
+      "title_bottom_percent": 18,
+      "art_band_percent": 23,
+      "actual_panel_mm": 56.19,
+      "title_pt": 12.4,
+      "native_exact_copy": {
+        "name": "Kaderi Yeniden Yaz",
+        "effect": "Hareket sırasında, olay uygulanmadan önceki konuma dön; oradan başka yasal Yakın Ufka gir. İlk kart açık ve ziyaret edilmiş kalır; olayı tekrarlanmaz. Ada girişi İskorbütü kalıcı temizler. Geçilmeze girilmiş sayılmaz; açık engel kalır. Kullanımdan sonra oyun dışına çıkar.",
+        "flavor": "Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "GUC-28",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/GUC-28.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 22.39,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 40.99,
+      "copy_panel_percent": 47,
+      "title_bottom_percent": 18,
+      "art_band_percent": 35,
+      "actual_panel_mm": 44.09,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Seyir Zabtı",
+        "effect": "Gövde, oyuncu, Güç veya rota bakımından zarar doğuran rotaya oy veren birini bir gece Kamaraya gönder; Mahkûm sayılmaz. Kullanıldıktan sonra oyun dışına çıkar; Güç destesine yeniden karıştırılmaz.",
+        "flavor": "Rota yanlışsa kâğıt her zaman doğrudur."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "ERZ-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/ERZ-01.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.08,
+      "effect_mm": 22.39,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 44.56,
+      "copy_panel_percent": 51,
+      "title_bottom_percent": 18,
+      "art_band_percent": 31,
+      "actual_panel_mm": 56.01,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "Çürümüş Erzak",
+        "effect": "Başlangıçta aç. O anda Kaptansan İskorbüt başlamaz; değilsen gemi Limandan önce bir Adaya uğramalıdır. Sonradan Kaptan değişmesi sonucu değiştirmez. Sonra yolculuk destesinden gerçek bir Güç çek.",
+        "flavor": "Peksimet hâlâ yenebilir. Bunu söyleyen tadına bakmadı."
+      },
+      "back": "BACK_POWER"
+    },
+    {
+      "id": "SAD-T-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-01.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 40.92,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Eve son yazdığın mektupta iyi olduğunu söyledin. Bu kez o mektuptan önce varmak istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-02.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 42.71,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Sağlık kapısının arkasında bir sofralık yerin duruyor. Kapıyı açtırmaya yetmiyor; yine de dönmek için bir sebep."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-03.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 41.04,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Bu yükü sağlam teslim edersen borcunun son taksiti kapanacak. Alacaklın yıllardır denizin tehlikelerini küçümsüyor."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-04.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 41.45,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Bir komşun yol paranı verdi. Karşılığında ilaç istemedi; döndüğünde kapısını çalmanı istedi."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-05.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 14.28,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.84,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 46.43,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Veyr'in işe yaramayan denemeleri de yazdığını gördün. Hiç değilse birinin hesabı doğru tuttuğuna inanmak istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-06.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 40.8,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Bu seferin ücretini peşin harcadın. Dönmezsen ailene para yerine bir açıklama gönderilecek."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-07.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 18.66,
+      "flavor_mm": 14.28,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.84,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 50.14,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Getirdiğin sandıkların o kapıyı açmasını istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-08.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 43.79,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Senin adına bir mezar yeri ayırmışlar. Manzarasını beğenmedin; itirazı şahsen yapmak istiyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-09.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 45.05,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Yük defterine imza atarken kimse okumanı beklemedi. Okudun. Şimdi herkes kadar sorumlu, çoğundan daha tedirginsin."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-T-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-T-10.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.12,
+      "effect_mm": 18.66,
+      "flavor_mm": 10.71,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 40.27,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 44.69,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "TAYFA",
+        "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+        "flavor": "Eve götüreceğin hediyeyi kaybettin. Eli boş dönünce söylenecekler. Dönmezsen susacaklar. Söylenmelerine razısın."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-01.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 14.93,
+      "flavor_mm": 21.42,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 47.25,
+      "copy_panel_percent": 54,
+      "title_bottom_percent": 18,
+      "art_band_percent": 28,
+      "actual_panel_mm": 50.02,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Çocuğunun bakımını üstlenen eczacı artık para almıyor. Defterde borcunun yerine geminin adı yazıyor. Yük teslim edilirse hesap yeniden açılacak. İlk kez ilaç alabiliyorsun; bedelini başkaları ödeyecek."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-02.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 14.93,
+      "flavor_mm": 17.85,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.68,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 48.4,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Ailene karantina hanında yer ayırmışlar. Kapı dışarıdan kilitli; her gün için senden ücret istiyorlar. Geminin kayıp haberi gelince çıkış kâğıdını vereceklerini söylediler. Anahtarın fiyatı bir sefer."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-03.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.4,
+      "flavor_pt": 8.96,
+      "effect_mm": 14.93,
+      "flavor_mm": 17.85,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.68,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 47.62,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Karantinadan bir ölünün sağlık kâğıdıyla kaçtın. Sana gerçek adınla seslenen aracı, kaydı açtırabileceğini söyledi. Yük teslim edilmezse kâğıt yanacakmış. Yeni hayatın eski bir imzaya sığıyor."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-04.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.8,
+      "flavor_pt": 9.28,
+      "effect_mm": 14.93,
+      "flavor_mm": 17.85,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.68,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 52.9,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Kardeşinin öldüğü koğuştan kopmuş bir sayfa gösterdiler. Üstünde Veyr'in adı vardı; alt yarısı yoktu. Yükü durdurursan başka aileler aynı mektubu almayacak. Sana öyle söylediler; inanmayı seçtin."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "SAD-H-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SAD-H-05.png",
+      "trim_mm": [
+        63.5,
+        88.9
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 14.93,
+      "flavor_mm": 17.85,
+      "meta_mm": 0.0,
+      "minimum_copy_mm": 43.68,
+      "copy_panel_percent": 50,
+      "title_bottom_percent": 18,
+      "art_band_percent": 32,
+      "actual_panel_mm": 45.61,
+      "title_pt": 13.6,
+      "native_exact_copy": {
+        "name": "HAİN",
+        "effect": "Gemi batarsa, Limana girmeden bütün Tayfa ölürse, Limana etkin İskorbütle varılırsa veya son şafakta Tayfa kalmazsa takımın kazanır.",
+        "flavor": "Kendini çoktan denizde kayıp yazdırdın. Borçların kapandı; cenaze yardımını bir yakının alıyor. Gemi sağ salim dönerse hesap yeniden açılacak. Ölü olarak ilk kez geçinebiliyorsun."
+      },
+      "back": "BACK_LOYALTY"
+    },
+    {
+      "id": "HAR-AD-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-01.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 28.86,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Çarşaf Gibi Deniz",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Deniz sakin. Masa değil."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-02.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.8,
+      "flavor_pt": 9.24,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 24.73,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Pruvada Son Yudum",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Kupanın dibi göründü. Ufuk henüz boş."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-03.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.8,
+      "flavor_pt": 10.04,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 25.62,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Martılar Bile Üşeniyor",
+        "effect": "Hiçbir şey olmaz.",
+        "flavor": "Biri bağırmadıkça deniz bugün çalışmıyor."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-04.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.4,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.92,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Puslu Vardiya",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Görüş düştü; kanaatler yükseldi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-05.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.02,
+      "title_pt": 10.6,
+      "native_exact_copy": {
+        "name": "Burnunun Ucu Cumhuriyeti",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Sınırları üç karış, nüfusu gereğinden fazla."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-06.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.24,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Beyaz Gece",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Karanlık değildi. Daha kötüydü: belirsizdi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-07.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.4,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.97,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Sis Var, Fikir Çok",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Kimse bir şey görmedi; herkes çok emin."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-08.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 29.03,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "İsimsiz Bir Düdük",
+        "effect": "Bu gece Sis kuralı uygulanır. İlk yolculuk gecesinde yine saldırı yoktur.",
+        "flavor": "Nöbetçi düdüğe cevap verdi. İkinci sesi kimse duymadı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-09.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.97,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Deryanın Göbek Deliği",
+        "effect": "Gemi hemen rastgele bir yasal Yakın Ufka zorunlu ek hareket yapar. Yeni olay da çözülür.",
+        "flavor": "Deniz de bazen kendi etrafında konuşur."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-10.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.86,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Tersine Dönen Dünya",
+        "effect": "Gemi hemen rastgele bir yasal Yakın Ufka zorunlu ek hareket yapar. Yeni olay da çözülür.",
+        "flavor": "Pusula sustu. Mide konuştu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-11",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-11.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.56,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 25.06,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Körfezin Hırçın Selamı",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Hoş geldiniz kısmı kısa sürdü."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-12",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-12.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.29,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Direkleri Saydıran Gece",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gece boyunca direkleri saydılar. Sabah aynı sayıya ulaşamadılar."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-13",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-13.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 10.95,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.46,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 30.38,
+      "title_pt": 12.8,
+      "native_exact_copy": {
+        "name": "Kolları Fazla Bir Mesele",
+        "effect": "Gemi 1 Gövde kaybeder. Yama Tahtası işlemez; Zıpkın Sandığı veya Tahtakakan engelleyebilir.",
+        "flavor": "Tokalaşmaya çalışmadığı kesindi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-14",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-14.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.46,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Yoklamada Bir Eksik",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
+        "flavor": "Yoklama denizde icat edilmiş olmalı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-15",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-15.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.6,
+      "flavor_pt": 9.88,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 33.6,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Güverte Islak, Bahane Kuru",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu düşer; hemen kurtarılmazsa ölür.",
+        "flavor": "Güverte silinecekti. İpin nerede olduğu daha önce soruldu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-16",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-16.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.91,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Kıpırdamayan Yelken",
+        "effect": "Bir sonraki rota seçiminde yalnız Pruva önü kullanılabilir. Yasal değilse etki boşa düşer.",
+        "flavor": "Yelkenci kumaşı silkeledi. Hava ikna olmadı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-17",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-17.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.35,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Lodos Arkadan Esiyor",
+        "effect": "Gemi isterse bir ek normal hareket yapar. Yeni olay da çözülür.",
+        "flavor": "İlk kez herkes aynı yönde konuştu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-18",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-18.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.76,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.4,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Akıntı Postası",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Gönderen belli değil. Teslim alacak gönüllü çok."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-19",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-19.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.46,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Sahibi Bulunamayan Sandık",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Sahibi çıkmadı; akrabası on iki kişi çıktı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-20",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-20.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.63,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Vergisiz Fener Alayı",
+        "effect": "İki dış Yakın Ufuk kartının yeri olay yüzlerine bakılmadan değiştirilir.",
+        "flavor": "Işıklar yol göstermedi; yolu yerinden oynattı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-21",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-21.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.79,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Dümeni Dinlemeyen Su",
+        "effect": "Bir sonraki rotada yasal yönlerden biri Kader Zarıyla kapanır. Bütün yolları kapatamaz.",
+        "flavor": "Gemi geri gitmedi. Deniz öne geçti."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-22",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-22.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.58,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Peksimeti Islatan Sağanak",
+        "effect": "Gücü olanlar arasından zarla seçilen bir kişi rastgele 1 Güç kaybeder.",
+        "flavor": "Yağmur dindi. Çorabın fikri değişmedi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-23",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-23.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.6,
+      "flavor_pt": 9.08,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 25.01,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Uçan Balık Yağmuru",
+        "effect": "Mekanik etki yoktur.",
+        "flavor": "Balıklar uçtu. Kimse rota önerisini geri almadı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-24",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-24.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 37.23,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Güverteyi Yalayan Dalga",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
+        "flavor": "Dalga çekilince güvertede yalnız başkasının çorabı kaldı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-25",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-25.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.68,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Direk Çatlatan Bora",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Kalafatçı çatlağa baktı. Sonra Kaptanın para kesesine."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-26",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-26.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.52,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Mizanayı Döven Dalga",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Yelkenci yırtığı diktiği yerden tanıdı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-27",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-27.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.86,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Karayel Tokadı",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Rüzgârın eli ağırmış."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-28",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-28.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.13,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Bitmeyen Sağanak",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Son kuru paçavra da sırayla kullanıldı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-29",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-29.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.56,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 24.95,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Alabora Olmadık Sayılır",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Sayılmaz diyen Kaptandı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AD-30",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-30.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 25.85,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Bir Bulutun Kişisel Meselesi",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Özellikle bu gemiyi takip ediyor."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-01.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.2,
+      "flavor_pt": 9.56,
+      "effect_mm": 14.6,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 32.11,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 37.4,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Duvar Gibi Kayalık",
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır.",
+        "flavor": "Haritada çizgi değildi. Duvarmış."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-02.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.12,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Dibi Görünen Servet",
+        "effect": "1 Güç kazanılır. Dipgören kullanılırsa 1 ek Güç kazanılır.",
+        "flavor": "Ambarın kilidi hâlâ kapalıydı. Duvarı yoktu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-03.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 14.6,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 32.11,
+      "copy_panel_percent": 46,
+      "title_bottom_percent": 18,
+      "art_band_percent": 36,
+      "actual_panel_mm": 37.46,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Yolun Bittiği Yer",
+        "effect": "Gemi bu kareye giremez. Kart rota veya olay içi hareketle açılırsa Gemi önceki konumunda kalır; kart açık kalır. Normal rota günü ise hareket harcanır.",
+        "flavor": "Kestirme diye bakıldı. Dönüş yolu diye hatırlandı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-04.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.07,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Pruva Törpüsü",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gemiyi inceltti, masrafı kalınlaştırdı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-05.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 26.63,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Taşın Şakası Olmaz",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Gülmeyen yalnızca Kalafatçı değildi."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-06.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.23,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "İğne Deliğinden Sefer",
+        "effect": "Gemi 1 Gövde kaybeder; sonra isterse bir ek normal hareket yapar.",
+        "flavor": "Geçit dar, tamircinin isteyeceği ücret genişti."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-07",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-07.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.63,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Kestirme Diye Girilen Yer",
+        "effect": "Gemi isterse bir ek normal hareket yapar.",
+        "flavor": "Haritada yoktu; tartışmada hep varmış gibi anlatıldı."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-08",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-08.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.74,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Kaçakçının Unuttuğu Oyuk",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Kaçakçı gitmiş. Vergi hâlâ gelmemiş."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-09",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-09.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 26.35,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Kırılan Sandıklar",
+        "effect": "Gücü olanlar arasından zarla seçilen bir kişi rastgele 1 Güç kaybeder.",
+        "flavor": "Kırılan sandıktı. Suçlanan yine Kaptan oldu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-10",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-10.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 35.11,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "İki Taraftan Sıyırdık",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi rastgele birer Güç kaybeder.",
+        "flavor": "Tek taraftan sıyırmak yeterince heyecanlı değilmiş."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-11",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-11.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 29.19,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Suyun Altındaki Diş",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Denizin ağzı yok diyen Haritacı sustu."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-KY-12",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-KY-12.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.58,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Haritada İnce Çizgi",
+        "effect": "Gemi 1 Gövde kaybeder.",
+        "flavor": "Çizgi yakından bakınca epey kalınmış."
+      },
+      "back": "BACK_SEA_ROCK"
+    },
+    {
+      "id": "HAR-AA-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-01.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.96,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Ağzı Açık Ambar",
+        "effect": "2 Güç kazanılır. İki farklı oyuncuya verilir.",
+        "flavor": "Erzağı herkes taşıdı. Borcun kime yazılacağını sonra konuşacaklar."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-02.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 10.95,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.46,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 28.8,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Terk Edilmiş Sahil Karakolu",
+        "effect": "1 Güç kazanılır. Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
+        "flavor": "Nöbetçi gitmiş; dedikodu defteri kalmış."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-03.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.35,
+      "title_pt": 10.4,
+      "native_exact_copy": {
+        "name": "Misafirperverlik Biraz Fazla",
+        "effect": "Kader Zarıyla seçilen bir gemi oyuncusu zorunlu olarak adada bırakılır.",
+        "flavor": "Gitmenize çok üzüldüler. Bu yüzden bırakmadılar."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-04.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.35,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Bir Ustanın Son Tezgâhı",
+        "effect": "Gemi en fazla 2 Gövdeye kadar 1 Gövde onarır.",
+        "flavor": "Usta deliği görünce sevindi. Sizden saklamaya çalışmadı."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-05",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-05.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 11.0,
+      "flavor_pt": 10.2,
+      "effect_mm": 7.3,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.3,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 36.51,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Korsanların Mola Yeri",
+        "effect": "Gücü olanlar arasından zarla seçilen iki kişi bütün Güçlerini kaybeder.",
+        "flavor": "Sandıkları taşımayı teklif ettiler. Geri getirmekten söz etmediler."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-AA-06",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-AA-06.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 27.8,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Tek Kişilik Gümrük",
+        "effect": "Gemideki herkes en fazla bir Güç tutar; fazlasını kapalı atar.",
+        "flavor": "Gümrükçü tek kişiydi. Yetkisi kalabalıktı."
+      },
+      "back": "BACK_ISLAND"
+    },
+    {
+      "id": "HAR-FN-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-FN-01.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.4,
+      "effect_mm": 10.95,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 28.46,
+      "copy_panel_percent": 41,
+      "title_bottom_percent": 18,
+      "art_band_percent": 41,
+      "actual_panel_mm": 36.62,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Vardiya Defterli Fener",
+        "effect": "Kaptan kapalı, yasal bir Yakın veya Uzak Ufku herkese açar. Kart açık kalır; ilk girişte olayı çözülür.",
+        "flavor": "Işık yol gösterdi; defter kimin baktığını yazdı."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "HAR-FN-02",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-FN-02.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.0,
+      "flavor_pt": 8.6,
+      "effect_mm": 3.65,
+      "flavor_mm": 6.98,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.65,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 25.68,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Bekçisi Gitmiş, Işığı Kalmış",
+        "effect": "1 Güç kazanılır.",
+        "flavor": "Bekçi not bırakmış: Dönmeyeceğim. Anahtar paspasın altında."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "HAR-FN-03",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-FN-03.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 10.0,
+      "flavor_pt": 9.4,
+      "effect_mm": 3.65,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 21.16,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 18,
+      "art_band_percent": 47,
+      "actual_panel_mm": 27.19,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Fenercinin Zulası",
+        "effect": "2 Güç kazanılır; iki farklı oyuncuya verilir.",
+        "flavor": "Fenerci yolu değil, sandığı aydınlatmış."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "HAR-FN-04",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/HAR-FN-04.png",
+      "trim_mm": [
+        70.0,
+        70.0
+      ],
+      "body_pt": 9.8,
+      "flavor_pt": 9.24,
+      "effect_mm": 7.3,
+      "flavor_mm": 3.49,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 24.81,
+      "copy_panel_percent": 36,
+      "title_bottom_percent": 18,
+      "art_band_percent": 46,
+      "actual_panel_mm": 28.69,
+      "title_pt": 11.0,
+      "native_exact_copy": {
+        "name": "Geceleri Parlayan Yalan",
+        "effect": "Bir sonraki rota mümkünse komşu başka bir yasal Yakın Ufka rastgele sapar.",
+        "flavor": "Işık doğruydu. Yer yanlış."
+      },
+      "back": "BACK_LIGHTHOUSE"
+    },
+    {
+      "id": "SET-KL-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SET-KL-01.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 18.66,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 40.82,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 14,
+      "art_band_percent": 51,
+      "actual_panel_mm": 41.44,
+      "title_pt": 15.2,
+      "native_exact_copy": {
+        "name": "KALKIŞ LİMANI",
+        "effect": "Haritanın alt kenarında seçilen başlangıç sütununa hizala. Gemi bu kart üzerinde başlar. Kart Harita karesi değildir ve 52 Haritaya dahil değildir. İlk satırdan acil geri dönüşte gemi buraya dönebilir.",
+        "flavor": "Halatlar çözülmeden önce her yol kolay görünür."
+      },
+      "back": "BACK_SUPPORT"
+    },
+    {
+      "id": "SET-VL-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SET-VL-01.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 11.2,
+      "flavor_pt": 10.4,
+      "effect_mm": 22.39,
+      "flavor_mm": 7.14,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 44.56,
+      "copy_panel_percent": 38,
+      "title_bottom_percent": 14,
+      "art_band_percent": 48,
+      "actual_panel_mm": 57.66,
+      "title_pt": 17,
+      "native_exact_copy": {
+        "name": "VARIŞ LİMANI",
+        "effect": "Haritanın üst kenarında seçilen Hedef Liman sütununa hizala. Bu kart Harita karesi değildir. Gemi o sütundaki son sıra kartına girince önce olayı, sonra İskorbütü çöz. Gemi batmadıysa ve İskorbüt temizse Liman Gecesi oynanır.",
+        "flavor": "Rıhtım görünüyor. Sağlık sandalı şafakta gelecek."
+      },
+      "back": "BACK_SUPPORT"
+    },
+    {
+      "id": "SET-KP-01",
+      "source": "working/v2.7/visual/illustrated_design_20260908/assets/SET-KP-01.png",
+      "trim_mm": [
+        70.0,
+        120.0
+      ],
+      "body_pt": 9.2,
+      "flavor_pt": 8.8,
+      "effect_mm": 22.39,
+      "flavor_mm": 3.57,
+      "meta_mm": 2.92,
+      "minimum_copy_mm": 40.99,
+      "copy_panel_percent": 35,
+      "title_bottom_percent": 14,
+      "art_band_percent": 51,
+      "actual_panel_mm": 41.4,
+      "title_pt": 18.8,
+      "native_exact_copy": {
+        "title": "KAPTAN",
+        "effect": "Rota oylamasında 2 oy kullanırsın. Rota beraberliğini yalnız berabere seçenekler arasından bozarsın. Suçlama ve İsyanda 1 oy kullanırsın. Suçlama hedefinin ön seçimindeki eşitliği de bozarsın; bu ön seçim resmî oylama değildir.",
+        "flavor": "Dümen sende. Borç hepinizin."
+      },
+      "back": "BACK_SUPPORT"
+    }
+  ],
+  "print_positions": [
+    {
+      "page": 2,
+      "side": "front",
+      "id": "KAR-01",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 2,
+      "side": "front",
+      "id": "KAR-02",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 2,
+      "side": "front",
+      "id": "KAR-03",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 2,
+      "side": "front",
+      "id": "KAR-04",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 3,
+      "side": "back",
+      "id": "KAR-01",
+      "bbox": [
+        314.64566929133855,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 3,
+      "side": "back",
+      "id": "KAR-02",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 3,
+      "side": "back",
+      "id": "KAR-03",
+      "bbox": [
+        314.64566929133855,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 3,
+      "side": "back",
+      "id": "KAR-04",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 4,
+      "side": "front",
+      "id": "KAR-05",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 4,
+      "side": "front",
+      "id": "KAR-06",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 4,
+      "side": "front",
+      "id": "KAR-07",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 4,
+      "side": "front",
+      "id": "KAR-08",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 5,
+      "side": "back",
+      "id": "KAR-05",
+      "bbox": [
+        314.64566929133855,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 5,
+      "side": "back",
+      "id": "KAR-06",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 5,
+      "side": "back",
+      "id": "KAR-07",
+      "bbox": [
+        314.64566929133855,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 5,
+      "side": "back",
+      "id": "KAR-08",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 6,
+      "side": "front",
+      "id": "KAR-09",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 6,
+      "side": "front",
+      "id": "KAR-10",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 6,
+      "side": "front",
+      "id": "KAR-11",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 6,
+      "side": "front",
+      "id": "KAR-12",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 7,
+      "side": "back",
+      "id": "KAR-09",
+      "bbox": [
+        314.64566929133855,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 7,
+      "side": "back",
+      "id": "KAR-10",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 7,
+      "side": "back",
+      "id": "KAR-11",
+      "bbox": [
+        314.64566929133855,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 7,
+      "side": "back",
+      "id": "KAR-12",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 8,
+      "side": "front",
+      "id": "KAR-13",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 8,
+      "side": "front",
+      "id": "KAR-14",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 8,
+      "side": "front",
+      "id": "KAR-15",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 8,
+      "side": "front",
+      "id": "KAR-16",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 9,
+      "side": "back",
+      "id": "KAR-13",
+      "bbox": [
+        314.64566929133855,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 9,
+      "side": "back",
+      "id": "KAR-14",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 9,
+      "side": "back",
+      "id": "KAR-15",
+      "bbox": [
+        314.64566929133855,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 9,
+      "side": "back",
+      "id": "KAR-16",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 10,
+      "side": "front",
+      "id": "KAR-17",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 10,
+      "side": "front",
+      "id": "KAR-18",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 10,
+      "side": "front",
+      "id": "KAR-19",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 10,
+      "side": "front",
+      "id": "KAR-20",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 11,
+      "side": "back",
+      "id": "KAR-17",
+      "bbox": [
+        314.64566929133855,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 11,
+      "side": "back",
+      "id": "KAR-18",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 11,
+      "side": "back",
+      "id": "KAR-19",
+      "bbox": [
+        314.64566929133855,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 11,
+      "side": "back",
+      "id": "KAR-20",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 12,
+      "side": "front",
+      "id": "SET-KL-01",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 12,
+      "side": "front",
+      "id": "SET-VL-01",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 12,
+      "side": "front",
+      "id": "SET-KP-01",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 13,
+      "side": "back",
+      "id": "SET-KL-01",
+      "bbox": [
+        314.64566929133855,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 13,
+      "side": "back",
+      "id": "SET-VL-01",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 13,
+      "side": "back",
+      "id": "SET-KP-01",
+      "bbox": [
+        314.64566929133855,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 14,
+      "side": "front",
+      "id": "GUC-01A",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 14,
+      "side": "front",
+      "id": "GUC-01B",
+      "bbox": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 14,
+      "side": "front",
+      "id": "GUC-02A",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 14,
+      "side": "front",
+      "id": "GUC-02B",
+      "bbox": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 14,
+      "side": "front",
+      "id": "GUC-03",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 14,
+      "side": "front",
+      "id": "GUC-04",
+      "bbox": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 15,
+      "side": "back",
+      "id": "GUC-01A",
+      "bbox": [
+        314.64566929133866,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 15,
+      "side": "back",
+      "id": "GUC-01B",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 15,
+      "side": "back",
+      "id": "GUC-02A",
+      "bbox": [
+        314.64566929133866,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 15,
+      "side": "back",
+      "id": "GUC-02B",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 15,
+      "side": "back",
+      "id": "GUC-03",
+      "bbox": [
+        314.64566929133866,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 15,
+      "side": "back",
+      "id": "GUC-04",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 16,
+      "side": "front",
+      "id": "GUC-05",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 16,
+      "side": "front",
+      "id": "GUC-06",
+      "bbox": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 16,
+      "side": "front",
+      "id": "GUC-07",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 16,
+      "side": "front",
+      "id": "GUC-08",
+      "bbox": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 16,
+      "side": "front",
+      "id": "GUC-09",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 16,
+      "side": "front",
+      "id": "GUC-10",
+      "bbox": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 17,
+      "side": "back",
+      "id": "GUC-05",
+      "bbox": [
+        314.64566929133866,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 17,
+      "side": "back",
+      "id": "GUC-06",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 17,
+      "side": "back",
+      "id": "GUC-07",
+      "bbox": [
+        314.64566929133866,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 17,
+      "side": "back",
+      "id": "GUC-08",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 17,
+      "side": "back",
+      "id": "GUC-09",
+      "bbox": [
+        314.64566929133866,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 17,
+      "side": "back",
+      "id": "GUC-10",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 18,
+      "side": "front",
+      "id": "GUC-11",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 18,
+      "side": "front",
+      "id": "GUC-12",
+      "bbox": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 18,
+      "side": "front",
+      "id": "GUC-13",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 18,
+      "side": "front",
+      "id": "GUC-14",
+      "bbox": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 18,
+      "side": "front",
+      "id": "GUC-15",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 18,
+      "side": "front",
+      "id": "GUC-16",
+      "bbox": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 19,
+      "side": "back",
+      "id": "GUC-11",
+      "bbox": [
+        314.64566929133866,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 19,
+      "side": "back",
+      "id": "GUC-12",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 19,
+      "side": "back",
+      "id": "GUC-13",
+      "bbox": [
+        314.64566929133866,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 19,
+      "side": "back",
+      "id": "GUC-14",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 19,
+      "side": "back",
+      "id": "GUC-15",
+      "bbox": [
+        314.64566929133866,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 19,
+      "side": "back",
+      "id": "GUC-16",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 20,
+      "side": "front",
+      "id": "GUC-17",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 20,
+      "side": "front",
+      "id": "GUC-18",
+      "bbox": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 20,
+      "side": "front",
+      "id": "GUC-19",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 20,
+      "side": "front",
+      "id": "GUC-20",
+      "bbox": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 20,
+      "side": "front",
+      "id": "GUC-21",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 20,
+      "side": "front",
+      "id": "GUC-22",
+      "bbox": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 21,
+      "side": "back",
+      "id": "GUC-17",
+      "bbox": [
+        314.64566929133866,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 21,
+      "side": "back",
+      "id": "GUC-18",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 21,
+      "side": "back",
+      "id": "GUC-19",
+      "bbox": [
+        314.64566929133866,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 21,
+      "side": "back",
+      "id": "GUC-20",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 21,
+      "side": "back",
+      "id": "GUC-21",
+      "bbox": [
+        314.64566929133866,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 21,
+      "side": "back",
+      "id": "GUC-22",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 22,
+      "side": "front",
+      "id": "GUC-23",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 22,
+      "side": "front",
+      "id": "GUC-24",
+      "bbox": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 22,
+      "side": "front",
+      "id": "GUC-25",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 22,
+      "side": "front",
+      "id": "GUC-26",
+      "bbox": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 22,
+      "side": "front",
+      "id": "GUC-27",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 22,
+      "side": "front",
+      "id": "GUC-28",
+      "bbox": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 23,
+      "side": "back",
+      "id": "GUC-23",
+      "bbox": [
+        314.64566929133866,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 23,
+      "side": "back",
+      "id": "GUC-24",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 23,
+      "side": "back",
+      "id": "GUC-25",
+      "bbox": [
+        314.64566929133866,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 23,
+      "side": "back",
+      "id": "GUC-26",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 23,
+      "side": "back",
+      "id": "GUC-27",
+      "bbox": [
+        314.64566929133866,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 23,
+      "side": "back",
+      "id": "GUC-28",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 24,
+      "side": "front",
+      "id": "ERZ-01",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 24,
+      "side": "front",
+      "id": "SAD-T-01",
+      "bbox": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 24,
+      "side": "front",
+      "id": "SAD-T-02",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 24,
+      "side": "front",
+      "id": "SAD-T-03",
+      "bbox": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 24,
+      "side": "front",
+      "id": "SAD-T-04",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 24,
+      "side": "front",
+      "id": "SAD-T-05",
+      "bbox": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 25,
+      "side": "back",
+      "id": "ERZ-01",
+      "bbox": [
+        314.64566929133866,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 25,
+      "side": "back",
+      "id": "SAD-T-01",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 25,
+      "side": "back",
+      "id": "SAD-T-02",
+      "bbox": [
+        314.64566929133866,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 25,
+      "side": "back",
+      "id": "SAD-T-03",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 25,
+      "side": "back",
+      "id": "SAD-T-04",
+      "bbox": [
+        314.64566929133866,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 25,
+      "side": "back",
+      "id": "SAD-T-05",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 26,
+      "side": "front",
+      "id": "SAD-T-06",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 26,
+      "side": "front",
+      "id": "SAD-T-07",
+      "bbox": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 26,
+      "side": "front",
+      "id": "SAD-T-08",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 26,
+      "side": "front",
+      "id": "SAD-T-09",
+      "bbox": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 26,
+      "side": "front",
+      "id": "SAD-T-10",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 26,
+      "side": "front",
+      "id": "SAD-H-01",
+      "bbox": [
+        314.6456692913386,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 27,
+      "side": "back",
+      "id": "SAD-T-06",
+      "bbox": [
+        314.64566929133866,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 27,
+      "side": "back",
+      "id": "SAD-T-07",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 27,
+      "side": "back",
+      "id": "SAD-T-08",
+      "bbox": [
+        314.64566929133866,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 27,
+      "side": "back",
+      "id": "SAD-T-09",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 27,
+      "side": "back",
+      "id": "SAD-T-10",
+      "bbox": [
+        314.64566929133866,
+        572.456692913386,
+        494.64566929133866,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 27,
+      "side": "back",
+      "id": "SAD-H-01",
+      "bbox": [
+        100.62992125984252,
+        572.456692913386,
+        280.62992125984255,
+        824.456692913386
+      ]
+    },
+    {
+      "page": 28,
+      "side": "front",
+      "id": "SAD-H-02",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 28,
+      "side": "front",
+      "id": "SAD-H-03",
+      "bbox": [
+        314.6456692913386,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 28,
+      "side": "front",
+      "id": "SAD-H-04",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 28,
+      "side": "front",
+      "id": "SAD-H-05",
+      "bbox": [
+        314.6456692913386,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 29,
+      "side": "back",
+      "id": "SAD-H-02",
+      "bbox": [
+        314.64566929133866,
+        17.43307086614172,
+        494.64566929133866,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 29,
+      "side": "back",
+      "id": "SAD-H-03",
+      "bbox": [
+        100.62992125984252,
+        17.43307086614172,
+        280.62992125984255,
+        269.43307086614175
+      ]
+    },
+    {
+      "page": 29,
+      "side": "back",
+      "id": "SAD-H-04",
+      "bbox": [
+        314.64566929133866,
+        294.9448818897638,
+        494.64566929133866,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 29,
+      "side": "back",
+      "id": "SAD-H-05",
+      "bbox": [
+        100.62992125984252,
+        294.9448818897638,
+        280.62992125984255,
+        546.9448818897638
+      ]
+    },
+    {
+      "page": 30,
+      "side": "front",
+      "id": "HAR-AD-01",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 30,
+      "side": "front",
+      "id": "HAR-AD-02",
+      "bbox": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 30,
+      "side": "front",
+      "id": "HAR-AD-03",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 30,
+      "side": "front",
+      "id": "HAR-AD-04",
+      "bbox": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 30,
+      "side": "front",
+      "id": "HAR-AD-05",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 30,
+      "side": "front",
+      "id": "HAR-AD-06",
+      "bbox": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 31,
+      "side": "back",
+      "id": "HAR-AD-01",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 31,
+      "side": "back",
+      "id": "HAR-AD-02",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 31,
+      "side": "back",
+      "id": "HAR-AD-03",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 31,
+      "side": "back",
+      "id": "HAR-AD-04",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 31,
+      "side": "back",
+      "id": "HAR-AD-05",
+      "bbox": [
+        314.64566929133855,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 31,
+      "side": "back",
+      "id": "HAR-AD-06",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 32,
+      "side": "front",
+      "id": "HAR-AD-07",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 32,
+      "side": "front",
+      "id": "HAR-AD-08",
+      "bbox": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 32,
+      "side": "front",
+      "id": "HAR-AD-09",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 32,
+      "side": "front",
+      "id": "HAR-AD-10",
+      "bbox": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 32,
+      "side": "front",
+      "id": "HAR-AD-11",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 32,
+      "side": "front",
+      "id": "HAR-AD-12",
+      "bbox": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 33,
+      "side": "back",
+      "id": "HAR-AD-07",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 33,
+      "side": "back",
+      "id": "HAR-AD-08",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 33,
+      "side": "back",
+      "id": "HAR-AD-09",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 33,
+      "side": "back",
+      "id": "HAR-AD-10",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 33,
+      "side": "back",
+      "id": "HAR-AD-11",
+      "bbox": [
+        314.64566929133855,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 33,
+      "side": "back",
+      "id": "HAR-AD-12",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 34,
+      "side": "front",
+      "id": "HAR-AD-13",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 34,
+      "side": "front",
+      "id": "HAR-AD-14",
+      "bbox": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 34,
+      "side": "front",
+      "id": "HAR-AD-15",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 34,
+      "side": "front",
+      "id": "HAR-AD-16",
+      "bbox": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 34,
+      "side": "front",
+      "id": "HAR-AD-17",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 34,
+      "side": "front",
+      "id": "HAR-AD-18",
+      "bbox": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 35,
+      "side": "back",
+      "id": "HAR-AD-13",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 35,
+      "side": "back",
+      "id": "HAR-AD-14",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 35,
+      "side": "back",
+      "id": "HAR-AD-15",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 35,
+      "side": "back",
+      "id": "HAR-AD-16",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 35,
+      "side": "back",
+      "id": "HAR-AD-17",
+      "bbox": [
+        314.64566929133855,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 35,
+      "side": "back",
+      "id": "HAR-AD-18",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 36,
+      "side": "front",
+      "id": "HAR-AD-19",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 36,
+      "side": "front",
+      "id": "HAR-AD-20",
+      "bbox": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 36,
+      "side": "front",
+      "id": "HAR-AD-21",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 36,
+      "side": "front",
+      "id": "HAR-AD-22",
+      "bbox": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 36,
+      "side": "front",
+      "id": "HAR-AD-23",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 36,
+      "side": "front",
+      "id": "HAR-AD-24",
+      "bbox": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 37,
+      "side": "back",
+      "id": "HAR-AD-19",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 37,
+      "side": "back",
+      "id": "HAR-AD-20",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 37,
+      "side": "back",
+      "id": "HAR-AD-21",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 37,
+      "side": "back",
+      "id": "HAR-AD-22",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 37,
+      "side": "back",
+      "id": "HAR-AD-23",
+      "bbox": [
+        314.64566929133855,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 37,
+      "side": "back",
+      "id": "HAR-AD-24",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 38,
+      "side": "front",
+      "id": "HAR-AD-25",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 38,
+      "side": "front",
+      "id": "HAR-AD-26",
+      "bbox": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 38,
+      "side": "front",
+      "id": "HAR-AD-27",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 38,
+      "side": "front",
+      "id": "HAR-AD-28",
+      "bbox": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 38,
+      "side": "front",
+      "id": "HAR-AD-29",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 38,
+      "side": "front",
+      "id": "HAR-AD-30",
+      "bbox": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 39,
+      "side": "back",
+      "id": "HAR-AD-25",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 39,
+      "side": "back",
+      "id": "HAR-AD-26",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 39,
+      "side": "back",
+      "id": "HAR-AD-27",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 39,
+      "side": "back",
+      "id": "HAR-AD-28",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 39,
+      "side": "back",
+      "id": "HAR-AD-29",
+      "bbox": [
+        314.64566929133855,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 39,
+      "side": "back",
+      "id": "HAR-AD-30",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 40,
+      "side": "front",
+      "id": "HAR-KY-01",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 40,
+      "side": "front",
+      "id": "HAR-KY-02",
+      "bbox": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 40,
+      "side": "front",
+      "id": "HAR-KY-03",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 40,
+      "side": "front",
+      "id": "HAR-KY-04",
+      "bbox": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 40,
+      "side": "front",
+      "id": "HAR-KY-05",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 40,
+      "side": "front",
+      "id": "HAR-KY-06",
+      "bbox": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 41,
+      "side": "back",
+      "id": "HAR-KY-01",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 41,
+      "side": "back",
+      "id": "HAR-KY-02",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 41,
+      "side": "back",
+      "id": "HAR-KY-03",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 41,
+      "side": "back",
+      "id": "HAR-KY-04",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 41,
+      "side": "back",
+      "id": "HAR-KY-05",
+      "bbox": [
+        314.64566929133855,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 41,
+      "side": "back",
+      "id": "HAR-KY-06",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 42,
+      "side": "front",
+      "id": "HAR-KY-07",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 42,
+      "side": "front",
+      "id": "HAR-KY-08",
+      "bbox": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 42,
+      "side": "front",
+      "id": "HAR-KY-09",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 42,
+      "side": "front",
+      "id": "HAR-KY-10",
+      "bbox": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 42,
+      "side": "front",
+      "id": "HAR-KY-11",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 42,
+      "side": "front",
+      "id": "HAR-KY-12",
+      "bbox": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 43,
+      "side": "back",
+      "id": "HAR-KY-07",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 43,
+      "side": "back",
+      "id": "HAR-KY-08",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 43,
+      "side": "back",
+      "id": "HAR-KY-09",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 43,
+      "side": "back",
+      "id": "HAR-KY-10",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 43,
+      "side": "back",
+      "id": "HAR-KY-11",
+      "bbox": [
+        314.64566929133855,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 43,
+      "side": "back",
+      "id": "HAR-KY-12",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 44,
+      "side": "front",
+      "id": "HAR-AA-01",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 44,
+      "side": "front",
+      "id": "HAR-AA-02",
+      "bbox": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 44,
+      "side": "front",
+      "id": "HAR-AA-03",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 44,
+      "side": "front",
+      "id": "HAR-AA-04",
+      "bbox": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 44,
+      "side": "front",
+      "id": "HAR-AA-05",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 44,
+      "side": "front",
+      "id": "HAR-AA-06",
+      "bbox": [
+        314.6456692913386,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 45,
+      "side": "back",
+      "id": "HAR-AA-01",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 45,
+      "side": "back",
+      "id": "HAR-AA-02",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 45,
+      "side": "back",
+      "id": "HAR-AA-03",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 45,
+      "side": "back",
+      "id": "HAR-AA-04",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 45,
+      "side": "back",
+      "id": "HAR-AA-05",
+      "bbox": [
+        314.64566929133855,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 45,
+      "side": "back",
+      "id": "HAR-AA-06",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ]
+    },
+    {
+      "page": 46,
+      "side": "front",
+      "id": "HAR-FN-01",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 46,
+      "side": "front",
+      "id": "HAR-FN-02",
+      "bbox": [
+        314.6456692913386,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 46,
+      "side": "front",
+      "id": "HAR-FN-03",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 46,
+      "side": "front",
+      "id": "HAR-FN-04",
+      "bbox": [
+        314.6456692913386,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 47,
+      "side": "back",
+      "id": "HAR-FN-01",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 47,
+      "side": "back",
+      "id": "HAR-FN-02",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ]
+    },
+    {
+      "page": 47,
+      "side": "back",
+      "id": "HAR-FN-03",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ]
+    },
+    {
+      "page": 47,
+      "side": "back",
+      "id": "HAR-FN-04",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ]
+    }
+  ],
+  "review_positions": [
+    {
+      "page": 1,
+      "id": "KAR-01",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 1,
+      "id": "KAR-02",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 1,
+      "id": "KAR-03",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 1,
+      "id": "KAR-04",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 2,
+      "id": "KAR-05",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 2,
+      "id": "KAR-06",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 2,
+      "id": "KAR-07",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 2,
+      "id": "KAR-08",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 3,
+      "id": "KAR-09",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 3,
+      "id": "KAR-10",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 3,
+      "id": "KAR-11",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 3,
+      "id": "KAR-12",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 4,
+      "id": "KAR-13",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 4,
+      "id": "KAR-14",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 4,
+      "id": "KAR-15",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 4,
+      "id": "KAR-16",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 5,
+      "id": "KAR-17",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 5,
+      "id": "KAR-18",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 5,
+      "id": "KAR-19",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 5,
+      "id": "KAR-20",
+      "bbox": [
+        314.6456692913386,
+        437.9527559055119,
+        513.0708661417323,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 6,
+      "id": "SET-KL-01",
+      "bbox": [
+        82.20472440944883,
+        63.77952755905517,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 6,
+      "id": "SET-VL-01",
+      "bbox": [
+        314.6456692913386,
+        63.77952755905517,
+        513.0708661417323,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 6,
+      "id": "SET-KP-01",
+      "bbox": [
+        82.20472440944883,
+        437.9527559055119,
+        280.62992125984255,
+        778.1102362204725
+      ]
+    },
+    {
+      "page": 7,
+      "id": "GUC-01A",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 7,
+      "id": "GUC-01B",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 7,
+      "id": "GUC-02A",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 7,
+      "id": "GUC-02B",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 8,
+      "id": "GUC-03",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 8,
+      "id": "GUC-04",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 8,
+      "id": "GUC-05",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 8,
+      "id": "GUC-06",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 9,
+      "id": "GUC-07",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 9,
+      "id": "GUC-08",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 9,
+      "id": "GUC-09",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 9,
+      "id": "GUC-10",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 10,
+      "id": "GUC-11",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 10,
+      "id": "GUC-12",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 10,
+      "id": "GUC-13",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 10,
+      "id": "GUC-14",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 11,
+      "id": "GUC-15",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 11,
+      "id": "GUC-16",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 11,
+      "id": "GUC-17",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 11,
+      "id": "GUC-18",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 12,
+      "id": "GUC-19",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 12,
+      "id": "GUC-20",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 12,
+      "id": "GUC-21",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 12,
+      "id": "GUC-22",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 13,
+      "id": "GUC-23",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 13,
+      "id": "GUC-24",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 13,
+      "id": "GUC-25",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 13,
+      "id": "GUC-26",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 14,
+      "id": "GUC-27",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 14,
+      "id": "GUC-28",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 14,
+      "id": "ERZ-01",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 14,
+      "id": "SAD-T-01",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 15,
+      "id": "SAD-T-02",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 15,
+      "id": "SAD-T-03",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 15,
+      "id": "SAD-T-04",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 15,
+      "id": "SAD-T-05",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 16,
+      "id": "SAD-T-06",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 16,
+      "id": "SAD-T-07",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 16,
+      "id": "SAD-T-08",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 16,
+      "id": "SAD-T-09",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 17,
+      "id": "SAD-T-10",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 17,
+      "id": "SAD-H-01",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 17,
+      "id": "SAD-H-02",
+      "bbox": [
+        68.22992125984251,
+        437.95275590551194,
+        280.62992125984255,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 17,
+      "id": "SAD-H-03",
+      "bbox": [
+        314.6456692913386,
+        437.95275590551194,
+        527.0456692913386,
+        735.312755905512
+      ]
+    },
+    {
+      "page": 18,
+      "id": "SAD-H-04",
+      "bbox": [
+        68.22992125984251,
+        106.5770078740158,
+        280.62992125984255,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 18,
+      "id": "SAD-H-05",
+      "bbox": [
+        314.6456692913386,
+        106.5770078740158,
+        527.0456692913386,
+        403.9370078740158
+      ]
+    },
+    {
+      "page": 19,
+      "id": "HAR-AD-01",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 19,
+      "id": "HAR-AD-02",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 19,
+      "id": "HAR-AD-03",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 19,
+      "id": "HAR-AD-04",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 20,
+      "id": "HAR-AD-05",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 20,
+      "id": "HAR-AD-06",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 20,
+      "id": "HAR-AD-07",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 20,
+      "id": "HAR-AD-08",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 21,
+      "id": "HAR-AD-09",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 21,
+      "id": "HAR-AD-10",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 21,
+      "id": "HAR-AD-11",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 21,
+      "id": "HAR-AD-12",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 22,
+      "id": "HAR-AD-13",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 22,
+      "id": "HAR-AD-14",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 22,
+      "id": "HAR-AD-15",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 22,
+      "id": "HAR-AD-16",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 23,
+      "id": "HAR-AD-17",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 23,
+      "id": "HAR-AD-18",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 23,
+      "id": "HAR-AD-19",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 23,
+      "id": "HAR-AD-20",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 24,
+      "id": "HAR-AD-21",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 24,
+      "id": "HAR-AD-22",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 24,
+      "id": "HAR-AD-23",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 24,
+      "id": "HAR-AD-24",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 25,
+      "id": "HAR-AD-25",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 25,
+      "id": "HAR-AD-26",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 25,
+      "id": "HAR-AD-27",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 25,
+      "id": "HAR-AD-28",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 26,
+      "id": "HAR-AD-29",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 26,
+      "id": "HAR-AD-30",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 26,
+      "id": "HAR-KY-01",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 26,
+      "id": "HAR-KY-02",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 27,
+      "id": "HAR-KY-03",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 27,
+      "id": "HAR-KY-04",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 27,
+      "id": "HAR-KY-05",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 27,
+      "id": "HAR-KY-06",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 28,
+      "id": "HAR-KY-07",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 28,
+      "id": "HAR-KY-08",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 28,
+      "id": "HAR-KY-09",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 28,
+      "id": "HAR-KY-10",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 29,
+      "id": "HAR-KY-11",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 29,
+      "id": "HAR-KY-12",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 29,
+      "id": "HAR-AA-01",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 29,
+      "id": "HAR-AA-02",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 30,
+      "id": "HAR-AA-03",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 30,
+      "id": "HAR-AA-04",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 30,
+      "id": "HAR-AA-05",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 30,
+      "id": "HAR-AA-06",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 31,
+      "id": "HAR-FN-01",
+      "bbox": [
+        46.488188976377984,
+        169.7952755905512,
+        280.62992125984255,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 31,
+      "id": "HAR-FN-02",
+      "bbox": [
+        314.64566929133866,
+        169.7952755905512,
+        548.7874015748032,
+        403.93700787401576
+      ]
+    },
+    {
+      "page": 31,
+      "id": "HAR-FN-03",
+      "bbox": [
+        46.488188976377984,
+        437.95275590551194,
+        280.62992125984255,
+        672.0944881889765
+      ]
+    },
+    {
+      "page": 31,
+      "id": "HAR-FN-04",
+      "bbox": [
+        314.64566929133866,
+        437.95275590551194,
+        548.7874015748032,
+        672.0944881889765
+      ]
+    }
+  ],
+  "back_counts": {
+    "BACK_CHARACTER": 20,
+    "BACK_POWER": 31,
+    "BACK_LOYALTY": 15,
+    "BACK_SEA_ROCK": 42,
+    "BACK_ISLAND": 6,
+    "BACK_LIGHTHOUSE": 4,
+    "BACK_SUPPORT": 3
+  },
+  "volumes": [
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_01.pdf",
+      "pages_1based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "bytes": 9214126,
+      "sha256": "c12e8a298b6e626cd1ac15d753537338d8bb8ebb736ce35f8e4815612a2a1e90"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_02.pdf",
+      "pages_1based": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10
+      ],
+      "bytes": 8936323,
+      "sha256": "ccf27dd87463935709e6879af63adb34680c1da796bffa6a0701ca7e072b29e1"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_03.pdf",
+      "pages_1based": [
+        1,
+        2,
+        11,
+        12,
+        13,
+        14
+      ],
+      "bytes": 8368300,
+      "sha256": "3dbda49c370aa648b1217effbf3f4ee37c64d1534df3ed6fade9371eafae755e"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_04.pdf",
+      "pages_1based": [
+        1,
+        2,
+        15,
+        16
+      ],
+      "bytes": 6625277,
+      "sha256": "66c46d78203d2f99d7a60ce72a7fb531410d4569ea0f84f4b0661af39f5c0275"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_05.pdf",
+      "pages_1based": [
+        1,
+        2,
+        17,
+        18
+      ],
+      "bytes": 6657738,
+      "sha256": "54add7b8a64a0d5cbbe3fa2d7e9a03730ecfeb960fdff2269cef7bd7190f7a18"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_06.pdf",
+      "pages_1based": [
+        1,
+        2,
+        19,
+        20
+      ],
+      "bytes": 6741430,
+      "sha256": "16fec57909e7657664adaea3d7ced8d18df7680d44f33376a0ba0043b6b823a7"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_07.pdf",
+      "pages_1based": [
+        1,
+        2,
+        21,
+        22
+      ],
+      "bytes": 6846882,
+      "sha256": "54448e45979a0b29cf783dd12535f08db074b797f1926e5c7e34b0cf42aa9bb7"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_08.pdf",
+      "pages_1based": [
+        1,
+        2,
+        23,
+        24
+      ],
+      "bytes": 6558567,
+      "sha256": "f4628b3db96fc11faf7b2353a8a297b84c0dda7e15270065c4dc3926504addf7"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_09.pdf",
+      "pages_1based": [
+        1,
+        2,
+        25,
+        26
+      ],
+      "bytes": 7097661,
+      "sha256": "9c8a79722fca6becfdc7ed53f1965778cf539919e13003682d7455450b572923"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_10.pdf",
+      "pages_1based": [
+        1,
+        2,
+        27,
+        28,
+        29,
+        30
+      ],
+      "bytes": 10426301,
+      "sha256": "4543d8c3f20a4cc0467f125ad730506d4223b08d57350765df4a42f839c346d7"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_11.pdf",
+      "pages_1based": [
+        1,
+        2,
+        31,
+        32
+      ],
+      "bytes": 6599916,
+      "sha256": "dff70c04e4eb9fbc055cb5685af5c298f6cbc60bb6071c792e0397ffbd832269"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_12.pdf",
+      "pages_1based": [
+        1,
+        2,
+        33,
+        34
+      ],
+      "bytes": 6596315,
+      "sha256": "70c2018ec12de0a88678c1f1289363516f71a3af251d17274f53be997f61ca34"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_13.pdf",
+      "pages_1based": [
+        1,
+        2,
+        35,
+        36
+      ],
+      "bytes": 6718247,
+      "sha256": "98e058eddeece8c69f09d36f07afcf5ab4e6cc7424435add4a4e3c488df8d85b"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_14.pdf",
+      "pages_1based": [
+        1,
+        2,
+        37,
+        38
+      ],
+      "bytes": 6733749,
+      "sha256": "8ec522750b13b7531955edcc893b110092e8b122d689abbfa65aa0c747f7bcd4"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_15.pdf",
+      "pages_1based": [
+        1,
+        2,
+        39,
+        40
+      ],
+      "bytes": 6863147,
+      "sha256": "970dccf895538e975c6a23c07392ab226e796fa7dfb8c0b91f6cf5ee0703e0bd"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_16.pdf",
+      "pages_1based": [
+        1,
+        2,
+        41,
+        42
+      ],
+      "bytes": 6630851,
+      "sha256": "ef8997b7e45b85846f86195f2de654b1b3e8609ce47d8783c0b3da052f88294c"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_17.pdf",
+      "pages_1based": [
+        1,
+        2,
+        43,
+        44
+      ],
+      "bytes": 6743243,
+      "sha256": "4b66e2313e3371dc1b7f12fced4127970f64b5a23896201a825752b1fdf51005"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_18.pdf",
+      "pages_1based": [
+        1,
+        2,
+        45,
+        46
+      ],
+      "bytes": 6593090,
+      "sha256": "eab6ec2faa8964b1c5b49f4d002ca112010b6d09270b41e6af177684840a4e51"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_KARTLAR_19.pdf",
+      "pages_1based": [
+        1,
+        2,
+        47,
+        48
+      ],
+      "bytes": 4966183,
+      "sha256": "f991dc14e977106730c274d8fdc651448a157a3e33739d43b15b94a18e568fb8"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_01.pdf",
+      "pages_1based": [
+        1,
+        2,
+        3
+      ],
+      "bytes": 8397893,
+      "sha256": "3e911e0177348062026776f4a621f8780ff7308a8debea94fc607fcf7b9e3702"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_02.pdf",
+      "pages_1based": [
+        1,
+        4,
+        5
+      ],
+      "bytes": 8120089,
+      "sha256": "4dc4f3a40ddfc716eec8be8eb2f032bc090b440da4fa0f2148b9b8d61d2d0e7c"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_03.pdf",
+      "pages_1based": [
+        1,
+        6,
+        7,
+        8
+      ],
+      "bytes": 10602988,
+      "sha256": "a4a0382c24d4502e8c6f66d93cb8e8d5b8a26f89eaffbb38a6a281ae6ad26fcd"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_04.pdf",
+      "pages_1based": [
+        1,
+        9,
+        10
+      ],
+      "bytes": 7654595,
+      "sha256": "9d8c34a195625efc856066e1b233b511483a1a8b4320fa3e054392cd0aa79719"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_05.pdf",
+      "pages_1based": [
+        1,
+        11,
+        12
+      ],
+      "bytes": 7894677,
+      "sha256": "3609bf3f9d20b2c6a01b27939d28926fc3f661ec9c3eee4fcae074d2f81c7b15"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_06.pdf",
+      "pages_1based": [
+        1,
+        13,
+        14
+      ],
+      "bytes": 7896484,
+      "sha256": "bff52df963aa1e4b47a59967634de87d2393334630c6d1ab4674ff075a499723"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_07.pdf",
+      "pages_1based": [
+        1,
+        15,
+        16
+      ],
+      "bytes": 7395311,
+      "sha256": "82f770ae518ebee4fceaa0e2d189e3fd74a12da914afadc4436afe1f348b3560"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_08.pdf",
+      "pages_1based": [
+        1,
+        17,
+        18,
+        19
+      ],
+      "bytes": 9024669,
+      "sha256": "008402561283c23c6f403c46b43389d853627ed902d7e8bc1b78946ec9e69230"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_09.pdf",
+      "pages_1based": [
+        1,
+        20,
+        21
+      ],
+      "bytes": 7847384,
+      "sha256": "7d844aae51187da31b2f3a7c4160c968b8697149ea3f3802e1ba4e33de6869f6"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_10.pdf",
+      "pages_1based": [
+        1,
+        22,
+        23
+      ],
+      "bytes": 8073140,
+      "sha256": "fb12bd47aab8d2b093a69679ab4178348fc45bf502a47dc63e4d1394a64b3d2d"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_11.pdf",
+      "pages_1based": [
+        1,
+        24,
+        25
+      ],
+      "bytes": 8249968,
+      "sha256": "757a615bb061c5e5bf402acf736e17f2d2c24a3b81f4bed660a76a9241e32e3c"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_12.pdf",
+      "pages_1based": [
+        1,
+        26,
+        27
+      ],
+      "bytes": 8150252,
+      "sha256": "777747ef8b6d295f5039b93c72453563d83a82591bc08ec4bef4d77a1543cda5"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_13.pdf",
+      "pages_1based": [
+        1,
+        28,
+        29
+      ],
+      "bytes": 8155056,
+      "sha256": "0518cec9de4fda1cd21a48b323c8fb959af9d885321b1469ac38b5951629822b"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_14.pdf",
+      "pages_1based": [
+        1,
+        30,
+        31
+      ],
+      "bytes": 8048057,
+      "sha256": "bee2f445793ad00e65402f810aa4ed08a092651225270680a4ccad75d5251483"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/FOULWAKE_INCELEME_15.pdf",
+      "pages_1based": [
+        1,
+        32,
+        33,
+        34
+      ],
+      "bytes": 8803388,
+      "sha256": "ed882c4e2dc1d43f10918bb512ae9c4b54c8dbd42d690473e0ee0dca85d99710"
+    }
+  ],
+  "masters": {
+    "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf": {
+      "path": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+      "sha256": "04167b8290e9b7efdb211af2a236735eb50001357351a835acd60512e6e517dd",
+      "bytes": 122457224,
+      "pages": 48
+    },
+    "FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf": {
+      "path": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/FOULWAKE_121_GORSEL_INCELEME_v2.7.pdf",
+      "sha256": "bbae3a01e979b93b4e6c48fa8a58b380478589f026466489168a610bdf39cb21",
+      "bytes": 122433538,
+      "pages": 34
+    }
+  },
+  "final_pdf_visual_pages": 82
+}

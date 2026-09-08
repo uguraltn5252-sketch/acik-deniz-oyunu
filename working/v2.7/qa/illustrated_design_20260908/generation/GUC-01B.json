@@ -1,0 +1,25 @@
+{
+  "id": "GUC-01B",
+  "revision": 2,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-3af81488-4cce-4c2a-8c30-137e6c736885.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/GUC-01B.png",
+  "sha256": "43aba6537f9d82e8b3cf52b402c0ac1290b0f7b38d4d2b3a1a7dbba6ba6657c5",
+  "pixels": [
+    1060,
+    1484
+  ],
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/GUC-01B.txt",
+  "planned_prompt_sha256": "82a895ba35fcdc7a0dc2574f38aa5e88ba770dad8edea9530bc6fdc95f83c6dc",
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "actual_prompt_status": "SEE_REVISION_REQUEST_RECORD / NOT_ASSUMED_IDENTICAL_TO_PLAN",
+  "previous_selected_sha256": "3d9207b78c623f745a83a656cf4146f5ecf4066ed27242f96401fd443c717892",
+  "actual_request_file": "revision_requests.json",
+  "actual_prompt_sha256": "c3275432a0497aad1639fe33e94063a13f078fb444c7c69eebe93966872920dc",
+  "review_evidence": "../individual_visual_review.json#GUC-01B",
+  "reviewed_proof_sha256": "b70ccd89c210811003821b98bcbc46838495c3fbfee9692d2d0ed2427dc48fca",
+  "owner_aesthetic_acceptance": false
+}

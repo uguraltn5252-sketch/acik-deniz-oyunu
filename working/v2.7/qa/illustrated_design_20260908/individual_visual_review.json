@@ -1,0 +1,970 @@
+{
+  "KAR-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Uzun boyun, ölçü çubuğu itirazı ve tek dürbün okunuyor; başlık/kural/flavor çakışmıyor.",
+    "proof_sha256": "b4e151d3f43446ff77c29bcec6cfee73bd6ba5f858160e4d54872b6b64e7e013",
+    "asset_sha256": "42c04a4c0261f9d3951d73c754eeb2d16e260bdf1639d9edcb2b67bbd9d61c64",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-02": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Haritayı kaplayan çizgiler inatçı haritacı sesini destekliyor; büyük tüy ve yüz ana odak.",
+    "proof_sha256": "e8b01aa2d62556dc2b7ce4ce1046dc3e63bfe4cc674128c2d190873a1f60f92c",
+    "asset_sha256": "81b370c3291fc37431fe09e3d58628a06519b62bd40dd67c957399c1558c1ce5",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-03": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Dümencinin sakinliği ve kayan mürettebat arasında kuru durum mizahı; başlık ve metin güvenli.",
+    "proof_sha256": "3ebe51c5ab3d4e61979c506be87693a771465d40f5505a8adc84ecb0a98a192c",
+    "asset_sha256": "0d8c123364aaec4f859668269f1d59bf527dd4798a483e66067541495c0fcc11",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-04": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Düğümle ilgilenip ıslak adama bakmayan palamarcı, metnin kişiliğini gösteriyor.",
+    "proof_sha256": "2644c300e5a6c18779ad742390b8fe05029699b304d72116b725ccf80ba5ff6a",
+    "asset_sha256": "ad3c897bac6f525b4751849cee308cb54ec2f3572acc3def0604999a235abb4f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-05": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kıvırcık saçlı kalafatçı, çekiç/tahta ve kaçınan mürettebat tutarlı; başka karttaki kimlik düzeltmesine referans.",
+    "proof_sha256": "d396febc6c666a0dcfe96c41a123157cdd7bdeed6fd870c25c904239a66f11b2",
+    "asset_sha256": "acc3460733b2b8a064ce1e854d249cdcfb82d7e1be76186892a4c11a3076d3ee",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-06": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Dalgıcın getirdiği lazımlık ve şaşkın gemici, buluntu şakasını taşıyor; mekanik eşya simgesi üretmiyor.",
+    "proof_sha256": "b81c94dea2c76b4c70fd09eae8b3aa8a993e6b98c1483f6cf23efa1f88e19b98",
+    "asset_sha256": "7be7613f6c1732112ef7f78a34502614d05187f21cfcfdb1b02336e43f0299be",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-07": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Islak parmak, yelken ve gelen fırtına; geniş karakter adı şeritte kalıyor.",
+    "proof_sha256": "13d562b12590a8fd19c51b29e4143a830691a70d7d1c475690590ff1f4b92bed",
+    "asset_sha256": "6f0fde50de1d0b3ea3eb4471b2c0474fad3efee5e5c9a9712b755f78019890e3",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-09": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Tam üç anahtar ve açılmayan büyük kilit; leşkerlik şakası okunuyor.",
+    "proof_sha256": "8156e789f3a215572d44216dc5869dfd452c2b092fa47b9b3b25f80ee80ceaf5",
+    "asset_sha256": "d2063222af32061f32ba1509c312f43c01653e6c43cec72172397b14f44c139b",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-10": {
+    "status": "SELF_CHECK_PASS",
+    "note": "İşaret eden lostromo ve kovaları taşıyan tayfa, başkalarının işi üzerinden mizah kuruyor.",
+    "proof_sha256": "bb1f5659494e8512ad31e011ed2b50ba5d0e4bbeb8ed9f9fe09e92952798bbb3",
+    "asset_sha256": "4785544f7e565cc8e07ac9a618fd82fa447db3056991c4eed1cdbac89fbf64bd",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-11": {
+    "status": "SELF_CHECK_PASS",
+    "note": "İskeleden çevik geçiş ve geride merdiven kullanan tayfa; kimlik ve mekanik metni birbirine karışmıyor.",
+    "proof_sha256": "ef1f5a0bc23423868cbec7d811abf04c57b49be90d27efd764e4fb765eaea3b0",
+    "asset_sha256": "4df92445850e566a1a9a855a98b03fe2631dc4abf5417b4133685b5cbbde9d7f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-12": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Dürbünü kullanmadan yönü işaret eden kişi, ikna ile görme ayrımını taşıyor.",
+    "proof_sha256": "4fc67b550dc6a2cb9fa831a07c7c6b86ceec7adeee33f30cfa379a487ce264ef",
+    "asset_sha256": "af2ebe3717342a92fd0591379670cb17603c1c727aef356b15ffdfd4ef618009",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-13": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kazan ve kuşkulu dinleyici yemek şakasını gösteriyor; büyük metin alanı ve başlık güvenli.",
+    "proof_sha256": "2d8e181beaa8e4b25daa09a5e5001bd229e82c8fb3780968528840b1a3542220",
+    "asset_sha256": "b1745b618b2139b84291237731fa47d7c90bb95ac96de87677b6dca6f89de77f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-14": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Tahta/deri yazı desteği dönemle uyumlu; fareler ve çizme şakası okunur.",
+    "proof_sha256": "f4aa38109d23dd7d17c18e06356d3c28e58cacdcc324334f0c6a7e89268e8afa",
+    "asset_sha256": "63e972fb7561650f7b4c46fd04024fe63f8d7d831ea705ab64e93ff090a57657",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-16": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Fıçıya sarılan bekçi ve arkasındaki ıslak insan, öncelik şakasını açıkça gösteriyor.",
+    "proof_sha256": "73472b5af556b0bc3b999dc28df981d8f700fa0bf55d682ba896c7c837290db3",
+    "asset_sha256": "615108bf3320ea70bcefcb20e90e6d9b7d297277bb48b8775564f58b2a0e80df",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-17": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Cenaze şiiri ve tedirgin dinleyici; yaşayan birinin sonucu/ölümü kesinleştirilmiyor.",
+    "proof_sha256": "17cf45343cdfb7c1382cf46bac74ad3cf60cee78b2f7c47a904e31101344eea5",
+    "asset_sha256": "764e7715fedf4a0cdf121be5ddc24aa6405e8874ce2692264474782a181c166c",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-18": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kara özlemi kıyı ve hazır bohçayla anlatılıyor; San Cordelio dönüş kronolojisi metinde korunmuş.",
+    "proof_sha256": "595cbe7e46e348239069130da5515005ca0198e430192df42faee4c01d596ace",
+    "asset_sha256": "dbf008454a2a24c73b61e008d57ca87a4247b7ecf582941a81aaf8204061772e",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-19": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Yastık, anahtar ve duyulan konuşma alışkanlığı yansıtıyor; mekanik gizli bilgi hakkı eklemiyor.",
+    "proof_sha256": "16e0cc4dace04b4258ef3d24cd1b9efd7576a9c745f9a331afa5f2a6ccb0db11",
+    "asset_sha256": "27d3582aa1d11fae091664673529fee6b676944f0f0ee1e2f701632b3833314f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-08": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Ödünç kürekteki çamaşır ve açıkça iskele üzerinde duran adam; kayıkçının itirazı ve bütün kurallar okunur.",
+    "proof_sha256": "9d97cee86bccaa2b22952c8c65ee3e5c238b534af78406b212748c12937fa42a",
+    "asset_sha256": "1633f1b6487bb8191303241df3f127783a91947ede290a09466108219850d40a",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-15": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Papağan konuşmadan tercüme eden kadın ve bıkmış kuş; daraltılan başlık şeritte, bütün metin açık.",
+    "proof_sha256": "2d2b71c960c22f5516a3d7b9d12ddefa70e129d43b24a21222187a322bcbb8e0",
+    "asset_sha256": "753dcd4ef331db276b9ce3381a06d300217c9943ffdd1ee9eeb4da209cfd60e0",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-01A": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Doğal mantar halka, aşınmış ip ve bekleyen kazazede; başlık daraltıldı, bütün kurtarma istisnaları okunur.",
+    "proof_sha256": "4a7a09db45d4764550afdf718b56872b8957ad96e6cf0b1130defafcd1bacbe6",
+    "asset_sha256": "7ddb41a22f7267b48be866171e2f20657c3f5b5cc0bf01d2855b9fe2840f931f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-02A": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kanca atışındaki gösteriş ve geride bekleyen iki kişi; başlık ve kurtarma sınırı açık.",
+    "proof_sha256": "d2c876e9b2074857191393a29e6c916df7297f254c6669f13be3c5394a29af81",
+    "asset_sha256": "b143bcd670696bea7a37d42540bbcc97111231ab11150143280a33946600e775",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-02B": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kanca kemeri yakalamış; yardımcı ve kazazede karşılıklı okunuyor, kural/flavor ayrı.",
+    "proof_sha256": "8a58fa29574eb86239f897b3f42c782df81e242b1accdb33f6ee7bb6b04cb945",
+    "asset_sha256": "15fbf0eb40b191477f2851ada89f6f2f4142fb1f841792f6bd6bf0b35053fd59",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-03": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Karayip göndermesi nesne ve arzu üzerinden örtük; uzun alternatif kurtarma kuralı eksiksiz ve sahneyi örtmüyor.",
+    "proof_sha256": "627411235647e11a9fe73feee03038cd3b2ff3ba873c12fec14dd445719e9d15",
+    "asset_sha256": "8b6aa90b54b872670541d6ca94d5399155c6385e4fdaa687f8c855b8b0b5cf1f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-04": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Aramada çıkan küçük çorap ve suçlanan gösterişli adam; dry mizah başlık/kural alanına taşmıyor.",
+    "proof_sha256": "e4f40fc3c981b6f502c46d9537196baad5b32a1d0b318b311c4f8b8c39f14bac",
+    "asset_sha256": "add1a0e850e86c17fd7f871486317ff48d00ff5e8b823c51286ef3e78551ec71",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-06": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Küçük balıkla büyük zıpkınlar arasındaki ölçü şakası; Kraken koruması açık ve metin kesilmiyor.",
+    "proof_sha256": "f872a6e2c26981cb1a3d19438baefb2698efc4f4cd713a0f176a008bb4be4f91",
+    "asset_sha256": "b7edf7f9b0d291cecf63e2e1105acbaebcbc43f79e46b5159fb83e27b30abcb0",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-07": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Sandalye ayağından geçici yeke ve parçaları taşıyan kadın; rota alternatifi ile resim ayrılıyor.",
+    "proof_sha256": "b788e5058df4baa2d45fcd56700575480303e7d0393010ec64aacabd37b2065c",
+    "asset_sha256": "5b8627da007150d430ee8e7c6c2719a7646c969979454d8521529f6cac3cc65a",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-08": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Pergelli gemici araya uzanan eli uzaklaştırıyor; rota kontrolü ve mesleki huysuzluk birlikte okunuyor.",
+    "proof_sha256": "292b6ffdc692bb555dc1aa25a271e9fbaa2267497e2587b36638b2a3d04268d2",
+    "asset_sha256": "1642f7a9475ea8f36d6728bf4310d0be39c148df313eb41492572b7c3354cb5b",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-09": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Girdaba sarkıtılan ağırlık, kaygılı yüz ve martı; net başlık ve gövde metni.",
+    "proof_sha256": "e18d9cc6865ca6c81753a7bf912efad695f2b574134c01baa2a50d9169cb3327",
+    "asset_sha256": "96bc6c3c7903768f861a8737e54d6cf938cd44dc844827bf81fc289a6ed81303",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-10": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Çiçekli yama ve utanmış kaptan yedek yelken şakasını taşıyor; bütün metin şerit ve kartuş içinde.",
+    "proof_sha256": "027051fbeece12ec40ac422e38d857e55aa498f0bf457604020a52ba8672fc95",
+    "asset_sha256": "409cdffc7e0c405c386004afabe61db75f7d8c0d28e22170ea391460626e68bb",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-05": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Tabut biçimli yama ve iyileşmiş müşteri Moby Dick göndermesini taşıyor; şapka artık üç köşeli, kural alanı temiz.",
+    "proof_sha256": "df49caa364858b1869041acdeb87c566afe06e453166daed31595e8c464cb165",
+    "asset_sha256": "598e842e350eccd2423563dddd2fe994bbe0f3da7fd7a810db0a1583bfdb2c10",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-11": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Islak haritada eriyen çizgiler; başlık yukarı alınarak şerit kenarından ayrıldı, yer değiştirme metni tam.",
+    "proof_sha256": "69c0887ad7811c61e2eccd2f3bea5fa65d69be8c11a4f2e497f58824ff65c55f",
+    "asset_sha256": "609ceb5607b57ee8b4b93483af5e2da48288040b4e3902767b402c328157b46e",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "KAR-20": {
+    "status": "SELF_CHECK_PASS",
+    "note": "KAR-05 ile aynı kıvırcık saçlı kalafatçı arkada; hurafecinin vuruşu ile hoşnutsuzluk bağı korunuyor.",
+    "proof_sha256": "f2423101a0b6fb32c40693310fba3dafeb3db6f6fd65cf84d7ef97fd5db54d25",
+    "asset_sha256": "a9973511f644d3d3745184999bfb429b0fe08649971868079f9e866f41b18176",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SET-KP-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Özgün bıyıklı kaptan dümen ve uzun borç rulosuyla çizildi; tek başına fotoğraf kırpığı yok. Ayrıntılı oy kapsamı ve flavor sığıyor.",
+    "proof_sha256": "da7ea26db0dd3e1b4d7f2aff96359b4513330323ee7ba6ea793b333b3d142696",
+    "asset_sha256": "cf384d5ec65cb44c494d9ba731bfd490e1e0465b72e9e857d311c5df21ecfda6",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-12": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Çatlak mercek ve kuşkulu martı; kırık dürbün şakası metinle uyumlu, bütün yazılar açık.",
+    "proof_sha256": "eae18a40bdb0839d86a3a02026a5e47fe4cce63883f98504f0a4f3d31bc70cb9",
+    "asset_sha256": "59d2a4fc8f5afed1b0209f85c8f030ec28c20c48a7be04043d259635c876d8da",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-13": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Eski portre, okunamayan defter ve bunalmış yeni kaptan; kısıtlı bilgi kuralı aynen okunuyor.",
+    "proof_sha256": "f50ac0aafe0bd9bf040dad4a990a40fbd755b5cf4ac19b6feb488643583e4c2e",
+    "asset_sha256": "1aa4789d96b93e529ce5e0535ba50309175c873262ad602a1de436d094677277",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-14": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Anahtar deliğindeki göz ve aynaya bakan kaptanla kamara dedikodusu; kompozisyon ile kurallar ayrı.",
+    "proof_sha256": "c3b0f225b9ca9d7c453aefac64f1d29499c225d53db3a70473e86e0be533a9bb",
+    "asset_sha256": "c6bba6a123631d8d096efaea405a4fed6fd982f032f2c3f9a6929bf1c99ba41c",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-15": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Ödünç büyük şapka ve geri isteyen el, One Piece şapka/söz bağını örtük taşıyor; özgün kostüm, başlık sığıyor.",
+    "proof_sha256": "1284654a9c35d8f407569b7f0817d53107b34999dc7dbe30d2c7933d5e171ab4",
+    "asset_sha256": "466ede58380b6ca7b7a489e0a29c8c83f952a220bc022bf1c4eb018f8fa51832",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-16": {
+    "status": "SELF_CHECK_PASS",
+    "note": "İmzasız belge etrafında karşılıklı tartışma; +oy etkisi açık, figürler ve kural birbirini örtmüyor.",
+    "proof_sha256": "2ac4ee7adbcb4d0a537ddcb81bcfdacf43a12c87abe1d7d2e68ec13c8bd5feb5",
+    "asset_sha256": "170956c0ea27f848543129c74718a45072319b6056962dcaf03af9555053dd4e",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-18": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Prens göndermesi adı boş, buyruğu uzun belgeyle veriliyor; telaşlı memur ve bekleyenler kara komediyi destekliyor.",
+    "proof_sha256": "8add170058cfcb13cd0922861a66266b817fe6ec13d155523125840eebd2e010",
+    "asset_sha256": "b9002bf15059ea96d7e26bb2359ae19c91caf343037a395d6a3d71c1b2e5316d",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-19": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Oy taşlarına uzananlar ve sakladığı şişeyle bekleyen kaptan; oy sırası etkisi okunur.",
+    "proof_sha256": "54e39b35b880a98ac93e233fed6506226546337900287fdc297fdfb0ac59e86b",
+    "asset_sha256": "24d6daa3008576133c08e183c876781f4f1bfa3a0794de702fa1339ab1642f48",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-20": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Bıkkın sayıcı ve buyurgan parmak, yeniden sayım fikrini destekliyor; metin ile bezeme ayrılmış.",
+    "proof_sha256": "bc3384c5f8eecb049249c641240f37e8edee5c9e1ea916316bb1f60c103b6e89",
+    "asset_sha256": "670c1f1a3a5c812ba869d6c5e767b0f0433be78c0714bc89c6959a04f46e9d1e",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-21": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Tek altınla kalan kaygılı denizci ve torbayla uzaklaşan satıcı; vaat/sonuç çelişkisi açık.",
+    "proof_sha256": "7292f5d707ff88f9901b5397eb7f2c1ac5bef79864e0d83daa8fe856daa1d0f0",
+    "asset_sha256": "3354c355587f9bb637ead696b30501d3c58b509bdc52afa68b178e3a6f740769",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-23": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Sert peksimeti ısıramayan denizci ve memnun dinleyici; konuşma kısıtı tam ve görsel komik.",
+    "proof_sha256": "1451c64ef3c62e31f3732878d25b44f30f73cfa7286a0b8a85eb1fdff95889af",
+    "asset_sha256": "6bbd80991694f2b4d3362a4428e772e0858ad29a60f330e8d82ee0891d8c98eb",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-24": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Çorap karşılığında paketi kendine alan denizci ve şaşkın alıcı; değişim mizahı ve iki Güç sınırı açık.",
+    "proof_sha256": "b6d4d12dd87b3d8f15220a6aa57d9bcc5864924c9dfeb39125d1f8043e7d4b1d",
+    "asset_sha256": "72d935b1bef861c1fe4c8d64cc544ce2d279132444654bcd219f0b3f216f5f83",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-25": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Peksimet tutan suçlu görünümlü kişi ve kuşkulu martı; büyük kuş gizli sadakat ipucu oluşturmuyor.",
+    "proof_sha256": "0cbf404f0b66fc8c2e220799c449278886f94ea9a3a01b2077d751a726f05a55",
+    "asset_sha256": "e8f4d9ada3c50ddec16e690fba436343550bd5fcc04c18d79beab9ecd35e446f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-26": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Fener fitiline uzanan cimri denizci ve itiraz eden tayfa; Sis etkisi ve kalan bilgi eylemi ayrı okunuyor.",
+    "proof_sha256": "4367234cb54c50f46ddefef459f87f7c8edddea6a058d88f6ce75109621619cb",
+    "asset_sha256": "77e0583bd10c1bc80fbfc0c8d0b719f4e8042be04b4fe6a17b027c9035963a79",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-28": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kartuş içindeki dalga/fener bezemeleri kaldırıldı; şikâyetçi ile kuru defter sahnesi korunarak metin zemini temizlendi.",
+    "proof_sha256": "a8b6194711cb9232d8fa599df9fa7961e50e5e2fda7478de0a79172f12f2d010",
+    "asset_sha256": "9dd359df7695f91b16c532fb228476f985c9a243ac71f98073ff417c79649d8e",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "ERZ-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Küflü peksimet, kendinden emin sunucu ve kuşkulu inceleyici; yeni büyük kartuşta kurulum istisnası eksiksiz.",
+    "proof_sha256": "5567970fa5bf27de860ce23be86b4ad2bbf6a1c4ac077c65a6aa414690c74b0e",
+    "asset_sha256": "9d25ad8b6b80ad2be32343a7aee5fbc1af829ebe80afac23aace734414e2e2ce",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-H-02": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kilitli han, büyük anahtar ve masraf rulosu aile rehinesi baskısını kara komediyle kuruyor; kazanma ve motivasyon ayrılmış.",
+    "proof_sha256": "8fed1d7c7d3aadaf58cab95621475da2391dd349cf87705d9608c6b0521e1fc9",
+    "asset_sha256": "734883534bacdb07bfb8b810323e2423bdec0e8ce9804481d48ce46a32ed11b4",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-H-04": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Yırtık sayfaya kuşkuyla bakan kişi ve aracının uzanan eli; Veyr hakkındaki iddiayı kesin suç kanıtı yapmıyor.",
+    "proof_sha256": "bf5c63b51148e224b6a788fe9b839fa9d159327e4804df956660a98d8a16d97c",
+    "asset_sha256": "ed7a1249b13a40723f75f59fecde32492a5161dc08ad23b9ffe79421b82c21d3",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-H-05": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Cenaze yardımını alan anonim yakın ve memur, ölü kaydı üzerinden geçinme ironisini gösteriyor; alıcı Hainin kendisi diye etiketlenmiyor.",
+    "proof_sha256": "052735bed853171d6e2b0a7402b5ec775ad9b43242447ee04bfe738a389b432f",
+    "asset_sha256": "d0f007408436676308484149e44180e04a693af52ad7483ce3a1600456c83991",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Mektubu göğsünde tutan tayfa ve kıyıdaki evler; geri dönme isteği görünür, ortak kazanma metni tam.",
+    "proof_sha256": "165ba27d6c6ed766442a54795ea19c318c30097c747f6d1025759be5c9af3453",
+    "asset_sha256": "7ac54294b1e3f6a458d7035d9087b489318542a5d1c4ce638d9d7abcfdba2bb3",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-02": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kapı ardındaki küçük sofra dönme umudunu gösteriyor; sağlık kapısının oyun içinde açıldığına dair ek kural yok.",
+    "proof_sha256": "8b22ca2c6b4621525e2c2227229ee3f3733b812ee0b02d59ae403d89172f9d42",
+    "asset_sha256": "9806cb52608ee17636f0d40ad11c68d3382cbaa579d7a541af15c0348f20fda8",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-03": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Bozukluk sayan borçlu ve rahat alacaklı aynı sahnede; son taksit baskısı ve kural/flavor ayrımı okunur.",
+    "proof_sha256": "eee02facbdd236878c09dfb80b6d07e1b617eb04dd929cb33dabdad6ff746e25",
+    "asset_sha256": "ff713a85bee8a0972dba24141776fdabf05a2da5c8665963ce9e77e2cce9ac72",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-04": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Yol parası veren komşu ve kapıda tayfa; kişisel ilişki görselde açık, yeni mekanik eşya yok.",
+    "proof_sha256": "303df995416da66e54efd7eeb12e6cb31cb96bb81c2ea887330c195fa5bef004",
+    "asset_sha256": "874f6cc65f960f3f01b7a035fe05c755f48a03e96c7cdaad842e6ac68ca2d63e",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-05": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Başarısız örnekler ve yorgun araştırmacı; terkibin kesin başarıya ulaştığı izlenimini vermiyor.",
+    "proof_sha256": "83441eb9c37da42c8858b18659efcef6076b4c1fadae974aa9a375fc36e29ceb",
+    "asset_sha256": "31a0784157b28f81e82619db29d169d2c0669c55ec5073264404f8c96653651d",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-06": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Harcanmış ücret boş keseyle, aile paketiyle gösteriliyor; koyu mizah yargılayıcı klişeye dayanmıyor.",
+    "proof_sha256": "cff9fc9c699c4fedbea1f163bf5977d0ab46dd5857cf28762f0d16c2ed6cd647",
+    "asset_sha256": "5031fff93e392d9bc81fbb9fada3b254471eeb03317a54ff6f79b1d4f2a1b9a1",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-08": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kendi mezar yerinin manzarasına itiraz eden ihtiyar; ölüm tehdidi ile kuru mizah birlikte, yazılar tam.",
+    "proof_sha256": "ddb1aaf1ef99f0452921a359fa1465f878afa860088515a5e713e25529c2fec2",
+    "asset_sha256": "9b42b8573769285fc28c859a6d3ef253c349c041b1883f1e77adff5aae617866",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-09": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Uzun sözleşmeyi gerçekten okuyan tayfa ve telaşlanan memur; kişisel sorumluluk görünür.",
+    "proof_sha256": "eea33f7da0cd914377d5fd7222556feba4437c80819559c985e77727f29c48c7",
+    "asset_sha256": "0fb485d42dffdbbe8789bbb3c73c33e6040efff774b0764864ba4839c59c9151",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-10": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Boş hediye kutusu ve bekleyen eş; sıcak ilişki ile ölüm riski metinde açık, tüm alanlar okunur.",
+    "proof_sha256": "407c0495228d8872cc9cc1041620e81e6f62d381f2c51b26a0d3cf9c61351ae7",
+    "asset_sha256": "d0b1c87aabdbe5a6504bc3e21256cf942767a041343413970f5a82d0a7d212ca",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Sakin denize rağmen iki kişinin tartışması; olay yok metni ve masa mizahı net.",
+    "proof_sha256": "303b565d7a2c7ec8f50278d769b6fd27e3636037700aaed9978e5160f724c0c3",
+    "asset_sha256": "7bbdaf948bbc6017cbf39b09d4429f79e114409f09344ddf4055fa4a9ad02e6c",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-02": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kupadaki son damla ve boş ufuk; sakin deniz olayıyla uyumlu, yazı güvenli.",
+    "proof_sha256": "977d677bb05bd647083b6df5433a8ee9ae14f8e042f667dc96bd6407e2774d2d",
+    "asset_sha256": "5a6201a5c9527d730e6a0fdbe390a5d0b4c1f36587ff92ae3224415308a0b30c",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-03": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Üç üşengeç martı ve sıkılan denizci; olay üretmeden mizah katıyor.",
+    "proof_sha256": "8156091e88612ffdb18ac821de6768635d7387119327fa3d8ee75e8b744eb0ab",
+    "asset_sha256": "c63ce4ec8473af64b733e3bd696da91d85f8b6b6d8e7ed67895618ee8a59a5f3",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-04": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Fenerli nöbetçi ve sis içinde iddialı yön gösteren adam; ilk yolculuk gecesi istisnası tam.",
+    "proof_sha256": "c69d4857b33a8d8bf1963e8cf24699032d71c44bb0f7d70f04059631e4c922cd",
+    "asset_sha256": "ba3ff8450c95b587fcf6755ee0de46797f5c5ba1fb192da7f7bda53c4d3e7c95",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-06": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Görüşü kaybolan adam ve tek el feneri; belirsizlik görselde var, gece kuralı eksiksiz.",
+    "proof_sha256": "4e9428567c846f69eedcf3ef031964c5de902ebef5fc23442a415df0801dba85",
+    "asset_sha256": "376bd156cadb6468cd05f4b7558e55a0e0393092bc5222702d8f0e9eee7f00dc",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-07": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Zıt yön gösteren iki yüksek sesli tayfa ve arada pusulalı kişi; sis ile kanaat mizahı okunur.",
+    "proof_sha256": "8ade67bd53d0cd054cdd1f08c8c17420d444a30b7141b96094daf743b540c2c3",
+    "asset_sha256": "482f48935ba48ebce2c611f0f10863597739f39a91bc3c8e3f29cddf9f41475f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-08": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Düdüğe karşılık veren nöbetçi, sessiz martı ve sis içindeki gemi; ses kaynağı kesinleştirilmiyor.",
+    "proof_sha256": "d207293316a0e36bda9d7f4e7c7944a62a4f277e014b031ae054b6b2fd544170",
+    "asset_sha256": "34230d19ef28e41c272db48797723d68469d66b038b54f4ebf0038995a4a8f28",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-10": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Girdap yanında midesi bulanan pusulalı denizci; ek hareket kuralı tam, başlık şeritte.",
+    "proof_sha256": "65ba8a5f5dd0c76249af45577ea0d99b113c50e9eb75cf15022422888a82a3e7",
+    "asset_sha256": "e0cadeb4007682134034c7e58c8c9fe7d845ec91f95377e438f5e846d3a9ee47",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-11": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Dalgayı şapkasıyla selamlayan iyimser kaptan; bir Gövde kaybı açık ve farklı fırtına sahnesi.",
+    "proof_sha256": "088682c64c117f27f7f3815ae9c2f54609636e4067bc07f2b61c65e6c4abd4c4",
+    "asset_sha256": "bc223e5819f2926d2d104bd812c473502b30f1779956de3363530a359761621a",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-12": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Parmaklarıyla farklı sayan iki kişi ve kırık direk; gece sayım şakasıyla metin uyumlu.",
+    "proof_sha256": "5f3c4c89be0a999b6a7ab6de93b37bd47392c59b0decb443e10146219104f71e",
+    "asset_sha256": "43129ff2c9ef647f884f8f413022034039207cb525be2fc895facf9515fda2da",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-13": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kraken koluyla tokalaşmaya yeltenen kaptan; tehdit komik fakat gerçek, hasar istisnaları tam.",
+    "proof_sha256": "7ff0da303af208e067af5be24374ee9a0bc1e4fb77078c256a6ef74d96f03141",
+    "asset_sha256": "1acdc2bc3c2901b412b703c8c588cd8bdf3c5a82764ad47bb2dc35368dd5e0a8",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-14": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Yoklama tahtası, şaşkın tayfa ve suda tek şapka; düşme/kurtarma sonucu okunur.",
+    "proof_sha256": "3e9c3b5cbc972f2800eb9c826e9f6bf9accfc5a1b884181278c4ab7b08e2b1ad",
+    "asset_sha256": "523484d21247d0a980c22342bcb134f84c0a0d1203a49c43d88be665f7512dee",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-15": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kaymakta olan kaptan ve paspaslı tayfa; yeniden kurulan sahnede hem eylem hem uzun flavor tam.",
+    "proof_sha256": "50c62b23cc8ae03210d01319fa96821b1baf639a15a1c2103f028af94e246d8a",
+    "asset_sha256": "b6d12fa95368ccb21f80fbbf3ffd1c149bee185f9fd141146d50f6d55a2804b5",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-16": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Rüzgârsız sarkan yelkeni silkeleyen tayfa; hareket kısıtı ile çaresizlik şakası örtüşüyor.",
+    "proof_sha256": "209fdf05c832612fd1a1c93fb823f905b1bea720a384cfce50faec725cbb72ac",
+    "asset_sha256": "239ce15c08a103727ca9feb62d6586802ddfb7d6288e46abb97abb95fac42ac7",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-17": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Aynı yöne işaret eden iki kişi ve dolu yelken; isteğe bağlı ek hareket açık.",
+    "proof_sha256": "4cd49d47eee51c3e19a29b1200baecfa2c6bbf049b1d018dc2f0fa33e931deba",
+    "asset_sha256": "724682c3c49957eb432c422fa54c70006070eb49a92bd2c02f522fd64e406ec2",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-18": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Yüzen sandığa iki kanca birden uzanıyor; gönüllü rekabeti var, yeni gizli bilgi yok.",
+    "proof_sha256": "68d8d81ddded3c8009b55221260df06e38feb33b6e294fea167a2a80f3a5a4dc",
+    "asset_sha256": "406d645d3efb43c9cf9ba3eb837c8bafe307e96f06c5459c3b9a46fce5ab732e",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-19": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Sandığı birlikte sahiplenen iki kişi ve geriden bakan üçüncü; akrabalık şakası görselde doğal.",
+    "proof_sha256": "c06ad594b7bf1f46ec44569db8f024ce9e77714793ca111c29ec1a58cd3472d4",
+    "asset_sha256": "0a06ce9418fc177dc8e407936f0834d5a2f393df2768dd8e0d423e37a6bc8a63",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-20": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kıyı ışıklarına karşı şaşkın haritacı ve inatçı yoldaş; yer değiştirme olayından ek bilgi çıkarılmıyor.",
+    "proof_sha256": "1920735758a035d3bdc214478abb744aa64176cfc1b749d20933db60188acd1c",
+    "asset_sha256": "fc816c0297b3a07df793f1a628b83620c6191b957c7bfeb27ea647afd35b1bef",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-21": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Dümene asılan kişi ve güvertede sürüklenen kova; ters akıntı ve bütün yolların kapanmaması açık.",
+    "proof_sha256": "6697b16e303587f136b88c6f2e6a29ee548cbad0f100f85c675fec2eb7bed70a",
+    "asset_sha256": "0d1f34119fcfc2af56b1016ef23596767b67f30115193e09de82ca65f3822be4",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-22": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Yağmurda dağılan peksimet ve asılı çorap; rastgele Güç kaybı net, farklı sağanak sahnesi.",
+    "proof_sha256": "0e3fe95516cd2d74176bfcf3b276df3cf75f0630569d45efe1a7f2f9b5dd9604",
+    "asset_sha256": "46b8b71070a0e438f35d09c561a8e5e410802ad63d8eb632e95d40f30ebb2118",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-23": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Uçan balıklara ayrı yönlerden işaret eden tayfa; mekanik etkisizlik açık, komik sahne yeni sonuç üretmiyor.",
+    "proof_sha256": "8828b7501e5d4c3cff8819a257988934fa881f2ef5f5fc218d5c9aa801de6fd8",
+    "asset_sha256": "7b9870ce5808e1f246e6e3b23e62f1f436b2b38233e2ebb174446e785409d081",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-24": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Suyla temizlenmiş güvertede başkasının tek çorabına bakan iki kişi; büyük metin kartuşu temiz.",
+    "proof_sha256": "de9cb5c9b16fe6758b669223ce0aa36e1ffc1081511a00920f9aab1371ecc03e",
+    "asset_sha256": "feb6b3ea5a2bc6ed2b96952bbd27490bce6ea87ce921aef2ca825e90db7a2aee",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-25": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Çatlağı gösteren isimsiz tamirci ve kesesini tutan kaptan; ücret tartışması fırtınaya mizah katıyor.",
+    "proof_sha256": "326f669f215591e227259b7976591a225b722ceed02d40f24aed27d3630339e3",
+    "asset_sha256": "dfa83e894f884561b1cc0b70e5381719f51bdfca7cedc955398ff29ce8e659c0",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-26": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Açılan eski yamayı tanıyan yelkenci; farklı fırtına anı, tek Gövde kaybı okunur.",
+    "proof_sha256": "4cc35f8111667046c01b9bfc0b32883058e124c4fbfadded44cdd55c2734cfc4",
+    "asset_sha256": "8263d1b6c54245ef4e53f6ef8d8734b467f9329168945919b87c51d40c2497da",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-27": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Şapkayı uçuran rüzgâr ve arkada gülen tayfa; fiziksel durum mizahı açık.",
+    "proof_sha256": "28439a291a422e4f31ca72c7b549a51e7f73e9f6fd2620cbcd03e97f3ce8c038",
+    "asset_sha256": "6742445e44329902f83f0fb6b2874c8c5ff287424b40cb573c67f3c3fe236460",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-28": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Son paçavrayı paylaşan sırılsıklam iki kişi; tekdüze fırtına resmi yerine küçük gemi hayatı.",
+    "proof_sha256": "d69fa1b5998370388e05fb4a1d65e2acf59d215d576c4d48e4ac79db166d77d5",
+    "asset_sha256": "8f8ebb738a29670959f89c05a3ca85d4fc1ac783344783ef85643e019488eda7",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-29": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Eğilmiş gemide porseleninden içen kaptan; inkâr şakası ile hasar metni ayrı.",
+    "proof_sha256": "4947d20aff72bf85944874d356e5d307f19624287e642072b2582bd00265aad0",
+    "asset_sha256": "4bfb436437c678c3a079e6e1cab972afc2adcfec6ac3138077dc725bc6d4889c",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-30": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kaptanın üzerine toplanmış küçük yağmur bulutu karikatür olarak okunuyor; yeni mekanik aktör veya gizli ipucu değil.",
+    "proof_sha256": "40f0543b20863903c63bc3edcbd688aea6058137f10ead0b91b2aee3eb45e284",
+    "asset_sha256": "bcc3f79fc1f8ad4be96305b74e27aacf44ad9fe47c49bf589490166a2e7d2314",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-02": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kilit anahtarıyla sevinen dalgıç ve duvarı yok olmuş batık; Dipgören bağlantısı açık, kazanç sınırı tam.",
+    "proof_sha256": "694b63a93df94e9f57eddd0ed71f5b89d1220ea64a57bac75fbf6d4458b0b8ca",
+    "asset_sha256": "0b2b9d081e9d058943889713cd0a0aa80e3af44f3742d0693c1e92dfeb5a2676",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-03": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Tıkalı geçit ve katlanmış haritaya bakan tayfa; büyük kartuşta bütün geçilmezlik istisnaları okunur.",
+    "proof_sha256": "88b3aaf812ea36cc0bd229a01642a6d0ecdea4efb1c47e396d46afadbca54e32",
+    "asset_sha256": "b9dcf41f5212e47c476222b079c2727ee0730e8dfe7b31d40e4f01a17a31b7df",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-04": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Pruvadan soyulan tahta, kalafatçı kadın ve keseli kaptan; masraf şakası ile hasar bağlantısı.",
+    "proof_sha256": "8b363d7f851c1ec116cdf58b3d2bf79cb071f5618b7ccd8261c96e15768a8668",
+    "asset_sha256": "0f5b7918553a6c76149761d749bd22117a444208bb42a77a6bdb6f358df175d2",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-05": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kayaya eliyle dur işareti yapan tayfa; mekanik hasar net, sahne kişisel tepkiyle ayrışıyor.",
+    "proof_sha256": "7f79e09ee94820c33be154a111960917f720d908d244b30ec5ceb866ed8608ba",
+    "asset_sha256": "77ea95c68234a08f13fae303ee389b16a31219358668a443406c3b34ac70d69f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-06": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Dar geçitte ölçü alan işçi ve endişeli güverte; önce hasar sonra isteğe bağlı hareket açık.",
+    "proof_sha256": "1e68163dda50673dc915dc470379b667f886818728978d7573f98261a27b1643",
+    "asset_sha256": "1bbd135f914e06d61c9273409e1cfc3880c4b94ef4df26d12397ca67feddb27f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-07": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Gizli geçidi sanki hep biliyormuş gibi gösteren kaptan ve kuşkulu tayfa; ekstra hareket isteğe bağlı kalıyor.",
+    "proof_sha256": "7fa5711429844035734d2dac201bb0c7ae00c38de7489c515a8e6852f4577b6c",
+    "asset_sha256": "9c4bb346ce50d218881d2c714fb24cb92cde7d5aa080ae6c2fdfa4937df91aa8",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-08": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Oyukta sandığı saklayan beden dili ve boş kıyı; kazanç metni ve vergi şakası temiz.",
+    "proof_sha256": "64534e847ae3019331b339c8bd19706f01c2005946a17a511deb79261a805453",
+    "asset_sha256": "0ef10c9e324840f546d29d4afeadd2d0628b1a102e08dde1decbe8ba07c83b3f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-09": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kırık sandık için kaptanı suçlayan kişi; görünür nesne kaybı ve suçlama mizahı.",
+    "proof_sha256": "3b344c30b38c11b3a677e13bc7e6842886857d01e00aba02e8ad43cf201f4833",
+    "asset_sha256": "5d6a4d7d9787c1f08e7e2fa42329016c731f5f35885e5840de8708f54ba70048",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-10": {
+    "status": "SELF_CHECK_PASS",
+    "note": "İki yandan yırtılmış kumaş tutan tayfa; yenilenen geniş kartuşta iki hedefin Güç kaybı tam.",
+    "proof_sha256": "3c2fb2e4b3650a57b9bd9dc4c6b959f1828c264d0113eb9e6bd5ad9a7f2add3a",
+    "asset_sha256": "6f0d33d1fd43147dfea9f74fc103212f7382bf48465b77a75f57cc103cdb9d2e",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-11": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Su altındaki sivri kaya ile sessiz kalan haritacı; kesit resim olayı açıklar, gizli bilgi vermez.",
+    "proof_sha256": "92c34961c185b24fa30f26568d6f6605d812545528a17550305f8ed6045f8a17",
+    "asset_sha256": "6d4346a6e476cc0c95d1d2f8677cd13bdfcafcc685a30e40e81ba283f06c4c9f",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-12": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Küçük pergel ile büyük kayalık karşılaştırması; çizgi/gerçek ölçek şakası ve tek hasar net.",
+    "proof_sha256": "0f5ed172a6b961d0046b7a58bf60ffd5f5bf30ebe5ddb7acfa445ad0ae45ac0e",
+    "asset_sha256": "336982ef59c502a373c7ab1355bcae01a495bf50f22d34c0e7c706ef39b05205",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AA-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Sandıkları taşıyan iki tayfa ve oturarak kaydeden memur; iki ayrı oyuncuya kazanç metni tam.",
+    "proof_sha256": "49c40ba9663276729096f8c33ec475db7d5c4a4fd52f72ac7f0a661c56ac0b4e",
+    "asset_sha256": "5ea6e4a812150c170797e552e65351b5402ab702ead2a040a2a86737cb1e7aa4",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AA-02": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Boş karakolda defter ve erzak bulan tayfa; açık kalan Ufkun ilk girişte çözülmesi net.",
+    "proof_sha256": "17a6e8950a13f6fa2341cf68ee87e07caebc75cf730a54f51e3a06f56f2f32d0",
+    "asset_sha256": "c390c38ec4d395bb5bdcce2cd972093db1811c05e9958ee6981b38df6b131587",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AA-04": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Hasardan iş çıkaran neşeli usta ve kesesine sarılan kaptan; onarım üst sınırı açık.",
+    "proof_sha256": "1448925b8c97317eca7b25e0daa80b54b25fd9abe3cfc201ae0fbdb4b0b09348",
+    "asset_sha256": "41f14d9ddbe3bda277d82012ca9ce82027c6915d6e9841c60467c3fb1c961540",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AA-05": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Sandıkları götüren gülümseyen korsanlar ve itiraz eden tayfa; yeni geniş panelde bütün Güç kaybı tam.",
+    "proof_sha256": "c8c98e6c138deb709ad5d4f548ce5885da881a327d2f2a58dfc76f89c14e1091",
+    "asset_sha256": "045ba0aff1f8f52a457f9f160b9cb5f01b14364295e0c51f2122d7ba0e38c56d",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AA-06": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Yüksek masalı tek gümrükçü iki paketten birini işaret ediyor; kişi ve yetki arasındaki abartı okunur.",
+    "proof_sha256": "13e404735307530930fe8307e550e1446e41cb6d2176fe392750787886be5219",
+    "asset_sha256": "b67417b30d237d2c8988a0f3f6d3934676432dcfe9008d11e6e1615a45378e2c",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-FN-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Vardiya defteriyle ciddi bekçi ve bir tek dik kule; güncel geniş kartuş, olay açma/çözme ayrımı açık.",
+    "proof_sha256": "763cfc6be7e7a3b4b055fe2988c29cc63480af5460b1928b554f1ca085c03804",
+    "asset_sha256": "dbf7e743b4c56f0a9f8e197460c04aea9e81af3f98b352ca0fc776d4d3686721",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-FN-02": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Anahtar paspasın kenarında, terlikler boş kapıda; terk edilmiş tek fenerin yakın görünümü, çift kule yok.",
+    "proof_sha256": "a8658dde589a53c298a01789b46bf4afeb8b6a80cba210cdacdef954671a9b21",
+    "asset_sha256": "597be5b85c7445d2db6450ea092df4016e55c6bcd9a88e23a85ef8d4ff6fa8f0",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-FN-03": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Sandıkları aydınlatan tek el feneri; iki oyuncuya kazanç açık, kuleyi tekrarlamayan iç mekân.",
+    "proof_sha256": "86c5ccfd27d68e92d05d87af620a7a08c7e8b9fe7af08cdcdc4890058f85a1f9",
+    "asset_sha256": "623f2da2cb631c64575ca307b68004b61137106f5266decf7de4e938d92174d5",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-FN-04": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Kayalıkta yanlış konumdaki tek asma ışık ve kuşkulu haritacı; sahte fener teması ile sapma kuralı uyumlu.",
+    "proof_sha256": "8d7b933b9c128513dca8e6c59a9e0916b64eb57189899c795c395c4d0e888c07",
+    "asset_sha256": "84c55d450e013f7a581bc049e3ac16362886e1c7719c5dab6aff68975a7dfdc6",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SET-KL-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "San Cordelio adı kaynak alanından basıldı; sağlık sandıklarında dönemle uyumlu havan işareti, sayım ve halat çözme sahnesi.",
+    "proof_sha256": "0b7c70862168920628d5e82a0f07890abd4cb06a5328fd784540129d0d715e3d",
+    "asset_sha256": "8a8bdb1f36195972eb535ca86ec157d2c4378a3ccab78270b7657a495b480853",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SET-VL-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Saint Verena adı açık; günbatımında bekleyen tayfa, boş sağlık sandalı ve liman gecesi kuralı büyük kartuşta.",
+    "proof_sha256": "352759efe8a9434801c1d1a199c055800c7577863bfb82fe80528df0ec1b4e83",
+    "asset_sha256": "f5dc363d45513ce3daeaf35b6ae74eb465bacc2c362e67c6a89c56b30e58bb38",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-01B": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Modern boyalı simit yerine bağlı mantar blokları; dolanmış ip şakası ve başlık/kural açık.",
+    "proof_sha256": "b70ccd89c210811003821b98bcbc46838495c3fbfee9692d2d0ed2427dc48fca",
+    "asset_sha256": "43aba6537f9d82e8b3cf52b402c0ac1290b0f7b38d4d2b3a1a7dbba6ba6657c5",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-17": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Papağan önünde bıkkın kâtip ve ikna etmeye çalışan tayfa; başlık alt çizgiden ayrıldı, rota beyanı tam.",
+    "proof_sha256": "2810db89ba9d83e7bef343614aa693f56825a6779b306f73a7040f536e5e62a0",
+    "asset_sha256": "b772c22813d23b835176de187a3b63c7fd59b480d84d2d478b5d9fa8621b5da9",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-22": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Çatlak kupayı gururla kaldıran kaptan ve akan içki; dar başlık şeritte, kaptan oyunu azaltma metni açık.",
+    "proof_sha256": "7c127ab394d86ca6de923c3916a464b285cb700eaaa979a7a039326420543ffa",
+    "asset_sha256": "b981a73798a17c9985a5c876ef98a83c4e4dac36f37f566cf258046cfc552730",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "GUC-27": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Ekmekle haritayı silen kadın ve şaşıran pusulacı; yoğun kural eksiksiz, daraltılmış başlık ve oyun dışı alt satır temiz.",
+    "proof_sha256": "bd509344f86953780ee077698945b39ebba7399f281d0d13d3880fa955d06d82",
+    "asset_sha256": "613317cce8f87f3c02f6c14bdc35648378bb475ac78e000eddf3244b91dade87",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-09": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Girdap ve kaygılı kaptan korunarak alt kartuşun dalga süsleri temizlendi; zorunlu hareket metni artık açık zeminde.",
+    "proof_sha256": "ac266c8d2158dda16eecbe937d08e3a726090f7b60e59ba82b33780c0670bbf1",
+    "asset_sha256": "97a01c475cd98d2a29385f12cbf158f879d05a103265a2fb5db74a367ae93090",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-KY-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "İmkânsız duvara bakan haritacı; başlık üst şeride alındı, uzun geçilmezlik kuralı resme taşmıyor.",
+    "proof_sha256": "c6bb948e4f4996c7d8e1f11921f5f5b71d8788565295f0803fc963ebe46e9c4f",
+    "asset_sha256": "cf8d4fd76d41105734f18cc21f6839c12c9a1845f30b426243785f619ddd90dd",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-H-01": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Çocuğunun ilacı için el açan ebeveyn, borcu gemiye bağlayan eczacı; kartuşta süs kaldırıldı, uzun motivasyon ve kazanma metni temiz.",
+    "proof_sha256": "b6c21e1a051ccd15f10ec5a205cac0cae1b020168020f11bb42a978527a56184",
+    "asset_sha256": "39cee5a64f5d80d012d0f13661a32eb4e6780803aa0dc9611061e752321e038a",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-H-03": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Ölü kişinin evrakını tutan tayfa ve bilen aracının bakışı; yeni kimlik şantajı açık, temiz kartuşta metin tam.",
+    "proof_sha256": "3a5df239fc9d0141b51e9e779d95d0742019784e4478f93874988e7413895b5e",
+    "asset_sha256": "8fdc6fb044e1614709940567dff92f5d43c810bcc4978b86ce6f54b5851bf40a",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "SAD-T-07": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Karantina parmaklıklarının iki yanındaki kişiler; modern haçlar havan işaretine çevrildi, ortak Tayfa kazanma metni tam.",
+    "proof_sha256": "6c8637f631a58e5c8e2cea5aa9f53f35a8606d6ff9d13187602b8a8408ed0c6b",
+    "asset_sha256": "3a51b62ceb57197ec60690ed0a0751c1291a68507739d0103ca33fc726e0bec9",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AA-03": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Fazla misafirperver hancı ve ayrılmak isteyen tayfa; hafif daraltılmış yerel başlık şeritte, rehine kuralı net.",
+    "proof_sha256": "773b75a1733a02d557293155868b3f358b8bca2f628ed79377d6a975e3a4af3d",
+    "asset_sha256": "b9e4a561d8b61d56220d7023e0a655d8681d35372f189481f69010476464b1a4",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  },
+  "HAR-AD-05": {
+    "status": "SELF_CHECK_PASS",
+    "note": "Sis içinde burun buruna iki kişi; uzun başlık tek satırda şerit içine alındı, ilk gece istisnası tam.",
+    "proof_sha256": "3682a442625816123bdef5962d68489ab79bbad110df24f107b0dd3036fc4265",
+    "asset_sha256": "507d37a1d57024c6a1ffba41ce062fd3421dd165212539c0bbba1c9ca6ab4417",
+    "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+    "viewed_complete_card": true
+  }
+}

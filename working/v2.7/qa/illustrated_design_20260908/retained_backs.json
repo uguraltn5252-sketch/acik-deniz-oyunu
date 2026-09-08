@@ -1,0 +1,86 @@
+[
+  {
+    "id": "BACK_CHARACTER",
+    "method": "RETAINED_NATIVE_PDF_ART / NO_REDRAW",
+    "source_pdf_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0",
+    "source_back_page_1based": 4,
+    "clip_pt": [
+      306.1417322834646,
+      55.27559055118115,
+      521.5748031496063,
+      412.44094488188983
+    ],
+    "sha256": "49da4bf5d7e0a3f628f65a62ae85f483257775e8c4ecce22416da509fb5cf934"
+  },
+  {
+    "id": "BACK_POWER",
+    "method": "RETAINED_NATIVE_PDF_ART / NO_REDRAW",
+    "source_pdf_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0",
+    "source_back_page_1based": 16,
+    "clip_pt": [
+      306.1417322834646,
+      8.929133858267702,
+      503.1496062992127,
+      277.93700787401576
+    ],
+    "sha256": "655ed0cf2428143e45e41ee511cf10410a67c8bd758a46130e7dcef5e5776b9a"
+  },
+  {
+    "id": "BACK_LOYALTY",
+    "method": "RETAINED_NATIVE_PDF_ART / NO_REDRAW",
+    "source_pdf_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0",
+    "source_back_page_1based": 26,
+    "clip_pt": [
+      92.12598425196848,
+      8.929133858267702,
+      289.1338582677165,
+      277.93700787401576
+    ],
+    "sha256": "3d1cc4100637554c3de71ee5276fdce2ccb7ae5488750bf429629da648112ea6"
+  },
+  {
+    "id": "BACK_SEA_ROCK",
+    "method": "RETAINED_NATIVE_PDF_ART / NO_REDRAW",
+    "source_pdf_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0",
+    "source_back_page_1based": 32,
+    "clip_pt": [
+      306.1417322834646,
+      80.7874015748032,
+      521.5748031496063,
+      296.22047244094495
+    ],
+    "sha256": "c8145c887b16b949df3d9599466e3c19cc6803ad24351d2fac9d49dd52957930"
+  },
+  {
+    "id": "BACK_ISLAND",
+    "method": "RETAINED_NATIVE_PDF_ART / NO_REDRAW",
+    "source_pdf_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0",
+    "source_back_page_1based": 46,
+    "clip_pt": [
+      306.1417322834646,
+      80.7874015748032,
+      521.5748031496063,
+      296.22047244094495
+    ],
+    "sha256": "e2ae3972bc0370e546b3f5943dd0651f8c25b9ae81e401f1335e7db7b1b3ae65"
+  },
+  {
+    "id": "BACK_LIGHTHOUSE",
+    "method": "BYTE_IDENTICAL_RETAINED_SINGLE_UPRIGHT_MASTER",
+    "source": "working/v2.7/visual/polish_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+    "sha256": "3357f0a1efcde62b767b9b385da2f1a3742ef4cc8c03c28d97a629c830a3adee"
+  },
+  {
+    "id": "BACK_SUPPORT",
+    "method": "RETAINED_NATIVE_PDF_ART / NO_REDRAW",
+    "source_pdf_sha256": "8cb0bccce33210fb3ca1957e6d93b03e020bf88d28ebb9e817b8dfd0d5342ab0",
+    "source_back_page_1based": 14,
+    "clip_pt": [
+      306.1417322834646,
+      55.27559055118115,
+      521.5748031496063,
+      412.44094488188983
+    ],
+    "sha256": "ccf59f642cf12e9f43f34f3e558f0f7036a444fa4db0298b994533721769f3e9"
+  }
+]

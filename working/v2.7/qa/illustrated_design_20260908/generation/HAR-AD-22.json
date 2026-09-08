@@ -1,0 +1,23 @@
+{
+  "id": "HAR-AD-22",
+  "revision": 1,
+  "tool": "image_gen.imagegen",
+  "tool_model": "NOT_SELECTED_OR_VERIFIED_BY_OPERATOR",
+  "source_output": "/workspace/scratch/2c8c285219dc/generated_images/exec-a765f481-7c14-4376-bf72-f353a52b3894.png",
+  "selected_asset": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/visual/illustrated_design_20260908/assets/HAR-AD-22.png",
+  "sha256": "46b8b71070a0e438f35d09c561a8e5e410802ad63d8eb632e95d40f30ebb2118",
+  "pixels": [
+    1254,
+    1254
+  ],
+  "reference_role": "STYLE_ONLY / ORIGINAL_COMPLETE_CARD_PLATE",
+  "pixel_editing": "NONE / BYTE_IDENTICAL_COPY",
+  "status": "COMPLETE_CARD_SAME_OPERATOR_SELF_CHECK_PASS",
+  "planned_prompt_file": "/workspace/scratch/2c8c285219dc/foulwake/working/v2.7/qa/illustrated_design_20260908/prompts/HAR-AD-22.txt",
+  "planned_prompt_sha256": "16b722409a960266e68e6f922f2fed9306cbb72f61e1a7adf169e584e7c0cbe9",
+  "actual_request_file": "actual_requests.json",
+  "actual_prompt_sha256": "16b722409a960266e68e6f922f2fed9306cbb72f61e1a7adf169e584e7c0cbe9",
+  "review_evidence": "../individual_visual_review.json#HAR-AD-22",
+  "reviewed_proof_sha256": "0e3fe95516cd2d74176bfcf3b276df3cf75f0630569d45efe1a7f2f9b5dd9604",
+  "owner_aesthetic_acceptance": false
+}
