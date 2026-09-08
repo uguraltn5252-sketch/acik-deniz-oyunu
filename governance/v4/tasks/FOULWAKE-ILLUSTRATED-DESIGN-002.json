@@ -1,0 +1,139 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "project_task": true,
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-08",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "4e3d08dfbea2dee7cac761131017886d015b9f4a",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
+    ],
+    "allowed_globs": [
+      "working/v2.7/visual/illustrated_design_20260908/**",
+      "working/v2.7/qa/illustrated_design_20260908/**",
+      "working/v2.7/visual/art_direction/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      ".github/",
+      "working/v2.7/visual/references/",
+      "working/v2.7/visual/full_deck_20260907/",
+      "working/v2.7/visual/recheck_20260907/"
+    ],
+    "max_changed_files": 512,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".csv",
+      ".txt",
+      ".png",
+      ".jpg",
+      ".pdf",
+      ".svg"
+    ],
+    "binary_files_allowed": true
+  },
+  "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+  "task_type": "OWNER_DELEGATED_FULL_DECK_INTEGRATED_ILLUSTRATED_DESIGN",
+  "status": "ACTIVE",
+  "owner_authorization": {
+    "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+    "decision": "AUTHORIZED",
+    "recorded_from": "Current owner request: original integrated card design, all 121, art direction and visual execution.",
+    "decision_ref": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT",
+      "PRODUCE_FULL_121",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE",
+      "ART_LANGUAGE_REVIEW",
+      "FRAMING_DECISION",
+      "COMPOSITION_REVIEW",
+      "DECK_RHYTHM_REVIEW",
+      "AESTHETIC_RECOMMENDATION"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT",
+        "PRODUCE_FULL_121",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE",
+        "ART_LANGUAGE_REVIEW",
+        "FRAMING_DECISION",
+        "COMPOSITION_REVIEW",
+        "DECK_RHYTHM_REVIEW",
+        "AESTHETIC_RECOMMENDATION"
+      ]
+    }
+  },
+  "runtime_permissions": {
+    "visual_production": true,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": true,
+    "pdf_or_print_package": true,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "inputs": [
+    {
+      "path": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json",
+      "git_blob": "34ffda24a3e19ff3457d143e188866a25d746a77"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
+    },
+    {
+      "path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+      "git_blob": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4"
+    },
+    {
+      "path": "working/v2.7/visual/polish_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "git_blob": "6952d8f761416def7ffad0117975a1f6691e0821"
+    }
+  ],
+  "purpose": "Replace rejected cropped/picture-box art with original expressive comic engraving integrated across the complete card; verify all 121 final cards individually.",
+  "acceptance_criteria": [
+    "Evidence-based root-cause analysis of crop, generation briefs, layout and review coverage.",
+    "121 distinct original front art designs, including a fresh captain, in the owner reference design language; no placeholder or missing illustration.",
+    "Native canonical text with no wording or mechanics changes; preserve existing four subtle allusions.",
+    "Individually inspect every completed card including typography, imagery, composition and dry situational humor; review PDF shows complete cards.",
+    "Preserve the liked single upright lighthouse back and shared hidden-information back identities.",
+    "Complete 121-card print and review PDFs; exact-copy and geometry verification; preserve frozen refs and locked v2.6.",
+    "Same-operator evidence only; no independent, physical, owner-acceptance or release claim."
+  ],
+  "completion_policy": "Deliver full original card design and PDF artifacts with documented self-check, then close production permissions."
+}
