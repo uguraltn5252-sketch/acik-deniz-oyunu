@@ -96,3 +96,7 @@ güncel giriş `working/v2.7/README_CURRENT_v2.7.md`. Üretim izni kapandı,
 Baş Editörün olağan koordinasyon dosya sınırı geri getirildi. Önceki
 “109 ön eksik” kayıtları tarihsel teslimi anlatır. İnsan oyunu, fiziksel
 baskı ve bağımsız estetik kabul açık; release/lock verilmedi.
+
+## 8 Eylül: bütün oyun incelemesi ve tek fener
+
+Proje sahibinin güncel talimatı `governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json` kaydındadır. `FOULWAKE-WHOLE-GAME-POLISH-001` açıldığında Başeditör hikâye, kural, kart, simülasyon ve görsel düzeltmeleri o görev kapsamında yürütür. Beğenilen fener sahnesi korunur; alttaki ters kule kaldırılır. Fener ailesinin eski 180 derece simetri şartı bu açık kararla aşılmıştır. Diğer gizli arka yüz ve kaynak korumaları sürer.

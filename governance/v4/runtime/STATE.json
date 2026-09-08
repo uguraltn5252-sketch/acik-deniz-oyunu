@@ -232,7 +232,7 @@
   "last_completed_read_only_task_id": "STORY-COHERENCE-IMMERSION-001",
   "coordination_followups_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json",
   "paused_project_tasks": {},
-  "temporary_delegation_ref": "governance/v4/evidence/OWNER_FULL_DECK_ART_AUTHORITY_20260907.json",
+  "temporary_delegation_ref": "governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json",
   "current_editorial_delivery": {
     "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
     "commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
@@ -240,7 +240,7 @@
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_status": "DELIVERED / SCOPED_PRODUCTION_CLOSED / COORDINATION_ONLY",
+  "temporary_delegation_status": "AUTHORIZED / AWAITING_EXACT_TASK_OPENING",
   "current_recheck_delivery": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",

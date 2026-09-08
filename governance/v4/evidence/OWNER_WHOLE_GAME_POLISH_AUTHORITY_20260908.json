@@ -1,0 +1,46 @@
+{
+  "schema_version": "4.3",
+  "decision_id": "OWNER-WHOLE-GAME-POLISH-20260908",
+  "authorized_by": "PROJECT_OWNER",
+  "grantee": "CHIEF_EDITOR",
+  "date": "2026-09-08",
+  "source_head": "50cb0c73854364812c5573e75f403619fe18e58a",
+  "owner_quote": "Baştan herşeyi kontrol et cümle cümle kelime kelime piksel piksel. Dediğimiz göndermeler uygulandı mi diğer kriterlerimiz uygun mu akılda kalıcı isimler şehirler ama yaratici mı. Herseyi bastan bi kontrol et gördüğün hataları duzelt deniz feneri çift taraflı olmasin yaptığın gorsel güzeldi onu degistirme ama Bi kartta iki deniz feneri var gibi olmuş ona gerek yok.",
+  "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+  "branch": "v2.7-design",
+  "authorized_work": [
+    "Read every current story and rule section and all 121 canonical card records; check the four restrained allusions, names, tone, coherence and mechanics; implement evidenced corrections.",
+    "Inspect all 121 front images, seven backs and final PDF layouts; correct actual issues and rebuild the complete current card, review and rulebook deliverables.",
+    "Keep the liked upper lighthouse scene; remove the inverted duplicate from the common lighthouse back. The latest owner instruction supersedes half-turn symmetry for this family only.",
+    "Run scoped copy, rules, simulation and print checks; keep same-operator evidence explicit."
+  ],
+  "scope": {
+    "exact_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "working/v2.7/V27_MECHANIC_DECISIONS.json",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
+    ],
+    "globs": [
+      "working/v2.7/qa/whole_game_polish_20260908/**",
+      "working/v2.7/visual/polish_20260908/**",
+      "working/v2.7/visual/art_direction/**",
+      "working/v2.7/qa/editorial_revision/**"
+    ]
+  },
+  "excluded": [
+    "Locked releases and frozen specialist branch heads",
+    "Replacing the binding captain image or its main figure",
+    "Unrequested wholesale repainting of the liked lighthouse scene",
+    "Claims of independent, human or physical acceptance",
+    "Release or lock"
+  ],
+  "expiry": "This exact review, correction and working delivery."
+}
