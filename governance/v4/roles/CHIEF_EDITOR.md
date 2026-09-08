@@ -67,3 +67,7 @@ Proje sahibinin güncel talimatı `governance/v4/evidence/OWNER_WHOLE_GAME_POLIS
 ## 8 Eylül — proje sahibinin kart tasarımı düzeltmesi
 
 Güncel governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json kararı referansı tasarım dili olarak tanımlar. Önceki birebir KAPTAN kırpımı/figürü şartı bu görev için geçerli değildir; özgün kaptan çizimi ve 121 kartın bütünlüklü yeniden tasarımı yetkilidir. Güncel kart metinleri ile beğenilen tek fener korunur. Baş Editör bu işte Sanat Yönetimi/Görsel Tasarımı geçici yürütür; aynı operatörün kontrolü bağımsız kabul sayılmaz. Üretim yalnız FOULWAKE-ILLUSTRATED-DESIGN-002 exact görev kaydı açıldığında başlar.
+
+## 8 Eylül — özgün bütünleşik kart tasarımı teslimi
+
+`FOULWAKE-ILLUSTRATED-DESIGN-002` teslim edildi: 121 özgün tam ön, yedi korunmuş ortak arka, 48 baskı ve 34 tam kart inceleme sayfası. 121 kart tek tek ve 82 son PDF sayfası gözle kontrol edildi; 363 exact-copy yerleşimi doğrulandı. Güncel giriş `working/v2.7/README_CURRENT_v2.7.md`; kanıt `governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json`. Eski referans kırpımı kaldırıldı; beğenilen tek dik fener masterı aynen korundu. Ana README ve handofflar eski resimsiz prototipe gitmez. Görev izinleri kapandı; olağan koordinasyon dosya sınırı geri getirildi. SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING; bağımsız, insan veya fiziksel kabul yoktur. Başka üretim görevi kendiliğinden açılmadı.

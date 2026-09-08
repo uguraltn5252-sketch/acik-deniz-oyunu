@@ -10,4 +10,4 @@ Aktif proje ve koordinasyon görevleri, aday, izinler, workstream durumları ve 
 
 `CURRENT_STAGE.json` v3 kapanış snapshot'ıdır. Eski iş emri, candidate ve kabulün geçerliliği v4 state ve exact blob/commit bağlarıyla doğrulanır. Bilinmeyen kanıt PASS sayılmaz.
 
-7 Eylül ikinci kontrol teslimi: [güncel oynama/PDF dosyaları](working/v2.7/README_CURRENT_v2.7.md) ve [tam teslim kanıtı](governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json). 121 metin, 27 hedefli test ve 12 ön/yedi arka görsel pilotu mevcut. Tam özgün çizim yayılımı için somut pilotun proje sahibi değerlendirmesi beklenir; yeni sohbette güncel v4 kaydı okunur.
+8 Eylül özgün kart tasarımı teslimi: [121 tamamlanmış kart, baskı ve inceleme](working/v2.7/README_CURRENT_v2.7.md), [teslim kanıtı](governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json). 121 özgün ön ve yedi ortak arka mevcut; baskı 48, tam kart incelemesi 34 sayfadır. Aynı operatörün kontrolleri tamamlandı; proje sahibi estetik değerlendirmesi, insanlarla oyun ve fiziksel baskı/opaklık kanıtı açık. Üretim görevi kapandı; yeni oturum güncel v4 kaydından başlar.

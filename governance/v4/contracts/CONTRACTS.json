@@ -113,19 +113,14 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**",
-          "working/v2.7/visual/illustrated_design_20260908/**",
-          "working/v2.7/qa/illustrated_design_20260908/**",
-          "working/v2.7/visual/art_direction/**"
+          ".github/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
-          "working/v2.7/README_CURRENT_v2.7.md",
-          "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -243,7 +238,8 @@
       "role": "CHIEF_EDITOR",
       "scope": "Owner-requested complete original card art and integrated design correction.",
       "review": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT",
-      "status": "AUTHORIZED / AWAITING_EXACT_TASK_OPENING"
+      "status": "DELIVERED / SCOPED_PRODUCTION_CLOSED",
+      "delivery_evidence": "governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json"
     }
   },
   "protected_quality_gates": [
@@ -479,11 +475,11 @@
     "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "8de5596759493eca263f07dcd356ea72029111b2",
     "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "2942740134cc5c80a6a4730d4bd949fd5eb97c46",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
-    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "200a05d50e8dd6b986a6839161fd84c308824d15",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "111678049494144a7b5e4b7315448127c24882c5",
     "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "df2f74fe3f245bfd5d2fe57439f11c22aeca0e02",
     "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "e9faf109fb5ee912935a7bdf30bc554eae1efa77",
     "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "6952d8f761416def7ffad0117975a1f6691e0821",
     "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "d4c73ddaba353a49ed22103765e22cd60efaec66",
-    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "16df93d8d704e090a60c3c803c6462dd28bc85a0"
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "1fc9b744f77e6c83cc9eb2c86e45d1d0162c543c"
   }
 }

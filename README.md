@@ -4,7 +4,7 @@
 
 Bu repository kalıcı kaynak ve karar kaydıdır. Aktif geliştirme dalı `v2.7-design`; v2.6 kilitli, v2.7 taslaktır.
 
-Güncel teslim: [Kuru Pay — 30 sayfalık kural kitabı](working/v2.7/visual/recheck_20260907/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf), [121 kart baskı prototipi](working/v2.7/visual/recheck_20260907/pdf/FOULWAKE_121_KART_CALISMA_v2.7.pdf), [12 ön / 7 arka görsel pilotu](working/v2.7/visual/recheck_20260907/pdf/FOULWAKE_GORSEL_INCELEME_v2.7.pdf) ve [kaynaklar/inceleme sınırları](working/v2.7/README_CURRENT_v2.7.md). 109 ön henüz metin prototipidir; çalışma pilotu estetik değerlendirme bekler.
+Güncel teslim: [121 özgün resimli kart — baskı ve tam kart incelemesi](working/v2.7/visual/illustrated_design_20260908/README.md), [Kuru Pay — 30 sayfalık kural kitabı](working/v2.7/visual/polish_20260908/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf) ve [oyun kaynakları](working/v2.7/README_CURRENT_v2.7.md). KAPTAN dahil bütün önler özgün tasarımlarıyla tamamlandı; tek kuleli fener arkası korundu. Aynı operatörün kontrolüdür; bağımsız estetik, insan oyunu ve fiziksel baskı kabulü değildir.
 
 Yeni sohbetler: [ekip başlangıcı](governance/v4/TEAM_START.md).
 Canlı durum: [v4 state](governance/v4/runtime/STATE.json).

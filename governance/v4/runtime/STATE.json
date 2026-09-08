@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-ILLUSTRATED-DESIGN-ACTIVE-20260908",
-  "status": "V4_ACTIVE / OWNER_CARD_DESIGN_CORRECTION_IN_PROGRESS",
+  "state_id": "V4-ILLUSTRATED-DESIGN-DELIVERED-20260908",
+  "status": "V4_ACTIVE / ILLUSTRATED_DESIGN_DELIVERED / OWNER_REVIEW_PENDING",
   "updated_at": "2026-09-08",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -71,7 +71,8 @@
       "status": "PATCH_ACCEPTED_BY_PROJECT_OWNER / PAUSED",
       "current_integrated_pilot_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
       "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd",
-      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c"
+      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
+      "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf"
     },
     "visual": {
       "branch": "work/v2.7-visual",
@@ -79,7 +80,8 @@
       "status": "PROJECT_OWNER_REJECTED / HOLD / HISTORICAL_EVIDENCE_ONLY",
       "current_integrated_pilot_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
       "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd",
-      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c"
+      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
+      "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf"
     },
     "simulation": {
       "branch": "work/v2.7-simulation",
@@ -102,23 +104,22 @@
     "OTHER_FOUR_BACKS": "RETAINED_SOURCES_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING"
   },
   "permissions": {
-    "visual_production": true,
+    "visual_production": false,
     "thumbnails": false,
     "pilot_or_candidate": false,
-    "full_121_production": true,
-    "pdf_or_print_package": true,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
     "simulation": false,
     "release": false,
     "lock": false
   },
   "open_blockers": {
-    "ART-001": "121 illustrated fronts and seven common backs delivered; owner all-deck aesthetic review pending. No unillustrated front remains.",
+    "ART-001": "121 original integrated card fronts and seven retained shared backs delivered; owner aesthetic review pending.",
     "MEC-001": "27 targeted tests and 3,600 updated heuristic voyages delivered. Full engine equivalence and human experience remain unverified; no balance acceptance.",
-    "QA-001": "121 corrected illustrated fronts and seven common backs self-checked; no independent or owner full-deck aesthetic acceptance.",
+    "QA-001": "121 complete cards, 363 exact-copy placements and 82 final PDF pages self-checked; independent and owner acceptance remain unverified.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
-    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent.",
-    "ART-DESIGN-002": "Owner rejects literal reference crop and insufficient integrated design. Diagnose and replace all 121 front designs."
+    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
   },
   "canonical_refs": {
     "contracts": "governance/v4/contracts/CONTRACTS.json",
@@ -126,7 +127,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Produce and verify 121 integrated original card designs under the exact owner task.",
+  "next_action": "Owner may review the completed 121-card design. No production task remains active; human and physical evidence remain open.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -228,9 +229,17 @@
       "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
       "delivery_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
       "evidence_ref": "governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json"
+    },
+    "ART-DESIGN-002": {
+      "status": "FIX_IMPLEMENTED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+      "previous_description": "Owner rejects literal reference crop and insufficient integrated design. Diagnose and replace all 121 front designs.",
+      "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+      "delivery_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf",
+      "evidence_ref": "governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json",
+      "scope": "Original complete-card design and review pipeline; stale root links corrected in closure; canonical copy and single upright lighthouse preserved."
     }
   },
-  "last_completed_project_task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
+  "last_completed_project_task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
   "read_only_assignments": {},
   "completed_read_only_reviews": {
     "STORY-COHERENCE-IMMERSION-001": {
@@ -251,7 +260,7 @@
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_status": "AUTHORIZED / AWAITING_EXACT_TASK_OPENING",
+  "temporary_delegation_status": "DELIVERED / SCOPED_PRODUCTION_CLOSED",
   "current_recheck_delivery": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
@@ -297,6 +306,20 @@
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
     "fronts": 121,
     "backs": 7,
+    "not_an_accepted_candidate": true,
+    "card_art_superseded_by": "FOULWAKE-ILLUSTRATED-DESIGN-002"
+  },
+  "current_illustrated_design_delivery": {
+    "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+    "commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf",
+    "evidence_ref": "governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json",
+    "readme": "working/v2.7/README_CURRENT_v2.7.md",
+    "download_index": "working/v2.7/visual/illustrated_design_20260908/README.md",
+    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+    "fronts": 121,
+    "backs": 7,
+    "print_pages": 48,
+    "complete_card_review_pages": 34,
     "not_an_accepted_candidate": true
   }
 }

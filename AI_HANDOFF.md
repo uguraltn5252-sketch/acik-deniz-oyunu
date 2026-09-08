@@ -11,4 +11,4 @@ Güncel yetki v4 state/task/contracts/registry zincirindedir. `governance/CURREN
 
 v2.6 kilitli kalır. Görsel kabul, simülasyon sonucu ve release/lock ayrı kanıtlara dayanır. Rolü seçmek üretim görevi açmaz. Eski sohbet, fixture veya PASS kaydı güncel yetkinin yerine geçmez.
 
-7 Eylül ikinci kontrol teslimi: [güncel oynama/PDF dosyaları](working/v2.7/README_CURRENT_v2.7.md) ve [tam teslim kanıtı](governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json). 121 metin, 27 hedefli test ve 12 ön/yedi arka görsel pilotu mevcut. Tam özgün çizim yayılımı için somut pilotun proje sahibi değerlendirmesi beklenir; yeni sohbette güncel v4 kaydı okunur.
+8 Eylül özgün kart tasarımı teslimi: [121 tamamlanmış kart, baskı ve inceleme](working/v2.7/README_CURRENT_v2.7.md), [teslim kanıtı](governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json). 121 özgün ön ve yedi ortak arka mevcut; baskı 48, tam kart incelemesi 34 sayfadır. Aynı operatörün kontrolleri tamamlandı; proje sahibi estetik değerlendirmesi, insanlarla oyun ve fiziksel baskı/opaklık kanıtı açık. Üretim görevi kapandı; yeni oturum güncel v4 kaydından başlar.
