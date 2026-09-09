@@ -1,0 +1,138 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "project_task": true,
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-09",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+  "task_type": "OWNER_REQUESTED_SHARED_ISLAND_BACK_REVISION",
+  "status": "ACTIVE",
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "088e9a35669d2649bfe17ed9d7e0559ac9b2828b",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json"
+    ],
+    "allowed_globs": [
+      "working/v2.7/print_island_20260909/**",
+      "working/v2.7/qa/island_reference_20260909/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      ".github/",
+      "working/v2.7/visual/references/"
+    ],
+    "max_changed_files": 40,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".pdf",
+      ".png",
+      ".txt"
+    ],
+    "binary_files_allowed": true
+  },
+  "owner_authorization": {
+    "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+    "decision": "AUTHORIZED",
+    "recorded_from": "Current owner request: use supplied island images as references, not literally, research and adapt to FOULWAKE. Follow-up to the A4 duplex package.",
+    "decision_ref": "governance/v4/evidence/OWNER_ISLAND_REFERENCE_AUTHORITY_20260909.json"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE",
+      "ART_LANGUAGE_REVIEW",
+      "FRAMING_DECISION",
+      "COMPOSITION_REVIEW"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE",
+        "ART_LANGUAGE_REVIEW",
+        "FRAMING_DECISION",
+        "COMPOSITION_REVIEW"
+      ]
+    }
+  },
+  "runtime_permissions": {
+    "visual_production": true,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": true,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "inputs": [
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
+    },
+    {
+      "path": "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
+      "git_blob": "9ea474db94c2d0215afda91efd16365148fd0f02"
+    },
+    {
+      "path": "working/v2.7/print_20260909/pdf/KARTLAR_A4_22.pdf",
+      "git_blob": "752730b9d9273cea85315514500be4e250f46645"
+    },
+    {
+      "path": "working/v2.7/print_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "git_blob": "a4796b0f8437bb7a6e6a55ba785578f0d0ad756e"
+    },
+    {
+      "path": "working/v2.7/print_20260909/pdf/FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf",
+      "git_blob": "261a3ad7363c5e4035cc533a9529d13e0cfc66eb"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+      "git_blob": "531d208e203ddee927a6e963de32137e40353ebe"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267"
+    }
+  ],
+  "editable_source_baseline": {
+    "working/v2.7/README_CURRENT_v2.7.md": "c040191cdd4f7ccacaff34c2def455084ac77790",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "f7a2e076d32e8a83ed66f7a519819d003658e2a1",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "80b7ec17a956cb245906b570071c6d29be8178df"
+  },
+  "acceptance_criteria": [
+    "Generate one original island back inspired by the references: readable sand, palms and low vegetation, matte engraved FOULWAKE palette; no pasted reference image.",
+    "Use a single coherent island scene; no mirrored duplicate motifs, text, event-specific props, buildings or hidden front identifiers. All six island backs must be identical.",
+    "Replace only page 44 of the prior 46-page A4 deck. Preserve 121 fronts, other six back masters, sizes, bleed and long-edge duplex geometry.",
+    "Inspect the generated artwork and all six final placements; compare the other 45 pages, book and guide against baseline. Deliver updated full PDF plus replacement sheet 22.",
+    "Record actual generation/research provenance and same-operator checks; no independent, physical, human-playtest, release or lock claim."
+  ],
+  "completion_policy": "Deliver this bounded revision, then close production permissions; keep earlier sources and evidence as history."
+}
