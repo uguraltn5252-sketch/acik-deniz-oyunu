@@ -1,0 +1,294 @@
+{
+  "schema_version": "4.3",
+  "task_id": "FOULWAKE-A4-PRINT-001",
+  "date": "2026-09-09",
+  "source_head": "7d42a275d4532b3ec4bef5588b3706697180d804",
+  "activation_commit": "41de98cf51d6f162388f541d5675fc1aec4bd8b3",
+  "delivery_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
+  "content_tree": "7ff5cffc0a16c47bafc224632e21ec52fa3b3613",
+  "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING / NOT_RELEASED",
+  "changed_paths": [
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+    "working/v2.7/README_CURRENT_v2.7.md",
+    "working/v2.7/print_20260909/README.md",
+    "working/v2.7/print_20260909/assets/BACK_ISLAND.png",
+    "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+    "working/v2.7/print_20260909/pdf/FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf",
+    "working/v2.7/print_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_01.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_02.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_03.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_04.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_05.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_06.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_07.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_08.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_09.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_10.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_11.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_12.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_13.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_14.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_15.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_16.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_17.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_18.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_19.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_20.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_21.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_22.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_23.pdf",
+    "working/v2.7/qa/print_preparation_20260909/artifact_versions.json",
+    "working/v2.7/qa/print_preparation_20260909/book.py",
+    "working/v2.7/qa/print_preparation_20260909/common.py",
+    "working/v2.7/qa/print_preparation_20260909/front_source.json",
+    "working/v2.7/qa/print_preparation_20260909/guide.py",
+    "working/v2.7/qa/print_preparation_20260909/impose.py",
+    "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
+    "working/v2.7/qa/print_preparation_20260909/island_generation_prompt.txt",
+    "working/v2.7/qa/print_preparation_20260909/per_card_verification.json",
+    "working/v2.7/qa/print_preparation_20260909/print_research.json",
+    "working/v2.7/qa/print_preparation_20260909/raster_precision_observation.json",
+    "working/v2.7/qa/print_preparation_20260909/review.md",
+    "working/v2.7/qa/print_preparation_20260909/rulebook_copy_edits.json",
+    "working/v2.7/qa/print_preparation_20260909/rulebook_manifest.json",
+    "working/v2.7/qa/print_preparation_20260909/scope_validation.json",
+    "working/v2.7/qa/print_preparation_20260909/verification.json",
+    "working/v2.7/qa/print_preparation_20260909/verify.py",
+    "working/v2.7/qa/print_preparation_20260909/visual_review.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+  ],
+  "results": {
+    "status": "PASS_DIGITAL_AND_SAME_OPERATOR_VISUAL_REVIEW",
+    "geometry": {
+      "cards": 121,
+      "placements": 242,
+      "asymmetric_witnesses": 484,
+      "max_physical_corner_error_mm": 2.005309498700727e-14,
+      "wrong_column_negative_controls_failed": 121,
+      "wrong_quarter_turn_negative_controls_failed": 46,
+      "minimum_crop_mark_margin_mm": 7.349999999999998,
+      "bleed_mm": 3
+    },
+    "copy": {
+      "fronts": 121,
+      "canonical_fields": 363,
+      "pixel_equal_fronts_150dpi": 118,
+      "max_mean_channel_delta_150dpi": 0.004554754292204408,
+      "all_23_sheet_parts_match": true
+    },
+    "rulebook_source_units": 729,
+    "rulebook_toc_entries": 18,
+    "individual_fronts_reviewed": 121,
+    "final_pdf_visual_pages": 80,
+    "six_retained_back_master_hashes": {
+      "BACK_SUPPORT": "ccf59f642cf12e9f43f34f3e558f0f7036a444fa4db0298b994533721769f3e9",
+      "BACK_LOYALTY": "3d1cc4100637554c3de71ee5276fdce2ccb7ae5488750bf429629da648112ea6",
+      "BACK_CHARACTER": "49da4bf5d7e0a3f628f65a62ae85f483257775e8c4ecce22416da509fb5cf934",
+      "BACK_LIGHTHOUSE": "3357f0a1efcde62b767b9b385da2f1a3742ef4cc8c03c28d97a629c830a3adee",
+      "BACK_SEA_ROCK": "c8145c887b16b949df3d9599466e3c19cc6803ad24351d2fac9d49dd52957930",
+      "BACK_POWER": "655ed0cf2428143e45e41ee511cf10410a67c8bd758a46130e7dcef5e5776b9a"
+    },
+    "island_back_sha256": "23b04f1ef67040743413a6d15bfe8cebca481ecde71435a2e5c777ad3e98a42c",
+    "single_lighthouse_preserved": true
+  },
+  "scope_validation": {
+    "status": "PASS",
+    "method": "validator.validate_execution_scope; task file unchanged since activation; actual cumulative worktree paths inspected",
+    "files": 50,
+    "max_files": 160,
+    "activation_commit": "41de98cf51d6f162388f541d5675fc1aec4bd8b3"
+  },
+  "delivery_index": "working/v2.7/print_20260909/README.md",
+  "review_report": "working/v2.7/qa/print_preparation_20260909/review.md",
+  "technical_checks": [
+    "working/v2.7/qa/print_preparation_20260909/verification.json",
+    "working/v2.7/qa/print_preparation_20260909/per_card_verification.json",
+    "working/v2.7/qa/print_preparation_20260909/visual_review.json",
+    "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
+    "working/v2.7/qa/print_preparation_20260909/rulebook_manifest.json",
+    "working/v2.7/qa/print_preparation_20260909/raster_precision_observation.json",
+    "working/v2.7/qa/print_preparation_20260909/rulebook_copy_edits.json",
+    "working/v2.7/qa/print_preparation_20260909/print_research.json"
+  ],
+  "compiled_masters": {
+    "FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf": {
+      "sha256": "9116e7995623e0f16bae97fbeb18a025e69f04eaa43746d13dbd759b820eac9a",
+      "bytes": 125823147,
+      "pages": 46
+    },
+    "FOULWAKE_KURAL_KITABI_A4_v2.7.pdf": {
+      "sha256": "67b7c982df2c2fc5be5160a195ca8ff9ded22b96fe10f389c3bdeddc64c0207e",
+      "bytes": 1178014,
+      "pages": 30
+    },
+    "FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf": {
+      "sha256": "654f867421f9cab71f633ec07069b8f20473bed531c120aca92dcba6598e9d03",
+      "bytes": 75590,
+      "pages": 4
+    }
+  },
+  "artifact_versions": [
+    {
+      "file_name": "FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+      "file_id": "file_00000000e61881fd9d7ce389709f5360",
+      "library_file_id": "libfile_9e5aae6ec68c81919c9b98fa8e855c6c",
+      "current_version_number": 0,
+      "status": "succeeded",
+      "sha256": "9116e7995623e0f16bae97fbeb18a025e69f04eaa43746d13dbd759b820eac9a",
+      "bytes": 125823147
+    },
+    {
+      "file_name": "FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "file_id": "file_0000000097c081fda199a05af6a66056",
+      "library_file_id": "libfile_5fc63dae24c08191a7c850d47a4b3539",
+      "current_version_number": 0,
+      "status": "succeeded",
+      "sha256": "67b7c982df2c2fc5be5160a195ca8ff9ded22b96fe10f389c3bdeddc64c0207e",
+      "bytes": 1178014
+    },
+    {
+      "file_name": "FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf",
+      "file_id": "file_00000000437481fd9d8831cdda360362",
+      "library_file_id": "libfile_4201a6779e5c819193162a998e0e7315",
+      "current_version_number": 0,
+      "status": "succeeded",
+      "sha256": "654f867421f9cab71f633ec07069b8f20473bed531c120aca92dcba6598e9d03",
+      "bytes": 75590
+    }
+  ],
+  "protected_content_pin_updates": [
+    {
+      "path": "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "previous_blob": "6952d8f761416def7ffad0117975a1f6691e0821",
+      "delivered_blob": "d58eec97aa04e2883ec41b8e4885ae1e8512a476",
+      "authority_task": "FOULWAKE-A4-PRINT-001"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "previous_blob": "111678049494144a7b5e4b7315448127c24882c5",
+      "delivered_blob": "80b7ec17a956cb245906b570071c6d29be8178df",
+      "authority_task": "FOULWAKE-A4-PRINT-001"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+      "previous_blob": "1fc9b744f77e6c83cc9eb2c86e45d1d0162c543c",
+      "delivered_blob": "f7a2e076d32e8a83ed66f7a519819d003658e2a1",
+      "authority_task": "FOULWAKE-A4-PRINT-001"
+    }
+  ],
+  "pin_update_basis": "Explicit owner task permits these three content paths. Refresh only the exact reviewed delivery blobs; no validator gate, canonical card copy, owner reference or release pin changes.",
+  "preserved_inputs": [
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/qa/illustrated_design_20260908/render_manifest.json",
+      "git_blob": "50bcd7679f6a837b339904d72b83e082f1f92404",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/qa/illustrated_design_20260908/individual_visual_review.json",
+      "git_blob": "deeea7fc384d427cc3e05debdd1a03cc56dd5132",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/polish_20260908/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "git_blob": "2ada0597d5420b38d76223f8bf4d49f7ea84198b",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+      "git_blob": "1461136d920916d7d251d954fe35d247f2daebaf",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+      "git_blob": "7db58c608eb18114f530a9035347befa3a284c18",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+      "git_blob": "2598182f63f38b8461aa2fc6ceb4b872c4855eb4",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+      "git_blob": "531d208e203ddee927a6e963de32137e40353ebe",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_ISLAND.pdf",
+      "git_blob": "a4e066f2f4684eb6bb4b41d454e35e627b792782",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SUPPORT.pdf",
+      "git_blob": "609c51575b013213ecd1557f0575a64dec257036",
+      "verified_unchanged": true
+    }
+  ],
+  "locked_v26_tree": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
+  "frozen_specialist_heads": {
+    "story": "11f58ecf519c9e6ceb5a9e81b6ed88747ae2464e",
+    "art_direction": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+    "visual": "23c062f6de06c32eab224b3440c8474725d4fe9e",
+    "simulation": "23b8ba547d58008e69c400140e16ccfc0186aee9"
+  },
+  "model_and_review": {
+    "main_model_identity": "UNKNOWN / NOT_EXPOSED_BY_RUNTIME",
+    "image_generator": "image_gen.imagegen / VERSION_NOT_EXPOSED",
+    "temporary_subagents_used": false,
+    "independent_reviewer_used": false,
+    "human_playtest_performed": false,
+    "physical_proof_performed": false,
+    "owner_full_deck_aesthetic_acceptance": false
+  },
+  "limits": [
+    "Digital geometry cannot guarantee printer feed registration or opacity.",
+    "No human, independent aesthetic or full game simulation acceptance from this print task.",
+    "No release or lock."
+  ],
+  "next_responsible_role": "PROJECT_OWNER",
+  "local_governance_checks": {
+    "status": "PASS",
+    "runtime_validator": "PASS",
+    "lifecycle_tests": 31,
+    "trusted_ci_tests": 8,
+    "negative_controls": 88,
+    "scope": "Exact closure worktree, before recording this result metadata.",
+    "environment_note": "Historical fixture and comparison blobs were hydrated in the local partial clone. No checker rules or negative controls were changed."
+  },
+  "final_workflow_evidence": "Final published closure HEAD must be checked separately; no future GitHub Actions run is claimed.",
+  "closure_scope": {
+    "task_id": "GOV4-TEAM-COORDINATION-001",
+    "files": 11,
+    "changed_paths": [
+      "AI_HANDOFF.md",
+      "PROJECT_STATE.md",
+      "README.md",
+      "governance/v4/TEAM_START.md",
+      "governance/v4/contracts/CONTRACTS.json",
+      "governance/v4/evidence/A4_PRINT_DELIVERY_20260909.json",
+      "governance/v4/roles/CHIEF_EDITOR.md",
+      "governance/v4/roles/REGISTRY.json",
+      "governance/v4/runtime/STATE.json",
+      "governance/v4/tasks/FOULWAKE-A4-PRINT-001.json",
+      "governance/v4/tests/fixtures/RUNTIME_SCENARIOS.json"
+    ],
+    "method": "All closure paths checked against coordination scope; already reviewed content remains in a separate parent commit."
+  }
+}

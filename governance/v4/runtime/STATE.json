@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-A4-PRINT-ACTIVE-20260909",
-  "status": "V4_ACTIVE / A4_DUPLEX_PRINT_PREPARATION",
+  "state_id": "V4-A4-PRINT-DELIVERED-20260909",
+  "status": "V4_ACTIVE / A4_PRINT_DELIVERED / IDLE",
   "updated_at": "2026-09-09",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "FOULWAKE-A4-PRINT-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -62,7 +62,8 @@
       "previous_recorded_head": "e04eef7f1fef6ea407feaaf26558551297c44b37",
       "branch_preparation": "Preserved at verified activation head; no specialist content delivery. Chief temporarily executes the new task on v2.7-design.",
       "current_integrated_copy_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
-      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c"
+      "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
+      "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed"
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
@@ -72,7 +73,8 @@
       "current_integrated_pilot_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
       "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd",
       "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
-      "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf"
+      "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf",
+      "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed"
     },
     "visual": {
       "branch": "work/v2.7-visual",
@@ -81,7 +83,8 @@
       "current_integrated_pilot_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
       "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd",
       "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
-      "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf"
+      "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf",
+      "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed"
     },
     "simulation": {
       "branch": "work/v2.7-simulation",
@@ -99,27 +102,27 @@
   },
   "visual_dispositions": {
     "BACK_SEA_ROCK": "RETAINED_SOURCE_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING",
-    "BACK_ISLAND": "RETAINED_SOURCE_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING",
+    "BACK_ISLAND": "REVISED_VEGETATED_ISLAND / SIX_IDENTICAL_BACKS / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING",
     "BACK_LIGHTHOUSE": "ONE_UPRIGHT_LIGHTHOUSE / ORIGINAL_UPPER_SCENE_PRESERVED / SAME_OPERATOR_CHECK",
     "OTHER_FOUR_BACKS": "RETAINED_SOURCES_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING"
   },
   "permissions": {
-    "visual_production": true,
+    "visual_production": false,
     "thumbnails": false,
     "pilot_or_candidate": false,
-    "full_121_production": true,
-    "pdf_or_print_package": true,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
     "simulation": false,
     "release": false,
     "lock": false
   },
   "open_blockers": {
-    "ART-001": "121 original integrated card fronts and seven retained shared backs delivered; owner aesthetic review pending.",
+    "ART-001": "121 retained original fronts, six retained back masters and revised shared island back delivered for A4 printing; owner aesthetic review pending.",
     "MEC-001": "27 targeted tests and 3,600 updated heuristic voyages delivered. Full engine equivalence and human experience remain unverified; no balance acceptance.",
-    "QA-001": "121 complete cards, 363 exact-copy placements and 82 final PDF pages self-checked; independent and owner acceptance remain unverified.",
+    "QA-001": "121 complete cards, 363 canonical-copy fields and all 80 final PDF pages self-checked; independent and owner acceptance remain unverified.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
-    "PHYSICAL-PROOF": "Print, cut, duplex, opacity, light and table-distance tests are absent."
+    "PHYSICAL-PROOF": "Digital A4 size/duplex geometry checked. Physical print, cut, opacity, feeding drift, light and table-distance results absent; trial sheet supplied."
   },
   "canonical_refs": {
     "contracts": "governance/v4/contracts/CONTRACTS.json",
@@ -127,7 +130,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Prepare exact-size A4 duplex deck, improved shared island back, reviewed A4 rulebook and calibration pages.",
+  "next_action": "Use the delivered A4 PDFs at 100% actual size with long-edge duplex. Print guide pages 3–4 as one trial sheet before the full deck. Record owner feedback and physical results; a new production scope requires a new exact task.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -239,7 +242,7 @@
       "scope": "Original complete-card design and review pipeline; stale root links corrected in closure; canonical copy and single upright lighthouse preserved."
     }
   },
-  "last_completed_project_task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+  "last_completed_project_task_id": "FOULWAKE-A4-PRINT-001",
   "read_only_assignments": {},
   "completed_read_only_reviews": {
     "STORY-COHERENCE-IMMERSION-001": {
@@ -260,7 +263,7 @@
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_status": "OWNER_AUTHORIZED / AWAITING_EXACT_TASK",
+  "temporary_delegation_status": "CLOSED / A4_PRINT_DELIVERED / COORDINATION_BOUNDARY_RESTORED",
   "current_recheck_delivery": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
@@ -307,7 +310,8 @@
     "fronts": 121,
     "backs": 7,
     "not_an_accepted_candidate": true,
-    "card_art_superseded_by": "FOULWAKE-ILLUSTRATED-DESIGN-002"
+    "card_art_superseded_by": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+    "rulebook_print_superseded_by": "FOULWAKE-A4-PRINT-001"
   },
   "current_illustrated_design_delivery": {
     "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
@@ -320,6 +324,23 @@
     "backs": 7,
     "print_pages": 48,
     "complete_card_review_pages": 34,
+    "not_an_accepted_candidate": true,
+    "print_package_superseded_by": "FOULWAKE-A4-PRINT-001"
+  },
+  "current_print_delivery": {
+    "task_id": "FOULWAKE-A4-PRINT-001",
+    "commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
+    "evidence_ref": "governance/v4/evidence/A4_PRINT_DELIVERY_20260909.json",
+    "readme": "working/v2.7/README_CURRENT_v2.7.md",
+    "download_index": "working/v2.7/print_20260909/README.md",
+    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+    "fronts": 121,
+    "backs": 121,
+    "shared_back_masters": 7,
+    "card_pages": 46,
+    "card_sheets": 23,
+    "rulebook_pages": 30,
+    "guide_pages": 4,
     "not_an_accepted_candidate": true
   }
 }

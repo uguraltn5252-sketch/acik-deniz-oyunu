@@ -75,3 +75,7 @@ Güncel governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json karar�
 ## 9 Eylül — A4 çift taraflı baskı hazırlığı
 
 Proje sahibi governance/v4/evidence/OWNER_A4_PRINT_AUTHORITY_20260909.json kaydıyla A4 çift taraflı kart baskısı, ortak Ada arkasının iyileştirilmesi ve kural kitabının baskı/metin incelemesini istedi. Baş Editör FOULWAKE-A4-PRINT-001 exact görevi içinde çalışır. Kart ölçüleri ve güncel ön yüzler, diğer altı arka ve tek dik fener korunur. Bu teslim yazıcının fiziksel kaymasını, insan oyun testini veya release/lock kabulünü kanıtlamaz.
+
+## 9 Eylül — A4 baskı teslimi
+
+`FOULWAKE-A4-PRINT-001` teslim edildi: 121 ön ve 121 doğru arka yüz içeren 46 sayfa/23 yaprak A4 deste, 30 sayfalık A4 kural kitabı ve 4 sayfalık baskı rehberi/hizalama denemesi. Ölçüler 70 × 120, 63,5 × 88,9 ve 70 × 70 mm'dir; %100, uzun kenardan çift taraflı basılır. Ada arkası yeşil kıyı siluetiyle yenilendi; diğer altı arka ve tek dik fener korundu. 363 metin alanı, 121 tekil kart ve 80 son PDF sayfası kontrol edildi. Güncel giriş `working/v2.7/print_20260909/README.md`; kanıt `governance/v4/evidence/A4_PRINT_DELIVERY_20260909.json`. Görev izinleri kapandı, olağan koordinasyon sınırı geri geldi. Bu dijital teslim fiziksel yazıcı doğruluğu, bağımsız kabul, insan testi veya release/lock değildir.

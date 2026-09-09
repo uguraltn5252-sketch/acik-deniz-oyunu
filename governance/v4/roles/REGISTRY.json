@@ -65,7 +65,7 @@
       ],
       "writes_require_exact_task": true,
       "brief_ref": "governance/v4/roles/CHIEF_EDITOR.md",
-      "temporary_delegation_status": "OWNER_AUTHORIZED / AWAITING_EXACT_TASK"
+      "temporary_delegation_status": "CLOSED / A4_PRINT_DELIVERED / COORDINATION_BOUNDARY_RESTORED"
     },
     "STORY_EDITOR": {
       "owns": [

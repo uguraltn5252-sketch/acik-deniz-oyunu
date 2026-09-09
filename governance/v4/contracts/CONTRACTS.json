@@ -112,21 +112,15 @@
       "CHIEF_EDITOR": {
         "branch": "v2.7-design",
         "allowed_globs": [
-          ".github/**",
           "governance/**",
-          "working/v2.7/print_20260909/**",
-          "working/v2.7/qa/print_preparation_20260909/**"
+          ".github/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
-          "CHANGELOG.md",
           "PROJECT_STATE.md",
           "README.md",
-          "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
-          "working/v2.7/README_CURRENT_v2.7.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
-          "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
-          "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+          "CHANGELOG.md",
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -244,7 +238,7 @@
       "role": "CHIEF_EDITOR",
       "scope": "A4 duplex print preparation, island back revision and rulebook copy/layout review.",
       "review": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT",
-      "status": "OWNER_AUTHORIZED / AWAITING_EXACT_TASK"
+      "status": "CLOSED / A4_PRINT_DELIVERED / TASK_PERMISSIONS_OFF"
     }
   },
   "protected_quality_gates": [
@@ -480,11 +474,11 @@
     "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "8de5596759493eca263f07dcd356ea72029111b2",
     "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "2942740134cc5c80a6a4730d4bd949fd5eb97c46",
     "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
-    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "111678049494144a7b5e4b7315448127c24882c5",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "80b7ec17a956cb245906b570071c6d29be8178df",
     "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "df2f74fe3f245bfd5d2fe57439f11c22aeca0e02",
     "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "e9faf109fb5ee912935a7bdf30bc554eae1efa77",
-    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "6952d8f761416def7ffad0117975a1f6691e0821",
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "d58eec97aa04e2883ec41b8e4885ae1e8512a476",
     "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "d4c73ddaba353a49ed22103765e22cd60efaec66",
-    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "1fc9b744f77e6c83cc9eb2c86e45d1d0162c543c"
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "f7a2e076d32e8a83ed66f7a519819d003658e2a1"
   }
 }

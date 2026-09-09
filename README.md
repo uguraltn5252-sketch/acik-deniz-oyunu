@@ -4,7 +4,7 @@
 
 Bu repository kalıcı kaynak ve karar kaydıdır. Aktif geliştirme dalı `v2.7-design`; v2.6 kilitli, v2.7 taslaktır.
 
-Güncel teslim: [121 özgün resimli kart — baskı ve tam kart incelemesi](working/v2.7/visual/illustrated_design_20260908/README.md), [Kuru Pay — 30 sayfalık kural kitabı](working/v2.7/visual/polish_20260908/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf) ve [oyun kaynakları](working/v2.7/README_CURRENT_v2.7.md). KAPTAN dahil bütün önler özgün tasarımlarıyla tamamlandı; tek kuleli fener arkası korundu. Aynı operatörün kontrolüdür; bağımsız estetik, insan oyunu ve fiziksel baskı kabulü değildir.
+9 Eylül A4 baskı teslimi: [121 kart — 46 sayfa / 23 yaprak](working/v2.7/print_20260909/README.md), [30 sayfalık A4 kural kitabı](working/v2.7/print_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf), [baskı rehberi ve hizalama denemesi](working/v2.7/print_20260909/pdf/FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf). Mevcut kart ölçüleri, 121 özgün ön ve tek fener korunur; Ada arkası yenilendi. 121 kartın yazı/görüntü kontrolü ve A4 ön–arka geometrisi tamamlandı. Aynı operatörün dijital incelemesidir; fiziksel baskı ve insan oyunu kanıtı ayrı kalır. Görev kapandı. [Teslim kanıtı](governance/v4/evidence/A4_PRINT_DELIVERY_20260909.json).
 
 Yeni sohbetler: [ekip başlangıcı](governance/v4/TEAM_START.md).
 Canlı durum: [v4 state](governance/v4/runtime/STATE.json).
