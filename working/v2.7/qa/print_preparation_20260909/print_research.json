@@ -1,0 +1,28 @@
+{
+  "accessed_at": "2026-09-09",
+  "sources": [
+    {
+      "title": "Adobe: ölçeklendirme",
+      "url": "https://helpx.adobe.com/uk/acrobat/kb/scale-or-resize-printed-pages.html"
+    },
+    {
+      "title": "Adobe: çift taraflı baskı",
+      "url": "https://helpx.adobe.com/uk/acrobat/desktop/print-documents/print-duplex-and-multi-page-document/set-double-side-print.html"
+    },
+    {
+      "title": "Epson: elle çift taraflı baskı",
+      "url": "https://www.epson.co.uk/faq/KA-01558/contents?loc=en-us"
+    },
+    {
+      "title": "MB Print: taşma ve güvenli alan",
+      "url": "https://mbprint.pl/en/instruction/cards/"
+    }
+  ],
+  "choices": [
+    "A4 portrait, 100 percent, long-edge duplex",
+    "3 mm bleed, 7.35 mm minimum crop-mark page margin",
+    "Native text and retained full-resolution front art",
+    "Two-axis 100 mm scale and asymmetric duplex trial before full printing"
+  ],
+  "physical_evidence": "NOT_PERFORMED"
+}

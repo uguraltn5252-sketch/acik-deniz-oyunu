@@ -1,0 +1,29 @@
+[
+  {
+    "file_name": "FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "file_id": "file_00000000e61881fd9d7ce389709f5360",
+    "library_file_id": "libfile_9e5aae6ec68c81919c9b98fa8e855c6c",
+    "current_version_number": 0,
+    "status": "succeeded",
+    "sha256": "9116e7995623e0f16bae97fbeb18a025e69f04eaa43746d13dbd759b820eac9a",
+    "bytes": 125823147
+  },
+  {
+    "file_name": "FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+    "file_id": "file_0000000097c081fda199a05af6a66056",
+    "library_file_id": "libfile_5fc63dae24c08191a7c850d47a4b3539",
+    "current_version_number": 0,
+    "status": "succeeded",
+    "sha256": "67b7c982df2c2fc5be5160a195ca8ff9ded22b96fe10f389c3bdeddc64c0207e",
+    "bytes": 1178014
+  },
+  {
+    "file_name": "FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf",
+    "file_id": "file_00000000437481fd9d8831cdda360362",
+    "library_file_id": "libfile_4201a6779e5c819193162a998e0e7315",
+    "current_version_number": 0,
+    "status": "succeeded",
+    "sha256": "654f867421f9cab71f633ec07069b8f20473bed531c120aca92dcba6598e9d03",
+    "bytes": 75590
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "source_pdf_sha256": "04167b8290e9b7efdb211af2a236735eb50001357351a835acd60512e6e517dd",
+  "source_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf",
+  "method": "Native PDF card extraction; only off-trim 3 mm paper/ink edge continuation",
+  "front_count": 121,
+  "file_name": "FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf",
+  "library_file_id": "libfile_3cfd4122886081918019fd341128cf74",
+  "file_id": "file_0000000080a081f5a023f48c34ce6cb7",
+  "version_number": 2,
+  "local_source_path": "/workspace/scratch/2c8c285219dc/artifacts/illustrated_design_20260908/FOULWAKE_121_KART_TAM_RESIMLI_v2.7.pdf"
+}

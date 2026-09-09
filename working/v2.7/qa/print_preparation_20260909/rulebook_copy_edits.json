@@ -1,0 +1,26 @@
+{
+  "scope": "Copyediting and exact existing rule restatement, no mechanic change",
+  "changes": [
+    {
+      "before": "**Kural kitabı · v2.7 çalışma sürümü · 8 Eylül 2026**",
+      "after": "**Kural kitabı · v2.7 · 9 Eylül 2026**"
+    },
+    {
+      "before": "rüzgâr raporlarından dikkatli okuyordu.",
+      "after": "rüzgâr raporlarından daha dikkatli okuyordu."
+    },
+    {
+      "before": "“Rota seçeneği yap” ile “olay yüzünü aç” farklı işlemlerdir.",
+      "after": "“Rota seçeneği eklemek” ile “olay yüzünü açmak” farklı işlemlerdir."
+    },
+    {
+      "before": "- **Gövde 0:** Hemen bitiş. **Liman:** Olay → İskorbüt → son gece → şafak.",
+      "after": "- **Gövde 0:** Hemen bitiş. **Liman:** Olay → Gövde → İskorbüt → son gece → şafak."
+    },
+    {
+      "before": "Previous working-draft disclaimer.",
+      "after": "Bu baskı düzeni dijital olarak kontrol edilmiştir. Yazıcıda hizalama, kâğıt opaklığı ve insanlarla masa denemesi ayrıca doğrulanmalıdır.",
+      "reason": "Identify digital print preparation without claiming a physical or human test."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # FOULWAKE - Kuru Pay
 
-**Kural kitabı · v2.7 çalışma sürümü · 8 Eylül 2026**
+**Kural kitabı · v2.7 · 9 Eylül 2026**
 
 **6-15 oyuncu ve 1 tarafsız Moderatör.** Gizli sadakat, ortak gemi, birlikte seçilen rota.
 
@@ -522,7 +522,7 @@ Bütün Ada girişlerinde önce İskorbüt temizlenir. Güç kazancını §10.2,
 
 ## 15. Güç kartları referansı
 
-İlk rota istisnası §3.7'de, genel el/deste hükümleri §10'dadır. “Rota seçeneği yap” ile “olay yüzünü aç” farklı işlemlerdir.
+İlk rota istisnası §3.7'de, genel el/deste hükümleri §10'dadır. “Rota seçeneği eklemek” ile “olay yüzünü açmak” farklı işlemlerdir.
 
 | Kimlik / Güç | Zaman | Etki |
 | --- | --- | --- |
@@ -598,7 +598,7 @@ Bu bölüm ilk oyunu başlatmak için okunmaz. Dünya hakkında merak edilenlere
 
 ### Veba önce felaketti. Sonra düzen oldu.
 
-Arden'de ilk yıl kapılar kapandı. İkinci yıl pazarlar boşaldı. Üçüncü yıl vergi defterlerine yeni sütunlar eklendi. İnsanlar düğünlerini sağlık kapılarının açıldığı haftalara koyuyor, tüccarlar uzak kentlerin ölüm sayılarını rüzgâr raporlarından dikkatli okuyordu.
+Arden'de ilk yıl kapılar kapandı. İkinci yıl pazarlar boşaldı. Üçüncü yıl vergi defterlerine yeni sütunlar eklendi. İnsanlar düğünlerini sağlık kapılarının açıldığı haftalara koyuyor, tüccarlar uzak kentlerin ölüm sayılarını rüzgâr raporlarından daha dikkatli okuyordu.
 
 Karantina depoları büyüdü. Tahıl, sirke, keten, tabut tahtası ve mucize olduğu yalnız etiketinde yazan ilaçlar pahalandı. Bir aile depoları kiraladı. Başka biri muhafız maaşlarını borç verdi. Bir banker gemilere kredi açtı; ödemenin gecikmesini de hesaba kattı. Herkes başka bir hizmet veriyordu. Fatura aynı insanlara çıkıyordu.
 
@@ -657,8 +657,8 @@ O son gece için ayrı bir felaket icat etmeye gerek yoktur. Aynı güverte, ayn
 - **Gizli bakış:** Kapalı kalır. **Kamusal açma:** Açık kalır. **İlk giriş:** Olay çözülür.
 - **Normal gece:** Yakın Karakter → Uzak Karakter → diğer etkiler → Hainler.
 - **İlk yolculuk gecesi:** Tanışma + bakış, saldırı yok. **Sonraki Sis:** bakış + saldırı olabilir.
-- **Gövde 0:** Hemen bitiş. **Liman:** Olay → İskorbüt → son gece → şafak.
+- **Gövde 0:** Hemen bitiş. **Liman:** Olay → Gövde → İskorbüt → son gece → şafak.
 
 ---
 
-Bu dosya çalışma sürümüdür. Fiziksel baskı ve insanlarla masa denemesi henüz yapılmadı.
+Bu baskı düzeni dijital olarak kontrol edilmiştir. Yazıcıda hizalama, kâğıt opaklığı ve insanlarla masa denemesi ayrıca doğrulanmalıdır.

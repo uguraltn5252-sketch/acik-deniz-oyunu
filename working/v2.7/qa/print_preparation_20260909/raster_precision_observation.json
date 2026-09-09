@@ -1,0 +1,49 @@
+{
+  "method": "150 dpi RGB render comparison after inverse placement transform; only nonzero regions enlarged and examined alongside source.",
+  "exactly_equal_fronts": 118,
+  "observations": [
+    {
+      "id": "SAD-T-09",
+      "pixels_changed": 8,
+      "bbox_150dpi": [
+        215,
+        385,
+        217,
+        387
+      ],
+      "mean_channel_delta": 0.0009566137566137566,
+      "max_channel_delta": 49,
+      "visual_inspection": "Effect final period antialiasing; final mark present and legible.",
+      "disposition": "PASS / RASTERIZATION_PRECISION_ONLY"
+    },
+    {
+      "id": "HAR-AD-01",
+      "pixels_changed": 1,
+      "bbox_150dpi": [
+        206,
+        311,
+        206,
+        311
+      ],
+      "mean_channel_delta": 3.111702334554676e-05,
+      "max_channel_delta": 6,
+      "visual_inspection": "Single-pixel antialiasing on the central text/ornament boundary.",
+      "disposition": "PASS / RASTERIZATION_PRECISION_ONLY"
+    },
+    {
+      "id": "HAR-AD-08",
+      "pixels_changed": 35,
+      "bbox_150dpi": [
+        223,
+        339,
+        229,
+        347
+      ],
+      "mean_channel_delta": 0.004554754292204408,
+      "max_channel_delta": 49,
+      "visual_inspection": "Italic r in the flavor sentence; native glyph and complete word preserved.",
+      "disposition": "PASS / RASTERIZATION_PRECISION_ONLY"
+    }
+  ],
+  "claim_limit": "Not 121 bitwise-equal raster images. Native copy matches all 363 fields; no artwork loss or material glyph change observed."
+}

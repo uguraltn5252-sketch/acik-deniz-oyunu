@@ -1,0 +1,636 @@
+{
+  "task_id": "FOULWAKE-A4-PRINT-001",
+  "status": "PASS_DIGITAL_AND_SAME_OPERATOR_VISUAL_REVIEW",
+  "physical_proof": "NOT_PERFORMED",
+  "reviewer": "CHIEF_EDITOR / SAME_OPERATOR_SELF_CHECK",
+  "documents": [
+    {
+      "file": "FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+      "sha256": "9116e7995623e0f16bae97fbeb18a025e69f04eaa43746d13dbd759b820eac9a",
+      "pages": [
+        {
+          "page": 1,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 2,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 3,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 4,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 5,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 6,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 7,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 8,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 9,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 10,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 11,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 12,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 13,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 14,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 15,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 16,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 17,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 18,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 19,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 20,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 21,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 22,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 23,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 24,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 25,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 26,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 27,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 28,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 29,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 30,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 31,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 32,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 33,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 34,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 35,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 36,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 37,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 38,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 39,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 40,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 41,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 42,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 43,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 44,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 45,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 46,
+          "a4": true,
+          "rotation": 0
+        }
+      ],
+      "used_fonts_embedded": [
+        "AAAAAA+DejaVuSans",
+        "AAAAAA+LiberationSerif-Bold",
+        "AAAAAA+LiberationSerif",
+        "AAAAAA+LiberationSerif-Italic",
+        "AAAAAA+DejaVuSans-Bold"
+      ],
+      "preferences": "<</PrintScaling/None/Duplex/DuplexFlipLongEdge/PickTrayByPDFSize false>>"
+    },
+    {
+      "file": "FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "sha256": "67b7c982df2c2fc5be5160a195ca8ff9ded22b96fe10f389c3bdeddc64c0207e",
+      "pages": [
+        {
+          "page": 1,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 2,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 3,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 4,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 5,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 6,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 7,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 8,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 9,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 10,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 11,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 12,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 13,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 14,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 15,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 16,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 17,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 18,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 19,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 20,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 21,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 22,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 23,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 24,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 25,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 26,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 27,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 28,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 29,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 30,
+          "a4": true,
+          "rotation": 0
+        }
+      ],
+      "used_fonts_embedded": [
+        "AAAAAA+DejaVuSerif-Bold",
+        "AAAAAA+DejaVuSans",
+        "AAAAAA+DejaVuSans-Bold",
+        "AAAAAA+DejaVuSerif-Italic"
+      ],
+      "preferences": "<</PrintScaling/None/Duplex/DuplexFlipLongEdge/PickTrayByPDFSize false>>"
+    },
+    {
+      "file": "FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf",
+      "sha256": "654f867421f9cab71f633ec07069b8f20473bed531c120aca92dcba6598e9d03",
+      "pages": [
+        {
+          "page": 1,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 2,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 3,
+          "a4": true,
+          "rotation": 0
+        },
+        {
+          "page": 4,
+          "a4": true,
+          "rotation": 0
+        }
+      ],
+      "used_fonts_embedded": [
+        "AAAAAA+DejaVuSerif-Bold",
+        "AAAAAA+DejaVuSans-Bold",
+        "AAAAAA+DejaVuSans"
+      ],
+      "preferences": "<</PrintScaling/None/Duplex/DuplexFlipLongEdge/PickTrayByPDFSize false>>"
+    }
+  ],
+  "geometry": {
+    "cards": 121,
+    "placements": 242,
+    "asymmetric_witnesses": 484,
+    "max_physical_corner_error_mm": 2.005309498700727e-14,
+    "wrong_column_negative_controls_failed": 121,
+    "wrong_quarter_turn_negative_controls_failed": 46,
+    "minimum_crop_mark_margin_mm": 7.349999999999998,
+    "bleed_mm": 3
+  },
+  "rulebook": {
+    "source_units_present": 729,
+    "missing_units": 0,
+    "toc_entries": 18,
+    "mirrored_margins": [
+      {
+        "page": 2,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 3,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 4,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 5,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 6,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 7,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 8,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 9,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 10,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 11,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 12,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 13,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 14,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 15,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 16,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 17,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 18,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 19,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 20,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 21,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 22,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 23,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 24,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 25,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 26,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 27,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      },
+      {
+        "page": 28,
+        "left_mm": 18.0,
+        "right_mm": 22.000000000000007
+      },
+      {
+        "page": 29,
+        "left_mm": 22.0,
+        "right_mm": 17.999999999999996
+      }
+    ],
+    "no_orphan_oku_yap": true
+  },
+  "backs": {
+    "counts": {
+      "BACK_CHARACTER": 20,
+      "BACK_POWER": 31,
+      "BACK_LOYALTY": 15,
+      "BACK_SEA_ROCK": 42,
+      "BACK_ISLAND": 6,
+      "BACK_LIGHTHOUSE": 4,
+      "BACK_SUPPORT": 3
+    },
+    "six_retained_file_hashes": {
+      "BACK_SUPPORT": "ccf59f642cf12e9f43f34f3e558f0f7036a444fa4db0298b994533721769f3e9",
+      "BACK_LOYALTY": "3d1cc4100637554c3de71ee5276fdce2ccb7ae5488750bf429629da648112ea6",
+      "BACK_CHARACTER": "49da4bf5d7e0a3f628f65a62ae85f483257775e8c4ecce22416da509fb5cf934",
+      "BACK_LIGHTHOUSE": "3357f0a1efcde62b767b9b385da2f1a3742ef4cc8c03c28d97a629c830a3adee",
+      "BACK_SEA_ROCK": "c8145c887b16b949df3d9599466e3c19cc6803ad24351d2fac9d49dd52957930",
+      "BACK_POWER": "655ed0cf2428143e45e41ee511cf10410a67c8bd758a46130e7dcef5e5776b9a"
+    },
+    "new_island": "23b04f1ef67040743413a6d15bfe8cebca481ecde71435a2e5c777ad3e98a42c",
+    "island_180_degree_mean_channel_delta": 0.0011641184488932292,
+    "single_lighthouse_source_unchanged": true
+  },
+  "copy": {
+    "fronts": 121,
+    "canonical_fields": 363,
+    "pixel_equal_fronts_150dpi": 118,
+    "max_mean_channel_delta_150dpi": 0.004554754292204408,
+    "all_23_sheet_parts_match": true
+  },
+  "visual_review_ref": "working/v2.7/qa/print_preparation_20260909/visual_review.json",
+  "raster_precision_ref": "working/v2.7/qa/print_preparation_20260909/raster_precision_observation.json"
+}

@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "method": "validator.validate_execution_scope; task file unchanged since activation; actual cumulative worktree paths inspected",
+  "activation_commit": "41de98cf51d6f162388f541d5675fc1aec4bd8b3",
+  "task_id": "FOULWAKE-A4-PRINT-001",
+  "files": 50,
+  "max_files": 160,
+  "changed_paths": [
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+    "working/v2.7/README_CURRENT_v2.7.md",
+    "working/v2.7/print_20260909/README.md",
+    "working/v2.7/print_20260909/assets/BACK_ISLAND.png",
+    "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+    "working/v2.7/print_20260909/pdf/FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf",
+    "working/v2.7/print_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_01.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_02.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_03.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_04.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_05.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_06.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_07.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_08.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_09.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_10.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_11.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_12.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_13.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_14.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_15.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_16.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_17.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_18.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_19.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_20.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_21.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_22.pdf",
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_23.pdf",
+    "working/v2.7/qa/print_preparation_20260909/artifact_versions.json",
+    "working/v2.7/qa/print_preparation_20260909/book.py",
+    "working/v2.7/qa/print_preparation_20260909/common.py",
+    "working/v2.7/qa/print_preparation_20260909/front_source.json",
+    "working/v2.7/qa/print_preparation_20260909/guide.py",
+    "working/v2.7/qa/print_preparation_20260909/impose.py",
+    "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
+    "working/v2.7/qa/print_preparation_20260909/island_generation_prompt.txt",
+    "working/v2.7/qa/print_preparation_20260909/per_card_verification.json",
+    "working/v2.7/qa/print_preparation_20260909/print_research.json",
+    "working/v2.7/qa/print_preparation_20260909/raster_precision_observation.json",
+    "working/v2.7/qa/print_preparation_20260909/review.md",
+    "working/v2.7/qa/print_preparation_20260909/rulebook_copy_edits.json",
+    "working/v2.7/qa/print_preparation_20260909/rulebook_manifest.json",
+    "working/v2.7/qa/print_preparation_20260909/scope_validation.json",
+    "working/v2.7/qa/print_preparation_20260909/verification.json",
+    "working/v2.7/qa/print_preparation_20260909/verify.py",
+    "working/v2.7/qa/print_preparation_20260909/visual_review.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+  ],
+  "preserved_inputs": [
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/qa/illustrated_design_20260908/render_manifest.json",
+      "git_blob": "50bcd7679f6a837b339904d72b83e082f1f92404",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/qa/illustrated_design_20260908/individual_visual_review.json",
+      "git_blob": "deeea7fc384d427cc3e05debdd1a03cc56dd5132",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/polish_20260908/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "git_blob": "2ada0597d5420b38d76223f8bf4d49f7ea84198b",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+      "git_blob": "1461136d920916d7d251d954fe35d247f2daebaf",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+      "git_blob": "7db58c608eb18114f530a9035347befa3a284c18",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+      "git_blob": "2598182f63f38b8461aa2fc6ceb4b872c4855eb4",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+      "git_blob": "531d208e203ddee927a6e963de32137e40353ebe",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_ISLAND.pdf",
+      "git_blob": "a4e066f2f4684eb6bb4b41d454e35e627b792782",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SUPPORT.pdf",
+      "git_blob": "609c51575b013213ecd1557f0575a64dec257036",
+      "verified_unchanged": true
+    }
+  ]
+}

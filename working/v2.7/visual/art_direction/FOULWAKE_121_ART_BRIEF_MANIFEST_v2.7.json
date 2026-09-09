@@ -29,14 +29,13 @@
   "schema_version": "2.7-integrated-art-manifest-2.0",
   "document": "121 complete original card designs with exact native copy",
   "art_direction_stage": "ILLUSTRATED_DESIGN_20260908",
-  "current_stage": "ILLUSTRATED_DESIGN_20260908",
+  "current_stage": "A4_PRINT_PREPARATION_20260909",
   "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
   "source_branch": "v2.7-design",
-  "chief_editor_source": "e6398070c4a7b479092946261d0e121952dbbfe7",
-  "authority": "governance/v4/tasks/FOULWAKE-ILLUSTRATED-DESIGN-002.json",
+  "authority": "governance/v4/tasks/FOULWAKE-A4-PRINT-001.json",
   "current_direction_ref": "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
-  "previous_manifest_blob": "200a05d50e8dd6b986a6839161fd84c308824d15",
-  "scope": "121 original complete-card plates; unchanged canonical copy and seven retained backs; same-operator review only.",
+  "previous_manifest_blob": "111678049494144a7b5e4b7315448127c24882c5",
+  "scope": "121 retained complete-card fronts with exact canonical copy; six retained back masters and one revised shared island back; verified A4 duplex layout and same-operator review.",
   "binding_sources": {
     "card_copy": {
       "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
@@ -48,10 +47,11 @@
       "sha256": "dc3ca70f2b84d77eccfc6b8443d172c88a32db4808fe70538e3c1b4cdde2db56",
       "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
     },
-    "task": "governance/v4/tasks/FOULWAKE-ILLUSTRATED-DESIGN-002.json",
+    "task": "governance/v4/tasks/FOULWAKE-A4-PRINT-001.json",
     "current_direction": "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
     "owner_design_correction": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json",
-    "reference_role": "Design language only; original captain and all original scenes required; no literal reference crop."
+    "reference_role": "Design language only; original captain and all original scenes required; no literal reference crop.",
+    "front_art_task": "governance/v4/tasks/FOULWAKE-ILLUSTRATED-DESIGN-002.json"
   },
   "historical_brief_context": {
     "manifest_blob": "200a05d50e8dd6b986a6839161fd84c308824d15",
@@ -113,6 +113,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -154,6 +159,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -195,6 +205,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -236,6 +251,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -277,6 +297,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -318,6 +343,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -359,6 +389,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -400,6 +435,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -441,6 +481,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -482,6 +527,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -523,6 +573,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -564,6 +619,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -605,6 +665,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -646,6 +711,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -688,6 +758,11 @@
           "title_width_fraction": 0.55
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -729,6 +804,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -770,6 +850,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -811,6 +896,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -852,6 +942,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -893,6 +988,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -936,6 +1036,11 @@
           "title_width_fraction": 0.61
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -979,6 +1084,11 @@
           "title_width_fraction": 0.63
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1021,6 +1131,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1063,6 +1178,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1105,6 +1225,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1147,6 +1272,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1189,6 +1319,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1231,6 +1366,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1273,6 +1413,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1315,6 +1460,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1357,6 +1507,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1399,6 +1554,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1442,6 +1602,11 @@
           "title_width_fraction": 0.6
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1484,6 +1649,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1526,6 +1696,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1568,6 +1743,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1611,6 +1791,11 @@
           "title_width_fraction": 0.64
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1653,6 +1838,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1695,6 +1885,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1737,6 +1932,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1779,6 +1979,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1821,6 +2026,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1863,6 +2073,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1906,6 +2121,11 @@
           "title_width_fraction": 0.61
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1948,6 +2168,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -1990,6 +2215,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2032,6 +2262,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2074,6 +2309,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2117,6 +2357,11 @@
           "title_width_fraction": 0.6
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2159,6 +2404,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2199,6 +2449,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2240,6 +2495,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2281,6 +2541,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2322,6 +2587,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2363,6 +2633,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2404,6 +2679,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2445,6 +2725,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2486,6 +2771,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2527,6 +2817,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2568,6 +2863,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2609,6 +2909,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2650,6 +2955,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2691,6 +3001,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2732,6 +3047,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2773,6 +3093,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2814,6 +3139,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2856,6 +3186,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2898,6 +3233,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2940,6 +3280,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -2982,6 +3327,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3026,6 +3376,11 @@
           "title_horizontal_scale": 0.92
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3068,6 +3423,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3110,6 +3470,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3152,6 +3517,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3194,6 +3564,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3236,6 +3611,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3278,6 +3658,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3320,6 +3705,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3362,6 +3752,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3404,6 +3799,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3446,6 +3846,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3488,6 +3893,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3530,6 +3940,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3572,6 +3987,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3614,6 +4034,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3656,6 +4081,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3698,6 +4128,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3740,6 +4175,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3782,6 +4222,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3824,6 +4269,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3866,6 +4316,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3908,6 +4363,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3950,6 +4410,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -3992,6 +4457,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4034,6 +4504,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4076,6 +4551,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4118,6 +4598,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4160,6 +4645,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4202,6 +4692,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4244,6 +4739,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4286,6 +4786,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4328,6 +4833,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4370,6 +4880,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4412,6 +4927,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4454,6 +4974,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4496,6 +5021,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4538,6 +5068,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4580,6 +5115,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4622,6 +5162,12 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md",
+        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
       }
     },
     {
@@ -4664,6 +5210,12 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md",
+        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
       }
     },
     {
@@ -4708,6 +5260,12 @@
           "title_horizontal_scale": 0.92
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md",
+        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
       }
     },
     {
@@ -4750,6 +5308,12 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md",
+        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
       }
     },
     {
@@ -4792,6 +5356,12 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md",
+        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
       }
     },
     {
@@ -4834,6 +5404,12 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md",
+        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
       }
     },
     {
@@ -4876,6 +5452,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4918,6 +5499,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -4960,6 +5546,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -5002,6 +5593,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -5043,6 +5639,11 @@
           "title_width_fraction": 0.61
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SUPPORT.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -5083,6 +5684,11 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SUPPORT.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     },
     {
@@ -5124,7 +5730,21 @@
           "measurement_status": "COMPLETE_CARD_VISUALLY_CHECKED / SAME_OPERATOR"
         },
         "source_plan_is_not_final_visual_evidence": true
+      },
+      "current_print": {
+        "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SUPPORT.pdf",
+        "retained_front": true,
+        "print_index": "working/v2.7/print_20260909/README.md"
       }
     }
-  ]
+  ],
+  "print_preparation": {
+    "task_id": "FOULWAKE-A4-PRINT-001",
+    "source_commit": "41de98cf51d6f162388f541d5675fc1aec4bd8b3",
+    "index": "working/v2.7/print_20260909/README.md",
+    "imposition": "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
+    "scope": "121 exact retained fronts, six retained back masters, one new shared vegetated island back, A4 duplex layout."
+  },
+  "front_art_source_activation": "e6398070c4a7b479092946261d0e121952dbbfe7",
+  "chief_editor_source": "41de98cf51d6f162388f541d5675fc1aec4bd8b3"
 }
