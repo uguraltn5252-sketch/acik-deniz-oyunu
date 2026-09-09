@@ -1,12 +1,12 @@
-# FOULWAKE - 121 kartın metni
+# FOULWAKE — 121 kartın metni
 
-**v2.7 çalışma sürümü · 8 Eylül 2026**
+**v2.7 · 9 Eylül 2026**
 
-Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir. Tat metinleri ek kural veya görev vermez. Sadakat gerekçeleri yalnız kart sahibine aittir. Kimlikler korunmuştur.
+Güncel kart kaynağının okunabilir dökümü. Tat metni ek kural veya görev değildir. Sadakat gerekçesi yalnız kart sahibine aittir.
 
 ## Karakter
 
-### KAR-01 - Uzakgören
+### KAR-01 — Uzakgören
 
 İş: Gözcü · Kurulum etkisi: 2 · Kullanım: gizli
 
@@ -14,7 +14,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Yelkeni görmeden geminin gelişini anlar. Bir yalana kanınca günlerce mesafeyi suçlar.*
 
-### KAR-02 - Kıyıçizen
+### KAR-02 — Kıyıçizen
 
 İş: Haritacı · Kurulum etkisi: 2 · Kullanım: gizli
 
@@ -22,7 +22,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Her itirazını haritanın kenarına not eder. Bir süredir denize yer kalmıyor.*
 
-### KAR-03 - Dümenkurdu
+### KAR-03 — Dümenkurdu
 
 İş: Serdümen · Kurulum etkisi: 2 · Kullanım: açık
 
@@ -30,7 +30,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Dümen onun elindeyken gemi yolu şaşırmaz. Mürettebat şaşırabilir.*
 
-### KAR-04 - Canhalatı
+### KAR-04 — Canhalatı
 
 İş: Palamarcı · Kurulum etkisi: 2 · Kullanım: açık
 
@@ -38,7 +38,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *İnsanlara değil, düğümlere güvenir.*
 
-### KAR-05 - Tahtakakan
+### KAR-05 — Tahtakakan
 
 İş: Kalafatçı · Kurulum etkisi: 2 · Kullanım: açık
 
@@ -46,7 +46,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Gemide bir yer gıcırdadığında elinde çekiçle belirir.*
 
-### KAR-06 - Dipgören
+### KAR-06 — Dipgören
 
 İş: Dalgıç · Kurulum etkisi: 1 · Kullanım: açık
 
@@ -54,7 +54,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Her dalıştan bir şey getirir. Çoğunun sahibi için yeniden dalması gerekir.*
 
-### KAR-07 - Rüzgârkoklayan
+### KAR-07 — Rüzgârkoklayan
 
 İş: Yelkenci · Kurulum etkisi: 1 · Kullanım: gizli
 
@@ -62,7 +62,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Yelkeni toplatınca batıl inanç derler. Fırtına çıkınca neden daha önce söylemediğini sorarlar.*
 
-### KAR-08 - Kırık Kürek
+### KAR-08 — Kırık Kürek
 
 İş: Kayıkçı · Kurulum etkisi: 1 · Kullanım: açık
 
@@ -70,7 +70,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *İkinci küreği kime ödünç verdiğini hatırlıyor. Adamı kurtarmaya pek hevesli değil.*
 
-### KAR-09 - Üç Anahtar
+### KAR-09 — Üç Anahtar
 
 İş: Levazımcı · Kurulum etkisi: 1 · Kullanım: açık
 
@@ -78,7 +78,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Üç anahtarı var. Kilit açılmayınca sandığın kendisine ait olmadığını söylüyor.*
 
-### KAR-10 - Güvertebaşı
+### KAR-10 — Güvertebaşı
 
 İş: Lostromo · Kurulum etkisi: 1 · Kullanım: açık
 
@@ -86,23 +86,23 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Herkesin ne yapması gerektiğini bilir. Özellikle başkalarının.*
 
-### KAR-11 - İskele Sıçanı
+### KAR-11 — İskele Sıçanı
 
-İş: - · Kurulum etkisi: 1 · Kullanım: açık
+Kurulum etkisi: 1 · Kullanım: açık
 
 **Etki:** Ada veya Fener Güç kazandırırken bir kartın alıcısını, karta bakılmadan belirler.
 
 *Karaya herkesten önce çıkar. Nasıl indiği sorulmaz.*
 
-### KAR-12 - Karga Yuvası
+### KAR-12 — Karga Yuvası
 
-İş: - · Kurulum etkisi: 1 · Kullanım: açık
+Kurulum etkisi: 1 · Kullanım: açık
 
 **Etki:** Tek kullanım. Rota öncesi bir Yakın Ufku işaretler. O rota oy alırsa toplamına +1 eklenir.
 
 *Orayı gördüm demedim. Oradan gidelim dedim.*
 
-### KAR-13 - Kazanbaşı
+### KAR-13 — Kazanbaşı
 
 İş: Aşçı · Kurulum etkisi: 0 · Kullanım: yeteneksiz
 
@@ -110,31 +110,31 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Dünkü çorbayı bugün de dağıtır. Biri beğenince tarifini vermek istemez.*
 
-### KAR-14 - Fare Nazırı
+### KAR-14 — Fare Nazırı
 
-İş: - · Kurulum etkisi: 0 · Kullanım: yeteneksiz
+Kurulum etkisi: 0 · Kullanım: yeteneksiz
 
 **Etki:** Özel yeteneği yoktur.
 
 *Resmî sayımda on dört fare var. On beşincinin çizme giydiğini söylüyor.*
 
-### KAR-15 - Papağan Mütercimi
+### KAR-15 — Papağan Mütercimi
 
-İş: - · Kurulum etkisi: 0 · Kullanım: yeteneksiz
+Kurulum etkisi: 0 · Kullanım: yeteneksiz
 
 **Etki:** Özel yeteneği yoktur.
 
 *Kuş konuşmadan tercümeye başlar. İtiraz edene lehçeyi bilmediğini söyler.*
 
-### KAR-16 - Fıçı Bekçisi
+### KAR-16 — Fıçı Bekçisi
 
-İş: - · Kurulum etkisi: 0 · Kullanım: yeteneksiz
+Kurulum etkisi: 0 · Kullanım: yeteneksiz
 
 **Etki:** Özel yeteneği yoktur.
 
 *Herkes kurtulacaksa fıçıların da çıkarılmasını ister. İsimlerini tayfadan daha iyi bilir.*
 
-### KAR-17 - Kafiye Belası
+### KAR-17 — Kafiye Belası
 
 İş: Gemi Şairi · Kurulum etkisi: 0 · Kullanım: yeteneksiz
 
@@ -142,15 +142,15 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Cenaze şiirini erkenden yazdı. Kimin için olduğunu sorana ilhamı boğduğunu söylüyor.*
 
-### KAR-18 - Karayı Özleyen
+### KAR-18 — Karayı Özleyen
 
 İş: Acemi Gemici · Kurulum etkisi: 0 · Kullanım: yeteneksiz
 
 **Etki:** Özel yeteneği yoktur.
 
-*San Cordelio'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor.*
+*Port Avanta'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor.*
 
-### KAR-19 - Yastıkçı
+### KAR-19 — Yastıkçı
 
 İş: Kamarot · Kurulum etkisi: 0 · Kullanım: yeteneksiz
 
@@ -158,7 +158,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 *Yastık kılıflarını değiştirirken duyduklarını unuttuğunu söyler. Hatırlaması için genellikle bir iyilik gerekir.*
 
-### KAR-20 - Tahtaya Vuran
+### KAR-20 — Tahtaya Vuran
 
 İş: Hurafeci · Kurulum etkisi: 0 · Kullanım: yeteneksiz
 
@@ -168,7 +168,7 @@ Bu belge kart metinlerinin okunabilir dökümüdür; baskı yerleşimi değildir
 
 ## Güç
 
-### GUC-01A - Mantar Can Halkası
+### GUC-01A — Mantar Can Halkası
 
 Zaman: Hemen
 
@@ -176,7 +176,7 @@ Zaman: Hemen
 
 *İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür.*
 
-### GUC-01B - Mantar Can Halkası
+### GUC-01B — Mantar Can Halkası
 
 Zaman: Hemen
 
@@ -184,7 +184,7 @@ Zaman: Hemen
 
 *İpi yıpranmış, mantarı sağlam. Denizde güven böyle ölçülür.*
 
-### GUC-02A - Kancalı Halat
+### GUC-02A — Kancalı Halat
 
 Zaman: Hemen
 
@@ -192,7 +192,7 @@ Zaman: Hemen
 
 *İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur.*
 
-### GUC-02B - Kancalı Halat
+### GUC-02B — Kancalı Halat
 
 Zaman: Hemen
 
@@ -200,7 +200,7 @@ Zaman: Hemen
 
 *İlk atışta tutarsa anlatılır; üçüncüde tutarsa unutulur.*
 
-### GUC-03 - Pusula
+### GUC-03 — Pusula
 
 Zaman: Gündüz
 
@@ -208,7 +208,7 @@ Zaman: Gündüz
 
 *Kuzey yerinde duruyor. Sorun, sahibinin başka bir şey araması.*
 
-### GUC-04 - Güverte Araması
+### GUC-04 — Güverte Araması
 
 Zaman: Gündüz - rota öncesi
 
@@ -216,7 +216,7 @@ Zaman: Gündüz - rota öncesi
 
 *Kayıp eşya bulundu. Sahibinin kim olduğu hâlâ şüpheli.*
 
-### GUC-05 - Yama Tahtası
+### GUC-05 — Yama Tahtası
 
 Zaman: Hasardan önce
 
@@ -224,7 +224,7 @@ Zaman: Hasardan önce
 
 *Tahta bir tabut için kesilmişti. Müşteri iyileşince gemiye yaradı.*
 
-### GUC-06 - Zıpkın Sandığı
+### GUC-06 — Zıpkın Sandığı
 
 Zaman: Hasardan önce
 
@@ -232,7 +232,7 @@ Zaman: Hasardan önce
 
 *Sandığın üstüne bir balık çizmişler. Boyutunu belirtmeyi unutmuşlar.*
 
-### GUC-07 - Geçici Yeke
+### GUC-07 — Geçici Yeke
 
 Zaman: Rota öncesi
 
@@ -240,7 +240,7 @@ Zaman: Rota öncesi
 
 *Geçici çözümler denizde bazen karaya kadar sürer.*
 
-### GUC-08 - Kerteriz Pergeli
+### GUC-08 — Kerteriz Pergeli
 
 Zaman: Girdap / Akıntı
 
@@ -248,7 +248,7 @@ Zaman: Girdap / Akıntı
 
 *Üç kişi yön tarif etti. Pergel sahibi üçünün de elini kenara itti.*
 
-### GUC-09 - Kurşun Ağırlık
+### GUC-09 — Kurşun Ağırlık
 
 Zaman: Girdap sırasında
 
@@ -256,7 +256,7 @@ Zaman: Girdap sırasında
 
 *Bazı sorunlar ancak dibe çekilince çözülür.*
 
-### GUC-10 - Yedek Yelken
+### GUC-10 — Yedek Yelken
 
 Zaman: Rota öncesi
 
@@ -264,7 +264,7 @@ Zaman: Rota öncesi
 
 *Birincisi niçin yedek değildi, konuşmayalım.*
 
-### GUC-11 - Islak Deniz Haritası
+### GUC-11 — Islak Deniz Haritası
 
 Zaman: Gündüz - rota öncesi
 
@@ -272,7 +272,7 @@ Zaman: Gündüz - rota öncesi
 
 *Mürekkep aktı; yollar daha yaratıcı oldu.*
 
-### GUC-12 - Kırık Dürbün
+### GUC-12 — Kırık Dürbün
 
 Zaman: Gündüz - rota öncesi
 
@@ -280,7 +280,7 @@ Zaman: Gündüz - rota öncesi
 
 *Merceği çatlak. Sahibi her şüpheli şeyi önce camdaki çizgiye yoruyor.*
 
-### GUC-13 - Eski Seyir Defteri
+### GUC-13 — Eski Seyir Defteri
 
 Zaman: Sis olmayan gündüz
 
@@ -288,7 +288,7 @@ Zaman: Sis olmayan gündüz
 
 *Kaptanlar ölür; kötü el yazıları kalır.*
 
-### GUC-14 - Anahtar Deliği
+### GUC-14 — Anahtar Deliği
 
 Zaman: Gündüz - yalnız Kamarada
 
@@ -296,7 +296,7 @@ Zaman: Gündüz - yalnız Kamarada
 
 *Kamaranın en küçük penceresi, en büyük dedikodusu.*
 
-### GUC-15 - Kaptanın Eski Şapkası
+### GUC-15 — Kaptanın Eski Şapkası
 
 Zaman: Rota oylaması
 
@@ -304,7 +304,7 @@ Zaman: Rota oylaması
 
 *Eski sahibi şapkayı geri istiyor. Önce verdiğin sözü tutman gerek.*
 
-### GUC-16 - İsyan Bildirisi
+### GUC-16 — İsyan Bildirisi
 
 Zaman: İsyan
 
@@ -312,7 +312,7 @@ Zaman: İsyan
 
 *Altında imza yok; herkesin fikri var.*
 
-### GUC-17 - Papağanın İfadesi
+### GUC-17 — Papağanın İfadesi
 
 Zaman: Rota öncesi
 
@@ -320,7 +320,7 @@ Zaman: Rota öncesi
 
 *Tanık konuştu. Güvenilirliği tartışmalı.*
 
-### GUC-18 - Mühürlü Emir
+### GUC-18 — Mühürlü Emir
 
 Zaman: Rota beraberliği
 
@@ -328,7 +328,7 @@ Zaman: Rota beraberliği
 
 *Prensin adı için boşluk bırakılmış. Buyruk üç sayfa.*
 
-### GUC-19 - Kaçak Rom
+### GUC-19 — Kaçak Rom
 
 Zaman: Rota öncesi
 
@@ -336,7 +336,7 @@ Zaman: Rota öncesi
 
 *Gerçeği söyletmez. Sırayı belli eder.*
 
-### GUC-20 - Bir Daha Say
+### GUC-20 — Bir Daha Say
 
 Zaman: Oylar açılınca
 
@@ -344,7 +344,7 @@ Zaman: Oylar açılınca
 
 *Sefer divanında karar kesindir. Sayım bazen o kadar kesin değildir.*
 
-### GUC-21 - Uğurlu Altın
+### GUC-21 — Uğurlu Altın
 
 Zaman: Kader Zarı sonucu
 
@@ -352,7 +352,7 @@ Zaman: Kader Zarı sonucu
 
 *Önceki sahibi uğur getirdiğini söylemişti. Parayı alırken çok acele etti.*
 
-### GUC-22 - Kaptanın Çatlak Kupası
+### GUC-22 — Kaptanın Çatlak Kupası
 
 Zaman: Rota oylaması
 
@@ -360,7 +360,7 @@ Zaman: Rota oylaması
 
 *Kupadaki çatlak, otoritedekinden küçüktü.*
 
-### GUC-23 - Bayat Peksimet
+### GUC-23 — Bayat Peksimet
 
 Zaman: Gündüz - rota öncesi
 
@@ -368,7 +368,7 @@ Zaman: Gündüz - rota öncesi
 
 *Konuşmayı kesmez. Çiğnemeyi uzatır.*
 
-### GUC-24 - Islak Çorap
+### GUC-24 — Islak Çorap
 
 Zaman: Başkası Güç kazanırken
 
@@ -376,7 +376,7 @@ Zaman: Başkası Güç kazanırken
 
 *Sahibi çorabını geri istiyor. İçinden çıkan eşya hakkında konuşmak istemiyor.*
 
-### GUC-25 - Şüpheli Martı
+### GUC-25 — Şüpheli Martı
 
 Zaman: Gündüz
 
@@ -384,7 +384,7 @@ Zaman: Gündüz
 
 *Martı, onu daha önce görmüş gibi bağırıyor.*
 
-### GUC-26 - Fırtına Feneri
+### GUC-26 — Fırtına Feneri
 
 Zaman: Sis açıldığında
 
@@ -392,7 +392,7 @@ Zaman: Sis açıldığında
 
 *Fitili kısınca herkes itiraz etti. Sabah yağa kimin para verdiğini sordular.*
 
-### GUC-27 - Kaderi Yeniden Yaz
+### GUC-27 — Kaderi Yeniden Yaz
 
 Zaman: Hareket sırasında
 
@@ -400,7 +400,7 @@ Zaman: Hareket sırasında
 
 *Harita yanılmaz. Haritacı sonradan fikrini değiştirebilir.*
 
-### GUC-28 - Seyir Zabtı
+### GUC-28 — Seyir Zabtı
 
 Zaman: Zararlı rota sonrası
 
@@ -410,87 +410,87 @@ Zaman: Zararlı rota sonrası
 
 ## Sadakat
 
-### SAD-T-01 - TAYFA
+### SAD-T-01 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Eve son yazdığın mektupta iyi olduğunu söyledin. Bu kez o mektuptan önce varmak istiyorsun.*
 
-### SAD-T-02 - TAYFA
+### SAD-T-02 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Sağlık kapısının arkasında bir sofralık yerin duruyor. Kapıyı açtırmaya yetmiyor; yine de dönmek için bir sebep.*
 
-### SAD-T-03 - TAYFA
+### SAD-T-03 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Bu yükü sağlam teslim edersen borcunun son taksiti kapanacak. Alacaklın yıllardır denizin tehlikelerini küçümsüyor.*
 
-### SAD-T-04 - TAYFA
+### SAD-T-04 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Bir komşun yol paranı verdi. Karşılığında ilaç istemedi; döndüğünde kapısını çalmanı istedi.*
 
-### SAD-T-05 - TAYFA
+### SAD-T-05 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Veyr'in işe yaramayan denemeleri de yazdığını gördün. Hiç değilse birinin hesabı doğru tuttuğuna inanmak istiyorsun.*
 
-### SAD-T-06 - TAYFA
+### SAD-T-06 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Bu seferin ücretini peşin harcadın. Dönmezsen ailene para yerine bir açıklama gönderilecek.*
 
-### SAD-T-07 - TAYFA
+### SAD-T-07 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Getirdiğin sandıkların o kapıyı açmasını istiyorsun.*
 
-### SAD-T-08 - TAYFA
+### SAD-T-08 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Senin adına bir mezar yeri ayırmışlar. Manzarasını beğenmedin; itirazı şahsen yapmak istiyorsun.*
 
-### SAD-T-09 - TAYFA
+### SAD-T-09 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Yük defterine imza atarken kimse okumanı beklemedi. Okudun. Şimdi herkes kadar sorumlu, çoğundan daha tedirginsin.*
 
-### SAD-T-10 - TAYFA
+### SAD-T-10 — TAYFA
 
 Taraf: Tayfa
 
-**Etki:** Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
+**Etki:** Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.
 
 *Eve götüreceğin hediyeyi kaybettin. Eli boş dönünce söylenecekler. Dönmezsen susacaklar. Söylenmelerine razısın.*
 
-### SAD-H-01 - HAİN
+### SAD-H-01 — HAİN
 
 Taraf: Hain
 
@@ -498,7 +498,7 @@ Taraf: Hain
 
 *Çocuğunun bakımını üstlenen eczacı artık para almıyor. Defterde borcunun yerine geminin adı yazıyor. Yük teslim edilirse hesap yeniden açılacak. İlk kez ilaç alabiliyorsun; bedelini başkaları ödeyecek.*
 
-### SAD-H-02 - HAİN
+### SAD-H-02 — HAİN
 
 Taraf: Hain
 
@@ -506,7 +506,7 @@ Taraf: Hain
 
 *Ailene karantina hanında yer ayırmışlar. Kapı dışarıdan kilitli; her gün için senden ücret istiyorlar. Geminin kayıp haberi gelince çıkış kâğıdını vereceklerini söylediler. Anahtarın fiyatı bir sefer.*
 
-### SAD-H-03 - HAİN
+### SAD-H-03 — HAİN
 
 Taraf: Hain
 
@@ -514,7 +514,7 @@ Taraf: Hain
 
 *Karantinadan bir ölünün sağlık kâğıdıyla kaçtın. Sana gerçek adınla seslenen aracı, kaydı açtırabileceğini söyledi. Yük teslim edilmezse kâğıt yanacakmış. Yeni hayatın eski bir imzaya sığıyor.*
 
-### SAD-H-04 - HAİN
+### SAD-H-04 — HAİN
 
 Taraf: Hain
 
@@ -522,7 +522,7 @@ Taraf: Hain
 
 *Kardeşinin öldüğü koğuştan kopmuş bir sayfa gösterdiler. Üstünde Veyr'in adı vardı; alt yarısı yoktu. Yükü durdurursan başka aileler aynı mektubu almayacak. Sana öyle söylediler; inanmayı seçtin.*
 
-### SAD-H-05 - HAİN
+### SAD-H-05 — HAİN
 
 Taraf: Hain
 
@@ -532,7 +532,7 @@ Taraf: Hain
 
 ## Erzak
 
-### ERZ-01 - Çürümüş Erzak
+### ERZ-01 — Çürümüş Erzak
 
 Zaman: Başlangıçta zorunlu aç
 
@@ -542,7 +542,7 @@ Zaman: Başlangıçta zorunlu aç
 
 ## Harita
 
-### HAR-AD-01 - Çarşaf Gibi Deniz
+### HAR-AD-01 — Çarşaf Gibi Deniz
 
 Kategori: Açık Deniz · Olay: Sakin Deniz
 
@@ -550,7 +550,7 @@ Kategori: Açık Deniz · Olay: Sakin Deniz
 
 *Deniz sakin. Masa değil.*
 
-### HAR-AD-02 - Pruvada Son Yudum
+### HAR-AD-02 — Pruvada Son Yudum
 
 Kategori: Açık Deniz · Olay: Sakin Deniz
 
@@ -558,7 +558,7 @@ Kategori: Açık Deniz · Olay: Sakin Deniz
 
 *Kupanın dibi göründü. Ufuk henüz boş.*
 
-### HAR-AD-03 - Martılar Bile Üşeniyor
+### HAR-AD-03 — Martılar Bile Üşeniyor
 
 Kategori: Açık Deniz · Olay: Sakin Deniz
 
@@ -566,7 +566,7 @@ Kategori: Açık Deniz · Olay: Sakin Deniz
 
 *Biri bağırmadıkça deniz bugün çalışmıyor.*
 
-### HAR-AD-04 - Puslu Vardiya
+### HAR-AD-04 — Puslu Vardiya
 
 Kategori: Açık Deniz · Olay: Sis
 
@@ -574,7 +574,7 @@ Kategori: Açık Deniz · Olay: Sis
 
 *Görüş düştü; kanaatler yükseldi.*
 
-### HAR-AD-05 - Burnunun Ucu Cumhuriyeti
+### HAR-AD-05 — Burnunun Ucu Cumhuriyeti
 
 Kategori: Açık Deniz · Olay: Sis
 
@@ -582,7 +582,7 @@ Kategori: Açık Deniz · Olay: Sis
 
 *Sınırları üç karış, nüfusu gereğinden fazla.*
 
-### HAR-AD-06 - Beyaz Gece
+### HAR-AD-06 — Beyaz Gece
 
 Kategori: Açık Deniz · Olay: Sis
 
@@ -590,7 +590,7 @@ Kategori: Açık Deniz · Olay: Sis
 
 *Karanlık değildi. Daha kötüydü: belirsizdi.*
 
-### HAR-AD-07 - Sis Var, Fikir Çok
+### HAR-AD-07 — Sis Var, Fikir Çok
 
 Kategori: Açık Deniz · Olay: Sis
 
@@ -598,7 +598,7 @@ Kategori: Açık Deniz · Olay: Sis
 
 *Kimse bir şey görmedi; herkes çok emin.*
 
-### HAR-AD-08 - İsimsiz Bir Düdük
+### HAR-AD-08 — İsimsiz Bir Düdük
 
 Kategori: Açık Deniz · Olay: Sis
 
@@ -606,7 +606,7 @@ Kategori: Açık Deniz · Olay: Sis
 
 *Nöbetçi düdüğe cevap verdi. İkinci sesi kimse duymadı.*
 
-### HAR-AD-09 - Deryanın Göbek Deliği
+### HAR-AD-09 — Deryanın Göbek Deliği
 
 Kategori: Açık Deniz · Olay: Girdap
 
@@ -614,7 +614,7 @@ Kategori: Açık Deniz · Olay: Girdap
 
 *Deniz de bazen kendi etrafında konuşur.*
 
-### HAR-AD-10 - Tersine Dönen Dünya
+### HAR-AD-10 — Tersine Dönen Dünya
 
 Kategori: Açık Deniz · Olay: Girdap
 
@@ -622,7 +622,7 @@ Kategori: Açık Deniz · Olay: Girdap
 
 *Pusula sustu. Mide konuştu.*
 
-### HAR-AD-11 - Körfezin Hırçın Selamı
+### HAR-AD-11 — Körfezin Hırçın Selamı
 
 Kategori: Açık Deniz · Olay: Fırtına
 
@@ -630,7 +630,7 @@ Kategori: Açık Deniz · Olay: Fırtına
 
 *Hoş geldiniz kısmı kısa sürdü.*
 
-### HAR-AD-12 - Direkleri Saydıran Gece
+### HAR-AD-12 — Direkleri Saydıran Gece
 
 Kategori: Açık Deniz · Olay: Fırtına
 
@@ -638,7 +638,7 @@ Kategori: Açık Deniz · Olay: Fırtına
 
 *Gece boyunca direkleri saydılar. Sabah aynı sayıya ulaşamadılar.*
 
-### HAR-AD-13 - Kolları Fazla Bir Mesele
+### HAR-AD-13 — Kolları Fazla Bir Mesele
 
 Kategori: Açık Deniz · Olay: Kraken
 
@@ -646,7 +646,7 @@ Kategori: Açık Deniz · Olay: Kraken
 
 *Tokalaşmaya çalışmadığı kesindi.*
 
-### HAR-AD-14 - Yoklamada Bir Eksik
+### HAR-AD-14 — Yoklamada Bir Eksik
 
 Kategori: Açık Deniz · Olay: Adam Denize!
 
@@ -654,7 +654,7 @@ Kategori: Açık Deniz · Olay: Adam Denize!
 
 *Yoklama denizde icat edilmiş olmalı.*
 
-### HAR-AD-15 - Güverte Islak, Bahane Kuru
+### HAR-AD-15 — Güverte Islak, Bahane Kuru
 
 Kategori: Açık Deniz · Olay: Adam Denize!
 
@@ -662,7 +662,7 @@ Kategori: Açık Deniz · Olay: Adam Denize!
 
 *Güverte silinecekti. İpin nerede olduğu daha önce soruldu.*
 
-### HAR-AD-16 - Kıpırdamayan Yelken
+### HAR-AD-16 — Kıpırdamayan Yelken
 
 Kategori: Açık Deniz · Olay: Durgun Deniz
 
@@ -670,7 +670,7 @@ Kategori: Açık Deniz · Olay: Durgun Deniz
 
 *Yelkenci kumaşı silkeledi. Hava ikna olmadı.*
 
-### HAR-AD-17 - Lodos Arkadan Esiyor
+### HAR-AD-17 — Lodos Arkadan Esiyor
 
 Kategori: Açık Deniz · Olay: Uygun Rüzgâr
 
@@ -678,7 +678,7 @@ Kategori: Açık Deniz · Olay: Uygun Rüzgâr
 
 *İlk kez herkes aynı yönde konuştu.*
 
-### HAR-AD-18 - Akıntı Postası
+### HAR-AD-18 — Akıntı Postası
 
 Kategori: Açık Deniz · Olay: Sürüklenen Sandık
 
@@ -686,7 +686,7 @@ Kategori: Açık Deniz · Olay: Sürüklenen Sandık
 
 *Gönderen belli değil. Teslim alacak gönüllü çok.*
 
-### HAR-AD-19 - Sahibi Bulunamayan Sandık
+### HAR-AD-19 — Sahibi Bulunamayan Sandık
 
 Kategori: Açık Deniz · Olay: Sürüklenen Sandık
 
@@ -694,7 +694,7 @@ Kategori: Açık Deniz · Olay: Sürüklenen Sandık
 
 *Sahibi çıkmadı; akrabası on iki kişi çıktı.*
 
-### HAR-AD-20 - Vergisiz Fener Alayı
+### HAR-AD-20 — Vergisiz Fener Alayı
 
 Kategori: Açık Deniz · Olay: Hayalet Işıkları
 
@@ -702,7 +702,7 @@ Kategori: Açık Deniz · Olay: Hayalet Işıkları
 
 *Işıklar yol göstermedi; yolu yerinden oynattı.*
 
-### HAR-AD-21 - Dümeni Dinlemeyen Su
+### HAR-AD-21 — Dümeni Dinlemeyen Su
 
 Kategori: Açık Deniz · Olay: Ters Akıntı
 
@@ -710,7 +710,7 @@ Kategori: Açık Deniz · Olay: Ters Akıntı
 
 *Gemi geri gitmedi. Deniz öne geçti.*
 
-### HAR-AD-22 - Peksimeti Islatan Sağanak
+### HAR-AD-22 — Peksimeti Islatan Sağanak
 
 Kategori: Açık Deniz · Olay: Tuzlu Sağanak
 
@@ -718,7 +718,7 @@ Kategori: Açık Deniz · Olay: Tuzlu Sağanak
 
 *Yağmur dindi. Çorabın fikri değişmedi.*
 
-### HAR-AD-23 - Uçan Balık Yağmuru
+### HAR-AD-23 — Uçan Balık Yağmuru
 
 Kategori: Açık Deniz · Olay: Uçan Balık Yağmuru
 
@@ -726,7 +726,7 @@ Kategori: Açık Deniz · Olay: Uçan Balık Yağmuru
 
 *Balıklar uçtu. Kimse rota önerisini geri almadı.*
 
-### HAR-AD-24 - Güverteyi Yalayan Dalga
+### HAR-AD-24 — Güverteyi Yalayan Dalga
 
 Kategori: Açık Deniz · Olay: Güverteyi Yalayan Dalga
 
@@ -734,7 +734,7 @@ Kategori: Açık Deniz · Olay: Güverteyi Yalayan Dalga
 
 *Dalga çekilince güvertede yalnız başkasının çorabı kaldı.*
 
-### HAR-AD-25 - Direk Çatlatan Bora
+### HAR-AD-25 — Direk Çatlatan Bora
 
 Kategori: Açık Deniz · Olay: Fırtına
 
@@ -742,7 +742,7 @@ Kategori: Açık Deniz · Olay: Fırtına
 
 *Kalafatçı çatlağa baktı. Sonra Kaptanın para kesesine.*
 
-### HAR-AD-26 - Mizanayı Döven Dalga
+### HAR-AD-26 — Mizanayı Döven Dalga
 
 Kategori: Açık Deniz · Olay: Fırtına
 
@@ -750,7 +750,7 @@ Kategori: Açık Deniz · Olay: Fırtına
 
 *Yelkenci yırtığı diktiği yerden tanıdı.*
 
-### HAR-AD-27 - Karayel Tokadı
+### HAR-AD-27 — Karayel Tokadı
 
 Kategori: Açık Deniz · Olay: Fırtına
 
@@ -758,7 +758,7 @@ Kategori: Açık Deniz · Olay: Fırtına
 
 *Rüzgârın eli ağırmış.*
 
-### HAR-AD-28 - Bitmeyen Sağanak
+### HAR-AD-28 — Bitmeyen Sağanak
 
 Kategori: Açık Deniz · Olay: Fırtına
 
@@ -766,7 +766,7 @@ Kategori: Açık Deniz · Olay: Fırtına
 
 *Son kuru paçavra da sırayla kullanıldı.*
 
-### HAR-AD-29 - Alabora Olmadık Sayılır
+### HAR-AD-29 — Alabora Olmadık Sayılır
 
 Kategori: Açık Deniz · Olay: Fırtına
 
@@ -774,7 +774,7 @@ Kategori: Açık Deniz · Olay: Fırtına
 
 *Sayılmaz diyen Kaptandı.*
 
-### HAR-AD-30 - Bir Bulutun Kişisel Meselesi
+### HAR-AD-30 — Bir Bulutun Kişisel Meselesi
 
 Kategori: Açık Deniz · Olay: Fırtına
 
@@ -782,7 +782,7 @@ Kategori: Açık Deniz · Olay: Fırtına
 
 *Özellikle bu gemiyi takip ediyor.*
 
-### HAR-KY-01 - Duvar Gibi Kayalık
+### HAR-KY-01 — Duvar Gibi Kayalık
 
 Kategori: Kayalık · Olay: Geçilmez Kayalık
 
@@ -790,7 +790,7 @@ Kategori: Kayalık · Olay: Geçilmez Kayalık
 
 *Haritada çizgi değildi. Duvarmış.*
 
-### HAR-KY-02 - Dibi Görünen Servet
+### HAR-KY-02 — Dibi Görünen Servet
 
 Kategori: Kayalık · Olay: Batık Kalyon
 
@@ -798,7 +798,7 @@ Kategori: Kayalık · Olay: Batık Kalyon
 
 *Ambarın kilidi hâlâ kapalıydı. Duvarı yoktu.*
 
-### HAR-KY-03 - Yolun Bittiği Yer
+### HAR-KY-03 — Yolun Bittiği Yer
 
 Kategori: Kayalık · Olay: Geçilmez Kayalık
 
@@ -806,7 +806,7 @@ Kategori: Kayalık · Olay: Geçilmez Kayalık
 
 *Kestirme diye bakıldı. Dönüş yolu diye hatırlandı.*
 
-### HAR-KY-04 - Pruva Törpüsü
+### HAR-KY-04 — Pruva Törpüsü
 
 Kategori: Kayalık · Olay: Sivri Kayalık
 
@@ -814,7 +814,7 @@ Kategori: Kayalık · Olay: Sivri Kayalık
 
 *Gemiyi inceltti, masrafı kalınlaştırdı.*
 
-### HAR-KY-05 - Taşın Şakası Olmaz
+### HAR-KY-05 — Taşın Şakası Olmaz
 
 Kategori: Kayalık · Olay: Sivri Kayalık
 
@@ -822,7 +822,7 @@ Kategori: Kayalık · Olay: Sivri Kayalık
 
 *Gülmeyen yalnızca Kalafatçı değildi.*
 
-### HAR-KY-06 - İğne Deliğinden Sefer
+### HAR-KY-06 — İğne Deliğinden Sefer
 
 Kategori: Kayalık · Olay: Dar Resif
 
@@ -830,7 +830,7 @@ Kategori: Kayalık · Olay: Dar Resif
 
 *Geçit dar, tamircinin isteyeceği ücret genişti.*
 
-### HAR-KY-07 - Kestirme Diye Girilen Yer
+### HAR-KY-07 — Kestirme Diye Girilen Yer
 
 Kategori: Kayalık · Olay: Gizli Geçit
 
@@ -838,7 +838,7 @@ Kategori: Kayalık · Olay: Gizli Geçit
 
 *Haritada yoktu; tartışmada hep varmış gibi anlatıldı.*
 
-### HAR-KY-08 - Kaçakçının Unuttuğu Oyuk
+### HAR-KY-08 — Kaçakçının Unuttuğu Oyuk
 
 Kategori: Kayalık · Olay: Kaçakçı Oyuğu
 
@@ -846,7 +846,7 @@ Kategori: Kayalık · Olay: Kaçakçı Oyuğu
 
 *Kaçakçı gitmiş. Vergi hâlâ gelmemiş.*
 
-### HAR-KY-09 - Kırılan Sandıklar
+### HAR-KY-09 — Kırılan Sandıklar
 
 Kategori: Kayalık · Olay: Kırılan Sandıklar
 
@@ -854,7 +854,7 @@ Kategori: Kayalık · Olay: Kırılan Sandıklar
 
 *Kırılan sandıktı. Suçlanan yine Kaptan oldu.*
 
-### HAR-KY-10 - İki Taraftan Sıyırdık
+### HAR-KY-10 — İki Taraftan Sıyırdık
 
 Kategori: Kayalık · Olay: İki Taraftan Sıyırdık
 
@@ -862,7 +862,7 @@ Kategori: Kayalık · Olay: İki Taraftan Sıyırdık
 
 *Tek taraftan sıyırmak yeterince heyecanlı değilmiş.*
 
-### HAR-KY-11 - Suyun Altındaki Diş
+### HAR-KY-11 — Suyun Altındaki Diş
 
 Kategori: Kayalık · Olay: Sivri Kayalık
 
@@ -870,7 +870,7 @@ Kategori: Kayalık · Olay: Sivri Kayalık
 
 *Denizin ağzı yok diyen Haritacı sustu.*
 
-### HAR-KY-12 - Haritada İnce Çizgi
+### HAR-KY-12 — Haritada İnce Çizgi
 
 Kategori: Kayalık · Olay: Sivri Kayalık
 
@@ -878,7 +878,7 @@ Kategori: Kayalık · Olay: Sivri Kayalık
 
 *Çizgi yakından bakınca epey kalınmış.*
 
-### HAR-AA-01 - Ağzı Açık Ambar
+### HAR-AA-01 — Ağzı Açık Ambar
 
 Kategori: Ada · Olay: Erzak Adası
 
@@ -886,7 +886,7 @@ Kategori: Ada · Olay: Erzak Adası
 
 *Erzağı herkes taşıdı. Borcun kime yazılacağını sonra konuşacaklar.*
 
-### HAR-AA-02 - Terk Edilmiş Sahil Karakolu
+### HAR-AA-02 — Terk Edilmiş Sahil Karakolu
 
 Kategori: Ada · Olay: Terk Edilmiş Karakol
 
@@ -894,7 +894,7 @@ Kategori: Ada · Olay: Terk Edilmiş Karakol
 
 *Nöbetçi gitmiş; dedikodu defteri kalmış.*
 
-### HAR-AA-03 - Misafirperverlik Biraz Fazla
+### HAR-AA-03 — Misafirperverlik Biraz Fazla
 
 Kategori: Ada · Olay: Rehin Adası
 
@@ -902,7 +902,7 @@ Kategori: Ada · Olay: Rehin Adası
 
 *Gitmenize çok üzüldüler. Bu yüzden bırakmadılar.*
 
-### HAR-AA-04 - Bir Ustanın Son Tezgâhı
+### HAR-AA-04 — Bir Ustanın Son Tezgâhı
 
 Kategori: Ada · Olay: Tersane Koyu
 
@@ -910,7 +910,7 @@ Kategori: Ada · Olay: Tersane Koyu
 
 *Usta deliği görünce sevindi. Sizden saklamaya çalışmadı.*
 
-### HAR-AA-05 - Korsanların Mola Yeri
+### HAR-AA-05 — Korsanların Mola Yeri
 
 Kategori: Ada · Olay: Korsanların Mola Yeri
 
@@ -918,7 +918,7 @@ Kategori: Ada · Olay: Korsanların Mola Yeri
 
 *Sandıkları taşımayı teklif ettiler. Geri getirmekten söz etmediler.*
 
-### HAR-AA-06 - Tek Kişilik Gümrük
+### HAR-AA-06 — Tek Kişilik Gümrük
 
 Kategori: Ada · Olay: Gümrük Adası
 
@@ -926,7 +926,7 @@ Kategori: Ada · Olay: Gümrük Adası
 
 *Gümrükçü tek kişiydi. Yetkisi kalabalıktı.*
 
-### HAR-FN-01 - Vardiya Defterli Fener
+### HAR-FN-01 — Vardiya Defterli Fener
 
 Kategori: Deniz Feneri · Olay: Çalışan Fener
 
@@ -934,7 +934,7 @@ Kategori: Deniz Feneri · Olay: Çalışan Fener
 
 *Işık yol gösterdi; defter kimin baktığını yazdı.*
 
-### HAR-FN-02 - Bekçisi Gitmiş, Işığı Kalmış
+### HAR-FN-02 — Bekçisi Gitmiş, Işığı Kalmış
 
 Kategori: Deniz Feneri · Olay: Terk Edilmiş Fener
 
@@ -942,7 +942,7 @@ Kategori: Deniz Feneri · Olay: Terk Edilmiş Fener
 
 *Bekçi not bırakmış: Dönmeyeceğim. Anahtar paspasın altında.*
 
-### HAR-FN-03 - Fenercinin Zulası
+### HAR-FN-03 — Fenercinin Zulası
 
 Kategori: Deniz Feneri · Olay: Fenercinin Zulası
 
@@ -950,7 +950,7 @@ Kategori: Deniz Feneri · Olay: Fenercinin Zulası
 
 *Fenerci yolu değil, sandığı aydınlatmış.*
 
-### HAR-FN-04 - Geceleri Parlayan Yalan
+### HAR-FN-04 — Geceleri Parlayan Yalan
 
 Kategori: Deniz Feneri · Olay: Sahte Fener
 
@@ -960,19 +960,23 @@ Kategori: Deniz Feneri · Olay: Sahte Fener
 
 ## Makam ve Liman
 
-### SET-KP-01 - KAPTAN
+### SET-KP-01 — KAPTAN
 
 **Etki:** Rota oylamasında 2 oy kullanırsın. Rota beraberliğini yalnız berabere seçenekler arasından bozarsın. Suçlama ve İsyanda 1 oy kullanırsın. Suçlama hedefinin ön seçimindeki eşitliği de bozarsın; bu ön seçim resmî oylama değildir.
 
 *Dümen sende. Borç hepinizin.*
 
-### SET-KL-01 - KALKIŞ LİMANI
+### SET-KL-01 — KALKIŞ LİMANI
+
+Yer: Port Avanta
 
 **Etki:** Haritanın alt kenarında seçilen başlangıç sütununa hizala. Gemi bu kart üzerinde başlar. Kart Harita karesi değildir ve 52 Haritaya dahil değildir. İlk satırdan acil geri dönüşte gemi buraya dönebilir.
 
 *Halatlar çözülmeden önce her yol kolay görünür.*
 
-### SET-VL-01 - VARIŞ LİMANI
+### SET-VL-01 — VARIŞ LİMANI
+
+Yer: Santa Veda
 
 **Etki:** Haritanın üst kenarında seçilen Hedef Liman sütununa hizala. Bu kart Harita karesi değildir. Gemi o sütundaki son sıra kartına girince önce olayı, sonra İskorbütü çöz. Gemi batmadıysa ve İskorbüt temizse Liman Gecesi oynanır.
 

@@ -1,16 +1,16 @@
 # FOULWAKE - hikâye omurgası ve ses kılavuzu
 
-**8 Eylül 2026 · Uygulanmış v2.7 çalışma metni · kilitli sürüm değildir.**
+**9 Eylül 2026 · Uygulanmış v2.7 çalışma metni · kilitli sürüm değildir.**
 
 Bu kayıt artık boş sahne şablonu değildir. Tam anlatı `FOULWAKE_RULEBOOK_STORY_v2.7.md`, oynama sırası `FOULWAKE_KURAL_KITABI_v2.7.md`, kartların asıl metni kart JSON'larıdır. Başeditör, proje sahibinin güncel talimatıyla Hikâye Editörü, Simülasyon QA, Sanat Yönetimi ve Görsel Uygulama görevlerini bu teslim için üstlenmiştir. Önceki CAN-07'nin yalnız küçük öneri üretme sınırı bu açık revizyon talimatıyla aşılmıştır; kilitli v2.6 yeniden yazılmamıştır.
 
-## Korunan dünya ve değişen ad
+## Güncel dünya ve kesin adlar
 
 | Kimlik | Bu sürümdeki sınır |
 |---|---|
 | CAN-01 | 1721'in maddi zemini: yelken, sağlık kâğıdı, borç, tiryak, karantina ve vardiya. Modern teknoloji veya tıp bilgisi karakterlere aktarılmaz. |
-| CAN-02 | Arden Krallığı eve dönüş yeridir; San Cordelio ecza rıhtımı kalkış, Saint Verena Karantina Limanı teslim eşiğidir. Eleonora, Mattias Veyr ve Gusto Varela korunur. |
-| CAN-03 | Eski Siyah Mühür adı yerine **Kuru Pay** kullanılır. Bu, önce kıyıda kalanların kazancına verilen lakaptır; tek merkezli bir örgütün doğrulanmış adı değildir. |
+| CAN-02 | Arden Krallığı eve dönüş yeridir; Port Avanta ecza rıhtımı kalkış, Santa Veda Karantina Limanı teslim eşiğidir. Kraliçe Tesella, Mattias Veyr ve Gusto Varela bu dünyanın kişileridir. |
+| CAN-03 | Gizli örgütün adı **Malum**. Borç ve izinler üzerindeki etkisi hissedilir; merkezi, üyeleri ve emir zinciri bilinmez. Adını kullanan her kişi örgüt üyesi sayılmaz. |
 | CAN-04 | Gusto'nun akıbeti, eksik sayfaların faili ve balmumunun ilişkisi bilinmez. Moderatör gizlice bir doğru cevap seçmez. |
 | CAN-05 | Kara komedi, çıkarın ve gündelik alışkanlığın tehlikede bile sürmesinden doğar. Acı çeken kişiyi şakanın hedefi yapmaya gerek yoktur. |
 | CAN-06 | Her kartın sonuna aynı bilgece ters köşe eklenmez. Bazısı somut davranış, bazısı kısa konuşma, bazısı da sessiz bir ayrıntı taşır. |
@@ -35,10 +35,10 @@ Bunlar güncel çalışma sürümünün editoryal sınırlarıdır; belgeyi yay�
 
 ## Kişiler ve çıkarları
 
-- **Eleonora:** Halkı kurtarmak ve ticaret ailelerine bağımlılığını azaltmak ister. İkisi birbirini dışlamaz.
+- **Kraliçe Tesella:** Deniz yollarını açık tutmak, halkı kurtarmak ve ticaret ailelerine bağımlılığını azaltmak ister. Konvoy ve karantina emirleri onun, erzak depoları başkalarınındır.
 - **Veyr:** Denemelerin sınanmasını ister. Başarısız kayıtları da tutar; kesin başarı sözü vermez.
 - **Gusto:** Vekilsiz yönetim alışkanlığı, yokluğunda sefer heyetini sorumlu bırakır. Bu kusur onun suçunu kanıtlamaz.
-- **Kuru Pay'dan kazananlar:** Depo, karantina hizmeti, borç ve aracılık üzerinden çıkar sağlar. Ortak çıkar, tek efendi veya ortak emir kanıtı değildir.
+- **Malum:** Borç, izin ve aracılar üzerinden etkisini gösteren gizli örgüt. Adının kullanılması, belirli bir kişinin üyeliğini veya bütün girişimlerin aynı emirden çıktığını kanıtlamaz.
 - **Sefer heyeti:** Eve dönmek, geçinmek, birine sözünü tutmak, bir kaybı önlemek. Aynı kişisel istek karşıt sadakatlerde görülebilir.
 
 ## Kart sesleri
@@ -56,3 +56,5 @@ Atmosfer cümlesi kısa tutulur, ardından yazılı olay uygulanır. Oyuncunun k
 Bu revizyonun değişiklikleri ve kaynak karşılaştırmaları `FOULWAKE_EDITORIAL_DECISIONS_v2.7.json` ve `qa/editorial_revision/` altında izlenir. Tarihsel 20 Ağustos hikâye PASS'i önceki committe korunur; yeni metnin insanlarla denendiği anlamına gelmez.
 
 8 Eylül tam kontrolü: `qa/whole_game_polish_20260908/review.md`. Sözcük, kart ve baskı düzeltmeleri burada kayıtlıdır; adların anlatısal işlevi korunur.
+
+9 Eylül yayın revizyonu: Kraliçe Tesella, Port Avanta, Santa Veda ve Malum proje sahibinin kesin adlarıdır. Kaynak, kitap ve kartlar birlikte güncellenir. Güncel üretim ve kontrol kaydı `qa/publication_20260909/` altındadır. Tarihsel görevler bu kararın yerine geçmez.

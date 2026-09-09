@@ -1,0 +1,9 @@
+{
+  "changed_front_indices": [
+    38,
+    50,
+    96
+  ],
+  "unchanged_fronts": 118,
+  "reason": "0.3 mm title clearance on GUC-17 and HAR-KY-01; explicit mandatory-start metadata on ERZ-01"
+}

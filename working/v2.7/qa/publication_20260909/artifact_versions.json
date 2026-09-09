@@ -1,0 +1,24 @@
+[
+  {
+    "file_name": "FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "status": "succeeded",
+    "purpose": "replace_library_file",
+    "file_id": "file_0000000056448230bd112cc9edf1fe6f",
+    "library_file_id": "libfile_9e5aae6ec68c81919c9b98fa8e855c6c",
+    "current_version_number": 2,
+    "expected_previous_version": 1,
+    "bytes": 74699858,
+    "sha256": "3eb6b291417bdefcbf5ed9f35a012738c12cc33f855e5a5d53bd586ff415c87f"
+  },
+  {
+    "file_name": "FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+    "status": "succeeded",
+    "purpose": "replace_library_file",
+    "file_id": "file_00000000667c8230af744c63bdd3e156",
+    "library_file_id": "libfile_5fc63dae24c08191a7c850d47a4b3539",
+    "current_version_number": 1,
+    "expected_previous_version": 0,
+    "bytes": 14300745,
+    "sha256": "dde37e8dd7a2aa846e5e44d9d06a10f52ebcd834d885986de6c07c863277b91f"
+  }
+]

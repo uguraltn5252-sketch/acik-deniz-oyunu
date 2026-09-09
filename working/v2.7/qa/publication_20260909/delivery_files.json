@@ -1,0 +1,18 @@
+[
+  {
+    "file": "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "name": "FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "sha256": "3eb6b291417bdefcbf5ed9f35a012738c12cc33f855e5a5d53bd586ff415c87f",
+    "git_blob": "01e4840cc0cca966948b410c55c76895a3b8c778",
+    "bytes": 74699858,
+    "pages": 46
+  },
+  {
+    "file": "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+    "name": "FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+    "sha256": "dde37e8dd7a2aa846e5e44d9d06a10f52ebcd834d885986de6c07c863277b91f",
+    "git_blob": "22029c3fc0e79ee9a313f6a8edaf703b66983619",
+    "bytes": 14300745,
+    "pages": 30
+  }
+]

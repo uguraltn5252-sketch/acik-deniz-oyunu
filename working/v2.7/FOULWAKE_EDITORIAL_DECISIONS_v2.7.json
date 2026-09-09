@@ -9,15 +9,15 @@
   "decisions": [
     {
       "id": "ED-01",
-      "subject": "Kuru Pay",
-      "disposition": "IMPLEMENTED_NARRATIVE",
+      "subject": "Malum",
+      "disposition": "SUPERSEDED_BY_OWNER_CANON_20260909",
       "locations": [
         "§3.1",
         "§3.6",
         "§5.3",
         "§17"
       ],
-      "decision": "Siyah/Kara Mühür yerine, kıyıda risk almadan kazanç sağlayanlara verilen Kuru Pay lakabı. Merkezî örgüt, ortak emir veya suçlu kesinleştirilmez."
+      "decision": "Malum gizli örgüttür; borç ve izinler üzerinden etkisi hissedilir. Merkezi, üyeleri ve emir zinciri açıklanmaz. Önceki adlandırma kararı Git geçmişindedir."
     },
     {
       "id": "ED-02",
@@ -64,7 +64,7 @@
     },
     {
       "id": "ED-06",
-      "subject": "Siyah Mühür kesinlik sorunu",
+      "subject": "Örgüt anlatısındaki kesinlik sınırı",
       "disposition": "SOURCE_CONFLICT_FIXED",
       "locations": [
         "§5.3",
@@ -248,7 +248,7 @@
         "HAR-AD-14",
         "HAR-AA-06"
       ],
-      "decision": "Arden Krallığı, San Cordelio ecza rıhtımı ve Saint Verena Karantina Limanı ayrımı açılışta görünür. KAR, GUC ve mekân adları korunur; HAR-AD-14 Yoklamada Bir Eksik, HAR-AA-06 Tek Kişilik Gümrük olur.",
+      "decision": "Arden Krallığı ile kalkış ve varış limanlarının işlevleri açılışta ayrılır. Kesin yer adları 9 Eylül PUB-01 kararıyla güncellenmiştir. KAR, GUC ve diğer mekân adları korunur; HAR-AD-14 Yoklamada Bir Eksik, HAR-AA-06 Tek Kişilik Gümrük olur.",
       "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001"
     },
     {
@@ -306,6 +306,27 @@
       ],
       "decision": "Fenerde üst orijinal sahne aynı ölçekle korunur; ters alt kule denizle kapatılır. Dört fenerde aynı yön ve master. Diğer altı arka yarım dönüşte kalır. Bütün ön kaynaklar korunur; uzun copy kısalınca resim alanı büyür. Kapak satırları, boş meslek yer tutucuları ve kitap paragraf bölünmesi düzeltilir.",
       "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001"
+    },
+    {
+      "id": "PUB-01",
+      "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+      "subject": "Kesin adlar ve anlatı işlevleri",
+      "disposition": "IMPLEMENTED",
+      "decision": "Kraliçe Tesella, Port Avanta, Santa Veda ve Malum kaynak, hikâye, kart dökümü, sanat manifesti ve PDF metinlerinde birlikte güncellenir. Arden, Veyr ve Gusto korunur. Tesella siyasi yetki taşır; Port Avanta ticaret hareketidir; Santa Veda umut ile karantina baskısını birleştirir. Malum gizli örgüttür; Gusto veya tek bir şüpheli üzerinden çözülmez."
+    },
+    {
+      "id": "PUB-02",
+      "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+      "subject": "Tipografi ve yayın düzeni",
+      "disposition": "IMPLEMENTED",
+      "decision": "Tek Alegreya ailesi: karakterli başlık, okunur gövde, italik tat metni. Kartlarda sakin okuma panelleri, kitapta OKU/YAP kutuları, yinelenen tablo başlıkları, içindekiler ve kurala bağlı Harita/Ufuk şemaları. Kapakta yalnız FOULWAKE."
+    },
+    {
+      "id": "PUB-03",
+      "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+      "subject": "Kimlik, özgün sanat ve baskı",
+      "disposition": "IMPLEMENTED",
+      "decision": "121 kart kimliği ve mekanik değerleri, 121 özgün ön levha ve yedi ortak arka korunur. Tek kuleli Fener ve kumlu palmiye Adası değiştirilmez. 23 yapraklık A4 uzun-kenar çift taraflı yerleşim, 3 mm taşma ve eski kesin kesim ölçüleri korunur. Kartlar tek PDF olarak teslim edilir."
     }
   ],
   "not_claimed": [
@@ -317,10 +338,11 @@
   ],
   "history": "Earlier review was read-only. This task changes the actual editable sources.",
   "current_revision": {
-    "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
-    "date": "2026-09-08",
-    "authority": "governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json",
-    "evidence": "working/v2.7/qa/whole_game_polish_20260908/review.md",
-    "class": "SAME_OPERATOR_SELF_CHECK / NOT_LOCKED"
-  }
+    "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+    "date": "2026-09-09",
+    "authority": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json",
+    "evidence": "working/v2.7/qa/publication_20260909/review.md",
+    "class": "SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING / NOT_LOCKED"
+  },
+  "prior_revision_permalink": "https://github.com/uguraltn5252-sketch/acik-deniz-oyunu/blob/d4072fbff19aeae3508801b733164fdae8517e7a/working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json"
 }

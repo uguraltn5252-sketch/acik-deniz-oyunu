@@ -1,4 +1,4 @@
-# FOULWAKE - Kuru Pay
+# FOULWAKE
 
 **Kural kitabı · v2.7 · 9 Eylül 2026**
 
@@ -10,7 +10,7 @@
 
 ## 1. Bir dakikada oyun
 
-Siz, deneysel tiryak sandıklarını San Cordelio'dan vebanın kırdığı Arden'e götüren sefer heyetisiniz. Kaptan Gusto kayıp. İçinizden birini Kaptan seçip Saint Verena Karantina Limanı'na yelken açacaksınız. Aranızdaki Hainler, yükün teslim edilmesini istemiyor.
+Siz, deneysel tiryak sandıklarını Port Avanta'dan vebanın kırdığı Arden'e götüren sefer heyetisiniz. Kaptan Gusto kayıp. İçinizden birini Kaptan seçip Santa Veda Karantina Limanı'na yelken açacaksınız. Aranızdaki Hainler, yükün teslim edilmesini istemiyor.
 
 | Elindeki kart | Sana ne söyler? | Gizlilik |
 |---|---|---|
@@ -21,7 +21,7 @@ Siz, deneysel tiryak sandıklarını San Cordelio'dan vebanın kırdığı Arden
 
 Karakter ile Sadakat bağımsızdır. Kaptan Hain çıkabilir; özel yeteneği olmayan biri de tartışır, oy verir ve Güç kullanır. Kişisel gerekçen sana ek görev, yetenek veya puan vermez. Rol yapmak isteğe bağlıdır; kartını kanıt diye gösteremezsin.
 
-**Tayfa kazanır:** Gemi Saint Verena'ya varır; İskorbüt temizdir; Liman Gecesi şafağında gemi yüzüyor ve en az bir Tayfa hayattadır.
+**Tayfa kazanır:** Gemi Santa Veda'ya varır; İskorbüt temizdir; Liman Gecesi şafağında gemi yüzüyor ve en az bir Tayfa hayattadır.
 
 **Hainler kazanır:** Gemi herhangi bir anda 0 Gövdeye düşerse; Limana girilmeden bütün Tayfa ölürse; Liman olayından sonra İskorbüt hâlâ etkinse; ya da Liman Gecesi şafağında yaşayan Tayfa kalmazsa.
 
@@ -88,11 +88,11 @@ Açılışta oyuncular kendi sözleriyle “Nereye gidiyoruz; İskorbüt varsa �
 
 **OKU**
 
-Yıl 1721. San Cordelio'nun ecza rıhtımında yükünüz hazır. Siz, vebanın kırdığı Arden Krallığı'na dönen sefer heyetisiniz. Yük defterinde adınız var; tiryak sandıklarını ve Doktor Veyr'in deneme defterlerini Saint Verena Karantina Limanı'na siz ulaştıracaksınız.
+Yıl 1721. Port Avanta'nın rıhtımında halatlar, baharat çuvalları ve mühür sırası birbirine karışıyor. Siz, vebanın kırdığı Arden Krallığı'na dönen sefer heyetisiniz. Yük defterinde adınız var; tiryak sandıklarını ve Doktor Veyr'in deneme defterlerini Santa Veda Karantina Limanı'na siz ulaştıracaksınız.
 
-Veyr, terkibinin işe yarayacağını henüz kanıtlayamadı. Saray kâtibi sandıklara yine de **İLAÇ** yazdı.
+Kraliçe Tesella bu yükü bekliyor. Veyr, terkibinin işe yarayacağını henüz kanıtlayamadı. Saray kâtibi sandıklara yine de **İLAÇ** yazdı.
 
-Arden'de bu yükü bekleyen insanlar var. Karantinadan, kıtlıktan ve ilaç borcundan kazananlar da var. Liman işçileri bu kazanca **Kuru Pay** diyor: gemiye binmeden alınan pay.
+Yükün varmasını istemeyenler de var. Limanda bazı kapılar tek bir ad fısıldanınca açılıyor: **Malum**. Kimin adına açıldığı sorulunca konuşma bitiyor.
 
 Önünüzdeki sularda birbirinizin bilgisine ihtiyacınız olacak. Aynı gemiye binmiş olmanız, yükün de eve dönmesini istediğiniz anlamına gelmiyor.
 
@@ -125,7 +125,7 @@ Gusto vekil bırakmazdı. “Bir gemide iki kaptan varsa iki gemiye ihtiyacını
 
 Arden'in sefer kefaletine göre vekil yoksa yük defterindeki heyet kendi Kaptanını seçer. Bu, denizcilere duyulan güvenin eseri değil. Yük kaybolursa borcu, rotaların altına imza atanlar ödeyecek.
 
-Gusto'yu bekleyecek vaktiniz yok. Saint Verena'ya kadar Kaptanınız kim olacak?
+Gusto'yu bekleyecek vaktiniz yok. Santa Veda'ya kadar Kaptanınız kim olacak?
 
 **YAP:** Her uygun oyuncu aday olabilir ve kendine oy verebilir. Herkesin seçim oyu 1'dir. En çok oy alan Kaptandır. Beraberlikte yalnız berabere adayları bir kez yeniden oylat; yine eşitse bu adaylar d12 atsın. En yüksek kazanır, en yüksek eşitler yeniden atar. Makam kartını seçilenin önüne açık koy.
 
@@ -192,7 +192,7 @@ Halatlar çözülüyor. Kaptan bir rota hakkında bir şey biliyor. Bildiğini s
 
 **OKU**
 
-San Cordelio'nun ışıkları artık görünmüyor. Gündüz birbirini ikna edenler aynı güvertede uyuyacak. Herkes gözlerini kapatsın.
+Port Avanta'nın ışıkları artık görünmüyor. Gündüz birbirini ikna edenler aynı güvertede uyuyacak. Herkes gözlerini kapatsın.
 
 **YAP:** Önce uygun Yakın Ufuk Karakteri, sonra uygun Uzak Ufuk Karakteri ve yazılı diğer gece etkileri. En son Hainleri uyandır: “Birbirinizi tanıyın. Takım olarak bir yasal Yakın Ufku seçin ve görün. Bu gece saldırı yok.” Hainleri yatır; şafağı ilan et.
 
@@ -238,7 +238,7 @@ Uzayan tartışmayı yeni hikâye anlatarak kesme. Oyuncular aynı gerekçeleri 
 
 **OKU**
 
-Saint Verena'nın ışıkları önünüzde. Rıhtımda insanlar var; size doğru gelen sandal yok. Sağlık görevlileri şafakta çıkacak. Bu gece karantina demir yerindesiniz. Sandıkları teslim etmek için bir gece daha dayanmanız gerekiyor.
+Santa Veda'nın ışıkları önünüzde. Rıhtımda insanlar var; size doğru gelen sandal yok. Sağlık görevlileri şafakta çıkacak. Bu gece karantina demir yerindesiniz. Sandıkları teslim etmek için bir gece daha dayanmanız gerekiyor.
 
 1. Seçilmiş Hedef Liman karesinin olayını çöz. Olay içi hareket gemiyi Limandan çıkaramaz.
 2. Gövde 0 olduysa Hainler kazanır. Değilse İskorbütü kontrol et: hâlâ etkinse herkes ölür, Hainler kazanır; gece oynanmaz.
@@ -288,7 +288,7 @@ Bir Daha Say, resmî sonuç **tam 1 oy farkıyla** bittiyse o oylamayı bir kez 
 
 ### 5.3 Gece ve anlatı sınırı
 
-Bir geminin kaybolmasını isteyen herkes aynı yolu seçmez. Kaza, açık bir cinayetten daha az soru doğurabilir; bir başkası bu hesabı yapacak kadar sabırlı olmayabilir. Kuru Pay adı altında anlatılanların ortak bir emirle hareket ettiği bilinmiyor.
+Bir geminin kaybolmasını isteyen herkes aynı yolu seçmez. Kaza, açık bir cinayetten daha az soru doğurabilir; bir başkası bu hesabı yapacak kadar sabırlı olmayabilir. Malum adına dolaşan her teklifin aynı elden çıktığı bilinmiyor.
 
 Ancak bu bir mekanik yasak değildir: Hain oyuncuların yapabilecekleri yalnız yazılı Hain, Karakter ve Güç kurallarıyla belirlenir. Hikâye, bu kuralların tonunu açıklar; yeni yasak eklemez.
 
@@ -592,7 +592,7 @@ Tamamen önlenmiş etki, kartın adı veya denge etiketi yüzünden zararlı say
 | Bütün Hainler öldü | Oyun sürer. Tayfa gemiyi ve teslimi tamamlamalıdır. |
 | Bir Daha Say ile tekrar edilmiş oylama | İkinci sonuç kesindir; başka Bir Daha Say zinciri açılmaz. |
 
-## 17. Kuru Pay - isteğe bağlı arka plan
+## 17. Malum — isteğe bağlı arka plan
 
 Bu bölüm ilk oyunu başlatmak için okunmaz. Dünya hakkında merak edilenlere cevap verir; gizli kimlikleri çözen bir ipucu listesi değildir.
 
@@ -602,15 +602,17 @@ Arden'de ilk yıl kapılar kapandı. İkinci yıl pazarlar boşaldı. Üçüncü
 
 Karantina depoları büyüdü. Tahıl, sirke, keten, tabut tahtası ve mucize olduğu yalnız etiketinde yazan ilaçlar pahalandı. Bir aile depoları kiraladı. Başka biri muhafız maaşlarını borç verdi. Bir banker gemilere kredi açtı; ödemenin gecikmesini de hesaba kattı. Herkes başka bir hizmet veriyordu. Fatura aynı insanlara çıkıyordu.
 
-Liman işçileri bu kazanca **Kuru Pay** adını taktı. Tayfa bir pay için denize çıkardı; kıyıdakilerin payına tuzlu su değmezdi. Zamanla ad, bu işlerden kazananlar ve onların adına dolaşan aracılar için de kullanıldı. Hepsinin aynı sofraya oturduğu kanıtlanmadı. Birileri adı korkutmak için ödünç almış da olabilir.
+**Malum**, borçlar ve izinler arasından işleyen gizli bir örgüt. Bir çıkış kâğıdı kayboluyor, bir alacak bir gecede başka ele geçiyor, bir gemiye yük bulunamıyor. Kimin emriyle olduğu sorulunca aynı cevap geliyor: “Malum.” Kâtipler açıklama hanesine yazmak için bunu yeterli buluyor.
+
+Örgütün merkezi, üyeleri ve emir zinciri bilinmiyor. Adını kullanan her aracının gerçekten ona bağlı olduğu da belli değil. Kimisi örgütün gücünü, kimisi yalnız adının yarattığı korkuyu kullanıyor. Malum'un etkisi hissedilir; tek bir işaret kimin onun adına çalıştığını kanıtlamaz.
 
 Siyah balmumu ucuzdu. Sağlık kâğıdında da, borç senedinde de kullanılırdı. Bu yüzden bir yerde bulunması, o yerde ne olduğunu açıklamaya yetmezdi. Söylentiye göre büyük anlaşmalardan sonra masada bir kırıntı bırakılırdı. Başka bir söylentiye göre masaları kimse doğru dürüst temizlemiyordu.
 
 ### Kraliçenin hesabı
 
-Eleonora halkını kurtarmak istiyordu. Salgın uzadıkça sarayın yapamadığı işleri ticaret aileleri üstlenmişti: tahıl getiriyor, hastaneleri tedarik ediyor, muhafızların ücretlerini karşılıyorlardı. Kraliçe her ay yeni bir borca imza atıyor; imza isteyenler sarayda biraz daha rahat oturuyordu.
+Kraliçe Tesella, Arden'in deniz yollarını açık tutmak ve halkını kurtarmak istiyordu. Konvoy izinleriyle karantina emirlerinde onun mührü vardı; gemilerin erzağı ise başkalarının depolarındaydı. Salgın uzadıkça sarayın yapamadığı işleri ticaret aileleri üstlenmişti: tahıl getiriyor, hastaneleri tedarik ediyor, muhafızların ücretlerini karşılıyorlardı. Kraliçe her ay yeni bir borca imza atıyor; imza isteyenler sarayda biraz daha rahat oturuyordu.
 
-San Cordelio'dan Doktor Mattias Veyr'in adı geldiğinde Eleonora yalnız bir ilaç ihtimali görmedi. Başkasının deposuna muhtaç olmadan üretim yapabilme ihtimalini de gördü.
+Port Avanta'dan Doktor Mattias Veyr'in adı geldiğinde Tesella yalnız bir ilaç ihtimali görmedi. Başkasının deposuna muhtaç olmadan üretim yapabilme ihtimalini de gördü.
 
 Veyr, eski tiryak tarifleriyle çalışıyordu. Ölçüleri değiştiriyor, hangi malzemenin nereden geldiğini, hastaların hangilerinin sabaha çıktığını ve hangilerinin uyanmadığını kaydediyordu. Başarısız sayfaları defterden çıkarmıyordu. Saray temsilcisi bunun güven vermediğini söyledi. Veyr, boş sayfaların daha az işe yaradığını söyledi.
 
@@ -622,7 +624,7 @@ Sandıkların üzerindeki **İLAÇ** yazısı daha kesindi. Onu Veyr yazmamışt
 
 Kaptan Gusto Varela fırtınayı kokladığını söylerdi. Tayfa güler, ardından yelken küçültürdü. İyi kaptandı; başka bir kaptana ihtiyaç duyulabileceğini düşünmezdi. Vekil bırakmaması yıllarca bir huy olarak anlatıldı. Kaybolduğu sabah bütün geminin sorunu oldu.
 
-San Cordelio'daki son gününde geminin altını kontrol ettirdi, liman kılavuzuyla tartıştı ve aşçıya çorbadaki şeyin gerçekten balık olup olmadığını sordu. Akşam bir sağlık memuruyla görüldüğü söylendi. Memur konuşmadıklarını söyledi; sonra konuşmadıkları konuları sıraladı. Meyhanecinin hatırladığı kadeh sayısıyla hesaptaki sayı da uyuşmadı.
+Port Avanta'daki son gününde geminin altını kontrol ettirdi, liman kılavuzuyla tartıştı ve aşçıya çorbadaki şeyin gerçekten balık olup olmadığını sordu. Akşam bir sağlık memuruyla görüldüğü söylendi. Memur konuşmadıklarını söyledi; sonra konuşmadıkları konuları sıraladı. Meyhanecinin hatırladığı kadeh sayısıyla hesaptaki sayı da uyuşmadı.
 
 Şafakta çizmeler, palto ve pusula kamaradaydı. Yarım bardak şarap, eksik sayfalar, masanın altında balmumu. Zorlanmış bir kapı veya kavga izi yoktu.
 
@@ -632,7 +634,7 @@ Gusto'nun satın alındığı, öldürüldüğü, terkibi öğrendiği için ka�
 
 ### Ayrı kapılara bırakılan teklifler
 
-San Cordelio'da bir aracı, bir borcu silmeyi teklif etti. Başka bir yerde çıkış kâğıdı bekletildi. Birine yıllardır sakladığı bir belgenin satırları okundu. Kimi, bu yükü durdurursa kötülüğü önleyeceğine inandırıldı.
+Port Avanta'da bir aracı, bir borcu silmeyi teklif etti. Başka bir yerde çıkış kâğıdı bekletildi. Birine yıllardır sakladığı bir belgenin satırları okundu. Kimi, bu yükü durdurursa kötülüğü önleyeceğine inandırıldı.
 
 Aracıların aynı hesaba çalışıp çalışmadığı bilinmiyor. Vaatleri tutacakları da bilinmiyor. Onlarla konuşan insanların bazıları korktu, bazıları kazancı hesapladı, bazıları da başka çare görmedi. Bu gerekçeler kötülüğü ortadan kaldırmaz; yalnız insanın kendine nasıl anlattığını gösterir.
 
@@ -646,7 +648,7 @@ Bu insanlar aynı yemeği yer, aynı ipi çeker, sonra birbirlerinin söyledikle
 
 ### Son gece
 
-Saint Verena bir varış noktasıdır; henüz teslim değildir. Gemi karantina demir yerinde bekler. Sağlık görevlileri şafakta mührü, yükü ve yaşayan tanıkları kontrol edecektir.
+Santa Veda'nın kuleleri pusun içinden önce görünür, rıhtımı sonra. Kıyıdaki çan bazen bir sağlık sandalını, bazen yeni bir kapanmayı haber verir. Uzaktan hangisi olduğunu anlayamazsınız. Burası bir varış noktasıdır; henüz teslim değildir. Gemi karantina demir yerinde bekler. Sağlık görevlileri şafakta mührü, yükü ve yaşayan tanıkları kontrol edecektir.
 
 O son gece için ayrı bir felaket icat etmeye gerek yoktur. Aynı güverte, aynı kartlar ve artık çok yakın görünen kıyı yeter. Oyuncuların son kararını bir anlatıcı müdahalesi geri almaz.
 
@@ -659,6 +661,3 @@ O son gece için ayrı bir felaket icat etmeye gerek yoktur. Aynı güverte, ayn
 - **İlk yolculuk gecesi:** Tanışma + bakış, saldırı yok. **Sonraki Sis:** bakış + saldırı olabilir.
 - **Gövde 0:** Hemen bitiş. **Liman:** Olay → Gövde → İskorbüt → son gece → şafak.
 
----
-
-Bu baskı düzeni dijital olarak kontrol edilmiştir. Yazıcıda hizalama, kâğıt opaklığı ve insanlarla masa denemesi ayrıca doğrulanmalıdır.

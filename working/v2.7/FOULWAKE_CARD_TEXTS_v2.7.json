@@ -198,7 +198,7 @@
       "impact": 0,
       "icon": "shore",
       "effect": "Özel yeteneği yoktur.",
-      "flavor": "San Cordelio'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor.",
+      "flavor": "Port Avanta'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor.",
       "use_mode": "yeteneksiz"
     },
     {
@@ -610,77 +610,77 @@
       "reason": "Fresh 121-record review, recipient and reveal clarity, concise long-card copy and concrete flavor."
     }
   ],
-  "revision_date": "2026-09-08",
+  "revision_date": "2026-09-09",
   "editorial_decision_source": "FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
   "loyalties": [
     {
       "id": "SAD-T-01",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Eve son yazdığın mektupta iyi olduğunu söyledin. Bu kez o mektuptan önce varmak istiyorsun."
     },
     {
       "id": "SAD-T-02",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Sağlık kapısının arkasında bir sofralık yerin duruyor. Kapıyı açtırmaya yetmiyor; yine de dönmek için bir sebep."
     },
     {
       "id": "SAD-T-03",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Bu yükü sağlam teslim edersen borcunun son taksiti kapanacak. Alacaklın yıllardır denizin tehlikelerini küçümsüyor."
     },
     {
       "id": "SAD-T-04",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Bir komşun yol paranı verdi. Karşılığında ilaç istemedi; döndüğünde kapısını çalmanı istedi."
     },
     {
       "id": "SAD-T-05",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Veyr'in işe yaramayan denemeleri de yazdığını gördün. Hiç değilse birinin hesabı doğru tuttuğuna inanmak istiyorsun."
     },
     {
       "id": "SAD-T-06",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Bu seferin ücretini peşin harcadın. Dönmezsen ailene para yerine bir açıklama gönderilecek."
     },
     {
       "id": "SAD-T-07",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Karantina kapısında bekleyenleri gördün. İçeridekiler dışarıyı, dışarıdakiler içeriyi merak ediyordu. Getirdiğin sandıkların o kapıyı açmasını istiyorsun."
     },
     {
       "id": "SAD-T-08",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Senin adına bir mezar yeri ayırmışlar. Manzarasını beğenmedin; itirazı şahsen yapmak istiyorsun."
     },
     {
       "id": "SAD-T-09",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Yük defterine imza atarken kimse okumanı beklemedi. Okudun. Şimdi herkes kadar sorumlu, çoğundan daha tedirginsin."
     },
     {
       "id": "SAD-T-10",
       "name": "TAYFA",
       "side": "Tayfa",
-      "effect": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+      "effect": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
       "flavor": "Eve götüreceğin hediyeyi kaybettin. Eli boş dönünce söylenecekler. Dönmezsen susacaklar. Söylenmelerine razısın."
     },
     {
@@ -1264,16 +1264,23 @@
     {
       "id": "SET-KL-01",
       "name": "KALKIŞ LİMANI",
-      "place": "San Cordelio",
+      "place": "Port Avanta",
       "effect": "Haritanın alt kenarında seçilen başlangıç sütununa hizala. Gemi bu kart üzerinde başlar. Kart Harita karesi değildir ve 52 Haritaya dahil değildir. İlk satırdan acil geri dönüşte gemi buraya dönebilir.",
       "flavor": "Halatlar çözülmeden önce her yol kolay görünür."
     },
     {
       "id": "SET-VL-01",
       "name": "VARIŞ LİMANI",
-      "place": "Saint Verena",
+      "place": "Santa Veda",
       "effect": "Haritanın üst kenarında seçilen Hedef Liman sütununa hizala. Bu kart Harita karesi değildir. Gemi o sütundaki son sıra kartına girince önce olayı, sonra İskorbütü çöz. Gemi batmadıysa ve İskorbüt temizse Liman Gecesi oynanır.",
       "flavor": "Rıhtım görünüyor. Sağlık sandalı şafakta gelecek."
     }
-  ]
+  ],
+  "canon": {
+    "queen": "Kraliçe Tesella",
+    "departure_port": "Port Avanta",
+    "destination_port": "Santa Veda",
+    "secret_organization": "Malum",
+    "authority": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json"
+  }
 }

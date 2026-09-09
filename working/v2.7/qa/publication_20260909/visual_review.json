@@ -1,0 +1,798 @@
+{
+  "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+  "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+  "status": "SELF_CHECK_PASS / OWNER_REVIEW_PENDING",
+  "pdf_sha256": {
+    "cards": "3eb6b291417bdefcbf5ed9f35a012738c12cc33f855e5a5d53bd586ff415c87f",
+    "book": "dde37e8dd7a2aa846e5e44d9d06a10f52ebcd834d885986de6c07c863277b91f"
+  },
+  "review_method": "All 121 complete card faces on 23 high-resolution contact boards; all 30 book pages on 15 spreads; all 46 imposed A4 pages on 12 boards. Automated exact native-text and geometry checks supplement visual inspection.",
+  "cards": [
+    {
+      "id": "KAR-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "İlk tarafsız gece istisnası ve Yakın Ufuk metni görünür; dürbün odağı açık."
+    },
+    {
+      "id": "KAR-02",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Sis koşulu ve Uzak Ufuk metni korunur; haritacı sesi ayrıdır."
+    },
+    {
+      "id": "KAR-03",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-04",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-05",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-06",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-07",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-08",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-09",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-10",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-11",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-12",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "İkna davranışına dayalı tat metni ve rota desteği birlikte okunur."
+    },
+    {
+      "id": "KAR-13",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-14",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-15",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-16",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-17",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-18",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Port Avanta zaman çizgisi yeni adla görünür; dönüş isteği açıktır."
+    },
+    {
+      "id": "KAR-19",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "KAR-20",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Karakter çizimi korunur; başlık, görev/yetenek ve tat metni çakışmadan okunur."
+    },
+    {
+      "id": "GUC-01A",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-01B",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-02A",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-02B",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-03",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Pusula/istek göndermesi korunur; uzun mekanik metin okunur."
+    },
+    {
+      "id": "GUC-04",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-05",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Tabut tahtası göndermesi tat satırında; kurtarma veya ek yetenek uydurulmaz."
+    },
+    {
+      "id": "GUC-06",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-07",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-08",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-09",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-10",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-11",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-12",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-13",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-14",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-15",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Şapka sözüne dayalı örtük gönderme ve oy etkisi ayrı okunur."
+    },
+    {
+      "id": "GUC-16",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-17",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Başlık 0,3 mm aşağı alındı; son kart görüntüsü ayrıca incelendi."
+    },
+    {
+      "id": "GUC-18",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Prens ve uzun emir şakası örtüktür; rota kısıtının kapsamı korunur."
+    },
+    {
+      "id": "GUC-19",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-20",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-21",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-22",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-23",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-24",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-25",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-26",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-27",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "GUC-28",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut eşya/etkileşim sahnesi korunur; kullanım zamanı ve etki ayrı, okunur alanlardadır."
+    },
+    {
+      "id": "ERZ-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Başlangıçta zorunlu aç ve gerçek Güç değildir başlığı görünür; son görüntü yeniden incelendi."
+    },
+    {
+      "id": "SAD-T-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-T-02",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-T-03",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-T-04",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-T-05",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-T-06",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-T-07",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-T-08",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-T-09",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-T-10",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-H-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-H-02",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-H-03",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-H-04",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "SAD-H-05",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Kişisel gerekçe ayrı tat alanında; tarafın ortak zafer koşulu tam ve okunur. Arka aynı Sadakat ailesindedir."
+    },
+    {
+      "id": "HAR-AD-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-02",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-03",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-04",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-05",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-06",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-07",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-08",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-09",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-10",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-11",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-12",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-13",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-14",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-15",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-16",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-17",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-18",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-19",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-20",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-21",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-22",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-23",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-24",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-25",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-26",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-27",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-28",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-29",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AD-30",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Uzun açıklama taşmıyor; başlık 0,3 mm aşağı alındı ve yeniden incelendi."
+    },
+    {
+      "id": "HAR-KY-02",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-03",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-04",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-05",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-06",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-07",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-08",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-09",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-10",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-11",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-KY-12",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AA-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AA-02",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AA-03",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AA-04",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AA-05",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-AA-06",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-FN-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-FN-02",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-FN-03",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "HAR-FN-04",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Mevcut harita sahnesi ve kimliği korunur; olay ile tat metni ayrıdır; ortak arka olay ipucu vermez."
+    },
+    {
+      "id": "SET-KL-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Port Avanta yer satırı ve harita dışı başlangıç açıklaması görünür."
+    },
+    {
+      "id": "SET-VL-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Santa Veda yer satırı, hedef sütun ve Liman Gecesi açıklaması görünür."
+    },
+    {
+      "id": "SET-KP-01",
+      "result": "SAME_OPERATOR_VISUAL_CHECK_PASS",
+      "observation": "Bağlayıcı Kaptan metni korunur; rota ve Suçlama ön seçimi ayrımları okunur."
+    }
+  ],
+  "card_board_count": 23,
+  "card_render_dpi": 210,
+  "card_board_sha256": {
+    "cards_map_01.jpg": "904f6180618a96705742d001568c2c9c88df311667c3cdc0e6cedc753a474b17",
+    "cards_map_02.jpg": "4be04b9c92d57b9c01ed93a3f1b9454f70b3c6620be1258b1b0057396a1b125d",
+    "cards_map_03.jpg": "dda399ae8b97415877ee7348835bb0009c6c9d28edf98ab656a6fae8ce7ee645",
+    "cards_map_04.jpg": "4cb591bbfe0ad08cd12e3516a9c0f89fa23b45cccda81fe966d53e281c3742de",
+    "cards_map_05.jpg": "b0a04fb778dfeca4d0d76aca6f69dd12cbb2e07dfef0554b498cc02b65527c42",
+    "cards_map_06.jpg": "b30ca53232fba1925d1d99441e98f75a9f158b177e30760bda05270b40c0c751",
+    "cards_map_07.jpg": "f8b6f3af5d4b070701aa44567725b1a953ebde3d17939afb965523d110a6958e",
+    "cards_map_08.jpg": "9c276569815b476a686b12678d31a8b151f4fa7ee864e25652a961d90f3e2c55",
+    "cards_map_09.jpg": "1adc3ce8521bbd25b9800dba67b2c3cbab446715337c7d451833ac0ed0fdbe2a",
+    "cards_poker_01.jpg": "3a67983f85b92ff1a427bcd43c66d481a1ed1b7f771cf19cca024a9ced04d07a",
+    "cards_poker_02.jpg": "7ed8fd15b6013a04c4777ce861897652b1507b6986dd2f72b20548325abe9f92",
+    "cards_poker_03.jpg": "f4bbbc75b442f28359df524358096b86aeb84dc77aefa57dd9bef567718cae22",
+    "cards_poker_04.jpg": "ac3f52c515c37648b9f099c80968153d8e9ffd5054d1339f4b2b602e30797ae6",
+    "cards_poker_05.jpg": "559d3e9b41cb0d9d723e072ae15c021ba1ee7bea7ac57f4b8d9901105630f298",
+    "cards_poker_06.jpg": "5d6f0bb85fb1005a4348f653667f5ddad85faa472c489b9e0d595064ddb355ec",
+    "cards_poker_07.jpg": "33add234d6ea9c22c842f4240466bf53f12ba4a5f3f942a7ed6b4a3397ffdef9",
+    "cards_poker_08.jpg": "f306a94f4b54bddcce3d7f52c15504edd6e32073f137414534263855390fe7d9",
+    "cards_tall_01.jpg": "2303496a577045e99e3db188f5018c099983d3f8e26e75634b140e60b1d17af9",
+    "cards_tall_02.jpg": "f704b3c5774885b0a5cf40af5c21583fcdbf91a26ba8765ba24d339a6eb6f140",
+    "cards_tall_03.jpg": "97142755912ba077fdfe67d843b933fca247aa2cfcd3d5465c8b647293ab02d9",
+    "cards_tall_04.jpg": "af42cac4f8eecd5425138dc30452d2438f485966afcb07c8056c26cc2babae8a",
+    "cards_tall_05.jpg": "94040a596a2b80a743149a1d730e66137e7bb3ad4776972e5cd59f54c64cbc1e",
+    "cards_tall_06.jpg": "5ac711be12623d506754aa54579261262b81ce0ae19020ed4e3f40708a2d4118"
+  },
+  "final_clearance_rechecks": {
+    "clearance_038.png": "fd3ac2a71217ef1d9e015c736bdd0a0c2ae3ecfd0dfb2d690ae0d9401e2ed94a",
+    "clearance_050.png": "f21c6bb7221feb06e543b475f426e4e5dccbfa50b7036f934a1cfb549c838f87",
+    "clearance_096.png": "fa7fe7b9df398c59eb196e75fce179c3274232d90fbe780beabd01c3f48fc0af"
+  },
+  "clearance_change": {
+    "changed_front_indices": [
+      38,
+      50,
+      96
+    ],
+    "unchanged_fronts": 118,
+    "reason": "0.3 mm title clearance on GUC-17 and HAR-KY-01; explicit mandatory-start metadata on ERZ-01"
+  },
+  "book_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "book_spread_dpi": 120,
+  "book_spread_sha256": {
+    "book_spread_01.jpg": "cc1a6670488df0bf412ad0879323b77f26e66ba84479687a8bb557579e2890fe",
+    "book_spread_02.jpg": "31043774042449e24b66f22d521948739cec1830f80f98c8e978645766178952",
+    "book_spread_03.jpg": "02bf7ee8ec887576ce78216e8425b7088f7be554970021692ec976b76124a8d4",
+    "book_spread_04.jpg": "4f1d9c0a62f5700740b64edc8d8358486381ff6e9eb8b34a21fffe6e35862eb9",
+    "book_spread_05.jpg": "a82daff3208682a0a052d6e574f12fa1bc08c56782b52d2ad2efe52aaf05d3ab",
+    "book_spread_06.jpg": "c8fc83d0163595345b38173495b449eabddd534c82c995f9c475bc2900795c28",
+    "book_spread_07.jpg": "a6c223488f029b57cb0e3ab76174ab4db9bcaccc2888d38b12ea90067d0533e1",
+    "book_spread_08.jpg": "f85ddb63a5097883fbc43edad630a2efadf1bce69eed40c15f17c2dd7f3642c6",
+    "book_spread_09.jpg": "ff67564b6efb533db1327db63ed84e41b88aa96c626322c9774b885a68679a6a",
+    "book_spread_10.jpg": "f6250ada6bbf2aac9b7284b3448684d21317bcee8bdfb70668dd403d385f1bb0",
+    "book_spread_11.jpg": "51150d8e01f2ca324813abedf8b051cf2f27e752d88c32ddebe414541729b455",
+    "book_spread_12.jpg": "55a008d36ada663a43cea10199604a3bd0983e167b31eefbd0cc4941150ffba5",
+    "book_spread_13.jpg": "9aab7faf4ed85893af5f6510de133129237d63549b58cafd3f34685dc15fde0e",
+    "book_spread_14.jpg": "70e66dc4fb1e5b610a47c780f5951778baee28e01139cdd6d0ddd3cb6f41ab39",
+    "book_spread_15.jpg": "e0c1a4d074e53ad5d4fbef470a38d8fcc31e189df45b197a3a08e1c9bd20213e"
+  },
+  "final_book_page_4_recheck": {
+    "render_dpi": 155,
+    "sha256": "45e295a8e2d95b16941d334ed9828084f19d2c04295fdc3f107546c0b2b3022f",
+    "finding": "The 5×5 diagram uses the actual common backs: 21 visually identical Sea/Rock cells, two palm islands and two single lighthouses. The destination is aligned outside the map; no sixth row or revealed event is implied."
+  },
+  "book_findings": [
+    "Only FOULWAKE on cover; native title is clear.",
+    "TOC and 18 PDF destinations agree.",
+    "OKU/YAP panels, repeated table headers and differentiated examples support moderator use.",
+    "All 20 character entries fit on page 21; long power entries flow across pages 22–23.",
+    "Optional story occupies pages 25–27; quick reference is on page 28.",
+    "No blank overflow page; page 30 is an intentional note page for an even duplex count."
+  ],
+  "imposed_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "imposition_board_dpi": 80,
+  "imposition_board_sha256": {
+    "sheets_01.jpg": "208366feb6455a3eac40f744f78bc5c230ab9b65f1a1bba1859a4197bcaf2b47",
+    "sheets_02.jpg": "5fcded215fb151e04274973191ed1b125dbfa6d80edde15a2647441fdc376d1c",
+    "sheets_03.jpg": "ba7e3364ee9a51aa3601707dc6b8c0a9dabd061cb11376290c29d38cf509d627",
+    "sheets_04.jpg": "ebcce563c9ea379b078bd1cb5f27e781283d8c6b1999de9f6884a552a3297934",
+    "sheets_05.jpg": "3a0b17cbbfe4529e97d8ac5177d7ad550c8e0b4f6fad9c6aef6dddf928b2f5f5",
+    "sheets_06.jpg": "e7b4640c706d86b3ef99d07b72ba213ee3a45cb4b019e080f6289d5c90479254",
+    "sheets_07.jpg": "006be8eea1fa31895909868e350826aee9afd48c1aede43d51f2f14c68b6d7c0",
+    "sheets_08.jpg": "f0e61bdf3ee646c75e0a65214915c2d7286295eebc089bc7cda3dc9ce0705f50",
+    "sheets_09.jpg": "51de679dab05ad9068ee5cb9ec1c893cd23e0fbf881504e92cc4da3f67adab29",
+    "sheets_10.jpg": "ccaa4182f127dfcafa4ae74724161eac9705604d3fa5c522808f06970b171bd6",
+    "sheets_11.jpg": "62cf48b64b8c08b7b98d5306c902178bba0a105d88006ac7605c672664a796a0",
+    "sheets_12.jpg": "cfc7d654bde5119c163f48d9af750b5384d8744f192711665469c993ad2c7c09"
+  },
+  "imposition_findings": [
+    "All 23 front/back sheet pairs present; empty final slots mirror correctly.",
+    "Poker fronts and backs have complementary rotations for long-edge duplex.",
+    "Sheet 12 correctly pairs Erzak with Power back while the remaining five cards use Loyalty backs.",
+    "All six island backs are the same sandy palm scene.",
+    "All four lighthouse backs contain a single upright tower.",
+    "No missing image, overlapping trim or detached duplicate subject was observed."
+  ],
+  "limits": [
+    "Digital inspection by the producer; not independent art acceptance.",
+    "No physical printer, paper-opacity or color-profile proof.",
+    "No human playtest or measured claim that the game became more fun.",
+    "No claim that every possible pixel defect can be excluded."
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+  "status": "PASS",
+  "baseline": "c68d7bb931d9f4fb54deba7071a680d71e75fa36",
+  "branch": "v2.7-design",
+  "files": 46,
+  "changed_paths": [
+    "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+    "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+    "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
+    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+    "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+    "working/v2.7/README_CURRENT_v2.7.md",
+    "working/v2.7/publication_20260909/README.md",
+    "working/v2.7/publication_20260909/assets/COVER.png",
+    "working/v2.7/publication_20260909/assets/GUSTO_CABIN.png",
+    "working/v2.7/publication_20260909/assets/PORT_AVANTA.png",
+    "working/v2.7/publication_20260909/fonts/Alegreya-Black.ttf",
+    "working/v2.7/publication_20260909/fonts/Alegreya-Bold.ttf",
+    "working/v2.7/publication_20260909/fonts/Alegreya-Italic.ttf",
+    "working/v2.7/publication_20260909/fonts/Alegreya-Regular.ttf",
+    "working/v2.7/publication_20260909/fonts/OFL.txt",
+    "working/v2.7/publication_20260909/fonts/SOURCE_METADATA.txt",
+    "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+    "working/v2.7/qa/publication_20260909/artifact_versions.json",
+    "working/v2.7/qa/publication_20260909/book.py",
+    "working/v2.7/qa/publication_20260909/book_manifest.json",
+    "working/v2.7/qa/publication_20260909/card_layout.py",
+    "working/v2.7/qa/publication_20260909/cards.py",
+    "working/v2.7/qa/publication_20260909/cards_manifest.json",
+    "working/v2.7/qa/publication_20260909/clearance_change.json",
+    "working/v2.7/qa/publication_20260909/copy_changes.json",
+    "working/v2.7/qa/publication_20260909/cover_prompt.txt",
+    "working/v2.7/qa/publication_20260909/delivery_files.json",
+    "working/v2.7/qa/publication_20260909/generation_provenance.json",
+    "working/v2.7/qa/publication_20260909/research.md",
+    "working/v2.7/qa/publication_20260909/review.md",
+    "working/v2.7/qa/publication_20260909/scope_validation.json",
+    "working/v2.7/qa/publication_20260909/sync_sources.py",
+    "working/v2.7/qa/publication_20260909/verification.json",
+    "working/v2.7/qa/publication_20260909/verify.py",
+    "working/v2.7/qa/publication_20260909/vignette_prompts.json",
+    "working/v2.7/qa/publication_20260909/visual_review.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md",
+    "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
+    "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+  ],
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md"
+    ],
+    "allowed_globs": [
+      "working/v2.7/publication_20260909/**",
+      "working/v2.7/qa/publication_20260909/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      ".github/",
+      "working/v2.7/visual/references/"
+    ],
+    "max_changed_files": 96,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".pdf",
+      ".png",
+      ".jpg",
+      ".txt",
+      ".ttf",
+      ".otf"
+    ],
+    "binary_files_allowed": true
+  },
+  "pinned_inputs_unchanged": [
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
+    },
+    {
+      "path": "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
+      "git_blob": "9ea474db94c2d0215afda91efd16365148fd0f02"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+      "git_blob": "531d208e203ddee927a6e963de32137e40353ebe"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267"
+    },
+    {
+      "path": "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
+      "git_blob": "b53e9243561e09ff8162c8a251d752358bc0dac3"
+    }
+  ],
+  "locked_v26_tree": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
+  "governance_production_delta": [],
+  "task_activation_baseline": "d4072fbff19aeae3508801b733164fdae8517e7a",
+  "preceding_coordination_commit": "c68d7bb931d9f4fb54deba7071a680d71e75fa36",
+  "preceding_coordination_scope": [
+    ".github/workflows/foulwake-publication-transfer.yml",
+    "governance/v4/evidence/PUBLICATION_BINARY_TRANSFER_20260909.json",
+    "governance/v4/publication_transfer_20260909.py"
+  ]
+}

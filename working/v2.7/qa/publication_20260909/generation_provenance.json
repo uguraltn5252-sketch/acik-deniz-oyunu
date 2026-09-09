@@ -1,0 +1,45 @@
+{
+  "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+  "tool": "image_gen.imagegen",
+  "model_version": "NOT_EXPOSED",
+  "assets": [
+    {
+      "path": "working/v2.7/publication_20260909/assets/COVER.png",
+      "imagegen_execution": "exec-49055fa4-5df7-430a-89ae-294468a91950",
+      "sha256": "a82be3b91eaac8b2d99c35418b98b37b40f3533567578ccf71f260e191c566c9",
+      "pixels": [
+        1054,
+        1492
+      ],
+      "bytes": 3356362
+    },
+    {
+      "path": "working/v2.7/publication_20260909/assets/PORT_AVANTA.png",
+      "imagegen_execution": "exec-326f689a-c105-49a7-8814-c60e43c39ecc",
+      "sha256": "6f02a02d9c9fe3ad10a1165fe6f2689bea506d102b5b5464120899587f3931ff",
+      "pixels": [
+        1448,
+        1086
+      ],
+      "bytes": 3482616
+    },
+    {
+      "path": "working/v2.7/publication_20260909/assets/GUSTO_CABIN.png",
+      "imagegen_execution": "exec-d9a0874c-80f8-4cc5-940a-b7ec48d38c48",
+      "sha256": "66988938257c07b8bf40f5e2cc03c0aeb751e0626221557a926bc008ec078135",
+      "pixels": [
+        1448,
+        1086
+      ],
+      "bytes": 3522623
+    }
+  ],
+  "prompt_sources": [
+    "working/v2.7/qa/publication_20260909/cover_prompt.txt",
+    "working/v2.7/qa/publication_20260909/vignette_prompts.json"
+  ],
+  "cover_refinement": "A first cover candidate was rejected for pseudo-writing. The selected cover was regenerated/refined with explicit blank objects and no text; requested high resolution was not the actual output resolution. The final original illustration is placed at 88 mm width, above 300 ppi, within a full-page vector cover design.",
+  "reference_use": "Owner images guided ink, muted color, parchment, hierarchy and restrained humor. Their pixels, characters, scene layout and invented rules were not inserted into this publication.",
+  "native_type": "All printed lettering and rules are native PDF text, not image-generated copy.",
+  "retained_card_art": "All 121 prior original illustration plates and seven shared backs remain byte-identical to the task baseline. No map identity was regenerated."
+}

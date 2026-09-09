@@ -1,73 +1,11 @@
-# FOULWAKE v2.7 - Anlatı / Mekanik Sınır Doğrulaması
+# FOULWAKE — Anlatı ve kural ilişkisi
 
-**Durum:** RECORDED PASS / REPRODUCTION PENDING — DRAFT / NOT LOCKED  
-**Tarih:** 20 Ağustos 2026  
-**Kaynak:** v2.6 STABLE / LOCKED ve doğrulanmış v2.5 mekanik kart JSON'u  
-**Release kapısı:** `QA-001 OPEN`
+9 Eylül 2026 · FOULWAKE-PUBLICATION-REDESIGN-001 · SAME_OPERATOR_SELF_CHECK
 
-> **25 Ağustos 2026 Baş Editör dispozisyonu:** Bu kayıt tarihsel bir
-> karşılaştırma iddiasıdır; bağımsız PASS değildir. Kilitli v2.6
-> `CARD_BASELINE.md` içindeki `GUC-22 = Bayat Peksimet` kaydı ile aktif v2.7
-> Card Texts içindeki `GUC-22 = Kaptanın Çatlak Kupası`,
-> `GUC-23 = Bayat Peksimet` eşlemesi çelişir. Aşağıdaki Güç kimliği/effect PASS
-> satırları exact baseline/script ile yeniden üretilene kadar `SRC-002 OPEN`
-> ve `QA-001 OPEN` altında bağlayıcı olmayan kayıt olarak okunur. Kimlik veya
-> effect sessizce değiştirilmez.
+Kraliçe Tesella, Port Avanta, Santa Veda ve Malum güncel adlardır. Arden, Veyr ve Gusto korunur. Sefer heyetinin sorumluluğu açılışın ilk paragrafında yer alır. Tesella’nın siyasi etkisi, kalkış limanının ticareti ve varışın karantina gerilimi anlatı içinde işlev kazanır. Malum gizli örgüttür; belirli üyeler, ortak emir veya Gusto’nun akıbeti açıklanmaz.
 
-## Kanıt sınırı
+Hikâye metni, çerçeve, tam kural kitabı ve 121 kartın görünür alanları birlikte kontrol edilir. Önceki gece terminolojisi ve kaptan oylama açıklığı korunur. Kart kimlikleri, adetleri, mekanik parametreleri ve bütün Güç etkileri değişmez. Güncel karşılaştırma [yayın kontrolünde](qa/publication_20260909/review.md) kayıtlıdır.
 
-Bu dosya önceki karşılaştırmanın kayda alınmış sonucudur. Karşılaştırmayı çalıştıran
-script, sabit baseline JSON'u, komut ve ham çıktı hashleri güncel GitHub ağacında
-bulunmadığı için sonuç bağımsız olarak yeniden üretilemez. Bu kayıt üretim metni
-değildir ve exact candidate'a bağlı Simülasyon attestation'ı oluşmadan bağlayıcı
-release `PASS` sayılmaz.
+Dört küçük gönderme, beş Hain gerekçesi ve on Tayfa gerekçesi korunur. Bunlar ek kazanma şartı veya zorunlu rol yapma yönergesi değildir. Moderatör yeni gizli ipucu vermez; görseller bir suçluyu belirlemez.
 
-## Kapsam
-
-- Kural kitabının bölüm akışı korundu.
-- Yalnız `3.1`, `3.3`, `3.4` anlatı notu, `3.6` ve `17. Siyah Mühür` hikâye katmanı güncellendi.
-- Karakter ve Güç kartlarında yalnız görünen ad/flavor alanları güncellendi.
-- Harita, Sadakat, Çürümüş Erzak ve yardımcı kartlar değiştirilmedi.
-
-## Kayda alınmış kart karşılaştırması
-
-| Denetim | Sonuç |
-|---|---|
-| Karakter sayısı | 20 / PASS |
-| Güç sayısı | 30 / PASS |
-| Karakter kimlikleri | 20 benzersiz, baseline ile aynı / PASS |
-| Güç kimlikleri | 30 benzersiz, baseline ile aynı / PASS |
-| Karakter `effect` alanları | Birebir aynı / PASS |
-| Güç `effect` alanları | Birebir aynı / PASS |
-| Zamanlama, grup, başlangıç havuzu ve desteye dönüş alanları | Birebir aynı / PASS |
-| Yeni veya silinen kart | Yok / PASS |
-
-## Bilinçli metin güncellemeleri
-
-Karakter flavor alanı:
-
-- `KAR-14` Fare Nazırı
-- `KAR-18` Karayı Özleyen
-
-Güç kartı görünen adı:
-
-- `GUC-01A/B` Can Simidi -> Mantar Can Halkası
-
-Güç kartı flavor alanı:
-
-- `GUC-01A/B`
-- `GUC-06`
-- `GUC-15`
-- `GUC-20`
-- `GUC-24`
-- `GUC-25`
-
-## Mekanik bütünlük sonucu
-
-Kaptan, rota oylaması, Sadakat, Hain tanışması, Ufuk bilgisi, İskorbüt, kurtarma, Gövde hasarı, Güç destesi ve Liman Gecesi mekanikleri değişmemiştir. `Mantar Can Halkası` yalnız görünen ad güncellemesidir; `GUC-01A/B` etkisi ve iki kartlık adedi aynıdır.
-
-v2.6 `releases/v2.6/` ağacı yerinde değiştirilmemiştir. Bu çalışma yalnız `working/v2.7/` altında tutulur ve kullanıcı açıkça kilitlemeden STABLE / LOCKED olamaz.
-
-`QA-001` ancak sürümlü karşılaştırma scripti, sabit baseline, çalıştırma komutu,
-ham çıktı ve SHA-256 kayıtları exact candidate'a bağlandığında kapanır.
-
+Bu görev yeni oyun simülasyonu veya insan denemesi gerçekleştirdiğini ileri sürmez. Önceki test sonuçları yeni sürümde yeniden çalıştırılmış gibi sunulmaz. Önceki raporun tamamı [Git geçmişinde](https://github.com/uguraltn5252-sketch/acik-deniz-oyunu/blob/d4072fbff19aeae3508801b733164fdae8517e7a/working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md) korunur. Yeni anlatının oyuncu eğlencesine etkisi henüz insanlarla ölçülmemiştir.

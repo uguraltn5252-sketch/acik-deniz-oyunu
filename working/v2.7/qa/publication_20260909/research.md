@@ -1,0 +1,13 @@
+# Yayın tasarımının kaynakları ve kararları
+
+9 Eylül 2026 · FOULWAKE-PUBLICATION-REDESIGN-001
+
+Proje sahibinin üç görseli çizgi, renk, yüzey ve bilgi hiyerarşisi için incelendi. Gravür çizgisi, kuru mizah, sıcak kâğıt ve başlık şeritleri alındı; aynı kaptan, aynı yerleşim ve aynı sahneler aktarılmadı. Referanslarda görünen puan, hazine, eylem ve oyun akışı ifadeleri FOULWAKE kuralı değildir ve kullanılmadı.
+
+**Tipografi.** Alegreya'nın kitap metni için ritimli serif yapısı ve geniş dil kapsamı, aynı aile içinde başlık/gövde ayrımı yapmaya uygun bulundu. Türkçe karakterler gerçek dosyalarda ve son PDF'lerde denetlendi. Kaynaklar: [tasarımcının deposu](https://github.com/huertatipografica/Alegreya), [Google Fonts aile kaydı](https://fonts.google.com/specimen/Alegreya). Resmî değişken fontlardan 400, 700, 900 ve italik 400 örnekleri oluşturuldu; benzersiz PostScript adları korundu. OFL lisansı ve kaynak metadata dosyaları teslimde yer alır. Fontun kendisi 18. yüzyıldan kalma diye sunulmaz; dönem hissine uygun çağdaş yayın tercihi yapılmıştır.
+
+**Çift taraflı baskı.** A4 portre yaprakta uzun kenardan çevirme, arka kart konumlarının yatay yansımasını gerektirir. Görsellerin kendisi aynalanmaz. Bu geometri bütün 121 eşleşmede sayısal olarak kontrol edildi. Yazıcı seçeneğinin cihaz/sürücüye bağlı olduğu, [Adobe çift taraflı baskı açıklamasında](https://helpx.adobe.com/uk/acrobat/desktop/print-documents/print-duplex-and-multi-page-document/print-double-side.html) belirtilir. Ölçekleme ve sayfa seçimi için [Adobe PDF baskı açıklaması](https://helpx.adobe.com/reader/desktop/print-pdfs.html) esas alındı. Son kullanıcı yönergesi A4, gerçek boyut/%100 ve uzun kenardır; ilk yaprakta fiziksel eşleşme kontrolü istenir.
+
+**Uygulanan tasarım kararı.** Kitapta hafif, temiz krem zemin ve koyu mürekkep metin, kartlardaki daha yoğun gravür yüzeyle akrabadır. Metin zemininin sakin tutulması ve başlıklarda Alegreya Black kullanılması editoryal tasarım kararıdır; insan deneyiminde ölçülmüş üstünlük iddiası değildir. Yeni kapak, Port Avanta ve Gusto kamarası sahneleri özgündür. Kart illüstrasyonları, tek fener ve palmiye Adası korunur. Kartlara kullanıcı referansını kırpıp yapıştırma yolu kullanılmadı.
+
+Geçici PDF aktarımında [GitHub workflow izinleri](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#permissions) ve [resmî checkout eylemi](https://github.com/actions/checkout) incelendi. Yalnız ilgili işte depo içeriği yazma izni verildi; mevcut governance iş akışının salt okunur izni değiştirilmedi. İşlem kapanışta çalıştırılabilir kullanımdan kaldırılır.

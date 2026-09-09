@@ -1,0 +1,439 @@
+{
+  "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+  "source_baseline": "d4072fbff19aeae3508801b733164fdae8517e7a",
+  "class": "SAME_OPERATOR_SELF_CHECK",
+  "status": "PASS",
+  "failed": [],
+  "checks": {
+    "ids_characters": {
+      "pass": true,
+      "detail": null
+    },
+    "ids_powers": {
+      "pass": true,
+      "detail": null
+    },
+    "ids_provisions": {
+      "pass": true,
+      "detail": null
+    },
+    "ids_loyalties": {
+      "pass": true,
+      "detail": null
+    },
+    "ids_maps": {
+      "pass": true,
+      "detail": null
+    },
+    "ids_utilities": {
+      "pass": true,
+      "detail": null
+    },
+    "authorized_copy_delta_only": {
+      "pass": true,
+      "detail": [
+        {
+          "id": "KAR-18",
+          "field": "flavor",
+          "before": "San Cordelio'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor.",
+          "after": "Port Avanta'ya kadar eve dönmek istedi. Şimdi eve giderken de karaya çıkmak istiyor."
+        },
+        {
+          "id": "SAD-T-01",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SAD-T-02",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SAD-T-03",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SAD-T-04",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SAD-T-05",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SAD-T-06",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SAD-T-07",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SAD-T-08",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SAD-T-09",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SAD-T-10",
+          "field": "effect",
+          "before": "Gemiyi Saint Verena'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır.",
+          "after": "Gemiyi Santa Veda'ya ulaştırın. İskorbüt etkinse önce Adaya uğrayın. Liman Gecesi sonunda gemi yüzüyor ve en az bir Tayfa hayattaysa takımın kazanır."
+        },
+        {
+          "id": "SET-KL-01",
+          "field": "place",
+          "before": "San Cordelio",
+          "after": "Port Avanta"
+        },
+        {
+          "id": "SET-VL-01",
+          "field": "place",
+          "before": "Saint Verena",
+          "after": "Santa Veda"
+        }
+      ]
+    },
+    "total_121": {
+      "pass": true,
+      "detail": null
+    },
+    "captain_exact_unchanged": {
+      "pass": true,
+      "detail": "dc3ca70f2b84d77eccfc6b8443d172c88a32db4808fe70538e3c1b4cdde2db56"
+    },
+    "four_allusions_unchanged": {
+      "pass": true,
+      "detail": null
+    },
+    "canon_scan_pass_1": {
+      "pass": true,
+      "detail": {
+        "files": 4,
+        "hits": []
+      }
+    },
+    "canon_scan_pass_2": {
+      "pass": true,
+      "detail": {
+        "files": 11,
+        "hits": []
+      }
+    },
+    "front_exact_copy": {
+      "pass": true,
+      "detail": {
+        "fields": 363,
+        "mismatches": []
+      }
+    },
+    "front_metadata": {
+      "pass": true,
+      "detail": []
+    },
+    "card_safe_area": {
+      "pass": true,
+      "detail": []
+    },
+    "121_original_art_sources_unchanged": {
+      "pass": true,
+      "detail": null
+    },
+    "seven_shared_backs_unchanged": {
+      "pass": true,
+      "detail": {
+        "instances": {
+          "BACK_SUPPORT": 3,
+          "BACK_LIGHTHOUSE": 4,
+          "BACK_SEA_ROCK": 42,
+          "BACK_CHARACTER": 20,
+          "BACK_LOYALTY": 15,
+          "BACK_POWER": 31,
+          "BACK_ISLAND": 6
+        },
+        "failures": []
+      }
+    },
+    "duplex_121_pairs": {
+      "pass": true,
+      "detail": []
+    },
+    "imposed_exact_copy": {
+      "pass": true,
+      "detail": []
+    },
+    "trim_and_bleed": {
+      "pass": true,
+      "detail": []
+    },
+    "book_source_units": {
+      "pass": true,
+      "detail": {
+        "units": 714,
+        "missing": []
+      }
+    },
+    "cover_only_title": {
+      "pass": true,
+      "detail": "FOULWAKE"
+    },
+    "book_navigation": {
+      "pass": true,
+      "detail": [
+        [
+          1,
+          "1. Bir dakikada oyun",
+          3
+        ],
+        [
+          1,
+          "2. Moderatörün oyun öncesi hazırlığı",
+          4
+        ],
+        [
+          1,
+          "3. Seferi buradan başlat",
+          6
+        ],
+        [
+          1,
+          "4. Normal sefer - masada açık kalacak bölüm",
+          10
+        ],
+        [
+          1,
+          "5. Oylamalar ve gece kararları",
+          12
+        ],
+        [
+          1,
+          "6. Gemi, Ufuk ve hareket",
+          13
+        ],
+        [
+          1,
+          "7. İskorbüt",
+          15
+        ],
+        [
+          1,
+          "8. Suçlama, İsyan ve Kamara",
+          15
+        ],
+        [
+          1,
+          "9. Ölüm, mahsur kalma ve kurtarma",
+          16
+        ],
+        [
+          1,
+          "10. Güçler",
+          17
+        ],
+        [
+          1,
+          "11. Kader Zarı ve uygun hedef",
+          17
+        ],
+        [
+          1,
+          "12. Liman Gecesi - kısa referans",
+          18
+        ],
+        [
+          1,
+          "13. Harita kartları referansı",
+          19
+        ],
+        [
+          1,
+          "14. Karakter kartları referansı",
+          21
+        ],
+        [
+          1,
+          "15. Güç kartları referansı",
+          22
+        ],
+        [
+          1,
+          "16. Nadir etkileşimler - gerektiğinde bak",
+          24
+        ],
+        [
+          1,
+          "17. Malum — isteğe bağlı arka plan",
+          25
+        ],
+        [
+          1,
+          "Masada hızlı hatırlatma",
+          28
+        ]
+      ]
+    },
+    "canon_scan_pass_3": {
+      "pass": true,
+      "detail": {
+        "pages": 76,
+        "hits": []
+      }
+    },
+    "cards_prepress": {
+      "pass": true,
+      "detail": {
+        "pages": 46,
+        "minimum_image_ppi": 300.08,
+        "low_resolution": [],
+        "used_fonts": [
+          "Alegreya-Black",
+          "Alegreya-Italic",
+          "Alegreya-Regular"
+        ],
+        "embedded_fonts": {
+          "AAAAAA+Alegreya-Regular": 17152,
+          "AAAAAA+Alegreya-Black": 17672,
+          "AAAAAA+Alegreya-Italic": 17340
+        },
+        "page_render_sha256": [
+          "8271b8a5a719096a816d471bd1170fd032ed99cce92db2fc86b33de9a875eea6",
+          "4a3768f1ed95824e347ee50e852c3a49ec88c13682fbaf6a07660c79e6f64330",
+          "63705f541bd2f22bf2702c8911e62d05e169926dfff772813a44d35867d8d5e3",
+          "26aa9ae471b5de4c38b77f14728bf05726a2fb211a5660a2ef2e9073a46830a9",
+          "97f1de6a624839ad66d8e83bc13ed627d0faff30da5c76c0b2de2478f799794d",
+          "a29b03e139b4ee199963755d61c76f8e921eb526545224c3483547af32a46c56",
+          "073857b3e8b1654d5e27bc8003f787d785233f90095ace3045f40380cfe6de8e",
+          "96c957e4f4800cfb693e0f16303c6e4cdeb09739757ae20a01b3cdb2222e1f24",
+          "97a3b9a66a894e6b703d11bd942447733baff2b1ed70a41a7e8ed483da212771",
+          "e6d9a2df1a2541b964a5a04c0637f09fa9e8803d898fb6f0a326006d9e36fce1",
+          "f522ade6f50f3b1abbd8dc9f36c466ecb2d0c11c4c62d8ae2f42ada8fb9f86b6",
+          "949bbff3410f94c83eb9f6624d0e080657f9d5ad520f6e0af0959d9621eaa821",
+          "011f498baca5aa39aa272da45854d1906956496e31f61c2ccb2968de8369ec96",
+          "d0f905e79c032e0693c6764e4ef262fc51c6193a686d107f080c23c2c73e7e07",
+          "058321ffc9eb55e5ecf61687deaa09ba4ecb976a243d9d09b40b2915aa714ac4",
+          "b162512129dc396a04fbcec75f0ccc3f39d5bd99f0bb1467b88ba54e75f4f714",
+          "994283bb646b8cc9b1c3cf6d48fa3e448024fecc83136c4de72fef6a71c7a93b",
+          "fc965ef256ab80dbb2098d1f576fafc8bf24fab8bcdc41cdbf8a04a34d956208",
+          "6c0294e5b368ee478590f48582b2f9e08f3f68a674e97b677ace3b1c31ddb6f4",
+          "248e52e5f005ee235398746d8e1835373e3b9168c3868d2db1e8fd53fdd54523",
+          "526a74a1cc04a3cc9eda0bcf3ed9ad41468e7a87281355e1071f120d8168bae7",
+          "21a5f74c65cdcf64b3907a46f6694a1f5e627dfadf56a55bde16d1a3c0c26313",
+          "d9eafbc1a553312b1778d4ecbd23f97b6c91927d93ed1752ec443c98c82585a4",
+          "2e48f80f23b846ae5ebe40fbd357440affe84a82c888433913925638f63a3ba3",
+          "00022149365129b6d2d48c88155f1d6332edaea1cbfafa5b7269a152b6687797",
+          "04c25c09489f14469497251b1ae42e266547c14e1714168909e244359c300539",
+          "991f373a43d423aa79819cb26f51b95e5a9c1ff099815982d90ac37ff27d04d5",
+          "3bd2a2c021dec19ebadb93c10c00dd9eb5a56241e68f84a809f683bb8de831f7",
+          "23b1d5793f588f22888b0b03e43a1e364989ea012e578f3af516484953553093",
+          "ba44c39a43cdecec216725defb90c256067c04610318b10da9486310d52e1073",
+          "8dc05d4b9156d8358524d1d7e28c2dbbd0cb138a6ecc252ffa256f1d192832d6",
+          "95d3b9e19ba824f3b82f4b662f1cf05f6f4b38811da62a70e5a676ec9ca9329f",
+          "48acc634096a289eb24009fd322ca33d513c4b102beb8496d97181c8f2c03c1c",
+          "b055f160755db8658b8379d33f2414a4161b9e5f1cb42536da011c482023c095",
+          "576b03573a26330e64c46f27406e6d5562b4f11820d1a3db918be2999763b25e",
+          "dda0ed457db7bb682cefaa5a01d52218a0162ffc997c7a44c3c900baa505e80a",
+          "5f5f29681dc8da9a80cdc00378e72b6d16f98b1bba47e4177b057a7206b0ca06",
+          "8272e72a1415628bda7d8402f9dd3459ea54e0268382f409b23217be188e17b2",
+          "1dc7574db2f23f87785eb0b03cceebe9ef5ad636f69163fe89761599365dd83c",
+          "928baf5dd41687462779ec514322be656bcb2d48e1aae948db4d86ca8ace34f0",
+          "ba56c59e3efde47597853da86a5205dd62af024a41fb1654bee506f2faedecb1",
+          "7a3d4e4e6624c5195f86b6ead16f9bdec3d416f7e6daa6f9bdd7223c6ac6fc77",
+          "1943ba24f7082e87e34e897874e4bf0c495dc65fe3abaaf4bd3c247a7bb9d6cf",
+          "c6a0651ab6c5013f45a7d16dfd8263e77f4be6fc38797943e903365ab05a3378",
+          "9d0bd87c0f5d1699e4d0e5146686315a4a987f666eda44a900cba7905b4c3830",
+          "ded6ebc1742efd4c633a52c392762c4ef490b803386d0e21c1fa3dd194ec6197"
+        ],
+        "bad_glyph_pages": [],
+        "non_a4_pages": [],
+        "preferences": "<</PrintScaling/None/Duplex/DuplexFlipLongEdge>>"
+      }
+    },
+    "book_prepress": {
+      "pass": true,
+      "detail": {
+        "pages": 30,
+        "minimum_image_ppi": 304.22,
+        "low_resolution": [],
+        "used_fonts": [
+          "Alegreya-Black",
+          "Alegreya-Bold",
+          "Alegreya-Italic",
+          "Alegreya-Regular"
+        ],
+        "embedded_fonts": {
+          "AAAAAA+Alegreya-Black": 16828,
+          "AAAAAA+Alegreya-Bold": 16968,
+          "AAAAAA+Alegreya-Regular": 16860,
+          "AAAAAA+Alegreya-Italic": 17176
+        },
+        "page_render_sha256": [
+          "52bdb633096dad18ee30d366e9abe73b07f8b81431c8b2dd536a2880c87f48a2",
+          "535a7f9b21567c9b5403ec75d754d93cfa57eb46e964f47470a18c3fcfa63f33",
+          "2c13a27b193182e2f063a71f4b27f0e2ef5814d8be70b894dc4ac86ffb485ebd",
+          "0aa89f562e0397611634db21b94938003931a92318af4afe38f5947c68eeb3ca",
+          "a99e6c7bb0c78fec08d22774ca68a71035a64335f6ac5535ff8609a5acdaa78f",
+          "796563250aecc4dfe0f40ec9b3a1e84c168ea79aed6279861638c177eea6d788",
+          "070f1e0e45e16600c9d59b0e970f31630c4464f3dd49c6467ed08be0f445456a",
+          "0f765eb3fb83084aafbbac7f55dadee4cd3bd435e4191342b7cbe7b4e6f52955",
+          "f6e0dbe5a55c7a4ad536f2e62f468b6683f876c0004fbfec6558f2eb721a14d7",
+          "48037b12849670d19500d3f451af679e1d65dc06690acc5c4446891eeafb1ff5",
+          "6230a5982b3172c9a089ceccd83ddb2b335b611b105c192e960d1183aafc10e7",
+          "bf108eaa3fff2ef12e7a644a75448f74004aec17ceeec6fc1dbe96cc511bf52d",
+          "6026a698f76c47b4bade24cb0fa2b24a6b32146cb9fdf9211a8ba486bb44830c",
+          "9212536b88e9f7a303734bb9fee4a22a9c3e7718cf0786b02913a50fafc524db",
+          "af106849bb1f44d03ebd36fe6747e14945d5518ebfb7e078213e6c0b05c927f6",
+          "5c0632ba2c6fd0f6bba25f0e2cfb392b158bbc517e50ef8416daf903ada0272b",
+          "0657932fc4c73d7d94619b7dce711a38e648976557e50991cd0d81646ec79cee",
+          "cb5c4f84446ff7f04b5800d9137a8b3ea3f423987d53c119b7d1088d1ab2224d",
+          "622ccb0d9e52b9840385510eb92ac960cfda3cf5e8df2a3b353cf7312851b41b",
+          "92f70230677a66f9a96fa8f0f848ef495580e7760386a7ab5845b55ba0723301",
+          "d3661ebb94f592be96fa5a615cb372a6f52e46a71bb3ef65f67bc093cd570640",
+          "3716e2762deee523a068dfc37f5851e93a41538ad821ba69118d3e61d23e6318",
+          "fd1ad770263f8ee985d50e7bcef19d1fec99608ad78413eaaf9977a989dc4c5c",
+          "9af1ae57dd72e1e2cdf76393ad3c00750b5a54fdf18e2166b0111879e53788b7",
+          "92c10fb07872ea2b7285e384efb27dac4995ebd077a956ab10d541c336053562",
+          "57348f0871f85e76f1c8121d958d3d2917bfb293d2f8aa0da0f9c2710f54d0ed",
+          "66accfae69ed247888c1cfbb810ec8c3759db16786c8c8d98d2c12fbb9e86170",
+          "4d173b7ad5508140281d3ed3daf374bf14cc788cd53f4acf71c9bd747d697d62",
+          "172e5069c88823dadd93ca3e743d4c756e5039695d2386fd5bf0e8628a114a71",
+          "88795a9f6ea2a9769df6d5a559b395207c818d36b41462e3b69d33009319c965"
+        ],
+        "bad_glyph_pages": [],
+        "non_a4_pages": [],
+        "preferences": "<</PrintScaling/None/Duplex/DuplexFlipLongEdge>>"
+      }
+    },
+    "story_chapter17_synchronized": {
+      "pass": true,
+      "detail": null
+    }
+  },
+  "pdf_sha256": {
+    "cards": "3eb6b291417bdefcbf5ed9f35a012738c12cc33f855e5a5d53bd586ff415c87f",
+    "book": "dde37e8dd7a2aa846e5e44d9d06a10f52ebcd834d885986de6c07c863277b91f"
+  },
+  "not_tested": [
+    "physical duplex registration",
+    "human playtest",
+    "independent aesthetic acceptance",
+    "full game simulation"
+  ]
+}
