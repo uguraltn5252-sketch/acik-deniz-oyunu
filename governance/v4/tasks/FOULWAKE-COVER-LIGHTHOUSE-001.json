@@ -1,0 +1,128 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "project_task": true,
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-09",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "task_id": "FOULWAKE-COVER-LIGHTHOUSE-001",
+  "task_type": "OWNER_SELECTED_COVER_AND_TARGETED_BACK_LAYOUT",
+  "status": "ACTIVE",
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "a0f751011c4cc473f7812d0e74718c6b360f2bc6",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/publication_20260909/assets/OWNER_SELECTED_COVER.png",
+      "working/v2.7/publication_20260909/assets/BACK_LIGHTHOUSE_CENTERED.png",
+      "working/v2.7/publication_20260909/pdf/BACK_LIGHTHOUSE_CENTERED.pdf",
+      "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+      "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "working/v2.7/publication_20260909/README.md",
+      "working/v2.7/qa/publication_20260909/book.py",
+      "working/v2.7/qa/publication_20260909/cards.py"
+    ],
+    "allowed_globs": [
+      "working/v2.7/qa/cover_lighthouse_20260909/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      ".github/"
+    ],
+    "max_changed_files": 24,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".png",
+      ".pdf",
+      ".txt"
+    ],
+    "binary_files_allowed": true
+  },
+  "owner_authorization": {
+    "task_id": "FOULWAKE-COVER-LIGHTHOUSE-001",
+    "decision": "AUTHORIZED",
+    "recorded_from": "Current explicit owner request selects 1000153195.png as cover, requests centered/resized lighthouse back and GitHub plus two PDF delivery.",
+    "decision_ref": "governance/v4/evidence/OWNER_COVER_LIGHTHOUSE_AUTHORITY_20260909.json"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "QA_REVIEW",
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE",
+      "COMPOSITION_REVIEW"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "QA_REVIEW",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE",
+        "COMPOSITION_REVIEW"
+      ]
+    }
+  },
+  "runtime_permissions": {
+    "visual_production": true,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": true,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "inputs": [
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "96deffe94b831a1b90ab52c28d1837548445f404"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
+    },
+    {
+      "path": "working/v2.7/qa/publication_20260909/cards_manifest.json",
+      "git_blob": "1fc99dc84df690601ca20bf4738a223b0c84a6a3"
+    },
+    {
+      "path": "working/v2.7/qa/publication_20260909/book_manifest.json",
+      "git_blob": "4d4afba21a837d291272188d1e0b359fa5d3b2da"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "git_blob": "66aef6a05c9b371ce6c9a5542543e3420d4bb79b"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267"
+    }
+  ],
+  "editable_source_baseline": {
+    "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf": "01e4840cc0cca966948b410c55c76895a3b8c778",
+    "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf": "22029c3fc0e79ee9a313f6a8edaf703b66983619",
+    "working/v2.7/publication_20260909/README.md": "221eecd5840201f976050c05ffe3c44bdd52b14c",
+    "working/v2.7/qa/publication_20260909/book.py": "3df9dbff48d0918b2bf5d24844bccaeaa299ff73",
+    "working/v2.7/qa/publication_20260909/cards.py": "14a69038385df794fc5f529c41173e9caed4d68f"
+  },
+  "acceptance_criteria": [
+    "The exact supplied cover fills page 1 without altered artwork or added text; record native effective resolution.",
+    "One upright lighthouse is centered and resized, faithfully retaining its character. All four backs share the same master; update the two book diagram tiles.",
+    "Preserve all 121 fronts, all copy, mechanics, remaining backs, card dimensions, A4 page counts and long-edge duplex placement.",
+    "Check changed rendered pages, untouched-page equality, text, page dimensions and duplex; upload exact PDFs and sources to GitHub. Same-operator checks are not independent or physical proof."
+  ],
+  "completion_policy": "Close targeted production after delivery and refresh ART-PUBLICATION-REVIEW-001 source pins."
+}

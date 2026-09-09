@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-COVER-LIGHTHOUSE-PREPARED-20260909",
-  "status": "V4_ACTIVE / OWNER_TARGETED_REVISION_PREPARED",
+  "state_id": "V4-COVER-LIGHTHOUSE-ACTIVE-20260909",
+  "status": "V4_ACTIVE / TARGETED_COVER_LIGHTHOUSE_REVISION",
   "updated_at": "2026-09-09",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": null,
+  "active_project_task_id": "FOULWAKE-COVER-LIGHTHOUSE-001",
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -112,11 +112,11 @@
     "OTHER_FOUR_BACKS": "RETAINED_SOURCES_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING"
   },
   "permissions": {
-    "visual_production": false,
+    "visual_production": true,
     "thumbnails": false,
     "pilot_or_candidate": false,
     "full_121_production": false,
-    "pdf_or_print_package": false,
+    "pdf_or_print_package": true,
     "simulation": false,
     "release": false,
     "lock": false
@@ -135,7 +135,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Activate FOULWAKE-COVER-LIGHTHOUSE-001, integrate selected owner cover and centered single lighthouse, then rebind art review to revised PDFs.",
+  "next_action": "Apply the selected cover, center the single lighthouse, verify targeted PDF changes, and publish both PDFs.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
