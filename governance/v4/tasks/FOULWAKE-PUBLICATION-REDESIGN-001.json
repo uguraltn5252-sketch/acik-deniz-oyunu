@@ -10,7 +10,7 @@
   ],
   "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
   "task_type": "OWNER_REQUESTED_CANON_AND_PUBLICATION_REDESIGN",
-  "status": "ACTIVE",
+  "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
   "source": {
     "branch": "v2.7-design",
     "commit": "a8387ae6948628bbc13416cbe1aa1b1184528573",
@@ -66,8 +66,8 @@
     "decision_ref": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json"
   },
   "authorization": {
-    "enabled": true,
-    "write_authorized": true,
+    "enabled": false,
+    "write_authorized": false,
     "allowed_actions": [
       "WRITE",
       "QA_REVIEW",
@@ -106,11 +106,11 @@
     }
   },
   "runtime_permissions": {
-    "visual_production": true,
+    "visual_production": false,
     "thumbnails": false,
     "pilot_or_candidate": false,
-    "full_121_production": true,
-    "pdf_or_print_package": true,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
     "simulation": false,
     "release": false,
     "lock": false
@@ -161,5 +161,64 @@
     "Deliver one combined 121-card duplex PDF plus one rulebook PDF, A4 at actual size. Verify front/back reflection, bleed/safe areas, all card texts and final rendered pages; fonts embedded.",
     "Record original artwork provenance and actual checks. Same-operator digital QA is not independent acceptance, physical proof, a human playtest, release or lock."
   ],
-  "completion_policy": "Deliver this bounded revision, then close production permissions; keep earlier sources and evidence as history."
+  "completion_policy": "Deliver this bounded revision, then close production permissions; keep earlier sources and evidence as history.",
+  "delivery": {
+    "commit": "202f8e686d91b4e8094ced7fa82a66c6c0810ee1",
+    "evidence_ref": "governance/v4/evidence/PUBLICATION_DELIVERY_20260909.json",
+    "changed_paths": [
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/publication_20260909/README.md",
+      "working/v2.7/publication_20260909/assets/COVER.png",
+      "working/v2.7/publication_20260909/assets/GUSTO_CABIN.png",
+      "working/v2.7/publication_20260909/assets/PORT_AVANTA.png",
+      "working/v2.7/publication_20260909/fonts/Alegreya-Black.ttf",
+      "working/v2.7/publication_20260909/fonts/Alegreya-Bold.ttf",
+      "working/v2.7/publication_20260909/fonts/Alegreya-Italic.ttf",
+      "working/v2.7/publication_20260909/fonts/Alegreya-Regular.ttf",
+      "working/v2.7/publication_20260909/fonts/OFL.txt",
+      "working/v2.7/publication_20260909/fonts/SOURCE_METADATA.txt",
+      "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+      "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "working/v2.7/qa/publication_20260909/artifact_versions.json",
+      "working/v2.7/qa/publication_20260909/book.py",
+      "working/v2.7/qa/publication_20260909/book_manifest.json",
+      "working/v2.7/qa/publication_20260909/card_layout.py",
+      "working/v2.7/qa/publication_20260909/cards.py",
+      "working/v2.7/qa/publication_20260909/cards_manifest.json",
+      "working/v2.7/qa/publication_20260909/clearance_change.json",
+      "working/v2.7/qa/publication_20260909/copy_changes.json",
+      "working/v2.7/qa/publication_20260909/cover_prompt.txt",
+      "working/v2.7/qa/publication_20260909/delivery_files.json",
+      "working/v2.7/qa/publication_20260909/generation_provenance.json",
+      "working/v2.7/qa/publication_20260909/research.md",
+      "working/v2.7/qa/publication_20260909/review.md",
+      "working/v2.7/qa/publication_20260909/scope_validation.json",
+      "working/v2.7/qa/publication_20260909/sync_sources.py",
+      "working/v2.7/qa/publication_20260909/verification.json",
+      "working/v2.7/qa/publication_20260909/verify.py",
+      "working/v2.7/qa/publication_20260909/vignette_prompts.json",
+      "working/v2.7/qa/publication_20260909/visual_review.json",
+      "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+    ],
+    "result": "Definitive owner canon; original 30-page rulebook design and one 46-page A4 duplex PDF containing all 121 cards. All original card illustrations and seven backs retained; typography and metadata corrected.",
+    "acceptance": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT_OR_PHYSICAL_ACCEPTANCE",
+    "pdf_sha256": {
+      "cards": "3eb6b291417bdefcbf5ed9f35a012738c12cc33f855e5a5d53bd586ff415c87f",
+      "book": "dde37e8dd7a2aa846e5e44d9d06a10f52ebcd834d885986de6c07c863277b91f"
+    },
+    "download_index": "working/v2.7/publication_20260909/README.md"
+  }
 }

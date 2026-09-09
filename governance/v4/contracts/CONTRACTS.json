@@ -113,31 +113,14 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**",
-          "working/v2.7/publication_20260909/**",
-          "working/v2.7/qa/publication_20260909/**"
+          ".github/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
-          "working/v2.7/README_CURRENT_v2.7.md",
-          "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-          "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
-          "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
-          "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
-          "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
-          "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
-          "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
-          "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
-          "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
-          "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
-          "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
-          "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
-          "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
-          "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -255,7 +238,7 @@
       "role": "CHIEF_EDITOR",
       "scope": "Owner-directed canon migration and professional rulebook/card publication revision; mechanics and original map identity preserved.",
       "review": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT",
-      "status": "SCOPED_OWNER_AUTHORITY_REGISTERED"
+      "status": "CLOSED / PUBLICATION_DELIVERED / TASK_PERMISSIONS_OFF"
     }
   },
   "protected_quality_gates": [
@@ -317,8 +300,8 @@
       "required_identity_decision": "SRC-002",
       "full_source": {
         "source": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
-        "source_sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3",
-        "source_git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+        "source_sha256": "db76e273387c75b0e79d35b4b1d9a1487ff1807d08a4299d2b0d4e46f0ef8ade",
+        "source_git_blob": "96deffe94b831a1b90ab52c28d1837548445f404",
         "collections": {
           "characters": {
             "visible_fields": [
@@ -372,8 +355,8 @@
         "identity_decision_source_blob": "38a03b71cd3232fd844db8d80d8e53662510b6a3"
       },
       "expected_full_deck_records": 121,
-      "coverage_status": "121 canonical records, 121 illustrated fronts and seven common backs checked in complete PDFs; single upright lighthouse delivered. Same-operator evidence only; no independent or physical acceptance.",
-      "current_revision_evidence": "governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json"
+      "coverage_status": "121 canonical records and all 363 main fields matched in the final duplex PDF; 714 book source units matched. Same-operator digital evidence only.",
+      "current_revision_evidence": "governance/v4/evidence/PUBLICATION_DELIVERY_20260909.json"
     },
     "framing": {
       "action": "FRAMING_DECISION",
@@ -397,6 +380,16 @@
         "full-deck composition rhythm"
       ],
       "failure_code": "BLOCKED_FRAMING_DRIFT"
+    },
+    "current_canon": {
+      "decision_ref": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json",
+      "names": {
+        "queen": "Kraliçe Tesella",
+        "departure_port": "Port Avanta",
+        "destination_port": "Santa Veda",
+        "secret_organization": "Malum"
+      },
+      "implemented_commit": "202f8e686d91b4e8094ced7fa82a66c6c0810ee1"
     }
   },
   "project_owner_required_actions": [
@@ -487,15 +480,15 @@
     "known_external_enforcement_gap": "GOV-001: GitHub branch protection requires live settings evidence. GOV-002: close only after current v4 workflow and all workstream checks pass on GitHub."
   },
   "protected_content_blobs": {
-    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "d702d5eb4c00f58bb28fb833f0f3d7b9200db8f4",
-    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "8de5596759493eca263f07dcd356ea72029111b2",
-    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "2942740134cc5c80a6a4730d4bd949fd5eb97c46",
-    "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
-    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "54b63d9f65938bf6b2519b7e309a16d8ad7999f8",
-    "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "df2f74fe3f245bfd5d2fe57439f11c22aeca0e02",
-    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "e9faf109fb5ee912935a7bdf30bc554eae1efa77",
-    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "d58eec97aa04e2883ec41b8e4885ae1e8512a476",
-    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "d4c73ddaba353a49ed22103765e22cd60efaec66",
-    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "5ec045aa6e3e6e0e796d46174af491eff6fcefa4"
+    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "45f5f51025c2140b46b45818931a99a25eb4edfb",
+    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "ae33337722c552376de00063ec04be6cec3a2d1f",
+    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "8353f7ad335ca7811a75bf25d99d2b5b12b97208",
+    "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "5f2f85d4281db223572637ca81f5f4eaeb506de6",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "e55f17b9f97890453a717a07676195d7365436fd",
+    "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "568dba27483995786581e8bc8ed0452600e5567c",
+    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "01b4693185a92e2bb5737987fd4435d54e91d8c3",
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "66aef6a05c9b371ce6c9a5542543e3420d4bb79b",
+    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "509ca04b5261d22f53f3a48df4495f6781d8dd6a",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "fa61dcc9cc78005dffc3d203f005860d550409ec"
   }
 }

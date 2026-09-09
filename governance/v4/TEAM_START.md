@@ -6,9 +6,9 @@
 şüphesi oyuncular arasında doğan, arka planı ve sanatı aynı dünyaya ait.
 Kalite yalnız dosya sayısı, render hash'i veya test puanı değildir.
 
-Güncel çalışma kaynaklarında 1721, Arden, San Cordelio, Saint Verena, Gusto
-ve Kuru Pay vardır. Proje sahibinin ad değişikliği uygulanmıştır. Gusto'nun
-akıbeti, terkibin başarısı ve Kuru Pay çevresindeki ortaklığın niteliği kesinleştirilmez.
+Güncel kaynaklar 1721 ve Arden dünyasındadır. Kesin adlar **Kraliçe Tesella**,
+**Port Avanta**, **Santa Veda** ve **Malum**. Gusto'nun akıbeti ile terkibin
+başarısı kesinleştirilmez. Malum gizli örgüttür; merkezi ve üyeleri açıklanmaz.
 Dünya ciddidir; insanların korkuları, çıkarları ve kusurları kuru mizahı
 üretir. Görsel omurga ISLAK TANIKLIK, gravür/tarama, mat mürekkep ve tuzlu
 kâğıttır. Bunlar mevcut kaynakların özeti; yeni mekanik veya kanon kararı değildir.
@@ -71,56 +71,8 @@ aktif görev yalnız state'te bulunur. Yeni içerik üretimi bu dosyayla başlam
 Handoff yedi alanı `governance/WORKSTREAM_PROTOCOL.md` içindedir. Sohbet
 bağlamını azalt; araştırma, yaratıcı eleştiri ve kanıt kalitesini azaltma.
 
-## 7 Eylül 2026 geçici görev devri
+## 9 Eylül 2026 — güncel teslim
 
-Proje sahibi, bu Baş Editör sohbetine hikâye editörlüğü, kart/kural metni ve simülasyon işini geçici olarak devretti. `OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json` kapsamı ve yeni exact görev, yukarıdaki olağan rol ayrımına bu teslim için açık istisnadır. Siyah Mühür adının değiştirilmesi de istendi. Görsel uzman ve sanat yönetmeni bu devrin dışındadır. Aynı kişinin yaptığı kontroller bağımsız inceleme veya insan deneyimi kanıtı sayılmaz. Yeni görevin bitmesi başka görevler için yazma yetkisi vermez.
+`FOULWAKE-PUBLICATION-REDESIGN-001` teslim edildi; bu görevin üretim izinleri kapandı. Güncel indirme girişi `working/v2.7/publication_20260909/README.md`: 121 kart tek 46 sayfalık A4 çift taraflı PDF ve 30 sayfalık kural kitabı. Kanon, kart metinleri, hikâye, kitap ve sanat kayıtları birlikte güncellendi. 121 özgün kart çizimi, yedi ortak arka, tek fener ve palmiye Adası korunur. Kanıt `governance/v4/evidence/PUBLICATION_DELIVERY_20260909.json`; aynı operatörün dijital kontrolüdür. Bağımsız estetik kabul, fiziksel prova ve insan oyunu kanıtı ayrı kalır.
 
-## 7 Eylül teslim durumu
-
-`FOULWAKE-EDITORIAL-OVERHAUL-001` çalışma revizyonu teslim edildi. Güncel giriş `working/v2.7/README_CURRENT_v2.7.md`; kanıt `governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json`. Kaynak envanteri 121 metne tamamlandı, hikâye/kart/kural değişiklikleri uygulandı. 20 teknik regresyon ve 3.600 yaklaşık model yolculuğu, bağımsız insan veya tam kural motoru kabulü değildir. Bu teslim için geçici üretim yetkisi kapandı; Story ya da COPY-SOURCE-INVENTORY-002 görevini kendiliğinden başlatma. Görsel/Sanat kapsamı devralınmadı.
-
-## 7 Eylül 2026 yeni görsel görev devri
-
-Proje sahibinin son mesajı önce bütün sistemi yeniden kontrol etmeyi, ardından Sanat Yönetimi ve Görsel Tasarım işlerini de bu Baş Editör sohbetinde yürütmeyi istedi. Önceki dışlama bu yeni görev için geçerli değildir. Yetki `OWNER_RECHECK_VISUAL_AUTHORITY_20260907.json` ve `FOULWAKE-RECHECK-VISUAL-001` kapsamındadır. Somut 12 ön/7 arka pilot, 121 kartın metin prototipi ve kural kitabı hazırlanır; tek operatörün incelemesi bağımsız kabul sayılmaz. Kabul edilmiş KAPTAN ana figürü ile kilitli v2.6 korunur; release/lock açılmaz.
-
-## Tam deste çizimi ve fener düzeltmesi
-
-Proje sahibi somut pilot tesliminden sonra “Devam” dedi; ardından fenerin yandan görünümünü araştırıp oyuna uyarlama kararını Baş Editöre verdi. `OWNER_FULL_DECK_ART_AUTHORITY_20260907.json` ve yeni `FOULWAKE-FULL-DECK-ART-001` görevi kalan 109 ön çizimi ile bir Fener arka masterının yenilenmesini kapsar. 12 ön ve diğer altı arka kaynak korunur. Bu devam kararı bağımsız kabul, fiziksel proof veya release/lock değildir. Güncel hikâye adı Kuru Pay; önceki tarihsel bölümdeki Siyah Mühür ifadesi güncel kanon değildir.
-
-## Tam deste teslimi — güncel durum
-
-`FOULWAKE-FULL-DECK-ART-001` tamamlandı: 121 resimli ön, yedi ortak arka,
-yandan Fener, 48 sayfalık tam kart baskısı ve 24 sayfalık görsel inceleme.
-Kanıt `governance/v4/evidence/FULL_DECK_ART_DELIVERY_20260907.json`;
-güncel giriş `working/v2.7/README_CURRENT_v2.7.md`. Üretim izni kapandı,
-Baş Editörün olağan koordinasyon dosya sınırı geri getirildi. Önceki
-“109 ön eksik” kayıtları tarihsel teslimi anlatır. İnsan oyunu, fiziksel
-baskı ve bağımsız estetik kabul açık; release/lock verilmedi.
-
-## 8 Eylül: bütün oyun incelemesi ve tek fener
-
-Proje sahibinin güncel talimatı `governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json` kaydındadır. `FOULWAKE-WHOLE-GAME-POLISH-001` açıldığında Başeditör hikâye, kural, kart, simülasyon ve görsel düzeltmeleri o görev kapsamında yürütür. Beğenilen fener sahnesi korunur; alttaki ters kule kaldırılır. Fener ailesinin eski 180 derece simetri şartı bu açık kararla aşılmıştır. Diğer gizli arka yüz ve kaynak korumaları sürer.
-
-## 8 Eylül 2026 — tam kontrol teslimi
-
-FOULWAKE-WHOLE-GAME-POLISH-001 uygulandı; güncel teslim governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json kaydındadır. 121 kart, yedi arka yüz ve kural kitabı kontrol edildi. Fener tek ve diktir; beğenilen üst sahne korunmuştur. Geçici üretim yetkileri kapalıdır; güncel durum runtime/STATE.json üzerinden okunur. Bu teslim bağımsız, fiziksel veya insan oyun testi kabulü değildir.
-
-## 8 Eylül — proje sahibinin kart tasarımı düzeltmesi
-
-Güncel governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json kararı referansı tasarım dili olarak tanımlar. Önceki birebir KAPTAN kırpımı/figürü şartı bu görev için geçerli değildir; özgün kaptan çizimi ve 121 kartın bütünlüklü yeniden tasarımı yetkilidir. Güncel kart metinleri ile beğenilen tek fener korunur. Baş Editör bu işte Sanat Yönetimi/Görsel Tasarımı geçici yürütür; aynı operatörün kontrolü bağımsız kabul sayılmaz. Üretim yalnız FOULWAKE-ILLUSTRATED-DESIGN-002 exact görev kaydı açıldığında başlar.
-
-## 8 Eylül — özgün bütünleşik kart tasarımı teslimi
-
-`FOULWAKE-ILLUSTRATED-DESIGN-002` teslim edildi: 121 özgün tam ön, yedi korunmuş ortak arka, 48 baskı ve 34 tam kart inceleme sayfası. 121 kart tek tek ve 82 son PDF sayfası gözle kontrol edildi; 363 exact-copy yerleşimi doğrulandı. Güncel giriş `working/v2.7/README_CURRENT_v2.7.md`; kanıt `governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json`. Eski referans kırpımı kaldırıldı; beğenilen tek dik fener masterı aynen korundu. Ana README ve handofflar eski resimsiz prototipe gitmez. Görev izinleri kapandı; olağan koordinasyon dosya sınırı geri getirildi. SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING; bağımsız, insan veya fiziksel kabul yoktur. Başka üretim görevi kendiliğinden açılmadı.
-
-## 9 Eylül — A4 çift taraflı baskı hazırlığı
-
-Proje sahibi governance/v4/evidence/OWNER_A4_PRINT_AUTHORITY_20260909.json kaydıyla A4 çift taraflı kart baskısı, ortak Ada arkasının iyileştirilmesi ve kural kitabının baskı/metin incelemesini istedi. Baş Editör FOULWAKE-A4-PRINT-001 exact görevi içinde çalışır. Kart ölçüleri ve güncel ön yüzler, diğer altı arka ve tek dik fener korunur. Bu teslim yazıcının fiziksel kaymasını, insan oyun testini veya release/lock kabulünü kanıtlamaz.
-
-## 9 Eylül — A4 baskı teslimi
-
-`FOULWAKE-A4-PRINT-001` teslim edildi: 121 ön ve 121 doğru arka yüz içeren 46 sayfa/23 yaprak A4 deste, 30 sayfalık A4 kural kitabı ve 4 sayfalık baskı rehberi/hizalama denemesi. Ölçüler 70 × 120, 63,5 × 88,9 ve 70 × 70 mm'dir; %100, uzun kenardan çift taraflı basılır. Ada arkası yeşil kıyı siluetiyle yenilendi; diğer altı arka ve tek dik fener korundu. 363 metin alanı, 121 tekil kart ve 80 son PDF sayfası kontrol edildi. Güncel giriş `working/v2.7/print_20260909/README.md`; kanıt `governance/v4/evidence/A4_PRINT_DELIVERY_20260909.json`. Görev izinleri kapandı, olağan koordinasyon sınırı geri geldi. Bu dijital teslim fiziksel yazıcı doğruluğu, bağımsız kabul, insan testi veya release/lock değildir.
-
-## 9 Eylül — Ada referansı revizyonu
-
-`FOULWAKE-ISLAND-REFERENCE-001` teslim edildi. Proje sahibinin görsellerinden esinlenen özgün kumlu koy ve üç palmiye, altı Ada kartının ortak arkasına uygulandı. Referans resmi kopyalanmadı; tek sahne doğal yönündedir. A4 destesinde yalnız 44. sayfa değişti; 121 ön ve diğer 45 sayfa korunur. Güncel baskı girişi `working/v2.7/print_island_20260909/README.md`; önceki baskıyı kullananlar yalnız 22. ön/arka yaprağı yenileyebilir. Kural kitabı, rehber, kart ölçüleri ve tek fener değişmedi. Kanıt `governance/v4/evidence/ISLAND_REFERENCE_DELIVERY_20260909.json`. Bu teslim aynı operatörün dijital kontrolüdür; bağımsız, fiziksel veya insan oyunu kabulü değildir. Exact üretim görevi kapandı; olağan koordinasyon sınırı geri geldi.
+Önceki görev devirleri ve teslim notları [Git geçmişinde](https://github.com/uguraltn5252-sketch/acik-deniz-oyunu/blob/d4072fbff19aeae3508801b733164fdae8517e7a/governance/v4/TEAM_START.md) korunur; bunlar güncel üretim yetkisi değildir. Yeni iş için canlı state ve exact görev okunur.

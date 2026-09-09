@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-PUBLICATION-REDESIGN-ACTIVE-20260909",
-  "status": "V4_ACTIVE / PUBLICATION_REDESIGN",
+  "state_id": "V4-PUBLICATION-DELIVERED-20260909",
+  "status": "V4_ACTIVE / PUBLICATION_DELIVERED / IDLE",
   "updated_at": "2026-09-09",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -63,7 +63,8 @@
       "branch_preparation": "Preserved at verified activation head; no specialist content delivery. Chief temporarily executes the new task on v2.7-design.",
       "current_integrated_copy_commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
       "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
-      "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed"
+      "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
+      "current_integrated_publication_commit": "202f8e686d91b4e8094ced7fa82a66c6c0810ee1"
     },
     "art_direction": {
       "branch": "work/v2.7-art-direction",
@@ -75,7 +76,8 @@
       "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
       "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf",
       "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
-      "current_integrated_island_revision_commit": "27502198797cbdea51091f702720232b3e5ae0ee"
+      "current_integrated_island_revision_commit": "27502198797cbdea51091f702720232b3e5ae0ee",
+      "current_integrated_publication_commit": "202f8e686d91b4e8094ced7fa82a66c6c0810ee1"
     },
     "visual": {
       "branch": "work/v2.7-visual",
@@ -86,7 +88,8 @@
       "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
       "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf",
       "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
-      "current_integrated_island_revision_commit": "27502198797cbdea51091f702720232b3e5ae0ee"
+      "current_integrated_island_revision_commit": "27502198797cbdea51091f702720232b3e5ae0ee",
+      "current_integrated_publication_commit": "202f8e686d91b4e8094ced7fa82a66c6c0810ee1"
     },
     "simulation": {
       "branch": "work/v2.7-simulation",
@@ -109,22 +112,22 @@
     "OTHER_FOUR_BACKS": "RETAINED_SOURCES_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING"
   },
   "permissions": {
-    "visual_production": true,
+    "visual_production": false,
     "thumbnails": false,
     "pilot_or_candidate": false,
-    "full_121_production": true,
-    "pdf_or_print_package": true,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
     "simulation": false,
     "release": false,
     "lock": false
   },
   "open_blockers": {
-    "ART-001": "Original palm-island back delivered from owner references; other accepted working designs preserved. Owner aesthetic review remains pending.",
+    "ART-001": "Publication layout and all 121 cards digitally reviewed by the same operator. Owner aesthetic evaluation and independent acceptance remain unverified.",
     "MEC-001": "27 targeted tests and 3,600 updated heuristic voyages delivered. Full engine equivalence and human experience remain unverified; no balance acceptance.",
-    "QA-001": "121 complete cards, 363 canonical-copy fields and all 80 final PDF pages self-checked; independent and owner acceptance remain unverified.",
+    "QA-001": "363 card main fields, metadata, 714 book source units and all 76 final PDF pages checked. No independent acceptance or human experience proof.",
     "QA-002": "Physical and human evidence absent.",
     "GOV-001": "Repository is public; main and v2.7-design protections/rulesets are absent.",
-    "PHYSICAL-PROOF": "Digital A4 size/duplex geometry checked. Physical print, cut, opacity, feeding drift, light and table-distance results absent; trial sheet supplied."
+    "PHYSICAL-PROOF": "A4 trim, bleed, safe areas and all 121 duplex pairs digitally verified. First physical sheet, paper opacity, feeding drift and color remain untested."
   },
   "canonical_refs": {
     "contracts": "governance/v4/contracts/CONTRACTS.json",
@@ -132,7 +135,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Apply owner canon and original publication design; verify and deliver two combined A4 PDFs.",
+  "next_action": "Use the two current A4 PDFs at actual size with long-edge duplex. Record owner feedback and the first physical proof; no automatic new production.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -177,11 +180,12 @@
     },
     "STORY-COHERENCE-001": {
       "status": "FIX_IMPLEMENTED / SAME_OPERATOR_REGRESSION_CHECK",
-      "previous_description": "OPEN: preserved v2.6 §5.3 narrative assigns certain intent to Siyah Mühür outside v2.7 replacement blocks; SCIM-03 accepted, bounded Story correction queued.",
       "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
       "delivery_commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
       "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
-      "limits": "No independent human or full-rule engine acceptance."
+      "limits": "No independent human or full-rule engine acceptance.",
+      "historical_description_ref": "governance/v4/evidence/STORY_COHERENCE_IMMERSION_REPORT_20260905.md",
+      "current_note": "Malum is a secret organization; membership, center and attribution of any individual incident remain unproved."
     },
     "PREFLIGHT-ENGINE-01": {
       "status": "FIX_IMPLEMENTED / SAME_OPERATOR_REGRESSION_CHECK",
@@ -244,7 +248,7 @@
       "scope": "Original complete-card design and review pipeline; stale root links corrected in closure; canonical copy and single upright lighthouse preserved."
     }
   },
-  "last_completed_project_task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+  "last_completed_project_task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
   "read_only_assignments": {},
   "completed_read_only_reviews": {
     "STORY-COHERENCE-IMMERSION-001": {
@@ -263,15 +267,17 @@
     "commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
     "evidence_ref": "governance/v4/evidence/EDITORIAL_OVERHAUL_DELIVERY_20260907.json",
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
-    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
+    "status": "HISTORICAL_DELIVERY / SUPERSEDED_FOR_CURRENT_PUBLICATION",
+    "publication_superseded_by": "FOULWAKE-PUBLICATION-REDESIGN-001"
   },
-  "temporary_delegation_status": "SCOPED_OWNER_AUTHORITY_REGISTERED / PUBLICATION_REDESIGN",
+  "temporary_delegation_status": "CLOSED / PUBLICATION_DELIVERED / COORDINATION_BOUNDARY_RESTORED",
   "current_recheck_delivery": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
     "evidence_ref": "governance/v4/evidence/RECHECK_VISUAL_DELIVERY_20260907.json",
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
-    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING"
+    "status": "HISTORICAL_DELIVERY / SUPERSEDED_FOR_CURRENT_PUBLICATION",
+    "publication_superseded_by": "FOULWAKE-PUBLICATION-REDESIGN-001"
   },
   "current_visual_pilot": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
@@ -296,11 +302,12 @@
     "evidence_ref": "governance/v4/evidence/FULL_DECK_ART_DELIVERY_20260907.json",
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "download_index": "working/v2.7/visual/full_deck_20260907/README.md",
-    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+    "status": "HISTORICAL_DELIVERY / SUPERSEDED_FOR_CURRENT_PUBLICATION",
     "fronts": 121,
     "backs": 7,
     "not_an_accepted_candidate": true,
-    "superseded_by": "FOULWAKE-WHOLE-GAME-POLISH-001"
+    "superseded_by": "FOULWAKE-WHOLE-GAME-POLISH-001",
+    "publication_superseded_by": "FOULWAKE-PUBLICATION-REDESIGN-001"
   },
   "current_polish_delivery": {
     "task_id": "FOULWAKE-WHOLE-GAME-POLISH-001",
@@ -308,12 +315,13 @@
     "evidence_ref": "governance/v4/evidence/WHOLE_GAME_POLISH_DELIVERY_20260908.json",
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "download_index": "working/v2.7/visual/polish_20260908/README.md",
-    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+    "status": "HISTORICAL_DELIVERY / SUPERSEDED_FOR_CURRENT_PUBLICATION",
     "fronts": 121,
     "backs": 7,
     "not_an_accepted_candidate": true,
     "card_art_superseded_by": "FOULWAKE-ILLUSTRATED-DESIGN-002",
-    "rulebook_print_superseded_by": "FOULWAKE-A4-PRINT-001"
+    "rulebook_print_superseded_by": "FOULWAKE-A4-PRINT-001",
+    "publication_superseded_by": "FOULWAKE-PUBLICATION-REDESIGN-001"
   },
   "current_illustrated_design_delivery": {
     "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
@@ -321,20 +329,21 @@
     "evidence_ref": "governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json",
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "download_index": "working/v2.7/visual/illustrated_design_20260908/README.md",
-    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+    "status": "HISTORICAL_DELIVERY / SUPERSEDED_FOR_CURRENT_PUBLICATION",
     "fronts": 121,
     "backs": 7,
     "print_pages": 48,
     "complete_card_review_pages": 34,
     "not_an_accepted_candidate": true,
-    "print_package_superseded_by": "FOULWAKE-A4-PRINT-001"
+    "print_package_superseded_by": "FOULWAKE-A4-PRINT-001",
+    "publication_superseded_by": "FOULWAKE-PUBLICATION-REDESIGN-001"
   },
   "current_print_delivery": {
-    "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
-    "commit": "27502198797cbdea51091f702720232b3e5ae0ee",
-    "evidence_ref": "governance/v4/evidence/ISLAND_REFERENCE_DELIVERY_20260909.json",
+    "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+    "commit": "202f8e686d91b4e8094ced7fa82a66c6c0810ee1",
+    "evidence_ref": "governance/v4/evidence/PUBLICATION_DELIVERY_20260909.json",
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
-    "download_index": "working/v2.7/print_island_20260909/README.md",
+    "download_index": "working/v2.7/publication_20260909/README.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
     "fronts": 121,
     "backs": 121,
@@ -342,11 +351,45 @@
     "card_pages": 46,
     "card_sheets": 23,
     "rulebook_pages": 30,
-    "guide_pages": 4,
-    "not_an_accepted_candidate": true,
-    "previous_delivery_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
-    "changed_page": 44,
-    "revised_shared_back": "BACK_ISLAND",
-    "rulebook_and_guide_delivery_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed"
+    "card_pdf": "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "rulebook_pdf": "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+    "pdf_sha256": {
+      "cards": "3eb6b291417bdefcbf5ed9f35a012738c12cc33f855e5a5d53bd586ff415c87f",
+      "book": "dde37e8dd7a2aa846e5e44d9d06a10f52ebcd834d885986de6c07c863277b91f"
+    },
+    "previous_delivery_commit": "27502198797cbdea51091f702720232b3e5ae0ee",
+    "not_an_accepted_candidate": true
+  },
+  "current_canon": {
+    "names": {
+      "queen": "Kraliçe Tesella",
+      "departure_port": "Port Avanta",
+      "destination_port": "Santa Veda",
+      "secret_organization": "Malum"
+    },
+    "authority_ref": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json",
+    "implemented_commit": "202f8e686d91b4e8094ced7fa82a66c6c0810ee1"
+  },
+  "current_publication_delivery": {
+    "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+    "commit": "202f8e686d91b4e8094ced7fa82a66c6c0810ee1",
+    "evidence_ref": "governance/v4/evidence/PUBLICATION_DELIVERY_20260909.json",
+    "readme": "working/v2.7/README_CURRENT_v2.7.md",
+    "download_index": "working/v2.7/publication_20260909/README.md",
+    "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
+    "fronts": 121,
+    "backs": 121,
+    "shared_back_masters": 7,
+    "card_pages": 46,
+    "card_sheets": 23,
+    "rulebook_pages": 30,
+    "card_pdf": "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "rulebook_pdf": "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+    "pdf_sha256": {
+      "cards": "3eb6b291417bdefcbf5ed9f35a012738c12cc33f855e5a5d53bd586ff415c87f",
+      "book": "dde37e8dd7a2aa846e5e44d9d06a10f52ebcd834d885986de6c07c863277b91f"
+    },
+    "previous_delivery_commit": "27502198797cbdea51091f702720232b3e5ae0ee",
+    "not_an_accepted_candidate": true
   }
 }
