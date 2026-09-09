@@ -7,7 +7,7 @@
     "purpose": "Historical active-task fixture for trusted CI negative controls, independent of live task closure or replacement; never current work authority."
   },
   "repository_expectations": {
-    "active_task_id": null,
+    "active_task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
     "loaded_task_ids": [
       "COPY-SOURCE-INVENTORY-001",
       "FOULWAKE-A4-PRINT-001",
@@ -15,6 +15,7 @@
       "FOULWAKE-FULL-DECK-ART-001",
       "FOULWAKE-ILLUSTRATED-DESIGN-002",
       "FOULWAKE-ISLAND-REFERENCE-001",
+      "FOULWAKE-PUBLICATION-REDESIGN-001",
       "FOULWAKE-RECHECK-VISUAL-001",
       "FOULWAKE-WHOLE-GAME-POLISH-001",
       "GOV4-CUTOVER-001",

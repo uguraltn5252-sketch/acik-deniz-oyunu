@@ -1,0 +1,165 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "project_task": true,
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-09",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+  "task_type": "OWNER_REQUESTED_CANON_AND_PUBLICATION_REDESIGN",
+  "status": "ACTIVE",
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "a8387ae6948628bbc13416cbe1aa1b1184528573",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+      "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
+      "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+      "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md"
+    ],
+    "allowed_globs": [
+      "working/v2.7/publication_20260909/**",
+      "working/v2.7/qa/publication_20260909/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      ".github/",
+      "working/v2.7/visual/references/"
+    ],
+    "max_changed_files": 96,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".pdf",
+      ".png",
+      ".jpg",
+      ".txt",
+      ".ttf",
+      ".otf"
+    ],
+    "binary_files_allowed": true
+  },
+  "owner_authorization": {
+    "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+    "decision": "AUTHORIZED",
+    "recorded_from": "Current owner production instruction: definitive new canon, original publication design, preserve game/map identities, verify all text/layout and deliver two combined A4 PDFs.",
+    "decision_ref": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE",
+      "ART_LANGUAGE_REVIEW",
+      "FRAMING_DECISION",
+      "COMPOSITION_REVIEW",
+      "PRODUCE_STORY",
+      "PRODUCE_FLAVOR",
+      "PERIOD_LANGUAGE_REVIEW",
+      "RULES_INTEGRITY_REVIEW",
+      "PRODUCE_FULL_121",
+      "DECK_RHYTHM_REVIEW"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE",
+        "ART_LANGUAGE_REVIEW",
+        "FRAMING_DECISION",
+        "COMPOSITION_REVIEW",
+        "PRODUCE_STORY",
+        "PRODUCE_FLAVOR",
+        "PERIOD_LANGUAGE_REVIEW",
+        "RULES_INTEGRITY_REVIEW",
+        "PRODUCE_FULL_121",
+        "DECK_RHYTHM_REVIEW"
+      ]
+    }
+  },
+  "runtime_permissions": {
+    "visual_production": true,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": true,
+    "pdf_or_print_package": true,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "inputs": [
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
+    },
+    {
+      "path": "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
+      "git_blob": "9ea474db94c2d0215afda91efd16365148fd0f02"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+      "git_blob": "531d208e203ddee927a6e963de32137e40353ebe"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267"
+    },
+    {
+      "path": "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
+      "git_blob": "b53e9243561e09ff8162c8a251d752358bc0dac3"
+    }
+  ],
+  "editable_source_baseline": {
+    "working/v2.7/README_CURRENT_v2.7.md": "9a241986da14a1e52333dad8ec30328c2bc8f096",
+    "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "d58eec97aa04e2883ec41b8e4885ae1e8512a476",
+    "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md": "d4c73ddaba353a49ed22103765e22cd60efaec66",
+    "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md": "8de5596759493eca263f07dcd356ea72029111b2",
+    "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md": "d702d5eb4c00f58bb28fb833f0f3d7b9200db8f4",
+    "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md": "2942740134cc5c80a6a4730d4bd949fd5eb97c46",
+    "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md": "48f22d7145741e4dc6c045c76064d26cc85164d5",
+    "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json": "ea4805b0f6e802b381d8c614f67a25f320c513da",
+    "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md": "a309e35e976c90e9b2bee38dee2499ba5610e762",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "5ec045aa6e3e6e0e796d46174af491eff6fcefa4",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "54b63d9f65938bf6b2519b7e309a16d8ad7999f8",
+    "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md": "4d0d472458369a8e1a4ee36ab828d9354a754b04",
+    "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md": "df2f74fe3f245bfd5d2fe57439f11c22aeca0e02",
+    "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md": "e9faf109fb5ee912935a7bdf30bc554eae1efa77"
+  },
+  "acceptance_criteria": [
+    "Apply Kraliçe Tesella, Port Avanta, Santa Veda and Malum consistently to current sources, story tone, cards, rulebook and current entrypoints. Scan active sources, render inputs and final PDFs separately; preserve frozen historical evidence.",
+    "Full-page original cover carries only FOULWAKE. Use readable native typography, warm light paper, ink engraving, clear moderator navigation, tables and practical examples. Never import reference mechanics or copy reference artwork.",
+    "Preserve all 121 IDs, mechanics, map identity and artwork except targeted documented refinements, seven shared backs including single upright lighthouse and sandy island, card sizes and hidden-information model.",
+    "Deliver one combined 121-card duplex PDF plus one rulebook PDF, A4 at actual size. Verify front/back reflection, bleed/safe areas, all card texts and final rendered pages; fonts embedded.",
+    "Record original artwork provenance and actual checks. Same-operator digital QA is not independent acceptance, physical proof, a human playtest, release or lock."
+  ],
+  "completion_policy": "Deliver this bounded revision, then close production permissions; keep earlier sources and evidence as history."
+}
