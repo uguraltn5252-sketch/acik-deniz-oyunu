@@ -1,0 +1,167 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "project_task": true,
+  "issued_by": "PROJECT_OWNER",
+  "issued_at": "2026-09-09",
+  "executor_role": "CHIEF_EDITOR",
+  "reviewer_roles": [
+    "PROJECT_OWNER"
+  ],
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "7d42a275d4532b3ec4bef5588b3706697180d804",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "scope": {
+    "branch": "v2.7-design",
+    "allowed_exact_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json"
+    ],
+    "allowed_globs": [
+      "working/v2.7/print_20260909/**",
+      "working/v2.7/qa/print_preparation_20260909/**"
+    ],
+    "forbidden_prefixes": [
+      "releases/",
+      "governance/",
+      ".github/",
+      "working/v2.7/visual/references/"
+    ],
+    "max_changed_files": 160,
+    "allowed_extensions": [
+      ".md",
+      ".json",
+      ".py",
+      ".pdf",
+      ".png",
+      ".jpg",
+      ".txt",
+      ".icc"
+    ],
+    "binary_files_allowed": true
+  },
+  "task_id": "FOULWAKE-A4-PRINT-001",
+  "task_type": "OWNER_DELEGATED_A4_DUPLEX_PRINT_PREPARATION",
+  "status": "ACTIVE",
+  "owner_authorization": {
+    "task_id": "FOULWAKE-A4-PRINT-001",
+    "decision": "AUTHORIZED",
+    "recorded_from": "Current owner request for complete A4 duplex print files, exact existing sizes, improved island back and reviewed printable rulebook.",
+    "decision_ref": "governance/v4/evidence/OWNER_A4_PRINT_AUTHORITY_20260909.json"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": true,
+    "allowed_actions": [
+      "WRITE",
+      "QA_REVIEW",
+      "COPY_CHECK",
+      "RULES_INTEGRITY_REVIEW",
+      "PERIOD_LANGUAGE_REVIEW",
+      "PRODUCE_VISUAL",
+      "PRODUCE_LAYOUT",
+      "PRODUCE_FULL_121",
+      "PRODUCE_PDF_OR_PRINT_PACKAGE",
+      "ART_LANGUAGE_REVIEW",
+      "FRAMING_DECISION",
+      "COMPOSITION_REVIEW",
+      "DECK_RHYTHM_REVIEW"
+    ],
+    "role_actions": {
+      "CHIEF_EDITOR": [
+        "WRITE",
+        "QA_REVIEW",
+        "COPY_CHECK",
+        "RULES_INTEGRITY_REVIEW",
+        "PERIOD_LANGUAGE_REVIEW",
+        "PRODUCE_VISUAL",
+        "PRODUCE_LAYOUT",
+        "PRODUCE_FULL_121",
+        "PRODUCE_PDF_OR_PRINT_PACKAGE",
+        "ART_LANGUAGE_REVIEW",
+        "FRAMING_DECISION",
+        "COMPOSITION_REVIEW",
+        "DECK_RHYTHM_REVIEW"
+      ]
+    }
+  },
+  "runtime_permissions": {
+    "visual_production": true,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": true,
+    "pdf_or_print_package": true,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "inputs": [
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
+    },
+    {
+      "path": "working/v2.7/qa/illustrated_design_20260908/render_manifest.json",
+      "git_blob": "50bcd7679f6a837b339904d72b83e082f1f92404"
+    },
+    {
+      "path": "working/v2.7/qa/illustrated_design_20260908/individual_visual_review.json",
+      "git_blob": "deeea7fc384d427cc3e05debdd1a03cc56dd5132"
+    },
+    {
+      "path": "working/v2.7/visual/polish_20260908/pdf/FOULWAKE_KURAL_KITABI_v2.7.pdf",
+      "git_blob": "2ada0597d5420b38d76223f8bf4d49f7ea84198b"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
+      "git_blob": "1461136d920916d7d251d954fe35d247f2daebaf"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
+      "git_blob": "7db58c608eb18114f530a9035347befa3a284c18"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
+      "git_blob": "2598182f63f38b8461aa2fc6ceb4b872c4855eb4"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+      "git_blob": "531d208e203ddee927a6e963de32137e40353ebe"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_ISLAND.pdf",
+      "git_blob": "a4e066f2f4684eb6bb4b41d454e35e627b792782"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267"
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SUPPORT.pdf",
+      "git_blob": "609c51575b013213ecd1557f0575a64dec257036"
+    }
+  ],
+  "editable_source_baseline": {
+    "working/v2.7/README_CURRENT_v2.7.md": "5ff58c2f6cccd82f1f36d4698a4561f0b0e4935a",
+    "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md": "6952d8f761416def7ffad0117975a1f6691e0821",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md": "1fc9b744f77e6c83cc9eb2c86e45d1d0162c543c",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json": "111678049494144a7b5e4b7315448127c24882c5"
+  },
+  "acceptance_criteria": [
+    "A4 portrait duplex deck, 121 fronts with 121 correct backs; long-edge reflected positions and rotation verified using asymmetric corner witnesses.",
+    "Retain native card dimensions, text and artwork; protect fonts, safe area, bleed and printer margins; every finished placement is inspected.",
+    "Improve shared island back to read as land with vegetation rather than barren rock; all six identical. Preserve other six back masters including one upright lighthouse.",
+    "Read whole rulebook, verify card/rule copy correspondence, repair print layout and supported clarity issues; no unapproved mechanic change.",
+    "Deliver separate print instructions and scale/alignment trial; print PDF uses 100% actual size and explicit duplex preferences.",
+    "Digital checks and same-operator visual review only; physical printer variation, human playtest, independent acceptance and release/lock remain unverified."
+  ],
+  "completion_policy": "Deliver full A4 print package and evidence, then close this scoped production task."
+}
