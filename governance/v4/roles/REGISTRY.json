@@ -65,7 +65,7 @@
       ],
       "writes_require_exact_task": true,
       "brief_ref": "governance/v4/roles/CHIEF_EDITOR.md",
-      "temporary_delegation_status": "CLOSED / A4_PRINT_DELIVERED / COORDINATION_BOUNDARY_RESTORED"
+      "temporary_delegation_status": "SCOPED_OWNER_AUTHORITY_REGISTERED / ISLAND_REFERENCE_REVISION"
     },
     "STORY_EDITOR": {
       "owns": [

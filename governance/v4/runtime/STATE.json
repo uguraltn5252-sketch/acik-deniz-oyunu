@@ -130,7 +130,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Use the delivered A4 PDFs at 100% actual size with long-edge duplex. Print guide pages 3–4 as one trial sheet before the full deck. Record owner feedback and physical results; a new production scope requires a new exact task.",
+  "next_action": "Open the new exact island-reference task, generate one original shared back, update six existing placements and verify the changed A4 sheet.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -255,7 +255,7 @@
   "last_completed_read_only_task_id": "STORY-COHERENCE-IMMERSION-001",
   "coordination_followups_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json",
   "paused_project_tasks": {},
-  "temporary_delegation_ref": "governance/v4/evidence/OWNER_A4_PRINT_AUTHORITY_20260909.json",
+  "temporary_delegation_ref": "governance/v4/evidence/OWNER_ISLAND_REFERENCE_AUTHORITY_20260909.json",
   "current_editorial_delivery": {
     "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
     "commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
@@ -263,7 +263,7 @@
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_status": "CLOSED / A4_PRINT_DELIVERED / COORDINATION_BOUNDARY_RESTORED",
+  "temporary_delegation_status": "SCOPED_OWNER_AUTHORITY_REGISTERED / ISLAND_REFERENCE_REVISION",
   "current_recheck_delivery": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",

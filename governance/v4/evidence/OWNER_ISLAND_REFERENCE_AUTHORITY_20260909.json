@@ -1,0 +1,22 @@
+{
+  "schema_version": "4.3",
+  "date": "2026-09-09",
+  "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+  "issued_by": "PROJECT_OWNER",
+  "source_head": "368f94f4132fdc43467854d186d49a6cc1726980",
+  "owner_instruction_verbatim": "Ada gorseli icin referans olarak kullan birebir kullanma arastir düşün bizim oyunumuza uygun olsun",
+  "context": "Follow-up to the delivered A4 duplex package; owner supplies three island references and asks for an original game-appropriate interpretation. Existing temporary art-direction/visual delegation applies to this requested revision.",
+  "reference_files": [
+    "1000153122.jpg",
+    "1000153121.jpg",
+    "1000153120.jpg"
+  ],
+  "chief_editor_implementation_decisions": {
+    "scope": "One original shared island back, six identical instances and replacement sheet 22 in the existing A4 deck.",
+    "visual_direction": "Low sandy island, recognizable crooked palms, restrained olive/ochre/slate palette and engraved ink; references guide legibility, never composited or copied.",
+    "orientation": "Use one coherent upright island scene, not opposed half-image duplication. This is a delegated composition choice, not a claim that the owner explicitly ordered a symmetry waiver. All six island backs remain identical; no event identity is encoded.",
+    "preserved": "All 121 fronts and card text, other six back masters including one upright lighthouse, card sizes, 3 mm bleed, A4 duplex positions, rulebook and print guide.",
+    "delivery": "Update full 46-page PDF and provide the changed two-page sheet 22 for people who already printed the prior deck.",
+    "review": "Same operator digital image/PDF checks, no claimed independent acceptance, physical printer test, human playtest or release/lock."
+  }
+}

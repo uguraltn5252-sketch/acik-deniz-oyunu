@@ -113,14 +113,19 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**"
+          ".github/**",
+          "working/v2.7/print_island_20260909/**",
+          "working/v2.7/qa/island_reference_20260909/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+          "working/v2.7/README_CURRENT_v2.7.md",
+          "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+          "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -233,12 +238,12 @@
       "limits": "Exact task, role/path scope, independent review and source integrity remain mandatory; no implicit full production, canon/mechanics change, release or lock."
     },
     "temporary_consolidated_authority": {
-      "decision_ref": "governance/v4/evidence/OWNER_A4_PRINT_AUTHORITY_20260909.json",
-      "task_id": "FOULWAKE-A4-PRINT-001",
+      "decision_ref": "governance/v4/evidence/OWNER_ISLAND_REFERENCE_AUTHORITY_20260909.json",
+      "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
       "role": "CHIEF_EDITOR",
-      "scope": "A4 duplex print preparation, island back revision and rulebook copy/layout review.",
+      "scope": "One shared island back and its six placements in the existing A4 duplex deck.",
       "review": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT",
-      "status": "CLOSED / A4_PRINT_DELIVERED / TASK_PERMISSIONS_OFF"
+      "status": "SCOPED_OWNER_AUTHORITY_REGISTERED"
     }
   },
   "protected_quality_gates": [
