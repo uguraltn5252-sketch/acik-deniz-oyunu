@@ -1,0 +1,65 @@
+{
+  "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+  "reviewer": "CHIEF_EDITOR / SAME_OPERATOR",
+  "status": "SELF_CHECK_PASS / OWNER_REVIEW_PENDING",
+  "original_generated_image_reviewed": true,
+  "reviewed_full_pages": [
+    43,
+    44
+  ],
+  "full_page_render_dpi": 150,
+  "individual_back_render_dpi": 300,
+  "individual_backs": [
+    {
+      "id": "HAR-AA-01",
+      "render_sha256": "38e318092bda77e163ea5f0d4dccbd4c29dbb55f83c1c85a26d7e9bc593bc291",
+      "observation": "One upright island, three palms, broad sandy cove and consistent surrounding sea. No clipped palm or land, white fringe, seam, mirrored duplicate, text or event clue.",
+      "disposition": "SELF_CHECK_PASS"
+    },
+    {
+      "id": "HAR-AA-02",
+      "render_sha256": "ad537b074d837c743d3201da77a24a736b904af5bc5b53da4d1853cf6e9fcc51",
+      "observation": "One upright island, three palms, broad sandy cove and consistent surrounding sea. No clipped palm or land, white fringe, seam, mirrored duplicate, text or event clue.",
+      "disposition": "SELF_CHECK_PASS"
+    },
+    {
+      "id": "HAR-AA-03",
+      "render_sha256": "356de63c48ca25b47d0761c0080a0a5b543db434b1a2a624c5c5b7b63202663a",
+      "observation": "One upright island, three palms, broad sandy cove and consistent surrounding sea. No clipped palm or land, white fringe, seam, mirrored duplicate, text or event clue.",
+      "disposition": "SELF_CHECK_PASS"
+    },
+    {
+      "id": "HAR-AA-04",
+      "render_sha256": "a334ce68c24d23dc6ee9432ab75c17dff058c5123d2e0db61114d40d90ec01e4",
+      "observation": "One upright island, three palms, broad sandy cove and consistent surrounding sea. No clipped palm or land, white fringe, seam, mirrored duplicate, text or event clue.",
+      "disposition": "SELF_CHECK_PASS"
+    },
+    {
+      "id": "HAR-AA-05",
+      "render_sha256": "38e318092bda77e163ea5f0d4dccbd4c29dbb55f83c1c85a26d7e9bc593bc291",
+      "observation": "One upright island, three palms, broad sandy cove and consistent surrounding sea. No clipped palm or land, white fringe, seam, mirrored duplicate, text or event clue.",
+      "disposition": "SELF_CHECK_PASS"
+    },
+    {
+      "id": "HAR-AA-06",
+      "render_sha256": "ad537b074d837c743d3201da77a24a736b904af5bc5b53da4d1853cf6e9fcc51",
+      "observation": "One upright island, three palms, broad sandy cove and consistent surrounding sea. No clipped palm or land, white fringe, seam, mirrored duplicate, text or event clue.",
+      "disposition": "SELF_CHECK_PASS"
+    }
+  ],
+  "composition_findings": [
+    "Recognizable low sandy island; stones are minor at one shore and do not dominate.",
+    "Three different palm silhouettes provide restrained character; no forced prop-based joke.",
+    "Muted olive/ochre and fine black engraving relate to the current complete-card style.",
+    "Original shoreline and palm arrangement; reference image is not pasted or cropped.",
+    "Continuous blue-gray/teal sea reaches all edges; trim remains within sea margin.",
+    "Six identical backs preserve hidden island-event identity.",
+    "Page 43 retains readable six card fronts; page 44 retains paired A4 crop marks and footer."
+  ],
+  "not_claimed": [
+    "Independent art acceptance",
+    "Physical print inspection",
+    "Measured human preference or readability improvement",
+    "New game playtest or simulation"
+  ]
+}

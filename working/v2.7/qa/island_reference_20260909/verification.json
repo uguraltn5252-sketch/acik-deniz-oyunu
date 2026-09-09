@@ -1,0 +1,396 @@
+{
+  "status": "PASS / TARGETED_DIGITAL_CHECK / SAME_OPERATOR",
+  "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+  "full_pdf_sha256": "7face650737f4fb075b4e6f21ff54cb36b28e1ea774562508f8fd29832c76f6b",
+  "retained_pages": [
+    {
+      "page": 1,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "a1d599a26e43de0e09ecd2393743a88d37f59ce67eb244b842c9683760618b02"
+    },
+    {
+      "page": 2,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "0d5a5496668e0a9cc0d980c2018abdaf168582b37c97ff096c34271cee495afa"
+    },
+    {
+      "page": 3,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "db188099ba9b9aea1f3d9cf8ca04cce427203ca2c722be01e71d1353ecdb63a3"
+    },
+    {
+      "page": 4,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "230fa15306a90b99449bd0fc8cb4158fa963d0567653cb2986e9c0e21a7b6370"
+    },
+    {
+      "page": 5,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "55e21925eddc47b214923adbc688ba235a5bb7f10231b995cafde319657e050a"
+    },
+    {
+      "page": 6,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "ad700f66ad1ce5907bd72ceee960d97b86ea06cd474a75f6a3a5187185a6cad1"
+    },
+    {
+      "page": 7,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "92c4ad3bf6aa819a9b1d29081c6a0d5149e20b6be2fbb0cc2afa26b5fa9bd2f3"
+    },
+    {
+      "page": 8,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "88ba0f84e92c1a9f71ff13ebb70f9e35ab29f86eaa57e34f6e84de6359b37532"
+    },
+    {
+      "page": 9,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "0a5bd6ff3dae39cec39d51625538bd16bb09ad27c5ccae2d1f8ef2ed0146f68e"
+    },
+    {
+      "page": 10,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "fadd8d43fcb8e0b3225ff88bad5ea0cfac651f2d9521299813a516d39c6b5254"
+    },
+    {
+      "page": 11,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "56d3614c0fc46d77715aa0c83a28d5b9d4f81a00a61846c7d2bed91ed6476a22"
+    },
+    {
+      "page": 12,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "468918b6bad8692a0548089a205d57f9a6ade10c9d1fd07a0faad7f7da7b9ba9"
+    },
+    {
+      "page": 13,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "49f52db069801271e43c41e1a62956913b84397249268fd437baaf3fc7d85f41"
+    },
+    {
+      "page": 14,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "84b3ae94938c12a39a0ad5e012f134ab94fb9397fe0c6b91c20685ddf7d80b64"
+    },
+    {
+      "page": 15,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "179df7b5e868d941396900fd8436eeda14883ce8475c781860221aaf9062bfbe"
+    },
+    {
+      "page": 16,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "d5b3e1d22fbab071543c80f04300736fe38d715d6a1896404ddd2a8a36dca22b"
+    },
+    {
+      "page": 17,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "8d10d009a3ba49e5c46b6fc2d2ee6ae48b66ea3ab89c426ff2a64095d499e03e"
+    },
+    {
+      "page": 18,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "a59439f37d5f62a0815eafb99a71c60b6e0af7ac01ee72bc6edecd97b2098202"
+    },
+    {
+      "page": 19,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "dd48a027380142b829e7be0c56527d92fd8cae67eb5c2173a8508f382345aee6"
+    },
+    {
+      "page": 20,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "3217df6fb53a1df127dcc8f59987278bd4d189f7d31d143bd2932ea027540b08"
+    },
+    {
+      "page": 21,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "7f955fa013b0475a491ce3dbd843117c9ace78da0a2820bbb7d9cc0dfe8638e6"
+    },
+    {
+      "page": 22,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "7aea9e841ffaa357a54afcf2bf76c1e289dad2e960f0f61f8710a3aa93a666e7"
+    },
+    {
+      "page": 23,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "d080ffc042f687f215bac0777c4dd14ca8b6570545181577211b758804afe283"
+    },
+    {
+      "page": 24,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "2f85ce1c09a9b8e25c19d436484bf8a7c99b57201cd20237d775d53e35c8ee3f"
+    },
+    {
+      "page": 25,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "ecd777b0682c74e90cb77d3ab3e844cba4a7fee306ac16710da659709833c56f"
+    },
+    {
+      "page": 26,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "8c97f111c64e99446ec920354a525c04257167ced2bc33126637d99022b3f993"
+    },
+    {
+      "page": 27,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "189c6f235e0a436e66f0ee5eb7cbbaab049dd86157e96d0ea219f426ca574094"
+    },
+    {
+      "page": 28,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "bb70ee940b3c7033c6f9d7baf9bc61601e906f16347d79201a11a30a977a197b"
+    },
+    {
+      "page": 29,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "b90df12a09948a649019b46a60c11ec80f14116213aad1b1eee4e1a05d032ad4"
+    },
+    {
+      "page": 30,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "35ed90d8572456951c3ecee21354d658150936e58d7855755c787ba938e42eb4"
+    },
+    {
+      "page": 31,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "a03adff8f8d02af1429f14cd72914c94c6c194848666d9fc1d9fde4ad875f80a"
+    },
+    {
+      "page": 32,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "cce130a4baff0124b177aeda1d7f47df439998400ff5b5efec95a232fe86401e"
+    },
+    {
+      "page": 33,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "9c79e59afcb729e20d993dd3a8bc1ada6f83a357b61f59f2be95b4793a5785ff"
+    },
+    {
+      "page": 34,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "1522751e8386a5dd2813ecaafa7efe8f92d9836962d671250946bf07cc3a4e01"
+    },
+    {
+      "page": 35,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "82a183a7cdd3d2595811b213cd0fa8996ab9acc8db09c3b8ffba71c17c11c7ca"
+    },
+    {
+      "page": 36,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "e1dcb9502071d537e37ff41acc3d1bff6a1ad802dab04c61e4adb0d6f6663057"
+    },
+    {
+      "page": 37,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "56dcfd0133b5727bf755eebfd8194c7740ca60a761e3f0c379aef9bf35af82af"
+    },
+    {
+      "page": 38,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "55940ba8833f4a083597ad7ee3392f793cc334d9c594796a9e16c99ab7d1729b"
+    },
+    {
+      "page": 39,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "bb10bfc58e6ae34d72d9c22c8f7a6f958383d9cf267a1785ca406f0c37fd0ef7"
+    },
+    {
+      "page": 40,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "96df11ee8bba51fb022d45a61788e9291c2076f8e5c74a3bf224908834c3d5a1"
+    },
+    {
+      "page": 41,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "aadb95cbb0232b9cfc2da4730c242d23cf43a559bc2847e67354e2a4b6bba0a7"
+    },
+    {
+      "page": 42,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "de0e402359a7035c32dc9a1b523195fe9fb50ee4d8846300f075b117258ea6fb"
+    },
+    {
+      "page": 43,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "5642f91da38e219a15e72c98453c073f32c5fd773d6b8ce4e3b98704472e43c8"
+    },
+    {
+      "page": 45,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "de912d8bb64ac9f91786f7ec5d1f10f54bb40513821286ac2618f06bf830b297"
+    },
+    {
+      "page": 46,
+      "native_text": "IDENTICAL",
+      "rgb_96dpi_sha256": "e7cbda0e66dd1fae2edbcffe3e0e38439dd7c2d36ce2f36ab1906c427f3ef45b"
+    }
+  ],
+  "exact_text_pages": 46,
+  "all_121_fronts_preserved_by_native_page_copy": true,
+  "changed_back_page": 44,
+  "changed_island_count": 6,
+  "image_pixels": [
+    1254,
+    1254
+  ],
+  "effective_image_dpi": 419.1,
+  "six_same_original_image_digest": "3f96c075c6d387c45c196079ec2629f7",
+  "placements": [
+    {
+      "id": "HAR-AA-01",
+      "front_page": 43,
+      "back_page": 44,
+      "bbox_mm": [
+        110.99999999999997,
+        31.500000000000014,
+        180.99999999999997,
+        101.50000000000001
+      ],
+      "shared_image_xref": 2068,
+      "image_bbox_error_pt": 2.595195621779567e-05,
+      "long_edge_reflection_error_pt": 5.684341886080802e-14,
+      "upright": true
+    },
+    {
+      "id": "HAR-AA-02",
+      "front_page": 43,
+      "back_page": 44,
+      "bbox_mm": [
+        29.0,
+        31.500000000000014,
+        99.0,
+        101.50000000000001
+      ],
+      "shared_image_xref": 2068,
+      "image_bbox_error_pt": 2.5891882216910744e-05,
+      "long_edge_reflection_error_pt": 5.684341886080802e-14,
+      "upright": true
+    },
+    {
+      "id": "HAR-AA-03",
+      "front_page": 43,
+      "back_page": 44,
+      "bbox_mm": [
+        110.99999999999997,
+        113.50000000000001,
+        180.99999999999997,
+        183.5
+      ],
+      "shared_image_xref": 2068,
+      "image_bbox_error_pt": 2.595195621779567e-05,
+      "long_edge_reflection_error_pt": 5.684341886080802e-14,
+      "upright": true
+    },
+    {
+      "id": "HAR-AA-04",
+      "front_page": 43,
+      "back_page": 44,
+      "bbox_mm": [
+        29.0,
+        113.50000000000001,
+        99.0,
+        183.5
+      ],
+      "shared_image_xref": 2068,
+      "image_bbox_error_pt": 4.445473985015269e-05,
+      "long_edge_reflection_error_pt": 5.684341886080802e-14,
+      "upright": true
+    },
+    {
+      "id": "HAR-AA-05",
+      "front_page": 43,
+      "back_page": 44,
+      "bbox_mm": [
+        110.99999999999997,
+        195.5,
+        180.99999999999997,
+        265.5
+      ],
+      "shared_image_xref": 2068,
+      "image_bbox_error_pt": 5.4787463000138814e-05,
+      "long_edge_reflection_error_pt": 5.684341886080802e-14,
+      "upright": true
+    },
+    {
+      "id": "HAR-AA-06",
+      "front_page": 43,
+      "back_page": 44,
+      "bbox_mm": [
+        29.0,
+        195.5,
+        99.0,
+        265.5
+      ],
+      "shared_image_xref": 2068,
+      "image_bbox_error_pt": 5.4787463000138814e-05,
+      "long_edge_reflection_error_pt": 5.684341886080802e-14,
+      "upright": true
+    }
+  ],
+  "bleed_mm": 3,
+  "master_mm": [
+    76,
+    76
+  ],
+  "trim_mm": [
+    70,
+    70
+  ],
+  "viewer_preferences": "PrintScaling None / DuplexFlipLongEdge",
+  "new_page_embedded_fonts": [
+    {
+      "name": "DejaVuSans",
+      "embedded_bytes": 35464
+    }
+  ],
+  "replacement_pair_matches_master": true,
+  "preserved_inputs": {
+    "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json": {
+      "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+      "sha256": "cf131726580864a3b878fe25ac7dbd33e0ca52208d4892d6729db7e7e2c486a3"
+    },
+    "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json": {
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e",
+      "sha256": "dc3ca70f2b84d77eccfc6b8443d172c88a32db4808fe70538e3c1b4cdde2db56"
+    },
+    "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json": {
+      "git_blob": "9ea474db94c2d0215afda91efd16365148fd0f02",
+      "sha256": "4643302c6b55de02bce2257c3a183387dc19b13dafa58958c3c73dd786592d8e"
+    },
+    "working/v2.7/print_20260909/pdf/KARTLAR_A4_22.pdf": {
+      "git_blob": "752730b9d9273cea85315514500be4e250f46645",
+      "sha256": "f740d0f84aa3e2aa35dff3fb6f99ae4bdad54759b8a50ad7c1d83b2d8e9fd91f"
+    },
+    "working/v2.7/print_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf": {
+      "git_blob": "a4796b0f8437bb7a6e6a55ba785578f0d0ad756e",
+      "sha256": "67b7c982df2c2fc5be5160a195ca8ff9ded22b96fe10f389c3bdeddc64c0207e"
+    },
+    "working/v2.7/print_20260909/pdf/FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf": {
+      "git_blob": "261a3ad7363c5e4035cc533a9529d13e0cfc66eb",
+      "sha256": "654f867421f9cab71f633ec07069b8f20473bed531c120aca92dcba6598e9d03"
+    },
+    "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf": {
+      "git_blob": "531d208e203ddee927a6e963de32137e40353ebe",
+      "sha256": "c8145c887b16b949df3d9599466e3c19cc6803ad24351d2fac9d49dd52957930"
+    },
+    "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf": {
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267",
+      "sha256": "3357f0a1efcde62b767b9b385da2f1a3742ef4cc8c03c28d97a629c830a3adee"
+    }
+  },
+  "other_six_back_master_hashes_unchanged": true,
+  "physical_print_test": false,
+  "independent_review": false,
+  "visual_review_ref": "visual_review.json",
+  "replacement_pair_rgb_96dpi_sha256": [
+    "5642f91da38e219a15e72c98453c073f32c5fd773d6b8ce4e3b98704472e43c8",
+    "e0d875e4ab327b357e4306dfe6f3899a57321e40fc82e609f52cad8cf0a26906"
+  ],
+  "unused_font_resources": [
+    "Helvetica"
+  ]
+}

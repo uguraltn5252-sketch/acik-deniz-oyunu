@@ -1,0 +1,44 @@
+{
+  "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+  "generator": "image_gen.imagegen",
+  "mode": "reference-guided original generation",
+  "tool_model_version": "NOT_EXPOSED",
+  "prompt_ref": "generation_prompt.txt",
+  "generation_attempts": 1,
+  "selected_original_file": "exec-c8b13781-3f41-4ba4-b20e-0f561c8b9ef3.png",
+  "selected_asset": "working/v2.7/print_island_20260909/assets/BACK_ISLAND.png",
+  "selected_sha256": "7ff3e98f18112b31822e190cc02b726b686b387082b776f8a4f71ae977b48525",
+  "post_generation_image_editing": "NONE; original bytes copied and embedded at native resolution",
+  "reference_handling": [
+    {
+      "uploaded_file": "01-1000153122.jpg",
+      "sha256": "464eab6b9ca5e44433baffb084ec5d094fac06cab208e7f01aeaff658937db19",
+      "role": "Owner concept reference: small sandy palm island; not copied",
+      "passed_to_generator": true
+    },
+    {
+      "uploaded_file": "02-1000153121.jpg",
+      "sha256": "464eab6b9ca5e44433baffb084ec5d094fac06cab208e7f01aeaff658937db19",
+      "role": "Owner duplicate concept reference; not passed again",
+      "passed_to_generator": false
+    },
+    {
+      "uploaded_file": "03-1000153120.jpg",
+      "sha256": "a88d669f2afb3f4ed9aec2b22f94272444925108f7b52c8b7e83bdba8bbd734a",
+      "role": "Owner concept reference: legible low island silhouette; not copied",
+      "passed_to_generator": true
+    },
+    {
+      "source": "tmp/print_20260909/individual/SET-KP-01.png",
+      "role": "Existing FOULWAKE card: linework, matte ink and restrained palette only",
+      "passed_to_generator": true
+    },
+    {
+      "source": "tmp/island_reference_20260909/sea_style.png",
+      "role": "Existing BACK_SEA_ROCK PDF render: water palette/linework/edge density only",
+      "passed_to_generator": true
+    }
+  ],
+  "reference_pixel_compositing": false,
+  "orientation_decision": "One upright coherent scene; not the prior opposed-half PDF construction. Delegated Chief Editor composition choice recorded in owner-request evidence, not an invented owner quotation."
+}

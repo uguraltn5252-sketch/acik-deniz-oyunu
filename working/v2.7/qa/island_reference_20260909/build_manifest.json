@@ -1,0 +1,153 @@
+{
+  "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+  "baseline_head": "368f94f4132fdc43467854d186d49a6cc1726980",
+  "activation_commit": "5d4c3ced364cfa3c05a276f30ab4957bcc7d68d4",
+  "baseline_pdf_sha256": "9116e7995623e0f16bae97fbeb18a025e69f04eaa43746d13dbd759b820eac9a",
+  "updated_pdf": {
+    "name": "FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "bytes": 126247743,
+    "sha256": "7face650737f4fb075b4e6f21ff54cb36b28e1ea774562508f8fd29832c76f6b",
+    "pages": 46
+  },
+  "replacement_sheet": {
+    "file": "FOULWAKE_ADA_YAPRAK_22_A4_ON_ARKA.pdf",
+    "original_pages": [
+      43,
+      44
+    ],
+    "pages": 2,
+    "sha256": "8f392b26800f68a8781ccd349414452bd24c66f2fb945a8a5fe16a498dc4f12d"
+  },
+  "image_sha256": "7ff3e98f18112b31822e190cc02b726b686b387082b776f8a4f71ae977b48525",
+  "master_sha256": "d604e70d765101a2ade1917f9827b84864956074c79d9401f1daad09c18bfa5a",
+  "placement_source": "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
+  "changed_page_one_based": 44,
+  "placements": [
+    {
+      "sheet": 22,
+      "page": 43,
+      "side": "back",
+      "id": "HAR-AA-01",
+      "back": "BACK_ISLAND",
+      "bbox": [
+        314.64566929133855,
+        89.29133858267721,
+        513.0708661417323,
+        287.71653543307093
+      ],
+      "rotation": 0,
+      "native_mm": [
+        70.0,
+        70.0
+      ]
+    },
+    {
+      "sheet": 22,
+      "page": 43,
+      "side": "back",
+      "id": "HAR-AA-02",
+      "back": "BACK_ISLAND",
+      "bbox": [
+        82.20472440944883,
+        89.29133858267721,
+        280.62992125984255,
+        287.71653543307093
+      ],
+      "rotation": 0,
+      "native_mm": [
+        70.0,
+        70.0
+      ]
+    },
+    {
+      "sheet": 22,
+      "page": 43,
+      "side": "back",
+      "id": "HAR-AA-03",
+      "back": "BACK_ISLAND",
+      "bbox": [
+        314.64566929133855,
+        321.732283464567,
+        513.0708661417323,
+        520.1574803149607
+      ],
+      "rotation": 0,
+      "native_mm": [
+        70.0,
+        70.0
+      ]
+    },
+    {
+      "sheet": 22,
+      "page": 43,
+      "side": "back",
+      "id": "HAR-AA-04",
+      "back": "BACK_ISLAND",
+      "bbox": [
+        82.20472440944883,
+        321.732283464567,
+        280.62992125984255,
+        520.1574803149607
+      ],
+      "rotation": 0,
+      "native_mm": [
+        70.0,
+        70.0
+      ]
+    },
+    {
+      "sheet": 22,
+      "page": 43,
+      "side": "back",
+      "id": "HAR-AA-05",
+      "back": "BACK_ISLAND",
+      "bbox": [
+        314.64566929133855,
+        554.1732283464568,
+        513.0708661417323,
+        752.5984251968505
+      ],
+      "rotation": 0,
+      "native_mm": [
+        70.0,
+        70.0
+      ]
+    },
+    {
+      "sheet": 22,
+      "page": 43,
+      "side": "back",
+      "id": "HAR-AA-06",
+      "back": "BACK_ISLAND",
+      "bbox": [
+        82.20472440944883,
+        554.1732283464568,
+        280.62992125984255,
+        752.5984251968505
+      ],
+      "rotation": 0,
+      "native_mm": [
+        70.0,
+        70.0
+      ]
+    }
+  ],
+  "native_trim_mm": [
+    70,
+    70
+  ],
+  "master_mm": [
+    76,
+    76
+  ],
+  "bleed_mm": 3,
+  "a4_mm": [
+    210,
+    297
+  ],
+  "duplex": "LONG_EDGE",
+  "scale": 1,
+  "orientation": "ONE_UPRIGHT_ORIGINAL_SCENE",
+  "image_transformations": "NONE / ORIGINAL_PNG_EMBEDDED_UNCHANGED",
+  "retained_page_count": 45
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "file_name": "FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "status": "succeeded",
+    "operation": "replace_library_file",
+    "library_file_id": "libfile_9e5aae6ec68c81919c9b98fa8e855c6c",
+    "file_id": "file_00000000c7ac81fdac9c96c31040d7f1",
+    "current_version_number": 1,
+    "bytes": 126247743,
+    "sha256": "7face650737f4fb075b4e6f21ff54cb36b28e1ea774562508f8fd29832c76f6b"
+  },
+  {
+    "file_name": "FOULWAKE_ADA_YAPRAK_22_A4_ON_ARKA.pdf",
+    "status": "succeeded",
+    "operation": "create_library_file",
+    "library_file_id": "libfile_2fb44d67e7ac8191a992c41ecbe598fc",
+    "file_id": "file_00000000461481fdb7a77adf131f47b5",
+    "current_version_number": 0,
+    "bytes": 9900645,
+    "sha256": "8f392b26800f68a8781ccd349414452bd24c66f2fb945a8a5fe16a498dc4f12d"
+  }
+]

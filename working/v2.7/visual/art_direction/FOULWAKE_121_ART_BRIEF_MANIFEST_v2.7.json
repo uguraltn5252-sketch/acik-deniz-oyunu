@@ -29,13 +29,13 @@
   "schema_version": "2.7-integrated-art-manifest-2.0",
   "document": "121 complete original card designs with exact native copy",
   "art_direction_stage": "ILLUSTRATED_DESIGN_20260908",
-  "current_stage": "A4_PRINT_PREPARATION_20260909",
+  "current_stage": "ISLAND_REFERENCE_PRINT_REVISION_20260909",
   "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
   "source_branch": "v2.7-design",
-  "authority": "governance/v4/tasks/FOULWAKE-A4-PRINT-001.json",
+  "authority": "governance/v4/tasks/FOULWAKE-ISLAND-REFERENCE-001.json",
   "current_direction_ref": "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
-  "previous_manifest_blob": "111678049494144a7b5e4b7315448127c24882c5",
-  "scope": "121 retained complete-card fronts with exact canonical copy; six retained back masters and one revised shared island back; verified A4 duplex layout and same-operator review.",
+  "previous_manifest_blob": "80b7ec17a956cb245906b570071c6d29be8178df",
+  "scope": "121 retained fronts, six retained back masters and one original reference-inspired palm-island back on six cards; only A4 page 44 revised.",
   "binding_sources": {
     "card_copy": {
       "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
@@ -47,11 +47,12 @@
       "sha256": "dc3ca70f2b84d77eccfc6b8443d172c88a32db4808fe70538e3c1b4cdde2db56",
       "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
     },
-    "task": "governance/v4/tasks/FOULWAKE-A4-PRINT-001.json",
+    "task": "governance/v4/tasks/FOULWAKE-ISLAND-REFERENCE-001.json",
     "current_direction": "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
     "owner_design_correction": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json",
     "reference_role": "Design language only; original captain and all original scenes required; no literal reference crop.",
-    "front_art_task": "governance/v4/tasks/FOULWAKE-ILLUSTRATED-DESIGN-002.json"
+    "front_art_task": "governance/v4/tasks/FOULWAKE-ILLUSTRATED-DESIGN-002.json",
+    "island_reference_owner_request": "governance/v4/evidence/OWNER_ISLAND_REFERENCE_AUTHORITY_20260909.json"
   },
   "historical_brief_context": {
     "manifest_blob": "200a05d50e8dd6b986a6839161fd84c308824d15",
@@ -117,7 +118,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -163,7 +164,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -209,7 +210,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -255,7 +256,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -301,7 +302,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -347,7 +348,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -393,7 +394,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -439,7 +440,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -485,7 +486,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -531,7 +532,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -577,7 +578,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -623,7 +624,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -669,7 +670,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -715,7 +716,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -762,7 +763,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -808,7 +809,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -854,7 +855,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -900,7 +901,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -946,7 +947,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -992,7 +993,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_CHARACTER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1040,7 +1041,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1088,7 +1089,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1135,7 +1136,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1182,7 +1183,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1229,7 +1230,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1276,7 +1277,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1323,7 +1324,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1370,7 +1371,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1417,7 +1418,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1464,7 +1465,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1511,7 +1512,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1558,7 +1559,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1606,7 +1607,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1653,7 +1654,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1700,7 +1701,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1747,7 +1748,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1795,7 +1796,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1842,7 +1843,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1889,7 +1890,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1936,7 +1937,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -1983,7 +1984,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2030,7 +2031,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2077,7 +2078,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2125,7 +2126,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2172,7 +2173,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2219,7 +2220,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2266,7 +2267,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2313,7 +2314,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2361,7 +2362,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2408,7 +2409,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2453,7 +2454,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_POWER.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2499,7 +2500,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2545,7 +2546,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2591,7 +2592,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2637,7 +2638,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2683,7 +2684,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2729,7 +2730,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2775,7 +2776,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2821,7 +2822,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2867,7 +2868,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2913,7 +2914,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -2959,7 +2960,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3005,7 +3006,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3051,7 +3052,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3097,7 +3098,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3143,7 +3144,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LOYALTY.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3190,7 +3191,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3237,7 +3238,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3284,7 +3285,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3331,7 +3332,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3380,7 +3381,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3427,7 +3428,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3474,7 +3475,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3521,7 +3522,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3568,7 +3569,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3615,7 +3616,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3662,7 +3663,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3709,7 +3710,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3756,7 +3757,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3803,7 +3804,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3850,7 +3851,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3897,7 +3898,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3944,7 +3945,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -3991,7 +3992,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4038,7 +4039,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4085,7 +4086,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4132,7 +4133,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4179,7 +4180,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4226,7 +4227,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4273,7 +4274,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4320,7 +4321,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4367,7 +4368,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4414,7 +4415,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4461,7 +4462,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4508,7 +4509,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4555,7 +4556,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4602,7 +4603,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4649,7 +4650,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4696,7 +4697,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4743,7 +4744,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4790,7 +4791,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4837,7 +4838,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4884,7 +4885,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4931,7 +4932,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -4978,7 +4979,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5025,7 +5026,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5072,7 +5073,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5119,7 +5120,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5164,10 +5165,11 @@
         "source_plan_is_not_final_visual_evidence": true
       },
       "current_print": {
-        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "back_master": "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md",
-        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
+        "print_index": "working/v2.7/print_island_20260909/README.md",
+        "back_change": "Original upright sandy palm island; owner references guide concept only. All six identical; no front event clue.",
+        "back_generation_record": "working/v2.7/qa/island_reference_20260909/generation_provenance.json"
       }
     },
     {
@@ -5212,10 +5214,11 @@
         "source_plan_is_not_final_visual_evidence": true
       },
       "current_print": {
-        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "back_master": "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md",
-        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
+        "print_index": "working/v2.7/print_island_20260909/README.md",
+        "back_change": "Original upright sandy palm island; owner references guide concept only. All six identical; no front event clue.",
+        "back_generation_record": "working/v2.7/qa/island_reference_20260909/generation_provenance.json"
       }
     },
     {
@@ -5262,10 +5265,11 @@
         "source_plan_is_not_final_visual_evidence": true
       },
       "current_print": {
-        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "back_master": "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md",
-        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
+        "print_index": "working/v2.7/print_island_20260909/README.md",
+        "back_change": "Original upright sandy palm island; owner references guide concept only. All six identical; no front event clue.",
+        "back_generation_record": "working/v2.7/qa/island_reference_20260909/generation_provenance.json"
       }
     },
     {
@@ -5310,10 +5314,11 @@
         "source_plan_is_not_final_visual_evidence": true
       },
       "current_print": {
-        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "back_master": "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md",
-        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
+        "print_index": "working/v2.7/print_island_20260909/README.md",
+        "back_change": "Original upright sandy palm island; owner references guide concept only. All six identical; no front event clue.",
+        "back_generation_record": "working/v2.7/qa/island_reference_20260909/generation_provenance.json"
       }
     },
     {
@@ -5358,10 +5363,11 @@
         "source_plan_is_not_final_visual_evidence": true
       },
       "current_print": {
-        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "back_master": "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md",
-        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
+        "print_index": "working/v2.7/print_island_20260909/README.md",
+        "back_change": "Original upright sandy palm island; owner references guide concept only. All six identical; no front event clue.",
+        "back_generation_record": "working/v2.7/qa/island_reference_20260909/generation_provenance.json"
       }
     },
     {
@@ -5406,10 +5412,11 @@
         "source_plan_is_not_final_visual_evidence": true
       },
       "current_print": {
-        "back_master": "working/v2.7/print_20260909/pdf/BACK_ISLAND.pdf",
+        "back_master": "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md",
-        "back_change": "Single connected green island with sandy coves; identical shared master for all six island cards; no event-specific clue."
+        "print_index": "working/v2.7/print_island_20260909/README.md",
+        "back_change": "Original upright sandy palm island; owner references guide concept only. All six identical; no front event clue.",
+        "back_generation_record": "working/v2.7/qa/island_reference_20260909/generation_provenance.json"
       }
     },
     {
@@ -5456,7 +5463,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5503,7 +5510,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5550,7 +5557,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5597,7 +5604,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5643,7 +5650,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SUPPORT.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5688,7 +5695,7 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SUPPORT.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     },
     {
@@ -5734,16 +5741,24 @@
       "current_print": {
         "back_master": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SUPPORT.pdf",
         "retained_front": true,
-        "print_index": "working/v2.7/print_20260909/README.md"
+        "print_index": "working/v2.7/print_island_20260909/README.md"
       }
     }
   ],
   "print_preparation": {
     "task_id": "FOULWAKE-A4-PRINT-001",
     "source_commit": "41de98cf51d6f162388f541d5675fc1aec4bd8b3",
-    "index": "working/v2.7/print_20260909/README.md",
+    "index": "working/v2.7/print_island_20260909/README.md",
     "imposition": "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
-    "scope": "121 exact retained fronts, six retained back masters, one new shared vegetated island back, A4 duplex layout."
+    "scope": "121 exact retained fronts, six retained back masters, one new shared vegetated island back, A4 duplex layout.",
+    "previous_index": "working/v2.7/print_20260909/README.md",
+    "island_revision": {
+      "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+      "activation_commit": "5d4c3ced364cfa3c05a276f30ab4957bcc7d68d4",
+      "manifest": "working/v2.7/qa/island_reference_20260909/build_manifest.json",
+      "replacement_sheet": 22,
+      "replacement_page": 44
+    }
   },
   "front_art_source_activation": "e6398070c4a7b479092946261d0e121952dbbfe7",
   "chief_editor_source": "41de98cf51d6f162388f541d5675fc1aec4bd8b3"

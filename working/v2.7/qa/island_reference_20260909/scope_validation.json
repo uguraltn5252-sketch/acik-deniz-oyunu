@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "method": "validator.validate_execution_scope; task unchanged since activation; all actual cumulative content paths checked",
+  "activation_commit": "5d4c3ced364cfa3c05a276f30ab4957bcc7d68d4",
+  "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+  "files": 18,
+  "max_files": 40,
+  "changed_paths": [
+    "working/v2.7/README_CURRENT_v2.7.md",
+    "working/v2.7/print_island_20260909/README.md",
+    "working/v2.7/print_island_20260909/assets/BACK_ISLAND.png",
+    "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
+    "working/v2.7/print_island_20260909/pdf/KARTLAR_A4_22.pdf",
+    "working/v2.7/qa/island_reference_20260909/artifact_versions.json",
+    "working/v2.7/qa/island_reference_20260909/build.py",
+    "working/v2.7/qa/island_reference_20260909/build_manifest.json",
+    "working/v2.7/qa/island_reference_20260909/generation_prompt.txt",
+    "working/v2.7/qa/island_reference_20260909/generation_provenance.json",
+    "working/v2.7/qa/island_reference_20260909/research.md",
+    "working/v2.7/qa/island_reference_20260909/review.md",
+    "working/v2.7/qa/island_reference_20260909/scope_validation.json",
+    "working/v2.7/qa/island_reference_20260909/verification.json",
+    "working/v2.7/qa/island_reference_20260909/verify.py",
+    "working/v2.7/qa/island_reference_20260909/visual_review.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+    "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+  ],
+  "preserved_inputs": [
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "a95adad127fe8871ed2280f2117981d348dbb5dd",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/qa/print_preparation_20260909/imposition_manifest.json",
+      "git_blob": "9ea474db94c2d0215afda91efd16365148fd0f02",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/print_20260909/pdf/KARTLAR_A4_22.pdf",
+      "git_blob": "752730b9d9273cea85315514500be4e250f46645",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/print_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "git_blob": "a4796b0f8437bb7a6e6a55ba785578f0d0ad756e",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/print_20260909/pdf/FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf",
+      "git_blob": "261a3ad7363c5e4035cc533a9529d13e0cfc66eb",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_SEA_ROCK.pdf",
+      "git_blob": "531d208e203ddee927a6e963de32137e40353ebe",
+      "verified_unchanged": true
+    },
+    {
+      "path": "working/v2.7/visual/illustrated_design_20260908/pdf/BACK_LIGHTHOUSE.pdf",
+      "git_blob": "463f6df5f77a15603ce02e95f4035f0ce089b267",
+      "verified_unchanged": true
+    }
+  ]
+}
