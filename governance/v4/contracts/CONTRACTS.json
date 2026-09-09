@@ -113,14 +113,23 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**"
+          ".github/**",
+          "working/v2.7/qa/cover_lighthouse_20260909/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+          "working/v2.7/publication_20260909/assets/OWNER_SELECTED_COVER.png",
+          "working/v2.7/publication_20260909/assets/BACK_LIGHTHOUSE_CENTERED.png",
+          "working/v2.7/publication_20260909/pdf/BACK_LIGHTHOUSE_CENTERED.pdf",
+          "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+          "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+          "working/v2.7/publication_20260909/README.md",
+          "working/v2.7/qa/publication_20260909/book.py",
+          "working/v2.7/qa/publication_20260909/cards.py"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -394,7 +403,8 @@
         "secret_organization": "Malum"
       },
       "implemented_commit": "202f8e686d91b4e8094ced7fa82a66c6c0810ee1"
-    }
+    },
+    "cover_lighthouse_authority_ref": "governance/v4/evidence/OWNER_COVER_LIGHTHOUSE_AUTHORITY_20260909.json"
   },
   "project_owner_required_actions": [
     "CANON_DECISION",

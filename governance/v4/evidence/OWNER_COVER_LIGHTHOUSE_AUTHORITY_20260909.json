@@ -1,0 +1,34 @@
+{
+  "task_id": "FOULWAKE-COVER-LIGHTHOUSE-001",
+  "issued_by": "PROJECT_OWNER",
+  "date": "2026-09-09",
+  "source_head": "83d808674b36b4d537988164a26f00b4533bdbf1",
+  "owner_instruction_verbatim": "Kural kitap kapağı bu olacak birde fener arka görseli karta ortala yeniden boyutlandır githuba ve pdf e işle kural kitabini ve kart pdf ini bana gönder",
+  "selected_cover": {
+    "file": "1000153195.png",
+    "sha256": "7c4e21b19fe322568aa9634f1b33bf78aeb39398cb6b50f0128eb108b8453df6",
+    "use": "Exact selected cover, full-page; no regenerated composition or added text."
+  },
+  "delegation": {
+    "executor": "CHIEF_EDITOR",
+    "scope": "Selected cover integration, centering/resizing the existing single lighthouse back, matching book map thumbnails, targeted PDF regeneration and GitHub delivery. No copy, mechanics, other artwork, size or duplex changes.",
+    "allowed_exact_paths": [
+      "working/v2.7/publication_20260909/assets/OWNER_SELECTED_COVER.png",
+      "working/v2.7/publication_20260909/assets/BACK_LIGHTHOUSE_CENTERED.png",
+      "working/v2.7/publication_20260909/pdf/BACK_LIGHTHOUSE_CENTERED.pdf",
+      "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+      "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "working/v2.7/publication_20260909/README.md",
+      "working/v2.7/qa/publication_20260909/book.py",
+      "working/v2.7/qa/publication_20260909/cards.py"
+    ],
+    "allowed_globs": [
+      "working/v2.7/qa/cover_lighthouse_20260909/**"
+    ]
+  },
+  "limits": [
+    "Independent artistic acceptance and physical print proof are not supplied by same-operator checks.",
+    "Original KAPTAN remains primary style reference; this selected cover is now binding for the cover.",
+    "Earlier unselected cover trials remain historical."
+  ]
+}

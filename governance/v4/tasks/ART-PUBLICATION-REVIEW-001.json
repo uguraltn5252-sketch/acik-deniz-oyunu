@@ -4,7 +4,7 @@
   "task_id": "ART-PUBLICATION-REVIEW-001",
   "task_type": "SOURCE_READ_ONLY_ART_AND_PUBLICATION_REVIEW",
   "project_task": false,
-  "status": "READ_ONLY_ASSIGNED",
+  "status": "PAUSED / OWNER_TARGETED_PUBLICATION_REVISION",
   "issued_by": "CHIEF_EDITOR",
   "issued_at": "2026-09-09",
   "executor_role": "ART_DIRECTION",
@@ -24,7 +24,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
   },
   "authorization": {
-    "enabled": true,
+    "enabled": false,
     "write_authorized": false,
     "allowed_actions": [
       "READ_ONLY_VALIDATION"
@@ -171,5 +171,6 @@
     "Full scope or explicit omissions are documented with source/page evidence.",
     "No source bytes, production permissions, specialist branches, PDFs or trial cover images are modified.",
     "Chief preparation is not counted as an independent art review, reviewer acknowledgement or owner final acceptance."
-  ]
+  ],
+  "pause_reason": "Owner selected a new cover and requested centered lighthouse placement; refresh PDF pins after delivery."
 }

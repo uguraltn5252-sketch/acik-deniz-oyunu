@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-ART-REVIEW-ASSIGNED-20260909",
-  "status": "V4_ACTIVE / PUBLICATION_DELIVERED / ART_REVIEW_ASSIGNED",
+  "state_id": "V4-COVER-LIGHTHOUSE-PREPARED-20260909",
+  "status": "V4_ACTIVE / OWNER_TARGETED_REVISION_PREPARED",
   "updated_at": "2026-09-09",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -135,7 +135,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "ART_DIRECTION reads the pinned current publication and original KAPTAN style reference, then reports in its own visible chat under ART-PUBLICATION-REVIEW-001. Visual production remains closed pending disposition and an exact implementation task.",
+  "next_action": "Activate FOULWAKE-COVER-LIGHTHOUSE-001, integrate selected owner cover and centered single lighthouse, then rebind art review to revised PDFs.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -249,13 +249,7 @@
     }
   },
   "last_completed_project_task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
-  "read_only_assignments": {
-    "ART_DIRECTION": {
-      "task_id": "ART-PUBLICATION-REVIEW-001",
-      "task_ref": "governance/v4/tasks/ART-PUBLICATION-REVIEW-001.json",
-      "status": "READ_ONLY_ASSIGNED"
-    }
-  },
+  "read_only_assignments": {},
   "completed_read_only_reviews": {
     "STORY-COHERENCE-IMMERSION-001": {
       "status": "ACCEPTED_WITH_RECORDED_CORRECTION",
@@ -267,7 +261,7 @@
   "last_completed_read_only_task_id": "STORY-COHERENCE-IMMERSION-001",
   "coordination_followups_ref": "governance/v4/planning/STORY_REVIEW_FOLLOWUPS_20260905.json",
   "paused_project_tasks": {},
-  "temporary_delegation_ref": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json",
+  "temporary_delegation_ref": "governance/v4/evidence/OWNER_COVER_LIGHTHOUSE_AUTHORITY_20260909.json",
   "current_editorial_delivery": {
     "task_id": "FOULWAKE-EDITORIAL-OVERHAUL-001",
     "commit": "d96967c0b87490982ebc6bec9363c3d1c2b1646e",
@@ -276,7 +270,7 @@
     "status": "HISTORICAL_DELIVERY / SUPERSEDED_FOR_CURRENT_PUBLICATION",
     "publication_superseded_by": "FOULWAKE-PUBLICATION-REDESIGN-001"
   },
-  "temporary_delegation_status": "CLOSED / PUBLICATION_DELIVERED / COORDINATION_BOUNDARY_RESTORED",
+  "temporary_delegation_status": "AUTHORIZED / AWAITING_EXACT_TASK_ACTIVATION",
   "current_recheck_delivery": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
@@ -404,7 +398,7 @@
     "decision_ref": "governance/v4/evidence/OWNER_ART_REVIEW_HANDOFF_20260909.json",
     "verification_ref": "governance/v4/evidence/ART_REVIEW_HANDOFF_CHECK_20260909.json",
     "source_head": "2c8f18c084f14a495bcb4d16044b8fccc6310803",
-    "status": "READY_FOR_REVIEW / REVIEW_NOT_PERFORMED",
+    "status": "PAUSED / PDF_REVISION_REQUESTED_BY_OWNER",
     "primary_visual_reference": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
     "secondary_reference_pdfs": [
       "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
