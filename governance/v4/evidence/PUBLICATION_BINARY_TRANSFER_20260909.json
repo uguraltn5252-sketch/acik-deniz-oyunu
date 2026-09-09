@@ -1,0 +1,91 @@
+{
+  "schema_version": "4.3",
+  "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+  "coordination_task_id": "GOV4-TEAM-COORDINATION-001",
+  "purpose": "Transport the two already verified owner-requested PDFs to GitHub without changing their bytes. The connector request-body limit is 16 MiB, so opaque Git blobs hold segments. This is an implementation of the existing publication authorization, not a release or an authorization expansion.",
+  "source_head": "d4072fbff19aeae3508801b733164fdae8517e7a",
+  "targets": [
+    {
+      "path": "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+      "bytes": 74699858,
+      "git_blob": "01e4840cc0cca966948b410c55c76895a3b8c778",
+      "sha256": "3eb6b291417bdefcbf5ed9f35a012738c12cc33f855e5a5d53bd586ff415c87f",
+      "parts": [
+        {
+          "bytes": 8400000,
+          "index": 0,
+          "offset": 0,
+          "sha": "af05ba8b5fe68093c8ddb1f1c793ab1b93c676f7"
+        },
+        {
+          "bytes": 8400000,
+          "index": 1,
+          "offset": 8400000,
+          "sha": "ed2607148ddaf03e03db22423fe2c2876b1e1b7c"
+        },
+        {
+          "bytes": 8400000,
+          "index": 2,
+          "offset": 16800000,
+          "sha": "6c5bb1ce06bedf9d5fddde4908f38de778b8e9ac"
+        },
+        {
+          "bytes": 8400000,
+          "index": 3,
+          "offset": 25200000,
+          "sha": "45cafe751ae8f09c77ec1292e20523877cd6380a"
+        },
+        {
+          "bytes": 8400000,
+          "index": 4,
+          "offset": 33600000,
+          "sha": "3332598f01d4adaaeebfd7a1cde43cf94a689d72"
+        },
+        {
+          "bytes": 8400000,
+          "index": 5,
+          "offset": 42000000,
+          "sha": "d1b7c083b0795e084bd191f06fb305cc616dff77"
+        },
+        {
+          "bytes": 8400000,
+          "index": 6,
+          "offset": 50400000,
+          "sha": "5e049f7125827ab6fa298c60abea868cdd028890"
+        },
+        {
+          "bytes": 8400000,
+          "index": 7,
+          "offset": 58800000,
+          "sha": "2a928b7256866ad422e5b7dfdc71bad2fdba566d"
+        },
+        {
+          "bytes": 7499858,
+          "index": 8,
+          "offset": 67200000,
+          "sha": "bf8a7a3f9028af082341eb41d014c5e42e4826ab"
+        }
+      ]
+    },
+    {
+      "path": "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "bytes": 14300745,
+      "git_blob": "22029c3fc0e79ee9a313f6a8edaf703b66983619",
+      "sha256": "dde37e8dd7a2aa846e5e44d9d06a10f52ebcd834d885986de6c07c863277b91f",
+      "parts": [
+        {
+          "bytes": 8400000,
+          "index": 0,
+          "offset": 0,
+          "sha": "ae62fae1ba1274c9e36d6ac1508b827c9445b7d8"
+        },
+        {
+          "bytes": 5900745,
+          "index": 1,
+          "offset": 8400000,
+          "sha": "b42155eb71997227768ae1c7d84402549caa996c"
+        }
+      ]
+    }
+  ]
+}

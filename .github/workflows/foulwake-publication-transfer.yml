@@ -1,0 +1,31 @@
+name: FOULWAKE verified PDF transfer
+
+on:
+  push:
+    branches: [v2.7-design]
+    paths:
+      - working/v2.7/qa/publication_20260909/delivery_files.json
+
+permissions:
+  contents: read
+
+jobs:
+  transfer:
+    if: github.repository == 'uguraltn5252-sketch/acik-deniz-oyunu'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout the exact publication source commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            governance/v4
+            working/v2.7/qa/publication_20260909
+            working/v2.7/publication_20260909/pdf
+      - name: Assemble and commit only the two verified PDFs
+        env:
+          GH_TRANSFER_TOKEN: ${{ github.token }}
+        run: python3 -B governance/v4/publication_transfer_20260909.py
