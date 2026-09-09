@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-ISLAND-REFERENCE-ACTIVE-20260909",
-  "status": "V4_ACTIVE / ISLAND_REFERENCE_REVISION",
+  "state_id": "V4-ISLAND-REFERENCE-DELIVERED-20260909",
+  "status": "V4_ACTIVE / ISLAND_REFERENCE_DELIVERED / IDLE",
   "updated_at": "2026-09-09",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -74,7 +74,8 @@
       "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd",
       "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
       "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf",
-      "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed"
+      "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
+      "current_integrated_island_revision_commit": "27502198797cbdea51091f702720232b3e5ae0ee"
     },
     "visual": {
       "branch": "work/v2.7-visual",
@@ -84,7 +85,8 @@
       "current_integrated_full_deck_commit": "f577403ffe5444175402ab183dcb8621a4e91bcd",
       "current_integrated_polish_commit": "e7bc25fa0a4fcd5ff208d41bc3dc24746abef83c",
       "current_integrated_illustrated_design_commit": "0f65aa817bd0d8e6c06a97274648d9c6363a25bf",
-      "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed"
+      "current_integrated_print_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
+      "current_integrated_island_revision_commit": "27502198797cbdea51091f702720232b3e5ae0ee"
     },
     "simulation": {
       "branch": "work/v2.7-simulation",
@@ -102,22 +104,22 @@
   },
   "visual_dispositions": {
     "BACK_SEA_ROCK": "RETAINED_SOURCE_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING",
-    "BACK_ISLAND": "REVISED_VEGETATED_ISLAND / SIX_IDENTICAL_BACKS / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING",
+    "BACK_ISLAND": "ORIGINAL_SANDY_PALM_ISLAND / ONE_UPRIGHT_SCENE / SIX_IDENTICAL_BACKS / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING",
     "BACK_LIGHTHOUSE": "ONE_UPRIGHT_LIGHTHOUSE / ORIGINAL_UPPER_SCENE_PRESERVED / SAME_OPERATOR_CHECK",
     "OTHER_FOUR_BACKS": "RETAINED_SOURCES_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING"
   },
   "permissions": {
-    "visual_production": true,
+    "visual_production": false,
     "thumbnails": false,
     "pilot_or_candidate": false,
     "full_121_production": false,
-    "pdf_or_print_package": true,
+    "pdf_or_print_package": false,
     "simulation": false,
     "release": false,
     "lock": false
   },
   "open_blockers": {
-    "ART-001": "121 retained original fronts, six retained back masters and revised shared island back delivered for A4 printing; owner aesthetic review pending.",
+    "ART-001": "Original palm-island back delivered from owner references; other accepted working designs preserved. Owner aesthetic review remains pending.",
     "MEC-001": "27 targeted tests and 3,600 updated heuristic voyages delivered. Full engine equivalence and human experience remain unverified; no balance acceptance.",
     "QA-001": "121 complete cards, 363 canonical-copy fields and all 80 final PDF pages self-checked; independent and owner acceptance remain unverified.",
     "QA-002": "Physical and human evidence absent.",
@@ -130,7 +132,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Produce original island back, update sheet 22, verify and deliver revised A4 deck.",
+  "next_action": "Use the updated full A4 PDF, or replace sheet 22 if the earlier deck was printed. Keep 100% actual size and long-edge duplex. Record owner feedback or physical trial results; no automatic new production.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
@@ -242,7 +244,7 @@
       "scope": "Original complete-card design and review pipeline; stale root links corrected in closure; canonical copy and single upright lighthouse preserved."
     }
   },
-  "last_completed_project_task_id": "FOULWAKE-A4-PRINT-001",
+  "last_completed_project_task_id": "FOULWAKE-ISLAND-REFERENCE-001",
   "read_only_assignments": {},
   "completed_read_only_reviews": {
     "STORY-COHERENCE-IMMERSION-001": {
@@ -263,7 +265,7 @@
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / NOT_RELEASED"
   },
-  "temporary_delegation_status": "SCOPED_OWNER_AUTHORITY_REGISTERED / ISLAND_REFERENCE_REVISION",
+  "temporary_delegation_status": "CLOSED / ISLAND_REFERENCE_DELIVERED / COORDINATION_BOUNDARY_RESTORED",
   "current_recheck_delivery": {
     "task_id": "FOULWAKE-RECHECK-VISUAL-001",
     "commit": "85a9e9955224d76db816e8f6b3a692be8de3cc5a",
@@ -328,11 +330,11 @@
     "print_package_superseded_by": "FOULWAKE-A4-PRINT-001"
   },
   "current_print_delivery": {
-    "task_id": "FOULWAKE-A4-PRINT-001",
-    "commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
-    "evidence_ref": "governance/v4/evidence/A4_PRINT_DELIVERY_20260909.json",
+    "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+    "commit": "27502198797cbdea51091f702720232b3e5ae0ee",
+    "evidence_ref": "governance/v4/evidence/ISLAND_REFERENCE_DELIVERY_20260909.json",
     "readme": "working/v2.7/README_CURRENT_v2.7.md",
-    "download_index": "working/v2.7/print_20260909/README.md",
+    "download_index": "working/v2.7/print_island_20260909/README.md",
     "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
     "fronts": 121,
     "backs": 121,
@@ -341,6 +343,10 @@
     "card_sheets": 23,
     "rulebook_pages": 30,
     "guide_pages": 4,
-    "not_an_accepted_candidate": true
+    "not_an_accepted_candidate": true,
+    "previous_delivery_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed",
+    "changed_page": 44,
+    "revised_shared_back": "BACK_ISLAND",
+    "rulebook_and_guide_delivery_commit": "d0d25e659328449e4b2de86b62ba5210c5f178ed"
   }
 }

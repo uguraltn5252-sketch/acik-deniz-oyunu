@@ -10,7 +10,7 @@
   ],
   "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
   "task_type": "OWNER_REQUESTED_SHARED_ISLAND_BACK_REVISION",
-  "status": "ACTIVE",
+  "status": "DELIVERED / SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING",
   "source": {
     "branch": "v2.7-design",
     "commit": "088e9a35669d2649bfe17ed9d7e0559ac9b2828b",
@@ -51,8 +51,8 @@
     "decision_ref": "governance/v4/evidence/OWNER_ISLAND_REFERENCE_AUTHORITY_20260909.json"
   },
   "authorization": {
-    "enabled": true,
-    "write_authorized": true,
+    "enabled": false,
+    "write_authorized": false,
     "allowed_actions": [
       "WRITE",
       "QA_REVIEW",
@@ -79,11 +79,11 @@
     }
   },
   "runtime_permissions": {
-    "visual_production": true,
+    "visual_production": false,
     "thumbnails": false,
     "pilot_or_candidate": false,
     "full_121_production": false,
-    "pdf_or_print_package": true,
+    "pdf_or_print_package": false,
     "simulation": false,
     "release": false,
     "lock": false
@@ -134,5 +134,31 @@
     "Inspect the generated artwork and all six final placements; compare the other 45 pages, book and guide against baseline. Deliver updated full PDF plus replacement sheet 22.",
     "Record actual generation/research provenance and same-operator checks; no independent, physical, human-playtest, release or lock claim."
   ],
-  "completion_policy": "Deliver this bounded revision, then close production permissions; keep earlier sources and evidence as history."
+  "completion_policy": "Deliver this bounded revision, then close production permissions; keep earlier sources and evidence as history.",
+  "delivery": {
+    "commit": "27502198797cbdea51091f702720232b3e5ae0ee",
+    "evidence_ref": "governance/v4/evidence/ISLAND_REFERENCE_DELIVERY_20260909.json",
+    "changed_paths": [
+      "working/v2.7/README_CURRENT_v2.7.md",
+      "working/v2.7/print_island_20260909/README.md",
+      "working/v2.7/print_island_20260909/assets/BACK_ISLAND.png",
+      "working/v2.7/print_island_20260909/pdf/BACK_ISLAND.pdf",
+      "working/v2.7/print_island_20260909/pdf/KARTLAR_A4_22.pdf",
+      "working/v2.7/qa/island_reference_20260909/artifact_versions.json",
+      "working/v2.7/qa/island_reference_20260909/build.py",
+      "working/v2.7/qa/island_reference_20260909/build_manifest.json",
+      "working/v2.7/qa/island_reference_20260909/generation_prompt.txt",
+      "working/v2.7/qa/island_reference_20260909/generation_provenance.json",
+      "working/v2.7/qa/island_reference_20260909/research.md",
+      "working/v2.7/qa/island_reference_20260909/review.md",
+      "working/v2.7/qa/island_reference_20260909/scope_validation.json",
+      "working/v2.7/qa/island_reference_20260909/verification.json",
+      "working/v2.7/qa/island_reference_20260909/verify.py",
+      "working/v2.7/qa/island_reference_20260909/visual_review.json",
+      "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+    ],
+    "result": "One original sandy palm-island back; all six instances and page 44 revised. Other 45 pages unchanged; full A4 PDF and replacement sheet 22 delivered.",
+    "acceptance": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT_OR_PHYSICAL_ACCEPTANCE"
+  }
 }

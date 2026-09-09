@@ -4,7 +4,7 @@
 
 Bu repository kalıcı kaynak ve karar kaydıdır. Aktif geliştirme dalı `v2.7-design`; v2.6 kilitli, v2.7 taslaktır.
 
-9 Eylül A4 baskı teslimi: [121 kart — 46 sayfa / 23 yaprak](working/v2.7/print_20260909/README.md), [30 sayfalık A4 kural kitabı](working/v2.7/print_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf), [baskı rehberi ve hizalama denemesi](working/v2.7/print_20260909/pdf/FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf). Mevcut kart ölçüleri, 121 özgün ön ve tek fener korunur; Ada arkası yenilendi. 121 kartın yazı/görüntü kontrolü ve A4 ön–arka geometrisi tamamlandı. Aynı operatörün dijital incelemesidir; fiziksel baskı ve insan oyunu kanıtı ayrı kalır. Görev kapandı. [Teslim kanıtı](governance/v4/evidence/A4_PRINT_DELIVERY_20260909.json).
+9 Eylül güncel A4 baskısı — Ada referansı revizyonu: [121 kart — 46 sayfa / 23 yaprak](working/v2.7/print_island_20260909/README.md), [30 sayfalık A4 kural kitabı](working/v2.7/print_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf), [baskı rehberi ve hizalama denemesi](working/v2.7/print_20260909/pdf/FOULWAKE_A4_BASKI_REHBERI_VE_HIZALAMA.pdf). Mevcut kart ölçüleri, 121 özgün ön ve tek fener korunur; Ada arkası yeni referanslardan özgün kumlu koy ve üç palmiye olarak çizildi; yalnız 44. sayfa değişti. Önceki desteyi bastıysanız yeni 22. yaprağı kullanın. 121 kartın yazı/görüntü kontrolü ve A4 ön–arka geometrisi tamamlandı. Aynı operatörün dijital incelemesidir; fiziksel baskı ve insan oyunu kanıtı ayrı kalır. Görev kapandı. [Teslim kanıtı](governance/v4/evidence/ISLAND_REFERENCE_DELIVERY_20260909.json).
 
 Yeni sohbetler: [ekip başlangıcı](governance/v4/TEAM_START.md).
 Canlı durum: [v4 state](governance/v4/runtime/STATE.json).
