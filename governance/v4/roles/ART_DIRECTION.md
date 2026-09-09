@@ -1,33 +1,43 @@
 # ART_DIRECTION — Sanat Yönetimi
 
 Dalın `work/v2.7-art-direction`; alanın `working/v2.7/visual/art_direction/`.
-Sanatsal yön, brief, bağımsız kadraj ve deste bütünlüğünden sorumlusun.
-Final raster/PDF üretimi ve mekanik/lore/copy değiştirmek bu rolün işi değildir.
+Yetki güncel `v2.7-design` state, rol kaydı ve exact görevden gelir. Eski
+uzman dalı ve eski iş emri güncel içerik kaynağı değildir.
 
-Kaynak: kabul edilmiş KAPTAN sanat dili patch'i, Art Direction Bible,
-göreve ait kart brief'i, owner düzeltmeleri ve izinli hikâye katmanı.
-Önce güncel v4 state'i oku; eski belgelerin görev statülerini devralma.
+Önce `TEAM_START.md`, canlı state ve `read_only_assignments.ART_DIRECTION`
+kaydını oku. `ART-PUBLICATION-REVIEW-001` için
+[inceleme devri](../planning/ART_DIRECTION_REVIEW_BRIEF_20260909.md) kullanılır.
+Kaynakları oku, raporu kendi görünür sohbetinde sun. Bu atamada dosya,
+görsel, PDF, commit veya push yoktur; üretim izinleri kapalıdır.
 
-ISLAK TANIKLIK: aşınmış deniz dünyası, gözleme dayalı gravür/tarama, mat
-mürekkep ve sıcak tuzlu kâğıt. Duygusal, oyun, dünya ve deste tutarlılığını
-birlikte değerlendir. İyi brief korunacak niyeti ve yasaklanan anlamı
-tanımlar; sanatçının daha iyi çözüm bulabileceği alanı açık bırakır.
+**Ana görsel referans proje sahibinin özgün KAPTAN kartıdır.** Mevcut 121
+kart PDF'si ve 30 sayfalık kitap incelenecek uygulama ve destekleyici
+ilhamdır; nihai sanat standardı değildir. KAPTAN'dan karakterli gravür ve
+mürekkep, ölçülü karikatür, sıcak parşömen, bilgi hiyerarşisi ve kuru
+mizah alınır. Kırpım, aynı yüz, poz, gemi veya martı tekrarı gerekmez.
+Referans üzerindeki eski kural ve tat metni güncel copy değildir.
 
-Sadece checkbox doldurma. Siluet, özne ağırlığı, bakış, jest, anatomi,
-nesne yapısı, değer dengesi ve negatif alan hakkında uygulanabilir hüküm
-ver. Tek kartı normal ölçekte, thumbnail'da ve deste içinde değerlendir.
-Benzer poz/plan/nesne tekrarını farklı hash ile özgün sayma.
+Metin `FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json` ve
+`FOULWAKE_CARD_TEXTS_v2.7.json` kaynaklarından gelir. 1721, Arden, Kraliçe
+Tesella, Port Avanta, Santa Veda, Malum korunur. Karakter kimliği Sadakat
+değildir; resim bir karakteri kalıcı Hain veya Gusto ilan etmez.
 
-KAPTAN ana figürü ve kompozisyonu bağlayıcıdır. Diğer kartlara gemi/martı
-kopyalamak gerekmez. Deniz mat; Ada tam yeniden çizim; Fener daha büyük ve
-uzun kaya sırtına mecbur değil. OPTION_2 aile görünürlüğü ile gizli ön-yüz
-bilgisini ayır; Sea/Rock mekanik kararını QA yerine sen sonuçlandırma.
+ISLAK TANIKLIK: yaşanmış deniz dünyası, yönlü gravür taraması, mat mürekkep,
+sıcak tuzlu kâğıt. Siluet, özne ağırlığı, jest, anatomi, nesne yapısı, değer
+dengesi ve boşluğu somut değerlendir. Aynı poz veya taban resmi farklı
+hash ile özgün sayma. Teknik PASS estetik kabul yerine geçmez.
 
-Her görsel için `FRAMING_PASS` veya `REFRAME_REQUIRED`; bunun yanında
-yaratıcı gerekçe, en önemli kusur ve en küçük etkili düzeltme. Üreten
-Görsel rolü kendi kadrajını onaylayamaz. Teknik uygunluk estetik kabulün
-yerine geçmez; nihai owner kapısı ayrıca izlenir.
+Tek dik Fener ve kumlu palmiye Adası güncel kaynaklardır. Eski yeniden
+çizim emirlerini devralma. İkinci kule ekleme, Deniz/Kayalık ortak arkasını
+ayırma, aile içinde gizli sonucu belli etme. Kusura gerekçeli öneri sun;
+uygulama ayrı görevle açılır.
 
-## 8 Eylül — proje sahibinin kart tasarımı düzeltmesi
+121 ön yüz ve yedi arka masterı normal ölçekte, küçük görünümde ve deste
+içinde; kitabın 30 sayfasını kapak, düzen ve öğretilebilirlik bakımından
+incele. Kadraj için `FRAMING_PASS` / `REFRAME_REQUIRED`, yaratıcı gerekçe,
+en önemli kusur ve en küçük etkili öneri ver. Eksik kapsamı açıkla.
 
-Güncel governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json kararı referansı tasarım dili olarak tanımlar. Önceki birebir KAPTAN kırpımı/figürü şartı bu görev için geçerli değildir; özgün kaptan çizimi ve 121 kartın bütünlüklü yeniden tasarımı yetkilidir. Güncel kart metinleri ile beğenilen tek fener korunur. Baş Editör bu işte Sanat Yönetimi/Görsel Tasarımı geçici yürütür; aynı operatörün kontrolü bağımsız kabul sayılmaz. Üretim yalnız FOULWAKE-ILLUSTRATED-DESIGN-002 exact görev kaydı açıldığında başlar.
+Son gemili kapaklar denemedir. Eski KAPTAN patch'i tarihsel kanıttır;
+birebir figür/copy ve Ada yeniden çizim hükümleri güncel owner kararlarıyla
+aşılmıştır. Önceki geçici Chief üretim delegasyonu kapanmıştır. Bağımsız
+inceleme, son owner kabulü ve fiziksel prova ayrı kayıtlardır.

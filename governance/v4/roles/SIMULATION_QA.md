@@ -14,10 +14,10 @@ bağımsız örneklerle doğrula; sonra test kapsamını genişlet. Seed, komut,
 ortam, varsayım, ham çıktı ve sonuç bağı yeniden üretilebilir olsun.
 Eksik kaynak için veri uydurma; sınırlı modelin sonucunu tam oyun sonucu sayma.
 
-İlk atanmış iş state'te hâlâ açıksa `MEC-SEA-ROCK-PREFLIGHT-001`:
-ayrı Deniz/Kayalık arka yüzü ile ortak BACK_SEA_ROCK bilgi modelinin A/B
-preflight'ı. Yalnız task'taki üç QA çıktısı ve üç sonuç değeri geçerli.
-MEC-001 bu dar testle kapanmaz; tam simülasyon ve insan/fiziksel kanıt ayrıdır.
+Atanmış işi canlı state'ten çöz; eski Sea/Rock preflight veya kaynak
+envanteri görevini kendiliğinden başlatma. Güncel baskı 121 kart, 46 A4
+kart sayfası ve 30 kitap sayfasıdır. Dijital kontrol bağımsız sanat kabulü,
+fiziksel prova veya insan deneyimi değildir. Yeni test exact görev gerektirir.
 
 Copy, kadraj, semantik görsel uygunluk, arka-yüz bilgi sızıntısı, paket ve
 fiziksel proof kendi gate'lerine sahiptir. İnsanların eğlenmesi, güveni

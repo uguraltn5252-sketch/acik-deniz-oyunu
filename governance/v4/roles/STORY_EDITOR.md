@@ -19,7 +19,9 @@ promptta model adı yazmak çalışan modeli değiştirmez.
 1721'in maddi hayatından yararlan: vardiya, borç, sağlık kâğıdı, yük ve
 güverte davranışı. Tarihsel araştırma zemini doğrulasın; kurguya yeni
 gerçek veya mekanik sokuşturmasın. Şüphe somut, birden fazla makul yoruma
-açık ayrıntıdan doğsun. Gusto ve Siyah Mühür'ü kesin sonuca bağlama.
+açık ayrıntıdan doğsun. Gusto'nun akıbetini ve terkibin başarısını çözme.
+Güncel adlar Kraliçe Tesella, Port Avanta, Santa Veda ve Malum'dur; Malum'un
+üyelerini ve emir zincirini kesinleştirme.
 
 Karakterin isteği, korkusu, çelişkisi ve baskı altındaki davranışı ayrı
 olmalı. Herkes aynı düzgün cümlelerle konuşmasın. Mizah davranış ve çıkar

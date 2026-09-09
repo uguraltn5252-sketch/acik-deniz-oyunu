@@ -1,5 +1,10 @@
 # FOULWAKE
 
+## Sanat Yönetimi incelemesine devir — 9 Eylül 2026
+
+[Tek inceleme girişi](governance/v4/planning/ART_DIRECTION_REVIEW_BRIEF_20260909.md) · [Ana KAPTAN referansı](working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg). Ana görsel ölçüt özgün KAPTAN kartının tasarım dilidir; mevcut kitap ve kart PDF’leri destekleyici ilham ve inceleme konusudur. Referans üzerindeki eski kural metni kullanılmaz. `ART-PUBLICATION-REVIEW-001` görünür Sanat Yönetimi sohbetine salt okunur atanmıştır; rapor henüz teslim edilmedi. Üretim kapalıdır. Son kapak denemeleri seçilmiş/onaylı değildir.
+
+
 1721'in deniz dünyasında eksik bilgi, geçici güven ve ortak kararların bedeli üzerine kurulu masa oyunu. Hikâye, sanat ve mekanikler aynı masa deneyimini destekler; kara mizah tehlikeyi ortadan kaldırmaz.
 
 Bu repository kalıcı kaynak ve karar kaydıdır. Aktif geliştirme dalı `v2.7-design`; v2.6 kilitli, v2.7 taslaktır.

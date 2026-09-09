@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "OWNER-ART-REVIEW-HANDOFF-20260909",
+  "recorded_at": "2026-09-09",
+  "authorized_by": "PROJECT_OWNER",
+  "recorded_by": "CHIEF_EDITOR",
+  "source_head": "2c8f18c084f14a495bcb4d16044b8fccc6310803",
+  "owner_request": "Sanat yönetmeni incelemesi için GitHub kayıtlarını ve mevcut kart/rehber PDF teslimini kontrol et; yanıltıcı yönlendirmeleri düzelt. Ana referans önce gönderilen KAPTAN kartı; hazırlanmış kartlar ve kitap destekleyici ilham olsun.",
+  "decision": "AUTHORIZED / REVIEW_HANDOFF_AND_SOURCE_ROUTING_CORRECTION",
+  "primary_visual_reference": {
+    "path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+    "git_blob": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4",
+    "sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
+    "usage": "PRIMARY_ART_LANGUAGE_AND_INTEGRATED_DESIGN_REFERENCE / NOT_LITERAL_CROP / NOT_CURRENT_RULE_TEXT"
+  },
+  "secondary_references": [
+    "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf"
+  ],
+  "review_brief": "governance/v4/planning/ART_DIRECTION_REVIEW_BRIEF_20260909.md",
+  "review_task": "ART-PUBLICATION-REVIEW-001",
+  "current_cover_trials": "EXPLORATORY_CHAT_ONLY / NO_SELECTION / NO_REPO_IMPORT / NO_PDF_REPLACEMENT",
+  "limits": [
+    "No production, content, mechanics, quantities or artwork changed by this handoff.",
+    "No final aesthetic acceptance, physical proof, human playtest, release or lock inferred.",
+    "Historical accepted patch bytes remain evidence; superseded literal-figure/copy and redraw instructions are not current direction."
+  ],
+  "recording_scope": "Current coordination records and source-routing metadata only."
+}

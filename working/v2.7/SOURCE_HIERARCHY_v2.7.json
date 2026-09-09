@@ -10,6 +10,8 @@
       "priority": 1,
       "source": "latest explicit project-owner decision",
       "implementation": [
+        "governance/v4/evidence/OWNER_ART_REVIEW_HANDOFF_20260909.json",
+        "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json",
         "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json",
         "governance/v4/evidence/OWNER_WHOLE_GAME_POLISH_AUTHORITY_20260908.json",
         "governance/v4/evidence/OWNER_CONSOLIDATED_EDITORIAL_AUTHORITY_20260907.json",
@@ -50,11 +52,6 @@
     "kaptan_copy": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
     "visual_system": "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
     "current_order": "RESOLVE_FROM_V4_STATE",
-    "accepted_art_direction_patch": {
-      "commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
-      "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
-      "blob_sha": "bae77450d6d10e1e3234a3473bf68ffa1efff810"
-    },
     "rulebook": "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
     "editorial_decisions": "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
     "current_readme": "working/v2.7/README_CURRENT_v2.7.md",
@@ -62,7 +59,11 @@
     "current_visual_review": "working/v2.7/qa/publication_20260909/review.md",
     "current_revision_evidence": "governance/v4/evidence/PUBLICATION_DELIVERY_20260909.json",
     "rulebook_pdf": "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
-    "cards_pdf": "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf"
+    "cards_pdf": "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+    "art_review_brief": "governance/v4/planning/ART_DIRECTION_REVIEW_BRIEF_20260909.md",
+    "art_review_task": "governance/v4/tasks/ART-PUBLICATION-REVIEW-001.json",
+    "primary_visual_reference": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+    "current_art_direction": "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
   },
   "historical_only": {
     "rejected_visual_commit": "23c062f6de06c32eab224b3440c8474725d4fe9e",
@@ -71,7 +72,8 @@
     "previous_orders": [
       "working/v2.7/visual/FOULWAKE_PILOT_REWORK_ORDER_v2.7.md",
       "working/v2.7/visual/FOULWAKE_REVISED_PILOT_TARGETED_REWORK_ORDER_v2.7.md",
-      "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md"
+      "working/v2.7/visual/FOULWAKE_BACK_LIGHTHOUSE_ONLY_REWORK_ORDER_v2.7.md",
+      "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTOR_WORK_ORDER_v2.7.md"
     ],
     "classification": "EVIDENCE_ONLY / NO AUTHORIZATION",
     "v3_checkpoint": "governance/CURRENT_STAGE.json",
@@ -79,7 +81,13 @@
       "working/v2.7/print_island_20260909/README.md",
       "working/v2.7/print_20260909/README.md",
       "working/v2.7/visual/illustrated_design_20260908/README.md"
-    ]
+    ],
+    "accepted_art_direction_patch": {
+      "commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_KAPTAN_ART_LANGUAGE_PATCH_v2.7.md",
+      "blob_sha": "bae77450d6d10e1e3234a3473bf68ffa1efff810",
+      "classification": "HISTORICAL_ACCEPTANCE / SUPERSEDED_LITERAL_FIGURE_COPY_AND_REDRAW_DIRECTIONS"
+    }
   },
   "unresolved": [],
   "resolved": [
@@ -97,5 +105,16 @@
       "secret_organization": "Malum"
     },
     "decision_ref": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json"
+  },
+  "reference_usage": {
+    "primary_visual": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+    "secondary_inspiration": [
+      "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+      "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf"
+    ],
+    "current_game_copy": "PROJECT_OWNER_OVERRIDE_THEN_FULL_V27_SOURCE",
+    "reference_image_copy": "HISTORICAL / DO_NOT_TRANSCRIBE",
+    "cover_trials": "EXPLORATORY_CHAT_ONLY / NOT_APPROVED / NOT_IMPORTED",
+    "existing_artwork": "Review subject, not blanket final acceptance. Existing production preservation notes describe the delivered revision; future changes need exact tasks."
   }
 }

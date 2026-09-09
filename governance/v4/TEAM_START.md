@@ -32,6 +32,17 @@ Atanmış görev yoksa ilk okuma ve teşhis salt okunurdur; üretime başlanmaz.
 `READ_ONLY_ASSIGNED` varsa uzman incelemeyi kendi sohbetinde yürütür; tek aktif
 uzman yazma görevi korunur. İnceleme önerilerinin uygulanması ayrıca görevlendirilir.
 
+## Güncel sanat incelemesi
+
+`read_only_assignments.ART_DIRECTION` → `ART-PUBLICATION-REVIEW-001`.
+[Tek inceleme girişi](planning/ART_DIRECTION_REVIEW_BRIEF_20260909.md).
+Ana görsel referans özgün KAPTAN kartıdır; hazırlanmış kitap/kartlar
+ikincil ilham ve inceleme konusudur. Referanstaki eski copy kullanılmaz.
+Eski KAPTAN patch'inin figür/kırpım ve Ada yeniden çizim talimatları güncel
+emir değildir. Son gemili kapaklar yalnız denemedir; onay veya yeni kanon
+oluşturmaz. Uzman dalı dondurulmuş kalır; güncel girdiler v2.7-design'dan
+okunur. İnceleme görünür rol sohbetindedir; yeni üretim henüz açılmamıştır.
+
 ## Yetki ve kaynak sırası
 
 Git object/ref → güncel v4 state/task/contracts/registry → bağlayıcı owner

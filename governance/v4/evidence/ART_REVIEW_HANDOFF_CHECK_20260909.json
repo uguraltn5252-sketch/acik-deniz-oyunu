@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "task_id": "GOV4-TEAM-COORDINATION-001",
+  "check_id": "ART-REVIEW-HANDOFF-CHECK-20260909",
+  "source_head": "2c8f18c084f14a495bcb4d16044b8fccc6310803",
+  "result": "READY_FOR_ART_DIRECTION_REVIEW / SAME_OPERATOR_HANDOFF_CHECK",
+  "scope": "Source routing, delivery identity, PDF text/geometry and selected rendered pages; not a second full aesthetic review.",
+  "pdfs": [
+    {
+      "path": "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+      "git_blob": "01e4840cc0cca966948b410c55c76895a3b8c778",
+      "sha256": "3eb6b291417bdefcbf5ed9f35a012738c12cc33f855e5a5d53bd586ff415c87f",
+      "bytes": 74699858,
+      "pages": 46,
+      "a4_all_pages": true,
+      "old_names": {
+        "San Cordelio": 0,
+        "Saint Verena": 0,
+        "Siyah Mühür": 0,
+        "Kara Mühür": 0,
+        "Kuru Pay": 0
+      },
+      "replacement_characters": 0
+    },
+    {
+      "path": "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "git_blob": "22029c3fc0e79ee9a313f6a8edaf703b66983619",
+      "sha256": "dde37e8dd7a2aa846e5e44d9d06a10f52ebcd834d885986de6c07c863277b91f",
+      "bytes": 14300745,
+      "pages": 30,
+      "a4_all_pages": true,
+      "old_names": {
+        "San Cordelio": 0,
+        "Saint Verena": 0,
+        "Siyah Mühür": 0,
+        "Kara Mühür": 0,
+        "Kuru Pay": 0
+      },
+      "replacement_characters": 0
+    }
+  ],
+  "reference": {
+    "path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+    "sha256": "a3224299f1b868ec71b6f637e3cb4bdd48dd5ba978178a0a64bef3e052193a2a",
+    "matches_original_owner_reference": true,
+    "visually_inspected": true
+  },
+  "visual_spot_check": {
+    "book_pages": [
+      1,
+      2,
+      4,
+      7,
+      21,
+      28
+    ],
+    "card_pdf_pages": [
+      1,
+      11,
+      19,
+      25,
+      39,
+      46
+    ],
+    "observed_blocking_delivery_defect": false,
+    "not_full_new_art_review": true
+  },
+  "prior_full_digital_check": "working/v2.7/qa/publication_20260909/verification.json",
+  "corrections": [
+    "ART_DIRECTION and VISUAL_DESIGN briefs contradicted the newer style-only owner correction; obsolete literal captain figure/crop and Ada redraw instructions removed.",
+    "SOURCE_HIERARCHY routed to the historical KAPTAN patch as active; moved to historical routing and made the original KAPTAN image the primary visual reference.",
+    "Original KAPTAN image contains superseded effect/flavor; handoff explicitly routes copy to current JSON.",
+    "STORY_EDITOR still named the former secret organization; corrected to current canon.",
+    "Old QA task hint removed; new tests must use live assignments.",
+    "Visual back instruction could encourage a duplicate lighthouse through forced rotational symmetry; clarified one upright tower and family secrecy.",
+    "Current PDFs classified as secondary inspiration and review subjects, not final aesthetic acceptance.",
+    "Cover explorations classified as unselected chat trials; no image files copied or replaced.",
+    "Read-only ART_DIRECTION assignment now resolves from live bootstrap; frozen specialist branch remains unchanged."
+  ],
+  "not_claimed": [
+    "independent aesthetic acceptance",
+    "physical proof",
+    "human playtest",
+    "new full art production",
+    "release",
+    "lock",
+    "other chat execution or acknowledgement"
+  ],
+  "validation": {
+    "governance_validator": "PASS",
+    "art_direction_bootstrap": "READ_ONLY_ASSIGNED / ART-PUBLICATION-REVIEW-001",
+    "visual_design_bootstrap": "NO_TASK / WRITE_FALSE",
+    "governance_tests": {
+      "passed": 31,
+      "negative_controls": 88
+    },
+    "trusted_ci_tests": {
+      "passed": 8
+    },
+    "frozen_workstream_checks": "PASS / 4 refs unchanged",
+    "brief_relative_links": "PASS",
+    "direct_pdf_links": {
+      "cards_http": 206,
+      "book_http": 206,
+      "both_prefix": "%PDF-1.4"
+    },
+    "correction_scope": "Governance and permitted source-routing metadata only; no game/art/PDF bytes changed."
+  },
+  "test_setup_note": "Partial checkout initially lacked historical fixture blobs; restored them. Added the new read-only task ID to repository_expectations. Full unchanged validator suites then passed; no gate was removed."
+}

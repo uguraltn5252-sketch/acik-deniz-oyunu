@@ -276,7 +276,11 @@
       "accepted_patch_commit": "917f8b71f47eeecdfb12b7ec930796bf111e2858",
       "accepted_patch_blob": "bae77450d6d10e1e3234a3473bf68ffa1efff810",
       "previous_source_policy": "BINDING_KAPTAN_CARD_VISUAL_SOURCE / NOT_STYLE_ONLY",
-      "current_owner_correction": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json"
+      "current_owner_correction": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json",
+      "current_review_decision": "governance/v4/evidence/OWNER_ART_REVIEW_HANDOFF_20260909.json",
+      "reference_priority": "PRIMARY: owner supplied KAPTAN art language. SECONDARY: current book/card PDFs as implementation examples and review subjects.",
+      "historical_patch_policy": "Accepted patch is immutable historical evidence. Literal figure/composition reuse, old copy and historical island redraw directions are superseded by the owner corrections; consult current review brief.",
+      "current_review_brief": "governance/v4/planning/ART_DIRECTION_REVIEW_BRIEF_20260909.md"
     },
     "exact_copy": {
       "source": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",

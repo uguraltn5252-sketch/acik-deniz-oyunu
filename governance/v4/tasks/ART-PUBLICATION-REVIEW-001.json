@@ -1,0 +1,175 @@
+{
+  "schema_version": "4.3",
+  "canonical_task_authority": true,
+  "task_id": "ART-PUBLICATION-REVIEW-001",
+  "task_type": "SOURCE_READ_ONLY_ART_AND_PUBLICATION_REVIEW",
+  "project_task": false,
+  "status": "READ_ONLY_ASSIGNED",
+  "issued_by": "CHIEF_EDITOR",
+  "issued_at": "2026-09-09",
+  "executor_role": "ART_DIRECTION",
+  "reviewer_roles": [
+    "CHIEF_EDITOR"
+  ],
+  "owner_authorization": {
+    "task_id": "ART-PUBLICATION-REVIEW-001",
+    "decision": "AUTHORIZED",
+    "delegation_id": "OWNER-DELEGATION-20260905",
+    "recorded_from": "Project owner requests readiness for Art Direction review, main reference the originally supplied KAPTAN card, current book/cards as supporting inspiration, and correction of misleading handoff records.",
+    "decision_ref": "governance/v4/evidence/OWNER_ART_REVIEW_HANDOFF_20260909.json"
+  },
+  "source": {
+    "branch": "v2.7-design",
+    "commit": "2c8f18c084f14a495bcb4d16044b8fccc6310803",
+    "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0"
+  },
+  "authorization": {
+    "enabled": true,
+    "write_authorized": false,
+    "allowed_actions": [
+      "READ_ONLY_VALIDATION"
+    ],
+    "role_actions": {
+      "ART_DIRECTION": [
+        "READ_ONLY_VALIDATION"
+      ]
+    }
+  },
+  "scope": {
+    "branch": "work/v2.7-art-direction",
+    "allowed_globs": [],
+    "allowed_exact_paths": [
+      "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
+    ],
+    "max_changed_files": 0,
+    "allowed_extensions": [
+      ".md",
+      ".json"
+    ],
+    "binary_files_allowed": false,
+    "note": "Inputs are read-only from source.commit on v2.7-design; frozen specialist branch is not a source of current game content."
+  },
+  "runtime_permissions": {
+    "visual_production": false,
+    "thumbnails": false,
+    "pilot_or_candidate": false,
+    "full_121_production": false,
+    "pdf_or_print_package": false,
+    "simulation": false,
+    "release": false,
+    "lock": false
+  },
+  "required_outputs": [],
+  "inputs": [
+    {
+      "path": "working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg",
+      "git_blob": "6e3dc9eb5ac00758bc5dd307bc5bd646435ec5f4"
+    },
+    {
+      "path": "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
+      "git_blob": "01e4840cc0cca966948b410c55c76895a3b8c778"
+    },
+    {
+      "path": "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
+      "git_blob": "22029c3fc0e79ee9a313f6a8edaf703b66983619"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_OWNER_CARD_TEXT_OVERRIDES_v2.7.json",
+      "git_blob": "2ee53f82a02cb01aee1b19bcdd2332b5de8dd95e"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+      "git_blob": "96deffe94b831a1b90ab52c28d1837548445f404"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+      "git_blob": "66aef6a05c9b371ce6c9a5542543e3420d4bb79b"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+      "git_blob": "ae33337722c552376de00063ec04be6cec3a2d1f"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+      "git_blob": "45f5f51025c2140b46b45818931a99a25eb4edfb"
+    },
+    {
+      "path": "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+      "git_blob": "c9499d1199158b723fe8b7624c5b644aea0b32b1"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+      "git_blob": "fa61dcc9cc78005dffc3d203f005860d550409ec"
+    },
+    {
+      "path": "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+      "git_blob": "e55f17b9f97890453a717a07676195d7365436fd"
+    },
+    {
+      "path": "working/v2.7/qa/publication_20260909/cards_manifest.json",
+      "git_blob": "1fc99dc84df690601ca20bf4738a223b0c84a6a3"
+    },
+    {
+      "path": "working/v2.7/qa/publication_20260909/book_manifest.json",
+      "git_blob": "4d4afba21a837d291272188d1e0b359fa5d3b2da"
+    },
+    {
+      "path": "working/v2.7/qa/publication_20260909/verification.json",
+      "git_blob": "7fe9e442a4c95b902075b6b8d961859a8b84b58a"
+    },
+    {
+      "path": "working/v2.7/qa/publication_20260909/visual_review.json",
+      "git_blob": "2329722ef113223d90245e4b8e0b0a866d706c6a"
+    }
+  ],
+  "execution_context": {
+    "authority": "Current v2.7-design state, role, contracts and this task; exact pinned content from source.commit.",
+    "branch_policy": "No merge, reset, push, PR or branch update required for a visible-chat read-only review.",
+    "source_drift": "Compare pinned blobs against current v2.7-design; coordination-only changes do not invalidate unchanged inputs.",
+    "brief": "governance/v4/planning/ART_DIRECTION_REVIEW_BRIEF_20260909.md",
+    "temporary_agents": "DO_NOT_USE",
+    "not_started_by_assignment": true
+  },
+  "purpose": "Sanat yönetmeninin bağımsız incelemesini doğru referans sırası, güncel kaynak ve doğrulanmış PDF ile başlatmak.",
+  "review_scope": {
+    "fronts": 121,
+    "shared_back_masters": 7,
+    "rulebook_pages": 30,
+    "cards_print_pages": 46,
+    "dimensions": [
+      "Reference fidelity without copying",
+      "Illustration/copy integration",
+      "Character identity distinct from loyalty",
+      "Originality and repeated compositions",
+      "Anatomy, object and rigging coherence",
+      "Texture, contrast, hierarchy, table-scale legibility",
+      "Map back secrecy, single lighthouse, island identity",
+      "Cover and moderator-page usefulness"
+    ]
+  },
+  "delivery": {
+    "channel": "VISIBLE_ROLE_CHAT_ONLY",
+    "canonical": false,
+    "handoff_values": {
+      "TASK_ID": "ART-PUBLICATION-REVIEW-001",
+      "DELIVERY_COMMIT": "NONE / READ_ONLY_CHAT_REVIEW",
+      "CHANGED_PATHS": [],
+      "NEXT_RESPONSIBLE_ROLE": "CHIEF_EDITOR"
+    },
+    "required_sections": [
+      "Coverage by card ID/back master/book page; omissions explicit.",
+      "Strengths worth keeping and why.",
+      "Prioritized defects with exact card ID/page, effect on player and smallest useful change.",
+      "FRAMING_PASS or REFRAME_REQUIRED per reviewed card framing; reasoned page findings.",
+      "Proposals distinguished from approved production instructions; remaining owner/QA decisions."
+    ]
+  },
+  "acceptance_criteria": [
+    "The original KAPTAN image is the primary visual reference; current PDFs are secondary examples and review subjects.",
+    "Old words printed on the reference are not imported into current card copy.",
+    "No fixed character-to-traitor identity, new lore or mechanical change is inferred from art.",
+    "Full scope or explicit omissions are documented with source/page evidence.",
+    "No source bytes, production permissions, specialist branches, PDFs or trial cover images are modified.",
+    "Chief preparation is not counted as an independent art review, reviewer acknowledgement or owner final acceptance."
+  ]
+}

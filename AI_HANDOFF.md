@@ -1,5 +1,10 @@
 # FOULWAKE — Yeni oturum
 
+## Sanat Yönetimi incelemesine devir — 9 Eylül 2026
+
+[Tek inceleme girişi](governance/v4/planning/ART_DIRECTION_REVIEW_BRIEF_20260909.md) · [Ana KAPTAN referansı](working/v2.7/visual/references/FOULWAKE_KAPTAN_ART_LANGUAGE_REFERENCE_v2.7.jpg). Ana görsel ölçüt özgün KAPTAN kartının tasarım dilidir; mevcut kitap ve kart PDF’leri destekleyici ilham ve inceleme konusudur. Referans üzerindeki eski kural metni kullanılmaz. `ART-PUBLICATION-REVIEW-001` görünür Sanat Yönetimi sohbetine salt okunur atanmıştır; rapor henüz teslim edilmedi. Üretim kapalıdır. Son kapak denemeleri seçilmiş/onaylı değildir.
+
+
 Güncel kaynak dalı **v2.7-design**. Önce GitHub HEAD'ini doğrula; eski uzman dalındaki state'i güncel görev kaynağı olarak kullanma.
 
 1. `governance/v4/TEAM_START.md`
