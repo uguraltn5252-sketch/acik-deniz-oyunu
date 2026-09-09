@@ -1,0 +1,34 @@
+{
+  "schema_version": "4.3",
+  "date": "2026-09-09",
+  "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+  "issued_by": "PROJECT_OWNER",
+  "source_head": "e613a8664cafe49256223e21f2afe92d61ebb89a",
+  "owner_instruction_excerpt_verbatim": "Bundan sonra aşağıdaki isimler kesin ve geçerli kabul edilecek:\nKraliçe Tesella\nKalkış Limanı: Port Avanta\nVarış Limanı: Santa Veda\nGizli örgüt: Malum",
+  "owner_request_summary": "Produce a coherent original FOULWAKE rulebook, cards and story with full-page FOULWAKE-only cover, restrained parchment/ink art, readable typography, preserved mechanics and map identities, updated canon and two combined A4 print PDFs. Review text/names, visuals and duplex alignment. Current user explicitly asks Chief Editor to execute the production.",
+  "reference_files": [
+    "1000147376.png",
+    "1000147372.png",
+    "1000147373.png"
+  ],
+  "binding_decisions": {
+    "queen": "Kraliçe Tesella",
+    "departure_port": "Port Avanta",
+    "destination_port": "Santa Veda",
+    "secret_organization": "Malum",
+    "cover_visible_text_only": "FOULWAKE",
+    "preserve": "Game mechanics, all 121 card identities, established map art identity, liked single upright lighthouse, shared hidden backs, dimensions and long-edge duplex layout.",
+    "reference_use": "Design language only. Do not copy the attached illustrations, page compositions, reference texts or invented mechanics.",
+    "production": "Native typeset text; targeted artwork refinements and original book artwork. One combined cards PDF and one rulebook PDF."
+  },
+  "chief_editor_implementation_decisions": {
+    "temporary_roles": [
+      "STORY_EDITOR",
+      "ART_DIRECTION",
+      "VISUAL_DESIGN",
+      "COPY_QA"
+    ],
+    "historical_records": "Do not rewrite frozen releases, past task inputs or delivery evidence. Update active source and entrypoint canon; label superseded historical guidance explicitly. Name scans distinguish current output from archived evidence.",
+    "review": "Same-operator digital review; do not claim independent review, physical proof, human playtest, release or lock."
+  }
+}

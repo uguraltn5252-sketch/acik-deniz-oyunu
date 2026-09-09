@@ -113,14 +113,31 @@
         "branch": "v2.7-design",
         "allowed_globs": [
           "governance/**",
-          ".github/**"
+          ".github/**",
+          "working/v2.7/publication_20260909/**",
+          "working/v2.7/qa/publication_20260909/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
           "PROJECT_STATE.md",
           "README.md",
           "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+          "working/v2.7/README_CURRENT_v2.7.md",
+          "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+          "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+          "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+          "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+          "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+          "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+          "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
+          "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+          "working/v2.7/FOULWAKE_VISUAL_SYSTEM.md",
+          "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md",
+          "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+          "working/v2.7/visual/art_direction/FOULWAKE_ART_DIRECTION_BIBLE_v2.7.md",
+          "working/v2.7/visual/art_direction/FOULWAKE_7_BACK_BRIEFS_v2.7.md",
+          "working/v2.7/visual/art_direction/FOULWAKE_12_PILOT_PRODUCTION_BRIEFS_v2.7.md"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -233,12 +250,12 @@
       "limits": "Exact task, role/path scope, independent review and source integrity remain mandatory; no implicit full production, canon/mechanics change, release or lock."
     },
     "temporary_consolidated_authority": {
-      "decision_ref": "governance/v4/evidence/OWNER_ISLAND_REFERENCE_AUTHORITY_20260909.json",
-      "task_id": "FOULWAKE-ISLAND-REFERENCE-001",
+      "decision_ref": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json",
+      "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
       "role": "CHIEF_EDITOR",
-      "scope": "One shared island back and its six placements in the existing A4 duplex deck.",
+      "scope": "Owner-directed canon migration and professional rulebook/card publication revision; mechanics and original map identity preserved.",
       "review": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT",
-      "status": "CLOSED / ISLAND_REFERENCE_DELIVERED / TASK_PERMISSIONS_OFF"
+      "status": "SCOPED_OWNER_AUTHORITY_REGISTERED"
     }
   },
   "protected_quality_gates": [
