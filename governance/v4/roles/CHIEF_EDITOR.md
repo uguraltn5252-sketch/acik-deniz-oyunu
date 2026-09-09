@@ -71,3 +71,7 @@ Güncel governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json karar�
 ## 8 Eylül — özgün bütünleşik kart tasarımı teslimi
 
 `FOULWAKE-ILLUSTRATED-DESIGN-002` teslim edildi: 121 özgün tam ön, yedi korunmuş ortak arka, 48 baskı ve 34 tam kart inceleme sayfası. 121 kart tek tek ve 82 son PDF sayfası gözle kontrol edildi; 363 exact-copy yerleşimi doğrulandı. Güncel giriş `working/v2.7/README_CURRENT_v2.7.md`; kanıt `governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json`. Eski referans kırpımı kaldırıldı; beğenilen tek dik fener masterı aynen korundu. Ana README ve handofflar eski resimsiz prototipe gitmez. Görev izinleri kapandı; olağan koordinasyon dosya sınırı geri getirildi. SAME_OPERATOR_SELF_CHECK / OWNER_REVIEW_PENDING; bağımsız, insan veya fiziksel kabul yoktur. Başka üretim görevi kendiliğinden açılmadı.
+
+## 9 Eylül — A4 çift taraflı baskı hazırlığı
+
+Proje sahibi governance/v4/evidence/OWNER_A4_PRINT_AUTHORITY_20260909.json kaydıyla A4 çift taraflı kart baskısı, ortak Ada arkasının iyileştirilmesi ve kural kitabının baskı/metin incelemesini istedi. Baş Editör FOULWAKE-A4-PRINT-001 exact görevi içinde çalışır. Kart ölçüleri ve güncel ön yüzler, diğer altı arka ve tek dik fener korunur. Bu teslim yazıcının fiziksel kaymasını, insan oyun testini veya release/lock kabulünü kanıtlamaz.

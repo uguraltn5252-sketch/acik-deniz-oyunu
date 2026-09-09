@@ -112,15 +112,21 @@
       "CHIEF_EDITOR": {
         "branch": "v2.7-design",
         "allowed_globs": [
+          ".github/**",
           "governance/**",
-          ".github/**"
+          "working/v2.7/print_20260909/**",
+          "working/v2.7/qa/print_preparation_20260909/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
+          "CHANGELOG.md",
           "PROJECT_STATE.md",
           "README.md",
-          "CHANGELOG.md",
-          "working/v2.7/SOURCE_HIERARCHY_v2.7.json"
+          "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+          "working/v2.7/README_CURRENT_v2.7.md",
+          "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
+          "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+          "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -233,13 +239,12 @@
       "limits": "Exact task, role/path scope, independent review and source integrity remain mandatory; no implicit full production, canon/mechanics change, release or lock."
     },
     "temporary_consolidated_authority": {
-      "decision_ref": "governance/v4/evidence/OWNER_CARD_DESIGN_CORRECTION_20260908.json",
-      "task_id": "FOULWAKE-ILLUSTRATED-DESIGN-002",
+      "decision_ref": "governance/v4/evidence/OWNER_A4_PRINT_AUTHORITY_20260909.json",
+      "task_id": "FOULWAKE-A4-PRINT-001",
       "role": "CHIEF_EDITOR",
-      "scope": "Owner-requested complete original card art and integrated design correction.",
+      "scope": "A4 duplex print preparation, island back revision and rulebook copy/layout review.",
       "review": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT",
-      "status": "DELIVERED / SCOPED_PRODUCTION_CLOSED",
-      "delivery_evidence": "governance/v4/evidence/ILLUSTRATED_DESIGN_DELIVERY_20260908.json"
+      "status": "OWNER_AUTHORIZED / AWAITING_EXACT_TASK"
     }
   },
   "protected_quality_gates": [

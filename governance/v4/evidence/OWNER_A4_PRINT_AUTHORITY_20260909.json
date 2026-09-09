@@ -1,0 +1,30 @@
+{
+  "schema_version": "4.3",
+  "date": "2026-09-09",
+  "task_id": "FOULWAKE-A4-PRINT-001",
+  "issued_by": "PROJECT_OWNER",
+  "source_head": "fed987a6588ef17fe511b86b727c34399eaed8f7",
+  "owner_instruction_verbatim": "Tamam bunu baskiya hazır hale getir dediğimiz ölçülerde. A4 e basılacak arkalı önlü yani kartin ön yüzü ile arka yüzü denk gelsin ki yazıcıdan arkalı önlü çıktı alinabilsin. Bu işi detaylı ve düzgün yap sonrasinda kural kitabini da elden geçir baskiya uygun hale getir. Herseyi detaylıca düşün arastir. Baskiya girecek seyleri piksel piksel kelime kelime kontrol et. Ada kartinin arka yüzünü biraz daha guzel yap kayalik gibi olmuş bu sekilde.",
+  "decisions": {
+    "scope": "Chief Editor prepares exact-size A4 duplex deck, one improved shared island back, a reviewed A4 rulebook and print/calibration instructions.",
+    "card_sizes_mm": {
+      "characters_utilities_captain": [
+        70,
+        120
+      ],
+      "powers_provisions_loyalties": [
+        63.5,
+        88.9
+      ],
+      "maps": [
+        70,
+        70
+      ]
+    },
+    "copy": "Preserve all 121 canonical card texts and front designs; review every final placement. Rulebook copyediting and clarity/print changes authorized; no new mechanics or canon.",
+    "island": "Replace rocky-looking shared BACK_ISLAND with more readable natural island; keep generic family identity and same master on all six island cards.",
+    "preserve": "Other six back masters, including the liked single upright lighthouse, and frozen v2.6 remain unchanged.",
+    "production": "A4 full deck and rulebook PDFs explicitly authorized; no new pilot confirmation required.",
+    "review": "Same operator digital checks; do not assert physical printer alignment, independent acceptance, human playtest, release or lock."
+  }
+}
