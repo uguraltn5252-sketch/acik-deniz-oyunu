@@ -1,8 +1,8 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-NAME-REVISION-PREPARED-20260910",
-  "status": "V4_IDLE / OWNER_CANON_NAME_REVISION_PREPARATION",
+  "state_id": "V4-CANON-NAMES-ACTIVE-20260910",
+  "status": "V4_ACTIVE / OWNER_CANON_NAME_REVISION",
   "updated_at": "2026-09-10",
   "source_checkpoint": {
     "branch": "v2.7-design",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": null,
+  "active_project_task_id": "FOULWAKE-CANON-NAMES-001",
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -116,7 +116,7 @@
     "thumbnails": false,
     "pilot_or_candidate": false,
     "full_121_production": false,
-    "pdf_or_print_package": false,
+    "pdf_or_print_package": true,
     "simulation": false,
     "release": false,
     "lock": false
@@ -135,7 +135,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Activate FOULWAKE-CANON-NAMES-001 under the explicit owner decision; preserve latest delivered Library cover and lighthouse.",
+  "next_action": "Apply Veresia Krallığı and Doktor Odo Bressac to current sources and latest PDFs, perform two-pass checks, deliver finished rulebook.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",
