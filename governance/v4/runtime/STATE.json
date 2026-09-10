@@ -1,9 +1,9 @@
 {
   "schema_version": "4.2",
   "canonical": true,
-  "state_id": "V4-COVER-LIGHTHOUSE-ACTIVE-20260909",
-  "status": "V4_ACTIVE / TARGETED_COVER_LIGHTHOUSE_REVISION",
-  "updated_at": "2026-09-09",
+  "state_id": "V4-NAME-REVISION-PREPARED-20260910",
+  "status": "V4_IDLE / OWNER_CANON_NAME_REVISION_PREPARATION",
+  "updated_at": "2026-09-10",
   "source_checkpoint": {
     "branch": "v2.7-design",
     "commit": "5564c7fbdea297ab1b8b3fa675c83f6e788151f1",
@@ -12,7 +12,7 @@
     "locked_release_tree_sha": "efb41c46f06174c42dcdab2859b7c0ba517f86f0",
     "rollback_policy": "Return to this exact commit; never reconstruct state from chat or history evidence."
   },
-  "active_project_task_id": "FOULWAKE-COVER-LIGHTHOUSE-001",
+  "active_project_task_id": null,
   "migration_control": {
     "branch": "v2.7-design",
     "task_id": "GOV4-CUTOVER-001",
@@ -112,11 +112,11 @@
     "OTHER_FOUR_BACKS": "RETAINED_SOURCES_IN_FULL_DECK / SAME_OPERATOR_CHECK / OWNER_REVIEW_PENDING"
   },
   "permissions": {
-    "visual_production": true,
+    "visual_production": false,
     "thumbnails": false,
     "pilot_or_candidate": false,
     "full_121_production": false,
-    "pdf_or_print_package": true,
+    "pdf_or_print_package": false,
     "simulation": false,
     "release": false,
     "lock": false
@@ -135,7 +135,7 @@
   },
   "non_authoritative_history_ref": "governance/v4/history/evidence/INDEX.json",
   "default_policy": "DENY_UNLESS_EXACT_ACTIVE_TASK_AND_ROLE_AUTHORIZATION",
-  "next_action": "Apply the selected cover, center the single lighthouse, verify targeted PDF changes, and publish both PDFs.",
+  "next_action": "Activate FOULWAKE-CANON-NAMES-001 under the explicit owner decision; preserve latest delivered Library cover and lighthouse.",
   "forbidden_without_new_exact_authorization": [
     "game-content change",
     "visual or layout production",

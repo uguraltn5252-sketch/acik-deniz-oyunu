@@ -114,22 +114,41 @@
         "allowed_globs": [
           "governance/**",
           ".github/**",
-          "working/v2.7/qa/cover_lighthouse_20260909/**"
+          "working/v2.7/qa/cover_lighthouse_20260909/**",
+          "working/v2.7/qa/canon_names_20260910/**"
         ],
         "allowed_exact_paths": [
           "AI_HANDOFF.md",
+          "CHANGELOG.md",
           "PROJECT_STATE.md",
           "README.md",
-          "CHANGELOG.md",
+          "working/v2.7/FOULWAKE_CARD_TEXTS_v2.7.json",
+          "working/v2.7/FOULWAKE_EDITORIAL_DECISIONS_v2.7.json",
+          "working/v2.7/FOULWAKE_KART_METINLERI_v2.7.md",
+          "working/v2.7/FOULWAKE_KURAL_KITABI_v2.7.md",
+          "working/v2.7/FOULWAKE_NARRATIVE_VALIDATION_v2.7.md",
+          "working/v2.7/FOULWAKE_RULEBOOK_STORY_v2.7.md",
+          "working/v2.7/FOULWAKE_STORY_FRAMEWORK.md",
+          "working/v2.7/FOULWAKE_STORY_REVALIDATION_v2.7.md",
+          "working/v2.7/README_CURRENT_v2.7.md",
           "working/v2.7/SOURCE_HIERARCHY_v2.7.json",
-          "working/v2.7/publication_20260909/assets/OWNER_SELECTED_COVER.png",
+          "working/v2.7/publication_20260909/README.md",
           "working/v2.7/publication_20260909/assets/BACK_LIGHTHOUSE_CENTERED.png",
+          "working/v2.7/publication_20260909/assets/GUSTO_CABIN.png",
+          "working/v2.7/publication_20260909/assets/MAP_BACK_ADA.png",
+          "working/v2.7/publication_20260909/assets/MAP_BACK_DENIZ.png",
+          "working/v2.7/publication_20260909/assets/MAP_BACK_FENER.png",
+          "working/v2.7/publication_20260909/assets/OWNER_SELECTED_COVER.png",
+          "working/v2.7/publication_20260909/assets/PORT_AVANTA.png",
           "working/v2.7/publication_20260909/pdf/BACK_LIGHTHOUSE_CENTERED.pdf",
           "working/v2.7/publication_20260909/pdf/FOULWAKE_KARTLAR_A4_CIFT_TARAFLI_v2.7.pdf",
           "working/v2.7/publication_20260909/pdf/FOULWAKE_KURAL_KITABI_A4_v2.7.pdf",
-          "working/v2.7/publication_20260909/README.md",
           "working/v2.7/qa/publication_20260909/book.py",
-          "working/v2.7/qa/publication_20260909/cards.py"
+          "working/v2.7/qa/publication_20260909/book_manifest.json",
+          "working/v2.7/qa/publication_20260909/cards.py",
+          "working/v2.7/qa/publication_20260909/cards_manifest.json",
+          "working/v2.7/visual/art_direction/FOULWAKE_121_ART_BRIEF_MANIFEST_v2.7.json",
+          "working/v2.7/visual/art_direction/FOULWAKE_CURRENT_ART_DIRECTION_v2.7.md"
         ],
         "forbidden_prefixes": [
           "releases/"
@@ -242,12 +261,12 @@
       "limits": "Exact task, role/path scope, independent review and source integrity remain mandatory; no implicit full production, canon/mechanics change, release or lock."
     },
     "temporary_consolidated_authority": {
-      "decision_ref": "governance/v4/evidence/OWNER_PUBLICATION_AUTHORITY_20260909.json",
-      "task_id": "FOULWAKE-PUBLICATION-REDESIGN-001",
+      "decision_ref": "governance/v4/evidence/OWNER_CANON_NAMES_AUTHORITY_20260910.json",
+      "task_id": "FOULWAKE-CANON-NAMES-001",
       "role": "CHIEF_EDITOR",
-      "scope": "Owner-directed canon migration and professional rulebook/card publication revision; mechanics and original map identity preserved.",
+      "scope": "Explicit owner-directed kingdom and doctor name migration, current-source/PDF synchronization and two-pass verification only.",
       "review": "SAME_OPERATOR_SELF_CHECK / NOT_INDEPENDENT",
-      "status": "CLOSED / PUBLICATION_DELIVERED / TASK_PERMISSIONS_OFF"
+      "status": "AUTHORIZED / EXACT_TASK_REQUIRED"
     }
   },
   "protected_quality_gates": [

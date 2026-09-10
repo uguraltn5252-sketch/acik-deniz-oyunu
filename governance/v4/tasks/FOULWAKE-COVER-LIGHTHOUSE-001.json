@@ -10,7 +10,7 @@
   ],
   "task_id": "FOULWAKE-COVER-LIGHTHOUSE-001",
   "task_type": "OWNER_SELECTED_COVER_AND_TARGETED_BACK_LAYOUT",
-  "status": "ACTIVE",
+  "status": "SUPERSEDED / LATEST_DELIVERED_PDFS_PRESERVED_IN_CANON_NAME_REVISION",
   "source": {
     "branch": "v2.7-design",
     "commit": "a0f751011c4cc473f7812d0e74718c6b360f2bc6",
@@ -54,8 +54,8 @@
     "decision_ref": "governance/v4/evidence/OWNER_COVER_LIGHTHOUSE_AUTHORITY_20260909.json"
   },
   "authorization": {
-    "enabled": true,
-    "write_authorized": true,
+    "enabled": false,
+    "write_authorized": false,
     "allowed_actions": [
       "WRITE",
       "QA_REVIEW",
@@ -76,11 +76,11 @@
     }
   },
   "runtime_permissions": {
-    "visual_production": true,
+    "visual_production": false,
     "thumbnails": false,
     "pilot_or_candidate": false,
     "full_121_production": false,
-    "pdf_or_print_package": true,
+    "pdf_or_print_package": false,
     "simulation": false,
     "release": false,
     "lock": false
@@ -124,5 +124,6 @@
     "Preserve all 121 fronts, all copy, mechanics, remaining backs, card dimensions, A4 page counts and long-edge duplex placement.",
     "Check changed rendered pages, untouched-page equality, text, page dimensions and duplex; upload exact PDFs and sources to GitHub. Same-operator checks are not independent or physical proof."
   ],
-  "completion_policy": "Close targeted production after delivery and refresh ART-PUBLICATION-REVIEW-001 source pins."
+  "completion_policy": "Close targeted production after delivery and refresh ART-PUBLICATION-REVIEW-001 source pins.",
+  "superseded_by": "FOULWAKE-CANON-NAMES-001"
 }

@@ -65,7 +65,7 @@
       ],
       "writes_require_exact_task": true,
       "brief_ref": "governance/v4/roles/CHIEF_EDITOR.md",
-      "temporary_delegation_status": "AUTHORIZED / COVER_AND_LIGHTHOUSE_ONLY"
+      "temporary_delegation_status": "AUTHORIZED / CANON_NAMES_AND_CURRENT_PDF_SYNC_ONLY"
     },
     "STORY_EDITOR": {
       "owns": [

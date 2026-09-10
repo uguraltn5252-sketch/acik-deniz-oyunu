@@ -1,0 +1,18 @@
+{
+  "decision": "AUTHORIZED",
+  "task_id": "FOULWAKE-CANON-NAMES-001",
+  "issued_by": "PROJECT_OWNER",
+  "recorded_at": "2026-09-10",
+  "owner_instruction": "Veresia Krallığı. Doktor Odo Bressac. Bundan sonra krallığın ve doktorun adı kitap kayıtlarına PDF hikayeye Kural kitabına kartlara işle; eski isimler varsa düzelt; tek tek kontrol et; bitirdikten sonra tekrar kontrol et; Kural kitabının bitmiş halini yolla.",
+  "canon": {
+    "kingdom": "Veresia Krallığı",
+    "doctor": "Doktor Odo Bressac"
+  },
+  "supersedes": {
+    "kingdom": "Arden",
+    "doctor": "Mattias Veyr"
+  },
+  "scope": "Current v2.7 sources, narrative, card copy, current documentation and two publication PDFs; grammar-aware name migration only. Preserve latest delivered selected cover, centered lighthouse, art, mechanics, identities and frozen history.",
+  "executor_role": "CHIEF_EDITOR",
+  "review": "Same operator verification; no independent or physical acceptance asserted."
+}
